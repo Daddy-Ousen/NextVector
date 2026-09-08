@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Bookmark, Sparkles, Menu, X, Compass, Activity, ArrowRight, ExternalLink } from 'lucide-react';
+import { NextVectorLogo } from '../common/NextVectorLogo';
 
 interface NavbarProps {
   currentPath: string;
@@ -106,28 +107,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Logo & Brand */}
           <div
             onClick={() => handleLinkClick('/')}
-            className="flex items-center gap-3 cursor-pointer group shrink-0"
+            className="cursor-pointer group shrink-0"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 via-emerald-600 to-cyan-700 p-0.5 shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 transition-all">
-              <div className="w-full h-full bg-zinc-950 rounded-[10px] flex items-center justify-center">
-                <span className="font-mono font-black text-emerald-400 text-base tracking-tighter">
-                  NV
-                </span>
-              </div>
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-sans font-extrabold text-lg tracking-tight text-zinc-100 group-hover:text-emerald-400 transition-colors">
-                  NextVector
-                </span>
-                <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-zinc-400">
-                  v2.6
-                </span>
-              </div>
-              <p className="text-[10px] font-mono text-zinc-400 tracking-wider uppercase -mt-0.5">
-                Technology & AI Intelligence
-              </p>
-            </div>
+            <NextVectorLogo
+              size={28}
+              withContainer={true}
+              showWordmark={true}
+              version="v2.6"
+              tagline="Technology & AI Intelligence"
+            />
           </div>
 
           {/* Desktop Navigation Links */}

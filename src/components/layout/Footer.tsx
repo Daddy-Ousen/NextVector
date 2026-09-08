@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, CheckCircle2, ShieldCheck, ArrowRight, Zap, BookOpen, Layers, ExternalLink } from 'lucide-react';
+import { NextVectorLogo } from '../common/NextVectorLogo';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -22,13 +23,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Editorial Manifesto & Newsletter Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-14 border-b border-zinc-800/80">
           <div className="lg:col-span-7 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold">
-                NV
-              </div>
-              <span className="text-xl font-extrabold text-zinc-100 font-sans tracking-tight">
-                NextVector
-              </span>
+            <div className="cursor-pointer group inline-block" onClick={() => onNavigate('/')}>
+              <NextVectorLogo
+                size={26}
+                withContainer={true}
+                showWordmark={true}
+                version={null}
+                tagline="Technology & AI Intelligence"
+              />
             </div>
 
             <p className="text-lg text-zinc-200 font-serif italic max-w-xl">

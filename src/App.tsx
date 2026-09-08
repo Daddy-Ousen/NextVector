@@ -19,6 +19,8 @@ import { AuthorPage } from './pages/AuthorPage';
 import { MOCK_ARTICLES, MOCK_MODELS, MOCK_BENCHMARKS, MOCK_RESEARCH_PAPERS, MOCK_TIMELINE } from './data/mockData';
 import { getSavedBookmarks, toggleBookmark } from './utils';
 import { CheckCircle2, Info } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
 
 export function App() {
@@ -338,6 +340,10 @@ export function App() {
 
       {/* Footer */}
       <Footer onNavigate={navigateTo} />
+
+      {/* Vercel Analytics & Speed Insights Tracking */}
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }

@@ -1,10 +1,29 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { Article } from '../types';
-import { ArticleCard } from '../components/cards/ArticleCard';
 import { SEOHead } from '../components/common/SEOHead';
-import { ExternalLink, Mail, ShieldCheck, Cpu, Server, Terminal, CheckCircle, Search } from 'lucide-react';
+import {
+  ExternalLink,
+  Mail,
+  ShieldCheck,
+  Cpu,
+  Server,
+  Terminal,
+  CheckCircle,
+  Briefcase,
+  Award,
+  GraduationCap,
+  Bot,
+  Copy,
+  Check,
+  Radio,
+  Layers,
+  Sparkles,
+  ArrowRight,
+  Database,
+  Lock,
+} from 'lucide-react';
 
-const GithubIcon: React.FC<{ className?: string }> = ({ className = "w-3.5 h-3.5" }) => (
+const GithubIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
     <path d="M9 18c-4.51 2-5-2-7-2" />
@@ -20,29 +39,15 @@ interface AuthorPageProps {
 }
 
 export const AuthorPage: React.FC<AuthorPageProps> = ({
-  articles,
-  bookmarkedIds,
-  onToggleBookmark,
-  onSelectArticle,
   onNavigate,
 }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [copiedEmail, setCopiedEmail] = useState(false);
 
-  const authorArticles = useMemo(() => {
-    return articles.filter((a) => {
-      if (selectedCategory !== 'all' && a.category !== selectedCategory) return false;
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        return (
-          a.title.toLowerCase().includes(q) ||
-          a.subtitle.toLowerCase().includes(q) ||
-          a.tags.some((t) => t.toLowerCase().includes(q))
-        );
-      }
-      return true;
-    });
-  }, [articles, selectedCategory, searchQuery]);
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('rhasan229@gmail.com');
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2000);
+  };
 
   const authorSchema = {
     '@context': 'https://schema.org',
@@ -56,6 +61,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       sameAs: [
         'https://rhasan.online',
         'https://github.com/Daddy-Ousen',
+        'https://linkedin.com/in/robiul-hasan-401296137',
       ],
       worksFor: {
         '@type': 'NewsMediaOrganization',
@@ -66,35 +72,37 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
   };
 
   return (
-    <div className="space-y-12 pb-20 max-w-6xl mx-auto">
+    <div className="space-y-16 pb-24 max-w-5xl mx-auto">
       <SEOHead
-        title="Robiul Hasan — Founder & Editor-in-Chief | NextVector"
-        description="Systems engineer, cybersecurity analyst, and founder of NextVector. Editorial charter: Less noise. More signal."
+        title="Robiul Hasan — Founder, Systems Engineer & Editor-in-Chief | NextVector"
+        description="Systems engineer, IT infrastructure lead, and founder of NextVector. Editorial charter: Less noise. More signal. Verified benchmarks over marketing hype."
         canonicalPath="/about"
         ogType="profile"
         schemaData={authorSchema}
       />
-      {/* Hero Bio Banner */}
-      <div className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-12 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-        
+
+      {/* 1. Hero Dossier Card */}
+      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-12 shadow-2xl relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+
         <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8">
-          {/* Avatar / Portrait */}
+          {/* Avatar Monogram Badge */}
           <div className="relative shrink-0">
             <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-gradient-to-br from-emerald-500/20 via-zinc-800 to-zinc-900 p-1 border border-zinc-700/80 shadow-2xl overflow-hidden flex items-center justify-center">
               <div className="w-full h-full rounded-xl bg-zinc-900 flex flex-col items-center justify-center text-emerald-400 font-mono font-extrabold text-3xl">
                 <span>RH</span>
-                <span className="text-[10px] tracking-widest text-zinc-500 uppercase mt-0.5">NextVector</span>
+                <span className="text-[9px] tracking-widest text-zinc-500 uppercase mt-0.5 font-bold">NEXTVECTOR</span>
               </div>
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-emerald-500 text-zinc-950 p-1.5 rounded-xl shadow-lg border-2 border-zinc-950" title="Verified Editorial Lead">
+            <div className="absolute -bottom-2 -right-2 bg-emerald-500 text-zinc-950 p-1.5 rounded-xl shadow-lg border-2 border-zinc-950" title="Verified Editorial Lead & Systems Specialist">
               <ShieldCheck className="w-4 h-4" />
             </div>
           </div>
 
-          {/* Bio Details */}
+          {/* Core Profile Narrative */}
           <div className="space-y-4 flex-1">
-            <div className="flex flex-wrap items-center gap-2.5">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
                 <CheckCircle className="w-3.5 h-3.5" />
                 <span>Founder & Editor-in-Chief</span>
@@ -102,8 +110,9 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <span className="px-3 py-1 rounded-full text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-400">
                 Dhaka (UTC+6)
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 font-semibold">
-                Systems Architecture & AI
+              <span className="px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-semibold flex items-center gap-1.5">
+                <Radio className="w-3 h-3 text-cyan-400 animate-pulse" />
+                <span>Enterprise MSP & Agentic AI</span>
               </span>
             </div>
 
@@ -111,18 +120,19 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight">
                 Robiul Hasan
               </h1>
-              <p className="text-sm md:text-base text-zinc-400 font-sans mt-2 leading-relaxed max-w-3xl">
-                IT Infrastructure & Systems Support Engineer, Cybersecurity Practitioner, and Founder of <strong className="text-zinc-200">NextVector</strong>. Combining enterprise infrastructure operations, zero-trust endpoint defenses, and empirical AI capability evaluation to deliver high-signal intelligence without marketing noise.
+              <p className="text-sm md:text-base text-zinc-300 font-sans mt-3 leading-relaxed">
+                IT infrastructure specialist, service desk co-leader, and founder of <strong className="text-emerald-400 font-semibold">NextVector</strong>. With over 5 years of frontline enterprise MSP experience administering multi-tenant Microsoft 365, Azure cloud environments, and disaster-recovery systems across 2,500+ endpoints, Robiul combines practical infrastructure discipline with empirical AI capability audits.
               </p>
             </div>
 
-            {/* Social & External Links */}
+            {/* Primary Action CTAs */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
                 href="https://rhasan.online"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+                className="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-lg hover:shadow-emerald-500/20 active:scale-95 flex items-center gap-2"
+                title="Visit Official Website"
               >
                 <span>rhasan.online</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -132,7 +142,8 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://github.com/Daddy-Ousen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-mono transition-colors flex items-center gap-1.5"
+                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-mono transition-colors flex items-center gap-2"
+                title="GitHub Profile"
               >
                 <GithubIcon className="w-3.5 h-3.5" />
                 <span>Daddy-Ousen</span>
@@ -142,120 +153,596 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://linkedin.com/in/robiul-hasan-401296137"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-zinc-100 text-xs font-mono transition-colors flex items-center gap-1.5"
+                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-zinc-100 text-xs font-mono transition-colors flex items-center gap-2"
+                title="LinkedIn Profile"
               >
                 <span>LinkedIn</span>
-                <ExternalLink className="w-3 h-3" />
+                <ExternalLink className="w-3 h-3 text-zinc-400" />
               </a>
 
-              <a
-                href="mailto:rhasan229@gmail.com"
-                className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs font-mono transition-colors flex items-center gap-1.5"
+              <button
+                onClick={handleCopyEmail}
+                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs font-mono transition-colors flex items-center gap-2"
+                title="Copy email to clipboard"
               >
-                <Mail className="w-3.5 h-3.5" />
-                <span>Contact</span>
-              </a>
+                {copiedEmail ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-emerald-400" />
+                    <span className="text-emerald-400">Copied Email!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3.5 h-3.5" />
+                    <span>rhasan229@gmail.com</span>
+                  </>
+                )}
+              </button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Engineering Focus & Editorial Manifesto Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
-            <Server className="w-4 h-4" />
-            <span>Systems & Enterprise IT</span>
-          </div>
-          <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-            Years of frontline MSP operations overseeing 2,500+ enterprise endpoints, zero-trust Entra ID / Intune identity architectures, and 99.9% data continuity via Datto & Acronis BCDR appliances.
-          </p>
+      {/* 2. Enterprise Scale & Operations Telemetry */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <Server className="w-4 h-4" />
+          <span>Operational Scale & Enterprise Footprint</span>
         </div>
 
-        <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold">
-            <Cpu className="w-4 h-4" />
-            <span>Empirical AI Evaluation</span>
-          </div>
-          <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-            Direct auditing of frontier foundation models, agentic computer-use frameworks (OSWorld, WebArena), and crowdsourced Bradley-Terry LMSYS Arena Elo ratings to separate genuine capability shifts from synthetic benchmark contamination.
-          </p>
-        </div>
-
-        <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-purple-400 font-bold">
-            <Terminal className="w-4 h-4" />
-            <span>Editorial Standard</span>
-          </div>
-          <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-            NextVector operates on an uncompromising rule: <strong className="text-zinc-100">Less noise. More signal.</strong> Every article rigorously answers: <em>What happened? Why does it matter? What could happen next?</em>
-          </p>
-        </div>
-      </div>
-
-      {/* Published Reports Section */}
-      <div className="space-y-6 pt-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4">
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans flex items-center gap-2">
-              <span>Published Intelligence Reports</span>
-              <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
-                {authorArticles.length} Articles
-              </span>
-            </h2>
-            <p className="text-xs font-mono text-zinc-400 mt-1">
-              Peer-grade technical investigations and breakthrough breakdowns by Robiul Hasan
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
+            <div className="text-2xl md:text-4xl font-extrabold text-emerald-400 font-mono tracking-tight">
+              2,500+
+            </div>
+            <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
+              Endpoints Monitored
+            </div>
+            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+              Managed monthly maintenance & RMM telemetry across diverse enterprise environments.
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2">
-            {['all', 'ai', 'technology', 'science'].map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-mono uppercase tracking-wider transition-all ${
-                  selectedCategory === cat
-                    ? 'bg-emerald-500 text-zinc-950 font-bold'
-                    : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-400 border border-zinc-800'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
+            <div className="text-2xl md:text-4xl font-extrabold text-cyan-400 font-mono tracking-tight">
+              1,100+
+            </div>
+            <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
+              Security Assets
+            </div>
+            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+              Active endpoint security, EDR, and antivirus administration across client fleets.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
+            <div className="text-2xl md:text-4xl font-extrabold text-purple-400 font-mono tracking-tight">
+              25+
+            </div>
+            <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
+              IT Projects Delivered
+            </div>
+            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+              Led technical delivery and architecture coordination for major client migrations.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
+            <div className="text-2xl md:text-4xl font-extrabold text-emerald-400 font-mono tracking-tight">
+              &gt;90%
+            </div>
+            <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
+              Client Satisfaction
+            </div>
+            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+              Sustained CSAT rating while handling complex multi-account escalations.
+            </p>
           </div>
         </div>
+      </section>
 
-        {/* Search inside author reports */}
-        <div className="relative max-w-md">
-          <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search articles by topic, keyword, or technology..."
-            className="w-full pl-9 pr-4 py-2 text-xs font-mono bg-zinc-900 border border-zinc-800 rounded-xl text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:border-emerald-500/50"
-          />
-        </div>
-
-        {/* Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {authorArticles.map((article) => (
-            <ArticleCard
-              key={article.id}
-              article={article}
-              isBookmarked={bookmarkedIds.includes(article.id)}
-              onToggleBookmark={onToggleBookmark}
-              onSelectArticle={onSelectArticle}
-            />
-          ))}
-        </div>
-
-        {authorArticles.length === 0 && (
-          <div className="p-12 text-center rounded-2xl bg-zinc-950 border border-zinc-800 text-zinc-500 text-xs font-mono">
-            No articles match your search query.
+      {/* 3. NextVector Editorial Manifesto & Signal Purity Protocol */}
+      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 space-y-8 relative overflow-hidden">
+        <div className="border-b border-zinc-800/80 pb-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-1.5">
+              <Sparkles className="w-4 h-4" />
+              <span>Editorial Charter & Philosophy</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 font-sans tracking-tight">
+              Why NextVector Was Created: Less Noise. More Signal.
+            </h2>
           </div>
-        )}
-      </div>
+          <button
+            onClick={() => onNavigate('/')}
+            className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-300 flex items-center gap-1.5 transition-colors shrink-0"
+          >
+            <span>Explore Live Intelligence</span>
+            <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs">
+              01
+            </div>
+            <h3 className="text-sm font-bold text-zinc-100 font-sans">
+              Empirical Ground Truth
+            </h3>
+            <p className="text-xs text-zinc-300 font-sans leading-relaxed">
+              NextVector refuses to reprint synthetic marketing benchmarks or vendor press kits. We evaluate models based on direct coordinate vision testing (OSWorld), multi-step web agent execution (WebArena), and verified software engineering datasets (SWE-bench).
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
+            <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center font-mono font-bold text-cyan-400 text-xs">
+              02
+            </div>
+            <h3 className="text-sm font-bold text-zinc-100 font-sans">
+              The Three Core Questions
+            </h3>
+            <p className="text-xs text-zinc-300 font-sans leading-relaxed">
+              Every single report published on this platform is structured around three non-negotiable questions: <em>What happened? Why does it matter to systems architecture? And what could happen next?</em>{' '}No fluff, no sponsored filler.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
+            <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center font-mono font-bold text-purple-400 text-xs">
+              03
+            </div>
+            <h3 className="text-sm font-bold text-zinc-100 font-sans">
+              Signal Purity Formula (1–100)
+            </h3>
+            <p className="text-xs text-zinc-300 font-sans leading-relaxed">
+              Each article is assigned a rigorous 1–100 Signal Purity rating based on methodological reproducibility (40%), true architectural significance (35%), and zero-hype subtraction (25%), giving enterprise leaders instant clarity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Professional Work History */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <Briefcase className="w-4 h-4" />
+          <span>Professional Experience & Systems Leadership</span>
+        </div>
+
+        <div className="space-y-4">
+          {/* Role 1: Techants */}
+          <div className="p-6 md:p-8 rounded-2xl bg-zinc-950 border border-zinc-800/90 space-y-4 hover:border-zinc-700 transition-colors">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-zinc-800/80 pb-4">
+              <div>
+                <h3 className="text-lg font-bold text-zinc-100 font-sans flex items-center gap-2">
+                  <span>L2 Support Engineer & Service Desk Co-Leader</span>
+                  <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 font-semibold">
+                    Current
+                  </span>
+                </h3>
+                <div className="text-xs font-mono text-zinc-400 mt-0.5">
+                  Techants Solutions Pty Ltd (Managed Service Provider) • Dhaka, Bangladesh
+                </div>
+              </div>
+              <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
+                Oct 2022 – Present
+              </div>
+            </div>
+
+            <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  <strong>Project Delivery & Coordination:</strong> Led technical delivery and coordination for 25+ enterprise IT projects across diverse client accounts, collaborating on 5+ additional large-scale cloud and endpoint rollouts.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  <strong>Infrastructure Fleet Management:</strong> Oversee monthly maintenance and real-time monitoring across 2,500+ endpoints; administer antivirus and endpoint security for 1,100+ critical devices.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  <strong>Service Desk Co-Leadership:</strong> Co-lead a 10+ member Service Desk team, evaluating escalation pathways, mentoring L1 engineers, and creating structured SOP runbooks for new system rollouts.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  <strong>BCDR & Compliance:</strong> Own quarterly Backup & Disaster Recovery (BCDR) reporting, deploying backup agents across client endpoints while sustaining strict SDO compliance.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  <strong>Customer Satisfaction:</strong> Maintained customer satisfaction above 90% while managing high-priority technical escalations across multiple concurrent corporate accounts.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Role 2: Cobait */}
+          <div className="p-6 md:p-8 rounded-2xl bg-zinc-950 border border-zinc-800/90 space-y-4 hover:border-zinc-700 transition-colors">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-zinc-800/80 pb-4">
+              <div>
+                <h3 className="text-lg font-bold text-zinc-100 font-sans">
+                  Jr. Support Engineer
+                </h3>
+                <div className="text-xs font-mono text-zinc-400 mt-0.5">
+                  Cobait Dhaka • Dhaka, Bangladesh
+                </div>
+              </div>
+              <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
+                2021 – 2022
+              </div>
+            </div>
+
+            <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  Served as primary frontline contact for client support requests, diagnosing complex application-level issues in a fast-paced, high-ticket-volume MSP environment.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  Administered managed client server infrastructure, configuring Active Directory permissions, DNS configurations, and server data backup procedures.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Role 3: AQSBD */}
+          <div className="p-6 md:p-8 rounded-2xl bg-zinc-950 border border-zinc-800/90 space-y-4 hover:border-zinc-700 transition-colors">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-zinc-800/80 pb-4">
+              <div>
+                <h3 className="text-lg font-bold text-zinc-100 font-sans">
+                  Information Technology Executive
+                </h3>
+                <div className="text-xs font-mono text-zinc-400 mt-0.5">
+                  AQSBD • Dhaka, Bangladesh
+                </div>
+              </div>
+              <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
+                2020
+              </div>
+            </div>
+
+            <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-purple-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  Spearheaded the digitization of outdated manual tracking systems, implementing standardized infrastructure documentation and incident escalation processes.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="font-mono text-purple-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="leading-relaxed">
+                  Streamlined internal corporate communications and technical support procedures across all departments.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Featured Technical Engineering: Hermes AI Assistant */}
+      <section className="rounded-3xl bg-zinc-950 border border-emerald-500/30 p-6 md:p-10 space-y-6 relative overflow-hidden shadow-2xl">
+        <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-6">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="px-3 py-0.5 rounded-full text-[10px] font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
+                <Bot className="w-3.5 h-3.5" />
+                <span>Featured Engineering Project</span>
+              </span>
+              <span className="text-xs font-mono text-zinc-400">
+                Feb 2026 – Present
+              </span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-extrabold text-zinc-100 font-sans tracking-tight">
+              Hermes — Self-Hosted Autonomous AI Assistant
+            </h3>
+          </div>
+
+          <a
+            href="https://github.com/Daddy-Ousen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
+          >
+            <GithubIcon className="w-3.5 h-3.5" />
+            <span>GitHub Repository</span>
+            <ExternalLink className="w-3 h-3 text-zinc-400" />
+          </a>
+        </div>
+
+        <p className="text-sm text-zinc-300 font-sans leading-relaxed">
+          Outside enterprise IT infrastructure, Robiul architectures and self-hosts <strong>Hermes</strong>—a private, sovereign agentic AI system engineered to automate personal workflows, query local telemetry, and investigate practical agentic automation boundaries.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
+            <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 font-bold">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>Multi-Step Tool Calling</span>
+            </div>
+            <p className="text-xs text-zinc-400 font-sans leading-relaxed">
+              Dynamically evaluates tasks, calls local system functions, inspects logs, and returns structured execution status.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
+            <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 font-bold">
+              <Layers className="w-3.5 h-3.5" />
+              <span>Browser Automation</span>
+            </div>
+            <p className="text-xs text-zinc-400 font-sans leading-relaxed">
+              Uses headless browser drivers to manipulate web portals, extract data feeds, and automate administrative tasks.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
+            <div className="flex items-center gap-2 text-xs font-mono text-purple-400 font-bold">
+              <Lock className="w-3.5 h-3.5" />
+              <span>Sandboxed Execution</span>
+            </div>
+            <p className="text-xs text-zinc-400 font-sans leading-relaxed">
+              Self-hosted on isolated infrastructure with strict egress filtering, manual interrupt switches, and messaging integration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Technical Competencies Matrix */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <Layers className="w-4 h-4" />
+          <span>Technical Competencies & Systems Architecture</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Domain 1: Cloud & Identity */}
+          <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
+            <div className="flex items-center gap-2 text-sm font-bold text-zinc-100 font-sans">
+              <Server className="w-4 h-4 text-emerald-400" />
+              <span>Cloud & Identity Architecture</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                'Microsoft 365 Tenant Admin',
+                'Microsoft Azure',
+                'Entra ID (Azure AD)',
+                'Exchange Online & Mailflow',
+                'Microsoft Intune MDM/MAM',
+                'Conditional Access Policies',
+                'Zero Trust Endpoint Security',
+              ].map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Domain 2: Infrastructure & BCDR */}
+          <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
+            <div className="flex items-center gap-2 text-sm font-bold text-zinc-100 font-sans">
+              <Database className="w-4 h-4 text-cyan-400" />
+              <span>Infrastructure & Business Continuity</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                'Windows Server (2019/2022)',
+                'Hyper-V Virtualization',
+                'Active Directory & GPO',
+                'Datto BCDR Appliances',
+                'Datto RMM Automation',
+                'DNS, DHCP & Subnetting',
+                'Endpoint Patch Management',
+              ].map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Domain 3: Operations & Leadership */}
+          <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
+            <div className="flex items-center gap-2 text-sm font-bold text-zinc-100 font-sans">
+              <ShieldCheck className="w-4 h-4 text-purple-400" />
+              <span>Operations & Reliability Engineering</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                'Incident & Severity Triage',
+                'Service Desk Co-Leadership',
+                'L1 Staff Training & Mentorship',
+                'SOP & Knowledge Base Authoring',
+                'Quarterly BCDR Auditing',
+                'Disaster Recovery Deployment',
+                'Client Stakeholder Relations',
+              ].map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Domain 4: Automation & AI */}
+          <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
+            <div className="flex items-center gap-2 text-sm font-bold text-zinc-100 font-sans">
+              <Cpu className="w-4 h-4 text-emerald-400" />
+              <span>Automation & Agentic AI Systems</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                'Python Automation Scripting',
+                'PowerShell & Bash Systems Ops',
+                'Autonomous Agent Workflows',
+                'Tool-Calling Architectures',
+                'Headless Browser Automation',
+                'Self-Hosted LLM Telemetry',
+                'Benchmark Reproduction (OSWorld)',
+              ].map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Certifications & Academic Credentials */}
+      <section className="space-y-6">
+        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <Award className="w-4 h-4" />
+          <span>Industry Certifications & Education</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+              <Award className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-zinc-100 font-sans">
+                Microsoft 365 Certified: Endpoint Administrator Associate
+              </div>
+              <div className="text-xs font-mono text-emerald-400 mt-0.5">
+                Credential: MD-102
+              </div>
+              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+                Enterprise endpoint deployment, policy compliance, Intune management, and identity protection.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+              <Award className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-zinc-100 font-sans">
+                Microsoft Certified: Modern Desktop Administrator Associate
+              </div>
+              <div className="text-xs font-mono text-cyan-400 mt-0.5">
+                Credential: MD-100
+              </div>
+              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+                Windows client architecture, network configuration, local storage, and security maintenance.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+              <GraduationCap className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-zinc-100 font-sans">
+                Python Programming Specialization
+              </div>
+              <div className="text-xs font-mono text-purple-400 mt-0.5">
+                University of Michigan (Coursera)
+              </div>
+              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+                Data structures, API integrations, networked application development, and automated scripting.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+              <GraduationCap className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-zinc-100 font-sans">
+                Bachelor of Business Administration (BBA)
+              </div>
+              <div className="text-xs font-mono text-emerald-400 mt-0.5">
+                Bangladesh University of Professionals (BUP) • Graduated 2022
+              </div>
+              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+                Rigorous operational management, analytical modeling, and technical project delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. Direct Contact & Communication Footer */}
+      <section className="rounded-3xl bg-gradient-to-b from-zinc-950 to-zinc-900 border border-zinc-800 p-8 md:p-12 text-center space-y-6 shadow-2xl">
+        <div className="max-w-xl mx-auto space-y-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">
+            <Mail className="w-3.5 h-3.5" />
+            <span>Direct Inquiries & Collaboration</span>
+          </div>
+          <h3 className="text-2xl md:text-3xl font-extrabold text-zinc-100 font-sans tracking-tight">
+            Get in Touch with Robiul Hasan
+          </h3>
+          <p className="text-xs md:text-sm text-zinc-400 font-sans leading-relaxed">
+            Open to discussions regarding systems administration, cloud infrastructure engineering, autonomous agent architectures, and technical editorial inquiries.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <a
+            href="https://rhasan.online"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold text-xs transition-all shadow-lg active:scale-95 flex items-center gap-2"
+          >
+            <span>Visit rhasan.online</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+
+          <a
+            href="mailto:rhasan229@gmail.com"
+            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs transition-colors flex items-center gap-2"
+          >
+            <Mail className="w-4 h-4 text-emerald-400" />
+            <span>Send Email</span>
+          </a>
+
+          <a
+            href="https://github.com/Daddy-Ousen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs transition-colors flex items-center gap-2"
+          >
+            <GithubIcon className="w-4 h-4" />
+            <span>GitHub Profile</span>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/robiul-hasan-401296137"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs transition-colors flex items-center gap-2"
+          >
+            <span>LinkedIn Profile</span>
+            <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
+          </a>
+        </div>
+      </section>
     </div>
   );
 };

@@ -66,28 +66,60 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Newsletter Box */}
           <div className="lg:col-span-5 bg-zinc-900/60 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-2">
-                <Mail className="w-4 h-4" />
-                <span>The Morning Vector</span>
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold">
+                  <Mail className="w-4 h-4" />
+                  <span>The Morning Vector</span>
+                </div>
+                <a
+                  href="https://nextvectorr.substack.com/?r=92ang8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[10px] font-mono text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold"
+                >
+                  <span>Substack Edition</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </a>
               </div>
               <h4 className="text-base font-bold text-zinc-100">
                 The 3-Minute Executive Signal Briefing
               </h4>
               <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday at 06:00 UTC. No marketing fluff.
+                Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday at 06:00 UTC via Substack.
               </p>
             </div>
 
             <div className="mt-5">
               {subscribed ? (
-                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Subscribed to The Morning Vector. Welcome to high-signal news.</span>
+                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Subscribed to The Morning Vector. Welcome to high-signal news.</span>
+                  </div>
+                  <a
+                    href="https://nextvectorr.substack.com/?r=92ang8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 hover:text-emerald-300 underline shrink-0 text-[11px]"
+                  >
+                    Archive ↗
+                  </a>
                 </div>
               ) : (
-                <form onSubmit={handleSubscribe} className="flex gap-2">
+                <form
+                  action="https://nextvectorr.substack.com/api/v1/free?nojs=true"
+                  method="post"
+                  target="_blank"
+                  onSubmit={handleSubscribe}
+                  className="flex gap-2"
+                >
+                  <input type="hidden" name="first_url" value="https://nextvector.rhasan.online" />
+                  <input type="hidden" name="first_referrer" value="https://nextvector.rhasan.online" />
+                  <input type="hidden" name="current_url" value="https://nextvector.rhasan.online" />
+                  <input type="hidden" name="current_referrer" value="https://nextvector.rhasan.online" />
                   <input
                     type="email"
+                    name="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -204,6 +236,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 >
                   <span>rhasan.online</span>
                   <ExternalLink className="w-3 h-3" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://nextvectorr.substack.com/?r=92ang8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#FF6719] transition-colors inline-flex items-center gap-1 text-zinc-300 font-medium"
+                >
+                  <span>Substack Publication</span>
+                  <ExternalLink className="w-3 h-3 text-[#FF6719]" />
                 </a>
               </li>
               <li>The Three-Question Framework</li>

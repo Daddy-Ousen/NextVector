@@ -391,13 +391,25 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           </div>
         </div>
 
-        <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex items-center gap-2.5 shrink-0 flex-wrap">
           <button
             onClick={onSelectAuthor}
             className="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-200 transition-colors"
           >
             Author Profile
           </button>
+          {article.author.substack && (
+            <a
+              href={article.author.substack}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-mono font-bold transition-colors flex items-center gap-1"
+              title="NextVector on Substack"
+            >
+              <span>Substack</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          )}
           <a
             href="https://rhasan.online"
             target="_blank"

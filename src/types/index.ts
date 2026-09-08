@@ -31,6 +31,7 @@ export interface Article {
     verified: boolean;
     website?: string;
     github?: string;
+    substack?: string;
     bio?: string;
   };
   publishedAt: string;

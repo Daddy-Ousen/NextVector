@@ -150,14 +150,35 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
         </p>
 
         {subscribed ? (
-          <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-xs font-mono text-emerald-300 flex items-center gap-3">
-            <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
-            <span>You are subscribed to The Morning Vector. You will receive tomorrow's 06:00 UTC scan.</span>
+          <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-xs font-mono text-emerald-300 flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+              <span>You are subscribed to The Morning Vector. You will receive tomorrow's 06:00 UTC scan via Substack.</span>
+            </div>
+            <a
+              href="https://nextvectorr.substack.com/?r=92ang8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:text-emerald-300 underline shrink-0 text-xs"
+            >
+              Substack Archive ↗
+            </a>
           </div>
         ) : (
-          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2.5">
+          <form
+            action="https://nextvectorr.substack.com/api/v1/free?nojs=true"
+            method="post"
+            target="_blank"
+            onSubmit={handleSubscribe}
+            className="flex flex-col sm:flex-row gap-2.5"
+          >
+            <input type="hidden" name="first_url" value="https://nextvector.rhasan.online" />
+            <input type="hidden" name="first_referrer" value="https://nextvector.rhasan.online" />
+            <input type="hidden" name="current_url" value="https://nextvector.rhasan.online" />
+            <input type="hidden" name="current_referrer" value="https://nextvector.rhasan.online" />
             <input
               type="email"
+              name="email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}

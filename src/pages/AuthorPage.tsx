@@ -141,6 +141,17 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               </a>
 
               <a
+                href="https://nextvectorr.substack.com/?r=92ang8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3.5 py-2.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-mono font-bold transition-colors flex items-center gap-1.5"
+                title="NextVector on Substack"
+              >
+                <span>Substack</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+
+              <a
                 href="https://github.com/Daddy-Ousen"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -780,6 +791,16 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             className="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold text-xs transition-all shadow-lg active:scale-95 flex items-center gap-2"
           >
             <span>Visit rhasan.online</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+
+          <a
+            href="https://nextvectorr.substack.com/?r=92ang8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] font-mono font-bold text-xs transition-colors flex items-center gap-2"
+          >
+            <span>Read on Substack</span>
             <ExternalLink className="w-4 h-4" />
           </a>
 

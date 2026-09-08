@@ -7,6 +7,7 @@ export const AUTHOR_ROBIUL_HASAN = {
   verified: true,
   website: 'https://rhasan.online',
   github: 'https://github.com/Daddy-Ousen',
+  substack: 'https://nextvectorr.substack.com',
   bio: 'Systems engineer, cybersecurity analyst, and technology researcher specializing in enterprise infrastructure, zero-trust endpoint architectures, and autonomous AI systems.'
 };
 

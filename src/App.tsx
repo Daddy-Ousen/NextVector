@@ -235,8 +235,8 @@ export function App() {
       );
     }
 
-    // 9. Author Profile / Editorial Manifesto: /about, /author
-    if (currentPath === '/about' || currentPath === '/author') {
+    // 9. Author Profile / Editorial Manifesto: /about, /author, /author/:slug
+    if (currentPath === '/about' || currentPath.startsWith('/author')) {
       return (
         <AuthorPage
           articles={MOCK_ARTICLES}

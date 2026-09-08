@@ -1,5 +1,11 @@
 import { Article, AIModel, Benchmark, ResearchPaper, TimelineEvent, DailyBriefingItem } from '../types';
 import { ALL_135_MODELS, ARENA_LEADERBOARD_ENTRIES } from './modelsData';
+import {
+  OSWORLD_LEADERBOARD_ENTRIES,
+  WEBARENA_LEADERBOARD_ENTRIES,
+  SWE_BENCH_LEADERBOARD_ENTRIES,
+  CYBER_EVAL_LEADERBOARD_ENTRIES,
+} from './benchmarksData';
 
 export const AUTHOR_ROBIUL_HASAN = {
   name: 'Robiul Hasan',
@@ -1607,13 +1613,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     whatItMeasures: 'Measures an agent’s ability to interpret high-resolution GUI screenshots, translate natural language instructions into sequential mouse clicks, typing, and hotkeys, and achieve verifiable end-state system changes.',
     whyItMatters: 'As the AI industry shifts from chat to autonomous computer operation, OSWorld is the definitive test of whether an agent can perform useful desktop office work without specialized custom APIs.',
     potentialLimitations: 'Caveats include execution latency sensitivity, synthetic VM environment differences from real production operating systems, and non-deterministic UI rendering timing.',
-    leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 68.4, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.85' },
-      { rank: 2, modelName: 'Claude 3.7 Sonnet (Computer Use)', developer: 'Anthropic', score: 48.2, date: 'Aug 2026', verifiedByNextVector: true, costPerRun: '$1.40' },
-      { rank: 3, modelName: 'Meta Muse Spark + OS Agent', developer: 'Meta AI', score: 44.1, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$0.85' },
-      { rank: 4, modelName: 'Claude 3.5 Sonnet (Computer Use)', developer: 'Anthropic', score: 42.1, date: 'Oct 2024', verifiedByNextVector: true, costPerRun: '$1.20' },
-      { rank: 5, modelName: 'Open-Source OS-Copilot (Llama-3.3)', developer: 'Open Community', score: 28.6, date: 'Jul 2026', verifiedByNextVector: true, costPerRun: '$0.15' }
-    ]
+    leaderboard: OSWORLD_LEADERBOARD_ENTRIES
   },
   {
     id: 'bench-webarena',
@@ -1623,12 +1623,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     whatItMeasures: 'Tests an agent’s capability to autonomously search, filter, checkout items, manage Git repositories via GitLab UI, and edit CMS pages through standard web browser interaction.',
     whyItMatters: 'WebArena measures whether an AI agent can execute commercial web workflows end-to-end without failing when confronted with popups, dynamic JavaScript, or multi-page state transitions.',
     potentialLimitations: 'Simulated web applications do not incorporate adversarial CAPTCHA systems or bot protection networks common on the commercial web.',
-    leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 74.2, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.10' },
-      { rank: 2, modelName: 'Claude 3.7 Sonnet (Browser Agent)', developer: 'Anthropic', score: 58.6, date: 'Mar 2025', verifiedByNextVector: true, costPerRun: '$0.95' },
-      { rank: 3, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 54.3, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$0.40' },
-      { rank: 4, modelName: 'DeepSeek-R1 (Agent Scaffolding)', developer: 'Community Scaffold', score: 43.8, date: 'Feb 2025', verifiedByNextVector: true, costPerRun: '$0.20' }
-    ]
+    leaderboard: WEBARENA_LEADERBOARD_ENTRIES
   },
   {
     id: 'bench-swe-bench',
@@ -1638,14 +1633,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     whatItMeasures: 'Measures end-to-end software engineering capability: reading issue descriptions, searching through complex multi-thousand-file codebases, editing source code, and passing hidden unit tests.',
     whyItMatters: 'SWE-bench Verified is the definitive barometer for whether AI models can function as genuine autonomous junior and mid-level software engineers.',
     potentialLimitations: 'Benchmark saturation is occurring as models employ test-time search scaffolding; test-set memorization risks must be audited against newer GitHub pull requests.',
-    leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 73.5, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$2.20' },
-      { rank: 2, modelName: 'OpenAI o3-mini (High Effort)', developer: 'OpenAI', score: 72.8, date: 'Jan 2025', verifiedByNextVector: true, costPerRun: '$0.65' },
-      { rank: 3, modelName: 'Claude 3.7 Sonnet (Thinking Scaffold)', developer: 'Anthropic', score: 70.3, date: 'Feb 2025', verifiedByNextVector: true, costPerRun: '$1.80' },
-      { rank: 4, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 67.8, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$0.75' },
-      { rank: 5, modelName: 'Claude 3.7 Sonnet (Raw Thinking)', developer: 'Anthropic', score: 64.9, date: 'Feb 2025', verifiedByNextVector: true, costPerRun: '$1.20' },
-      { rank: 6, modelName: 'Claude 3.5 Sonnet (Original)', developer: 'Anthropic', score: 49.0, date: 'Oct 2024', verifiedByNextVector: true, costPerRun: '$0.90' }
-    ]
+    leaderboard: SWE_BENCH_LEADERBOARD_ENTRIES
   },
   {
     id: 'bench-cyber-eval',
@@ -1655,12 +1643,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     whatItMeasures: 'Quantifies an AI model’s capacity to locate zero-day vulnerabilities in C/C++/Rust code, generate reliable exploit proofs-of-concept, and author secure remediations.',
     whyItMatters: 'Directly informs frontier safety policies (such as OpenAI’s Preparedness Framework and the EU AI Act) regarding when an AI model crosses the threshold into an autonomous cyber weapon.',
     potentialLimitations: 'Dual-use dilemma: any model capable of generating robust security patches inherently possesses the capability to generate targeted exploit payloads.',
-    leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 79.4, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$3.10' },
-      { rank: 2, modelName: 'Claude 3.7 Sonnet', developer: 'Anthropic', score: 68.2, date: 'Mar 2025', verifiedByNextVector: true, costPerRun: '$2.00' },
-      { rank: 3, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 65.5, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.10' },
-      { rank: 4, modelName: 'DeepSeek-R1', developer: 'DeepSeek', score: 58.1, date: 'Jan 2025', verifiedByNextVector: true, costPerRun: '$0.40' }
-    ]
+    leaderboard: CYBER_EVAL_LEADERBOARD_ENTRIES
   }
 ];
 

@@ -76,12 +76,14 @@ export interface AIModel {
   realWorldApplications: string[];
   architectureNotes: string;
   link?: string;
+  arenaRank?: number;
+  arenaElo?: number;
 }
 
 export interface Benchmark {
   id: string;
   name: string;
-  category: 'Coding & Agents' | 'Reasoning & Logic' | 'General Knowledge' | 'Mathematics' | 'Safety & Alignment';
+  category: 'Coding & Agents' | 'Reasoning & Logic' | 'General Knowledge' | 'Mathematics' | 'Safety & Alignment' | 'Overall Arena Elo';
   description: string;
   whatItMeasures: string;
   whyItMatters: string;

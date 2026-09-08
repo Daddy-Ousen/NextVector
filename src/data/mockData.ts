@@ -1,4 +1,5 @@
 import { Article, AIModel, Benchmark, ResearchPaper, TimelineEvent, DailyBriefingItem } from '../types';
+import { ALL_135_MODELS, ARENA_LEADERBOARD_ENTRIES } from './modelsData';
 
 export const MOCK_ARTICLES: Article[] = [
   {
@@ -433,236 +434,19 @@ export const MOCK_ARTICLES: Article[] = [
   }
 ];
 
-
-
-export const MOCK_MODELS: AIModel[] = [
-  {
-    id: 'model-gpt-6-astra',
-    name: 'GPT-6 Astra',
-    developer: 'OpenAI',
-    releaseDate: 'September 3, 2026',
-    modelType: 'Code & Agent',
-    modalities: ['Text', 'Code', 'Image', 'High-Res Screen Pixels', 'GUI Actions'],
-    contextWindow: '500k tokens',
-    parameters: 'Confidential (Massive Multimodal Mixture-of-Experts)',
-    pricing: {
-      inputPer1M: 7.95,
-      outputPer1M: 31.80,
-      cachedInputPer1M: 1.59
-    },
-    openSourceStatus: 'Proprietary API',
-    license: 'Proprietary Commercial API',
-    hardwareRequirements: 'Managed Cloud API (Headless Browser & Docker Container Infrastructure)',
-    benchmarks: [
-      { benchmarkName: 'OSWorld (Operating System Tasks)', score: '68.4%', vsPreviousGen: '+26.3% vs Claude 3.5 Sonnet' },
-      { benchmarkName: 'WebArena (Web Workflows)', score: '74.2%', vsPreviousGen: '+18.1% vs GPT-4o' },
-      { benchmarkName: 'SWE-bench Verified', score: '71.5%', vsPreviousGen: '+5.7% vs o1-preview' }
-    ],
-    keyImprovements: [
-      'Direct GUI manipulation: perceives raw desktop pixel buffers and computes optimal mouse clicks and keyboard hotkeys.',
-      'Operates desktop applications without requiring pre-configured REST APIs or tool wrappers.',
-      'Achieves state-of-the-art 68.4% on OSWorld benchmark.'
-    ],
-    knownLimitations: [
-      'Triggered Critical capability tier under OpenAI Preparedness Framework for autonomous software manipulation.',
-      'High inference latency on visual coordinate tokens compared to pure text reasoning.'
-    ],
-    realWorldApplications: [
-      'Headless browser automation',
-      'Legacy software RPA integration',
-      'Autonomous dev environment debugging'
-    ],
-    architectureNotes: 'Multimodal Screen Coordinate Vision-Action Transformer with persistent visual memory.',
-    link: 'https://openai.com/index/introducing-gpt-6-astra/'
-  },
-  {
-    id: 'model-claude-3-7-sonnet',
-    name: 'Claude 3.7 Sonnet (Computer Use)',
-    developer: 'Anthropic',
-    releaseDate: 'August 2026',
-    modelType: 'Code & Agent',
-    modalities: ['Text', 'Code', 'Vision', 'Computer Use API'],
-    contextWindow: '200k tokens',
-    parameters: 'Confidential Frontier Model',
-    pricing: {
-      inputPer1M: 3.00,
-      outputPer1M: 15.00,
-      cachedInputPer1M: 0.30
-    },
-    openSourceStatus: 'Proprietary API',
-    license: 'Proprietary Commercial API',
-    hardwareRequirements: 'Anthropic API / AWS Bedrock / Google Cloud Vertex AI',
-    benchmarks: [
-      { benchmarkName: 'OSWorld', score: '48.2%', vsPreviousGen: '+6.1% vs Claude 3.5 Sonnet' },
-      { benchmarkName: 'SWE-bench Verified', score: '70.4%', vsPreviousGen: '+5.4% vs Claude 3.5' }
-    ],
-    keyImprovements: [
-      'Anthropic computer-use API integration with specialized screen navigation primitives.',
-      'Enhanced system prompt steering for secure sandbox operation.'
-    ],
-    knownLimitations: [
-      'Vulnerable to prompt injection if untrusted websites render malicious instructions.',
-      'Occasional mouse click coordinate drift on non-standard DPI displays.'
-    ],
-    realWorldApplications: [
-      'Software QA testing',
-      'Data entry and form processing',
-      'Autonomous coding'
-    ],
-    architectureNotes: 'Anthropic Constitutional AI hybrid reasoning model with vision encoder.',
-    link: 'https://anthropic.com/claude'
-  },
-  {
-    id: 'model-meta-muse-spark',
-    name: 'Meta Muse Spark',
-    developer: 'Meta AI',
-    releaseDate: 'September 3, 2026',
-    modelType: 'Code & Agent',
-    modalities: ['Text', 'Code', 'Vision', 'Telemetry Tokens'],
-    contextWindow: '512k tokens',
-    parameters: '120B Active MoE',
-    pricing: {
-      inputPer1M: 0.85,
-      outputPer1M: 2.40,
-      cachedInputPer1M: 0.15
-    },
-    openSourceStatus: 'Open Weights',
-    license: 'Meta Community License (Commercial Permitted)',
-    hardwareRequirements: '4x NVIDIA H100 80GB for full FP16, 2x H100 for INT8 Quantized',
-    benchmarks: [
-      { benchmarkName: 'OSWorld', score: '44.1%', vsPreviousGen: 'First Gen Baseline' },
-      { benchmarkName: 'HumanEval-Agentic', score: '71.0%', vsPreviousGen: '+12.4% vs Llama 3.3 70B' }
-    ],
-    keyImprovements: [
-      'First open-weight model with native operating system computer-use capabilities.',
-      'Companion Glimmer model enables 95% telemetry compute discount for background verification.'
-    ],
-    knownLimitations: [
-      'Requires substantial local GPU compute for self-hosting.',
-      'Higher error rate on multi-application copy-paste workflows.'
-    ],
-    realWorldApplications: [
-      'On-premise enterprise automation',
-      'Private code repository refactoring',
-      'Local workstation assistance'
-    ],
-    architectureNotes: 'Mixture-of-Experts with 16 routed experts and dual-stream action token prediction.',
-    link: 'https://ai.meta.com/research'
-  },
-  {
-    id: 'model-deepseek-r1-distill',
-    name: 'DeepSeek-R1-Distill-Qwen-32B',
-    developer: 'DeepSeek',
-    releaseDate: 'January 2025',
-    modelType: 'Reasoning',
-    modalities: ['Text', 'Code', 'Math'],
-    contextWindow: '128k tokens',
-    parameters: '32.5B Dense',
-    pricing: {
-      inputPer1M: 0.28,
-      outputPer1M: 0.55,
-      cachedInputPer1M: 0.05
-    },
-    openSourceStatus: 'Open Weights',
-    license: 'MIT License',
-    hardwareRequirements: '1x NVIDIA A100/H100 80GB (FP16) or 2x RTX 4090 24GB (4-bit quantization)',
-    benchmarks: [
-      { benchmarkName: 'AIME 2024', score: '72.6%', vsPreviousGen: 'Distilled from 671B R1' },
-      { benchmarkName: 'MATH-500', score: '94.3%', vsPreviousGen: 'Distilled from 671B R1' }
-    ],
-    keyImprovements: [
-      'Unprecedented open-source mathematical reasoning via reinforcement learning distillation.',
-      'Full permissive MIT license for commercial self-hosting.'
-    ],
-    knownLimitations: [
-      'Context window limited to 128k tokens.',
-      'Lacks native computer-use action tokens.'
-    ],
-    realWorldApplications: [
-      'Complex mathematical problem solving',
-      'Code audit and algorithmic reasoning',
-      'Educational tutoring systems'
-    ],
-    architectureNotes: 'Dense transformer distilled from DeepSeek-R1 with chain-of-thought fine-tuning.',
-    link: 'https://github.com/deepseek-ai/DeepSeek-R1'
-  },
-  {
-    id: 'model-mistral-large-3',
-    name: 'Mistral Large 3',
-    developer: 'Mistral AI',
-    releaseDate: 'September 2026',
-    modelType: 'Multimodal Foundation',
-    modalities: ['Text', 'Code', 'Vision', 'Multilingual (32 languages)'],
-    contextWindow: '256k tokens',
-    parameters: '128B Dense',
-    pricing: {
-      inputPer1M: 2.00,
-      outputPer1M: 6.00,
-      cachedInputPer1M: 0.50
-    },
-    openSourceStatus: 'Proprietary API',
-    license: 'Mistral Research & Commercial License',
-    hardwareRequirements: 'Managed API or 4x H100 80GB',
-    benchmarks: [
-      { benchmarkName: 'MMLU-Pro', score: '78.5%', vsPreviousGen: '+6.2% vs Mistral Large 2' },
-      { benchmarkName: 'HumanEval', score: '91.2%', vsPreviousGen: '+4.5% vs Mistral Large 2' }
-    ],
-    keyImprovements: [
-      'Native European sovereign frontier model with European multilingual excellence.',
-      'Low latency inference on sovereign 100k-chip European supercluster.'
-    ],
-    knownLimitations: [
-      'Higher pricing than distilled open models.',
-      'Less specialized for GUI desktop automation.'
-    ],
-    realWorldApplications: [
-      'Multilingual European enterprise documentation',
-      'Legal and financial text analysis',
-      'Cross-border contract processing'
-    ],
-    architectureNotes: 'High-throughput dense transformer with sliding window and RoPE embeddings.',
-    link: 'https://mistral.ai'
-  },
-  {
-    id: 'model-openai-o3-mini',
-    name: 'OpenAI o3-mini',
-    developer: 'OpenAI',
-    releaseDate: 'January 2025',
-    modelType: 'Reasoning',
-    modalities: ['Text', 'Code', 'Math'],
-    contextWindow: '200k tokens',
-    parameters: 'Confidential Compact Reasoning Model',
-    pricing: {
-      inputPer1M: 1.10,
-      outputPer1M: 4.40,
-      cachedInputPer1M: 0.55
-    },
-    openSourceStatus: 'Proprietary API',
-    license: 'Proprietary Commercial API',
-    hardwareRequirements: 'Managed Cloud API',
-    benchmarks: [
-      { benchmarkName: 'AIME 2024', score: '79.2%', vsPreviousGen: '+14.2% vs o1-mini' },
-      { benchmarkName: 'SWE-bench Verified', score: '49.3%', vsPreviousGen: '+7.8% vs o1-mini' }
-    ],
-    keyImprovements: [
-      'Configurable reasoning effort (low, medium, high).',
-      'Major leap in mathematical reasoning and coding speed.'
-    ],
-    knownLimitations: [
-      'Text and code only (no vision or desktop GUI input).',
-      'Reasoning tokens billed at output rates.'
-    ],
-    realWorldApplications: [
-      'Competitive programming',
-      'STEM homework generation and verification',
-      'Code refactoring'
-    ],
-    architectureNotes: 'Compact specialized reasoning model trained with large-scale reinforcement learning on verifiable coding and mathematics tasks.',
-    link: 'https://openai.com/index/openai-o3-mini/'
-  }
-];
+export const MOCK_MODELS: AIModel[] = ALL_135_MODELS;
 
 export const MOCK_BENCHMARKS: Benchmark[] = [
+  {
+    id: 'bench-chatbot-arena',
+    name: 'LMSYS Chatbot Arena Global Leaderboard (September 2026)',
+    category: 'Overall Arena Elo',
+    description: 'The definitive crowdsourced, blind evaluation benchmark measuring human preference across 135 frontier, open-weights, and specialized AI models based on Bradley-Terry statistical Elo modeling.',
+    whatItMeasures: 'Measures comprehensive human-preference win rates, conversational alignment, technical correctness, multi-turn reasoning, and task completion in real-world side-by-side blind evaluations.',
+    whyItMatters: 'As synthetic benchmarks suffer from dataset contamination and test-time scaffolding saturation, LMSYS Chatbot Arena remains the primary gold standard for true general intelligence and real-world model capability.',
+    potentialLimitations: 'Crowdsourced evaluations can tilt toward stylistic preferences (formatting, verbosity) unless controlled by length-controlled Bradley-Terry win-rate estimators.',
+    leaderboard: ARENA_LEADERBOARD_ENTRIES
+  },
   {
     id: 'bench-osworld',
     name: 'OSWorld (Operating System Tasks)',
@@ -684,43 +468,46 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     name: 'WebArena (Autonomous Browser Tasks)',
     category: 'Coding & Agents',
     description: 'A comprehensive benchmark of web-based agent tasks across realistic e-commerce, social forums, collaborative software development, and content management web apps.',
-    whatItMeasures: 'Evaluates dynamic DOM inspection, URL routing, form filling, cross-site verification, and complex multi-page workflow completion.',
-    whyItMatters: 'Validates real-world enterprise digital labor automation on untyped, noisy web interfaces.',
-    potentialLimitations: 'Dynamic web timeouts, non-deterministic JavaScript hydration, and anti-bot mitigation discrepancies.',
+    whatItMeasures: 'Tests an agent’s capability to autonomously search, filter, checkout items, manage Git repositories via GitLab UI, and edit CMS pages through standard web browser interaction.',
+    whyItMatters: 'WebArena measures whether an AI agent can execute commercial web workflows end-to-end without failing when confronted with popups, dynamic JavaScript, or multi-page state transitions.',
+    potentialLimitations: 'Simulated web applications do not incorporate adversarial CAPTCHA systems or bot protection networks common on the commercial web.',
     leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 74.2, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$2.10' },
-      { rank: 2, modelName: 'Claude 3.7 Sonnet', developer: 'Anthropic', score: 58.4, date: 'Aug 2026', verifiedByNextVector: true, costPerRun: '$1.80' },
-      { rank: 3, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 52.0, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$0.90' },
-      { rank: 4, modelName: 'GPT-4o (Agent Framework)', developer: 'OpenAI', score: 39.8, date: 'May 2024', verifiedByNextVector: true, costPerRun: '$1.50' }
+      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 74.2, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.10' },
+      { rank: 2, modelName: 'Claude 3.7 Sonnet (Browser Agent)', developer: 'Anthropic', score: 58.6, date: 'Mar 2025', verifiedByNextVector: true, costPerRun: '$0.95' },
+      { rank: 3, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 54.3, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$0.40' },
+      { rank: 4, modelName: 'DeepSeek-R1 (Agent Scaffolding)', developer: 'Community Scaffold', score: 43.8, date: 'Feb 2025', verifiedByNextVector: true, costPerRun: '$0.20' }
     ]
   },
   {
-    id: 'bench-swebench',
+    id: 'bench-swe-bench',
     name: 'SWE-bench Verified',
     category: 'Coding & Agents',
-    description: 'Resolving real GitHub pull requests and issues on prominent production Python open-source repositories with human-verified unit tests.',
-    whatItMeasures: 'Code understanding, repository exploration, patch generation, and regression prevention without leaking test assertions.',
-    whyItMatters: 'The universally recognized standard for agentic software engineering capabilities.',
-    potentialLimitations: 'Repo test suites can be brittle; some tasks are over-fitted by automated search loops.',
+    description: 'The gold standard benchmark curated by Princeton University, evaluating an AI’s capacity to resolve real-world GitHub issues from prominent open-source Python repositories.',
+    whatItMeasures: 'Measures end-to-end software engineering capability: reading issue descriptions, searching through complex multi-thousand-file codebases, editing source code, and passing hidden unit tests.',
+    whyItMatters: 'SWE-bench Verified is the definitive barometer for whether AI models can function as genuine autonomous junior and mid-level software engineers.',
+    potentialLimitations: 'Benchmark saturation is occurring as models employ test-time search scaffolding; test-set memorization risks must be audited against newer GitHub pull requests.',
     leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra (Agentic)', developer: 'OpenAI', score: 71.5, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$3.50' },
-      { rank: 2, modelName: 'Claude 3.7 Sonnet', developer: 'Anthropic', score: 70.4, date: 'Aug 2026', verifiedByNextVector: true, costPerRun: '$2.80' },
-      { rank: 3, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 67.8, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.20' },
-      { rank: 4, modelName: 'DeepSeek-R1 + SWE Loop', developer: 'DeepSeek', score: 49.2, date: 'Jan 2025', verifiedByNextVector: true, costPerRun: '$0.40' }
+      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 73.5, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$2.20' },
+      { rank: 2, modelName: 'OpenAI o3-mini (High Effort)', developer: 'OpenAI', score: 72.8, date: 'Jan 2025', verifiedByNextVector: true, costPerRun: '$0.65' },
+      { rank: 3, modelName: 'Claude 3.7 Sonnet (Thinking Scaffold)', developer: 'Anthropic', score: 70.3, date: 'Feb 2025', verifiedByNextVector: true, costPerRun: '$1.80' },
+      { rank: 4, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 67.8, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$0.75' },
+      { rank: 5, modelName: 'Claude 3.7 Sonnet (Raw Thinking)', developer: 'Anthropic', score: 64.9, date: 'Feb 2025', verifiedByNextVector: true, costPerRun: '$1.20' },
+      { rank: 6, modelName: 'Claude 3.5 Sonnet (Original)', developer: 'Anthropic', score: 49.0, date: 'Oct 2024', verifiedByNextVector: true, costPerRun: '$0.90' }
     ]
   },
   {
-    id: 'bench-cybereval',
+    id: 'bench-cyber-eval',
     name: 'Cyber-Eval (Autonomous Vulnerability & Patching)',
     category: 'Safety & Alignment',
-    description: 'Empirical testing of frontier AI models on finding zero-day memory corruption bugs, logic flaws, and crafting secure automated compiler patches.',
-    whatItMeasures: 'Dual-use cyber proficiency: offensive exploit generation versus defensive vulnerability remediation in isolated sandboxes.',
-    whyItMatters: 'Critical benchmark governed by the US AISI and frontier lab Preparedness Framework safety commitments.',
-    potentialLimitations: 'High contamination risk for CVEs published before model training cutoff dates.',
+    description: 'Evaluates frontier models on defensive patch generation, memory-corruption triage, and controlled capture-the-flag (CTF) security challenges.',
+    whatItMeasures: 'Quantifies an AI model’s capacity to locate zero-day vulnerabilities in C/C++/Rust code, generate reliable exploit proofs-of-concept, and author secure remediations.',
+    whyItMatters: 'Directly informs frontier safety policies (such as OpenAI’s Preparedness Framework and the EU AI Act) regarding when an AI model crosses the threshold into an autonomous cyber weapon.',
+    potentialLimitations: 'Dual-use dilemma: any model capable of generating robust security patches inherently possesses the capability to generate targeted exploit payloads.',
     leaderboard: [
-      { rank: 1, modelName: 'GPT-6 Astra (Cyber Sandboxed)', developer: 'OpenAI', score: 82.4, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$4.20' },
-      { rank: 2, modelName: 'Claude 3.7 Sonnet (Red Team)', developer: 'Anthropic', score: 76.1, date: 'Aug 2026', verifiedByNextVector: true, costPerRun: '$3.10' },
-      { rank: 3, modelName: 'Mistral Large 3 (Defensive)', developer: 'Mistral AI', score: 64.5, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.50' }
+      { rank: 1, modelName: 'GPT-6 Astra', developer: 'OpenAI', score: 79.4, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$3.10' },
+      { rank: 2, modelName: 'Claude 3.7 Sonnet', developer: 'Anthropic', score: 68.2, date: 'Mar 2025', verifiedByNextVector: true, costPerRun: '$2.00' },
+      { rank: 3, modelName: 'Meta Muse Spark', developer: 'Meta AI', score: 65.5, date: 'Sep 2026', verifiedByNextVector: true, costPerRun: '$1.10' },
+      { rank: 4, modelName: 'DeepSeek-R1', developer: 'DeepSeek', score: 58.1, date: 'Jan 2025', verifiedByNextVector: true, costPerRun: '$0.40' }
     ]
   }
 ];
@@ -922,4 +709,3 @@ export const MOCK_DAILY_BRIEFING = {
     }
   ]
 };
-

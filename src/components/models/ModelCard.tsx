@@ -21,6 +21,11 @@ export const ModelCard: React.FC<ModelCardProps> = ({
         {/* Top bar: Classification & Compare toggle */}
         <div className="flex items-center justify-between gap-2 mb-3">
           <div className="flex items-center gap-1.5 flex-wrap">
+            {model.arenaRank && (
+              <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                #{model.arenaRank} • {model.arenaElo} Elo
+              </span>
+            )}
             <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700/60">
               {model.modelType}
             </span>

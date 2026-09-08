@@ -207,7 +207,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               onClick={() => onNavigate('/models')}
               className="text-xs font-mono text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800"
             >
-              <span>Explore All Models</span>
+              <span>Explore All {models.length} Models</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -228,7 +228,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Signature Section 2: Benchmark Radar Watchdog */}
       <section>
-        <BenchmarkChart benchmarks={benchmarks} />
+        <BenchmarkChart benchmarks={benchmarks} onSelectModel={onSelectModel} />
       </section>
 
       {/* Deep Dives & Analysis Section */}

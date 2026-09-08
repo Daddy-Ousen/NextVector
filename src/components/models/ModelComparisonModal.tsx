@@ -108,6 +108,26 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                   ))}
                 </tr>
 
+                {/* Arena Standing */}
+                <tr>
+                  <td className="p-3 bg-zinc-900/40 border border-zinc-800 font-mono text-xs text-zinc-400 font-medium sticky left-0 z-10">
+                    LMSYS Arena Standing
+                  </td>
+                  {models.map((model) => (
+                    <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 font-mono text-xs">
+                      {model.arenaRank ? (
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-bold text-amber-400">Rank #{model.arenaRank}</span>
+                          {model.arenaElo && (
+                            <span className="text-emerald-400 font-semibold">• {model.arenaElo} Elo</span>
+                          )}
+                        </div>
+                      ) : (
+                        <span className="text-zinc-500">Unranked</span>
+                      )}
+                    </td>
+                  ))}
+                </tr>
 
                 {/* Parameters & Architecture */}
                 <tr>

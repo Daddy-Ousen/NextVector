@@ -1,15 +1,17 @@
 import React from 'react';
 import { Benchmark } from '../types';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
-import { Scale, ShieldCheck } from 'lucide-react';
+import { Scale, AlertTriangle, ShieldCheck, HelpCircle } from 'lucide-react';
 
 interface BenchmarksPageProps {
   benchmarks: Benchmark[];
+  onSelectModel?: (id: string) => void;
 }
 
-export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks }) => {
+export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSelectModel }) => {
   return (
     <div className="space-y-12 pb-20">
+      {/* Header */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-purple-400 font-bold mb-3">
@@ -25,8 +27,10 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks }) =>
         </div>
       </div>
 
-      <BenchmarkChart benchmarks={benchmarks} />
+      {/* Main Interactive Benchmark Visualizer */}
+      <BenchmarkChart benchmarks={benchmarks} onSelectModel={onSelectModel} />
 
+      {/* Editorial Evaluation Manifesto / Truth in Benchmarking */}
       <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-8 space-y-6">
         <div className="border-b border-zinc-800 pb-4">
           <h2 className="text-xl font-bold text-zinc-100 font-sans flex items-center gap-2">

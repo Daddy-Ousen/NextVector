@@ -54,6 +54,12 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
           <span className="px-3 py-1 rounded-full text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-400">
             {model.releaseDate}
           </span>
+          {model.arenaRank && (
+            <span className="px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
+              <span>LMSYS Arena #{model.arenaRank}</span>
+              {model.arenaElo && <span>• {model.arenaElo} Elo</span>}
+            </span>
+          )}
         </div>
 
         <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight">

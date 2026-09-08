@@ -184,7 +184,12 @@ export function App() {
 
     // 4. Benchmarks Hub: /benchmarks
     if (currentPath === '/benchmarks') {
-      return <BenchmarksPage benchmarks={MOCK_BENCHMARKS} />;
+      return (
+        <BenchmarksPage
+          benchmarks={MOCK_BENCHMARKS}
+          onSelectModel={(id) => navigateTo(`/models/${id}`)}
+        />
+      );
     }
 
     // 5. Research Explained: /research

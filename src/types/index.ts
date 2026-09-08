@@ -86,11 +86,14 @@ export interface AIModel {
 export interface Benchmark {
   id: string;
   name: string;
-  category: 'Coding & Agents' | 'Reasoning & Logic' | 'General Knowledge' | 'Mathematics' | 'Safety & Alignment' | 'Overall Arena Elo';
+  shortName?: string;
+  category: 'Coding & Agents' | 'Reasoning & Logic' | 'General Knowledge' | 'Mathematics' | 'Safety & Alignment' | 'Overall Arena Elo' | 'Cost-Efficiency & Pareto';
   description: string;
   whatItMeasures: string;
   whyItMatters: string;
   potentialLimitations: string; // caveats, contamination risks, synthetic gap
+  scoreUnit?: string;
+  scoreMetricName?: string;
   leaderboard: {
     rank: number;
     modelName: string;

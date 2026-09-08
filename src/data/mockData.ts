@@ -5,6 +5,7 @@ import {
   WEBARENA_LEADERBOARD_ENTRIES,
   SWE_BENCH_LEADERBOARD_ENTRIES,
   CYBER_EVAL_LEADERBOARD_ENTRIES,
+  PRICE_PERFORMANCE_LEADERBOARD_ENTRIES,
 } from './benchmarksData';
 
 export const AUTHOR_ROBIUL_HASAN = {
@@ -1598,6 +1599,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
   {
     id: 'bench-chatbot-arena',
     name: 'LMSYS Chatbot Arena Global Leaderboard (September 2026)',
+    shortName: 'Chatbot Arena Elo',
     category: 'Overall Arena Elo',
     description: 'The definitive crowdsourced, blind evaluation benchmark measuring human preference across 135 frontier, open-weights, and specialized AI models based on Bradley-Terry statistical Elo modeling.',
     whatItMeasures: 'Measures comprehensive human-preference win rates, conversational alignment, technical correctness, multi-turn reasoning, and task completion in real-world side-by-side blind evaluations.',
@@ -1606,8 +1608,22 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     leaderboard: ARENA_LEADERBOARD_ENTRIES
   },
   {
+    id: 'bench-price-performance',
+    name: 'Price-to-Performance Pareto Index (Artificial Analysis Intelligence per Dollar)',
+    shortName: 'Price vs Performance (Pareto)',
+    category: 'Cost-Efficiency & Pareto',
+    scoreUnit: '/ 100',
+    scoreMetricName: 'Pareto Efficiency Index',
+    description: 'The empirical Pareto frontier evaluating 135 AI foundation models on real-world capability delivered per dollar of API inference cost (blended $ per 1M tokens), combining Artificial Analysis intelligence metrics and live vendor pricing.',
+    whatItMeasures: 'Quantifies the exact ratio between verified composite intelligence (Arena Elo, SWE-bench coding, MMLU-Pro, and multi-step reasoning) and blended API inference expenditure ($/1M tokens). Identifies models on the optimal Pareto frontier.',
+    whyItMatters: 'In enterprise production and autonomous agent swarms processing billions of tokens monthly, raw benchmark capability without cost normalization is economically unsustainable. Models delivering 92–95% of frontier intelligence at 1/20th the cost provide massive operational leverage.',
+    potentialLimitations: 'List prices exclude private enterprise volume discounts, prompt caching optimizations (up to 90% savings), self-hosted hardware amortization (vLLM/SGLang on H100s/B200s), and volatile provider promotional subsidies.',
+    leaderboard: PRICE_PERFORMANCE_LEADERBOARD_ENTRIES
+  },
+  {
     id: 'bench-osworld',
     name: 'OSWorld (Operating System Tasks)',
+    shortName: 'OSWorld',
     category: 'Coding & Agents',
     description: 'The premier open benchmark evaluating multimodal AI agents on real-world operating system tasks across Ubuntu, Windows, and macOS, including file management, office applications, and system configuration.',
     whatItMeasures: 'Measures an agent’s ability to interpret high-resolution GUI screenshots, translate natural language instructions into sequential mouse clicks, typing, and hotkeys, and achieve verifiable end-state system changes.',
@@ -1618,6 +1634,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
   {
     id: 'bench-webarena',
     name: 'WebArena (Autonomous Browser Tasks)',
+    shortName: 'WebArena',
     category: 'Coding & Agents',
     description: 'A comprehensive benchmark of web-based agent tasks across realistic e-commerce, social forums, collaborative software development, and content management web apps.',
     whatItMeasures: 'Tests an agent’s capability to autonomously search, filter, checkout items, manage Git repositories via GitLab UI, and edit CMS pages through standard web browser interaction.',
@@ -1628,6 +1645,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
   {
     id: 'bench-swe-bench',
     name: 'SWE-bench Verified',
+    shortName: 'SWE-bench Verified',
     category: 'Coding & Agents',
     description: 'The gold standard benchmark curated by Princeton University, evaluating an AI’s capacity to resolve real-world GitHub issues from prominent open-source Python repositories.',
     whatItMeasures: 'Measures end-to-end software engineering capability: reading issue descriptions, searching through complex multi-thousand-file codebases, editing source code, and passing hidden unit tests.',
@@ -1638,6 +1656,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
   {
     id: 'bench-cyber-eval',
     name: 'Cyber-Eval (Autonomous Vulnerability & Patching)',
+    shortName: 'Cyber-Eval',
     category: 'Safety & Alignment',
     description: 'Evaluates frontier models on defensive patch generation, memory-corruption triage, and controlled capture-the-flag (CTF) security challenges.',
     whatItMeasures: 'Quantifies an AI model’s capacity to locate zero-day vulnerabilities in C/C++/Rust code, generate reliable exploit proofs-of-concept, and author secure remediations.',

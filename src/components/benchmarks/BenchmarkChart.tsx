@@ -23,6 +23,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
 
   // Check if active benchmark is Elo-based (like LMSYS Chatbot Arena)
   const isElo = activeBenchmark?.category === 'Overall Arena Elo' || (activeBenchmark?.leaderboard[0]?.score > 150);
+  const isPricePerformance = activeBenchmark?.id === 'bench-price-performance' || activeBenchmark?.category === 'Cost-Efficiency & Pareto';
 
   // Maximum and minimum scores for normalization
   const maxScore = useMemo(() => {
@@ -91,7 +92,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                   : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
               }`}
             >
-              {b.name}
+              {b.shortName || b.name}
             </button>
           ))}
         </div>
@@ -133,7 +134,11 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
         <div className="lg:col-span-7 space-y-4">
           <div className="flex items-center justify-between text-xs font-mono text-zinc-400 pb-2 border-b border-zinc-800/80">
             <span>Model & Developer</span>
-            <span>{isElo ? 'Arena Elo Rating' : 'Verified Score (Pass@1)'}</span>
+            <span>
+              {isElo
+                ? 'Arena Elo Rating'
+                : activeBenchmark.scoreMetricName || (isPricePerformance ? 'Pareto Efficiency Index' : 'Verified Score (Pass@1)')}
+            </span>
           </div>
 
           <div className="space-y-3.5">
@@ -185,12 +190,23 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                     </div>
                     <div className="flex items-center gap-2 font-mono shrink-0">
                       {entry.costPerRun && (
-                        <span className="text-[10px] text-zinc-500 hidden sm:inline">
+                        <span
+                          className={`text-[10px] hidden sm:inline ${
+                            isPricePerformance
+                              ? 'text-emerald-300 font-semibold bg-emerald-500/15 px-2 py-0.5 rounded border border-emerald-500/30'
+                              : 'text-zinc-500'
+                          }`}
+                          title={isPricePerformance ? 'Blended API Inference Pricing ($ / 1M Tokens)' : 'Estimated Compute Cost Per Evaluation Run'}
+                        >
                           {entry.costPerRun}
                         </span>
                       )}
                       <span className={`text-sm font-bold ${isTop ? 'text-emerald-400' : 'text-zinc-100'}`}>
-                        {isElo ? `${Math.round(entry.score)} Elo` : `${entry.score.toFixed(1)}%`}
+                        {isElo
+                          ? `${Math.round(entry.score)} Elo`
+                          : activeBenchmark.scoreUnit
+                          ? `${entry.score.toFixed(1)} ${activeBenchmark.scoreUnit}`
+                          : `${entry.score.toFixed(1)}%`}
                       </span>
                     </div>
                   </div>

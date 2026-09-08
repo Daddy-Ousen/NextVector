@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, RotateCcw, Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { Play, Pause, RotateCcw, Volume2, VolumeX, Sparkles, X } from 'lucide-react';
 
 interface AudioBriefingPlayerProps {
   duration?: string;
   articleTitle: string;
+  keyTakeaways?: string[];
+  onClose?: () => void;
 }
 
 export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
   duration = '3m 30s',
-  articleTitle
+  articleTitle,
+  keyTakeaways,
+  onClose,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -59,13 +63,24 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
           <span className="text-[11px] font-mono text-zinc-400">({duration})</span>
         </div>
 
-        <button
-          onClick={cycleSpeed}
-          className="px-2 py-0.5 rounded bg-zinc-800 hover:bg-zinc-700 text-[11px] font-mono text-zinc-300 transition-colors"
-          title="Change playback speed"
-        >
-          {playbackSpeed}x
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={cycleSpeed}
+            className="px-2 py-0.5 rounded bg-zinc-800 hover:bg-zinc-700 text-[11px] font-mono text-zinc-300 transition-colors"
+            title="Change playback speed"
+          >
+            {playbackSpeed}x
+          </button>
+          {onClose && (
+            <button
+              onClick={onClose}
+              className="p-1 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
+              title="Close player"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="text-xs text-zinc-300 font-medium truncate mb-3">

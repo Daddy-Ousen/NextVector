@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Bookmark, Sparkles, Menu, X, Compass, Activity, ArrowRight } from 'lucide-react';
+import { Search, Bookmark, Sparkles, Menu, X, Compass, Activity, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface NavbarProps {
   currentPath: string;
@@ -38,6 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { label: 'Analysis', path: '/analysis' },
     { label: 'Deep Dives', path: '/deep-dives' },
     { label: 'Timeline', path: '/timeline' },
+    { label: 'About', path: '/about' },
   ];
 
   const handleLinkClick = (path: string) => {
@@ -89,6 +90,17 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </span>
               )}
             </button>
+            <span className="text-zinc-700">|</span>
+            <a
+              href="https://rhasan.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-zinc-300 hover:text-emerald-400 transition-colors font-semibold"
+              title="Founder Website"
+            >
+              <span>rhasan.online</span>
+              <ExternalLink className="w-3 h-3 text-emerald-400" />
+            </a>
           </div>
         </div>
       </div>

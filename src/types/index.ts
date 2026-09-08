@@ -29,6 +29,9 @@ export interface Article {
     role: string;
     avatar: string;
     verified: boolean;
+    website?: string;
+    github?: string;
+    bio?: string;
   };
   publishedAt: string;
   readTimeMinutes: number;

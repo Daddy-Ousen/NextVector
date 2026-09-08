@@ -14,6 +14,7 @@ import { ResearchPage } from './pages/ResearchPage';
 import { TimelinePage } from './pages/TimelinePage';
 import { DailyBriefingPage } from './pages/DailyBriefingPage';
 import { CategoryPage } from './pages/CategoryPage';
+import { AuthorPage } from './pages/AuthorPage';
 
 import { MOCK_ARTICLES, MOCK_MODELS, MOCK_BENCHMARKS, MOCK_RESEARCH_PAPERS, MOCK_TIMELINE } from './data/mockData';
 import { getSavedBookmarks, toggleBookmark } from './utils';
@@ -149,6 +150,7 @@ export function App() {
           onSelectModel={(id) => navigateTo(`/models/${id}`)}
           onSelectBenchmark={() => navigateTo('/benchmarks')}
           onSelectPaper={() => navigateTo('/research')}
+          onSelectAuthor={() => navigateTo('/about')}
         />
       );
     }
@@ -227,6 +229,19 @@ export function App() {
           onMinSignalChange={setMinSignal}
           selectedType={selectedType}
           onSelectType={setSelectedType}
+        />
+      );
+    }
+
+    // 9. Author Profile / Editorial Manifesto: /about, /author
+    if (currentPath === '/about' || currentPath === '/author') {
+      return (
+        <AuthorPage
+          articles={MOCK_ARTICLES}
+          bookmarkedIds={bookmarkedIds}
+          onToggleBookmark={handleToggleBookmark}
+          onSelectArticle={(slug) => navigateTo(`/article/${slug}`)}
+          onNavigate={navigateTo}
         />
       );
     }

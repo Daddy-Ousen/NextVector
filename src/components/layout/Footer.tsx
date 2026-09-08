@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, CheckCircle2, ShieldCheck, ArrowRight, Zap, BookOpen, Layers } from 'lucide-react';
+import { Mail, CheckCircle2, ShieldCheck, ArrowRight, Zap, BookOpen, Layers, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -182,6 +182,22 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Standards & Mission</h5>
             <ul className="space-y-2 text-zinc-400">
+              <li>
+                <button onClick={() => onNavigate('/about')} className="hover:text-emerald-400 transition-colors text-left">
+                  About Editor (Robiul Hasan)
+                </button>
+              </li>
+              <li>
+                <a
+                  href="https://rhasan.online"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-emerald-400 transition-colors inline-flex items-center gap-1 text-emerald-400 font-semibold"
+                >
+                  <span>rhasan.online</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </li>
               <li>The Three-Question Framework</li>
               <li>Signal vs. Noise Algorithm</li>
               <li>Primary Source Auditing</li>
@@ -193,12 +209,23 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom Copyright & Disclaimer */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] font-mono text-zinc-400">
           <div>
-            © {new Date().getFullYear()} NextVector Intelligence. All rights reserved. Filter the noise.
+            © {new Date().getFullYear()} NextVector Intelligence. Founded and Edited by{' '}
+            <a
+              href="https://rhasan.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:underline font-semibold"
+            >
+              Robiul Hasan
+            </a>{' '}
+            (Dhaka). Filter the noise.
           </div>
           <div className="flex items-center gap-6">
+            <button onClick={() => onNavigate('/about')} className="hover:text-emerald-400 transition-colors">
+              Editorial Lead
+            </button>
             <span>Privacy Protocol</span>
             <span>Editorial Charter</span>
-            <span>API Feeds</span>
             <span>Status: Operational (100%)</span>
           </div>
         </div>

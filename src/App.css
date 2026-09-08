@@ -1,0 +1,46 @@
+/* NextVector Custom Motion & Layout Animations */
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Three Questions Accent Borders */
+.border-what {
+  border-left: 3px solid #3b82f6;
+}
+.border-why {
+  border-left: 3px solid #10b981;
+}
+.border-next {
+  border-left: 3px solid #8b5cf6;
+}

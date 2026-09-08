@@ -108,6 +108,8 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
         <div className="mb-8 animate-in fade-in slide-in-from-top-4 duration-300">
           <AudioBriefingPlayer
             articleTitle={article.title}
+            subtitle={article.subtitle}
+            threeQuestions={article.threeQuestions}
             duration={article.audioDuration || '4m 15s'}
             keyTakeaways={article.keyTakeaways}
             onClose={() => setShowAudioPlayer(false)}

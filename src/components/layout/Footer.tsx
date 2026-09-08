@@ -8,12 +8,18 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
+  const [subscribed, setSubscribed] = useState(() => {
+    return typeof window !== 'undefined' && localStorage.getItem('nv_subscribed') === 'true';
+  });
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (email.trim()) {
       setSubscribed(true);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('nv_subscribed', 'true');
+        localStorage.setItem('nv_subscriber_email', email.trim());
+      }
     }
   };
 

@@ -21,7 +21,9 @@ import {
   ArrowRight,
   Database,
   Lock,
+  Download,
 } from 'lucide-react';
+import { NextVectorLogo } from '../components/common/NextVectorLogo';
 
 const GithubIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -688,7 +690,74 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
         </div>
       </section>
 
-      {/* 8. Direct Contact & Communication Footer */}
+      {/* 8. NextVector Brand Identity & Media Kit */}
+      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 space-y-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800/80 pb-5">
+          <div className="flex items-center gap-3">
+            <NextVectorLogo size={28} withContainer={true} showWordmark={false} />
+            <div>
+              <div className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+                Identity & Press Kit
+              </div>
+              <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans tracking-tight mt-0.5">
+                NextVector Official Brand Assets
+              </h2>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <a
+              href="/brand/nextvector-brand-system.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-300 flex items-center gap-1.5 transition-colors"
+            >
+              <span>View Brand Board</span>
+              <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
+            </a>
+            <a
+              href="/brand/nextvector-mark.svg"
+              download="nextvector-mark.svg"
+              className="px-3.5 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-xs font-mono text-emerald-400 flex items-center gap-1.5 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download Vector SVG</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
+            <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Core Metaphor</div>
+            <p className="text-xs text-zinc-300 leading-relaxed font-sans">
+              The symbol fuses the capital <strong className="text-emerald-400 font-mono">N</strong> (Next) with a forward-pointing vector chevron <strong className="text-cyan-400 font-mono">&gt;</strong> and a precision coordinate aperture ring in negative space.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
+            <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Chromatic Palette</div>
+            <div className="flex flex-wrap gap-2 text-[11px] font-mono">
+              <span className="px-2 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                #10B981 Signal Emerald
+              </span>
+              <span className="px-2 py-1 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
+                #06B6D4 Core Cyan
+              </span>
+              <span className="px-2 py-1 rounded bg-zinc-900 border border-zinc-700 text-zinc-300">
+                #09090B Obsidian
+              </span>
+            </div>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
+            <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Substack & Social Media</div>
+            <p className="text-xs text-zinc-300 leading-relaxed font-sans">
+              High-resolution 1024×1024 master icon available for newsletter distribution, mobile app squircle framing, and verified publication badges.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. Direct Contact & Communication Footer */}
       <section className="rounded-3xl bg-gradient-to-b from-zinc-950 to-zinc-900 border border-zinc-800 p-8 md:p-12 text-center space-y-6 shadow-2xl">
         <div className="max-w-xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">

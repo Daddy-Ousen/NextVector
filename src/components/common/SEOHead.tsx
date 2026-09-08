@@ -13,7 +13,7 @@ export interface SEOHeadProps {
 }
 
 const BASE_URL = 'https://nextvector.rhasan.online';
-const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1600&q=80';
+const DEFAULT_IMAGE = 'https://nextvector.rhasan.online/brand/nextvector-brand-system.jpg';
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
   title,
@@ -99,7 +99,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       '@type': 'NewsMediaOrganization',
       name: 'NextVector',
       url: BASE_URL,
-      logo: `${BASE_URL}/favicon.svg`,
+      logo: `${BASE_URL}/brand/nextvector-logo.jpg`,
       founder: {
         '@type': 'Person',
         name: 'Robiul Hasan',

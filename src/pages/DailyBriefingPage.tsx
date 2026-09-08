@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MOCK_DAILY_BRIEFING } from '../data/mockData';
 import { Sparkles, Printer, ArrowRight, ShieldCheck, Mail, CheckCircle2 } from 'lucide-react';
+import { NextVectorLogo } from '../components/common/NextVectorLogo';
 
 interface DailyBriefingPageProps {
   onSelectArticle: (slug: string) => void;
@@ -8,6 +9,21 @@ interface DailyBriefingPageProps {
 
 export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectArticle }) => {
   const briefing = MOCK_DAILY_BRIEFING;
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(() => {
+    return typeof window !== 'undefined' && localStorage.getItem('nv_subscribed') === 'true';
+  });
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setSubscribed(true);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('nv_subscribed', 'true');
+        localStorage.setItem('nv_subscriber_email', email.trim());
+      }
+    }
+  };
 
   const handlePrint = () => {
     window.print();
@@ -17,10 +33,13 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
     <div className="max-w-3xl mx-auto space-y-10 pb-20">
       {/* Header */}
       <div className="border-b border-zinc-800 pb-6 pt-2">
-        <div className="flex items-center justify-between gap-4 mb-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold">
-            <Sparkles className="w-4 h-4" />
-            <span>The Morning Vector • Executive Edition</span>
+        <div className="flex items-center justify-between gap-4 mb-4">
+          <div className="flex items-center gap-3">
+            <NextVectorLogo size={22} withContainer={true} showWordmark={false} />
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>The Morning Vector • Executive Edition</span>
+            </div>
           </div>
           <button
             onClick={handlePrint}
@@ -104,6 +123,56 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
             )}
           </div>
         ))}
+      </div>
+
+      {/* Direct Newsletter Delivery Subscription Box */}
+      <div className="rounded-3xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 border border-emerald-500/30 p-8 space-y-6 shadow-2xl relative overflow-hidden">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800/80 pb-5">
+          <div className="flex items-center gap-3">
+            <NextVectorLogo size={28} withContainer={true} showWordmark={false} />
+            <div>
+              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+                <Mail className="w-3.5 h-3.5" />
+                <span>The Morning Vector</span>
+              </div>
+              <h4 className="text-lg font-bold text-zinc-100 font-sans mt-0.5">
+                Get Tomorrow's Briefing Delivered to Your Inbox
+              </h4>
+            </div>
+          </div>
+          <span className="text-[10px] font-mono uppercase px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold shrink-0">
+            06:00 UTC Daily
+          </span>
+        </div>
+
+        <p className="text-xs md:text-sm text-zinc-300 font-sans leading-relaxed">
+          Join 45,000+ AI researchers, systems architects, and venture partners who read The Morning Vector before markets open. Rigorous primary-source deconstruction, zero fluff.
+        </p>
+
+        {subscribed ? (
+          <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-xs font-mono text-emerald-300 flex items-center gap-3">
+            <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+            <span>You are subscribed to The Morning Vector. You will receive tomorrow's 06:00 UTC scan.</span>
+          </div>
+        ) : (
+          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2.5">
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="architect@domain.com"
+              className="flex-1 bg-zinc-950 border border-zinc-700 rounded-xl px-4 py-3 text-xs font-mono text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
+            />
+            <button
+              type="submit"
+              className="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md active:scale-95 shrink-0 flex items-center justify-center gap-2"
+            >
+              <span>Subscribe Free</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </form>
+        )}
       </div>
 
       {/* Verification footer */}

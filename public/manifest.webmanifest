@@ -1,0 +1,23 @@
+{
+  "name": "NextVector — High-Signal Technology & AI Intelligence",
+  "short_name": "NextVector",
+  "description": "High-signal digital intelligence platform dedicated to surfacing genuine technological progress, AI models, and scientific breakthroughs. Less noise. More signal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090a0f",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/nextvector-logo.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

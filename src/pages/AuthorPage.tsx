@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Article } from '../types';
 import { ArticleCard } from '../components/cards/ArticleCard';
+import { SEOHead } from '../components/common/SEOHead';
 import { ExternalLink, Mail, ShieldCheck, Cpu, Server, Terminal, CheckCircle, Search } from 'lucide-react';
 
 const GithubIcon: React.FC<{ className?: string }> = ({ className = "w-3.5 h-3.5" }) => (
@@ -43,8 +44,36 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
     });
   }, [articles, selectedCategory, searchQuery]);
 
+  const authorSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      name: 'Robiul Hasan',
+      jobTitle: 'Founder & Editor-in-Chief',
+      description: 'Systems engineer, cybersecurity analyst, and technology researcher specializing in enterprise infrastructure and autonomous AI systems.',
+      url: 'https://rhasan.online',
+      sameAs: [
+        'https://rhasan.online',
+        'https://github.com/Daddy-Ousen',
+      ],
+      worksFor: {
+        '@type': 'NewsMediaOrganization',
+        name: 'NextVector',
+        url: 'https://nextvector.rhasan.online',
+      },
+    },
+  };
+
   return (
     <div className="space-y-12 pb-20 max-w-6xl mx-auto">
+      <SEOHead
+        title="Robiul Hasan — Founder & Editor-in-Chief | NextVector"
+        description="Systems engineer, cybersecurity analyst, and founder of NextVector. Editorial charter: Less noise. More signal."
+        canonicalPath="/about"
+        ogType="profile"
+        schemaData={authorSchema}
+      />
       {/* Hero Bio Banner */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-12 shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />

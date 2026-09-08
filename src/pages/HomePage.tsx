@@ -4,6 +4,7 @@ import { ArticleCard } from '../components/cards/ArticleCard';
 import { ModelCard } from '../components/models/ModelCard';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
+import { SEOHead } from '../components/common/SEOHead';
 import { Sparkles, ArrowRight, TrendingUp, Cpu, Flame, ShieldCheck } from 'lucide-react';
 
 interface HomePageProps {
@@ -64,8 +65,29 @@ export const HomePage: React.FC<HomePageProps> = ({
   const scienceStories = articles.filter((a) => a.category === 'science');
   const deepDives = articles.filter((a) => a.articleType === 'deep-dive' || a.articleType === 'analysis');
 
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsMediaOrganization',
+    name: 'NextVector',
+    url: 'https://nextvector.rhasan.online',
+    logo: 'https://nextvector.rhasan.online/favicon.svg',
+    description: 'High-signal technology and AI intelligence platform covering foundation models, autonomous agents, and scientific breakthroughs.',
+    founder: {
+      '@type': 'Person',
+      name: 'Robiul Hasan',
+      url: 'https://rhasan.online',
+      sameAs: ['https://rhasan.online', 'https://github.com/Daddy-Ousen'],
+    },
+  };
+
   return (
     <div className="space-y-16 pb-12">
+      <SEOHead
+        title="NextVector — High-Signal Technology, AI & Science Intelligence"
+        description="NextVector filters out the noise to surface the technology, AI models, and scientific breakthroughs that actually matter. Less noise. More signal."
+        canonicalPath="/"
+        schemaData={homeSchema}
+      />
       {/* Live Breaking Signal Ticker */}
       <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-3 shadow-lg flex items-center overflow-hidden">
         <div className="flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-bold shrink-0 mr-4">

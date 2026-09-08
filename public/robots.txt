@@ -1,0 +1,33 @@
+# NextVector Robots Configuration
+# Optimized for Google, Bing, and AI Engine Retrieval (Google-Extended, GPTBot, PerplexityBot, ClaudeBot)
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Explicit permissions for AI Overview and LLM Retrieval Engines
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://nextvector.rhasan.online/sitemap.xml

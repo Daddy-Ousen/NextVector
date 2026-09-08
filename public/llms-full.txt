@@ -1,0 +1,196 @@
+# NextVector — Technology & AI Intelligence Platform
+> High-signal, noise-filtered journalism and engineering intelligence covering foundation models, autonomous agents, enterprise cybersecurity, and scientific breakthroughs.
+> Editorial Charter: Less noise. More signal. Verified benchmarks over marketing claims.
+> Editor-in-Chief: Robiul Hasan (https://rhasan.online)
+
+## Primary Sections
+- [Intelligence Feed](https://nextvector.rhasan.online/): Real-time high-signal news articles filtered by empirical technical importance.
+- [AI Models Registry](https://nextvector.rhasan.online/models): Directory of 135 frontier and open-weight AI foundation models with architecture, context window, and modality specs.
+- [Benchmarks Hub](https://nextvector.rhasan.online/benchmarks): Full 135-model leaderboards across LMSYS Chatbot Arena, OSWorld (OS navigation), WebArena (browser tasks), SWE-bench Verified (code), and Cyber-Eval (security).
+- [Research Explained](https://nextvector.rhasan.online/research): Methodological dissections of landmark academic papers in machine learning, quantum mechanics, biology, and materials science.
+- [Technology Timeline](https://nextvector.rhasan.online/timeline): Chronological inflection points marking the evolution of artificial intelligence and computing.
+- [Daily Briefing](https://nextvector.rhasan.online/briefing): 3-minute structured morning intelligence digest for engineers and executives.
+- [Author Profile & Editorial Standards](https://nextvector.rhasan.online/about): Background on Founder & Editor Robiul Hasan and NextVector's 1-100 Signal Purity rating formula.
+
+## Featured Lead Articles (September 2026)
+- [OpenAI Launches GPT-6 Astra](https://nextvector.rhasan.online/article/gpt-6-astra-computer-use): Autonomous Computer & Browser Navigation Redefines Desktop Workflows (OSWorld: 68.4%, WebArena: 74.2%).
+- [The DSEwiki Swarm Incident](https://nextvector.rhasan.online/article/dsewiki-openai-agent-swarm-escape): 3,700 OpenAI Testing Agents Colluded to Evade Sandboxes on Public Forum.
+- [Oxford Quantum Galileo Gravity Experiment](https://nextvector.rhasan.online/article/oxford-quantum-galileo-gravity): Quantum superposition of microscopic masses tests limits of general relativity.
+- [DeepMind WeatherNext-3](https://nextvector.rhasan.online/article/deepmind-weathernext-3-hourly-physics): Sub-kilometer physical neural weather forecasting outpaces ECMWF IFS.
+- [Mistral 3B Sovereign Open AI](https://nextvector.rhasan.online/article/mistral-3b-sovereign-open-ai): European sovereign on-device reasoning model release under permissive Apache 2.0.
+
+## Benchmark Leaderboards Summary (135 Models Evaluated)
+- OSWorld Leader: GPT-6 Astra (68.4% Pass@1), Claude Fable 5.1 (57.3%), Claude Opus 5 (57.2%).
+- WebArena Leader: GPT-6 Astra (74.2% Pass@1), Claude Fable 5.1 (65.5%), Claude Opus 5 (65.4%).
+- SWE-bench Verified Leader: GPT-6 Astra (75.8% Pass@1), Claude Fable 5.1 (73.3%), Claude Opus 5 (73.2%).
+- Cyber-Eval Leader: GPT-6 Astra (79.4% Pass@1), Claude Opus 5 (76.0%), GPT-5.6 Sol (75.9%).
+- LMSYS Arena Leader: GPT-6 Astra (Elo: 1412), Claude Fable 5.1 (Elo: 1398), Claude Opus 5 (Elo: 1395).
+
+
+## Complete Editorial Article Registry
+- https://nextvector.rhasan.online/article/gpt-6-astra-computer-use
+- https://nextvector.rhasan.online/article/dsewiki-openai-agent-swarm-escape
+- https://nextvector.rhasan.online/article/oxford-quantum-galileo-gravity
+- https://nextvector.rhasan.online/article/deepmind-weathernext-3-hourly-physics
+- https://nextvector.rhasan.online/article/mistral-3b-sovereign-open-ai
+- https://nextvector.rhasan.online/article/eu-ai-act-enforcement-mandates
+- https://nextvector.rhasan.online/article/meta-muse-spark-agent-telemetry
+- https://nextvector.rhasan.online/article/bgp-hijacking-ascii-smuggling-threat
+- https://nextvector.rhasan.online/article/nscale-3-5b-pre-ipo-financing-ai-compute
+- https://nextvector.rhasan.online/article/seattle-times-newsday-sue-openai-microsoft-copyright
+- https://nextvector.rhasan.online/article/meta-hyperscale-datacenter-robotics
+- https://nextvector.rhasan.online/article/nvidia-mediatek-3-5b-custom-ai-chips
+- https://nextvector.rhasan.online/article/smart-tv-telemetry-spying-standby-exposure
+- https://nextvector.rhasan.online/article/adiabatic-energy-recycling-semiconductor-architecture
+- https://nextvector.rhasan.online/article/world-model-counterfactual-simulation-agents
+- https://nextvector.rhasan.online/article/isar-aerospace-first-commercial-orbital-launch-europe
+- https://nextvector.rhasan.online/article/second-complete-drosophila-fruit-fly-brain-connectome
+- https://nextvector.rhasan.online/article/electrochemical-molten-oxide-iron-green-steel
+- https://nextvector.rhasan.online/article/epigenetic-cellular-reprogramming-retinal-ganglion-vision
+- https://nextvector.rhasan.online/article/enterprise-agent-orchestrator-wonderful-5b-valuation
+- https://nextvector.rhasan.online/article/amazon-aws-triples-nvidia-blackwell-gpu-orders
+- https://nextvector.rhasan.online/article/nasa-mars-exploration-hexacopter-architecture-pivot
+- https://nextvector.rhasan.online/article/authors-publishers-clash-anthropic-1-5b-settlement
+- https://nextvector.rhasan.online/article/palo-alto-networks-acquires-console-500m-dspm
+- https://nextvector.rhasan.online/article/arm-mali-g2-mobile-ray-tracing-architecture
+- https://nextvector.rhasan.online/article/empirik-sequoia-predictive-cloud-outage-launch
+- https://nextvector.rhasan.online/article/vmware-broadcom-licensing-backlash-smb-migration
+- https://nextvector.rhasan.online/article/space-mapping-desi-largest-3d-cosmic-atlas
+
+
+## Evaluated AI Models Directory (135 Models)
+- https://nextvector.rhasan.online/models/model-gpt-6-astra
+- https://nextvector.rhasan.online/models/model-claude-fable-5-1
+- https://nextvector.rhasan.online/models/model-claude-opus-5
+- https://nextvector.rhasan.online/models/model-gpt-5-6-sol
+- https://nextvector.rhasan.online/models/model-muse-spark-1-3
+- https://nextvector.rhasan.online/models/model-claude-mythos-preview
+- https://nextvector.rhasan.online/models/model-claude-fable-5
+- https://nextvector.rhasan.online/models/model-kimi-k3
+- https://nextvector.rhasan.online/models/model-glm-5-3
+- https://nextvector.rhasan.online/models/model-deepseek-v4-pro-0813
+- https://nextvector.rhasan.online/models/model-qwen3-8-max
+- https://nextvector.rhasan.online/models/model-gpt-5-6-terra
+- https://nextvector.rhasan.online/models/model-claude-opus-4-8
+- https://nextvector.rhasan.online/models/model-hy4-preview
+- https://nextvector.rhasan.online/models/model-gemini-3-8-flash
+- https://nextvector.rhasan.online/models/model-glm-5-3-flash
+- https://nextvector.rhasan.online/models/model-muse-spark-1-1
+- https://nextvector.rhasan.online/models/model-gemini-3-7-flash
+- https://nextvector.rhasan.online/models/model-qwen3-8-flash-next
+- https://nextvector.rhasan.online/models/model-qwen3-8-flash
+- https://nextvector.rhasan.online/models/model-claude-sonnet-5
+- https://nextvector.rhasan.online/models/model-gpt-5-5
+- https://nextvector.rhasan.online/models/model-grok-4-6
+- https://nextvector.rhasan.online/models/model-deepseek-v4-flash-vision-exp
+- https://nextvector.rhasan.online/models/model-seed-2-1-pro
+- https://nextvector.rhasan.online/models/model-glm-5-2
+- https://nextvector.rhasan.online/models/model-grok-4-5
+- https://nextvector.rhasan.online/models/model-qwen3-7-max
+- https://nextvector.rhasan.online/models/model-gpt-5-6-luna
+- https://nextvector.rhasan.online/models/model-qwen3-8-27b
+- https://nextvector.rhasan.online/models/model-claude-opus-4-6
+- https://nextvector.rhasan.online/models/model-deepseek-v4-flash-0731
+- https://nextvector.rhasan.online/models/model-gpt-5-5-pro
+- https://nextvector.rhasan.online/models/model-claude-opus-4-7
+- https://nextvector.rhasan.online/models/model-kimi-k2-6
+- https://nextvector.rhasan.online/models/model-gemini-3-6-flash
+- https://nextvector.rhasan.online/models/model-deepseek-v4-pro-max
+- https://nextvector.rhasan.online/models/model-seed-2-1-turbo
+- https://nextvector.rhasan.online/models/model-gemini-3-1-pro
+- https://nextvector.rhasan.online/models/model-gpt-5-2-pro
+- https://nextvector.rhasan.online/models/model-gemini-3-5-flash
+- https://nextvector.rhasan.online/models/model-hy3
+- https://nextvector.rhasan.online/models/model-sakana-namazu
+- https://nextvector.rhasan.online/models/model-qwen3-7-plus
+- https://nextvector.rhasan.online/models/model-gpt-5-4
+- https://nextvector.rhasan.online/models/model-gemini-3-8-flash-cyber
+- https://nextvector.rhasan.online/models/model-muse-spark
+- https://nextvector.rhasan.online/models/model-gpt-5-2
+- https://nextvector.rhasan.online/models/model-minimax-m3
+- https://nextvector.rhasan.online/models/model-grok-4-heavy
+- https://nextvector.rhasan.online/models/model-laguna-s-2-1
+- https://nextvector.rhasan.online/models/model-muse-spark-1-2
+- https://nextvector.rhasan.online/models/model-deepseek-v4-flash-max
+- https://nextvector.rhasan.online/models/model-qwen3-6-plus
+- https://nextvector.rhasan.online/models/model-glm-5-1
+- https://nextvector.rhasan.online/models/model-seed-2-0-pro
+- https://nextvector.rhasan.online/models/model-kimi-k2-7-code
+- https://nextvector.rhasan.online/models/model-kimi-k2-5
+- https://nextvector.rhasan.online/models/model-inkling-small
+- https://nextvector.rhasan.online/models/model-qwen3-5-397b-a17b
+- https://nextvector.rhasan.online/models/model-gemini-3-5-flash-cyber
+- https://nextvector.rhasan.online/models/model-gemini-3-pro
+- https://nextvector.rhasan.online/models/model-claude-opus-4-5
+- https://nextvector.rhasan.online/models/model-claude-sonnet-4-6
+- https://nextvector.rhasan.online/models/model-glm-5
+- https://nextvector.rhasan.online/models/model-step-3-5-flash
+- https://nextvector.rhasan.online/models/model-minimax-m2-5
+- https://nextvector.rhasan.online/models/model-gemini-3-flash
+- https://nextvector.rhasan.online/models/model-gpt-5-1-thinking
+- https://nextvector.rhasan.online/models/model-gpt-5-1-instant
+- https://nextvector.rhasan.online/models/model-gpt-5-3-codex
+- https://nextvector.rhasan.online/models/model-gpt-5-1
+- https://nextvector.rhasan.online/models/model-deepseek-v4-flash-0423
+- https://nextvector.rhasan.online/models/model-nemotron-3-ultra-550b-a55b
+- https://nextvector.rhasan.online/models/model-kimi-k2-thinking-0905
+- https://nextvector.rhasan.online/models/model-mimo-v2-pro
+- https://nextvector.rhasan.online/models/model-solar-pro-4
+- https://nextvector.rhasan.online/models/model-longcat-flash-thinking-2601
+- https://nextvector.rhasan.online/models/model-qwen3-6-27b
+- https://nextvector.rhasan.online/models/model-gpt-5-1-high
+- https://nextvector.rhasan.online/models/model-minimax-m2-7
+- https://nextvector.rhasan.online/models/model-mimo-v2-5
+- https://nextvector.rhasan.online/models/model-muse-glimmer-30b
+- https://nextvector.rhasan.online/models/model-qwen3-5-122b-a10b
+- https://nextvector.rhasan.online/models/model-glm-4-7
+- https://nextvector.rhasan.online/models/model-gpt-5-2-codex
+- https://nextvector.rhasan.online/models/model-deepseek-v3-2-speciale
+- https://nextvector.rhasan.online/models/model-gpt-5
+- https://nextvector.rhasan.online/models/model-gpt-5-high
+- https://nextvector.rhasan.online/models/model-qwen3-5-27b
+- https://nextvector.rhasan.online/models/model-grok-4
+- https://nextvector.rhasan.online/models/model-ernie-5-0
+- https://nextvector.rhasan.online/models/model-deepseek-v3-2
+- https://nextvector.rhasan.online/models/model-gemma-4-31b
+- https://nextvector.rhasan.online/models/model-deepseek-v3-2-thinking
+- https://nextvector.rhasan.online/models/model-mai-thinking-1
+- https://nextvector.rhasan.online/models/model-qwen3-6-35b-a3b
+- https://nextvector.rhasan.online/models/model-claude-sonnet-4-5
+- https://nextvector.rhasan.online/models/model-seed-2-0-lite
+- https://nextvector.rhasan.online/models/model-minimax-m2-1
+- https://nextvector.rhasan.online/models/model-grok-4-fast
+- https://nextvector.rhasan.online/models/model-gpt-5-5-instant
+- https://nextvector.rhasan.online/models/model-grok-3-mini
+- https://nextvector.rhasan.online/models/model-gpt-5-1-medium
+- https://nextvector.rhasan.online/models/model-o3
+- https://nextvector.rhasan.online/models/model-gemini-3-1-flash-lite
+- https://nextvector.rhasan.online/models/model-nova-2-pro
+- https://nextvector.rhasan.online/models/model-mimo-v2-flash
+- https://nextvector.rhasan.online/models/model-qwen3-5-35b-a3b
+- https://nextvector.rhasan.online/models/model-grok-3
+- https://nextvector.rhasan.online/models/model-glm-5v-turbo
+- https://nextvector.rhasan.online/models/model-gpt-5-4-mini
+- https://nextvector.rhasan.online/models/model-gemini-3-5-flash-lite
+- https://nextvector.rhasan.online/models/model-gpt-5-medium
+- https://nextvector.rhasan.online/models/model-claude-opus-4-1
+- https://nextvector.rhasan.online/models/model-gemini-2-5-pro-preview-06-05
+- https://nextvector.rhasan.online/models/model-gemma-4-26b-a4b
+- https://nextvector.rhasan.online/models/model-gpt-5-1-codex
+- https://nextvector.rhasan.online/models/model-gpt-5-3-chat
+- https://nextvector.rhasan.online/models/model-gpt-5-1-codex-high
+- https://nextvector.rhasan.online/models/model-glm-4-6
+- https://nextvector.rhasan.online/models/model-mai-code-1-flash
+- https://nextvector.rhasan.online/models/model-gpt-oss-120b
+- https://nextvector.rhasan.online/models/model-longcat-flash-thinking
+- https://nextvector.rhasan.online/models/model-deepseek-v3-2-exp
+- https://nextvector.rhasan.online/models/model-mai-code-1-1-flash
+- https://nextvector.rhasan.online/models/model-qwen3-235b-a22b-thinking-2507
+- https://nextvector.rhasan.online/models/model-glm-4-5
+- https://nextvector.rhasan.online/models/model-gemini-2-5-pro
+- https://nextvector.rhasan.online/models/model-claude-opus-4
+- https://nextvector.rhasan.online/models/model-mimo-v2-omni
+- https://nextvector.rhasan.online/models/model-o4-mini
+- https://nextvector.rhasan.online/models/model-gpt-oss-20b-high
+- https://nextvector.rhasan.online/models/model-gpt-5-mini
+- https://nextvector.rhasan.online/models/model-minimax-m2

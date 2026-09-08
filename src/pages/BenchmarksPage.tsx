@@ -1,6 +1,7 @@
 import React from 'react';
 import { Benchmark } from '../types';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
+import { SEOHead } from '../components/common/SEOHead';
 import { Scale, AlertTriangle, ShieldCheck, HelpCircle } from 'lucide-react';
 
 interface BenchmarksPageProps {
@@ -9,8 +10,31 @@ interface BenchmarksPageProps {
 }
 
 export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSelectModel }) => {
+  const benchmarksSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'NextVector AI Benchmark Radar (135 Models Evaluated)',
+    description: 'Empirical cross-domain benchmark audit evaluating 135 AI foundation models across LMSYS Chatbot Arena, OSWorld, WebArena, SWE-bench, and Cyber-Eval.',
+    creator: {
+      '@type': 'Person',
+      name: 'Robiul Hasan',
+      url: 'https://rhasan.online',
+    },
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'NextVector',
+      url: 'https://nextvector.rhasan.online',
+    },
+  };
+
   return (
     <div className="space-y-12 pb-20">
+      <SEOHead
+        title="AI Benchmarks & Evaluation Audit (135 Models) | NextVector"
+        description="Comprehensive 135-model leaderboards across LMSYS Chatbot Arena, OSWorld, WebArena, SWE-bench Verified, and Cyber-Eval. Empirical data without marketing hype."
+        canonicalPath="/benchmarks"
+        schemaData={benchmarksSchema}
+      />
       {/* Header */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
         <div className="max-w-3xl">

@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { AIModel } from '../types';
 import { ModelCard } from '../components/models/ModelCard';
+import { SEOHead } from '../components/common/SEOHead';
 import { Cpu, Search, Layers, Scale, CheckSquare, ArrowRight, LayoutGrid, Table, ArrowUpDown, ArrowUpRight, Check, Square } from 'lucide-react';
 
 interface ModelsDirectoryPageProps {
@@ -75,6 +76,11 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
 
   return (
     <div className="space-y-8 pb-16">
+      <SEOHead
+        title="AI Model Directory & LMSYS Arena Leaderboard (135 Models) | NextVector"
+        description="Standardized technical specifications, verified LMSYS Arena Elo ratings, hardware inference metrics, and benchmark evaluations across 135 frontier AI models."
+        canonicalPath="/models"
+      />
       {/* Header */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative overflow-hidden">
         <div className="max-w-3xl">

@@ -3,6 +3,7 @@ import { Article, AIModel, Benchmark, ResearchPaper } from '../types';
 import { ThreeQuestionsBlock } from '../components/common/ThreeQuestionsBlock';
 import { SignalRatingBadge } from '../components/common/SignalRatingBadge';
 import { AudioBriefingPlayer } from '../components/common/AudioBriefingPlayer';
+import { SEOHead } from '../components/common/SEOHead';
 import { getCategoryBadge, formatRelativeTime, getArticleTypeLabel } from '../utils';
 import { 
   ArrowLeft, 
@@ -56,8 +57,59 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: article.title,
+    description: article.subtitle,
+    image: article.coverImage,
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    articleSection: article.category.toUpperCase(),
+    keywords: article.tags.join(', '),
+    articleBody: article.content.join('\n\n'),
+    author: {
+      '@type': 'Person',
+      name: article.author.name || 'Robiul Hasan',
+      jobTitle: article.author.role || 'Founder & Editor-in-Chief',
+      url: article.author.website || 'https://rhasan.online',
+      sameAs: [
+        article.author.website || 'https://rhasan.online',
+        article.author.github || 'https://github.com/Daddy-Ousen',
+      ].filter(Boolean),
+    },
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'NextVector',
+      url: 'https://nextvector.rhasan.online',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://nextvector.rhasan.online/favicon.svg',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://nextvector.rhasan.online/article/${article.slug}`,
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.three-questions-block', '.key-takeaways'],
+    },
+  };
+
   return (
-    <div className="max-w-4xl mx-auto pb-20">
+    <article itemScope itemType="https://schema.org/TechArticle" className="max-w-4xl mx-auto pb-20">
+      <SEOHead
+        title={article.title}
+        description={article.subtitle}
+        canonicalPath={`/article/${article.slug}`}
+        ogImage={article.coverImage}
+        ogType="article"
+        articlePublishedTime={article.publishedAt}
+        articleSection={article.category}
+        tags={article.tags}
+        schemaData={articleSchema}
+      />
       {/* Top Navigation & Breadcrumbs */}
       <div className="flex items-center justify-between gap-4 mb-6 pt-2">
         <button
@@ -129,11 +181,11 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           <SignalRatingBadge score={article.signalRating} size="md" showDetails />
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
+        <h1 itemProp="headline" className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
           {article.title}
         </h1>
 
-        <p className="text-lg md:text-xl text-zinc-300 font-sans leading-relaxed">
+        <p itemProp="description" className="article-subtitle text-lg md:text-xl text-zinc-300 font-sans leading-relaxed">
           {article.subtitle}
         </p>
 
@@ -201,13 +253,13 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
       </div>
 
       {/* Signature Editorial Feature: The Three Questions Block */}
-      <section className="mb-10">
+      <section className="mb-10 three-questions-block" aria-label="Three Core Signal Questions">
         <ThreeQuestionsBlock questions={article.threeQuestions} />
       </section>
 
       {/* Executive Key Takeaways */}
       {article.keyTakeaways && article.keyTakeaways.length > 0 && (
-        <section className="mb-10 rounded-2xl bg-zinc-950 border border-zinc-800 p-6">
+        <section className="mb-10 rounded-2xl bg-zinc-950 border border-zinc-800 p-6 key-takeaways" aria-label="Executive Key Takeaways">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
             <ShieldCheck className="w-4 h-4" />
             <span>Executive Takeaways</span>
@@ -383,6 +435,6 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           </ul>
         </section>
       )}
-    </div>
+    </article>
   );
 };

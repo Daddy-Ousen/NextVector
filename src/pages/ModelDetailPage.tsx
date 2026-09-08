@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AIModel } from '../types';
+import { SEOHead } from '../components/common/SEOHead';
 import { ArrowLeft, Cpu, DollarSign, Scale, ExternalLink, HardDrive, ShieldAlert, CheckCircle, Calculator } from 'lucide-react';
 
 interface ModelDetailPageProps {
@@ -24,6 +25,12 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
 
   return (
     <div className="max-w-5xl mx-auto space-y-10 pb-20">
+      <SEOHead
+        title={`${model.name} — Technical Specs & Benchmark Audit`}
+        description={`${model.developer}'s ${model.name}. Architecture: ${model.modelType}, Context: ${model.contextWindow}. Verified benchmarks and pricing evaluation.`}
+        canonicalPath={`/models/${model.id}`}
+        tags={model.modalities}
+      />
       {/* Breadcrumb & Navigation */}
       <div className="flex items-center justify-between gap-4 pt-2">
         <button

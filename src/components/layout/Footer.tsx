@@ -12,8 +12,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     return typeof window !== 'undefined' && localStorage.getItem('nv_subscribed') === 'true';
   });
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubscribe = () => {
     if (email.trim()) {
       setSubscribed(true);
       if (typeof window !== 'undefined') {
@@ -91,49 +90,71 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
             <div className="mt-5">
               {subscribed ? (
-                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 flex items-center justify-between gap-2">
+                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>Subscribed to The Morning Vector. Welcome to high-signal news.</span>
+                    <span>Subscribed to The Morning Vector.</span>
                   </div>
-                  <a
-                    href="https://nextvectorr.substack.com/?r=92ang8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-400 hover:text-emerald-300 underline shrink-0 text-[11px]"
-                  >
-                    Archive ↗
-                  </a>
+                  <div className="flex items-center gap-3 shrink-0">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSubscribed(false);
+                        setEmail('');
+                        if (typeof window !== 'undefined') {
+                          localStorage.removeItem('nv_subscribed');
+                          localStorage.removeItem('nv_subscriber_email');
+                        }
+                      }}
+                      className="text-zinc-400 hover:text-zinc-200 underline text-[11px]"
+                    >
+                      Change Email
+                    </button>
+                    <a
+                      href="https://nextvectorr.substack.com/?r=92ang8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-400 hover:text-emerald-300 underline text-[11px]"
+                    >
+                      Archive ↗
+                    </a>
+                  </div>
                 </div>
               ) : (
-                <form
-                  action="https://nextvectorr.substack.com/api/v1/free?nojs=true"
-                  method="post"
-                  target="_blank"
-                  onSubmit={handleSubscribe}
-                  className="flex gap-2"
-                >
-                  <input type="hidden" name="first_url" value="https://nextvector.rhasan.online" />
-                  <input type="hidden" name="first_referrer" value="https://nextvector.rhasan.online" />
-                  <input type="hidden" name="current_url" value="https://nextvector.rhasan.online" />
-                  <input type="hidden" name="current_referrer" value="https://nextvector.rhasan.online" />
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="architect@domain.com"
-                    className="flex-1 bg-zinc-950 border border-zinc-700/80 rounded-xl px-3.5 py-2 text-xs font-mono text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
-                  />
-                  <button
-                    type="submit"
-                    className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md active:scale-95 shrink-0 flex items-center gap-1"
+                <div>
+                  <form
+                    action="https://nextvectorr.substack.com/api/v1/free?nojs=true"
+                    method="post"
+                    target="_blank"
+                    onSubmit={handleSubscribe}
+                    className="flex gap-2"
                   >
-                    <span>Subscribe</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                </form>
+                    <input type="hidden" name="first_url" value="https://nextvector.rhasan.online" />
+                    <input type="hidden" name="first_referrer" value="https://nextvector.rhasan.online" />
+                    <input type="hidden" name="current_url" value="https://nextvector.rhasan.online" />
+                    <input type="hidden" name="current_referrer" value="https://nextvector.rhasan.online" />
+                    <input type="hidden" name="source" value="embed" />
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="architect@domain.com"
+                      className="flex-1 bg-zinc-950 border border-zinc-700/80 rounded-xl px-3.5 py-2 text-xs font-mono text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
+                    />
+                    <button
+                      type="submit"
+                      className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md active:scale-95 shrink-0 flex items-center gap-1"
+                    >
+                      <span>Subscribe</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  </form>
+                  <p className="text-[10px] text-zinc-500 mt-2 font-mono">
+                    Direct Substack link: <a href="https://nextvectorr.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="text-[#FF6719] hover:underline">nextvectorr.substack.com/subscribe ↗</a>
+                  </p>
+                </div>
               )}
             </div>
           </div>

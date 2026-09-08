@@ -261,24 +261,24 @@ export const ALL_135_MODELS: AIModel[] = [
   },
   {
     "id": "model-claude-mythos-preview",
-    "name": "Claude Mythos Preview",
+    "name": "Claude Mythos 5.1",
     "developer": "Anthropic",
     "releaseDate": "September 2026",
-    "modelType": "Multimodal Foundation",
+    "modelType": "Reasoning",
     "modalities": [
       "Text",
       "Code"
     ],
-    "contextWindow": "200k tokens",
+    "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
       "inputPer1M": 7.7,
       "outputPer1M": 30.8,
-      "cachedInputPer1M": 1.54
+      "cachedInputPer1M": 0.25
     },
-    "openSourceStatus": "Proprietary API",
-    "license": "Proprietary Commercial API",
-    "hardwareRequirements": "Managed Cloud API",
+    "openSourceStatus": "Research Weights",
+    "license": "Restricted Critical Infrastructure / Defense License",
+    "hardwareRequirements": "Confidential Hardware-Isolated Enclave",
     "benchmarks": [
       {
         "benchmarkName": "LMSYS Chatbot Arena Elo",
@@ -287,26 +287,31 @@ export const ALL_135_MODELS: AIModel[] = [
         "vsPreviousGen": "Rank #6"
       },
       {
+        "benchmarkName": "Cyber-Eval",
+        "score": "94.6%",
+        "vsPreviousGen": "+18.4% vs baseline"
+      },
+      {
         "benchmarkName": "MMLU-Pro",
         "score": "96.8%",
         "vsPreviousGen": "+11.6% vs baseline"
       }
     ],
     "keyImprovements": [
-      "Official LMSYS Chatbot Arena Global Rank #6 with verified 1411 Elo rating.",
-      "Optimized multimodal foundation architecture developed by Anthropic.",
-      "High-efficiency attention routing supporting up to 200k tokens native context length."
+      "Project Glasswing defensive cybersecurity enclave integration for zero-day vulnerability scanning and patch synthesis.",
+      "75% prompt cache read discount to $0.25/1M tokens, enabling massive codebase analysis at minimal operational cost.",
+      "High-efficiency attention routing supporting up to 1M tokens native context length."
     ],
     "knownLimitations": [
-      "Subject to standard rate limits on public API endpoints.",
+      "Restricted access via Project Glasswing; strictly isolated from public internet egress.",
       "Inference latency scales with reasoning token budget."
     ],
     "realWorldApplications": [
-      "Enterprise workflow automation, autonomous software engineering, and multi-turn reasoning.",
-      "High-volume production deployment for customer interaction and synthetic data generation."
+      "Defensive vulnerability remediation, critical infrastructure resilience, and automated memory safety migration.",
+      "High-assurance software verification and cryptographic kernel inspection."
     ],
-    "architectureNotes": "Engineered by Anthropic with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
-    "link": "https://arena.ai/",
+    "architectureNotes": "Anthropic's highest-capability frontier architecture deployed exclusively inside hardware-enforced confidential computing enclaves under Responsible Scaling Policy Level 4.",
+    "link": "https://www.anthropic.com/glasswing-security-charter",
     "arenaRank": 6,
     "arenaElo": 1411
   },

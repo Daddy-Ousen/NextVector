@@ -94,13 +94,13 @@ export const HomePage: React.FC<HomePageProps> = ({
         schemaData={homeSchema}
       />
       {/* Live Breaking Signal Ticker */}
-      <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-3 shadow-lg flex items-center overflow-hidden">
-        <div className="flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-bold shrink-0 mr-4">
+      <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-2.5 sm:p-3 shadow-lg flex items-center overflow-hidden">
+        <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-[10px] sm:text-xs font-bold shrink-0 mr-2.5 sm:mr-4">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-          <span>LIVE SIGNAL</span>
+          <span className="whitespace-nowrap">LIVE SIGNAL</span>
         </div>
-        <div className="overflow-hidden whitespace-nowrap w-full">
-          <div className="animate-marquee flex items-center gap-10 text-xs font-mono text-zinc-400">
+        <div className="overflow-hidden whitespace-nowrap min-w-0 flex-1">
+          <div className="animate-marquee flex items-center gap-8 sm:gap-10 text-xs font-mono text-zinc-400">
             <span className="flex items-center gap-2">
               <span className="text-zinc-200">GPT-6 Astra</span> autonomous computer & browser operator launched • OSWorld 68.4%
             </span>
@@ -127,12 +127,12 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* Hero Story Section */}
       {heroArticle && (
         <section>
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
-              <Sparkles className="w-4 h-4" />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 mb-3 sm:mb-4">
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold shrink-0">
+              <Sparkles className="w-4 h-4 shrink-0" />
               <span>Lead Intelligence Report</span>
             </div>
-            <span className="text-xs font-mono text-zinc-400">
+            <span className="hidden sm:inline text-xs font-mono text-zinc-400 truncate">
               Primary Focus: Autonomous Computer Operators & Agent Systems
             </span>
           </div>

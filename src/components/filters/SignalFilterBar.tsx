@@ -48,28 +48,30 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
       {/* Top row: Signal threshold & format selectors */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3.5 border-b border-zinc-800/80">
         {/* Signal Threshold Slider / Buttons */}
-        <div className="flex items-center gap-3 flex-wrap">
-          <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-400 font-semibold">
-            <SlidersHorizontal className="w-3.5 h-3.5" />
-            <span>Signal Filter:</span>
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+          <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-400 font-semibold shrink-0">
+            <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" />
+            <span className="hidden sm:inline">Signal Filter:</span>
+            <span className="sm:hidden">Signal:</span>
           </div>
 
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1 sm:gap-1.5 flex-wrap">
             {[
-              { label: 'All Signal (70+)', value: 70 },
-              { label: 'High Signal (90+)', value: 90 },
-              { label: 'Breakthroughs (95+)', value: 95 },
+              { label: 'All Signal (70+)', shortLabel: '70+', value: 70 },
+              { label: 'High Signal (90+)', shortLabel: '90+', value: 90 },
+              { label: 'Breakthroughs (95+)', shortLabel: '95+', value: 95 },
             ].map((option) => (
               <button
                 key={option.value}
                 onClick={() => onMinSignalChange(option.value)}
-                className={`px-2.5 py-1 rounded-lg text-xs font-mono transition-all ${
+                className={`px-2 sm:px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-mono transition-all whitespace-nowrap ${
                   minSignal === option.value
                     ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-bold'
                     : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
                 }`}
               >
-                {option.label}
+                <span className="hidden sm:inline">{option.label}</span>
+                <span className="sm:hidden">{option.shortLabel}</span>
               </button>
             ))}
           </div>

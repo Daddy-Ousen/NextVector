@@ -349,37 +349,40 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
           </div>
 
           {/* Budget Tier Selector */}
-          <div className="flex items-center gap-2 p-1.5 bg-zinc-900 border border-zinc-800 rounded-2xl shrink-0">
+          <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-1.5 bg-zinc-900 border border-zinc-800 rounded-2xl shrink-0 overflow-x-auto max-w-full scrollbar-none">
             <span className="text-[11px] font-mono text-zinc-500 pl-2 pr-1 hidden sm:inline">Budget:</span>
             <button
               onClick={() => setActiveBudget('20')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
+              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeBudget === '20'
                   ? 'bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20'
                   : 'text-zinc-400 hover:text-zinc-200'
               }`}
             >
-              $20 / Month
+              <span className="hidden sm:inline">$20 / Month</span>
+              <span className="sm:hidden">$20/mo</span>
             </button>
             <button
               onClick={() => setActiveBudget('100')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
+              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeBudget === '100'
                   ? 'bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20'
                   : 'text-zinc-400 hover:text-zinc-200'
               }`}
             >
-              $100 / Month
+              <span className="hidden sm:inline">$100 / Month</span>
+              <span className="sm:hidden">$100/mo</span>
             </button>
             <button
               onClick={() => setActiveBudget('200')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
+              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeBudget === '200'
                   ? 'bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20'
                   : 'text-zinc-400 hover:text-zinc-200'
               }`}
             >
-              $200 / Month
+              <span className="hidden sm:inline">$200 / Month</span>
+              <span className="sm:hidden">$200/mo</span>
             </button>
           </div>
         </div>
@@ -391,10 +394,10 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <span className="text-xs font-mono text-zinc-400">
                 Evaluating paths for a <strong>$20/Month</strong> entry / solo developer budget:
               </span>
-              <div className="flex items-center gap-1.5 p-1 bg-zinc-900 border border-zinc-800 rounded-xl">
+              <div className="flex items-center gap-1.5 p-1 bg-zinc-900 border border-zinc-800 rounded-xl overflow-x-auto max-w-full scrollbar-none">
                 <button
                   onClick={() => setSelected20Tab('deepseek')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selected20Tab === 'deepseek'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -404,7 +407,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected20Tab('cursor')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selected20Tab === 'cursor'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -414,13 +417,13 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected20Tab('router')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selected20Tab === 'router'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
                   }`}
                 >
-                  Pay-As-You-Go Router
+                  Pay-As-You-Go
                 </button>
               </div>
             </div>

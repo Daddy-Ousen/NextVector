@@ -101,33 +101,57 @@ export function getSignalColor(rating: number): {
   };
 }
 
-export function getCategoryBadge(category: string): { label: string; color: string } {
+export function getCategoryBadge(category: string): { label: string; shortLabel: string; color: string } {
   switch (category) {
     case 'ai':
-      return { label: 'Artificial Intelligence', color: 'text-emerald-400 border-emerald-500/30 bg-emerald-500/10' };
+      return { 
+        label: 'Artificial Intelligence', 
+        shortLabel: 'AI', 
+        color: 'text-emerald-400 border-emerald-500/40 bg-zinc-950/85 backdrop-blur-md' 
+      };
     case 'technology':
-      return { label: 'Technology', color: 'text-cyan-400 border-cyan-500/30 bg-cyan-500/10' };
+      return { 
+        label: 'Technology', 
+        shortLabel: 'Tech', 
+        color: 'text-cyan-400 border-cyan-500/40 bg-zinc-950/85 backdrop-blur-md' 
+      };
     case 'science':
-      return { label: 'Science & Discovery', color: 'text-purple-400 border-purple-500/30 bg-purple-500/10' };
+      return { 
+        label: 'Science & Discovery', 
+        shortLabel: 'Science', 
+        color: 'text-purple-400 border-purple-500/40 bg-zinc-950/85 backdrop-blur-md' 
+      };
     case 'research':
-      return { label: 'Research Explained', color: 'text-amber-400 border-amber-500/30 bg-amber-500/10' };
+      return { 
+        label: 'Research Explained', 
+        shortLabel: 'Research', 
+        color: 'text-amber-400 border-amber-500/40 bg-zinc-950/85 backdrop-blur-md' 
+      };
     default:
-      return { label: category.toUpperCase(), color: 'text-zinc-400 border-zinc-700 bg-zinc-800' };
+      return { 
+        label: category.toUpperCase(), 
+        shortLabel: category.toUpperCase(), 
+        color: 'text-zinc-400 border-zinc-700 bg-zinc-950/85 backdrop-blur-md' 
+      };
+  }
+}
+
+export function getArticleTypeBadge(type: string): { label: string; shortLabel: string } {
+  switch (type) {
+    case 'breaking': return { label: 'Breaking News', shortLabel: 'Breaking' };
+    case 'analysis': return { label: 'News Analysis', shortLabel: 'Analysis' };
+    case 'deep-dive': return { label: 'Deep Dive', shortLabel: 'Deep Dive' };
+    case 'model-report': return { label: 'Model Report', shortLabel: 'Report' };
+    case 'benchmark-report': return { label: 'Benchmark Report', shortLabel: 'Benchmark' };
+    case 'research-explained': return { label: 'Research Explained', shortLabel: 'Research' };
+    case 'discovery': return { label: 'Discovery', shortLabel: 'Discovery' };
+    case 'industry-watch': return { label: 'Industry Watch', shortLabel: 'Watch' };
+    default: return { label: type, shortLabel: type };
   }
 }
 
 export function getArticleTypeLabel(type: string): string {
-  switch (type) {
-    case 'breaking': return 'Breaking News';
-    case 'analysis': return 'News Analysis';
-    case 'deep-dive': return 'Deep Dive';
-    case 'model-report': return 'Model Report';
-    case 'benchmark-report': return 'Benchmark Report';
-    case 'research-explained': return 'Research Explained';
-    case 'discovery': return 'Discovery';
-    case 'industry-watch': return 'Industry Watch';
-    default: return type;
-  }
+  return getArticleTypeBadge(type).label;
 }
 
 // Local Storage for Bookmarks

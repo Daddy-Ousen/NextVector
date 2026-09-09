@@ -123,8 +123,9 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
               : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60'
           }`}
         >
-          <Table className="w-4 h-4" />
-          <span>LMSYS Arena Leaderboard (135 Models)</span>
+          <Table className="w-4 h-4 shrink-0" />
+          <span className="hidden sm:inline">LMSYS Arena Leaderboard (135 Models)</span>
+          <span className="sm:hidden">Leaderboard</span>
         </button>
 
         <button
@@ -136,15 +137,16 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
               window.history.replaceState({}, '', url.pathname + url.search);
             }
           }}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
+          className={`flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
             activeTab === 'guide'
               ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/40 shadow-md shadow-emerald-950/20'
               : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60'
           }`}
         >
-          <Compass className="w-4 h-4 text-emerald-400" />
-          <span>Decision Matrix & $20 Tradeoff Guide</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30">
+          <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span className="hidden sm:inline">Decision Matrix & $20 Tradeoff Guide</span>
+          <span className="sm:hidden">Decision Guide</span>
+          <span className="hidden sm:inline text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30">
             Buyer's Guide
           </span>
         </button>

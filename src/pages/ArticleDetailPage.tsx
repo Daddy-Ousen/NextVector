@@ -111,26 +111,28 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
         schemaData={articleSchema}
       />
       {/* Top Navigation & Breadcrumbs */}
-      <div className="flex items-center justify-between gap-4 mb-6 pt-2">
+      <div className="flex items-center justify-between gap-2 sm:gap-4 mb-6 pt-2">
         <button
           onClick={onBack}
-          className="flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors group"
+          className="flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors group shrink-0"
         >
-          <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-          <span>Back to Intelligence Feed</span>
+          <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1 shrink-0" />
+          <span className="hidden sm:inline">Back to Intelligence Feed</span>
+          <span className="sm:hidden">Back</span>
         </button>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <button
             onClick={() => setShowAudioPlayer(!showAudioPlayer)}
-            className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono transition-colors border ${
+            className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-colors border shrink-0 ${
               showAudioPlayer
                 ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
                 : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border-zinc-800'
             }`}
           >
-            <Headphones className="w-3.5 h-3.5 text-emerald-400" />
-            <span>{showAudioPlayer ? 'Hide Audio' : 'Audio Briefing'}</span>
+            <Headphones className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span className="hidden sm:inline">{showAudioPlayer ? 'Hide Audio' : 'Audio Briefing'}</span>
+            <span className="sm:hidden">{showAudioPlayer ? 'Hide' : 'Audio'}</span>
           </button>
 
           <button

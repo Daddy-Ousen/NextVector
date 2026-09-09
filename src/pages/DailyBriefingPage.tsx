@@ -18,20 +18,22 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
     <div className="max-w-3xl mx-auto space-y-10 pb-20">
       {/* Header */}
       <div className="border-b border-zinc-800 pb-6 pt-2">
-        <div className="flex items-center justify-between gap-4 mb-4">
-          <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 mb-4">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <NextVectorLogo size={22} withContainer={true} showWordmark={false} />
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>The Morning Vector • Executive Edition</span>
+            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold truncate">
+              <Sparkles className="w-3.5 h-3.5 shrink-0" />
+              <span className="hidden sm:inline">The Morning Vector • Executive Edition</span>
+              <span className="sm:hidden">The Morning Vector</span>
             </div>
           </div>
           <button
             onClick={handlePrint}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-mono text-zinc-300 transition-colors"
+            className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-mono text-zinc-300 transition-colors shrink-0"
           >
             <Printer className="w-3.5 h-3.5" />
-            <span>Print Scan</span>
+            <span className="hidden sm:inline">Print Scan</span>
+            <span className="sm:hidden">Print</span>
           </button>
         </div>
 

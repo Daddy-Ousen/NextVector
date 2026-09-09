@@ -71,48 +71,53 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top Telemetry & Signal Purity Bar */}
-      <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-4 py-1.5 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-mono text-zinc-400">
-          <div className="flex items-center gap-3">
+      <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-2.5 sm:px-4 py-1.5 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-mono text-zinc-400 gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
             <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
-              <span className="font-semibold tracking-wide">SIGNAL PURITY: 99.4%</span>
+              <span className="hidden sm:inline font-semibold tracking-wide whitespace-nowrap">SIGNAL PURITY: 99.4%</span>
+              <span className="sm:hidden font-semibold tracking-wide whitespace-nowrap">99.4%</span>
             </div>
-            <span className="text-zinc-700">|</span>
-            <div className="flex items-center gap-1.5 text-zinc-300 font-mono" title="Live Publication Timestamp (UTC)">
+            <span className="text-zinc-700 shrink-0">|</span>
+            <div className="flex items-center gap-1.5 text-zinc-300 font-mono shrink-0" title="Live Publication Timestamp (UTC)">
               <Clock className="w-3 h-3 text-emerald-400 shrink-0" />
-              <span className="font-medium tracking-tight text-zinc-200">{currentDateTime}</span>
+              <span className="font-medium tracking-tight text-zinc-200 whitespace-nowrap hidden sm:inline">{currentDateTime}</span>
+              <span className="font-medium tracking-tight text-zinc-200 whitespace-nowrap sm:hidden">
+                {currentDateTime.includes('•') ? currentDateTime.split('•')[1]?.trim() : currentDateTime}
+              </span>
             </div>
             <span className="hidden xl:inline text-zinc-700">|</span>
-            <span className="hidden xl:inline text-zinc-500">
+            <span className="hidden xl:inline text-zinc-500 whitespace-nowrap">
               Editorial Rule: <span className="text-zinc-300">Less noise. More signal.</span>
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
             <button
               onClick={() => handleLinkClick('/briefing')}
-              className="flex items-center gap-1.5 text-zinc-300 hover:text-emerald-400 transition-colors"
+              className="flex items-center gap-1 sm:gap-1.5 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0"
             >
-              <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="font-semibold">Daily Briefing</span>
-              <span className="hidden md:inline text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <span className="font-semibold text-[11px] hidden sm:inline whitespace-nowrap">Daily Briefing</span>
+              <span className="font-semibold text-[10px] sm:hidden whitespace-nowrap">Briefing</span>
+              <span className="hidden md:inline text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
                 3-Min Scan
               </span>
             </button>
-            <span className="text-zinc-700">|</span>
+            <span className="text-zinc-700 shrink-0">|</span>
             <button
               onClick={onOpenBookmarks}
-              className="flex items-center gap-1 text-zinc-300 hover:text-emerald-400 transition-colors"
+              className="flex items-center gap-1 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0"
               title="View Bookmarks"
             >
-              <Bookmark className="w-3.5 h-3.5" />
-              <span>Saved</span>
+              <Bookmark className="w-3.5 h-3.5 shrink-0" />
+              <span className="text-[10px] sm:text-[11px] whitespace-nowrap">Saved</span>
               {bookmarksCount > 0 && (
-                <span className="w-4 h-4 rounded-full bg-emerald-500 text-zinc-950 text-[10px] font-bold flex items-center justify-center">
+                <span className="w-4 h-4 rounded-full bg-emerald-500 text-zinc-950 text-[10px] font-bold flex items-center justify-center shrink-0">
                   {bookmarksCount}
                 </span>
               )}

@@ -149,50 +149,62 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
         </p>
 
         {subscribed ? (
-          <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-xs font-mono text-emerald-300 flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
-              <span>You are subscribed to The Morning Vector. You will receive tomorrow's 06:00 UTC scan via Substack.</span>
+          <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-xs font-mono text-emerald-300 space-y-2">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+                <span className="font-bold text-emerald-400">Subscribed to The Morning Vector</span>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSubscribed(false);
+                    setEmail('');
+                    if (typeof window !== 'undefined') {
+                      localStorage.removeItem('nv_subscribed');
+                      localStorage.removeItem('nv_subscriber_email');
+                    }
+                  }}
+                  className="text-zinc-400 hover:text-zinc-200 underline text-xs"
+                >
+                  Change Email
+                </button>
+                <a
+                  href="https://nextvectorr.substack.com/?r=92ang8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-400 hover:text-zinc-200 underline shrink-0 text-xs"
+                >
+                  Substack Archive ↗
+                </a>
+              </div>
             </div>
-            <div className="flex items-center gap-3 shrink-0">
-              <button
-                type="button"
-                onClick={() => {
-                  setSubscribed(false);
-                  setEmail('');
-                  if (typeof window !== 'undefined') {
-                    localStorage.removeItem('nv_subscribed');
-                    localStorage.removeItem('nv_subscriber_email');
-                  }
-                }}
-                className="text-zinc-400 hover:text-zinc-200 underline text-xs"
-              >
-                Change Email
-              </button>
+            {typeof window !== 'undefined' && localStorage.getItem('nv_subscriber_email') && (
+              <p className="text-zinc-400 text-xs">
+                Subscription email: <span className="text-zinc-100 font-semibold">{localStorage.getItem('nv_subscriber_email')}</span>
+              </p>
+            )}
+            <div className="pt-1">
               <a
-                href="https://nextvectorr.substack.com/?r=92ang8"
+                href={`https://nextvectorr.substack.com/subscribe?email=${encodeURIComponent(typeof window !== 'undefined' ? localStorage.getItem('nv_subscriber_email') || '' : '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-emerald-400 hover:text-emerald-300 underline shrink-0 text-xs"
+                className="text-emerald-400 hover:text-emerald-300 underline font-semibold text-xs inline-flex items-center gap-1"
               >
-                Substack Archive ↗
+                Confirm / Manage Your Subscription on Substack ↗
               </a>
             </div>
           </div>
         ) : (
           <div>
             <form
-              action="https://nextvectorr.substack.com/api/v1/free?nojs=true"
-              method="post"
+              action="https://nextvectorr.substack.com/subscribe"
+              method="get"
               target="_blank"
               onSubmit={handleSubscribe}
               className="flex flex-col sm:flex-row gap-2.5"
             >
-              <input type="hidden" name="first_url" value="https://nextvector.rhasan.online" />
-              <input type="hidden" name="first_referrer" value="https://nextvector.rhasan.online" />
-              <input type="hidden" name="current_url" value="https://nextvector.rhasan.online" />
-              <input type="hidden" name="current_referrer" value="https://nextvector.rhasan.online" />
-              <input type="hidden" name="source" value="embed" />
               <input
                 type="email"
                 name="email"
@@ -211,7 +223,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
               </button>
             </form>
             <p className="text-[11px] text-zinc-500 mt-2.5 font-mono">
-              Direct Substack link: <a href="https://nextvectorr.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="text-[#FF6719] hover:underline">nextvectorr.substack.com/subscribe ↗</a>
+              Official Substack portal: <a href="https://nextvectorr.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="text-[#FF6719] hover:underline">nextvectorr.substack.com/subscribe ↗</a>
             </p>
           </div>
         )}

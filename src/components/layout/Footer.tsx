@@ -90,12 +90,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
             <div className="mt-5">
               {subscribed ? (
-                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>Subscribed to The Morning Vector.</span>
-                  </div>
-                  <div className="flex items-center gap-3 shrink-0">
+                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 space-y-1.5">
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span className="font-semibold text-emerald-400">Subscribed to The Morning Vector</span>
+                    </div>
                     <button
                       type="button"
                       onClick={() => {
@@ -110,30 +110,41 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     >
                       Change Email
                     </button>
+                  </div>
+                  {typeof window !== 'undefined' && localStorage.getItem('nv_subscriber_email') && (
+                    <p className="text-zinc-400 text-[11px]">
+                      Linked to: <span className="text-zinc-200">{localStorage.getItem('nv_subscriber_email')}</span>
+                    </p>
+                  )}
+                  <div className="flex items-center gap-3 pt-1 text-[11px]">
+                    <a
+                      href={`https://nextvectorr.substack.com/subscribe?email=${encodeURIComponent(typeof window !== 'undefined' ? localStorage.getItem('nv_subscriber_email') || '' : '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-400 hover:text-emerald-300 underline inline-flex items-center gap-1"
+                    >
+                      Confirm / Manage on Substack ↗
+                    </a>
+                    <span className="text-zinc-600">•</span>
                     <a
                       href="https://nextvectorr.substack.com/?r=92ang8"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-400 hover:text-emerald-300 underline text-[11px]"
+                      className="text-zinc-400 hover:text-zinc-300 underline"
                     >
-                      Archive ↗
+                      Substack Archive ↗
                     </a>
                   </div>
                 </div>
               ) : (
                 <div>
                   <form
-                    action="https://nextvectorr.substack.com/api/v1/free?nojs=true"
-                    method="post"
+                    action="https://nextvectorr.substack.com/subscribe"
+                    method="get"
                     target="_blank"
                     onSubmit={handleSubscribe}
                     className="flex gap-2"
                   >
-                    <input type="hidden" name="first_url" value="https://nextvector.rhasan.online" />
-                    <input type="hidden" name="first_referrer" value="https://nextvector.rhasan.online" />
-                    <input type="hidden" name="current_url" value="https://nextvector.rhasan.online" />
-                    <input type="hidden" name="current_referrer" value="https://nextvector.rhasan.online" />
-                    <input type="hidden" name="source" value="embed" />
                     <input
                       type="email"
                       name="email"
@@ -152,7 +163,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     </button>
                   </form>
                   <p className="text-[10px] text-zinc-500 mt-2 font-mono">
-                    Direct Substack link: <a href="https://nextvectorr.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="text-[#FF6719] hover:underline">nextvectorr.substack.com/subscribe ↗</a>
+                    Official Substack portal: <a href="https://nextvectorr.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="text-[#FF6719] hover:underline">nextvectorr.substack.com/subscribe ↗</a>
                   </p>
                 </div>
               )}

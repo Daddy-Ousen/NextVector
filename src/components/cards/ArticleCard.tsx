@@ -33,6 +33,9 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             <img
               src={article.coverImage}
               alt={article.coverImageAlt || article.title}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-zinc-950/50 lg:to-zinc-950" />
@@ -170,6 +173,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           <img
             src={article.coverImage}
             alt={article.coverImageAlt || article.title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent" />

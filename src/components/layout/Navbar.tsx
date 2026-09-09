@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Bookmark, Sparkles, Menu, X, Compass, Activity, ArrowRight, ExternalLink } from 'lucide-react';
+import { Search, Bookmark, Sparkles, Menu, X, Compass, Activity, ArrowRight, ExternalLink, Clock } from 'lucide-react';
 import { NextVectorLogo } from '../common/NextVectorLogo';
 
 interface NavbarProps {
@@ -8,6 +8,17 @@ interface NavbarProps {
   onOpenSearch: () => void;
   bookmarksCount: number;
   onOpenBookmarks: () => void;
+}
+
+function formatLiveDateTime(): string {
+  const d = new Date();
+  const weekday = d.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
+  const month = d.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+  const day = d.getUTCDate();
+  const year = d.getUTCFullYear();
+  const hours = String(d.getUTCHours()).padStart(2, '0');
+  const minutes = String(d.getUTCMinutes()).padStart(2, '0');
+  return `${weekday}, ${month} ${day}, ${year} • ${hours}:${minutes} UTC`;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -19,13 +30,23 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentDateTime, setCurrentDateTime] = useState(formatLiveDateTime);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // Update live clock every 30 seconds
+    const interval = setInterval(() => {
+      setCurrentDateTime(formatLiveDateTime());
+    }, 30000);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearInterval(interval);
+    };
   }, []);
 
   const navLinks = [
@@ -53,15 +74,20 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-4 py-1.5 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-mono text-zinc-400">
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1.5 text-emerald-400">
+            <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
               <span className="font-semibold tracking-wide">SIGNAL PURITY: 99.4%</span>
             </div>
-            <span className="hidden sm:inline text-zinc-700">|</span>
-            <span className="hidden sm:inline text-zinc-500">
+            <span className="text-zinc-700">|</span>
+            <div className="flex items-center gap-1.5 text-zinc-300 font-mono" title="Live Publication Timestamp (UTC)">
+              <Clock className="w-3 h-3 text-emerald-400 shrink-0" />
+              <span className="font-medium tracking-tight text-zinc-200">{currentDateTime}</span>
+            </div>
+            <span className="hidden xl:inline text-zinc-700">|</span>
+            <span className="hidden xl:inline text-zinc-500">
               Editorial Rule: <span className="text-zinc-300">Less noise. More signal.</span>
             </span>
           </div>
@@ -113,7 +139,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               size={28}
               withContainer={true}
               showWordmark={true}
-              version="v2.6"
               tagline="Technology & AI Intelligence"
             />
           </div>

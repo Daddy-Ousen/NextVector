@@ -9,7 +9,7 @@ export interface NextVectorLogoProps {
   showWordmark?: boolean;
   /** Subtitle/tagline to display under the wordmark */
   tagline?: string;
-  /** Version badge text (e.g. "v2.6", or null to hide) */
+  /** Optional badge text or null (defaults to null) */
   version?: string | null;
   /** Custom additional CSS classes */
   className?: string;
@@ -20,7 +20,7 @@ export const NextVectorLogo: React.FC<NextVectorLogoProps> = ({
   withContainer = true,
   showWordmark = false,
   tagline = 'Technology & AI Intelligence',
-  version = 'v2.6',
+  version = null,
   className = '',
 }) => {
   const iconContent = (
@@ -104,11 +104,6 @@ export const NextVectorLogo: React.FC<NextVectorLogoProps> = ({
             <span className="font-sans font-black text-xl tracking-tight text-zinc-100 group-hover:text-emerald-400 transition-colors">
               NextVector
             </span>
-            {version && (
-              <span className="text-[10px] font-mono font-semibold px-1.5 py-0.5 rounded bg-zinc-900 border border-zinc-700/80 text-zinc-400 tracking-wide">
-                {version}
-              </span>
-            )}
           </div>
           {tagline && (
             <p className="text-[10px] font-mono text-zinc-400 tracking-wider uppercase -mt-0.5 font-medium">

@@ -1,27 +1,70 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
-import { CommandPalette } from './components/common/CommandPalette';
-import { BookmarksModal } from './components/common/BookmarksModal';
-import { ModelComparisonModal } from './components/models/ModelComparisonModal';
 
+// Eagerly load HomePage for instantaneous Landing Page First Contentful Paint
 import { HomePage } from './pages/HomePage';
-import { ArticleDetailPage } from './pages/ArticleDetailPage';
-import { ModelsDirectoryPage } from './pages/ModelsDirectoryPage';
-import { ModelDetailPage } from './pages/ModelDetailPage';
-import { BenchmarksPage } from './pages/BenchmarksPage';
-import { ResearchPage } from './pages/ResearchPage';
-import { TimelinePage } from './pages/TimelinePage';
-import { DailyBriefingPage } from './pages/DailyBriefingPage';
-import { CategoryPage } from './pages/CategoryPage';
-import { AuthorPage } from './pages/AuthorPage';
+
+// Lazy-load secondary sub-routes for code-splitting
+const ArticleDetailPage = React.lazy(() =>
+  import('./pages/ArticleDetailPage').then((m) => ({ default: m.ArticleDetailPage }))
+);
+const ModelsDirectoryPage = React.lazy(() =>
+  import('./pages/ModelsDirectoryPage').then((m) => ({ default: m.ModelsDirectoryPage }))
+);
+const ModelDetailPage = React.lazy(() =>
+  import('./pages/ModelDetailPage').then((m) => ({ default: m.ModelDetailPage }))
+);
+const BenchmarksPage = React.lazy(() =>
+  import('./pages/BenchmarksPage').then((m) => ({ default: m.BenchmarksPage }))
+);
+const ResearchPage = React.lazy(() =>
+  import('./pages/ResearchPage').then((m) => ({ default: m.ResearchPage }))
+);
+const TimelinePage = React.lazy(() =>
+  import('./pages/TimelinePage').then((m) => ({ default: m.TimelinePage }))
+);
+const DailyBriefingPage = React.lazy(() =>
+  import('./pages/DailyBriefingPage').then((m) => ({ default: m.DailyBriefingPage }))
+);
+const CategoryPage = React.lazy(() =>
+  import('./pages/CategoryPage').then((m) => ({ default: m.CategoryPage }))
+);
+const AuthorPage = React.lazy(() =>
+  import('./pages/AuthorPage').then((m) => ({ default: m.AuthorPage }))
+);
+
+// Lazy-load heavyweight interactive modals on-demand
+const CommandPalette = React.lazy(() =>
+  import('./components/common/CommandPalette').then((m) => ({ default: m.CommandPalette }))
+);
+const BookmarksModal = React.lazy(() =>
+  import('./components/common/BookmarksModal').then((m) => ({ default: m.BookmarksModal }))
+);
+const ModelComparisonModal = React.lazy(() =>
+  import('./components/models/ModelComparisonModal').then((m) => ({ default: m.ModelComparisonModal }))
+);
 
 import { MOCK_ARTICLES, MOCK_MODELS, MOCK_BENCHMARKS, MOCK_RESEARCH_PAPERS, MOCK_TIMELINE } from './data/mockData';
 import { getSavedBookmarks, toggleBookmark } from './utils';
-import { CheckCircle2, Info } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
+
+const PageSkeleton: React.FC = () => (
+  <div className="max-w-7xl mx-auto px-4 py-12 animate-pulse space-y-8 min-h-[60vh]">
+    <div className="space-y-3">
+      <div className="h-7 bg-zinc-900/80 rounded-xl w-1/4 border border-zinc-800/60" />
+      <div className="h-4 bg-zinc-900/60 rounded-lg w-1/2" />
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+      <div className="h-64 bg-zinc-900/40 rounded-2xl border border-zinc-800/50" />
+      <div className="h-64 bg-zinc-900/40 rounded-2xl border border-zinc-800/50" />
+      <div className="h-64 bg-zinc-900/40 rounded-2xl border border-zinc-800/50" />
+    </div>
+  </div>
+);
 
 export function App() {
   // Routing state
@@ -293,42 +336,56 @@ export function App() {
 
       {/* Main Container */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        {renderCurrentPage()}
+        <Suspense fallback={<PageSkeleton />}>
+          {renderCurrentPage()}
+        </Suspense>
       </main>
 
-      {/* Global Modals & Dialogs */}
-      <CommandPalette
-        isOpen={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-        onNavigate={handleCommandPaletteSelect}
-      />
+      {/* Global Modals & Dialogs (Loaded and mounted only on demand) */}
+      {isSearchOpen && (
+        <Suspense fallback={null}>
+          <CommandPalette
+            isOpen={isSearchOpen}
+            onClose={() => setIsSearchOpen(false)}
+            onNavigate={handleCommandPaletteSelect}
+          />
+        </Suspense>
+      )}
 
-      <BookmarksModal
-        isOpen={isBookmarksOpen}
-        onClose={() => setIsBookmarksOpen(false)}
-        bookmarkedArticles={bookmarkedArticles}
-        onRemoveBookmark={(id) => {
-          const updated = toggleBookmark(id);
-          setBookmarkedIds(updated);
-        }}
-        onSelectArticle={(slug) => {
-          setIsBookmarksOpen(false);
-          navigateTo(`/article/${slug}`);
-        }}
-      />
+      {isBookmarksOpen && (
+        <Suspense fallback={null}>
+          <BookmarksModal
+            isOpen={isBookmarksOpen}
+            onClose={() => setIsBookmarksOpen(false)}
+            bookmarkedArticles={bookmarkedArticles}
+            onRemoveBookmark={(id) => {
+              const updated = toggleBookmark(id);
+              setBookmarkedIds(updated);
+            }}
+            onSelectArticle={(slug) => {
+              setIsBookmarksOpen(false);
+              navigateTo(`/article/${slug}`);
+            }}
+          />
+        </Suspense>
+      )}
 
-      <ModelComparisonModal
-        isOpen={isCompareModalOpen}
-        onClose={() => setIsCompareModalOpen(false)}
-        models={selectedCompareModels}
-        onRemoveModel={(id) => {
-          setCompareModelIds(compareModelIds.filter((mId) => mId !== id));
-        }}
-        onSelectModelDetail={(id) => {
-          setIsCompareModalOpen(false);
-          navigateTo(`/models/${id}`);
-        }}
-      />
+      {isCompareModalOpen && (
+        <Suspense fallback={null}>
+          <ModelComparisonModal
+            isOpen={isCompareModalOpen}
+            onClose={() => setIsCompareModalOpen(false)}
+            models={selectedCompareModels}
+            onRemoveModel={(id) => {
+              setCompareModelIds(compareModelIds.filter((mId) => mId !== id));
+            }}
+            onSelectModelDetail={(id) => {
+              setIsCompareModalOpen(false);
+              navigateTo(`/models/${id}`);
+            }}
+          />
+        </Suspense>
+      )}
 
       {/* Toast Notification Alert */}
       {toastMessage && (

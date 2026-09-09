@@ -1,4 +1,36 @@
 // Utility functions for NextVector
+import { Article } from '../types';
+
+/**
+ * Sorts articles strictly from newest to oldest.
+ * If two articles are published on the same calendar day,
+ * the higher signalRating (editorial importance) gets priority.
+ * If signalRating is tied on the same day, newer timestamp gets priority.
+ */
+export function sortArticlesByTimeAndImportance(articles: Article[]): Article[] {
+  return [...articles].sort((a, b) => {
+    const timeA = new Date(a.publishedAt).getTime();
+    const timeB = new Date(b.publishedAt).getTime();
+
+    // Extract calendar day prefix (YYYY-MM-DD)
+    const dayA = a.publishedAt.slice(0, 10);
+    const dayB = b.publishedAt.slice(0, 10);
+
+    if (dayA !== dayB) {
+      // Different days: Newer date strictly on top
+      return timeB - timeA;
+    }
+
+    // Same day: Higher signalRating (importance) gets priority
+    const signalDiff = (b.signalRating || 0) - (a.signalRating || 0);
+    if (signalDiff !== 0) {
+      return signalDiff;
+    }
+
+    // Same day and same signal rating: newer timestamp first
+    return timeB - timeA;
+  });
+}
 
 export function formatDate(isoString: string): string {
   try {

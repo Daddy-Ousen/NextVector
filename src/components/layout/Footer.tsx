@@ -69,7 +69,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 The 3-Minute Executive Signal Briefing
               </h4>
               <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday at 06:00 UTC via Substack.
+                Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday via Substack.
               </p>
             </div>
 

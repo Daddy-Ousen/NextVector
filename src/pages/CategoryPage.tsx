@@ -2,6 +2,7 @@ import React from 'react';
 import { Article, ArticleCategory } from '../types';
 import { ArticleCard } from '../components/cards/ArticleCard';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
+import { sortArticlesByTimeAndImportance } from '../utils';
 import { Sparkles, Cpu, Layers, Microscope, BookOpen, Compass } from 'lucide-react';
 
 interface CategoryPageProps {
@@ -82,7 +83,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
 
   const meta = getCategoryMeta();
 
-  const categoryArticles = articles.filter(meta.filterFn);
+  const categoryArticles = sortArticlesByTimeAndImportance(articles.filter(meta.filterFn));
 
   const filteredArticles = categoryArticles.filter((a) => {
     if (a.signalRating < minSignal) return false;

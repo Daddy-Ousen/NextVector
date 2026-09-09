@@ -5,6 +5,7 @@ import { ModelCard } from '../components/models/ModelCard';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
 import { SEOHead } from '../components/common/SEOHead';
+import { sortArticlesByTimeAndImportance } from '../utils';
 import { Sparkles, ArrowRight, TrendingUp, Cpu, Flame, ShieldCheck } from 'lucide-react';
 
 interface HomePageProps {
@@ -47,11 +48,15 @@ export const HomePage: React.FC<HomePageProps> = ({
   selectedType,
   onSelectType,
 }) => {
-  // Hero article (e.g. Claude 3.7)
-  const heroArticle = articles.find((a) => a.isHero) || articles[0];
+  // Sort articles strictly by newest first, with importance priority on the same day
+  const sortedArticles = sortArticlesByTimeAndImportance(articles);
 
-  // Filter remaining articles
-  const filteredArticles = articles.filter((a) => {
+  // Hero article: Highest-importance story from the most recent publishing date
+  const latestDateStr = sortedArticles[0]?.publishedAt?.slice(0, 10);
+  const heroArticle = sortedArticles.find((a) => a.isHero && a.publishedAt.startsWith(latestDateStr)) || sortedArticles[0];
+
+  // Filter remaining articles (newest to oldest)
+  const filteredArticles = sortedArticles.filter((a) => {
     if (a.id === heroArticle?.id) return false;
     if (a.signalRating < minSignal) return false;
     if (selectedType !== 'all' && a.articleType !== selectedType) return false;
@@ -59,11 +64,11 @@ export const HomePage: React.FC<HomePageProps> = ({
     return true;
   });
 
-  // Categorized slices for section highlights
-  const aiStories = articles.filter((a) => a.category === 'ai');
-  const techStories = articles.filter((a) => a.category === 'technology');
-  const scienceStories = articles.filter((a) => a.category === 'science');
-  const deepDives = articles.filter((a) => a.articleType === 'deep-dive' || a.articleType === 'analysis');
+  // Categorized slices for section highlights (inheriting chronological order)
+  const aiStories = filteredArticles.filter((a) => a.category === 'ai');
+  const techStories = filteredArticles.filter((a) => a.category === 'technology');
+  const scienceStories = filteredArticles.filter((a) => a.category === 'science');
+  const deepDives = filteredArticles.filter((a) => a.articleType === 'deep-dive' || a.articleType === 'analysis');
 
   const homeSchema = {
     '@context': 'https://schema.org',

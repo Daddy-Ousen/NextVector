@@ -126,12 +126,12 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
             </div>
           </div>
           <span className="text-[10px] font-mono uppercase px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold shrink-0">
-            06:00 UTC Daily
+            Published Every Weekday
           </span>
         </div>
 
         <p className="text-xs md:text-sm text-zinc-300 font-sans leading-relaxed">
-          Join 45,000+ AI researchers, systems architects, and venture partners who read The Morning Vector before markets open. Rigorous primary-source deconstruction, zero fluff.
+          Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday via Substack.
         </p>
 
         <div className="mt-5">

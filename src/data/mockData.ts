@@ -10,8 +10,9 @@ import {
 
 export { AUTHOR_ROBIUL_HASAN, ALL_ARTICLES } from './articlesData';
 import { ALL_ARTICLES } from './articlesData';
+import { sortArticlesByTimeAndImportance } from '../utils';
 
-export const MOCK_ARTICLES: Article[] = ALL_ARTICLES;
+export const MOCK_ARTICLES: Article[] = sortArticlesByTimeAndImportance(ALL_ARTICLES);
 
 export const MOCK_MODELS: AIModel[] = ALL_135_MODELS;
 

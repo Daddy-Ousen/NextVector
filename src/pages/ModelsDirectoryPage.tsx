@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { AIModel } from '../types';
 import { ModelCard } from '../components/models/ModelCard';
+import { ModelDecisionGuide } from '../components/models/ModelDecisionGuide';
 import { SEOHead } from '../components/common/SEOHead';
-import { Cpu, Search, Layers, Scale, CheckSquare, ArrowRight, LayoutGrid, Table, ArrowUpDown, ArrowUpRight, Check, Square } from 'lucide-react';
+import { Cpu, Search, Layers, Scale, CheckSquare, ArrowRight, LayoutGrid, Table, ArrowUpDown, ArrowUpRight, Check, Square, Compass, Sparkles } from 'lucide-react';
 
 interface ModelsDirectoryPageProps {
   models: AIModel[];
@@ -19,6 +20,14 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
   onOpenCompareModal,
   onSelectModelDetail,
 }) => {
+  const [activeTab, setActiveTab] = useState<'leaderboard' | 'guide'>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('tab') === 'guide' ? 'guide' : 'leaderboard';
+    }
+    return 'leaderboard';
+  });
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string>('all');
   const [selectedLicense, setSelectedLicense] = useState<string>('all');
@@ -97,8 +106,80 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
         </div>
       </div>
 
-      {/* Filter, Search & View Mode Bar */}
-      <div className="p-4 bg-zinc-950 border border-zinc-800 rounded-2xl space-y-4">
+      {/* View Switcher: Leaderboard vs Decision & Tradeoff Guide */}
+      <div className="flex items-center gap-2 border-b border-zinc-800/80 pb-4 overflow-x-auto">
+        <button
+          onClick={() => {
+            setActiveTab('leaderboard');
+            if (typeof window !== 'undefined') {
+              const url = new URL(window.location.href);
+              url.searchParams.delete('tab');
+              window.history.replaceState({}, '', url.pathname + (url.search ? url.search : ''));
+            }
+          }}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
+            activeTab === 'leaderboard'
+              ? 'bg-zinc-800 text-emerald-400 border border-zinc-700 shadow-md'
+              : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60'
+          }`}
+        >
+          <Table className="w-4 h-4" />
+          <span>LMSYS Arena Leaderboard (135 Models)</span>
+        </button>
+
+        <button
+          onClick={() => {
+            setActiveTab('guide');
+            if (typeof window !== 'undefined') {
+              const url = new URL(window.location.href);
+              url.searchParams.set('tab', 'guide');
+              window.history.replaceState({}, '', url.pathname + url.search);
+            }
+          }}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
+            activeTab === 'guide'
+              ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/40 shadow-md shadow-emerald-950/20'
+              : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60'
+          }`}
+        >
+          <Compass className="w-4 h-4 text-emerald-400" />
+          <span>Decision Matrix & $20 Tradeoff Guide</span>
+          <span className="text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30">
+            Buyer's Guide
+          </span>
+        </button>
+      </div>
+
+      {activeTab === 'guide' ? (
+        <ModelDecisionGuide onSelectModel={onSelectModelDetail} />
+      ) : (
+        <>
+          {/* Quick Jump Callout inside Leaderboard */}
+          <div className="p-4 rounded-2xl bg-zinc-950 border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono shadow-md">
+            <div className="flex items-center gap-2.5">
+              <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
+              <span className="text-zinc-300">
+                Need help deciding which model or subscription fits your workflow?
+              </span>
+            </div>
+            <button
+              onClick={() => {
+                setActiveTab('guide');
+                if (typeof window !== 'undefined') {
+                  const url = new URL(window.location.href);
+                  url.searchParams.set('tab', 'guide');
+                  window.history.replaceState({}, '', url.pathname + url.search);
+                }
+              }}
+              className="text-emerald-400 hover:text-emerald-300 font-bold underline inline-flex items-center gap-1 shrink-0 cursor-pointer"
+            >
+              <span>Open Decision Matrix & $20 Tradeoff Guide</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {/* Filter, Search & View Mode Bar */}
+          <div className="p-4 bg-zinc-950 border border-zinc-800 rounded-2xl space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="relative flex-1">
             <Search className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -347,6 +428,8 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
             </div>
           )}
         </div>
+      )}
+        </>
       )}
     </div>
   );

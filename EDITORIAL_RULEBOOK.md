@@ -192,7 +192,7 @@ export interface Article {
 
 ## 7. Pre-Publication Quality Assurance (Release Gate)
 
-Before committing any new article to the repository or deploying to production, the publishing agent/editor MUST execute the **5-Step Release Gate**:
+Before committing any new article to the repository or deploying to production, the publishing agent/editor MUST execute the **6-Step Release Gate**:
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -204,17 +204,53 @@ Before committing any new article to the repository or deploying to production, 
 │ STEP 2: CATALOG DEDUPLICATION CHECK                    │
 │         Confirm topic, slug, and title are unique.     │
 ├────────────────────────────────────────────────────────┤
-│ STEP 3: IMAGE UNIQUENESS & VALIDATION AUDIT            │
+│ STEP 3: TIMELINE INTEGRITY CHECK                       │
+│         Audit events with Impact Score >= 95 and sync  │
+│         MOCK_TIMELINE_EVENTS in mockData.ts.           │
+├────────────────────────────────────────────────────────┤
+│ STEP 4: IMAGE UNIQUENESS & VALIDATION AUDIT            │
 │         Confirm coverImage is 100% unique (0 dupes),   │
 │         file exists on disk or remote returns HTTP 200.│
 ├────────────────────────────────────────────────────────┤
-│ STEP 4: TYPESCRIPT COMPILATION & BUILD CHECK           │
+│ STEP 5: TYPESCRIPT COMPILATION & BUILD CHECK           │
 │         Run `npm run build` (must pass with 0 errors). │
 ├────────────────────────────────────────────────────────┤
-│ STEP 5: ATOMIC GIT COMMIT & REMOTE PUSH                │
+│ STEP 6: ATOMIC GIT COMMIT & REMOTE PUSH                │
 │         Commit with semantic prefix: `feat(news): ...` │
 └────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 8. Technology & Science Breakthrough Timeline Curation
+
+NextVector maintains a permanent, living chronological record of paradigm-shifting milestones (`MOCK_TIMELINE_EVENTS` in `src/data/mockData.ts`) rendered on the `/timeline` route.
+
+### 8.1 Inclusion Criteria & Thresholds
+A daily development qualifies for the Breakthrough Timeline if and only if:
+1. **Permanent Structural Shift**: It represents a lasting historical inflection in AI capabilities, compute fabrics, semiconductor lithography, or empirical science (not ephemeral marketing announcements or executive personnel moves).
+2. **Impact Score >= 95**: Only events with an assessed Impact Score of 95 or higher (or industry-defining acquisitions/regulations) are elevated to the permanent timeline.
+3. **Primary-Source Verified**: Must be confirmed by peer-reviewed paper, verifiable hardware wafer yields, audited benchmark scores, or definitive legal/acquisition filings.
+
+### 8.2 Category Alignment
+Milestones must be strictly classified into one of the 5 canonical categories matching the UI filter pills:
+- `'AI Breakthrough'`
+- `'Semiconductors'`
+- `'Computing Architecture'`
+- `'Fundamental Science'`
+- `'Space & Quantum'`
+
+### 8.3 Data Schema & Deep-Linking
+Every `TimelineEvent` must contain:
+- `id`: Unique kebab-case identifier (e.g. `'time-2026-09-09-tsmc'`).
+- `year`: Numeric year (e.g. `2026`).
+- `month`: Short month and day (e.g. `'Sep 9'`).
+- `title`: Rigorous, definitive headline.
+- `category`: One of the 5 canonical categories above.
+- `summary`: 1-2 sentence executive synopsis.
+- `impactScore`: Numeric score between 95 and 100.
+- `keyShift`: 1-sentence defining description of the paradigm shift.
+- `articleSlug`: Optional slug pointing to the corresponding in-depth NextVector intelligence report for seamless reader cross-navigation.
 
 ---
 

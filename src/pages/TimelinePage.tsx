@@ -4,9 +4,10 @@ import { Compass, Sparkles, Filter, ShieldCheck, ArrowRight } from 'lucide-react
 
 interface TimelinePageProps {
   events: TimelineEvent[];
+  onSelectArticle?: (slug: string) => void;
 }
 
-export const TimelinePage: React.FC<TimelinePageProps> = ({ events }) => {
+export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArticle }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const categories = [
@@ -46,7 +47,7 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events }) => {
           <button
             key={c.value}
             onClick={() => setSelectedCategory(c.value)}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-mono transition-all shrink-0 ${
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-mono transition-all shrink-0 cursor-pointer ${
               selectedCategory === c.value
                 ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 font-bold'
                 : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
@@ -58,47 +59,71 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events }) => {
       </div>
 
       {/* Timeline Stream */}
-      <div className="relative border-l-2 border-zinc-800 ml-4 md:ml-8 pl-6 md:pl-10 space-y-10">
-        {filteredEvents.map((event) => (
-          <div key={event.id} className="relative group">
-            {/* Timeline node icon */}
-            <div className="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-cyan-400 group-hover:scale-125 transition-transform" />
+      <div className="relative border-l-2 border-zinc-800 ml-3 sm:ml-4 md:ml-8 pl-5 sm:pl-6 md:pl-10 space-y-8 md:space-y-10">
+        {filteredEvents.length === 0 ? (
+          <div className="rounded-2xl bg-zinc-950 border border-zinc-800 p-8 text-center text-zinc-400 font-mono text-sm">
+            No milestones registered for this category yet.
+          </div>
+        ) : (
+          filteredEvents.map((event) => (
+            <div key={event.id} className="relative group">
+              {/* Timeline node icon */}
+              <div className="absolute -left-[29px] sm:-left-[33px] md:-left-[49px] top-2 w-4 h-4 rounded-full bg-zinc-950 border-2 border-cyan-400 group-hover:scale-125 transition-transform shrink-0" />
 
-            {/* Event Card */}
-            <div className="rounded-2xl bg-zinc-950 border border-zinc-800/90 p-6 hover:border-zinc-700 transition-all shadow-xl">
-              <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-zinc-800/80 mb-3 text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold text-cyan-400 text-sm">
-                    {event.month} {event.year}
-                  </span>
-                  <span>•</span>
-                  <span className="px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300">
-                    {event.category}
-                  </span>
+              {/* Event Card */}
+              <div className="rounded-2xl bg-zinc-950 border border-zinc-800/90 p-5 sm:p-6 hover:border-zinc-700 transition-all shadow-xl">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-zinc-800/80 mb-3 text-xs font-mono">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-bold text-cyan-400 text-sm whitespace-nowrap">
+                      {event.month} {event.year}
+                    </span>
+                    <span className="text-zinc-600">•</span>
+                    <span className="px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] sm:text-xs whitespace-nowrap">
+                      {event.category}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-emerald-400 font-bold text-[11px] sm:text-xs whitespace-nowrap">
+                    <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                    <span>Impact Score: {event.impactScore}/100</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-1.5 text-emerald-400 font-bold">
-                  <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>Impact Score: {event.impactScore}/100</span>
+
+                <h3 className="text-lg sm:text-xl font-bold text-zinc-100 font-sans group-hover:text-cyan-400 transition-colors leading-snug">
+                  {event.title}
+                </h3>
+
+                <p className="text-sm text-zinc-300 font-sans mt-2 leading-relaxed">
+                  {event.summary}
+                </p>
+
+                <div className="mt-4 p-3 bg-zinc-900/60 rounded-xl border border-zinc-800 text-xs font-mono text-zinc-400">
+                  <span className="text-cyan-400 font-semibold uppercase text-[10px] tracking-wider block mb-0.5">
+                    Paradigm Shift:
+                  </span>
+                  <span className="text-zinc-200">{event.keyShift}</span>
                 </div>
-              </div>
 
-              <h3 className="text-xl font-bold text-zinc-100 font-sans group-hover:text-cyan-400 transition-colors">
-                {event.title}
-              </h3>
-
-              <p className="text-sm text-zinc-300 font-sans mt-2 leading-relaxed">
-                {event.summary}
-              </p>
-
-              <div className="mt-4 p-3 bg-zinc-900/60 rounded-xl border border-zinc-800 text-xs font-mono text-zinc-400">
-                <span className="text-cyan-400 font-semibold uppercase text-[10px] tracking-wider block mb-0.5">
-                  Paradigm Shift:
-                </span>
-                <span className="text-zinc-200">{event.keyShift}</span>
+                {event.articleSlug && (
+                  <div className="mt-4 pt-3 border-t border-zinc-900/80 flex items-center justify-end">
+                    <button
+                      onClick={() => {
+                        if (onSelectArticle) {
+                          onSelectArticle(event.articleSlug!);
+                        } else {
+                          window.location.href = `/article/${event.articleSlug}`;
+                        }
+                      }}
+                      className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:text-cyan-300 transition-colors group/btn font-semibold cursor-pointer"
+                    >
+                      <span>Read In-Depth Intelligence Deconstruction</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );

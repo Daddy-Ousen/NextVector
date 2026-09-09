@@ -131,6 +131,7 @@ export interface TimelineEvent {
   summary: string;
   impactScore: number; // 1-100
   keyShift: string;
+  articleSlug?: string;
 }
 
 export interface DailyBriefingItem {

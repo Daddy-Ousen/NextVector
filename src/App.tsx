@@ -246,7 +246,12 @@ export function App() {
 
     // 6. Timeline: /timeline
     if (currentPath === '/timeline') {
-      return <TimelinePage events={MOCK_TIMELINE} />;
+      return (
+        <TimelinePage
+          events={MOCK_TIMELINE}
+          onSelectArticle={(slug) => navigateTo(`/article/${slug}`)}
+        />
+      );
     }
 
     // 7. Daily Briefing: /briefing

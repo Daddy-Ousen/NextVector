@@ -29,8 +29,9 @@ When receiving this trigger, the agent **MUST** execute the complete 7-stage wor
 4. **100% Unique, Non-Generic Images**: Exactly **0 duplicate images** across the entire publication. Tier-1 public domain, Tier-2 bespoke technical diagrams, or Tier-3 verified URLs ([Rulebook §4](./EDITORIAL_RULEBOOK.md#4-visual-assets--media-standards-strict-compliance)).
 5. **Sole Authorship by Robiul Hasan**: Every report authored by Founder & Editor-in-Chief Robiul Hasan ([Rulebook §6.1](./EDITORIAL_RULEBOOK.md#61-sole-authorship)).
 6. **Update Daily Briefing**: Refresh `MOCK_DAILY_BRIEFING` in `src/data/mockData.ts` for today's date.
-7. **Pass Pre-Publication Release Gate**: `npm run build` must compile with 0 errors, and pass all 5 steps of the **Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)) before pushing to `main`.
-8. **Generate Substack Newsletter**: Draft the full edition of **The Morning Vector** ready to copy/paste into Substack ([Rulebook §6.2](./EDITORIAL_RULEBOOK.md#62-newsletter--syndication-integration)).
+7. **Timeline Milestone Audit & Sync**: Evaluate today's intelligence reports against the Breakthrough Timeline threshold (Impact Score >= 95 or historic structural shifts). Append qualifying events to `MOCK_TIMELINE_EVENTS` in `src/data/mockData.ts` with cross-links to the full report ([Rulebook §8](./EDITORIAL_RULEBOOK.md#8-technology--science-breakthrough-timeline-curation)).
+8. **Pass Pre-Publication Release Gate**: `npm run build` must compile with 0 errors, and pass all steps of the **Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)) before pushing to `main`.
+9. **Generate Substack Newsletter**: Draft the full edition of **The Morning Vector** ready to copy/paste into Substack ([Rulebook §6.2](./EDITORIAL_RULEBOOK.md#62-newsletter--syndication-integration)).
 
 ---
 
@@ -151,23 +152,44 @@ For each of the 5+ new stories, append a valid `Article` object strictly adherin
   - `whyItMatters`: 1-sentence bottom-line takeaway
   - `articleSlug`: exact slug of the corresponding article
 
+### 5.3 Breakthrough Timeline Synchronization (`MOCK_TIMELINE_EVENTS` in `src/data/mockData.ts`)
+Audit each of today's 5+ stories against the permanent timeline criteria ([Rulebook §8](./EDITORIAL_RULEBOOK.md#8-technology--science-breakthrough-timeline-curation)):
+- **Qualification Threshold**: Impact Score >= 95, or historic industry shifts (e.g. major tech acquisitions, first-in-kind architecture reveals, physical semiconductor yield validations, cosmic paradigm shifts).
+- **Update Action**:
+  - Insert new `TimelineEvent` items at the top of `MOCK_TIMELINE_EVENTS` in reverse-chronological order:
+    - `id`: `time-YYYY-MM-DD[-suffix]`
+    - `year`: current year (number, e.g. `2026`)
+    - `month`: short date (e.g. `'Sep 9'`)
+    - `title`: definitive technical headline
+    - `category`: must match one of the 5 canonical categories:
+      - `'AI Breakthrough'`
+      - `'Semiconductors'`
+      - `'Computing Architecture'`
+      - `'Fundamental Science'`
+      - `'Space & Quantum'`
+    - `summary`: 1-2 sentence executive synopsis
+    - `impactScore`: 95–100
+    - `keyShift`: single-sentence description of the permanent technical/structural inflection point
+    - `articleSlug`: exact slug of the corresponding NextVector report for seamless cross-linking
+
 ---
 
 ## Stage 6: Verification, Build & Deployment Gate
 
-Execute the mandatory **5-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
+Execute the mandatory **6-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
 
 1. **Step 1: Factuality & Primary Source Audit**: Verify claims, numbers, and DOIs.
 2. **Step 2: Catalog Deduplication Check**: Confirm title, slug, and topic uniqueness.
-3. **Step 3: Image Uniqueness & Validation Audit**:
+3. **Step 3: Timeline Integrity Check**: Confirm whether any of today's reports meet the Breakthrough Timeline threshold (Impact Score >= 95) and that `MOCK_TIMELINE_EVENTS` is updated, categorized correctly, and sorted reverse-chronologically with `articleSlug` links.
+4. **Step 4: Image Uniqueness & Validation Audit**:
    Run a verification script to confirm:
    - Total articles == expected count.
    - Total unique cover images == total articles (**0 duplicate images**).
    - All local images exist on disk.
    - All remote image URLs return HTTP 200.
-4. **Step 4: TypeScript & Vite Build**:
+5. **Step 5: TypeScript & Vite Build**:
    Run `npm run build`. Must compile with zero errors in under 2 seconds.
-5. **Step 5: Atomic Git Commit & Remote Push**:
+6. **Step 6: Atomic Git Commit & Remote Push**:
    Stage modified and new files:
    ```bash
    git add src/data/articlesData.ts src/data/modelsData.ts src/data/benchmarksData.ts src/data/mockData.ts public/images/articles/

@@ -194,12 +194,13 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
         {/* Metadata & Author Review Badge */}
         <div className="pt-4 border-t border-zinc-800/80 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-zinc-400">
           <div className="flex items-center gap-3">
-            <div
+            <img
               onClick={onSelectAuthor}
-              className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500/20 to-zinc-800 border border-zinc-700 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs shrink-0 cursor-pointer hover:border-emerald-500 transition-colors"
-            >
-              RH
-            </div>
+              src={article.author.avatar}
+              alt={article.author.name}
+              className="w-10 h-10 rounded-full object-cover border border-zinc-700 hover:border-emerald-500 transition-colors shrink-0 cursor-pointer shadow-md"
+              title="View Author Profile & Editorial Manifesto"
+            />
             <div>
               <div className="text-zinc-200 font-bold flex items-center gap-2 flex-wrap">
                 <button
@@ -372,12 +373,13 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
       {/* Author Bio Box */}
       <section className="mt-12 p-6 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
         <div className="flex items-center gap-4">
-          <div
+          <img
             onClick={onSelectAuthor}
-            className="w-14 h-14 rounded-2xl bg-zinc-900 border border-zinc-700 flex items-center justify-center font-mono font-bold text-emerald-400 text-lg shrink-0 cursor-pointer hover:border-emerald-500 transition-colors"
-          >
-            RH
-          </div>
+            src={article.author.avatar}
+            alt={article.author.name}
+            className="w-14 h-14 rounded-2xl object-cover border border-zinc-700 hover:border-emerald-500 transition-colors shrink-0 cursor-pointer shadow-md"
+            title="View Author Profile"
+          />
           <div>
             <div className="flex items-center gap-2">
               <span className="text-base font-bold text-zinc-100">{article.author.name}</span>

@@ -89,13 +89,14 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
         <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8">
-          {/* Avatar Monogram Badge */}
+          {/* Avatar Photo & Verification Badge */}
           <div className="relative shrink-0">
-            <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-gradient-to-br from-emerald-500/20 via-zinc-800 to-zinc-900 p-1 border border-zinc-700/80 shadow-2xl overflow-hidden flex items-center justify-center">
-              <div className="w-full h-full rounded-xl bg-zinc-900 flex flex-col items-center justify-center text-emerald-400 font-mono font-extrabold text-3xl">
-                <span>RH</span>
-                <span className="text-[9px] tracking-widest text-zinc-500 uppercase mt-0.5 font-bold">NEXTVECTOR</span>
-              </div>
+            <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-gradient-to-br from-emerald-500/30 via-zinc-800 to-zinc-900 p-1 border border-zinc-700/80 shadow-2xl overflow-hidden flex items-center justify-center">
+              <img
+                src="/images/author-robiul-hasan.jpg"
+                alt="Robiul Hasan"
+                className="w-full h-full rounded-xl object-cover"
+              />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-emerald-500 text-zinc-950 p-1.5 rounded-xl shadow-lg border-2 border-zinc-950" title="Verified Editorial Lead & Systems Specialist">
               <ShieldCheck className="w-4 h-4" />

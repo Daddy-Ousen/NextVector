@@ -3,7 +3,7 @@ import { Article } from '../types';
 export const AUTHOR_ROBIUL_HASAN = {
   name: 'Robiul Hasan',
   role: 'Founder & Editor-in-Chief',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
+  avatar: '/images/author-robiul-hasan.jpg',
   verified: true,
   website: 'https://rhasan.online',
   github: 'https://github.com/Daddy-Ousen',

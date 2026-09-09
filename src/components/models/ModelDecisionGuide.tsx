@@ -89,7 +89,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       elo: 1420,
       price: '$7.95 / 1M input',
       badge: 'SWE-bench 98%',
-      tierAvailability: 'Requires ChatGPT Pro ($200/mo) or OpenAI API. Not in $20 Plus.',
+      tierAvailability: 'Available in ChatGPT Plus ($20/mo, limited caps), unmetered in Pro ($200/mo) & API.',
       why: 'Global Rank #1. Unrivaled multi-step tool execution and autonomous operating system & terminal control.',
     },
     valuePick: {
@@ -117,7 +117,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       why: 'Full multi-expert weights available for self-hosted enterprise clusters with zero code telemetry.',
     },
     proTip:
-      'Architecture Pattern: Use DeepSeek-V4-Pro ($0.75/1M) or Gemini 3.8 Flash for initial code scaffolding and unit test runs. Escalate only failing test suites to GPT-6 Astra (via API or $200 Pro) for architectural debugging.',
+      'Architecture Pattern: Use DeepSeek-V4-Pro ($0.75/1M) or Gemini 3.8 Flash for initial code scaffolding and unit test runs. Escalate only failing test suites to GPT-6 Astra (via Plus, Pro, or API) for architectural debugging.',
   },
   {
     id: 'guide-reasoning',
@@ -133,7 +133,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       elo: 1416,
       price: '$7.85 / 1M input',
       badge: 'Reasoning Leader',
-      tierAvailability: 'Available via Anthropic API ($7.85/1M) & Claude Team ($100/mo).',
+      tierAvailability: 'Available in Claude Pro ($20/mo, usage caps), unmetered in API & Team.',
       why: 'Exceptional test-time reasoning density and nuanced step-by-step mathematical proof verification.',
     },
     valuePick: {
@@ -150,7 +150,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       name: 'Claude Fable 5.1',
       modelId: 'model-claude-fable-5-1',
       metric: 'Adaptive Thinking',
-      tierAvailability: 'Commercial API only ($7.90/1M, Bedrock, Vertex). Not in $20 Pro.',
+      tierAvailability: 'Commercial API only ($7.90/1M, Bedrock, Vertex). Excluded from Claude Pro.',
       why: 'Dynamically allocates reasoning token budget based on query complexity to avoid unnecessary latency.',
     },
     localPick: {
@@ -161,7 +161,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       why: 'Runs comfortably on a single workstation GPU (RTX 5090 / 4090) while outperforming previous-generation 70B models.',
     },
     proTip:
-      'Cost Efficiency: DeepSeek-V4-Pro delivers comparable MATH benchmark accuracy to closed frontier APIs. Reserve Claude Opus 5 or Claude Fable 5.1 for novel scientific synthesis requiring multi-disciplinary hypotheses.',
+      'Cost Efficiency: DeepSeek-V4-Pro delivers comparable MATH benchmark accuracy to closed frontier APIs. Use Claude Opus 5 (in Claude Pro or API) for novel scientific synthesis requiring multi-disciplinary hypotheses.',
   },
   {
     id: 'guide-context',
@@ -177,7 +177,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       elo: 1418,
       price: '$7.90 / 1M input',
       badge: '1M Native Window',
-      tierAvailability: 'Commercial API ($7.90/1M, $0.25 prompt cache). Not in $20 Pro.',
+      tierAvailability: 'Commercial API ($7.90/1M, $0.25 prompt cache). Excluded from Claude Pro.',
       why: 'Superior document understanding and 99.9% needle retrieval accuracy across full 1M token windows with prompt caching.',
     },
     valuePick: {
@@ -205,7 +205,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       why: 'Supports 200k local context with memory-efficient Multi-Head Latent Attention (MLA).',
     },
     proTip:
-      'Prompt Caching Secret: Both Anthropic (Claude Fable 5.1) and DeepSeek support prompt caching. Repeated queries against the same 500k-token repository cost 80–90% less ($0.25/1M reads) on subsequent requests.',
+      'Prompt Caching Secret: Both Anthropic (Claude Fable 5.1 API) and DeepSeek support prompt caching. Repeated queries against the same 500k-token repository cost 80–90% less ($0.25/1M reads) on subsequent requests.',
   },
   {
     id: 'guide-rag',
@@ -292,12 +292,12 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
           <div>
             <span className="text-xs font-mono text-zinc-500 uppercase block">Global #1 Model</span>
             <span className="text-lg font-bold text-zinc-100 font-mono">GPT-6 Astra</span>
-            <span className="text-[11px] text-emerald-400 font-mono block">1420 Arena Elo • $200 Pro / API</span>
+            <span className="text-[11px] text-emerald-400 font-mono block">1420 Elo • Plus (Limited), Pro ($200), API</span>
           </div>
           <div>
             <span className="text-xs font-mono text-zinc-500 uppercase block">Reasoning Leader</span>
             <span className="text-lg font-bold text-zinc-100 font-mono">Claude Opus 5</span>
-            <span className="text-[11px] text-purple-400 font-mono block">1416 Arena Elo • API / Team</span>
+            <span className="text-[11px] text-purple-400 font-mono block">1416 Elo • Claude Pro ($20), API, Team</span>
           </div>
           <div>
             <span className="text-xs font-mono text-zinc-500 uppercase block">Pareto Champion</span>
@@ -318,15 +318,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
           <ShieldAlert className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
           <div className="space-y-1">
             <span className="font-bold text-amber-300 uppercase tracking-wide">
-              Tier Verification & Security Isolation Notice (September 2026)
+              Verified Subscription & Tier Access Audit (September 2026)
             </span>
             <p className="text-zinc-300 leading-relaxed font-sans text-xs">
-              <strong>Claude Mythos 5.1</strong> (Rank #6, 94.6% Cyber-Eval) is strictly isolated within <strong>Project Glasswing</strong> cryptographic hardware enclaves for critical defense infrastructure. It is <strong>NOT available</strong> in any consumer subscription or public API. Similarly, <strong>Claude Fable 5.1</strong> is exclusive to commercial API / enterprise tiers (not in $20 Claude Pro), and <strong>GPT-6 Astra Operator</strong> requires ChatGPT Pro ($200/mo) or the API (not in $20 Plus).
+              <strong>ChatGPT Plus ($20/mo)</strong> grants access to <strong>GPT-6 Astra (limited rate caps)</strong> alongside <strong>GPT-5.6 Sol, 5.6 Terra, and 5.6 Luna</strong>. Full unmetered Astra Operator computer use requires <strong>ChatGPT Pro ($200/mo)</strong>.
+              <br className="my-1" />
+              <strong>Claude Pro ($20/mo)</strong> grants access to <strong>Opus 5</strong> (complex tasks), <strong>Sonnet 5</strong> (everyday default), and <strong>Haiku 4.5</strong> (fastest), plus extended legacy models (Opus 4.8–4.6). <strong>Claude Fable 5.1</strong> is exclusive to commercial API / enterprise, and <strong>Claude Mythos 5.1</strong> is strictly restricted to <strong>Project Glasswing</strong> defense enclaves.
             </p>
           </div>
         </div>
         <div className="shrink-0 px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 text-[11px] font-bold">
-          Verified Registry
+          Live Model Menus Verified
         </div>
       </div>
 
@@ -437,31 +439,31 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     Single Lab Web Subscription
                   </h4>
                   <p className="text-xs text-zinc-400 leading-relaxed font-sans">
-                    Buying a single consumer subscription: <strong>ChatGPT Plus</strong> (for GPT-5.6 Sol) or <strong>Claude Pro</strong> (for Claude Sonnet 5).
+                    Buying either <strong>ChatGPT Plus</strong> (GPT-6 Astra [limited], Sol, Terra, Luna) or <strong>Claude Pro</strong> (Opus 5, Sonnet 5, Haiku 4.5).
                   </p>
 
                   <div className="space-y-2 pt-2 text-xs font-sans">
                     <div className="flex items-start gap-2 text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Polished Web UI, Canvas, Artifacts 3.0, and voice mode.</span>
+                      <span><strong>ChatGPT Plus:</strong> GPT-6 Astra (limited), GPT-5.6 Sol, Terra & Luna with Canvas & Voice.</span>
                     </div>
                     <div className="flex items-start gap-2 text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Predictable monthly billing for casual daily questions.</span>
+                      <span><strong>Claude Pro:</strong> Opus 5 for complex tasks, Sonnet 5 for daily work, Haiku 4.5 for speed, plus Artifacts 3.0.</span>
                     </div>
                     <div className="flex items-start gap-2 text-amber-400/90 pt-1">
                       <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                      <span><strong>No Astra or Fable:</strong> GPT-6 Astra requires Pro ($200); Fable 5.1 is API only.</span>
+                      <span><strong>Strict Message Caps:</strong> Astra and Opus 5 are heavily rate-limited (~40 msgs / 5 hrs).</span>
                     </div>
                     <div className="flex items-start gap-2 text-amber-400/90">
                       <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                      <span>Strict message caps (~40 msgs / 5 hrs). Quota expires at month end.</span>
+                      <span>Unused quota expires at month end. No API access or IDE integration.</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
-                  Best for: Casual daily chat, non-technical writing & brainstorming.
+                  Best for: Conversational daily chat, interactive web artifacts & brainstorming.
                 </div>
               </div>
 
@@ -512,7 +514,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                         <span>Multi-Model IDE (Cursor Pro / Windsurf)</span>
                       </h4>
                       <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-                        Instead of paying $40/mo ($20 OpenAI + $20 Anthropic), a single $20 IDE plan provides in-editor access to <strong>both Claude Sonnet 5 AND GPT-5.6 Sol</strong>.
+                        Instead of paying $40/mo for separate consumer accounts, a single $20 IDE plan provides in-editor access to <strong>Claude Sonnet 5, GPT-5.6 Sol, and DeepSeek-V4</strong>.
                       </p>
                       <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
                         <div className="flex justify-between">
@@ -687,17 +689,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     The Tri-Lab Suite + API Buffer
                   </h4>
                   <p className="text-xs text-zinc-400 leading-relaxed font-sans">
-                    Eliminates vendor lock-in by subscribing to all major consumer tiers plus maintaining a developer API buffer.
+                    Combines the best of OpenAI, Anthropic, and in-editor agent tools while maintaining a dedicated API headroom buffer.
                   </p>
 
                   <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
                     <div className="flex justify-between">
                       <span className="text-zinc-400">ChatGPT Plus:</span>
-                      <span className="text-zinc-200 font-semibold">$20 (GPT-5.6 Sol + Voice)</span>
+                      <span className="text-zinc-200 font-semibold">$20 (Astra [ltd] + Sol/Terra)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-zinc-400">Claude Pro:</span>
-                      <span className="text-zinc-200 font-semibold">$20 (Sonnet 5 + Artifacts)</span>
+                      <span className="text-zinc-200 font-semibold">$20 (Opus 5 + Sonnet 5)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-zinc-400">Cursor Pro:</span>
@@ -705,18 +707,18 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     </div>
                     <div className="flex justify-between border-t border-zinc-800 pt-1 text-emerald-400">
                       <span>API Headroom Buffer:</span>
-                      <span>$40 / mo (Astra/Opus 5)</span>
+                      <span>$40 / mo (Uncapped Astra/Opus 5)</span>
                     </div>
                   </div>
 
                   <div className="space-y-2 pt-2 text-xs font-sans">
                     <div className="flex items-start gap-2 text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>Zero downtime: if Anthropic throttles you, switch instantly to OpenAI.</span>
+                      <span>Zero downtime: switch effortlessly between OpenAI and Anthropic when hitting hourly caps.</span>
                     </div>
                     <div className="flex items-start gap-2 text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>$40 API buffer allows calling GPT-6 Astra or Claude Opus 5 for hard proofs.</span>
+                      <span>$40 API reserve allows triggering uncapped autonomous agent scripts when web chat is capped.</span>
                     </div>
                   </div>
                 </div>
@@ -798,7 +800,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   <div className="space-y-2 pt-2 text-xs font-sans">
                     <div className="flex items-start gap-2 text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                      <span><strong>5x Higher Rate Limits:</strong> Rarely hit message limits on Claude Sonnet 5 or GPT-5.6 Sol.</span>
+                      <span><strong>5x Higher Rate Limits:</strong> Significantly higher caps on Opus 5, Sonnet 5, and GPT-6 Astra.</span>
                     </div>
                     <div className="flex items-start gap-2 text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
@@ -874,7 +876,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     ChatGPT Pro (Frontier Operator)
                   </h4>
                   <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-                    The only consumer subscription that unlocks <strong>GPT-6 Astra Operator</strong> with native pixel-based autonomous computer & browser control.
+                    The only consumer subscription that unlocks <strong>unmetered GPT-6 Astra Operator</strong> with native pixel-based autonomous computer & browser control.
                   </p>
 
                   <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
@@ -903,7 +905,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     </div>
                     <div className="flex items-start gap-2 text-zinc-200">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>No 5-hour message throttling even under heavy compute loads.</span>
+                      <span>No 5-hour message throttling even under heavy agentic workloads.</span>
                     </div>
                   </div>
                 </div>
@@ -1013,7 +1015,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             <span className="font-bold text-zinc-200 font-mono">NextVector Capital Efficiency Rule:</span>
             {activeBudget === '20' && (
               <p className="text-zinc-400 leading-relaxed">
-                If your primary task is software development, <strong>Cursor Pro ($20)</strong> or <strong>$20 in DeepSeek-V4 API credits (26.6M tokens)</strong> delivers 5x to 10x higher productive output than a single consumer chat subscription. If you need conversational web UI, <strong>ChatGPT Plus ($20)</strong> gives GPT-5.6 Sol (1415 Elo) while <strong>Claude Pro ($20)</strong> gives Claude Sonnet 5 with Artifacts 3.0.
+                Both $20 subscriptions now provide access to premier frontier intelligence: <strong>ChatGPT Plus ($20)</strong> offers <strong>GPT-6 Astra (limited)</strong> plus Sol, Terra, and Luna, while <strong>Claude Pro ($20)</strong> offers <strong>Opus 5</strong> (complex tasks) and <strong>Sonnet 5</strong> (everyday default) with Artifacts 3.0. However, if your daily workflow is high-volume coding, <strong>Cursor Pro ($20)</strong> or <strong>$20 in DeepSeek API credits (26.6M tokens)</strong> provides dramatically higher throughput without 5-hour rate limits.
               </p>
             )}
             {activeBudget === '100' && (
@@ -1023,7 +1025,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             )}
             {activeBudget === '200' && (
               <p className="text-zinc-400 leading-relaxed">
-                At $200/mo, the decision comes down to interface: if you want autonomous desktop & browser automation out of the box, <strong>ChatGPT Pro ($200)</strong> with GPT-6 Astra is unbeatable. If you write code and use terminal agents (Cline, Claude Code, Aider), spending <strong>$200 on direct API credits</strong> yields up to 266M tokens of DeepSeek or 25M tokens of pure frontier Astra/Fable with prompt caching.
+                At $200/mo, the decision comes down to interface: if you want autonomous desktop & browser automation out of the box, <strong>ChatGPT Pro ($200)</strong> with unmetered GPT-6 Astra is unbeatable. If you write code and use terminal agents (Cline, Claude Code, Aider), spending <strong>$200 on direct API credits</strong> yields up to 266M tokens of DeepSeek or 25M tokens of pure frontier Astra/Fable with prompt caching.
               </p>
             )}
           </div>
@@ -1109,7 +1111,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                       <p className="text-[11px] text-zinc-400 leading-normal font-sans">
                         {guide.frontierPick.why}
                       </p>
-                      <div className="text-[10px] font-mono text-amber-400/90 bg-amber-950/30 px-2 py-0.5 rounded border border-amber-500/20">
+                      <div className="text-[10px] font-mono text-emerald-400/90 bg-emerald-950/30 px-2 py-0.5 rounded border border-emerald-500/20">
                         {guide.frontierPick.tierAvailability}
                       </div>
                     </div>
@@ -1242,25 +1244,41 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Claude Pro</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
-                  Web chat access powered primarily by <strong>Claude Sonnet 5</strong> (1384 Elo) and standard Opus 4.8 with Artifacts 3.0 and Projects.
+                  Full web suite featuring <strong>Opus 5</strong>, <strong>Sonnet 5</strong>, and <strong>Haiku 4.5</strong> with Artifacts 3.0 and Projects.
                 </p>
-                <div className="space-y-1.5 text-xs text-zinc-300 font-sans pt-2">
+
+                {/* Verified Model Selector Menu Display */}
+                <div className="p-3 rounded-xl bg-zinc-900/80 border border-zinc-800 space-y-1.5 text-xs font-mono">
+                  <div className="flex justify-between items-center text-purple-300 font-semibold">
+                    <span>Opus 5</span>
+                    <span className="text-[10px] text-zinc-400 font-normal">Complex tasks</span>
+                  </div>
+                  <div className="flex justify-between items-center text-emerald-400 font-semibold">
+                    <span>Sonnet 5 ✓</span>
+                    <span className="text-[10px] text-zinc-400 font-normal">Everyday default</span>
+                  </div>
+                  <div className="flex justify-between items-center text-zinc-300">
+                    <span>Haiku 4.5</span>
+                    <span className="text-[10px] text-zinc-400 font-normal">Fastest answers</span>
+                  </div>
+                  <div className="border-t border-zinc-800 pt-1 text-[10px] text-zinc-500">
+                    Legacy: Opus 4.8, 4.7, 4.6 & Sonnet 4.6
+                  </div>
+                </div>
+
+                <div className="space-y-1.5 text-xs text-zinc-300 font-sans pt-1">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-purple-400" />
-                    <span>Claude Sonnet 5 workhorse access</span>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+                    <span>Artifacts 3.0 for interactive previews</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-purple-400" />
-                    <span>Artifacts 3.0 for interactive web components</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-purple-400" />
-                    <span>Clean non-slop prose & documentation writing</span>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+                    <span>Clean non-slop technical documentation</span>
                   </div>
                 </div>
 
                 <div className="p-2.5 rounded-lg bg-amber-950/20 border border-amber-500/20 text-[10px] font-mono text-amber-300/90 leading-tight">
-                  ⚠️ <strong>Excluded:</strong> Claude Fable 5.1 is API only ($7.90/1M). Claude Mythos 5.1 is restricted to Project Glasswing defense enclaves.
+                  ⚠️ <strong>Note:</strong> Claude Fable 5.1 is API/Enterprise ($7.90/1M). Claude Mythos 5.1 is restricted to Project Glasswing defense enclaves.
                 </div>
               </div>
               <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
@@ -1277,25 +1295,42 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">ChatGPT Plus</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
-                  Web chat access powered by <strong>GPT-5.6 Sol</strong> (1415 Elo, Rank #4) with Advanced Voice, Canvas, and web search.
+                  Web chat suite giving access to <strong>GPT-6 Astra (limited)</strong> alongside <strong>GPT-5.6 Sol, Terra, and Luna</strong>.
                 </p>
-                <div className="space-y-1.5 text-xs text-zinc-300 font-sans pt-2">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>GPT-5.6 Sol frontier reasoning (1415 Elo)</span>
+
+                {/* Verified Model Selector Menu Display */}
+                <div className="p-3 rounded-xl bg-zinc-900/80 border border-zinc-800 space-y-1.5 text-xs font-mono">
+                  <div className="flex justify-between items-center text-emerald-400 font-semibold">
+                    <span>GPT-6 Astra</span>
+                    <span className="text-[10px] text-amber-400 font-normal">Limited rate caps</span>
                   </div>
+                  <div className="flex justify-between items-center text-zinc-200 font-semibold">
+                    <span>GPT-5.6 Sol</span>
+                    <span className="text-[10px] text-zinc-400 font-normal">Rank #4, 1415 Elo</span>
+                  </div>
+                  <div className="flex justify-between items-center text-zinc-300">
+                    <span>GPT-5.6 Terra</span>
+                    <span className="text-[10px] text-zinc-400 font-normal">Rank #12, 1400 Elo</span>
+                  </div>
+                  <div className="border-t border-zinc-800 pt-1 text-[10px] text-zinc-500 flex justify-between">
+                    <span>GPT-5.6 Luna</span>
+                    <span>Rank #29, 1369 Elo</span>
+                  </div>
+                </div>
+
+                <div className="space-y-1.5 text-xs text-zinc-300 font-sans pt-1">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                     <span>Real-time Advanced Voice conversation</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>Canvas inline document editing</span>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span>Canvas inline document and code editing</span>
                   </div>
                 </div>
 
                 <div className="p-2.5 rounded-lg bg-amber-950/20 border border-amber-500/20 text-[10px] font-mono text-amber-300/90 leading-tight">
-                  ⚠️ <strong>Excluded:</strong> GPT-6 Astra Operator (autonomous OS/desktop agent) requires ChatGPT Pro ($200/mo) or API.
+                  ⚠️ <strong>Note:</strong> Unmetered Astra Operator (desktop/browser agent) requires ChatGPT Pro ($200/mo) or the API.
                 </div>
               </div>
               <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
@@ -1418,12 +1453,12 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Claude Team</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
-                  Multi-seat collaborative workspace with <strong>5x higher rate limits</strong> on Claude Sonnet 5, shared project repos, and admin security.
+                  Multi-seat collaborative workspace with <strong>5x higher rate limits</strong> on Claude Opus 5 & Sonnet 5, shared project repos, and admin security.
                 </p>
                 <div className="space-y-1.5 text-xs text-zinc-300 font-sans pt-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-purple-400" />
-                    <span>5x message limits on Sonnet 5 & Opus</span>
+                    <span>5x message limits on Opus 5 & Sonnet 5</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-purple-400" />

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Mail, CheckCircle2, ShieldCheck, ArrowRight, Zap, BookOpen, Layers, ExternalLink } from 'lucide-react';
+import React from 'react';
+import { Mail, ShieldCheck, Zap, BookOpen, Layers, ExternalLink } from 'lucide-react';
 import { NextVectorLogo } from '../common/NextVectorLogo';
 
 interface FooterProps {
@@ -7,21 +7,6 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(() => {
-    return typeof window !== 'undefined' && localStorage.getItem('nv_subscribed') === 'true';
-  });
-
-  const handleSubscribe = () => {
-    if (email.trim()) {
-      setSubscribed(true);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('nv_subscribed', 'true');
-        localStorage.setItem('nv_subscriber_email', email.trim());
-      }
-    }
-  };
-
   return (
     <footer className="w-full bg-zinc-950 border-t border-zinc-800/80 mt-20 pt-16 pb-12 text-zinc-400">
       <div className="max-w-7xl mx-auto px-4">
@@ -88,85 +73,32 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </p>
             </div>
 
-            <div className="mt-5">
-              {subscribed ? (
-                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-xs font-mono text-emerald-300 space-y-1.5">
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                      <span className="font-semibold text-emerald-400">Subscribed to The Morning Vector</span>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setSubscribed(false);
-                        setEmail('');
-                        if (typeof window !== 'undefined') {
-                          localStorage.removeItem('nv_subscribed');
-                          localStorage.removeItem('nv_subscriber_email');
-                        }
-                      }}
-                      className="text-zinc-400 hover:text-zinc-200 underline text-[11px]"
-                    >
-                      Change Email
-                    </button>
-                  </div>
-                  {typeof window !== 'undefined' && localStorage.getItem('nv_subscriber_email') && (
-                    <p className="text-zinc-400 text-[11px]">
-                      Linked to: <span className="text-zinc-200">{localStorage.getItem('nv_subscriber_email')}</span>
-                    </p>
-                  )}
-                  <div className="flex items-center gap-3 pt-1 text-[11px]">
-                    <a
-                      href={`https://nextvectorr.substack.com/subscribe?email=${encodeURIComponent(typeof window !== 'undefined' ? localStorage.getItem('nv_subscriber_email') || '' : '')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-emerald-400 hover:text-emerald-300 underline inline-flex items-center gap-1"
-                    >
-                      Confirm / Manage on Substack ↗
-                    </a>
-                    <span className="text-zinc-600">•</span>
-                    <a
-                      href="https://nextvectorr.substack.com/?r=92ang8"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-zinc-300 underline"
-                    >
-                      Substack Archive ↗
-                    </a>
-                  </div>
-                </div>
-              ) : (
-                <div>
-                  <form
-                    action="https://nextvectorr.substack.com/subscribe"
-                    method="get"
-                    target="_blank"
-                    onSubmit={handleSubscribe}
-                    className="flex gap-2"
-                  >
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="architect@domain.com"
-                      className="flex-1 bg-zinc-950 border border-zinc-700/80 rounded-xl px-3.5 py-2 text-xs font-mono text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
-                    />
-                    <button
-                      type="submit"
-                      className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md active:scale-95 shrink-0 flex items-center gap-1"
-                    >
-                      <span>Subscribe</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
-                  </form>
-                  <p className="text-[10px] text-zinc-500 mt-2 font-mono">
-                    Official Substack portal: <a href="https://nextvectorr.substack.com/subscribe" target="_blank" rel="noopener noreferrer" className="text-[#FF6719] hover:underline">nextvectorr.substack.com/subscribe ↗</a>
-                  </p>
-                </div>
-              )}
+            <div className="mt-4">
+              <div className="rounded-xl overflow-hidden bg-white shadow-lg border border-zinc-700/60">
+                <iframe
+                  src="https://nextvectorr.substack.com/embed"
+                  width="100%"
+                  height="155"
+                  style={{ border: 'none', background: 'white', display: 'block' }}
+                  frameBorder="0"
+                  scrolling="no"
+                  title="Subscribe to The Morning Vector on Substack"
+                />
+              </div>
+              <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mt-2.5 px-1">
+                <span className="flex items-center gap-1.5 text-zinc-400">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  Official Substack Instant Verification
+                </span>
+                <a
+                  href="https://nextvectorr.substack.com/archive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:text-emerald-300 underline"
+                >
+                  Substack Archive ↗
+                </a>
+              </div>
             </div>
           </div>
         </div>

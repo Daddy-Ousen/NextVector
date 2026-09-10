@@ -143,3 +143,11 @@ export interface DailyBriefingItem {
   whyItMatters: string;
   articleSlug?: string;
 }
+
+export interface LiveSignalItem {
+  id: string;
+  tag: string;
+  text: string;
+  articleSlug?: string;
+}
+

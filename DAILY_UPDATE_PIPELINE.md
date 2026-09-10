@@ -30,8 +30,9 @@ When receiving this trigger, the agent **MUST** execute the complete 7-stage wor
 5. **Sole Authorship by Robiul Hasan**: Every report authored by Founder & Editor-in-Chief Robiul Hasan ([Rulebook §6.1](./EDITORIAL_RULEBOOK.md#61-sole-authorship)).
 6. **Update Daily Briefing**: Refresh `MOCK_DAILY_BRIEFING` in `src/data/mockData.ts` for today's date.
 7. **Timeline Milestone Audit & Sync**: Evaluate today's intelligence reports against the Breakthrough Timeline threshold (Impact Score >= 95 or historic structural shifts). Append qualifying events to `MOCK_TIMELINE_EVENTS` in `src/data/mockData.ts` with cross-links to the full report ([Rulebook §8](./EDITORIAL_RULEBOOK.md#8-technology--science-breakthrough-timeline-curation)).
-8. **Pass Pre-Publication Release Gate**: `npm run build` must compile with 0 errors, and pass all steps of the **Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)) before pushing to `main`.
-9. **Generate Substack Newsletter**: Draft the full edition of **The Morning Vector** ready to copy/paste into Substack ([Rulebook §6.2](./EDITORIAL_RULEBOOK.md#62-newsletter--syndication-integration)).
+8. **Live Breaking Signal Ticker Update**: Refresh `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` with 5 punchy entity-action ticker items corresponding to today's breakthroughs, ensuring the homepage live ticker stays completely current and deep-linked ([Rulebook §9](./EDITORIAL_RULEBOOK.md#9-live-breaking-signal-ticker-standards)).
+9. **Pass Pre-Publication Release Gate**: `npm run build` must compile with 0 errors, and pass all steps of the **Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)) before pushing to `main`.
+10. **Generate Substack Newsletter**: Draft the full edition of **The Morning Vector** ready to copy/paste into Substack ([Rulebook §6.2](./EDITORIAL_RULEBOOK.md#62-newsletter--syndication-integration)).
 
 ---
 
@@ -172,24 +173,33 @@ Audit each of today's 5+ stories against the permanent timeline criteria ([Ruleb
     - `keyShift`: single-sentence description of the permanent technical/structural inflection point
     - `articleSlug`: exact slug of the corresponding NextVector report for seamless cross-linking
 
+### 5.4 Update Live Breaking Signal Ticker (`MOCK_LIVE_SIGNALS` in `src/data/mockData.ts`)
+The homepage features a live horizontal scrolling marquee (`LIVE SIGNAL`) at the top of the feed. To ensure this ticker reflects today's breaking developments in real time ([Rulebook §9](./EDITORIAL_RULEBOOK.md#9-live-breaking-signal-ticker-standards)):
+- Update `MOCK_LIVE_SIGNALS` with exactly 5 punchy entity-action ticker items corresponding to today's 5+ stories:
+  - `id`: sequential identifier (e.g. `'sig-1'` through `'sig-5'`)
+  - `tag`: 2-3 word bold entity or event label (e.g. `'OpenAI Lean 4'`, `'ASML & Intel'`, `'CISA Directive'`)
+  - `text`: single-sentence empirical action or spec highlight (under 95 chars)
+  - `articleSlug`: exact slug of the corresponding NextVector report so users can click any ticker item to open the article
+
 ---
 
 ## Stage 6: Verification, Build & Deployment Gate
 
-Execute the mandatory **6-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
+Execute the mandatory **7-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
 
 1. **Step 1: Factuality & Primary Source Audit**: Verify claims, numbers, and DOIs.
 2. **Step 2: Catalog Deduplication Check**: Confirm title, slug, and topic uniqueness.
 3. **Step 3: Timeline Integrity Check**: Confirm whether any of today's reports meet the Breakthrough Timeline threshold (Impact Score >= 95) and that `MOCK_TIMELINE_EVENTS` is updated, categorized correctly, and sorted reverse-chronologically with `articleSlug` links.
-4. **Step 4: Image Uniqueness & Validation Audit**:
+4. **Step 4: Live Signal Ticker Integrity Check**: Confirm that `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` contains 5 fresh signals matching today's stories with valid `articleSlug` links.
+5. **Step 5: Image Uniqueness & Validation Audit**:
    Run a verification script to confirm:
    - Total articles == expected count.
    - Total unique cover images == total articles (**0 duplicate images**).
    - All local images exist on disk.
    - All remote image URLs return HTTP 200.
-5. **Step 5: TypeScript & Vite Build**:
+6. **Step 6: TypeScript & Vite Build**:
    Run `npm run build`. Must compile with zero errors in under 2 seconds.
-6. **Step 6: Atomic Git Commit & Remote Push**:
+7. **Step 7: Atomic Git Commit & Remote Push**:
    Stage modified and new files:
    ```bash
    git add src/data/articlesData.ts src/data/modelsData.ts src/data/benchmarksData.ts src/data/mockData.ts public/images/articles/

@@ -192,7 +192,7 @@ export interface Article {
 
 ## 7. Pre-Publication Quality Assurance (Release Gate)
 
-Before committing any new article to the repository or deploying to production, the publishing agent/editor MUST execute the **6-Step Release Gate**:
+Before committing any new article to the repository or deploying to production, the publishing agent/editor MUST execute the **7-Step Release Gate**:
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -208,14 +208,18 @@ Before committing any new article to the repository or deploying to production, 
 │         Audit events with Impact Score >= 95 and sync  │
 │         MOCK_TIMELINE_EVENTS in mockData.ts.           │
 ├────────────────────────────────────────────────────────┤
-│ STEP 4: IMAGE UNIQUENESS & VALIDATION AUDIT            │
+│ STEP 4: LIVE SIGNAL TICKER INTEGRITY CHECK             │
+│         Verify MOCK_LIVE_SIGNALS contains 5 fresh      │
+│         signals matching today's stories with links.   │
+├────────────────────────────────────────────────────────┤
+│ STEP 5: IMAGE UNIQUENESS & VALIDATION AUDIT            │
 │         Confirm coverImage is 100% unique (0 dupes),   │
 │         file exists on disk or remote returns HTTP 200.│
 ├────────────────────────────────────────────────────────┤
-│ STEP 5: TYPESCRIPT COMPILATION & BUILD CHECK           │
+│ STEP 6: TYPESCRIPT COMPILATION & BUILD CHECK           │
 │         Run `npm run build` (must pass with 0 errors). │
 ├────────────────────────────────────────────────────────┤
-│ STEP 6: ATOMIC GIT COMMIT & REMOTE PUSH                │
+│ STEP 7: ATOMIC GIT COMMIT & REMOTE PUSH                │
 │         Commit with semantic prefix: `feat(news): ...` │
 └────────────────────────────────────────────────────────┘
 ```
@@ -251,6 +255,28 @@ Every `TimelineEvent` must contain:
 - `impactScore`: Numeric score between 95 and 100.
 - `keyShift`: 1-sentence defining description of the paradigm shift.
 - `articleSlug`: Optional slug pointing to the corresponding in-depth NextVector intelligence report for seamless reader cross-navigation.
+
+---
+
+## 9. Live Breaking Signal Ticker Standards
+
+NextVector features a prominent horizontal marquee ticker (`LIVE SIGNAL`) at the top of the homepage feed, providing readers with real-time signal density.
+
+### 9.1 Daily Synchronization Rule (Zero Stale Signals)
+The live ticker must never display stale developments from previous days. During every execution of the daily update pipeline (Stage 5.4), `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` MUST be refreshed with 5 punchy items corresponding directly to today's published reports.
+
+### 9.2 Data Schema (`LiveSignalItem`)
+```typescript
+export interface LiveSignalItem {
+  id: string;            // Sequential ID (e.g. 'sig-1', 'sig-2')
+  tag: string;           // 2-3 word bold entity/event label (e.g. 'OpenAI Lean 4', 'ASML & Intel')
+  text: string;          // Single-sentence empirical action or spec (under 95 characters)
+  articleSlug?: string;  // Target slug for direct one-click navigation
+}
+```
+
+### 9.3 Interactive Deep-Linking
+Every live signal ticker item must be clickable, directly invoking client-side navigation (`onSelectArticle(sig.articleSlug)`) to the corresponding NextVector intelligence report.
 
 ---
 

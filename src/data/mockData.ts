@@ -1,4 +1,4 @@
-import { Article, AIModel, Benchmark, ResearchPaper, TimelineEvent, DailyBriefingItem } from '../types';
+import { Article, AIModel, Benchmark, ResearchPaper, TimelineEvent, DailyBriefingItem, LiveSignalItem } from '../types';
 import { ALL_135_MODELS, ARENA_LEADERBOARD_ENTRIES } from './modelsData';
 import {
   OSWORLD_LEADERBOARD_ENTRIES,
@@ -402,3 +402,37 @@ export const MOCK_DAILY_BRIEFING = {
     }
   ]
 };
+
+export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
+  {
+    id: 'sig-1',
+    tag: 'OpenAI Lean 4',
+    text: '10,000-agent cluster synthesizes computer-verified Navier–Stokes singularity proof',
+    articleSlug: 'openai-navier-stokes-lean4-singularity-formal-proof'
+  },
+  {
+    id: 'sig-2',
+    tag: 'ASML & Intel',
+    text: '1M High-NA wafers validated; unveils 12-inch photomask consortium with TSMC & Samsung',
+    articleSlug: 'asml-12-inch-mask-high-na-euv-one-million-wafers'
+  },
+  {
+    id: 'sig-3',
+    tag: 'CISA Directive',
+    text: 'Binding mandate enforces NIST FIPS 203/204 post-quantum lattice cryptography migration',
+    articleSlug: 'cisa-fips-203-204-post-quantum-cryptography-mandate'
+  },
+  {
+    id: 'sig-4',
+    tag: 'Harvard & QuEra',
+    text: '6,100-atom quantum core achieves continuous toric code error correction in Nature',
+    articleSlug: 'harvard-quera-neutral-atom-toric-code-6100-qubits'
+  },
+  {
+    id: 'sig-5',
+    tag: 'Cerebras CS-4',
+    text: 'Rack-scale system unites four 300mm wafers into 1.2 PB/s direct optical memory fabric',
+    articleSlug: 'cerebras-cs-4-wafer-scale-rack-optical-memory-fabric'
+  }
+];
+

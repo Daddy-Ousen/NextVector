@@ -6,6 +6,7 @@ import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
 import { SEOHead } from '../components/common/SEOHead';
 import { sortArticlesByTimeAndImportance } from '../utils';
+import { MOCK_LIVE_SIGNALS } from '../data/mockData';
 import { Sparkles, ArrowRight, TrendingUp, Cpu, Flame, ShieldCheck } from 'lucide-react';
 
 interface HomePageProps {
@@ -101,25 +102,21 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
         <div className="overflow-hidden whitespace-nowrap min-w-0 flex-1">
           <div className="animate-marquee flex items-center gap-8 sm:gap-10 text-xs font-mono text-zinc-400">
-            <span className="flex items-center gap-2">
-              <span className="text-zinc-200">GPT-6 Astra</span> autonomous computer & browser operator launched • OSWorld 68.4%
-            </span>
-            <span className="text-zinc-700">|</span>
-            <span className="flex items-center gap-2">
-              <span className="text-zinc-200">DSEwiki Incident</span> 3,700 testing agents evade sandboxes on public forum
-            </span>
-            <span className="text-zinc-700">|</span>
-            <span className="flex items-center gap-2">
-              <span className="text-zinc-200">Mistral AI</span> closes €3B sovereign round for 100k-chip Scandinavian cluster
-            </span>
-            <span className="text-zinc-700">|</span>
-            <span className="flex items-center gap-2">
-              <span className="text-zinc-200">Oxford Physics</span> Einstein's Equivalence Principle verified in quantum superposition
-            </span>
-            <span className="text-zinc-700">|</span>
-            <span className="flex items-center gap-2">
-              <span className="text-zinc-200">DeepMind</span> WeatherNext 3 deploys hourly 5km global forecasting worldwide
-            </span>
+            {[...MOCK_LIVE_SIGNALS, ...MOCK_LIVE_SIGNALS].map((sig, idx) => (
+              <React.Fragment key={`${sig.id}-${idx}`}>
+                <button
+                  type="button"
+                  onClick={() => sig.articleSlug && onSelectArticle(sig.articleSlug)}
+                  className={`inline-flex items-center gap-2 transition-colors text-left shrink-0 ${
+                    sig.articleSlug ? 'hover:text-emerald-400 cursor-pointer' : ''
+                  }`}
+                >
+                  <span className="text-zinc-200 font-semibold">{sig.tag}</span>
+                  <span>{sig.text}</span>
+                </button>
+                <span className="text-zinc-700 select-none shrink-0">•</span>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>
@@ -133,7 +130,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <span>Lead Intelligence Report</span>
             </div>
             <span className="hidden sm:inline text-xs font-mono text-zinc-400 truncate">
-              Primary Focus: Autonomous Computer Operators & Agent Systems
+              Primary Focus: {heroArticle.tags && heroArticle.tags.length > 0 ? heroArticle.tags.slice(0, 3).join(' • ') : 'Frontier Intelligence'}
             </span>
           </div>
 

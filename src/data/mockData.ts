@@ -150,6 +150,61 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-10-navier-stokes',
+    year: 2026,
+    month: 'Sep 10',
+    title: 'OpenAI Deploys 10,000-Agent Swarm to Produce Lean 4 Formal Proof for Navier–Stokes Singularity',
+    category: 'AI Breakthrough',
+    summary: 'OpenAI releases a 166-page manuscript and computer-checked Lean 4 formal code demonstrating finite-time vorticity blowup for 3D incompressible Navier–Stokes under smooth forcing.',
+    impactScore: 99,
+    keyShift: 'The historic elevation of automated multi-agent reasoning clusters into formal theoretical physics and machine-checked mathematical proof.',
+    articleSlug: 'openai-navier-stokes-lean4-singularity-formal-proof'
+  },
+  {
+    id: 'time-2026-09-10-asml',
+    year: 2026,
+    month: 'Sep 10',
+    title: 'ASML Surpasses 1M High-NA EUV Wafers and Unveils 12-Inch Photomask Consortium',
+    category: 'Semiconductors',
+    summary: 'Intel Foundry and ASML validate 1,000,000 High-NA EUV wafers and launch a global consortium to shift from 6-inch to 12-inch photomasks, eliminating reticle stitching for sub-1.4nm AI chips.',
+    impactScore: 97,
+    keyShift: 'Transitioning the 50-year-old 6-inch quartz mask standard to 12-inch silicon photomasks to restore full single-exposure fields on sub-1.4nm nodes.',
+    articleSlug: 'asml-12-inch-mask-high-na-euv-one-million-wafers'
+  },
+  {
+    id: 'time-2026-09-10-quera',
+    year: 2026,
+    month: 'Sep 10',
+    title: 'Harvard and QuEra Demonstrate Fault-Tolerant Toric Codes Across 6,100 Neutral Atoms',
+    category: 'Space & Quantum',
+    summary: 'Published in Nature, researchers operate 6,100 neutral-atom qubits in 3D optical tweezer arrays, achieving continuous topological toric code error correction below the fault-tolerance threshold.',
+    impactScore: 97,
+    keyShift: 'Continuous quantum error correction across thousands of dynamically shuttled optical tweezer qubits, bypassing the NISQ noise wall.',
+    articleSlug: 'harvard-quera-neutral-atom-toric-code-6100-qubits'
+  },
+  {
+    id: 'time-2026-09-10-cisa',
+    year: 2026,
+    month: 'Sep 10',
+    title: 'CISA Issues Federal Procurement Mandate for FIPS 203/204 Post-Quantum Cryptography',
+    category: 'Computing Architecture',
+    summary: 'CISA issues a binding directive requiring federal executive agencies and cloud gateways to deploy NIST FIPS 203 ML-KEM lattice key encapsulation to counter Store Now, Decrypt Later threats.',
+    impactScore: 96,
+    keyShift: 'The permanent regulatory and cryptographic phase-out of RSA and classical elliptic-curve algorithms across national infrastructure.',
+    articleSlug: 'cisa-fips-203-204-post-quantum-cryptography-mandate'
+  },
+  {
+    id: 'time-2026-09-10-cerebras',
+    year: 2026,
+    month: 'Sep 10',
+    title: 'Cerebras Unveils CS-4 Wafer-Scale AI Rack with 1.2 PB/s Memory Fabric',
+    category: 'Computing Architecture',
+    summary: 'Cerebras integrates four 300mm silicon wafers into a single 40U liquid-cooled enclosure with direct optical interconnects, delivering 1.2 PB/s SRAM bandwidth to eliminate the GPU memory wall.',
+    impactScore: 95,
+    keyShift: 'Monolithic wafer-scale integration with direct optical interconnects replacing discrete GPU networks for multi-turn agent reasoning.',
+    articleSlug: 'cerebras-cs-4-wafer-scale-rack-optical-memory-fabric'
+  },
+  {
     id: 'time-2026-09-09-nvidia',
     year: 2026,
     month: 'Sep 9',
@@ -297,53 +352,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Wednesday, September 9, 2026',
-  summary: 'NVIDIA enters a monumental $12.93B definitive agreement to acquire Hugging Face while guaranteeing multi-cloud hardware neutrality. Concurrently, Anthropic launches Claude Fable 5.1 and isolates Mythos 5.1 in defensive cyber enclaves, DeepSeek scales its 60,000-node cluster around 3FS, TSMC validates 2nm GAA nanosheets with Backside Power Delivery, and JWST detects unpredicted primordial metallicity at redshift z=8.6.',
+  date: 'Thursday, September 10, 2026',
+  summary: 'OpenAI deploys an automated 10,000-agent reasoning cluster to produce a computer-verified Lean 4 formal proof of 3D Navier-Stokes singularity under smooth forcing. Simultaneously, ASML surpasses 1M High-NA EUV wafers and forms a 12-inch photomask consortium, CISA mandates federal FIPS 203/204 post-quantum lattice cryptography, Harvard and QuEra demonstrate 6,100-atom fault-tolerant toric codes, and Cerebras unveils the CS-4 wafer-scale AI rack delivering 1.2 PB/s memory bandwidth.',
   items: [
     {
       id: 'brief-1',
-      headline: 'NVIDIA Enters $12.93B Agreement to Acquire Hugging Face: Uniting Silicon with Open-Source Hub',
+      headline: 'OpenAI Deploys 10,000-Agent Swarm to Produce Lean 4 Formal Proof for Navier–Stokes Singularity',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'NVIDIA announced an agreement to acquire Hugging Face for $12.93B ($11.93B equity + $1B retention). The platform remains an independent operating subsidiary committed to multi-cloud parity for AMD, Intel, and Google while embedding TensorRT-LLM into 1.8M open models.',
-      whyItMatters: 'Closes the strategic loop between physical GPU hardware dominance and the primary global developer gateway for open-weights AI deployment.',
-      articleSlug: 'nvidia-acquires-hugging-face-12-9b-definitive-agreement'
+      summary: 'OpenAI released a 166-page manuscript and computer-checked Lean 4 code proving that smooth external forcing can drive 3D incompressible Navier-Stokes vorticity to infinity in finite time, establishing AI as an empirical co-theorist in formal mathematical physics.',
+      whyItMatters: 'Demonstrates that distributed automated reasoning swarms can formulate and formally verify thousands of complex lemmas, permanently bypassing human algebraic error.',
+      articleSlug: 'openai-navier-stokes-lean4-singularity-formal-proof'
     },
     {
       id: 'brief-2',
-      headline: 'Anthropic Deploys Claude Fable 5.1 and Restricts Cyber-Capable Mythos to Project Glasswing',
-      category: 'ai' as const,
+      headline: 'ASML Surpasses 1M High-NA EUV Wafer Milestone and Unveils 12-Inch Photomask Consortium',
+      category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Anthropic launched Claude Fable 5.1 with 1M context and $0.25/1M token prompt caching, while restricting Claude Mythos 5.1 to vetted national security defenders inside hardware enclaves following its 94.6% Cyber-Eval score.',
-      whyItMatters: 'Formalizes the bifurcation between commercial enterprise reasoning and restricted defensive cyber warfare capabilities.',
-      articleSlug: 'anthropic-deploys-claude-fable-5-1-and-mythos-project-glasswing'
+      summary: 'Intel Foundry and ASML validated over 1,000,000 production wafers on 0.55 NA High-NA scanners and launched a joint initiative with TSMC and Samsung to replace 6-inch quartz reticles with 12-inch silicon photomasks by 2031.',
+      whyItMatters: 'Eliminates the anamorphic half-field reticle stitching penalty that cuts scanner throughput by 40% on massive sub-1.4nm frontier AI accelerator dies.',
+      articleSlug: 'asml-12-inch-mask-high-na-euv-one-million-wafers'
     },
     {
       id: 'brief-3',
-      headline: 'DeepSeek Rearchitects DSec Compute Fabric Around 3FS Filesystem for Agent Swarms',
+      headline: 'CISA Issues Federal Procurement Mandate for FIPS 203/204 Post-Quantum Cryptography',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'DeepSeek deployed over 150 engineers to expand DSec clusters across 60,000 accelerators using its open-source 3FS parallel filesystem and sub-50µs kernel-bypass RPC to resolve multi-tenant autonomous agent storage starvation.',
-      whyItMatters: 'Bypasses standard Linux page cache overhead via NVMe-oF to sustain high-density autonomous agent execution at sub-$0.15/1M token economics.',
-      articleSlug: 'deepseek-scales-dsec-elastic-compute-cluster-3fs-agent-infrastructure'
+      summary: 'CISA issued a binding directive requiring federal executive agencies and cloud gateways to migrate internet-facing endpoints to NIST FIPS 203 (ML-KEM) lattice key encapsulation to counter Store Now, Decrypt Later threats.',
+      whyItMatters: 'Marks the permanent regulatory and architectural phase-out of RSA and classical elliptic curves in favor of polynomial lattice-based mathematics.',
+      articleSlug: 'cisa-fips-203-204-post-quantum-cryptography-mandate'
     },
     {
       id: 'brief-4',
-      headline: 'TSMC Confirms Commercial Yields for 2nm N2P Nanosheets with Backside Power Delivery',
-      category: 'technology' as const,
+      headline: 'Harvard and QuEra Demonstrate Fault-Tolerant Toric Codes Across 6,100 Neutral Atoms',
+      category: 'science' as const,
       urgency: 'High Impact' as const,
-      summary: 'TSMC announced internal validation confirming commercial defect density on N2P with Super Power Rail backside power delivery, achieving a 16% power reduction and paving the way for 1,000W AI accelerators.',
-      whyItMatters: 'Eliminates the decades-old IR-drop resistance bottleneck by physically separating power rails from front-side logic interconnects.',
-      articleSlug: 'tsmc-n2p-backside-power-delivery-nanosheet-yield-validation'
+      summary: 'Published in Nature, researchers operated a 6,100-atom neutral-atom quantum core with 3D optical tweezer shuttling, achieving continuous topological toric code syndrome extraction below the physical error threshold.',
+      whyItMatters: 'Proves that thousands of identical neutral atoms can sustain continuous fault-tolerant logical qubits without atom loss or cryogenic microwave wiring walls.',
+      articleSlug: 'harvard-quera-neutral-atom-toric-code-6100-qubits'
     },
     {
       id: 'brief-5',
-      headline: 'JWST NIRSpec Detects Unpredicted Metal Enrichment in Primordial Galaxy at Redshift z=8.6',
-      category: 'science' as const,
+      headline: 'Cerebras Unveils CS-4 Wafer-Scale AI Rack: 1.2 PB/s Memory Fabric Bypasses Reticle Limits',
+      category: 'technology' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'Spectroscopic observations of primordial galaxy J1120 just 570 million years after the Big Bang reveal 20% solar metallicity, challenging standard stellar nucleosynthesis timelines and indicating early Population III hypernovae.',
-      whyItMatters: 'Proves the cosmic dawn was chemically far more violent and rapidly enriched than existing cosmological hydrodynamic simulations predicted.',
-      articleSlug: 'jwst-nirspec-primordial-galaxy-j1120-metal-enrichment-redshift-8-6'
+      summary: 'Cerebras unveiled the CS-4 rack system co-packaging four full 300mm silicon wafers with direct laser optical interconnects, delivering 1.2 PB/s of on-chip SRAM memory bandwidth and 2,500+ tokens/sec inference speeds.',
+      whyItMatters: 'Circumvents the GPU memory wall and cluster network latency to run trillion-parameter multi-turn autonomous agent loops entirely on on-chip memory.',
+      articleSlug: 'cerebras-cs-4-wafer-scale-rack-optical-memory-fabric'
     }
   ]
 };

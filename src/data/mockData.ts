@@ -150,6 +150,61 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-11-darkenergy',
+    year: 2026,
+    month: 'Sep 11',
+    title: 'Oxford & TIFR Supernovae Analysis Challenges Dark Energy Acceleration in Nature Astronomy',
+    category: 'Space & Quantum',
+    summary: 'A Bayesian hierarchical analysis of 1,701 Type Ia supernovae demonstrates that local anisotropic dipole bulk flows account for observed cosmological dimming, reducing cosmic acceleration statistical significance below 3-sigma.',
+    impactScore: 98,
+    keyShift: 'The first statistically rigorous empirical challenge to the standard Lambda-CDM cosmological paradigm in two decades.',
+    articleSlug: 'oxford-tifr-supernovae-reanalysis-challenges-dark-energy-acceleration'
+  },
+  {
+    id: 'time-2026-09-11-miles',
+    year: 2026,
+    month: 'Sep 11',
+    title: 'Meta Releases Miles v0.1: Distributed RL Framework for Diffusion Reasoning Models',
+    category: 'AI Breakthrough',
+    summary: 'Meta AI open-sources an asynchronous distributed reinforcement learning framework that scales non-autoregressive diffusion reasoning across 4,096 GPUs with 94.6% scaling efficiency.',
+    impactScore: 97,
+    keyShift: 'The foundational software infrastructure enabling reinforcement learning on parallel iterative diffusion models instead of sequential next-token transformers.',
+    articleSlug: 'meta-miles-distributed-rl-diffusion-reasoning-models'
+  },
+  {
+    id: 'time-2026-09-11-hbm4',
+    year: 2026,
+    month: 'Sep 11',
+    title: 'SK hynix & Samsung Validate 16-High HBM4 Stacks on 4nm Custom Logic Dies',
+    category: 'Semiconductors',
+    summary: 'Silicon validation of 64GB 16-high HBM4 memory stacks with copper-to-copper (Cu-Cu) hybrid bonding achieves 24 TB/s aggregate accelerator bandwidth and 33% thermal resistance reduction.',
+    impactScore: 96,
+    keyShift: 'Overcoming the physical memory wall for 2027 trillion-parameter foundation models by doubling bus width and adopting 4nm active logic dies.',
+    articleSlug: 'sk-hynix-samsung-16-high-hbm4-4nm-base-die-validation'
+  },
+  {
+    id: 'time-2026-09-11-fusion',
+    year: 2026,
+    month: 'Sep 11',
+    title: 'Berkeley Lab & UC Davis Confirm 10,000x Solid-State Lattice Fusion Enhancement',
+    category: 'Fundamental Science',
+    summary: 'Engineered metal-hydride crystal lattices demonstrate 620 eV electron screening potential in Nature Communications, amplifying low-energy deuterium nuclear tunneling rates by four orders of magnitude.',
+    impactScore: 96,
+    keyShift: 'Proving that solid-state condensed matter environments can shield the nuclear Coulomb barrier without multi-million-degree plasma confinement.',
+    articleSlug: 'uc-davis-berkeley-lab-solid-state-lattice-fusion-cross-sections'
+  },
+  {
+    id: 'time-2026-09-11-dlm',
+    year: 2026,
+    month: 'Sep 11',
+    title: 'Diffusion Language Models Achieve Benchmark Parity on Mobile Edge NPUs',
+    category: 'Computing Architecture',
+    summary: 'Researchers demonstrate that 8B diffusion language models match autoregressive transformers on MMLU-Pro and HumanEval while cutting interactive latency by 4.2x and eliminating KV-cache memory bandwidth overhead.',
+    impactScore: 95,
+    keyShift: 'The arrival of non-autoregressive parallel text generation as an efficient, low-power standard for on-device agentic operating systems.',
+    articleSlug: 'diffusion-language-models-achieve-parity-autoregressive-edge-agents'
+  },
+  {
     id: 'time-2026-09-10-navier-stokes',
     year: 2026,
     month: 'Sep 10',
@@ -352,53 +407,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Thursday, September 10, 2026',
-  summary: 'OpenAI deploys an automated 10,000-agent reasoning cluster to produce a computer-verified Lean 4 formal proof of 3D Navier-Stokes singularity under smooth forcing. Simultaneously, ASML surpasses 1M High-NA EUV wafers and forms a 12-inch photomask consortium, CISA mandates federal FIPS 203/204 post-quantum lattice cryptography, Harvard and QuEra demonstrate 6,100-atom fault-tolerant toric codes, and Cerebras unveils the CS-4 wafer-scale AI rack delivering 1.2 PB/s memory bandwidth.',
+  date: 'Friday, September 11, 2026',
+  summary: 'Meta open-sources Miles v0.1 to scale asynchronous reinforcement learning across 4,096 GPUs for diffusion reasoning models. Concurrently, SK hynix and Samsung validate 16-high HBM4 stacks with 4nm custom logic dies delivering 24 TB/s bandwidth, Oxford and TIFR astrophysics re-analysis challenges dark energy cosmic acceleration, Diffusion Language Models achieve benchmark parity with 8B autoregressive transformers on mobile NPUs, and Berkeley Lab confirms 10,000x nuclear fusion cross-section enhancements via solid-state lattice electron screening.',
   items: [
     {
       id: 'brief-1',
-      headline: 'OpenAI Deploys 10,000-Agent Swarm to Produce Lean 4 Formal Proof for Navier–Stokes Singularity',
+      headline: 'Meta Open-Sources Miles v0.1: Production-Scale Distributed RL for Diffusion Reasoning Models',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'OpenAI released a 166-page manuscript and computer-checked Lean 4 code proving that smooth external forcing can drive 3D incompressible Navier-Stokes vorticity to infinity in finite time, establishing AI as an empirical co-theorist in formal mathematical physics.',
-      whyItMatters: 'Demonstrates that distributed automated reasoning swarms can formulate and formally verify thousands of complex lemmas, permanently bypassing human algebraic error.',
-      articleSlug: 'openai-navier-stokes-lean4-singularity-formal-proof'
+      summary: 'Meta AI released Miles v0.1, an open-source distributed reinforcement learning framework featuring Asynchronous Diffusion Policy Optimization (ADPO) that achieves 94.6% scaling efficiency across 4,096 GPUs, eliminating autoregressive KV-cache stalls during multi-step reasoning.',
+      whyItMatters: 'Removes the primary distributed systems barrier preventing non-autoregressive parallel diffusion models from matching and surpassing causal transformers in long-horizon mathematical and coding reasoning.',
+      articleSlug: 'meta-miles-distributed-rl-diffusion-reasoning-models'
     },
     {
       id: 'brief-2',
-      headline: 'ASML Surpasses 1M High-NA EUV Wafer Milestone and Unveils 12-Inch Photomask Consortium',
+      headline: 'SK hynix & Samsung Validate 16-High HBM4 Memory Stacks: 4nm Base Dies Break 24 TB/s Barrier',
       category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Intel Foundry and ASML validated over 1,000,000 production wafers on 0.55 NA High-NA scanners and launched a joint initiative with TSMC and Samsung to replace 6-inch quartz reticles with 12-inch silicon photomasks by 2031.',
-      whyItMatters: 'Eliminates the anamorphic half-field reticle stitching penalty that cuts scanner throughput by 40% on massive sub-1.4nm frontier AI accelerator dies.',
-      articleSlug: 'asml-12-inch-mask-high-na-euv-one-million-wafers'
+      summary: 'South Korean memory leaders verified functional 64GB 16-high HBM4 cubes utilizing copper-to-copper (Cu-Cu) hybrid bonding and active 4nm logic base dies, doubling interface width to 2,048 bits for 2027 accelerator architectures.',
+      whyItMatters: 'Shatters the catastrophic memory bandwidth bottleneck for 2027 trillion-parameter frontier models with aggregate accelerator bandwidth surpassing 24 TB/s at 33% lower thermal resistance.',
+      articleSlug: 'sk-hynix-samsung-16-high-hbm4-4nm-base-die-validation'
     },
     {
       id: 'brief-3',
-      headline: 'CISA Issues Federal Procurement Mandate for FIPS 203/204 Post-Quantum Cryptography',
-      category: 'technology' as const,
+      headline: 'Cosmic Acceleration Re-Evaluated: Supernovae Analysis Challenges Dark Energy Dominance',
+      category: 'science' as const,
       urgency: 'High Impact' as const,
-      summary: 'CISA issued a binding directive requiring federal executive agencies and cloud gateways to migrate internet-facing endpoints to NIST FIPS 203 (ML-KEM) lattice key encapsulation to counter Store Now, Decrypt Later threats.',
-      whyItMatters: 'Marks the permanent regulatory and architectural phase-out of RSA and classical elliptic curves in favor of polynomial lattice-based mathematics.',
-      articleSlug: 'cisa-fips-203-204-post-quantum-cryptography-mandate'
+      summary: 'A Bayesian hierarchical re-analysis of 1,700 Type Ia supernovae published in Nature Astronomy reveals that directional peculiar velocity bulk flows account for observed cosmological dimming, lowering cosmic acceleration significance below 3-sigma.',
+      whyItMatters: 'Poses the most statistically robust empirical challenge to the standard Lambda-CDM model in over two decades, suggesting cosmic acceleration may be an artifact of local structural anisotropy.',
+      articleSlug: 'oxford-tifr-supernovae-reanalysis-challenges-dark-energy-acceleration'
     },
     {
       id: 'brief-4',
-      headline: 'Harvard and QuEra Demonstrate Fault-Tolerant Toric Codes Across 6,100 Neutral Atoms',
-      category: 'science' as const,
+      headline: 'Diffusion Language Models Achieve Edge Parity: Parallel Denoising Replaces Sequential Transformers',
+      category: 'ai' as const,
       urgency: 'High Impact' as const,
-      summary: 'Published in Nature, researchers operated a 6,100-atom neutral-atom quantum core with 3D optical tweezer shuttling, achieving continuous topological toric code syndrome extraction below the physical error threshold.',
-      whyItMatters: 'Proves that thousands of identical neutral atoms can sustain continuous fault-tolerant logical qubits without atom loss or cryogenic microwave wiring walls.',
-      articleSlug: 'harvard-quera-neutral-atom-toric-code-6100-qubits'
+      summary: 'Discrete Diffusion Language Models matched 8B autoregressive transformers across MMLU-Pro and HumanEval while reducing interactive response latency by 4.2x and cutting DRAM bandwidth consumption by 68% on mobile NPUs.',
+      whyItMatters: 'Demonstrates that parallel score-based denoising eliminates the memory-bound bottleneck of the KV-cache, enabling continuous, battery-efficient autonomous agents on consumer smartphones and laptops.',
+      articleSlug: 'diffusion-language-models-achieve-parity-autoregressive-edge-agents'
     },
     {
       id: 'brief-5',
-      headline: 'Cerebras Unveils CS-4 Wafer-Scale AI Rack: 1.2 PB/s Memory Fabric Bypasses Reticle Limits',
-      category: 'technology' as const,
+      headline: 'Solid-State Lattice Confinement Enhances Nuclear Fusion Cross-Sections by Four Orders of Magnitude',
+      category: 'science' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'Cerebras unveiled the CS-4 rack system co-packaging four full 300mm silicon wafers with direct laser optical interconnects, delivering 1.2 PB/s of on-chip SRAM memory bandwidth and 2,500+ tokens/sec inference speeds.',
-      whyItMatters: 'Circumvents the GPU memory wall and cluster network latency to run trillion-parameter multi-turn autonomous agent loops entirely on on-chip memory.',
-      articleSlug: 'cerebras-cs-4-wafer-scale-rack-optical-memory-fabric'
+      summary: 'UC Davis and Berkeley Lab demonstrated in Nature Communications that metal hydride crystal lattices provide 620 eV electron screening, increasing low-energy D-D nuclear tunneling probability by 10,000x with suppressed neutron emission.',
+      whyItMatters: 'Provides experimental validation that condensed matter environments can shield Coulomb repulsion, paving the way for compact benchtop clean nuclear energy systems without giant magnetic fields.',
+      articleSlug: 'uc-davis-berkeley-lab-solid-state-lattice-fusion-cross-sections'
     }
   ]
 };
@@ -406,33 +461,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'OpenAI Lean 4',
-    text: '10,000-agent cluster synthesizes computer-verified Navier–Stokes singularity proof',
-    articleSlug: 'openai-navier-stokes-lean4-singularity-formal-proof'
+    tag: 'Meta Miles v0.1',
+    text: 'Distributed RL framework scales diffusion reasoning across 4,096 GPUs with 94.6% efficiency',
+    articleSlug: 'meta-miles-distributed-rl-diffusion-reasoning-models'
   },
   {
     id: 'sig-2',
-    tag: 'ASML & Intel',
-    text: '1M High-NA wafers validated; unveils 12-inch photomask consortium with TSMC & Samsung',
-    articleSlug: 'asml-12-inch-mask-high-na-euv-one-million-wafers'
+    tag: 'SK hynix & Samsung',
+    text: '64GB 16-high HBM4 memory stacks validated on 4nm logic dies with Cu-Cu hybrid bonding',
+    articleSlug: 'sk-hynix-samsung-16-high-hbm4-4nm-base-die-validation'
   },
   {
     id: 'sig-3',
-    tag: 'CISA Directive',
-    text: 'Binding mandate enforces NIST FIPS 203/204 post-quantum lattice cryptography migration',
-    articleSlug: 'cisa-fips-203-204-post-quantum-cryptography-mandate'
+    tag: 'Oxford & TIFR',
+    text: 'Bayesian re-analysis of 1,700 supernovae challenges dark energy cosmic acceleration in Nature Astronomy',
+    articleSlug: 'oxford-tifr-supernovae-reanalysis-challenges-dark-energy-acceleration'
   },
   {
     id: 'sig-4',
-    tag: 'Harvard & QuEra',
-    text: '6,100-atom quantum core achieves continuous toric code error correction in Nature',
-    articleSlug: 'harvard-quera-neutral-atom-toric-code-6100-qubits'
+    tag: 'Edge DLM Parity',
+    text: 'Diffusion language models match 8B transformers with 4.2x lower latency on mobile NPUs',
+    articleSlug: 'diffusion-language-models-achieve-parity-autoregressive-edge-agents'
   },
   {
     id: 'sig-5',
-    tag: 'Cerebras CS-4',
-    text: 'Rack-scale system unites four 300mm wafers into 1.2 PB/s direct optical memory fabric',
-    articleSlug: 'cerebras-cs-4-wafer-scale-rack-optical-memory-fabric'
+    tag: 'Berkeley Lab & UC Davis',
+    text: 'Solid-state metal hydride lattices boost nuclear fusion cross-sections by 10,000x via electron screening',
+    articleSlug: 'uc-davis-berkeley-lab-solid-state-lattice-fusion-cross-sections'
   }
 ];
 

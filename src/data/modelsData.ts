@@ -3,6 +3,61 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
+    "id": "model-deepseek-v4-1-flash",
+    "name": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "releaseDate": "September 2026",
+    "modelType": "Open Weights",
+    "modalities": [
+      "Text",
+      "Code"
+    ],
+    "contextWindow": "256k tokens",
+    "parameters": "280B MoE (16.5B active per token)",
+    "pricing": {
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.56,
+      "cachedInputPer1M": 0.02
+    },
+    "openSourceStatus": "Fully Open Source (Apache 2.0)",
+    "license": "Apache 2.0",
+    "hardwareRequirements": "2x 80GB H100 / 4x RTX 4090 (with 4-bit MLA quantization)",
+    "benchmarks": [
+      {
+        "benchmarkName": "LMSYS Chatbot Arena Elo",
+        "score": 1396,
+        "unit": "Elo",
+        "vsPreviousGen": "+18 pts vs V4-Flash-0731"
+      },
+      {
+        "benchmarkName": "HumanEval",
+        "score": "82.4%",
+        "vsPreviousGen": "+5.2%"
+      },
+      {
+        "benchmarkName": "MMLU-Pro",
+        "score": "78.6%",
+        "vsPreviousGen": "+4.1%"
+      }
+    ],
+    "keyImprovements": [
+      "Introduces Multi-Head Latent Attention v2 (MLA-2), compressing KV cache footprint by an additional 40%.",
+      "Native 4-Token Speculative Multi-Token Prediction (MTP) sustained at 160+ tokens/second.",
+      "Extreme price-performance efficiency: $0.14/1M input and $0.56/1M output."
+    ],
+    "knownLimitations": [
+      "Lower complex multi-hop mathematical proof synthesis compared to DeepSeek-V4-Pro.",
+      "Requires custom dual-stream CUDA kernels for full MTP speculative decoding speedups."
+    ],
+    "realWorldApplications": [
+      "High-throughput real-time agent swarms and continuous background scraping.",
+      "Cost-sensitive enterprise code autocompletion and customer support routing."
+    ],
+    "architectureNotes": "Fine-grained DeepSeekMoE with 160 routed experts + 4 shared experts with MLA-2 compressed projection.",
+    "arenaRank": 10,
+    "arenaElo": 1396
+  },
+  {
     "id": "model-gemini-3-deep-think",
     "name": "Gemini 3 Deep Think",
     "developer": "Google DeepMind",

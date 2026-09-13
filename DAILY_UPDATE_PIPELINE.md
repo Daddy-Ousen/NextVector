@@ -191,15 +191,16 @@ Execute the mandatory **7-Step Pre-Publication Release Gate** ([Rulebook §7](./
 2. **Step 2: Catalog Deduplication Check**: Confirm title, slug, and topic uniqueness.
 3. **Step 3: Timeline Integrity Check**: Confirm whether any of today's reports meet the Breakthrough Timeline threshold (Impact Score >= 95) and that `MOCK_TIMELINE_EVENTS` is updated, categorized correctly, and sorted reverse-chronologically with `articleSlug` links.
 4. **Step 4: Live Signal Ticker Integrity Check**: Confirm that `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` contains 5 fresh signals matching today's stories with valid `articleSlug` links.
-5. **Step 5: Image Uniqueness & Validation Audit**:
+5. **Step 5: AI Model & Benchmark Synchronization Audit**: Confirm that whenever a new AI model, checkpoint, or canary drop is released or analyzed in today's reports, the model is registered in `src/data/modelsData.ts` with complete `AIModel` schema and corresponding leaderboards in `src/data/benchmarksData.ts` are updated.
+6. **Step 6: Image Uniqueness & Validation Audit**:
    Run a verification script to confirm:
    - Total articles == expected count.
    - Total unique cover images == total articles (**0 duplicate images**).
    - All local images exist on disk.
    - All remote image URLs return HTTP 200.
-6. **Step 6: TypeScript & Vite Build**:
+7. **Step 7: TypeScript & Vite Build**:
    Run `npm run build`. Must compile with zero errors in under 2 seconds.
-7. **Step 7: Atomic Git Commit & Remote Push**:
+8. **Step 8: Atomic Git Commit & Remote Push**:
    Stage modified and new files:
    ```bash
    git add src/data/articlesData.ts src/data/modelsData.ts src/data/benchmarksData.ts src/data/mockData.ts public/images/articles/

@@ -40,24 +40,51 @@ When receiving this trigger, the agent **MUST** execute the complete 7-stage wor
 
 ---
 
-## Stage 1: State Audit & Catalog Inspection
+---
 
-Before touching any code or searching the web, determine the current catalog baseline and enforce the **Anti-Duplication Protocol** ([Rulebook §3.3](./EDITORIAL_RULEBOOK.md#33-anti-duplication-protocol)):
+## Stage 1: State Audit & Temporal Grounding
 
-1. **Find Current Article ID and Slugs**:
+Before touching any code or searching the web, anchor the operational timeline, determine the current catalog baseline, and enforce the **Anti-Duplication Protocol** ([Rulebook §3.3](./EDITORIAL_RULEBOOK.md#33-anti-duplication-protocol)) and **Temporal Consistency Standards** ([Rulebook §3.4](./EDITORIAL_RULEBOOK.md#34-temporal-consistency--zero-anachronism-standards)):
+
+1. **Step 0: Operational Clock & System Date Anchor (Mandatory Grounding)**:
+   - The agent **MUST** explicitly run the date check command to ground itself in the real-world operational date:
+     ```bash
+     python -c "from datetime import datetime, timezone; print(datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC'))"
+     ```
+   - **Define the 48-Hour Breaking Window**: The discovery window is strictly `[Current Time - 48 Hours, Current Time]`.
+   - **Zero-Anachronism Directive**: The agent must NEVER treat past-year models (such as Claude 3.7 Sonnet released in February 2025, Claude 3.5 Sonnet released in 2024, or GPT-4o) as breaking news.
+2. **Find Current Article ID and Slugs**:
    Run a quick scan on `src/data/articlesData.ts` to identify:
-   - Total existing articles (e.g. 58 articles, IDs `art-1` through `art-58`).
-   - The next sequential ID (e.g. `art-59`, `art-60`, etc.).
+   - Total existing articles (e.g. IDs `art-1` through `art-84`).
+   - The next sequential ID (e.g. `art-85`, `art-86`, etc.).
    - Set of existing slugs, titles, and cover images to prevent duplicates.
-2. **Check Tracked Models**:
+3. **Check Tracked Models**:
    Inspect `src/data/modelsData.ts` to see current model count (e.g. `ALL_135_MODELS`).
-3. **Establish 48-Hour Time Horizon**:
-   Confirm current date/time. The discovery scope is strictly news, papers, and releases from the **last 48 hours**.
 
 ---
 
 ## Stage 2: Intelligence Discovery & Sourcing Hierarchy (Last 48 Hours)
 
+### 2.0 Mandatory Live-Feed Ingestion (Zero-Memory Reliance Protocol)
+> [!CAUTION]
+> **PROHIBITION OF PARAMETRIC MEMORY RELIANCE**:  
+> Agents are strictly forbidden from drafting stories or announcing model releases based on unanchored pre-training memory. Every single candidate story **MUST** originate from live external feeds harvested in real time.
+
+Execute the automated harvester tool to gather verified live candidate stories from the last 48 hours:
+```bash
+npm run harvest
+# or: python scripts/fetch_live_intel.py
+```
+This automatically queries:
+1. **Hacker News (Algolia API / Firebase)**: Filtering for submissions with >30 points and timestamps strictly within the last 48 hours.
+2. **BBC Technology / World RSS Feeds**: Real-time syndicated alerts.
+3. **arXiv cs.AI / cs.CL**: Recent preprint listings.
+
+Inspect the harvested signals. Every candidate story must have:
+- A verifiable primary URL.
+- A verified publication timestamp matching the 48-hour window.
+
+### 2.1 Multi-Beat Sourcing Hierarchy
 Search reputable primary sources adhering to the **Primary Sourcing Hierarchy** ([Rulebook §3.2](./EDITORIAL_RULEBOOK.md#32-primary-sourcing-hierarchy)) across four distinct beats:
 
 | Beat | Primary Sources to Query | Focus Areas |
@@ -231,25 +258,33 @@ The homepage features a live horizontal scrolling marquee (`LIVE SIGNAL`) at the
 
 ## Stage 6: Verification, Build & Deployment Gate
 
-Execute the mandatory **7-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
+Execute the mandatory **8-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
 
 1. **Step 1: Factuality & Primary Source Audit**: Verify claims, numbers, and DOIs.
-2. **Step 2: Catalog Deduplication Check**: Confirm title, slug, and topic uniqueness.
-3. **Step 3: Timeline Integrity Check**: Confirm whether any of today's reports meet the Breakthrough Timeline threshold (Impact Score >= 95) and that `MOCK_TIMELINE_EVENTS` is updated, categorized correctly, and sorted reverse-chronologically with `articleSlug` links.
-4. **Step 4: Live Signal Ticker Integrity Check**: Confirm that `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` contains 5 fresh signals matching today's stories with valid `articleSlug` links.
-5. **Step 5: AI Model, Benchmark & Decision Matrix Synchronization Audit**: Confirm that whenever a new AI model, checkpoint, or canary drop is released or analyzed:
+2. **Step 2: Temporal Sanity & Zero-Anachronism Audit**:
+   - Verify that all newly drafted stories originate from the **last 48 hours**.
+   - Enforce the ban on legacy models: ensure no 2024/2025 models (e.g., Claude 3.5, Claude 3.7 Sonnet, GPT-4o) are described as breaking new releases.
+3. **Step 3: Catalog Deduplication Check**: Confirm title, slug, and topic uniqueness.
+4. **Step 4: Timeline Integrity Check**: Confirm whether any of today's reports meet the Breakthrough Timeline threshold (Impact Score >= 95) and that `MOCK_TIMELINE_EVENTS` is updated, categorized correctly, and sorted reverse-chronologically with `articleSlug` links.
+5. **Step 5: Live Signal Ticker Integrity Check**: Confirm that `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` contains 5 fresh signals matching today's stories with valid `articleSlug` links.
+6. **Step 6: AI Model, Benchmark & Decision Matrix Synchronization Audit**: Confirm that whenever a new AI model, checkpoint, or canary drop is released or analyzed:
    - Dedicated standalone report published in `src/data/articlesData.ts`.
    - Registered in `src/data/modelsData.ts` with cross-checked real pricing (lab docs + OpenRouter/Fireworks).
    - LMSYS Chatbot Arena and specialized benchmark leaderboards in `src/data/benchmarksData.ts` are updated and ranks recalculated.
    - Decision Matrix in `src/components/models/ModelDecisionGuide.tsx` is updated with fresh picks and $20/mo ROI math.
-6. **Step 6: Image Uniqueness & Validation Audit**:
-   Run a verification script to confirm:
-   - Total articles == expected count.
-   - Total unique cover images == total articles (**0 duplicate images**).
-   - All local images exist on disk.
-   - All remote image URLs return HTTP 200.
-7. **Step 7: TypeScript & Vite Build**:
-   Run `npm run build`. Must compile with zero errors in under 2 seconds.
+7. **Step 7: Automated Release Gate & Build Verification**:
+   Run the automated verifier and production build:
+   ```bash
+   npm run verify
+   npm run build
+   ```
+   - `npm run verify` (`python scripts/verify_daily_pipeline.py`) validates:
+     - 0 duplicate images across the entire catalog.
+     - All local image assets exist in `public/images/articles/`.
+     - 100% deep-link synchronization between articles, briefing, signals, and timeline.
+     - Temporal sanity (valid ISO dates, zero historical anachronisms).
+     - Full sitemap coverage for all published slugs.
+   - `npm run build` (`tsc -b && vite build`) must compile with 0 TypeScript/JSX errors.
 8. **Step 8: Atomic Git Commit & Remote Push**:
    Stage modified and new files:
    ```bash

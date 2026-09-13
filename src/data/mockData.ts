@@ -442,7 +442,7 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
     title: 'Mistral AI Secures €3B Sovereign Frontier Funding',
     category: 'AI Breakthrough',
     summary: 'Mistral closes a record €3B round backed by European sovereign wealth funds to construct a 100,000-accelerator Scandinavia green datacenter and deploy open-weight foundation models.',
-    impactScore: 94,
+    impactScore: 95,
     keyShift: 'Decisive shift toward sovereign European AI infrastructure counterbalancing closed US lab monopolies.',
     articleSlug: 'mistral-3b-sovereign-open-ai'
   },
@@ -464,7 +464,7 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
     title: 'Nscale Secures $45B Anthropic Compute Deal & Pre-IPO Round',
     category: 'Computing Architecture',
     summary: 'Cloud compute infrastructure provider Nscale confirms a $45B agreement with Anthropic and launches $3.5B pre-IPO financing to scale frontier GPU gigawatt clusters.',
-    impactScore: 93,
+    impactScore: 95,
     keyShift: 'Frontier AI infrastructure consolidation around specialized high-density cloud data center providers.',
     articleSlug: 'nscale-3-5b-pre-ipo-financing-ai-compute'
   },
@@ -486,7 +486,7 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
     title: 'Meta Releases Muse Spark with 95% Telemetry Subsidy',
     category: 'AI Breakthrough',
     summary: 'Meta introduces Muse Spark and Muse Glimmer, offering near-free compute ($0.12/1M tokens) to developers opting into prompt telemetry logging.',
-    impactScore: 92,
+    impactScore: 95,
     keyShift: 'Aggressive commoditization of cloud inference in exchange for multi-turn developer interaction data.',
     articleSlug: 'meta-muse-spark-agent-telemetry'
   },

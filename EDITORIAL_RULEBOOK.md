@@ -78,6 +78,26 @@ Before researching or staging any new article:
 1. **Audit the Existing Database**: Cross-check `src/data/articlesData.ts` to ensure the subject has not already been covered.
 2. **Substantial New Angle Requirement**: An existing topic may only be revisited if there is a substantial new development (e.g. a new benchmark release, court verdict, or architectural revision). In such cases, cross-link the prior report.
 
+### 3.4 Temporal Consistency & Zero-Anachronism Standards
+NextVector covers cutting-edge developments in real time. Editors and AI agents must maintain rigorous chronological integrity and strictly prevent anachronisms.
+
+1. **The 48-Hour Breaking News Window**:
+   - All candidate news stories, model release announcements, and scientific breakthroughs must originate from verified primary events within the **last 48 hours** relative to the operational run date.
+   - Editors and automated workflows must verify external timestamps (e.g., ISO publication dates on RSS feeds, arXiv submission timestamps, GitHub release tags, or HTTP `Last-Modified` / `Date` headers).
+
+2. **Prohibition of Parametric Memory Reliance**:
+   - AI agents are strictly forbidden from drafting breaking news based on unanchored pre-training memory or historical training weights.
+   - Any story drafted without a primary source timestamp verified via live network harvesting (`python scripts/fetch_live_intel.py` or direct HTTP inspection) is invalid and must be rejected.
+
+3. **Legacy Model Classification & Anachronism Ban**:
+   - Historical foundation models and checkpoints released during prior years/operational cycles belong to historical records, not current breaking news.
+   - **Explicit Historical Baseline**:
+     - **2024 Models**: GPT-4o, Claude 3 Opus/Sonnet/Haiku, Claude 3.5 Sonnet, Llama 3 / 3.1, Gemini 1.5 Pro/Flash, DeepSeek-V2 / DeepSeek-V3.
+     - **2025 Models**: Claude 3.7 Sonnet (February 2025), DeepSeek-R1 (January 2025), Llama 3.3, Gemini 2.0 / 2.5 Flash/Pro.
+     - **2026 Models**: The current operational baseline (GPT-5/6, Claude Fable 5/5.1, Claude Opus 5, DeepSeek-V4/V4.1, Qwen 3.5/3.8, Gemini 3.x).
+   - **Strict Ban**: NEVER report a 2024 or 2025 model (such as Claude 3.7 Sonnet or Claude 3.5) as a "new model released today" in 2026. Such claims are factual hallucinations and immediately fail the Pre-Publication Release Gate.
+   - **Retrospective Analysis vs. Breaking News**: A historical model may only be cited in retrospective comparisons or benchmarks (e.g., *"Evaluating Claude Fable 5.1 against 2025 baselines such as Claude 3.7 Sonnet"*), NEVER as breaking news.
+
 ---
 
 ## 4. Visual Assets & Media Standards (Strict Compliance)
@@ -192,7 +212,7 @@ export interface Article {
 
 ## 7. Pre-Publication Quality Assurance (Release Gate)
 
-Before committing any new article to the repository or deploying to production, the publishing agent/editor MUST execute the **7-Step Release Gate**:
+Before committing any new article to the repository or deploying to production, the publishing agent/editor MUST execute the **8-Step Release Gate**:
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -201,25 +221,30 @@ Before committing any new article to the repository or deploying to production, 
 │ STEP 1: FACTUALITY & PRIMARY SOURCE AUDIT              │
 │         Verify numbers, model specs, DOIs, and claims. │
 ├────────────────────────────────────────────────────────┤
-│ STEP 2: CATALOG DEDUPLICATION CHECK                    │
+│ STEP 2: TEMPORAL SANITY & ZERO-ANACHRONISM AUDIT       │
+│         Confirm all stories are from the last 48 hours │
+│         and contain no historical model anachronisms.  │
+├────────────────────────────────────────────────────────┤
+│ STEP 3: CATALOG DEDUPLICATION CHECK                    │
 │         Confirm topic, slug, and title are unique.     │
 ├────────────────────────────────────────────────────────┤
-│ STEP 3: TIMELINE INTEGRITY CHECK                       │
+│ STEP 4: TIMELINE INTEGRITY CHECK                       │
 │         Audit events with Impact Score >= 95 and sync  │
 │         MOCK_TIMELINE_EVENTS in mockData.ts.           │
 ├────────────────────────────────────────────────────────┤
-│ STEP 4: LIVE SIGNAL TICKER INTEGRITY CHECK             │
+│ STEP 5: LIVE SIGNAL TICKER INTEGRITY CHECK             │
 │         Verify MOCK_LIVE_SIGNALS contains 5 fresh      │
 │         signals matching today's stories with links.   │
 ├────────────────────────────────────────────────────────┤
-│ STEP 5: IMAGE UNIQUENESS & VALIDATION AUDIT            │
+│ STEP 6: IMAGE UNIQUENESS & VALIDATION AUDIT            │
 │         Confirm coverImage is 100% unique (0 dupes),   │
 │         file exists on disk or remote returns HTTP 200.│
 ├────────────────────────────────────────────────────────┤
-│ STEP 6: TYPESCRIPT COMPILATION & BUILD CHECK           │
-│         Run `npm run build` (must pass with 0 errors). │
+│ STEP 7: AUTOMATED RELEASE GATE & BUILD VERIFICATION    │
+│         Run `npm run verify` & `npm run build`         │
+│         (must pass with 0 errors).                     │
 ├────────────────────────────────────────────────────────┤
-│ STEP 7: ATOMIC GIT COMMIT & REMOTE PUSH                │
+│ STEP 8: ATOMIC GIT COMMIT & REMOTE PUSH                │
 │         Commit with semantic prefix: `feat(news): ...` │
 └────────────────────────────────────────────────────────┘
 ```

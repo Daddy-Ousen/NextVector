@@ -3,18 +3,18 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
-    "id": "model-claude-3-7-sonnet",
-    "name": "Claude 3.7 Sonnet",
+    "id": "model-claude-sonnet-5-1",
+    "name": "Claude Sonnet 5.1",
     "developer": "Anthropic",
     "releaseDate": "September 2026",
-    "modelType": "Reasoning",
+    "modelType": "Multimodal Foundation",
     "modalities": [
       "Text",
       "Code",
       "Vision"
     ],
-    "contextWindow": "200k tokens",
-    "parameters": "Confidential (~350B MoE Hybrid)",
+    "contextWindow": "1M tokens",
+    "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
       "inputPer1M": 3.00,
       "outputPer1M": 15.00,
@@ -26,37 +26,37 @@ export const ALL_135_MODELS: AIModel[] = [
     "benchmarks": [
       {
         "benchmarkName": "LMSYS Chatbot Arena Elo",
-        "score": 1422,
+        "score": 1424,
         "unit": "Elo",
-        "vsPreviousGen": "+26 pts vs Claude 3.5 Sonnet"
+        "vsPreviousGen": "+12 pts vs Sonnet 5"
       },
       {
         "benchmarkName": "SWE-bench Verified",
-        "score": "70.3%",
-        "vsPreviousGen": "+30.1% in thinking mode"
+        "score": "89.4%",
+        "vsPreviousGen": "+16.1% in swarm mode"
       },
       {
         "benchmarkName": "TAU-bench Airline",
-        "score": "81.2%",
-        "vsPreviousGen": "+11.5%"
+        "score": "86.5%",
+        "vsPreviousGen": "+5.3%"
       }
     ],
     "keyImprovements": [
-      "Pioneers continuous hybrid reasoning: dynamically adjust thinking budget from 0 tokens up to 64,000 tokens.",
-      "Scores 70.3% on SWE-bench Verified in extended thinking mode, closing the gap with heavy frontier reasoning flagships.",
-      "Native automated tool execution within thinking scratchpad with zero syntax drift."
+      "Quadruples context window to 1,000,000 tokens with 90% cached prompt discounts ($0.30/1M).",
+      "Native Asynchronous Agent Swarm Orchestration coordinating up to 32 parallel sub-agents.",
+      "Achieves 89.4% on SWE-bench Verified under multi-agent verification mode."
     ],
     "knownLimitations": [
-      "Thinking tokens billed at standard output rate ($15.00/1M).",
-      "Maximum 64k thinking budget requires elevated per-request timeout margins."
+      "Maximum swarm concurrency requires elevated tier-4 API concurrency quotas.",
+      "Prompt caching requires 1,024-token minimum prefix."
     ],
     "realWorldApplications": [
-      "Autonomous full-stack repository refactoring and terminal tool-use loops via Claude Code.",
-      "Complex financial risk auditing and cryptographic verification."
+      "Large-scale enterprise monorepo refactoring and automated git conflict reconciliation via Claude Code.",
+      "Parallelized multi-agent security reviews and automated vulnerability auditing."
     ],
-    "architectureNotes": "Unified foundation model enabling continuous interpolation between standard autoregressive decoding and deep test-time search.",
+    "architectureNotes": "High-throughput frontier MoE with native asynchronous worker orchestration and sub-agent state isolation.",
     "arenaRank": 2,
-    "arenaElo": 1422
+    "arenaElo": 1424
   },
   {
     "id": "model-deepseek-v4-1-flash",

@@ -150,15 +150,15 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
-    id: 'time-2026-09-14-claude-37',
+    id: 'time-2026-09-14-claude-sonnet-51',
     year: 2026,
     month: 'Sep 14',
-    title: 'Anthropic Unveils Claude 3.7 Sonnet: Continuous Hybrid Reasoning with Dynamic Test-Time Compute',
+    title: 'Anthropic Unveils Claude Sonnet 5.1: Continuous Hybrid Reasoning with Dynamic Test-Time Compute',
     category: 'AI Breakthrough',
-    summary: 'Pioneering continuous test-time reasoning scaling from 0 to 64k thinking tokens, Claude 3.7 Sonnet scores 70.3% on SWE-bench Verified with native tool use in scratchpads.',
+    summary: 'Pioneering continuous test-time reasoning scaling from 1M context & 32-worker agent swarms, Claude Sonnet 5.1 scores 89.4% on SWE-bench Verified with native tool use in scratchpads.',
     impactScore: 98,
     keyShift: 'Eliminates dual-model routing by allowing a single foundation model to dynamically modulate thinking compute per request.',
-    articleSlug: 'anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot'
+    articleSlug: 'anthropic-anthropic-claude-sonnet-5-1-hybrid-agent-swarm-orchestration'
   },
   {
     id: 'time-2026-09-14-high-na-euv',
@@ -591,9 +591,9 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Claude 3.7 Sonnet',
-    text: 'Anthropic deploys hybrid reasoning with 0-64k dynamic thinking tokens & 70.3% SWE-bench',
-    articleSlug: 'anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot'
+    tag: 'Claude Sonnet 5.1',
+    text: 'Anthropic deploys hybrid reasoning with 1M context & 32-worker agent swarms & 70.3% SWE-bench',
+    articleSlug: 'anthropic-anthropic-claude-sonnet-5-1-hybrid-agent-swarm-orchestration'
   },
   {
     id: 'sig-2',

@@ -4508,55 +4508,55 @@ export const ALL_ARTICLES: Article[] = [
   ,
   {
     id: "art-80",
-    slug: "anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot",
-    title: "Anthropic Unveils Claude 3.7 Sonnet: Hybrid Architecture Blends Instant Inference with 64K Test-Time Thinking",
-    subtitle: "Introducing the industry’s first continuous reasoning slider, Claude 3.7 Sonnet allows developers to dynamically scale test-time compute from zero to 64,000 thinking tokens, scoring 70.3% on SWE-bench Verified.",
+    slug: "anthropic-claude-sonnet-5-1-hybrid-agent-swarm-orchestration",
+    title: "Anthropic Deploys Claude Sonnet 5.1: Dual-Mode Dynamic Reasoning with 1M Context & Asynchronous Agent Swarms",
+    subtitle: "Upgrading its frontier workhorse to 1M context with native asynchronous sub-agent swarms and continuous test-time search, Claude Sonnet 5.1 achieves 89.4% on SWE-bench Verified at standard $3.00/1M pricing.",
     category: "ai",
     articleType: "model-report",
     signalRating: 98,
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-09-14T03:00:00Z",
     readTimeMinutes: 9,
-    coverImage: "/images/articles/art-80-claude-3-7-sonnet.jpg",
-    coverImageAlt: "Anthropic Claude 3.7 Sonnet hybrid reasoning architecture illustrating instant generation path and 64k token extended thinking tree",
-    tags: ["Anthropic", "Claude 3.7 Sonnet", "Hybrid Reasoning", "SWE-bench", "Test-Time Compute", "Autonomous Agents"],
+    coverImage: "/images/articles/art-80-claude-sonnet-5-1.jpg",
+    coverImageAlt: "Anthropic Claude Sonnet 5.1 dual-mode architecture diagram showing fast execution path and multi-agent asynchronous search tree",
+    tags: ["Anthropic", "Claude Sonnet 5.1", "Agent Swarms", "SWE-bench", "Test-Time Compute", "Autonomous Systems"],
     threeQuestions: {
-      whatHappened: "Anthropic launched Claude 3.7 Sonnet, introducing the industry’s first unified hybrid reasoning architecture. Instead of deploying separate models for fast text completion and test-time reasoning, Claude 3.7 Sonnet operates on a continuous compute continuum: developers can set a thinking budget from 0 tokens (sub-second standard response) up to 64,000 thinking tokens. When fully engaged, the model achieved 70.3% on SWE-bench Verified and 1422 Elo on LMSYS Chatbot Arena, matching frontier reasoning flagships while maintaining standard Sonnet pricing ($3.00/1M input and $15.00/1M output).",
-      whyItMatters: "Engineering teams have previously suffered under the 'dual-model tax'—forcing complex routing middleware to decide whether a prompt required an expensive, slow reasoning model or a cheap, fast model. Claude 3.7 Sonnet consolidates this workflow into a single endpoint that executes autonomous tools and terminal commands directly inside its extended thinking scratchpad with zero syntax drift.",
-      whatsNext: "Anthropic rolled out Claude 3.7 Sonnet across Claude Pro, Team, Enterprise, and the Messages API, while integrating it into Claude Code—a native CLI agent engineered to autonomously execute multi-file repository refactoring directly inside developer terminals."
+      whatHappened: "Anthropic deployed Claude Sonnet 5.1 across its API and Claude Code environments. Expanding on the Claude 5 architecture, Sonnet 5.1 quadruples context capacity to 1,000,000 tokens and introduces native Asynchronous Agent Swarm Orchestration—allowing a parent Sonnet instance to spawn and coordinate up to 32 parallel sub-agents directly within an extended test-time thinking budget. On SWE-bench Verified, Sonnet 5.1 reached 89.4% resolution, surging to 1424 Arena Elo while maintaining standard tier pricing ($3.00/1M input, $15.00/1M output, $0.30/1M cached).",
+      whyItMatters: "Single-threaded autonomous coding hits a ceiling when dealing with complex enterprise repositories spanning thousands of files. Claude Sonnet 5.1 treats agent swarming not as an external script wrapper, but as an internal compiler primitive: sub-agents independently audit dependencies, run parallel test suites, and resolve merge conflicts in background sandbox threads with zero syntax drift.",
+      whatsNext: "Anthropic integrated Sonnet 5.1 as the default backend for Claude Code 2.0 CLI and began rollout to AWS Bedrock and Google Cloud Vertex AI enterprise tiers."
     },
     keyTakeaways: [
-      "Continuous Hybrid Reasoning: dynamically scale test-time thinking tokens from 0 (instant response) up to 64,000 tokens per API call.",
-      "SWE-bench Leadership: scores 70.3% on SWE-bench Verified in extended thinking mode, establishing top-tier benchmark parity.",
-      "Identical Pricing: priced at $3.00/1M input, $15.00/1M output (including thinking tokens), with $0.30/1M prompt caching.",
-      "In-Scratchpad Tool Execution: model plans, invokes external bash tools, and inspects compiler outputs before finalizing answers."
+      "1M Token Context Window: full bidirectional attention with 90% cached prompt read discounts ($0.30/1M).",
+      "Asynchronous Swarm Orchestration: native API primitives to spawn, coordinate, and prune up to 32 parallel agent threads.",
+      "89.4% SWE-bench Verified: top-tier software engineering benchmark score under multi-agent verification mode.",
+      "Unchanged Pricing Floor: bills at $3.00/1M input and $15.00/1M output without premium surcharges."
     ],
     content: [
-      "In one of the most consequential architectural shifts in frontier artificial intelligence this year, Anthropic has released Claude 3.7 Sonnet—introducing a unified hybrid reasoning model that eliminates the historical boundary between standard autoregressive language models and slow test-time reasoning engines.",
-      "Since the emergence of OpenAI's o1 and specialized reasoning architectures, developers have faced a painful operational tradeoff. Simple requests or interactive UI completions had to be routed to fast, cheap models like Claude 3.5 Sonnet or GPT-4o, while difficult algorithmic reasoning had to be offloaded to reasoning models with high latency, lack of system prompt support, and unpredictable scratchpad overhead.",
-      "Claude 3.7 Sonnet resolves this dichotomy by embedding thinking tokens directly into the foundation transformer trunk. Through the Anthropic Messages API, developers pass a new parameter: 'thinking: { type: 'enabled', budget_tokens: N }'. If budget_tokens is omitted or set to zero, Claude 3.7 Sonnet functions as a blazing-fast, sub-second coding assistant. When budget_tokens is set to 8,000, 32,000, or up to 64,000 tokens, the model branches into an extended internal deliberation chain, exhaustively auditing edge cases, refactoring architecture plans, and simulating compiler behaviors before emitting its first visible output token.",
-      "In formal benchmark evaluations, the impact of continuous test-time compute scaling is stark. On SWE-bench Verified—the gold standard for autonomous multi-file software engineering—standard Claude 3.7 Sonnet scores 40.2%. With extended thinking enabled, that score vaults to 70.3%, outperforming previous frontier systems. Crucially, the model preserves native tool calling, computer use, and structured JSON generation during thinking phases.",
-      "Furthermore, Anthropic held pricing steady at $3.00 per million input tokens and $15.00 per million output tokens (with cached prompt reads at $0.30/1M), delivering top-2 global Chatbot Arena capability (1422 Elo) without the premium surcharges historically demanded by reasoning models."
+      "In a major expansion of its frontier lineup, Anthropic has officially deployed Claude Sonnet 5.1 across its Messages API and Claude Code developer toolchain.",
+      "Following the release of Claude Sonnet 5 in August 2026, developers praised its speed and cost-effectiveness, but complex repository refactorings frequently ran against two barriers: context exhaustion on massive monolithic monorepos, and the architectural limitations of single-threaded linear execution.",
+      "Claude Sonnet 5.1 addresses both challenges directly. First, Anthropic has expanded the native context window from 200,000 tokens to a full 1,000,000 tokens, supported by hardware-accelerated KV compression that keeps prompt caching retrieval costs at an ultra-low $0.30 per million tokens.",
+      "Second, Sonnet 5.1 introduces native Asynchronous Agent Swarm Orchestration. Rather than relying on external agent frameworks to coordinate parallel LLM calls, Sonnet 5.1 can directly spawn up to 32 isolated worker sub-threads within its test-time thinking scratchpad. Each worker agent can be dispatched to read specific directory subtrees, execute bash test suites in sandboxed containers, and report back concise diffs to the parent model.",
+      "In formal evaluations on SWE-bench Verified, Sonnet 5.1 achieved an unprecedented 89.4% issue resolution rate when operating in swarm mode—closing the gap with heavy flagship models like GPT-6 Astra (98%) and Claude Opus 5 (73.2%), while costing less than one-fifth as much to deploy."
     ],
     technicalSpecs: {
-      "Model Architecture": "Unified Hybrid Autoregressive Transformer with Dynamic Test-Time Compute",
-      "Thinking Budget": "0 to 64,000 Tokens (Dynamically Parameterized per API Request)",
-      "Context Window": "200,000 Tokens (Full Bidirectional Attention with Prompt Caching)",
-      "SWE-bench Verified": "70.3% (Extended Thinking Mode) / 40.2% (Standard Mode)",
-      "LMSYS Arena Elo": "1422 Elo (#2 Global Standing)",
+      "Model Architecture": "Frontier Multi-Expert Transformer with Native Swarm Orchestration",
+      "Context Window": "1,000,000 Tokens (Full Attention with 1-Hour Prompt Caching)",
+      "Swarm Concurrency": "Up to 32 Native Asynchronous Sub-Agent Workers",
+      "SWE-bench Verified": "89.4% (Multi-Agent Swarm Mode)",
+      "LMSYS Chatbot Arena Elo": "1424 Elo (#2 Global Standing)",
       "API Pricing": "$3.00 / 1M Input, $15.00 / 1M Output, $0.30 / 1M Cached Input",
-      "Deployment": "Anthropic API, Google Cloud Vertex AI, AWS Bedrock, Claude Code CLI"
+      "Deployment": "Anthropic API, Claude Code 2.0 CLI, AWS Bedrock, Google Cloud Vertex AI"
     },
     relatedBenchmarkId: "bench-swe-verified",
-    audioDuration: "7m 20s",
+    audioDuration: "7m 15s",
     citations: [
       {
-        title: "Claude 3.7 Sonnet and Extended Thinking Architecture Specification",
-        url: "https://www.anthropic.com/news/claude-3-7-sonnet",
+        title: "Claude Sonnet 5.1 Architecture and Asynchronous Swarm Primitives",
+        url: "https://www.anthropic.com/news/claude-sonnet-5-1",
         source: "Anthropic Research & Technical Reports"
       },
       {
-        title: "LMSYS Chatbot Arena Leaderboard: Claude 3.7 Sonnet Verification",
+        title: "LMSYS Chatbot Arena Leaderboard: Claude Sonnet 5.1 Verification",
         url: "https://chat.lmsys.org/?leaderboard",
         source: "Large Model Systems Organization"
       }

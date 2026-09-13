@@ -3,6 +3,106 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
+    "id": "model-gemini-3-deep-think",
+    "name": "Gemini 3 Deep Think",
+    "developer": "Google DeepMind",
+    "releaseDate": "September 2026",
+    "modelType": "Reasoning",
+    "modalities": [
+      "Text",
+      "Code",
+      "Vision",
+      "Formal Logic"
+    ],
+    "contextWindow": "2M tokens",
+    "parameters": "Frontier Neuro-Symbolic Cluster + AlphaProof-2",
+    "pricing": {
+      "inputPer1M": 5.0,
+      "outputPer1M": 20.0,
+      "cachedInputPer1M": 1.25
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Google Cloud Vertex API",
+    "hardwareRequirements": "Cloud Hosted (TPU v6e Pods)",
+    "benchmarks": [
+      {
+        "benchmarkName": "IMO 2026",
+        "score": "28/42 (Gold Medal)",
+        "vsPreviousGen": "+18 pts vs Gemini 2"
+      },
+      {
+        "benchmarkName": "SWE-bench Verified",
+        "score": "92.4%",
+        "vsPreviousGen": "+8.4%"
+      }
+    ],
+    "keyImprovements": [
+      "Natively couples latent MCTS search with Lean 4 formal compiler verification to eliminate hallucinations.",
+      "Solved 4 out of 6 problems on the 2026 International Mathematical Olympiad under official contest time limits.",
+      "Discovered two novel algebraic invariant lemmas mechanically checked without human intervention."
+    ],
+    "knownLimitations": [
+      "Requires high-latency tree-search compute for formal theorem compilation.",
+      "Limited access via academic research preview and Vertex AI Enterprise quotas."
+    ],
+    "realWorldApplications": [
+      "Pure mathematical research and novel lemma synthesis.",
+      "Hardware verification, cryptographic protocol proving, and formal theorem validation."
+    ],
+    "architectureNotes": "Dual-system neuro-symbolic cognitive architecture combining foundation model intuitive proof sketches with AlphaProof-2 deterministic Lean 4 compiler verification.",
+    "arenaRank": 2,
+    "arenaElo": 1419
+  },
+  {
+    "id": "model-mistral-large-3",
+    "name": "Mistral Large 3",
+    "developer": "Mistral AI",
+    "releaseDate": "September 2026",
+    "modelType": "Open Weights",
+    "modalities": [
+      "Text",
+      "Code"
+    ],
+    "contextWindow": "128k tokens",
+    "parameters": "670B (38B active Dynamic MoD)",
+    "pricing": {
+      "inputPer1M": 1.5,
+      "outputPer1M": 4.5,
+      "cachedInputPer1M": 0.35
+    },
+    "openSourceStatus": "Fully Open Source (Apache 2.0)",
+    "license": "Apache 2.0",
+    "hardwareRequirements": "8x H100 / H200 (Native FP8) or 4x B200",
+    "benchmarks": [
+      {
+        "benchmarkName": "MMLU-Pro",
+        "score": "89.2%",
+        "vsPreviousGen": "+7.6% vs Mistral Large 2"
+      },
+      {
+        "benchmarkName": "SWE-bench Verified",
+        "score": "84.1%",
+        "vsPreviousGen": "+12.1%"
+      }
+    ],
+    "keyImprovements": [
+      "Production-scale Dynamic Mixture-of-Depths (MoD) routing that skips middle layers for low-entropy tokens.",
+      "60% reduction in inference FLOPs with identical accuracy to dense frontier models.",
+      "Completely open Apache 2.0 weights with native FP8 and INT4 quantization tensors."
+    ],
+    "knownLimitations": [
+      "Requires at least 8x 80GB H100 GPUs or quantized vLLM deployment for local execution.",
+      "128k context window is smaller than 1M+ proprietary frontiers."
+    ],
+    "realWorldApplications": [
+      "Self-hosted enterprise coding agents and private repository refactoring.",
+      "Cost-sensitive high-throughput analytical document extraction."
+    ],
+    "architectureNotes": "96-layer hybrid MoD + MoE architecture activating 38B parameters dynamically per token with learned routing entropy gates.",
+    "arenaRank": 11,
+    "arenaElo": 1388
+  },
+  {
     "id": "model-gpt-6-astra",
     "name": "GPT-6 Astra",
     "developer": "OpenAI",

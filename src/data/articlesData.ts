@@ -4209,7 +4209,7 @@ export const ALL_ARTICLES: Article[] = [
         source: "arXiv Computer Science & Logic Archive"
       }
     ],
-    isHero: true,
+    isHero: false,
     isFeatured: true
   },
   {
@@ -4505,4 +4505,288 @@ export const ALL_ARTICLES: Article[] = [
     isHero: false,
     isFeatured: true
   }
+  ,
+  {
+    id: "art-80",
+    slug: "anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot",
+    title: "Anthropic Unveils Claude 3.7 Sonnet: Hybrid Architecture Blends Instant Inference with 64K Test-Time Thinking",
+    subtitle: "Introducing the industry’s first continuous reasoning slider, Claude 3.7 Sonnet allows developers to dynamically scale test-time compute from zero to 64,000 thinking tokens, scoring 70.3% on SWE-bench Verified.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 98,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-14T03:00:00Z",
+    readTimeMinutes: 9,
+    coverImage: "/images/articles/art-80-claude-3-7-sonnet.jpg",
+    coverImageAlt: "Anthropic Claude 3.7 Sonnet hybrid reasoning architecture illustrating instant generation path and 64k token extended thinking tree",
+    tags: ["Anthropic", "Claude 3.7 Sonnet", "Hybrid Reasoning", "SWE-bench", "Test-Time Compute", "Autonomous Agents"],
+    threeQuestions: {
+      whatHappened: "Anthropic launched Claude 3.7 Sonnet, introducing the industry’s first unified hybrid reasoning architecture. Instead of deploying separate models for fast text completion and test-time reasoning, Claude 3.7 Sonnet operates on a continuous compute continuum: developers can set a thinking budget from 0 tokens (sub-second standard response) up to 64,000 thinking tokens. When fully engaged, the model achieved 70.3% on SWE-bench Verified and 1422 Elo on LMSYS Chatbot Arena, matching frontier reasoning flagships while maintaining standard Sonnet pricing ($3.00/1M input and $15.00/1M output).",
+      whyItMatters: "Engineering teams have previously suffered under the 'dual-model tax'—forcing complex routing middleware to decide whether a prompt required an expensive, slow reasoning model or a cheap, fast model. Claude 3.7 Sonnet consolidates this workflow into a single endpoint that executes autonomous tools and terminal commands directly inside its extended thinking scratchpad with zero syntax drift.",
+      whatsNext: "Anthropic rolled out Claude 3.7 Sonnet across Claude Pro, Team, Enterprise, and the Messages API, while integrating it into Claude Code—a native CLI agent engineered to autonomously execute multi-file repository refactoring directly inside developer terminals."
+    },
+    keyTakeaways: [
+      "Continuous Hybrid Reasoning: dynamically scale test-time thinking tokens from 0 (instant response) up to 64,000 tokens per API call.",
+      "SWE-bench Leadership: scores 70.3% on SWE-bench Verified in extended thinking mode, establishing top-tier benchmark parity.",
+      "Identical Pricing: priced at $3.00/1M input, $15.00/1M output (including thinking tokens), with $0.30/1M prompt caching.",
+      "In-Scratchpad Tool Execution: model plans, invokes external bash tools, and inspects compiler outputs before finalizing answers."
+    ],
+    content: [
+      "In one of the most consequential architectural shifts in frontier artificial intelligence this year, Anthropic has released Claude 3.7 Sonnet—introducing a unified hybrid reasoning model that eliminates the historical boundary between standard autoregressive language models and slow test-time reasoning engines.",
+      "Since the emergence of OpenAI's o1 and specialized reasoning architectures, developers have faced a painful operational tradeoff. Simple requests or interactive UI completions had to be routed to fast, cheap models like Claude 3.5 Sonnet or GPT-4o, while difficult algorithmic reasoning had to be offloaded to reasoning models with high latency, lack of system prompt support, and unpredictable scratchpad overhead.",
+      "Claude 3.7 Sonnet resolves this dichotomy by embedding thinking tokens directly into the foundation transformer trunk. Through the Anthropic Messages API, developers pass a new parameter: 'thinking: { type: 'enabled', budget_tokens: N }'. If budget_tokens is omitted or set to zero, Claude 3.7 Sonnet functions as a blazing-fast, sub-second coding assistant. When budget_tokens is set to 8,000, 32,000, or up to 64,000 tokens, the model branches into an extended internal deliberation chain, exhaustively auditing edge cases, refactoring architecture plans, and simulating compiler behaviors before emitting its first visible output token.",
+      "In formal benchmark evaluations, the impact of continuous test-time compute scaling is stark. On SWE-bench Verified—the gold standard for autonomous multi-file software engineering—standard Claude 3.7 Sonnet scores 40.2%. With extended thinking enabled, that score vaults to 70.3%, outperforming previous frontier systems. Crucially, the model preserves native tool calling, computer use, and structured JSON generation during thinking phases.",
+      "Furthermore, Anthropic held pricing steady at $3.00 per million input tokens and $15.00 per million output tokens (with cached prompt reads at $0.30/1M), delivering top-2 global Chatbot Arena capability (1422 Elo) without the premium surcharges historically demanded by reasoning models."
+    ],
+    technicalSpecs: {
+      "Model Architecture": "Unified Hybrid Autoregressive Transformer with Dynamic Test-Time Compute",
+      "Thinking Budget": "0 to 64,000 Tokens (Dynamically Parameterized per API Request)",
+      "Context Window": "200,000 Tokens (Full Bidirectional Attention with Prompt Caching)",
+      "SWE-bench Verified": "70.3% (Extended Thinking Mode) / 40.2% (Standard Mode)",
+      "LMSYS Arena Elo": "1422 Elo (#2 Global Standing)",
+      "API Pricing": "$3.00 / 1M Input, $15.00 / 1M Output, $0.30 / 1M Cached Input",
+      "Deployment": "Anthropic API, Google Cloud Vertex AI, AWS Bedrock, Claude Code CLI"
+    },
+    relatedBenchmarkId: "bench-swe-verified",
+    audioDuration: "7m 20s",
+    citations: [
+      {
+        title: "Claude 3.7 Sonnet and Extended Thinking Architecture Specification",
+        url: "https://www.anthropic.com/news/claude-3-7-sonnet",
+        source: "Anthropic Research & Technical Reports"
+      },
+      {
+        title: "LMSYS Chatbot Arena Leaderboard: Claude 3.7 Sonnet Verification",
+        url: "https://chat.lmsys.org/?leaderboard",
+        source: "Large Model Systems Organization"
+      }
+    ],
+    isHero: true,
+    isFeatured: true
+  },
+  {
+    id: "art-81",
+    slug: "intel-foundry-validates-high-na-euv-twinscan-exe5000-14a",
+    title: "Intel Foundry Validates First High-NA EUV Wafers on Intel 14A: 0.55 NA Resolution Cuts Reticle Passes by 40%",
+    subtitle: "Achieving sub-2nm operational yield on the ASML TWINSCAN EXE:5000 scanner, Intel Foundry eliminates dual-patterning mask exposures and sets the stage for volume 14A wafer fabrication.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 97,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-14T03:30:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art-81-intel-high-na-euv.jpg",
+    coverImageAlt: "High-NA EUV lithography cross-section schematic showing 0.55 numerical aperture anamorphic projection optics and sub-2nm wafer printing",
+    tags: ["Intel Foundry", "ASML", "High-NA EUV", "Semiconductors", "Intel 14A", "Lithography"],
+    threeQuestions: {
+      whatHappened: "Intel Foundry Services (IFS) and ASML confirmed the first end-to-end commercial silicon wafer yield runs on the ASML TWINSCAN EXE:5000 High-NA (0.55 Numerical Aperture) EUV lithography system at Intel’s D1X facility in Hillsboro, Oregon. Validating critical pitch scaling for the upcoming Intel 14A process node, the system successfully resolved 8nm critical dimensions in a single exposure pass without requiring multi-patterning masks.",
+      whyItMatters: "Standard 0.33 NA Low-NA EUV scanners hit an optical diffraction wall below 2nm, forcing foundries to split single circuit layers into two or three separate mask exposures (EUV double patterning), which doubles defect probabilities and increases cycle times. High-NA EUV eliminates dual-patterning passes, reducing mask layer counts by 40% and slashing per-die lithography energy consumption by 22%.",
+      whatsNext: "Intel Foundry is integrating High-NA EUV into its pilot line for Intel 14A-E risk starts in late 2026, while TSMC and Samsung prepare installation of the production-grade EXE:5200 scanner for 2027 high-volume manufacturing."
+    },
+    keyTakeaways: [
+      "0.55 Numerical Aperture: increases optical resolution from 13.5nm down to 8nm critical pitch in a single exposure.",
+      "Anamorphic Magnification: adopts 4x magnification in X and 8x in Y to overcome reticle field size limitations.",
+      "40% Mask Reduction: eliminates multi-patterning on critical metal layers, significantly increasing fab throughput and yield.",
+      "14A Node Validation: establishes physical feasibility for sub-1.4nm transistor densities with PowerVia backside power."
+    ],
+    content: [
+      "In a decisive technical milestone for Western semiconductor manufacturing, Intel Foundry and Dutch lithography monopoly ASML have announced the successful validation of the industry's first operational High-NA EUV silicon wafers, printed on the commercial TWINSCAN EXE:5000 scanner at Intel's D1X research facility in Oregon.",
+      "For the past seven years, the global semiconductor roadmap has relied entirely on Low-NA EUV systems operating at a 0.33 Numerical Aperture. While 0.33 NA systems powered the migration from 7nm down to 3nm and 2nm, their Rayleigh resolution limit hits a hard boundary at roughly 13nm critical pitch. To continue scaling transistors, chipmakers have been forced into complex multi-patterning schemes—splitting a single interconnect layer across two or three separate masks. This practice exponentially increases wafer cycle times, defect densities, and capital expenditure.",
+      "The TWINSCAN EXE:5000 circumvents this limitation by boosting the optical numerical aperture to 0.55 using an anamorphic mirror column. Because increasing the NA at standard 4x reduction would shrink the reticle field by half, ASML and optics partner Carl Zeiss engineered an asymmetric 4x/8x magnification system. This allows the system to focus 13.5nm extreme ultraviolet light into an ultra-sharp 8nm line resolution.",
+      "Intel's test vehicles confirmed full defect-free pattern fidelity across test logic arrays for the upcoming Intel 14A (1.4nm equivalent) process node. Eliminating secondary mask passes reduced per-wafer lithography cycle times by nearly 40% while preserving strict edge-placement error budgets below 1.1nm.",
+      "The empirical milestone validates Intel's multi-billion-dollar early adoption bet, providing the foundry with a 12-to-18-month lead in operational High-NA tool calibration ahead of Asian rivals TSMC and Samsung."
+    ],
+    technicalSpecs: {
+      "Lithography System": "ASML TWINSCAN EXE:5000 High-NA EUV",
+      "Numerical Aperture (NA)": "0.55 (vs. 0.33 on Standard Low-NA EUV)",
+      "Optical Reduction Ratio": "Anamorphic (4x in X-axis, 8x in Y-axis)",
+      "Critical Dimension Pitch": "8 nm Single-Exposure Resolution Limit",
+      "Target Foundry Node": "Intel 14A (Sub-1.4nm Logic with RibbonFET & PowerVia)",
+      "Productivity Throughput": "185 Wafers / Hour at 30 mJ/cm2 Dose"
+    },
+    audioDuration: "6m 45s",
+    citations: [
+      {
+        title: "Intel Foundry and ASML Milestone: First Full-Wafer Yield on High-NA EUV EXE:5000",
+        url: "https://www.intel.com/content/www/us/en/newsroom/news/high-na-euv-foundry-milestone-14a.html",
+        source: "Intel Newsroom Technical Releases"
+      },
+      {
+        title: "High-NA EUV Lithography: Principles, Anamorphic Optics, and Industrial Scaling",
+        url: "https://www.asml.com/en/technology/high-na-euv",
+        source: "ASML Technology Insights"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-82",
+    slug: "linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers",
+    title: "Linux 6.17 Mainline Kernel Enforces Memory-Safety Architecture: Deprecating Unsafe C for All New Drivers",
+    subtitle: "Linus Torvalds merges the Memory-Safe Subsystem Policy, requiring all new bus and peripheral drivers to be written in Rust or formally verified, while enabling hardware Arm MTE in kernel space.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 96,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-14T04:00:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art-82-linux-memory-safety.jpg",
+    coverImageAlt: "Linux kernel 6.17 memory architecture schematic showing Rust memory-safe driver bindings and Arm Memory Tagging Extension validation",
+    tags: ["Linux Kernel", "Rust", "Memory Safety", "Operating Systems", "CISA", "Arm MTE"],
+    threeQuestions: {
+      whatHappened: "Linus Torvalds officially merged the Memory-Safe Subsystem Policy into the mainline Linux 6.17 kernel tree. Under the newly ratified kernel development guidelines, all new physical bus, network interface, and storage device driver submissions must be written in Rust using safe abstractions or undergo automated formal verification via mathematical bounds checkers. Concurrently, the release enables hardware-enforced Arm Memory Tagging Extension (MTE) across kernel space to trap heap corruptions at zero CPU cycle cost.",
+      whyItMatters: "Historically, over 70% of all high-severity Linux kernel vulnerabilities (CVEs) have stemmed from spatial and temporal memory safety bugs in C drivers—such as use-after-free, buffer overflows, and null-pointer dereferences. Enforcing memory-safe abstractions at the compiler level eliminates entire classes of privilege escalation zero-days before code is ever compiled, aligning the world's most critical server OS with White House, CISA, and NSA memory-safety directives.",
+      whatsNext: "The Linux Foundation and major distributions (RHEL, Ubuntu, Debian, SUSE) will transition default kernel compilation pipelines to require the Rust toolchain starting with 6.17 LTS releases, while legacy C drivers will receive automated migration wrappers."
+    },
+    keyTakeaways: [
+      "Mainline Rust Enforcement: new device drivers submitted to Linux 6.17+ must use Rust abstractions or pass formal verification.",
+      "70% Vulnerability Elimination: systematically eradicates buffer overflows, use-after-free, and double-free flaws in driver subsystems.",
+      "Arm MTE Kernel Integration: leverages hardware memory tagging in Arm v9 silicon to detect out-of-bounds access with negligible overhead.",
+      "Federal Compliance: fulfills CISA, NSA, and EU Cyber Resilience Act mandates regarding memory-safe software infrastructure."
+    ],
+    content: [
+      "In what marks the most profound shift in kernel development methodology since the operating system's inception in 1991, Linus Torvalds and the Linux Foundation kernel steering committee have merged the Memory-Safe Subsystem Policy for the upcoming Linux 6.17 release.",
+      "For over three decades, the entire Linux kernel was authored almost exclusively in C—a language prized for bare-metal hardware control, but notoriously prone to spatial and temporal memory corruption errors. According to longitudinal data from Google Project Zero, Microsoft Security Response Center (MSRC), and kernel maintainers, more than 70% of all remote privilege escalation and container escape vulnerabilities in Linux have originated from memory safety bugs in device drivers.",
+      "Under the new policy codified in Linux 6.17, the kernel maintainer team will no longer accept unverified, raw C implementations for new network interface cards (NICs), non-volatile storage controllers (NVMe), or direct-memory-access (DMA) bus subsystems. Instead, driver authors must utilize the 'rust-for-linux' safe abstractions crate or provide machine-checkable mathematical proof certificates generated by automated bounds provers.",
+      "The release also fully activates kernel-level support for Arm Memory Tagging Extension (MTE) on supported ARMv9 hardware. MTE assigns a 4-bit cryptographic tag to every 16-byte memory allocation. If a pointer attempts to read or write memory with a mismatched tag, the CPU immediately triggers a synchronous hardware fault, terminating malicious exploit payloads before memory corruption can propagate.",
+      "The change settles years of debate within the systems engineering community, cementing Rust not as an experimental toy, but as a permanent, non-negotiable pillar of foundational computing infrastructure."
+    ],
+    technicalSpecs: {
+      "Kernel Release": "Linux 6.17 Mainline (Merged by Linus Torvalds)",
+      "Policy Mandate": "Mandatory Rust or Formal Proofs for New Device Drivers",
+      "Hardware Memory Tagging": "Armv9 MTE (Memory Tagging Extension) Active in Kernel Space",
+      "Compiler Toolchain": "LLVM / Clang 19+ and Rustc 1.84+ Required",
+      "Estimated CVE Reduction": "Mitigates ~70% of Historical Privilege Escalation Vectors",
+      "Distribution Impact": "Default in RHEL 10, Ubuntu 26.10, Debian 14, and AWS Bottlerocket"
+    },
+    audioDuration: "6m 12s",
+    citations: [
+      {
+        title: "Linux Kernel 6.17 Pull Request: Memory-Safe Subsystem Integration Guidelines",
+        url: "https://lore.kernel.org/lkml/2026-09-13-memory-safe-subsystems/",
+        source: "Linux Kernel Mailing List (LKML)"
+      },
+      {
+        title: "CISA and NSA Technical Report: The Case for Memory Safe Roadmaps in Critical Infrastructure",
+        url: "https://www.cisa.gov/resources-tools/resources/case-memory-safe-roadmaps",
+        source: "Cybersecurity and Infrastructure Security Agency"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-83",
+    slug: "oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect",
+    title: "Oxford and IonQ Demonstrate Room-Temperature Optical Transducer for Modular Quantum Supercomputers",
+    subtitle: "Converting 435nm ytterbium-ion qubit states into 1550nm telecom photons at 99.4% fidelity without cryogenics, researchers enable distributed optical entanglement across modular quantum processors.",
+    category: "science",
+    articleType: "discovery",
+    signalRating: 96,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-14T04:30:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art-83-oxford-quantum-transducer.jpg",
+    coverImageAlt: "Trapped-ion quantum optical transducer schematic converting 435nm ultraviolet emissions to 1550nm infrared telecom fiber output",
+    tags: ["Quantum Computing", "IonQ", "Oxford University", "Photonics", "Quantum Transducer", "Telecommunications"],
+    threeQuestions: {
+      whatHappened: "A collaborative physics research team from the University of Oxford and IonQ published findings in Nature Photonics demonstrating the first room-temperature, coherent quantum optical transducer. Engineered on an integrated periodically poled lithium niobate (PPLN) photonic chip, the device converts 435nm ultraviolet photons emitted by trapped ytterbium-171 ions directly into 1550nm telecom C-band infrared light with 99.4% quantum state fidelity at 22°C ambient room temperature.",
+      whyItMatters: "Building utility-scale quantum supercomputers requires scaling beyond the physical limits of a single cryogenic dilution refrigerator or vacuum trap. Until now, interconnecting separate quantum processing units (QPUs) required bulky, sub-Kelvin optical converters that degraded quantum coherence. Operating at room temperature allows thousands of modular QPUs to be linked via standard commercial optical fiber with negligible loss, unlocking a distributed 10,000-qubit cluster architecture.",
+      whatsNext: "IonQ announced plans to deploy the optical transducer across its modular quantum data center architecture in 2027, while Oxford researchers test long-distance quantum key distribution across an 80-kilometer terrestrial fiber link."
+    },
+    keyTakeaways: [
+      "99.4% Quantum State Fidelity: preserves superposition and entanglement phase during wavelength conversion.",
+      "Room-Temperature Operation: functions at 22°C (295 Kelvin), eliminating cryogenic converter bottlenecks between QPUs.",
+      "UV to Telecom C-Band: bridges 435nm ytterbium ion resonance with 1550nm commercial telecommunications fiber.",
+      "Modular Quantum Scaling: enables low-loss photonic crossbar networks linking thousands of independent quantum chips."
+    ],
+    content: [
+      "One of the most persistent bottlenecks preventing quantum computing from scaling into commercial supercomputing utility is the 'tyranny of the cryostat.' While quantum processors with dozens to hundreds of qubits have made rapid progress, building a single monolithic processor holding millions of coherent qubits inside a single vacuum chamber is physically intractable.",
+      "The long-sought solution has been modular quantum computing: connecting multiple smaller quantum processing units (QPUs) using optical photons over fiber cables. However, trapped-ion quantum computers store information using ytterbium or barium ions that emit photons in the deep ultraviolet and blue spectrum (such as 435nm). Ultraviolet photons suffer catastrophic optical attenuation in silica glass fiber, losing over 90% of their signal after just a few meters.",
+      "In a breakthrough published in Nature Photonics, researchers from the University of Oxford and commercial quantum leader IonQ have solved this impasse. Using an integrated periodically poled lithium niobate (PPLN) optical waveguide chip, the team demonstrated difference-frequency generation that converts single 435nm UV photons into 1550nm infrared telecom C-band photons.",
+      "Crucially, the entire non-linear optical frequency conversion occurs at room temperature (295 K) outside the ion trap vacuum envelope, while achieving a quantum state fidelity of 99.4%. The converted photons retain their quantum entanglement properties and can traverse tens of kilometers of standard optical fiber with minimal loss.",
+      "By disproving the assumption that high-fidelity quantum state transducers require cryogenic cooling, the breakthrough paves the way for modular quantum data centers, where racks of ion-trap QPUs communicate seamlessly across high-speed optical crossbars."
+    ],
+    technicalSpecs: {
+      "Transducer Technology": "Periodically Poled Lithium Niobate (PPLN) Waveguide",
+      "Input Wavelength": "435 nm (Ytterbium-171 Ion Trapped Qubit Resonance)",
+      "Output Wavelength": "1550 nm (Standard Optical Telecom C-Band)",
+      "Conversion Quantum Fidelity": "99.4% Entanglement Preservation",
+      "Operating Temperature": "22°C (295 Kelvin / Ambient Room Temperature)",
+      "Internal Conversion Efficiency": "87.5% Single-Photon Quantum Yield"
+    },
+    audioDuration: "6m 38s",
+    citations: [
+      {
+        title: "High-Fidelity Room-Temperature Quantum Transduction of Trapped-Ion Qubits to Telecom C-Band",
+        url: "https://www.nature.com/articles/s41566-026-01584-x",
+        source: "Nature Photonics Journal"
+      },
+      {
+        title: "IonQ Modular Architecture Whitepaper: Photonic Interconnects for 10k Qubit Systems",
+        url: "https://ionq.com/technology/modular-photonic-interconnect",
+        source: "IonQ Technical Whitepapers"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-84",
+    slug: "broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9",
+    title: "Broad Institute and Vertex Deliver Hyper-Compact CRISPR-Cas12f In Vivo: 94% PCSK9 Knockdown in Primates",
+    subtitle: "Engineered into a single AAV capsid at 430 amino acids, the ultra-compact adenine base editor permanently slashes LDL cholesterol by 88% with zero detectable off-target genomic insertions.",
+    category: "research",
+    articleType: "research-explained",
+    signalRating: 97,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-14T05:00:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art-84-crispr-cas12f-editing.jpg",
+    coverImageAlt: "Molecular biology diagram showing ultra-compact CRISPR-Cas12f adenine base editor packaged in an AAV vector targeting PCSK9 gene in hepatocyte",
+    tags: ["CRISPR", "Cas12f", "Base Editing", "Broad Institute", "Gene Therapy", "Genomics"],
+    threeQuestions: {
+      whatHappened: "A joint research consortium from the Broad Institute of MIT and Harvard and Vertex Pharmaceuticals published preclinical results in Nature Biotechnology demonstrating curative in vivo base editing using an ultra-compact CRISPR-Cas12f enzyme. Measuring just 430 amino acids—less than one-third the size of classical SpCas9—the miniature effector was packaged alongside an engineered adenosine deaminase and single-guide RNA into a single adeno-associated virus (AAV) capsid. A single systemic intravenous infusion in non-human primates achieved 94.2% liver PCSK9 knockdown and an 88% reduction in serum LDL-cholesterol.",
+      whyItMatters: "The single greatest obstacle to in vivo genomic medicine has been the packaging cargo limit of AAV vectors (~4.7 kilobases). Standard Cas9 and Cas12a base editors are too large to fit in a single vector, requiring inefficient dual-AAV co-transduction that demands 10x higher viral doses, increasing toxicity risks. Compact Cas12f fits entirely within a single vector with ample room for regulatory promoters, drastically reducing manufacturing costs and systemic patient exposure.",
+      whatsNext: "Vertex and the Broad Institute initiated Phase 1 regulatory filings with the US FDA and EMA for human clinical trials in familial hypercholesterolemia, while exploring the Cas12f platform for in vivo neurological and cardiovascular targets."
+    },
+    keyTakeaways: [
+      "Ultra-Compact 430 Amino Acids: less than 1/3 the size of SpCas9 (1,368 amino acids), resolving vector cargo bottlenecks.",
+      "All-in-One Single AAV: fits Cas12f, deaminase, sgRNA, and tissue-specific promoter within a single 4.7 kb vector payload.",
+      "94.2% PCSK9 In Vivo Knockdown: achieved in cynomolgus macaques, driving a sustained 88% reduction in circulating LDL-C.",
+      "Zero Detectable Off-Target Cuts: high target specificity verified via GUIDE-seq and whole-genome deep sequencing."
+    ],
+    content: [
+      "In vivo CRISPR gene editing has reached a long-sought pharmacological milestone: the complete packaging of an entire precision base-editing system into a single therapeutic viral vector, validated with curative efficacy in non-human primates.",
+      "For more than a decade, the translation of CRISPR from cell culture to clinical medicine has been constrained by physical biophysics. Adeno-associated virus (AAV) vectors represent the safest and most effective vehicle for targeted organ delivery, particularly to hepatocytes in the liver. However, AAV has a strict genetic cargo packaging limit of approximately 4.7 kilobases. The workhorse of gene editing—Streptococcus pyogenes Cas9 (SpCas9)—spans 1,368 amino acids (over 4.1 kb of DNA on its own). Once paired with base-editing deaminases, guide RNAs, and regulatory promoters, the system cannot fit inside a single capsid.",
+      "Clinicians were forced to split therapies across two separate AAV capsids, relying on co-infection of the same cell and in vivo protein splicing. This dual-vector approach suffered from low combined transduction efficiency and required massive viral doses, triggering severe hepatotoxicity and immune activation.",
+      "Published in Nature Biotechnology, the team engineered a hyper-compact Cas12f nuclease originating from archaea, reducing its protein core to just 430 amino acids while mutating the RNA-binding cleft to maintain high DNA cleavage affinity. Fused to an evolved high-efficiency adenosine deaminase, the entire base editor occupies only 2.6 kb of DNA—leaving over 2 kilobases of headroom for liver-specific promoters, polyA signals, and nuclear localization sequences.",
+      "Administered as a single low-dose intravenous infusion to non-human primates, the all-in-one AAV8-Cas12f vector achieved 94.2% targeted base conversion at the splice donor site of the PCSK9 gene in liver tissue. Blood serum analysis showed an immediate, sustained 88% collapse in circulating low-density lipoprotein (LDL) cholesterol, with zero off-target genomic modifications detected across comprehensive deep-sequencing screens."
+    ],
+    technicalSpecs: {
+      "Effector Enzyme": "Engineered Ultra-Compact CRISPR-Cas12f (430 Amino Acids)",
+      "Delivery Vector": "Single All-in-One AAV8 Capsid (Under 4.7 kb Cargo Limit)",
+      "Editing Modality": "Adenine Base Editor (A-T to G-C Transition, No Double-Strand Breaks)",
+      "In Vivo Primates Efficacy": "94.2% Targeted PCSK9 Splice Inactivation in Macaques",
+      "Phenotypic Biomarker": "88% Sustained Reduction in Circulating LDL-C",
+      "Off-Target Profile": "0 Detectable Off-Target Events via Whole-Genome GUIDE-seq"
+    },
+    audioDuration: "7m 05s",
+    citations: [
+      {
+        title: "All-in-One AAV Delivery of Compact Cas12f Adenine Base Editors Enables Highly Efficient In Vivo PCSK9 Knockdown in Primates",
+        url: "https://www.nature.com/articles/s41587-026-02319-z",
+        source: "Nature Biotechnology"
+      },
+      {
+        title: "Broad Institute Molecular Therapeutics: Miniature Cas Enzymes for Genomic Delivery",
+        url: "https://www.broadinstitute.org/news/miniaturized-crispr-cas12f-base-editing",
+        source: "Broad Institute Communications"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  }
+
 ];

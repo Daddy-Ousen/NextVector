@@ -2447,1238 +2447,1247 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
 
 export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   {
-    "rank": 1,
-    "modelName": "Gemini 3 Deep Think",
-    "developer": "Google DeepMind",
-    "score": 92.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$5.00"
-  },
-  {
-    "rank": 2,
-    "modelName": "Mistral Large 3",
-    "developer": "Mistral AI",
-    "score": 84.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
-  },
-  {
-    "rank": 1,
-    "modelName": "GPT-6 Astra",
-    "developer": "OpenAI",
-    "score": 75.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$5.00"
-  },
-  {
-    "rank": 2,
-    "modelName": "Claude Fable 5.1",
-    "developer": "Anthropic",
-    "score": 73.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$5.00"
-  },
-  {
-    "rank": 3,
-    "modelName": "Claude Opus 5",
-    "developer": "Anthropic",
-    "score": 73.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 4,
-    "modelName": "DeepSeek-V4-Pro-0813",
-    "developer": "DeepSeek",
-    "score": 73.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.55"
-  },
-  {
-    "rank": 5,
-    "modelName": "Claude Mythos Preview",
-    "developer": "Anthropic",
-    "score": 73.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.46"
-  },
-  {
-    "rank": 6,
-    "modelName": "Kimi K3",
-    "developer": "Moonshot AI",
-    "score": 72.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 7,
-    "modelName": "Claude Fable 5",
-    "developer": "Anthropic",
-    "score": 72.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$5.00"
-  },
-  {
-    "rank": 8,
-    "modelName": "GPT-5.6 Sol",
-    "developer": "OpenAI",
-    "score": 72.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
-  },
-  {
-    "rank": 9,
-    "modelName": "Qwen3.8 Max",
-    "developer": "Alibaba Cloud",
-    "score": 71.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.20"
-  },
-  {
-    "rank": 10,
-    "modelName": "Muse Spark 1.3",
-    "developer": "Meta AI",
-    "score": 71.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.00"
-  },
-  {
-    "rank": 11,
-    "modelName": "Claude Opus 4.8",
-    "developer": "Anthropic",
-    "score": 70.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 12,
-    "modelName": "GLM-5.3",
-    "developer": "Zhipu AI",
-    "score": 69.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 13,
-    "modelName": "GPT-5.6 Terra",
-    "developer": "OpenAI",
-    "score": 69.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 14,
-    "modelName": "Qwen3.8-Flash-Next",
-    "developer": "Alibaba Cloud",
-    "score": 68.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 15,
-    "modelName": "Qwen3.8 Flash",
-    "developer": "Alibaba Cloud",
-    "score": 68.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 16,
-    "modelName": "Hy4 preview",
-    "developer": "Tencent Hunyuan",
-    "score": 68.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 17,
-    "modelName": "Gemini 3.8 Flash",
-    "developer": "Google DeepMind",
-    "score": 67.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 18,
-    "modelName": "DeepSeek-V4-Flash-Vision-Exp",
-    "developer": "DeepSeek",
-    "score": 67.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.14"
-  },
-  {
-    "rank": 19,
-    "modelName": "Claude Sonnet 5",
-    "developer": "Anthropic",
-    "score": 67.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
-  },
-  {
-    "rank": 20,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
-    "score": 67.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.08"
-  },
-  {
-    "rank": 21,
-    "modelName": "Muse Spark 1.1",
-    "developer": "Meta AI",
-    "score": 67.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 22,
-    "modelName": "Gemini 3.7 Flash",
-    "developer": "Google DeepMind",
-    "score": 66.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 23,
-    "modelName": "Seed 2.1 Pro",
-    "developer": "ByteDance",
-    "score": 66.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 24,
-    "modelName": "DeepSeek-V4-Pro-Max",
-    "developer": "DeepSeek",
-    "score": 65.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.55"
-  },
-  {
-    "rank": 25,
-    "modelName": "GPT-5.5",
-    "developer": "OpenAI",
-    "score": 65.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 26,
-    "modelName": "Qwen3.7 Max",
-    "developer": "Alibaba Cloud",
-    "score": 65.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.20"
-  },
-  {
-    "rank": 27,
-    "modelName": "DeepSeek-V4-Flash-0731",
-    "developer": "DeepSeek",
-    "score": 64.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.14"
-  },
-  {
-    "rank": 28,
-    "modelName": "Grok 4.6",
-    "developer": "xAI",
-    "score": 64.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$5.00"
-  },
-  {
-    "rank": 29,
-    "modelName": "Qwen3.8-27B",
-    "developer": "Alibaba Cloud",
-    "score": 64.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 30,
-    "modelName": "Claude Opus 4.6",
-    "developer": "Anthropic",
-    "score": 63.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 31,
-    "modelName": "GPT-5.5 Pro",
-    "developer": "OpenAI",
-    "score": 63.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 32,
-    "modelName": "GLM-5.2",
-    "developer": "Zhipu AI",
-    "score": 63.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 33,
-    "modelName": "Grok 4.5",
-    "developer": "xAI",
-    "score": 63.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
-  },
-  {
-    "rank": 34,
-    "modelName": "Kimi K2.6",
-    "developer": "Moonshot AI",
-    "score": 63.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 35,
-    "modelName": "GPT-5.6 Luna",
-    "developer": "OpenAI",
-    "score": 62.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 36,
-    "modelName": "Claude Opus 4.7",
-    "developer": "Anthropic",
-    "score": 62.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 37,
-    "modelName": "Gemini 3.1 Pro",
-    "developer": "Google DeepMind",
-    "score": 61.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
-  },
-  {
-    "rank": 38,
-    "modelName": "GPT-5.2 Pro",
-    "developer": "OpenAI",
-    "score": 61.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 39,
-    "modelName": "Gemini 3.6 Flash",
-    "developer": "Google DeepMind",
-    "score": 60.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 40,
-    "modelName": "Kimi K2.7 Code",
-    "developer": "Moonshot AI",
-    "score": 60.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 41,
-    "modelName": "Qwen3.7-Plus",
-    "developer": "Alibaba Cloud",
-    "score": 59.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 42,
-    "modelName": "Seed 2.1 Turbo",
-    "developer": "ByteDance",
-    "score": 59.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 43,
-    "modelName": "Gemini 3.5 Flash",
-    "developer": "Google DeepMind",
-    "score": 58.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 44,
-    "modelName": "Hy3",
-    "developer": "Tencent Hunyuan",
-    "score": 58.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 45,
-    "modelName": "Sakana Namazu",
-    "developer": "Sakana AI",
-    "score": 57.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 46,
-    "modelName": "DeepSeek-V4-Flash-Max",
-    "developer": "DeepSeek",
-    "score": 57.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.14"
-  },
-  {
-    "rank": 47,
-    "modelName": "GPT-5.4",
-    "developer": "OpenAI",
-    "score": 57.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 48,
-    "modelName": "Gemini 3.8 Flash Cyber",
-    "developer": "Google DeepMind",
-    "score": 56.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 49,
-    "modelName": "Muse Spark",
-    "developer": "Meta AI",
-    "score": 56.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 50,
-    "modelName": "Qwen3.6 Plus",
-    "developer": "Alibaba Cloud",
-    "score": 56.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 51,
-    "modelName": "GPT-5.2",
-    "developer": "OpenAI",
-    "score": 55.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 52,
-    "modelName": "MiniMax M3",
-    "developer": "MiniMax",
-    "score": 55.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 53,
-    "modelName": "Seed 2.0 Pro",
-    "developer": "ByteDance",
-    "score": 55.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 54,
-    "modelName": "Kimi K2.5",
-    "developer": "Moonshot AI",
-    "score": 55.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 55,
-    "modelName": "Grok-4 Heavy",
-    "developer": "xAI",
-    "score": 55.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$5.00"
-  },
-  {
-    "rank": 56,
-    "modelName": "Laguna S 2.1",
-    "developer": "Poolside",
-    "score": 54.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 57,
-    "modelName": "Muse Spark 1.2",
-    "developer": "Meta AI",
-    "score": 54.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.00"
-  },
-  {
-    "rank": 58,
-    "modelName": "Qwen3.5-397B-A17B",
-    "developer": "Alibaba Cloud",
-    "score": 54.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.40"
-  },
-  {
-    "rank": 59,
-    "modelName": "GLM-5.1",
-    "developer": "Zhipu AI",
-    "score": 53.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 60,
-    "modelName": "Gemini 3 Pro",
-    "developer": "Google DeepMind",
-    "score": 53.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
-  },
-  {
-    "rank": 61,
-    "modelName": "Claude Opus 4.5",
-    "developer": "Anthropic",
-    "score": 52.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 62,
-    "modelName": "GPT-5.3 Codex",
-    "developer": "OpenAI",
-    "score": 52.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
-  },
-  {
-    "rank": 63,
-    "modelName": "Claude Sonnet 4.6",
-    "developer": "Anthropic",
-    "score": 52.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
-  },
-  {
-    "rank": 64,
-    "modelName": "Inkling-Small",
-    "developer": "Thinking Machines Lab",
-    "score": 52.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 65,
-    "modelName": "Gemini 3.5 Flash Cyber",
-    "developer": "Google DeepMind",
-    "score": 51.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 66,
-    "modelName": "DeepSeek-V4-Flash-0423",
-    "developer": "DeepSeek",
-    "score": 50.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.14"
-  },
-  {
-    "rank": 67,
-    "modelName": "GLM-5",
-    "developer": "Zhipu AI",
-    "score": 49.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 68,
-    "modelName": "Step-3.5-Flash",
-    "developer": "StepFun",
-    "score": 49.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 69,
-    "modelName": "Kimi K2-Thinking-0905",
-    "developer": "Moonshot AI",
-    "score": 49.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
-  },
-  {
-    "rank": 70,
-    "modelName": "MiniMax M2.5",
-    "developer": "MiniMax",
-    "score": 49.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 71,
-    "modelName": "Gemini 3 Flash",
-    "developer": "Google DeepMind",
-    "score": 49.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.10"
-  },
-  {
-    "rank": 72,
-    "modelName": "GPT-5.1 Thinking",
-    "developer": "OpenAI",
-    "score": 48.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 73,
-    "modelName": "MiMo-V2-Pro",
-    "developer": "Xiaomi AI",
-    "score": 48.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 74,
-    "modelName": "Solar Pro 4",
-    "developer": "Upstage",
-    "score": 48.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 75,
-    "modelName": "GPT-5.1 Instant",
-    "developer": "OpenAI",
-    "score": 48.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 76,
-    "modelName": "GPT-5.1",
-    "developer": "OpenAI",
-    "score": 47.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 77,
-    "modelName": "Qwen3.6-27B",
-    "developer": "Alibaba Cloud",
-    "score": 47.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 78,
-    "modelName": "GPT-5.2 Codex",
-    "developer": "OpenAI",
-    "score": 47.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 79,
-    "modelName": "Nemotron 3 Ultra (550B A55B)",
-    "developer": "NVIDIA",
-    "score": 47.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 80,
-    "modelName": "Qwen3.5-122B-A10B",
-    "developer": "Alibaba Cloud",
-    "score": 46.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.40"
-  },
-  {
-    "rank": 81,
-    "modelName": "DeepSeek-V3.2-Speciale",
-    "developer": "DeepSeek",
-    "score": 45.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.35"
-  },
-  {
-    "rank": 82,
-    "modelName": "LongCat-Flash-Thinking-2601",
-    "developer": "Meituan AI",
-    "score": 45.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 83,
-    "modelName": "GPT-5.1 High",
-    "developer": "OpenAI",
-    "score": 44.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 84,
-    "modelName": "MiniMax M2.7",
-    "developer": "MiniMax",
-    "score": 44.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 85,
-    "modelName": "MiMo-V2.5",
-    "developer": "Xiaomi AI",
-    "score": 44.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 86,
-    "modelName": "Qwen3.5-27B",
-    "developer": "Alibaba Cloud",
-    "score": 43.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 87,
-    "modelName": "Muse Glimmer-30B",
-    "developer": "Meta AI",
-    "score": 43.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
-  },
-  {
-    "rank": 88,
-    "modelName": "DeepSeek-V3.2",
-    "developer": "DeepSeek",
-    "score": 43.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
-  },
-  {
-    "rank": 89,
-    "modelName": "GLM-4.7",
-    "developer": "Zhipu AI",
-    "score": 43.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 90,
-    "modelName": "DeepSeek-V3.2 (Thinking)",
-    "developer": "DeepSeek",
-    "score": 43.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.35"
-  },
-  {
-    "rank": 91,
-    "modelName": "GPT-5",
-    "developer": "OpenAI",
-    "score": 42.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 92,
-    "modelName": "GPT-5 High",
-    "developer": "OpenAI",
-    "score": 41.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 93,
-    "modelName": "Grok-4",
-    "developer": "xAI",
-    "score": 41.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
-  },
-  {
-    "rank": 94,
-    "modelName": "Qwen3.6-35B-A3B",
-    "developer": "Alibaba Cloud",
-    "score": 41.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 95,
-    "modelName": "Claude Sonnet 4.5",
-    "developer": "Anthropic",
-    "score": 41.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
-  },
-  {
-    "rank": 96,
-    "modelName": "ERNIE 5.0",
-    "developer": "Baidu",
-    "score": 40.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 97,
-    "modelName": "Gemma 4 31B",
-    "developer": "Google DeepMind",
-    "score": 40.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
-  },
-  {
-    "rank": 98,
-    "modelName": "MAI-Thinking-1",
-    "developer": "Microsoft AI",
-    "score": 39.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
-  },
-  {
-    "rank": 99,
-    "modelName": "Seed 2.0 Lite",
-    "developer": "ByteDance",
-    "score": 38.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 100,
-    "modelName": "Nova 2 Pro",
-    "developer": "Amazon AWS",
-    "score": 38.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
-  },
-  {
-    "rank": 101,
-    "modelName": "MiniMax M2.1",
-    "developer": "MiniMax",
-    "score": 38.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 102,
-    "modelName": "Grok 4 Fast",
-    "developer": "xAI",
-    "score": 37.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
-  },
-  {
-    "rank": 103,
-    "modelName": "GPT-5.5 Instant",
-    "developer": "OpenAI",
-    "score": 37.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 104,
-    "modelName": "Qwen3.5-35B-A3B",
-    "developer": "Alibaba Cloud",
-    "score": 37.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 105,
-    "modelName": "Grok-3 Mini",
-    "developer": "xAI",
-    "score": 37.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
-  },
-  {
-    "rank": 106,
-    "modelName": "GPT-5.1 Medium",
-    "developer": "OpenAI",
-    "score": 37.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 107,
-    "modelName": "GPT-5.1 Codex",
-    "developer": "OpenAI",
-    "score": 36.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
-  },
-  {
-    "rank": 108,
-    "modelName": "o3",
-    "developer": "OpenAI",
-    "score": 36.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 109,
-    "modelName": "Gemini 3.1 Flash-Lite",
-    "developer": "Google DeepMind",
-    "score": 36.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.05"
-  },
-  {
-    "rank": 110,
-    "modelName": "GPT-5.1 Codex High",
-    "developer": "OpenAI",
-    "score": 35.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
-  },
-  {
-    "rank": 111,
-    "modelName": "MiMo-V2-Flash",
-    "developer": "Xiaomi AI",
-    "score": 35.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 112,
-    "modelName": "Gemini 2.5 Pro Preview 06-05",
-    "developer": "Google DeepMind",
-    "score": 35.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
-  },
-  {
-    "rank": 113,
-    "modelName": "MAI-Code-1-Flash",
-    "developer": "Microsoft AI",
-    "score": 35.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 114,
-    "modelName": "Claude Opus 4.1",
-    "developer": "Anthropic",
-    "score": 35.1,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 115,
-    "modelName": "Grok-3",
-    "developer": "xAI",
-    "score": 34.9,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.00"
-  },
-  {
-    "rank": 116,
-    "modelName": "GLM-5V-Turbo",
-    "developer": "Zhipu AI",
-    "score": 34.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
-  },
-  {
-    "rank": 117,
-    "modelName": "GPT-5.4 mini",
-    "developer": "OpenAI",
-    "score": 34.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
-  },
-  {
-    "rank": 118,
-    "modelName": "MAI-Code-1.1-Flash",
-    "developer": "Microsoft AI",
-    "score": 34.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 119,
-    "modelName": "Gemini 3.5 Flash-Lite",
-    "developer": "Google DeepMind",
-    "score": 33.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.05"
-  },
-  {
-    "rank": 120,
-    "modelName": "GPT-5 Medium",
-    "developer": "OpenAI",
-    "score": 33.4,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 121,
-    "modelName": "DeepSeek-V3.2-Exp",
-    "developer": "DeepSeek",
-    "score": 32.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
-  },
-  {
-    "rank": 122,
-    "modelName": "Gemma 4 26B-A4B",
-    "developer": "Google DeepMind",
-    "score": 32.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
-  },
-  {
-    "rank": 123,
-    "modelName": "GPT-5.3 Chat",
-    "developer": "OpenAI",
-    "score": 31.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
-  },
-  {
-    "rank": 124,
-    "modelName": "Qwen3-235B-A22B-Thinking-2507",
-    "developer": "Alibaba Cloud",
-    "score": 31.6,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
-  },
-  {
-    "rank": 125,
-    "modelName": "GLM-4.6",
-    "developer": "Zhipu AI",
-    "score": 31.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 126,
-    "modelName": "Gemini 2.5 Pro",
-    "developer": "Google DeepMind",
-    "score": 31.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
-  },
-  {
-    "rank": 127,
-    "modelName": "GPT OSS 120B",
-    "developer": "OpenAI",
-    "score": 30.3,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 128,
-    "modelName": "Claude Opus 4",
-    "developer": "Anthropic",
-    "score": 30.2,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$15.00"
-  },
-  {
-    "rank": 129,
-    "modelName": "LongCat-Flash-Thinking",
-    "developer": "Meituan AI",
-    "score": 30.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 130,
-    "modelName": "o4-mini",
-    "developer": "OpenAI",
-    "score": 29.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.10"
-  },
-  {
-    "rank": 131,
-    "modelName": "GLM-4.5",
-    "developer": "Zhipu AI",
-    "score": 28.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  },
-  {
-    "rank": 132,
-    "modelName": "MiMo-V2-Omni",
-    "developer": "Xiaomi AI",
-    "score": 27.8,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
-  },
-  {
-    "rank": 133,
-    "modelName": "GPT OSS 20B High",
-    "developer": "OpenAI",
-    "score": 27.0,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.15"
-  },
-  {
-    "rank": 134,
-    "modelName": "GPT-5 mini",
-    "developer": "OpenAI",
-    "score": 26.7,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.15"
-  },
-  {
-    "rank": 135,
-    "modelName": "MiniMax M2",
-    "developer": "MiniMax",
-    "score": 26.5,
-    "date": "Sep 2026",
-    "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
-  }
+      "rank": 1,
+      "modelName": "Gemini 3 Deep Think",
+      "developer": "Google DeepMind",
+      "score": 92.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$5.00"
+    },
+    {
+      "rank": 2,
+      "modelName": "Mistral Large 3",
+      "developer": "Mistral AI",
+      "score": 84.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.50"
+    },
+    {
+      "rank": 3,
+      "modelName": "GPT-6 Astra",
+      "developer": "OpenAI",
+      "score": 75.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$5.00"
+    },
+    {
+      "rank": 4,
+      "modelName": "Claude Fable 5.1",
+      "developer": "Anthropic",
+      "score": 73.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$5.00"
+    },
+    {
+      "rank": 5,
+      "modelName": "Claude Opus 5",
+      "developer": "Anthropic",
+      "score": 73.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 6,
+      "modelName": "DeepSeek-V4-Pro-0813",
+      "developer": "DeepSeek",
+      "score": 73.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.55"
+    },
+    {
+      "rank": 7,
+      "modelName": "Claude Mythos Preview",
+      "developer": "Anthropic",
+      "score": 73.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.46"
+    },
+    {
+      "rank": 8,
+      "modelName": "Kimi K3",
+      "developer": "Moonshot AI",
+      "score": 72.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 9,
+      "modelName": "Claude Fable 5",
+      "developer": "Anthropic",
+      "score": 72.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$5.00"
+    },
+    {
+      "rank": 10,
+      "modelName": "GPT-5.6 Sol",
+      "developer": "OpenAI",
+      "score": 72.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00"
+    },
+    {
+      "rank": 11,
+      "modelName": "Qwen3.8 Max",
+      "developer": "Alibaba Cloud",
+      "score": 71.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.20"
+    },
+    {
+      "rank": 12,
+      "modelName": "Muse Spark 1.3",
+      "developer": "Meta AI",
+      "score": 71.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.00"
+    },
+    {
+      "rank": 13,
+      "modelName": "Claude Opus 4.8",
+      "developer": "Anthropic",
+      "score": 70.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "modelName": "Claude 3.7 Sonnet (Thinking)",
+      "developer": "Anthropic",
+      "score": 70.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00",
+      "rank": 14
+    },
+    {
+      "rank": 15,
+      "modelName": "GLM-5.3",
+      "developer": "Zhipu AI",
+      "score": 69.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 16,
+      "modelName": "GPT-5.6 Terra",
+      "developer": "OpenAI",
+      "score": 69.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 17,
+      "modelName": "Qwen3.8-Flash-Next",
+      "developer": "Alibaba Cloud",
+      "score": 68.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 18,
+      "modelName": "Qwen3.8 Flash",
+      "developer": "Alibaba Cloud",
+      "score": 68.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 19,
+      "modelName": "Hy4 preview",
+      "developer": "Tencent Hunyuan",
+      "score": 68.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 20,
+      "modelName": "Gemini 3.8 Flash",
+      "developer": "Google DeepMind",
+      "score": 67.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 21,
+      "modelName": "DeepSeek-V4-Flash-Vision-Exp",
+      "developer": "DeepSeek",
+      "score": 67.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.14"
+    },
+    {
+      "rank": 22,
+      "modelName": "Claude Sonnet 5",
+      "developer": "Anthropic",
+      "score": 67.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00"
+    },
+    {
+      "rank": 23,
+      "modelName": "GLM-5.3-Flash",
+      "developer": "Zhipu AI",
+      "score": 67.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.08"
+    },
+    {
+      "rank": 24,
+      "modelName": "Muse Spark 1.1",
+      "developer": "Meta AI",
+      "score": 67.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 25,
+      "modelName": "Gemini 3.7 Flash",
+      "developer": "Google DeepMind",
+      "score": 66.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 26,
+      "modelName": "Seed 2.1 Pro",
+      "developer": "ByteDance",
+      "score": 66.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 27,
+      "modelName": "DeepSeek-V4-Pro-Max",
+      "developer": "DeepSeek",
+      "score": 65.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.55"
+    },
+    {
+      "rank": 28,
+      "modelName": "GPT-5.5",
+      "developer": "OpenAI",
+      "score": 65.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 29,
+      "modelName": "Qwen3.7 Max",
+      "developer": "Alibaba Cloud",
+      "score": 65.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.20"
+    },
+    {
+      "rank": 30,
+      "modelName": "DeepSeek-V4-Flash-0731",
+      "developer": "DeepSeek",
+      "score": 64.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.14"
+    },
+    {
+      "rank": 31,
+      "modelName": "Grok 4.6",
+      "developer": "xAI",
+      "score": 64.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$5.00"
+    },
+    {
+      "rank": 32,
+      "modelName": "Qwen3.8-27B",
+      "developer": "Alibaba Cloud",
+      "score": 64.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 33,
+      "modelName": "Claude Opus 4.6",
+      "developer": "Anthropic",
+      "score": 63.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 34,
+      "modelName": "GPT-5.5 Pro",
+      "developer": "OpenAI",
+      "score": 63.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 35,
+      "modelName": "GLM-5.2",
+      "developer": "Zhipu AI",
+      "score": 63.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 36,
+      "modelName": "Grok 4.5",
+      "developer": "xAI",
+      "score": 63.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00"
+    },
+    {
+      "rank": 37,
+      "modelName": "Kimi K2.6",
+      "developer": "Moonshot AI",
+      "score": 63.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 38,
+      "modelName": "GPT-5.6 Luna",
+      "developer": "OpenAI",
+      "score": 62.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 39,
+      "modelName": "Claude Opus 4.7",
+      "developer": "Anthropic",
+      "score": 62.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 40,
+      "modelName": "Gemini 3.1 Pro",
+      "developer": "Google DeepMind",
+      "score": 61.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.25"
+    },
+    {
+      "rank": 41,
+      "modelName": "GPT-5.2 Pro",
+      "developer": "OpenAI",
+      "score": 61.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 42,
+      "modelName": "Gemini 3.6 Flash",
+      "developer": "Google DeepMind",
+      "score": 60.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 43,
+      "modelName": "Kimi K2.7 Code",
+      "developer": "Moonshot AI",
+      "score": 60.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 44,
+      "modelName": "Qwen3.7-Plus",
+      "developer": "Alibaba Cloud",
+      "score": 59.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 45,
+      "modelName": "Seed 2.1 Turbo",
+      "developer": "ByteDance",
+      "score": 59.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 46,
+      "modelName": "Gemini 3.5 Flash",
+      "developer": "Google DeepMind",
+      "score": 58.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 47,
+      "modelName": "Hy3",
+      "developer": "Tencent Hunyuan",
+      "score": 58.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 48,
+      "modelName": "Sakana Namazu",
+      "developer": "Sakana AI",
+      "score": 57.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 49,
+      "modelName": "DeepSeek-V4-Flash-Max",
+      "developer": "DeepSeek",
+      "score": 57.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.14"
+    },
+    {
+      "rank": 50,
+      "modelName": "GPT-5.4",
+      "developer": "OpenAI",
+      "score": 57.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 51,
+      "modelName": "Gemini 3.8 Flash Cyber",
+      "developer": "Google DeepMind",
+      "score": 56.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 52,
+      "modelName": "Muse Spark",
+      "developer": "Meta AI",
+      "score": 56.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 53,
+      "modelName": "Qwen3.6 Plus",
+      "developer": "Alibaba Cloud",
+      "score": 56.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 54,
+      "modelName": "GPT-5.2",
+      "developer": "OpenAI",
+      "score": 55.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 55,
+      "modelName": "MiniMax M3",
+      "developer": "MiniMax",
+      "score": 55.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 56,
+      "modelName": "Seed 2.0 Pro",
+      "developer": "ByteDance",
+      "score": 55.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 57,
+      "modelName": "Kimi K2.5",
+      "developer": "Moonshot AI",
+      "score": 55.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 58,
+      "modelName": "Grok-4 Heavy",
+      "developer": "xAI",
+      "score": 55.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$5.00"
+    },
+    {
+      "rank": 59,
+      "modelName": "Laguna S 2.1",
+      "developer": "Poolside",
+      "score": 54.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 60,
+      "modelName": "Muse Spark 1.2",
+      "developer": "Meta AI",
+      "score": 54.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.00"
+    },
+    {
+      "rank": 61,
+      "modelName": "Qwen3.5-397B-A17B",
+      "developer": "Alibaba Cloud",
+      "score": 54.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.40"
+    },
+    {
+      "rank": 62,
+      "modelName": "GLM-5.1",
+      "developer": "Zhipu AI",
+      "score": 53.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 63,
+      "modelName": "Gemini 3 Pro",
+      "developer": "Google DeepMind",
+      "score": 53.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.25"
+    },
+    {
+      "rank": 64,
+      "modelName": "Claude Opus 4.5",
+      "developer": "Anthropic",
+      "score": 52.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 65,
+      "modelName": "GPT-5.3 Codex",
+      "developer": "OpenAI",
+      "score": 52.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.50"
+    },
+    {
+      "rank": 66,
+      "modelName": "Claude Sonnet 4.6",
+      "developer": "Anthropic",
+      "score": 52.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00"
+    },
+    {
+      "rank": 67,
+      "modelName": "Inkling-Small",
+      "developer": "Thinking Machines Lab",
+      "score": 52.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 68,
+      "modelName": "Gemini 3.5 Flash Cyber",
+      "developer": "Google DeepMind",
+      "score": 51.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 69,
+      "modelName": "DeepSeek-V4-Flash-0423",
+      "developer": "DeepSeek",
+      "score": 50.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.14"
+    },
+    {
+      "rank": 70,
+      "modelName": "GLM-5",
+      "developer": "Zhipu AI",
+      "score": 49.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 71,
+      "modelName": "Step-3.5-Flash",
+      "developer": "StepFun",
+      "score": 49.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 72,
+      "modelName": "Kimi K2-Thinking-0905",
+      "developer": "Moonshot AI",
+      "score": 49.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.50"
+    },
+    {
+      "rank": 73,
+      "modelName": "MiniMax M2.5",
+      "developer": "MiniMax",
+      "score": 49.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 74,
+      "modelName": "Gemini 3 Flash",
+      "developer": "Google DeepMind",
+      "score": 49.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.10"
+    },
+    {
+      "rank": 75,
+      "modelName": "GPT-5.1 Thinking",
+      "developer": "OpenAI",
+      "score": 48.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 76,
+      "modelName": "MiMo-V2-Pro",
+      "developer": "Xiaomi AI",
+      "score": 48.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 77,
+      "modelName": "Solar Pro 4",
+      "developer": "Upstage",
+      "score": 48.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 78,
+      "modelName": "GPT-5.1 Instant",
+      "developer": "OpenAI",
+      "score": 48.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 79,
+      "modelName": "GPT-5.1",
+      "developer": "OpenAI",
+      "score": 47.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 80,
+      "modelName": "Qwen3.6-27B",
+      "developer": "Alibaba Cloud",
+      "score": 47.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 81,
+      "modelName": "GPT-5.2 Codex",
+      "developer": "OpenAI",
+      "score": 47.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 82,
+      "modelName": "Nemotron 3 Ultra (550B A55B)",
+      "developer": "NVIDIA",
+      "score": 47.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 83,
+      "modelName": "Qwen3.5-122B-A10B",
+      "developer": "Alibaba Cloud",
+      "score": 46.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.40"
+    },
+    {
+      "rank": 84,
+      "modelName": "DeepSeek-V3.2-Speciale",
+      "developer": "DeepSeek",
+      "score": 45.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.35"
+    },
+    {
+      "rank": 85,
+      "modelName": "LongCat-Flash-Thinking-2601",
+      "developer": "Meituan AI",
+      "score": 45.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 86,
+      "modelName": "GPT-5.1 High",
+      "developer": "OpenAI",
+      "score": 44.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 87,
+      "modelName": "MiniMax M2.7",
+      "developer": "MiniMax",
+      "score": 44.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 88,
+      "modelName": "MiMo-V2.5",
+      "developer": "Xiaomi AI",
+      "score": 44.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 89,
+      "modelName": "Qwen3.5-27B",
+      "developer": "Alibaba Cloud",
+      "score": 43.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 90,
+      "modelName": "Muse Glimmer-30B",
+      "developer": "Meta AI",
+      "score": 43.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.30"
+    },
+    {
+      "rank": 91,
+      "modelName": "DeepSeek-V3.2",
+      "developer": "DeepSeek",
+      "score": 43.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.27"
+    },
+    {
+      "rank": 92,
+      "modelName": "GLM-4.7",
+      "developer": "Zhipu AI",
+      "score": 43.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 93,
+      "modelName": "DeepSeek-V3.2 (Thinking)",
+      "developer": "DeepSeek",
+      "score": 43.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.35"
+    },
+    {
+      "rank": 94,
+      "modelName": "GPT-5",
+      "developer": "OpenAI",
+      "score": 42.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 95,
+      "modelName": "GPT-5 High",
+      "developer": "OpenAI",
+      "score": 41.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 96,
+      "modelName": "Grok-4",
+      "developer": "xAI",
+      "score": 41.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00"
+    },
+    {
+      "rank": 97,
+      "modelName": "Qwen3.6-35B-A3B",
+      "developer": "Alibaba Cloud",
+      "score": 41.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 98,
+      "modelName": "Claude Sonnet 4.5",
+      "developer": "Anthropic",
+      "score": 41.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$3.00"
+    },
+    {
+      "rank": 99,
+      "modelName": "ERNIE 5.0",
+      "developer": "Baidu",
+      "score": 40.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 100,
+      "modelName": "Gemma 4 31B",
+      "developer": "Google DeepMind",
+      "score": 40.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.25"
+    },
+    {
+      "rank": 101,
+      "modelName": "MAI-Thinking-1",
+      "developer": "Microsoft AI",
+      "score": 39.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.50"
+    },
+    {
+      "rank": 102,
+      "modelName": "Seed 2.0 Lite",
+      "developer": "ByteDance",
+      "score": 38.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 103,
+      "modelName": "Nova 2 Pro",
+      "developer": "Amazon AWS",
+      "score": 38.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.80"
+    },
+    {
+      "rank": 104,
+      "modelName": "MiniMax M2.1",
+      "developer": "MiniMax",
+      "score": 38.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 105,
+      "modelName": "Grok 4 Fast",
+      "developer": "xAI",
+      "score": 37.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.30"
+    },
+    {
+      "rank": 106,
+      "modelName": "GPT-5.5 Instant",
+      "developer": "OpenAI",
+      "score": 37.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 107,
+      "modelName": "Qwen3.5-35B-A3B",
+      "developer": "Alibaba Cloud",
+      "score": 37.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 108,
+      "modelName": "Grok-3 Mini",
+      "developer": "xAI",
+      "score": 37.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.30"
+    },
+    {
+      "rank": 109,
+      "modelName": "GPT-5.1 Medium",
+      "developer": "OpenAI",
+      "score": 37.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 110,
+      "modelName": "GPT-5.1 Codex",
+      "developer": "OpenAI",
+      "score": 36.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.50"
+    },
+    {
+      "rank": 111,
+      "modelName": "o3",
+      "developer": "OpenAI",
+      "score": 36.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 112,
+      "modelName": "Gemini 3.1 Flash-Lite",
+      "developer": "Google DeepMind",
+      "score": 36.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.05"
+    },
+    {
+      "rank": 113,
+      "modelName": "GPT-5.1 Codex High",
+      "developer": "OpenAI",
+      "score": 35.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.50"
+    },
+    {
+      "rank": 114,
+      "modelName": "MiMo-V2-Flash",
+      "developer": "Xiaomi AI",
+      "score": 35.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 115,
+      "modelName": "Gemini 2.5 Pro Preview 06-05",
+      "developer": "Google DeepMind",
+      "score": 35.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.25"
+    },
+    {
+      "rank": 116,
+      "modelName": "MAI-Code-1-Flash",
+      "developer": "Microsoft AI",
+      "score": 35.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 117,
+      "modelName": "Claude Opus 4.1",
+      "developer": "Anthropic",
+      "score": 35.1,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 118,
+      "modelName": "Grok-3",
+      "developer": "xAI",
+      "score": 34.9,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.00"
+    },
+    {
+      "rank": 119,
+      "modelName": "GLM-5V-Turbo",
+      "developer": "Zhipu AI",
+      "score": 34.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.30"
+    },
+    {
+      "rank": 120,
+      "modelName": "GPT-5.4 mini",
+      "developer": "OpenAI",
+      "score": 34.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.60"
+    },
+    {
+      "rank": 121,
+      "modelName": "MAI-Code-1.1-Flash",
+      "developer": "Microsoft AI",
+      "score": 34.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 122,
+      "modelName": "Gemini 3.5 Flash-Lite",
+      "developer": "Google DeepMind",
+      "score": 33.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.05"
+    },
+    {
+      "rank": 123,
+      "modelName": "GPT-5 Medium",
+      "developer": "OpenAI",
+      "score": 33.4,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 124,
+      "modelName": "DeepSeek-V3.2-Exp",
+      "developer": "DeepSeek",
+      "score": 32.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.27"
+    },
+    {
+      "rank": 125,
+      "modelName": "Gemma 4 26B-A4B",
+      "developer": "Google DeepMind",
+      "score": 32.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.25"
+    },
+    {
+      "rank": 126,
+      "modelName": "GPT-5.3 Chat",
+      "developer": "OpenAI",
+      "score": 31.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$2.50"
+    },
+    {
+      "rank": 127,
+      "modelName": "Qwen3-235B-A22B-Thinking-2507",
+      "developer": "Alibaba Cloud",
+      "score": 31.6,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.20"
+    },
+    {
+      "rank": 128,
+      "modelName": "GLM-4.6",
+      "developer": "Zhipu AI",
+      "score": 31.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 129,
+      "modelName": "Gemini 2.5 Pro",
+      "developer": "Google DeepMind",
+      "score": 31.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.25"
+    },
+    {
+      "rank": 130,
+      "modelName": "GPT OSS 120B",
+      "developer": "OpenAI",
+      "score": 30.3,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 131,
+      "modelName": "Claude Opus 4",
+      "developer": "Anthropic",
+      "score": 30.2,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$15.00"
+    },
+    {
+      "rank": 132,
+      "modelName": "LongCat-Flash-Thinking",
+      "developer": "Meituan AI",
+      "score": 30.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 133,
+      "modelName": "o4-mini",
+      "developer": "OpenAI",
+      "score": 29.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.10"
+    },
+    {
+      "rank": 134,
+      "modelName": "GLM-4.5",
+      "developer": "Zhipu AI",
+      "score": 28.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    },
+    {
+      "rank": 135,
+      "modelName": "MiMo-V2-Omni",
+      "developer": "Xiaomi AI",
+      "score": 27.8,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$1.00"
+    },
+    {
+      "rank": 136,
+      "modelName": "GPT OSS 20B High",
+      "developer": "OpenAI",
+      "score": 27.0,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.15"
+    },
+    {
+      "rank": 137,
+      "modelName": "GPT-5 mini",
+      "developer": "OpenAI",
+      "score": 26.7,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.15"
+    },
+    {
+      "rank": 138,
+      "modelName": "MiniMax M2",
+      "developer": "MiniMax",
+      "score": 26.5,
+      "date": "Sep 2026",
+      "verifiedByNextVector": true,
+      "costPerRun": "$0.50"
+    }
 ];
 
 export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [

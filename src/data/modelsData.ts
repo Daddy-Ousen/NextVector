@@ -3,6 +3,62 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
+    "id": "model-claude-3-7-sonnet",
+    "name": "Claude 3.7 Sonnet",
+    "developer": "Anthropic",
+    "releaseDate": "September 2026",
+    "modelType": "Reasoning",
+    "modalities": [
+      "Text",
+      "Code",
+      "Vision"
+    ],
+    "contextWindow": "200k tokens",
+    "parameters": "Confidential (~350B MoE Hybrid)",
+    "pricing": {
+      "inputPer1M": 3.00,
+      "outputPer1M": 15.00,
+      "cachedInputPer1M": 0.30
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Commercial Proprietary",
+    "hardwareRequirements": "Cloud API (Anthropic Bedrock / Vertex AI)",
+    "benchmarks": [
+      {
+        "benchmarkName": "LMSYS Chatbot Arena Elo",
+        "score": 1422,
+        "unit": "Elo",
+        "vsPreviousGen": "+26 pts vs Claude 3.5 Sonnet"
+      },
+      {
+        "benchmarkName": "SWE-bench Verified",
+        "score": "70.3%",
+        "vsPreviousGen": "+30.1% in thinking mode"
+      },
+      {
+        "benchmarkName": "TAU-bench Airline",
+        "score": "81.2%",
+        "vsPreviousGen": "+11.5%"
+      }
+    ],
+    "keyImprovements": [
+      "Pioneers continuous hybrid reasoning: dynamically adjust thinking budget from 0 tokens up to 64,000 tokens.",
+      "Scores 70.3% on SWE-bench Verified in extended thinking mode, closing the gap with heavy frontier reasoning flagships.",
+      "Native automated tool execution within thinking scratchpad with zero syntax drift."
+    ],
+    "knownLimitations": [
+      "Thinking tokens billed at standard output rate ($15.00/1M).",
+      "Maximum 64k thinking budget requires elevated per-request timeout margins."
+    ],
+    "realWorldApplications": [
+      "Autonomous full-stack repository refactoring and terminal tool-use loops via Claude Code.",
+      "Complex financial risk auditing and cryptographic verification."
+    ],
+    "architectureNotes": "Unified foundation model enabling continuous interpolation between standard autoregressive decoding and deep test-time search.",
+    "arenaRank": 2,
+    "arenaElo": 1422
+  },
+  {
     "id": "model-deepseek-v4-1-flash",
     "name": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",

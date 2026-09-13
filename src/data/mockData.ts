@@ -150,6 +150,61 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-14-claude-37',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Anthropic Unveils Claude 3.7 Sonnet: Continuous Hybrid Reasoning with Dynamic Test-Time Compute',
+    category: 'AI Breakthrough',
+    summary: 'Pioneering continuous test-time reasoning scaling from 0 to 64k thinking tokens, Claude 3.7 Sonnet scores 70.3% on SWE-bench Verified with native tool use in scratchpads.',
+    impactScore: 98,
+    keyShift: 'Eliminates dual-model routing by allowing a single foundation model to dynamically modulate thinking compute per request.',
+    articleSlug: 'anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot'
+  },
+  {
+    id: 'time-2026-09-14-high-na-euv',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Intel Foundry Validates First High-NA EUV 0.55 NA Wafers for Intel 14A Process',
+    category: 'Semiconductors',
+    summary: 'Achieving sub-2nm yield on the ASML TWINSCAN EXE:5000 scanner, Intel Foundry eliminates dual-patterning mask passes, cutting reticle cycle times by 40%.',
+    impactScore: 97,
+    keyShift: 'Validates commercial feasibility of sub-1.4nm semiconductor manufacturing with single-exposure High-NA lithography.',
+    articleSlug: 'intel-foundry-validates-high-na-euv-twinscan-exe5000-14a'
+  },
+  {
+    id: 'time-2026-09-14-linux-memory-safety',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Linux 6.17 Mainline Kernel Enforces Memory-Safe Architecture Across New Drivers',
+    category: 'Computing Architecture',
+    summary: 'Mainline Linux merges policy mandating Rust or formal proofs for new device drivers, while activating hardware Arm MTE in kernel space.',
+    impactScore: 96,
+    keyShift: 'Systematically eradicates spatial and temporal memory corruption vectors across foundational server operating systems.',
+    articleSlug: 'linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers'
+  },
+  {
+    id: 'time-2026-09-14-quantum-transducer',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Oxford and IonQ Demonstrate Coherent Room-Temperature Optical Transducer for Quantum Clusters',
+    category: 'Space & Quantum',
+    summary: 'PPLN photonic chip converts 435nm trapped-ion qubit emissions to 1550nm telecom C-band light at 99.4% fidelity at ambient room temperature (22°C).',
+    impactScore: 96,
+    keyShift: 'Removes cryogenic converters between quantum processors, unlocking modular multi-QPU quantum data centers.',
+    articleSlug: 'oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect'
+  },
+  {
+    id: 'time-2026-09-14-cas12f-base-editing',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Broad Institute & Vertex Validate Hyper-Compact In Vivo Cas12f Base Editing in Primates',
+    category: 'Fundamental Science',
+    summary: 'Ultra-compact 430-amino-acid Cas12f base editor packaged within a single AAV capsid permanently cuts LDL cholesterol by 88% with zero off-target insertions.',
+    impactScore: 97,
+    keyShift: 'Solves the AAV viral vector cargo bottleneck, enabling all-in-one in vivo delivery for clinical genomic medicine.',
+    articleSlug: 'broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9'
+  },
+  {
     id: 'time-2026-09-13-deepseek-v41',
     year: 2026,
     month: 'Sep 13',
@@ -536,33 +591,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'DeepSeek V4.1 Flash',
-    text: 'DeepSeek launches 280B MoE with MLA-2 and 4-token MTP, setting $0.14/1M price floor',
-    articleSlug: 'deepseek-releases-v4-1-flash-mla-2-price-floor'
+    tag: 'Claude 3.7 Sonnet',
+    text: 'Anthropic deploys hybrid reasoning with 0-64k dynamic thinking tokens & 70.3% SWE-bench',
+    articleSlug: 'anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot'
   },
   {
     id: 'sig-2',
-    tag: 'Gemini 3 Deep Think',
-    text: 'Latent MCTS paired with Lean 4 formal verification solves 4 IMO problems at Gold-Medal tier',
-    articleSlug: 'deepmind-gemini-3-deep-think-alphaproof-2-imo-gold'
+    tag: 'Intel 14A High-NA',
+    text: 'Intel Foundry prints first 0.55 NA EUV sub-2nm wafers on ASML EXE:5000 scanner',
+    articleSlug: 'intel-foundry-validates-high-na-euv-twinscan-exe5000-14a'
   },
   {
     id: 'sig-3',
-    tag: 'NVIDIA & TSMC CPO',
-    text: '1.6 Tbps co-packaged optical engines taped out for Rubin Ultra, reducing power by 72%',
-    articleSlug: 'nvidia-tsmc-broadcom-tape-out-1-6t-silicon-photonics-cpo'
+    tag: 'Linux 6.17 Kernel',
+    text: 'Linus Torvalds merges policy mandating Rust for all new mainline device drivers',
+    articleSlug: 'linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers'
   },
   {
     id: 'sig-4',
-    tag: 'Mistral Large 3',
-    text: '670B Mixture-of-Depths Apache 2.0 release cuts inference FLOPs by 60% with native FP8',
-    articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
+    tag: 'Quantum Optical Transducer',
+    text: 'Oxford & IonQ achieve room-temperature 435nm to 1550nm conversion at 99.4% fidelity',
+    articleSlug: 'oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect'
   },
   {
     id: 'sig-5',
-    tag: 'Caltech & AWS Quantum',
-    text: 'Biased-noise cat qubits achieve fault-tolerant logical gates with 9:1 physical overhead in Science',
-    articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
+    tag: 'Compact CRISPR Cas12f',
+    text: 'Broad & Vertex package 430-amino-acid base editor into single AAV, cutting LDL 88%',
+    articleSlug: 'broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9'
   }
 ];
 

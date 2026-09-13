@@ -547,6 +547,42 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://nextvector.rhasan.online/article/anthropic-claude-3-7-sonnet-hybrid-reasoning-dynamic-cot</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/intel-foundry-validates-high-na-euv-twinscan-exe5000-14a</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/models/model-claude-3-7-sonnet</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://nextvector.rhasan.online/models/model-deepseek-v4-1-flash</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>

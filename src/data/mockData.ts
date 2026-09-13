@@ -150,6 +150,61 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-13-gemini3',
+    year: 2026,
+    month: 'Sep 13',
+    title: 'DeepMind Gemini 3 Deep Think Solves 4 IMO Problems at Gold-Medal Tier in Lean 4',
+    category: 'AI Breakthrough',
+    summary: 'Google DeepMind reveals Gemini 3 Deep Think, coupling dual-system latent tree search with AlphaProof-2 formal verification to solve 4 of 6 IMO problems within official time limits, discovering novel algebraic lemmas.',
+    impactScore: 99,
+    keyShift: 'The integration of formal theorem-proving kernels directly into foundation model latent reasoning loops, eliminating hallucinations.',
+    articleSlug: 'deepmind-gemini-3-deep-think-alphaproof-2-imo-gold'
+  },
+  {
+    id: 'time-2026-09-13-cat-qubits',
+    year: 2026,
+    month: 'Sep 13',
+    title: 'Caltech & AWS Realize Fault-Tolerant Cat Qubit Gates at 9:1 Overhead in Science',
+    category: 'Space & Quantum',
+    summary: 'Superconducting bosonic Schrödinger cat qubits autonomously suppress bit-flips to once every 78 seconds, executing fault-tolerant logical gates with an unprecedented 9:1 physical-to-logical qubit ratio.',
+    impactScore: 98,
+    keyShift: 'Slashes the physical qubit overhead required for fault-tolerant quantum error correction by 99% compared to conventional surface codes.',
+    articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
+  },
+  {
+    id: 'time-2026-09-13-cpo',
+    year: 2026,
+    month: 'Sep 13',
+    title: 'NVIDIA, TSMC & Broadcom Tape Out 1.6T Co-Packaged Optics Engines for Rubin Ultra',
+    category: 'Semiconductors',
+    summary: 'TSMC COUPE 3D silicon photonics engines achieve volume tape-out, delivering 1.6 Tbps direct optical links per GPU package and slashing electrical interconnect energy by 72% down to 3.4 pJ/bit.',
+    impactScore: 97,
+    keyShift: 'The structural transition from electrical copper SerDes to co-packaged optical silicon in hyperscale AI supercomputing clusters.',
+    articleSlug: 'nvidia-tsmc-broadcom-tape-out-1-6t-silicon-photonics-cpo'
+  },
+  {
+    id: 'time-2026-09-13-k218b',
+    year: 2026,
+    month: 'Sep 13',
+    title: 'JWST Confirms Atmospheric DMS and Carbon Disulfide on Hycean Planet K2-18b at 4.2-Sigma',
+    category: 'Fundamental Science',
+    summary: 'Eight transit observations with JWST NIRSpec confirm methane, carbon dioxide, and volatile sulfur photochemical species (DMS and CS2) at 4.2-sigma, providing robust evidence for an ocean beneath a hydrogen atmosphere.',
+    impactScore: 96,
+    keyShift: 'Empirical confirmation of atmospheric biosignature candidates and hycean ocean world chemistry in the habitable zone of a red dwarf.',
+    articleSlug: 'jwst-detects-dimethyl-sulfide-carbon-disulfide-k2-18b'
+  },
+  {
+    id: 'time-2026-09-13-mistral3',
+    year: 2026,
+    month: 'Sep 13',
+    title: 'Mistral AI Releases 670B Mistral Large 3 with Mixture-of-Depths Under Apache 2.0',
+    category: 'Computing Architecture',
+    summary: 'Mistral AI releases an open-weights 670B model using dynamic depth routing to skip middle layers on low-entropy tokens, scoring 89.2% on MMLU-Pro and cutting inference FLOPs by 60%.',
+    impactScore: 96,
+    keyShift: 'Production deployment of Mixture-of-Depths routing, freeing transformers from static per-token compute budgets.',
+    articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
+  },
+  {
     id: 'time-2026-09-11-darkenergy',
     year: 2026,
     month: 'Sep 11',
@@ -407,53 +462,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Friday, September 11, 2026',
-  summary: 'Meta open-sources Miles v0.1 to scale asynchronous reinforcement learning across 4,096 GPUs for diffusion reasoning models. Concurrently, SK hynix and Samsung validate 16-high HBM4 stacks with 4nm custom logic dies delivering 24 TB/s bandwidth, Oxford and TIFR astrophysics re-analysis challenges dark energy cosmic acceleration, Diffusion Language Models achieve benchmark parity with 8B autoregressive transformers on mobile NPUs, and Berkeley Lab confirms 10,000x nuclear fusion cross-section enhancements via solid-state lattice electron screening.',
+  date: 'Sunday, September 13, 2026',
+  summary: 'Google DeepMind releases Gemini 3 Deep Think, combining latent MCTS reasoning with native Lean 4 formal verification to solve four 2026 IMO problems at Gold-Medal tier. Concurrently, NVIDIA, TSMC, and Broadcom tape out 1.6T co-packaged optics engines cutting interconnect power by 72%, Caltech and AWS Quantum realize fault-tolerant cat qubit gates slashing physical qubit overhead to 9:1, JWST detects atmospheric dimethyl sulfide and carbon disulfide on temperate hycean sub-Neptune K2-18b at 4.2-sigma, and Mistral AI open-sources Mistral Large 3 with Dynamic Mixture-of-Depths.',
   items: [
     {
       id: 'brief-1',
-      headline: 'Meta Open-Sources Miles v0.1: Production-Scale Distributed RL for Diffusion Reasoning Models',
+      headline: 'DeepMind Unveils Gemini 3 Deep Think: AlphaProof-2 Integration Solves 4 IMO Problems at Gold-Medal Tier',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Meta AI released Miles v0.1, an open-source distributed reinforcement learning framework featuring Asynchronous Diffusion Policy Optimization (ADPO) that achieves 94.6% scaling efficiency across 4,096 GPUs, eliminating autoregressive KV-cache stalls during multi-step reasoning.',
-      whyItMatters: 'Removes the primary distributed systems barrier preventing non-autoregressive parallel diffusion models from matching and surpassing causal transformers in long-horizon mathematical and coding reasoning.',
-      articleSlug: 'meta-miles-distributed-rl-diffusion-reasoning-models'
+      summary: 'DeepMind documented Gemini 3 Deep Think, coupling foundation model latent Monte Carlo Tree Search with Lean 4 formal verification to solve 4 out of 6 problems on the 2026 International Mathematical Olympiad, discovering novel algebraic invariant lemmas.',
+      whyItMatters: 'Permanently eliminates mathematical hallucinations and establishes neuro-symbolic automated theorem proving as an empirical tool in theoretical physics and mathematics.',
+      articleSlug: 'deepmind-gemini-3-deep-think-alphaproof-2-imo-gold'
     },
     {
       id: 'brief-2',
-      headline: 'SK hynix & Samsung Validate 16-High HBM4 Memory Stacks: 4nm Base Dies Break 24 TB/s Barrier',
+      headline: 'NVIDIA, TSMC & Broadcom Tape Out 1.6T Co-Packaged Optics: 72% Interconnect Power Drop for Rubin Racks',
       category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'South Korean memory leaders verified functional 64GB 16-high HBM4 cubes utilizing copper-to-copper (Cu-Cu) hybrid bonding and active 4nm logic base dies, doubling interface width to 2,048 bits for 2027 accelerator architectures.',
-      whyItMatters: 'Shatters the catastrophic memory bandwidth bottleneck for 2027 trillion-parameter frontier models with aggregate accelerator bandwidth surpassing 24 TB/s at 33% lower thermal resistance.',
-      articleSlug: 'sk-hynix-samsung-16-high-hbm4-4nm-base-die-validation'
+      summary: 'TSMC COUPE 3D silicon photonics engines achieve volume qualification with NVIDIA Rubin Ultra racks, mounting 1.6 Tbps optical transceivers directly adjacent to GPU silicon and eliminating electrical retimer chips.',
+      whyItMatters: 'Overcomes the catastrophic electrical attenuation of copper interconnects at 224 Gbps, reducing transmission energy to 3.4 pJ/bit across 100,000-accelerator supercomputer clusters.',
+      articleSlug: 'nvidia-tsmc-broadcom-tape-out-1-6t-silicon-photonics-cpo'
     },
     {
       id: 'brief-3',
-      headline: 'Cosmic Acceleration Re-Evaluated: Supernovae Analysis Challenges Dark Energy Dominance',
+      headline: 'Caltech & AWS Realize Fault-Tolerant Cat Qubit Gates: Slashing Physical Overhead to 9-to-1',
       category: 'science' as const,
       urgency: 'High Impact' as const,
-      summary: 'A Bayesian hierarchical re-analysis of 1,700 Type Ia supernovae published in Nature Astronomy reveals that directional peculiar velocity bulk flows account for observed cosmological dimming, lowering cosmic acceleration significance below 3-sigma.',
-      whyItMatters: 'Poses the most statistically robust empirical challenge to the standard Lambda-CDM model in over two decades, suggesting cosmic acceleration may be an artifact of local structural anisotropy.',
-      articleSlug: 'oxford-tifr-supernovae-reanalysis-challenges-dark-energy-acceleration'
+      summary: 'Published in Science, researchers engineered bosonic Schrödinger cat states that suppress bit-flips autonomously to once every 78 seconds, executing continuous phase-flip correction using only 9 physical qubits per logical qubit.',
+      whyItMatters: 'Slashes quantum error correction physical overhead by 99% compared to traditional 1,000:1 surface codes, providing a viable blueprint for compact, commercially scalable quantum supercomputing.',
+      articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
     },
     {
       id: 'brief-4',
-      headline: 'Diffusion Language Models Achieve Edge Parity: Parallel Denoising Replaces Sequential Transformers',
-      category: 'ai' as const,
+      headline: 'JWST Confirms Atmospheric DMS and Carbon Disulfide on Hycean Exoplanet K2-18b at 4.2-Sigma',
+      category: 'science' as const,
       urgency: 'High Impact' as const,
-      summary: 'Discrete Diffusion Language Models matched 8B autoregressive transformers across MMLU-Pro and HumanEval while reducing interactive response latency by 4.2x and cutting DRAM bandwidth consumption by 68% on mobile NPUs.',
-      whyItMatters: 'Demonstrates that parallel score-based denoising eliminates the memory-bound bottleneck of the KV-cache, enabling continuous, battery-efficient autonomous agents on consumer smartphones and laptops.',
-      articleSlug: 'diffusion-language-models-achieve-parity-autoregressive-edge-agents'
+      summary: 'Eight combined JWST NIRSpec transmission transits confirmed methane, carbon dioxide, and volatile sulfur species including dimethyl sulfide and CS2 at 4.2-sigma in the temperate atmosphere of sub-Neptune K2-18b.',
+      whyItMatters: 'Provides the strongest spectroscopic evidence to date for a global liquid water ocean on a habitable-zone exoplanet, establishing K2-18b as the premier target for extraterrestrial biosignature study.',
+      articleSlug: 'jwst-detects-dimethyl-sulfide-carbon-disulfide-k2-18b'
     },
     {
       id: 'brief-5',
-      headline: 'Solid-State Lattice Confinement Enhances Nuclear Fusion Cross-Sections by Four Orders of Magnitude',
-      category: 'science' as const,
+      headline: 'Mistral AI Releases Mistral Large 3: 670B Mixture-of-Depths Model with Native FP8 Apache Weights',
+      category: 'ai' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'UC Davis and Berkeley Lab demonstrated in Nature Communications that metal hydride crystal lattices provide 620 eV electron screening, increasing low-energy D-D nuclear tunneling probability by 10,000x with suppressed neutron emission.',
-      whyItMatters: 'Provides experimental validation that condensed matter environments can shield Coulomb repulsion, paving the way for compact benchtop clean nuclear energy systems without giant magnetic fields.',
-      articleSlug: 'uc-davis-berkeley-lab-solid-state-lattice-fusion-cross-sections'
+      summary: 'Mistral AI published Apache 2.0 weights for a 670B model that dynamically skips middle transformer blocks on low-entropy tokens, achieving 89.2% on MMLU-Pro and 84.1% on SWE-bench at 60% lower inference FLOPs.',
+      whyItMatters: 'Proves dynamic layer skipping can match closed frontier models while drastically slashing serving costs for enterprise coding and autonomous agent swarms.',
+      articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
     }
   ]
 };
@@ -461,33 +516,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Meta Miles v0.1',
-    text: 'Distributed RL framework scales diffusion reasoning across 4,096 GPUs with 94.6% efficiency',
-    articleSlug: 'meta-miles-distributed-rl-diffusion-reasoning-models'
+    tag: 'Gemini 3 Deep Think',
+    text: 'Latent MCTS paired with Lean 4 formal verification solves 4 IMO problems at Gold-Medal tier',
+    articleSlug: 'deepmind-gemini-3-deep-think-alphaproof-2-imo-gold'
   },
   {
     id: 'sig-2',
-    tag: 'SK hynix & Samsung',
-    text: '64GB 16-high HBM4 memory stacks validated on 4nm logic dies with Cu-Cu hybrid bonding',
-    articleSlug: 'sk-hynix-samsung-16-high-hbm4-4nm-base-die-validation'
+    tag: 'NVIDIA & TSMC CPO',
+    text: '1.6 Tbps co-packaged optical engines taped out for Rubin Ultra, reducing power by 72%',
+    articleSlug: 'nvidia-tsmc-broadcom-tape-out-1-6t-silicon-photonics-cpo'
   },
   {
     id: 'sig-3',
-    tag: 'Oxford & TIFR',
-    text: 'Bayesian re-analysis of 1,700 supernovae challenges dark energy cosmic acceleration in Nature Astronomy',
-    articleSlug: 'oxford-tifr-supernovae-reanalysis-challenges-dark-energy-acceleration'
+    tag: 'Caltech & AWS Quantum',
+    text: 'Biased-noise cat qubits achieve fault-tolerant logical gates with 9:1 physical overhead in Science',
+    articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
   },
   {
     id: 'sig-4',
-    tag: 'Edge DLM Parity',
-    text: 'Diffusion language models match 8B transformers with 4.2x lower latency on mobile NPUs',
-    articleSlug: 'diffusion-language-models-achieve-parity-autoregressive-edge-agents'
+    tag: 'JWST Exoplanets',
+    text: '4.2-sigma detection of atmospheric DMS and carbon disulfide confirms hycean ocean world K2-18b',
+    articleSlug: 'jwst-detects-dimethyl-sulfide-carbon-disulfide-k2-18b'
   },
   {
     id: 'sig-5',
-    tag: 'Berkeley Lab & UC Davis',
-    text: 'Solid-state metal hydride lattices boost nuclear fusion cross-sections by 10,000x via electron screening',
-    articleSlug: 'uc-davis-berkeley-lab-solid-state-lattice-fusion-cross-sections'
+    tag: 'Mistral Large 3',
+    text: '670B Mixture-of-Depths Apache 2.0 release cuts inference FLOPs by 60% with native FP8',
+    articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
   }
 ];
 

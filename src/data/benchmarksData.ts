@@ -2448,6 +2448,24 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
 export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   {
     "rank": 1,
+    "modelName": "Gemini 3 Deep Think",
+    "developer": "Google DeepMind",
+    "score": 92.4,
+    "date": "Sep 2026",
+    "verifiedByNextVector": true,
+    "costPerRun": "$2.95"
+  },
+  {
+    "rank": 2,
+    "modelName": "Mistral Large 3",
+    "developer": "Mistral AI",
+    "score": 84.1,
+    "date": "Sep 2026",
+    "verifiedByNextVector": true,
+    "costPerRun": "$1.40"
+  },
+  {
+    "rank": 1,
     "modelName": "GPT-6 Astra",
     "developer": "OpenAI",
     "score": 75.8,
@@ -4883,6 +4901,24 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
 
 
 export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
+  {
+    "rank": 1,
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "score": 98.6,
+    "date": "Sep 2026",
+    "verifiedByNextVector": true,
+    "costPerRun": "$0.14"
+  },
+  {
+    "rank": 2,
+    "modelName": "Mistral Large 3",
+    "developer": "Mistral AI",
+    "score": 94.2,
+    "date": "Sep 2026",
+    "verifiedByNextVector": true,
+    "costPerRun": "$1.50"
+  },
   {
     "rank": 1,
     "modelName": "Gemini 3.8 Flash",

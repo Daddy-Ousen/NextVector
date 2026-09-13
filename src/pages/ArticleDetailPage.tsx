@@ -59,42 +59,83 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'TechArticle',
-    headline: article.title,
-    description: article.subtitle,
-    image: article.coverImage,
-    datePublished: article.publishedAt,
-    dateModified: article.publishedAt,
-    articleSection: article.category.toUpperCase(),
-    keywords: article.tags.join(', '),
-    articleBody: article.content.join('\n\n'),
-    author: {
-      '@type': 'Person',
-      name: article.author.name || 'Robiul Hasan',
-      jobTitle: article.author.role || 'Founder & Editor-in-Chief',
-      url: article.author.website || 'https://rhasan.online',
-      sameAs: [
-        article.author.website || 'https://rhasan.online',
-        article.author.github || 'https://github.com/Daddy-Ousen',
-      ].filter(Boolean),
-    },
-    publisher: {
-      '@type': 'NewsMediaOrganization',
-      name: 'NextVector',
-      url: 'https://nextvector.rhasan.online',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://nextvector.rhasan.online/favicon.svg',
+    '@graph': [
+      {
+        '@type': 'TechArticle',
+        '@id': `https://nextvector.rhasan.online/article/${article.slug}#article`,
+        headline: article.title,
+        description: article.subtitle,
+        image: article.coverImage.startsWith('http') ? article.coverImage : `https://nextvector.rhasan.online${article.coverImage}`,
+        datePublished: article.publishedAt,
+        dateModified: article.publishedAt,
+        articleSection: article.category.toUpperCase(),
+        keywords: article.tags.join(', '),
+        articleBody: article.content.join('\n\n'),
+        author: {
+          '@type': 'Person',
+          name: article.author.name || 'Robiul Hasan',
+          jobTitle: article.author.role || 'Founder & Editor-in-Chief',
+          url: article.author.website || 'https://rhasan.online',
+          sameAs: [
+            article.author.website || 'https://rhasan.online',
+            article.author.github || 'https://github.com/Daddy-Ousen',
+            'https://nextvectorr.substack.com',
+          ].filter(Boolean),
+        },
+        publisher: {
+          '@type': 'NewsMediaOrganization',
+          name: 'NextVector',
+          url: 'https://nextvector.rhasan.online',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://nextvector.rhasan.online/brand/nextvector-logo.jpg',
+          },
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `https://nextvector.rhasan.online/article/${article.slug}`,
+        },
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['.three-questions-block', '.key-takeaways'],
+        },
+        citation: article.citations?.map((c) => ({
+          '@type': 'CreativeWork',
+          name: c.title,
+          url: c.url,
+        })),
       },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://nextvector.rhasan.online/article/${article.slug}`,
-    },
-    speakable: {
-      '@type': 'SpeakableSpecification',
-      cssSelector: ['.three-questions-block', '.key-takeaways'],
-    },
+      {
+        '@type': 'FAQPage',
+        '@id': `https://nextvector.rhasan.online/article/${article.slug}#faq`,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: `What happened regarding ${article.title}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: article.threeQuestions.whatHappened,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `Why does ${article.title} matter?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: article.threeQuestions.whyItMatters,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `What could happen next after ${article.title}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: article.threeQuestions.whatsNext,
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (

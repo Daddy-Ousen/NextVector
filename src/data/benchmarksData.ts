@@ -17,7 +17,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.87"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 2,
@@ -26,7 +26,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.11"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 3,
@@ -35,7 +35,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.11"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 4,
@@ -44,7 +44,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.10"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 5,
@@ -53,7 +53,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.10"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 6,
@@ -62,7 +62,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.10"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 7,
@@ -80,7 +80,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.05"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 9,
@@ -89,7 +89,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.05"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 10,
@@ -98,7 +98,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.04"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 11,
@@ -107,7 +107,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.03"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 12,
@@ -116,7 +116,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.02"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 13,
@@ -125,7 +125,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.01"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 14,
@@ -134,7 +134,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.01"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 15,
@@ -143,7 +143,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 16,
@@ -152,7 +152,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 17,
@@ -161,7 +161,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$0.08"
   },
   {
     "rank": 18,
@@ -170,7 +170,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.97"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 19,
@@ -179,7 +179,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.97"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 20,
@@ -188,7 +188,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.97"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 21,
@@ -197,7 +197,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.95"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 22,
@@ -206,7 +206,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.90"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 23,
@@ -215,7 +215,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.89"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 24,
@@ -224,7 +224,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.88"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 25,
@@ -233,7 +233,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.87"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 26,
@@ -242,7 +242,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.86"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 27,
@@ -251,7 +251,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.85"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 28,
@@ -260,7 +260,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.85"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 29,
@@ -269,7 +269,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.84"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 30,
@@ -278,7 +278,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.84"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 31,
@@ -287,7 +287,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.83"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 32,
@@ -296,7 +296,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.82"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 33,
@@ -305,7 +305,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.81"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 34,
@@ -314,7 +314,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.80"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 35,
@@ -323,7 +323,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.79"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 36,
@@ -332,7 +332,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.77"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 37,
@@ -341,7 +341,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.76"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 38,
@@ -350,7 +350,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.75"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 39,
@@ -359,7 +359,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.74"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 40,
@@ -368,7 +368,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 41,
@@ -377,7 +377,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 42,
@@ -386,7 +386,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 43,
@@ -395,7 +395,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 44,
@@ -404,7 +404,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 45,
@@ -413,7 +413,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 46,
@@ -422,7 +422,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 47,
@@ -431,7 +431,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 48,
@@ -440,7 +440,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 49,
@@ -449,7 +449,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 50,
@@ -458,7 +458,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 51,
@@ -467,7 +467,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 52,
@@ -476,7 +476,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 53,
@@ -485,7 +485,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 54,
@@ -494,7 +494,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 55,
@@ -503,7 +503,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 56,
@@ -512,7 +512,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 57,
@@ -521,7 +521,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 58,
@@ -530,7 +530,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 59,
@@ -539,7 +539,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 60,
@@ -548,7 +548,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 61,
@@ -557,7 +557,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 62,
@@ -566,7 +566,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 63,
@@ -575,7 +575,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 64,
@@ -584,7 +584,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 65,
@@ -593,7 +593,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 66,
@@ -602,7 +602,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 67,
@@ -611,7 +611,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 68,
@@ -620,7 +620,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 69,
@@ -629,7 +629,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 70,
@@ -638,7 +638,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 71,
@@ -647,7 +647,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 72,
@@ -656,7 +656,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 73,
@@ -665,7 +665,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 74,
@@ -674,7 +674,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 75,
@@ -683,7 +683,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 76,
@@ -692,7 +692,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 77,
@@ -701,7 +701,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 78,
@@ -710,7 +710,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 79,
@@ -719,7 +719,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 80,
@@ -728,7 +728,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 81,
@@ -737,7 +737,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 82,
@@ -746,7 +746,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 83,
@@ -755,7 +755,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 84,
@@ -764,7 +764,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 85,
@@ -773,7 +773,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 86,
@@ -782,7 +782,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 87,
@@ -791,7 +791,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 88,
@@ -800,7 +800,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 89,
@@ -809,7 +809,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 90,
@@ -818,7 +818,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 91,
@@ -827,7 +827,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 92,
@@ -836,7 +836,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 93,
@@ -845,7 +845,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 94,
@@ -854,7 +854,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 95,
@@ -863,7 +863,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 96,
@@ -872,7 +872,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 97,
@@ -881,7 +881,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 98,
@@ -890,7 +890,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 99,
@@ -899,7 +899,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 100,
@@ -908,7 +908,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 101,
@@ -917,7 +917,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 102,
@@ -926,7 +926,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 103,
@@ -935,7 +935,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 104,
@@ -944,7 +944,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 105,
@@ -953,7 +953,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 106,
@@ -962,7 +962,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 24.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 107,
@@ -971,7 +971,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 24.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 108,
@@ -980,7 +980,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 109,
@@ -989,7 +989,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 110,
@@ -998,7 +998,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 111,
@@ -1007,7 +1007,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 112,
@@ -1016,7 +1016,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 22.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 113,
@@ -1025,7 +1025,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 22.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 114,
@@ -1034,7 +1034,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 22.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 115,
@@ -1043,7 +1043,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 21.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 116,
@@ -1052,7 +1052,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 21.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 117,
@@ -1061,7 +1061,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 20.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 118,
@@ -1070,7 +1070,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 20.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 119,
@@ -1079,7 +1079,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 20.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 120,
@@ -1088,7 +1088,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 20.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 121,
@@ -1097,7 +1097,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 20.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 122,
@@ -1106,7 +1106,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 19.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 123,
@@ -1115,7 +1115,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 19.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 124,
@@ -1124,7 +1124,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 19.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 125,
@@ -1133,7 +1133,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 19.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 126,
@@ -1142,7 +1142,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 18.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.21"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 127,
@@ -1151,7 +1151,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 18.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.21"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 128,
@@ -1160,7 +1160,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 17.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.21"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 129,
@@ -1169,7 +1169,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 17.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.21"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 130,
@@ -1178,7 +1178,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 17.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.21"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 131,
@@ -1187,7 +1187,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 16.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 132,
@@ -1196,7 +1196,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 16.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
+    "costPerRun": "$1.10"
   },
   {
     "rank": 133,
@@ -1205,7 +1205,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 15.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 134,
@@ -1214,7 +1214,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 15.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 135,
@@ -1223,7 +1223,7 @@ export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 15.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20"
+    "costPerRun": "$0.50"
   }
 ];
 
@@ -1235,7 +1235,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 74.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.54"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 2,
@@ -1244,7 +1244,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.02"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 3,
@@ -1253,7 +1253,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.01"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 4,
@@ -1262,7 +1262,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.01"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 5,
@@ -1271,7 +1271,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 6,
@@ -1280,7 +1280,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 7,
@@ -1289,7 +1289,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.03"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 8,
@@ -1298,7 +1298,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 9,
@@ -1307,7 +1307,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 10,
@@ -1325,7 +1325,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.99"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 12,
@@ -1334,7 +1334,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.97"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 13,
@@ -1343,7 +1343,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.96"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 14,
@@ -1352,7 +1352,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 61.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.93"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 15,
@@ -1361,7 +1361,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.91"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 16,
@@ -1370,7 +1370,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.90"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 17,
@@ -1379,7 +1379,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.89"
+    "costPerRun": "$0.08"
   },
   {
     "rank": 18,
@@ -1388,7 +1388,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.86"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 19,
@@ -1397,7 +1397,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.86"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 20,
@@ -1406,7 +1406,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.85"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 21,
@@ -1415,7 +1415,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.84"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 22,
@@ -1424,7 +1424,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.84"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 23,
@@ -1433,7 +1433,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.83"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 24,
@@ -1442,7 +1442,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.82"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 25,
@@ -1451,7 +1451,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.82"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 26,
@@ -1460,7 +1460,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.81"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 27,
@@ -1469,7 +1469,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.79"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 28,
@@ -1478,7 +1478,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.79"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 29,
@@ -1487,7 +1487,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.78"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 30,
@@ -1496,7 +1496,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.78"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 31,
@@ -1505,7 +1505,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.77"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 32,
@@ -1514,7 +1514,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.77"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 33,
@@ -1523,7 +1523,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.76"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 34,
@@ -1532,7 +1532,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.74"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 35,
@@ -1541,7 +1541,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.72"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 36,
@@ -1550,7 +1550,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.70"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 37,
@@ -1559,7 +1559,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.69"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 38,
@@ -1568,7 +1568,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.67"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 39,
@@ -1577,7 +1577,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.67"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 40,
@@ -1586,7 +1586,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.66"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 41,
@@ -1595,7 +1595,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 51.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.65"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 42,
@@ -1604,7 +1604,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 51.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.64"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 43,
@@ -1613,7 +1613,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 51.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.63"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 44,
@@ -1622,7 +1622,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.61"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 45,
@@ -1631,7 +1631,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.61"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 46,
@@ -1640,7 +1640,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 47,
@@ -1649,7 +1649,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 48,
@@ -1658,7 +1658,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.60"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 49,
@@ -1676,7 +1676,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.59"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 51,
@@ -1685,7 +1685,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.56"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 52,
@@ -1694,7 +1694,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.54"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 53,
@@ -1703,7 +1703,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.53"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 54,
@@ -1712,7 +1712,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.51"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 55,
@@ -1730,7 +1730,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 57,
@@ -1739,7 +1739,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.49"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 58,
@@ -1748,7 +1748,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.48"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 59,
@@ -1757,7 +1757,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.47"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 60,
@@ -1766,7 +1766,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.46"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 61,
@@ -1775,7 +1775,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.45"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 62,
@@ -1784,7 +1784,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 63,
@@ -1793,7 +1793,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 64,
@@ -1802,7 +1802,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 65,
@@ -1811,7 +1811,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 66,
@@ -1820,7 +1820,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 67,
@@ -1829,7 +1829,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 68,
@@ -1838,7 +1838,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 69,
@@ -1847,7 +1847,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 70,
@@ -1856,7 +1856,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 71,
@@ -1865,7 +1865,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 72,
@@ -1874,7 +1874,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 73,
@@ -1883,7 +1883,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 74,
@@ -1892,7 +1892,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 75,
@@ -1901,7 +1901,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 76,
@@ -1910,7 +1910,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 77,
@@ -1919,7 +1919,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 78,
@@ -1928,7 +1928,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 79,
@@ -1937,7 +1937,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 80,
@@ -1946,7 +1946,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 81,
@@ -1955,7 +1955,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 82,
@@ -1964,7 +1964,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 83,
@@ -1973,7 +1973,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 84,
@@ -1982,7 +1982,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 85,
@@ -1991,7 +1991,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 86,
@@ -2000,7 +2000,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 87,
@@ -2009,7 +2009,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 88,
@@ -2018,7 +2018,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 89,
@@ -2027,7 +2027,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 90,
@@ -2036,7 +2036,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 91,
@@ -2045,7 +2045,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 92,
@@ -2054,7 +2054,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 93,
@@ -2063,7 +2063,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 94,
@@ -2072,7 +2072,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 95,
@@ -2081,7 +2081,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 96,
@@ -2090,7 +2090,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 97,
@@ -2099,7 +2099,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 98,
@@ -2108,7 +2108,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 99,
@@ -2117,7 +2117,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 100,
@@ -2126,7 +2126,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 101,
@@ -2135,7 +2135,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 102,
@@ -2144,7 +2144,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 103,
@@ -2153,7 +2153,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 104,
@@ -2162,7 +2162,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 105,
@@ -2171,7 +2171,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 106,
@@ -2180,7 +2180,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 107,
@@ -2189,7 +2189,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 108,
@@ -2198,7 +2198,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 109,
@@ -2207,7 +2207,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 110,
@@ -2216,7 +2216,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 111,
@@ -2225,7 +2225,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 112,
@@ -2234,7 +2234,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 113,
@@ -2243,7 +2243,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 114,
@@ -2252,7 +2252,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 115,
@@ -2261,7 +2261,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 116,
@@ -2270,7 +2270,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 117,
@@ -2279,7 +2279,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 118,
@@ -2288,7 +2288,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 119,
@@ -2297,7 +2297,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 120,
@@ -2306,7 +2306,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 121,
@@ -2315,7 +2315,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 122,
@@ -2324,7 +2324,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 123,
@@ -2333,7 +2333,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 124,
@@ -2342,7 +2342,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 125,
@@ -2351,7 +2351,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 126,
@@ -2360,7 +2360,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 127,
@@ -2369,7 +2369,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 24.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 128,
@@ -2378,7 +2378,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 24.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 129,
@@ -2387,7 +2387,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 130,
@@ -2396,7 +2396,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 131,
@@ -2405,7 +2405,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 132,
@@ -2414,7 +2414,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 23.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 133,
@@ -2423,7 +2423,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 22.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$1.10"
   },
   {
     "rank": 134,
@@ -2432,7 +2432,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 22.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 135,
@@ -2441,7 +2441,7 @@ export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 22.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.23"
+    "costPerRun": "$0.15"
   }
 ];
 
@@ -2453,7 +2453,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 92.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.95"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 2,
@@ -2462,7 +2462,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 84.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.40"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 1,
@@ -2471,7 +2471,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 75.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.63"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 2,
@@ -2480,7 +2480,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.48"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 3,
@@ -2489,7 +2489,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.47"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 4,
@@ -2498,7 +2498,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.47"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 5,
@@ -2516,7 +2516,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.45"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 7,
@@ -2525,7 +2525,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.44"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 8,
@@ -2534,7 +2534,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.40"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 9,
@@ -2543,7 +2543,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 71.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.38"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 10,
@@ -2552,7 +2552,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 71.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.37"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 11,
@@ -2561,7 +2561,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 70.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 12,
@@ -2570,7 +2570,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.27"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 13,
@@ -2579,7 +2579,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.22"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 14,
@@ -2588,7 +2588,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.21"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 15,
@@ -2597,7 +2597,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.18"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 16,
@@ -2606,7 +2606,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.17"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 17,
@@ -2615,7 +2615,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.15"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 18,
@@ -2624,7 +2624,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.14"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 19,
@@ -2633,7 +2633,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.13"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 20,
@@ -2642,7 +2642,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.12"
+    "costPerRun": "$0.08"
   },
   {
     "rank": 21,
@@ -2651,7 +2651,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.11"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 22,
@@ -2660,7 +2660,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 66.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.07"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 23,
@@ -2669,7 +2669,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 66.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.06"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 24,
@@ -2678,7 +2678,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.00"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 25,
@@ -2687,7 +2687,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.00"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 26,
@@ -2696,7 +2696,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.99"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 27,
@@ -2705,7 +2705,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.48"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 28,
@@ -2714,7 +2714,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.47"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 29,
@@ -2723,7 +2723,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.47"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 30,
@@ -2732,7 +2732,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.44"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 31,
@@ -2741,7 +2741,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.44"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 32,
@@ -2750,7 +2750,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.44"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 33,
@@ -2759,7 +2759,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.43"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 34,
@@ -2768,7 +2768,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.43"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 35,
@@ -2777,7 +2777,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.41"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 36,
@@ -2786,7 +2786,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.41"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 37,
@@ -2795,7 +2795,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 61.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.38"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 38,
@@ -2804,7 +2804,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 61.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.37"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 39,
@@ -2813,7 +2813,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.34"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 40,
@@ -2822,7 +2822,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.33"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 41,
@@ -2831,7 +2831,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.32"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 42,
@@ -2840,7 +2840,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.32"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 43,
@@ -2849,7 +2849,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.29"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 44,
@@ -2858,7 +2858,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.27"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 45,
@@ -2867,7 +2867,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.26"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 46,
@@ -2876,7 +2876,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 47,
@@ -2885,7 +2885,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.24"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 48,
@@ -2894,7 +2894,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.23"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 49,
@@ -2903,7 +2903,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.22"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 50,
@@ -2912,7 +2912,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.22"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 51,
@@ -2921,7 +2921,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.20"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 52,
@@ -2930,7 +2930,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.20"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 53,
@@ -2939,7 +2939,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.19"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 54,
@@ -2948,7 +2948,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.19"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 55,
@@ -2957,7 +2957,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.18"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 56,
@@ -2966,7 +2966,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.17"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 57,
@@ -2975,7 +2975,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.17"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 58,
@@ -2984,7 +2984,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.15"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 59,
@@ -2993,7 +2993,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.14"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 60,
@@ -3002,7 +3002,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.13"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 61,
@@ -3011,7 +3011,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.11"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 62,
@@ -3020,7 +3020,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.10"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 63,
@@ -3029,7 +3029,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.10"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 64,
@@ -3038,7 +3038,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.09"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 65,
@@ -3047,7 +3047,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 51.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.07"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 66,
@@ -3056,7 +3056,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.05"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 67,
@@ -3065,7 +3065,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.03"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 68,
@@ -3074,7 +3074,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.02"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 69,
@@ -3083,7 +3083,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.01"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 70,
@@ -3092,7 +3092,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.01"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 71,
@@ -3101,7 +3101,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 72,
@@ -3110,7 +3110,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 73,
@@ -3119,7 +3119,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.99"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 74,
@@ -3128,7 +3128,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.99"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 75,
@@ -3137,7 +3137,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.98"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 76,
@@ -3146,7 +3146,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.96"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 77,
@@ -3155,7 +3155,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.95"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 78,
@@ -3164,7 +3164,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.95"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 79,
@@ -3173,7 +3173,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.94"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 80,
@@ -3182,7 +3182,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.91"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 81,
@@ -3191,7 +3191,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.91"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 82,
@@ -3200,7 +3200,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.90"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 83,
@@ -3209,7 +3209,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 84,
@@ -3218,7 +3218,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 85,
@@ -3227,7 +3227,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 86,
@@ -3236,7 +3236,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 87,
@@ -3245,7 +3245,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 88,
@@ -3254,7 +3254,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 89,
@@ -3263,7 +3263,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 90,
@@ -3272,7 +3272,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 91,
@@ -3281,7 +3281,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 92,
@@ -3290,7 +3290,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 93,
@@ -3299,7 +3299,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 94,
@@ -3308,7 +3308,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 95,
@@ -3317,7 +3317,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 96,
@@ -3326,7 +3326,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 97,
@@ -3335,7 +3335,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 98,
@@ -3344,7 +3344,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 99,
@@ -3353,7 +3353,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 100,
@@ -3362,7 +3362,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 101,
@@ -3371,7 +3371,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 102,
@@ -3380,7 +3380,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 103,
@@ -3389,7 +3389,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 104,
@@ -3398,7 +3398,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 105,
@@ -3407,7 +3407,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 106,
@@ -3416,7 +3416,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 107,
@@ -3425,7 +3425,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 108,
@@ -3434,7 +3434,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 109,
@@ -3443,7 +3443,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 110,
@@ -3452,7 +3452,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 111,
@@ -3461,7 +3461,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 112,
@@ -3470,7 +3470,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 113,
@@ -3479,7 +3479,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 114,
@@ -3488,7 +3488,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 115,
@@ -3497,7 +3497,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 116,
@@ -3506,7 +3506,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 117,
@@ -3515,7 +3515,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 118,
@@ -3524,7 +3524,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 119,
@@ -3533,7 +3533,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 120,
@@ -3542,7 +3542,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 121,
@@ -3551,7 +3551,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 122,
@@ -3560,7 +3560,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 123,
@@ -3569,7 +3569,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 124,
@@ -3578,7 +3578,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 125,
@@ -3587,7 +3587,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 126,
@@ -3596,7 +3596,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 127,
@@ -3605,7 +3605,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 128,
@@ -3614,7 +3614,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 129,
@@ -3623,7 +3623,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 130,
@@ -3632,7 +3632,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$1.10"
   },
   {
     "rank": 131,
@@ -3641,7 +3641,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 132,
@@ -3650,7 +3650,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 133,
@@ -3659,7 +3659,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 134,
@@ -3668,7 +3668,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 135,
@@ -3677,7 +3677,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.50"
   }
 ];
 
@@ -3689,7 +3689,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 79.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.65"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 2,
@@ -3698,7 +3698,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 76.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.45"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 3,
@@ -3707,7 +3707,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 75.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.44"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 4,
@@ -3716,7 +3716,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 75.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.41"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 5,
@@ -3725,7 +3725,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 74.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.38"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 6,
@@ -3734,7 +3734,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 74.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.34"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 7,
@@ -3752,7 +3752,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.31"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 9,
@@ -3761,7 +3761,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.28"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 10,
@@ -3770,7 +3770,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.26"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 11,
@@ -3779,7 +3779,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.23"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 12,
@@ -3788,7 +3788,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 71.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.19"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 13,
@@ -3797,7 +3797,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 71.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.17"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 14,
@@ -3806,7 +3806,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 70.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.11"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 15,
@@ -3815,7 +3815,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 70.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.10"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 16,
@@ -3824,7 +3824,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.07"
+    "costPerRun": "$0.08"
   },
   {
     "rank": 17,
@@ -3833,7 +3833,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.05"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 18,
@@ -3842,7 +3842,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.04"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 19,
@@ -3851,7 +3851,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.01"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 20,
@@ -3860,7 +3860,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.01"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 21,
@@ -3869,7 +3869,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 22,
@@ -3878,7 +3878,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.96"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 23,
@@ -3887,7 +3887,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.94"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 24,
@@ -3896,7 +3896,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.93"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 25,
@@ -3905,7 +3905,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.92"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 26,
@@ -3914,7 +3914,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 66.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.89"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 27,
@@ -3923,7 +3923,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 66.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.86"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 28,
@@ -3932,7 +3932,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.84"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 29,
@@ -3941,7 +3941,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.81"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 30,
@@ -3950,7 +3950,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.81"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 31,
@@ -3959,7 +3959,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.83"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 32,
@@ -3968,7 +3968,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.83"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 33,
@@ -3977,7 +3977,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.81"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 34,
@@ -3986,7 +3986,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.81"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 35,
@@ -3995,7 +3995,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.80"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 36,
@@ -4004,7 +4004,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.78"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 37,
@@ -4013,7 +4013,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.76"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 38,
@@ -4022,7 +4022,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 61.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.74"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 39,
@@ -4031,7 +4031,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 61.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.72"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 40,
@@ -4040,7 +4040,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.71"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 41,
@@ -4049,7 +4049,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.71"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 42,
@@ -4058,7 +4058,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.70"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 43,
@@ -4067,7 +4067,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.69"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 44,
@@ -4076,7 +4076,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.67"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 45,
@@ -4085,7 +4085,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.66"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 46,
@@ -4094,7 +4094,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.65"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 47,
@@ -4103,7 +4103,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.64"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 48,
@@ -4112,7 +4112,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.62"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 49,
@@ -4121,7 +4121,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.62"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 50,
@@ -4130,7 +4130,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.62"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 51,
@@ -4139,7 +4139,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.60"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 52,
@@ -4148,7 +4148,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.59"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 53,
@@ -4157,7 +4157,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.56"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 54,
@@ -4166,7 +4166,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.56"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 55,
@@ -4175,7 +4175,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.54"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 56,
@@ -4184,7 +4184,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.53"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 57,
@@ -4193,7 +4193,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.52"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 58,
@@ -4202,7 +4202,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.51"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 59,
@@ -4211,7 +4211,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 60,
@@ -4220,7 +4220,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.49"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 61,
@@ -4229,7 +4229,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.48"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 62,
@@ -4238,7 +4238,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.46"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 63,
@@ -4247,7 +4247,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 51.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.44"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 64,
@@ -4256,7 +4256,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.41"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 65,
@@ -4265,7 +4265,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.41"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 66,
@@ -4274,7 +4274,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.40"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 67,
@@ -4283,7 +4283,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.39"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 68,
@@ -4292,7 +4292,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.38"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 69,
@@ -4301,7 +4301,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.38"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 70,
@@ -4310,7 +4310,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.37"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 71,
@@ -4319,7 +4319,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.35"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 72,
@@ -4328,7 +4328,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.35"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 73,
@@ -4337,7 +4337,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.34"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 74,
@@ -4346,7 +4346,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.33"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 75,
@@ -4355,7 +4355,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.31"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 76,
@@ -4364,7 +4364,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.30"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 77,
@@ -4373,7 +4373,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.29"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 78,
@@ -4382,7 +4382,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.27"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 79,
@@ -4391,7 +4391,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.26"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 80,
@@ -4400,7 +4400,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 81,
@@ -4409,7 +4409,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 82,
@@ -4418,7 +4418,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 83,
@@ -4427,7 +4427,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 84,
@@ -4436,7 +4436,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 85,
@@ -4445,7 +4445,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 86,
@@ -4454,7 +4454,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 87,
@@ -4463,7 +4463,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 88,
@@ -4472,7 +4472,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 89,
@@ -4481,7 +4481,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 90,
@@ -4490,7 +4490,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 91,
@@ -4499,7 +4499,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 92,
@@ -4508,7 +4508,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 93,
@@ -4517,7 +4517,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 94,
@@ -4526,7 +4526,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 95,
@@ -4535,7 +4535,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 96,
@@ -4544,7 +4544,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 97,
@@ -4553,7 +4553,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 98,
@@ -4562,7 +4562,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 99,
@@ -4571,7 +4571,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 100,
@@ -4580,7 +4580,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 101,
@@ -4589,7 +4589,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 102,
@@ -4598,7 +4598,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 103,
@@ -4607,7 +4607,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.31"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 104,
@@ -4616,7 +4616,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 105,
@@ -4625,7 +4625,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 106,
@@ -4634,7 +4634,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 107,
@@ -4643,7 +4643,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 108,
@@ -4652,7 +4652,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 109,
@@ -4661,7 +4661,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 110,
@@ -4670,7 +4670,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 111,
@@ -4679,7 +4679,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 112,
@@ -4688,7 +4688,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 113,
@@ -4697,7 +4697,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 114,
@@ -4706,7 +4706,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.29"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 115,
@@ -4715,7 +4715,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 116,
@@ -4724,7 +4724,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 117,
@@ -4733,7 +4733,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 118,
@@ -4742,7 +4742,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 119,
@@ -4751,7 +4751,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 120,
@@ -4760,7 +4760,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 121,
@@ -4769,7 +4769,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 122,
@@ -4778,7 +4778,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 123,
@@ -4787,7 +4787,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 124,
@@ -4796,7 +4796,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 125,
@@ -4805,7 +4805,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.27"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 126,
@@ -4814,7 +4814,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 127,
@@ -4823,7 +4823,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 128,
@@ -4832,7 +4832,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 129,
@@ -4841,7 +4841,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 130,
@@ -4850,7 +4850,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 131,
@@ -4859,7 +4859,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 132,
@@ -4868,7 +4868,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$1.10"
   },
   {
     "rank": 133,
@@ -4877,7 +4877,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 134,
@@ -4886,7 +4886,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 135,
@@ -4895,7 +4895,7 @@ export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.24"
+    "costPerRun": "$0.50"
   }
 ];
 
@@ -4926,7 +4926,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 99.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.10 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 2,
@@ -4935,7 +4935,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 99.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.10 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 3,
@@ -4944,7 +4944,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 98.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 4,
@@ -4953,7 +4953,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 97.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.10 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 5,
@@ -4962,7 +4962,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 97.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.12 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 6,
@@ -4971,7 +4971,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 96.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.08"
   },
   {
     "rank": 7,
@@ -4980,7 +4980,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 96.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 8,
@@ -4989,7 +4989,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 95.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.10 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 9,
@@ -4998,7 +4998,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 95.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.18 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 10,
@@ -5007,7 +5007,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 94.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.45 / 1M tok"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 11,
@@ -5016,7 +5016,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 94.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.15 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 12,
@@ -5025,7 +5025,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 93.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 13,
@@ -5034,7 +5034,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 92.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.15 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 14,
@@ -5043,7 +5043,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 92.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.15 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 15,
@@ -5052,7 +5052,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 91.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 16,
@@ -5061,7 +5061,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 91.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.35 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 17,
@@ -5070,7 +5070,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 90.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 18,
@@ -5079,7 +5079,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 90.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 19,
@@ -5088,7 +5088,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 89.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.50 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 20,
@@ -5097,7 +5097,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 89.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.60 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 21,
@@ -5106,7 +5106,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 88.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 22,
@@ -5115,7 +5115,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 87.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 23,
@@ -5124,7 +5124,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 87.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.15 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 24,
@@ -5133,7 +5133,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 86.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.45 / 1M tok"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 25,
@@ -5142,7 +5142,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 86.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.80 / 1M tok"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 26,
@@ -5151,7 +5151,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 85.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 27,
@@ -5160,7 +5160,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 85.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.15 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 28,
@@ -5169,7 +5169,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 84.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 29,
@@ -5178,7 +5178,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 83.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.20 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 30,
@@ -5187,7 +5187,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 83.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 31,
@@ -5196,7 +5196,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 82.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.00 / 1M tok"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 32,
@@ -5205,7 +5205,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 82.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 33,
@@ -5214,7 +5214,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 81.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 34,
@@ -5223,7 +5223,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 81.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.30 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 35,
@@ -5232,7 +5232,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 80.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 36,
@@ -5241,7 +5241,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 80.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 37,
@@ -5250,7 +5250,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 79.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 38,
@@ -5259,7 +5259,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 78.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.35 / 1M tok"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 39,
@@ -5268,7 +5268,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 78.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.50 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 40,
@@ -5277,7 +5277,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 77.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.80 / 1M tok"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 41,
@@ -5286,7 +5286,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 77.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.10 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 42,
@@ -5295,7 +5295,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 76.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.20 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 43,
@@ -5304,7 +5304,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 76.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 44,
@@ -5313,7 +5313,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 75.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 45,
@@ -5322,7 +5322,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 74.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$16.00 / 1M tok"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 46,
@@ -5331,7 +5331,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 74.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.80 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 47,
@@ -5340,7 +5340,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28 / 1M tok"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 48,
@@ -5349,7 +5349,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 73.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 49,
@@ -5358,7 +5358,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$15.00 / 1M tok"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 50,
@@ -5367,7 +5367,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 72.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 51,
@@ -5376,7 +5376,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 71.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 52,
@@ -5385,7 +5385,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 71.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.20 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 53,
@@ -5394,7 +5394,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 70.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$8.00 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 54,
@@ -5403,7 +5403,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.00 / 1M tok"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 55,
@@ -5412,7 +5412,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 69.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 56,
@@ -5421,7 +5421,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28 / 1M tok"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 57,
@@ -5430,7 +5430,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 68.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$16.00 / 1M tok"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 58,
@@ -5439,7 +5439,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$20.00 / 1M tok"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 59,
@@ -5448,7 +5448,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 67.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$22.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 60,
@@ -5457,7 +5457,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 66.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$28.00 / 1M tok"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 61,
@@ -5466,7 +5466,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 66.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28 / 1M tok"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 62,
@@ -5475,7 +5475,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 65.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 63,
@@ -5484,7 +5484,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.15 / 1M tok"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 64,
@@ -5493,7 +5493,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 64.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 65,
@@ -5502,7 +5502,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.60 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 66,
@@ -5511,7 +5511,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 63.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.00 / 1M tok"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 67,
@@ -5520,7 +5520,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 68,
@@ -5529,7 +5529,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 62.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 69,
@@ -5547,7 +5547,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.20 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 71,
@@ -5556,7 +5556,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 60.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 72,
@@ -5565,7 +5565,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 73,
@@ -5574,7 +5574,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 59.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 74,
@@ -5583,7 +5583,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$18.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 75,
@@ -5592,7 +5592,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 58.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 76,
@@ -5601,7 +5601,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 77,
@@ -5610,7 +5610,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 57.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.20 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 78,
@@ -5619,7 +5619,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 56.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$20.00 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 79,
@@ -5628,7 +5628,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 80,
@@ -5637,7 +5637,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 55.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 81,
@@ -5646,7 +5646,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.50 / 1M tok"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 82,
@@ -5655,7 +5655,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 54.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 83,
@@ -5664,7 +5664,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 84,
@@ -5673,7 +5673,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 53.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 85,
@@ -5682,7 +5682,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 86,
@@ -5691,7 +5691,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 52.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.50 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 87,
@@ -5700,7 +5700,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 51.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 88,
@@ -5709,7 +5709,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$12.00 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 89,
@@ -5718,7 +5718,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 50.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 90,
@@ -5727,7 +5727,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.00 / 1M tok"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 91,
@@ -5736,7 +5736,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 49.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 92,
@@ -5745,7 +5745,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.28 / 1M tok"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 93,
@@ -5754,7 +5754,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 48.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 94,
@@ -5763,7 +5763,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 47.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 95,
@@ -5772,7 +5772,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.50 / 1M tok"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 96,
@@ -5781,7 +5781,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 46.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$14.00 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 97,
@@ -5790,7 +5790,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$1.10"
   },
   {
     "rank": 98,
@@ -5799,7 +5799,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 45.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.35 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 99,
@@ -5808,7 +5808,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 100,
@@ -5817,7 +5817,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 44.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 101,
@@ -5826,7 +5826,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$18.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 102,
@@ -5835,7 +5835,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 43.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.25 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 103,
@@ -5844,7 +5844,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 42.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.50 / 1M tok"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 104,
@@ -5853,7 +5853,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 105,
@@ -5862,7 +5862,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 41.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$18.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 106,
@@ -5871,7 +5871,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$8.00 / 1M tok"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 107,
@@ -5880,7 +5880,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 40.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$14.00 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 108,
@@ -5889,7 +5889,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.40 / 1M tok"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 109,
@@ -5898,7 +5898,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 39.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 110,
@@ -5907,7 +5907,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 111,
@@ -5916,7 +5916,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 38.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.35 / 1M tok"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 112,
@@ -5925,7 +5925,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 37.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 113,
@@ -5934,7 +5934,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 114,
@@ -5943,7 +5943,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 36.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 115,
@@ -5952,7 +5952,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 116,
@@ -5961,7 +5961,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 35.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 117,
@@ -5970,7 +5970,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 118,
@@ -5979,7 +5979,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 34.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.20 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 119,
@@ -5988,7 +5988,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 33.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 120,
@@ -5997,7 +5997,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 121,
@@ -6006,7 +6006,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 32.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 122,
@@ -6015,7 +6015,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.8,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.00 / 1M tok"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 123,
@@ -6024,7 +6024,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 31.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 124,
@@ -6033,7 +6033,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$25.00 / 1M tok"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 125,
@@ -6042,7 +6042,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 30.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.00 / 1M tok"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 126,
@@ -6051,7 +6051,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.20 / 1M tok"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 127,
@@ -6060,7 +6060,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 29.0,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$18.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 128,
@@ -6069,7 +6069,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 28.4,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 129,
@@ -6078,7 +6078,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.9,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 130,
@@ -6087,7 +6087,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 27.3,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 131,
@@ -6096,7 +6096,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.7,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 132,
@@ -6105,7 +6105,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 26.2,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 133,
@@ -6114,7 +6114,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.6,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00 / 1M tok"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 134,
@@ -6123,7 +6123,7 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 25.1,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$18.00 / 1M tok"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 135,
@@ -6132,6 +6132,6 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "score": 24.5,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$18.00 / 1M tok"
+    "costPerRun": "$15.00"
   }
 ];

@@ -87,26 +87,26 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       modelId: 'model-gpt-6-astra',
       rank: 1,
       elo: 1420,
-      price: '$7.95 / 1M input',
+      price: '$5.00 / 1M input',
       badge: 'SWE-bench 98%',
       tierAvailability: 'Available in ChatGPT Plus ($20/mo, limited caps), unmetered in Pro ($200/mo) & API.',
       why: 'Global Rank #1. Unrivaled multi-step tool execution and autonomous operating system & terminal control.',
     },
     valuePick: {
-      name: 'DeepSeek-V4-Pro',
-      modelId: 'model-deepseek-v4-pro-0813',
+      name: 'DeepSeek-V4.1-Flash',
+      modelId: 'model-deepseek-v4-1-flash',
       rank: 10,
-      elo: 1404,
-      price: '$0.75 / 1M input',
-      savings: '90.6% cheaper',
-      tierAvailability: 'Available via API ($0.75/1M) & Apache 2.0 open weights.',
-      why: 'Delivers ~98.8% of frontier coding Elo at 1/10th the cost of proprietary APIs. Ideal for high-frequency test loops and CI/CD.',
+      elo: 1396,
+      price: '$0.14 / 1M input',
+      savings: '97.2% cheaper',
+      tierAvailability: 'Available via API ($0.14 in / $0.56 out) & Apache 2.0 open weights.',
+      why: 'Delivers top-10 coding Elo at an industry-low $0.14/1M with 4-token speculative MTP at 160+ tokens/sec.',
     },
     speedPick: {
       name: 'Gemini 3.8 Flash',
       modelId: 'model-gemini-3-8-flash',
       metric: 'Sub-300ms TTFT',
-      tierAvailability: 'Available in Gemini Advanced ($20/mo) & API ($0.85/1M).',
+      tierAvailability: 'Available in Gemini Advanced ($20/mo) & API ($0.10/1M).',
       why: 'Instant inline code autocomplete and instantaneous single-function generation.',
     },
     localPick: {
@@ -131,7 +131,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       modelId: 'model-claude-opus-5',
       rank: 3,
       elo: 1416,
-      price: '$7.85 / 1M input',
+      price: '$15.00 / 1M input',
       badge: 'Reasoning Leader',
       tierAvailability: 'Available in Claude Pro ($20/mo, usage caps), unmetered in API & Team.',
       why: 'Exceptional test-time reasoning density and nuanced step-by-step mathematical proof verification.',
@@ -150,7 +150,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       name: 'Claude Fable 5.1',
       modelId: 'model-claude-fable-5-1',
       metric: 'Adaptive Thinking',
-      tierAvailability: 'Commercial API only ($7.90/1M, Bedrock, Vertex). Excluded from Claude Pro.',
+      tierAvailability: 'Commercial API only ($5.00/1M, Bedrock, Vertex). Excluded from Claude Pro.',
       why: 'Dynamically allocates reasoning token budget based on query complexity to avoid unnecessary latency.',
     },
     localPick: {
@@ -175,9 +175,9 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       modelId: 'model-claude-fable-5-1',
       rank: 2,
       elo: 1418,
-      price: '$7.90 / 1M input',
+      price: '$5.00 / 1M input',
       badge: '1M Native Window',
-      tierAvailability: 'Commercial API ($7.90/1M, $0.25 prompt cache). Excluded from Claude Pro.',
+      tierAvailability: 'Commercial API ($5.00/1M, $0.25 prompt cache). Excluded from Claude Pro.',
       why: 'Superior document understanding and 99.9% needle retrieval accuracy across full 1M token windows with prompt caching.',
     },
     valuePick: {
@@ -185,9 +185,9 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       modelId: 'model-gemini-3-8-flash',
       rank: 15,
       elo: 1395,
-      price: '$0.85 / 1M input',
+      price: '$0.10 / 1M input',
       savings: '2M Context King',
-      tierAvailability: 'Included in Gemini Advanced ($20/mo) and API ($0.85/1M).',
+      tierAvailability: 'Included in Gemini Advanced ($20/mo) and API ($0.10/1M).',
       why: 'The only frontier model offering 2,000,000 tokens of context at sub-$1/1M pricing. Ingests 10 full codebases simultaneously.',
     },
     speedPick: {
@@ -219,9 +219,9 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       modelId: 'model-gpt-5-6-sol',
       rank: 4,
       elo: 1415,
-      price: '$7.80 / 1M input',
+      price: '$3.00 / 1M input',
       badge: 'Enterprise SLA',
-      tierAvailability: 'Available in ChatGPT Plus ($20/mo) and OpenAI API ($7.80/1M).',
+      tierAvailability: 'Available in ChatGPT Plus ($20/mo) and OpenAI API ($3.00/1M).',
       why: 'Maximum reliability for mission-critical enterprise workloads with strict zero-data-retention guarantees.',
     },
     valuePick: {
@@ -489,23 +489,23 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   {selected20Tab === 'deepseek' && (
                     <>
                       <h4 className="text-lg font-bold text-zinc-100 font-sans flex items-center gap-2">
-                        <span>26.6M Tokens on DeepSeek-V4-Pro</span>
+                        <span>80M+ Tokens on DeepSeek-V4.1-Flash</span>
                       </h4>
                       <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-                        At <strong>$0.75 per 1M tokens</strong>, your $20 purchases an astonishing <strong>26,666,000 tokens</strong> of verified 1404 Elo intelligence.
+                        At <strong>$0.14 in / $0.56 out</strong> per 1M tokens, your $20 purchases an astonishing <strong>81,600,000+ blended tokens</strong> (or 142M prompt tokens) of verified 1396 Elo intelligence.
                       </p>
                       <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
                         <div className="flex justify-between">
                           <span className="text-zinc-500">Equivalent Reading:</span>
-                          <span className="text-emerald-400 font-semibold">~53 Complete Textbooks</span>
+                          <span className="text-emerald-400 font-semibold">~160 Complete Textbooks</span>
                         </div>
                         <div className="flex justify-between">
                           <span className="text-zinc-500">Code Refactors:</span>
-                          <span className="text-emerald-400 font-semibold">~13,300 Deep Queries</span>
+                          <span className="text-emerald-400 font-semibold">~40,000 Autonomous Steps</span>
                         </div>
                         <div className="flex justify-between">
                           <span className="text-zinc-500">Typical Duration:</span>
-                          <span className="text-emerald-400 font-semibold">4 to 8 Months of Usage</span>
+                          <span className="text-emerald-400 font-semibold">8 to 14 Months of Usage</span>
                         </div>
                       </div>
                     </>

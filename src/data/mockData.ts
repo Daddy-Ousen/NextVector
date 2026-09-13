@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-13-deepseek-v41',
+    year: 2026,
+    month: 'Sep 13',
+    title: 'DeepSeek Releases DeepSeek-V4.1-Flash with MLA-2 and 4-Token MTP at $0.14/1M Pricing',
+    category: 'AI Breakthrough',
+    summary: 'DeepSeek introduces Multi-Head Latent Attention v2 (MLA-2) compressing KV cache by 40% and 4-token speculative decoding generating 160+ tokens/sec, setting a new industry price floor of $0.14/1M input.',
+    impactScore: 97,
+    keyShift: 'Shattering the inference cost barrier for autonomous agent swarms with 1396 Arena Elo at sub-dollar pricing.',
+    articleSlug: 'deepseek-releases-v4-1-flash-mla-2-price-floor'
+  },
+  {
     id: 'time-2026-09-13-gemini3',
     year: 2026,
     month: 'Sep 13',
@@ -509,40 +520,49 @@ export const MOCK_DAILY_BRIEFING = {
       summary: 'Mistral AI published Apache 2.0 weights for a 670B model that dynamically skips middle transformer blocks on low-entropy tokens, achieving 89.2% on MMLU-Pro and 84.1% on SWE-bench at 60% lower inference FLOPs.',
       whyItMatters: 'Proves dynamic layer skipping can match closed frontier models while drastically slashing serving costs for enterprise coding and autonomous agent swarms.',
       articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
-    }
+    },
+    {
+      id: 'brief-6',
+      headline: 'DeepSeek Releases DeepSeek-V4.1-Flash: Multi-Head Latent Attention v2 at $0.14/1M Pricing',
+      category: 'ai' as const,
+      urgency: 'Critical Signal' as const,
+      summary: 'DeepSeek deployed V4.1-Flash across its API and Chatbot Arena, using MLA-2 to compress KV cache footprints by 40% and 4-token MTP to sustain 160+ tokens/sec at an industry price floor of $0.14/1M input.',
+      whyItMatters: 'Achieves 1396 Arena Elo (outperforming Gemini 3.8 Flash) at 50x lower cost than frontier proprietary models, democratizing high-frequency autonomous agent loops.',
+      articleSlug: 'deepseek-releases-v4-1-flash-mla-2-price-floor'
+    },
   ]
 };
 
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
+    tag: 'DeepSeek V4.1 Flash',
+    text: 'DeepSeek launches 280B MoE with MLA-2 and 4-token MTP, setting $0.14/1M price floor',
+    articleSlug: 'deepseek-releases-v4-1-flash-mla-2-price-floor'
+  },
+  {
+    id: 'sig-2',
     tag: 'Gemini 3 Deep Think',
     text: 'Latent MCTS paired with Lean 4 formal verification solves 4 IMO problems at Gold-Medal tier',
     articleSlug: 'deepmind-gemini-3-deep-think-alphaproof-2-imo-gold'
   },
   {
-    id: 'sig-2',
+    id: 'sig-3',
     tag: 'NVIDIA & TSMC CPO',
     text: '1.6 Tbps co-packaged optical engines taped out for Rubin Ultra, reducing power by 72%',
     articleSlug: 'nvidia-tsmc-broadcom-tape-out-1-6t-silicon-photonics-cpo'
   },
   {
-    id: 'sig-3',
-    tag: 'Caltech & AWS Quantum',
-    text: 'Biased-noise cat qubits achieve fault-tolerant logical gates with 9:1 physical overhead in Science',
-    articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
-  },
-  {
     id: 'sig-4',
-    tag: 'JWST Exoplanets',
-    text: '4.2-sigma detection of atmospheric DMS and carbon disulfide confirms hycean ocean world K2-18b',
-    articleSlug: 'jwst-detects-dimethyl-sulfide-carbon-disulfide-k2-18b'
-  },
-  {
-    id: 'sig-5',
     tag: 'Mistral Large 3',
     text: '670B Mixture-of-Depths Apache 2.0 release cuts inference FLOPs by 60% with native FP8',
     articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
+  },
+  {
+    id: 'sig-5',
+    tag: 'Caltech & AWS Quantum',
+    text: 'Biased-noise cat qubits achieve fault-tolerant logical gates with 9:1 physical overhead in Science',
+    articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
   }
 ];
 

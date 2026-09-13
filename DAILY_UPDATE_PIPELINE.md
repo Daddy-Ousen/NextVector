@@ -24,7 +24,11 @@ When receiving this trigger, the agent **MUST** execute the complete 7-stage wor
 
 ### Core Objectives & Rulebook Alignment:
 1. **At least 5 new intelligence reports** published to `src/data/articlesData.ts` covering verifiable developments from the **last 48 hours**, rigorously structured using the **Three-Question Framework** ([Rulebook §2](./EDITORIAL_RULEBOOK.md#2-the-three-question-analytical-framework)).
-2. **AI Model & Benchmark Check**: If any new frontier or open-weights model was released or updated, create a dedicated report, register the model in `src/data/modelsData.ts`, and update the benchmarks in `src/data/benchmarksData.ts` ([Rulebook §5](./EDITORIAL_RULEBOOK.md#5-article-data-schema--field-specifications)).
+2. **Mandatory Zero-Miss AI Model & Benchmark Synchronization**: If ANY new frontier or open-weights model, checkpoint, canary drop, or API tier was released or updated in the last 72 hours, execute a mandatory 4-way synchronization:
+   - Create a dedicated standalone news article in `src/data/articlesData.ts`.
+   - Register the model in `src/data/modelsData.ts` with verified pricing cross-checked against official lab docs, OpenRouter, and Fireworks APIs (synthetic formulas strictly prohibited).
+   - Update and re-rank all applicable benchmark leaderboards in `src/data/benchmarksData.ts` (LMSYS Chatbot Arena, SWE-bench, OSWorld, etc.) including recalculated Elo ranks and cost-per-run metrics.
+   - Update the Model Decision Matrix in `src/components/models/ModelDecisionGuide.tsx` (frontier/value/speed recommendations and $20/month ROI calculators).
 3. **100% Factuality & Zero Hallucination**: No fabricated specs, parameters, or DOIs ([Rulebook §3.1](./EDITORIAL_RULEBOOK.md#31-strict-factuality-zero-hallucination-policy)).
 4. **100% Unique, Non-Generic Images**: Exactly **0 duplicate images** across the entire publication. Tier-1 public domain, Tier-2 bespoke technical diagrams, or Tier-3 verified URLs ([Rulebook §4](./EDITORIAL_RULEBOOK.md#4-visual-assets--media-standards-strict-compliance)).
 5. **Sole Authorship by Robiul Hasan**: Every report authored by Founder & Editor-in-Chief Robiul Hasan ([Rulebook §6.1](./EDITORIAL_RULEBOOK.md#61-sole-authorship)).
@@ -58,7 +62,7 @@ Search reputable primary sources adhering to the **Primary Sourcing Hierarchy** 
 
 | Beat | Primary Sources to Query | Focus Areas |
 | :--- | :--- | :--- |
-| **1. Frontier AI & Reasoning** | OpenAI, DeepMind, Anthropic, Meta AI, Mistral, xAI, Microsoft Research, arXiv (cs.AI, cs.CL, cs.LG) | Architecture releases, test-time compute, KV cache breakthroughs, multi-agent frameworks, open weights. |
+| **1. Frontier AI & Reasoning (Zero-Miss Model Watch)** | OpenAI, DeepMind, Anthropic, Meta AI, Mistral, xAI, DeepSeek, Qwen/Alibaba, Microsoft Research, Hugging Face Hub (Trending & New Models), LMSYS Chatbot Arena (Canary models & new battle slots), OpenRouter & Fireworks API catalogs, arXiv (cs.AI, cs.CL, cs.LG), and Lab Technical GitHub repos | New architecture drops, MoE/MLA breakthroughs, canary API releases, quantized open weights, test-time compute, KV cache compression, multi-agent frameworks. |
 | **2. Silicon & Infrastructure** | TSMC, ASML, NVIDIA, AMD, Cerebras, Intel Labs, SK Hynix, Micron, Hyperscale Cloud | Wafer yields, advanced packaging (CoWoS, HBM3E/4), High-NA EUV, liquid-cooled rack architectures. |
 | **3. Systems & Cybersecurity** | Linux Foundation, CISA, US-CERT, PyTorch, Kubernetes, GitHub Security, kernel trees | Mainline kernel merges, zero-days, supply chain exploits, BGP hijacking, memory safety migrations. |
 | **4. Applied Science & Space** | NASA, ESA, STScI (Webb), ESO, NIST, Nature, Science, NEJM, APS Physics | Space telescope cosmic dawn discoveries, quantum sensors, fusion magnets, in-vivo CRISPR, solid-state batteries. |
@@ -74,28 +78,70 @@ Search reputable primary sources adhering to the **Primary Sourcing Hierarchy** 
 
 ---
 
-## Stage 3: AI Model Release & Benchmark Synchronization
+## Stage 3: Zero-Miss AI Model Release & 4-Way Synchronization
 
-Perform a dedicated search: **Were any AI models or checkpoints released in the last 48 hours?**
+Perform an exhaustive, multi-source sweep to answer: **Were any AI models, checkpoints, canary previews, or API weights released in the last 72 hours?**
 
-### If a new model WAS released:
-1. **Publish Release Article**:
-   - Write an in-depth deconstruction in `src/data/articlesData.ts` focusing on model architecture, context window, tokenizer, benchmark results, and pricing.
-2. **Register in `src/data/modelsData.ts`**:
-   - Append to `ALL_135_MODELS` with full `AIModel` schema ([Rulebook §5](./EDITORIAL_RULEBOOK.md#5-article-data-schema--field-specifications)):
-     - `id`: `model-{developer}-{name}` (kebab-case)
-     - `name`, `developer`, `releaseDate`, `modelType`, `modalities`
-     - `contextWindow`, `parameters`, `pricing` (input/output/cached per 1M tokens)
-     - `openSourceStatus`, `license`, `hardwareRequirements`
-     - `benchmarks` (Chatbot Arena Elo, SWE-bench, etc.)
-     - `keyImprovements`, `knownLimitations`, `architectureNotes`
-     - `link`
-3. **Update Benchmarks in `src/data/benchmarksData.ts`**:
-   - Insert model entry into applicable leaderboards (`OSWorld`, `WebArena`, `SWE-bench`, `Cyber-Eval`, `Chatbot Arena`, or `Price-to-Performance Pareto`).
-   - Recalibrate ranks as appropriate.
+### 3.1 Multi-Source Discovery Channels (Zero-Miss Protocol)
+Never rely on arXiv preprints alone. Many labs (such as DeepSeek, Mistral, Alibaba/Qwen, or Meta) drop weights, API endpoints, or LMSYS arena battle slots days before submitting formal papers. The daily sweep **MUST** explicitly audit:
+1. **LMSYS Chatbot Arena (`arena.lmsys.org`)**: Check newly added battle slots, canary testing models (e.g., anonymous preview IDs), and updated Elo leaderboard rankings.
+2. **Hugging Face Model Hub (`huggingface.co/models?sort=createdAt`)**: Scan newly uploaded weights from verified lab organizations (`deepseek-ai`, `meta-llama`, `mistralai`, `Qwen`, `google`, `microsoft`).
+3. **API Aggregators & Router Providers**: Audit **OpenRouter** (`openrouter.ai/models`) and **Fireworks AI** (`fireworks.ai/models`) for newly hosted model IDs, pricing tiers, and context length support.
+4. **Lab GitHub Repositories & Release Tags**: Inspect `github.com/deepseek-ai`, `github.com/vllm-project/vllm`, `github.com/sgl-project/sglang`, and official lab blogs.
+
+---
+
+### 3.2 Mandatory 4-Way Synchronization Workflow
+Whenever a new model or major checkpoint is detected, the agent **MUST** execute all four synchronization steps without omission:
+
+```mermaid
+flowchart TD
+    Detect["Model Release Detected (Lab / Arena / HF / OpenRouter)"] --> Art["1. Dedicated Standalone Article
+(src/data/articlesData.ts)"]
+    Detect --> Reg["2. Model Registry & Real Pricing
+(src/data/modelsData.ts)"]
+    Detect --> Bench["3. Benchmark Leaderboards & Elo Reranking
+(src/data/benchmarksData.ts)"]
+    Detect --> Guide["4. Decision Matrix & ROI Recalculation
+(src/components/models/ModelDecisionGuide.tsx)"]
+```
+
+#### Step 1: Standalone News Report (`src/data/articlesData.ts`)
+- The model release **MUST** be treated as a dedicated standalone news article (never just a bullet point in a briefing).
+- Rigorously apply the **Three-Question Framework**:
+  - **What Happened**: Exact parameter counts (total vs. active for MoE), architecture changes (e.g. MLA-2, MTP, RoPE theta, FP8/FP4 training), context window, and benchmark numbers.
+  - **Why It Matters**: Cost per million tokens, inference hardware requirements (e.g. VRAM footprint, KV cache compression), and competitive positioning against OpenAI/Anthropic/Google flagships.
+  - **What Could Happen Next**: Impact on open-weights ecosystem, self-hosting economics, and enterprise displacement over the next 6–18 months.
+- Generate a bespoke, high-resolution visual asset saved to `public/images/articles/` (Tier-2 technical diagram or Tier-1 render, 0 duplicate images).
+
+#### Step 2: Model Registry & Cross-Checked Pricing (`src/data/modelsData.ts`)
+- Append the model to `ALL_135_MODELS` (or current catalog array) adhering strictly to the `AIModel` schema.
+- **Accurate Pricing Verification**:
+  - **PROHIBITED**: Synthetic, linear, or stair-stepped pricing formulas (e.g. `8.00 - rank * 0.05`).
+  - **REQUIRED**: Cross-check prices against official lab developer pricing, OpenRouter API rates, and Fireworks AI serverless rates:
+    - Frontier reasoning flagships (e.g. Opus class): ~$15.00 in / $75.00 out.
+    - Balanced frontier (e.g. Sonnet/Astra): ~$3.00–$5.00 in / $15.00–$20.00 out.
+    - High-efficiency flash tiers: ~$0.10–$0.15 in / $0.40–$0.60 out.
+    - Cached token discount ratios (typically 75%–90% lower than base input).
+
+#### Step 3: Leaderboard Re-ranking & Cost Sync (`src/data/benchmarksData.ts`)
+- **LMSYS Chatbot Arena (`ARENA_LEADERBOARD_ENTRIES`)**:
+  - Insert or update the model entry with empirical Arena Elo, 95% confidence intervals, win rates, and verified `costPerRun` (`0.75 * inputPrice + 0.25 * outputPrice`).
+  - Automatically recalculate and resort all `rank` values across the entire table.
+- **Specialized Leaderboards**:
+  - Update `SWE_BENCH_LEADERBOARD_ENTRIES`, `OSWorld`, `WebArena`, `Cyber-Eval`, and `Price-to-Performance Pareto` tables as appropriate, recalculating ranks and Pareto frontiers.
+
+#### Step 4: Decision Matrix Recalibration (`src/components/models/ModelDecisionGuide.tsx`)
+- Review and update the **Decision Matrix Recommendations** (`USE_CASE_GUIDES`):
+  - Check whether the new model displaces existing `frontierPick`, `valuePick`, or `speedPick` in any category (Autonomous Coding, Deep STEM Reasoning, High-Throughput Agents, Multimodal Vision, or Edge / On-Premise).
+- Recalibrate the **$20/Month Budget Optimizer**:
+  - Update token volume calculations (e.g. calculating exactly how many millions of blended tokens $20 purchases at the new model's rate).
+  - Update developer IDE plan comparisons and pay-as-you-go router deposit projections.
+
+---
 
 ### If NO new model was released:
-- Note in the daily brief that model leaderboards remain stable, and proceed to general intelligence reports.
+- Explicitly confirm in the execution notes that LMSYS Arena, Hugging Face, OpenRouter, and lab repositories were verified with zero new drops in the last 72 hours, and proceed to general intelligence beats.
 
 ---
 
@@ -191,7 +237,11 @@ Execute the mandatory **7-Step Pre-Publication Release Gate** ([Rulebook §7](./
 2. **Step 2: Catalog Deduplication Check**: Confirm title, slug, and topic uniqueness.
 3. **Step 3: Timeline Integrity Check**: Confirm whether any of today's reports meet the Breakthrough Timeline threshold (Impact Score >= 95) and that `MOCK_TIMELINE_EVENTS` is updated, categorized correctly, and sorted reverse-chronologically with `articleSlug` links.
 4. **Step 4: Live Signal Ticker Integrity Check**: Confirm that `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` contains 5 fresh signals matching today's stories with valid `articleSlug` links.
-5. **Step 5: AI Model & Benchmark Synchronization Audit**: Confirm that whenever a new AI model, checkpoint, or canary drop is released or analyzed in today's reports, the model is registered in `src/data/modelsData.ts` with complete `AIModel` schema and corresponding leaderboards in `src/data/benchmarksData.ts` are updated.
+5. **Step 5: AI Model, Benchmark & Decision Matrix Synchronization Audit**: Confirm that whenever a new AI model, checkpoint, or canary drop is released or analyzed:
+   - Dedicated standalone report published in `src/data/articlesData.ts`.
+   - Registered in `src/data/modelsData.ts` with cross-checked real pricing (lab docs + OpenRouter/Fireworks).
+   - LMSYS Chatbot Arena and specialized benchmark leaderboards in `src/data/benchmarksData.ts` are updated and ranks recalculated.
+   - Decision Matrix in `src/components/models/ModelDecisionGuide.tsx` is updated with fresh picks and $20/mo ROI math.
 6. **Step 6: Image Uniqueness & Validation Audit**:
    Run a verification script to confirm:
    - Total articles == expected count.

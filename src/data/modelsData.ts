@@ -172,9 +172,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Scale Multi-Expert Cluster",
     "pricing": {
-      "inputPer1M": 7.95,
-      "outputPer1M": 31.8,
-      "cachedInputPer1M": 1.59
+      "inputPer1M": 5.0,
+      "outputPer1M": 20.0,
+      "cachedInputPer1M": 1.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -223,9 +223,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Scale Multi-Expert Cluster",
     "pricing": {
-      "inputPer1M": 7.9,
-      "outputPer1M": 31.6,
-      "cachedInputPer1M": 1.58
+      "inputPer1M": 5.0,
+      "outputPer1M": 20.0,
+      "cachedInputPer1M": 1.0
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -274,9 +274,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Scale Multi-Expert Cluster",
     "pricing": {
-      "inputPer1M": 7.85,
-      "outputPer1M": 31.4,
-      "cachedInputPer1M": 1.57
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -325,9 +325,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Scale Multi-Expert Cluster",
     "pricing": {
-      "inputPer1M": 7.8,
-      "outputPer1M": 31.2,
-      "cachedInputPer1M": 1.56
+      "inputPer1M": 3.0,
+      "outputPer1M": 12.0,
+      "cachedInputPer1M": 0.75
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -376,9 +376,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.75,
-      "outputPer1M": 31,
-      "cachedInputPer1M": 1.55
+      "inputPer1M": 2.0,
+      "outputPer1M": 2.0,
+      "cachedInputPer1M": 0.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -427,9 +427,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.7,
-      "outputPer1M": 30.8,
-      "cachedInputPer1M": 0.25
+      "inputPer1M": 8.0,
+      "outputPer1M": 32.0,
+      "cachedInputPer1M": 1.6
     },
     "openSourceStatus": "Research Weights",
     "license": "Restricted Critical Infrastructure / Defense License",
@@ -483,9 +483,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Scale Multi-Expert Cluster",
     "pricing": {
-      "inputPer1M": 7.65,
-      "outputPer1M": 30.6,
-      "cachedInputPer1M": 1.53
+      "inputPer1M": 5.0,
+      "outputPer1M": 20.0,
+      "cachedInputPer1M": 1.0
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -534,9 +534,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.6,
-      "outputPer1M": 30.4,
-      "cachedInputPer1M": 1.52
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -585,9 +585,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.55,
-      "outputPer1M": 30.2,
-      "cachedInputPer1M": 1.51
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -636,9 +636,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "1.65T MoE (Multi-Head Latent Attention)",
     "pricing": {
-      "inputPer1M": 0.75,
-      "outputPer1M": 2.25,
-      "cachedInputPer1M": 0.11
+      "inputPer1M": 0.55,
+      "outputPer1M": 1.65,
+      "cachedInputPer1M": 0.08
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -687,9 +687,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "2.4T MoE (95B active)",
     "pricing": {
-      "inputPer1M": 7.45,
-      "outputPer1M": 29.8,
-      "cachedInputPer1M": 1.49
+      "inputPer1M": 1.2,
+      "outputPer1M": 3.6,
+      "cachedInputPer1M": 0.3
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -738,9 +738,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.4,
-      "outputPer1M": 29.6,
-      "cachedInputPer1M": 1.48
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -789,9 +789,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.35,
-      "outputPer1M": 29.4,
-      "cachedInputPer1M": 1.47
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -840,9 +840,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.3,
-      "outputPer1M": 29.2,
-      "cachedInputPer1M": 1.46
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -893,9 +893,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 7.25,
-      "outputPer1M": 29,
-      "cachedInputPer1M": 1.45
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -944,9 +944,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.2,
-      "outputPer1M": 28.8,
-      "cachedInputPer1M": 1.44
+      "inputPer1M": 0.08,
+      "outputPer1M": 0.24,
+      "cachedInputPer1M": 0.02
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -995,9 +995,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.15,
-      "outputPer1M": 28.6,
-      "cachedInputPer1M": 1.43
+      "inputPer1M": 0.8,
+      "outputPer1M": 0.8,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1048,9 +1048,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 7.1,
-      "outputPer1M": 28.4,
-      "cachedInputPer1M": 1.42
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1101,9 +1101,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7.05,
-      "outputPer1M": 28.2,
-      "cachedInputPer1M": 1.41
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1152,9 +1152,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 7,
-      "outputPer1M": 28,
-      "cachedInputPer1M": 1.4
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1203,9 +1203,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.95,
-      "outputPer1M": 27.8,
-      "cachedInputPer1M": 1.39
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
+      "cachedInputPer1M": 0.3
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1254,9 +1254,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.9,
-      "outputPer1M": 27.6,
-      "cachedInputPer1M": 1.38
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1305,9 +1305,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.85,
-      "outputPer1M": 27.4,
-      "cachedInputPer1M": 1.37
+      "inputPer1M": 5.0,
+      "outputPer1M": 15.0,
+      "cachedInputPer1M": 1.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1358,9 +1358,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "1.65T MoE (Multi-Head Latent Attention)",
     "pricing": {
-      "inputPer1M": 0.68,
-      "outputPer1M": 2.04,
-      "cachedInputPer1M": 0.1
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.56,
+      "cachedInputPer1M": 0.02
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -1411,9 +1411,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.75,
-      "outputPer1M": 27,
-      "cachedInputPer1M": 1.35
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1462,9 +1462,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.7,
-      "outputPer1M": 26.8,
-      "cachedInputPer1M": 1.34
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1513,9 +1513,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.65,
-      "outputPer1M": 26.6,
-      "cachedInputPer1M": 1.33
+      "inputPer1M": 3.0,
+      "outputPer1M": 9.0,
+      "cachedInputPer1M": 0.75
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1564,9 +1564,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.6,
-      "outputPer1M": 26.4,
-      "cachedInputPer1M": 1.32
+      "inputPer1M": 1.2,
+      "outputPer1M": 3.6,
+      "cachedInputPer1M": 0.3
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1615,9 +1615,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.55,
-      "outputPer1M": 26.2,
-      "cachedInputPer1M": 1.31
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1666,9 +1666,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "27B Dense",
     "pricing": {
-      "inputPer1M": 0.65,
-      "outputPer1M": 1.95,
-      "cachedInputPer1M": 0.1
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -1717,9 +1717,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.45,
-      "outputPer1M": 25.8,
-      "cachedInputPer1M": 1.29
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1768,9 +1768,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "1.65T MoE (Multi-Head Latent Attention)",
     "pricing": {
-      "inputPer1M": 0.64,
-      "outputPer1M": 1.92,
-      "cachedInputPer1M": 0.1
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.56,
+      "cachedInputPer1M": 0.02
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -1819,9 +1819,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.35,
-      "outputPer1M": 25.4,
-      "cachedInputPer1M": 1.27
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1870,9 +1870,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.3,
-      "outputPer1M": 25.2,
-      "cachedInputPer1M": 1.26
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1921,9 +1921,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.25,
-      "outputPer1M": 25,
-      "cachedInputPer1M": 1.25
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -1974,9 +1974,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 6.2,
-      "outputPer1M": 24.8,
-      "cachedInputPer1M": 1.24
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2025,9 +2025,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "1.65T MoE (Multi-Head Latent Attention)",
     "pricing": {
-      "inputPer1M": 0.61,
-      "outputPer1M": 1.83,
-      "cachedInputPer1M": 0.09
+      "inputPer1M": 0.55,
+      "outputPer1M": 1.65,
+      "cachedInputPer1M": 0.08
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -2078,9 +2078,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6.1,
-      "outputPer1M": 24.4,
-      "cachedInputPer1M": 1.22
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2131,9 +2131,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 6.05,
-      "outputPer1M": 24.2,
-      "cachedInputPer1M": 1.21
+      "inputPer1M": 1.25,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.3125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2182,9 +2182,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 6,
-      "outputPer1M": 24,
-      "cachedInputPer1M": 1.2
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2235,9 +2235,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 5.95,
-      "outputPer1M": 23.8,
-      "cachedInputPer1M": 1.19
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2286,9 +2286,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.9,
-      "outputPer1M": 23.6,
-      "cachedInputPer1M": 1.18
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2337,9 +2337,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.85,
-      "outputPer1M": 23.4,
-      "cachedInputPer1M": 1.17
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2388,9 +2388,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.8,
-      "outputPer1M": 23.2,
-      "cachedInputPer1M": 1.16
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2439,9 +2439,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.75,
-      "outputPer1M": 23,
-      "cachedInputPer1M": 1.15
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2492,9 +2492,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 5.7,
-      "outputPer1M": 22.8,
-      "cachedInputPer1M": 1.14
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2543,9 +2543,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.65,
-      "outputPer1M": 22.6,
-      "cachedInputPer1M": 1.13
+      "inputPer1M": 0.8,
+      "outputPer1M": 0.8,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2594,9 +2594,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.6,
-      "outputPer1M": 22.4,
-      "cachedInputPer1M": 1.12
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2645,9 +2645,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.55,
-      "outputPer1M": 22.2,
-      "cachedInputPer1M": 1.11
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2696,9 +2696,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.5,
-      "outputPer1M": 22,
-      "cachedInputPer1M": 1.1
+      "inputPer1M": 5.0,
+      "outputPer1M": 15.0,
+      "cachedInputPer1M": 1.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2747,9 +2747,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "118B (8B active MoE)",
     "pricing": {
-      "inputPer1M": 0.55,
-      "outputPer1M": 1.65,
-      "cachedInputPer1M": 0.08
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.0,
+      "cachedInputPer1M": 0.12
     },
     "openSourceStatus": "Open Weights",
     "license": "Open Weights Commercial",
@@ -2798,9 +2798,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.4,
-      "outputPer1M": 21.6,
-      "cachedInputPer1M": 1.08
+      "inputPer1M": 2.0,
+      "outputPer1M": 2.0,
+      "cachedInputPer1M": 0.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2849,9 +2849,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "1.65T MoE (Multi-Head Latent Attention)",
     "pricing": {
-      "inputPer1M": 0.54,
-      "outputPer1M": 1.62,
-      "cachedInputPer1M": 0.08
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.56,
+      "cachedInputPer1M": 0.02
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -2900,9 +2900,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.3,
-      "outputPer1M": 21.2,
-      "cachedInputPer1M": 1.06
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -2951,9 +2951,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.25,
-      "outputPer1M": 21,
-      "cachedInputPer1M": 1.05
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3004,9 +3004,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.2,
-      "outputPer1M": 20.8,
-      "cachedInputPer1M": 1.04
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3055,9 +3055,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.15,
-      "outputPer1M": 20.6,
-      "cachedInputPer1M": 1.03
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3106,9 +3106,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 5.1,
-      "outputPer1M": 20.4,
-      "cachedInputPer1M": 1.02
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3157,9 +3157,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "276B (12B active MoE)",
     "pricing": {
-      "inputPer1M": 0.51,
-      "outputPer1M": 1.53,
-      "cachedInputPer1M": 0.08
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.0,
+      "cachedInputPer1M": 0.12
     },
     "openSourceStatus": "Open Weights",
     "license": "Open Weights Commercial",
@@ -3208,9 +3208,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "397B (17B active MoE)",
     "pricing": {
-      "inputPer1M": 0.5,
-      "outputPer1M": 1.5,
-      "cachedInputPer1M": 0.07
+      "inputPer1M": 0.4,
+      "outputPer1M": 0.8,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -3261,9 +3261,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 4.95,
-      "outputPer1M": 19.8,
-      "cachedInputPer1M": 0.99
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3314,9 +3314,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 4.9,
-      "outputPer1M": 19.6,
-      "cachedInputPer1M": 0.98
+      "inputPer1M": 1.25,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.3125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3365,9 +3365,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.85,
-      "outputPer1M": 19.4,
-      "cachedInputPer1M": 0.97
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3416,9 +3416,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.8,
-      "outputPer1M": 19.2,
-      "cachedInputPer1M": 0.96
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
+      "cachedInputPer1M": 0.3
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3467,9 +3467,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.75,
-      "outputPer1M": 19,
-      "cachedInputPer1M": 0.95
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3518,9 +3518,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.7,
-      "outputPer1M": 18.8,
-      "cachedInputPer1M": 0.94
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3569,9 +3569,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.65,
-      "outputPer1M": 18.6,
-      "cachedInputPer1M": 0.93
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3622,9 +3622,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 4.6,
-      "outputPer1M": 18.4,
-      "cachedInputPer1M": 0.92
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.025
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3673,9 +3673,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.55,
-      "outputPer1M": 18.2,
-      "cachedInputPer1M": 0.91
+      "inputPer1M": 15.0,
+      "outputPer1M": 60.0,
+      "cachedInputPer1M": 3.75
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3724,9 +3724,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.5,
-      "outputPer1M": 18,
-      "cachedInputPer1M": 0.9
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3775,9 +3775,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.45,
-      "outputPer1M": 17.8,
-      "cachedInputPer1M": 0.89
+      "inputPer1M": 1.5,
+      "outputPer1M": 6.0,
+      "cachedInputPer1M": 0.375
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3826,9 +3826,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.4,
-      "outputPer1M": 17.6,
-      "cachedInputPer1M": 0.88
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3877,9 +3877,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "1.65T MoE (Multi-Head Latent Attention)",
     "pricing": {
-      "inputPer1M": 0.44,
-      "outputPer1M": 1.32,
-      "cachedInputPer1M": 0.07
+      "inputPer1M": 0.14,
+      "outputPer1M": 0.56,
+      "cachedInputPer1M": 0.02
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -3928,9 +3928,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "550B (55B active MoE)",
     "pricing": {
-      "inputPer1M": 4.3,
-      "outputPer1M": 17.2,
-      "cachedInputPer1M": 0.86
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.0,
+      "cachedInputPer1M": 0.12
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -3979,9 +3979,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.25,
-      "outputPer1M": 17,
-      "cachedInputPer1M": 0.85
+      "inputPer1M": 1.5,
+      "outputPer1M": 4.5,
+      "cachedInputPer1M": 0.35
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4030,9 +4030,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.2,
-      "outputPer1M": 16.8,
-      "cachedInputPer1M": 0.84
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4081,9 +4081,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "256k tokens",
     "parameters": "Frontier Scale Multi-Expert Cluster",
     "pricing": {
-      "inputPer1M": 4.15,
-      "outputPer1M": 16.6,
-      "cachedInputPer1M": 0.83
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4132,9 +4132,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4.1,
-      "outputPer1M": 16.4,
-      "cachedInputPer1M": 0.82
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4183,9 +4183,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "27B Dense",
     "pricing": {
-      "inputPer1M": 0.41,
-      "outputPer1M": 1.23,
-      "cachedInputPer1M": 0.06
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -4234,9 +4234,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 4,
-      "outputPer1M": 16,
-      "cachedInputPer1M": 0.8
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4285,9 +4285,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.95,
-      "outputPer1M": 15.8,
-      "cachedInputPer1M": 0.79
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4336,9 +4336,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.9,
-      "outputPer1M": 15.6,
-      "cachedInputPer1M": 0.78
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4387,9 +4387,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 0.39,
-      "outputPer1M": 1.17,
-      "cachedInputPer1M": 0.06
+      "inputPer1M": 0.3,
+      "outputPer1M": 0.3,
+      "cachedInputPer1M": 0.08
     },
     "openSourceStatus": "Open Weights",
     "license": "Open Weights Commercial",
@@ -4438,9 +4438,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "122B (10B active MoE)",
     "pricing": {
-      "inputPer1M": 0.38,
-      "outputPer1M": 1.14,
-      "cachedInputPer1M": 0.06
+      "inputPer1M": 0.4,
+      "outputPer1M": 0.8,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -4489,9 +4489,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.75,
-      "outputPer1M": 15,
-      "cachedInputPer1M": 0.75
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4540,9 +4540,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.7,
-      "outputPer1M": 14.8,
-      "cachedInputPer1M": 0.74
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4591,9 +4591,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 0.37,
-      "outputPer1M": 1.11,
-      "cachedInputPer1M": 0.06
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.4,
+      "cachedInputPer1M": 0.08
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -4642,9 +4642,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.6,
-      "outputPer1M": 14.4,
-      "cachedInputPer1M": 0.72
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4693,9 +4693,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.55,
-      "outputPer1M": 14.2,
-      "cachedInputPer1M": 0.71
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4744,8 +4744,8 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "27B Dense",
     "pricing": {
-      "inputPer1M": 0.35,
-      "outputPer1M": 1.05,
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
       "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
@@ -4795,9 +4795,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.45,
-      "outputPer1M": 13.8,
-      "cachedInputPer1M": 0.69
+      "inputPer1M": 3.0,
+      "outputPer1M": 9.0,
+      "cachedInputPer1M": 0.75
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4846,9 +4846,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.4,
-      "outputPer1M": 13.6,
-      "cachedInputPer1M": 0.68
+      "inputPer1M": 0.8,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -4897,9 +4897,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 0.34,
-      "outputPer1M": 1.02,
-      "cachedInputPer1M": 0.05
+      "inputPer1M": 0.27,
+      "outputPer1M": 1.1,
+      "cachedInputPer1M": 0.07
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -4948,9 +4948,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "31B Dense",
     "pricing": {
-      "inputPer1M": 0.33,
-      "outputPer1M": 0.99,
-      "cachedInputPer1M": 0.05
+      "inputPer1M": 1.25,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.3125
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -4999,9 +4999,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 0.33,
-      "outputPer1M": 0.99,
-      "cachedInputPer1M": 0.05
+      "inputPer1M": 0.35,
+      "outputPer1M": 1.4,
+      "cachedInputPer1M": 0.08
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -5050,9 +5050,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.2,
-      "outputPer1M": 12.8,
-      "cachedInputPer1M": 0.64
+      "inputPer1M": 1.5,
+      "outputPer1M": 4.5,
+      "cachedInputPer1M": 0.35
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5101,8 +5101,8 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "35B (3B active MoE)",
     "pricing": {
-      "inputPer1M": 0.32,
-      "outputPer1M": 0.96,
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
       "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
@@ -5152,9 +5152,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3.1,
-      "outputPer1M": 12.4,
-      "cachedInputPer1M": 0.62
+      "inputPer1M": 3.0,
+      "outputPer1M": 15.0,
+      "cachedInputPer1M": 0.3
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5205,9 +5205,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "128k tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 3.05,
-      "outputPer1M": 12.2,
-      "cachedInputPer1M": 0.61
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5256,9 +5256,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 3,
-      "outputPer1M": 12,
-      "cachedInputPer1M": 0.6
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5307,9 +5307,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.95,
-      "outputPer1M": 11.8,
-      "cachedInputPer1M": 0.59
+      "inputPer1M": 0.3,
+      "outputPer1M": 0.9,
+      "cachedInputPer1M": 0.075
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5358,9 +5358,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.9,
-      "outputPer1M": 11.6,
-      "cachedInputPer1M": 0.58
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5409,9 +5409,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.85,
-      "outputPer1M": 11.4,
-      "cachedInputPer1M": 0.57
+      "inputPer1M": 0.3,
+      "outputPer1M": 0.9,
+      "cachedInputPer1M": 0.075
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5460,9 +5460,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.8,
-      "outputPer1M": 11.2,
-      "cachedInputPer1M": 0.56
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5511,9 +5511,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.75,
-      "outputPer1M": 11,
-      "cachedInputPer1M": 0.55
+      "inputPer1M": 15.0,
+      "outputPer1M": 60.0,
+      "cachedInputPer1M": 3.75
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5564,9 +5564,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 2.7,
-      "outputPer1M": 10.8,
-      "cachedInputPer1M": 0.54
+      "inputPer1M": 0.05,
+      "outputPer1M": 0.2,
+      "cachedInputPer1M": 0.0125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5615,9 +5615,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.65,
-      "outputPer1M": 10.6,
-      "cachedInputPer1M": 0.53
+      "inputPer1M": 0.8,
+      "outputPer1M": 3.2,
+      "cachedInputPer1M": 0.2
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5666,9 +5666,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.6,
-      "outputPer1M": 10.4,
-      "cachedInputPer1M": 0.52
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5717,9 +5717,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "35B (3B active MoE)",
     "pricing": {
-      "inputPer1M": 0.26,
-      "outputPer1M": 0.78,
-      "cachedInputPer1M": 0.04
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -5768,8 +5768,8 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.5,
-      "outputPer1M": 10,
+      "inputPer1M": 2.0,
+      "outputPer1M": 6.0,
       "cachedInputPer1M": 0.5
     },
     "openSourceStatus": "Proprietary API",
@@ -5819,9 +5819,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "1M tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.45,
-      "outputPer1M": 9.8,
-      "cachedInputPer1M": 0.49
+      "inputPer1M": 0.3,
+      "outputPer1M": 0.9,
+      "cachedInputPer1M": 0.075
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5870,9 +5870,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "128k tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 2.4,
-      "outputPer1M": 9.6,
-      "cachedInputPer1M": 0.48
+      "inputPer1M": 0.6,
+      "outputPer1M": 2.4,
+      "cachedInputPer1M": 0.15
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5923,9 +5923,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 2.35,
-      "outputPer1M": 9.4,
-      "cachedInputPer1M": 0.47
+      "inputPer1M": 0.05,
+      "outputPer1M": 0.2,
+      "cachedInputPer1M": 0.0125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -5974,9 +5974,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.3,
-      "outputPer1M": 9.2,
-      "cachedInputPer1M": 0.46
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6025,9 +6025,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.25,
-      "outputPer1M": 9,
-      "cachedInputPer1M": 0.45
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6078,9 +6078,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 2.2,
-      "outputPer1M": 8.8,
-      "cachedInputPer1M": 0.44
+      "inputPer1M": 1.25,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.3125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6129,9 +6129,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "26B (4B active MoE)",
     "pricing": {
-      "inputPer1M": 0.22,
-      "outputPer1M": 0.66,
-      "cachedInputPer1M": 0.03
+      "inputPer1M": 1.25,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.3125
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -6180,9 +6180,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.1,
-      "outputPer1M": 8.4,
-      "cachedInputPer1M": 0.42
+      "inputPer1M": 1.5,
+      "outputPer1M": 6.0,
+      "cachedInputPer1M": 0.375
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6231,9 +6231,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2.05,
-      "outputPer1M": 8.2,
-      "cachedInputPer1M": 0.41
+      "inputPer1M": 2.5,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.625
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6282,9 +6282,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 2,
-      "outputPer1M": 8,
-      "cachedInputPer1M": 0.4
+      "inputPer1M": 1.5,
+      "outputPer1M": 6.0,
+      "cachedInputPer1M": 0.375
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6333,9 +6333,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.95,
-      "outputPer1M": 7.8,
-      "cachedInputPer1M": 0.39
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6384,9 +6384,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.9,
-      "outputPer1M": 7.6,
-      "cachedInputPer1M": 0.38
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6435,9 +6435,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "128k tokens",
     "parameters": "20B Dense",
     "pricing": {
-      "inputPer1M": 0.19,
-      "outputPer1M": 0.57,
-      "cachedInputPer1M": 0.03
+      "inputPer1M": 0.5,
+      "outputPer1M": 0.5,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Open Weights",
     "license": "Open Weights Commercial",
@@ -6486,9 +6486,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.8,
-      "outputPer1M": 7.2,
-      "cachedInputPer1M": 0.36
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6537,9 +6537,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 0.18,
-      "outputPer1M": 0.54,
-      "cachedInputPer1M": 0.03
+      "inputPer1M": 0.27,
+      "outputPer1M": 1.1,
+      "cachedInputPer1M": 0.07
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -6588,9 +6588,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.7,
-      "outputPer1M": 6.8,
-      "cachedInputPer1M": 0.34
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6639,9 +6639,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "235B (22B active MoE)",
     "pricing": {
-      "inputPer1M": 0.17,
-      "outputPer1M": 0.51,
-      "cachedInputPer1M": 0.03
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.05
     },
     "openSourceStatus": "Fully Open Source (Apache 2.0)",
     "license": "Apache 2.0 / MIT",
@@ -6690,9 +6690,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.6,
-      "outputPer1M": 6.4,
-      "cachedInputPer1M": 0.32
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.1
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6743,9 +6743,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "2M tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 1.55,
-      "outputPer1M": 6.2,
-      "cachedInputPer1M": 0.31
+      "inputPer1M": 1.25,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.3125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6794,9 +6794,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.5,
-      "outputPer1M": 6,
-      "cachedInputPer1M": 0.3
+      "inputPer1M": 15.0,
+      "outputPer1M": 75.0,
+      "cachedInputPer1M": 1.5
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6847,9 +6847,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.45,
-      "outputPer1M": 5.8,
-      "cachedInputPer1M": 0.29
+      "inputPer1M": 1.0,
+      "outputPer1M": 3.0,
+      "cachedInputPer1M": 0.25
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6898,9 +6898,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "128k tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 1.4,
-      "outputPer1M": 5.6,
-      "cachedInputPer1M": 0.28
+      "inputPer1M": 1.1,
+      "outputPer1M": 4.4,
+      "cachedInputPer1M": 0.275
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -6949,9 +6949,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "128k tokens",
     "parameters": "20B Dense",
     "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.42,
-      "cachedInputPer1M": 0.02
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.15,
+      "cachedInputPer1M": 0.03
     },
     "openSourceStatus": "Open Weights",
     "license": "Open Weights Commercial",
@@ -7000,9 +7000,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "128k tokens",
     "parameters": "8B - 14B Dense",
     "pricing": {
-      "inputPer1M": 1.3,
-      "outputPer1M": 5.2,
-      "cachedInputPer1M": 0.26
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.0375
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -7051,9 +7051,9 @@ export const ALL_135_MODELS: AIModel[] = [
     "contextWindow": "200k tokens",
     "parameters": "Frontier Mixture-of-Experts",
     "pricing": {
-      "inputPer1M": 1.25,
-      "outputPer1M": 5,
-      "cachedInputPer1M": 0.25
+      "inputPer1M": 0.5,
+      "outputPer1M": 1.5,
+      "cachedInputPer1M": 0.125
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary Commercial API",
@@ -7099,7 +7099,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1420,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.95"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 2,
@@ -7108,7 +7108,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1418,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.90"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 3,
@@ -7117,7 +7117,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1416,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.85"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 4,
@@ -7126,7 +7126,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1415,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.80"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 5,
@@ -7135,7 +7135,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1413,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.75"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 6,
@@ -7153,7 +7153,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1409,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.65"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 8,
@@ -7162,7 +7162,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1407,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.60"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 9,
@@ -7171,7 +7171,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1406,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.55"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 10,
@@ -7180,7 +7180,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1404,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.75"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 11,
@@ -7189,7 +7189,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1402,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.45"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 12,
@@ -7198,7 +7198,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1400,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.40"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 13,
@@ -7207,7 +7207,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1398,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.35"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 14,
@@ -7216,7 +7216,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1397,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.30"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 15,
@@ -7225,7 +7225,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1395,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.25"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 16,
@@ -7234,7 +7234,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1393,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.20"
+    "costPerRun": "$0.08"
   },
   {
     "rank": 17,
@@ -7243,7 +7243,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1391,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.15"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 18,
@@ -7252,7 +7252,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1389,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.10"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 19,
@@ -7261,7 +7261,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1387,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.05"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 20,
@@ -7270,7 +7270,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1386,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$7.00"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 21,
@@ -7279,7 +7279,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1384,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.95"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 22,
@@ -7288,7 +7288,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1382,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.90"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 23,
@@ -7297,7 +7297,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1380,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.85"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 24,
@@ -7306,7 +7306,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1378,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.68"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 25,
@@ -7315,7 +7315,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1377,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.75"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 26,
@@ -7324,7 +7324,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1375,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.70"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 27,
@@ -7333,7 +7333,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1373,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.65"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 28,
@@ -7342,7 +7342,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1371,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.60"
+    "costPerRun": "$1.20"
   },
   {
     "rank": 29,
@@ -7351,7 +7351,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1369,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.55"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 30,
@@ -7360,7 +7360,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1368,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.65"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 31,
@@ -7369,7 +7369,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1366,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.45"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 32,
@@ -7378,7 +7378,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1364,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.64"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 33,
@@ -7387,7 +7387,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1362,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.35"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 34,
@@ -7396,7 +7396,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1360,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.30"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 35,
@@ -7405,7 +7405,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1359,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.25"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 36,
@@ -7414,7 +7414,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1357,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.20"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 37,
@@ -7423,7 +7423,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1355,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.61"
+    "costPerRun": "$0.55"
   },
   {
     "rank": 38,
@@ -7432,7 +7432,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1353,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.10"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 39,
@@ -7441,7 +7441,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1351,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.05"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 40,
@@ -7450,7 +7450,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1350,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$6.00"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 41,
@@ -7459,7 +7459,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1348,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.95"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 42,
@@ -7468,7 +7468,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1346,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.90"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 43,
@@ -7477,7 +7477,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1344,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.85"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 44,
@@ -7486,7 +7486,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1342,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.80"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 45,
@@ -7495,7 +7495,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1341,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.75"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 46,
@@ -7504,7 +7504,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1339,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.70"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 47,
@@ -7513,7 +7513,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1337,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.65"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 48,
@@ -7522,7 +7522,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1335,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.60"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 49,
@@ -7531,7 +7531,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1333,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.55"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 50,
@@ -7540,7 +7540,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1332,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.50"
+    "costPerRun": "$5.00"
   },
   {
     "rank": 51,
@@ -7549,7 +7549,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1330,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.55"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 52,
@@ -7558,7 +7558,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1328,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.40"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 53,
@@ -7567,7 +7567,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1326,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.54"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 54,
@@ -7576,7 +7576,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1324,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.30"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 55,
@@ -7585,7 +7585,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1322,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.25"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 56,
@@ -7594,7 +7594,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1321,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.20"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 57,
@@ -7603,7 +7603,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1319,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.15"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 58,
@@ -7612,7 +7612,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1317,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$5.10"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 59,
@@ -7621,7 +7621,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1315,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.51"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 60,
@@ -7630,7 +7630,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1313,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.50"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 61,
@@ -7639,7 +7639,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1312,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.95"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 62,
@@ -7648,7 +7648,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1310,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.90"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 63,
@@ -7657,7 +7657,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1308,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.85"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 64,
@@ -7666,7 +7666,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1306,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.80"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 65,
@@ -7675,7 +7675,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1304,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.75"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 66,
@@ -7684,7 +7684,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1303,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.70"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 67,
@@ -7693,7 +7693,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1301,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.65"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 68,
@@ -7702,7 +7702,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1299,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.60"
+    "costPerRun": "$0.10"
   },
   {
     "rank": 69,
@@ -7711,7 +7711,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1297,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.55"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 70,
@@ -7720,7 +7720,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1295,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.50"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 71,
@@ -7729,7 +7729,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1294,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.45"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 72,
@@ -7738,7 +7738,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1292,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.40"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 73,
@@ -7747,7 +7747,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1290,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.44"
+    "costPerRun": "$0.14"
   },
   {
     "rank": 74,
@@ -7756,7 +7756,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1288,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.30"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 75,
@@ -7765,7 +7765,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1286,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.25"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 76,
@@ -7774,7 +7774,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1285,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.20"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 77,
@@ -7783,7 +7783,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1283,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.15"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 78,
@@ -7792,7 +7792,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1281,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.10"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 79,
@@ -7801,7 +7801,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1279,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.41"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 80,
@@ -7810,7 +7810,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1277,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$4.00"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 81,
@@ -7819,7 +7819,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1276,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.95"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 82,
@@ -7828,7 +7828,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1274,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.90"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 83,
@@ -7837,7 +7837,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1272,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.39"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 84,
@@ -7846,7 +7846,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1270,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.38"
+    "costPerRun": "$0.40"
   },
   {
     "rank": 85,
@@ -7855,7 +7855,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1268,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.75"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 86,
@@ -7864,7 +7864,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1266,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.70"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 87,
@@ -7873,7 +7873,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1265,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.37"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 88,
@@ -7882,7 +7882,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1263,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.60"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 89,
@@ -7891,7 +7891,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1261,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.55"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 90,
@@ -7900,7 +7900,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1259,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.35"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 91,
@@ -7909,7 +7909,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1257,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.45"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 92,
@@ -7918,7 +7918,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1256,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.40"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 93,
@@ -7927,7 +7927,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1254,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.34"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 94,
@@ -7936,7 +7936,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1252,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 95,
@@ -7945,7 +7945,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1250,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.33"
+    "costPerRun": "$0.35"
   },
   {
     "rank": 96,
@@ -7954,7 +7954,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1248,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.20"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 97,
@@ -7963,7 +7963,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1247,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.32"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 98,
@@ -7972,7 +7972,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1245,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.10"
+    "costPerRun": "$3.00"
   },
   {
     "rank": 99,
@@ -7981,7 +7981,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1243,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.05"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 100,
@@ -7990,7 +7990,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1241,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$3.00"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 101,
@@ -7999,7 +7999,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1239,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.95"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 102,
@@ -8008,7 +8008,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1238,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.90"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 103,
@@ -8017,7 +8017,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1236,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.85"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 104,
@@ -8026,7 +8026,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1234,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.80"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 105,
@@ -8035,7 +8035,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1232,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.75"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 106,
@@ -8044,7 +8044,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1230,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.70"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 107,
@@ -8053,7 +8053,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1229,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.65"
+    "costPerRun": "$0.80"
   },
   {
     "rank": 108,
@@ -8062,7 +8062,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1227,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.60"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 109,
@@ -8071,7 +8071,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1225,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.26"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 110,
@@ -8080,7 +8080,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1223,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.50"
+    "costPerRun": "$2.00"
   },
   {
     "rank": 111,
@@ -8089,7 +8089,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1221,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.45"
+    "costPerRun": "$0.30"
   },
   {
     "rank": 112,
@@ -8098,7 +8098,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1220,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.40"
+    "costPerRun": "$0.60"
   },
   {
     "rank": 113,
@@ -8107,7 +8107,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1218,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.35"
+    "costPerRun": "$0.05"
   },
   {
     "rank": 114,
@@ -8116,7 +8116,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1216,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.30"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 115,
@@ -8125,7 +8125,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1214,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.25"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 116,
@@ -8134,7 +8134,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1212,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.20"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 117,
@@ -8143,7 +8143,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1211,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.22"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 118,
@@ -8152,7 +8152,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1209,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.10"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 119,
@@ -8161,7 +8161,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1207,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.05"
+    "costPerRun": "$2.50"
   },
   {
     "rank": 120,
@@ -8170,7 +8170,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1205,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$2.00"
+    "costPerRun": "$1.50"
   },
   {
     "rank": 121,
@@ -8179,7 +8179,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1203,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.95"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 122,
@@ -8188,7 +8188,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1201,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.90"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 123,
@@ -8197,7 +8197,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1200,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.19"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 124,
@@ -8206,7 +8206,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1198,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.80"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 125,
@@ -8215,7 +8215,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1196,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.18"
+    "costPerRun": "$0.27"
   },
   {
     "rank": 126,
@@ -8224,7 +8224,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1194,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.70"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 127,
@@ -8233,7 +8233,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1192,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.17"
+    "costPerRun": "$0.20"
   },
   {
     "rank": 128,
@@ -8242,7 +8242,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1191,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.60"
+    "costPerRun": "$0.50"
   },
   {
     "rank": 129,
@@ -8251,7 +8251,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1189,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.55"
+    "costPerRun": "$1.25"
   },
   {
     "rank": 130,
@@ -8260,7 +8260,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1187,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.50"
+    "costPerRun": "$15.00"
   },
   {
     "rank": 131,
@@ -8269,7 +8269,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1185,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.45"
+    "costPerRun": "$1.00"
   },
   {
     "rank": 132,
@@ -8278,7 +8278,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1183,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.40"
+    "costPerRun": "$1.10"
   },
   {
     "rank": 133,
@@ -8287,7 +8287,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1182,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$0.14"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 134,
@@ -8296,7 +8296,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1180,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.30"
+    "costPerRun": "$0.15"
   },
   {
     "rank": 135,
@@ -8305,6 +8305,6 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1178,
     "date": "Sep 2026",
     "verifiedByNextVector": true,
-    "costPerRun": "$1.25"
+    "costPerRun": "$0.50"
   }
 ];

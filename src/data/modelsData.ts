@@ -3,62 +3,6 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
-    "id": "model-claude-sonnet-5-1",
-    "name": "Claude Sonnet 5.1",
-    "developer": "Anthropic",
-    "releaseDate": "September 2026",
-    "modelType": "Multimodal Foundation",
-    "modalities": [
-      "Text",
-      "Code",
-      "Vision"
-    ],
-    "contextWindow": "1M tokens",
-    "parameters": "Frontier Mixture-of-Experts",
-    "pricing": {
-      "inputPer1M": 3.00,
-      "outputPer1M": 15.00,
-      "cachedInputPer1M": 0.30
-    },
-    "openSourceStatus": "Proprietary API",
-    "license": "Commercial Proprietary",
-    "hardwareRequirements": "Cloud API (Anthropic Bedrock / Vertex AI)",
-    "benchmarks": [
-      {
-        "benchmarkName": "LMSYS Chatbot Arena Elo",
-        "score": 1424,
-        "unit": "Elo",
-        "vsPreviousGen": "+12 pts vs Sonnet 5"
-      },
-      {
-        "benchmarkName": "SWE-bench Verified",
-        "score": "89.4%",
-        "vsPreviousGen": "+16.1% in swarm mode"
-      },
-      {
-        "benchmarkName": "TAU-bench Airline",
-        "score": "86.5%",
-        "vsPreviousGen": "+5.3%"
-      }
-    ],
-    "keyImprovements": [
-      "Quadruples context window to 1,000,000 tokens with 90% cached prompt discounts ($0.30/1M).",
-      "Native Asynchronous Agent Swarm Orchestration coordinating up to 32 parallel sub-agents.",
-      "Achieves 89.4% on SWE-bench Verified under multi-agent verification mode."
-    ],
-    "knownLimitations": [
-      "Maximum swarm concurrency requires elevated tier-4 API concurrency quotas.",
-      "Prompt caching requires 1,024-token minimum prefix."
-    ],
-    "realWorldApplications": [
-      "Large-scale enterprise monorepo refactoring and automated git conflict reconciliation via Claude Code.",
-      "Parallelized multi-agent security reviews and automated vulnerability auditing."
-    ],
-    "architectureNotes": "High-throughput frontier MoE with native asynchronous worker orchestration and sub-agent state isolation.",
-    "arenaRank": 2,
-    "arenaElo": 1424
-  },
-  {
     "id": "model-deepseek-v4-1-flash",
     "name": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",

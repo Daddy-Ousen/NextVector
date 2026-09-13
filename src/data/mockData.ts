@@ -150,59 +150,59 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
-    id: 'time-2026-09-14-claude-sonnet-51',
+    id: 'time-2026-09-14-amodei-pacing',
     year: 2026,
     month: 'Sep 14',
-    title: 'Anthropic Unveils Claude Sonnet 5.1: Continuous Hybrid Reasoning with Dynamic Test-Time Compute',
+    title: 'Anthropic CEO Dario Amodei Publishes Landmark Manifesto \'We Must Pace the Frontier\'',
     category: 'AI Breakthrough',
-    summary: 'Pioneering continuous test-time reasoning scaling from 1M context & 32-worker agent swarms, Claude Sonnet 5.1 scores 89.4% on SWE-bench Verified with native tool use in scratchpads.',
+    summary: 'Calling for binding pre-deployment capability evaluations and coordinated scaling pauses, Amodei warns of catastrophic biosecurity and cyberwarfare risks.',
+    impactScore: 99,
+    keyShift: 'First public call by a frontier AI CEO to intentionally pace frontier scaling, dividing Washington and Silicon Valley.',
+    articleSlug: 'dario-amodei-we-must-pace-the-frontier-biosecurity-warnings'
+  },
+  {
+    id: 'time-2026-09-14-fable-distich',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Claude Fable 5.1 Deciphers 370-Year-Old Historic \'Cyphral Distich\' Cryptogram',
+    category: 'AI Breakthrough',
+    summary: 'Vals AI verifies that Claude Fable 5.1 autonomously solved Sir Thomas Urquhart’s unsolved 1653 cryptogram within 24 hours using historical matrix substitution.',
     impactScore: 98,
-    keyShift: 'Eliminates dual-model routing by allowing a single foundation model to dynamically modulate thinking compute per request.',
-    articleSlug: 'anthropic-anthropic-claude-sonnet-5-1-hybrid-agent-swarm-orchestration'
+    keyShift: 'Demonstrates automated reasoning synthesizing 17th-century historical linguistics and cryptanalysis to solve human-intractable ciphers.',
+    articleSlug: 'claude-fable-5-1-solves-370-year-old-cyphral-distich-cipher'
   },
   {
-    id: 'time-2026-09-14-high-na-euv',
+    id: 'time-2026-09-14-antspace-microvm',
     year: 2026,
     month: 'Sep 14',
-    title: 'Intel Foundry Validates First High-NA EUV 0.55 NA Wafers for Intel 14A Process',
-    category: 'Semiconductors',
-    summary: 'Achieving sub-2nm yield on the ASML TWINSCAN EXE:5000 scanner, Intel Foundry eliminates dual-patterning mask passes, cutting reticle cycle times by 40%.',
-    impactScore: 97,
-    keyShift: 'Validates commercial feasibility of sub-1.4nm semiconductor manufacturing with single-exposure High-NA lithography.',
-    articleSlug: 'intel-foundry-validates-high-na-euv-twinscan-exe5000-14a'
-  },
-  {
-    id: 'time-2026-09-14-linux-memory-safety',
-    year: 2026,
-    month: 'Sep 14',
-    title: 'Linux 6.17 Mainline Kernel Enforces Memory-Safe Architecture Across New Drivers',
+    title: 'Reverse-Engineering Uncovers Anthropic \'Antspace\' MicroVM Agent Sandboxing',
     category: 'Computing Architecture',
-    summary: 'Mainline Linux merges policy mandating Rust or formal proofs for new device drivers, while activating hardware Arm MTE in kernel space.',
-    impactScore: 96,
-    keyShift: 'Systematically eradicates spatial and temporal memory corruption vectors across foundational server operating systems.',
-    articleSlug: 'linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers'
-  },
-  {
-    id: 'time-2026-09-14-quantum-transducer',
-    year: 2026,
-    month: 'Sep 14',
-    title: 'Oxford and IonQ Demonstrate Coherent Room-Temperature Optical Transducer for Quantum Clusters',
-    category: 'Space & Quantum',
-    summary: 'PPLN photonic chip converts 435nm trapped-ion qubit emissions to 1550nm telecom C-band light at 99.4% fidelity at ambient room temperature (22°C).',
-    impactScore: 96,
-    keyShift: 'Removes cryogenic converters between quantum processors, unlocking modular multi-QPU quantum data centers.',
-    articleSlug: 'oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect'
-  },
-  {
-    id: 'time-2026-09-14-cas12f-base-editing',
-    year: 2026,
-    month: 'Sep 14',
-    title: 'Broad Institute & Vertex Validate Hyper-Compact In Vivo Cas12f Base Editing in Primates',
-    category: 'Fundamental Science',
-    summary: 'Ultra-compact 430-amino-acid Cas12f base editor packaged within a single AAV capsid permanently cuts LDL cholesterol by 88% with zero off-target insertions.',
+    summary: 'Systems teardown shows Claude Code isolates autonomous bash commands inside sub-50ms ephemeral microVMs with copy-on-write disks and egress drops.',
     impactScore: 97,
-    keyShift: 'Solves the AAV viral vector cargo bottleneck, enabling all-in-one in vivo delivery for clinical genomic medicine.',
-    articleSlug: 'broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9'
+    keyShift: 'Establishes zero-trust virtualization standard for autonomous AI agents executing untrusted code.',
+    articleSlug: 'reverse-engineering-anthropic-antspace-claude-microvm-sandboxing'
+  },
+  {
+    id: 'time-2026-09-14-apple-ane-dma',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Apple Neural Engine Hardware Erratum Bypassed to Reclaim 50 GB/s Memory Bandwidth',
+    category: 'Semiconductors',
+    summary: 'Kernel DMA descriptor bypass circumvents silicon prefetch ring bug on Apple Silicon, doubling on-device LLM generation to 24.3 tokens/sec.',
+    impactScore: 96,
+    keyShift: 'Unlocks theoretical memory bandwidth on consumer Apple Silicon for low-power on-device AI.',
+    articleSlug: 'apple-neural-engine-dma-erratum-bypass-reclaims-50-gb-s-memory-bandwidth'
+  },
+  {
+    id: 'time-2026-09-14-signal-zkp',
+    year: 2026,
+    month: 'Sep 14',
+    title: 'Signal Merges Zero-Knowledge Proof Architecture for Phone-Number-Free Accounts',
+    category: 'Computing Architecture',
+    summary: 'Cryptographic implementation details confirm Signal eliminates mandatory cellular carrier numbers via blinded ZK-proofs and private information retrieval.',
+    impactScore: 96,
+    keyShift: 'Permanently decouples secure instant messaging from cellular carrier metadata and SIM-swap vulnerabilities.',
+    articleSlug: 'signal-deploys-zero-knowledge-proofs-for-phone-number-free-registration'
   },
   {
     id: 'time-2026-09-13-deepseek-v41',
@@ -591,33 +591,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Claude Sonnet 5.1',
-    text: 'Anthropic deploys hybrid reasoning with 1M context & 32-worker agent swarms & 70.3% SWE-bench',
-    articleSlug: 'anthropic-anthropic-claude-sonnet-5-1-hybrid-agent-swarm-orchestration'
+    tag: 'Dario Amodei Manifesto',
+    text: 'Anthropic CEO calls for international pacing of frontier AI scaling amid biosecurity risks',
+    articleSlug: 'dario-amodei-we-must-pace-the-frontier-biosecurity-warnings'
   },
   {
     id: 'sig-2',
-    tag: 'Intel 14A High-NA',
-    text: 'Intel Foundry prints first 0.55 NA EUV sub-2nm wafers on ASML EXE:5000 scanner',
-    articleSlug: 'intel-foundry-validates-high-na-euv-twinscan-exe5000-14a'
+    tag: 'Antspace MicroVM',
+    text: 'Security teardown reveals custom microVM sandboxing isolating Claude agentic tool execution',
+    articleSlug: 'reverse-engineering-anthropic-antspace-claude-microvm-sandboxing'
   },
   {
     id: 'sig-3',
-    tag: 'Linux 6.17 Kernel',
-    text: 'Linus Torvalds merges policy mandating Rust for all new mainline device drivers',
-    articleSlug: 'linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers'
+    tag: 'Cyphral Distich Cracked',
+    text: 'Claude Fable 5.1 deciphers Sir Thomas Urquhart’s unsolved 1653 cryptogram within 24 hours',
+    articleSlug: 'claude-fable-5-1-solves-370-year-old-cyphral-distich-cipher'
   },
   {
     id: 'sig-4',
-    tag: 'Quantum Optical Transducer',
-    text: 'Oxford & IonQ achieve room-temperature 435nm to 1550nm conversion at 99.4% fidelity',
-    articleSlug: 'oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect'
+    tag: 'Apple Neural Engine Fix',
+    text: 'Kernel DMA prefetch bypass unlocks 50 GB/s memory bandwidth, doubling on-device LLM tokens/sec',
+    articleSlug: 'apple-neural-engine-dma-erratum-bypass-reclaims-50-gb-s-memory-bandwidth'
   },
   {
     id: 'sig-5',
-    tag: 'Compact CRISPR Cas12f',
-    text: 'Broad & Vertex package 430-amino-acid base editor into single AAV, cutting LDL 88%',
-    articleSlug: 'broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9'
+    tag: 'Signal ZKP Registration',
+    text: 'Signal merges zero-knowledge proof credentials to eliminate cellular phone number requirements',
+    articleSlug: 'signal-deploys-zero-knowledge-proofs-for-phone-number-free-registration'
   }
 ];
 

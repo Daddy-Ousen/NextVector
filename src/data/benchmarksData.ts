@@ -2554,16 +2554,7 @@ export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
       "verifiedByNextVector": true,
       "costPerRun": "$2.00"
     },
-    {
-      "rank": 13,
-      "modelName": "Claude Opus 4.8",
-      "developer": "Anthropic",
-      "score": 89.4,
-      "date": "Sep 2026",
-      "verifiedByNextVector": true,
-      "costPerRun": "$15.00"
-    },
-    {
+      {
       "modelName": "Claude Sonnet 5.1 (Swarm Mode)",
       "developer": "Anthropic",
       "score": 89.4,

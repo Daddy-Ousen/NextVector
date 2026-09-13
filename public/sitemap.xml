@@ -547,40 +547,34 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nextvector.rhasan.online/article/anthropic-claude-sonnet-5-1-hybrid-agent-swarm-orchestration</loc>
+    <loc>https://nextvector.rhasan.online/article/dario-amodei-we-must-pace-the-frontier-biosecurity-warnings</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nextvector.rhasan.online/article/intel-foundry-validates-high-na-euv-twinscan-exe5000-14a</loc>
+    <loc>https://nextvector.rhasan.online/article/reverse-engineering-anthropic-antspace-claude-microvm-sandboxing</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nextvector.rhasan.online/article/linux-6-17-mainline-enforces-rust-memory-safety-deprecates-c-drivers</loc>
+    <loc>https://nextvector.rhasan.online/article/claude-fable-5-1-solves-370-year-old-cyphral-distich-cipher</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nextvector.rhasan.online/article/oxford-ionq-room-temperature-photonic-transducer-quantum-interconnect</loc>
+    <loc>https://nextvector.rhasan.online/article/apple-neural-engine-dma-erratum-bypass-reclaims-50-gb-s-memory-bandwidth</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nextvector.rhasan.online/article/broad-institute-vertex-miniaturized-cas12f-base-editing-pcsk9</loc>
+    <loc>https://nextvector.rhasan.online/article/signal-deploys-zero-knowledge-proofs-for-phone-number-free-registration</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://nextvector.rhasan.online/models/model-claude-sonnet-5-1</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/models/model-deepseek-v4-1-flash</loc>

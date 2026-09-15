@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-15-sakana-alpc',
+    year: 2026,
+    month: 'Sep 15',
+    title: 'Sakana AI Derives Augmented Lagrangian Predictive Coding Bypassing Backpropagation',
+    category: 'AI Breakthrough',
+    summary: 'Sakana AI formulates Augmented Lagrangian Predictive Coding, mathematically replacing global backpropagation with localized energy minimization and eliminating the 40-year-old backward-locking memory wall.',
+    impactScore: 96,
+    keyShift: 'The first mathematically rigorous, biologically plausible alternative to backpropagation matching transformer benchmark accuracy while slashing peak training memory by 68%.',
+    articleSlug: 'sakana-ai-augmented-lagrangian-predictive-coding-backprop-alternative'
+  },
+  {
     id: 'time-2026-09-14-amodei-pacing',
     year: 2026,
     month: 'Sep 14',
@@ -528,96 +539,87 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Sunday, September 13, 2026',
-  summary: 'Google DeepMind releases Gemini 3 Deep Think, combining latent MCTS reasoning with native Lean 4 formal verification to solve four 2026 IMO problems at Gold-Medal tier. Concurrently, NVIDIA, TSMC, and Broadcom tape out 1.6T co-packaged optics engines cutting interconnect power by 72%, Caltech and AWS Quantum realize fault-tolerant cat qubit gates slashing physical qubit overhead to 9:1, JWST detects atmospheric dimethyl sulfide and carbon disulfide on temperate hycean sub-Neptune K2-18b at 4.2-sigma, and Mistral AI open-sources Mistral Large 3 with Dynamic Mixture-of-Depths.',
+  date: 'Tuesday, September 15, 2026',
+  summary: 'Sakana AI derives Augmented Lagrangian Predictive Coding, mathematically replacing global backpropagation with localized energy minimization and slashing training activation memory by 68%. Concurrently, former FTC Chair Lina Khan invokes 1934 Communications Act precedents urging personal criminal liability for monopolistic AI CEOs, an investigative audit exposes a third-party red-teaming contractor compromise leaking internal weights and telemetry across OpenAI, Anthropic, and Meta, NEO Emacs unveils a multi-threaded Rust display core with WebGPU hardware text shaping cutting render latency to 0.4ms, and the Ninth Circuit hears oral arguments in Amazon v. Perplexity on whether AI crawler swarms ignoring robots.txt violate the Computer Fraud and Abuse Act.',
   items: [
     {
       id: 'brief-1',
-      headline: 'DeepMind Unveils Gemini 3 Deep Think: AlphaProof-2 Integration Solves 4 IMO Problems at Gold-Medal Tier',
+      headline: 'Sakana AI Derives Augmented Lagrangian Predictive Coding: Bypassing Backpropagation Bottlenecks',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'DeepMind documented Gemini 3 Deep Think, coupling foundation model latent Monte Carlo Tree Search with Lean 4 formal verification to solve 4 out of 6 problems on the 2026 International Mathematical Olympiad, discovering novel algebraic invariant lemmas.',
-      whyItMatters: 'Permanently eliminates mathematical hallucinations and establishes neuro-symbolic automated theorem proving as an empirical tool in theoretical physics and mathematics.',
-      articleSlug: 'deepmind-gemini-3-deep-think-alphaproof-2-imo-gold'
+      summary: 'Sakana AI formulates Augmented Lagrangian Predictive Coding (ALPC / pc-alm), solving the 40-year-old weight transport and backward-locking barriers to match AdamW backpropagation accuracy on transformers with 68% lower peak activation memory.',
+      whyItMatters: 'Removes the activation memory wall and enables asynchronous, pipeline-free training for neuromorphic silicon and massive foundation model clusters.',
+      articleSlug: 'sakana-ai-augmented-lagrangian-predictive-coding-backprop-alternative'
     },
     {
       id: 'brief-2',
-      headline: 'NVIDIA, TSMC & Broadcom Tape Out 1.6T Co-Packaged Optics: 72% Interconnect Power Drop for Rubin Racks',
+      headline: 'Former FTC Chair Lina Khan Urges Personal Criminal Liability for AI CEOs Under 1934 Precedents',
       category: 'technology' as const,
-      urgency: 'Critical Signal' as const,
-      summary: 'TSMC COUPE 3D silicon photonics engines achieve volume qualification with NVIDIA Rubin Ultra racks, mounting 1.6 Tbps optical transceivers directly adjacent to GPU silicon and eliminating electrical retimer chips.',
-      whyItMatters: 'Overcomes the catastrophic electrical attenuation of copper interconnects at 224 Gbps, reducing transmission energy to 3.4 pJ/bit across 100,000-accelerator supercomputer clusters.',
-      articleSlug: 'nvidia-tsmc-broadcom-tape-out-1-6t-silicon-photonics-cpo'
+      urgency: 'High Impact' as const,
+      summary: 'Lina Khan invoked New Deal telecommunications antitrust statutes in a major policy keynote, demanding individual executive criminal prosecution and structural unbundling for hyperscaler cloud-model monopolies.',
+      whyItMatters: 'Signals a decisive regulatory shift away from inconsequential civil fines toward structural separation and personal executive culpability.',
+      articleSlug: 'ex-ftc-khan-urges-criminal-liability-ai-ceos-1934-precedent'
     },
     {
       id: 'brief-3',
-      headline: 'Caltech & AWS Realize Fault-Tolerant Cat Qubit Gates: Slashing Physical Overhead to 9-to-1',
-      category: 'science' as const,
-      urgency: 'High Impact' as const,
-      summary: 'Published in Science, researchers engineered bosonic Schrödinger cat states that suppress bit-flips autonomously to once every 78 seconds, executing continuous phase-flip correction using only 9 physical qubits per logical qubit.',
-      whyItMatters: 'Slashes quantum error correction physical overhead by 99% compared to traditional 1,000:1 surface codes, providing a viable blueprint for compact, commercially scalable quantum supercomputing.',
-      articleSlug: 'caltech-aws-cat-qubit-fault-tolerant-logical-gate-9-to-1'
+      headline: 'Single Security Contractor Breach Compromised Internal Model Weights Across OpenAI, Anthropic, and Meta',
+      category: 'technology' as const,
+      urgency: 'Critical Signal' as const,
+      summary: 'A forensic cybersecurity audit revealed an external red-teaming contractor was breached via compromised Okta credentials, leaking internal Slack feeds, pre-release weights, and zero-day jailbreaks across three top labs.',
+      whyItMatters: 'Demonstrates that air-gapped datacenter HSMs are vulnerable if third-party safety evaluation teams have persistent, unmonitored staging access.',
+      articleSlug: 'single-security-firm-breach-openai-anthropic-meta-weight-telemetry'
     },
     {
       id: 'brief-4',
-      headline: 'JWST Confirms Atmospheric DMS and Carbon Disulfide on Hycean Exoplanet K2-18b at 4.2-Sigma',
-      category: 'science' as const,
-      urgency: 'High Impact' as const,
-      summary: 'Eight combined JWST NIRSpec transmission transits confirmed methane, carbon dioxide, and volatile sulfur species including dimethyl sulfide and CS2 at 4.2-sigma in the temperate atmosphere of sub-Neptune K2-18b.',
-      whyItMatters: 'Provides the strongest spectroscopic evidence to date for a global liquid water ocean on a habitable-zone exoplanet, establishing K2-18b as the premier target for extraterrestrial biosignature study.',
-      articleSlug: 'jwst-detects-dimethyl-sulfide-carbon-disulfide-k2-18b'
+      headline: 'NEO Emacs Rewrites 40-Year-Old Display Core in Rust with WebGPU Hardware Text Shaping',
+      category: 'technology' as const,
+      urgency: 'Notable Shift' as const,
+      summary: 'The NEO Emacs project replaces GNU Emacs’ single-threaded C rendering loop with an asynchronous Rust engine using WebGPU/Vulkan shaders, reducing frame render latency from 35ms to 0.4ms on 500k-line files.',
+      whyItMatters: 'Eliminates editor lockups under heavy Language Server Protocol (LSP) semantic token indexing while preserving 100% elisp compatibility.',
+      articleSlug: 'neo-emacs-rust-engine-webgpu-hardware-text-shaping'
     },
     {
       id: 'brief-5',
-      headline: 'Mistral AI Releases Mistral Large 3: 670B Mixture-of-Depths Model with Native FP8 Apache Weights',
-      category: 'ai' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'Mistral AI published Apache 2.0 weights for a 670B model that dynamically skips middle transformer blocks on low-entropy tokens, achieving 89.2% on MMLU-Pro and 84.1% on SWE-bench at 60% lower inference FLOPs.',
-      whyItMatters: 'Proves dynamic layer skipping can match closed frontier models while drastically slashing serving costs for enterprise coding and autonomous agent swarms.',
-      articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'
-    },
-    {
-      id: 'brief-6',
-      headline: 'DeepSeek Releases DeepSeek-V4.1-Flash: Multi-Head Latent Attention v2 at $0.14/1M Pricing',
-      category: 'ai' as const,
-      urgency: 'Critical Signal' as const,
-      summary: 'DeepSeek deployed V4.1-Flash across its API and Chatbot Arena, using MLA-2 to compress KV cache footprints by 40% and 4-token MTP to sustain 160+ tokens/sec at an industry price floor of $0.14/1M input.',
-      whyItMatters: 'Achieves 1396 Arena Elo (outperforming Gemini 3.8 Flash) at 50x lower cost than frontier proprietary models, democratizing high-frequency autonomous agent loops.',
-      articleSlug: 'deepseek-releases-v4-1-flash-mla-2-price-floor'
-    },
+      headline: 'Amazon vs. Perplexity in Ninth Circuit Tests Legal Boundaries of Autonomous AI Web Crawlers',
+      category: 'technology' as const,
+      urgency: 'High Impact' as const,
+      summary: 'Federal appellate oral arguments examine whether autonomous AI search crawlers circumventing robots.txt headers and Cloudflare challenges commit unauthorized access under the Computer Fraud and Abuse Act (CFAA).',
+      whyItMatters: 'Serves as the defining judicial precedent for the agentic web economy, testing whether publicly accessible sites can be walled off from AI agents.',
+      articleSlug: 'amazon-vs-perplexity-ninth-circuit-ai-crawler-robots-txt-cfaa'
+    }
   ]
 };
 
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Dario Amodei Manifesto',
-    text: 'Anthropic CEO calls for international pacing of frontier AI scaling amid biosecurity risks',
-    articleSlug: 'dario-amodei-we-must-pace-the-frontier-biosecurity-warnings'
+    tag: 'Sakana AI ALPC',
+    text: 'Augmented Lagrangian predictive coding bypasses backprop backward locking and cuts memory by 68%',
+    articleSlug: 'sakana-ai-augmented-lagrangian-predictive-coding-backprop-alternative'
   },
   {
     id: 'sig-2',
-    tag: 'Antspace MicroVM',
-    text: 'Security teardown reveals custom microVM sandboxing isolating Claude agentic tool execution',
-    articleSlug: 'reverse-engineering-anthropic-antspace-claude-microvm-sandboxing'
+    tag: 'FTC Khan Precedent',
+    text: 'Lina Khan invokes 1934 New Deal statutes urging criminal liability for monopolistic AI CEOs',
+    articleSlug: 'ex-ftc-khan-urges-criminal-liability-ai-ceos-1934-precedent'
   },
   {
     id: 'sig-3',
-    tag: 'Cyphral Distich Cracked',
-    text: 'Claude Fable 5.1 deciphers Sir Thomas Urquhart’s unsolved 1653 cryptogram within 24 hours',
-    articleSlug: 'claude-fable-5-1-solves-370-year-old-cyphral-distich-cipher'
+    tag: 'Frontier Supply Breach',
+    text: 'Compromised safety contractor leaks internal Slack feeds and weights across OpenAI, Anthropic, Meta',
+    articleSlug: 'single-security-firm-breach-openai-anthropic-meta-weight-telemetry'
   },
   {
     id: 'sig-4',
-    tag: 'Apple Neural Engine Fix',
-    text: 'Kernel DMA prefetch bypass unlocks 50 GB/s memory bandwidth, doubling on-device LLM tokens/sec',
-    articleSlug: 'apple-neural-engine-dma-erratum-bypass-reclaims-50-gb-s-memory-bandwidth'
+    tag: 'NEO Emacs Rust Core',
+    text: '40-year-old C display engine rewritten in Rust with WebGPU text shaping, slashing latency to 0.4ms',
+    articleSlug: 'neo-emacs-rust-engine-webgpu-hardware-text-shaping'
   },
   {
     id: 'sig-5',
-    tag: 'Signal ZKP Registration',
-    text: 'Signal merges zero-knowledge proof credentials to eliminate cellular phone number requirements',
-    articleSlug: 'signal-deploys-zero-knowledge-proofs-for-phone-number-free-registration'
+    tag: 'Amazon v. Perplexity',
+    text: 'Ninth Circuit hears landmark appeal on whether autonomous AI crawlers ignoring robots.txt violate CFAA',
+    articleSlug: 'amazon-vs-perplexity-ninth-circuit-ai-crawler-robots-txt-cfaa'
   }
 ];
 

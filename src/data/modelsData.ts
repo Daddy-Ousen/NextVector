@@ -2,6 +2,134 @@
 import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
+{
+  "id": "model-gemini-3-8-live-extended-thinking",
+  "name": "Gemini 3.8 Live Extended Thinking",
+  "developer": "Google DeepMind",
+  "releaseDate": "September 2026",
+  "modelType": "Reasoning",
+  "modalities": [
+    "Text",
+    "Code",
+    "Audio",
+    "Vision"
+  ],
+  "contextWindow": "1M tokens",
+  "parameters": "Dual-Channel Parallel Latent Reasoning Foundation Model",
+  "pricing": {
+    "inputPer1M": 0.75,
+    "outputPer1M": 4.5,
+    "cachedInputPer1M": 0.1875
+  },
+  "openSourceStatus": "Proprietary API",
+  "license": "Proprietary Commercial API",
+  "hardwareRequirements": "Managed Cloud API (Google AI Studio & Vertex AI Live API)",
+  "benchmarks": [
+    {
+      "benchmarkName": "Artificial Analysis Speech-to-Speech Quality",
+      "score": 82.6,
+      "unit": "Index",
+      "vsPreviousGen": "Global Rank #1"
+    },
+    {
+      "benchmarkName": "\u03c4-Voice Task Completion",
+      "score": "68.6%",
+      "vsPreviousGen": "Global Rank #1"
+    },
+    {
+      "benchmarkName": "Sierra \u03c4-Voice-Banking",
+      "score": "35.1%",
+      "vsPreviousGen": "Industry Best"
+    },
+    {
+      "benchmarkName": "LMSYS Chatbot Arena Elo",
+      "score": 1412,
+      "unit": "Elo",
+      "vsPreviousGen": "Rank #4"
+    }
+  ],
+  "keyImprovements": [
+    "Dual-channel simultaneous reasoning: thinks and speaks concurrently without pausing audio output.",
+    "Generates natural conversational progress markers ('Let me check that...') while solving complex logic in the background.",
+    "Live progress narration: walks users through multi-step coding, mathematical proofs, and data analysis in real time."
+  ],
+  "knownLimitations": [
+    "Thinking tokens count toward standard output billing ($4.50/1M).",
+    "Requires persistent WebSockets / WebRTC session infrastructure for full-duplex operation."
+  ],
+  "realWorldApplications": [
+    "Complex enterprise workflow automation, interactive real-time technical debugging, multi-step booking, and live multimodal analysis.",
+    "Google Workspace Live coordination across Docs, Gmail, and Drive."
+  ],
+  "architectureNotes": "Integrates a parallel latent thought stream running alongside the audio synthesis autoregressive decoder, preventing conversational stalls during multi-step reasoning.",
+  "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+  "arenaRank": 4,
+  "arenaElo": 1412
+},
+{
+  "id": "model-gemini-3-8-live",
+  "name": "Gemini 3.8 Live",
+  "developer": "Google DeepMind",
+  "releaseDate": "September 2026",
+  "modelType": "Multimodal Foundation",
+  "modalities": [
+    "Text",
+    "Code",
+    "Audio",
+    "Vision"
+  ],
+  "contextWindow": "1M tokens",
+  "parameters": "Frontier Scale Native Speech-to-Speech Transformer",
+  "pricing": {
+    "inputPer1M": 0.75,
+    "outputPer1M": 4.5,
+    "cachedInputPer1M": 0.1875
+  },
+  "openSourceStatus": "Proprietary API",
+  "license": "Proprietary Commercial API",
+  "hardwareRequirements": "Managed Cloud API (Google AI Studio & Vertex AI Live API)",
+  "benchmarks": [
+    {
+      "benchmarkName": "Artificial Analysis Speech-to-Speech Quality",
+      "score": 82.6,
+      "unit": "Index",
+      "vsPreviousGen": "Global Rank #1"
+    },
+    {
+      "benchmarkName": "\u03c4-Voice Task Completion",
+      "score": "68.6%",
+      "vsPreviousGen": "Global Rank #1"
+    },
+    {
+      "benchmarkName": "Big Bench Audio",
+      "score": "97.7%",
+      "vsPreviousGen": "+3.4% vs baseline"
+    },
+    {
+      "benchmarkName": "LMSYS Chatbot Arena Elo",
+      "score": 1404,
+      "unit": "Elo",
+      "vsPreviousGen": "Rank #7"
+    }
+  ],
+  "keyImprovements": [
+    "Native sub-second speech-to-speech interaction without intermediary STT/TTS cascade lag.",
+    "Automatic mid-conversation language switching across 97 supported languages with real-time video stream context.",
+    "Executes background tools and asynchronous API calls while sustaining natural verbal dialogue without interruption."
+  ],
+  "knownLimitations": [
+    "Audio token consumption scales with session duration ($3.00/1M input, $12.00/1M output).",
+    "Requires low-jitter client network connectivity."
+  ],
+  "realWorldApplications": [
+    "Production autonomous voice agents, live customer service navigation, real-time multimodal accessibility, and interactive coding.",
+    "Google Workspace live collaboration across Docs, Gmail, and Meet."
+  ],
+  "architectureNotes": "Engineered by Google DeepMind as an end-to-end multimodal audio-vision transformer with SynthID imperceptible watermark integration and concurrent background function routing.",
+  "link": "https://ai.google.dev/pricing",
+  "arenaRank": 7,
+  "arenaElo": 1404
+},
   {
     "id": "model-deepseek-v4-1-flash",
     "name": "DeepSeek-V4.1-Flash",
@@ -7092,6 +7220,24 @@ export const ALL_135_MODELS: AIModel[] = [
 ];
 
 export const ARENA_LEADERBOARD_ENTRIES = [
+{
+  "rank": 4,
+  "modelName": "Gemini 3.8 Live Extended Thinking",
+  "developer": "Google DeepMind",
+  "score": 1412,
+  "date": "Sep 2026",
+  "verifiedByNextVector": true,
+  "costPerRun": "$0.75"
+},
+{
+  "rank": 7,
+  "modelName": "Gemini 3.8 Live",
+  "developer": "Google DeepMind",
+  "score": 1404,
+  "date": "Sep 2026",
+  "verifiedByNextVector": true,
+  "costPerRun": "$0.75"
+},
   {
     "rank": 1,
     "modelName": "GPT-6 Astra",

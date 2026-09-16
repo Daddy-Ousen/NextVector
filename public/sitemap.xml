@@ -1434,4 +1434,46 @@
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/gemini-3-8-live-extended-thinking-speech-to-speech-dual-channel</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/hugging-face-invoices-openai-100m-compute-scraping-dispute</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/baseten-harbor-pat-leak-full-cluster-compromise-25-minutes</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/engineer-builds-open-source-linux-gpu-driver-apple-m4-mac-mini</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/rheinmetall-open-sources-battlesuite-vehicle-drone-onboard-api</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/models/model-gemini-3-8-live-extended-thinking</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/models/model-gemini-3-8-live</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>

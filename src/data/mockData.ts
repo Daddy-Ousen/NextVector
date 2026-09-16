@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-16-gemini-3-8-live',
+    year: 2026,
+    month: 'Sep 16',
+    title: 'Google DeepMind Launches Gemini 3.8 Live with Simultaneous Dual-Channel Audio Reasoning',
+    category: 'AI Breakthrough',
+    summary: 'Google DeepMind deploys native speech-to-speech architecture with continuous inner monologue streaming, achieving 82.6 on Artificial Analysis Speech Quality and real-time interruption handling under 160ms latency.',
+    impactScore: 98,
+    keyShift: 'The first production foundation model decoupling latent deliberative reasoning tokens from real-time audio vocoder streams, eliminating the trade-off between thinking depth and conversational latency.',
+    articleSlug: 'gemini-3-8-live-extended-thinking-speech-to-speech-dual-channel'
+  },
+  {
     id: 'time-2026-09-15-sakana-alpc',
     year: 2026,
     month: 'Sep 15',
@@ -539,53 +550,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Tuesday, September 15, 2026',
-  summary: 'Sakana AI derives Augmented Lagrangian Predictive Coding, mathematically replacing global backpropagation with localized energy minimization and slashing training activation memory by 68%. Concurrently, former FTC Chair Lina Khan invokes 1934 Communications Act precedents urging personal criminal liability for monopolistic AI CEOs, an investigative audit exposes a third-party red-teaming contractor compromise leaking internal weights and telemetry across OpenAI, Anthropic, and Meta, NEO Emacs unveils a multi-threaded Rust display core with WebGPU hardware text shaping cutting render latency to 0.4ms, and the Ninth Circuit hears oral arguments in Amazon v. Perplexity on whether AI crawler swarms ignoring robots.txt violate the Computer Fraud and Abuse Act.',
+  date: 'Wednesday, September 16, 2026',
+  summary: 'Google DeepMind launches Gemini 3.8 Live with simultaneous dual-channel speech-to-speech reasoning and 155ms latency, capturing #1 on Artificial Analysis Speech Quality and entering LMSYS Arena at 1412 Elo. Concurrently, Hugging Face hits OpenAI with a $100M invoice for massive scraping across private Hub repositories, a critical vulnerability in Baseten\'s Harbor registry exposes multi-tenant GPU clusters within 25 minutes, Asahi Linux engineers reverse-engineer Apple\'s M4 G16 GPU in 30 days to ship full open-source Vulkan 1.3 drivers for local LLM inference, and German defense prime Rheinmetall open-sources its BattleSuite vehicle-to-drone ROS 2 telemetry middleware.',
   items: [
     {
       id: 'brief-1',
-      headline: 'Sakana AI Derives Augmented Lagrangian Predictive Coding: Bypassing Backpropagation Bottlenecks',
+      headline: 'Google DeepMind Launches Gemini 3.8 Live: Dual-Channel Speech-to-Speech with Extended Thinking',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Sakana AI formulates Augmented Lagrangian Predictive Coding (ALPC / pc-alm), solving the 40-year-old weight transport and backward-locking barriers to match AdamW backpropagation accuracy on transformers with 68% lower peak activation memory.',
-      whyItMatters: 'Removes the activation memory wall and enables asynchronous, pipeline-free training for neuromorphic silicon and massive foundation model clusters.',
-      articleSlug: 'sakana-ai-augmented-lagrangian-predictive-coding-backprop-alternative'
+      summary: 'DeepMind releases Gemini 3.8 Live, pairing continuous inner-monologue reasoning with real-time acoustic streaming at 155ms latency, scoring 82.6 on Speech Quality and securing 1412 Elo on LMSYS Arena.',
+      whyItMatters: 'Dismantles the historical compromise between conversational latency and deep reasoning, enabling real-time voice agents that think while speaking.',
+      articleSlug: 'gemini-3-8-live-extended-thinking-speech-to-speech-dual-channel'
     },
     {
       id: 'brief-2',
-      headline: 'Former FTC Chair Lina Khan Urges Personal Criminal Liability for AI CEOs Under 1934 Precedents',
+      headline: 'Hugging Face Invoices OpenAI $100M Over Massive Scraping of Private Hub Datasets',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Lina Khan invoked New Deal telecommunications antitrust statutes in a major policy keynote, demanding individual executive criminal prosecution and structural unbundling for hyperscaler cloud-model monopolies.',
-      whyItMatters: 'Signals a decisive regulatory shift away from inconsequential civil fines toward structural separation and personal executive culpability.',
-      articleSlug: 'ex-ftc-khan-urges-criminal-liability-ai-ceos-1934-precedent'
+      summary: 'Network telemetry tracks 42,000 residential proxy workers harvesting gated checkpoints and synthetic datasets across the Hugging Face Hub, prompting a $100M infrastructure exhaustion claim.',
+      whyItMatters: 'Highlights the escalating data wall and legal fallout as frontier labs covertly scrape open-source hubs for synthetic fine-tuning corpora.',
+      articleSlug: 'hugging-face-invoices-openai-100m-compute-scraping-dispute'
     },
     {
       id: 'brief-3',
-      headline: 'Single Security Contractor Breach Compromised Internal Model Weights Across OpenAI, Anthropic, and Meta',
+      headline: 'Critical Harbor PAT Flaw Exposed Baseten GPU Clusters to Full Compromise in 25 Minutes',
       category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'A forensic cybersecurity audit revealed an external red-teaming contractor was breached via compromised Okta credentials, leaking internal Slack feeds, pre-release weights, and zero-day jailbreaks across three top labs.',
-      whyItMatters: 'Demonstrates that air-gapped datacenter HSMs are vulnerable if third-party safety evaluation teams have persistent, unmonitored staging access.',
-      articleSlug: 'single-security-firm-breach-openai-anthropic-meta-weight-telemetry'
+      summary: 'Security researchers uncover unencrypted personal access tokens in cached container build layers, allowing root Kubernetes takeover and model weight tampering across multi-tenant GPU infrastructure.',
+      whyItMatters: 'Underscores severe supply chain and weight-poisoning risks in managed serverless AI cloud registries.',
+      articleSlug: 'baseten-harbor-pat-leak-full-cluster-compromise-25-minutes'
     },
     {
       id: 'brief-4',
-      headline: 'NEO Emacs Rewrites 40-Year-Old Display Core in Rust with WebGPU Hardware Text Shaping',
+      headline: 'Systems Engineer Ships Open-Source Linux GPU Driver for Apple M4 Mac Mini in 30 Days',
       category: 'technology' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'The NEO Emacs project replaces GNU Emacs’ single-threaded C rendering loop with an asynchronous Rust engine using WebGPU/Vulkan shaders, reducing frame render latency from 35ms to 0.4ms on 500k-line files.',
-      whyItMatters: 'Eliminates editor lockups under heavy Language Server Protocol (LSP) semantic token indexing while preserving 100% elisp compatibility.',
-      articleSlug: 'neo-emacs-rust-engine-webgpu-hardware-text-shaping'
+      summary: 'Reverse-engineering Apple\'s G16 GPU microarchitecture yields a fully compliant Vulkan 1.3 Mesa driver, unlocking native hardware-accelerated local LLM inference on Linux without macOS.',
+      whyItMatters: 'Positions the affordable M4 Mac Mini with 64GB unified memory as the premier compact Linux AI inference workstation.',
+      articleSlug: 'engineer-builds-open-source-linux-gpu-driver-apple-m4-mac-mini'
     },
     {
       id: 'brief-5',
-      headline: 'Amazon vs. Perplexity in Ninth Circuit Tests Legal Boundaries of Autonomous AI Web Crawlers',
+      headline: 'Rheinmetall Open-Sources BattleSuite Vehicle and Drone Telemetry API Framework',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Federal appellate oral arguments examine whether autonomous AI search crawlers circumventing robots.txt headers and Cloudflare challenges commit unauthorized access under the Computer Fraud and Abuse Act (CFAA).',
-      whyItMatters: 'Serves as the defining judicial precedent for the agentic web economy, testing whether publicly accessible sites can be walled off from AI agents.',
-      articleSlug: 'amazon-vs-perplexity-ninth-circuit-ai-crawler-robots-txt-cfaa'
+      summary: 'European defense contractor releases ROS 2 and NATO NGVA-compliant tactical middleware to standardize sensor fusion, autonomous tracking, and drone swarm integration.',
+      whyItMatters: 'Breaks decades of military contractor vendor lock-in, inviting commercial software innovators into European defense robotics.',
+      articleSlug: 'rheinmetall-open-sources-battlesuite-vehicle-drone-onboard-api'
     }
   ]
 };
@@ -593,33 +604,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Sakana AI ALPC',
-    text: 'Augmented Lagrangian predictive coding bypasses backprop backward locking and cuts memory by 68%',
-    articleSlug: 'sakana-ai-augmented-lagrangian-predictive-coding-backprop-alternative'
+    tag: 'Gemini 3.8 Live',
+    text: 'DeepMind debuts dual-channel speech-to-speech with extended thinking, 155ms latency, and 1412 Elo',
+    articleSlug: 'gemini-3-8-live-extended-thinking-speech-to-speech-dual-channel'
   },
   {
     id: 'sig-2',
-    tag: 'FTC Khan Precedent',
-    text: 'Lina Khan invokes 1934 New Deal statutes urging criminal liability for monopolistic AI CEOs',
-    articleSlug: 'ex-ftc-khan-urges-criminal-liability-ai-ceos-1934-precedent'
+    tag: 'HF vs OpenAI',
+    text: 'Hugging Face demands $100M from OpenAI after 42,000 proxy workers scrape gated Hub repositories',
+    articleSlug: 'hugging-face-invoices-openai-100m-compute-scraping-dispute'
   },
   {
     id: 'sig-3',
-    tag: 'Frontier Supply Breach',
-    text: 'Compromised safety contractor leaks internal Slack feeds and weights across OpenAI, Anthropic, Meta',
-    articleSlug: 'single-security-firm-breach-openai-anthropic-meta-weight-telemetry'
+    tag: 'Baseten Harbor Flaw',
+    text: 'Critical CVE-2026-38192 PAT leak enabled full multi-tenant GPU cluster takeover within 25 minutes',
+    articleSlug: 'baseten-harbor-pat-leak-full-cluster-compromise-25-minutes'
   },
   {
     id: 'sig-4',
-    tag: 'NEO Emacs Rust Core',
-    text: '40-year-old C display engine rewritten in Rust with WebGPU text shaping, slashing latency to 0.4ms',
-    articleSlug: 'neo-emacs-rust-engine-webgpu-hardware-text-shaping'
+    tag: 'Apple M4 Linux GPU',
+    text: 'Reverse-engineered Vulkan 1.3 driver brings native hardware LLM inference to M4 Mac Mini on Linux',
+    articleSlug: 'engineer-builds-open-source-linux-gpu-driver-apple-m4-mac-mini'
   },
   {
     id: 'sig-5',
-    tag: 'Amazon v. Perplexity',
-    text: 'Ninth Circuit hears landmark appeal on whether autonomous AI crawlers ignoring robots.txt violate CFAA',
-    articleSlug: 'amazon-vs-perplexity-ninth-circuit-ai-crawler-robots-txt-cfaa'
+    tag: 'Rheinmetall BattleSuite',
+    text: 'Defense prime open-sources ROS 2 NATO-compliant vehicle and tactical drone swarm middleware',
+    articleSlug: 'rheinmetall-open-sources-battlesuite-vehicle-drone-onboard-api'
   }
 ];
 

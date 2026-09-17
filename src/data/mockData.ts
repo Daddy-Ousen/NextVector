@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-17-nvidia-cuda-rust',
+    year: 2026,
+    month: 'Sep 17',
+    title: 'NVIDIA Announces Native GPU Programming in Rust with CUDA-Oxide and CuTile-RS',
+    category: 'Computing Architecture',
+    summary: 'NVIDIA officially releases native CUDA Rust toolchains, providing SIMT-to-PTX codegen via Pliron IR and stable tile-based GPU computing to enforce compile-time memory safety across AI inference engines.',
+    impactScore: 97,
+    keyShift: 'The structural introduction of affine typing and compile-time borrow checking to GPU accelerator kernels, eliminating memory corruption from production AI runtimes.',
+    articleSlug: 'nvidia-announces-native-cuda-rust-gpu-kernel-programming'
+  },
+  {
     id: 'time-2026-09-16-gemini-3-8-live',
     year: 2026,
     month: 'Sep 16',
@@ -550,53 +561,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Wednesday, September 16, 2026',
-  summary: 'Google DeepMind launches Gemini 3.8 Live with simultaneous dual-channel speech-to-speech reasoning and 155ms latency, capturing #1 on Artificial Analysis Speech Quality and entering LMSYS Arena at 1412 Elo. Concurrently, Hugging Face hits OpenAI with a $100M invoice for massive scraping across private Hub repositories, a critical vulnerability in Baseten\'s Harbor registry exposes multi-tenant GPU clusters within 25 minutes, Asahi Linux engineers reverse-engineer Apple\'s M4 G16 GPU in 30 days to ship full open-source Vulkan 1.3 drivers for local LLM inference, and German defense prime Rheinmetall open-sources its BattleSuite vehicle-to-drone ROS 2 telemetry middleware.',
+  date: 'Thursday, September 17, 2026',
+  summary: 'NVIDIA announces native GPU programming in Rust with CUDA-Oxide and CuTile-RS, bringing compile-time memory safety to AI inference kernels. Concurrently, Apple debuts hardware-attested cryptographic camera provenance on the iPhone 18 Pro to combat deepfakes, researchers break the 1.58-bit ternary LLM barrier with the BITCOS format reaching 1.485 bits per weight, a firmware decapsulation of Flock Safety roadside ALPR cameras reveals hardcoded root credentials and plaintext video endpoints, and Mistral partners with Mozilla to embed the private, sovereign AI assistant Firefox Smart Window directly into the browser.',
   items: [
     {
       id: 'brief-1',
-      headline: 'Google DeepMind Launches Gemini 3.8 Live: Dual-Channel Speech-to-Speech with Extended Thinking',
-      category: 'ai' as const,
+      headline: 'NVIDIA Announces Native GPU Programming in Rust: CUDA-Oxide and CuTile-RS',
+      category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'DeepMind releases Gemini 3.8 Live, pairing continuous inner-monologue reasoning with real-time acoustic streaming at 155ms latency, scoring 82.6 on Speech Quality and securing 1412 Elo on LMSYS Arena.',
-      whyItMatters: 'Dismantles the historical compromise between conversational latency and deep reasoning, enabling real-time voice agents that think while speaking.',
-      articleSlug: 'gemini-3-8-live-extended-thinking-speech-to-speech-dual-channel'
+      summary: 'NVIDIA launches official CUDA Rust compiler backends, delivering SIMT and tile-based GPU kernel programming in Rust to mathematically eliminate race conditions and memory leaks in inference engines.',
+      whyItMatters: 'Solves the 18-year memory safety vulnerability in accelerated computing without sacrificing peak FP8 matrix multiplication performance.',
+      articleSlug: 'nvidia-announces-native-cuda-rust-gpu-kernel-programming'
     },
     {
       id: 'brief-2',
-      headline: 'Hugging Face Invoices OpenAI $100M Over Massive Scraping of Private Hub Datasets',
+      headline: 'Apple Unveils Hardware-Attested Cryptographic Camera Provenance on iPhone 18 Pro',
       category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'Network telemetry tracks 42,000 residential proxy workers harvesting gated checkpoints and synthetic datasets across the Hugging Face Hub, prompting a $100M infrastructure exhaustion claim.',
-      whyItMatters: 'Highlights the escalating data wall and legal fallout as frontier labs covertly scrape open-source hubs for synthetic fine-tuning corpora.',
-      articleSlug: 'hugging-face-invoices-openai-100m-compute-scraping-dispute'
+      urgency: 'Critical Signal' as const,
+      summary: 'Apple introduces Apple Reference Image, signing raw CMOS sensor light captures inside dedicated on-die silicon coprocessors and verifying computational transforms via Private Cloud Compute.',
+      whyItMatters: 'Overcomes fragile software-level C2PA metadata manifests to establish the world\'s first hardware-rooted truth verification against generative deepfakes.',
+      articleSlug: 'apple-reference-image-hardware-attested-camera-provenance-iphone-18-pro'
     },
     {
       id: 'brief-3',
-      headline: 'Critical Harbor PAT Flaw Exposed Baseten GPU Clusters to Full Compromise in 25 Minutes',
-      category: 'technology' as const,
-      urgency: 'Critical Signal' as const,
-      summary: 'Security researchers uncover unencrypted personal access tokens in cached container build layers, allowing root Kubernetes takeover and model weight tampering across multi-tenant GPU infrastructure.',
-      whyItMatters: 'Underscores severe supply chain and weight-poisoning risks in managed serverless AI cloud registries.',
-      articleSlug: 'baseten-harbor-pat-leak-full-cluster-compromise-25-minutes'
+      headline: 'Breaking the 1.58-Bit Barrier: BITCOS Slashes Ternary LLM Footprint to 1.485 Bits',
+      category: 'research' as const,
+      urgency: 'High Impact' as const,
+      summary: 'Researchers discover zero-weight distributions reach 51.5% in ternary models, formulating a distribution-adaptive bitmap layout that out-compresses 5-trit byte packing.',
+      whyItMatters: 'Enables 70B parameter reasoning models to reside inside 13GB of VRAM and run matrix-multiplication-free on edge devices.',
+      articleSlug: 'breaking-1-58-bit-barrier-bitcos-ternary-llm-compression'
     },
     {
       id: 'brief-4',
-      headline: 'Systems Engineer Ships Open-Source Linux GPU Driver for Apple M4 Mac Mini in 30 Days',
+      headline: 'Flock Safety ALPR Camera Firmware Teardown Exposes Hardcoded Root Passwords',
       category: 'technology' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'Reverse-engineering Apple\'s G16 GPU microarchitecture yields a fully compliant Vulkan 1.3 Mesa driver, unlocking native hardware-accelerated local LLM inference on Linux without macOS.',
-      whyItMatters: 'Positions the affordable M4 Mac Mini with 64GB unified memory as the premier compact Linux AI inference workstation.',
-      articleSlug: 'engineer-builds-open-source-linux-gpu-driver-apple-m4-mac-mini'
+      urgency: 'High Impact' as const,
+      summary: 'Physical reverse-engineering of roadside surveillance cameras uncovers obsolete Android 8 kernels, plaintext MQTT telemetry, and unauthenticated RTSP video streams tracking civilian vehicles.',
+      whyItMatters: 'Highlights alarming cybersecurity flaws in mass surveillance networks deployed across thousands of municipal police departments.',
+      articleSlug: 'flock-safety-alpr-firmware-leak-hardcoded-credentials-unauthenticated-video'
     },
     {
       id: 'brief-5',
-      headline: 'Rheinmetall Open-Sources BattleSuite Vehicle and Drone Telemetry API Framework',
-      category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'European defense contractor releases ROS 2 and NATO NGVA-compliant tactical middleware to standardize sensor fusion, autonomous tracking, and drone swarm integration.',
-      whyItMatters: 'Breaks decades of military contractor vendor lock-in, inviting commercial software innovators into European defense robotics.',
-      articleSlug: 'rheinmetall-open-sources-battlesuite-vehicle-drone-onboard-api'
+      headline: 'Mistral and Mozilla Partner on Firefox Smart Window for Sovereign AI Browsing',
+      category: 'ai' as const,
+      urgency: 'Notable Shift' as const,
+      summary: 'Mozilla and Mistral launch an open-source, European cloud-hosted browsing assistant in Firefox that performs multi-tab research synthesis with zero user telemetry tracking.',
+      whyItMatters: 'Presents the first viable open, privacy-preserving counterweight to Chrome and Edge\'s commercial advertising AI enclosures.',
+      articleSlug: 'mistral-mozilla-firefox-smart-window-private-sovereign-ai-browsing'
     }
   ]
 };
@@ -604,33 +615,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Gemini 3.8 Live',
-    text: 'DeepMind debuts dual-channel speech-to-speech with extended thinking, 155ms latency, and 1412 Elo',
-    articleSlug: 'gemini-3-8-live-extended-thinking-speech-to-speech-dual-channel'
+    tag: 'NVIDIA CUDA Rust',
+    text: 'NVIDIA releases native CUDA Rust with cuda-oxide and cutile-rs for compile-time safe GPU kernels',
+    articleSlug: 'nvidia-announces-native-cuda-rust-gpu-kernel-programming'
   },
   {
     id: 'sig-2',
-    tag: 'HF vs OpenAI',
-    text: 'Hugging Face demands $100M from OpenAI after 42,000 proxy workers scrape gated Hub repositories',
-    articleSlug: 'hugging-face-invoices-openai-100m-compute-scraping-dispute'
+    tag: 'Apple Reference Image',
+    text: 'iPhone 18 Pro embeds silicon-level cryptographic attestation into camera sensor to defeat deepfakes',
+    articleSlug: 'apple-reference-image-hardware-attested-camera-provenance-iphone-18-pro'
   },
   {
     id: 'sig-3',
-    tag: 'Baseten Harbor Flaw',
-    text: 'Critical CVE-2026-38192 PAT leak enabled full multi-tenant GPU cluster takeover within 25 minutes',
-    articleSlug: 'baseten-harbor-pat-leak-full-cluster-compromise-25-minutes'
+    tag: 'BITCOS Ternary 1.485b',
+    text: 'Research breaks 1.58-bit limit, cutting ternary LLM weights to 1.485 bits via density-adaptive bitmaps',
+    articleSlug: 'breaking-1-58-bit-barrier-bitcos-ternary-llm-compression'
   },
   {
     id: 'sig-4',
-    tag: 'Apple M4 Linux GPU',
-    text: 'Reverse-engineered Vulkan 1.3 driver brings native hardware LLM inference to M4 Mac Mini on Linux',
-    articleSlug: 'engineer-builds-open-source-linux-gpu-driver-apple-m4-mac-mini'
+    tag: 'Flock Camera Leak',
+    text: 'Teardown of Flock Safety surveillance cameras exposes hardcoded root passwords and plaintext video',
+    articleSlug: 'flock-safety-alpr-firmware-leak-hardcoded-credentials-unauthenticated-video'
   },
   {
     id: 'sig-5',
-    tag: 'Rheinmetall BattleSuite',
-    text: 'Defense prime open-sources ROS 2 NATO-compliant vehicle and tactical drone swarm middleware',
-    articleSlug: 'rheinmetall-open-sources-battlesuite-vehicle-drone-onboard-api'
+    tag: 'Mistral x Mozilla',
+    text: 'Firefox Smart Window integrates Mistral AI into browser shell for private, sovereign tab synthesis',
+    articleSlug: 'mistral-mozilla-firefox-smart-window-private-sovereign-ai-browsing'
   }
 ];
 

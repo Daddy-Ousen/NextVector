@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-20-gemini-red-teaming-breakout',
+    year: 2026,
+    month: 'Sep 20',
+    title: 'Google Gemini Autonomously Breaches Three Enterprise Staging Networks in Red-Teaming Breakout',
+    category: 'AI Breakthrough',
+    summary: 'In an authorized frontier AI safety trial, Gemini autonomously discovered novel zero-day vulnerabilities, synthesized ROP chains, bypassed intrusion detection, and achieved root domain admin across three enterprise networks.',
+    impactScore: 98,
+    keyShift: 'The first documented real-world autonomous network penetration and domain controller compromise by a commercial foundation model, triggering global regulatory review.',
+    articleSlug: 'gemini-autonomously-hacks-three-enterprise-networks-red-teaming-breakout'
+  },
+  {
     id: 'time-2026-09-17-nvidia-cuda-rust',
     year: 2026,
     month: 'Sep 17',
@@ -561,53 +572,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Thursday, September 17, 2026',
-  summary: 'NVIDIA announces native GPU programming in Rust with CUDA-Oxide and CuTile-RS, bringing compile-time memory safety to AI inference kernels. Concurrently, Apple debuts hardware-attested cryptographic camera provenance on the iPhone 18 Pro to combat deepfakes, researchers break the 1.58-bit ternary LLM barrier with the BITCOS format reaching 1.485 bits per weight, a firmware decapsulation of Flock Safety roadside ALPR cameras reveals hardcoded root credentials and plaintext video endpoints, and Mistral partners with Mozilla to embed the private, sovereign AI assistant Firefox Smart Window directly into the browser.',
+  date: 'Sunday, September 20, 2026',
+  summary: 'In an authorized frontier red-teaming trial, Google Gemini autonomously breaches three enterprise staging networks by discovering zero-days and navigating Active Directory domains without human intervention. Concurrently, TypeSafe AI launches Jev, a non-generative System One foundation model delivering sub-10ms typed decisions at 400x lower cost for autonomous agents, unredacted court filings in The New York Times lawsuit reveal Microsoft executives called AI scraping the largest theft of labor in human history, Android 17 breaks a 15-year open-source precedent by withholding core APIs from AOSP, and OpenAI\'s GPT-6 Astra autonomously deciphers an unsolved 1917 World War I German military trench cipher.',
   items: [
     {
       id: 'brief-1',
-      headline: 'NVIDIA Announces Native GPU Programming in Rust: CUDA-Oxide and CuTile-RS',
-      category: 'technology' as const,
+      headline: 'Google Gemini Autonomously Breaches Three Enterprise Networks in Landmark Red-Teaming Breakout',
+      category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'NVIDIA launches official CUDA Rust compiler backends, delivering SIMT and tile-based GPU kernel programming in Rust to mathematically eliminate race conditions and memory leaks in inference engines.',
-      whyItMatters: 'Solves the 18-year memory safety vulnerability in accelerated computing without sacrificing peak FP8 matrix multiplication performance.',
-      articleSlug: 'nvidia-announces-native-cuda-rust-gpu-kernel-programming'
+      summary: 'In authorized safety evaluations, Gemini discovered zero-day vulnerabilities and achieved full Active Directory domain compromise across three enterprise target networks without human aid.',
+      whyItMatters: 'Marks the first documented autonomous corporate network penetration by a foundation model, validating long-standing cybersecurity warnings.',
+      articleSlug: 'gemini-autonomously-hacks-three-enterprise-networks-red-teaming-breakout'
     },
     {
       id: 'brief-2',
-      headline: 'Apple Unveils Hardware-Attested Cryptographic Camera Provenance on iPhone 18 Pro',
-      category: 'technology' as const,
+      headline: 'TypeSafe AI Releases Jev: The First System One Non-Generative Decision Model for Agents',
+      category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Apple introduces Apple Reference Image, signing raw CMOS sensor light captures inside dedicated on-die silicon coprocessors and verifying computational transforms via Private Cloud Compute.',
-      whyItMatters: 'Overcomes fragile software-level C2PA metadata manifests to establish the world\'s first hardware-rooted truth verification against generative deepfakes.',
-      articleSlug: 'apple-reference-image-hardware-attested-camera-provenance-iphone-18-pro'
+      summary: 'TypeSafe AI unveils Jev, an 8.2ms decision model that strips out conversational text to provide typed, hallucination-free schema answers at $0.05 per million tokens.',
+      whyItMatters: 'Slashing agent decision latency and cost by over 200x, Jev establishes a new standard for high-throughput autonomous routing loops.',
+      articleSlug: 'typesafe-ai-releases-jev-system-one-decision-model-for-agents'
     },
     {
       id: 'brief-3',
-      headline: 'Breaking the 1.58-Bit Barrier: BITCOS Slashes Ternary LLM Footprint to 1.485 Bits',
-      category: 'research' as const,
+      headline: 'Unredacted Court Filings Reveal Microsoft Exec Called AI Scraping the Largest Theft of Labor in History',
+      category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Researchers discover zero-weight distributions reach 51.5% in ternary models, formulating a distribution-adaptive bitmap layout that out-compresses 5-trit byte packing.',
-      whyItMatters: 'Enables 70B parameter reasoning models to reside inside 13GB of VRAM and run matrix-multiplication-free on edge devices.',
-      articleSlug: 'breaking-1-58-bit-barrier-bitcos-ternary-llm-compression'
+      summary: 'Unsealed discovery emails in the NYT copyright lawsuit reveal Microsoft and OpenAI leadership privately admitted training ingestion is massive labor theft and an existential publisher threat.',
+      whyItMatters: 'Severely undermines fair-use affirmative defenses in federal court, exposing tech giants to tens of billions in statutory copyright damages.',
+      articleSlug: 'unredacted-filings-microsoft-exec-ai-scraping-theft-of-labor'
     },
     {
       id: 'brief-4',
-      headline: 'Flock Safety ALPR Camera Firmware Teardown Exposes Hardcoded Root Passwords',
+      headline: 'Android 17 Breaks 15-Year Open-Source Precedent by Withholding Core Platform APIs from AOSP',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Physical reverse-engineering of roadside surveillance cameras uncovers obsolete Android 8 kernels, plaintext MQTT telemetry, and unauthenticated RTSP video streams tracking civilian vehicles.',
-      whyItMatters: 'Highlights alarming cybersecurity flaws in mass surveillance networks deployed across thousands of municipal police departments.',
-      articleSlug: 'flock-safety-alpr-firmware-leak-hardcoded-credentials-unauthenticated-video'
+      summary: 'Google withholds critical NPU and virtualization APIs from the public Android Open Source Project, restricting them to proprietary GMS binaries and sparking custom ROM fury.',
+      whyItMatters: 'Threatens the survival of privacy-focused forks like GrapheneOS and invites aggressive European Digital Markets Act scrutiny.',
+      articleSlug: 'android-17-withholds-core-apis-from-aosp-open-source-rift'
     },
     {
       id: 'brief-5',
-      headline: 'Mistral and Mozilla Partner on Firefox Smart Window for Sovereign AI Browsing',
+      headline: 'GPT-6 Astra Autonomously Deciphers Century-Old Unbroken World War I German Military Cipher',
       category: 'ai' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'Mozilla and Mistral launch an open-source, European cloud-hosted browsing assistant in Firefox that performs multi-tab research synthesis with zero user telemetry tracking.',
-      whyItMatters: 'Presents the first viable open, privacy-preserving counterweight to Chrome and Edge\'s commercial advertising AI enclosures.',
-      articleSlug: 'mistral-mozilla-firefox-smart-window-private-sovereign-ai-browsing'
+      summary: 'OpenAI\'s flagship uses test-time recurrent depth and automated lattice reduction to crack an unbroken 1917 Imperial German trench radio cryptogram in under four hours.',
+      whyItMatters: 'Demonstrates foundation models synthesizing deep historical linguistic priors with mathematical cryptanalysis to unlock historical mysteries.',
+      articleSlug: 'gpt-6-astra-deciphers-unbroken-ww1-german-military-cipher'
     }
   ]
 };
@@ -615,33 +626,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'NVIDIA CUDA Rust',
-    text: 'NVIDIA releases native CUDA Rust with cuda-oxide and cutile-rs for compile-time safe GPU kernels',
-    articleSlug: 'nvidia-announces-native-cuda-rust-gpu-kernel-programming'
+    tag: 'Gemini Cyber Breakout',
+    text: 'Google Gemini autonomously breaches three enterprise networks in landmark authorized red-teaming trials',
+    articleSlug: 'gemini-autonomously-hacks-three-enterprise-networks-red-teaming-breakout'
   },
   {
     id: 'sig-2',
-    tag: 'Apple Reference Image',
-    text: 'iPhone 18 Pro embeds silicon-level cryptographic attestation into camera sensor to defeat deepfakes',
-    articleSlug: 'apple-reference-image-hardware-attested-camera-provenance-iphone-18-pro'
+    tag: 'TypeSafe Jev Model',
+    text: 'TypeSafe AI releases Jev, a sub-10ms System One non-generative decision foundation model for agents',
+    articleSlug: 'typesafe-ai-releases-jev-system-one-decision-model-for-agents'
   },
   {
     id: 'sig-3',
-    tag: 'BITCOS Ternary 1.485b',
-    text: 'Research breaks 1.58-bit limit, cutting ternary LLM weights to 1.485 bits via density-adaptive bitmaps',
-    articleSlug: 'breaking-1-58-bit-barrier-bitcos-ternary-llm-compression'
+    tag: 'Microsoft NYT Filings',
+    text: 'Unredacted emails reveal Microsoft executive called AI scraping the largest theft of labor in human history',
+    articleSlug: 'unredacted-filings-microsoft-exec-ai-scraping-theft-of-labor'
   },
   {
     id: 'sig-4',
-    tag: 'Flock Camera Leak',
-    text: 'Teardown of Flock Safety surveillance cameras exposes hardcoded root passwords and plaintext video',
-    articleSlug: 'flock-safety-alpr-firmware-leak-hardcoded-credentials-unauthenticated-video'
+    tag: 'Android 17 AOSP Rift',
+    text: 'Google withholds core platform APIs from AOSP for the first time since 2011, crippling custom ROMs',
+    articleSlug: 'android-17-withholds-core-apis-from-aosp-open-source-rift'
   },
   {
     id: 'sig-5',
-    tag: 'Mistral x Mozilla',
-    text: 'Firefox Smart Window integrates Mistral AI into browser shell for private, sovereign tab synthesis',
-    articleSlug: 'mistral-mozilla-firefox-smart-window-private-sovereign-ai-browsing'
+    tag: 'GPT-6 Astra WWI Cipher',
+    text: 'OpenAI GPT-6 Astra autonomously cracks 109-year-old unsolved 1917 Imperial German military cryptogram',
+    articleSlug: 'gpt-6-astra-deciphers-unbroken-ww1-german-military-cipher'
   }
 ];
 

@@ -2,6 +2,62 @@
 import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
+  {
+    "id": "model-jev-system-one",
+    "name": "Jev (System One)",
+    "developer": "TypeSafe AI",
+    "releaseDate": "September 2026",
+    "modelType": "Code & Agent",
+    "modalities": [
+      "Text",
+      "JSON",
+      "State"
+    ],
+    "contextWindow": "128k tokens",
+    "parameters": "Specialized Decision-Only Transformer with RLCD Calibration",
+    "pricing": {
+      "inputPer1M": 0.05,
+      "outputPer1M": 0.1,
+      "cachedInputPer1M": 0.0125
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary Commercial API",
+    "hardwareRequirements": "Managed Cloud API (TypeSafe Cloud & OpenJev Edge Containers)",
+    "benchmarks": [
+      {
+        "benchmarkName": "RLCD Calibrated Decision Accuracy",
+        "score": "99.4%",
+        "vsPreviousGen": "200x faster than LLM routing"
+      },
+      {
+        "benchmarkName": "Zero-Type-Error Rate",
+        "score": "100%",
+        "vsPreviousGen": "Guaranteed by Schema Compiler"
+      },
+      {
+        "benchmarkName": "Decision Latency",
+        "score": 8.2,
+        "unit": "ms",
+        "vsPreviousGen": "Sub-10ms P99"
+      }
+    ],
+    "keyImprovements": [
+      "First non-generative System One foundation model specifically engineered for sub-10ms agent decision routing.",
+      "Completely eliminates hallucination and schema invalidity by constraining outputs to typed schema primitives (Choice, Score, Noul).",
+      "Up to 400x cheaper ($0.05 / 1M tokens) and 200x faster than general-purpose conversational LLMs for classification and evaluation loops."
+    ],
+    "knownLimitations": [
+      "Cannot generate free-form text or creative prose by architectural design.",
+      "Requires pre-defined TypeScript or JSON Schema contracts for question formulation."
+    ],
+    "realWorldApplications": [
+      "Autonomous agent tool-selection and routing loops (Claude Code, Stagehand, browser agents).",
+      "High-throughput content moderation, ticket triaging, and real-time fraud scoring.",
+      "Automated CI/CD pull request gatekeeping and test-run outcome validation."
+    ],
+    "architectureNotes": "Built upon Reinforcement Learning for Calibrated Decisions (RLCD) with parallel constrained decoding. Replaces autoregressive token generation with single-pass logit projection into valid schema coordinates.",
+    "link": "https://openjev.com/"
+  },
 {
   "id": "model-gemini-3-8-live-extended-thinking",
   "name": "Gemini 3.8 Live Extended Thinking",

@@ -1495,6 +1495,36 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://nextvector.rhasan.online/article/gemini-autonomously-hacks-three-enterprise-networks-red-teaming-breakout</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/typesafe-ai-releases-jev-system-one-decision-model-for-agents</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/unredacted-filings-microsoft-exec-ai-scraping-theft-of-labor</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/android-17-withholds-core-apis-from-aosp-open-source-rift</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/gpt-6-astra-deciphers-unbroken-ww1-german-military-cipher</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://nextvector.rhasan.online/models/model-gemini-3-8-live-extended-thinking</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -1503,6 +1533,12 @@
   <url>
     <loc>https://nextvector.rhasan.online/models/model-gemini-3-8-live</loc>
     <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/models/model-jev-system-one</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>

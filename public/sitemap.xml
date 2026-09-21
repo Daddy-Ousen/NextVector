@@ -1525,6 +1525,36 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://nextvector.rhasan.online/article/alibaba-releases-qwen-image-2-1-open-weights-unified-diffusion</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/gpu-pcie-side-channel-exfiltrates-proprietary-model-weights</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/reverse-engineering-chatgpt-ad-collector-cross-site-tracking-controversy</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/samsung-doubles-hbm4-production-target-ai-datacenter-demand</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/teardown-reveals-nvidia-gpus-host-dozens-of-internal-risc-v-cores</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://nextvector.rhasan.online/models/model-gemini-3-8-live-extended-thinking</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -1539,6 +1569,12 @@
   <url>
     <loc>https://nextvector.rhasan.online/models/model-jev-system-one</loc>
     <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/models/model-qwen-image-2-1</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>

@@ -3,6 +3,61 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
+    "id": "model-qwen-image-2-1",
+    "name": "Qwen-Image-2.1",
+    "developer": "Alibaba Cloud / Qwen",
+    "releaseDate": "September 2026",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Image",
+      "Vision"
+    ],
+    "contextWindow": "2k image resolution (2048x2048 native)",
+    "parameters": "7B visual diffusion transformer parameters",
+    "pricing": {
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.4,
+      "cachedInputPer1M": 0.05
+    },
+    "openSourceStatus": "Open Weights",
+    "license": "Qwen Research License Agreement (Non-commercial research)",
+    "hardwareRequirements": "16GB VRAM (Single NVIDIA RTX 4080 / 5080 or A10G)",
+    "benchmarks": [
+      {
+        "benchmarkName": "Native RGBA Transparency Support",
+        "score": "100% Native",
+        "vsPreviousGen": "Zero-postprocessing background-free"
+      },
+      {
+        "benchmarkName": "Max Native Output Resolution",
+        "score": "2048x2048",
+        "vsPreviousGen": "Native 2K uncropped"
+      },
+      {
+        "benchmarkName": "Multi-Image Conditioning",
+        "score": "Up to 10 references",
+        "vsPreviousGen": "Multi-subject identity preservation"
+      }
+    ],
+    "keyImprovements": [
+      "Unified text-to-image generation and image editing within a single 7B visual diffusion transformer.",
+      "Native RGBA transparency support generating background-free product and character renders directly in the latent space.",
+      "Multi-image conditioning handling up to 10 reference images for consistent character and style preservation."
+    ],
+    "knownLimitations": [
+      "Non-commercial research license requires negotiated commercial licensing for enterprise production.",
+      "Requires 16GB VRAM minimum for full 2K resolution inference."
+    ],
+    "realWorldApplications": [
+      "E-commerce product asset generation with native transparent backgrounds.",
+      "Iterative visual design, ComfyUI pipelines, and multi-turn character turnaround editing.",
+      "Game asset texture generation and UI icon compositing."
+    ],
+    "architectureNotes": "Unified visual diffusion transformer combining text conditioning and latent image spatial tokens in a single multi-modal attention backbone. Emits 4-channel RGBA latents without external segmentation.",
+    "link": "https://qwen.ai/blog?id=qwen-image-2.1"
+  },
+  {
     "id": "model-jev-system-one",
     "name": "Jev (System One)",
     "developer": "TypeSafe AI",

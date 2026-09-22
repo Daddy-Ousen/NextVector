@@ -21,6 +21,8 @@ ARTICLES_FILE = ROOT_DIR / "src" / "data" / "articlesData.ts"
 MOCK_DATA_FILE = ROOT_DIR / "src" / "data" / "mockData.ts"
 SITEMAP_FILE = ROOT_DIR / "public" / "sitemap.xml"
 PUBLIC_IMAGES_DIR = ROOT_DIR / "public"
+MODELS_FILE = ROOT_DIR / "src" / "data" / "modelsData.ts"
+BENCHMARKS_FILE = ROOT_DIR / "src" / "data" / "benchmarksData.ts"
 
 BANNED_ANACHRONISMS = [
     (r"claude\s*3\.?7\s*sonnet.*(?:release|launch|unveil|drop|introduc)", "Claude 3.7 Sonnet is a Feb 2025 model; cannot be reported as a new release in 2026"),
@@ -249,6 +251,71 @@ def check_temporal_sanity(articles):
     print("PASS: Newest articles have valid ISO timestamps.")
     return True
 
+def check_model_benchmark_sync():
+    print("\n[Gate 6/6] Auditing Model Registry & Benchmark Synchronization...")
+    if not MODELS_FILE.exists() or not BENCHMARKS_FILE.exists():
+        print("FAIL: modelsData.ts or benchmarksData.ts missing.")
+        return False
+
+    models_content = MODELS_FILE.read_text(encoding="utf-8")
+    bench_content = BENCHMARKS_FILE.read_text(encoding="utf-8")
+
+    errors = []
+
+    # 1. Audit ARENA_LEADERBOARD_ENTRIES ranks
+    arena_match = re.search(r"export const ARENA_LEADERBOARD_ENTRIES = \[(.*?)\];", models_content, re.DOTALL)
+    if not arena_match:
+        errors.append("Could not parse ARENA_LEADERBOARD_ENTRIES in modelsData.ts")
+    else:
+        arena_body = arena_match.group(1)
+        ranks = [int(r) for r in re.findall(r"[\"']rank[\"']:\s*(\d+)", arena_body)]
+        print(f"-> Total Arena entries: {len(ranks)}")
+        for expected, actual in enumerate(ranks, start=1):
+            if expected != actual:
+                errors.append(f"Arena rank mismatch at index {expected-1}: expected #{expected}, found #{actual}")
+                break
+
+        # Check Grok 4.7
+        if "Grok 4.7" not in arena_body:
+            errors.append("Grok 4.7 missing from ARENA_LEADERBOARD_ENTRIES.")
+
+    # 2. Audit SWE-bench ranks
+    swe_match = re.search(r"export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];", bench_content, re.DOTALL)
+    if not swe_match:
+        errors.append("Could not parse SWE_BENCH_LEADERBOARD_ENTRIES in benchmarksData.ts")
+    else:
+        swe_body = swe_match.group(1)
+        swe_ranks = [int(r) for r in re.findall(r"[\"']?rank[\"']?:\s*(\d+)", swe_body)]
+        print(f"-> Total SWE-bench entries: {len(swe_ranks)}")
+        for expected, actual in enumerate(swe_ranks, start=1):
+            if expected != actual:
+                errors.append(f"SWE-bench rank mismatch at index {expected-1}: expected #{expected}, found #{actual}")
+                break
+        if "Grok 4.7" not in swe_body:
+            errors.append("Grok 4.7 missing from SWE_BENCH_LEADERBOARD_ENTRIES.")
+
+    # 3. Audit OSWorld
+    osworld_match = re.search(r"export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];", bench_content, re.DOTALL)
+    if osworld_match:
+        os_body = osworld_match.group(1)
+        if "Grok 4.7" not in os_body:
+            errors.append("Grok 4.7 missing from OSWORLD_LEADERBOARD_ENTRIES.")
+
+    # 4. Audit Price-Performance
+    price_match = re.search(r"export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];", bench_content, re.DOTALL)
+    if price_match:
+        price_body = price_match.group(1)
+        if "Jev (System One)" not in price_body:
+            errors.append("Jev (System One) missing from PRICE_PERFORMANCE_LEADERBOARD_ENTRIES.")
+
+    if errors:
+        for err in errors:
+            print(f"  [ERROR] {err}")
+        return False
+
+    print("PASS: Model and Benchmark leaderboards synchronized with 1..N sequential ranks.")
+    return True
+
 def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -282,8 +349,13 @@ def main():
         print("\n[FAIL] RELEASE GATE FAILED at Temporal Sanity Audit.")
         sys.exit(1)
 
+    pass_models_bench = check_model_benchmark_sync()
+    if not pass_models_bench:
+        print("\n[FAIL] RELEASE GATE FAILED at Model & Benchmark Sync Audit.")
+        sys.exit(1)
+
     print("\n=========================================================")
-    print("  [SUCCESS] ALL RELEASE GATES PASSED (100% Rulebook Compliant)")
+    print("  [SUCCESS] ALL 6 RELEASE GATES PASSED (100% Rulebook Compliant)")
     print("=========================================================")
     sys.exit(0)
 

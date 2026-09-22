@@ -332,13 +332,15 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                     >
                       <td className="py-3 px-4 text-center">
                         <span className={`inline-block px-2 py-0.5 rounded font-bold ${
-                          (model.arenaRank || 999) <= 3
+                          model.arenaRank && model.arenaRank <= 3
                             ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                            : (model.arenaRank || 999) <= 10
+                            : model.arenaRank && model.arenaRank <= 10
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
-                            : 'text-zinc-400'
+                            : model.arenaRank
+                            ? 'text-zinc-400'
+                            : 'bg-zinc-800/80 text-zinc-400 border border-zinc-700/60 text-[10px]'
                         }`}>
-                          #{model.arenaRank}
+                          {model.arenaRank ? `#${model.arenaRank}` : 'Specialized'}
                         </span>
                       </td>
 
@@ -359,7 +361,13 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                       </td>
 
                       <td className="py-3 px-4 text-right font-bold text-emerald-400">
-                        {model.arenaElo}
+                        {model.arenaElo ? (
+                          model.arenaElo
+                        ) : (
+                          <span className="text-[10px] font-normal text-zinc-500 font-mono">
+                            {model.modelType === 'Multimodal Foundation' ? 'Visual / 2K DiT' : 'Agent Runtime'}
+                          </span>
+                        )}
                       </td>
 
                       <td className="py-3 px-4 text-zinc-400">

@@ -161,7 +161,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       why: 'Runs comfortably on a single workstation GPU (RTX 5090 / 4090) while outperforming previous-generation 70B models.',
     },
     proTip:
-      'Cost Efficiency: DeepSeek-V4-Pro delivers comparable MATH benchmark accuracy to closed frontier APIs. Use Claude Opus 5 (in Claude Pro or API) for novel scientific synthesis requiring multi-disciplinary hypotheses.',
+      'Multi-Agent & Reasoning Tip: For autonomous multi-file refactoring with compiler verification, xAI Grok 4.7 (#6, 1414 Elo, $3.00/1M) embeds native sub-agent branch tokens. Use Claude Opus 5 (#4, 1416 Elo) for novel scientific synthesis requiring multi-disciplinary hypotheses, and DeepSeek-V4-Pro ($0.75/1M) for high-volume math proofs.',
   },
   {
     id: 'guide-context',

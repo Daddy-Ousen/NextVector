@@ -150,6 +150,50 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-09-23-claude-opus-5-5',
+    year: 2026,
+    month: 'Sep 23',
+    title: 'Anthropic Unveils Claude Opus 5.5 with 1M Context, 40% Price Cut, and Lean 4 Verification',
+    category: 'AI Breakthrough',
+    summary: 'Anthropic deploys Claude Opus 5.5, introducing certified Lean 4 interactive theorem proving synthesis, 73.4% SWE-bench Verified score, and an aggressive $4/M input pricing structure.',
+    impactScore: 98,
+    keyShift: 'The first frontier model incorporating a native formal theorem proving kernel to guarantee mathematical correctness in generated code and theoretical algorithms.',
+    articleSlug: 'anthropic-claude-opus-5-5-1m-context-lean-4-verification'
+  },
+  {
+    id: 'time-2026-09-23-chd-graph-algorithm',
+    year: 2026,
+    month: 'Sep 23',
+    title: 'C-HD Graph Algorithm: Multi-Agent LLMs Formally Break Dijkstra Bounds with Certified Lean 4 Proof',
+    category: 'AI Breakthrough',
+    summary: 'ETH Zurich, MIT, and Vals.ai discover the C-HD shortest path algorithm with O(E + V sqrt(log V)) expected running time, verified by a 12,000-line certified Lean 4 formal proof.',
+    impactScore: 97,
+    keyShift: 'The historic first instance of an AI reasoning system discovering a sub-Dijkstra shortest-path algorithm proven fully sound by a formal interactive theorem prover.',
+    articleSlug: 'c-hd-graph-algorithm-multi-agent-llms-break-dijkstra-bounds-lean-4'
+  },
+  {
+    id: 'time-2026-09-23-meta-muse-zeroday',
+    year: 2026,
+    month: 'Sep 23',
+    title: 'Critical CVE-2026-38291 Zero-Day in Meta Muse Agent Enables MicroVM Memory and Credential Exfiltration',
+    category: 'Computing Architecture',
+    summary: 'Security researchers uncover a 9.4 CVSS heap over-read in Meta Muse assistant serialization daemons, enabling remote extraction of active enterprise API tokens and host filesystem trees.',
+    impactScore: 96,
+    keyShift: 'Demonstrates that memory-safety flaws in low-level AI agent microVM runtimes can circumvent all linguistic prompt guardrails, prompting emergency CISA hardening directives.',
+    articleSlug: 'zero-day-meta-muse-assistant-sandboxed-filesystem-memory-dump'
+  },
+  {
+    id: 'time-2026-09-23-asml-euv-paradox',
+    year: 2026,
+    month: 'Sep 23',
+    title: 'ASML Ships Zero EUV Machines in Europe as 2nm Capital Expenditure Concentrates Abroad',
+    category: 'Semiconductors',
+    summary: 'Financial filings confirm zero High-NA EUV scanners were installed in EU fabs throughout 2026, revealing a structural compute dependency on Asian and American foundries.',
+    impactScore: 95,
+    keyShift: 'Exposes the operational gap between European lithography equipment dominance and domestic leading-edge semiconductor manufacturing capacity.',
+    articleSlug: 'asml-european-sales-paradox-zero-euv-machines-home-2nm-capex'
+  },
+  {
     id: 'time-2026-09-22-grok-4-7',
     year: 2026,
     month: 'Sep 22',
@@ -594,53 +638,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Tuesday, September 22, 2026',
-  summary: 'xAI launches Grok 4.7, a flagship frontier reasoning model featuring native multi-agent orchestration and 500K-token deterministic code verification trained on the Memphis Colossus cluster. Concurrently, Amazon deploys aggressive bot countermeasures to block Meta\'s newly deployed Muse AI shopping agent from scraping and purchasing on Amazon.com, NASA officially cancels the multi-billion dollar Mars Sample Return mission due to $12B+ cost projections, Cloudflare declares Python Workers generally available across 330 edge cities via WebAssembly Pyodide sandboxes with sub-5ms cold starts, and privacy researchers launch ZuckOff, an open-source tool that detects Meta smart glasses in real time via passive Bluetooth LE radio frame sniffing.',
+  date: 'Wednesday, September 23, 2026',
+  summary: 'Anthropic releases Claude Opus 5.5 featuring a native 1M-token context window, a 40% inference cost reduction ($4.00/M in, $20.00/M out), and autonomous Lean 4 mathematical verification. Concurrently, European financial disclosures reveal ASML shipped zero High-NA EUV scanners to European fabs in 2026 as 2nm capital expenditures concentrate in Asia and the US, a critical CVE-2026-38291 zero-day in Meta\'s Muse enterprise assistant enables full sandboxed microVM filesystem and memory dumps, hyperscalers unveil 3.2 Tbps Co-Packaged Optics standards at ECOC 2026 to break the data center thermal wall, and ETH Zurich and MIT researchers deploy multi-agent LLMs to formulate the C-HD graph shortest path algorithm—shattering 60-year-old Dijkstra complexity bounds with a certified Lean 4 proof.',
   items: [
     {
       id: 'brief-1',
-      headline: 'xAI Releases Grok 4.7: Native Multi-Agent Orchestration & 500K Deterministic Code Verification',
+      headline: 'Anthropic Unveils Claude Opus 5.5: 1M Context, 40% Price Reduction & Lean 4 Formal Verification',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'xAI unveils Grok 4.7, integrating autonomous sub-agent branching and deterministic compiler verification directly into the decoding loop to achieve 62.4% on SWE-bench Verified.',
-      whyItMatters: 'Eliminates external agent orchestration frameworks by embedding multi-agent reasoning tokens natively into the model vocabulary.',
-      articleSlug: 'xai-releases-grok-4-7-frontier-reasoning-multi-agent-orchestration'
+      summary: 'Anthropic introduces Claude Opus 5.5, securing Rank 4 globally on Chatbot Arena (1417 Elo) and 73.4% on SWE-bench Verified with native formal logic synthesis in Lean 4.',
+      whyItMatters: 'Slashes frontier reasoning costs by 40% and bridges conversational generation with machine-checked mathematical and software proof verification.',
+      articleSlug: 'anthropic-claude-opus-5-5-1m-context-lean-4-verification'
     },
     {
       id: 'brief-2',
-      headline: 'Amazon Blocks Meta\'s Muse AI Agent from Scraping and Autonomous Shopping on Retail Platform',
+      headline: 'ASML European Sales Paradox: Home Continent Buys Zero EUV Machines as 2nm CAPEX Flees Overseas',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Amazon deploys WAF bot mitigation to block Meta\'s Muse agentic assistant from comparing prices and executing automated checkouts on Amazon.com.',
-      whyItMatters: 'Signals the start of the Agentic Commerce Wars, threatening Amazon\'s $45B sponsored advertising business and triggering antitrust scrutiny.',
-      articleSlug: 'amazon-blocks-meta-muse-agent-scraping-autonomous-shopping'
+      summary: 'Quarterly shipment filings reveal 100% of ASML High-NA EUV scanners went to Taiwan, the US, and South Korea, leaving European AI fabs without sub-2nm capacity.',
+      whyItMatters: 'Exposes structural flaws in the €43B European Chips Act, cementing complete European dependency on foreign silicon for frontier AI supercomputing.',
+      articleSlug: 'asml-european-sales-paradox-zero-euv-machines-home-2nm-capex'
     },
     {
       id: 'brief-3',
-      headline: 'NASA Officially Cancels Mars Sample Return Mission Following Severe Budget Overruns',
-      category: 'science' as const,
+      headline: 'Zero-Day in Meta Muse Assistant Enables Arbitrary MicroVM Memory and Host Filesystem Dumps',
+      category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'NASA and ESA terminate the flagship Mars Sample Return program after independent audits project costs exceeding $12B and returns delayed past 2040.',
-      whyItMatters: 'Leaves 38 pristine sealed rock cores cached by Perseverance stranded in Jezero Crater and redirects planetary science toward commercial launch providers.',
-      articleSlug: 'nasa-cancels-mars-sample-return-mission-budget-overruns-architecture-deadlock'
+      summary: 'VectorSec discloses CVE-2026-38291, a 9.4 CVSS flaw in Meta Muse IPC serialization daemons allowing malicious prompts to exfiltrate cached enterprise tokens.',
+      whyItMatters: 'Proves memory corruption in agent microVM runtime daemons bypasses prompt firewalls, turning enterprise AI agents into live exfiltration channels.',
+      articleSlug: 'zero-day-meta-muse-assistant-sandboxed-filesystem-memory-dump'
     },
     {
       id: 'brief-4',
-      headline: 'Cloudflare Declares Python Workers Generally Available with WebAssembly Pyodide Sandboxes',
+      headline: 'Hyperscalers Standardize Co-Packaged Optics at ECOC 2026 to Shatter Data Center Thermal Wall',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Cloudflare brings native Python to edge workers globally with sub-5ms cold starts by embedding CPython inside V8 isolates using pre-warmed memory snapshots.',
-      whyItMatters: 'Vanquishes the container cold-start penalty for Python, unlocking edge data engineering, ML inference, and API development without servers.',
-      articleSlug: 'cloudflare-declares-python-workers-generally-available-webassembly-pyodide'
+      summary: 'Google, Microsoft, and Meta unveil 3.2 Tbps and 6.4 Tbps optical chiplet architectures, cutting cluster network energy consumption by 65%.',
+      whyItMatters: 'Eliminates electrical copper SerDes bottlenecks at >200G lane speeds, enabling multi-campus gigawatt AI clusters with picosecond jitter.',
+      articleSlug: 'hyperscalers-accelerate-silicon-photonics-co-packaged-optics-thermal-wall'
     },
     {
       id: 'brief-5',
-      headline: 'ZuckOff Open-Source Tool Detects Meta Smart Glasses in Real Time via BLE Frame Sniffing',
-      category: 'technology' as const,
+      headline: 'C-HD Graph Algorithm: Multi-Agent LLMs Formally Break Dijkstra Bounds with Certified Lean 4 Proof',
+      category: 'research' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'Cybersecurity researchers release ZuckOff, an open-source utility that sniffs unencrypted Bluetooth LE and Wi-Fi Direct beacons to alert users to nearby Meta smart glasses.',
-      whyItMatters: 'Provides real-time counter-surveillance against concealed recording LEDs, intensifying public and regulatory debate over wearable privacy.',
-      articleSlug: 'zuckoff-open-source-tool-detects-meta-smart-glasses-ble-sniffing'
+      summary: 'ETH Zurich, MIT, and Vals.ai discover sub-Dijkstra shortest path algorithm achieving O(E + V sqrt(log V)) expected running time, verified by 12,000-line Lean 4 proof.',
+      whyItMatters: 'Shatters a 60-year-old algorithmic complexity barrier and establishes a proven template for AI-driven machine-verified theoretical computer science.',
+      articleSlug: 'c-hd-graph-algorithm-multi-agent-llms-break-dijkstra-bounds-lean-4'
     }
   ]
 };
@@ -648,33 +692,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Grok 4.7',
-    text: 'xAI launches Grok 4.7 with native multi-agent orchestration and 62.4% SWE-bench score',
-    articleSlug: 'xai-releases-grok-4-7-frontier-reasoning-multi-agent-orchestration'
+    tag: 'Claude Opus 5.5',
+    text: 'Anthropic launches Claude Opus 5.5 with 1M context, 40% price cut, and Lean 4 verification',
+    articleSlug: 'anthropic-claude-opus-5-5-1m-context-lean-4-verification'
   },
   {
     id: 'sig-2',
-    tag: 'Amazon Bot Defense',
-    text: 'Amazon blocks Meta Muse agentic assistant from autonomous browsing and shopping',
-    articleSlug: 'amazon-blocks-meta-muse-agent-scraping-autonomous-shopping'
+    tag: 'ASML EUV Paradox',
+    text: 'ASML ships zero EUV machines to Europe in 2026 as 2nm foundry CAPEX concentrates abroad',
+    articleSlug: 'asml-european-sales-paradox-zero-euv-machines-home-2nm-capex'
   },
   {
     id: 'sig-3',
-    tag: 'NASA Mars MSR',
-    text: 'NASA officially cancels Mars Sample Return mission after projected costs cross $12B',
-    articleSlug: 'nasa-cancels-mars-sample-return-mission-budget-overruns-architecture-deadlock'
+    tag: 'Meta Muse Zero-Day',
+    text: 'Critical CVE-2026-38291 flaw in Meta Muse triggers sandboxed microVM filesystem memory dumps',
+    articleSlug: 'zero-day-meta-muse-assistant-sandboxed-filesystem-memory-dump'
   },
   {
     id: 'sig-4',
-    tag: 'Python Workers GA',
-    text: 'Cloudflare brings Python Workers to GA with sub-5ms cold starts via Pyodide Wasm',
-    articleSlug: 'cloudflare-declares-python-workers-generally-available-webassembly-pyodide'
+    tag: 'Co-Packaged Optics',
+    text: 'Hyperscalers standardize 3.2 Tbps CPO silicon photonics at ECOC 2026, slashing power by 65%',
+    articleSlug: 'hyperscalers-accelerate-silicon-photonics-co-packaged-optics-thermal-wall'
   },
   {
     id: 'sig-5',
-    tag: 'ZuckOff RF Scanner',
-    text: 'Open-source ZuckOff app sniffs BLE frames to detect nearby Meta smart glasses',
-    articleSlug: 'zuckoff-open-source-tool-detects-meta-smart-glasses-ble-sniffing'
+    tag: 'C-HD Graph Algorithm',
+    text: 'Multi-agent LLMs break 60-year Dijkstra bounds with machine-certified Lean 4 formal proof',
+    articleSlug: 'c-hd-graph-algorithm-multi-agent-llms-break-dijkstra-bounds-lean-4'
   }
 ];
-

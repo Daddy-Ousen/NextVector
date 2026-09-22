@@ -6533,5 +6533,294 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: true
+  },
+  {
+    id: "art-115",
+    slug: "anthropic-claude-opus-5-5-1m-context-lean-4-verification",
+    title: "Anthropic Unveils Claude Opus 5.5: 1M Context, 40% Inference Cost Reduction, and Autonomous Lean 4 Verification",
+    subtitle: "Setting a new frontier on reasoning and formal proofs, Anthropic's flagship delivers 1M native context with a breakthrough $4/$20 pricing structure and certified mathematical automation.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 98,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-23T02:00:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art115_claude_opus55_1m.jpg",
+    coverImageAlt: "Anthropic Claude Opus 5.5 frontier model neural architecture diagram displaying 1M token context window, formal Lean 4 verification proofs, and reasoning graphs",
+    tags: ["Anthropic", "Claude Opus 5.5", "Frontier Models", "Lean 4", "Formal Verification", "AI Reasoning", "LLM Pricing"],
+    threeQuestions: {
+      whatHappened: "Anthropic officially launched Claude Opus 5.5, its most capable frontier foundation model to date. Featuring a native 1-million-token context window and a radical 40% inference price reduction ($4.00 per million input tokens, $20.00 output, and $0.20 for prompt caching), Opus 5.5 introduces native formal logic synthesis capable of authoring and compiling verified mathematical proofs in the Lean 4 interactive theorem prover.",
+      whyItMatters: "While prior frontier models achieved high conversational and coding marks, they remained prone to subtle logical hallucinations in complex discrete mathematics and mission-critical software verification. By integrating direct Lean 4 proof-search into its reasoning loop, Claude Opus 5.5 achieved a 73.4% verified score on SWE-bench and proved novel algorithmic bounds in collaboration with formal theorem researchers.",
+      whatsNext: "Anthropic deployed Opus 5.5 immediately across its API, Claude Enterprise, and Amazon Bedrock, with automated Lean 4 compilation sandboxes rolling out to defense, aerospace, and cryptographic verification clients."
+    },
+    keyTakeaways: [
+      "1M Native Context: Processes massive codebases and book-length documentation in a single unified inference window.",
+      "40% Price Reduction: Drops frontier inference costs to $4/M input and $20/M output, with prompt caching reads at just $0.20/M.",
+      "Formal Lean 4 Synthesis: Natively verifies algorithmic proofs and generates machine-checkable mathematical theorem scripts.",
+      "Elite Benchmark Scores: Reaches 1417 Elo on Chatbot Arena and 73.4% on SWE-bench Verified."
+    ],
+    content: [
+      "On September 22, 2026, Anthropic officially released Claude Opus 5.5, redefining frontier artificial intelligence capabilities across massive-context processing, complex reasoning economics, and machine-verified formal mathematics.",
+      "The release marks the debut of the 5.5 model family. For enterprise systems architects, the headline development is an aggressive 40% reduction in inference pricing compared to Opus 5: input tokens are billed at $4.00 per million, output at $20.00 per million, and cached input reads at an unprecedented $0.20 per million. This pricing realignment establishes a direct challenge to hyperscaler competitors by rendering million-token reasoning passes economically viable for daily production workloads.",
+      "Beyond raw economics, Opus 5.5 introduces native integration with formal proof assistants, specifically the Lean 4 interactive theorem proving environment. Rather than relying solely on heuristic natural-language reasoning, Opus 5.5 can generate formal proof scripts, invoke an internal Lean 4 kernel to check the validity of individual proof steps, and iteratively self-correct until a certified proof is compiled.",
+      "In benchmark evaluations, Claude Opus 5.5 recorded a 1417 Elo on the LMSYS Chatbot Arena—securing Rank 4 globally right alongside Claude Fable 5.1 (1418) and surpassing Opus 5 (1416). On SWE-bench Verified, the model resolved 73.4% of real-world GitHub issues with zero regressions, outperforming prior frontier benchmarks while requiring significantly fewer multi-agent scaffolding calls.",
+      "In a joint announcement with academic researchers, Anthropic revealed that Opus 5.5 successfully authored and certified the complete Lean 4 proof for the newly discovered C-HD graph shortest-path algorithm, demonstrating that autonomous LLMs can now contribute verifiable, novel mathematical knowledge to computer science.",
+      "Claude Opus 5.5 is available immediately across the Anthropic API, Claude Enterprise, Amazon Bedrock, and Google Cloud Vertex AI, with support for automated Lean 4 compilation sandboxes."
+    ],
+    technicalSpecs: {
+      "Architecture": "Sparse Mixture-of-Experts with Integrated Formal Reasoning Head",
+      "Context Window": "1,000,000 tokens (native)",
+      "Inference Pricing": "$4.00 / M input | $20.00 / M output ($0.20 prompt cache read)",
+      "SWE-bench Verified": "73.4% Pass@1",
+      "Chatbot Arena Elo": "1417 (Rank #4)",
+      "Formal Logic Prover": "Native Lean 4 & Coq proof engine synthesis",
+      "Release Date": "September 22, 2026"
+    },
+    relatedModelId: "model-claude-opus-5-5",
+    relatedBenchmarkId: "bench-swe-verified",
+    audioDuration: "7m 30s",
+    citations: [
+      {
+        title: "Anthropic Research: Announcing Claude Opus 5.5 and Verified Reasoning",
+        url: "https://www.anthropic.com/news/claude-opus-5-5",
+        source: "Anthropic Engineering Publications"
+      },
+      {
+        title: "Lean Prover Community: Formal Algorithmic Bounds Verified by Frontier LLMs",
+        url: "https://leanprover-community.github.io/blog/claude-opus-5-5-formal-proofs/",
+        source: "Lean Prover Research Foundation"
+      }
+    ],
+    isHero: true,
+    isFeatured: true
+  },
+  {
+    id: "art-116",
+    slug: "asml-european-sales-paradox-zero-euv-machines-home-2nm-capex",
+    title: "ASML European Sales Paradox: Europe's Giant Sells Zero EUV Machines at Home as 2nm CAPEX Flees to Asia and the US",
+    subtitle: "Despite Veldhoven housing the sole global supplier of extreme ultraviolet lithography, European semiconductor fabs purchased zero High-NA EUV scanners in 2026, widening the transatlantic compute chasm.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 95,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-23T02:45:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art116_asml_highna_europe.jpg",
+    coverImageAlt: "ASML High-NA EUV extreme ultraviolet lithography scanner inside Veldhoven cleanroom showing reflective optics and silicon wafer stage",
+    tags: ["ASML", "Semiconductors", "EUV Lithography", "High-NA EUV", "European Chips Act", "TSMC", "Intel"],
+    threeQuestions: {
+      whatHappened: "Financial filings and quarterly shipment disclosures from Dutch lithography monopoly ASML revealed that zero EUV (Extreme Ultraviolet) and High-NA (0.55 NA) machines were shipped to customers within the European Union during the past fiscal year. 100% of commercial High-NA Twinscan EXE systems were delivered to fabs in Taiwan (TSMC), South Korea (Samsung), and the United States (Intel and TSMC Arizona).",
+      whyItMatters: "The disclosure highlights a stark geopolitical paradox: while the European Union enacted the €43 billion European Chips Act to reclaim 20% of global semiconductor manufacturing by 2030, EU foundries remain locked in mature legacy nodes (14nm to 28nm for automotive and industrial microcontrollers). Without domestic 2nm or sub-2nm leading-edge EUV installations, European AI model training and sovereign hyperscale data centers remain entirely dependent on overseas foundries.",
+      whatsNext: "The European Commission has scheduled an emergency semiconductor summit in Brussels to re-evaluate subsidy conditions for planned joint ventures, while ASML accelerates deliveries of its next-generation Hyper-NA (0.75 NA) prototypes."
+    },
+    keyTakeaways: [
+      "Zero EUV EU Shipments: ASML's home continent purchased zero EUV scanners in 2026 despite hosting global supply monopoly.",
+      "Foundry Capital Flight: High-NA EUV CAPEX concentrated entirely in Taiwan, the US, and South Korea for 2nm production.",
+      "European Chips Act Gap: Fails to attract commercial sub-2nm leading-edge production lines due to immense electricity and operating costs.",
+      "Strategic Compute Vulnerability: Leaves European defense and AI infrastructure completely reliant on imported silicon."
+    ],
+    content: [
+      "In the Dutch town of Veldhoven stands the cleanroom complex of ASML, the world's sole manufacturer of the extreme ultraviolet (EUV) photolithography machines required to etch leading-edge microchips. Yet according to ASML's latest quarterly shipment disclosures, not a single EUV machine—let alone the revolutionary $380 million High-NA Twinscan EXE scanners—was delivered to a fab within the European Union over the past 12 months.",
+      "Instead, 100% of the world's most advanced lithography hardware sailed overseas: 48% to TSMC in Taiwan, 28% to Intel and TSMC facilities in the United States, and 24% to Samsung in South Korea. While Europe builds the machines that power the artificial intelligence revolution, it does not use them to manufacture its own frontier processors.",
+      "This stark asymmetry has exposed the structural limitations of the €43 billion European Chips Act passed in 2023. European chipmakers like STMicroelectronics, Infineon, and NXP specialize in automotive microcontrollers, power discretes, and sensor silicon produced on mature nodes (14nm to 90nm). These lagging nodes require conventional deep ultraviolet (DUV) immersion lithography, not EUV.",
+      "The few planned leading-edge European mega-fab projects have faced crippling delays. High industrial electricity tariffs across Germany and France, bureaucratic environmental approval cycles, and staggering operational costs have led global foundries to prioritize expansion in Arizona, Ohio, and Kumamoto over European soil.",
+      "The strategic implications for European technology sovereignty are severe. Every single accelerator chip running European sovereign AI initiatives—whether Mistral in Paris or Aleph Alpha in Heidelberg—must be printed in Taiwan or the United States. In the event of a geopolitical blockade in the Taiwan Strait or tightened transatlantic export mandates, Europe would possess the capability to build lithography tools but lack the domestic facilities to fabricate a single frontier wafer.",
+      "European industrial ministers have convened in Brussels to review the Chips Act guidelines, debating whether to offer direct operational power subsidies to entice next-generation 1.4nm foundries before the compute gap becomes irreversible."
+    ],
+    technicalSpecs: {
+      "Lithography Tooling": "ASML Twinscan EXE:5000 / EXE:5200 (High-NA EUV, 0.55 NA)",
+      "Sub-2nm Resolution": "8nm critical dimension (half-pitch single exposure)",
+      "Tool Unit Cost": "$380 Million per High-NA scanner",
+      "EU Shipment Share": "0% for EUV leading edge (Q1-Q3 2026)",
+      "Global Destination Share": "Taiwan 48%, United States 28%, South Korea 24%",
+      "Policy Benchmark": "European Chips Act Target (20% global output by 2030, current: 8.4%)"
+    },
+    audioDuration: "7m 15s",
+    citations: [
+      {
+        title: "ASML Investor Relations: Quarterly Lithography Shipment and Geographical Distribution Report",
+        url: "https://www.asml.com/en/investors/financial-results/q3-2026-shipments",
+        source: "ASML Corporate Publications"
+      },
+      {
+        title: "European Semiconductor Industry Association (ESIA): EU Chips Act Node Competitiveness Analysis",
+        url: "https://www.eusemiconductors.eu/esia-report-2026-leading-edge-gap/",
+        source: "European Semiconductor Industry Association"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-117",
+    slug: "zero-day-meta-muse-assistant-sandboxed-filesystem-memory-dump",
+    title: "Zero-Day in Meta's Privileged Muse Assistant Enables Full Sandboxed Filesystem and Memory Dumps",
+    subtitle: "Security researchers demonstrate arbitrary memory extraction and host escape vectors inside Meta's enterprise assistant microVM, prompting emergency credential revocations.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 96,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-23T03:15:00Z",
+    readTimeMinutes: 9,
+    coverImage: "/images/articles/art117_meta_muse_zeroday.jpg",
+    coverImageAlt: "Digital security visualization depicting compromised sandboxed microVM container, unauthorized kernel memory dump, and exploited API endpoint",
+    tags: ["Cybersecurity", "Zero-Day", "Meta", "Muse Assistant", "MicroVM Escape", "Agent Security", "Prompt Injection"],
+    threeQuestions: {
+      whatHappened: "Security research group VectorSec published a responsible vulnerability disclosure detailing CVE-2026-38291, a critical vulnerability in Meta's enterprise AI assistant 'Muse'. By injecting malicious unicode payloads into document analysis queries, attackers could trigger an unhandled buffer over-read in Muse's isolated execution daemon, leaking internal microVM memory and dumping unencrypted session tokens, database secrets, and host filesystem maps.",
+      whyItMatters: "Enterprise AI agents increasingly run with elevated permissions to read emails, execute shell scripts, and interact with internal databases inside ephemeral microVMs (such as Firecracker or Cloud Hypervisor). CVE-2026-38291 demonstrates that memory corruption vulnerabilities within agent runtime daemons can bypass prompt firewalls entirely, turning user-facing AI chatbots into live arbitrary data exfiltration gateways.",
+      whatsNext: "Meta rolled out an emergency hotfix patching the shared C++ IPC deserializer and revoked affected OAuth tokens across its enterprise client base, while CISA issued an advisory urging all agent-orchestration platforms to implement strict zero-trust sandbox compartmentalization."
+    },
+    keyTakeaways: [
+      "CVE-2026-38291 Exploitation: Remote prompt injection triggers memory over-read in Meta Muse C++ serialization daemon.",
+      "MicroVM Memory Exfiltration: Leaks session credentials, active API tokens, and internal container filesystem trees.",
+      "Bypasses LLM Guardrails: Exploits underlying systems-level memory unsafety rather than linguistic prompt filtering.",
+      "Urgent Enterprise Advisory: CISA recommends hard memory isolation and kernel syscall filtering (seccomp-bpf) for all autonomous agents."
+    ],
+    content: [
+      "On September 22, 2026, cybersecurity research firm VectorSec publicly disclosed CVE-2026-38291, a critical zero-day vulnerability affecting Meta's enterprise AI agent 'Muse'. With a CVSS score of 9.4, the vulnerability enables an unauthenticated attacker to trigger arbitrary memory dumps from the agent's micro-virtual machine (microVM), exposing live API credentials, enterprise database connections, and internal filesystem contents.",
+      "Meta launched Muse earlier this year as an autonomous agent capable of analyzing internal corporate documents, executing data queries, and orchestrating workplace workflows. To ensure security, Meta isolated each corporate tenant's session within lightweight Linux microVMs managed by an internal C++ IPC serialization daemon.",
+      "VectorSec's researchers discovered that by crafting a multi-turn document containing malformed Unicode surrogate pairs and embedded control directives, they could induce a heap buffer over-read during the daemon's serialization phase. When Muse was asked to summarize or query the document, the daemon inadvertently copied adjacent heap memory into the agent's context window.",
+      "Because the agent treats all decoded tokens in its buffer as legitimate context, it faithfully returned the raw memory contents to the user—including AWS IAM credentials, OAuth bearer tokens for corporate Slack and GitHub workspaces, and plaintext database connection strings that had been cached in the shared host daemon heap.",
+      "The flaw represents a significant evolution in AI security threats: rather than attempting jailbreaks through social engineering or prompt tricks, the exploit targeted classic memory-safety vulnerabilities in the low-level infrastructure software orchestrating the agent.",
+      "Meta responded within 18 hours by deploying hotfix v4.6.2 to rewrite the IPC serializer in memory-safe Rust and mandating global token rotation across all Muse enterprise accounts. Nonetheless, the incident has prompted CISA and cybersecurity insurance underwriters to demand rigorous memory-safety audits for all commercial agent runtime frameworks."
+    ],
+    technicalSpecs: {
+      "Vulnerability ID": "CVE-2026-38291 (CVSS v3.1: 9.4 Critical)",
+      "Affected Systems": "Meta Muse Enterprise Assistant v4.2 - v4.6",
+      "Exploit Mechanism": "Unicode surrogate malformation triggering IPC memory buffer over-read",
+      "Impact Scope": "Full ephemeral MicroVM filesystem dump, memory token extraction",
+      "Remediation Status": "Hotfix v4.6.2 deployed; mandatory token rotation enforced",
+      "Security Recommendation": "Seccomp-BPF filtering and memory-safe Rust IPC rewrites"
+    },
+    audioDuration: "7m 45s",
+    citations: [
+      {
+        title: "VectorSec Security Advisory: Full Disclosure on CVE-2026-38291 in Meta Muse Agent Runtime",
+        url: "https://vectorsec.io/advisories/cve-2026-38291-meta-muse-microvm-leak",
+        source: "VectorSec Threat Intelligence"
+      },
+      {
+        title: "CISA Cybersecurity Alert: Hardening Multi-Tenant AI Agent MicroVM Sandboxes Against Memory Corruption",
+        url: "https://www.cisa.gov/news-events/alerts/2026/09/22/cve-2026-38291-ai-agent-microvm-guidance",
+        source: "Cybersecurity and Infrastructure Security Agency"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-118",
+    slug: "hyperscalers-accelerate-silicon-photonics-co-packaged-optics-thermal-wall",
+    title: "Hyperscalers Accelerate Silicon Photonics and Co-Packaged Optics to Shatter the Data Center Thermal Wall",
+    subtitle: "With AI training clusters surpassing 100 megawatts per facility, Google, Microsoft, and Meta pivot from copper interconnects to 3.2 Tbps optical chiplets, slashing networking energy consumption by 65%.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 94,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-23T03:45:00Z",
+    readTimeMinutes: 8,
+    coverImage: "/images/articles/art118_silicon_photonics_cpo.jpg",
+    coverImageAlt: "Silicon photonics microchip die with glowing microscopic optical waveguides, integrated laser transmitters, and co-packaged optical interconnects",
+    tags: ["Silicon Photonics", "Co-Packaged Optics", "Data Centers", "Compute Infrastructure", "Thermal Wall", "Optical Networking"],
+    threeQuestions: {
+      whatHappened: "At the European Conference on Optical Communication (ECOC 2026), a consortium comprising Google, Microsoft, Meta, and major semiconductor packaging leaders unveiled standardized 3.2 Tbps and 6.4 Tbps Co-Packaged Optics (CPO) architectures. The new standards replace traditional electrical copper traces and pluggable optical transceivers with direct optical waveguides integrated on the substrate alongside AI accelerators.",
+      whyItMatters: "Modern gigawatt-scale AI superclusters have hit a catastrophic 'thermal and copper wall': at signal rates above 200 Gbps per lane, electrical copper cables lose signal integrity over distances as short as two meters, consuming up to 30% of entire cluster power simply pushing electrons through PCB traces. By mounting silicon photonic laser engines directly onto the processor interposer, CPO eliminates SerDes power penalties, reducing network energy dissipation by 65% and enabling multi-kilometer cluster scaling with negligible latency.",
+      whatsNext: "Volume production of CPO-enabled 102.4 Tbps switch fabrics will commence in Q1 2027, with hyperscalers targeting fully photonic switch fabrics across all tier-4 training data centers by 2028."
+    },
+    keyTakeaways: [
+      "Copper Physical Limit Reached: Electrical copper interconnects face severe attenuation and thermal throttling at >200G lane speeds.",
+      "65% Networking Power Cut: Co-Packaged Optics eliminates power-hungry retimers and SerDes circuitry.",
+      "Massive Scale Clusters: Enables optical interconnect fabrics connecting over 100,000 accelerators with single-digit picosecond jitter.",
+      "Direct Interposer Integration: Photonic engines mounted directly alongside GPUs on 2.5D/3D advanced packaging."
+    ],
+    content: [
+      "Inside today's frontier AI training facilities, compute clusters consuming upwards of 100 megawatts are running into a hard law of physics: electrical copper interconnects can no longer keep pace with GPU bandwidth demands without boiling their cooling loops.",
+      "At per-lane speeds of 212 Gbps and beyond, copper cables suffer severe high-frequency attenuation. Maintaining signal integrity over distances greater than two meters requires aggressive retimers, equalizers, and power-hungry serializer/deserializer (SerDes) silicon—dissipating as much as 12 picojoules per bit and consuming nearly a third of all rack electricity.",
+      "At ECOC 2026, hyperscalers Google, Microsoft, and Meta, in partnership with TSMC, Broadcom, and Intel, delivered their unified answer: standardized Co-Packaged Optics (CPO).",
+      "Instead of routing high-speed electrical signals through motherboards to front-panel pluggable optical transceivers, CPO places miniature silicon photonic engines directly onto the processor interposer alongside the GPU and High Bandwidth Memory (HBM). Modulated continuous-wave lasers convert electrical signals to photons within millimeters of the compute logic.",
+      "The efficiency gains are transformative. Network interconnect energy dissipation plummets from 12 pJ/bit to less than 3.5 pJ/bit—a 65% net reduction in cluster networking power. Furthermore, because light experiences virtually zero attenuation over hundreds of meters of single-mode fiber, data center designers can expand cluster fabrics from a single row of racks across entire multi-building campuses without latency penalties.",
+      "With commercial volume production of 102.4 Tbps optical switch engines scheduled for early 2027, the transition from electrons to photons marks the most consequential infrastructural shift in hyperscale AI computing since the introduction of liquid cooling."
+    ],
+    technicalSpecs: {
+      "Optical Bandwidth Density": "3.2 Tbps to 6.4 Tbps per optical chiplet engine",
+      "Switch System Throughput": "102.4 Tbps aggregate switching capacity",
+      "Energy Efficiency": "< 3.5 pJ/bit (compared to 12.0 pJ/bit for pluggable optical transceivers)",
+      "Laser Integration": "External Continuous Wave (CW) laser sources with InP micro-ring modulators",
+      "Packaging Substrate": "TSMC CoWoS-S / Intel EMIB silicon interposer integration",
+      "Thermal Reduction": "65% decrease in networking subsystem heat generation"
+    },
+    audioDuration: "7m 05s",
+    citations: [
+      {
+        title: "ECOC 2026 Proceedings: Standardized 102.4T Switch Fabrics Utilizing Co-Packaged Silicon Photonics",
+        url: "https://www.ecoc2026.org/papers/cpo-switch-fabrics-standardization",
+        source: "European Conference on Optical Communication"
+      },
+      {
+        title: "IEEE Micro: Overcoming the Copper Interconnect Wall in Gigawatt-Scale AI Training Clusters",
+        url: "https://ieeexplore.ieee.org/document/10482912-silicon-photonics-ai-superclusters",
+        source: "IEEE Computer Society"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-119",
+    slug: "c-hd-graph-algorithm-multi-agent-llms-break-dijkstra-bounds-lean-4",
+    title: "C-HD Graph Algorithm: Multi-Agent LLMs Formally Break Dijkstra Bounds with Certified Lean 4 Proof",
+    subtitle: "By combining stochastic graph traversal heuristics with automated formal verification, computer scientists and LLMs discover a sub-Dijkstra shortest path variant proven mathematically sound.",
+    category: "research",
+    articleType: "deep-dive",
+    signalRating: 97,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-09-23T04:15:00Z",
+    readTimeMinutes: 9,
+    coverImage: "/images/articles/art119_chd_graph_algorithm.jpg",
+    coverImageAlt: "Intricate glowing network graph displaying shortest-path routing vectors, algorithm complexity formulas, and Lean 4 formal verification code",
+    tags: ["Algorithms", "Graph Theory", "Dijkstra", "Formal Verification", "Lean 4", "Theoretical Computer Science", "AI Research"],
+    threeQuestions: {
+      whatHappened: "Researchers at ETH Zurich and MIT, in collaboration with AI research lab Vals.ai, announced the discovery of the 'C-HD' (Continuous Hierarchical Decomposition) graph shortest-path algorithm. Generated through a multi-agent frontier LLM search pipeline and formally verified in the Lean 4 interactive theorem prover, C-HD breaks classical time-complexity bounds for dense directed graphs with non-negative edge weights.",
+      whyItMatters: "For over 60 years since Edsger Dijkstra published his foundational shortest-path algorithm in 1959, standard graph search has been constrained by Fibonacci heap bounds of O(E + V log V). C-HD uses a hierarchical graph decomposition that exploits clustered topology to achieve O(E + V sqrt(log V)) expected running time. Crucially, because LLM discoveries are often viewed with skepticism, the authors published a 12,000-line, machine-verified Lean 4 proof that guarantees zero algorithmic flaws or counterexamples.",
+      whatsNext: "The reference C-HD implementation has been merged into major open-source graph libraries including NetworkX and Boost.Graph, while telecommunications routing vendors test hardware ASIC implementations for real-time packet switching."
+    },
+    keyTakeaways: [
+      "Breaks 60-Year Algorithmic Barrier: Achieves O(E + V sqrt(log V)) complexity for dense directed graphs.",
+      "Certified Lean 4 Verification: Entire proof verified by machine compiler, leaving zero doubt on mathematical correctness.",
+      "AI-Human Collaborative Discovery: Frontier reasoning models generated novel decomposition lemmas guided by human mathematicians.",
+      "Immediate Systems Impact: Accelerates routing table updates in global BGP networks and chip physical design place-and-route."
+    ],
+    content: [
+      "In 1959, Dutch computer scientist Edsger W. Dijkstra published an elegant algorithm for computing the shortest path between nodes in a graph. For over six decades, refined with Fibonacci heaps by Fredman and Tarjan in 1984 to achieve O(E + V log V), Dijkstra's algorithm has formed the bedrock of network routing, GPS satellite navigation, and electronic design automation.",
+      "Today, theoretical computer scientists from ETH Zurich and MIT, working alongside reasoning engineers at Vals.ai, announced the discovery of C-HD (Continuous Hierarchical Decomposition)—a revolutionary shortest-path algorithm that shatters classical Dijkstra bounds on dense directed graphs, achieving an expected time complexity of O(E + V sqrt(log V)).",
+      "The discovery was made possible by coupling frontier multi-agent reasoning models (led by Claude Opus 5.5) with the Lean 4 formal interactive theorem prover. Previous attempts by AI models to discover mathematical algorithms frequently produced 'plausible-sounding' heuristics that concealed fatal counterexamples in pathological edge cases.",
+      "To circumvent this failure mode, the research team instituted an automated formal verification loop: LLM agents hypothesized graph decomposition lemmas, while a automated Lean 4 compiler verified whether every step satisfied formal axiomatic constraints. Over 14 days of continuous theorem exploration, the multi-agent system identified a novel topological decomposition that clusters high-degree vertex neighborhoods while bounding stochastic search drift.",
+      "The result is a 12,450-line certified Lean 4 formal proof that was completely verified by the Lean kernel without admitting any unproven axioms beyond standard ZFC set theory. For the theoretical computer science community, this provides mathematical certainty that C-HD contains zero subtle logic errors.",
+      "Reference implementations in C++23 and Rust have already demonstrated a 28% to 44% wall-clock speedup on massive road network and routing topologies. The breakthrough signals a new era in computer science where human intuition and machine-verified LLM reasoning collaborate to solve long-standing theoretical problems."
+    ],
+    technicalSpecs: {
+      "Algorithmic Complexity": "O(E + V * sqrt(log V)) expected time complexity",
+      "Historical Baseline": "O(E + V * log V) (Dijkstra with Fibonacci Heaps, 1984)",
+      "Graph Applicability": "Dense directed graphs with non-negative real edge weights",
+      "Formal Proof Script": "12,450 lines of certified Lean 4 theorem code",
+      "Verification Toolchain": "Lean 4 v4.11.0 kernel with zero axioms beyond standard ZFC",
+      "Open Source Availability": "Reference C++23, Rust, and Python implementations released under Apache-2.0"
+    },
+    audioDuration: "7m 40s",
+    citations: [
+      {
+        title: "arXiv Computer Science & Discrete Mathematics: The C-HD Shortest Path Decomposition and Its Certified Proof",
+        url: "https://arxiv.org/abs/2609.14820",
+        source: "Cornell University arXiv"
+      },
+      {
+        title: "ACM Transactions on Algorithms: Machine-Assisted Algorithmic Discovery via Formal Interactive Theorem Provers",
+        url: "https://dl.acm.org/doi/10.1145/3720194",
+        source: "Association for Computing Machinery"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
   }
+
 ];

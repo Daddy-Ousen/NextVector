@@ -127,14 +127,14 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
     description:
       'Demanding tasks requiring multi-step formal deduction, mathematical proofs, symbolic manipulation, and algorithmic optimization where raw statistical prediction fails.',
     frontierPick: {
-      name: 'Claude Opus 5',
-      modelId: 'model-claude-opus-5',
-      rank: 3,
-      elo: 1416,
-      price: '$15.00 / 1M input',
-      badge: 'Reasoning Leader',
-      tierAvailability: 'Available in Claude Pro ($20/mo, usage caps), unmetered in API & Team.',
-      why: 'Exceptional test-time reasoning density and nuanced step-by-step mathematical proof verification.',
+      name: 'Claude Opus 5.5',
+      modelId: 'model-claude-opus-5-5',
+      rank: 4,
+      elo: 1417,
+      price: '$4.00 / 1M input',
+      badge: 'Lean 4 Formal Proofs & 1M Window',
+      tierAvailability: 'Available in Claude Enterprise, Commercial API ($4.00/1M, $0.20 cache read), Bedrock & Vertex AI.',
+      why: 'Rank #4 global. Native Lean 4 theorem synthesis and 40% cheaper than prior Opus with full 1M context.',
     },
     valuePick: {
       name: 'DeepSeek-V4-Pro',
@@ -161,7 +161,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       why: 'Runs comfortably on a single workstation GPU (RTX 5090 / 4090) while outperforming previous-generation 70B models.',
     },
     proTip:
-      'Multi-Agent & Reasoning Tip: For autonomous multi-file refactoring with compiler verification, xAI Grok 4.7 (#6, 1414 Elo, $3.00/1M) embeds native sub-agent branch tokens. Use Claude Opus 5 (#4, 1416 Elo) for novel scientific synthesis requiring multi-disciplinary hypotheses, and DeepSeek-V4-Pro ($0.75/1M) for high-volume math proofs.',
+      'Multi-Agent & Reasoning Tip: For automated formal mathematical proof synthesis and verified algorithm discovery, Claude Opus 5.5 (#4, 1417 Elo, $4.00/1M) features native Lean 4 execution and 1M context. For autonomous multi-file refactoring with compiler verification, xAI Grok 4.7 (#7, 1414 Elo, $3.00/1M) embeds native sub-agent branch tokens, while DeepSeek-V4-Pro ($0.75/1M) handles high-volume math proofs.',
   },
   {
     id: 'guide-context',

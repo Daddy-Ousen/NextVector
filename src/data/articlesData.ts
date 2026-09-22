@@ -6259,7 +6259,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-22T02:00:00Z",
     readTimeMinutes: 9,
     coverImage: "/images/articles/art-110-grok-4-7-multi-agent-reasoning.jpg",
-    coverImageAlt: "High-density AI supercomputing node illuminated by neural bus interconnects symbolizing Grok 4.7 multi-agent reasoning",
+    coverImageAlt: "xAI Grok 4.7 supercluster server racks with holographic multi-agent orchestration trees, native reasoning tokens, and formal deterministic code verification lattices",
     tags: ["xAI", "Grok 4.7", "Reasoning Models", "Multi-Agent Systems", "SWE-bench", "Colossus Supercomputer", "AI Infrastructure"],
     threeQuestions: {
       whatHappened: "xAI officially unveiled Grok 4.7, its latest flagship frontier reasoning and code synthesis model trained on the expanded Memphis Colossus supercomputing cluster. The model introduces native multi-agent orchestration directly into its decoding loop, allowing a primary reasoning agent to autonomously spawn, synchronize, and deterministically verify execution traces across multiple internal sub-agents across a 500,000-token context window.",

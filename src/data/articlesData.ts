@@ -4517,7 +4517,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-14T03:00:00Z",
     readTimeMinutes: 9,
     coverImage: "/images/articles/art-80-dario-amodei-pace-frontier.jpg",
-    coverImageAlt: "Abstract macro visualization of technological progress versus safety boundaries representing AI governance and pacing",
+    coverImageAlt: "Futuristic conceptual visualization of frontier artificial intelligence governance, neural algorithms, biosecurity DNA helices, and technology pacing above a metropolis",
     tags: ["Anthropic", "Dario Amodei", "AI Safety", "Biosecurity", "Frontier AI", "Governance"],
     threeQuestions: {
       whatHappened: "Anthropic CEO Dario Amodei published a 6,000-word policy manifesto titled 'We Must Pace the Frontier', warning that the commercial race toward artificial general intelligence is outstripping safety, containment, and alignment mechanisms. Emphasizing catastrophic risks in automated cyberwarfare, engineered biological pathogens, and loss of human control, Amodei called for governments and frontier labs to coordinate an intentional pacing framework. The essay arrived alongside BBC reports detailing former Anthropic researchers expressing grave concerns over unconstrained scaling.",
@@ -4572,7 +4572,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-14T03:30:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-81-antspace-microvm.jpg",
-    coverImageAlt: "Systems architecture schematic showing Antspace MicroVM guest isolation, gVisor syscall filter, and host kernel barrier",
+    coverImageAlt: "Isometric systems architecture visualization of containerized Firecracker MicroVMs, gVisor security layers, and sub-millisecond execution traces",
     tags: ["Anthropic", "Antspace", "MicroVM", "Cloud Security", "Virtualization", "Claude Code"],
     threeQuestions: {
       whatHappened: "Security researcher April Nea published a technical teardown reverse-engineering Anthropic’s cloud execution environment, dubbed 'Antspace'. The investigation revealed that when Claude executes user bash commands, runs git refactors, or builds software artifacts, it does not run in shared multi-tenant containers. Instead, Anthropic dynamically spins up ephemeral microVMs running a customized Linux kernel with gVisor-based syscall interposition and strict virtual network isolation.",
@@ -4629,7 +4629,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-14T04:00:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-82-fable-cyphral-distich.jpg",
-    coverImageAlt: "Mathematical cryptogram and frequency analysis visualization showing automated cipher decryption",
+    coverImageAlt: "Scholarly composition showing a 17th-century Latin cryptographic manuscript, Tabula Recta Vigenère matrix, and mathematical letter-frequency curves",
     tags: ["Anthropic", "Claude Fable 5.1", "Cryptanalysis", "Reasoning", "Mathematics", "Historical AI"],
     threeQuestions: {
       whatHappened: "Evaluation research lab Vals AI tasked Anthropic’s Claude Fable 5.1 with an open, unsolved historical problem: Sir Thomas Urquhart’s 'Cyphral Distich', a 64-number cryptogram published in 1653 that had baffled cryptographers and historians for 370 years. Operating autonomously, Fable 5.1 analyzed the statistical distribution of the two 32-number rows, hypothesized a Scottish Royalist homophonic grid substitution, and successfully recovered the complete English plaintext within 24 hours.",
@@ -4686,7 +4686,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-14T04:30:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-83-apple-neural-engine-dma.jpg",
-    coverImageAlt: "Microprocessor silicon die architecture showing direct memory access channels and neural processing accelerator",
+    coverImageAlt: "Macro silicon die teardown of Apple Silicon showing illuminated Apple Neural Engine compute blocks and high-speed DMA bus channels",
     tags: ["Apple Silicon", "Neural Engine", "Kernel DMA", "On-Device AI", "Hardware Erratum", "Performance"],
     threeQuestions: {
       whatHappened: "Systems researcher Eileen Yoon published a deep-dive hardware investigation detailing an RTL (Register-Transfer Level) performance erratum in the Apple M-series Neural Engine (ANE). The silicon bug throttles DRAM weight streaming bandwidth from a nominal 50–60 GB/s down to just 17–19 GB/s whenever tensor weights are aligned on 1 MiB integer boundaries. By developing a kernel driver bypass that rewrites the DMA engine's speculative prefetch ring, Yoon restored full 60 GB/s bandwidth, accelerating Llama 3.2 generation from 10.0 to 24.3 tokens/sec.",
@@ -4743,7 +4743,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-14T05:00:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-84-signal-zkp-registration.jpg",
-    coverImageAlt: "Cryptographic zero-knowledge proof verification diagram showing anonymous credentials and metadata isolation",
+    coverImageAlt: "Cryptographic zero-knowledge proof visualization showing anonymous user identity hash validation and encrypted peer-to-peer mobile communications",
     tags: ["Signal", "Zero-Knowledge Proofs", "Cryptography", "Privacy", "Cybersecurity", "Metadata"],
     threeQuestions: {
       whatHappened: "Signal’s core engineering team published technical specifications and code commits in its Android and iOS repositories implementing phone-number-free account registration powered by Zero-Knowledge Proofs (ZKPs). The new cryptographic protocol allows users to create, authenticate, and recover accounts without providing a cellular telephone number, utilizing blinded ZK-credentials to verify anti-spam rate limits without revealing user identity to Signal's servers.",
@@ -4914,7 +4914,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-15T03:00:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-87-frontier-ai-supply-chain-breach.jpg",
-    coverImageAlt: "Hardware cryptographic security module and network intrusion detection telemetry graph",
+    coverImageAlt: "Enterprise Security Operations Center curved monitors displaying supply chain vendor breach forensics, compromised model telemetry, and exfiltration alerts",
     tags: ["Cybersecurity", "Supply Chain Attack", "OpenAI", "Anthropic", "Meta AI", "Model Security"],
     threeQuestions: {
       whatHappened: "A forensic cybersecurity investigation conducted by Effort News confirmed that a single specialized third-party red-teaming and safety-evaluation contractor suffered a catastrophic multi-month infrastructure compromise. Threat actors leveraged compromised vendor VPN credentials to intercept internal engineering Slack channels, shared staging API keys, unreleased model weights, and canary jailbreak telemetry belonging to OpenAI, Anthropic, and Meta simultaneously.",
@@ -5376,7 +5376,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-17T02:00:00Z",
     readTimeMinutes: 10,
     coverImage: "/images/articles/art-95-nvidia-cuda-rust-gpu-kernels.jpg",
-    coverImageAlt: "Nvidia GPU silicon architecture overlay with Rust programming syntax and memory-safe thread blocks",
+    coverImageAlt: "Glowing neon Rust gear logo alongside NVIDIA GPU Tensor Cores, warp scheduler threads, and memory-safe CUDA kernel syntax over high-bandwidth HBM3e channels",
     tags: ["NVIDIA", "CUDA", "Rust", "GPU Kernels", "Systems Programming", "Inference Engines", "Memory Safety"],
     threeQuestions: {
       whatHappened: "NVIDIA officially released CUDA Rust, an official suite of language toolchains and compiler backends enabling developers to author high-performance GPU compute kernels directly in Rust. The release introduces two parallel tracks: 'cuda-oxide', a custom rustc codegen backend that compiles SIMT-style Rust kernels into Parallel Thread Execution (PTX) assembly via LLVM and the Pliron intermediate representation framework, and 'cutile-rs', a crate enabling tile-based GPU programming in stable Rust 1.89+ with CUDA 13.3.",
@@ -6374,7 +6374,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-22T03:00:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-112-nasa-cancels-mars-sample-return.jpg",
-    coverImageAlt: "Panoramic view of the Martian surface and Jezero crater delta captured by robotic exploration cameras",
+    coverImageAlt: "Cinematic panorama of Mars Jezero Crater showing a dormant sample retrieval lander, sealed sample tubes, and rover tracks across red Martian dunes",
     tags: ["NASA", "Mars Exploration", "Space Science", "Perseverance Rover", "Mars Sample Return", "Planetary Science", "Astrophysics"],
     threeQuestions: {
       whatHappened: "NASA and the European Space Agency (ESA) officially terminated the long-troubled Mars Sample Return (MSR) mission. The cancellation follows a damning independent review board audit that concluded the proposed dual-lander and orbital capture architecture would balloon past $12 billion in total lifecycle costs and fail to deliver the cached Martian rock samples to Earth before 2040.",
@@ -6432,7 +6432,7 @@ export const ALL_ARTICLES: Article[] = [
     publishedAt: "2026-09-22T03:30:00Z",
     readTimeMinutes: 8,
     coverImage: "/images/articles/art-113-cloudflare-python-workers-ga.jpg",
-    coverImageAlt: "Lines of Python code running in a high-speed distributed cloud computing environment",
+    coverImageAlt: "Cloudflare global edge network map with glowing PoP locations, WebAssembly Pyodide runtime containers, and serverless Python execution sandboxes",
     tags: ["Cloudflare", "Python", "WebAssembly", "Pyodide", "Serverless", "Edge Computing", "V8 Isolates"],
     threeQuestions: {
       whatHappened: "Cloudflare announced the General Availability of Python in Cloudflare Workers, enabling developers to write, deploy, and execute native Python applications directly on its distributed edge network without configuring containers, virtual machines, or Dockerfiles. The runtime embeds a fully compliant CPython 3.12 interpreter compiled into WebAssembly via Pyodide, executing inside lightweight V8 worker isolates.",

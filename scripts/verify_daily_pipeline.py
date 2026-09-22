@@ -13,6 +13,7 @@ Strictly enforces Editorial Rulebook §3, §4, §7, and §8:
 import sys
 import os
 import re
+import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -54,6 +55,8 @@ def check_articles():
     seen_ids = set()
     seen_slugs = set()
     seen_covers = {}
+    seen_tokens = {}
+    seen_article_sha256 = {}
     errors = []
 
     for art_id, body in article_blocks:
@@ -83,18 +86,37 @@ def check_articles():
             errors.append(f"Duplicate slug detected: {slug}")
         seen_slugs.add(slug)
 
-        # Check cover image uniqueness (Rulebook §4.1)
+        # Check cover image string uniqueness (Rulebook §4.1)
         if cover in seen_covers:
-            errors.append(f"DUPLICATE COVER IMAGE: '{cover}' shared by {seen_covers[cover]} and {art_id}")
+            errors.append(f"DUPLICATE COVER IMAGE STRING: '{cover}' shared by {seen_covers[cover]} and {art_id}")
         else:
             seen_covers[cover] = art_id
 
-        # If local image, check file existence
+        # Check Unsplash photo token uniqueness across all articles
+        token_match = re.search(r"photo-([a-zA-Z0-9_-]+)", cover)
+        if token_match:
+            tok = token_match.group(1).split("?")[0]
+            if tok in seen_tokens:
+                errors.append(f"DUPLICATE UNSPLASH TOKEN: photo-{tok} shared by {seen_tokens[tok]} and {art_id}")
+            else:
+                seen_tokens[tok] = art_id
+
+        # If local image, check file existence and binary SHA256 uniqueness
         if cover.startswith("/"):
             local_rel = cover.lstrip("/")
             local_path = PUBLIC_IMAGES_DIR / local_rel
             if not local_path.exists():
                 errors.append(f"MISSING LOCAL IMAGE FILE: {local_path} referenced in {art_id}")
+            else:
+                img_bytes = local_path.read_bytes()
+                if len(img_bytes) < 5000:
+                    errors.append(f"IMAGE FILE CORRUPT/EMPTY (<5KB): {local_path} in {art_id}")
+                sha = hashlib.sha256(img_bytes).hexdigest()
+                if sha in seen_article_sha256:
+                    prev_id, prev_path = seen_article_sha256[sha]
+                    errors.append(f"BINARY DUPLICATE IMAGE: '{local_path.name}' in {art_id} has identical SHA256 to '{prev_path.name}' in {prev_id} (hash: {sha[:12]})")
+                else:
+                    seen_article_sha256[sha] = (art_id, local_path)
 
         # Check for banned anachronisms
         text_to_audit = f"{title} {summary}".lower()
@@ -110,15 +132,29 @@ def check_articles():
             "publishedAt": pub
         })
 
+    # Exhaustive disk check: Ensure all files in public/images/articles/ are unique binaries
+    art_img_dir = PUBLIC_IMAGES_DIR / "images" / "articles"
+    if art_img_dir.exists():
+        disk_hashes = {}
+        for img_file in art_img_dir.glob("*"):
+            if img_file.is_file():
+                h = hashlib.sha256(img_file.read_bytes()).hexdigest()
+                if h in disk_hashes:
+                    errors.append(f"DUPLICATE BINARY ON DISK: '{img_file.name}' is identical to '{disk_hashes[h]}' (SHA: {h[:12]})")
+                else:
+                    disk_hashes[h] = img_file.name
+
     print(f"-> Total catalog articles parsed: {len(articles)}")
-    print(f"-> Total unique cover images: {len(seen_covers)}")
+    print(f"-> Total unique cover image strings: {len(seen_covers)}")
+    print(f"-> Total unique local binary images: {len(seen_article_sha256)}")
+    print(f"-> Total unique Unsplash tokens: {len(seen_tokens)}")
 
     if errors:
         for err in errors:
             print(f"  [ERROR] {err}")
         return False, articles
 
-    print("PASS: Catalog structure, IDs, slugs, and cover image uniqueness verified.")
+    print("PASS: Catalog structure, IDs, slugs, and 100% binary/token image uniqueness verified.")
     return True, articles
 
 def check_briefing_and_signals(articles):

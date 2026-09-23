@@ -288,7 +288,7 @@ def check_temporal_sanity(articles):
     return True
 
 def check_model_benchmark_sync():
-    print("\n[Gate 6/6] Auditing Model Registry & Benchmark Synchronization...")
+    print("\n[Gate 6/6] Auditing Model Registry & Comprehensive Benchmark Synchronization (All 6 Leaderboards)...")
     if not MODELS_FILE.exists() or not BENCHMARKS_FILE.exists():
         print("FAIL: modelsData.ts or benchmarksData.ts missing.")
         return False
@@ -298,58 +298,106 @@ def check_model_benchmark_sync():
 
     errors = []
 
-    # 1. Audit ARENA_LEADERBOARD_ENTRIES ranks
-    arena_match = re.search(r"export const ARENA_LEADERBOARD_ENTRIES = \[(.*?)\];", models_content, re.DOTALL)
-    if not arena_match:
-        errors.append("Could not parse ARENA_LEADERBOARD_ENTRIES in modelsData.ts")
-    else:
-        arena_body = arena_match.group(1)
-        ranks = [int(r) for r in re.findall(r"[\"']rank[\"']:\s*(\d+)", arena_body)]
-        print(f"-> Total Arena entries: {len(ranks)}")
+    # Helper to audit sequential ranks in any leaderboard
+    def audit_ranks(name, regex, text, required_models=[]):
+        m = re.search(regex, text, re.DOTALL)
+        if not m:
+            errors.append(f"Could not parse {name} in benchmark/models file")
+            return
+        body = m.group(1)
+        ranks = [int(r) for r in re.findall(r"[\"']?rank[\"']?:\s*(\d+)", body)]
+        print(f"-> {name} entries: {len(ranks)}")
         for expected, actual in enumerate(ranks, start=1):
             if expected != actual:
-                errors.append(f"Arena rank mismatch at index {expected-1}: expected #{expected}, found #{actual}")
+                errors.append(f"{name} rank mismatch at index {expected-1}: expected #{expected}, found #{actual}")
                 break
+        for req in required_models:
+            if req not in body:
+                errors.append(f"{req} missing from {name}.")
 
-        # Check Grok 4.7
-        if "Grok 4.7" not in arena_body:
-            errors.append("Grok 4.7 missing from ARENA_LEADERBOARD_ENTRIES.")
+    # 1. LMSYS Chatbot Arena
+    audit_ranks(
+        "ARENA_LEADERBOARD_ENTRIES",
+        r"export const ARENA_LEADERBOARD_ENTRIES = \[(.*?)\];",
+        models_content,
+        required_models=["Claude Opus 5.5", "Grok 4.7", "Claude Fable 5.1", "GPT-6 Astra"]
+    )
 
-    # 2. Audit SWE-bench ranks
-    swe_match = re.search(r"export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];", bench_content, re.DOTALL)
-    if not swe_match:
-        errors.append("Could not parse SWE_BENCH_LEADERBOARD_ENTRIES in benchmarksData.ts")
-    else:
-        swe_body = swe_match.group(1)
-        swe_ranks = [int(r) for r in re.findall(r"[\"']?rank[\"']?:\s*(\d+)", swe_body)]
-        print(f"-> Total SWE-bench entries: {len(swe_ranks)}")
-        for expected, actual in enumerate(swe_ranks, start=1):
-            if expected != actual:
-                errors.append(f"SWE-bench rank mismatch at index {expected-1}: expected #{expected}, found #{actual}")
-                break
-        if "Grok 4.7" not in swe_body:
-            errors.append("Grok 4.7 missing from SWE_BENCH_LEADERBOARD_ENTRIES.")
+    # 2. OSWorld
+    audit_ranks(
+        "OSWORLD_LEADERBOARD_ENTRIES",
+        r"export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];",
+        bench_content,
+        required_models=["Claude Opus 5.5", "Grok 4.7", "GPT-6 Astra"]
+    )
 
-    # 3. Audit OSWorld
-    osworld_match = re.search(r"export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];", bench_content, re.DOTALL)
-    if osworld_match:
-        os_body = osworld_match.group(1)
-        if "Grok 4.7" not in os_body:
-            errors.append("Grok 4.7 missing from OSWORLD_LEADERBOARD_ENTRIES.")
+    # 3. WebArena
+    audit_ranks(
+        "WEBARENA_LEADERBOARD_ENTRIES",
+        r"export const WEBARENA_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];",
+        bench_content,
+        required_models=["Claude Opus 5.5", "Grok 4.7", "GPT-6 Astra", "Gemini 3 Deep Think"]
+    )
 
-    # 4. Audit Price-Performance
-    price_match = re.search(r"export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];", bench_content, re.DOTALL)
-    if price_match:
-        price_body = price_match.group(1)
-        if "Jev (System One)" not in price_body:
-            errors.append("Jev (System One) missing from PRICE_PERFORMANCE_LEADERBOARD_ENTRIES.")
+    # 4. SWE-bench Verified
+    audit_ranks(
+        "SWE_BENCH_LEADERBOARD_ENTRIES",
+        r"export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];",
+        bench_content,
+        required_models=["Claude Opus 5.5", "Grok 4.7", "GPT-6 Astra", "Gemini 3 Deep Think"]
+    )
+
+    # 5. Cyber-Eval
+    audit_ranks(
+        "CYBER_EVAL_LEADERBOARD_ENTRIES",
+        r"export const CYBER_EVAL_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];",
+        bench_content,
+        required_models=["Claude Mythos 5.1", "Claude Opus 5.5", "Grok 4.7", "GPT-6 Astra"]
+    )
+
+    # 6. Price-Performance
+    audit_ranks(
+        "PRICE_PERFORMANCE_LEADERBOARD_ENTRIES",
+        r"export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry\[\] = \[(.*?)\];",
+        bench_content,
+        required_models=["Jev (System One)", "Claude Opus 5.5", "Gemini 3.8 Flash", "DeepSeek-V4.1-Flash"]
+    )
+
+    # 7. Audit ALL_135_MODELS arenaRank and arenaElo consistency
+    arena_m = re.search(r"export const ARENA_LEADERBOARD_ENTRIES = \[(.*?)\];", models_content, re.DOTALL)
+    if arena_m:
+        arena_ranks = {}
+        for b in re.findall(r"\{([^{}]+)\}", arena_m.group(1)):
+            r = re.search(r'\"rank\":\s*(\d+)', b)
+            n = re.search(r'\"modelName\":\s*\"([^\"]+)\"', b)
+            s = re.search(r'\"score\":\s*(\d+)', b)
+            if r and n:
+                arena_ranks[n.group(1)] = (int(r.group(1)), int(s.group(1)) if s else 0)
+
+        m_start = models_content.find("export const ALL_135_MODELS: AIModel[] = [\n")
+        m_end = models_content.find("export const ARENA_LEADERBOARD_ENTRIES = [")
+        raw_models = re.split(r'\n  \},\n  \{\n', models_content[m_start:m_end])
+        
+        mismatches = 0
+        for m_str in raw_models:
+            name_m = re.search(r'\"name\":\s*\"([^\"]+)\"', m_str)
+            rank_m = re.search(r'\"arenaRank\":\s*(\d+)', m_str)
+            elo_m = re.search(r'\"arenaElo\":\s*(\d+)', m_str)
+            if name_m and name_m.group(1) in arena_ranks:
+                act_rank, act_elo = arena_ranks[name_m.group(1)]
+                dec_rank = int(rank_m.group(1)) if rank_m else None
+                dec_elo = int(elo_m.group(1)) if elo_m else None
+                if dec_rank != act_rank or dec_elo != act_elo:
+                    errors.append(f"Model '{name_m.group(1)}' arenaRank/arenaElo out of sync: declared rank={dec_rank}, elo={dec_elo} vs actual rank={act_rank}, elo={act_elo}")
+                    mismatches += 1
+        print(f"-> ALL_135_MODELS checked against Arena: {len(arena_ranks)} synced, {mismatches} mismatches")
 
     if errors:
         for err in errors:
             print(f"  [ERROR] {err}")
         return False
 
-    print("PASS: Model and Benchmark leaderboards synchronized with 1..N sequential ranks.")
+    print("PASS: All 6 benchmark leaderboards (Arena, OSWorld, WebArena, SWE-bench, Cyber-Eval, Price-Performance) synchronized with 1..N sequential ranks and model registry parity.")
     return True
 
 def main():

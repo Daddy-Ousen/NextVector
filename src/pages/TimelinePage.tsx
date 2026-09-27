@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TimelineEvent } from '../types';
+import { SEOHead } from '../components/common/SEOHead';
 import { Compass, Sparkles, Filter, ShieldCheck, ArrowRight } from 'lucide-react';
 
 interface TimelinePageProps {
@@ -23,8 +24,31 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
     ? events
     : events.filter((e) => e.category === selectedCategory);
 
+  const timelineSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'NextVector Breakthrough Timeline',
+    description: 'Chronological timeline of verified milestones across frontier AI, semiconductors, and quantum science.',
+    itemListElement: events.slice(0, 20).map((ev, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Thing',
+        name: ev.title,
+        description: ev.summary,
+      },
+    })),
+  };
+
   return (
     <div className="space-y-10 pb-20">
+      <SEOHead
+        title="AI Breakthrough Timeline & Tech Milestones (2026) | NextVector"
+        description="Verified chronological record of paradigm-shifting milestones across frontier AI models, semiconductor lithography, and quantum computing."
+        canonicalPath="/timeline"
+        schemaData={timelineSchema}
+        tags={['AI timeline', 'AI breakthroughs 2026', 'history of AI models', 'technology milestones']}
+      />
       {/* Header */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
         <div className="max-w-3xl">

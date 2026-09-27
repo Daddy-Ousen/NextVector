@@ -1,5 +1,6 @@
 import React from 'react';
 import { MOCK_DAILY_BRIEFING } from '../data/mockData';
+import { SEOHead } from '../components/common/SEOHead';
 import { Sparkles, Printer, ShieldCheck, Mail, ArrowRight } from 'lucide-react';
 import { NextVectorLogo } from '../components/common/NextVectorLogo';
 
@@ -14,8 +15,33 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
     window.print();
   };
 
+  const briefingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: `NextVector Daily Intelligence Briefing: ${briefing.date}`,
+    description: briefing.summary,
+    datePublished: '2026-09-27T02:00:00Z',
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'NextVector',
+      url: 'https://nextvector.rhasan.online',
+    },
+    author: {
+      '@type': 'Person',
+      name: 'Robiul Hasan',
+      url: 'https://rhasan.online',
+    },
+  };
+
   return (
     <div className="max-w-3xl mx-auto space-y-10 pb-20">
+      <SEOHead
+        title={`Daily AI Briefing (${briefing.date}) — Latest AI Info | NextVector`}
+        description={`Executive 3-minute intelligence briefing: ${briefing.summary.slice(0, 160)}...`}
+        canonicalPath="/briefing"
+        schemaData={briefingSchema}
+        tags={['daily AI briefing', 'latest AI info', 'AI news today', 'frontier models briefing']}
+      />
       {/* Header */}
       <div className="border-b border-zinc-800 pb-6 pt-2">
         <div className="flex items-center justify-between gap-2 sm:gap-4 mb-4">

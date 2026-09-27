@@ -33,6 +33,12 @@ const CategoryPage = React.lazy(() =>
 const AuthorPage = React.lazy(() =>
   import('./pages/AuthorPage').then((m) => ({ default: m.AuthorPage }))
 );
+const ComparePage = React.lazy(() =>
+  import('./pages/ComparePage').then((m) => ({ default: m.ComparePage }))
+);
+const SubscriptionsPage = React.lazy(() =>
+  import('./pages/SubscriptionsPage').then((m) => ({ default: m.SubscriptionsPage }))
+);
 
 // Lazy-load heavyweight interactive modals on-demand
 const CommandPalette = React.lazy(() =>
@@ -225,6 +231,31 @@ export function App() {
           onToggleModelCompare={handleToggleModelCompare}
           onOpenCompareModal={() => setIsCompareModalOpen(true)}
           onSelectModelDetail={(id) => navigateTo(`/models/${id}`)}
+        />
+      );
+    }
+
+    // 3b. Model Comparison Showdowns: /compare or /compare/:slug
+    if (currentPath === '/compare' || currentPath.startsWith('/compare/')) {
+      const slug = currentPath.startsWith('/compare/')
+        ? currentPath.replace('/compare/', '').split('?')[0]
+        : undefined;
+      return (
+        <ComparePage
+          slug={slug}
+          models={MOCK_MODELS}
+          onSelectModelDetail={(id) => navigateTo(`/models/${id}`)}
+          onNavigate={navigateTo}
+        />
+      );
+    }
+
+    // 3c. AI Subscription & Buyer's Guide: /subscriptions or /guide/best-ai-subscription
+    if (currentPath === '/subscriptions' || currentPath.startsWith('/guide/')) {
+      return (
+        <SubscriptionsPage
+          onSelectModel={(id) => navigateTo(`/models/${id}`)}
+          onNavigate={navigateTo}
         />
       );
     }

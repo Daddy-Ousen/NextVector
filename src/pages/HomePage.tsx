@@ -89,10 +89,21 @@ export const HomePage: React.FC<HomePageProps> = ({
   return (
     <div className="space-y-16 pb-12">
       <SEOHead
-        title="NextVector — High-Signal Technology, AI & Science Intelligence"
-        description="NextVector filters out the noise to surface the technology, AI models, and scientific breakthroughs that actually matter. Less noise. More signal."
+        title="NextVector — AI News, Frontier Model Benchmarks & Intelligence"
+        description="Real-time AI news, verified frontier model benchmarks, LMSYS Chatbot Arena rankings, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and high-signal research intelligence. Less noise. More signal."
         canonicalPath="/"
         schemaData={homeSchema}
+        tags={[
+          'AI news',
+          'latest AI info',
+          'best models',
+          'best AI subscription to get',
+          'claude vs chatgpt',
+          'opus vs gpt 6',
+          'Chatbot Arena leaderboard',
+          'frontier AI models',
+          'SWE-bench verified',
+        ]}
       />
       {/* Live Breaking Signal Ticker */}
       <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-2.5 sm:p-3 shadow-lg flex items-center overflow-hidden">

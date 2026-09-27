@@ -3,6 +3,7 @@ import { Article, ArticleCategory } from '../types';
 import { ArticleCard } from '../components/cards/ArticleCard';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
 import { sortArticlesByTimeAndImportance } from '../utils';
+import { SEOHead } from '../components/common/SEOHead';
 import { Sparkles, Cpu, Layers, Microscope, BookOpen, Compass } from 'lucide-react';
 
 interface CategoryPageProps {
@@ -92,8 +93,29 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
     return true;
   });
 
+  const seoTitle =
+    categorySlug === 'ai'
+      ? 'AI News & Frontier Intelligence | Latest AI Info — NextVector'
+      : `${meta.title} | NextVector`;
+
+  const seoDescription =
+    categorySlug === 'ai'
+      ? 'Breaking artificial intelligence news, verified frontier model disclosures, LLM benchmarks, and AI safety intelligence. Less noise. More signal.'
+      : meta.subtitle;
+
+  const seoKeywords =
+    categorySlug === 'ai'
+      ? ['AI news', 'latest AI info', 'artificial intelligence news', 'frontier AI models', 'LLM benchmarks', 'AI safety']
+      : [categorySlug, 'technology news', 'NextVector intelligence'];
+
   return (
     <div className="space-y-8 pb-16">
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        canonicalPath={`/${categorySlug}`}
+        tags={seoKeywords}
+      />
       {/* Category Header */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
         <div className="max-w-3xl">

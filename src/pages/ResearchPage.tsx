@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ResearchPaper } from '../types';
+import { SEOHead } from '../components/common/SEOHead';
 import { BookOpen, ExternalLink, ArrowRight, Layers, CheckCircle2, FlaskConical, Rocket } from 'lucide-react';
 
 interface ResearchPageProps {
@@ -21,8 +22,27 @@ export const ResearchPage: React.FC<ResearchPageProps> = ({ papers }) => {
     ? papers
     : papers.filter((p) => p.field === selectedField);
 
+  const researchSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Frontier AI & Science Research Explained | NextVector',
+    description: 'Plain-English breakdowns and technical analysis of groundbreaking arXiv research papers across AI, quantum physics, and biology.',
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'NextVector',
+      url: 'https://nextvector.rhasan.online',
+    },
+  };
+
   return (
     <div className="space-y-10 pb-20">
+      <SEOHead
+        title="AI & Quantum Science Research Explained (Plain English Papers) | NextVector"
+        description="Rigorous academic research decoded for engineers and executives. Plain-English breakdowns of frontier arXiv papers across AI reasoning, quantum mechanics, and biotechnology."
+        canonicalPath="/research"
+        schemaData={researchSchema}
+        tags={['AI research papers', 'arXiv explained', 'latest AI research', 'frontier science papers']}
+      />
       {/* Header */}
       <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
         <div className="max-w-3xl">

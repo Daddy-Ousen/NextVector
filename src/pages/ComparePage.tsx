@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { AIModel } from '../types';
 import { SEOHead } from '../components/common/SEOHead';
 import {
@@ -17,6 +17,7 @@ import {
   ChevronRight,
   ShieldCheck,
   Award,
+  Flame,
 } from 'lucide-react';
 
 interface ComparePageProps {
@@ -30,6 +31,7 @@ interface PresetShowdown {
   slug: string;
   name: string;
   shortTitle: string;
+  category: 'Frontier Flagships' | 'Cost & Pareto' | 'Reasoning & Agents' | 'Open Weights';
   modelIdA: string;
   modelIdB: string;
   seoTitle: string;
@@ -54,6 +56,7 @@ const PRESET_SHOWDOWNS: PresetShowdown[] = [
     slug: 'claude-vs-chatgpt',
     name: 'Claude vs ChatGPT (Opus 5.5 vs GPT-6 Astra)',
     shortTitle: 'Claude vs ChatGPT',
+    category: 'Frontier Flagships',
     modelIdA: 'model-claude-opus-5-5',
     modelIdB: 'model-gpt-6-astra',
     seoTitle: 'Claude vs ChatGPT: Opus 5.5 vs GPT-6 Astra Showdown (2026) | NextVector',
@@ -100,6 +103,7 @@ const PRESET_SHOWDOWNS: PresetShowdown[] = [
     slug: 'opus-vs-gpt-6',
     name: 'Opus 5.5 vs GPT-6 Astra: Frontier Showdown',
     shortTitle: 'Opus vs GPT-6',
+    category: 'Frontier Flagships',
     modelIdA: 'model-claude-opus-5-5',
     modelIdB: 'model-gpt-6-astra',
     seoTitle: 'Opus vs GPT-6: Claude Opus 5.5 vs OpenAI GPT-6 Astra Comparison | NextVector',
@@ -138,9 +142,126 @@ const PRESET_SHOWDOWNS: PresetShowdown[] = [
     ],
   },
   {
+    slug: 'gemini-vs-chatgpt',
+    name: 'Gemini 3 Deep Think vs GPT-6 Astra: The Frontier Titans',
+    shortTitle: 'Gemini vs ChatGPT',
+    category: 'Frontier Flagships',
+    modelIdA: 'model-gemini-3-deep-think',
+    modelIdB: 'model-gpt-6-astra',
+    seoTitle: 'Gemini vs ChatGPT: Gemini 3 Deep Think vs GPT-6 Astra (2026) | NextVector',
+    seoDescription: 'Google DeepMind Gemini 3 Deep Think vs OpenAI GPT-6 Astra comparison. Dual-system latent tree search vs autonomous desktop computer operator.',
+    executiveVerdict:
+      'Google DeepMind’s Gemini 3 Deep Think (1419 Arena Elo, Rank #2) and OpenAI’s GPT-6 Astra (1420 Arena Elo, Rank #1) sit separated by a razor-thin 1 Elo point. Gemini 3 Deep Think dominates in pure mathematical deduction (solving 4 IMO problems at gold-medal tier) and massive 2M multimodal context. GPT-6 Astra dominates in autonomous desktop operating system navigation (68.4% on OSWorld) and real-world multi-step developer agent execution.',
+    verdictA: {
+      title: 'Choose Gemini 3 Deep Think if:',
+      points: [
+        'You require deep deliberative mathematical and scientific problem solving via AlphaProof-2 integration.',
+        'You need to process 2,000,000 tokens of mixed multimodal inputs (full hour-long video, audio, and codebases).',
+        'Your enterprise infrastructure is anchored in Google Cloud Vertex AI and BigQuery data fabrics.',
+        'You need simultaneous dual-channel audio streaming with sub-160ms latency.',
+      ],
+    },
+    verdictB: {
+      title: 'Choose GPT-6 Astra if:',
+      points: [
+        'You want autonomous GUI navigation where an agent takes over desktop browsers, terminals, and spreadsheets.',
+        'You utilize OpenAI Operator workflows and automated SWE-bench repository issue remediation.',
+        'You rely on the ChatGPT desktop ecosystem with unmetered pro compute options.',
+        'You need maximum tool serialization reliability across custom API action schemas.',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Is Gemini 3 Deep Think smarter than GPT-6 Astra?',
+        answer:
+          'They are statistically tied at the frontier: GPT-6 Astra holds 1420 Arena Elo, while Gemini 3 Deep Think holds 1419 Arena Elo. Gemini leads in Olympiad-level discrete mathematics, while GPT-6 Astra leads in autonomous computer operation and software engineering.',
+      },
+      {
+        question: 'Which has a larger context window: Gemini 3 or GPT-6?',
+        answer:
+          'Gemini 3 Deep Think supports 2,000,000 native multimodal tokens (text, video, audio). GPT-6 Astra supports 256,000 tokens (expandable to 512,000 tokens for enterprise tiers).',
+      },
+    ],
+  },
+  {
+    slug: 'claude-vs-gemini',
+    name: 'Claude Opus 5.5 vs Gemini 3 Deep Think: Scientific Reasoning Battle',
+    shortTitle: 'Claude vs Gemini',
+    category: 'Reasoning & Agents',
+    modelIdA: 'model-claude-opus-5-5',
+    modelIdB: 'model-gemini-3-deep-think',
+    seoTitle: 'Claude vs Gemini: Claude Opus 5.5 vs Gemini 3 Deep Think | NextVector',
+    seoDescription: 'Anthropic Claude Opus 5.5 vs Google DeepMind Gemini 3 Deep Think. Formal Lean 4 verification vs AlphaProof-2 Monte Carlo tree search.',
+    executiveVerdict:
+      'Anthropic and Google DeepMind take radically different architectural approaches to frontier intelligence. Claude Opus 5.5 (1417 Elo, $4/M) combines a 1M context window with native Lean 4 interactive theorem proving, ensuring zero-hallucination code verification. Gemini 3 Deep Think (1419 Elo, $5/M) utilizes test-time dual-system latent tree search to explore mathematical proof branches at gold-medal IMO performance.',
+    verdictA: {
+      title: 'Choose Claude Opus 5.5 if:',
+      points: [
+        'You need machine-certified software verification compiled by an interactive Lean 4 kernel.',
+        'You want superior prompt caching economics ($0.20/1M tokens) on massive context files.',
+        'You prioritize clean, human-like editorial prose without synthetic conversational patterns.',
+        'You require privacy guarantees under Anthropic Commercial Terms of Service.',
+      ],
+    },
+    verdictB: {
+      title: 'Choose Gemini 3 Deep Think if:',
+      points: [
+        'You need 2,000,000 tokens of multimodal context ingesting high-definition video feeds.',
+        'You tackle unsolvable mathematical lemmas requiring AlphaProof-2 formal generation.',
+        'You operate within Google Workspace (Docs, Sheets, Drive) and Google Cloud Vertex AI.',
+        'You need real-time speech-to-speech conversational reasoning with dual audio vocoders.',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Which is better for software engineers: Claude Opus 5.5 or Gemini 3 Deep Think?',
+        answer:
+          'Claude Opus 5.5 is preferred for codebases due to its native Lean 4 compiler verification, clean refactoring style, and $0.20 prompt caching. Gemini 3 is preferred when code understanding must be integrated with video recordings or massive 2M-token logs.',
+      },
+    ],
+  },
+  {
+    slug: 'grok-vs-chatgpt',
+    name: 'Grok 4.7 vs GPT-6 Astra: The Colossus Clash',
+    shortTitle: 'Grok vs ChatGPT',
+    category: 'Reasoning & Agents',
+    modelIdA: 'model-grok-4-7',
+    modelIdB: 'model-gpt-6-astra',
+    seoTitle: 'Grok vs ChatGPT: Grok 4.7 vs GPT-6 Astra Comparison (2026) | NextVector',
+    seoDescription: 'xAI Grok 4.7 vs OpenAI GPT-6 Astra. Native sub-agent branching tokens on Memphis Colossus vs GPT-6 autonomous computer operator.',
+    executiveVerdict:
+      'xAI’s Grok 4.7 (1414 Arena Elo, Rank #7) challenges OpenAI’s GPT-6 Astra (1420 Arena Elo, Rank #1) by embedding sub-agent orchestration directly into inference decoding. Rather than relying on external agent loops, Grok 4.7 autonomously branches into parallel worker personas across a 500k context window at $3.00/1M tokens. GPT-6 Astra remains the reigning king of autonomous OS computer navigation and consumer app integrations.',
+    verdictA: {
+      title: 'Choose Grok 4.7 if:',
+      points: [
+        'You want native multi-agent token branching that avoids brittle LangChain/AutoGen wrappers.',
+        'You need lower frontier inference pricing ($3.00/1M input vs $5.00/1M on GPT-6 Astra).',
+        'You benefit from real-time X telemetry and social signal integration.',
+        'You value high mathematical deduction (96.8% on MATH-500) trained on the 200k liquid-cooled Colossus cluster.',
+      ],
+    },
+    verdictB: {
+      title: 'Choose GPT-6 Astra if:',
+      points: [
+        'You need pixel-level autonomous desktop computer navigation (68.4% OSWorld).',
+        'You want peak coding benchmark scores (SWE-bench verified 98% with search scaffolding).',
+        'You rely on the ChatGPT Plus/Pro web interface with integrated Operator tools.',
+        'You require strict enterprise compliance and zero-retention guarantees.',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Is Grok 4.7 cheaper to run than GPT-6 Astra?',
+        answer:
+          'Yes. Grok 4.7 is priced at $3.00/1M input tokens and $12.00/1M output tokens (with $0.75 prompt caching). GPT-6 Astra is billed at $5.00/1M input and $25.00/1M output tokens.',
+      },
+    ],
+  },
+  {
     slug: 'grok-vs-claude',
     name: 'Grok 4.7 vs Claude Opus 5.5: Multi-Agent Face-Off',
     shortTitle: 'Grok vs Claude',
+    category: 'Reasoning & Agents',
     modelIdA: 'model-grok-4-7',
     modelIdB: 'model-claude-opus-5-5',
     seoTitle: 'Grok 4.7 vs Claude Opus 5.5: Multi-Agent Reasoning Comparison | NextVector',
@@ -177,6 +298,7 @@ const PRESET_SHOWDOWNS: PresetShowdown[] = [
     slug: 'deepseek-vs-openai',
     name: 'DeepSeek-V4.1-Flash vs GPT-5.6 Sol: The Pareto War',
     shortTitle: 'DeepSeek vs OpenAI',
+    category: 'Cost & Pareto',
     modelIdA: 'model-deepseek-v4-1-flash',
     modelIdB: 'model-gpt-5-6-sol',
     seoTitle: 'DeepSeek vs OpenAI (V4.1-Flash vs GPT-5.6 Sol) Pricing & Elo Showdown | NextVector',
@@ -209,6 +331,117 @@ const PRESET_SHOWDOWNS: PresetShowdown[] = [
       },
     ],
   },
+  {
+    slug: 'deepseek-vs-claude',
+    name: 'DeepSeek-V4-Pro vs Claude Opus 5.5: Open Weights vs Certified Logic',
+    shortTitle: 'DeepSeek vs Claude',
+    category: 'Cost & Pareto',
+    modelIdA: 'model-deepseek-v4-pro-0813',
+    modelIdB: 'model-claude-opus-5-5',
+    seoTitle: 'DeepSeek vs Claude: DeepSeek-V4-Pro vs Claude Opus 5.5 | NextVector',
+    seoDescription: 'DeepSeek-V4-Pro open-weights reasoning vs Anthropic Claude Opus 5.5 verified formal logic. Complete cost and benchmark analysis.',
+    executiveVerdict:
+      'For teams choosing between open-weights autonomy and commercial perfection: DeepSeek-V4-Pro (1404 Elo, $0.75/1M) offers fully self-hostable Apache 2.0 weights trained with extreme reinforcement learning, eliminating data leakage. Claude Opus 5.5 (1417 Elo, $4.00/1M) provides unmatched formal Lean 4 verification and 1M context with zero infrastructure management.',
+    verdictA: {
+      title: 'Choose DeepSeek-V4-Pro if:',
+      points: [
+        'You must self-host on private GPU clusters (vLLM/SGLang) with 100% data sovereignty.',
+        'You need extreme price efficiency ($0.75/1M input vs $4.00/1M on Claude Opus).',
+        'You require unlimited local concurrency without cloud rate-limit quotas.',
+        'You run mathematical synthetic reasoning pipelines at petabyte scale.',
+      ],
+    },
+    verdictB: {
+      title: 'Choose Claude Opus 5.5 if:',
+      points: [
+        'You need certified, machine-checked Lean 4 mathematical proofs and verified algorithms.',
+        'You need a native 1,000,000 token context window (vs 128k on DeepSeek-V4-Pro).',
+        'You utilize AWS Bedrock or Google Cloud Vertex AI managed infrastructure.',
+        'You cannot afford the capital expense or engineering overhead of maintaining GPU clusters.',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Can DeepSeek-V4-Pro be self-hosted on enterprise servers?',
+        answer:
+          'Yes. DeepSeek-V4-Pro is released under an Apache 2.0 open-weights license, allowing enterprises to run it on private NVIDIA H100/H200 or B200 clusters without telemetry.',
+      },
+    ],
+  },
+  {
+    slug: 'opus-vs-sonnet',
+    name: 'Claude Opus 5.5 vs Claude Sonnet 5: The Anthropic Internal Tier Guide',
+    shortTitle: 'Opus vs Sonnet',
+    category: 'Frontier Flagships',
+    modelIdA: 'model-claude-opus-5-5',
+    modelIdB: 'model-claude-sonnet-5',
+    seoTitle: 'Claude Opus 5.5 vs Claude Sonnet 5: Which Claude Model to Choose? | NextVector',
+    seoDescription: 'Anthropic model tier guide. When is Claude Opus 5.5 worth the extra cost over Claude Sonnet 5 for coding, research, and API workflows?',
+    executiveVerdict:
+      'The definitive guide to Anthropic’s model family: Claude Sonnet 5 (1384 Elo, $1.50/1M input) is the undisputed daily driver champion—blazing fast, cost-effective, and brilliant at standard programming and technical analysis. Claude Opus 5.5 (1417 Elo, $4.00/1M input) is the heavy cognitive hammer, reserved for complex multi-file architectural refactoring, Lean 4 formal mathematical verification, and safety-critical avionics code.',
+    verdictA: {
+      title: 'Upgrade to Claude Opus 5.5 for:',
+      points: [
+        'Formal verification: writing and compiling Lean 4 or Coq mathematical theorem proofs.',
+        'Deep multi-file architectural refactoring across massive 1M token contexts.',
+        'High-stakes legal and regulatory contract risk synthesis where zero hallucination is tolerable.',
+        'Complex novel algorithmic derivation and mathematical bounds discovery.',
+      ],
+    },
+    verdictB: {
+      title: 'Stick with Claude Sonnet 5 for:',
+      points: [
+        'Everyday software development, bug fixing, test suite generation, and git commits.',
+        'High-speed interactive conversational applications requiring sub-second response latency.',
+        'Cost-sensitive agent loops: at $1.50/1M input, Sonnet 5 is 62% cheaper than Opus 5.5.',
+        'Content drafting, documentation generation, and general business correspondence.',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Is Claude Opus 5.5 worth the extra price over Sonnet 5?',
+        answer:
+          'For 85% of daily software tasks, Sonnet 5 is fast, capable, and more economical. However, for formal mathematical proof compilation, mission-critical safety code, and subtle multi-step reasoning, Opus 5.5’s 1417 Elo delivers unmatched correctness.',
+      },
+    ],
+  },
+  {
+    slug: 'mistral-vs-qwen',
+    name: 'Mistral Large 3 vs Qwen3.8 Max: Global Open-Weights Titans',
+    shortTitle: 'Mistral vs Qwen',
+    category: 'Open Weights',
+    modelIdA: 'model-mistral-large-3',
+    modelIdB: 'model-qwen3-8-max',
+    seoTitle: 'Mistral Large 3 vs Qwen3.8 Max: Open Weights Showdown | NextVector',
+    seoDescription: 'European vs Chinese open-weights flagships: Mistral Large 3 Mixture-of-Depths vs Alibaba Qwen3.8 Max. Architecture, benchmarks, and licensing comparison.',
+    executiveVerdict:
+      'Mistral Large 3 (1388 Elo, 670B) and Qwen3.8 Max (1402 Elo) represent the pinnacle of non-American open-weights foundation models. Mistral pioneers Mixture-of-Depths (MoD), skipping middle layers on low-entropy tokens to slash inference FLOPs by 60% under Apache 2.0. Qwen3.8 Max delivers higher raw coding and multilingual Elo (1402) across dense-sparse MoE clusters.',
+    verdictA: {
+      title: 'Choose Mistral Large 3 if:',
+      points: [
+        'You require strict European AI Act compliance and sovereign European hosting guarantees.',
+        'You leverage Mixture-of-Depths architecture to achieve high inference throughput on modest compute.',
+        'You prefer Apache 2.0 open-source licensing for unconstrained commercial modification.',
+        'You integrate with Mistral La Plateforme enterprise edge appliances.',
+      ],
+    },
+    verdictB: {
+      title: 'Choose Qwen3.8 Max if:',
+      points: [
+        'You need peak open-weights Arena Elo (1402 Elo, Rank #16 globally).',
+        'Your applications require elite multilingual performance across Asian, European, and Middle Eastern languages.',
+        'You prioritize SWE-bench Verified coding performance on Python and Go codebases.',
+        'You deploy within Alibaba Cloud Model Studio or domestic server hardware.',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Which open-source model is best in 2026: Mistral or Qwen?',
+        answer:
+          'Qwen3.8 Max has a slight edge on raw Arena Elo (1402 vs 1388) and complex coding. However, Mistral Large 3 offers true Apache 2.0 licensing, European sovereign hosting, and cutting-edge Mixture-of-Depths compute efficiency.',
+      },
+    ],
+  },
 ];
 
 export const ComparePage: React.FC<ComparePageProps> = ({
@@ -225,15 +458,21 @@ export const ComparePage: React.FC<ComparePageProps> = ({
 
   const [selectedIdA, setSelectedIdA] = useState<string>(currentPreset.modelIdA);
   const [selectedIdB, setSelectedIdB] = useState<string>(currentPreset.modelIdB);
+  const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<string>('all');
 
   // Sync state if slug changes
-  React.useEffect(() => {
+  useEffect(() => {
     setSelectedIdA(currentPreset.modelIdA);
     setSelectedIdB(currentPreset.modelIdB);
   }, [currentPreset]);
 
   const modelA = models.find((m) => m.id === selectedIdA) || models[0];
   const modelB = models.find((m) => m.id === selectedIdB) || models[1] || models[0];
+
+  const filteredShowdowns = useMemo(() => {
+    if (selectedCategoryFilter === 'all') return PRESET_SHOWDOWNS;
+    return PRESET_SHOWDOWNS.filter((p) => p.category === selectedCategoryFilter);
+  }, [selectedCategoryFilter]);
 
   // FAQ Schema for GEO & Google AI Overviews
   const faqSchema = {
@@ -258,7 +497,16 @@ export const ComparePage: React.FC<ComparePageProps> = ({
         description={currentPreset.seoDescription}
         canonicalPath={canonicalPath}
         schemaData={faqSchema}
-        tags={['AI Comparison', 'Claude vs ChatGPT', 'Opus vs GPT 6', 'AI Benchmarks 2026', 'Best AI Models']}
+        tags={[
+          'AI Comparison',
+          'Claude vs ChatGPT',
+          'Opus vs GPT 6',
+          'Gemini vs ChatGPT',
+          'Grok vs ChatGPT',
+          'DeepSeek vs OpenAI',
+          'AI Benchmarks 2026',
+          'Best AI Models',
+        ]}
       />
 
       {/* 1. HERO & SHOWDOWN SELECTOR */}
@@ -277,15 +525,32 @@ export const ComparePage: React.FC<ComparePageProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-400 font-sans leading-relaxed">
-            Unbiased empirical comparison evaluated across 135 models on LMSYS Arena Elo, SWE-bench Verified coding, context length, latency, and true token economics.
+            Unbiased empirical comparisons evaluated across 135 models on LMSYS Arena Elo, SWE-bench Verified coding, context length, latency, and true token economics.
           </p>
 
-          {/* Quick Preset Pills */}
-          <div className="pt-4 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-mono text-zinc-500 uppercase tracking-wider mr-1">
-              Popular Showdowns:
+          {/* Category Tabs */}
+          <div className="pt-2 flex items-center gap-2 overflow-x-auto scrollbar-none pb-1">
+            <span className="text-xs font-mono text-zinc-500 uppercase tracking-wider shrink-0 mr-1">
+              Category:
             </span>
-            {PRESET_SHOWDOWNS.map((p) => {
+            {['all', 'Frontier Flagships', 'Reasoning & Agents', 'Cost & Pareto', 'Open Weights'].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategoryFilter(cat)}
+                className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer shrink-0 ${
+                  selectedCategoryFilter === cat
+                    ? 'bg-zinc-800 text-emerald-400 border border-emerald-500/40 font-bold'
+                    : 'bg-zinc-900/60 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
+                }`}
+              >
+                {cat === 'all' ? 'All 10 Showdowns' : cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Showdown Navigation Pills */}
+          <div className="pt-2 flex flex-wrap items-center gap-2">
+            {filteredShowdowns.map((p) => {
               const isActive = p.slug === currentPreset.slug;
               return (
                 <button
@@ -400,7 +665,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({
                     <span>{modelA.name}</span>
                     <button
                       onClick={() => onSelectModelDetail(modelA.id)}
-                      className="text-xs font-mono text-emerald-400 hover:underline flex items-center gap-1 font-normal"
+                      className="text-xs font-mono text-emerald-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
                     >
                       Spec Sheet <ArrowRight className="w-3 h-3" />
                     </button>
@@ -414,7 +679,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({
                     <span>{modelB.name}</span>
                     <button
                       onClick={() => onSelectModelDetail(modelB.id)}
-                      className="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1 font-normal"
+                      className="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
                     >
                       Spec Sheet <ArrowRight className="w-3 h-3" />
                     </button>

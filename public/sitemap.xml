@@ -1890,5 +1890,65 @@
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/amd-acquires-world-labs-8-2b-fei-fei-li-spatial-intelligence</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/anthropic-launches-claude-sonnet-5-5-frontier-agentic-coding</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/nvidia-launches-open-agent-safety-platform-openshell-sentry</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/flock-safety-demands-takedown-300k-surveillance-camera-map</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/california-enacts-sb-923-ccpa-deletion-third-party-data-brokers</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/chinese-academy-sciences-2026-2030-five-year-frontier-tech-blueprint</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/astrophysicists-solve-1840s-carrington-precursor-space-weather-mystery</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/jeff-open-source-jev-compatible-0-8b-edge-decision-model</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/microllm-lab-webgpu-in-browser-zero-latency-inference-sandbox</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/grapheneos-android-mte-hardware-memory-tagging-security-audit</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
 

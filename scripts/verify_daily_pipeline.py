@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 NextVector Daily Pipeline Pre-Publication Release Gate Verifier
-Strictly enforces Editorial Rulebook §3, §4, §7, and §8:
+Strictly enforces Editorial Rulebook §3, §4, §7, §8, and §10:
 1. 100% unique cover images across all articles (0 duplicates).
 2. All local image assets exist on disk.
 3. Temporal sanity: newly published articles match operational run date (last 48 hours).
 4. Zero-anachronism gate: rejects historical models (e.g., Claude 3.5/3.7, GPT-4o) reported as breaking new releases in 2026.
 5. All required schema fields (threeQuestions, sources, tags, author).
 6. Sync between articlesData.ts, MOCK_DAILY_BRIEFING, MOCK_LIVE_SIGNALS, MOCK_TIMELINE_EVENTS, and public/sitemap.xml.
+7. SEO, GEO & AI Overview Readiness: min 5 tags, complete Three-Question framework (>80 chars each), min 3 key takeaways, min 1 primary citation, Schema.org TechArticle & FAQPage graph with speakable selectors.
 """
 
 import sys
@@ -24,6 +25,8 @@ SITEMAP_FILE = ROOT_DIR / "public" / "sitemap.xml"
 PUBLIC_IMAGES_DIR = ROOT_DIR / "public"
 MODELS_FILE = ROOT_DIR / "src" / "data" / "modelsData.ts"
 BENCHMARKS_FILE = ROOT_DIR / "src" / "data" / "benchmarksData.ts"
+SEO_HEAD_FILE = ROOT_DIR / "src" / "components" / "common" / "SEOHead.tsx"
+ARTICLE_DETAIL_FILE = ROOT_DIR / "src" / "pages" / "ArticleDetailPage.tsx"
 
 BANNED_ANACHRONISMS = [
     (r"claude\s*3\.?7\s*sonnet.*(?:release|launch|unveil|drop|introduc)", "Claude 3.7 Sonnet is a Feb 2025 model; cannot be reported as a new release in 2026"),
@@ -37,7 +40,7 @@ BANNED_ANACHRONISMS = [
 ]
 
 def check_articles():
-    print("\n[Gate 1/5] Auditing src/data/articlesData.ts...")
+    print("\n[Gate 1/7] Auditing src/data/articlesData.ts...")
     if not ARTICLES_FILE.exists():
         print(f"FAIL: {ARTICLES_FILE} does not exist.")
         return False, []
@@ -158,7 +161,7 @@ def check_articles():
     return True, articles
 
 def check_briefing_and_signals(articles):
-    print("\n[Gate 2/5] Auditing MOCK_DAILY_BRIEFING & MOCK_LIVE_SIGNALS...")
+    print("\n[Gate 2/7] Auditing MOCK_DAILY_BRIEFING & MOCK_LIVE_SIGNALS...")
     if not MOCK_DATA_FILE.exists():
         print(f"FAIL: {MOCK_DATA_FILE} not found.")
         return False
@@ -204,7 +207,7 @@ def check_briefing_and_signals(articles):
     return True
 
 def check_timeline(articles):
-    print("\n[Gate 3/5] Auditing Breakthrough Timeline (`MOCK_TIMELINE_EVENTS`)...")
+    print("\n[Gate 3/7] Auditing Breakthrough Timeline (`MOCK_TIMELINE_EVENTS`)...")
     content = MOCK_DATA_FILE.read_text(encoding="utf-8")
     timeline_match = re.search(r"export const MOCK_TIMELINE_EVENTS: TimelineEvent\[\]\s*=\s*\[(.*?)\];", content, re.DOTALL)
     if not timeline_match:
@@ -241,7 +244,7 @@ def check_timeline(articles):
     return True
 
 def check_sitemap(articles):
-    print("\n[Gate 4/5] Auditing public/sitemap.xml...")
+    print("\n[Gate 4/7] Auditing public/sitemap.xml...")
     if not SITEMAP_FILE.exists():
         print(f"FAIL: {SITEMAP_FILE} not found.")
         return False
@@ -261,7 +264,7 @@ def check_sitemap(articles):
     return True
 
 def check_temporal_sanity(articles):
-    print("\n[Gate 5/5] Auditing Temporal Sanity (48-Hour Breaking News Window)...")
+    print("\n[Gate 5/7] Auditing Temporal Sanity (48-Hour Breaking News Window)...")
     if not articles:
         return False
 
@@ -288,7 +291,7 @@ def check_temporal_sanity(articles):
     return True
 
 def check_model_benchmark_sync():
-    print("\n[Gate 6/6] Auditing Model Registry & Comprehensive Benchmark Synchronization (All 6 Leaderboards)...")
+    print("\n[Gate 6/7] Auditing Model Registry & Comprehensive Benchmark Synchronization (All 6 Leaderboards)...")
     if not MODELS_FILE.exists() or not BENCHMARKS_FILE.exists():
         print("FAIL: modelsData.ts or benchmarksData.ts missing.")
         return False
@@ -400,6 +403,115 @@ def check_model_benchmark_sync():
     print("PASS: All 6 benchmark leaderboards (Arena, OSWorld, WebArena, SWE-bench, Cyber-Eval, Price-Performance) synchronized with 1..N sequential ranks and model registry parity.")
     return True
 
+def check_seo_geo_readiness():
+    print("\n[Gate 7/7] Auditing SEO, GEO & AI Overview Readiness...")
+    if not ARTICLES_FILE.exists():
+        print(f"FAIL: {ARTICLES_FILE} missing.")
+        return False
+
+    content = ARTICLES_FILE.read_text(encoding="utf-8")
+    articles = re.split(r'(?=\{\s*id:\s*["\']art-\d+["\'])', content)[1:]
+    print(f"-> Total articles evaluated for SEO/GEO readiness: {len(articles)}")
+
+    errors = []
+    total_tags = 0
+    total_takeaways = 0
+    total_citations = 0
+
+    for idx, art_text in enumerate(articles, 1):
+        id_m = re.search(r'id:\s*["\'](art-\d+)["\']', art_text)
+        art_id = id_m.group(1) if id_m else f"unknown-{idx}"
+
+        # 1. Tags check (min 5 targeted search terms/keywords)
+        tags_start = art_text.find("tags:")
+        if tags_start != -1:
+            bracket_start = art_text.find("[", tags_start)
+            bracket_end = art_text.find("]", bracket_start)
+            tags_raw = art_text[bracket_start+1:bracket_end]
+            tags = re.findall(r'["\']([^"\']+)["\']', tags_raw)
+            total_tags += len(tags)
+            if len(tags) < 5:
+                errors.append(f"{art_id}: tags count {len(tags)} < 5 (Rulebook §10 SEO/GEO requirement)")
+        else:
+            errors.append(f"{art_id}: missing tags array")
+
+        # 2. Three-Question Framework (>80 chars each for Google AI Overview / FAQ synthesis)
+        wh_m = re.search(r'whatHappened:\s*["\'](.*?)["\'],\s*\n', art_text, re.DOTALL)
+        wm_m = re.search(r'whyItMatters:\s*["\'](.*?)["\'],\s*\n', art_text, re.DOTALL)
+        wn_m = re.search(r'whatsNext:\s*["\'](.*?)["\']\s*,?\s*\n', art_text, re.DOTALL)
+
+        if not wh_m or len(wh_m.group(1).strip()) < 80:
+            errors.append(f"{art_id}: whatHappened missing or < 80 chars ({len(wh_m.group(1).strip()) if wh_m else 0})")
+        if not wm_m or len(wm_m.group(1).strip()) < 80:
+            errors.append(f"{art_id}: whyItMatters missing or < 80 chars ({len(wm_m.group(1).strip()) if wm_m else 0})")
+        if not wn_m or len(wn_m.group(1).strip()) < 80:
+            errors.append(f"{art_id}: whatsNext missing or < 80 chars ({len(wn_m.group(1).strip()) if wn_m else 0})")
+
+        # 3. Key Takeaways check (min 3 bullet points for snippet extraction)
+        kt_start = art_text.find("keyTakeaways:")
+        if kt_start != -1:
+            kt_block_m = re.search(r'keyTakeaways:\s*\[(.*?)\n\s*\]', art_text, re.DOTALL)
+            if kt_block_m:
+                kt_raw = kt_block_m.group(1)
+                takeaways = re.findall(r'^\s*["\'](.*?)["\'],?\s*$', kt_raw, re.MULTILINE)
+                total_takeaways += len(takeaways)
+                if len(takeaways) < 3:
+                    errors.append(f"{art_id}: keyTakeaways count {len(takeaways)} < 3")
+            else:
+                errors.append(f"{art_id}: malformed keyTakeaways array")
+        else:
+            errors.append(f"{art_id}: missing keyTakeaways")
+
+        # 4. Citations check (min 1 authoritative citation link)
+        cit_start = art_text.find("citations:")
+        if cit_start != -1:
+            cit_block_m = re.search(r'citations:\s*\[(.*?)\n\s*\]', art_text, re.DOTALL)
+            if cit_block_m:
+                cit_raw = cit_block_m.group(1)
+                cits = re.findall(r'\{\s*["\']?title["\']?:', cit_raw)
+                total_citations += len(cits)
+                if len(cits) < 1:
+                    errors.append(f"{art_id}: citations count {len(cits)} < 1")
+            else:
+                errors.append(f"{art_id}: malformed citations array")
+        else:
+            errors.append(f"{art_id}: missing citations")
+
+    print(f"-> Total keywords/search tags indexed: {total_tags} (avg {total_tags/len(articles):.1f}/art)")
+    print(f"-> Total key takeaways indexed: {total_takeaways} (avg {total_takeaways/len(articles):.1f}/art)")
+    print(f"-> Total citations indexed: {total_citations} (avg {total_citations/len(articles):.1f}/art)")
+
+    # 5. Schema & SEO component integrity
+    if not SEO_HEAD_FILE.exists():
+        errors.append(f"SEOHead.tsx missing from {SEO_HEAD_FILE}")
+    else:
+        seo_text = SEO_HEAD_FILE.read_text(encoding="utf-8")
+        if "max-snippet:-1" not in seo_text or "max-image-preview:large" not in seo_text:
+            errors.append("SEOHead.tsx missing AI crawler directives (max-snippet:-1, max-image-preview:large)")
+        if "keywords" not in seo_text:
+            errors.append("SEOHead.tsx missing keywords meta injection")
+        if "application/ld+json" not in seo_text:
+            errors.append("SEOHead.tsx missing JSON-LD schema script injection")
+
+    if not ARTICLE_DETAIL_FILE.exists():
+        errors.append(f"ArticleDetailPage.tsx missing from {ARTICLE_DETAIL_FILE}")
+    else:
+        detail_text = ARTICLE_DETAIL_FILE.read_text(encoding="utf-8")
+        if "TechArticle" not in detail_text:
+            errors.append("ArticleDetailPage.tsx missing TechArticle schema definition")
+        if "FAQPage" not in detail_text:
+            errors.append("ArticleDetailPage.tsx missing FAQPage schema definition")
+        if "SpeakableSpecification" not in detail_text or ".three-questions-block" not in detail_text:
+            errors.append("ArticleDetailPage.tsx missing SpeakableSpecification with .three-questions-block selector")
+
+    if errors:
+        for err in errors[:15]:
+            print(f"  [ERROR] {err}")
+        return False
+
+    print("PASS: SEO, GEO & AI Overview readiness verified (Tags >= 5, ThreeQuestions > 80 chars, KeyTakeaways >= 3, Citations >= 1, Schema.org Graph & Speakable selectors).")
+    return True
+
 def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -438,8 +550,13 @@ def main():
         print("\n[FAIL] RELEASE GATE FAILED at Model & Benchmark Sync Audit.")
         sys.exit(1)
 
+    pass_seo_geo = check_seo_geo_readiness()
+    if not pass_seo_geo:
+        print("\n[FAIL] RELEASE GATE FAILED at SEO, GEO & AI Overview Readiness Audit.")
+        sys.exit(1)
+
     print("\n=========================================================")
-    print("  [SUCCESS] ALL 6 RELEASE GATES PASSED (100% Rulebook Compliant)")
+    print("  [SUCCESS] ALL 7 RELEASE GATES PASSED (100% Rulebook Compliant)")
     print("=========================================================")
     sys.exit(0)
 

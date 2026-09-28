@@ -242,12 +242,39 @@ Before committing any new article to the repository or deploying to production, 
 ├────────────────────────────────────────────────────────┤
 │ STEP 7: AUTOMATED RELEASE GATE & BUILD VERIFICATION    │
 │         Run `npm run verify` & `npm run build`         │
-│         (must pass with 0 errors).                     │
+│         (must pass with 0 errors across all 7 gates).  │
 ├────────────────────────────────────────────────────────┤
 │ STEP 8: ATOMIC GIT COMMIT & REMOTE PUSH                │
 │         Commit with semantic prefix: `feat(news): ...` │
 └────────────────────────────────────────────────────────┘
 ```
+
+### 7.1 Automated Pre-Publication Release Gates (`scripts/verify_daily_pipeline.py`)
+NextVector enforces 7 automated verification gates before any batch is cleared for production release:
+
+1. **Gate 1: Catalog Integrity, IDs, Slugs & Image Uniqueness**
+   - 100% unique cover images across the entire catalog (0 duplicate strings, 0 duplicate local SHA-256 binaries, 0 duplicate Unsplash tokens).
+   - All local image files exist on disk and exceed 5KB.
+   - Zero historical model anachronisms (e.g., Claude 3.5/3.7, GPT-4o reported as new 2026 releases).
+2. **Gate 2: Daily Briefing & Live Signals Deep-Link Parity**
+   - Briefing matches the operational run date with valid article slugs.
+   - Live Signal marquee ticker contains $\ge 5$ fresh items with valid deep-links.
+3. **Gate 3: Breakthrough Timeline Integrity**
+   - All timeline entries strictly meet `impactScore >= 95`.
+   - Every `articleSlug` cross-link resolves to an existing catalog article.
+4. **Gate 4: Sitemap Completeness & Indexability**
+   - `public/sitemap.xml` contains 100% of all published articles with canonical URLs.
+5. **Gate 5: Temporal Sanity & 48-Hour Breaking News Window**
+   - Newest published articles have valid ISO-8601 timestamps matching the active operational window.
+6. **Gate 6: Model Registry & Benchmark Sync**
+   - All 6 benchmark leaderboards (Arena, OSWorld, WebArena, SWE-bench, Cyber-Eval, Price-Performance) feature strictly sequential 1..N ranks with 0 rank jumps.
+   - Complete parity between leaderboard scores and `ALL_135_MODELS` attributes (`arenaRank`, `arenaElo`).
+7. **Gate 7: SEO, GEO & AI Overview Readiness Audit**
+   - Minimum 5 targeted keywords/tags per article (`tags: string[]`).
+   - Complete Three-Question Framework (`whatHappened`, `whyItMatters`, `whatsNext`), with each answer $>80$ characters for high-density AI Overview and Schema.org `FAQPage` synthesis.
+   - Minimum 3 executive key takeaway bullet points per article for featured snippet extraction (`keyTakeaways: string[]`).
+   - Minimum 1 primary source citation link per article (`citations: Array<{title, url, source}>`).
+   - Schema.org `@graph` verification: `TechArticle`, `FAQPage`, and `SpeakableSpecification` (`.three-questions-block`, `.key-takeaways`).
 
 ---
 
@@ -305,4 +332,39 @@ Every live signal ticker item must be clickable, directly invoking client-side n
 
 ---
 
+## 10. SEO, GEO & AI Overview Optimization Standards
+
+NextVector is engineered from the ground up for premier organic search rankings and Generative Engine Optimization (GEO), ensuring maximum visibility across Google Search, Google AI Overviews, Perplexity, Claude Search, and ChatGPT Search.
+
+### 10.1 Generative Engine Optimization (GEO) Core Framework
+LLM search agents prioritize structured, high-density factual answers over conversational prose. Every intelligence report must provide:
+1. **Three-Question Framework (`threeQuestions`)**:
+   - `whatHappened`: Empirical breakdown of technical facts, events, and releases.
+   - `whyItMatters`: Architectural, economic, or systemic significance.
+   - `whatsNext`: Second-order projections spanning the next 3 to 24 months.
+   - *Threshold*: Each field MUST strictly exceed 80 characters to guarantee complete synthetic context.
+2. **Executive Key Takeaways (`keyTakeaways`)**:
+   - Minimum 3 bullet points per article, formatted with bold descriptive prefixes (e.g., `"Direct GUI manipulation: ..."`).
+   - Designed for direct extraction by Google Featured Snippets and LLM retrieval-augmented generation (RAG) prompts.
+3. **Primary Source Citations (`citations`)**:
+   - Minimum 1 verified authoritative primary source citation (`{ title, url, source }`).
+   - Links must point directly to arXiv pre-prints, DOI registries, official engineering announcements, or legal dockets.
+
+### 10.2 Targeted Search Terms & Keyword Taxonomy (`tags`)
+Every published report must index at least 5 targeted, high-intent keywords in its `tags` array:
+- Specific model, project, or paper names (e.g., `'GPT-6 Astra'`, `'Claude Opus 5.5'`, `'BITCOS'`).
+- Technical mechanism or architectural keywords (e.g., `'Ternary LLMs'`, `'Computer Use'`, `'PECVD'`).
+- Benchmark and evaluation terminology (e.g., `'OSWorld'`, `'WebArena'`, `'SWE-bench'`).
+- High-intent search queries and domain categories (e.g., `'Enterprise AI'`, `'Model Compression'`, `'Cybersecurity'`).
+
+### 10.3 Machine-Readable Schema.org Graph Integration
+Every article detail view dynamically injects a JSON-LD `@graph` containing:
+- **`TechArticle` / `NewsArticle`**: Complete metadata with canonical URLs, author attributions, publisher nodes, and keywords.
+- **`FAQPage`**: Formed dynamically by mapping `threeQuestions` into question-answer pairs (`"What happened regarding [Title]?"`, `"Why does [Title] matter?"`, `"What could happen next after [Title]?"`).
+- **`SpeakableSpecification`**: CSS selectors targeting `['.three-questions-block', '.key-takeaways']` for voice assistants and automated audio briefing pipelines.
+- **AI Crawler Directives**: `robots` meta tag configured with `index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1`.
+
+---
+
 *This rulebook is the permanent operating standard for all intelligence reporting on NextVector.*
+

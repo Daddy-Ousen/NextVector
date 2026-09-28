@@ -109,24 +109,60 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Coverage Areas</h5>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => onNavigate('/ai')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/ai"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/ai');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Artificial Intelligence
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/technology')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/technology"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/technology');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Semiconductors & Hardware
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/science')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/science"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/science');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Science & Quantum Physics
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/research')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/research"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/research');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Research Explained
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -135,24 +171,88 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Intelligence Hubs</h5>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => onNavigate('/models')} className="hover:text-emerald-400 transition-colors">
-                  AI Model Spec Database
-                </button>
+                <a
+                  href="/models"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/models');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  AI Model Spec Directory (135 Models)
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/benchmarks')} className="hover:text-emerald-400 transition-colors">
-                  Benchmark Radar & Caveats
-                </button>
+                <a
+                  href="/compare"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/compare');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  Model Comparisons & Showdowns
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/timeline')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/subscriptions"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/subscriptions');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  Best AI Subscriptions (2026 Guide)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/benchmarks"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/benchmarks');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  Benchmark Radar & Leaderboards
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/timeline"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/timeline');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Technology Timeline
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/briefing')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/briefing"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/briefing');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Daily Briefing Scan
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -161,24 +261,60 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Editorial Formats</h5>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => onNavigate('/analysis')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/analysis"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/analysis');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   News Analysis
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/deep-dives')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/deep-dives"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/deep-dives');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Technical Deep Dives
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/models')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/models"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/models');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Model Release Reports
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('/benchmarks')} className="hover:text-emerald-400 transition-colors">
+                <a
+                  href="/benchmarks"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/benchmarks');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
                   Benchmark Deconstruction
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -187,9 +323,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Standards & Mission</h5>
             <ul className="space-y-2 text-zinc-400">
               <li>
-                <button onClick={() => onNavigate('/about')} className="hover:text-emerald-400 transition-colors text-left">
+                <a
+                  href="/about"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/about');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors text-left"
+                >
                   About Editor (Robiul Hasan)
-                </button>
+                </a>
               </li>
               <li>
                 <a
@@ -236,9 +381,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             (Dhaka). Filter the noise.
           </div>
           <div className="flex items-center gap-6">
-            <button onClick={() => onNavigate('/about')} className="hover:text-emerald-400 transition-colors">
+            <a
+              href="/about"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  onNavigate('/about');
+                }
+              }}
+              className="hover:text-emerald-400 transition-colors"
+            >
               Editorial Lead
-            </button>
+            </a>
             <span>Privacy Protocol</span>
             <span>Editorial Charter</span>
             <span>Status: Operational (100%)</span>

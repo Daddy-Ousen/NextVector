@@ -80,11 +80,19 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
                 )}
               </div>
 
-              <h2
-                onClick={() => onSelectArticle(article.slug)}
-                className="text-xl sm:text-2xl md:text-3xl font-extrabold text-zinc-100 tracking-tight leading-tight hover:text-emerald-400 cursor-pointer transition-colors"
-              >
-                {article.title}
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-zinc-100 tracking-tight leading-tight">
+                <a
+                  href={`/article/${article.slug}`}
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onSelectArticle(article.slug);
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  {article.title}
+                </a>
               </h2>
 
               <p className="mt-3 text-xs sm:text-sm md:text-base text-zinc-300 leading-relaxed font-sans line-clamp-3 sm:line-clamp-none">
@@ -123,14 +131,20 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
                 >
                   <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-current' : ''}`} />
                 </button>
-                <button
-                  onClick={() => onSelectArticle(article.slug)}
+                <a
+                  href={`/article/${article.slug}`}
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onSelectArticle(article.slug);
+                    }
+                  }}
                   className="px-3 sm:px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold flex items-center gap-1 sm:gap-1.5 transition-all shadow-lg active:scale-95 whitespace-nowrap shrink-0"
                 >
                   <span className="hidden sm:inline">Read Signal</span>
                   <span className="sm:hidden">Read</span>
                   <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -142,9 +156,15 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   // COMPACT TICKER / LIST VARIANT
   if (variant === 'compact') {
     return (
-      <div 
-        onClick={() => onSelectArticle(article.slug)}
-        className="group p-4 rounded-xl bg-zinc-900/40 hover:bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start justify-between gap-4"
+      <a 
+        href={`/article/${article.slug}`}
+        onClick={(e) => {
+          if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+            e.preventDefault();
+            onSelectArticle(article.slug);
+          }
+        }}
+        className="group p-4 rounded-xl bg-zinc-900/40 hover:bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start justify-between gap-4 block"
       >
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1.5 flex-wrap">
@@ -167,7 +187,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           <SignalRatingBadge score={article.signalRating} size="sm" />
           <ArrowUpRight className="w-4 h-4 text-zinc-600 group-hover:text-emerald-400 transition-transform group-hover:translate-x-0.5" />
         </div>
-      </div>
+      </a>
     );
   }
 
@@ -205,11 +225,19 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             <span>{article.readTimeMinutes}m read</span>
           </div>
 
-          <h3
-            onClick={() => onSelectArticle(article.slug)}
-            className="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors cursor-pointer leading-snug line-clamp-2"
-          >
-            {article.title}
+          <h3 className="text-lg font-bold text-zinc-100 leading-snug line-clamp-2">
+            <a
+              href={`/article/${article.slug}`}
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  onSelectArticle(article.slug);
+                }
+              }}
+              className="group-hover:text-emerald-400 transition-colors"
+            >
+              {article.title}
+            </a>
           </h3>
 
           <p className="mt-2 text-xs text-zinc-400 line-clamp-2 leading-relaxed">
@@ -243,13 +271,19 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           >
             <Bookmark className={`w-3.5 h-3.5 ${isBookmarked ? 'fill-current' : ''}`} />
           </button>
-          <button
-            onClick={() => onSelectArticle(article.slug)}
-            className="text-emerald-400 hover:text-emerald-300 font-mono font-medium flex items-center gap-1 hover:underline"
+          <a
+            href={`/article/${article.slug}`}
+            onClick={(e) => {
+              if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                e.preventDefault();
+                onSelectArticle(article.slug);
+              }
+            }}
+            className="text-emerald-400 hover:text-emerald-300 font-mono font-medium flex items-center gap-1 hover:underline cursor-pointer"
           >
             <span>Read</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
+          </a>
         </div>
       </div>
     </article>

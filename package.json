@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && python scripts/prerender_static_pages.py",
     "lint": "oxlint",
     "preview": "vite preview",
     "verify": "python scripts/verify_daily_pipeline.py",
-    "harvest": "python scripts/fetch_live_intel.py"
+    "harvest": "python scripts/fetch_live_intel.py",
+    "indexnow": "python scripts/ping_indexnow.py"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

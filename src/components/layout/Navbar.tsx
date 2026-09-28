@@ -250,8 +250,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-            <button
-              onClick={() => handleLinkClick('/briefing')}
+            <a
+              href="/briefing"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  handleLinkClick('/briefing');
+                }
+              }}
               className="flex items-center gap-1 sm:gap-1.5 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0 cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
@@ -262,7 +268,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="hidden md:inline text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
                 3-Min Scan
               </span>
-            </button>
+            </a>
             <span className="text-zinc-700 shrink-0">|</span>
             <button
               onClick={onOpenBookmarks}
@@ -291,9 +297,15 @@ export const Navbar: React.FC<NavbarProps> = ({
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           {/* Logo & Brand (Clicking logo goes Home) */}
-          <div
-            onClick={() => handleLinkClick('/')}
-            className="cursor-pointer group shrink-0"
+          <a
+            href="/"
+            onClick={(e) => {
+              if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                e.preventDefault();
+                handleLinkClick('/');
+              }
+            }}
+            className="cursor-pointer group shrink-0 block"
           >
             <NextVectorLogo
               size={28}
@@ -301,7 +313,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               showWordmark={true}
               tagline="Technology & AI Intelligence"
             />
-          </div>
+          </a>
 
           {/* Desktop Streamlined Navigation (5 Key Groups) */}
           <div
@@ -346,10 +358,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                       const Icon = item.icon;
                       const isItemActive = currentPath === item.path;
                       return (
-                        <button
+                        <a
                           key={item.path}
-                          onClick={() => handleLinkClick(item.path)}
-                          className={`w-full text-left p-2 rounded-xl transition-all flex items-center justify-between group cursor-pointer border ${
+                          href={item.path}
+                          onClick={(e) => {
+                            if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                              e.preventDefault();
+                              handleLinkClick(item.path);
+                            }
+                          }}
+                          className={`w-full text-left p-2 rounded-xl transition-all flex items-center justify-between group cursor-pointer border block ${
                             isItemActive
                               ? 'bg-emerald-500/10 border-emerald-500/30'
                               : 'hover:bg-zinc-900/80 border-transparent hover:border-zinc-800'
@@ -385,7 +403,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               {item.badge}
                             </span>
                           )}
-                        </button>
+                        </a>
                       );
                     })}
                   </div>
@@ -432,10 +450,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                       const isItemActive =
                         currentPath === item.path || currentPath.startsWith(item.path + '/');
                       return (
-                        <button
+                        <a
                           key={item.path}
-                          onClick={() => handleLinkClick(item.path)}
-                          className={`w-full text-left p-2 rounded-xl transition-all flex items-center justify-between group cursor-pointer border ${
+                          href={item.path}
+                          onClick={(e) => {
+                            if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                              e.preventDefault();
+                              handleLinkClick(item.path);
+                            }
+                          }}
+                          className={`w-full text-left p-2 rounded-xl transition-all flex items-center justify-between group cursor-pointer border block ${
                             isItemActive
                               ? 'bg-emerald-500/10 border-emerald-500/30'
                               : 'hover:bg-zinc-900/80 border-transparent hover:border-zinc-800'
@@ -471,7 +495,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               {item.badge}
                             </span>
                           )}
-                        </button>
+                        </a>
                       );
                     })}
                   </div>
@@ -480,40 +504,58 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             {/* 3. RESEARCH EXPLAINED */}
-            <button
-              onClick={() => handleLinkClick('/research')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+            <a
+              href="/research"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  handleLinkClick('/research');
+                }
+              }}
+              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/research'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
               }`}
             >
               Research
-            </button>
+            </a>
 
             {/* 4. BREAKTHROUGH TIMELINE */}
-            <button
-              onClick={() => handleLinkClick('/timeline')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+            <a
+              href="/timeline"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  handleLinkClick('/timeline');
+                }
+              }}
+              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/timeline'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
               }`}
             >
               Timeline
-            </button>
+            </a>
 
             {/* 5. ABOUT */}
-            <button
-              onClick={() => handleLinkClick('/about')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+            <a
+              href="/about"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  handleLinkClick('/about');
+                }
+              }}
+              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/about'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
               }`}
             >
               About
-            </button>
+            </a>
           </div>
 
           {/* Action Tools (Search & Mobile Burger) */}
@@ -565,9 +607,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                     const Icon = item.icon;
                     const isItemActive = currentPath === item.path;
                     return (
-                      <button
+                      <a
                         key={item.path}
-                        onClick={() => handleLinkClick(item.path)}
+                        href={item.path}
+                        onClick={(e) => {
+                          if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                            e.preventDefault();
+                            handleLinkClick(item.path);
+                          }
+                        }}
                         className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono transition-colors cursor-pointer ${
                           isItemActive
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
@@ -579,7 +627,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           <span>{item.label}</span>
                         </div>
                         <ArrowRight className="w-3.5 h-3.5 text-zinc-600" />
-                      </button>
+                      </a>
                     );
                   })}
                 </div>
@@ -609,9 +657,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                     const isItemActive =
                       currentPath === item.path || currentPath.startsWith(item.path + '/');
                     return (
-                      <button
+                      <a
                         key={item.path}
-                        onClick={() => handleLinkClick(item.path)}
+                        href={item.path}
+                        onClick={(e) => {
+                          if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                            e.preventDefault();
+                            handleLinkClick(item.path);
+                          }
+                        }}
                         className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono transition-colors cursor-pointer ${
                           isItemActive
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
@@ -623,7 +677,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           <span>{item.label}</span>
                         </div>
                         <ArrowRight className="w-3.5 h-3.5 text-zinc-600" />
-                      </button>
+                      </a>
                     );
                   })}
                 </div>
@@ -632,8 +686,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Direct Mobile Links */}
             <div className="space-y-1 pt-1">
-              <button
-                onClick={() => handleLinkClick('/research')}
+              <a
+                href="/research"
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    handleLinkClick('/research');
+                  }
+                }}
                 className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
                   currentPath === '/research'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
@@ -642,10 +702,16 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <span>Research Explained</span>
                 <ArrowRight className="w-4 h-4 text-zinc-600" />
-              </button>
+              </a>
 
-              <button
-                onClick={() => handleLinkClick('/timeline')}
+              <a
+                href="/timeline"
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    handleLinkClick('/timeline');
+                  }
+                }}
                 className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
                   currentPath === '/timeline'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
@@ -654,10 +720,16 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <span>Breakthrough Timeline</span>
                 <ArrowRight className="w-4 h-4 text-zinc-600" />
-              </button>
+              </a>
 
-              <button
-                onClick={() => handleLinkClick('/about')}
+              <a
+                href="/about"
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    handleLinkClick('/about');
+                  }
+                }}
                 className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
                   currentPath === '/about'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
@@ -666,7 +738,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <span>About & Editorial Mission</span>
                 <ArrowRight className="w-4 h-4 text-zinc-600" />
-              </button>
+              </a>
             </div>
           </div>
         )}

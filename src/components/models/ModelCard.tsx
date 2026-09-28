@@ -59,12 +59,20 @@ export const ModelCard: React.FC<ModelCardProps> = ({
 
         {/* Title & Developer */}
         <div className="mb-4">
-          <h3 
-            onClick={() => onSelectDetail(model.id)}
-            className="text-lg font-bold text-zinc-100 hover:text-emerald-400 transition-colors cursor-pointer flex items-center justify-between"
-          >
-            <span>{model.name}</span>
-            <ArrowUpRight className="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          <h3 className="text-lg font-bold text-zinc-100 flex items-center justify-between">
+            <a
+              href={`/models/${model.id}`}
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  onSelectDetail(model.id);
+                }
+              }}
+              className="hover:text-emerald-400 transition-colors flex items-center justify-between w-full"
+            >
+              <span>{model.name}</span>
+              <ArrowUpRight className="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </h3>
           <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mt-1">
             <span className="text-emerald-400 font-medium">{model.developer}</span>
@@ -126,13 +134,19 @@ export const ModelCard: React.FC<ModelCardProps> = ({
         <span className="text-[11px] font-mono text-zinc-400 truncate max-w-[150px]">
           {model.openSourceStatus}
         </span>
-        <button
-          onClick={() => onSelectDetail(model.id)}
-          className="text-emerald-400 hover:text-emerald-300 font-mono font-medium flex items-center gap-1 hover:underline"
+        <a
+          href={`/models/${model.id}`}
+          onClick={(e) => {
+            if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+              e.preventDefault();
+              onSelectDetail(model.id);
+            }
+          }}
+          className="text-emerald-400 hover:text-emerald-300 font-mono font-medium flex items-center gap-1 hover:underline cursor-pointer"
         >
           <span>View Report</span>
           <ArrowUpRight className="w-3.5 h-3.5" />
-        </button>
+        </a>
       </div>
     </div>
   );

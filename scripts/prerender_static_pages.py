@@ -37,18 +37,25 @@ def parse_articles():
     blocks = re.split(r'(?=\{\s*id:\s*["\']art-\d+["\'])', content)[1:]
     articles = []
 
+    def get_field(name, text):
+        m = re.search(name + r':\s*(?:"([^"\\]*(?:\\.[^"\\]*)*)"|\'([^\'\\]*(?:\\.[^\'\\]*)*)\')', text, re.DOTALL)
+        if m:
+            val = m.group(1) if m.group(1) is not None else m.group(2)
+            return val.replace('\\"', '"').replace("\\'", "'")
+        return None
+
     for b in blocks:
         id_m = re.search(r'id:\s*["\'](art-\d+)["\']', b)
-        slug_m = re.search(r'slug:\s*["\']([^"\']+)["\']', b)
-        title_m = re.search(r'title:\s*["\']([^"\']+)["\']', b)
-        subtitle_m = re.search(r'subtitle:\s*["\']([^"\']+)["\']', b)
-        category_m = re.search(r'category:\s*["\']([^"\']+)["\']', b)
-        type_m = re.search(r'articleType:\s*["\']([^"\']+)["\']', b)
+        slug = get_field('slug', b)
+        title = get_field('title', b)
+        subtitle = get_field('subtitle', b) or ""
+        category = get_field('category', b) or "ai"
+        art_type = get_field('articleType', b) or "analysis"
         score_m = re.search(r'signalRating:\s*(\d+)', b)
-        pub_m = re.search(r'publishedAt:\s*["\']([^"\']+)["\']', b)
+        pub = get_field('publishedAt', b)
         read_m = re.search(r'readTimeMinutes:\s*(\d+)', b)
-        cover_m = re.search(r'coverImage:\s*["\']([^"\']+)["\']', b)
-        cover_alt_m = re.search(r'coverImageAlt:\s*["\']([^"\']+)["\']', b)
+        cover = get_field('coverImage', b)
+        cover_alt = get_field('coverImageAlt', b) or ""
 
         # Tags
         tags = []
@@ -59,9 +66,9 @@ def parse_articles():
             tags = re.findall(r'["\']([^"\']+)["\']', b[br_s+1:br_e])
 
         # Three Questions
-        wh_m = re.search(r'whatHappened:\s*["\'](.*?)["\'],\s*\n', b, re.DOTALL)
-        wm_m = re.search(r'whyItMatters:\s*["\'](.*?)["\'],\s*\n', b, re.DOTALL)
-        wn_m = re.search(r'whatsNext:\s*["\'](.*?)["\']\s*,?\s*\n', b, re.DOTALL)
+        wh = get_field('whatHappened', b) or ""
+        wm = get_field('whyItMatters', b) or ""
+        wn = get_field('whatsNext', b) or ""
 
         # Key Takeaways
         takeaways = []
@@ -97,24 +104,24 @@ def parse_articles():
                             "source": cs.group(1) if cs else ""
                         })
 
-        if slug_m and title_m:
+        if slug and title:
             articles.append({
                 "id": id_m.group(1) if id_m else "",
-                "slug": slug_m.group(1),
-                "title": title_m.group(1),
-                "subtitle": subtitle_m.group(1) if subtitle_m else "",
-                "category": category_m.group(1) if category_m else "ai",
-                "articleType": type_m.group(1) if type_m else "analysis",
+                "slug": slug,
+                "title": title,
+                "subtitle": subtitle,
+                "category": category,
+                "articleType": art_type,
                 "signalRating": int(score_m.group(1)) if score_m else 90,
-                "publishedAt": pub_m.group(1) if pub_m else "2026-09-28T00:00:00Z",
+                "publishedAt": pub if pub else "2026-09-28T00:00:00Z",
                 "readTimeMinutes": int(read_m.group(1)) if read_m else 5,
-                "coverImage": cover_m.group(1) if cover_m else "/brand/nextvector-brand-system.jpg",
-                "coverImageAlt": cover_alt_m.group(1) if cover_alt_m else "",
+                "coverImage": cover if cover else "/brand/nextvector-brand-system.jpg",
+                "coverImageAlt": cover_alt,
                 "tags": tags,
                 "threeQuestions": {
-                    "whatHappened": wh_m.group(1).strip() if wh_m else "",
-                    "whyItMatters": wm_m.group(1).strip() if wm_m else "",
-                    "whatsNext": wn_m.group(1).strip() if wn_m else ""
+                    "whatHappened": wh.strip(),
+                    "whyItMatters": wm.strip(),
+                    "whatsNext": wn.strip()
                 },
                 "keyTakeaways": takeaways,
                 "content": content_paras,

@@ -61,18 +61,22 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'TechArticle',
+        '@type': ['NewsArticle', 'TechArticle', 'Article'],
         '@id': `https://nextvector.rhasan.online/article/${article.slug}#article`,
         headline: article.title,
         description: article.subtitle,
         image: article.coverImage.startsWith('http') ? article.coverImage : `https://nextvector.rhasan.online${article.coverImage}`,
         datePublished: article.publishedAt,
         dateModified: article.publishedAt,
+        inLanguage: 'en-US',
+        isAccessibleForFree: true,
+        wordCount: article.content.join(' ').split(/\s+/).length,
         articleSection: article.category.toUpperCase(),
         keywords: article.tags.join(', '),
         articleBody: article.content.join('\n\n'),
         author: {
           '@type': 'Person',
+          '@id': 'https://rhasan.online/#person',
           name: article.author.name || 'Robiul Hasan',
           jobTitle: article.author.role || 'Founder & Editor-in-Chief',
           url: article.author.website || 'https://rhasan.online',
@@ -83,12 +87,15 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           ].filter(Boolean),
         },
         publisher: {
-          '@type': 'NewsMediaOrganization',
+          '@type': ['Organization', 'NewsMediaOrganization'],
+          '@id': 'https://nextvector.rhasan.online/#organization',
           name: 'NextVector',
           url: 'https://nextvector.rhasan.online',
           logo: {
             '@type': 'ImageObject',
             url: 'https://nextvector.rhasan.online/brand/nextvector-logo.jpg',
+            width: 512,
+            height: 512,
           },
         },
         mainEntityOfPage: {
@@ -272,7 +279,10 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           </div>
 
           <div className="flex items-center gap-4">
-            <span>{formatRelativeTime(article.publishedAt)}</span>
+            <time itemProp="datePublished" dateTime={article.publishedAt} className="text-zinc-400">
+              {formatRelativeTime(article.publishedAt)}
+            </time>
+            <meta itemProp="dateModified" content={article.publishedAt} />
             <span>•</span>
             <span className="flex items-center gap-1">
               <Clock className="w-3.5 h-3.5" />

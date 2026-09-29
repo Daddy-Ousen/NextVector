@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "NextVector",
+  "legalName": "NextVector Media",
+  "tagline": "Technology & AI Intelligence Platform",
+  "description": "High-signal AI news, frontier model benchmarks, LMSYS Chatbot Arena leaderboards, model showdowns, and buyer guides. Primary-source verified with zero marketing fluff.",
+  "url": "https://nextvector.rhasan.online",
+  "editorInChief": {
+    "name": "Robiul Hasan",
+    "role": "Founder & Editor-in-Chief",
+    "website": "https://rhasan.online",
+    "sameAs": [
+      "https://rhasan.online",
+      "https://github.com/Daddy-Ousen",
+      "https://nextvectorr.substack.com"
+    ]
+  },
+  "editorialCharter": {
+    "manifesto": "Less noise. More signal. Verified benchmarks over marketing claims.",
+    "evaluationFramework": "The Three Questions: What happened? Why does it matter? What could happen next?",
+    "signalPurityScale": "1-100 deterministic scoring based on architectural novelty, benchmark verification, engineering utility, and source reliability."
+  },
+  "coverageAreas": [
+    "Artificial Intelligence (Foundation Models, LLMs, Reasoning Systems, Autonomous Agents)",
+    "Computing & Hardware (Semiconductors, Lithography, Quantum Computing, Datacenter Fabrics)",
+    "Fundamental Science (Astrophysics, Quantum Mechanics, Computational Biology)",
+    "Empirical Benchmarking (LMSYS Chatbot Arena, SWE-bench Verified, OSWorld, WebArena)"
+  ],
+  "machineEndpoints": {
+    "llmsTxt": "https://nextvector.rhasan.online/llms.txt",
+    "llmsFullTxt": "https://nextvector.rhasan.online/llms-full.txt",
+    "rssFeed": "https://nextvector.rhasan.online/rss.xml",
+    "xmlSitemap": "https://nextvector.rhasan.online/sitemap.xml",
+    "faq": "https://nextvector.rhasan.online/faq",
+    "contact": "https://nextvector.rhasan.online/contact"
+  },
+  "topPicks2026": {
+    "globalEloLeader": "OpenAI GPT-6 Astra (1420 Elo)",
+    "codingAndReasoningLeader": "Anthropic Claude Opus 5.5 (1417 Elo, 1M Context, Lean 4 Verified)",
+    "pricePerformanceLeader": "DeepSeek-V4.1-Flash ($0.14 per 1M tokens)",
+    "bestSubscriptionIndividual": "Claude Pro ($20/mo) for software engineers; ChatGPT Plus ($20/mo) for general computer use and voice."
+  }
+}

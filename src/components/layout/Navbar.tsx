@@ -556,6 +556,24 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               About
             </a>
+
+            {/* 6. FAQ */}
+            <a
+              href="/faq"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  handleLinkClick('/faq');
+                }
+              }}
+              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
+                currentPath === '/faq'
+                  ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
+                  : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
+              }`}
+            >
+              FAQ
+            </a>
           </div>
 
           {/* Action Tools (Search & Mobile Burger) */}
@@ -736,7 +754,43 @@ export const Navbar: React.FC<NavbarProps> = ({
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
                 }`}
               >
-                <span>About & Editorial Mission</span>
+                <span>About &amp; Editorial Mission</span>
+                <ArrowRight className="w-4 h-4 text-zinc-600" />
+              </a>
+
+              <a
+                href="/faq"
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    handleLinkClick('/faq');
+                  }
+                }}
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                  currentPath === '/faq'
+                    ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
+                    : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
+                }`}
+              >
+                <span>Frequently Asked Questions (FAQ)</span>
+                <ArrowRight className="w-4 h-4 text-zinc-600" />
+              </a>
+
+              <a
+                href="/contact"
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    handleLinkClick('/contact');
+                  }
+                }}
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                  currentPath === '/contact'
+                    ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
+                    : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
+                }`}
+              >
+                <span>Contact Desk &amp; Verification</span>
                 <ArrowRight className="w-4 h-4 text-zinc-600" />
               </a>
             </div>

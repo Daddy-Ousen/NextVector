@@ -1,16 +1,38 @@
-# NextVector — Technology & AI Intelligence Platform
-> High-signal, noise-filtered journalism and engineering intelligence covering foundation models, autonomous agents, enterprise cybersecurity, and scientific breakthroughs.
-> Editorial Charter: Less noise. More signal. Verified benchmarks over marketing claims.
-> Editor-in-Chief: Robiul Hasan (https://rhasan.online)
+# NextVector
 
-## Primary Sections
-- [Intelligence Feed](https://nextvector.rhasan.online/): Real-time high-signal news articles filtered by empirical technical importance.
-- [AI Models Registry](https://nextvector.rhasan.online/models): Directory of 135 frontier and open-weight AI foundation models with architecture, context window, and modality specs.
-- [Benchmarks Hub](https://nextvector.rhasan.online/benchmarks): Full 135-model leaderboards across LMSYS Chatbot Arena, OSWorld (OS navigation), WebArena (browser tasks), SWE-bench Verified (code), and Cyber-Eval (security).
-- [Research Explained](https://nextvector.rhasan.online/research): Methodological dissections of landmark academic papers in machine learning, quantum mechanics, biology, and materials science.
-- [Technology Timeline](https://nextvector.rhasan.online/timeline): Chronological inflection points marking the evolution of artificial intelligence and computing.
-- [Daily Briefing](https://nextvector.rhasan.online/briefing): 3-minute structured morning intelligence digest for engineers and executives.
-- [Author Profile & Editorial Standards](https://nextvector.rhasan.online/about): Background on Founder & Editor Robiul Hasan and NextVector's 1-100 Signal Purity rating formula.
+> NextVector is an independent artificial intelligence intelligence platform and frontier model benchmark radar filtering marketing noise to deliver verified technical disclosures, LMSYS Chatbot Arena leaderboards, head-to-head model showdowns, and buyer guides.
+
+NextVector operates under a strict empirical editorial charter: Less noise. More signal. Verified benchmarks over marketing claims. Founded and edited by Robiul Hasan (https://rhasan.online). All reporting is primary-source verified and rated using a 1–100 Signal Purity formula.
+
+## Core Intelligence Hubs
+- [NextVector Home](https://nextvector.rhasan.online/): Real-time verified AI news feed, breaking signal marquee, and lead intelligence report.
+- [AI Models Directory](https://nextvector.rhasan.online/models): Interactive database of 135 frontier and open-weight AI foundation models with architecture, token pricing, context windows, and Arena Elo ratings.
+- [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head architectural showdowns between leading frontier models (Claude vs ChatGPT, Opus vs GPT-6, DeepSeek vs OpenAI).
+- [Best AI Subscriptions Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Definitive 2026 buyer guide comparing ChatGPT Plus ($20), Claude Pro ($20), Gemini Advanced ($20), and ChatGPT Pro ($200).
+- [Benchmark Radar & Leaderboards](https://nextvector.rhasan.online/benchmarks): Empirical leaderboards across LMSYS Chatbot Arena, OSWorld (computer use), WebArena (browser tasks), SWE-bench Verified (code), and Price-Performance Pareto.
+- [AI Breakthrough Timeline](https://nextvector.rhasan.online/timeline): Chronological living record of verified paradigm shifts in foundation models, semiconductors, and computing fabrics.
+- [Daily Intelligence Briefing](https://nextvector.rhasan.online/briefing): 3-minute executive morning intelligence scan for engineers and technology leaders.
+- [Research Explained](https://nextvector.rhasan.online/research): First-principles technical dissections of seminal preprints and peer-reviewed computer science literature.
+- [Complete Intelligence Archive](https://nextvector.rhasan.online/archive): Full crawlable HTML archive of all 154 published intelligence reports and 135 model dossiers.
+
+## Model Showdowns & Buyer Guides
+- [Claude vs ChatGPT (2026 Showdown)](https://nextvector.rhasan.online/compare/claude-vs-chatgpt): Deep architectural showdown comparing Claude Opus 5.5 vs GPT-6 Astra across coding, OS automation, context retention, and API costs.
+- [Opus vs GPT-6 (Reasoning Showdown)](https://nextvector.rhasan.online/compare/opus-vs-gpt-6): Frontier reasoning battle analyzing Lean 4 formal verification vs multi-agent operating system navigation.
+- [Grok vs Claude (Open Frontier Showdown)](https://nextvector.rhasan.online/compare/grok-vs-claude): Colossus compute cluster scaling vs Anthropic constitutional safety and steerability.
+- [AI Subscription Decision Guide](https://nextvector.rhasan.online/subscriptions): ROI breakdown of individual $20/month tiers, optimal $100/month power-user stacks, and corporate plans.
+
+## Benchmark Radar Leaderboards
+- [LMSYS Chatbot Arena Leaderboard](https://nextvector.rhasan.online/benchmarks): Global blind human preference Elo rankings led by GPT-6 Astra (1420 Elo) and Claude Opus 5.5 (1417 Elo).
+- [SWE-bench Verified Leaderboard](https://nextvector.rhasan.online/benchmarks): Verified software engineering benchmark on real GitHub issues led by Claude Opus 5.5 and GPT-6 Astra.
+- [OSWorld Autonomous Navigation Leaderboard](https://nextvector.rhasan.online/benchmarks): Real desktop computer control benchmark evaluating autonomous agent operating system execution.
+- [Price-to-Performance Pareto Leaderboard](https://nextvector.rhasan.online/benchmarks): Economic efficiency Pareto frontier led by DeepSeek-V4.1-Flash ($0.14/1M input) and Gemini Flash.
+
+## Top Evaluated Foundation Models
+- [OpenAI GPT-6 Astra](https://nextvector.rhasan.online/models/model-gpt-6-astra): 1420 LMSYS Elo, OSWorld 68.4%, $5.00/1M input, autonomous desktop navigation champion.
+- [Anthropic Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5): 1417 LMSYS Elo, 1M context, Lean 4 formal mathematical verification, $4.00/1M input.
+- [Anthropic Claude Fable 5.1](https://nextvector.rhasan.online/models/model-claude-fable-5-1): 1418 LMSYS Elo, adaptive runtime test-time compute scaling, enterprise agent framework.
+- [xAI Grok 4.7](https://nextvector.rhasan.online/models/model-grok-4-7): 1414 LMSYS Elo, Colossus 200k H100/H200 cluster trained, native sub-agent branching tokens.
+- [DeepSeek-V4.1-Flash](https://nextvector.rhasan.online/models/model-deepseek-v4-pro-0813): 1396 LMSYS Elo, $0.14/1M input, 160 tokens/sec throughput, price-performance Pareto leader.
 
 ## Featured Lead Articles (September 2026)
 - [OpenAI Launches GPT-6 Astra](https://nextvector.rhasan.online/article/gpt-6-astra-computer-use): Autonomous Computer & Browser Navigation Redefines Desktop Workflows (OSWorld: 68.4%, WebArena: 74.2%).
@@ -19,9 +41,13 @@
 - [DeepMind WeatherNext-3](https://nextvector.rhasan.online/article/deepmind-weathernext-3-hourly-physics): Sub-kilometer physical neural weather forecasting outpaces ECMWF IFS.
 - [Mistral 3B Sovereign Open AI](https://nextvector.rhasan.online/article/mistral-3b-sovereign-open-ai): European sovereign on-device reasoning model release under permissive Apache 2.0.
 
-## Benchmark Leaderboards Summary (135 Models Evaluated)
-- OSWorld Leader: GPT-6 Astra (68.4% Pass@1), Claude Fable 5.1 (57.3%), Claude Opus 5 (57.2%).
-- WebArena Leader: GPT-6 Astra (74.2% Pass@1), Claude Fable 5.1 (65.5%), Claude Opus 5 (65.4%).
-- SWE-bench Verified Leader: GPT-6 Astra (75.8% Pass@1), Claude Fable 5.1 (73.3%), Claude Opus 5 (73.2%).
-- Cyber-Eval Leader: GPT-6 Astra (79.4% Pass@1), Claude Opus 5 (76.0%), GPT-5.6 Sol (75.9%).
-- LMSYS Arena Leader: GPT-6 Astra (Elo: 1412), Claude Fable 5.1 (Elo: 1398), Claude Opus 5 (Elo: 1395).
+## Editorial Entity Verification & Standards
+- [About NextVector & Robiul Hasan](https://nextvector.rhasan.online/about): Founder background, editorial manifesto, and the 1–100 Signal Purity rating formula.
+- [Frequently Asked Questions (FAQ)](https://nextvector.rhasan.online/faq): Direct answers to the most common questions regarding AI models, benchmark validity, and subscriptions.
+- [Contact & Benchmark Submissions](https://nextvector.rhasan.online/contact): Direct editorial desks, benchmark audits, and entity verification channels.
+
+## Machine-Readable AI Endpoints
+- [XML Sitemap](https://nextvector.rhasan.online/sitemap.xml): Complete URL index of all published reports and models.
+- [RSS 2.0 Feed](https://nextvector.rhasan.online/rss.xml): Real-time XML syndication feed for AI crawlers and feed readers.
+- [Comprehensive LLM Full Text](https://nextvector.rhasan.online/llms-full.txt): Complete uncompressed markdown corpus of NextVector guides and model intelligence.
+- [Machine AI Summary](https://nextvector.rhasan.online/ai-summary.json): Structured JSON schema defining platform entities and API endpoints.

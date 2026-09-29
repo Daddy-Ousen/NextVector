@@ -39,6 +39,12 @@ const ComparePage = React.lazy(() =>
 const SubscriptionsPage = React.lazy(() =>
   import('./pages/SubscriptionsPage').then((m) => ({ default: m.SubscriptionsPage }))
 );
+const ContactPage = React.lazy(() =>
+  import('./pages/ContactPage').then((m) => ({ default: m.ContactPage }))
+);
+const FAQPage = React.lazy(() =>
+  import('./pages/FAQPage').then((m) => ({ default: m.FAQPage }))
+);
 
 // Lazy-load heavyweight interactive modals on-demand
 const CommandPalette = React.lazy(() =>
@@ -325,6 +331,16 @@ export function App() {
           onNavigate={navigateTo}
         />
       );
+    }
+
+    // 10. Contact Desk & Entity Verification: /contact
+    if (currentPath === '/contact') {
+      return <ContactPage onNavigate={navigateTo} />;
+    }
+
+    // 11. Frequently Asked Questions: /faq
+    if (currentPath === '/faq') {
+      return <FAQPage onNavigate={navigateTo} />;
     }
 
     // Default: Home Page

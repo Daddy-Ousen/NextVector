@@ -30,4 +30,9 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+# AI Retrieval & Content Discovery Feeds
 Sitemap: https://nextvector.rhasan.online/sitemap.xml
+# LLM Manifest: https://nextvector.rhasan.online/llms.txt
+# LLM Full Corpus: https://nextvector.rhasan.online/llms-full.txt
+# RSS Feed: https://nextvector.rhasan.online/rss.xml
+# AI Summary: https://nextvector.rhasan.online/ai-summary.json

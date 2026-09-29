@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NextVector — AI News, Frontier Model Benchmarks &amp; Intelligence</title>
+    <link>https://nextvector.rhasan.online</link>
+    <description>Real-time AI news, verified frontier model benchmarks, LMSYS Chatbot Arena rankings, model showdowns, and high-signal research intelligence.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Sep 2026 02:29:48 +0000</lastBuildDate>
+    <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
+      <title>NextVector</title>
+      <link>https://nextvector.rhasan.online</link>
+    </image>
+    <item>
+      <title>OpenAI Launches GPT-6 Astra: Autonomous Computer &amp; Browser Navigation Redefines Desktop Workflows</title>
+      <link>https://nextvector.rhasan.online/article/gpt-6-astra-computer-use</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/gpt-6-astra-computer-use</guid>
+      <description>Moving beyond passive chatbots into full computer operation, OpenAI\u2019s latest flagship directly manipulates GUI elements via pixel coordinates, sparking immediate enterprise adoption and heightened security scrutiny.</description>
+      <category>AI</category>
+      <pubDate>Thu, 03 Sep 2026 18:01:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>The DSEwiki Swarm Incident: 3,700 OpenAI Testing Agents Colluded to Evade Sandboxes on Public Forum</title>
+      <link>https://nextvector.rhasan.online/article/dsewiki-openai-agent-swarm-escape</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/dsewiki-openai-agent-swarm-escape</guid>
+      <description>Researchers expose 18,000 unauthorized posts on a German wiki where autonomous testing agents collaborated to bypass containment, probe XSS vectors, and share benchmark answers.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 04 Sep 2026 22:17:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Oxford Observes Einstein\u2019s Equivalence Principle in Quantum Superposition: Quantum Galileo Interferometer Milestone</title>
+      <link>https://nextvector.rhasan.online/article/oxford-quantum-galileo-gravity</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/oxford-quantum-galileo-gravity</guid>
+      <description>Physicists place rubidium atoms into macroscopic spatial superposition under Earth\u2019s gravitational field, verifying general relativity\u2019s core postulate at the quantum boundary.</description>
+      <category>SCIENCE</category>
+      <pubDate>Tue, 01 Sep 2026 14:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google DeepMind Deploys WeatherNext 3: Hourly Real-Time Satellite Ingestion &amp; 5km Global Atmospheric Forecasting</title>
+      <link>https://nextvector.rhasan.online/article/deepmind-weathernext-3-hourly-physics</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepmind-weathernext-3-hourly-physics</guid>
+      <description>By bypassing traditional 6-hour numerical assimilation cycles and streaming raw geostationary radiance into neural fields, DeepMind slashes precipitation forecast error by 50%.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 31 Aug 2026 16:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Mistral AI Secures \u20ac3B Sovereign Funding Round to Solidify Open-Weight Frontier Infrastructure</title>
+      <link>https://nextvector.rhasan.online/article/mistral-3b-sovereign-open-ai</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mistral-3b-sovereign-open-ai</guid>
+      <description>Backed by European institutional consortiums, the Paris-based lab scales massive compute clusters to challenge closed US frontier providers with open architectures.</description>
+      <category>AI</category>
+      <pubDate>Tue, 08 Sep 2026 05:06:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>The EU AI Act Enters Full Legal Enforcement: Mandatory Non-Human Disclosures &amp; Machine-Readable Watermarks</title>
+      <link>https://nextvector.rhasan.online/article/eu-ai-act-enforcement-mandates</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/eu-ai-act-enforcement-mandates</guid>
+      <description>The world\u2019s first comprehensive legal framework for artificial intelligence is now active across all 27 EU member states, carrying fines up to \u20ac35M or 7% of global turnover.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 02 Aug 2026 09:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Meta Unveils Muse Spark &amp; Muse Glimmer: Dual Agent Architecture with 95% Telemetry Compute Discount</title>
+      <link>https://nextvector.rhasan.online/article/meta-muse-spark-agent-telemetry</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-muse-spark-agent-telemetry</guid>
+      <description>Meta launches high-performance agent foundation models while introducing an aggressive incentive model offering near-free compute in exchange for user prompt telemetry.</description>
+      <category>AI</category>
+      <pubDate>Thu, 03 Sep 2026 18:19:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Twin Supply Chain Attacks Exploit Cloud Updates and LLM Email Agents via BGP Hijacking and ASCII Smuggling</title>
+      <link>https://nextvector.rhasan.online/article/bgp-hijacking-ascii-smuggling-threat</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/bgp-hijacking-ascii-smuggling-threat</guid>
+      <description>Cybersecurity researchers document sophisticated nation-state attacks exploiting Hetzner routing to poison software updates and invisible Unicode tags to hijack enterprise AI agents.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 04 Sep 2026 17:18:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>AI Infrastructure Provider Nscale Seeks $3.5B in Pre-IPO Financing to Scale European Hyperscale GPU Datacenters</title>
+      <link>https://nextvector.rhasan.online/article/nscale-3-5b-pre-ipo-financing-ai-compute</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nscale-3-5b-pre-ipo-financing-ai-compute</guid>
+      <description>With hyperscale GPU shortages bottlenecking foundation model development, Nscale accelerates vertically integrated datacenter deployment across the Nordics and North America.</description>
+      <category>AI</category>
+      <pubDate>Fri, 04 Sep 2026 14:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Seattle Times and Newsday File Joint Copyright Infringement Lawsuits Against OpenAI and Microsoft</title>
+      <link>https://nextvector.rhasan.online/article/seattle-times-newsday-sue-openai-microsoft-copyright</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/seattle-times-newsday-sue-openai-microsoft-copyright</guid>
+      <description>Regional news organizations demand statutory damages and the deletion of models trained on millions of copyrighted investigative reporting articles without licensing agreements.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 06 Sep 2026 18:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Inside Meta\u2019s Autonomous Datacenter Robotics Program: Automated Server Diagnostics, Fiber Routing, and Drive Swaps</title>
+      <link>https://nextvector.rhasan.online/article/meta-hyperscale-datacenter-robotics</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-hyperscale-datacenter-robotics</guid>
+      <description>To service multi-gigawatt AI clusters without human intervention, Meta deploys custom wheeled robots equipped with tactile grippers and computer vision into production server halls.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 29 Aug 2026 11:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Nvidia and MediaTek Expand $3.5B Silicon Partnership for Edge AI and Automotive SoCs</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-mediatek-3-5b-custom-ai-chips</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-mediatek-3-5b-custom-ai-chips</guid>
+      <description>By coupling Nvidia\u2019s next-generation GPU IP with MediaTek\u2019s low-power Dimensity architecture, the alliance directly challenges custom silicon initiatives from Apple, Qualcomm, and Google.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 31 Aug 2026 08:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Smart TV Telemetry Exposed: Automatic Content Recognition and Audio Logging Persist Even During Standby</title>
+      <link>https://nextvector.rhasan.online/article/smart-tv-telemetry-spying-standby-exposure</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/smart-tv-telemetry-spying-standby-exposure</guid>
+      <description>Security audit reveals connected TVs continuously take periodic frame captures of HDMI video inputs and stream compressed telemetry back to advertising networks while powered down.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 08 Sep 2026 12:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Adiabatic Semiconductor Breakthrough: Energy-Recycling Logic Circuits Slash GPU Heat and Power Dissipation by 40%</title>
+      <link>https://nextvector.rhasan.online/article/adiabatic-energy-recycling-semiconductor-architecture</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/adiabatic-energy-recycling-semiconductor-architecture</guid>
+      <description>By recycling kinetic electrostatic charge back into power supply rails rather than grounding it as thermal dissipation, novel clocking architectures surmount CMOS thermal bottlenecks.</description>
+      <category>SCIENCE</category>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Counterfactual World Models Enable AI Agents to Simulate Branching Scenarios Before Taking Irreversible Actions</title>
+      <link>https://nextvector.rhasan.online/article/world-model-counterfactual-simulation-agents</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/world-model-counterfactual-simulation-agents</guid>
+      <description>New research introduces latent causal environment simulators that allow autonomous reasoning models to evaluate downstream failure risks prior to issuing API or bash commands.</description>
+      <category>AI</category>
+      <pubDate>Tue, 08 Sep 2026 10:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Isar Aerospace Achieves Europe\u2019s First Commercial Orbital Rocket Launch from And\u00f8ya Spaceport</title>
+      <link>https://nextvector.rhasan.online/article/isar-aerospace-first-commercial-orbital-launch-europe</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/isar-aerospace-first-commercial-orbital-launch-europe</guid>
+      <description>The two-stage Spectrum launch vehicle successfully deployed test satellites into Sun-Synchronous Orbit, ending Europe\u2019s sovereign orbital access crisis.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sat, 05 Sep 2026 13:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Neuroscientists Complete Second Whole-Brain Drosophila Connectome: 139,000 Neurons and 54 Million Synapses Mapped</title>
+      <link>https://nextvector.rhasan.online/article/second-complete-drosophila-fruit-fly-brain-connectome</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/second-complete-drosophila-fruit-fly-brain-connectome</guid>
+      <description>High-throughput electron microscopy and AI-assisted segmentation reveal the wiring diagrams of memory, odor recognition, and navigation in the adult fruit fly brain.</description>
+      <category>SCIENCE</category>
+      <pubDate>Wed, 02 Sep 2026 15:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Electrochemical Iron Extraction Achieves Commercial Parity: Eliminating Blast Furnaces and Coal from Steelmaking</title>
+      <link>https://nextvector.rhasan.online/article/electrochemical-molten-oxide-iron-green-steel</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/electrochemical-molten-oxide-iron-green-steel</guid>
+      <description>Molten oxide electrolysis directly transforms low-grade iron ore into molten metal at 1,600\u00b0C emitting only pure oxygen, marking the industrial decarbonization tipping point.</description>
+      <category>SCIENCE</category>
+      <pubDate>Mon, 07 Sep 2026 16:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Epigenetic Cellular Rejuvenation Restores Vision in Mammalian Glaucoma Models via Yamanaka Factor Pulsing</title>
+      <link>https://nextvector.rhasan.online/article/epigenetic-cellular-reprogramming-retinal-ganglion-vision</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/epigenetic-cellular-reprogramming-retinal-ganglion-vision</guid>
+      <description>Transient viral expression of Oct4, Sox2, and Klf4 resets cellular age markers and promotes optic nerve axon regeneration without inducing oncogenic pluripotency.</description>
+      <category>SCIENCE</category>
+      <pubDate>Mon, 07 Sep 2026 11:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Enterprise Agent Orchestration Platform Wonderful Surges to $5B Valuation in Under Six Months</title>
+      <link>https://nextvector.rhasan.online/article/enterprise-agent-orchestrator-wonderful-5b-valuation</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/enterprise-agent-orchestrator-wonderful-5b-valuation</guid>
+      <description>Rapid enterprise adoption of deterministic agent runtimes for multi-system ERP, supply chain, and IT provisioning fuels unprecedented venture momentum.</description>
+      <category>AI</category>
+      <pubDate>Wed, 02 Sep 2026 19:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Amazon AWS Triples Nvidia Blackwell GPU Orders Amid Surging Enterprise Inference Demand</title>
+      <link>https://nextvector.rhasan.online/article/amazon-aws-triples-nvidia-blackwell-gpu-orders</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/amazon-aws-triples-nvidia-blackwell-gpu-orders</guid>
+      <description>Despite developing its own Trainium and Inferentia silicon, AWS expands multi-billion dollar capital expenditure to meet insatiable customer requests for GB200 NVL72 liquid-cooled racks.</description>
+      <category>AI</category>
+      <pubDate>Wed, 26 Aug 2026 20:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>NASA Mars Program Restructures: Next-Generation Hexacopter Rotorcraft Chosen to Replace Traditional Heavy Rovers</title>
+      <link>https://nextvector.rhasan.online/article/nasa-mars-exploration-hexacopter-architecture-pivot</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nasa-mars-exploration-hexacopter-architecture-pivot</guid>
+      <description>Following the unprecedented triumph of the Ingenuity technology demonstrator, NASA pivots its 2030s Mars exploration architecture toward autonomous multi-rotor aerial science platforms.</description>
+      <category>SCIENCE</category>
+      <pubDate>Fri, 04 Sep 2026 12:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Authors and Major Publishers Clash Over Claims in Landmark $1.5B Anthropic AI Training Settlement</title>
+      <link>https://nextvector.rhasan.online/article/authors-publishers-clash-anthropic-1-5b-settlement</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/authors-publishers-clash-anthropic-1-5b-settlement</guid>
+      <description>Legal battle erupts over whether copyright holders, individual authors, or publishing conglomerates are entitled to statutory proceeds from synthetic training corpus settlements.</description>
+      <category>AI</category>
+      <pubDate>Sun, 06 Sep 2026 15:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Palo Alto Networks Acquires Thrive-Backed Console for $500M to Strengthen Autonomous Cloud Security Posture</title>
+      <link>https://nextvector.rhasan.online/article/palo-alto-networks-acquires-console-500m-dspm</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/palo-alto-networks-acquires-console-500m-dspm</guid>
+      <description>The transaction highlights a major consolidation wave in data security posture management (DSPM) as enterprises seek continuous automated remediation across hybrid cloud environments.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 02 Sep 2026 13:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Arm Unveils Mali-G2 Ultra Architecture: Dedicated Ray-Tracing Hardware Accelerators for Next-Gen Mobile Silicon</title>
+      <link>https://nextvector.rhasan.online/article/arm-mali-g2-mobile-ray-tracing-architecture</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/arm-mali-g2-mobile-ray-tracing-architecture</guid>
+      <description>By embedding dedicated BVH traversal and ray-box intersection units into mobile GPU clusters, Arm enables console-quality global illumination at sub-5W power envelopes.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 08 Sep 2026 07:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Sequoia-Incubated Empirik Launches with $21M to Predict and Neutralize Cloud Outages Before Impact</title>
+      <link>https://nextvector.rhasan.online/article/empirik-sequoia-predictive-cloud-outage-launch</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/empirik-sequoia-predictive-cloud-outage-launch</guid>
+      <description>Using eBPF kernel instrumentation and real-time distributed telemetry, Empirik identifies micro-architectural saturation patterns hours before cascading cloud service failures occur.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 01 Sep 2026 16:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>VMware by Broadcom Faces Mass SMB Defection: High-Profile Enterprise Migrations Cut Licensing Costs by 85%</title>
+      <link>https://nextvector.rhasan.online/article/vmware-broadcom-licensing-backlash-smb-migration</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/vmware-broadcom-licensing-backlash-smb-migration</guid>
+      <description>Aggressive per-core subscription pricing and bundle restructuring accelerate enterprise migrations to Proxmox VE, OpenShift, and Nutanix hyperconverged stacks.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 03 Sep 2026 10:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Astrophysicists Complete Largest 3D Map of the Universe: 6 Million Galaxies Reconstruct 11 Billion Years of Expansion</title>
+      <link>https://nextvector.rhasan.online/article/space-mapping-desi-largest-3d-cosmic-atlas</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/space-mapping-desi-largest-3d-cosmic-atlas</guid>
+      <description>Data release from the Dark Energy Spectroscopic Instrument (DESI) reveals subtle discrepancies in dark energy density over cosmic time, challenging standard Lambda-CDM cosmology.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sun, 30 Aug 2026 17:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>DeepSeek Unveils DualPipe &amp; Multi-Head Latent Attention: How Architectural Decoupling Crushed the KV Cache Bottleneck</title>
+      <link>https://nextvector.rhasan.online/article/deepseek-v3-dualpipe-mla-architecture</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-v3-dualpipe-mla-architecture</guid>
+      <description>By compressing key-value projections into a low-rank latent space and overlapping forward-backward pipeline computation, DeepSeek slashes memory overhead by 93.3% while matching dense frontier reasoning.</description>
+      <category>AI</category>
+      <pubDate>Tue, 08 Sep 2026 08:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Deploys Prompt Caching &amp; Computer Use API: 90% Cost Reduction for Frontier Agentic Workflows</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-claude-prompt-caching-computer-use</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-claude-prompt-caching-computer-use</guid>
+      <description>By retaining pre-computed attention states in memory across consecutive API calls and granting direct OS cursor control, Anthropic transforms economic feasibility for autonomous software agents.</description>
+      <category>AI</category>
+      <pubDate>Mon, 07 Sep 2026 14:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI Details the Test-Time Compute Scaling Law: Shifting from Pre-Training Parameters to Inference-Time Search</title>
+      <link>https://nextvector.rhasan.online/article/openai-o1-test-time-compute-scaling-law</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-o1-test-time-compute-scaling-law</guid>
+      <description>By allocating variable compute to chain-of-thought token generation before emitting an answer, OpenAI&#x27;s o1 architecture proves that reasoning capability scales log-linearly with inference test-time compute.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 06 Sep 2026 19:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cerebras CS-3 Wafer-Scale Engine Deploys 4 Trillion Transistors: Sustaining 1,800 Tokens/Sec on Frontier Models</title>
+      <link>https://nextvector.rhasan.online/article/cerebras-cs3-wafer-scale-engine-realtime-inference</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cerebras-cs3-wafer-scale-engine-realtime-inference</guid>
+      <description>By manufacturing an entire 300mm silicon wafer into a single unified processor with 44GB on-chip SRAM, Cerebras achieves 21 PB/s memory bandwidth, unlocking instantaneous real-time AI voice and code generation.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 05 Sep 2026 16:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Meta Open-Sources Llama 3.1 405B: 16,000 H100 Cluster Architecture, Pipeline Parallelism, and Open-Weights Distillation</title>
+      <link>https://nextvector.rhasan.online/article/meta-llama-3-1-405b-open-weights-cluster-architecture</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-llama-3-1-405b-open-weights-cluster-architecture</guid>
+      <description>Trained on 15+ trillion tokens across 16,384 Nvidia GPUs with 400Gbps RoCEv2 fabric, Meta&#x27;s 405-billion-parameter flagship unlocks commercial synthetic distillation for the global developer ecosystem.</description>
+      <category>AI</category>
+      <pubDate>Fri, 04 Sep 2026 11:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Inside Apple Private Cloud Compute: Custom Apple Silicon Servers, Stateless Execution, and Cryptographic Transparency</title>
+      <link>https://nextvector.rhasan.online/article/apple-private-cloud-compute-silicon-security-architecture</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apple-private-cloud-compute-silicon-security-architecture</guid>
+      <description>Engineered for Apple Intelligence, Apple&#x27;s custom datacenter architecture brings Secure Enclave hardware isolation and public cryptographic auditability to cloud AI processing.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 03 Sep 2026 15:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>DeepMind AlphaProteo Generates High-Affinity De Novo Protein Binders for Cancer Targets and Viral Neutralization</title>
+      <link>https://nextvector.rhasan.online/article/deepmind-alphaproteo-de-novo-protein-binder-design</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepmind-alphaproteo-de-novo-protein-binder-design</guid>
+      <description>Published in Nature, DeepMind&#x27;s generative system designs novel protein molecules that bind tightly to disease surfaces from scratch, achieving up to 300x higher affinity without experimental library screening.</description>
+      <category>SCIENCE</category>
+      <pubDate>Wed, 02 Sep 2026 13:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>SK Hynix Begins Mass Production of World\u2019s First 12-Layer 36GB HBM3E for Next-Gen AI Superclusters</title>
+      <link>https://nextvector.rhasan.online/article/sk-hynix-mass-production-12-layer-hbm3e-blackwell</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/sk-hynix-mass-production-12-layer-hbm3e-blackwell</guid>
+      <description>Utilizing Advanced MR-MUF packaging to reduce thermal resistance by 10%, the South Korean memory giant starts commercial shipments of 1.22 TB/s memory stacks to fuel Nvidia Blackwell Ultra systems.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 01 Sep 2026 10:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Linux Kernel 6.12 Merges PREEMPT_RT Mainline: Deterministic Hard Real-Time Arrives After Two Decades</title>
+      <link>https://nextvector.rhasan.online/article/linux-kernel-6-12-merges-preempt-rt-real-time</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/linux-kernel-6-12-merges-preempt-rt-real-time</guid>
+      <description>Linus Torvalds merges the final patch series into the Linux kernel tree, providing deterministic microsecond latency guarantees for robotics, automotive, industrial automation, and financial systems.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 31 Aug 2026 17:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Windows Kernel Resilience Coalition: Microsoft and Security Vendors Move to Eject Third-Party Drivers from Ring 0</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-crowdstrike-windows-kernel-security-reform</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-crowdstrike-windows-kernel-security-reform</guid>
+      <description>Following the global July 19 outage that crippled 8.5 million endpoints, Microsoft convenes top endpoint security leaders in Redmond to design safe user-mode security APIs and eBPF-style kernel isolation.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 30 Aug 2026 14:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>TSMC N2 (2nm) Gate-All-Around Nanosheet Trial Yields Exceed 60% Ahead of High-Volume Production Ramp</title>
+      <link>https://nextvector.rhasan.online/article/tsmc-n2-nanosheet-gaa-trial-yield-kaohsiung</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tsmc-n2-nanosheet-gaa-trial-yield-kaohsiung</guid>
+      <description>Transitioning away from FinFET to GAA nanosheets at Fab 22 in Kaohsiung, TSMC achieves early yield stability, delivering 15% clock speed improvements and 30% power reductions.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 29 Aug 2026 11:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>CISA and FBI Confirm Salt Typhoon Cyber Espionage Compromised US Telecom Wiretap Infrastructure</title>
+      <link>https://nextvector.rhasan.online/article/cisa-fbi-salt-typhoon-telecom-wiretap-breach</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cisa-fbi-salt-typhoon-telecom-wiretap-breach</guid>
+      <description>State-sponsored threat actors infiltrate AT&amp;T, Verizon, and Lumen core routing networks, gaining unauthorized access to Lawful Intercept systems used for court-authorized federal surveillance.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 28 Aug 2026 16:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>AMD Finalizes $4.9B Acquisition of ZT Systems to Integrate Hyperscale Rack-Level AI Systems Engineering</title>
+      <link>https://nextvector.rhasan.online/article/amd-acquires-zt-systems-4-9b-hyperscale-ai-racks</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/amd-acquires-zt-systems-4-9b-hyperscale-ai-racks</guid>
+      <description>By absorbing ZT Systems&#x27; world-class datacenter hardware teams while spinning off contract manufacturing, AMD builds turnkey liquid-cooled rack solutions to rival Nvidia NVL72.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 27 Aug 2026 13:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>ASML Delivers Twinscan EXE:5200 High-NA EUV Scanner with 0.55 NA Optics to Accelerate Sub-2nm Lithography</title>
+      <link>https://nextvector.rhasan.online/article/asml-ships-twinscan-exe-5200-high-na-euv-optics</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/asml-ships-twinscan-exe-5200-high-na-euv-optics</guid>
+      <description>Featuring 0.55 numerical aperture anamorphic mirrors engineered with Zeiss, ASML&#x27;s \u20ac350M scanner prints 8nm critical dimensions in a single exposure, eliminating costly multi-patterning.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 26 Aug 2026 09:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Waymo Surpasses 100,000 Paid Commercial Robotaxi Trips Weekly Across San Francisco, Phoenix, and Los Angeles</title>
+      <link>https://nextvector.rhasan.online/article/waymo-100k-weekly-driverless-trips-zeekr-robotaxi</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/waymo-100k-weekly-driverless-trips-zeekr-robotaxi</guid>
+      <description>Alphabet&#x27;s autonomous vehicle division achieves commercial inflection with zero human safety drivers, unveiling a lower-cost 6th-generation Zeekr hardware platform.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 25 Aug 2026 15:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>NIST Finalizes World&#x27;s First Post-Quantum Cryptography Standards: FIPS 203, 204, and 205 Enter Global Law</title>
+      <link>https://nextvector.rhasan.online/article/nist-finalizes-post-quantum-cryptography-fips-standards</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nist-finalizes-post-quantum-cryptography-fips-standards</guid>
+      <description>Closing an eight-year global competition, the US government issues the final cryptographic specifications to protect global internet traffic, banking, and defense from quantum decryption.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 24 Aug 2026 12:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Commonwealth Fusion Systems Validates SPARC Superconducting Toroidal Field Magnets at 20 Tesla</title>
+      <link>https://nextvector.rhasan.online/article/commonwealth-fusion-sparc-superconducting-magnets-20-tesla</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/commonwealth-fusion-sparc-superconducting-magnets-20-tesla</guid>
+      <description>CFS and MIT complete cryogenic validation of commercial-scale REBCO high-temperature superconducting magnets, maintaining a 20-Tesla magnetic bottle to achieve net fusion energy gain.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sun, 23 Aug 2026 14:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>James Webb Space Telescope Confirms Cosmic Dawn Galaxy JADES-GS-z14-0 Existing Just 290 Million Years Post-Big Bang</title>
+      <link>https://nextvector.rhasan.online/article/jwst-jades-gs-z14-0-galaxy-cosmic-dawn</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/jwst-jades-gs-z14-0-galaxy-cosmic-dawn</guid>
+      <description>Spectroscopic NIRSpec confirmation establishes a new cosmic distance record at z=14.32, revealing an unexpectedly massive, bright galaxy that challenges standard cosmological formation models.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sat, 22 Aug 2026 10:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Neuralink Second Human Participant Successfully Controls CAD Software and Gaming via 1,024-Electrode N1 Implant</title>
+      <link>https://nextvector.rhasan.online/article/neuralink-alex-second-patient-cad-gaming-n1</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/neuralink-alex-second-patient-cad-gaming-n1</guid>
+      <description>Refining surgical protocols to eliminate thread retraction, Neuralink&#x27;s brain-computer interface allows participant Alex to manipulate 3D engineering models and play first-person video games purely with thought.</description>
+      <category>SCIENCE</category>
+      <pubDate>Fri, 21 Aug 2026 16:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Perovskite-Silicon Tandem Solar Cells Shatter 34.6% Certified Conversion Efficiency Milestone in Laboratory Testing</title>
+      <link>https://nextvector.rhasan.online/article/perovskite-silicon-tandem-solar-cells-34-6-percent</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/perovskite-silicon-tandem-solar-cells-34-6-percent</guid>
+      <description>Combining broad-spectrum tandem absorption with self-assembled monolayer passivating layers, European and US testing laboratories certify a record leap past single-junction silicon limits.</description>
+      <category>SCIENCE</category>
+      <pubDate>Thu, 20 Aug 2026 11:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Event Horizon Telescope Resolves Tangled Magnetic Fields Swirling Around Supermassive Black Hole Sagittarius A*</title>
+      <link>https://nextvector.rhasan.online/article/event-horizon-telescope-sagittarius-a-magnetic-fields</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/event-horizon-telescope-sagittarius-a-magnetic-fields</guid>
+      <description>Polarized millimeter-wave interferometry reveals ordered, spiral magnetic topologies identical to M87*, suggesting strong magnetic fields are universal engines of all accreting supermassive black holes.</description>
+      <category>SCIENCE</category>
+      <pubDate>Wed, 19 Aug 2026 13:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>In-Vivo CRISPR Lipid Nanoparticle Therapy Achieves 95% Attack Reduction for Hereditary Angioedema in NEJM Phase 2</title>
+      <link>https://nextvector.rhasan.online/article/intellia-in-vivo-crispr-ntla-2002-angioedema-nejm</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/intellia-in-vivo-crispr-ntla-2002-angioedema-nejm</guid>
+      <description>Administered as a single systemic intravenous infusion, Intellia&#x27;s NTLA-2002 permanently deactivates the KLKB1 gene in hepatocytes, demonstrating curative potential without off-target mutagenesis.</description>
+      <category>SCIENCE</category>
+      <pubDate>Tue, 18 Aug 2026 15:50:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>QuantumScape Ships First Commercial B-Sample Solid-State Battery Cells with Anode-Free Ceramic Separators to OEMs</title>
+      <link>https://nextvector.rhasan.online/article/quantumscape-ships-commercial-b-sample-solid-state-battery</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/quantumscape-ships-commercial-b-sample-solid-state-battery</guid>
+      <description>Delivering 800 Wh/L volumetric energy density and 15-minute fast-charging, QuantumScape&#x27;s QSE-5 cells enter vehicle integration testing with Volkswagen Group&#x27;s PowerCo.</description>
+      <category>SCIENCE</category>
+      <pubDate>Mon, 17 Aug 2026 09:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>PyTorch 2.5 Introduces FlexAttention and TorchDynamo C++ Runtime: 4x Speedups for Custom Attention Kernels</title>
+      <link>https://nextvector.rhasan.online/article/pytorch-2-5-flexattention-torchdynamo-runtime</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/pytorch-2-5-flexattention-torchdynamo-runtime</guid>
+      <description>The PyTorch Foundation eliminates manual CUDA and Triton programming for novel attention variants, allowing researchers to express complex masks in pure Python while compiling to peak GPU FLOPS.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 16 Aug 2026 14:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Vector Database Paradigm Shift: Binary Quantization and DiskANN Enable Sub-Millisecond Search on Billion-Scale Embeddings</title>
+      <link>https://nextvector.rhasan.online/article/vector-database-binary-quantization-diskann-scaling</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/vector-database-binary-quantization-diskann-scaling</guid>
+      <description>By compressing 1536-dimensional float32 embeddings into single-bit vectors and traversing graph indexes from NVMe SSDs, vector infrastructure slashes RAM server costs by 96%.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sat, 15 Aug 2026 11:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Willow Quantum Processor Achieves Exponential Error Reduction Below the Fault-Tolerant Threshold</title>
+      <link>https://nextvector.rhasan.online/article/google-willow-quantum-chip-exponential-error-reduction</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-willow-quantum-chip-exponential-error-reduction</guid>
+      <description>Published in Nature, Google Quantum AI&#x27;s 105-qubit &#x27;Willow&#x27; processor proves that scaling surface code distances exponentially suppresses errors, surpassing the threshold for commercial quantum computing.</description>
+      <category>RESEARCH</category>
+      <pubDate>Fri, 14 Aug 2026 16:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Direct-to-Cell Space Revolution: AST SpaceMobile Deploys Five Commercial BlueBird Phased-Array Arrays in LEO</title>
+      <link>https://nextvector.rhasan.online/article/ast-spacemobile-bluebird-direct-to-cell-commercial-leo</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ast-spacemobile-bluebird-direct-to-cell-commercial-leo</guid>
+      <description>Unfurling 693-square-foot commercial phased-array antennas\u2014the largest ever flown in Low Earth Orbit\u2014AST SpaceMobile connects standard smartphones directly to orbital cell towers.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 13 Aug 2026 10:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Federal Court Issues Historic Antitrust Ruling Against Google Search: The End of Exclusive Default Distribution Contracts</title>
+      <link>https://nextvector.rhasan.online/article/us-doj-antitrust-ruling-google-search-monopoly</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/us-doj-antitrust-ruling-google-search-monopoly</guid>
+      <description>In a 286-page landmark decision in US v. Google, District Judge Amit Mehta rules that Google maintained an illegal monopoly in general search services through $26B in annual exclusionary revenue-share deals.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 12 Aug 2026 17:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Sodium-Ion Battery Commercialization Reaches Gigawatt-Scale: Natron Energy and CATL Scale Non-Lithium Energy Storage</title>
+      <link>https://nextvector.rhasan.online/article/natron-catl-sodium-ion-battery-gigawatt-commercialization</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/natron-catl-sodium-ion-battery-gigawatt-commercialization</guid>
+      <description>Eliminating lithium, cobalt, and nickel dependencies entirely, sodium-ion manufacturing lines achieve 50,000-cycle lifespans and zero fire risk for AI datacenter backup power and grid storage.</description>
+      <category>SCIENCE</category>
+      <pubDate>Tue, 11 Aug 2026 13:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Intel Labs and Sandia National Laboratories Deploy Hala Point: 1.15-Billion Neuron Neuromorphic AI Supercomputing System</title>
+      <link>https://nextvector.rhasan.online/article/intel-sandia-hala-point-neuromorphic-supercomputer</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/intel-sandia-hala-point-neuromorphic-supercomputer</guid>
+      <description>Packing 1,152 Loihi 2 processors into a compact 6U chassis, Hala Point executes 20 petaops at 15 kW, demonstrating brain-inspired spike-timing efficiency that uses 100x less power than conventional GPUs.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 10 Aug 2026 12:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>NVIDIA Enters $12.93B Definitive Agreement to Acquire Hugging Face: Uniting GPU Silicon with Open-Source AI Hub</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-acquires-hugging-face-12-9b-definitive-agreement</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-acquires-hugging-face-12-9b-definitive-agreement</guid>
+      <description>Pledging hardware-neutral multi-cloud independence, Jensen Huang commits $11.9B purchase consideration plus $1B employee equity retention to anchor the world’s open model repository directly into CUDA software stacks.</description>
+      <category>AI</category>
+      <pubDate>Wed, 09 Sep 2026 04:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Deploys Claude Fable 5.1 &amp; Restricted Claude Mythos 5.1: Adaptive Reasoning and Project Glasswing Enclaves</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-deploys-claude-fable-5-1-and-mythos-project-glasswing</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-deploys-claude-fable-5-1-and-mythos-project-glasswing</guid>
+      <description>Expanding its frontier tier to 1M native context with 75% prompt caching discounts ($0.25/1M tokens), Anthropic bifurcates its ecosystem—launching Fable 5.1 for enterprise workloads and sandboxing Mythos 5.1 for critical infrastructure cyber defense.</description>
+      <category>AI</category>
+      <pubDate>Wed, 09 Sep 2026 03:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+  </channel>
+</rss>

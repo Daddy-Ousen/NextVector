@@ -73,21 +73,93 @@ export const HomePage: React.FC<HomePageProps> = ({
 
   const homeSchema = {
     '@context': 'https://schema.org',
-    '@type': 'NewsMediaOrganization',
-    name: 'NextVector',
-    url: 'https://nextvector.rhasan.online',
-    logo: 'https://nextvector.rhasan.online/favicon.svg',
-    description: 'High-signal technology and AI intelligence platform covering foundation models, autonomous agents, and scientific breakthroughs.',
-    founder: {
-      '@type': 'Person',
-      name: 'Robiul Hasan',
-      url: 'https://rhasan.online',
-      sameAs: ['https://rhasan.online', 'https://github.com/Daddy-Ousen'],
-    },
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://nextvector.rhasan.online/#website',
+        url: 'https://nextvector.rhasan.online/',
+        name: 'NextVector',
+        alternateName: ['NextVector AI', 'NextVector Intelligence'],
+        description: 'High-signal AI news, foundation models, verified benchmarks, and research intelligence.',
+        publisher: {
+          '@id': 'https://nextvector.rhasan.online/#organization',
+        },
+        inLanguage: 'en-US',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://nextvector.rhasan.online/?q={search_term_string}',
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@type': ['Organization', 'NewsMediaOrganization'],
+        '@id': 'https://nextvector.rhasan.online/#organization',
+        name: 'NextVector',
+        alternateName: ['NextVector AI', 'NextVector Intelligence'],
+        legalName: 'NextVector Media',
+        url: 'https://nextvector.rhasan.online/',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://nextvector.rhasan.online/brand/nextvector-logo.jpg',
+          width: 512,
+          height: 512,
+        },
+        image: 'https://nextvector.rhasan.online/brand/nextvector-brand-system.jpg',
+        description: 'Independent technology intelligence platform filtering noise to surface verified foundation models, LMSYS Arena benchmarks, and frontier AI breakthroughs.',
+        publishingPrinciples: 'https://nextvector.rhasan.online/about',
+        address: {
+          '@type': 'PostalAddress',
+          addressCountry: 'US',
+          addressLocality: 'San Francisco',
+          addressRegion: 'CA',
+        },
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            contactType: 'editorial',
+            email: 'editor@nextvector.rhasan.online',
+            url: 'https://nextvector.rhasan.online/contact',
+            availableLanguage: ['English'],
+          },
+        ],
+        knowsAbout: [
+          'https://www.wikidata.org/wiki/Q11660',
+          'https://www.wikidata.org/wiki/Q2539',
+          'Artificial Intelligence',
+          'Large Language Models',
+          'Foundation Models',
+          'LMSYS Chatbot Arena',
+          'SWE-bench Verified',
+          'Semiconductor Compute Fabrics',
+          'Autonomous AI Agents',
+        ],
+        sameAs: [
+          'https://github.com/Daddy-Ousen',
+          'https://nextvectorr.substack.com',
+          'https://rhasan.online',
+          'https://www.wikidata.org/wiki/Q11660',
+        ],
+        founder: {
+          '@type': 'Person',
+          '@id': 'https://rhasan.online/#person',
+          name: 'Robiul Hasan',
+          jobTitle: 'Founder & Editor-in-Chief',
+          url: 'https://rhasan.online',
+          sameAs: [
+            'https://rhasan.online',
+            'https://github.com/Daddy-Ousen',
+            'https://nextvectorr.substack.com',
+          ],
+        },
+      },
+    ],
   };
 
   return (
-    <div className="space-y-16 pb-12">
+    <div className="space-y-12 pb-12">
       <SEOHead
         title="NextVector — AI News, Frontier Model Benchmarks & Intelligence"
         description="Real-time AI news, verified frontier model benchmarks, LMSYS Chatbot Arena rankings, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and high-signal research intelligence. Less noise. More signal."
@@ -105,6 +177,28 @@ export const HomePage: React.FC<HomePageProps> = ({
           'SWE-bench verified',
         ]}
       />
+
+      {/* Editorial Header / Primary Entity H1 */}
+      <header className="border-b border-zinc-800/80 pb-6 pt-1">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>Primary Source AI &amp; Computing Intelligence</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 font-sans tracking-tight leading-tight">
+              NextVector <span className="text-zinc-600 font-light">—</span>{' '}
+              <span className="bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
+                AI News, Frontier Model Benchmarks &amp; Intelligence
+              </span>
+            </h1>
+          </div>
+          <p className="text-xs sm:text-sm font-mono text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
+            Real-time foundation model radar, LMSYS Arena Elo rankings, model showdowns, and buyer guides. Verified empirical signal over marketing noise.
+          </p>
+        </div>
+      </header>
+
       {/* Live Breaking Signal Ticker */}
       <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-2.5 sm:p-3 shadow-lg flex items-center overflow-hidden">
         <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-[10px] sm:text-xs font-bold shrink-0 mr-2.5 sm:mr-4">

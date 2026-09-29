@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, ShieldCheck, Zap, BookOpen, Layers, ExternalLink } from 'lucide-react';
+import { Mail, ShieldCheck, Zap, BookOpen, ExternalLink } from 'lucide-react';
 import { NextVectorLogo } from '../common/NextVectorLogo';
 
 interface FooterProps {
@@ -338,6 +338,34 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
+                  href="/faq"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/faq');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors text-left"
+                >
+                  FAQ &amp; Knowledge Base
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  onClick={(e) => {
+                    if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onNavigate('/contact');
+                    }
+                  }}
+                  className="hover:text-emerald-400 transition-colors text-left"
+                >
+                  Contact Desk &amp; Verification
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://rhasan.online"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -378,7 +406,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               Robiul Hasan
             </a>{' '}
-            (Dhaka). Filter the noise.
+            (Dhaka &amp; San Francisco). Filter the noise.
           </div>
           <div className="flex items-center gap-6">
             <a
@@ -393,8 +421,30 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               Editorial Lead
             </a>
-            <span>Privacy Protocol</span>
-            <span>Editorial Charter</span>
+            <a
+              href="/faq"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  onNavigate('/faq');
+                }
+              }}
+              className="hover:text-emerald-400 transition-colors"
+            >
+              FAQ
+            </a>
+            <a
+              href="/contact"
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  onNavigate('/contact');
+                }
+              }}
+              className="hover:text-emerald-400 transition-colors"
+            >
+              Contact
+            </a>
             <span>Status: Operational (100%)</span>
           </div>
         </div>

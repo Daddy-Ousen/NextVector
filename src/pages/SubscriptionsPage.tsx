@@ -69,6 +69,27 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
         ]}
       />
 
+      {/* Editorial Header / Primary Entity H1 */}
+      <header className="border-b border-zinc-800/80 pb-6 pt-1">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
+              <Sparkles className="w-4 h-4 text-emerald-400" />
+              <span>2026 AI Buyer's Guide &amp; ROI Architecture</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 font-sans tracking-tight leading-tight">
+              Best AI Subscriptions to Get in 2026 <span className="text-zinc-600 font-light">—</span>{' '}
+              <span className="bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
+                ChatGPT Plus vs Claude Pro
+              </span>
+            </h1>
+          </div>
+          <p className="text-xs sm:text-sm font-mono text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
+            Definitive, unbiased breakdown of $20/mo individual plans, $100/mo power-user stacks, and $200/mo ChatGPT Pro tiers. Zero vendor commissions.
+          </p>
+        </div>
+      </header>
+
       {/* Top Banner Notice */}
       <div className="p-4 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono">
         <div className="flex items-center gap-2 text-zinc-300">
@@ -82,6 +103,17 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
           <span>View Claude vs ChatGPT Showdown</span>
           <ArrowRight className="w-3.5 h-3.5" />
         </button>
+      </div>
+
+      {/* Direct Intelligence Key Takeaway / BLUF for AI Retrieval Engines */}
+      <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs font-mono space-y-2">
+        <div className="flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider">
+          <DollarSign className="w-4 h-4" />
+          <span>Key Conclusion: Optimal 2026 Subscription Decision</span>
+        </div>
+        <p className="text-zinc-300 leading-relaxed font-sans text-sm">
+          <strong>Direct Answer:</strong> If you write multi-file code or handle large repositories, choose <strong>Claude Pro ($20/mo)</strong> for Claude Opus 5.5 and 1M token context. If you need computer control, voice, and live web browsing, choose <strong>ChatGPT Plus ($20/mo)</strong> for GPT-6 Astra and GPT-5.6 Sol. For maximum leverage with a $100 budget, pair Claude Pro ($20) with Cursor/Copilot ($20) and $60 in developer API credits.
+        </p>
       </div>
 
       {/* Embedded Deep Decision Guide */}

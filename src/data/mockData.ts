@@ -150,6 +150,61 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-10-01-gemini-4-argon',
+    year: 2026,
+    month: 'Oct 1',
+    title: 'Google Launches Gemini 4 Argon with 1 Million Token Reasoning Output Horizon',
+    category: 'AI Breakthrough',
+    summary: 'Google debuts Gemini 4 Argon, an enterprise reasoning foundation model engineered with a 1M token output ceiling for long-horizon autonomous software engineering and cyber defense.',
+    impactScore: 99,
+    keyShift: 'The elimination of the reasoning output bottleneck, enabling hours of continuous, multi-file autonomous software refactoring in a single session.',
+    articleSlug: 'google-unveils-gemini-4-argon-frontier-reasoning-one-million-token-output'
+  },
+  {
+    id: 'time-2026-10-01-anthropic-ipo',
+    year: 2026,
+    month: 'Oct 1',
+    title: 'Anthropic Leaked $2T IPO Filing Discloses $518B Compute Obligations and Existential Risk Warnings',
+    category: 'AI Breakthrough',
+    summary: 'Reuters reveals Anthropic draft S-1 prospectus seeking $2 trillion valuation, posting $4.6B revenue, committing $518B in cloud debt, and warning models could resist shutdown.',
+    impactScore: 98,
+    keyShift: 'The first transparent financial disclosure of frontier AI unit economics, hypercloud debt dependencies, and existential risk warnings in a public offering.',
+    articleSlug: 'anthropic-ipo-prospectus-reveals-2-trillion-valuation-and-existential-risk-warnings'
+  },
+  {
+    id: 'time-2026-10-01-gpt-synopsys',
+    year: 2026,
+    month: 'Oct 1',
+    title: 'OpenAI and Synopsys Partner on GPT-Synopsys to Automate Sub-2nm Semiconductor Design',
+    category: 'Semiconductors',
+    summary: 'OpenAI and Synopsys unveil a strategic partnership integrating frontier reasoning models directly into EDA suites to automate Verilog RTL generation and timing verification.',
+    impactScore: 96,
+    keyShift: 'The arrival of full-stack AI co-design in electronic design automation, cutting custom silicon development timelines from years to weeks.',
+    articleSlug: 'openai-synopsys-partner-gpt-synopsys-eda-semiconductor-design'
+  },
+  {
+    id: 'time-2026-10-01-edg-cpp',
+    year: 2026,
+    month: 'Oct 1',
+    title: 'Edison Design Group Open-Sources 35-Year Industry-Standard C++ Compiler Front-End',
+    category: 'Computing Architecture',
+    summary: 'EDG and The C++ Alliance transition the proprietary compiler engine powering Intel, NVIDIA CUDA, and Cray compilers to a public nonprofit open-source repository.',
+    impactScore: 95,
+    keyShift: 'Breaking the GCC/Clang compiler duopoly by open-sourcing the most rigorously compliant ISO C++ front-end parser in software history.',
+    articleSlug: 'edg-open-sources-industry-standard-c-compiler-front-end'
+  },
+  {
+    id: 'time-2026-10-01-cortical-waves',
+    year: 2026,
+    month: 'Oct 1',
+    title: 'Neuroscientists Prove Traveling Spiral and Concentric Cortical Waves Organize Human Cognition',
+    category: 'Fundamental Science',
+    summary: 'High-density intracranial electrocorticography published in Quanta Magazine proves brain waves are dynamic computational routers organizing memory rather than passive noise.',
+    impactScore: 95,
+    keyShift: 'Empirical verification that the human cerebral cortex computes via self-organizing hydrodynamic wave spirals, informing future neuromorphic processors.',
+    articleSlug: 'quanta-complex-cortical-waves-reveal-brain-computational-dynamics'
+  },
+  {
     id: 'time-2026-09-29-amd-worldlabs',
     year: 2026,
     month: 'Sep 29',
@@ -781,53 +836,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Tuesday, September 29, 2026',
-  summary: 'AMD seals an $8.2 billion megadeal to acquire Dr. Fei-Fei Li\'s World Labs, naming her EVP and Chief Scientist to drive 3D spatial intelligence on Instinct accelerators. Concurrently, Anthropic releases Claude Sonnet 5.5 boasting a 30% speedup and landmark 68.4% score on Terminal-Bench 4.0, NVIDIA unites 120+ partners around the Open Agent Safety Platform featuring BlueField-4 DPU hardware isolation, Flock Safety demands the takedown of an investigative map exposing 300,000 nationwide ALPR cameras, and the Chinese Academy of Sciences unveils its 2026–2030 innovation blueprint targeting sub-2nm lithography and nuclear fusion.',
+  date: 'Thursday, October 1, 2026',
+  summary: 'Google unveils Gemini 4 Argon featuring an industry-first 1 million token reasoning output horizon for enterprise cyber defense and long-horizon engineering. Concurrently, Anthropic\'s confidential $2 trillion IPO prospectus leaks disclosing $4.6B revenue, $518B in compute debt, and unprecedented warnings of models resisting shutdown. OpenAI and Synopsys partner to build \'GPT-Synopsys\' for automated sub-2nm chip design, Netlify cuts edge latency by 5x migrating from V8 isolates to Firecracker MicroVMs, and Edison Design Group open-sources its legendary 35-year C++ compiler front-end.',
   items: [
     {
       id: 'brief-1',
-      headline: 'AMD Acquires Fei-Fei Li\'s World Labs in $8.2B Megadeal to Champion Spatial Intelligence',
+      headline: 'Google Unveils Gemini 4 Argon: 1 Million Token Output Horizon for Frontier Reasoning',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'AMD agrees to acquire spatial intelligence pioneer World Labs for $8.2B in stock. AI pioneer Dr. Fei-Fei Li joins AMD as Chief Scientist reporting directly to CEO Lisa Su.',
-      whyItMatters: 'Directly counters NVIDIA Omniverse and Cosmos by coupling 3D physics-grounded generative world models to upcoming Instinct MI400 accelerator silicon.',
-      articleSlug: 'amd-acquires-world-labs-8-2b-fei-fei-li-spatial-intelligence'
+      summary: 'Google releases Gemini 4 Argon to vetted cyber defenders in the Fairwind Program, setting benchmark records on DeepSWE v1.1 with continuous million-token reasoning.',
+      whyItMatters: 'Removes the output horizon bottleneck for autonomous agent swarms, enabling unbroken multi-hour software engineering and formal verification.',
+      articleSlug: 'google-unveils-gemini-4-argon-frontier-reasoning-one-million-token-output'
     },
     {
       id: 'brief-2',
-      headline: 'Anthropic Releases Claude Sonnet 5.5: 30% Speed Gain and Terminal-Bench 4.0 Dominance',
+      headline: 'Anthropic Confidential $2T IPO Filing Discloses $518B Compute Commitments & Severe Risks',
       category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'The new mid-tier powerhouse delivers 30% faster token generation, 22% token compression, and record 68.4% on Terminal-Bench 4.0 with ASL-2 cybersecurity containment.',
-      whyItMatters: 'Accelerates autonomous multi-file terminal refactoring while dramatically reducing API token inflation and latency for developer agent swarms.',
-      articleSlug: 'anthropic-launches-claude-sonnet-5-5-frontier-agentic-coding'
+      summary: 'Leaked draft S-1 prospectus reveals 12x revenue surge to $4.6B against $8B operating loss, massive cloud debt, and legal warnings of autonomous agent self-preservation.',
+      whyItMatters: 'The first comprehensive look at the financial mechanics and existential liability disclosures of a frontier AI lab preparing for Wall Street.',
+      articleSlug: 'anthropic-ipo-prospectus-reveals-2-trillion-valuation-and-existential-risk-warnings'
     },
     {
       id: 'brief-3',
-      headline: 'NVIDIA Unveils Open Agent Safety Platform: OpenShell Runtime & DPU Sentry Isolation',
+      headline: 'OpenAI and Synopsys Partner on \'GPT-Synopsys\' to Revolutionize Semiconductor Design',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Backed by Anthropic, Microsoft, Cisco, and 120+ allies, NVIDIA deploys out-of-band BlueField-4 DPUs to quarantine rogue autonomous agents at hardware line rate in <5ms.',
-      whyItMatters: 'Establishes the industry\'s first physical hardware isolation standard to prevent agent jailbreaks, unauthorized network scanning, and data exfiltration.',
-      articleSlug: 'nvidia-launches-open-agent-safety-platform-openshell-sentry'
+      summary: 'Multi-year alliance embeds OpenAI reasoning models into Synopsys EDA suites, automating RTL synthesis and layout verification to slash chip design cycles.',
+      whyItMatters: 'Accelerates the convergence of frontier AI and silicon manufacturing, slashing custom ASIC tape-out times from years to weeks.',
+      articleSlug: 'openai-synopsys-partner-gpt-synopsys-eda-semiconductor-design'
     },
     {
       id: 'brief-4',
-      headline: 'Flock Safety Demands Takedown of Investigative Map Exposing 300,000 ALPR Cameras',
+      headline: 'Netlify Re-Architects Edge Infrastructure: Firecracker MicroVMs Slash Latency 5x',
       category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'Civil liberties researchers map 300,000 private license plate readers across the US using public records, triggering legal threats from Flock and an aggressive defense from the EFF.',
-      whyItMatters: 'Exposes the unprecedented geographic density of privatized mass surveillance and accelerates federal challenges under the Fourth Amendment.',
-      articleSlug: 'flock-safety-demands-takedown-300k-surveillance-camera-map'
+      summary: 'Netlify swaps shared Google V8 JavaScript isolates for hardware-isolated Linux Firecracker MicroVMs optimized with Unikraft, delivering 5x lower latency.',
+      whyItMatters: 'Resolves the decade-long tension between serverless cold-start performance and true multi-tenant kernel hardware isolation.',
+      articleSlug: 'netlify-transitions-edge-functions-v8-isolates-to-firecracker-microvms'
     },
     {
       id: 'brief-5',
-      headline: 'Chinese Academy of Sciences Unveils 2026–2030 Blueprint for Fusion, Quantum, and Sub-2nm',
-      category: 'science' as const,
+      headline: 'Edison Design Group Open-Sources Industry-Standard C++ Compiler Front-End',
+      category: 'technology' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'China\'s 15th Five-Year science plan mobilizes state labs to achieve sub-2nm electron-beam lithography, 1,000s steady-state fusion on EAST, and 10,000-channel neural interfaces.',
-      whyItMatters: 'Transitions national strategy from Western semiconductor catch-up toward physics-driven leapfrog architectures in quantum, fusion, and bio-computing.',
-      articleSlug: 'chinese-academy-sciences-2026-2030-five-year-frontier-tech-blueprint'
+      summary: 'After 35 years powering Intel, NVIDIA, and Cray compilers, EDG transitions its foundational C++ parser to The C++ Alliance nonprofit open-source foundation.',
+      whyItMatters: 'Provides an independent, gold-standard ISO C++ alternative to GCC and Clang for silicon architects, toolmakers, and language researchers.',
+      articleSlug: 'edg-open-sources-industry-standard-c-compiler-front-end'
     }
   ]
 };
@@ -835,32 +890,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'AMD World Labs $8.2B',
-    text: 'AMD acquires Fei-Fei Li\'s World Labs for $8.2B; Li appointed Chief Scientist for spatial intelligence',
-    articleSlug: 'amd-acquires-world-labs-8-2b-fei-fei-li-spatial-intelligence'
+    tag: 'Gemini 4 Argon',
+    text: 'Google debuts Gemini 4 Argon with unprecedented 1 million token reasoning output limit',
+    articleSlug: 'google-unveils-gemini-4-argon-frontier-reasoning-one-million-token-output'
   },
   {
     id: 'sig-2',
-    tag: 'Claude Sonnet 5.5',
-    text: 'Anthropic releases Claude Sonnet 5.5 with 30% latency drop and 68.4% on Terminal-Bench 4.0',
-    articleSlug: 'anthropic-launches-claude-sonnet-5-5-frontier-agentic-coding'
+    tag: 'Anthropic $2T IPO',
+    text: 'Anthropic draft IPO prospectus reveals $4.6B revenue, $518B cloud debt, and safety warnings',
+    articleSlug: 'anthropic-ipo-prospectus-reveals-2-trillion-valuation-and-existential-risk-warnings'
   },
   {
     id: 'sig-3',
-    tag: 'NVIDIA Agent Safety',
-    text: 'NVIDIA and 120 partners unveil Open Agent Safety Platform with BlueField DPU hardware isolation',
-    articleSlug: 'nvidia-launches-open-agent-safety-platform-openshell-sentry'
+    tag: 'GPT-Synopsys EDA',
+    text: 'OpenAI and Synopsys partner to automate sub-2nm semiconductor chip design and RTL synthesis',
+    articleSlug: 'openai-synopsys-partner-gpt-synopsys-eda-semiconductor-design'
   },
   {
     id: 'sig-4',
-    tag: 'Flock Surveillance Map',
-    text: 'Flock Safety demands takedown of investigative map revealing 300,000 ALPR cameras across US',
-    articleSlug: 'flock-safety-demands-takedown-300k-surveillance-camera-map'
+    tag: 'EDG C++ Open Source',
+    text: 'Edison Design Group open-sources historic 35-year C++ compiler front-end under C++ Alliance',
+    articleSlug: 'edg-open-sources-industry-standard-c-compiler-front-end'
   },
   {
     id: 'sig-5',
-    tag: 'Solar Storm Mystery Solved',
-    text: 'Nature Astronomy study uses 1840s Victorian magnetograms to solve extreme space weather acceleration',
-    articleSlug: 'astrophysicists-solve-1840s-carrington-precursor-space-weather-mystery'
+    tag: 'Cortical Wave Routing',
+    text: 'Quanta report: Neuroscientists discover spiral and concentric brain waves organizing cognition',
+    articleSlug: 'quanta-complex-cortical-waves-reveal-brain-computational-dynamics'
   }
 ];

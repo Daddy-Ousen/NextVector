@@ -205,7 +205,7 @@ const USE_CASE_GUIDES: UseCaseGuideItem[] = [
       why: 'Supports 200k local context with memory-efficient Multi-Head Latent Attention (MLA).',
     },
     proTip:
-      'Prompt Caching Secret: Both Anthropic (Claude Fable 5.1 API) and DeepSeek support prompt caching. Repeated queries against the same 500k-token repository cost 80–90% less ($0.25/1M reads) on subsequent requests.',
+      'Prompt Caching Secret: Both Anthropic (Claude Fable 5.1 API) and DeepSeek support prompt caching. Repeated queries against the same 500k-token repository cost 80–90% less ($0.25/1M reads) on subsequent requests. For European sovereign deployments requiring 1M validated context under strict GDPR compliance, Aleph Alpha Kolibri-1 (Apache 2.0, 78.1B MoE) provides on-premise self-hosting with 3.46B active parameters.',
   },
   {
     id: 'guide-rag',

@@ -7444,6 +7444,67 @@ export const ALL_135_MODELS: AIModel[] = [
     "link": "https://arena.ai/",
     "arenaRank": 142,
     "arenaElo": 1178
+  },
+  {
+    "id": "model-aleph-alpha-kolibri-1",
+    "name": "Kolibri-1",
+    "developer": "Aleph Alpha",
+    "releaseDate": "October 2026",
+    "modelType": "Open Weights",
+    "modalities": [
+      "Text",
+      "Code",
+      "Tool Calling"
+    ],
+    "contextWindow": "262K tokens (Native, 1M Validated)",
+    "parameters": "78.1B (3.46B active MoE)",
+    "pricing": {
+      "inputPer1M": 0.2,
+      "outputPer1M": 0.8,
+      "cachedInputPer1M": 0.05
+    },
+    "openSourceStatus": "Fully Open Source (Apache 2.0)",
+    "license": "Apache 2.0",
+    "hardwareRequirements": "78 GB VRAM in FP8 (2x A100/H100 80GB, or 1x H200/B200)",
+    "benchmarks": [
+      {
+        "benchmarkName": "MMLU-Pro",
+        "score": "80.0%",
+        "vsPreviousGen": "+8.4% over Luminous-2"
+      },
+      {
+        "benchmarkName": "AIME 2026",
+        "score": "96.0%",
+        "vsPreviousGen": "High-effort mathematical reasoning pass"
+      },
+      {
+        "benchmarkName": "HumanEval+",
+        "score": "92.7%",
+        "vsPreviousGen": "Python code synthesis with unit verification"
+      },
+      {
+        "benchmarkName": "Aleph Alpha German Eval",
+        "score": "70.8%",
+        "vsPreviousGen": "Sovereign European language benchmark lead"
+      }
+    ],
+    "keyImprovements": [
+      "Sovereign European architecture trained strictly on infrastructure in Germany and Finland complying with EU AI Act and GDPR.",
+      "Ultra-sparse MoE routing: 384 routed experts with only 6 active per token (~3.46B active parameters out of 78.1B total).",
+      "Custom 128K vocabulary UniBPE tokenizer optimized for German and English morphology to reduce token fragmentation by 34%.",
+      "Native 262,144 token context window validated up to 1,048,576 tokens with 4 explicit reasoning effort tiers (none, low, medium, high)."
+    ],
+    "knownLimitations": [
+      "78.1B total parameter footprint requires 78 GB VRAM in FP8, requiring multi-GPU configurations (2x 80GB) for self-hosting.",
+      "Optimized primarily for German and English corporate and administrative workflows; multilingual performance on low-resource non-European languages is unverified."
+    ],
+    "realWorldApplications": [
+      "Self-hosted sovereign AI deployment in European public administration, defense, aerospace, and healthcare.",
+      "High-throughput enterprise document processing across long-context German/English archives.",
+      "Enterprise agent workflows requiring strict on-premise GDPR isolation and zero transatlantic data telemetry."
+    ],
+    "architectureNotes": "Sparse Mixture-of-Experts with 384 routed experts (6 active per token) and fine-grained top-k routing, trained with multi-stage pre-training, mid-training long-context extension, and direct preference optimization (DPO).",
+    "link": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/"
   }
 ];
 

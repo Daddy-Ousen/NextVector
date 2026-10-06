@@ -2178,5 +2178,47 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/nobel-prize-physics-2026-francis-halzen-icecube-neutrino-observatory</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/openai-math-repository-formal-proofs-lean-ias-consultation</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/openai-launches-decisions-api-fast-routing-structured-evaluations</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/openssh-10-6-released-post-quantum-mldsa-ed25519-lz77-mitigation</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/utah-first-state-authorizes-ai-examine-patients-prescribe-medication</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/canadian-bill-c-22-lawful-access-mandate-vpn-providers-exit</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/clift-conformal-self-verification-web-agent-training-test-time-scaling</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
 

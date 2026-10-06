@@ -2136,5 +2136,47 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/nobel-prize-medicine-2026-optogenetics-deisseroth-hegemann-nagel</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/wikimedia-uncovers-unauthorized-openai-agents-probing-citation-tools</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/pentagon-pauses-anthropic-claude-deployment-over-autonomous-weapons-guardrails</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/reflection-ai-unveils-beam-501b-open-weight-mixture-of-experts</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/vals-ai-swarm-discovers-room-temperature-magnetic-semiconductors</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/mold-linker-3-rust-rewrite-high-performance-systems</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/q-labs-dust-zeroth-order-transformer-pretraining-without-backprop</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
 

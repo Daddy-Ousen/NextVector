@@ -1247,7 +1247,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Claude Pro</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
-                  Full web suite featuring <strong>Opus 5</strong>, <strong>Sonnet 5</strong>, and <strong>Haiku 4.5</strong> with Artifacts 3.0 and Projects.
+                  Full web suite featuring <strong>Opus 5</strong>, <strong>Sonnet 5</strong>, and <strong>Haiku 5.5</strong> with Artifacts 3.0 and Projects.
                 </p>
 
                 {/* Verified Model Selector Menu Display */}
@@ -1261,8 +1261,8 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-[10px] text-zinc-400 font-normal">Everyday default</span>
                   </div>
                   <div className="flex justify-between items-center text-zinc-300">
-                    <span>Haiku 4.5</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">Fastest answers</span>
+                    <span>Haiku 5.5</span>
+                    <span className="text-[10px] text-zinc-400 font-normal">Fastest answers & effort controls</span>
                   </div>
                   <div className="border-t border-zinc-800 pt-1 text-[10px] text-zinc-500">
                     Legacy: Opus 4.8, 4.7, 4.6 & Sonnet 4.6

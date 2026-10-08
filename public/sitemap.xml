@@ -2220,5 +2220,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
 

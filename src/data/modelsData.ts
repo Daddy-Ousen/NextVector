@@ -3,6 +3,65 @@ import { AIModel } from '../types';
 
 export const ALL_135_MODELS: AIModel[] = [
   {
+    "id": "model-claude-haiku-5-5",
+    "name": "Claude Haiku 5.5",
+    "developer": "Anthropic",
+    "releaseDate": "October 2026",
+    "modelType": "Compact / Edge",
+    "modalities": [
+      "Text",
+      "Code",
+      "Vision",
+      "Tool Calling",
+      "Browser Navigation"
+    ],
+    "contextWindow": "200k tokens (Native)",
+    "parameters": "High-Efficiency Sparse Mixture-of-Experts (MoE)",
+    "pricing": {
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.5,
+      "cachedInputPer1M": 0.025
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Anthropic Commercial API Terms of Service",
+    "hardwareRequirements": "Hosted on Anthropic / AWS Bedrock / Google Cloud Vertex AI",
+    "benchmarks": [
+      {
+        "benchmarkName": "Chatbot Arena Elo",
+        "score": "1338",
+        "vsPreviousGen": "+18 Elo over Haiku 4.5, matches earlier flagship Sonnet tiers"
+      },
+      {
+        "benchmarkName": "SWE-bench Verified",
+        "score": "58.2%",
+        "vsPreviousGen": "+11.4% gain with native effort controls"
+      },
+      {
+        "benchmarkName": "Price-to-Performance Pareto Index",
+        "score": "99.2",
+        "vsPreviousGen": "Top-tier efficiency Pareto frontier ($0.10/$0.50 per 1M tokens)"
+      }
+    ],
+    "keyImprovements": [
+      "Native granular test-time compute effort controls, balancing reasoning depth, latency, and token expenditure.",
+      "Optimized for high-volume agentic sub-delegation with sub-200ms time-to-first-token and ultra-high API concurrency throughput.",
+      "80% cost reduction over preceding generation ($0.10 input, $0.50 output, $0.025 prompt cache read)."
+    ],
+    "knownLimitations": [
+      "200k context window versus 1M tokens in Claude Opus 5.5.",
+      "Less optimized for deep formal interactive theorem proving (Lean 4/Coq) than Opus 5.5."
+    ],
+    "realWorldApplications": [
+      "High-frequency agentic worker threads, sub-agent verification swarms, and background task decomposition.",
+      "Real-time browser automation and interactive UI element manipulation via Playwright and Docker Agent.",
+      "Cost-sensitive enterprise document classification, high-volume summarization, and customer support routing."
+    ],
+    "architectureNotes": "Engineered with optimized speculative decoding and compressed key-value cache states for extreme concurrency and minimal time-to-first-token latency.",
+    "link": "https://anthropic.com/claude-haiku-5-5",
+    "arenaRank": 54,
+    "arenaElo": 1338
+  },
+  {
     "id": "model-claude-opus-5-5",
     "name": "Claude Opus 5.5",
     "developer": "Anthropic",
@@ -2934,7 +2993,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Meta AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 54,
+    "arenaRank": 55,
     "arenaElo": 1337
   },
   {
@@ -2985,7 +3044,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 55,
+    "arenaRank": 56,
     "arenaElo": 1335
   },
   {
@@ -3036,7 +3095,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by MiniMax with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 56,
+    "arenaRank": 57,
     "arenaElo": 1333
   },
   {
@@ -3087,7 +3146,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by xAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 57,
+    "arenaRank": 58,
     "arenaElo": 1332
   },
   {
@@ -3138,7 +3197,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Poolside with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 58,
+    "arenaRank": 59,
     "arenaElo": 1330
   },
   {
@@ -3189,7 +3248,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Meta AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 59,
+    "arenaRank": 60,
     "arenaElo": 1328
   },
   {
@@ -3240,7 +3299,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by DeepSeek with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 60,
+    "arenaRank": 61,
     "arenaElo": 1326
   },
   {
@@ -3291,7 +3350,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 61,
+    "arenaRank": 62,
     "arenaElo": 1324
   },
   {
@@ -3342,7 +3401,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Zhipu AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 62,
+    "arenaRank": 63,
     "arenaElo": 1322
   },
   {
@@ -3395,7 +3454,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by ByteDance with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 63,
+    "arenaRank": 64,
     "arenaElo": 1321
   },
   {
@@ -3446,7 +3505,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Moonshot AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 64,
+    "arenaRank": 65,
     "arenaElo": 1319
   },
   {
@@ -3497,7 +3556,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Moonshot AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 65,
+    "arenaRank": 66,
     "arenaElo": 1317
   },
   {
@@ -3548,7 +3607,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Thinking Machines Lab with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 66,
+    "arenaRank": 67,
     "arenaElo": 1315
   },
   {
@@ -3599,7 +3658,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 67,
+    "arenaRank": 68,
     "arenaElo": 1313
   },
   {
@@ -3652,7 +3711,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 68,
+    "arenaRank": 69,
     "arenaElo": 1312
   },
   {
@@ -3705,7 +3764,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 69,
+    "arenaRank": 70,
     "arenaElo": 1310
   },
   {
@@ -3756,7 +3815,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Anthropic with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 70,
+    "arenaRank": 71,
     "arenaElo": 1308
   },
   {
@@ -3807,7 +3866,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Anthropic with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 71,
+    "arenaRank": 72,
     "arenaElo": 1306
   },
   {
@@ -3858,7 +3917,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Zhipu AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 72,
+    "arenaRank": 73,
     "arenaElo": 1304
   },
   {
@@ -3909,7 +3968,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by StepFun with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 73,
+    "arenaRank": 74,
     "arenaElo": 1303
   },
   {
@@ -3960,7 +4019,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by MiniMax with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 74,
+    "arenaRank": 75,
     "arenaElo": 1301
   },
   {
@@ -4013,7 +4072,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 75,
+    "arenaRank": 76,
     "arenaElo": 1299
   },
   {
@@ -4064,7 +4123,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 76,
+    "arenaRank": 77,
     "arenaElo": 1297
   },
   {
@@ -4115,7 +4174,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 77,
+    "arenaRank": 78,
     "arenaElo": 1295
   },
   {
@@ -4166,7 +4225,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 78,
+    "arenaRank": 79,
     "arenaElo": 1294
   },
   {
@@ -4217,7 +4276,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 79,
+    "arenaRank": 80,
     "arenaElo": 1292
   },
   {
@@ -4268,7 +4327,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by DeepSeek with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 80,
+    "arenaRank": 81,
     "arenaElo": 1290
   },
   {
@@ -4319,7 +4378,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by NVIDIA with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 81,
+    "arenaRank": 82,
     "arenaElo": 1288
   },
   {
@@ -4370,7 +4429,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Moonshot AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 82,
+    "arenaRank": 83,
     "arenaElo": 1286
   },
   {
@@ -4421,7 +4480,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Xiaomi AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 83,
+    "arenaRank": 84,
     "arenaElo": 1285
   },
   {
@@ -4472,7 +4531,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Upstage with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 84,
+    "arenaRank": 85,
     "arenaElo": 1283
   },
   {
@@ -4523,7 +4582,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Meituan AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 85,
+    "arenaRank": 86,
     "arenaElo": 1281
   },
   {
@@ -4574,7 +4633,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 86,
+    "arenaRank": 87,
     "arenaElo": 1279
   },
   {
@@ -4625,7 +4684,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 87,
+    "arenaRank": 88,
     "arenaElo": 1277
   },
   {
@@ -4676,7 +4735,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by MiniMax with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 88,
+    "arenaRank": 89,
     "arenaElo": 1276
   },
   {
@@ -4727,7 +4786,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Xiaomi AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 89,
+    "arenaRank": 90,
     "arenaElo": 1274
   },
   {
@@ -4778,7 +4837,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Meta AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 90,
+    "arenaRank": 91,
     "arenaElo": 1272
   },
   {
@@ -4829,7 +4888,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 91,
+    "arenaRank": 92,
     "arenaElo": 1270
   },
   {
@@ -4880,7 +4939,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Zhipu AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 92,
+    "arenaRank": 93,
     "arenaElo": 1268
   },
   {
@@ -4931,7 +4990,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 93,
+    "arenaRank": 94,
     "arenaElo": 1266
   },
   {
@@ -4982,7 +5041,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by DeepSeek with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 94,
+    "arenaRank": 95,
     "arenaElo": 1265
   },
   {
@@ -5033,7 +5092,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 95,
+    "arenaRank": 96,
     "arenaElo": 1263
   },
   {
@@ -5084,7 +5143,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 96,
+    "arenaRank": 97,
     "arenaElo": 1261
   },
   {
@@ -5135,7 +5194,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 97,
+    "arenaRank": 98,
     "arenaElo": 1259
   },
   {
@@ -5186,7 +5245,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by xAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 98,
+    "arenaRank": 99,
     "arenaElo": 1257
   },
   {
@@ -5237,7 +5296,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Baidu with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 99,
+    "arenaRank": 100,
     "arenaElo": 1256
   },
   {
@@ -5288,7 +5347,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by DeepSeek with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 100,
+    "arenaRank": 101,
     "arenaElo": 1254
   },
   {
@@ -5339,7 +5398,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 101,
+    "arenaRank": 102,
     "arenaElo": 1252
   },
   {
@@ -5390,7 +5449,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by DeepSeek with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 102,
+    "arenaRank": 103,
     "arenaElo": 1250
   },
   {
@@ -5441,7 +5500,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Microsoft AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 103,
+    "arenaRank": 104,
     "arenaElo": 1248
   },
   {
@@ -5492,7 +5551,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 104,
+    "arenaRank": 105,
     "arenaElo": 1247
   },
   {
@@ -5543,7 +5602,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Anthropic with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 105,
+    "arenaRank": 106,
     "arenaElo": 1245
   },
   {
@@ -5596,7 +5655,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by ByteDance with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 106,
+    "arenaRank": 107,
     "arenaElo": 1243
   },
   {
@@ -5647,7 +5706,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by MiniMax with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 107,
+    "arenaRank": 108,
     "arenaElo": 1241
   },
   {
@@ -5698,7 +5757,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by xAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 108,
+    "arenaRank": 109,
     "arenaElo": 1239
   },
   {
@@ -5749,7 +5808,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 109,
+    "arenaRank": 110,
     "arenaElo": 1238
   },
   {
@@ -5800,7 +5859,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by xAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 110,
+    "arenaRank": 111,
     "arenaElo": 1236
   },
   {
@@ -5851,7 +5910,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 111,
+    "arenaRank": 112,
     "arenaElo": 1234
   },
   {
@@ -5902,7 +5961,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 112,
+    "arenaRank": 113,
     "arenaElo": 1232
   },
   {
@@ -5955,7 +6014,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 113,
+    "arenaRank": 114,
     "arenaElo": 1230
   },
   {
@@ -6006,7 +6065,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Amazon AWS with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 114,
+    "arenaRank": 115,
     "arenaElo": 1229
   },
   {
@@ -6057,7 +6116,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Xiaomi AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 115,
+    "arenaRank": 116,
     "arenaElo": 1227
   },
   {
@@ -6108,7 +6167,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 116,
+    "arenaRank": 117,
     "arenaElo": 1225
   },
   {
@@ -6159,7 +6218,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by xAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 117,
+    "arenaRank": 118,
     "arenaElo": 1223
   },
   {
@@ -6210,7 +6269,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Zhipu AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 118,
+    "arenaRank": 119,
     "arenaElo": 1221
   },
   {
@@ -6261,7 +6320,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 119,
+    "arenaRank": 120,
     "arenaElo": 1220
   },
   {
@@ -6314,7 +6373,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 120,
+    "arenaRank": 121,
     "arenaElo": 1218
   },
   {
@@ -6365,7 +6424,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 121,
+    "arenaRank": 122,
     "arenaElo": 1216
   },
   {
@@ -6416,7 +6475,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Anthropic with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 122,
+    "arenaRank": 123,
     "arenaElo": 1214
   },
   {
@@ -6469,7 +6528,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 123,
+    "arenaRank": 124,
     "arenaElo": 1212
   },
   {
@@ -6520,7 +6579,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 124,
+    "arenaRank": 125,
     "arenaElo": 1211
   },
   {
@@ -6571,7 +6630,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 125,
+    "arenaRank": 126,
     "arenaElo": 1209
   },
   {
@@ -6622,7 +6681,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 126,
+    "arenaRank": 127,
     "arenaElo": 1207
   },
   {
@@ -6673,7 +6732,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 127,
+    "arenaRank": 128,
     "arenaElo": 1205
   },
   {
@@ -6724,7 +6783,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Zhipu AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 128,
+    "arenaRank": 129,
     "arenaElo": 1203
   },
   {
@@ -6775,7 +6834,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Microsoft AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 129,
+    "arenaRank": 130,
     "arenaElo": 1201
   },
   {
@@ -6826,7 +6885,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 130,
+    "arenaRank": 131,
     "arenaElo": 1200
   },
   {
@@ -6877,7 +6936,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Meituan AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 131,
+    "arenaRank": 132,
     "arenaElo": 1198
   },
   {
@@ -6928,7 +6987,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by DeepSeek with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 132,
+    "arenaRank": 133,
     "arenaElo": 1196
   },
   {
@@ -6979,7 +7038,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Microsoft AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 133,
+    "arenaRank": 134,
     "arenaElo": 1194
   },
   {
@@ -7030,7 +7089,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Alibaba Cloud with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 134,
+    "arenaRank": 135,
     "arenaElo": 1192
   },
   {
@@ -7081,7 +7140,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Zhipu AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 135,
+    "arenaRank": 136,
     "arenaElo": 1191
   },
   {
@@ -7134,7 +7193,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Google DeepMind with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 136,
+    "arenaRank": 137,
     "arenaElo": 1189
   },
   {
@@ -7185,7 +7244,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Anthropic with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 137,
+    "arenaRank": 138,
     "arenaElo": 1187
   },
   {
@@ -7238,7 +7297,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by Xiaomi AI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 138,
+    "arenaRank": 139,
     "arenaElo": 1185
   },
   {
@@ -7289,7 +7348,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 139,
+    "arenaRank": 140,
     "arenaElo": 1183
   },
   {
@@ -7340,7 +7399,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 140,
+    "arenaRank": 141,
     "arenaElo": 1182
   },
   {
@@ -7391,7 +7450,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by OpenAI with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 141,
+    "arenaRank": 142,
     "arenaElo": 1180
   },
   {
@@ -7442,7 +7501,7 @@ export const ALL_135_MODELS: AIModel[] = [
     ],
     "architectureNotes": "Engineered by MiniMax with state-of-the-art post-training alignment, multi-head latent attention, and verified test-time scaling.",
     "link": "https://arena.ai/",
-    "arenaRank": 142,
+    "arenaRank": 143,
     "arenaElo": 1178
   },
   {
@@ -7988,6 +8047,15 @@ export const ARENA_LEADERBOARD_ENTRIES = [
   },
   {
     "rank": 54,
+    "modelName": "Claude Haiku 5.5",
+    "developer": "Anthropic",
+    "score": 1338,
+    "date": "Oct 2026",
+    "verifiedByNextVector": true,
+    "costPerRun": "$0.10"
+  },
+  {
+    "rank": 55,
     "modelName": "Muse Spark",
     "developer": "Meta AI",
     "score": 1337,
@@ -7996,7 +8064,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.80"
   },
   {
-    "rank": 55,
+    "rank": 56,
     "modelName": "GPT-5.2",
     "developer": "OpenAI",
     "score": 1335,
@@ -8005,7 +8073,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.60"
   },
   {
-    "rank": 56,
+    "rank": 57,
     "modelName": "MiniMax M3",
     "developer": "MiniMax",
     "score": 1333,
@@ -8014,7 +8082,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 57,
+    "rank": 58,
     "modelName": "Grok-4 Heavy",
     "developer": "xAI",
     "score": 1332,
@@ -8023,7 +8091,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$5.00"
   },
   {
-    "rank": 58,
+    "rank": 59,
     "modelName": "Laguna S 2.1",
     "developer": "Poolside",
     "score": 1330,
@@ -8032,7 +8100,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 59,
+    "rank": 60,
     "modelName": "Muse Spark 1.2",
     "developer": "Meta AI",
     "score": 1328,
@@ -8041,7 +8109,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.00"
   },
   {
-    "rank": 60,
+    "rank": 61,
     "modelName": "DeepSeek-V4-Flash-Max",
     "developer": "DeepSeek",
     "score": 1326,
@@ -8050,7 +8118,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.14"
   },
   {
-    "rank": 61,
+    "rank": 62,
     "modelName": "Qwen3.6 Plus",
     "developer": "Alibaba Cloud",
     "score": 1324,
@@ -8059,7 +8127,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 62,
+    "rank": 63,
     "modelName": "GLM-5.1",
     "developer": "Zhipu AI",
     "score": 1322,
@@ -8068,7 +8136,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 63,
+    "rank": 64,
     "modelName": "Seed 2.0 Pro",
     "developer": "ByteDance",
     "score": 1321,
@@ -8077,7 +8145,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.80"
   },
   {
-    "rank": 64,
+    "rank": 65,
     "modelName": "Kimi K2.7 Code",
     "developer": "Moonshot AI",
     "score": 1319,
@@ -8086,7 +8154,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 65,
+    "rank": 66,
     "modelName": "Kimi K2.5",
     "developer": "Moonshot AI",
     "score": 1317,
@@ -8095,7 +8163,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.80"
   },
   {
-    "rank": 66,
+    "rank": 67,
     "modelName": "Inkling-Small",
     "developer": "Thinking Machines Lab",
     "score": 1315,
@@ -8104,7 +8172,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 67,
+    "rank": 68,
     "modelName": "Qwen3.5-397B-A17B",
     "developer": "Alibaba Cloud",
     "score": 1313,
@@ -8113,7 +8181,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.40"
   },
   {
-    "rank": 68,
+    "rank": 69,
     "modelName": "Gemini 3.5 Flash Cyber",
     "developer": "Google DeepMind",
     "score": 1312,
@@ -8122,7 +8190,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.10"
   },
   {
-    "rank": 69,
+    "rank": 70,
     "modelName": "Gemini 3 Pro",
     "developer": "Google DeepMind",
     "score": 1310,
@@ -8131,7 +8199,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.25"
   },
   {
-    "rank": 70,
+    "rank": 71,
     "modelName": "Claude Opus 4.5",
     "developer": "Anthropic",
     "score": 1308,
@@ -8140,7 +8208,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$15.00"
   },
   {
-    "rank": 71,
+    "rank": 72,
     "modelName": "Claude Sonnet 4.6",
     "developer": "Anthropic",
     "score": 1306,
@@ -8149,7 +8217,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$3.00"
   },
   {
-    "rank": 72,
+    "rank": 73,
     "modelName": "GLM-5",
     "developer": "Zhipu AI",
     "score": 1304,
@@ -8158,7 +8226,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 73,
+    "rank": 74,
     "modelName": "Step-3.5-Flash",
     "developer": "StepFun",
     "score": 1303,
@@ -8167,7 +8235,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 74,
+    "rank": 75,
     "modelName": "MiniMax M2.5",
     "developer": "MiniMax",
     "score": 1301,
@@ -8176,7 +8244,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 75,
+    "rank": 76,
     "modelName": "Gemini 3 Flash",
     "developer": "Google DeepMind",
     "score": 1299,
@@ -8185,7 +8253,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.10"
   },
   {
-    "rank": 76,
+    "rank": 77,
     "modelName": "GPT-5.1 Thinking",
     "developer": "OpenAI",
     "score": 1297,
@@ -8194,7 +8262,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$15.00"
   },
   {
-    "rank": 77,
+    "rank": 78,
     "modelName": "GPT-5.1 Instant",
     "developer": "OpenAI",
     "score": 1295,
@@ -8203,7 +8271,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 78,
+    "rank": 79,
     "modelName": "GPT-5.3 Codex",
     "developer": "OpenAI",
     "score": 1294,
@@ -8212,7 +8280,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.50"
   },
   {
-    "rank": 79,
+    "rank": 80,
     "modelName": "GPT-5.1",
     "developer": "OpenAI",
     "score": 1292,
@@ -8221,7 +8289,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 80,
+    "rank": 81,
     "modelName": "DeepSeek-V4-Flash-0423",
     "developer": "DeepSeek",
     "score": 1290,
@@ -8230,7 +8298,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.14"
   },
   {
-    "rank": 81,
+    "rank": 82,
     "modelName": "Nemotron 3 Ultra (550B A55B)",
     "developer": "NVIDIA",
     "score": 1288,
@@ -8239,7 +8307,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 82,
+    "rank": 83,
     "modelName": "Kimi K2-Thinking-0905",
     "developer": "Moonshot AI",
     "score": 1286,
@@ -8248,7 +8316,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.50"
   },
   {
-    "rank": 83,
+    "rank": 84,
     "modelName": "MiMo-V2-Pro",
     "developer": "Xiaomi AI",
     "score": 1285,
@@ -8257,7 +8325,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 84,
+    "rank": 85,
     "modelName": "Solar Pro 4",
     "developer": "Upstage",
     "score": 1283,
@@ -8266,7 +8334,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 85,
+    "rank": 86,
     "modelName": "LongCat-Flash-Thinking-2601",
     "developer": "Meituan AI",
     "score": 1281,
@@ -8275,7 +8343,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 86,
+    "rank": 87,
     "modelName": "Qwen3.6-27B",
     "developer": "Alibaba Cloud",
     "score": 1279,
@@ -8284,7 +8352,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 87,
+    "rank": 88,
     "modelName": "GPT-5.1 High",
     "developer": "OpenAI",
     "score": 1277,
@@ -8293,7 +8361,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 88,
+    "rank": 89,
     "modelName": "MiniMax M2.7",
     "developer": "MiniMax",
     "score": 1276,
@@ -8302,7 +8370,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 89,
+    "rank": 90,
     "modelName": "MiMo-V2.5",
     "developer": "Xiaomi AI",
     "score": 1274,
@@ -8311,7 +8379,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 90,
+    "rank": 91,
     "modelName": "Muse Glimmer-30B",
     "developer": "Meta AI",
     "score": 1272,
@@ -8320,7 +8388,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.30"
   },
   {
-    "rank": 91,
+    "rank": 92,
     "modelName": "Qwen3.5-122B-A10B",
     "developer": "Alibaba Cloud",
     "score": 1270,
@@ -8329,7 +8397,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.40"
   },
   {
-    "rank": 92,
+    "rank": 93,
     "modelName": "GLM-4.7",
     "developer": "Zhipu AI",
     "score": 1268,
@@ -8338,7 +8406,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 93,
+    "rank": 94,
     "modelName": "GPT-5.2 Codex",
     "developer": "OpenAI",
     "score": 1266,
@@ -8347,7 +8415,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.60"
   },
   {
-    "rank": 94,
+    "rank": 95,
     "modelName": "DeepSeek-V3.2-Speciale",
     "developer": "DeepSeek",
     "score": 1265,
@@ -8356,7 +8424,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.35"
   },
   {
-    "rank": 95,
+    "rank": 96,
     "modelName": "GPT-5",
     "developer": "OpenAI",
     "score": 1263,
@@ -8365,7 +8433,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.60"
   },
   {
-    "rank": 96,
+    "rank": 97,
     "modelName": "GPT-5 High",
     "developer": "OpenAI",
     "score": 1261,
@@ -8374,7 +8442,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 97,
+    "rank": 98,
     "modelName": "Qwen3.5-27B",
     "developer": "Alibaba Cloud",
     "score": 1259,
@@ -8383,7 +8451,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 98,
+    "rank": 99,
     "modelName": "Grok-4",
     "developer": "xAI",
     "score": 1257,
@@ -8392,7 +8460,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$3.00"
   },
   {
-    "rank": 99,
+    "rank": 100,
     "modelName": "ERNIE 5.0",
     "developer": "Baidu",
     "score": 1256,
@@ -8401,7 +8469,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.80"
   },
   {
-    "rank": 100,
+    "rank": 101,
     "modelName": "DeepSeek-V3.2",
     "developer": "DeepSeek",
     "score": 1254,
@@ -8410,7 +8478,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.27"
   },
   {
-    "rank": 101,
+    "rank": 102,
     "modelName": "Gemma 4 31B",
     "developer": "Google DeepMind",
     "score": 1252,
@@ -8419,7 +8487,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.25"
   },
   {
-    "rank": 102,
+    "rank": 103,
     "modelName": "DeepSeek-V3.2 (Thinking)",
     "developer": "DeepSeek",
     "score": 1250,
@@ -8428,7 +8496,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.35"
   },
   {
-    "rank": 103,
+    "rank": 104,
     "modelName": "MAI-Thinking-1",
     "developer": "Microsoft AI",
     "score": 1248,
@@ -8437,7 +8505,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.50"
   },
   {
-    "rank": 104,
+    "rank": 105,
     "modelName": "Qwen3.6-35B-A3B",
     "developer": "Alibaba Cloud",
     "score": 1247,
@@ -8446,7 +8514,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 105,
+    "rank": 106,
     "modelName": "Claude Sonnet 4.5",
     "developer": "Anthropic",
     "score": 1245,
@@ -8455,7 +8523,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$3.00"
   },
   {
-    "rank": 106,
+    "rank": 107,
     "modelName": "Seed 2.0 Lite",
     "developer": "ByteDance",
     "score": 1243,
@@ -8464,7 +8532,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 107,
+    "rank": 108,
     "modelName": "MiniMax M2.1",
     "developer": "MiniMax",
     "score": 1241,
@@ -8473,7 +8541,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 108,
+    "rank": 109,
     "modelName": "Grok 4 Fast",
     "developer": "xAI",
     "score": 1239,
@@ -8482,7 +8550,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.30"
   },
   {
-    "rank": 109,
+    "rank": 110,
     "modelName": "GPT-5.5 Instant",
     "developer": "OpenAI",
     "score": 1238,
@@ -8491,7 +8559,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.60"
   },
   {
-    "rank": 110,
+    "rank": 111,
     "modelName": "Grok-3 Mini",
     "developer": "xAI",
     "score": 1236,
@@ -8500,7 +8568,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.30"
   },
   {
-    "rank": 111,
+    "rank": 112,
     "modelName": "GPT-5.1 Medium",
     "developer": "OpenAI",
     "score": 1234,
@@ -8509,7 +8577,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 112,
+    "rank": 113,
     "modelName": "o3",
     "developer": "OpenAI",
     "score": 1232,
@@ -8518,7 +8586,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$15.00"
   },
   {
-    "rank": 113,
+    "rank": 114,
     "modelName": "Gemini 3.1 Flash-Lite",
     "developer": "Google DeepMind",
     "score": 1230,
@@ -8527,7 +8595,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.05"
   },
   {
-    "rank": 114,
+    "rank": 115,
     "modelName": "Nova 2 Pro",
     "developer": "Amazon AWS",
     "score": 1229,
@@ -8536,7 +8604,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.80"
   },
   {
-    "rank": 115,
+    "rank": 116,
     "modelName": "MiMo-V2-Flash",
     "developer": "Xiaomi AI",
     "score": 1227,
@@ -8545,7 +8613,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 116,
+    "rank": 117,
     "modelName": "Qwen3.5-35B-A3B",
     "developer": "Alibaba Cloud",
     "score": 1225,
@@ -8554,7 +8622,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 117,
+    "rank": 118,
     "modelName": "Grok-3",
     "developer": "xAI",
     "score": 1223,
@@ -8563,7 +8631,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.00"
   },
   {
-    "rank": 118,
+    "rank": 119,
     "modelName": "GLM-5V-Turbo",
     "developer": "Zhipu AI",
     "score": 1221,
@@ -8572,7 +8640,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.30"
   },
   {
-    "rank": 119,
+    "rank": 120,
     "modelName": "GPT-5.4 mini",
     "developer": "OpenAI",
     "score": 1220,
@@ -8581,7 +8649,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.60"
   },
   {
-    "rank": 120,
+    "rank": 121,
     "modelName": "Gemini 3.5 Flash-Lite",
     "developer": "Google DeepMind",
     "score": 1218,
@@ -8590,7 +8658,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.05"
   },
   {
-    "rank": 121,
+    "rank": 122,
     "modelName": "GPT-5 Medium",
     "developer": "OpenAI",
     "score": 1216,
@@ -8599,7 +8667,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 122,
+    "rank": 123,
     "modelName": "Claude Opus 4.1",
     "developer": "Anthropic",
     "score": 1214,
@@ -8608,7 +8676,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$15.00"
   },
   {
-    "rank": 123,
+    "rank": 124,
     "modelName": "Gemini 2.5 Pro Preview 06-05",
     "developer": "Google DeepMind",
     "score": 1212,
@@ -8617,7 +8685,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.25"
   },
   {
-    "rank": 124,
+    "rank": 125,
     "modelName": "Gemma 4 26B-A4B",
     "developer": "Google DeepMind",
     "score": 1211,
@@ -8626,7 +8694,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.25"
   },
   {
-    "rank": 125,
+    "rank": 126,
     "modelName": "GPT-5.1 Codex",
     "developer": "OpenAI",
     "score": 1209,
@@ -8635,7 +8703,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.50"
   },
   {
-    "rank": 126,
+    "rank": 127,
     "modelName": "GPT-5.3 Chat",
     "developer": "OpenAI",
     "score": 1207,
@@ -8644,7 +8712,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$2.50"
   },
   {
-    "rank": 127,
+    "rank": 128,
     "modelName": "GPT-5.1 Codex High",
     "developer": "OpenAI",
     "score": 1205,
@@ -8653,7 +8721,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.50"
   },
   {
-    "rank": 128,
+    "rank": 129,
     "modelName": "GLM-4.6",
     "developer": "Zhipu AI",
     "score": 1203,
@@ -8662,7 +8730,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 129,
+    "rank": 130,
     "modelName": "MAI-Code-1-Flash",
     "developer": "Microsoft AI",
     "score": 1201,
@@ -8671,7 +8739,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 130,
+    "rank": 131,
     "modelName": "GPT OSS 120B",
     "developer": "OpenAI",
     "score": 1200,
@@ -8680,7 +8748,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 131,
+    "rank": 132,
     "modelName": "LongCat-Flash-Thinking",
     "developer": "Meituan AI",
     "score": 1198,
@@ -8689,7 +8757,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 132,
+    "rank": 133,
     "modelName": "DeepSeek-V3.2-Exp",
     "developer": "DeepSeek",
     "score": 1196,
@@ -8698,7 +8766,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.27"
   },
   {
-    "rank": 133,
+    "rank": 134,
     "modelName": "MAI-Code-1.1-Flash",
     "developer": "Microsoft AI",
     "score": 1194,
@@ -8707,7 +8775,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 134,
+    "rank": 135,
     "modelName": "Qwen3-235B-A22B-Thinking-2507",
     "developer": "Alibaba Cloud",
     "score": 1192,
@@ -8716,7 +8784,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.20"
   },
   {
-    "rank": 135,
+    "rank": 136,
     "modelName": "GLM-4.5",
     "developer": "Zhipu AI",
     "score": 1191,
@@ -8725,7 +8793,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.50"
   },
   {
-    "rank": 136,
+    "rank": 137,
     "modelName": "Gemini 2.5 Pro",
     "developer": "Google DeepMind",
     "score": 1189,
@@ -8734,7 +8802,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.25"
   },
   {
-    "rank": 137,
+    "rank": 138,
     "modelName": "Claude Opus 4",
     "developer": "Anthropic",
     "score": 1187,
@@ -8743,7 +8811,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$15.00"
   },
   {
-    "rank": 138,
+    "rank": 139,
     "modelName": "MiMo-V2-Omni",
     "developer": "Xiaomi AI",
     "score": 1185,
@@ -8752,7 +8820,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.00"
   },
   {
-    "rank": 139,
+    "rank": 140,
     "modelName": "o4-mini",
     "developer": "OpenAI",
     "score": 1183,
@@ -8761,7 +8829,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$1.10"
   },
   {
-    "rank": 140,
+    "rank": 141,
     "modelName": "GPT OSS 20B High",
     "developer": "OpenAI",
     "score": 1182,
@@ -8770,7 +8838,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.15"
   },
   {
-    "rank": 141,
+    "rank": 142,
     "modelName": "GPT-5 mini",
     "developer": "OpenAI",
     "score": 1180,
@@ -8779,7 +8847,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "costPerRun": "$0.15"
   },
   {
-    "rank": 142,
+    "rank": 143,
     "modelName": "MiniMax M2",
     "developer": "MiniMax",
     "score": 1178,

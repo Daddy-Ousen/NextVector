@@ -150,6 +150,39 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-10-08-nobel-chemistry-soai-kagan',
+    year: 2026,
+    month: 'Oct 8',
+    title: 'Nobel Prize in Chemistry 2026 Awarded to Henri Kagan and Kenso Soai for Asymmetric Autocatalysis',
+    category: 'Fundamental Science',
+    summary: 'The Royal Swedish Academy of Sciences honors Kagan and Soai for non-linear enantioselective catalysis and the Soai reaction, explaining the primordial chemical emergence of homochirality.',
+    impactScore: 98,
+    keyShift: 'Unraveled the fundamental mechanism of biological mirror-symmetry breaking and established non-linear enantiopure pharmaceutical synthesis.',
+    articleSlug: 'nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis'
+  },
+  {
+    id: 'time-2026-10-08-claude-haiku-effort-controls',
+    year: 2026,
+    month: 'Oct 8',
+    title: 'Anthropic Completes Claude 5.5 Generation with Haiku 5.5 Native Effort Controls',
+    category: 'AI Breakthrough',
+    summary: 'Anthropic releases Claude Haiku 5.5, introducing dynamic test-time compute scaling to compact models and driving sub-agent inference costs to $0.10 per million tokens.',
+    impactScore: 96,
+    keyShift: 'The institutionalization of dynamic test-time reasoning compute across high-concurrency sub-agent swarm architectures.',
+    articleSlug: 'anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows'
+  },
+  {
+    id: 'time-2026-10-08-openai-gpt6-intelligent-ui',
+    year: 2026,
+    month: 'Oct 8',
+    title: 'OpenAI Deploys GPT-6 Globally with Intelligent UI Dynamic Interactive Workspaces',
+    category: 'AI Breakthrough',
+    summary: 'OpenAI transitions conversational AI into dynamic generative canvases with Thinking Streaming and interactive widgets across consumer and enterprise tiers.',
+    impactScore: 95,
+    keyShift: 'The structural shift from static text serialization to generative, bidirectional interactive computational canvases in foundation models.',
+    articleSlug: 'openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout'
+  },
+  {
     id: 'time-2026-10-07-nobel-physics-icecube',
     year: 2026,
     month: 'Oct 7',
@@ -1034,53 +1067,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Wednesday, October 7, 2026',
-  summary: 'A landmark Nobel Prize in Physics, open-source formal mathematics from OpenAI, ultra-fast agent routing APIs, foundational post-quantum OpenSSH releases, and medical deregulation define today\'s intelligence briefing. The Royal Swedish Academy of Sciences awarded the 2026 Nobel Prize in Physics to Francis Halzen for the IceCube Neutrino Observatory, capturing high-energy cosmic neutrinos in South Pole ice. Concurrently, OpenAI published 722 mathematical manuscripts with machine-certified Lean 4 proofs in its public openai/math repository following IAS consultation, and launched the Decisions API powered by gpt-6-luna for 10x faster agent routing. In systems security, OpenSSH 10.6 enabled hybrid post-quantum ML-DSA-44 signatures by default and dropped LZ77 compression. In healthcare law, Utah became the first US state to authorize autonomous AI models to examine patients and prescribe medication under Senate Bill 149.',
+  date: 'Thursday, October 8, 2026',
+  summary: "The 2026 Nobel Prize in Chemistry, Anthropic's completion of the Claude 5.5 generation, OpenAI's global GPT-6 Intelligent UI deployment, Docker's containerized agent runtime, and MIT's memorial honoring Margaret Hamilton define today's intelligence briefing. The Royal Swedish Academy of Sciences awarded the 2026 Nobel Prize in Chemistry to Henri B. Kagan and Kenso Soai for discovering non-linear asymmetric amplification and the Soai autocatalytic reaction, resolving the primordial origin of biological homochirality. Concurrently, Anthropic dropped Claude Haiku 5.5 with native effort controls for sub-agent swarms at $0.10/M tokens, while OpenAI deployed GPT-6 with Intelligent UI dynamic interactive workspaces. In infrastructure, Docker open-sourced Docker Agent with native Model Context Protocol support, and the global computing community honored Apollo flight software architect Margaret Hamilton.",
   items: [
     {
       id: 'brief-1',
-      headline: 'Nobel Prize in Physics 2026: Francis Halzen Awarded for IceCube Neutrino Observatory',
-      category: 'science' as const,
+      headline: 'Claude Haiku 5.5 Released: Anthropic Drops Native Effort Controls and $0.10 Subagent Inference',
+      category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'The Royal Swedish Academy of Sciences honors Francis Halzen for instrumenting a cubic kilometer of Antarctic ice to capture high-energy neutrinos and launch multi-messenger astronomy.',
-      whyItMatters: 'Unlocks the century-old mystery of cosmic ray origins, pinpointing distant blazars and violent cosmic accelerators with unoccluded neutrino vectors.',
-      articleSlug: 'nobel-prize-physics-2026-francis-halzen-icecube-neutrino-observatory'
+      summary: 'Anthropic completes the Claude 5.5 generation with Haiku 5.5, introducing dynamic test-time compute effort tuning and 58.2% SWE-bench capability at $0.10 per million input tokens.',
+      whyItMatters: 'Provides the high-throughput, low-latency economic engine required to scale multi-agent swarms without prohibitive API inference expenditure.',
+      articleSlug: 'anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows'
     },
     {
       id: 'brief-2',
-      headline: 'OpenAI Open-Sources 722 Mathematical Manuscripts with Machine-Certified Lean 4 Proofs',
-      category: 'ai' as const,
+      headline: 'Nobel Prize in Chemistry 2026: Henri Kagan and Kenso Soai Honored for Asymmetric Autocatalysis',
+      category: 'science' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Following consultations with the Institute for Advanced Study, OpenAI releases openai/math with 372 result families, formal Lean verifications, and compute telemetry.',
-      whyItMatters: 'Establishes a rigorous, machine-verifiable protocol for generative mathematical claims, moving past promotional announcements into open scientific verification.',
-      articleSlug: 'openai-math-repository-formal-proofs-lean-ias-consultation'
+      summary: "The Royal Swedish Academy of Sciences honors Kagan and Soai for non-linear enantioselective amplification and the Soai reaction, explaining the origin of life's mirror asymmetry.",
+      whyItMatters: 'Solves the 178-year-old homochirality enigma while transforming single-enantiomer catalytic manufacturing across global pharmaceutical pipelines.',
+      articleSlug: 'nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis'
     },
     {
       id: 'brief-3',
-      headline: 'OpenAI Drops Decisions API: 10x Lower Latency Structured Routing with gpt-6-luna',
+      headline: 'OpenAI Deploys GPT-6 Globally with Intelligent UI: Interactive Workspaces and Thinking Streaming',
       category: 'ai' as const,
       urgency: 'High Impact' as const,
-      summary: 'OpenAI launches POST /decisions in public beta, providing sub-100ms typed categorical evaluations, probabilities, and rubric scoring for agent swarms.',
-      whyItMatters: 'Eliminates autoregressive generation latency bottlenecks, allowing autonomous multi-agent pipelines to execute interactive routing at wire speed.',
-      articleSlug: 'openai-launches-decisions-api-fast-routing-structured-evaluations'
+      summary: 'OpenAI begins global rollout of GPT-6 across ChatGPT tiers, transitioning static chats into interactive computational canvases with live sliders and dynamic form tools.',
+      whyItMatters: 'Ends the era of static markdown text walls, establishing generative user interfaces as the standard interaction model for foundation models.',
+      articleSlug: 'openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout'
     },
     {
       id: 'brief-4',
-      headline: 'OpenSSH 10.6 Released: Enables Hybrid Post-Quantum Signatures by Default and Drops LZ77',
+      headline: 'Docker Launches Docker Agent: Declarative YAML Runtime, Native MCP Tooling, and OCI Packaging',
       category: 'technology' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'OpenSSH activates ssh-mldsa44-ed25519 hybrid lattice signatures by default and completely disables LZ77 dictionary compression to defeat side-channel leakage.',
-      whyItMatters: 'Protects global enterprise and cloud server administration against quantum harvesting while eliminating compression side-channels.',
-      articleSlug: 'openssh-10-6-released-post-quantum-mldsa-ed25519-lz77-mitigation'
+      urgency: 'High Impact' as const,
+      summary: 'Docker open-sources docker/docker-agent and bundles it into Docker Desktop 4.63+, standardizing agent execution with agent.yaml manifests and Model Context Protocol routing.',
+      whyItMatters: 'Standardizes autonomous agent execution across local workstations and CI/CD pipelines with cgroups resource boundaries and OCI artifact registries.',
+      articleSlug: 'docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution'
     },
     {
       id: 'brief-5',
-      headline: 'Utah Becomes First US State to Authorize Autonomous AI to Examine Patients and Prescribe Drugs',
+      headline: 'Margaret Hamilton Memorial: MIT Honors the Apollo Flight Software Architect Who Coined Software Engineering',
       category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'Under SB 149 sandbox, Utah approves Nolla Health pilot letting computer vision and clinical reasoning models evaluate conditions and issue prescriptions.',
-      whyItMatters: 'Breaks the century-old human-only prescribing franchise, testing autonomous medicine in rural healthcare while triggering AMA malpractice scrutiny.',
-      articleSlug: 'utah-first-state-authorizes-ai-examine-patients-prescribe-medication'
+      urgency: 'Notable Shift' as const,
+      summary: 'MIT publishes an official memorial for Margaret Hamilton (1936–2026), commemorating the pioneer whose AGC asynchronous priority scheduling saved the Apollo 11 lunar landing.',
+      whyItMatters: 'Celebrates the architect who established software engineering as a rigorous discipline and laid the foundational doctrines of fault-tolerant real-time systems.',
+      articleSlug: 'margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis'
     }
   ]
 };
@@ -1088,32 +1121,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Nobel Physics 2026',
-    text: 'Nobel in Physics awarded to Francis Halzen for IceCube Antarctic neutrino observatory',
-    articleSlug: 'nobel-prize-physics-2026-francis-halzen-icecube-neutrino-observatory'
+    tag: 'Claude Haiku 5.5',
+    text: 'Anthropic releases Claude Haiku 5.5 with effort controls and $0.10/M inference',
+    articleSlug: 'anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows'
   },
   {
     id: 'sig-2',
-    tag: 'OpenAI Math Repo',
-    text: 'OpenAI publishes 722 math manuscripts and formal Lean proofs in open math repository',
-    articleSlug: 'openai-math-repository-formal-proofs-lean-ias-consultation'
+    tag: 'Nobel Chemistry',
+    text: 'Henri Kagan and Kenso Soai win Nobel Prize in Chemistry 2026 for asymmetric autocatalysis',
+    articleSlug: 'nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis'
   },
   {
     id: 'sig-3',
-    tag: 'Decisions API',
-    text: 'OpenAI launches Decisions API: 10x faster categorical evaluation using gpt-6-luna',
-    articleSlug: 'openai-launches-decisions-api-fast-routing-structured-evaluations'
+    tag: 'GPT-6 Intelligent UI',
+    text: 'OpenAI deploys GPT-6 with Intelligent UI dynamic workspaces and Thinking Streaming',
+    articleSlug: 'openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout'
   },
   {
     id: 'sig-4',
-    tag: 'OpenSSH 10.6',
-    text: 'OpenSSH 10.6 enables hybrid post-quantum ML-DSA-44 by default and disables LZ77',
-    articleSlug: 'openssh-10-6-released-post-quantum-mldsa-ed25519-lz77-mitigation'
+    tag: 'Docker Agent',
+    text: 'Docker open-sources Docker Agent runtime with native Model Context Protocol support',
+    articleSlug: 'docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution'
   },
   {
     id: 'sig-5',
-    tag: 'Utah AI Prescribing',
-    text: 'Utah becomes first state to authorize AI to examine patients and prescribe medication',
-    articleSlug: 'utah-first-state-authorizes-ai-examine-patients-prescribe-medication'
+    tag: 'Margaret Hamilton',
+    text: 'MIT honors Apollo Guidance Computer architect Margaret Hamilton (1936–2026)',
+    articleSlug: 'margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis'
   }
 ];

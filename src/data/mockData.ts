@@ -150,6 +150,28 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-10-09-virtual-cell-1-8b-coalition',
+    year: 2026,
+    month: 'Oct 9',
+    title: 'The Virtual Cell Coalition: $1.8B Multi-Sector Mobilization to Model Cellular Biology in Silico',
+    category: 'Fundamental Science',
+    summary: 'CZ Biohub, the US Department of Energy, NIH, DeepMind, and Meta assemble $1.8 billion to generate AI-ready biological data and train predictive cellular foundation models.',
+    impactScore: 97,
+    keyShift: 'The foundational transition of molecular biology from empirical in vitro experimentation to exascale in silico predictive simulation.',
+    articleSlug: 'virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data'
+  },
+  {
+    id: 'time-2026-10-09-crypto-bunker-mode-ai-ecdsa',
+    year: 2026,
+    month: 'Oct 9',
+    title: "Ethereum Researchers Issue 'Bunker Mode' Warning on AI Mathematical Threat to ECDSA Elliptic Curves",
+    category: 'Computing Architecture',
+    summary: 'Justin Drake and Vitalik Buterin debate whether frontier AI mathematical reasoning models could break ECDSA discrete logarithm problems years ahead of quantum computers.',
+    impactScore: 95,
+    keyShift: 'The formal recognition of AI automated theorem provers as a distinct cryptographic threat vector on classical elliptic curves.',
+    articleSlug: 'ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis'
+  },
+  {
     id: 'time-2026-10-08-nobel-chemistry-soai-kagan',
     year: 2026,
     month: 'Oct 8',
@@ -1067,53 +1089,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Thursday, October 8, 2026',
-  summary: "The 2026 Nobel Prize in Chemistry, Anthropic's completion of the Claude 5.5 generation, OpenAI's global GPT-6 Intelligent UI deployment, Docker's containerized agent runtime, and MIT's memorial honoring Margaret Hamilton define today's intelligence briefing. The Royal Swedish Academy of Sciences awarded the 2026 Nobel Prize in Chemistry to Henri B. Kagan and Kenso Soai for discovering non-linear asymmetric amplification and the Soai autocatalytic reaction, resolving the primordial origin of biological homochirality. Concurrently, Anthropic dropped Claude Haiku 5.5 with native effort controls for sub-agent swarms at $0.10/M tokens, while OpenAI deployed GPT-6 with Intelligent UI dynamic interactive workspaces. In infrastructure, Docker open-sourced Docker Agent with native Model Context Protocol support, and the global computing community honored Apollo flight software architect Margaret Hamilton.",
+  date: 'Friday, October 9, 2026',
+  summary: "A landmark $1.8B global biological foundation model commitment, an escalating cryptographic threat debate over AI math advances, compiler-level undefined behavior reforms in ISO C, mathematical epistemology manifestos, and real-time Rust path tracing define today's intelligence briefing. The Chan Zuckerberg Biohub, US Department of Energy, NIH, Google DeepMind, and Meta united in a $1.8 billion alliance to create open AI-ready biological data and train the world's first predictive Virtual Cell on exascale supercomputers. In systems security, Ethereum Foundation researcher Justin Drake urged crypto holders into 'bunker mode' over fears that AI symbolic math solvers could break ECDSA elliptic curve keys before quantum computers, triggering an intense debate with Vitalik Buterin. In systems programming, ISO C Working Group 14 unveiled proposals to systematically eliminate undefined behavior in C2y. In academia, Fields Medalist Terence Tao published a pedagogical defense of human mathematical intuition in the era of machine-certified Lean 4 proofs, while the open-source Rust community shipped Bevy 0.20 featuring real-time path tracing on Apple Metal and DLSS 3.7.",
   items: [
     {
       id: 'brief-1',
-      headline: 'Claude Haiku 5.5 Released: Anthropic Drops Native Effort Controls and $0.10 Subagent Inference',
-      category: 'ai' as const,
+      headline: 'The Virtual Cell Coalition: Biohub, DOE, DeepMind, and Meta Commit $1.8B to AI-Ready Biology Data',
+      category: 'science' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Anthropic completes the Claude 5.5 generation with Haiku 5.5, introducing dynamic test-time compute effort tuning and 58.2% SWE-bench capability at $0.10 per million input tokens.',
-      whyItMatters: 'Provides the high-throughput, low-latency economic engine required to scale multi-agent swarms without prohibitive API inference expenditure.',
-      articleSlug: 'anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows'
+      summary: 'A coordinated public-private alliance mobilizes $1.8 billion across cryo-ET, spatial omics, and DOE exascale supercomputers to build the first universal in silico cellular foundation model.',
+      whyItMatters: 'Transitions biological discovery from empirical trial-and-error assays into rapid, predictive computational simulation of cellular pathology and drug screening.',
+      articleSlug: 'virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data'
     },
     {
       id: 'brief-2',
-      headline: 'Nobel Prize in Chemistry 2026: Henri Kagan and Kenso Soai Honored for Asymmetric Autocatalysis',
-      category: 'science' as const,
+      headline: 'Crypto Enters Bunker Mode Debate: Ethereum Researchers Warn AI Math Solvers Could Threaten ECDSA',
+      category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: "The Royal Swedish Academy of Sciences honors Kagan and Soai for non-linear enantioselective amplification and the Soai reaction, explaining the origin of life's mirror asymmetry.",
-      whyItMatters: 'Solves the 178-year-old homochirality enigma while transforming single-enantiomer catalytic manufacturing across global pharmaceutical pipelines.',
-      articleSlug: 'nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis'
+      summary: 'Following OpenAI math proof releases, Justin Drake warns AI algebraic geometry solvers could break exposed elliptic curve keys, prompting Vitalik Buterin to caution against panic wallet migrations.',
+      whyItMatters: 'Focuses immediate global blockchain engineering attention on the vulnerability of exposed public keys, accelerating post-quantum account abstraction and stealth addresses.',
+      articleSlug: 'ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis'
     },
     {
       id: 'brief-3',
-      headline: 'OpenAI Deploys GPT-6 Globally with Intelligent UI: Interactive Workspaces and Thinking Streaming',
-      category: 'ai' as const,
+      headline: 'ISO C Working Group 14 Moves to Systematically Eliminate Undefined Behavior in Upcoming C2y Standard',
+      category: 'technology' as const,
       urgency: 'High Impact' as const,
-      summary: 'OpenAI begins global rollout of GPT-6 across ChatGPT tiers, transitioning static chats into interactive computational canvases with live sliders and dynamic form tools.',
-      whyItMatters: 'Ends the era of static markdown text walls, establishing generative user interfaces as the standard interaction model for foundation models.',
-      articleSlug: 'openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout'
+      summary: "At Kernel Recipes in Paris, WG14 unveils proposals N3806–N3808, replacing historic optimizer loopholes with defined two's complement wrap, trapping semantics, and formal contracts.",
+      whyItMatters: "Defends C's dominance in kernel and embedded systems against federal memory-safety mandates without incurring the multi-billion-dollar cost of complete Rust rewrites.",
+      articleSlug: 'iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard'
     },
     {
       id: 'brief-4',
-      headline: 'Docker Launches Docker Agent: Declarative YAML Runtime, Native MCP Tooling, and OCI Packaging',
-      category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'Docker open-sources docker/docker-agent and bundles it into Docker Desktop 4.63+, standardizing agent execution with agent.yaml manifests and Model Context Protocol routing.',
-      whyItMatters: 'Standardizes autonomous agent execution across local workstations and CI/CD pipelines with cgroups resource boundaries and OCI artifact registries.',
-      articleSlug: 'docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution'
+      headline: 'Epistemology in the Age of Automated Provers: Terence Tao on the Future of Mathematical Education',
+      category: 'research' as const,
+      urgency: 'Notable Shift' as const,
+      summary: 'Addressing student anxiety following generative Lean 4 math proof drops, Terence Tao and Álvaro Lozano-Robledo publish an influential manifesto on human conceptual intuition versus machine verification.',
+      whyItMatters: 'Frames the evolving division of scientific labor, establishing that directing formal proof search engines requires deeper human conceptual mastery, not less.',
+      articleSlug: 'mathematical-epistemology-automated-provers-terence-tao-lozano-robledo'
     },
     {
       id: 'brief-5',
-      headline: 'Margaret Hamilton Memorial: MIT Honors the Apollo Flight Software Architect Who Coined Software Engineering',
+      headline: 'Bevy 0.20 Released: Solari Real-Time Path Tracing on Metal, WESL Shading, and Bevy Scene Notation',
       category: 'technology' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'MIT publishes an official memorial for Margaret Hamilton (1936–2026), commemorating the pioneer whose AGC asynchronous priority scheduling saved the Apollo 11 lunar landing.',
-      whyItMatters: 'Celebrates the architect who established software engineering as a rigorous discipline and laid the foundational doctrines of fault-tolerant real-time systems.',
-      articleSlug: 'margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis'
+      urgency: 'High Impact' as const,
+      summary: 'The open-source Rust game engine expands its visual pipeline with hardware-accelerated Apple Metal ray tracing, DLSS 3.7 frame generation, and modular WebGPU Extended Shading Language.',
+      whyItMatters: 'Proves that community-driven data-oriented Rust architectures can match commercial proprietary game engines in bleeding-edge photorealistic graphics.',
+      articleSlug: 'bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation'
     }
   ]
 };
@@ -1121,32 +1143,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Claude Haiku 5.5',
-    text: 'Anthropic releases Claude Haiku 5.5 with effort controls and $0.10/M inference',
-    articleSlug: 'anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows'
+    tag: 'Virtual Cell $1.8B',
+    text: 'Biohub, DOE, DeepMind & Meta commit $1.8B to build open AI-ready biological data and Virtual Cell',
+    articleSlug: 'virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data'
   },
   {
     id: 'sig-2',
-    tag: 'Nobel Chemistry',
-    text: 'Henri Kagan and Kenso Soai win Nobel Prize in Chemistry 2026 for asymmetric autocatalysis',
-    articleSlug: 'nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis'
+    tag: 'Bunker Mode Alert',
+    text: 'Justin Drake urges crypto bunker mode over AI discrete log threat as Vitalik warns against panic',
+    articleSlug: 'ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis'
   },
   {
     id: 'sig-3',
-    tag: 'GPT-6 Intelligent UI',
-    text: 'OpenAI deploys GPT-6 with Intelligent UI dynamic workspaces and Thinking Streaming',
-    articleSlug: 'openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout'
+    tag: 'ISO C2y Reform',
+    text: 'ISO C standards committee WG14 moves to eliminate undefined behavior in upcoming C2y standard',
+    articleSlug: 'iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard'
   },
   {
     id: 'sig-4',
-    tag: 'Docker Agent',
-    text: 'Docker open-sources Docker Agent runtime with native Model Context Protocol support',
-    articleSlug: 'docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution'
+    tag: 'Terence Tao Essay',
+    text: 'Terence Tao publishes guidance for math students navigating the era of automated Lean 4 provers',
+    articleSlug: 'mathematical-epistemology-automated-provers-terence-tao-lozano-robledo'
   },
   {
     id: 'sig-5',
-    tag: 'Margaret Hamilton',
-    text: 'MIT honors Apollo Guidance Computer architect Margaret Hamilton (1936–2026)',
-    articleSlug: 'margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis'
+    tag: 'Bevy 0.20 Released',
+    text: 'Bevy 0.20 Rust game engine adds Solari path tracing on Apple Metal, DLSS 3.7, and WESL shaders',
+    articleSlug: 'bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation'
   }
 ];

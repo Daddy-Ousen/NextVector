@@ -2250,5 +2250,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/mathematical-epistemology-automated-provers-terence-tao-lozano-robledo</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
 

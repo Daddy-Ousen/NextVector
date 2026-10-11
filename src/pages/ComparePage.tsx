@@ -20,6 +20,7 @@ import {
   Flame,
 } from 'lucide-react';
 import { MODEL_COUNT } from '../data/modelCount';
+import { PageHeader } from '../components/common/PageHeader';
 
 interface ComparePageProps {
   slug?: string;
@@ -501,7 +502,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
   const canonicalPath = `/compare/${currentPreset.slug}`;
 
   return (
-    <div className="max-w-7xl mx-auto space-y-12 pb-24 px-4 sm:px-6">
+    <div className="space-y-12 pb-24">
       <SEOHead
         title={currentPreset.seoTitle}
         description={currentPreset.seoDescription}
@@ -520,26 +521,15 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
       />
 
       {/* 1. HERO & SHOWDOWN SELECTOR */}
-      <div className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 shadow-2xl relative overflow-hidden">
-        <div className="absolute -right-20 -top-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -left-20 bottom-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative z-10 max-w-4xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
-            <Scale className="w-3.5 h-3.5" />
-            <span>NextVector Head-to-Head Architecture Audit • September 2026</span>
-          </div>
-
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
-            {currentPreset.name}
-          </h1>
-
-          <p className="text-base sm:text-lg text-zinc-400 font-sans leading-relaxed">
-            Unbiased empirical comparisons evaluated across {MODEL_COUNT} models on LMSYS Arena Elo, SWE-bench Verified coding, context length, latency, and true token economics.
-          </p>
-
+      <PageHeader
+        eyebrow="Head-to-Head Model Comparison"
+        icon={<Scale className="w-4 h-4" />}
+        title={currentPreset.name}
+        description={<>Unbiased empirical comparisons evaluated across {MODEL_COUNT} models on LMSYS Arena Elo, SWE-bench Verified coding, context length, latency, and true token economics.</>}
+      >
+        <div className="mt-5 space-y-2 max-w-4xl">
           {/* Category Tabs */}
-          <div className="pt-2 flex items-center gap-2 overflow-x-auto scrollbar-none pb-1">
+          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none fade-right pb-1 pr-8">
             <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider shrink-0 mr-1">
               Category:
             </span>
@@ -549,7 +539,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                 onClick={() => setSelectedCategoryFilter(cat)}
                 className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer shrink-0 ${
                   selectedCategoryFilter === cat
-                    ? 'bg-zinc-800 text-emerald-400 border border-emerald-500/40 font-bold'
+                    ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-bold'
                     : 'bg-zinc-900/60 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
                 }`}
               >
@@ -566,7 +556,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                 <button
                   key={p.slug}
                   onClick={() => onNavigate(`/compare/${p.slug}`)}
-                  className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer ${
+                  className={`px-3 py-1.5 rounded-lg text-xs transition-all cursor-pointer ${
                     isActive
                       ? 'bg-emerald-500 text-zinc-950 font-bold shadow-md shadow-emerald-500/20'
                       : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800'
@@ -578,11 +568,11 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
             })}
           </div>
         </div>
-      </div>
+      </PageHeader>
 
       {/* 2. THE INVERTED PYRAMID EXECUTIVE VERDICT (GEO Optimized for AI Overviews) */}
-      <section className="rounded-3xl bg-zinc-950 border border-emerald-500/30 p-6 md:p-8 space-y-6 shadow-xl relative">
-        <div className="flex items-center gap-2.5 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+      <section className="rounded-2xl bg-zinc-950 border border-emerald-500/30 p-6 md:p-8 space-y-6 shadow-xl relative">
+        <div className="eyebrow flex items-center gap-2.5">
           <Award className="w-4 h-4" />
           <span>The Bottom Line Verdict (Executive Summary)</span>
         </div>
@@ -628,7 +618,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
       <section className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4">
           <div>
-            <h2 className="text-2xl font-bold text-zinc-100 font-sans">
+            <h2 className="heading-section">
               Side-by-Side Architectural Specifications
             </h2>
             <p className="text-xs text-zinc-400 mt-1">
@@ -641,7 +631,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
             <select
               value={selectedIdA}
               onChange={(e) => setSelectedIdA(e.target.value)}
-              className="min-w-0 flex-1 sm:flex-none sm:max-w-xs bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 px-3 py-1.5 rounded-xl focus:outline-none focus:border-emerald-500"
+              className="min-w-0 flex-1 sm:flex-none sm:max-w-xs bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 px-3 py-1.5 rounded-lg focus:outline-none focus:border-emerald-500"
             >
               {models.map((m) => (
                 <option key={m.id} value={m.id}>
@@ -653,7 +643,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
             <select
               value={selectedIdB}
               onChange={(e) => setSelectedIdB(e.target.value)}
-              className="min-w-0 flex-1 sm:flex-none sm:max-w-xs bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 px-3 py-1.5 rounded-xl focus:outline-none focus:border-cyan-500"
+              className="min-w-0 flex-1 sm:flex-none sm:max-w-xs bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 px-3 py-1.5 rounded-lg focus:outline-none focus:border-emerald-500"
             >
               {models.map((m) => (
                 <option key={m.id} value={m.id}>
@@ -689,7 +679,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                     <span>{modelB.name}</span>
                     <button
                       onClick={() => onSelectModelDetail(modelB.id)}
-                      className="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
+                      className="text-xs text-emerald-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
                     >
                       Spec Sheet <ArrowRight className="w-3 h-3" />
                     </button>
@@ -774,11 +764,11 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
       {/* 4. FREQUENTLY ASKED QUESTIONS (Citable for AI Overviews & Perplexity) */}
       <section className="space-y-6 pt-6 border-t border-zinc-800">
         <div className="space-y-1">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <div className="eyebrow flex items-center gap-2">
             <Sparkles className="w-4 h-4" />
             <span>Frequently Asked Questions</span>
           </div>
-          <h2 className="text-2xl font-bold text-zinc-100 font-sans">
+          <h2 className="heading-section">
             Frequently Asked Questions: {currentPreset.shortTitle}
           </h2>
         </div>
@@ -801,7 +791,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
       </section>
 
       {/* 5. CALL TO ACTION / SUBSCRIPTION DECISION LINK */}
-      <div className="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div className="p-8 rounded-2xl bg-zinc-900/60 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="space-y-1 text-center sm:text-left">
           <h3 className="text-lg font-bold text-zinc-100 font-sans">
             Need Help Choosing an AI Plan or Budget Tier?

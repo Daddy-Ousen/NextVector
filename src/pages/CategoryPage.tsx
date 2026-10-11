@@ -6,6 +6,7 @@ import { sortArticlesByTimeAndImportance } from '../utils';
 import { SEOHead } from '../components/common/SEOHead';
 import { usePagedList, LoadMoreButton } from '../components/common/LoadMore';
 import { Sparkles, Cpu, Layers, Microscope, BookOpen, Compass } from 'lucide-react';
+import { PageHeader } from '../components/common/PageHeader';
 
 interface CategoryPageProps {
   categorySlug: string;
@@ -42,42 +43,42 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
         return {
           title: 'Artificial Intelligence',
           subtitle: 'Tracking foundation models, reasoning breakthroughs, open-weight distributions, inference scaling, and AI hardware.',
-          icon: <Cpu className="w-5 h-5 text-emerald-400" />,
+          icon: <Cpu className="w-4 h-4" />,
           filterFn: (a: ArticleSummary) => a.category === 'ai',
         };
       case 'technology':
         return {
           title: 'Computing & Hardware Technology',
           subtitle: 'Deep coverage of semiconductor lithography, advanced packaging, CPUs/GPUs, RISC-V architectures, and data center thermodynamics.',
-          icon: <Layers className="w-5 h-5 text-cyan-400" />,
+          icon: <Layers className="w-4 h-4" />,
           filterFn: (a: ArticleSummary) => a.category === 'technology',
         };
       case 'science':
         return {
           title: 'Science & Discovery',
           subtitle: 'Groundbreaking developments in quantum physics, biomolecular synthesis, materials science, and energy scaling.',
-          icon: <Microscope className="w-5 h-5 text-purple-400" />,
+          icon: <Microscope className="w-4 h-4" />,
           filterFn: (a: ArticleSummary) => a.category === 'science',
         };
       case 'analysis':
         return {
           title: 'News Analysis',
           subtitle: 'Rigorous explanations of why critical announcements matter beyond corporate press releases.',
-          icon: <Sparkles className="w-5 h-5 text-amber-400" />,
+          icon: <Sparkles className="w-4 h-4" />,
           filterFn: (a: ArticleSummary) => a.articleType === 'analysis',
         };
       case 'deep-dives':
         return {
           title: 'Technical Deep Dives',
           subtitle: 'Exhaustive engineering and architectural teardowns of modern algorithms, hardware, and scientific mechanisms.',
-          icon: <BookOpen className="w-5 h-5 text-blue-400" />,
+          icon: <BookOpen className="w-4 h-4" />,
           filterFn: (a: ArticleSummary) => a.articleType === 'deep-dive',
         };
       default:
         return {
           title: 'All News',
           subtitle: 'Every story on technology, AI, and science, newest first.',
-          icon: <Compass className="w-5 h-5 text-emerald-400" />,
+          icon: <Compass className="w-4 h-4" />,
           filterFn: () => true,
         };
     }
@@ -119,20 +120,12 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
         tags={seoKeywords}
       />
       {/* Category Header */}
-      <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
-        <div className="max-w-3xl">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-zinc-400 font-bold mb-3">
-            {meta.icon}
-            <span>Coverage Section</span>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
-            {meta.title}
-          </h1>
-          <p className="text-sm md:text-base text-zinc-400 font-sans mt-3 leading-relaxed">
-            {meta.subtitle}
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        eyebrow="Coverage Section"
+        icon={meta.icon}
+        title={meta.title}
+        description={meta.subtitle}
+      />
 
       {/* Signal Filter Bar */}
       <SignalFilterBar

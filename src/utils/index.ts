@@ -136,34 +136,37 @@ export function getSignalColor(rating: number): {
   badgeBorder: string;
   label: string;
 } {
+  // Badges often sit on photos, so the background is solid and blurred.
+  // Only the top tier gets the brand color; the rest stay neutral.
+  const badgeBg = 'bg-zinc-950/85 backdrop-blur-md';
   if (rating >= 95) {
     return {
-      badgeBg: 'bg-emerald-500/10',
+      badgeBg,
       badgeText: 'text-emerald-400',
-      badgeBorder: 'border-emerald-500/30',
+      badgeBorder: 'border-emerald-500/40',
       label: 'Critical Breakthrough'
     };
   }
   if (rating >= 90) {
     return {
-      badgeBg: 'bg-cyan-500/10',
-      badgeText: 'text-cyan-400',
-      badgeBorder: 'border-cyan-500/30',
+      badgeBg,
+      badgeText: 'text-zinc-100',
+      badgeBorder: 'border-zinc-600',
       label: 'High Technical Signal'
     };
   }
   if (rating >= 80) {
     return {
-      badgeBg: 'bg-blue-500/10',
-      badgeText: 'text-blue-400',
-      badgeBorder: 'border-blue-500/30',
+      badgeBg,
+      badgeText: 'text-zinc-200',
+      badgeBorder: 'border-zinc-700',
       label: 'Substantive Progress'
     };
   }
   return {
-    badgeBg: 'bg-zinc-500/10',
-    badgeText: 'text-zinc-400',
-    badgeBorder: 'border-zinc-500/30',
+    badgeBg,
+    badgeText: 'text-zinc-300',
+    badgeBorder: 'border-zinc-700',
     label: 'Standard Industry Signal'
   };
 }
@@ -242,4 +245,17 @@ export function toggleBookmark(articleId: string): string[] {
     // Storage unavailable (private mode / quota): keep the change for this session only
   }
   return updated;
+}
+
+/**
+ * Benchmark score as text. Scores are stored as "58.2%", "1338" (Elo) or plain numbers.
+ * Adds "%" only to a bare number that is a percentage (not Elo, not an index, 100 or less).
+ */
+export function formatBenchmarkScore(b: { benchmarkName: string; score: number | string; unit?: string }): string {
+  const score = String(b.score);
+  if (b.unit) return `${score}${b.unit}`;
+  if (score.includes('%')) return score;
+  const name = b.benchmarkName.toLowerCase();
+  const isPercent = !/elo|index|pareto/.test(name) && Number(score) <= 100;
+  return isPercent ? `${score}%` : score;
 }

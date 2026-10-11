@@ -218,8 +218,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top utility bar */}
-      <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-2.5 sm:px-4 py-1.5 pointer-coarse:py-0 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-2xs font-mono text-zinc-400 gap-2">
+      <div className="bg-zinc-950/90 border-b border-zinc-800/80 py-1.5 pointer-coarse:py-0 backdrop-blur-md">
+        <div className="container-page flex items-center justify-between text-2xs font-mono text-zinc-400 gap-2">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
             <div
               className="flex items-center gap-1.5 text-zinc-300 font-mono shrink-0"
@@ -255,7 +255,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 Daily Briefing
               </span>
               <span className="font-semibold text-2xs sm:hidden whitespace-nowrap">Briefing</span>
-              <span className="hidden md:inline text-2xs px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
+              <span className="hidden md:inline text-2xs px-1.5 py-0.2 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
                 3-Min Scan
               </span>
             </a>
@@ -279,13 +279,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Main Navbar */}
       <nav
-        className={`w-full px-4 border-b transition-all duration-300 ${
+        className={`w-full border-b transition-all duration-300 ${
           isScrolled
             ? 'bg-zinc-950/95 border-zinc-800 shadow-xl backdrop-blur-lg py-3'
             : 'bg-zinc-950/80 border-zinc-900 py-3.5'
         }`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <div className="container-page flex items-center justify-between gap-4">
           {/* Logo & Brand (Clicking logo goes Home) */}
           <a
             href="/"
@@ -357,7 +357,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               handleLinkClick(item.path);
                             }
                           }}
-                          className={`w-full text-left p-2 rounded-xl transition-all flex items-center justify-between group cursor-pointer border block ${
+                          className={`w-full text-left p-2 rounded-lg transition-all flex items-center justify-between group cursor-pointer border block ${
                             isItemActive
                               ? 'bg-emerald-500/10 border-emerald-500/30'
                               : 'hover:bg-zinc-900/80 border-transparent hover:border-zinc-800'
@@ -389,7 +389,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             </div>
                           </div>
                           {item.badge && (
-                            <span className="px-1.5 py-0.5 rounded text-2xs font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
+                            <span className="px-1.5 py-0.5 rounded-lg text-2xs font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
                               {item.badge}
                             </span>
                           )}
@@ -449,7 +449,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               handleLinkClick(item.path);
                             }
                           }}
-                          className={`w-full text-left p-2 rounded-xl transition-all flex items-center justify-between group cursor-pointer border block ${
+                          className={`w-full text-left p-2 rounded-lg transition-all flex items-center justify-between group cursor-pointer border block ${
                             isItemActive
                               ? 'bg-emerald-500/10 border-emerald-500/30'
                               : 'hover:bg-zinc-900/80 border-transparent hover:border-zinc-800'
@@ -481,7 +481,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             </div>
                           </div>
                           {item.badge && (
-                            <span className="px-1.5 py-0.5 rounded text-2xs font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
+                            <span className="px-1.5 py-0.5 rounded-lg text-2xs font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
                               {item.badge}
                             </span>
                           )}
@@ -570,11 +570,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-2">
             <button
               onClick={onOpenSearch}
-              className="tap flex items-center justify-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs text-zinc-400 hover:text-zinc-200 transition-all cursor-pointer"
+              className="tap flex items-center justify-center gap-2 px-3 py-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs text-zinc-400 hover:text-zinc-200 transition-all cursor-pointer"
             >
               <Search className="w-3.5 h-3.5 text-emerald-400" />
               <span className="hidden sm:inline">Search news & models...</span>
-              <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-2xs text-zinc-400">
+              <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded-lg bg-zinc-800 border border-zinc-700 text-2xs text-zinc-400">
                 ⌘K
               </kbd>
             </button>
@@ -582,7 +582,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="tap flex items-center justify-center lg:hidden p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-100 cursor-pointer"
+              className="tap flex items-center justify-center lg:hidden p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-100 cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -594,7 +594,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         {mobileMenuOpen && (
           <div className="lg:hidden mt-3 pt-4 border-t border-zinc-800/80 px-2 space-y-2 animate-in slide-in-from-top-2 duration-200">
             {/* Mobile: News Accordion */}
-            <div className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 overflow-hidden">
+            <div className="rounded-lg border border-zinc-800/80 bg-zinc-900/40 overflow-hidden">
               <button
                 onClick={() => setMobileNewsExpanded(!mobileNewsExpanded)}
                 className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-bold text-zinc-300 hover:text-white cursor-pointer"
@@ -643,7 +643,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             {/* Mobile: AI Models Accordion */}
-            <div className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 overflow-hidden">
+            <div className="rounded-lg border border-zinc-800/80 bg-zinc-900/40 overflow-hidden">
               <button
                 onClick={() => setMobileModelsExpanded(!mobileModelsExpanded)}
                 className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-bold text-zinc-300 hover:text-white cursor-pointer"
@@ -702,7 +702,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/research');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs transition-colors cursor-pointer ${
                   currentPath === '/research'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -720,7 +720,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/timeline');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs transition-colors cursor-pointer ${
                   currentPath === '/timeline'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -738,7 +738,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/about');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs transition-colors cursor-pointer ${
                   currentPath === '/about'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -756,7 +756,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/faq');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs transition-colors cursor-pointer ${
                   currentPath === '/faq'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -774,7 +774,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/contact');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs transition-colors cursor-pointer ${
                   currentPath === '/contact'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'

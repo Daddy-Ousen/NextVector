@@ -40,7 +40,7 @@ export const SignalRatingBadge: React.FC<SignalRatingBadgeProps> = ({
       </div>
 
       {showTooltip && (
-        <div className="absolute left-0 top-full mt-2 w-72 p-3.5 bg-zinc-900/95 border border-zinc-700/80 rounded-xl shadow-2xl backdrop-blur-md z-50 text-left pointer-events-none transition-all">
+        <div className="absolute left-0 top-full mt-2 w-72 p-3.5 bg-zinc-900/95 border border-zinc-700/80 rounded-lg shadow-2xl backdrop-blur-md z-50 text-left pointer-events-none transition-all">
           <div className="flex items-center justify-between border-b border-zinc-800 pb-2 mb-2">
             <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-zinc-200">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />

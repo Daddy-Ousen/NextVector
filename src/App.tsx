@@ -71,9 +71,9 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
 
 const PageSkeleton: React.FC = () => (
-  <div className="max-w-7xl mx-auto px-4 py-12 animate-pulse space-y-8 min-h-[60vh]">
+  <div className="py-12 animate-pulse space-y-8 min-h-[60vh]">
     <div className="space-y-3">
-      <div className="h-7 bg-zinc-900/80 rounded-xl w-1/4 border border-zinc-800/60" />
+      <div className="h-7 bg-zinc-900/80 rounded-lg w-1/4 border border-zinc-800/60" />
       <div className="h-4 bg-zinc-900/60 rounded-lg w-1/2" />
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
@@ -452,7 +452,7 @@ export function App() {
       <main
         id="main-content"
         tabIndex={-1}
-        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8 focus:outline-none"
+        className="flex-1 container-page pt-8 focus:outline-none"
       >
         <Suspense fallback={<PageSkeleton />}>
           {renderCurrentPage()}
@@ -511,7 +511,7 @@ export function App() {
 
       {/* Toast Notification Alert */}
       {toastMessage && (
-        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/40 text-emerald-300 text-xs shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-lg bg-zinc-900 border border-emerald-500/40 text-emerald-300 text-xs shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>{toastMessage}</span>
         </div>

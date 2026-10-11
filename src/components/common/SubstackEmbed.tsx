@@ -11,12 +11,12 @@ interface SubstackEmbedProps {
 /** Substack's own sign-up form (iframe) plus the "handled by Substack" note. */
 export const SubstackEmbed: React.FC<SubstackEmbedProps> = ({ showArchiveLink = true }) => (
   <div>
-    <div className="rounded-xl overflow-hidden bg-white shadow-lg border border-zinc-700/60">
+    <div className="rounded-lg overflow-hidden">
       <iframe
         src="https://nextvectorr.substack.com/embed"
         width="100%"
         height="155"
-        style={{ border: 'none', background: 'white', display: 'block' }}
+        style={{ border: 'none', background: 'transparent', display: 'block' }}
         frameBorder="0"
         scrolling="no"
         loading="lazy"

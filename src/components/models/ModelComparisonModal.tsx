@@ -1,6 +1,7 @@
 import React from 'react';
 import { AIModel } from '../../types';
 import { X, Check, AlertTriangle, Cpu, ExternalLink } from 'lucide-react';
+import { formatBenchmarkScore } from '../../utils';
 
 interface ModelComparisonModalProps {
   isOpen: boolean;
@@ -71,7 +72,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                     >
                       <button
                         onClick={() => onRemoveModel(model.id)}
-                        className="absolute top-3 right-3 p-1 rounded hover:bg-zinc-800 text-zinc-400 hover:text-red-400 transition-colors"
+                        className="absolute top-3 right-3 p-1 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-red-400 transition-colors"
                         title="Remove model from comparison"
                       >
                         <X className="w-3.5 h-3.5" />
@@ -85,7 +86,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                           onClose();
                           onSelectModelDetail(model.id);
                         }}
-                        className="mt-2 text-2xs text-cyan-400 hover:underline inline-flex items-center gap-1"
+                        className="mt-2 text-2xs text-emerald-400 hover:underline inline-flex items-center gap-1"
                       >
                         Full Model Report <ExternalLink className="w-3 h-3" />
                       </button>
@@ -101,7 +102,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                   </td>
                   {models.map((model) => (
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 font-sans">
-                      <span className="px-2 py-0.5 rounded bg-zinc-800 text-xs text-zinc-200 border border-zinc-700">
+                      <span className="px-2 py-0.5 rounded-lg bg-zinc-800 text-xs text-zinc-200 border border-zinc-700">
                         {model.modelType}
                       </span>
                     </td>
@@ -200,7 +201,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                 {/* Benchmarks Matrix */}
                 {benchmarkKeys.map((benchName) => (
                   <tr key={benchName}>
-                    <td className="p-3 bg-zinc-900/60 border border-zinc-800 font-mono text-xs text-cyan-400 font-semibold sticky left-0 z-10">
+                    <td className="p-3 bg-zinc-900/60 border border-zinc-800 font-mono text-xs text-zinc-300 font-semibold sticky left-0 z-10">
                       {benchName}
                     </td>
                     {models.map((model) => {
@@ -212,8 +213,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                           {benchmarkEntry ? (
                             <div>
                               <div className="text-sm font-bold text-zinc-100">
-                                {benchmarkEntry.score}
-                                {benchmarkEntry.unit || '%'}
+                                {formatBenchmarkScore(benchmarkEntry)}
                               </div>
                               <div className="text-2xs text-emerald-400 mt-0.5">
                                 {benchmarkEntry.vsPreviousGen}

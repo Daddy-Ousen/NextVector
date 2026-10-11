@@ -3,6 +3,7 @@ import { ArticleSummary, AIModel } from '../types';
 import { SEOHead } from '../components/common/SEOHead';
 import { formatDate, getCategoryBadge } from '../utils';
 import { Archive } from 'lucide-react';
+import { PageHeader } from '../components/common/PageHeader';
 
 interface ArchivePageProps {
   articles: ArticleSummary[];
@@ -40,23 +41,19 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
   };
 
   return (
-    <div className="max-w-5xl mx-auto pb-24 space-y-12">
+    <div className="max-w-5xl pb-24 space-y-12">
       <SEOHead
         title="Complete Intelligence Archive & HTML Sitemap"
         description={`Full directory of all ${articles.length} NextVector intelligence reports and ${models.length} foundation models.`}
         canonicalPath="/archive"
       />
 
-      <header className="border-b border-zinc-800 pb-6 space-y-2">
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold">
-          <Archive className="w-4 h-4" />
-          Complete Archive
-        </div>
-        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight">Story Archive</h1>
-        <p className="text-sm text-zinc-400">
-          {articles.length} reports • {models.length} model dossiers
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Complete Archive"
+        icon={<Archive className="w-4 h-4" />}
+        title="Story Archive"
+        description={<>{articles.length} reports • {models.length} model dossiers</>}
+      />
 
       {months.map((group) => (
         <section key={group.label} className="space-y-3">
@@ -94,7 +91,7 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
               <a
                 href={`/models/${m.id}`}
                 onClick={link(`/models/${m.id}`)}
-                className="text-cyan-400 hover:underline truncate pointer-coarse:leading-10 pointer-coarse:min-w-10"
+                className="text-emerald-400 hover:underline truncate pointer-coarse:leading-10 pointer-coarse:min-w-10"
               >
                 {m.name}
               </a>

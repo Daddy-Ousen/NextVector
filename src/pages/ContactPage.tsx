@@ -12,6 +12,7 @@ import {
   Globe,
   ArrowRight
 } from 'lucide-react';
+import { PageHeader } from '../components/common/PageHeader';
 
 interface ContactPageProps {
   onNavigate?: (path: string) => void;
@@ -79,7 +80,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto space-y-12 pb-20 px-4 sm:px-6">
+    <div className="max-w-5xl space-y-12 pb-20">
       <SEOHead
         title="Contact NextVector Editorial & Research Intelligence | Entity Verification"
         description="Direct contact channels for NextVector. Submit AI model benchmark disclosures, editorial corrections, research inquiries, or reach Founder & Editor Robiul Hasan."
@@ -95,25 +96,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
       />
 
       {/* Primary Entity Header H1 */}
-      <header className="border-b border-zinc-800/80 pb-6 pt-2">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Entity Verification &amp; Editorial Desk</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 font-sans tracking-tight leading-tight">
-              Contact NextVector <span className="text-zinc-600 font-light">—</span>{' '}
-              <span className="bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-                Editorial &amp; Research Desk
-              </span>
-            </h1>
-          </div>
-          <p className="text-xs sm:text-sm text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
-            Direct communication channels for AI labs, computer science researchers, journalists, and readers. All tips and benchmark audits are verified against primary sources.
-          </p>
-        </div>
-      </header>
+      <PageHeader
+        eyebrow={<>Entity Verification &amp; Editorial Desk</>}
+        icon={<ShieldCheck className="w-4 h-4" />}
+        title={<>Contact NextVector <span className="text-zinc-400">— Editorial &amp; Research Desk</span></>}
+        description="Direct communication channels for AI labs, computer science researchers, journalists, and readers. All tips and benchmark audits are verified against primary sources."
+      />
 
       {/* Grid: Contact Information & Communication Channels */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -126,8 +114,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
             </h2>
 
             <div className="space-y-4 text-xs">
-              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="text-emerald-400 font-semibold uppercase block text-2xs">
+              <div className="p-3.5 rounded-lg bg-zinc-900/60 border border-zinc-800">
+                <span className="eyebrow block">
                   Editorial &amp; Lead Inquiries
                 </span>
                 <a
@@ -141,13 +129,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </span>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="text-cyan-400 font-semibold uppercase block text-2xs">
+              <div className="p-3.5 rounded-lg bg-zinc-900/60 border border-zinc-800">
+                <span className="eyebrow block">
                   Benchmark &amp; Model Auditing
                 </span>
                 <a
                   href="mailto:benchmarks@nextvector.rhasan.online"
-                  className="text-sm font-bold text-zinc-100 hover:text-cyan-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
+                  className="text-sm font-bold text-zinc-100 hover:text-emerald-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
                 >
                   benchmarks@nextvector.rhasan.online
                 </a>
@@ -156,13 +144,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </span>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="text-purple-400 font-semibold uppercase block text-2xs">
+              <div className="p-3.5 rounded-lg bg-zinc-900/60 border border-zinc-800">
+                <span className="eyebrow block">
                   Corrections &amp; Factual Disputes
                 </span>
                 <a
                   href="mailto:corrections@nextvector.rhasan.online"
-                  className="text-sm font-bold text-zinc-100 hover:text-purple-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
+                  className="text-sm font-bold text-zinc-100 hover:text-emerald-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
                 >
                   corrections@nextvector.rhasan.online
                 </a>
@@ -191,7 +179,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <img
                 src="https://rhasan.online/avatar.jpg"
                 alt="Robiul Hasan"
-                className="w-12 h-12 rounded-xl object-cover border border-zinc-700"
+                className="w-12 h-12 rounded-lg object-cover border border-zinc-700"
                 onError={(e) => {
                   (e.target as HTMLElement).style.display = 'none';
                 }}
@@ -226,7 +214,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 href="https://nextvectorr.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="tap text-[#FF6719] hover:underline inline-flex items-center gap-1"
+                className="tap text-emerald-400 hover:underline inline-flex items-center gap-1"
               >
                 <span>Substack</span>
                 <ExternalLink className="w-3 h-3" />
@@ -237,8 +225,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
 
         {/* Right Column: Secure Inquiry Dispatch Form */}
         <div className="lg:col-span-7">
-          <div className="p-6 md:p-8 rounded-3xl bg-zinc-950 border border-zinc-800 shadow-2xl relative">
-            <h2 className="text-xl font-bold text-zinc-100 font-sans tracking-tight mb-2">
+          <div className="p-6 md:p-8 rounded-2xl bg-zinc-950 border border-zinc-800 shadow-2xl relative">
+            <h2 className="heading-section mb-2">
               Dispatch an Editorial Inquiry or Research Signal
             </h2>
             <p className="text-xs text-zinc-400 mb-6">
@@ -260,7 +248,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     setIsSubmitted(false);
                     setFormState({ name: '', email: '', category: 'editorial', subject: '', message: '' });
                   }}
-                  className="px-4 py-2 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 hover:border-emerald-500 transition-colors"
+                  className="px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 hover:border-emerald-500 transition-colors"
                 >
                   Submit Another Note
                 </button>
@@ -276,7 +264,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       value={formState.name}
                       onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                       placeholder="e.g. Dr. Elena Vance / Anthropic"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                   <div className="space-y-1.5">
@@ -287,7 +275,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       value={formState.email}
                       onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                       placeholder="e.g. researcher@lab.ai"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                 </div>
@@ -298,7 +286,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     <select
                       value={formState.category}
                       onChange={(e) => setFormState({ ...formState, category: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 text-xs focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-100 text-xs focus:outline-none focus:border-emerald-500"
                     >
                       <option value="editorial">Breaking Story / Lead Tip</option>
                       <option value="benchmark">Benchmark Data Audit Submission</option>
@@ -315,7 +303,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       value={formState.subject}
                       onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
                       placeholder="Brief topic summary"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                 </div>
@@ -328,7 +316,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                     placeholder="Provide technical details, benchmark replication links, arXiv IDs, or disclosure specifics..."
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500 leading-relaxed"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500 leading-relaxed"
                   />
                 </div>
 
@@ -339,7 +327,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   </span>
                   <button
                     type="submit"
-                    className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-500/20 cursor-pointer"
+                    className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-500/20 cursor-pointer"
                   >
                     <span>Dispatch to Editorial Desk</span>
                     <Send className="w-3.5 h-3.5" />

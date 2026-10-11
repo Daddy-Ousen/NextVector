@@ -9,7 +9,8 @@ import { SEOHead } from '../components/common/SEOHead';
 import { usePagedList, LoadMoreButton } from '../components/common/LoadMore';
 import { sortArticlesByTimeAndImportance, formatDate } from '../utils';
 import { MOCK_LIVE_SIGNALS } from '../data/mockData';
-import { ArrowRight, Cpu, Flame, LayoutGrid, List } from 'lucide-react';
+import { ArrowRight, Cpu, LayoutGrid, List } from 'lucide-react';
+import { SectionHeader } from '../components/common/SectionHeader';
 
 type FeedView = 'grid' | 'list';
 const FEED_VIEW_KEY = 'nv-feed-view';
@@ -263,17 +264,10 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Primary Bento Stream */}
       <section>
-        <div className="flex items-end justify-between gap-4 mb-6 border-b border-zinc-800 pb-3">
-          <div className="min-w-0">
-            <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans">
-              Latest Stories
-            </h2>
-            <p className="text-xs text-zinc-400 mt-0.5">
-              Newest first
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3 shrink-0">
+        <SectionHeader
+          title="Latest Stories"
+          description="Newest first"
+          actions={<>
             <div className="flex rounded-lg border border-zinc-800 bg-zinc-900 p-0.5" role="group" aria-label="Story layout">
               {([
                 { view: 'grid', label: 'Cards', Icon: LayoutGrid },
@@ -285,7 +279,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   aria-pressed={feedView === view}
                   title={`${label} view`}
                   aria-label={`${label} view`}
-                  className={`tap flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs transition-colors ${
+                  className={`tap flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs transition-colors ${
                     feedView === view ? 'bg-zinc-800 text-emerald-400' : 'text-zinc-400 hover:text-zinc-200'
                   }`}
                 >
@@ -301,8 +295,8 @@ export const HomePage: React.FC<HomePageProps> = ({
               <span>All AI news</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
-          </div>
-        </div>
+          </>}
+        />
 
         {filteredArticles.length === 0 ? (
           <div className="py-16 text-center text-zinc-400 bg-zinc-950 border border-zinc-800 rounded-2xl">
@@ -333,26 +327,17 @@ export const HomePage: React.FC<HomePageProps> = ({
       </section>
 
       {/* Signature Section 1: AI Model Radar & Database Preview */}
-      <section className="rounded-3xl bg-zinc-950/80 border border-zinc-800 p-6 md:p-8">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b border-zinc-800 pb-4">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-1">
-              <Cpu className="w-4 h-4" />
-              <span>Model Specs</span>
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans">
-              AI Models at a Glance
-            </h2>
-            <p className="text-xs text-zinc-400 mt-0.5">
-              Parameters, context windows, API economics, licensing, and benchmark deltas
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3">
+      <section>
+        <SectionHeader
+          eyebrow="Model Specs"
+          icon={<Cpu className="w-4 h-4" />}
+          title="AI Models at a Glance"
+          description="Parameters, context windows, API economics, licensing, and benchmark deltas"
+          actions={<>
             {selectedModelCompareIds.length > 0 && (
               <button
                 onClick={onOpenCompareModal}
-                className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+                className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
               >
                 <span>Compare {selectedModelCompareIds.length} Models</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -360,13 +345,13 @@ export const HomePage: React.FC<HomePageProps> = ({
             )}
             <button
               onClick={() => onNavigate('/models')}
-              className="tap text-xs text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800"
+              className="tap text-xs text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800"
             >
               <span>Explore All {models.length} Models</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
-          </div>
-        </div>
+          </>}
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {models.slice(0, 3).map((model) => (
@@ -388,27 +373,20 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Deep Dives & Analysis Section */}
       <section>
-        <div className="flex items-end justify-between gap-4 mb-6 border-b border-zinc-800 pb-3">
-          <div className="min-w-0">
-            <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans flex items-center gap-2">
-              <span>Deep Dives & Analysis</span>
-              <span className="hidden sm:inline text-xs px-2 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300">
-                Long-Form Technical
-              </span>
-            </h2>
-            <p className="text-xs text-zinc-400 mt-0.5">
-              Explaining the underlying physics, math, and architectural tradeoffs behind the headlines
-            </p>
-          </div>
-
-          <button
-            onClick={() => onNavigate('/deep-dives')}
-            className="tap text-xs text-purple-400 hover:text-purple-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
-          >
-            <span>All Deep Dives</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </button>
-        </div>
+        <SectionHeader
+          eyebrow="Long-Form Technical"
+          title="Deep Dives & Analysis"
+          description="Explaining the underlying physics, math, and architectural tradeoffs behind the headlines"
+          actions={
+            <button
+              onClick={() => onNavigate('/deep-dives')}
+              className="tap text-xs text-emerald-400 hover:text-emerald-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
+            >
+              <span>All Deep Dives</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          }
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {deepDives.slice(0, 2).map((article) => (
@@ -425,18 +403,8 @@ export const HomePage: React.FC<HomePageProps> = ({
       </section>
 
       {/* Trending / High-Impact Signals Bar */}
-      <section className="rounded-3xl bg-zinc-950 border border-zinc-800/80 p-6">
-        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 mb-4 border-b border-zinc-800/80 pb-3">
-          <div className="flex items-center gap-2">
-            <Flame className="w-4 h-4 text-amber-400" />
-            <h3 className="text-base font-bold text-zinc-100 font-sans">
-              Highest-Rated Stories
-            </h3>
-          </div>
-          <span className="text-xs text-zinc-400">
-            Ranked by Signal score
-          </span>
-        </div>
+      <section>
+        <SectionHeader title="Highest-Rated Stories" description="Ranked by Signal score" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {articles
@@ -447,9 +415,9 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div
                 key={article.id}
                 onClick={() => onSelectArticle(article.slug)}
-                className="p-4 rounded-xl bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start gap-3"
+                className="p-4 rounded-lg bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start gap-3"
               >
-                <span className="font-mono text-2xl font-black text-zinc-500 shrink-0">
+                <span className="font-mono text-2xl font-bold text-zinc-500 shrink-0">
                   0{idx + 1}
                 </span>
                 <div>

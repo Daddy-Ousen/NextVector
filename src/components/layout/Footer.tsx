@@ -11,7 +11,7 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="w-full bg-zinc-950 border-t border-zinc-800/80 mt-20 pt-16 pb-12 text-zinc-400">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container-page">
         {/* Editorial Manifesto & Newsletter Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-14 border-b border-zinc-800/80">
           <div className="lg:col-span-7 space-y-4">
@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               />
             </div>
 
-            <p className="text-lg text-zinc-200 font-serif italic max-w-xl">
+            <p className="text-lg text-zinc-200 font-medium max-w-xl">
               "Technology is moving extremely fast. We identify the developments worth paying attention to. Less noise. More signal."
             </p>
 
@@ -39,11 +39,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 No Clickbait Policy
               </span>
               <span className="flex items-center gap-1.5">
-                <Zap className="w-4 h-4 text-cyan-400" />
+                <Zap className="w-4 h-4 text-emerald-400" />
                 Primary Sources Linked
               </span>
               <span className="flex items-center gap-1.5">
-                <BookOpen className="w-4 h-4 text-purple-400" />
+                <BookOpen className="w-4 h-4 text-emerald-400" />
                 Three-Question Format
               </span>
             </div>
@@ -53,7 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 bg-zinc-900/60 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between gap-2 mb-2">
-                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold">
+                <div className="eyebrow flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   <span>The Morning Vector</span>
                 </div>
@@ -61,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://nextvectorr.substack.com/?r=92ang8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="tap text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold"
+                  className="tap text-2xs text-emerald-400 hover:underline inline-flex items-center gap-1 font-semibold"
                 >
                   <span>Substack Edition</span>
                   <ExternalLink className="w-2.5 h-2.5" />
@@ -347,7 +347,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://rhasan.online"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="tap hover:text-emerald-400 transition-colors inline-flex items-center gap-1 text-emerald-400 font-semibold"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center gap-1 hover:text-emerald-400 transition-colors"
                 >
                   <span>rhasan.online</span>
                   <ExternalLink className="w-3 h-3" />
@@ -358,10 +358,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://nextvectorr.substack.com/?r=92ang8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="tap hover:text-[#FF6719] transition-colors inline-flex items-center gap-1 text-zinc-300 font-medium"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center gap-1 hover:text-emerald-400 transition-colors"
                 >
                   <span>Substack Publication</span>
-                  <ExternalLink className="w-3 h-3 text-[#FF6719]" />
+                  <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>The Three-Question Framework</li>

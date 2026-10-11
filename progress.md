@@ -88,6 +88,31 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] "Skip to content" link (`src/App.tsx`): first focusable element, shows on keyboard focus, moves focus to `<main id="main-content" tabIndex={-1}>`. Checked: Tab shows it, Enter focuses main, next Tab lands on the lead story.
 - [x] Article body repeats the Triad text in longer words (paraphrased, not copied). User decision (option B): rule for NEW articles only, old 211 articles stay. Added `EDITORIAL_RULEBOOK.md` §2.4 "No-Restating Rule", linked from `DAILY_UPDATE_PIPELINE.md` §5.1 (`content` bullet) and Stage 6 Step 1 (self-check). No automated gate (paraphrase cannot be detected reliably; a verbatim gate would fail on 2 old articles).
 
+## Pass 6 — Design system (DONE 2026-10-11, NOT committed yet)
+User decision: option C (full design system pass) after the visual audit (V1–V14).
+Rules for new code: `DESIGN_SYSTEM.md` (layout widths, colors by role, type scale, 3 corner sizes, one level of box, checklist).
+Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, Playwright screenshots at 1440px and 375px, built-in browser at 375px touch over 15 routes: 0 side scroll; all controls ≥ 40px except the sr-only skip link and one inline name link in the footer sentence (both allowed).
+- [x] Shared pieces: `src/index.css` utilities `container-page`, `eyebrow`, `eyebrow-warn`, `heading-page`, `heading-section`, `scrollbar-none` (was used in 4 places but never defined), `fade-right`. Removed unused `.glass-panel`, `.bezel-*`, `.text-glow-*`, `--font-serif`. New components `src/components/common/PageHeader.tsx`, `SectionHeader.tsx`.
+- [x] V1 Score badge: solid blurred backing; 95+ emerald, rest neutral zinc (`getSignalColor` in `src/utils/index.ts`).
+- [x] V2 Fake italic removed (/briefing summary, footer quote, audio player). Briefing summary: no quote marks, left rule, not boxed.
+- [x] V3 Colors: stray cyan/purple/blue/Substack orange → emerald or zinc. Kept by rule: category pills, A-vs-B second series (cyan) on /compare and comparison modal, amber for warnings and top-3 ranks. /briefing "Critical Signal" red → emerald. Chart bars solid emerald.
+- [x] V4 One left edge: top bar, nav, main, footer all use `container-page` (all at 109px at 1440). Removed double padding in Compare/Contact/FAQ/Subscriptions. Wide text pages (Archive, Author, Contact, FAQ, Model detail) are left-aligned `max-w-5xl` (no `mx-auto`).
+- [x] V5 Boxes: hub page headers unboxed (PageHeader on Archive, Benchmarks, Category, Compare, Contact, FAQ, Models, Research, Subscriptions, Timeline); Triad = one card with dividers (removed "Core Signal Framework" chip and pulsing dot); Substack form wrapper border/white bg removed; home "AI Models at a Glance" and "Highest-Rated Stories" unboxed (SectionHeader).
+- [x] V6 H1: hub pages `heading-page` (36px); detail pages keep 48px; /briefing H1 sans; 404 uses `heading-page`. Section H2s use `heading-section` (11 places; /models decision guide H2 was bigger than the page H1).
+- [x] V7 Card format label hidden when it repeats the category ("Discovery" under "Science & Discovery").
+- [x] V8 /models table: chips and header cells `whitespace-nowrap`, Parameters wraps to 2 lines (no "…"), cell padding px-3. Table fits 1214px at 1440 (was 1237 → cut off).
+- [x] V9 Phone /models filters stack full width (labels readable). Chip rows (home topics, /compare, /research, /timeline) fade at the right edge, no scrollbar.
+- [x] V10 Article column: all blocks 42rem (was 48rem boxes + 42rem text).
+- [x] V11 Corners: only `rounded-lg`, `rounded-2xl`, `rounded-full` (192 replacements, also in `scripts/prerender_static_pages.py`).
+- [x] V12 Labels: 57 colored uppercase labels → `eyebrow` (emerald) or `eyebrow-warn` (amber). Neutral zinc field labels left as is.
+- [x] V13 Newsreader serif dropped from `index.html` (3 font links) and code; Jakarta 300 weight dropped (unused). `font-black` → `font-extrabold` (900 was never loaded).
+- [x] V14 Small text: checked. 12–13px kept for data tables and meta; rule written in `DESIGN_SYSTEM.md` §3.
+- [x] Side fix: model benchmark scores showed "1338%" (Elo) and "58.2%%". New `formatBenchmarkScore()` in `src/utils/index.ts`, used in ModelCard, ModelDetailPage, ModelComparisonModal.
+- [x] Side fix: footer external links had 2 different colors; now same as other footer links. Decorative blurred color blobs removed (Author, Compare, Decision guide).
+- Copy touched (small): /compare eyebrow "NextVector Head-to-Head Architecture Audit • September 2026" → "Head-to-Head Model Comparison" (old one had a stale month).
+- [ ] USER: commit + push (deploys to Vercel). Not done; waiting for OK.
+- Open (not done, low): ModelCard has a spec box inside the card (box in box). Footer "Standards & Mission" has 4 plain-text items that look like links. ~130 old lint warnings (unused imports).
+
 ## Architectural decisions
 - `src/data/articlesData.ts` stays the single source of truth. The app reads it only through virtual modules `virtual:article-summaries` and `virtual:article-body/<id>` (see `vite.articleSplit.ts`). Types: `ArticleSummary` (lists) vs `Article` (detail).
 - `public/sitemap.xml`, `public/rss.xml`, `public/llms-full.txt` are build outputs. Do not hand-edit. Sitemap regenerates only when git history is available; otherwise the committed file is kept.

@@ -26,8 +26,8 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ path, onNavigate, on
       />
 
       <div className="space-y-3">
-        <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold">Error 404 • Page Not Found</div>
-        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight">Page not found</h1>
+        <div className="eyebrow">Error 404 • Page Not Found</div>
+        <h1 className="heading-page">Page not found</h1>
         <p className="text-zinc-400 text-sm md:text-base">
           Nothing is published at <code className="font-mono text-zinc-300 break-all">{path}</code>. The link may be mistyped or the report may have moved.
         </p>
@@ -36,14 +36,14 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ path, onNavigate, on
       <div className="flex flex-wrap items-center justify-center gap-3">
         <button
           onClick={() => onNavigate('/')}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-300 text-sm hover:bg-emerald-500/20 transition-colors cursor-pointer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/40 text-emerald-300 text-sm hover:bg-emerald-500/20 transition-colors cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Home
         </button>
         <button
           onClick={onOpenSearch}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-200 text-sm hover:border-zinc-700 transition-colors cursor-pointer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-200 text-sm hover:border-zinc-700 transition-colors cursor-pointer"
         >
           <Search className="w-4 h-4" />
           Search NextVector

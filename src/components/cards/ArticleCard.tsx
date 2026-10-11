@@ -23,11 +23,13 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   const categoryStyle = getCategoryBadge(article.category);
   const typeBadge = getArticleTypeBadge(article.articleType);
   const typeLabel = typeBadge.label;
+  // Skip the format label when it repeats the category ("Discovery" vs "Science & Discovery").
+  const showTypeLabel = !categoryStyle.label.toLowerCase().includes(typeLabel.toLowerCase());
 
   // HERO VARIANT
   if (variant === 'hero') {
     return (
-      <article className="group relative rounded-3xl bg-zinc-950 border border-zinc-800/90 overflow-hidden shadow-2xl transition-all duration-300 hover:border-zinc-700/80">
+      <article className="group relative rounded-2xl bg-zinc-950 border border-zinc-800/90 overflow-hidden shadow-2xl transition-all duration-300 hover:border-zinc-700/80">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
           {/* Hero Image Section */}
           <div className="lg:col-span-7 relative h-[200px] sm:h-[320px] lg:h-auto lg:min-h-[480px] overflow-hidden">
@@ -166,7 +168,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             onSelectArticle(article.slug);
           }
         }}
-        className="group p-4 rounded-xl bg-zinc-900/40 hover:bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start justify-between gap-4 block"
+        className="group p-4 rounded-lg bg-zinc-900/40 hover:bg-zinc-900/80 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start justify-between gap-4 block"
       >
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1.5 flex-wrap">
@@ -222,8 +224,12 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         {/* Card Body */}
         <div className="p-5">
           <div className="flex items-center gap-2 text-xs text-zinc-400 mb-2">
-            <span>{typeLabel}</span>
-            <span>•</span>
+            {showTypeLabel && (
+              <>
+                <span>{typeLabel}</span>
+                <span>•</span>
+              </>
+            )}
             <span>{article.readTimeMinutes}m read</span>
           </div>
 
@@ -258,7 +264,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         <div className="flex items-center gap-2 pt-3">
           <button
             onClick={(e) => onToggleBookmark(article.id, e)}
-            className={`tap flex items-center justify-center p-1.5 rounded-md hover:bg-zinc-800 transition-colors ${
+            className={`tap flex items-center justify-center p-1.5 rounded-lg hover:bg-zinc-800 transition-colors ${
               isBookmarked ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-300'
             }`}
             title={isBookmarked ? 'Remove bookmark' : 'Bookmark'}

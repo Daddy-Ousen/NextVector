@@ -89,7 +89,7 @@ export const NextVectorLogo: React.FC<NextVectorLogoProps> = ({
     <div className={`flex items-center gap-3 select-none ${className}`}>
       {withContainer ? (
         <div
-          className="rounded-xl bg-zinc-950/90 border border-zinc-800/80 p-1 flex items-center justify-center shadow-lg shadow-emerald-950/20 group-hover:border-emerald-500/40 group-hover:shadow-emerald-500/10 transition-all"
+          className="rounded-lg bg-zinc-950/90 border border-zinc-800/80 p-1 flex items-center justify-center shadow-lg shadow-emerald-950/20 group-hover:border-emerald-500/40 group-hover:shadow-emerald-500/10 transition-all"
           style={{ width: size + 8, height: size + 8 }}
         >
           {iconContent}
@@ -101,7 +101,7 @@ export const NextVectorLogo: React.FC<NextVectorLogoProps> = ({
       {showWordmark && (
         <div>
           <div className="flex items-center gap-2">
-            <span className="font-sans font-black text-xl tracking-tight text-zinc-100 group-hover:text-emerald-400 transition-colors">
+            <span className="font-sans font-extrabold text-xl tracking-tight text-zinc-100 group-hover:text-emerald-400 transition-colors">
               NextVector
             </span>
           </div>

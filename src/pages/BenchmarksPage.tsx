@@ -4,6 +4,7 @@ import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SEOHead } from '../components/common/SEOHead';
 import { Scale, AlertTriangle, ShieldCheck, HelpCircle } from 'lucide-react';
 import { MODEL_COUNT } from '../data/modelCount';
+import { PageHeader } from '../components/common/PageHeader';
 
 interface BenchmarksPageProps {
   benchmarks: Benchmark[];
@@ -37,28 +38,20 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
         schemaData={benchmarksSchema}
       />
       {/* Header */}
-      <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative">
-        <div className="max-w-3xl">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-purple-400 font-bold mb-3">
-            <Scale className="w-4 h-4" />
-            <span>Benchmarks & Methods</span>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
-            AI Benchmark Radar & Evaluation Audit
-          </h1>
-          <p className="text-sm md:text-base text-zinc-400 font-sans mt-3 leading-relaxed">
-            Distinguishing genuine technological capability shifts from marketing-driven cherry-picking, benchmark saturation, and training data contamination.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        eyebrow="Benchmarks & Methods"
+        icon={<Scale className="w-4 h-4" />}
+        title="AI Benchmark Radar & Evaluation Audit"
+        description="Distinguishing genuine technological capability shifts from marketing-driven cherry-picking, benchmark saturation, and training data contamination."
+      />
 
       {/* Main Interactive Benchmark Visualizer */}
       <BenchmarkChart benchmarks={benchmarks} onSelectModel={onSelectModel} />
 
       {/* Editorial Evaluation Manifesto / Truth in Benchmarking */}
-      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-8 space-y-6">
+      <section className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 md:p-8 space-y-6">
         <div className="border-b border-zinc-800 pb-4">
-          <h2 className="text-xl font-bold text-zinc-100 font-sans flex items-center gap-2">
+          <h2 className="heading-section flex items-center gap-2">
             <ShieldCheck className="w-5 h-5 text-emerald-400" />
             <span>The NextVector Benchmark Evaluation Protocol</span>
           </h2>
@@ -69,7 +62,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-5 bg-zinc-900/40 rounded-2xl border border-zinc-800/80 space-y-2">
-            <div className="font-mono text-xs text-amber-400 font-bold uppercase tracking-wider">
+            <div className="eyebrow-warn">
               1. Contamination & Memorization
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
@@ -78,7 +71,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
           </div>
 
           <div className="p-5 bg-zinc-900/40 rounded-2xl border border-zinc-800/80 space-y-2">
-            <div className="font-mono text-xs text-cyan-400 font-bold uppercase tracking-wider">
+            <div className="eyebrow">
               2. Test-Time Compute Disparity
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
@@ -87,7 +80,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
           </div>
 
           <div className="p-5 bg-zinc-900/40 rounded-2xl border border-zinc-800/80 space-y-2">
-            <div className="font-mono text-xs text-emerald-400 font-bold uppercase tracking-wider">
+            <div className="eyebrow">
               3. The Real-World Friction Gap
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">

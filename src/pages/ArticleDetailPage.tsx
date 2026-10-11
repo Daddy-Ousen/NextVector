@@ -178,7 +178,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
   };
 
   return (
-    <article ref={articleRef} itemScope itemType="https://schema.org/TechArticle" className="max-w-3xl mx-auto pb-20">
+    <article ref={articleRef} itemScope itemType="https://schema.org/TechArticle" className="max-w-[42rem] mx-auto pb-20">
       <ReadingProgressBar targetRef={articleRef} />
       <SEOHead
         title={article.title}
@@ -349,7 +349,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       </header>
 
       {/* Hero Image */}
-      <div className="relative rounded-3xl overflow-hidden border border-zinc-800 mb-8 max-h-[460px] bg-zinc-950">
+      <div className="relative rounded-2xl overflow-hidden border border-zinc-800 mb-8 max-h-[460px] bg-zinc-950">
         <img
           src={article.coverImage}
           alt={article.coverImageAlt || article.title}
@@ -370,7 +370,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       {/* Executive Key Takeaways */}
       {article.keyTakeaways && article.keyTakeaways.length > 0 && (
         <section className="mb-10 rounded-2xl bg-zinc-950 border border-zinc-800 p-6 key-takeaways" aria-label="Executive Key Takeaways">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
+          <div className="eyebrow flex items-center gap-2 mb-3">
             <ShieldCheck className="w-4 h-4" />
             <span>Executive Takeaways</span>
           </div>
@@ -386,7 +386,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       )}
 
       {/* Main Body Content */}
-      <article className="prose prose-invert max-w-[42rem] space-y-6 text-zinc-200 font-sans text-base md:text-lg leading-relaxed">
+      <article className="prose prose-invert max-w-none space-y-6 text-zinc-200 font-sans text-base md:text-lg leading-relaxed">
         {article.content.map((paragraph, idx) => (
           <React.Fragment key={idx}>
             <p className="text-zinc-300 leading-relaxed font-sans">
@@ -400,13 +400,13 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       {/* Technical Specifications Table (if applicable) */}
       {article.technicalSpecs && (
         <section className="mt-12 rounded-2xl bg-zinc-950 border border-zinc-800 p-6">
-          <h3 className="text-sm font-mono uppercase tracking-wider text-cyan-400 font-bold mb-4 flex items-center gap-2">
+          <h3 className="eyebrow mb-4 flex items-center gap-2">
             <Cpu className="w-4 h-4" />
             <span>Technical Parameters & Verified Specifications</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {Object.entries(article.technicalSpecs).map(([key, val]) => (
-              <div key={key} className="p-3 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
+              <div key={key} className="p-3 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
                 <div className="text-2xs font-mono text-zinc-400 uppercase tracking-wider">{key}</div>
                 <div className="text-sm font-mono font-bold text-zinc-100 mt-0.5">{val}</div>
               </div>
@@ -426,7 +426,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             {relatedModel && (
               <div
                 onClick={() => onSelectModel(relatedModel.id)}
-                className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 cursor-pointer transition-all group"
+                className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 cursor-pointer transition-all group"
               >
                 <div className="flex items-center gap-1.5 text-xs text-emerald-400 mb-1">
                   <Cpu className="w-3.5 h-3.5" />
@@ -444,13 +444,13 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             {relatedBenchmark && (
               <div
                 onClick={() => onSelectBenchmark(relatedBenchmark.id)}
-                className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-purple-500/50 cursor-pointer transition-all group"
+                className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 cursor-pointer transition-all group"
               >
-                <div className="flex items-center gap-1.5 text-xs text-purple-400 mb-1">
+                <div className="flex items-center gap-1.5 text-xs text-emerald-400 mb-1">
                   <BarChart2 className="w-3.5 h-3.5" />
                   <span>Benchmark Leaderboard</span>
                 </div>
-                <div className="text-sm font-bold text-zinc-100 group-hover:text-purple-400 transition-colors">
+                <div className="text-sm font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">
                   {relatedBenchmark.name}
                 </div>
                 <div className="text-xs text-zinc-400 mt-1">
@@ -462,7 +462,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             {relatedPaper && (
               <div
                 onClick={() => onSelectPaper(relatedPaper.id)}
-                className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-amber-500/50 cursor-pointer transition-all group"
+                className="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800 hover:border-amber-500/50 cursor-pointer transition-all group"
               >
                 <div className="flex items-center gap-1.5 text-xs text-amber-400 mb-1">
                   <BookOpen className="w-3.5 h-3.5" />
@@ -497,7 +497,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                       onSelectArticle(next.slug);
                     }
                   }}
-                  className="group flex sm:flex-col gap-3 h-full rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 p-3 transition-colors"
+                  className="group flex sm:flex-col gap-3 h-full rounded-lg bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 p-3 transition-colors"
                 >
                   <img
                     src={next.coverImage}
@@ -534,7 +534,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             <div className="flex items-center gap-2">
               <span className="text-base font-bold text-zinc-100">{article.author.name}</span>
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span className="text-2xs text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
+              <span className="text-2xs text-emerald-400 px-2 py-0.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
                 Founder & Editor-in-Chief
               </span>
             </div>
@@ -547,7 +547,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         <div className="flex items-center gap-2.5 shrink-0 flex-wrap">
           <button
             onClick={onSelectAuthor}
-            className="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 transition-colors"
+            className="px-3 py-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 transition-colors"
           >
             Author Profile
           </button>
@@ -556,7 +556,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
               href={article.author.substack}
               target="_blank"
               rel="noopener noreferrer"
-              className="tap px-3 py-1.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-bold transition-colors flex items-center gap-1"
+              className="tap px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold transition-colors flex items-center gap-1"
               title="NextVector on Substack"
             >
               <span>Substack</span>
@@ -567,7 +567,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             href="https://rhasan.online"
             target="_blank"
             rel="noopener noreferrer"
-            className="tap px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md flex items-center gap-1"
+            className="tap px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md flex items-center gap-1"
           >
             <span>rhasan.online</span>
             <ExternalLink className="w-3 h-3" />
@@ -616,7 +616,7 @@ const NewsletterInline: React.FC = () => (
         href={SUBSTACK_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="tap text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold shrink-0"
+        className="tap text-2xs text-emerald-400 hover:underline inline-flex items-center gap-1 font-semibold shrink-0"
       >
         <span>On Substack</span>
         <ArrowRight className="w-3 h-3" />

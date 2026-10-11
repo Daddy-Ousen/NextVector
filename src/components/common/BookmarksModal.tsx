@@ -53,7 +53,7 @@ export const BookmarksModal: React.FC<BookmarksModalProps> = ({
             bookmarkedArticles.map((article) => (
               <div
                 key={article.id}
-                className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 flex items-start justify-between gap-3 group transition-all"
+                className="p-3.5 rounded-lg bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 flex items-start justify-between gap-3 group transition-all"
               >
                 <div 
                   onClick={() => {
@@ -63,7 +63,7 @@ export const BookmarksModal: React.FC<BookmarksModalProps> = ({
                   className="flex-1 cursor-pointer"
                 >
                   <div className="flex items-center gap-2 text-2xs text-zinc-400 mb-1">
-                    <span className="uppercase text-emerald-400">{article.category}</span>
+                    <span className="eyebrow">{article.category}</span>
                     <span>•</span>
                     <span>{formatRelativeTime(article.publishedAt)}</span>
                   </div>
@@ -79,7 +79,7 @@ export const BookmarksModal: React.FC<BookmarksModalProps> = ({
                   <SignalRatingBadge score={article.signalRating} size="sm" />
                   <button
                     onClick={() => onRemoveBookmark(article.id)}
-                    className="p-1.5 text-zinc-400 hover:text-red-400 rounded transition-colors"
+                    className="p-1.5 text-zinc-400 hover:text-red-400 rounded-lg transition-colors"
                     title="Remove from saved"
                   >
                     <Trash2 className="w-3.5 h-3.5" />

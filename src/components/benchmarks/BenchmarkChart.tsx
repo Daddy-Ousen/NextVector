@@ -60,7 +60,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
   if (!activeBenchmark) return null;
 
   return (
-    <div className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-8 shadow-2xl">
+    <div className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 md:p-8 shadow-2xl">
       {/* Header & Benchmark Switcher Pills */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-zinc-800">
         <div>
@@ -68,7 +68,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
             <BarChart3 className="w-4 h-4" />
             <span>NextVector Benchmark Radar</span>
           </div>
-          <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans">
+          <h2 className="heading-section">
             AI Model Performance
           </h2>
           <p className="text-xs text-zinc-400 mt-1">
@@ -108,7 +108,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={`Search ${activeBenchmark.leaderboard.length} models or labs...`}
-              className="tap w-full pl-9 pr-3 py-1.5 text-xs bg-zinc-900 border border-zinc-800 rounded-xl text-zinc-200 placeholder:text-zinc-500 focus:outline-none focus:border-emerald-500/50"
+              className="tap w-full pl-9 pr-3 py-1.5 text-xs bg-zinc-900 border border-zinc-800 rounded-lg text-zinc-200 placeholder:text-zinc-500 focus:outline-none focus:border-emerald-500/50"
             />
           </div>
           <div className="flex items-center gap-3 text-xs text-zinc-400">
@@ -193,7 +193,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                         <span
                           className={`text-2xs hidden sm:inline ${
                             isPricePerformance
-                              ? 'text-emerald-300 font-semibold bg-emerald-500/15 px-2 py-0.5 rounded border border-emerald-500/30'
+                              ? 'text-emerald-300 font-semibold bg-emerald-500/15 px-2 py-0.5 rounded-lg border border-emerald-500/30'
                               : 'text-zinc-400'
                           }`}
                           title={isPricePerformance ? 'Blended API Inference Pricing ($ / 1M Tokens)' : 'Estimated Compute Cost Per Evaluation Run'}
@@ -216,9 +216,9 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                     <div
                       className={`h-full rounded-full transition-all duration-700 ${
                         isTop
-                          ? 'bg-gradient-to-r from-emerald-500 to-cyan-400 shadow-sm shadow-emerald-500/40'
+                          ? 'bg-emerald-400'
                           : entry.rank <= 5
-                          ? 'bg-gradient-to-r from-emerald-600 to-teal-500'
+                          ? 'bg-emerald-600'
                           : 'bg-zinc-600 group-hover:bg-zinc-500'
                       }`}
                       style={{ width: `${percentage}%` }}
@@ -240,7 +240,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
             <div className="pt-2 text-center">
               <button
                 onClick={() => setShowAllEntries(!showAllEntries)}
-                className="tap px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-all inline-flex items-center gap-1.5"
+                className="tap px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-all inline-flex items-center gap-1.5"
               >
                 <span>{showAllEntries ? 'Collapse to Top 15 Models' : `Show All ${filteredEntries.length} Arena Models`}</span>
                 {showAllEntries ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -252,8 +252,8 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
         {/* Right: Editorial Context & Caveats */}
         <div className="lg:col-span-5 bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-5 space-y-4 self-start sticky top-24">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 uppercase tracking-wider mb-1 font-semibold">
-              <Info className="w-3.5 h-3.5 text-cyan-400" />
+            <div className="eyebrow flex items-center gap-2 mb-1">
+              <Info className="w-3.5 h-3.5" />
               <span>What It Actually Measures</span>
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
@@ -262,7 +262,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
           </div>
 
           <div className="pt-3 border-t border-zinc-800">
-            <div className="flex items-center gap-2 text-xs font-mono text-amber-400 uppercase tracking-wider mb-1 font-semibold">
+            <div className="eyebrow-warn flex items-center gap-2 mb-1">
               <AlertCircle className="w-3.5 h-3.5" />
               <span>Caveats & Contamination Risks</span>
             </div>
@@ -272,7 +272,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
           </div>
 
           <div className="pt-3 border-t border-zinc-800">
-            <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 uppercase tracking-wider mb-1 font-semibold">
+            <div className="eyebrow flex items-center gap-2 mb-1">
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>Editorial Significance</span>
             </div>

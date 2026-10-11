@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AIModel } from '../types';
 import { SEOHead } from '../components/common/SEOHead';
 import { ArrowLeft, Cpu, DollarSign, Scale, ExternalLink, HardDrive, ShieldAlert, CheckCircle, Calculator } from 'lucide-react';
+import { formatBenchmarkScore } from '../utils';
 
 interface ModelDetailPageProps {
   model: AIModel;
@@ -24,7 +25,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
   ).toFixed(2);
 
   return (
-    <div className="max-w-5xl mx-auto space-y-10 pb-20">
+    <div className="max-w-5xl space-y-10 pb-20">
       <SEOHead
         title={`${model.name} — Technical Specs & Benchmark Audit`}
         description={`${model.developer}'s ${model.name}. Architecture: ${model.modelType}, Context: ${model.contextWindow}. Verified benchmarks and pricing evaluation.`}
@@ -50,7 +51,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
       </div>
 
       {/* Model Spec Sheet Header */}
-      <header className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 shadow-2xl relative">
+      <header className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 shadow-2xl relative">
         <div className="flex flex-wrap items-center gap-2.5 mb-3">
           <span className="px-3 py-1 rounded-full text-xs bg-zinc-900 border border-zinc-700 text-emerald-400 font-bold">
             {model.modelType}
@@ -81,19 +82,19 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
 
         {/* Primary Specs Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-8 border-t border-zinc-800/80 text-xs">
-          <div className="p-4 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
+          <div className="p-4 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
             <div className="text-2xs text-zinc-400 uppercase tracking-wider">Parameters</div>
             <div className="text-base font-bold text-zinc-100 mt-1">{model.parameters}</div>
           </div>
-          <div className="p-4 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
+          <div className="p-4 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
             <div className="text-2xs text-zinc-400 uppercase tracking-wider">Context Window</div>
             <div className="text-base font-bold text-zinc-100 mt-1">{model.contextWindow}</div>
           </div>
-          <div className="p-4 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
+          <div className="p-4 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
             <div className="text-2xs text-zinc-400 uppercase tracking-wider">Pricing (Input)</div>
             <div className="text-base font-bold text-emerald-400 mt-1">${model.pricing.inputPer1M} / 1M</div>
           </div>
-          <div className="p-4 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
+          <div className="p-4 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
             <div className="text-2xs text-zinc-400 uppercase tracking-wider">Pricing (Output)</div>
             <div className="text-base font-bold text-zinc-100 mt-1">${model.pricing.outputPer1M} / 1M</div>
           </div>
@@ -103,7 +104,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
       {/* Architecture & Hardware Requirements */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <div className="eyebrow flex items-center gap-2">
             <Cpu className="w-4 h-4" />
             <span>Architecture & Training Notes</span>
           </div>
@@ -116,7 +117,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
         </div>
 
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold">
+          <div className="eyebrow flex items-center gap-2">
             <HardDrive className="w-4 h-4" />
             <span>Hardware & Inference Footprint</span>
           </div>
@@ -128,7 +129,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
 
       {/* Verified Benchmarks & Generational Deltas */}
       <section className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 space-y-4">
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-purple-400 font-bold">
+        <div className="eyebrow flex items-center gap-2">
           <Scale className="w-4 h-4" />
           <span>Verified Benchmark Performance</span>
         </div>
@@ -147,7 +148,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
                 <tr key={idx} className="hover:bg-zinc-900/40">
                   <td className="py-3 px-3 text-zinc-200 font-semibold">{bench.benchmarkName}</td>
                   <td className="py-3 px-3 text-emerald-400 font-bold text-sm">
-                    {bench.score}{bench.unit || '%'}
+                    {formatBenchmarkScore(bench)}
                   </td>
                   <td className="py-3 px-3 text-zinc-400">{bench.vsPreviousGen}</td>
                 </tr>
@@ -160,7 +161,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
       {/* Key Improvements vs Known Limitations */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+          <div className="eyebrow flex items-center gap-2">
             <CheckCircle className="w-4 h-4" />
             <span>Key Strengths & Improvements</span>
           </div>
@@ -172,7 +173,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
         </div>
 
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-amber-400 font-bold">
+          <div className="eyebrow-warn flex items-center gap-2">
             <ShieldAlert className="w-4 h-4" />
             <span>Known Limitations & Caveats</span>
           </div>
@@ -187,7 +188,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
       {/* Interactive Token Economics Calculator */}
       <section className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold">
+          <div className="eyebrow flex items-center gap-2">
             <Calculator className="w-4 h-4" />
             <span>Interactive Operational Token Cost Estimator</span>
           </div>
@@ -202,7 +203,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
               min="0"
               value={inputTokensMillions}
               onChange={(e) => setInputTokensMillions(Number(e.target.value))}
-              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-100 outline-none focus:border-emerald-500"
+              className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-2 text-xs text-zinc-100 outline-none focus:border-emerald-500"
             />
           </div>
 
@@ -213,11 +214,11 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
               min="0"
               value={outputTokensMillions}
               onChange={(e) => setOutputTokensMillions(Number(e.target.value))}
-              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-2 text-xs text-zinc-100 outline-none focus:border-emerald-500"
+              className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-2 text-xs text-zinc-100 outline-none focus:border-emerald-500"
             />
           </div>
 
-          <div className="p-3 bg-zinc-900/80 rounded-xl border border-zinc-800 flex flex-col justify-center">
+          <div className="p-3 bg-zinc-900/80 rounded-lg border border-zinc-800 flex flex-col justify-center">
             <div className="text-2xs font-mono text-zinc-400 uppercase">Estimated Monthly API Cost:</div>
             <div className="text-xl font-bold text-emerald-400 mt-0.5">
               ${estimatedCost}

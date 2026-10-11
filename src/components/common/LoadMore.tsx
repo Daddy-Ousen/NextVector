@@ -28,7 +28,7 @@ export const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({ remaining, onCli
     <div className="flex justify-center pt-8">
       <button
         onClick={onClick}
-        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-sm text-zinc-200 hover:border-emerald-500/40 hover:text-emerald-300 transition-colors cursor-pointer"
+        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-sm text-zinc-200 hover:border-emerald-500/40 hover:text-emerald-300 transition-colors cursor-pointer"
       >
         <ChevronDown className="w-4 h-4" />
         Load more stories

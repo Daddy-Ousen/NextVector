@@ -1,6 +1,7 @@
 import React from 'react';
 import { AIModel } from '../../types';
 import { Cpu, Scale, ArrowUpRight, DollarSign, Layers, CheckSquare, Square } from 'lucide-react';
+import { formatBenchmarkScore } from '../../utils';
 
 interface ModelCardProps {
   model: AIModel;
@@ -37,7 +38,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
 
           <button
             onClick={() => onToggleCompare(model.id)}
-            className={`tap flex items-center gap-1 text-2xs px-2.5 py-1 rounded-md transition-colors ${
+            className={`tap flex items-center gap-1 text-2xs px-2.5 py-1 rounded-lg transition-colors ${
               isSelectedForCompare
                 ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40'
                 : 'bg-zinc-800/60 text-zinc-400 hover:text-zinc-200 border border-zinc-700/40 hover:bg-zinc-800'
@@ -82,7 +83,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
         </div>
 
         {/* Standardized Specification Grid */}
-        <div className="grid grid-cols-2 gap-2 p-3 bg-zinc-950/60 rounded-xl border border-zinc-800/80 mb-4 text-xs">
+        <div className="grid grid-cols-2 gap-2 p-3 bg-zinc-950/60 rounded-lg border border-zinc-800/80 mb-4 text-xs">
           <div>
             <div className="text-2xs uppercase tracking-wider text-zinc-400">Parameters</div>
             <div className="text-zinc-200 font-semibold truncate" title={model.parameters}>
@@ -112,17 +113,17 @@ export const ModelCard: React.FC<ModelCardProps> = ({
         {/* Key Benchmark Badges */}
         <div className="space-y-1.5 mb-4">
           <div className="text-2xs text-zinc-400 flex items-center gap-1">
-            <Scale className="w-3 h-3 text-cyan-400" />
+            <Scale className="w-3 h-3 text-emerald-400" />
             <span>Benchmark Highlights:</span>
           </div>
           <div className="flex flex-wrap gap-1.5">
             {model.benchmarks.slice(0, 2).map((b, i) => (
               <div
                 key={i}
-                className="px-2 py-0.5 rounded bg-zinc-800/80 border border-zinc-700/50 text-2xs text-zinc-300"
+                className="px-2 py-0.5 rounded-lg bg-zinc-800/80 border border-zinc-700/50 text-2xs text-zinc-300"
               >
                 <span className="text-zinc-400">{b.benchmarkName.split(' ')[0]}: </span>
-                <span className="text-emerald-400 font-bold">{b.score}{b.unit || '%'}</span>
+                <span className="text-emerald-400 font-bold">{formatBenchmarkScore(b)}</span>
               </div>
             ))}
           </div>

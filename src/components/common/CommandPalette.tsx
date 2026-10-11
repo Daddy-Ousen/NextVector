@@ -105,7 +105,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
               <X className="w-4 h-4" />
             </button>
           )}
-          <kbd className="hidden sm:inline-block px-2 py-0.5 rounded bg-zinc-800 border border-zinc-700 font-mono text-2xs text-zinc-400">
+          <kbd className="hidden sm:inline-block px-2 py-0.5 rounded-lg bg-zinc-800 border border-zinc-700 font-mono text-2xs text-zinc-400">
             ESC
           </kbd>
         </div>
@@ -116,7 +116,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
           {filteredArticles.length > 0 && (
             <div>
               <div className="flex items-center gap-1.5 px-2 py-1 text-2xs font-mono uppercase tracking-wider text-zinc-400">
-                <FileText className="w-3.5 h-3.5 text-blue-400" />
+                <FileText className="w-3.5 h-3.5 text-zinc-400" />
                 <span>Articles</span>
               </div>
               <div className="space-y-1 mt-1">
@@ -180,7 +180,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
           {filteredBenchmarks.length > 0 && (
             <div>
               <div className="flex items-center gap-1.5 px-2 py-1 text-2xs font-mono uppercase tracking-wider text-zinc-400">
-                <BarChart2 className="w-3.5 h-3.5 text-purple-400" />
+                <BarChart2 className="w-3.5 h-3.5 text-zinc-400" />
                 <span>Benchmarks & Evaluation</span>
               </div>
               <div className="space-y-1 mt-1">
@@ -191,7 +191,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                     className="w-full flex items-center justify-between p-2.5 rounded-lg hover:bg-zinc-800/80 text-left group transition-colors"
                   >
                     <div>
-                      <div className="text-sm font-medium text-zinc-200 group-hover:text-purple-400 transition-colors">
+                      <div className="text-sm font-medium text-zinc-200 group-hover:text-emerald-400 transition-colors">
                         {bench.name}
                       </div>
                       <div className="text-xs text-zinc-400 line-clamp-1 mt-0.5">

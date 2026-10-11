@@ -14,6 +14,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { MODEL_COUNT } from '../data/modelCount';
+import { PageHeader } from '../components/common/PageHeader';
 
 interface FAQItem {
   id: string;
@@ -134,7 +135,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto space-y-12 pb-20 px-4 sm:px-6">
+    <div className="max-w-5xl space-y-12 pb-20">
       <SEOHead
         title="Frequently Asked Questions (FAQ) — Frontier AI Models & Intelligence | NextVector"
         description="Comprehensive answers to the most common AI questions in 2026: What is the best AI model? Claude vs ChatGPT comparison, best AI subscriptions ($20 vs $200), and NextVector's signal rating formula."
@@ -152,25 +153,12 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
       />
 
       {/* Primary Entity Header H1 */}
-      <header className="border-b border-zinc-800/80 pb-6 pt-2">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
-              <HelpCircle className="w-4 h-4 text-emerald-400" />
-              <span>Knowledge Base &amp; Q&amp;A</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 font-sans tracking-tight leading-tight">
-              Frequently Asked Questions <span className="text-zinc-600 font-light">—</span>{' '}
-              <span className="bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-                AI Models &amp; NextVector
-              </span>
-            </h1>
-          </div>
-          <p className="text-xs sm:text-sm text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
-            Concise, empirical answers to the most queried questions in artificial intelligence, model benchmarks, subscription tradeoffs, and editorial methodology.
-          </p>
-        </div>
-      </header>
+      <PageHeader
+        eyebrow={<>Knowledge Base &amp; Q&amp;A</>}
+        icon={<HelpCircle className="w-4 h-4" />}
+        title={<>Frequently Asked Questions <span className="text-zinc-400">— AI Models &amp; NextVector</span></>}
+        description="Concise, empirical answers to the most queried questions in artificial intelligence, model benchmarks, subscription tradeoffs, and editorial methodology."
+      />
 
       {/* Search & Category Filter Controls */}
       <div className="space-y-4">
@@ -198,7 +186,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-xl border transition-all cursor-pointer ${
+              className={`px-3.5 py-1.5 rounded-lg border transition-all cursor-pointer ${
                 selectedCategory === cat.id
                   ? 'bg-emerald-500/10 border-emerald-500 text-emerald-400 font-bold'
                   : 'bg-zinc-900/50 border-zinc-800 text-zinc-400 hover:text-zinc-200 hover:border-zinc-700'
@@ -233,7 +221,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
                   className="w-full p-5 sm:p-6 text-left flex items-start justify-between gap-4 cursor-pointer hover:bg-zinc-900/40 transition-colors"
                 >
                   <div className="space-y-1.5">
-                    <span className="text-2xs font-mono text-emerald-400 uppercase tracking-widest font-bold">
+                    <span className="eyebrow">
                       {item.category}
                     </span>
                     <h2 className="text-base sm:text-lg font-bold text-zinc-100 font-sans tracking-tight">
@@ -248,8 +236,8 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
                 {isExpanded && (
                   <div className="px-5 sm:px-6 pb-6 pt-2 border-t border-zinc-800/60 space-y-3">
                     {/* Front-loaded Key Takeaway / BLUF */}
-                    <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-emerald-500/20 text-xs">
-                      <span className="text-emerald-400 font-bold uppercase tracking-wider block text-2xs mb-1">
+                    <div className="p-3.5 rounded-lg bg-zinc-900/60 border border-emerald-500/20 text-xs">
+                      <span className="eyebrow block mb-1">
                         Executive Takeaway (Direct Answer)
                       </span>
                       <p className="text-zinc-200 leading-relaxed font-sans">{item.shortAnswer}</p>
@@ -283,7 +271,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
           <span>•</span>
           <button
             onClick={() => onNavigate?.('/contact')}
-            className="text-cyan-400 hover:underline flex items-center gap-1 font-bold"
+            className="text-emerald-400 hover:underline flex items-center gap-1 font-bold"
           >
             <span>Contact Desk</span>
             <ArrowRight className="w-3.5 h-3.5" />

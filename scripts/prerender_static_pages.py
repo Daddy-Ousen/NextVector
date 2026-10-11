@@ -482,7 +482,7 @@ def prerender_all():
     lead_takeaways = "".join([f"<li class='mb-1.5 text-zinc-300'>{escape(t)}</li>" for t in lead_article["keyTakeaways"][:3]])
     
     recent_stories = "".join([f"""
-    <li class="p-4 rounded-xl bg-zinc-950/60 border border-zinc-800/80 mb-3">
+    <li class="p-4 rounded-lg bg-zinc-950/60 border border-zinc-800/80 mb-3">
       <div class="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-1">
         <span class="text-emerald-400 font-bold uppercase">{escape(a['category'])}</span>
         <span>•</span>
@@ -526,7 +526,7 @@ def prerender_all():
       </section>
 
       <!-- Lead Intelligence Report -->
-      <section class="p-6 md:p-8 rounded-3xl bg-zinc-950 border border-zinc-800 shadow-2xl space-y-6">
+      <section class="p-6 md:p-8 rounded-2xl bg-zinc-950 border border-zinc-800 shadow-2xl space-y-6">
         <div class="flex items-center gap-2 text-xs font-mono text-emerald-400 font-bold uppercase">
           <span>Lead Intelligence Report • {lead_article['publishedAt'][:10]}</span>
         </div>
@@ -535,7 +535,7 @@ def prerender_all():
         </h2>
         <p class="text-zinc-300 text-base leading-relaxed">{escape(lead_article['subtitle'])}</p>
         
-        <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 space-y-3 text-xs font-mono">
+        <div class="p-4 rounded-lg bg-zinc-900/60 border border-zinc-800 space-y-3 text-xs font-mono">
           <div><strong class="text-zinc-200">What Happened:</strong> <span class="text-zinc-400">{lead_wh}</span></div>
           <div><strong class="text-zinc-200">Why It Matters:</strong> <span class="text-zinc-400">{lead_wm}</span></div>
           <div><strong class="text-zinc-200">What's Next:</strong> <span class="text-zinc-400">{lead_wn}</span></div>
@@ -688,7 +688,7 @@ def prerender_all():
         wn = escape(art["threeQuestions"]["whatsNext"])
 
         takeaways_html = "".join([f"<li class='mb-2 text-zinc-300'>{escape(t)}</li>" for t in art["keyTakeaways"]])
-        paras_html = "".join([f"<p class='text-zinc-300 text-lg leading-relaxed mb-6 font-serif'>{escape(p)}</p>" for p in art["content"]])
+        paras_html = "".join([f"<p class='text-zinc-300 text-lg leading-relaxed mb-6'>{escape(p)}</p>" for p in art["content"]])
         citations_html = "".join([f"<li><a href='{escape(c['url'])}' class='text-emerald-400 hover:underline' target='_blank' rel='noopener'>{escape(c['title'])} ({escape(c['source'])})</a></li>" for c in art["citations"]])
 
         body_html = f"""
@@ -751,7 +751,7 @@ def prerender_all():
           </section>
 
           <!-- Citations & Sources -->
-          {f'<section class="mb-12 p-6 rounded-xl border border-zinc-800/80 bg-zinc-950/40"><h3 class="text-sm font-bold text-zinc-200 mb-3 font-mono">Primary Sources & Citations</h3><ul class="space-y-2 text-xs font-mono">{citations_html}</ul></section>' if citations_html else ''}
+          {f'<section class="mb-12 p-6 rounded-lg border border-zinc-800/80 bg-zinc-950/40"><h3 class="text-sm font-bold text-zinc-200 mb-3 font-mono">Primary Sources & Citations</h3><ul class="space-y-2 text-xs font-mono">{citations_html}</ul></section>' if citations_html else ''}
 
           <!-- Breadcrumb & Related Navigation Links -->
           <footer class="pt-8 border-t border-zinc-800 flex flex-wrap gap-4 text-xs font-mono text-zinc-400">

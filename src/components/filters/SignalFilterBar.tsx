@@ -103,7 +103,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
       </div>
 
       {/* Bottom row: Topic pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pt-3 pb-1 scrollbar-none">
+      <div className="flex items-center gap-2 overflow-x-auto pt-3 pb-1 pr-8 scrollbar-none fade-right">
         <span className="text-2xs font-mono text-zinc-400 uppercase shrink-0 mr-1">
           Topics:
         </span>
@@ -115,7 +115,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
               onClick={() => onSelectTag(tag === 'All Topics' ? '' : tag)}
               className={`tap text-xs px-3 py-1 rounded-full shrink-0 transition-all ${
                 isSelected
-                  ? 'bg-zinc-200 text-zinc-950 font-bold shadow-sm'
+                  ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-bold'
                   : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
               }`}
             >

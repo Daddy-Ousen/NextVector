@@ -47,7 +47,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
         <div className="flex items-center justify-between gap-2 sm:gap-4 mb-4">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <NextVectorLogo size={22} withContainer={true} showWordmark={false} />
-            <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold truncate">
+            <div className="eyebrow flex items-center gap-1.5 sm:gap-2 truncate">
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
               <span className="hidden sm:inline">The Morning Vector • Executive Edition</span>
               <span className="sm:hidden">The Morning Vector</span>
@@ -63,7 +63,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
           </button>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-serif tracking-tight">
+        <h1 className="heading-page">
           Daily Intelligence Briefing
         </h1>
         <div className="text-sm text-zinc-400 mt-2">
@@ -71,9 +71,9 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
         </div>
 
         {/* Executive Summary Block */}
-        <div className="mt-6 p-5 rounded-2xl bg-zinc-950 border border-emerald-500/20 text-zinc-200 font-sans text-base leading-relaxed italic border-l-4 border-l-emerald-500">
-          "{briefing.summary}"
-        </div>
+        <p className="mt-6 pl-4 border-l-2 border-emerald-500 text-zinc-200 text-base leading-relaxed">
+          {briefing.summary}
+        </p>
       </div>
 
       {/* Structured Briefing Items */}
@@ -93,8 +93,8 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
               <span
                 className={`px-2.5 py-0.5 rounded-full font-bold ${
                   item.urgency === 'Critical Signal'
-                    ? 'bg-red-500/10 text-red-400 border border-red-500/30'
-                    : 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
+                    ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
+                    : 'bg-zinc-900 text-zinc-300 border border-zinc-700'
                 }`}
               >
                 {item.urgency}
@@ -113,8 +113,8 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
                 <p className="text-zinc-300 leading-relaxed">{item.summary}</p>
               </div>
 
-              <div className="p-3.5 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
-                <strong className="text-emerald-400 block text-xs font-mono uppercase tracking-wider mb-1">
+              <div className="p-3.5 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
+                <strong className="eyebrow block mb-1">
                   Why It Matters:
                 </strong>
                 <p className="text-zinc-200 leading-relaxed text-xs md:text-sm">
@@ -139,12 +139,12 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
       </div>
 
       {/* Direct Newsletter Delivery Subscription Box */}
-      <div className="rounded-3xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 border border-emerald-500/30 p-8 space-y-6 shadow-2xl relative overflow-hidden">
+      <div className="rounded-2xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 border border-emerald-500/30 p-8 space-y-6 shadow-2xl relative overflow-hidden">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800/80 pb-5">
           <div className="flex items-center gap-3">
             <NextVectorLogo size={28} withContainer={true} showWordmark={false} />
             <div>
-              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+              <div className="eyebrow flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5" />
                 <span>The Morning Vector</span>
               </div>

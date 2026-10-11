@@ -74,7 +74,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
   };
 
   return (
-    <div className="space-y-16 pb-24 max-w-5xl mx-auto">
+    <div className="space-y-16 pb-24 max-w-5xl">
       <SEOHead
         title="Robiul Hasan — Founder, Systems Engineer & Editor-in-Chief | NextVector"
         description="Systems engineer, IT infrastructure lead, and founder of NextVector. Editorial charter: Less noise. More signal. Verified benchmarks over marketing hype."
@@ -84,9 +84,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       />
 
       {/* 1. Hero Dossier Card */}
-      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-12 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+      <section className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 md:p-12 shadow-2xl relative overflow-hidden">
 
         <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8">
           {/* Avatar Photo & Verification Badge */}
@@ -95,10 +93,10 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <img
                 src="/images/author-robiul-hasan.jpg"
                 alt="Robiul Hasan"
-                className="w-full h-full rounded-xl object-cover"
+                className="w-full h-full rounded-lg object-cover"
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-emerald-500 text-zinc-950 p-1.5 rounded-xl shadow-lg border-2 border-zinc-950" title="Verified Editorial Lead & Systems Specialist">
+            <div className="absolute -bottom-2 -right-2 bg-emerald-500 text-zinc-950 p-1.5 rounded-lg shadow-lg border-2 border-zinc-950" title="Verified Editorial Lead & Systems Specialist">
               <ShieldCheck className="w-4 h-4" />
             </div>
           </div>
@@ -113,8 +111,8 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <span className="px-3 py-1 rounded-full text-xs bg-zinc-900 border border-zinc-800 text-zinc-400">
                 Dhaka (UTC+6)
               </span>
-              <span className="px-3 py-1 rounded-full text-xs bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-semibold flex items-center gap-1.5">
-                <Radio className="w-3 h-3 text-cyan-400 animate-pulse" />
+              <span className="px-3 py-1 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold flex items-center gap-1.5">
+                <Radio className="w-3 h-3 text-emerald-400 animate-pulse" />
                 <span>Enterprise MSP & Agentic AI</span>
               </span>
             </div>
@@ -134,7 +132,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://rhasan.online"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-lg hover:shadow-emerald-500/20 active:scale-95 flex items-center gap-2"
+                className="px-4 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-lg hover:shadow-emerald-500/20 active:scale-95 flex items-center gap-2"
                 title="Visit Official Website"
               >
                 <span>rhasan.online</span>
@@ -145,7 +143,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://nextvectorr.substack.com/?r=92ang8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-bold transition-colors flex items-center gap-1.5"
+                className="px-3.5 py-2.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold transition-colors flex items-center gap-1.5"
                 title="NextVector on Substack"
               >
                 <span>Substack</span>
@@ -156,7 +154,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://github.com/Daddy-Ousen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
+                className="px-3.5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
                 title="GitHub Profile"
               >
                 <GithubIcon className="w-3.5 h-3.5" />
@@ -167,7 +165,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://linkedin.com/in/robiul-hasan-401296137"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-zinc-100 text-xs transition-colors flex items-center gap-2"
+                className="px-3.5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-zinc-100 text-xs transition-colors flex items-center gap-2"
                 title="LinkedIn Profile"
               >
                 <span>LinkedIn</span>
@@ -176,7 +174,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
               <button
                 onClick={handleCopyEmail}
-                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs transition-colors flex items-center gap-2"
+                className="px-3.5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs transition-colors flex items-center gap-2"
                 title="Copy email to clipboard"
               >
                 {copiedEmail ? (
@@ -198,7 +196,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
       {/* 2. Enterprise Scale & Operations Telemetry */}
       <section className="space-y-6">
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+        <div className="eyebrow flex items-center gap-2">
           <Server className="w-4 h-4" />
           <span>Operational Scale & Enterprise Footprint</span>
         </div>
@@ -217,7 +215,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
-            <div className="text-2xl md:text-4xl font-extrabold text-cyan-400 tracking-tight">
+            <div className="text-2xl md:text-4xl font-extrabold text-zinc-100 tracking-tight">
               1,100+
             </div>
             <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
@@ -229,7 +227,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
-            <div className="text-2xl md:text-4xl font-extrabold text-purple-400 tracking-tight">
+            <div className="text-2xl md:text-4xl font-extrabold text-zinc-100 tracking-tight">
               25+
             </div>
             <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
@@ -255,20 +253,20 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       </section>
 
       {/* 3. NextVector Editorial Manifesto & Signal Purity Protocol */}
-      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 space-y-8 relative overflow-hidden">
+      <section className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 space-y-8 relative overflow-hidden">
         <div className="border-b border-zinc-800/80 pb-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-1.5">
+            <div className="eyebrow flex items-center gap-2 mb-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Editorial Charter & Philosophy</span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 font-sans tracking-tight">
+            <h2 className="heading-section">
               Why NextVector Was Created: Less Noise. More Signal.
             </h2>
           </div>
           <button
             onClick={() => onNavigate('/')}
-            className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 flex items-center gap-1.5 transition-colors shrink-0"
+            className="px-3.5 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 flex items-center gap-1.5 transition-colors shrink-0"
           >
             <span>Read the latest news</span>
             <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
@@ -289,7 +287,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-400 text-xs">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-bold text-emerald-400 text-xs">
               02
             </div>
             <h3 className="text-sm font-bold text-zinc-100 font-sans">
@@ -301,7 +299,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center font-bold text-purple-400 text-xs">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-bold text-emerald-400 text-xs">
               03
             </div>
             <h3 className="text-sm font-bold text-zinc-100 font-sans">
@@ -316,7 +314,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
       {/* 4. Professional Work History */}
       <section className="space-y-6">
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+        <div className="eyebrow flex items-center gap-2">
           <Briefcase className="w-4 h-4" />
           <span>Professional Experience & Systems Leadership</span>
         </div>
@@ -328,7 +326,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <div>
                 <h3 className="text-lg font-bold text-zinc-100 font-sans flex items-center gap-2">
                   <span>L2 Support Engineer & Service Desk Co-Leader</span>
-                  <span className="px-2 py-0.5 rounded text-2xs bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 font-semibold">
+                  <span className="px-2 py-0.5 rounded-lg text-2xs bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 font-semibold">
                     Current
                   </span>
                 </h3>
@@ -393,13 +391,13 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
             <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
               <li className="flex items-start gap-2.5">
-                <span className="text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Served as primary frontline contact for client support requests, diagnosing complex application-level issues in a fast-paced, high-ticket-volume MSP environment.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Administered managed client server infrastructure, configuring Active Directory permissions, DNS configurations, and server data backup procedures.
                 </span>
@@ -425,13 +423,13 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
             <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
               <li className="flex items-start gap-2.5">
-                <span className="text-purple-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Spearheaded the digitization of outdated manual tracking systems, implementing standardized infrastructure documentation and incident escalation processes.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-purple-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Streamlined internal corporate communications and technical support procedures across all departments.
                 </span>
@@ -442,8 +440,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       </section>
 
       {/* 5. Featured Technical Engineering: Hermes AI Assistant */}
-      <section className="rounded-3xl bg-zinc-950 border border-emerald-500/30 p-6 md:p-10 space-y-6 relative overflow-hidden shadow-2xl">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+      <section className="rounded-2xl bg-zinc-950 border border-emerald-500/30 p-6 md:p-10 space-y-6 relative overflow-hidden shadow-2xl">
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-6">
           <div className="space-y-2">
@@ -465,7 +462,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://github.com/Daddy-Ousen"
             target="_blank"
             rel="noopener noreferrer"
-            className="tap px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
+            className="tap px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
           >
             <GithubIcon className="w-3.5 h-3.5" />
             <span>GitHub Repository</span>
@@ -478,7 +475,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
+          <div className="p-4 rounded-lg bg-zinc-900/70 border border-zinc-800 space-y-2">
             <div className="flex items-center gap-2 text-xs text-emerald-400 font-bold">
               <Terminal className="w-3.5 h-3.5" />
               <span>Multi-Step Tool Calling</span>
@@ -488,8 +485,8 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-            <div className="flex items-center gap-2 text-xs text-cyan-400 font-bold">
+          <div className="p-4 rounded-lg bg-zinc-900/70 border border-zinc-800 space-y-2">
+            <div className="flex items-center gap-2 text-xs text-emerald-400 font-bold">
               <Layers className="w-3.5 h-3.5" />
               <span>Browser Automation</span>
             </div>
@@ -498,8 +495,8 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-            <div className="flex items-center gap-2 text-xs text-purple-400 font-bold">
+          <div className="p-4 rounded-lg bg-zinc-900/70 border border-zinc-800 space-y-2">
+            <div className="flex items-center gap-2 text-xs text-emerald-400 font-bold">
               <Lock className="w-3.5 h-3.5" />
               <span>Sandboxed Execution</span>
             </div>
@@ -512,7 +509,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
       {/* 6. Technical Competencies Matrix */}
       <section className="space-y-6">
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+        <div className="eyebrow flex items-center gap-2">
           <Layers className="w-4 h-4" />
           <span>Technical Competencies & Systems Architecture</span>
         </div>
@@ -547,7 +544,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           {/* Domain 2: Infrastructure & BCDR */}
           <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
             <div className="flex items-center gap-2 text-sm font-bold text-zinc-100 font-sans">
-              <Database className="w-4 h-4 text-cyan-400" />
+              <Database className="w-4 h-4 text-emerald-400" />
               <span>Infrastructure & Business Continuity</span>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -573,7 +570,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           {/* Domain 3: Operations & Leadership */}
           <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
             <div className="flex items-center gap-2 text-sm font-bold text-zinc-100 font-sans">
-              <ShieldCheck className="w-4 h-4 text-purple-400" />
+              <ShieldCheck className="w-4 h-4 text-emerald-400" />
               <span>Operations & Reliability Engineering</span>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -626,14 +623,14 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
       {/* 7. Certifications & Academic Credentials */}
       <section className="space-y-6">
-        <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+        <div className="eyebrow flex items-center gap-2">
           <Award className="w-4 h-4" />
           <span>Industry Certifications & Education</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
               <Award className="w-5 h-5" />
             </div>
             <div>
@@ -650,14 +647,14 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
               <Award className="w-5 h-5" />
             </div>
             <div>
               <div className="text-sm font-bold text-zinc-100 font-sans">
                 Microsoft Certified: Modern Desktop Administrator Associate
               </div>
-              <div className="text-xs text-cyan-400 mt-0.5">
+              <div className="text-xs text-emerald-400 mt-0.5">
                 Credential: MD-100
               </div>
               <p className="text-2xs text-zinc-400 mt-1 font-sans">
@@ -667,14 +664,14 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
               <div className="text-sm font-bold text-zinc-100 font-sans">
                 Python Programming Specialization
               </div>
-              <div className="text-xs text-purple-400 mt-0.5">
+              <div className="text-xs text-emerald-400 mt-0.5">
                 University of Michigan (Coursera)
               </div>
               <p className="text-2xs text-zinc-400 mt-1 font-sans">
@@ -684,7 +681,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
@@ -703,15 +700,15 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       </section>
 
       {/* 8. NextVector Brand Identity & Media Kit */}
-      <section className="rounded-3xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 space-y-6">
+      <section className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 md:p-10 space-y-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800/80 pb-5">
           <div className="flex items-center gap-3">
             <NextVectorLogo size={28} withContainer={true} showWordmark={false} />
             <div>
-              <div className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
+              <div className="eyebrow">
                 Identity & Press Kit
               </div>
-              <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans tracking-tight mt-0.5">
+              <h2 className="heading-section mt-0.5">
                 NextVector Official Brand Assets
               </h2>
             </div>
@@ -721,7 +718,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               href="/brand/nextvector-brand-system.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 flex items-center gap-1.5 transition-colors"
             >
               <span>View Brand Board</span>
               <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
@@ -729,7 +726,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             <a
               href="/brand/nextvector-mark.svg"
               download="nextvector-mark.svg"
-              className="px-3.5 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-xs text-emerald-400 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-xs text-emerald-400 flex items-center gap-1.5 transition-colors"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Download Vector SVG</span>
@@ -741,20 +738,20 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
             <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Core Metaphor</div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-              The symbol fuses the capital <strong className="text-emerald-400">N</strong> (Next) with a forward-pointing vector chevron <strong className="text-cyan-400">&gt;</strong> and a precision coordinate aperture ring in negative space.
+              The symbol fuses the capital <strong className="text-emerald-400">N</strong> (Next) with a forward-pointing vector chevron <strong className="text-emerald-400">&gt;</strong> and a precision coordinate aperture ring in negative space.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
             <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Chromatic Palette</div>
             <div className="flex flex-wrap gap-2 text-2xs">
-              <span className="px-2 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+              <span className="px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                 #10B981 Signal Emerald
               </span>
-              <span className="px-2 py-1 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
+              <span className="px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                 #06B6D4 Core Cyan
               </span>
-              <span className="px-2 py-1 rounded bg-zinc-900 border border-zinc-700 text-zinc-300">
+              <span className="px-2 py-1 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-300">
                 #09090B Obsidian
               </span>
             </div>
@@ -770,7 +767,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       </section>
 
       {/* 9. Direct Contact & Communication Footer */}
-      <section className="rounded-3xl bg-gradient-to-b from-zinc-950 to-zinc-900 border border-zinc-800 p-8 md:p-12 text-center space-y-6 shadow-2xl">
+      <section className="rounded-2xl bg-gradient-to-b from-zinc-950 to-zinc-900 border border-zinc-800 p-8 md:p-12 text-center space-y-6 shadow-2xl">
         <div className="max-w-xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">
             <Mail className="w-3.5 h-3.5" />
@@ -789,7 +786,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://rhasan.online"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-all shadow-lg active:scale-95 flex items-center gap-2"
+            className="px-5 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-all shadow-lg active:scale-95 flex items-center gap-2"
           >
             <span>Visit rhasan.online</span>
             <ExternalLink className="w-4 h-4" />
@@ -799,7 +796,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://nextvectorr.substack.com/?r=92ang8"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] font-bold text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-bold text-xs transition-colors flex items-center gap-2"
           >
             <span>Read on Substack</span>
             <ExternalLink className="w-4 h-4" />
@@ -807,7 +804,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
           <a
             href="mailto:rhasan229@gmail.com"
-            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
           >
             <Mail className="w-4 h-4 text-emerald-400" />
             <span>Send Email</span>
@@ -817,7 +814,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://github.com/Daddy-Ousen"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
           >
             <GithubIcon className="w-4 h-4" />
             <span>GitHub Profile</span>
@@ -827,7 +824,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://linkedin.com/in/robiul-hasan-401296137"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
           >
             <span>LinkedIn Profile</span>
             <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />

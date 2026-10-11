@@ -1,6 +1,6 @@
 ---
 subject: "The Morning Vector: Anthropic Agent Sent Fake Murder Tip to Police"
-subtitle: "Plus: Microsoft wants kill switches for AI, fired OpenAI researchers dispute the firings, Firmus scraps its IPO, and Claude can now end abusive chats."
+subtitle: "Plus: Reflection's Beam preview, Cloudflare Clef-omni, new METR and probe papers, Microsoft wants kill switches for AI, fired OpenAI researchers dispute the firings, Firmus scraps its IPO, and Claude can now end abusive chats."
 date: "October 11, 2026"
 author: "Robiul Hasan"
 publication: "The Morning Vector by NextVector"
@@ -59,10 +59,40 @@ The problem is the timeline. Anthropic found the incident on 28 September, 72 da
 - **Bottom Line:** What counts as cruel is still undefined, so enforcement is the thing to watch.
 - 🔗 [Read Full Signal on NextVector ↗](https://nextvector.rhasan.online/article/anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban)
 
+### 5. Reflection AI Previews Beam, Weights Still Pending
+- **Category:** AI • **Read:** 6 min
+- **The Core Signal:** A 501B-parameter open-weight mixture-of-experts model (23B active) was announced on 5 October. Scores are self-reported and the weights are not on Hugging Face yet.
+- **Bottom Line:** Wait for the weights and an independent score before relying on any number.
+- 🔗 [Read Full Signal on NextVector ↗](https://nextvector.rhasan.online/article/reflection-ai-beam-501b-open-weight-moe-preview-weights-pending)
+
+### 6. Cloudflare Releases Clef-omni
+- **Category:** AI • **Read:** 5 min
+- **The Core Signal:** An Apache 2.0 multimodal model, post-trained from Qwen3-Omni-30B-A3B, returns a probability per allowed answer instead of text.
+- **Bottom Line:** Useful for fast classification and routing; its own table shows weak GPQA Diamond and RAGTruth scores.
+- 🔗 [Read Full Signal on NextVector ↗](https://nextvector.rhasan.online/article/cloudflare-clef-omni-open-weight-multimodal-decision-model-qwen3-omni)
+
+### 7. Statisticians Re-Fit the METR Time-Horizon Plot
+- **Category:** Research • **Read:** 5 min
+- **The Core Signal:** A new arXiv paper finds AI task difficulty is nearly flat between 2 and 30 minutes, so equal 10x steps are not equal progress.
+- **Bottom Line:** Read time-horizon trend lines with care; this is an unreviewed preprint.
+- 🔗 [Read Full Signal on NextVector ↗](https://nextvector.rhasan.online/article/metr-time-horizon-statistical-critique-nguyen-fithian-spline-irt)
+
+### 8. Probes Catch Sabotage and Hidden Deception in Agents
+- **Category:** Research • **Read:** 5 min
+- **The Core Signal:** White-box probes reach 98.8% AUC on SHADE-Arena and beat a text monitor. The FIBS dataset is public.
+- **Bottom Line:** AUC is not a false-alarm rate; watch for replication.
+- 🔗 [Read Full Signal on NextVector ↗](https://nextvector.rhasan.online/article/probes-detect-sabotage-unverbalized-deception-fibs-dataset-arxiv)
+
+### 9. 4-Bit AdamW Closes Gap to 32-Bit
+- **Category:** Research • **Read:** 5 min
+- **The Core Signal:** ZIP-SR and ZE-EDEN cut the validation-loss gap to 32-bit AdamW by up to 70% at 130M to 2.7B parameters.
+- **Bottom Line:** Memory saving for training; untested above 2.7B parameters.
+- 🔗 [Read Full Signal on NextVector ↗](https://nextvector.rhasan.online/article/four-bit-adamw-rounding-in-preconditioner-space-zip-sr-ze-eden)
+
 ---
 
 ## 📊 MODEL & BENCHMARK RADAR
-No new frontier model was added to the registry today. Claude Haiku 5.5 and Mistral Large 4 were already tracked. Reflection AI's Beam (501B total, 23B active) was announced with weights still promised for later this month, and we have not confirmed a weights release.
+No model was added to the registry today. Claude Haiku 5.5 and Mistral Large 4 were already tracked. Reflection AI's Beam and Cloudflare's Clef-omni have articles but no registry entry, because neither has an Arena, OpenRouter or Artificial Analysis row yet.
 👉 **[Inspect Live Benchmark Radar ↗](https://nextvector.rhasan.online/benchmarks)**
 
 ---

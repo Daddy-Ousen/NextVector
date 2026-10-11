@@ -12698,6 +12698,279 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-217",
+    slug: "reflection-ai-beam-501b-open-weight-moe-preview-weights-pending",
+    title: "Reflection AI Previews Beam: 501B-Parameter Open-Weight MoE With Weights Still Pending",
+    subtitle: "Reflection says Beam matches GLM-5.2 on reasoning with 3-4x less inference compute. All numbers are self-reported and the weights are not yet on Hugging Face.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 84,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-11T18:45:00Z",
+    readTimeMinutes: 6,
+    coverImage: "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?auto=format&fit=crop&w=1600&q=80",
+    coverImageAlt: "Overhead view of a developer workstation with two monitors and a laptop showing code",
+    tags: ["Reflection AI", "Beam", "open weights", "mixture of experts", "Apache 2.0", "GLM-5.2", "Nvidia GB300"],
+    threeQuestions: {
+      whatHappened: "Reflection AI announced Beam on 5 October 2026 as a preview. It is a sparse mixture-of-experts model with 501B total and 23B active parameters per token, pretrained on 23.8T tokens on 6,144 Nvidia GB300 GPUs in under four weeks. It is text-only on the API. Reflection says weights under Apache 2.0, with FP8 and NVFP4 versions, will follow later in October. As of 8 October its Hugging Face organisation listed zero models.",
+      whyItMatters: "If the weights ship, Beam would be a large Western open-weight model with a permissive licence. Reflection claims it matches GLM-5.2 on reasoning while using 3-4x less inference compute, but its own caveat says those are approximate compute estimates, not measured cost. Beam is not on Artificial Analysis or the tau-bench leaderboard yet, so no independent result exists.",
+      whatsNext: "The test is the weight release and an independent evaluation. Reflection says Kimi K3 stays ahead on raw capability. Until the weights and technical report are public, treat the benchmark table as marketing material. The model is not added to the NextVector registry because it has no Arena, OpenRouter or Artificial Analysis entry to source."
+    },
+    keyTakeaways: [
+      "Announced 5 October 2026 as a preview; 501B total, 23B active parameters.",
+      "Self-reported scores: SWE-bench Verified 80.9, SWE-bench Pro 65.5 (GLM-5.2: 62.1), GPQA Diamond 90.5 (GLM-5.2: 91.2).",
+      "Beam trails GLM-5.2 on HLE without tools: 36.2 against 40.5.",
+      "Weights are promised under Apache 2.0 later in October; none were public on 8 October.",
+      "Waitlisted OpenAI-compatible API, model ID Beam-501B-A23B; price not published."
+    ],
+    content: [
+      "This report relies on a secondary write-up of Reflection's announcement and API documentation (eesel.ai, dated 8 October 2026). We could not open Reflection's own pages. Treat all figures as vendor-reported.",
+      "Training scale, as claimed: pretraining on 23.8T tokens using 6,144 Nvidia GB300 GPUs in under four weeks, followed by reinforcement learning on 10.5K GB300 GPUs for four weeks with more than 100 million rollouts.",
+      "Context is described two ways. Training was said to reach 1M effective tokens. The beta API serves 256K input and 128K maximum output, and that may change. Input is text only; the API does not accept images, audio or files.",
+      "Reflection published a benchmark table comparing Beam with GLM-5.2. Beam scores: SWE-bench Pro 65.5 against 62.1, Terminal Bench v2.1 80.1 against 81.0, DeepSWE 44.4 against 44.0, MCP Atlas 78.7 against 77.8, tau3 banking 38.0 against 37.1, HLE without tools 36.2 against 40.5, and GPQA Diamond 90.5 against 91.2. It also lists SWE-bench Verified at 80.9 with no GLM-5.2 figure. The differences are small in both directions.",
+      "On efficiency, Reflection says Beam matches GLM-5.2 on reasoning with 3-4x less inference compute. Its own caveat says these are approximate compute estimates and not measured cost.",
+      "Access today is a waitlisted API with an OpenAI-compatible endpoint. A pricing page exists but sits behind login, so the price is unknown. Reflection has not published weights. A promised release includes FP8 and NVFP4 versions, a technical report, a model card and developer tooling.",
+      "Why this is not in the model registry: the NextVector model list only accepts entries with a source key such as an Arena row, an OpenRouter id or an official price page. Beam has none yet. We will add it when the weights and an independent score exist."
+    ],
+    technicalSpecs: {
+      "Announced": "5 October 2026 (preview)",
+      "Architecture": "Sparse mixture-of-experts, text-only on API",
+      "Parameters": "501B total, 23B active per token (vendor-reported)",
+      "Pretraining": "23.8T tokens, 6,144 Nvidia GB300 GPUs (vendor-reported)",
+      "API context": "256K input, 128K max output (beta, may change)",
+      "Licence (promised)": "Apache 2.0, FP8 and NVFP4 builds",
+      "Weights status": "Not released as of 8 October 2026",
+      "API model ID": "Beam-501B-A23B"
+    },
+    citations: [
+      {
+        title: "eesel.ai: Reflection AI Beam, what the 501B open-weight model is and what you can use today",
+        url: "https://www.eesel.ai/blog/reflection-ai-beam",
+        source: "eesel.ai"
+      },
+      {
+        title: "VKTR: Reflection AI unveils Beam, a 501B open-weight model",
+        url: "https://www.vktr.com/ai-platforms/reflection-ai-unveils-beam-a-501b-open-weight-model/",
+        source: "VKTR"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-218",
+    slug: "cloudflare-clef-omni-open-weight-multimodal-decision-model-qwen3-omni",
+    title: "Cloudflare Releases Clef-omni: An Apache 2.0 Multimodal Model That Returns Decisions, Not Text",
+    subtitle: "Post-trained from Qwen3-Omni-30B-A3B, it takes text, images, audio and video and outputs a probability for each allowed answer in one forward pass.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 80,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-11T18:00:00Z",
+    readTimeMinutes: 5,
+    coverImage: "https://images.unsplash.com/photo-1561736778-92e52a7769ef?auto=format&fit=crop&w=1600&q=80",
+    coverImageAlt: "A wide curved monitor showing code beside a keyboard and microphone on a desk",
+    tags: ["Cloudflare", "Clef-omni", "open weights", "Qwen3-Omni", "multimodal", "Apache 2.0", "decision models"],
+    threeQuestions: {
+      whatHappened: "Cloudflare published the weights of Clef-omni on Hugging Face under Apache 2.0. The model card says it is post-trained from Qwen/Qwen3-Omni-30B-A3B-Instruct, a 30B-total, 3B-active mixture-of-experts model. It accepts text, JSON, images, audio and video, and returns a probability for each allowed option of each question in a single forward pass, with no free-form text generation.",
+      whyItMatters: "The design targets classification and routing jobs such as content checks, where a yes/no or multiple-choice answer is needed quickly and without parsing model prose. The card says the backbone needs about 64 GB of GPU memory in bfloat16. Its own table shows the trade-off: strong on MMLU and BANKING77, weak on GPQA Diamond and RAGTruth.",
+      whatsNext: "Developers get an open model for structured decisions that they can self-host. Scores come from Cloudflare's internal \"Decision Index 0.2.1\" run, so independent tests are the next thing to watch. It sits beside Cloudflare's dense Clef and Clef-Flash image and video variants."
+    },
+    keyTakeaways: [
+      "Base model: Qwen3-Omni-30B-A3B-Instruct (30B total, 3B active); Hugging Face metadata lists 35B parameters in BF16.",
+      "Output is a probability per allowed option, with no text generation and no output parsing.",
+      "Licence Apache 2.0, following the base model; default maximum input length 64,000 tokens.",
+      "Self-reported scores: MMLU 92.7, ARC-Easy 99.8, BANKING77 94.8, GPQA Diamond 47.4.",
+      "Tested on one H200; about 64 GB of GPU memory needed in bfloat16."
+    ],
+    content: [
+      "Everything here comes from the Hugging Face model card for Cloudflare/clef-omni, which we read directly. The scores are Cloudflare's own, from an internal Decision Index 0.2.1 run, and have not been independently reproduced.",
+      "The model is a decision model. Instead of writing an answer, it scores each allowed option for each question in a single forward pass. The card says there is no free-form generation and no output parsing, which removes a common failure point in pipelines that ask a chat model to return JSON.",
+      "Inputs cover text, JSON, images, audio and video. The card lists a default maximum length of 64,000 tokens in its encoding helper. It was tested with torch 2.11 and transformers 5.10.2 on a single H200.",
+      "Reported results: MMLU 92.7, ARC-Easy 99.8, HellaSwag 99.1, CRUXEval 88.8 and BANKING77 94.8, which the card marks as leading. On harder reasoning it trails: GPQA Diamond 47.4 against 78.3 for a model the card calls Jev, MMLU-Pro 70.6 against 82.7, and RAGTruth 42.0 against 79.4 for Clef. On an invoice-processing workflow test its exact-action accuracy was 60.2 against 64.7 for Clef.",
+      "Clef and Clef-Flash are dense image and video variants in the same family. Clef-omni is the one that adds audio and uses the mixture-of-experts backbone.",
+      "The card shows 297 downloads in the last month, so adoption is small so far."
+    ],
+    technicalSpecs: {
+      "Base model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "Architecture": "30B total, 3B active MoE (HF metadata lists 35B BF16 parameters)",
+      "Inputs": "Text, JSON, images, audio, video",
+      "Output": "Probability per allowed option, one forward pass",
+      "Licence": "Apache 2.0",
+      "Default max input": "64,000 tokens",
+      "Memory": "About 64 GB GPU in bfloat16",
+      "Benchmarks source": "Cloudflare internal Decision Index 0.2.1"
+    },
+    citations: [
+      {
+        title: "Hugging Face: Cloudflare/clef-omni model card",
+        url: "https://huggingface.co/Cloudflare/clef-omni",
+        source: "Hugging Face"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-219",
+    slug: "metr-time-horizon-statistical-critique-nguyen-fithian-spline-irt",
+    title: "Statisticians Re-Fit the METR Time-Horizon Plot and Find Difficulty Is Not Linear in Log Time",
+    subtitle: "Nguyen and Fithian recompute horizons for 26 AI systems on 228 tasks. Their fit is nearly flat between 2 and 30 minutes.",
+    category: "research",
+    articleType: "deep-dive",
+    signalRating: 83,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-11T17:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1600&q=80",
+    coverImageAlt: "A laptop screen showing dense line charts and grid axes",
+    tags: ["METR", "time horizons", "AI evaluation", "statistics", "item response theory", "arXiv"],
+    threeQuestions: {
+      whatHappened: "In an arXiv paper submitted 8 October 2026 (2610.12466), Drew T. Nguyen and William Fithian re-estimate METR's 50% time horizon for 26 AI systems across 228 tasks. They drop METR's assumption that task difficulty scales linearly with the log of human completion time and use splines and item-response theory instead.",
+      whyItMatters: "The 50% time horizon is the human completion time of tasks an AI solves half the time, and it is widely quoted as a measure of progress. The authors find the fitted curve is nearly flat from about 2 to 30 minutes and roughly linear elsewhere. So a tenfold step from 3 to 30 minutes is easier for an AI than one from 30 minutes to 5 hours. Equal multiples do not mean equal difficulty.",
+      whatsNext: "The authors say their estimates score better under cross-validated proper scoring rules and urge readers to read time horizons together with diagnostic plots, especially as longer-task benchmarks arrive. Expect METR and others to respond. The paper is a v1 preprint and has not been peer reviewed."
+    },
+    keyTakeaways: [
+      "Re-analysis of 26 AI systems on 228 tasks.",
+      "Fitted difficulty curve is nearly flat between about 2 and 30 minutes and close to linear elsewhere.",
+      "Equal 10x changes in time horizon are not equal increases in difficulty.",
+      "Authors report better cross-validated proper-scoring-rule performance than the linear log-time assumption.",
+      "They recommend reading horizons with diagnostic plots; the paper is an unreviewed v1 preprint."
+    ],
+    content: [
+      "The source is the arXiv abstract for 2610.12466 (cs.AI, v1, submitted 8 October 2026). We read the abstract, not the full paper, so details of the method are limited to what the abstract states.",
+      "METR expresses AI capability as a 50% time horizon: the human completion time of software tasks that an AI system solves half the time. Fitting that number requires a model of how success probability falls as tasks get longer. METR's approach assumes difficulty is linear in the log of human time.",
+      "Nguyen and Fithian relax that assumption with splines and item-response theory. Their fitted spline is almost flat between roughly 2 and 30 minutes and near linear outside that range. A practical consequence: moving from 3 minutes to 30 minutes is easier for an AI than moving from 30 minutes to 5 hours, even though each is a factor of ten.",
+      "That matters for trend lines. A plot showing horizon doubling every fixed period implicitly treats each doubling as equal progress. If difficulty is not uniform in log time, the same doubling can hide very different gains.",
+      "The authors say their point estimates score better under cross-validated proper scoring rules. They also supply diagnostic plots to check whether time horizons measure what they claim to, and recommend using those plots as longer-task benchmarks appear.",
+      "Limits: this is one preprint, not reviewed, and we have not checked its code or data. Independent critiques of METR's statistics already exist, but this paper is the newest and uses a different method."
+    ],
+    technicalSpecs: {
+      "arXiv ID": "2610.12466 (cs.AI, v1)",
+      "Submitted": "8 October 2026",
+      "Authors": "Drew T. Nguyen, William Fithian",
+      "Systems re-fit": "26 AI systems",
+      "Tasks": "228",
+      "Methods": "Splines and item-response theory",
+      "Key finding": "Difficulty nearly flat from about 2 to 30 minutes"
+    },
+    citations: [
+      {
+        title: "arXiv: On the estimation and validity of AI time horizons",
+        url: "https://arxiv.org/abs/2610.12466",
+        source: "arXiv"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-220",
+    slug: "probes-detect-sabotage-unverbalized-deception-fibs-dataset-arxiv",
+    title: "Probes Catch Sabotage and Hidden Deception in LLM Agents With 98.8% AUC, Beating a Text Monitor",
+    subtitle: "A new arXiv paper trains white-box probes on the largest deception dataset to date and releases it as FIBS.",
+    category: "research",
+    articleType: "deep-dive",
+    signalRating: 84,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-11T16:30:00Z",
+    readTimeMinutes: 5,
+    coverImage: "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1600&q=80",
+    coverImageAlt: "A white and grey humanoid robot standing in front of a wall of screens",
+    tags: ["AI safety", "deception detection", "probes", "agent monitoring", "SHADE-Arena", "arXiv"],
+    threeQuestions: {
+      whatHappened: "Hollinsworth, Spies, Diriba, Gleave and Cundy released arXiv 2610.12445 on 8 October 2026. They train white-box probes, classifiers that read a model's internal activations, on what they call the largest deception dataset so far, and add a probe design that combines information across many layers and tokens. Probes reach 98.8% AUC on SHADE-Arena and outperform an \"Opus 5.5\" text-monitoring baseline.",
+      whyItMatters: "Text monitors read what an agent says. Probes read what the model is computing, so they may catch deception the model never writes down. The authors define \"introspective deception\", where the ground truth cannot be read from context, and report probes separate a model's true hidden goal from other goals with AUC up to 99.7%. This connects to this week's argument about losing the ability to monitor what agents think.",
+      whatsNext: "The dataset, named FIBS, and code are released, so other groups can test the claim. Probe performance improves as the underlying model scales, according to the authors. Independent replication on other agent settings is the next step. This is a v1 preprint."
+    },
+    keyTakeaways: [
+      "98.8% AUC on SHADE-Arena, ahead of an Opus 5.5 text-monitoring baseline.",
+      "Probe quality improves as the underlying model is scaled up, per the authors.",
+      "Up to 99.7% AUC on separating a model's true hidden goal from other goals.",
+      "Probes also flag deception in open-weight models that lie about sensitive topics or beliefs under pressure.",
+      "FIBS dataset, code and CC BY 4.0 paper are public; v1 preprint, not peer reviewed."
+    ],
+    content: [
+      "Source: the arXiv abstract page for 2610.12445 (cs.LG, cross-listed cs.AI), submitted 8 October 2026. We summarise the abstract and metadata; we did not run the code.",
+      "The authors argue that monitoring LLM agents and detecting deception are now urgent, and that white-box probes can scale to frontier monitoring. Their two contributions are the largest deception dataset to date for training probes and a probe architecture that aggregates information across many layers and tokens.",
+      "The headline number is 98.8% AUC on SHADE-Arena, which the paper reports as better than a text-monitoring baseline built on \"Opus 5.5\". They also report that probe performance rises as the underlying model gets larger.",
+      "The paper introduces \"introspective deception\": cases where the ground truth cannot be determined from the transcript alone and needs careful elicitation or knowledge of the model's training data. On those tests probes distinguish transcripts containing a model's true hidden goal from other goals with AUC up to 99.7%.",
+      "Probes also detect deception in prominent open-weight models that lie about politically sensitive topics or about their beliefs under pressure.",
+      "The training data, called FIBS, is released with code at github.com/AlignmentResearch/caught-in-the-act-probes. The paper runs 11 pages of main text and 98 in total, with 18 figures and 18 tables.",
+      "Caveat: AUC measures ranking quality, not the false-alarm rate a deployed monitor would face. The abstract does not give operating thresholds."
+    ],
+    technicalSpecs: {
+      "arXiv ID": "2610.12445 (cs.LG, cross-list cs.AI)",
+      "Submitted": "8 October 2026",
+      "Authors": "Hollinsworth, Spies, Diriba, Gleave, Cundy",
+      "SHADE-Arena AUC": "98.8%",
+      "Introspective deception AUC": "Up to 99.7%",
+      "Dataset": "FIBS (released)",
+      "Licence": "CC BY 4.0"
+    },
+    citations: [
+      {
+        title: "arXiv: Caught in the Act, Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+        url: "https://arxiv.org/abs/2610.12445",
+        source: "arXiv"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-221",
+    slug: "four-bit-adamw-rounding-in-preconditioner-space-zip-sr-ze-eden",
+    title: "4-Bit AdamW Gets Closer to 32-Bit: Rounding in Preconditioner Space Cuts the Loss Gap by Up to 70%",
+    subtitle: "Two new recipes, ZIP-SR and ZE-EDEN, fix how optimizer-state quantization error distorts adaptive step sizes.",
+    category: "research",
+    articleType: "deep-dive",
+    signalRating: 78,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-11T15:45:00Z",
+    readTimeMinutes: 5,
+    coverImage: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&w=1600&q=80",
+    coverImageAlt: "An open hard disk drive showing the platter and read head on a dark background",
+    tags: ["optimizers", "AdamW", "quantization", "4-bit training", "memory", "arXiv"],
+    threeQuestions: {
+      whatHappened: "A ten-author team posted arXiv 2610.12444 on 8 October 2026 on storing AdamW optimizer states in 4 bits. They argue quantization should be analysed in \"rounding space\", and propose ZIP-SR, which keeps zero in the second-moment codebook and rounds stochastically in preconditioner space, and ZE-EDEN, which excludes zero and rescales the block to offset bias.",
+      whyItMatters: "Optimizer states take a large share of training memory. Small average error in the stored second moment does not mean small error in the preconditioner used at the next step, especially near zero. On GPT- and Llama-style pretraining from 130M to 2.7B parameters, both methods cut the validation-loss gap between TorchAO's 4-bit AdamW and 32-bit AdamW at every size tested, by up to 70%.",
+      whatsNext: "The tests stop at 2.7B parameters, so results at frontier scale are unknown. Watch for adoption in training libraries and for tests on larger models. This is a v1 preprint and has not been peer reviewed."
+    },
+    keyTakeaways: [
+      "Both ZIP-SR and ZE-EDEN narrow the loss gap to 32-bit AdamW at every model size tested.",
+      "The largest reported reduction in the gap against TorchAO 4-bit AdamW is 70%.",
+      "Tested on GPT- and Llama-style pretraining from 130M to 2.7B parameters.",
+      "Both use 4-bit NormalFloat (NF4) for the first moment.",
+      "In supervised fine-tuning both beat TorchAO's validation loss and stay close to 32-bit AdamW on downstream tasks."
+    ],
+    content: [
+      "Source: the arXiv abstract page for 2610.12444 (cs.LG, 23 pages, v1, submitted 8 October 2026). We summarise the abstract and did not run the code.",
+      "The problem: AdamW keeps two running statistics per weight. Storing them in 4 bits saves memory, but rounding error in those states feeds into later moment updates and distorts adaptive step sizes.",
+      "The authors say the error should be measured where the quantizer actually chooses between neighbouring levels, which they call rounding space. For the second moment, a small average error in the stored value does not guarantee a small error in the preconditioner used at the next step, especially in the quantization cell nearest zero. A one-dimensional quadratic toy problem shows rounding in state space and in preconditioner space can lead to qualitatively different optimisation behaviour.",
+      "ZIP-SR keeps zero in the second-moment codebook and computes stochastic-rounding probabilities in preconditioner space. ZE-EDEN instead excludes zero from the codebook and rescales each quantized block to offset the bias from the positive quantization floor. Both use NF4 for the first moment and stochastic rounding for the language-model head first moment during the last 10% of training.",
+      "Results: on pretraining from 130M to 2.7B parameters, both reduce the mean validation-loss gap between TorchAO's 4-bit AdamW and 32-bit AdamW at every model size. The largest reported reduction is 70%. In full-parameter supervised fine-tuning both reach lower validation loss than TorchAO and stay close to 32-bit AdamW on downstream tasks.",
+      "Limit: no results above 2.7B parameters are reported in the abstract, so the benefit at frontier scale is untested."
+    ],
+    technicalSpecs: {
+      "arXiv ID": "2610.12444 (cs.LG, 23 pages, v1)",
+      "Submitted": "8 October 2026",
+      "Methods": "ZIP-SR and ZE-EDEN",
+      "First moment": "4-bit NormalFloat (NF4)",
+      "Scale tested": "130M to 2.7B parameters",
+      "Best gap reduction": "Up to 70% vs TorchAO 4-bit AdamW"
+    },
+    citations: [
+      {
+        title: "arXiv: Rounding in Preconditioner Space, Redesigning 4-bit AdamW Optimizer-State Quantization",
+        url: "https://arxiv.org/abs/2610.12444",
+        source: "arXiv"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

@@ -2,11 +2,11 @@
 
 ## Roadmap status
 - Site: React 19 + Vite 8 SPA, Python prerender (SSG) step, deployed on Vercel.
-- Content: 216 articles (art-1 to art-216), 146 models, 6 leaderboards, 87 timeline events.
+- Content: 221 articles (art-1 to art-221), 146 models, 6 leaderboards, 87 timeline events.
 - Daily pipeline: see `DAILY_UPDATE_PIPELINE.md`. Order now: `npm run images` → `npm run build` → `npm run verify` (8 gates).
 
 ## Completed
-- 2026-10-11: Daily pipeline run. 5 articles added (art-212 to art-216, all sourced from BBC reports; Unsplash covers). Briefing + ticker refreshed. No timeline event (none reached impact 95). No new model (Haiku 5.5, Mistral Large 4 already tracked). Newsletter: `newsletters/2026-10-11-the-morning-vector-b.md`. Checks: images, build, verify 8/8.
+- 2026-10-11: Daily pipeline run. 10 articles added (art-212 to art-216 from BBC reports; art-217 to art-221 from a Hugging Face model card, arXiv abstracts and a secondary Beam write-up; Unsplash covers). Briefing + ticker refreshed. No timeline event (none reached impact 95). No new model (Haiku 5.5, Mistral Large 4 already tracked). Newsletter: `newsletters/2026-10-11-the-morning-vector-b.md`. Checks: images, build, verify 8/8.
 - 2026-10-11: Full project audit.
 - 2026-10-11: Bug fixes + speed fixes (uncommitted, verified: build, tsc, 8/8 verify gates, browser test on `vite preview`).
   - Real 404 page (`src/pages/NotFoundPage.tsx`, `noindex`) for bad article / model / compare / any unknown path. Build writes `dist/404.html`. Catch-all rewrite removed from `vercel.json`.

@@ -58,6 +58,51 @@
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
     <item>
+      <title>Reflection AI Previews Beam: 501B-Parameter Open-Weight MoE With Weights Still Pending</title>
+      <link>https://nextvector.rhasan.online/article/reflection-ai-beam-501b-open-weight-moe-preview-weights-pending</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/reflection-ai-beam-501b-open-weight-moe-preview-weights-pending</guid>
+      <description>Reflection says Beam matches GLM-5.2 on reasoning with 3-4x less inference compute. All numbers are self-reported and the weights are not yet on Hugging Face.</description>
+      <category>AI</category>
+      <pubDate>Sun, 11 Oct 2026 18:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cloudflare Releases Clef-omni: An Apache 2.0 Multimodal Model That Returns Decisions, Not Text</title>
+      <link>https://nextvector.rhasan.online/article/cloudflare-clef-omni-open-weight-multimodal-decision-model-qwen3-omni</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-clef-omni-open-weight-multimodal-decision-model-qwen3-omni</guid>
+      <description>Post-trained from Qwen3-Omni-30B-A3B, it takes text, images, audio and video and outputs a probability for each allowed answer in one forward pass.</description>
+      <category>AI</category>
+      <pubDate>Sun, 11 Oct 2026 18:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Statisticians Re-Fit the METR Time-Horizon Plot and Find Difficulty Is Not Linear in Log Time</title>
+      <link>https://nextvector.rhasan.online/article/metr-time-horizon-statistical-critique-nguyen-fithian-spline-irt</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/metr-time-horizon-statistical-critique-nguyen-fithian-spline-irt</guid>
+      <description>Nguyen and Fithian recompute horizons for 26 AI systems on 228 tasks. Their fit is nearly flat between 2 and 30 minutes.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 11 Oct 2026 17:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Probes Catch Sabotage and Hidden Deception in LLM Agents With 98.8% AUC, Beating a Text Monitor</title>
+      <link>https://nextvector.rhasan.online/article/probes-detect-sabotage-unverbalized-deception-fibs-dataset-arxiv</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/probes-detect-sabotage-unverbalized-deception-fibs-dataset-arxiv</guid>
+      <description>A new arXiv paper trains white-box probes on the largest deception dataset to date and releases it as FIBS.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 11 Oct 2026 16:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>4-Bit AdamW Gets Closer to 32-Bit: Rounding in Preconditioner Space Cuts the Loss Gap by Up to 70%</title>
+      <link>https://nextvector.rhasan.online/article/four-bit-adamw-rounding-in-preconditioner-space-zip-sr-ze-eden</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/four-bit-adamw-rounding-in-preconditioner-space-zip-sr-ze-eden</guid>
+      <description>Two new recipes, ZIP-SR and ZE-EDEN, fix how optimizer-state quantization error distorts adaptive step sizes.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 11 Oct 2026 15:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
       <title>Nvidia in Advanced Talks to Acquire Reflection AI for $1.5B to Bolster Open Nemotron Stack</title>
       <link>https://nextvector.rhasan.online/article/nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning</link>
       <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning</guid>
@@ -505,51 +550,6 @@
       <description>Multi-year alliance integrates OpenAI frontier reasoning clusters directly into Synopsys EDA suites to automate RTL synthesis, layout routing, and sub-2nm DRC verification.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Wed, 30 Sep 2026 18:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Netlify Re-Architects Edge Infrastructure: Moving from V8 Isolates to Firecracker MicroVMs Cuts Latency 5x</title>
-      <link>https://nextvector.rhasan.online/article/netlify-transitions-edge-functions-v8-isolates-to-firecracker-microvms</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/netlify-transitions-edge-functions-v8-isolates-to-firecracker-microvms</guid>
-      <description>In partnership with Unikraft, the serverless provider swaps shared JavaScript runtimes for hardware-isolated Linux microVMs, delivering true multi-tenant memory safety.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 30 Sep 2026 16:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Edison Design Group Open-Sources Historic EDG C++ Front-End Under The C++ Alliance Stewardship</title>
-      <link>https://nextvector.rhasan.online/article/edg-open-sources-industry-standard-c-compiler-front-end</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/edg-open-sources-industry-standard-c-compiler-front-end</guid>
-      <description>After 35 years as the proprietary engine powering Intel, NVIDIA, and Cray compilers, the foundational C++ parser transitions to public nonprofit open-source development.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 30 Sep 2026 15:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Neuroscientists Discover Complex Spiral and Concentric Cortical Waves Organizing Human Cognition in Real Time</title>
-      <link>https://nextvector.rhasan.online/article/quanta-complex-cortical-waves-reveal-brain-computational-dynamics</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/quanta-complex-cortical-waves-reveal-brain-computational-dynamics</guid>
-      <description>High-resolution intracranial electrocorticography published in Quanta Magazine proves brain waves are active computational routing engines rather than passive background noise.</description>
-      <category>SCIENCE</category>
-      <pubDate>Wed, 30 Sep 2026 13:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Reddit Imposes Six-Month Activity Lockout on old.reddit.com to Counter AI Training Scraping Swarms</title>
-      <link>https://nextvector.rhasan.online/article/reddit-restricts-old-reddit-access-inactive-accounts-anti-scraping</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/reddit-restricts-old-reddit-access-inactive-accounts-anti-scraping</guid>
-      <description>The platform blocks legacy lightweight web interfaces for unauthenticated and inactive accounts as AI crawler bot traffic exceeds 40% of total site inbound requests.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Matt Keeter Releases Halfspace: An Experimental CAD IDE Unifying Signed Distance Fields and GPU Shaders</title>
-      <link>https://nextvector.rhasan.online/article/halfspace-experimental-ide-solid-modeling-signed-distance-fields</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/halfspace-experimental-ide-solid-modeling-signed-distance-fields</guid>
-      <description>The open-source CAD environment renders complex CSG mechanical solids at 60 FPS without polygonal meshing artifacts, bringing programmatic CAD to real-time WebGPU.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 30 Sep 2026 10:30:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

@@ -1,7 +1,7 @@
 # Handoff — 2026-10-11 (Daily pipeline run, art-212 to art-216)
 
 ## Latest: daily pipeline done
-- Added 5 articles (art-212..216): Anthropic agent fake murder tip, Microsoft Brad Smith AI rules, fired OpenAI researchers, Firmus IPO scrapped, Anthropic usage policy. Facts come only from BBC pages (read in the built-in browser; WebFetch is blocked on bbc.co.uk). Content is 450-650 words each, shorter than the 1,000-word target, to avoid invented detail.
+- Added 10 articles. Second batch art-217..221: Reflection Beam preview, Cloudflare Clef-omni (HF card), METR time-horizon paper, probes paper, 4-bit AdamW paper (arXiv abstracts). User rule: 5 is the MINIMUM, not the limit, and use more than BBC. First batch art-212..216: Anthropic agent fake murder tip, Microsoft Brad Smith AI rules, fired OpenAI researchers, Firmus IPO scrapped, Anthropic usage policy. Facts come only from BBC pages (read in the built-in browser; WebFetch is blocked on bbc.co.uk). Content is 450-650 words each, shorter than the 1,000-word target, to avoid invented detail.
 - Updated `MOCK_DAILY_BRIEFING` and `MOCK_LIVE_SIGNALS`. No timeline entry. No model change.
 - Covers are Unsplash URLs (HTTP 200 checked, not used before). No image generator in this session.
 - Newsletter draft: `newsletters/2026-10-11-the-morning-vector-b.md` (a second 10-11 edition; the first one has old claims).

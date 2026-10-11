@@ -150,6 +150,28 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-10-10-nvidia-reflection',
+    year: 2026,
+    month: 'Oct 10',
+    title: 'Nvidia Moves to Acquire Reflection AI for $1.5B',
+    category: 'AI Breakthrough',
+    summary: 'Nvidia enters advanced talks to acquire Reflection AI, securing automated reflection tuning pipelines and synthetic reasoning data flywheels for its open-weights Nemotron stack.',
+    impactScore: 95,
+    keyShift: 'Nvidia integrates proprietary post-training algorithms and synthetic data directly into its GPU software stack, rivaling Meta and DeepSeek in open-weights.',
+    articleSlug: 'nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning'
+  },
+  {
+    id: 'time-2026-10-10-popvax-pvx001',
+    year: 2026,
+    month: 'Oct 10',
+    title: 'Popvax Begins Phase 1 Trials for Open-Source Computational Vaccine PVX-001',
+    category: 'Fundamental Science',
+    summary: 'Popvax initiates first-in-human clinical trials for PVX-001, a computationally designed 60-mer mosaic protein nanoparticle mRNA vaccine released under open-source licenses.',
+    impactScore: 95,
+    keyShift: 'The first fully open-source computationally designed protein nanoparticle vaccine enters clinical validation, dismantling traditional pharmaceutical patent monopolies.',
+    articleSlug: 'popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials'
+  },
+  {
     id: 'time-2026-10-09-virtual-cell-1-8b-coalition',
     year: 2026,
     month: 'Oct 9',
@@ -1089,53 +1111,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Friday, October 9, 2026',
-  summary: "A landmark $1.8B global biological foundation model commitment, an escalating cryptographic threat debate over AI math advances, compiler-level undefined behavior reforms in ISO C, mathematical epistemology manifestos, and real-time Rust path tracing define today's intelligence briefing. The Chan Zuckerberg Biohub, US Department of Energy, NIH, Google DeepMind, and Meta united in a $1.8 billion alliance to create open AI-ready biological data and train the world's first predictive Virtual Cell on exascale supercomputers. In systems security, Ethereum Foundation researcher Justin Drake urged crypto holders into 'bunker mode' over fears that AI symbolic math solvers could break ECDSA elliptic curve keys before quantum computers, triggering an intense debate with Vitalik Buterin. In systems programming, ISO C Working Group 14 unveiled proposals to systematically eliminate undefined behavior in C2y. In academia, Fields Medalist Terence Tao published a pedagogical defense of human mathematical intuition in the era of machine-certified Lean 4 proofs, while the open-source Rust community shipped Bevy 0.20 featuring real-time path tracing on Apple Metal and DLSS 3.7.",
+  date: 'Sunday, October 11, 2026',
+  summary: "Nvidia's strategic move to acquire Reflection AI for $1.5B, an autonomous 500-billion-token decompilation of a commercial FPS game into C++, Popvax's first-in-human clinical trial for an open-source computational vaccine, DuckDB 2.0's vectorized out-of-core architectural overhaul, and the official de-listing of macOS from The Open Group's UNIX 03 registry define today's executive intelligence briefing. In semiconductor and AI systems consolidation, Nvidia entered advanced negotiations to acquire Reflection AI to bring automated reflection tuning and synthetic reasoning generation directly in-house, supercharging its open-weights Nemotron stack. In autonomous systems, an AI agent swarm consumed 500B tokens to autonomously decompile and reconstruct an entire stripped commercial first-person shooter binary into compilable C++ with native 144 FPS game loop equivalence. In applied structural biology, Popvax initiated Phase 1 human trials for PVX-001, the world's first open-source computationally designed protein nanoparticle mRNA vaccine. In data infrastructure, DuckDB Labs revealed the algorithmic breakthroughs behind DuckDB 2.0, eliminating memory spilling penalties with out-of-core streaming hash joins. Finally, The Open Group updated its UNIX brand registry, marking the end of Apple's 20-year POSIX certification era as macOS doubles down on proprietary Darwin, Mach, and DriverKit architecture.",
   items: [
     {
       id: 'brief-1',
-      headline: 'The Virtual Cell Coalition: Biohub, DOE, DeepMind, and Meta Commit $1.8B to AI-Ready Biology Data',
-      category: 'science' as const,
+      headline: 'Nvidia in Advanced Talks to Acquire Reflection AI for $1.5B to Bolster Open Nemotron Stack',
+      category: 'technology' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'A coordinated public-private alliance mobilizes $1.8 billion across cryo-ET, spatial omics, and DOE exascale supercomputers to build the first universal in silico cellular foundation model.',
-      whyItMatters: 'Transitions biological discovery from empirical trial-and-error assays into rapid, predictive computational simulation of cellular pathology and drug screening.',
-      articleSlug: 'virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data'
+      summary: 'The chip giant prepares its largest software acquisition since Mellanox, bringing automated reflection-tuning loops and synthetic reasoning generation directly into the Nvidia NeMo enterprise stack.',
+      whyItMatters: 'Accelerates Nvidia’s transformation from merchant silicon provider into a vertically integrated AI platform, insulating enterprise clients from external frontier API dependencies.',
+      articleSlug: 'nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning'
     },
     {
       id: 'brief-2',
-      headline: 'Crypto Enters Bunker Mode Debate: Ethereum Researchers Warn AI Math Solvers Could Threaten ECDSA',
-      category: 'technology' as const,
+      headline: '500B Tokens Later: Autonomous Multi-Agent Swarms Successfully Decompile Commercial FPS Game to C++',
+      category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'Following OpenAI math proof releases, Justin Drake warns AI algebraic geometry solvers could break exposed elliptic curve keys, prompting Vitalik Buterin to caution against panic wallet migrations.',
-      whyItMatters: 'Focuses immediate global blockchain engineering attention on the vulnerability of exposed public keys, accelerating post-quantum account abstraction and stealth addresses.',
-      articleSlug: 'ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis'
+      summary: 'An autonomous multi-agent swarm reconstructed 14,800 subroutines from a stripped commercial game binary into clean, compilable C++ using iterative headless compiler feedback loops.',
+      whyItMatters: 'Proves that machine reasoning can autonomously solve complex binary reverse-engineering at scale, fundamentally altering software intellectual property assumptions.',
+      articleSlug: 'autonomous-multi-agent-swarm-decompiles-fps-game-500b-tokens'
     },
     {
       id: 'brief-3',
-      headline: 'ISO C Working Group 14 Moves to Systematically Eliminate Undefined Behavior in Upcoming C2y Standard',
-      category: 'technology' as const,
+      headline: 'Popvax Advances PVX-001: Open-Source Broad-Spectrum Computational Protein Vaccine Enters Phase 1 Human Trials',
+      category: 'science' as const,
       urgency: 'High Impact' as const,
-      summary: "At Kernel Recipes in Paris, WG14 unveils proposals N3806–N3808, replacing historic optimizer loopholes with defined two's complement wrap, trapping semantics, and formal contracts.",
-      whyItMatters: "Defends C's dominance in kernel and embedded systems against federal memory-safety mandates without incurring the multi-billion-dollar cost of complete Rust rewrites.",
-      articleSlug: 'iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard'
+      summary: 'A computationally designed 60-mer mosaic protein nanoparticle mRNA vaccine enters human clinical trials with completely open-source sequences, LNP formulations, and assays.',
+      whyItMatters: 'Validates generative protein design in human medicine while establishing an open-science public health blueprint free from pharmaceutical patent thickets.',
+      articleSlug: 'popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials'
     },
     {
       id: 'brief-4',
-      headline: 'Epistemology in the Age of Automated Provers: Terence Tao on the Future of Mathematical Education',
-      category: 'research' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'Addressing student anxiety following generative Lean 4 math proof drops, Terence Tao and Álvaro Lozano-Robledo publish an influential manifesto on human conceptual intuition versus machine verification.',
-      whyItMatters: 'Frames the evolving division of scientific labor, establishing that directing formal proof search engines requires deeper human conceptual mastery, not less.',
-      articleSlug: 'mathematical-epistemology-automated-provers-terence-tao-lozano-robledo'
+      headline: 'Why DuckDB 2.0 Is Faster: Vectorized Out-of-Core Execution, Parallel Streaming Hash Joins, and Columnar Compression',
+      category: 'technology' as const,
+      urgency: 'High Impact' as const,
+      summary: 'DuckDB Labs details the query engine overhaul that eliminates memory spilling penalties, enabling multi-terabyte analytical queries on single machines without OOM crashes.',
+      whyItMatters: 'Challenges heavy cloud data warehouses by proving disciplined C++ vectorized algorithms can execute complex OLAP workloads locally at zero infrastructure cost.',
+      articleSlug: 'duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution'
     },
     {
       id: 'brief-5',
-      headline: 'Bevy 0.20 Released: Solari Real-Time Path Tracing on Metal, WESL Shading, and Bevy Scene Notation',
+      headline: 'The Open Group De-Lists macOS from UNIX 03 Registry: Apple Concludes Historic POSIX Certification Era',
       category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'The open-source Rust game engine expands its visual pipeline with hardware-accelerated Apple Metal ray tracing, DLSS 3.7 frame generation, and modular WebGPU Extended Shading Language.',
-      whyItMatters: 'Proves that community-driven data-oriented Rust architectures can match commercial proprietary game engines in bleeding-edge photorealistic graphics.',
-      articleSlug: 'bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation'
+      urgency: 'Notable Shift' as const,
+      summary: 'Apple allows its 20-year UNIX 03 certification to lapse as modern macOS architecture prioritizes Mach microkernel IPC, DriverKit, and hardware enclaves over legacy POSIX conformance.',
+      whyItMatters: 'Marks the symbolic sunset of the certified UNIX workstation era, leaving only legacy mainframe platforms on the official UNIX registry.',
+      articleSlug: 'open-group-delists-macos-unix-03-registry-apple-retires-posix-branding'
     }
   ]
 };
@@ -1143,32 +1165,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Virtual Cell $1.8B',
-    text: 'Biohub, DOE, DeepMind & Meta commit $1.8B to build open AI-ready biological data and Virtual Cell',
-    articleSlug: 'virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data'
+    tag: 'Nvidia $1.5B M&A',
+    text: 'Nvidia in talks to acquire Reflection AI for $1.5B to build in-house synthetic reasoning flywheel',
+    articleSlug: 'nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning'
   },
   {
     id: 'sig-2',
-    tag: 'Bunker Mode Alert',
-    text: 'Justin Drake urges crypto bunker mode over AI discrete log threat as Vitalik warns against panic',
-    articleSlug: 'ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis'
+    tag: '500B Token Decompile',
+    text: 'Autonomous AI agent swarm decompiles commercial FPS binary into compilable C++ with 144 FPS loop',
+    articleSlug: 'autonomous-multi-agent-swarm-decompiles-fps-game-500b-tokens'
   },
   {
     id: 'sig-3',
-    tag: 'ISO C2y Reform',
-    text: 'ISO C standards committee WG14 moves to eliminate undefined behavior in upcoming C2y standard',
-    articleSlug: 'iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard'
+    tag: 'Open-Source Vaccine',
+    text: 'Popvax advances computationally designed mosaic nanoparticle vaccine PVX-001 to Phase 1 trials',
+    articleSlug: 'popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials'
   },
   {
     id: 'sig-4',
-    tag: 'Terence Tao Essay',
-    text: 'Terence Tao publishes guidance for math students navigating the era of automated Lean 4 provers',
-    articleSlug: 'mathematical-epistemology-automated-provers-terence-tao-lozano-robledo'
+    tag: 'DuckDB 2.0 Engine',
+    text: 'DuckDB 2.0 architecture details out-of-core streaming hash joins and 3.2x Parquet scan speedup',
+    articleSlug: 'duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution'
   },
   {
     id: 'sig-5',
-    tag: 'Bevy 0.20 Released',
-    text: 'Bevy 0.20 Rust game engine adds Solari path tracing on Apple Metal, DLSS 3.7, and WESL shaders',
-    articleSlug: 'bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation'
+    tag: 'macOS UNIX Registry',
+    text: 'The Open Group de-lists macOS from UNIX 03 registry as Apple retires 20-year POSIX branding',
+    articleSlug: 'open-group-delists-macos-unix-03-registry-apple-retires-posix-branding'
   }
 ];

@@ -88,7 +88,7 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] "Skip to content" link (`src/App.tsx`): first focusable element, shows on keyboard focus, moves focus to `<main id="main-content" tabIndex={-1}>`. Checked: Tab shows it, Enter focuses main, next Tab lands on the lead story.
 - [x] Article body repeats the Triad text in longer words (paraphrased, not copied). User decision (option B): rule for NEW articles only, old 211 articles stay. Added `EDITORIAL_RULEBOOK.md` §2.4 "No-Restating Rule", linked from `DAILY_UPDATE_PIPELINE.md` §5.1 (`content` bullet) and Stage 6 Step 1 (self-check). No automated gate (paraphrase cannot be detected reliably; a verbatim gate would fail on 2 old articles).
 
-## Pass 6 — Design system (DONE 2026-10-11, NOT committed yet)
+## Pass 6 — Design system (DONE 2026-10-11, commit `b3fbd80`, pushed)
 User decision: option C (full design system pass) after the visual audit (V1–V14).
 Rules for new code: `DESIGN_SYSTEM.md` (layout widths, colors by role, type scale, 3 corner sizes, one level of box, checklist).
 Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, Playwright screenshots at 1440px and 375px, built-in browser at 375px touch over 15 routes: 0 side scroll; all controls ≥ 40px except the sr-only skip link and one inline name link in the footer sentence (both allowed).
@@ -110,7 +110,7 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] Side fix: model benchmark scores showed "1338%" (Elo) and "58.2%%". New `formatBenchmarkScore()` in `src/utils/index.ts`, used in ModelCard, ModelDetailPage, ModelComparisonModal.
 - [x] Side fix: footer external links had 2 different colors; now same as other footer links. Decorative blurred color blobs removed (Author, Compare, Decision guide).
 - Copy touched (small): /compare eyebrow "NextVector Head-to-Head Architecture Audit • September 2026" → "Head-to-Head Model Comparison" (old one had a stale month).
-- [ ] USER: commit + push (deploys to Vercel). Not done; waiting for OK.
+- [x] Committed as `b3fbd80` and pushed to `main` (user OK, option A).
 - Open (not done, low): ModelCard has a spec box inside the card (box in box). Footer "Standards & Mission" has 4 plain-text items that look like links. ~130 old lint warnings (unused imports).
 
 ## Architectural decisions

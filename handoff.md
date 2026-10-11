@@ -1,17 +1,17 @@
-# Handoff — 2026-10-11 (Pass 6 design system done, NOT committed)
+# Handoff — 2026-10-11 (Pass 6 design system done, pushed)
 
 ## Latest: Pass 6 — design system (user picked option C after the visual audit)
 - All 14 audit items (V1–V14) fixed and verified. Details: `progress.md` → "Pass 6 — Design system".
 - Rules for all new UI code: `DESIGN_SYSTEM.md`. Read it before touching any component.
 - Shared pieces: utilities in `src/index.css` (`container-page`, `eyebrow`, `eyebrow-warn`, `heading-page`, `heading-section`, `scrollbar-none`, `fade-right`); components `src/components/common/PageHeader.tsx` and `SectionHeader.tsx`; `formatBenchmarkScore()` and new `getSignalColor()` in `src/utils/index.ts`.
-- NOT committed. ~40 files changed + 3 new. Next step: ask the user to OK commit + push (push deploys to Vercel).
+- Committed as `b3fbd80` and pushed to `main`. Next step: check the live site after the Vercel deploy (phone + desktop).
 - Open low items: ModelCard spec box inside card; 4 plain-text footer items look like links; old lint warnings.
 - Screenshot method that works: Playwright MCP `browser_run_code_unsafe` with `page.screenshot({path})` into the scratchpad. The built-in browser pane returned BLANK screenshots after scrolling the 1440px emulated home page (capture issue, not a site bug). Use the pane's "mobile" preset only for `pointer: coarse` tap audits (Playwright context has no touch).
 - Playwright writes logs to `.playwright-mcp/` in the repo root (not tracked by git).
 
 ## How to resume
 1. Design passes 1–6 are done. Light mode was dropped by the user.
-2. Pass 5 committed as `bc61879` and pushed to `main` (Vercel deploys from `main`). Pass 6 is uncommitted. Check the live site on a phone after deploy.
+2. Pass 5 committed as `bc61879` and pushed to `main` (Vercel deploys from `main`). Pass 6 is `b3fbd80`, also pushed. Check the live site on a phone after deploy.
 3. Remaining open items are in `progress.md` → "Open items" (live-site 404 check, `_redirects`, lint warnings, optional WebP).
 
 ## Triad rule (new, docs only)

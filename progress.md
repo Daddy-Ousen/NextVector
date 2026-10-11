@@ -6,7 +6,7 @@
 - Daily pipeline: see `DAILY_UPDATE_PIPELINE.md`. Order now: `npm run images` → `npm run build` → `npm run verify` (8 gates).
 
 ## Completed
-- 2026-10-12: Benchmarks board option 4 (user pick). UNCOMMITTED, verified: build, verify 8/8, tsc, lint 0 errors, browser at 375px and desktop.
+- 2026-10-12: Benchmarks board option 4 (user pick). Commit `b494452`, pushed. Verified: build, verify 8/8, tsc, lint 0 errors, browser at 375px and desktop.
   - Price vs Score: new scatter chart (`src/components/benchmarks/PriceScoreScatter.tsx`) with all 112 priced models, log price axis, frontier (9) in emerald with a step line, hover box, click opens model page. List switch: Frontier (9) / All priced (112).
   - OSWorld-Verified: list switch Models only (24) / All runs (66). All runs = every approach (general, agent framework, specialized), best per name + type, with a note that they are not equal-terms runs.
   - Build: `build_model_data.py` writes `OSWORLD_ALL_RUNS_ENTRIES`, `PRICE_ALL_PRICED_ENTRIES`, `PRICE_SCORE_POINTS`; `site_data.json` has `boards.osworldAll`, `boards.paretoAll`, `pricePoints`. Types: `Benchmark.altView`, `Benchmark.pricePoints`, `PriceScorePoint`.

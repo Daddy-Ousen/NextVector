@@ -1,11 +1,11 @@
 # Handoff — 2026-10-12 (Benchmarks: price scatter + OSWorld all-runs switch)
 
-## Latest: option 4 done, NOT committed
+## Latest: option 4 done, commit `b494452`, pushed to `main`
 - User asked why Price vs Score had 9 models and OSWorld 21 (live shows 24). Answer: Pareto frontier rule; OSWorld keeps only "General model" runs. User picked option 4 (both changes).
 - Done: scatter chart of all 112 priced models (frontier marked) + list switch Frontier/All priced; OSWorld switch Models only (24) / All runs (66).
 - Files: `scripts/build_model_data.py`, `scripts/verify_daily_pipeline.py`, `src/types/index.ts`, `src/data/mockData.ts`, `src/components/benchmarks/BenchmarkChart.tsx`, new `src/components/benchmarks/PriceScoreScatter.tsx`, generated `benchmarksData.ts` + `site_data.json`.
 - Checks passed: `python scripts/build_model_data.py`, `npm run build`, `npm run verify` 8/8, `npx tsc -b`, lint 0 errors, browser on `vite preview` (375px no side scroll, desktop hover box, both switches).
-- Next: user OK to commit and push to `main`; then check live /benchmarks.
+- Next: check live /benchmarks after the Vercel deploy (Price vs Score chart, both switches).
 - Gotcha: the built-in browser pane can be hidden; then ResizeObserver never fires. The chart now measures once in `useLayoutEffect` before it observes.
 - Gotcha: the browser cached old HTML after a rebuild; add `?nocache=N` to the URL.
 - Not changed: llms.txt / prerender still list the frontier only (top 3). Fine as is.

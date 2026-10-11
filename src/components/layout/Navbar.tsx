@@ -218,7 +218,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top utility bar */}
-      <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-2.5 sm:px-4 py-1.5 backdrop-blur-md">
+      <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-2.5 sm:px-4 py-1.5 pointer-coarse:py-0 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-2xs font-mono text-zinc-400 gap-2">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
             <div
@@ -248,7 +248,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/briefing');
                 }
               }}
-              className="flex items-center gap-1 sm:gap-1.5 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0 cursor-pointer"
+              className="tap flex items-center gap-1 sm:gap-1.5 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0 cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
               <span className="font-semibold text-2xs hidden sm:inline whitespace-nowrap">
@@ -262,7 +262,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="text-zinc-700 shrink-0">|</span>
             <button
               onClick={onOpenBookmarks}
-              className="flex items-center gap-1 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0 cursor-pointer"
+              className="tap flex items-center justify-center gap-1 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0 cursor-pointer"
               title="View Bookmarks"
             >
               <Bookmark className="w-3.5 h-3.5 shrink-0" />
@@ -295,7 +295,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 handleLinkClick('/');
               }
             }}
-            className="cursor-pointer group shrink-0 block"
+            className="tap flex items-center cursor-pointer group shrink-0"
           >
             <NextVectorLogo
               size={28}
@@ -318,7 +318,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <button
                 onClick={() => setActiveDropdown(activeDropdown === 'news' ? null : 'news')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                className={`tap flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   isNewsActive || activeDropdown === 'news'
                     ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -409,7 +409,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <button
                 onClick={() => setActiveDropdown(activeDropdown === 'models' ? null : 'models')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                className={`tap flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   isModelsActive || activeDropdown === 'models'
                     ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -502,7 +502,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/research');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
+              className={`tap inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                 currentPath === '/research'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -520,7 +520,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/timeline');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
+              className={`tap inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                 currentPath === '/timeline'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -538,7 +538,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/about');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
+              className={`tap inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                 currentPath === '/about'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -556,7 +556,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/faq');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
+              className={`tap inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                 currentPath === '/faq'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -570,7 +570,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-2">
             <button
               onClick={onOpenSearch}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs text-zinc-400 hover:text-zinc-200 transition-all cursor-pointer"
+              className="tap flex items-center justify-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs text-zinc-400 hover:text-zinc-200 transition-all cursor-pointer"
             >
               <Search className="w-3.5 h-3.5 text-emerald-400" />
               <span className="hidden sm:inline">Search news & models...</span>
@@ -582,7 +582,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-100 cursor-pointer"
+              className="tap flex items-center justify-center lg:hidden p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-100 cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -624,7 +624,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             handleLinkClick(item.path);
                           }
                         }}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-colors cursor-pointer ${
+                        className={`tap w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-colors cursor-pointer ${
                           isItemActive
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                             : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50'
@@ -674,7 +674,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             handleLinkClick(item.path);
                           }
                         }}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-colors cursor-pointer ${
+                        className={`tap w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-colors cursor-pointer ${
                           isItemActive
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                             : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50'

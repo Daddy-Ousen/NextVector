@@ -214,7 +214,7 @@ For each of the 5+ new stories, append a valid `Article` object strictly adherin
   - `whatHappened`: factual breakdown with numbers
   - `whyDoesItMatter`: architectural/economic impact
   - `whatCouldHappenNext`: second-order projections (3-24 months)
-- `content`: full markdown report (1,000–2,500 words with H2 sections, architecture analysis, and citations)
+- `content`: full markdown report (1,000–2,500 words with H2 sections, architecture analysis, and citations). It must NOT restate the `threeQuestions` answers in other words: every paragraph adds facts, figures, mechanisms or sources the Triad does not have ([Rulebook §2.4](./EDITORIAL_RULEBOOK.md#24-no-restating-rule-triad-vs-article-body)).
 - `sources`: array of primary URLs
 
 ### 5.2 Update `MOCK_DAILY_BRIEFING` in `src/data/mockData.ts`
@@ -263,7 +263,7 @@ The homepage features a live horizontal scrolling marquee (label `Breaking`) jus
 
 Execute the mandatory **8-Step Pre-Publication Release Gate** ([Rulebook §7](./EDITORIAL_RULEBOOK.md#7-pre-publication-quality-assurance-release-gate)):
 
-1. **Step 1: Factuality & Primary Source Audit**: Verify claims, numbers, and DOIs.
+1. **Step 1: Factuality & Primary Source Audit**: Verify claims, numbers, and DOIs. Also run the No-Restating self-check ([Rulebook §2.4](./EDITORIAL_RULEBOOK.md#24-no-restating-rule-triad-vs-article-body)): no body paragraph may only repeat the Triad.
 2. **Step 2: Temporal Sanity & Zero-Anachronism Audit**:
    - Verify that all newly drafted stories originate from the **last 48 hours**.
    - Enforce the ban on legacy models: ensure no 2024/2025 models (e.g., Claude 3.5, Claude 3.7 Sonnet, GPT-4o) are described as breaking new releases.

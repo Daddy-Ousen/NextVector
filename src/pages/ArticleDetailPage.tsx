@@ -232,7 +232,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             href={shareX}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
+            className="tap flex items-center justify-center p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
             title="Share on X"
             aria-label="Share on X"
           >
@@ -243,7 +243,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             href={shareLinkedIn}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
+            className="tap flex items-center justify-center p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
             title="Share on LinkedIn"
             aria-label="Share on LinkedIn"
           >
@@ -252,7 +252,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
 
           <button
             onClick={handleShare}
-            className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
+            className="tap flex items-center justify-center p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
             title="Copy link to clipboard"
             aria-label={copied ? 'Link copied' : 'Copy link'}
           >
@@ -323,7 +323,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                     href={article.author.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xs px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-emerald-400 hover:text-emerald-300 hover:border-emerald-500 flex items-center gap-1 transition-all"
+                    className="tap text-2xs px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-emerald-400 hover:text-emerald-300 hover:border-emerald-500 flex items-center gap-1 transition-all"
                   >
                     <span>rhasan.online</span>
                     <ExternalLink className="w-2.5 h-2.5" />
@@ -556,7 +556,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
               href={article.author.substack}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-1.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-bold transition-colors flex items-center gap-1"
+              className="tap px-3 py-1.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-bold transition-colors flex items-center gap-1"
               title="NextVector on Substack"
             >
               <span>Substack</span>
@@ -567,7 +567,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             href="https://rhasan.online"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md flex items-center gap-1"
+            className="tap px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md flex items-center gap-1"
           >
             <span>rhasan.online</span>
             <ExternalLink className="w-3 h-3" />
@@ -581,7 +581,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
           <div className="text-zinc-400 uppercase tracking-wider mb-2 font-semibold">
             Primary Sources & Verification Audit
           </div>
-          <ul className="space-y-1.5">
+          <ul className="space-y-1.5 pointer-coarse:space-y-0">
             {article.citations.map((cite, i) => (
               <li key={i} className="flex items-center gap-2">
                 <span className="text-emerald-400">•</span>
@@ -589,7 +589,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                   href={cite.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-zinc-300 hover:text-emerald-400 underline flex items-center gap-1"
+                  className="tap text-zinc-300 hover:text-emerald-400 underline flex items-center gap-1"
                 >
                   <span>{cite.title}</span>
                   <ExternalLink className="w-3 h-3" />
@@ -616,7 +616,7 @@ const NewsletterInline: React.FC = () => (
         href={SUBSTACK_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold shrink-0"
+        className="tap text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold shrink-0"
       >
         <span>On Substack</span>
         <ArrowRight className="w-3 h-3" />

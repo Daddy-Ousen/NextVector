@@ -67,12 +67,12 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
             {group.items.map((a) => {
               const cat = getCategoryBadge(a.category);
               return (
-                <li key={a.id} className="px-4 py-3 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+                <li key={a.id} className="px-4 py-3 pointer-coarse:py-1 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
                   <span className="text-xs font-mono text-zinc-400 shrink-0 sm:w-28">{formatDate(a.publishedAt)}</span>
                   <a
                     href={`/article/${a.slug}`}
                     onClick={link(`/article/${a.slug}`)}
-                    className="text-sm text-zinc-200 hover:text-emerald-400 transition-colors flex-1"
+                    className="text-sm text-zinc-200 hover:text-emerald-400 transition-colors flex-1 pointer-coarse:leading-10"
                   >
                     {a.title}
                   </a>
@@ -88,13 +88,13 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
         <h2 className="text-lg font-bold text-zinc-100">
           Foundation Models <span className="text-zinc-400 font-normal">({models.length})</span>
         </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 pointer-coarse:gap-y-0 text-sm">
           {sortedModels.map((m) => (
             <li key={m.id} className="flex items-baseline gap-2 min-w-0">
               <a
                 href={`/models/${m.id}`}
                 onClick={link(`/models/${m.id}`)}
-                className="text-cyan-400 hover:underline truncate"
+                className="text-cyan-400 hover:underline truncate pointer-coarse:leading-10 pointer-coarse:min-w-10"
               >
                 {m.name}
               </a>

@@ -64,7 +64,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
               <button
                 key={option.value}
                 onClick={() => onMinSignalChange(option.value)}
-                className={`px-2 sm:px-2.5 py-1 rounded-lg text-2xs sm:text-xs transition-all whitespace-nowrap ${
+                className={`tap px-2 sm:px-2.5 py-1 rounded-lg text-2xs sm:text-xs transition-all whitespace-nowrap ${
                   minSignal === option.value
                     ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-bold'
                     : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
@@ -83,7 +83,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
           <select
             value={selectedType}
             onChange={(e) => onSelectType(e.target.value)}
-            className="bg-zinc-900 border border-zinc-700/80 text-xs text-zinc-200 rounded-lg px-2.5 py-1 outline-none focus:border-emerald-500"
+            className="tap bg-zinc-900 border border-zinc-700/80 text-xs text-zinc-200 rounded-lg px-2.5 py-1 outline-none focus:border-emerald-500"
           >
             {types.map((t) => (
               <option key={t.value} value={t.value} className="bg-zinc-900 text-zinc-200">
@@ -113,7 +113,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
             <button
               key={tag}
               onClick={() => onSelectTag(tag === 'All Topics' ? '' : tag)}
-              className={`text-xs px-3 py-1 rounded-full shrink-0 transition-all ${
+              className={`tap text-xs px-3 py-1 rounded-full shrink-0 transition-all ${
                 isSelected
                   ? 'bg-zinc-200 text-zinc-950 font-bold shadow-sm'
                   : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-800'

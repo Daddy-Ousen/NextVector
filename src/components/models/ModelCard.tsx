@@ -37,7 +37,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
 
           <button
             onClick={() => onToggleCompare(model.id)}
-            className={`flex items-center gap-1 text-2xs px-2.5 py-1 rounded-md transition-colors ${
+            className={`tap flex items-center gap-1 text-2xs px-2.5 py-1 rounded-md transition-colors ${
               isSelectedForCompare
                 ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40'
                 : 'bg-zinc-800/60 text-zinc-400 hover:text-zinc-200 border border-zinc-700/40 hover:bg-zinc-800'
@@ -68,7 +68,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
                   onSelectDetail(model.id);
                 }
               }}
-              className="hover:text-emerald-400 transition-colors flex items-center justify-between w-full"
+              className="tap hover:text-emerald-400 transition-colors flex items-center justify-between w-full"
             >
               <span>{model.name}</span>
               <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-emerald-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -142,7 +142,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               onSelectDetail(model.id);
             }
           }}
-          className="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline cursor-pointer"
+          className="tap text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline cursor-pointer"
         >
           <span>View Report</span>
           <ArrowUpRight className="w-3.5 h-3.5" />

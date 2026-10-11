@@ -122,12 +122,14 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
               <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
                 <button
                   onClick={(e) => onToggleBookmark(article.id, e)}
-                  className={`p-2 rounded-lg border transition-colors shrink-0 ${
+                  className={`tap flex items-center justify-center p-2 rounded-lg border transition-colors shrink-0 ${
                     isBookmarked
                       ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
                       : 'border-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800'
                   }`}
                   title={isBookmarked ? 'Remove bookmark' : 'Bookmark article'}
+                  aria-label={isBookmarked ? 'Remove bookmark' : 'Bookmark article'}
+                  aria-pressed={isBookmarked}
                 >
                   <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-current' : ''}`} />
                 </button>
@@ -139,7 +141,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
                       onSelectArticle(article.slug);
                     }
                   }}
-                  className="px-3 sm:px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold flex items-center gap-1 sm:gap-1.5 transition-all shadow-lg active:scale-95 whitespace-nowrap shrink-0"
+                  className="tap px-3 sm:px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold flex items-center gap-1 sm:gap-1.5 transition-all shadow-lg active:scale-95 whitespace-nowrap shrink-0"
                 >
                   <span className="hidden sm:inline">Read story</span>
                   <span className="sm:hidden">Read</span>
@@ -256,10 +258,12 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         <div className="flex items-center gap-2 pt-3">
           <button
             onClick={(e) => onToggleBookmark(article.id, e)}
-            className={`p-1.5 rounded-md hover:bg-zinc-800 transition-colors ${
+            className={`tap flex items-center justify-center p-1.5 rounded-md hover:bg-zinc-800 transition-colors ${
               isBookmarked ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-300'
             }`}
-            title="Bookmark"
+            title={isBookmarked ? 'Remove bookmark' : 'Bookmark'}
+            aria-label={isBookmarked ? 'Remove bookmark' : 'Bookmark article'}
+            aria-pressed={isBookmarked}
           >
             <Bookmark className={`w-3.5 h-3.5 ${isBookmarked ? 'fill-current' : ''}`} />
           </button>
@@ -271,7 +275,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
                 onSelectArticle(article.slug);
               }
             }}
-            className="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline cursor-pointer"
+            className="tap text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline cursor-pointer"
           >
             <span>Read</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

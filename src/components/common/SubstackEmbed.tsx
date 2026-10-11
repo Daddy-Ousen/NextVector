@@ -33,7 +33,7 @@ export const SubstackEmbed: React.FC<SubstackEmbedProps> = ({ showArchiveLink = 
           href="https://nextvectorr.substack.com/archive"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-emerald-400 hover:text-emerald-300 underline"
+          className="tap inline-flex items-center text-emerald-400 hover:text-emerald-300 underline"
         >
           Substack Archive ↗
         </a>

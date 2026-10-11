@@ -427,6 +427,18 @@ export function App() {
 
   return (
     <div className="min-h-screen bg-[#08090d] text-zinc-100 flex flex-col font-sans">
+      {/* Skip link: first focusable element, visible only on keyboard focus */}
+      <a
+        href="#main-content"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById('main-content')?.focus();
+        }}
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-3 focus:rounded-lg focus:bg-emerald-500 focus:text-zinc-950 focus:text-sm focus:font-semibold"
+      >
+        Skip to content
+      </a>
+
       {/* Top Navbar */}
       <Navbar
         currentPath={currentPath}
@@ -437,7 +449,11 @@ export function App() {
       />
 
       {/* Main Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8 focus:outline-none"
+      >
         <Suspense fallback={<PageSkeleton />}>
           {renderCurrentPage()}
         </Suspense>

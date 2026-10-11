@@ -58,6 +58,15 @@ Every intelligence report, without exception, must rigorously answer the **Three
 - Anticipated counter-moves by competitors (e.g. OpenAI, Google DeepMind, Anthropic, Meta, NVIDIA, TSMC).
 - Regulatory, supply chain, or architectural bottlenecks that will emerge next.
 
+### 2.4 No-Restating Rule (Triad vs. Article Body)
+The article page shows the Three-Question block (`threeQuestions`) above the body (`content`). Readers see both. The body must not say the same things again in other words.
+- The Triad is the summary. The body is the evidence and the depth behind it.
+- Do not open the body with a paraphrase of `whatHappened`. Start with a detail the Triad does not have: a number, a quote from the primary source, a timeline, how the system works.
+- Each body paragraph must add at least one fact, figure, mechanism, source, or counter-argument that is not in the Triad.
+- Do not end the body with a paraphrase of `whatsNext`. If the closing paragraph looks ahead, it must name specifics the Triad left out (dates, companies, thresholds to watch).
+- Self-check before publishing: read the three Triad answers, then each body paragraph. Delete or rewrite any paragraph that only restates them.
+- Applies to new articles from 2026-10-11. Older articles are not rewritten.
+
 ---
 
 ## 3. Sourcing, Factuality & Anti-Hallucination Standards

@@ -61,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://nextvectorr.substack.com/?r=92ang8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold"
+                  className="tap text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold"
                 >
                   <span>Substack Edition</span>
                   <ExternalLink className="w-2.5 h-2.5" />
@@ -85,7 +85,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-b border-zinc-800/80 text-xs">
           <div>
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Coverage Areas</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 pointer-coarse:space-y-0">
               <li>
                 <a
                   href="/ai"
@@ -95,7 +95,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/ai');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Artificial Intelligence
                 </a>
@@ -109,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/technology');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Semiconductors & Hardware
                 </a>
@@ -123,7 +123,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/science');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Science & Quantum Physics
                 </a>
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/research');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Research Explained
                 </a>
@@ -147,7 +147,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           <div>
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Sections</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 pointer-coarse:space-y-0">
               <li>
                 <a
                   href="/models"
@@ -157,7 +157,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/models');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   AI Model Spec Directory ({MODEL_COUNT} Models)
                 </a>
@@ -171,7 +171,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/compare');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Model Comparisons & Showdowns
                 </a>
@@ -185,7 +185,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/subscriptions');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Best AI Subscriptions (2026 Guide)
                 </a>
@@ -199,7 +199,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/benchmarks');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Benchmark Radar & Leaderboards
                 </a>
@@ -213,7 +213,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/timeline');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Technology Timeline
                 </a>
@@ -227,7 +227,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/briefing');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Daily Briefing Scan
                 </a>
@@ -237,7 +237,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           <div>
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Editorial Formats</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 pointer-coarse:space-y-0">
               <li>
                 <a
                   href="/analysis"
@@ -247,7 +247,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/analysis');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   News Analysis
                 </a>
@@ -261,7 +261,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/deep-dives');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Technical Deep Dives
                 </a>
@@ -275,7 +275,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/models');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Model Release Reports
                 </a>
@@ -289,7 +289,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/benchmarks');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
                 >
                   Benchmark Deconstruction
                 </a>
@@ -299,7 +299,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           <div>
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Standards & Mission</h5>
-            <ul className="space-y-2 text-zinc-400">
+            <ul className="space-y-2 pointer-coarse:space-y-0 text-zinc-400">
               <li>
                 <a
                   href="/about"
@@ -309,7 +309,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/about');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors text-left"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors text-left"
                 >
                   About Editor (Robiul Hasan)
                 </a>
@@ -323,7 +323,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/faq');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors text-left"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors text-left"
                 >
                   FAQ &amp; Knowledge Base
                 </a>
@@ -337,7 +337,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate('/contact');
                     }
                   }}
-                  className="hover:text-emerald-400 transition-colors text-left"
+                  className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors text-left"
                 >
                   Contact Desk &amp; Verification
                 </a>
@@ -347,7 +347,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://rhasan.online"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-emerald-400 transition-colors inline-flex items-center gap-1 text-emerald-400 font-semibold"
+                  className="tap hover:text-emerald-400 transition-colors inline-flex items-center gap-1 text-emerald-400 font-semibold"
                 >
                   <span>rhasan.online</span>
                   <ExternalLink className="w-3 h-3" />
@@ -358,7 +358,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://nextvectorr.substack.com/?r=92ang8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#FF6719] transition-colors inline-flex items-center gap-1 text-zinc-300 font-medium"
+                  className="tap hover:text-[#FF6719] transition-colors inline-flex items-center gap-1 text-zinc-300 font-medium"
                 >
                   <span>Substack Publication</span>
                   <ExternalLink className="w-3 h-3 text-[#FF6719]" />
@@ -395,7 +395,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   onNavigate('/about');
                 }
               }}
-              className="hover:text-emerald-400 transition-colors"
+              className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
             >
               Editorial Lead
             </a>
@@ -407,7 +407,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   onNavigate('/faq');
                 }
               }}
-              className="hover:text-emerald-400 transition-colors"
+              className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
             >
               FAQ
             </a>
@@ -419,7 +419,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   onNavigate('/contact');
                 }
               }}
-              className="hover:text-emerald-400 transition-colors"
+              className="tap pointer-coarse:py-1.5 inline-flex items-center hover:text-emerald-400 transition-colors"
             >
               Contact
             </a>

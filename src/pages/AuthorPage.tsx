@@ -465,7 +465,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://github.com/Daddy-Ousen"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
+            className="tap px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
           >
             <GithubIcon className="w-3.5 h-3.5" />
             <span>GitHub Repository</span>

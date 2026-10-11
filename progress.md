@@ -75,12 +75,18 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] Mid-article newsletter box after the middle paragraph (stories with 4+ paragraphs). Shared `src/components/common/SubstackEmbed.tsx` now also used by `Footer.tsx`. Iframe is `loading="lazy"`.
 - [x] Reading progress bar (`src/components/common/ReadingProgressBar.tsx`): fixed 4px emerald bar at the top, uses scaleX, rAF-throttled scroll.
 - [x] Side fix: article category badge got `[object Object]` as its class (`getCategoryBadge` returns an object). Now uses `.color` and `.label`.
-- [ ] Optional, NOT done: light mode (site is dark only; `index.html` has `class="dark"`). Large job (hundreds of zinc-* classes). Ask user.
+- Light mode: DROPPED by user decision 2026-10-11. Site stays dark only.
 
-### Pass 5 — Accessibility leftovers
-- [ ] Mobile tap targets: 118 of 175 links/buttons were under 32px at 375px. Target ≥ 40px for main controls.
-- [ ] "Skip to content" link.
-- [ ] Article body repeats the Triad text (content/pipeline issue; see `DAILY_UPDATE_PIPELINE.md`). Decide with user.
+### Pass 5 — Accessibility leftovers (DONE 2026-10-11, NOT committed yet)
+Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser at 375px (touch emulation) and 1024px (mouse).
+- [x] Tap targets: on touch screens (`pointer: coarse`) controls are now ≥ 40×40px. Mouse layouts do not change (checked: topic chip still 28px at 1024px).
+  - Base rule in `src/index.css` (`@layer base`): every `button`, `select`, `summary`, text `input` gets `min-height: 2.5rem`; buttons also `min-width`.
+  - New utility `tap` in `src/index.css` for links (links inside running text are left alone, WCAG 2.5.8 exempts them). Added to links in Navbar, ArticleCard, ModelCard, HomePage, BenchmarkChart, Footer, SubstackEmbed, ArticleDetailPage, ArchivePage, ContactPage, NotFoundPage, ResearchPage, AuthorPage.
+  - Layout fixes so touch rows do not get too tall or crowded: `pointer-coarse:py-0` on top bar, `pointer-coarse:py-1` on ticker, `pointer-coarse:space-y-0` + `pointer-coarse:py-1.5` on footer link lists, `pointer-coarse:leading-10` on truncated archive/contact links.
+  - Result at 375px over 16 routes (home, article, /models, model detail, /benchmarks, /compare, /research, /timeline, /briefing, /faq, /contact, /about, /archive, /ai, /subscriptions, 404) + mobile menu + search + Saved window: 0 of 1,618 controls under 40px (was 127 of 173 on home alone). No side scroll.
+  - Side fix: icon-only bookmark buttons and Cards/List toggle got `aria-label`; bookmark buttons got `aria-pressed`.
+- [x] "Skip to content" link (`src/App.tsx`): first focusable element, shows on keyboard focus, moves focus to `<main id="main-content" tabIndex={-1}>`. Checked: Tab shows it, Enter focuses main, next Tab lands on the lead story.
+- [x] Article body repeats the Triad text in longer words (paraphrased, not copied). User decision (option B): rule for NEW articles only, old 211 articles stay. Added `EDITORIAL_RULEBOOK.md` §2.4 "No-Restating Rule", linked from `DAILY_UPDATE_PIPELINE.md` §5.1 (`content` bullet) and Stage 6 Step 1 (self-check). No automated gate (paraphrase cannot be detected reliably; a verbatim gate would fail on 2 old articles).
 
 ## Architectural decisions
 - `src/data/articlesData.ts` stays the single source of truth. The app reads it only through virtual modules `virtual:article-summaries` and `virtual:article-body/<id>` (see `vite.articleSplit.ts`). Types: `ArticleSummary` (lists) vs `Article` (detail).

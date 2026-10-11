@@ -164,7 +164,7 @@ export const ResearchPage: React.FC<ResearchPageProps> = ({ papers }) => {
                   href={paper.paperUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-amber-400 hover:text-amber-300 font-medium inline-flex items-center gap-1 hover:underline"
+                  className="tap text-amber-400 hover:text-amber-300 font-medium inline-flex items-center gap-1 hover:underline"
                 >
                   <span>Read Primary Source Paper</span>
                   <ExternalLink className="w-3.5 h-3.5" />

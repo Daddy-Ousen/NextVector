@@ -132,7 +132,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </span>
                 <a
                   href="mailto:editor@nextvector.rhasan.online"
-                  className="text-sm font-bold text-zinc-100 hover:text-emerald-400 transition-colors mt-0.5 block"
+                  className="text-sm font-bold text-zinc-100 hover:text-emerald-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
                 >
                   editor@nextvector.rhasan.online
                 </a>
@@ -147,7 +147,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </span>
                 <a
                   href="mailto:benchmarks@nextvector.rhasan.online"
-                  className="text-sm font-bold text-zinc-100 hover:text-cyan-400 transition-colors mt-0.5 block"
+                  className="text-sm font-bold text-zinc-100 hover:text-cyan-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
                 >
                   benchmarks@nextvector.rhasan.online
                 </a>
@@ -162,7 +162,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </span>
                 <a
                   href="mailto:corrections@nextvector.rhasan.online"
-                  className="text-sm font-bold text-zinc-100 hover:text-purple-400 transition-colors mt-0.5 block"
+                  className="text-sm font-bold text-zinc-100 hover:text-purple-400 transition-colors mt-0.5 block pointer-coarse:leading-10 break-all"
                 >
                   corrections@nextvector.rhasan.online
                 </a>
@@ -206,7 +206,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 href="https://rhasan.online"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline inline-flex items-center gap-1"
+                className="tap hover:underline inline-flex items-center gap-1"
               >
                 <span>rhasan.online</span>
                 <ExternalLink className="w-3 h-3" />
@@ -216,7 +216,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 href="https://github.com/Daddy-Ousen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline inline-flex items-center gap-1"
+                className="tap hover:underline inline-flex items-center gap-1"
               >
                 <span>GitHub</span>
                 <ExternalLink className="w-3 h-3" />
@@ -226,7 +226,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 href="https://nextvectorr.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#FF6719] hover:underline inline-flex items-center gap-1"
+                className="tap text-[#FF6719] hover:underline inline-flex items-center gap-1"
               >
                 <span>Substack</span>
                 <ExternalLink className="w-3 h-3" />

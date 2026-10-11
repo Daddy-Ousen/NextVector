@@ -223,7 +223,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       </div>
 
       {/* Breaking ticker (items set by the daily pipeline) */}
-      <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-2.5 sm:p-3 shadow-lg flex items-center overflow-hidden">
+      <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-2.5 sm:p-3 pointer-coarse:py-1 shadow-lg flex items-center overflow-hidden">
         <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold shrink-0 mr-1 sm:mr-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <span className="whitespace-nowrap">Breaking</span>
@@ -235,7 +235,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <button
                   type="button"
                   onClick={() => sig.articleSlug && onSelectArticle(sig.articleSlug)}
-                  className={`inline-flex items-center gap-2 transition-colors text-left shrink-0 ${
+                  className={`tap inline-flex items-center gap-2 transition-colors text-left shrink-0 ${
                     sig.articleSlug ? 'hover:text-emerald-400 cursor-pointer' : ''
                   }`}
                 >
@@ -284,7 +284,8 @@ export const HomePage: React.FC<HomePageProps> = ({
                   onClick={() => setFeedView(view)}
                   aria-pressed={feedView === view}
                   title={`${label} view`}
-                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs transition-colors ${
+                  aria-label={`${label} view`}
+                  className={`tap flex items-center justify-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs transition-colors ${
                     feedView === view ? 'bg-zinc-800 text-emerald-400' : 'text-zinc-400 hover:text-zinc-200'
                   }`}
                 >
@@ -295,7 +296,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
             <button
               onClick={() => onNavigate('/ai')}
-              className="flex text-xs text-emerald-400 hover:text-emerald-300 items-center gap-1 whitespace-nowrap"
+              className="tap flex text-xs text-emerald-400 hover:text-emerald-300 items-center gap-1 whitespace-nowrap"
             >
               <span>All AI news</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -359,7 +360,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             )}
             <button
               onClick={() => onNavigate('/models')}
-              className="text-xs text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800"
+              className="tap text-xs text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800"
             >
               <span>Explore All {models.length} Models</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -402,7 +403,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
           <button
             onClick={() => onNavigate('/deep-dives')}
-            className="text-xs text-purple-400 hover:text-purple-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
+            className="tap text-xs text-purple-400 hover:text-purple-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
           >
             <span>All Deep Dives</span>
             <ArrowRight className="w-3.5 h-3.5" />

@@ -61,7 +61,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ path, onNavigate, on
                   onNavigate(link.path);
                 }
               }}
-              className="text-zinc-400 hover:text-emerald-400 transition-colors"
+              className="tap inline-flex items-center text-zinc-400 hover:text-emerald-400 transition-colors"
             >
               {link.label}
             </a>

@@ -30,6 +30,29 @@
     outline: 2px solid #34d399;
     outline-offset: 2px;
   }
+
+  /* Touch screens: every button and form field is at least 40x40px.
+     Links need the `tap` utility (below), because many links sit inside text. */
+  @media (pointer: coarse) {
+    button,
+    select,
+    summary,
+    input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='hidden']) {
+      min-height: 2.5rem;
+    }
+    button {
+      min-width: 2.5rem;
+    }
+  }
+}
+
+/* Touch screens: a control with `tap` gets at least a 40x40px tap area.
+   Mouse layouts do not change. Use on flex / inline-flex / block controls. */
+@utility tap {
+  @media (pointer: coarse) {
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 
@@ -45,6 +45,12 @@ const ContactPage = React.lazy(() =>
 const FAQPage = React.lazy(() =>
   import('./pages/FAQPage').then((m) => ({ default: m.FAQPage }))
 );
+const ArchivePage = React.lazy(() =>
+  import('./pages/ArchivePage').then((m) => ({ default: m.ArchivePage }))
+);
+const NotFoundPage = React.lazy(() =>
+  import('./pages/NotFoundPage').then((m) => ({ default: m.NotFoundPage }))
+);
 
 // Lazy-load heavyweight interactive modals on-demand
 const CommandPalette = React.lazy(() =>
@@ -78,14 +84,31 @@ const PageSkeleton: React.FC = () => (
   </div>
 );
 
+// Strip trailing slashes so "/models/" and "/models" resolve to the same route
+const normalizePath = (path: string): string => {
+  const trimmed = path.replace(/\/+$/, '');
+  return trimmed === '' ? '/' : trimmed;
+};
+
+const CATEGORY_PATHS = ['/ai', '/technology', '/science', '/analysis', '/deep-dives'];
+
 export function App() {
   // Routing state
   const [currentPath, setCurrentPath] = useState<string>(() => {
-    return window.location.pathname || '/';
+    return normalizePath(window.location.pathname || '/');
+  });
+
+  // Search deep link (?q=term) declared in the WebSite SearchAction schema
+  const [initialSearchQuery, setInitialSearchQuery] = useState<string>(() => {
+    try {
+      return new URLSearchParams(window.location.search).get('q')?.trim() || '';
+    } catch {
+      return '';
+    }
   });
 
   // Modal states
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(() => initialSearchQuery !== '');
   const [isBookmarksOpen, setIsBookmarksOpen] = useState(false);
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
 
@@ -105,18 +128,27 @@ export function App() {
 
   // Toast notification state
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
-    setTimeout(() => {
+    // Restart the timer so a new toast gets its full display time
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => {
       setToastMessage(null);
     }, 3000);
   };
 
+  useEffect(() => {
+    return () => {
+      if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    };
+  }, []);
+
   // Browser navigation history listener
   useEffect(() => {
     const handlePopState = () => {
-      setCurrentPath(window.location.pathname || '/');
+      setCurrentPath(normalizePath(window.location.pathname || '/'));
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -135,7 +167,7 @@ export function App() {
   }, []);
 
   const navigateTo = (path: string) => {
-    if (path !== currentPath) {
+    if (path !== currentPath || window.location.search) {
       window.history.pushState({}, '', path);
       setCurrentPath(path);
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -179,12 +211,17 @@ export function App() {
     }
   };
 
+  const renderNotFound = () => (
+    <NotFoundPage path={currentPath} onNavigate={navigateTo} onOpenSearch={() => setIsSearchOpen(true)} />
+  );
+
   // Render Page Content based on currentPath
   const renderCurrentPage = () => {
     // 1. Article Detail: /article/:slug
     if (currentPath.startsWith('/article/')) {
       const slug = currentPath.replace('/article/', '');
-      const article = MOCK_ARTICLES.find((a) => a.slug === slug) || MOCK_ARTICLES[0];
+      const article = MOCK_ARTICLES.find((a) => a.slug === slug);
+      if (!article) return renderNotFound();
       const relatedModel = article.relatedModelId
         ? MOCK_MODELS.find((m) => m.id === article.relatedModelId)
         : undefined;
@@ -197,6 +234,7 @@ export function App() {
 
       return (
         <ArticleDetailPage
+          key={article.id}
           article={article}
           relatedModel={relatedModel}
           relatedBenchmark={relatedBenchmark}
@@ -215,9 +253,11 @@ export function App() {
     // 2. Model Detail: /models/:id
     if (currentPath.startsWith('/models/') && currentPath !== '/models') {
       const modelId = currentPath.replace('/models/', '');
-      const model = MOCK_MODELS.find((m) => m.id === modelId) || MOCK_MODELS[0];
+      const model = MOCK_MODELS.find((m) => m.id === modelId);
+      if (!model) return renderNotFound();
       return (
         <ModelDetailPage
+          key={model.id}
           model={model}
           onBack={() => navigateTo('/models')}
           onCompareWithOthers={(id) => {
@@ -252,12 +292,13 @@ export function App() {
           models={MOCK_MODELS}
           onSelectModelDetail={(id) => navigateTo(`/models/${id}`)}
           onNavigate={navigateTo}
+          notFound={renderNotFound()}
         />
       );
     }
 
-    // 3c. AI Subscription & Buyer's Guide: /subscriptions or /guide/best-ai-subscription
-    if (currentPath === '/subscriptions' || currentPath.startsWith('/guide/')) {
+    // 3c. AI Subscription & Buyer's Guide: /subscriptions
+    if (currentPath === '/subscriptions') {
       return (
         <SubscriptionsPage
           onSelectModel={(id) => navigateTo(`/models/${id}`)}
@@ -301,7 +342,7 @@ export function App() {
     }
 
     // 8. Categories: /ai, /technology, /science, /analysis, /deep-dives
-    if (['/ai', '/technology', '/science', '/analysis', '/deep-dives'].includes(currentPath)) {
+    if (CATEGORY_PATHS.includes(currentPath)) {
       const categorySlug = currentPath.replace('/', '');
       return (
         <CategoryPage
@@ -320,8 +361,8 @@ export function App() {
       );
     }
 
-    // 9. Author Profile / Editorial Manifesto: /about, /author, /author/:slug
-    if (currentPath === '/about' || currentPath.startsWith('/author')) {
+    // 9. Author Profile / Editorial Manifesto: /about, /author
+    if (currentPath === '/about' || currentPath === '/author') {
       return (
         <AuthorPage
           articles={MOCK_ARTICLES}
@@ -341,6 +382,16 @@ export function App() {
     // 11. Frequently Asked Questions: /faq
     if (currentPath === '/faq') {
       return <FAQPage onNavigate={navigateTo} />;
+    }
+
+    // 12. Complete Archive: /archive
+    if (currentPath === '/archive') {
+      return <ArchivePage articles={MOCK_ARTICLES} models={MOCK_MODELS} onNavigate={navigateTo} />;
+    }
+
+    // Unknown paths get a real "not found" page instead of silently showing the homepage
+    if (currentPath !== '/') {
+      return renderNotFound();
     }
 
     // Default: Home Page
@@ -398,7 +449,11 @@ export function App() {
         <Suspense fallback={null}>
           <CommandPalette
             isOpen={isSearchOpen}
-            onClose={() => setIsSearchOpen(false)}
+            initialQuery={initialSearchQuery}
+            onClose={() => {
+              setIsSearchOpen(false);
+              setInitialSearchQuery('');
+            }}
             onNavigate={handleCommandPaletteSelect}
           />
         </Suspense>

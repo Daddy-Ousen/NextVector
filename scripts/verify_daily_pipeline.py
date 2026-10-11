@@ -9,6 +9,7 @@ Strictly enforces Editorial Rulebook §3, §4, §7, §8, and §10:
 5. All required schema fields (threeQuestions, sources, tags, author).
 6. Sync between articlesData.ts, MOCK_DAILY_BRIEFING, MOCK_LIVE_SIGNALS, MOCK_TIMELINE_EVENTS, and public/sitemap.xml.
 7. SEO, GEO & AI Overview Readiness: min 5 tags, complete Three-Question framework (>80 chars each), min 3 key takeaways, min 1 primary citation, Schema.org TechArticle & FAQPage graph with speakable selectors.
+8. Every relatedModelId / relatedBenchmarkId / relatedPaperId points to a real record.
 """
 
 import sys
@@ -40,7 +41,7 @@ BANNED_ANACHRONISMS = [
 ]
 
 def check_articles():
-    print("\n[Gate 1/7] Auditing src/data/articlesData.ts...")
+    print("\n[Gate 1/8] Auditing src/data/articlesData.ts...")
     if not ARTICLES_FILE.exists():
         print(f"FAIL: {ARTICLES_FILE} does not exist.")
         return False, []
@@ -161,7 +162,7 @@ def check_articles():
     return True, articles
 
 def check_briefing_and_signals(articles):
-    print("\n[Gate 2/7] Auditing MOCK_DAILY_BRIEFING & MOCK_LIVE_SIGNALS...")
+    print("\n[Gate 2/8] Auditing MOCK_DAILY_BRIEFING & MOCK_LIVE_SIGNALS...")
     if not MOCK_DATA_FILE.exists():
         print(f"FAIL: {MOCK_DATA_FILE} not found.")
         return False
@@ -207,7 +208,7 @@ def check_briefing_and_signals(articles):
     return True
 
 def check_timeline(articles):
-    print("\n[Gate 3/7] Auditing Breakthrough Timeline (`MOCK_TIMELINE_EVENTS`)...")
+    print("\n[Gate 3/8] Auditing Breakthrough Timeline (`MOCK_TIMELINE_EVENTS`)...")
     content = MOCK_DATA_FILE.read_text(encoding="utf-8")
     timeline_match = re.search(r"export const MOCK_TIMELINE_EVENTS: TimelineEvent\[\]\s*=\s*\[(.*?)\];", content, re.DOTALL)
     if not timeline_match:
@@ -244,7 +245,7 @@ def check_timeline(articles):
     return True
 
 def check_sitemap(articles):
-    print("\n[Gate 4/7] Auditing public/sitemap.xml...")
+    print("\n[Gate 4/8] Auditing public/sitemap.xml...")
     if not SITEMAP_FILE.exists():
         print(f"FAIL: {SITEMAP_FILE} not found.")
         return False
@@ -264,7 +265,7 @@ def check_sitemap(articles):
     return True
 
 def check_temporal_sanity(articles):
-    print("\n[Gate 5/7] Auditing Temporal Sanity (48-Hour Breaking News Window)...")
+    print("\n[Gate 5/8] Auditing Temporal Sanity (48-Hour Breaking News Window)...")
     if not articles:
         return False
 
@@ -291,7 +292,7 @@ def check_temporal_sanity(articles):
     return True
 
 def check_model_benchmark_sync():
-    print("\n[Gate 6/7] Auditing Model Registry & Comprehensive Benchmark Synchronization (All 6 Leaderboards)...")
+    print("\n[Gate 6/8] Auditing Model Registry & Comprehensive Benchmark Synchronization (All 6 Leaderboards)...")
     if not MODELS_FILE.exists() or not BENCHMARKS_FILE.exists():
         print("FAIL: modelsData.ts or benchmarksData.ts missing.")
         return False
@@ -404,7 +405,7 @@ def check_model_benchmark_sync():
     return True
 
 def check_seo_geo_readiness():
-    print("\n[Gate 7/7] Auditing SEO, GEO & AI Overview Readiness...")
+    print("\n[Gate 7/8] Auditing SEO, GEO & AI Overview Readiness...")
     if not ARTICLES_FILE.exists():
         print(f"FAIL: {ARTICLES_FILE} missing.")
         return False
@@ -512,6 +513,34 @@ def check_seo_geo_readiness():
     print("PASS: SEO, GEO & AI Overview readiness verified (Tags >= 5, ThreeQuestions > 80 chars, KeyTakeaways >= 3, Citations >= 1, Schema.org Graph & Speakable selectors).")
     return True
 
+def check_related_links():
+    print("\n[Gate 8/8] Auditing Related Model / Benchmark / Paper Links...")
+    articles_src = ARTICLES_FILE.read_text(encoding="utf-8")
+    mock_src = MOCK_DATA_FILE.read_text(encoding="utf-8")
+    models_src = MODELS_FILE.read_text(encoding="utf-8")
+
+    known = {
+        "relatedModelId": set(re.findall(r'["\']?id["\']?:\s*["\'](model-[^"\']+)["\']', models_src)),
+        "relatedBenchmarkId": set(re.findall(r'\bid:\s*["\'](bench-[^"\']+)["\']', mock_src)),
+        "relatedPaperId": set(re.findall(r'\bid:\s*["\'](paper-[^"\']+)["\']', mock_src)),
+    }
+
+    errors = set()
+    for field, valid_ids in known.items():
+        for ref in re.findall(field + r':\s*["\']([^"\']+)["\']', articles_src):
+            if ref not in valid_ids:
+                hint = ", ".join(sorted(valid_ids)) if field != "relatedModelId" else "see modelsData.ts"
+                errors.add(f"{field} '{ref}' does not exist (valid: {hint})")
+
+    if errors:
+        for err in sorted(errors):
+            print(f"  [ERROR] {err}")
+        return False
+
+    print(f"PASS: All related links resolve ({len(known['relatedModelId'])} models, "
+          f"{len(known['relatedBenchmarkId'])} benchmarks, {len(known['relatedPaperId'])} papers).")
+    return True
+
 def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -555,8 +584,13 @@ def main():
         print("\n[FAIL] RELEASE GATE FAILED at SEO, GEO & AI Overview Readiness Audit.")
         sys.exit(1)
 
+    pass_links = check_related_links()
+    if not pass_links:
+        print("\n[FAIL] RELEASE GATE FAILED at Related Links Audit.")
+        sys.exit(1)
+
     print("\n=========================================================")
-    print("  [SUCCESS] ALL 7 RELEASE GATES PASSED (100% Rulebook Compliant)")
+    print("  [SUCCESS] ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant)")
     print("=========================================================")
     sys.exit(0)
 

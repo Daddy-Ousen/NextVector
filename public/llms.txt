@@ -6,14 +6,14 @@ NextVector operates under a strict empirical editorial charter: Less noise. More
 
 ## Core Intelligence Hubs
 - [NextVector Home](https://nextvector.rhasan.online/): Real-time verified AI news feed, breaking signal marquee, and lead intelligence report.
-- [AI Models Directory](https://nextvector.rhasan.online/models): Interactive database of 135 frontier and open-weight AI foundation models with architecture, token pricing, context windows, and Arena Elo ratings.
+- [AI Models Directory](https://nextvector.rhasan.online/models): Interactive database of all tracked frontier and open-weight AI foundation models with architecture, token pricing, context windows, and Arena Elo ratings.
 - [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head architectural showdowns between leading frontier models (Claude vs ChatGPT, Opus vs GPT-6, DeepSeek vs OpenAI).
 - [Best AI Subscriptions Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Definitive 2026 buyer guide comparing ChatGPT Plus ($20), Claude Pro ($20), Gemini Advanced ($20), and ChatGPT Pro ($200).
 - [Benchmark Radar & Leaderboards](https://nextvector.rhasan.online/benchmarks): Empirical leaderboards across LMSYS Chatbot Arena, OSWorld (computer use), WebArena (browser tasks), SWE-bench Verified (code), and Price-Performance Pareto.
 - [AI Breakthrough Timeline](https://nextvector.rhasan.online/timeline): Chronological living record of verified paradigm shifts in foundation models, semiconductors, and computing fabrics.
 - [Daily Intelligence Briefing](https://nextvector.rhasan.online/briefing): 3-minute executive morning intelligence scan for engineers and technology leaders.
 - [Research Explained](https://nextvector.rhasan.online/research): First-principles technical dissections of seminal preprints and peer-reviewed computer science literature.
-- [Complete Intelligence Archive](https://nextvector.rhasan.online/archive): Full crawlable HTML archive of all 154 published intelligence reports and 135 model dossiers.
+- [Complete Intelligence Archive](https://nextvector.rhasan.online/archive): Full crawlable HTML archive of every published intelligence report and model dossier.
 
 ## Model Showdowns & Buyer Guides
 - [Claude vs ChatGPT (2026 Showdown)](https://nextvector.rhasan.online/compare/claude-vs-chatgpt): Deep architectural showdown comparing Claude Opus 5.5 vs GPT-6 Astra across coding, OS automation, context retention, and API costs.

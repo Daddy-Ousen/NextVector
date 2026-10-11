@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "verify": "python scripts/verify_daily_pipeline.py",
     "harvest": "python scripts/fetch_live_intel.py",
-    "indexnow": "node scripts/run_indexnow.js"
+    "indexnow": "node scripts/run_indexnow.js",
+    "images": "python scripts/optimize_images.py"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

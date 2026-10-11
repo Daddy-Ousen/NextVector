@@ -1,14 +1,15 @@
 import React from 'react';
-import { Article, ArticleCategory } from '../types';
+import { ArticleSummary, ArticleCategory } from '../types';
 import { ArticleCard } from '../components/cards/ArticleCard';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
 import { sortArticlesByTimeAndImportance } from '../utils';
 import { SEOHead } from '../components/common/SEOHead';
+import { usePagedList, LoadMoreButton } from '../components/common/LoadMore';
 import { Sparkles, Cpu, Layers, Microscope, BookOpen, Compass } from 'lucide-react';
 
 interface CategoryPageProps {
   categorySlug: string;
-  articles: Article[];
+  articles: ArticleSummary[];
   bookmarkedIds: string[];
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
   onSelectArticle: (slug: string) => void;
@@ -39,38 +40,38 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
     switch (categorySlug) {
       case 'ai':
         return {
-          title: 'Artificial Intelligence Intelligence',
+          title: 'Artificial Intelligence',
           subtitle: 'Tracking foundation models, reasoning breakthroughs, open-weight distributions, inference scaling, and AI hardware.',
           icon: <Cpu className="w-5 h-5 text-emerald-400" />,
-          filterFn: (a: Article) => a.category === 'ai',
+          filterFn: (a: ArticleSummary) => a.category === 'ai',
         };
       case 'technology':
         return {
           title: 'Computing & Hardware Technology',
           subtitle: 'Deep coverage of semiconductor lithography, advanced packaging, CPUs/GPUs, RISC-V architectures, and data center thermodynamics.',
           icon: <Layers className="w-5 h-5 text-cyan-400" />,
-          filterFn: (a: Article) => a.category === 'technology',
+          filterFn: (a: ArticleSummary) => a.category === 'technology',
         };
       case 'science':
         return {
           title: 'Science & Discovery',
           subtitle: 'Groundbreaking developments in quantum physics, biomolecular synthesis, materials science, and energy scaling.',
           icon: <Microscope className="w-5 h-5 text-purple-400" />,
-          filterFn: (a: Article) => a.category === 'science',
+          filterFn: (a: ArticleSummary) => a.category === 'science',
         };
       case 'analysis':
         return {
           title: 'News Analysis',
           subtitle: 'Rigorous explanations of why critical announcements matter beyond corporate press releases.',
           icon: <Sparkles className="w-5 h-5 text-amber-400" />,
-          filterFn: (a: Article) => a.articleType === 'analysis',
+          filterFn: (a: ArticleSummary) => a.articleType === 'analysis',
         };
       case 'deep-dives':
         return {
           title: 'Technical Deep Dives',
           subtitle: 'Exhaustive engineering and architectural teardowns of modern algorithms, hardware, and scientific mechanisms.',
           icon: <BookOpen className="w-5 h-5 text-blue-400" />,
-          filterFn: (a: Article) => a.articleType === 'deep-dive',
+          filterFn: (a: ArticleSummary) => a.articleType === 'deep-dive',
         };
       default:
         return {
@@ -92,6 +93,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
     if (selectedTag && !a.tags.includes(selectedTag)) return false;
     return true;
   });
+  const feed = usePagedList(filteredArticles, `${categorySlug}|${minSignal}|${selectedType}|${selectedTag}`);
 
   const seoTitle =
     categorySlug === 'ai'
@@ -151,8 +153,9 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
           <p className="text-xs mt-1">Try relaxing the signal score or topic filter.</p>
         </div>
       ) : (
+        <>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredArticles.map((article) => (
+          {feed.visible.map((article) => (
             <ArticleCard
               key={article.id}
               article={article}
@@ -163,6 +166,8 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
             />
           ))}
         </div>
+        <LoadMoreButton remaining={feed.remaining} onClick={feed.showMore} />
+        </>
       )}
     </div>
   );

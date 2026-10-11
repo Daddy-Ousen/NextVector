@@ -1,5 +1,5 @@
 import React from 'react';
-import { Article } from '../../types';
+import { ArticleSummary } from '../../types';
 import { Bookmark, X, ArrowRight, Trash2 } from 'lucide-react';
 import { SignalRatingBadge } from './SignalRatingBadge';
 import { formatRelativeTime } from '../../utils';
@@ -7,7 +7,7 @@ import { formatRelativeTime } from '../../utils';
 interface BookmarksModalProps {
   isOpen: boolean;
   onClose: () => void;
-  bookmarkedArticles: Article[];
+  bookmarkedArticles: ArticleSummary[];
   onRemoveBookmark: (articleId: string) => void;
   onSelectArticle: (slug: string) => void;
 }

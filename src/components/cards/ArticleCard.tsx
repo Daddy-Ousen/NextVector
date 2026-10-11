@@ -1,12 +1,12 @@
 import React from 'react';
-import { Article } from '../../types';
+import { ArticleSummary } from '../../types';
 import { SignalRatingBadge } from '../common/SignalRatingBadge';
 import { ThreeQuestionsBlock } from '../common/ThreeQuestionsBlock';
 import { getCategoryBadge, formatRelativeTime, getArticleTypeLabel, getArticleTypeBadge } from '../../utils';
 import { Clock, Bookmark, ArrowUpRight, Headphones } from 'lucide-react';
 
 interface ArticleCardProps {
-  article: Article;
+  article: ArticleSummary;
   variant?: 'hero' | 'grid' | 'compact';
   isBookmarked: boolean;
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Article, AIModel, Benchmark, ResearchPaper } from '../types';
+import React, { useState, use, useMemo } from 'react';
+import { Article, ArticleSummary, AIModel, Benchmark, ResearchPaper } from '../types';
+import { loadArticleBody } from '../data/articleBodies';
 import { ThreeQuestionsBlock } from '../components/common/ThreeQuestionsBlock';
 import { SignalRatingBadge } from '../components/common/SignalRatingBadge';
 import { AudioBriefingPlayer } from '../components/common/AudioBriefingPlayer';
@@ -19,7 +20,7 @@ import {
   Headphones
 } from 'lucide-react';
 
-interface ArticleDetailPageProps {
+interface ArticleDetailViewProps {
   article: Article;
   relatedModel?: AIModel;
   relatedBenchmark?: Benchmark;
@@ -33,7 +34,18 @@ interface ArticleDetailPageProps {
   onSelectAuthor?: () => void;
 }
 
-export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
+type ArticleDetailPageProps = Omit<ArticleDetailViewProps, 'article'> & {
+  article: ArticleSummary;
+};
+
+// Fetches this article's body chunk (suspends until loaded), then renders the full report
+export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ article: summary, ...rest }) => {
+  const body = use(loadArticleBody(summary.id));
+  const article = useMemo<Article>(() => ({ ...summary, ...body }), [summary, body]);
+  return <ArticleDetailView article={article} {...rest} />;
+};
+
+const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
   article,
   relatedModel,
   relatedBenchmark,

@@ -1,16 +1,17 @@
 import React from 'react';
-import { Article, AIModel, Benchmark } from '../types';
+import { ArticleSummary, AIModel, Benchmark } from '../types';
 import { ArticleCard } from '../components/cards/ArticleCard';
 import { ModelCard } from '../components/models/ModelCard';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
 import { SEOHead } from '../components/common/SEOHead';
+import { usePagedList, LoadMoreButton } from '../components/common/LoadMore';
 import { sortArticlesByTimeAndImportance } from '../utils';
 import { MOCK_LIVE_SIGNALS } from '../data/mockData';
 import { Sparkles, ArrowRight, TrendingUp, Cpu, Flame, ShieldCheck } from 'lucide-react';
 
 interface HomePageProps {
-  articles: Article[];
+  articles: ArticleSummary[];
   models: AIModel[];
   benchmarks: Benchmark[];
   bookmarkedIds: string[];
@@ -64,6 +65,8 @@ export const HomePage: React.FC<HomePageProps> = ({
     if (selectedTag && !a.tags.includes(selectedTag)) return false;
     return true;
   });
+
+  const feed = usePagedList(filteredArticles, `${minSignal}|${selectedType}|${selectedTag}`);
 
   // Categorized slices for section highlights (inheriting chronological order)
   const aiStories = filteredArticles.filter((a) => a.category === 'ai');
@@ -140,7 +143,6 @@ export const HomePage: React.FC<HomePageProps> = ({
           'https://github.com/Daddy-Ousen',
           'https://nextvectorr.substack.com',
           'https://rhasan.online',
-          'https://www.wikidata.org/wiki/Q11660',
         ],
         founder: {
           '@type': 'Person',
@@ -291,8 +293,9 @@ export const HomePage: React.FC<HomePageProps> = ({
             <p className="text-xs mt-1">Try lowering the minimum signal threshold or resetting the format filter.</p>
           </div>
         ) : (
+          <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredArticles.map((article) => (
+            {feed.visible.map((article) => (
               <ArticleCard
                 key={article.id}
                 article={article}
@@ -303,6 +306,8 @@ export const HomePage: React.FC<HomePageProps> = ({
               />
             ))}
           </div>
+          <LoadMoreButton remaining={feed.remaining} onClick={feed.showMore} />
+          </>
         )}
       </section>
 

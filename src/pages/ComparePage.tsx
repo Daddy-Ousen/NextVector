@@ -19,12 +19,14 @@ import {
   Award,
   Flame,
 } from 'lucide-react';
+import { MODEL_COUNT } from '../data/modelCount';
 
 interface ComparePageProps {
   slug?: string;
   models: AIModel[];
   onSelectModelDetail: (id: string) => void;
   onNavigate: (path: string) => void;
+  notFound?: React.ReactNode;
 }
 
 interface PresetShowdown {
@@ -444,7 +446,15 @@ const PRESET_SHOWDOWNS: PresetShowdown[] = [
   },
 ];
 
-export const ComparePage: React.FC<ComparePageProps> = ({
+// Unknown showdown slugs render the not-found page instead of a duplicate of the default showdown
+export const ComparePage: React.FC<ComparePageProps> = (props) => {
+  if (props.slug && !PRESET_SHOWDOWNS.some((p) => p.slug === props.slug)) {
+    return <>{props.notFound}</>;
+  }
+  return <ComparePageContent {...props} />;
+};
+
+const ComparePageContent: React.FC<ComparePageProps> = ({
   slug,
   models,
   onSelectModelDetail,
@@ -525,7 +535,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-400 font-sans leading-relaxed">
-            Unbiased empirical comparisons evaluated across 135 models on LMSYS Arena Elo, SWE-bench Verified coding, context length, latency, and true token economics.
+            Unbiased empirical comparisons evaluated across {MODEL_COUNT} models on LMSYS Arena Elo, SWE-bench Verified coding, context length, latency, and true token economics.
           </p>
 
           {/* Category Tabs */}
@@ -622,7 +632,7 @@ export const ComparePage: React.FC<ComparePageProps> = ({
               Side-by-Side Architectural Specifications
             </h2>
             <p className="text-xs font-mono text-zinc-400 mt-1">
-              Select any model from the 135-model registry to compare in real time
+              Select any model from the {MODEL_COUNT}-model registry to compare in real time
             </p>
           </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, ShieldCheck, Zap, BookOpen, ExternalLink } from 'lucide-react';
 import { NextVectorLogo } from '../common/NextVectorLogo';
+import { MODEL_COUNT } from '../../data/modelCount';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -181,7 +182,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-emerald-400 transition-colors"
                 >
-                  AI Model Spec Directory (135 Models)
+                  AI Model Spec Directory ({MODEL_COUNT} Models)
                 </a>
               </li>
               <li>

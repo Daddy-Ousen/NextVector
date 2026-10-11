@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Article } from '../types';
+import { ArticleSummary } from '../types';
 import { SEOHead } from '../components/common/SEOHead';
 import {
   ExternalLink,
@@ -33,7 +33,7 @@ const GithubIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" })
 );
 
 interface AuthorPageProps {
-  articles: Article[];
+  articles: ArticleSummary[];
   bookmarkedIds: string[];
   onToggleBookmark: (id: string, e: React.MouseEvent) => void;
   onSelectArticle: (slug: string) => void;

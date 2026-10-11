@@ -276,22 +276,26 @@ Execute the mandatory **8-Step Pre-Publication Release Gate** ([Rulebook §7](./
    - LMSYS Chatbot Arena and specialized benchmark leaderboards in `src/data/benchmarksData.ts` are updated and ranks recalculated.
    - Decision Matrix in `src/components/models/ModelDecisionGuide.tsx` is updated with fresh picks and $20/mo ROI math.
 7. **Step 7: Automated Release Gate & Build Verification**:
-   Run the automated verifier and production build:
+   Compress any new cover images, run the production build (it regenerates `public/sitemap.xml`, `public/rss.xml` and `public/llms-full.txt` from the data files), then the verifier:
    ```bash
-   npm run verify
+   npm run images
    npm run build
+   npm run verify
    ```
+   - `npm run images` shrinks covers over 250 KB (max 1600px wide, JPEG q82) and converts opaque PNGs to JPEG, updating paths in `articlesData.ts`. Re-running it is safe.
+   - Never hand-edit `public/sitemap.xml` or `public/rss.xml`; the build owns them.
    - `npm run verify` (`python scripts/verify_daily_pipeline.py`) validates:
      - 0 duplicate images across the entire catalog.
      - All local image assets exist in `public/images/articles/`.
      - 100% deep-link synchronization between articles, briefing, signals, and timeline.
      - Temporal sanity (valid ISO dates, zero historical anachronisms).
      - Full sitemap coverage for all published slugs.
-   - `npm run build` (`tsc -b && vite build`) must compile with 0 TypeScript/JSX errors.
+     - Every `relatedModelId` / `relatedBenchmarkId` / `relatedPaperId` points to a real record.
+   - `npm run build` (`tsc -b && vite build && prerender`) must compile with 0 TypeScript/JSX errors.
 8. **Step 8: Atomic Git Commit & Remote Push**:
    Stage modified and new files:
    ```bash
-   git add src/data/articlesData.ts src/data/modelsData.ts src/data/benchmarksData.ts src/data/mockData.ts public/images/articles/
+   git add src/data/articlesData.ts src/data/modelsData.ts src/data/benchmarksData.ts src/data/mockData.ts public/images/articles/ public/sitemap.xml public/rss.xml public/llms-full.txt
    git commit -m "feat(intelligence): daily briefing and articles update [YYYY-MM-DD]"
    git push origin main
    ```

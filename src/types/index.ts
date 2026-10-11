@@ -52,6 +52,17 @@ export interface Article {
   isFeatured?: boolean;
 }
 
+/** Heavy per-article fields, code-split into one lazy chunk per article (see vite.articleSplit.ts). */
+export interface ArticleBody {
+  keyTakeaways: string[];
+  content: string[];
+  technicalSpecs?: Record<string, string>;
+  citations?: { title: string; url: string; source: string }[];
+}
+
+/** Lightweight article shape used by cards, lists, search and routing. */
+export type ArticleSummary = Omit<Article, keyof ArticleBody>;
+
 export interface AIModel {
   id: string;
   name: string;

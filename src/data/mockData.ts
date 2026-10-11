@@ -1,4 +1,4 @@
-import { Article, AIModel, Benchmark, ResearchPaper, TimelineEvent, DailyBriefingItem, LiveSignalItem } from '../types';
+import { ArticleSummary, AIModel, Benchmark, ResearchPaper, TimelineEvent, DailyBriefingItem, LiveSignalItem } from '../types';
 import { ALL_135_MODELS, ARENA_LEADERBOARD_ENTRIES } from './modelsData';
 import {
   OSWORLD_LEADERBOARD_ENTRIES,
@@ -8,11 +8,12 @@ import {
   PRICE_PERFORMANCE_LEADERBOARD_ENTRIES,
 } from './benchmarksData';
 
-export { AUTHOR_ROBIUL_HASAN, ALL_ARTICLES } from './articlesData';
-import { ALL_ARTICLES } from './articlesData';
+// Card/list fields only; full article bodies are lazy chunks (see vite.articleSplit.ts)
+import { ARTICLE_SUMMARIES } from 'virtual:article-summaries';
 import { sortArticlesByTimeAndImportance } from '../utils';
+import { MODEL_COUNT } from './modelCount';
 
-export const MOCK_ARTICLES: Article[] = sortArticlesByTimeAndImportance(ALL_ARTICLES);
+export const MOCK_ARTICLES: ArticleSummary[] = sortArticlesByTimeAndImportance(ARTICLE_SUMMARIES);
 
 export const MOCK_MODELS: AIModel[] = ALL_135_MODELS;
 
@@ -22,7 +23,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     name: 'LMSYS Chatbot Arena Global Leaderboard (September 2026)',
     shortName: 'Chatbot Arena Elo',
     category: 'Overall Arena Elo',
-    description: 'The definitive crowdsourced, blind evaluation benchmark measuring human preference across 135 frontier, open-weights, and specialized AI models based on Bradley-Terry statistical Elo modeling.',
+    description: `The definitive crowdsourced, blind evaluation benchmark measuring human preference across ${MODEL_COUNT} frontier, open-weights, and specialized AI models based on Bradley-Terry statistical Elo modeling.`,
     whatItMeasures: 'Measures comprehensive human-preference win rates, conversational alignment, technical correctness, multi-turn reasoning, and task completion in real-world side-by-side blind evaluations.',
     whyItMatters: 'As synthetic benchmarks suffer from dataset contamination and test-time scaffolding saturation, LMSYS Chatbot Arena remains the primary gold standard for true general intelligence and real-world model capability.',
     potentialLimitations: 'Crowdsourced evaluations can tilt toward stylistic preferences (formatting, verbosity) unless controlled by length-controlled Bradley-Terry win-rate estimators.',
@@ -35,7 +36,7 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     category: 'Cost-Efficiency & Pareto',
     scoreUnit: '/ 100',
     scoreMetricName: 'Pareto Efficiency Index',
-    description: 'The empirical Pareto frontier evaluating 135 AI foundation models on real-world capability delivered per dollar of API inference cost (blended $ per 1M tokens), combining Artificial Analysis intelligence metrics and live vendor pricing.',
+    description: `The empirical Pareto frontier evaluating ${MODEL_COUNT} AI foundation models on real-world capability delivered per dollar of API inference cost (blended $ per 1M tokens), combining Artificial Analysis intelligence metrics and live vendor pricing.`,
     whatItMeasures: 'Quantifies the exact ratio between verified composite intelligence (Arena Elo, SWE-bench coding, MMLU-Pro, and multi-step reasoning) and blended API inference expenditure ($/1M tokens). Identifies models on the optimal Pareto frontier.',
     whyItMatters: 'In enterprise production and autonomous agent swarms processing billions of tokens monthly, raw benchmark capability without cost normalization is economically unsustainable. Models delivering 92–95% of frontier intelligence at 1/20th the cost provide massive operational leverage.',
     potentialLimitations: 'List prices exclude private enterprise volume discounts, prompt caching optimizations (up to 90% savings), self-hosted hardware amortization (vLLM/SGLang on H100s/B200s), and volatile provider promotional subsidies.',

@@ -3,6 +3,7 @@ import { Benchmark } from '../types';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SEOHead } from '../components/common/SEOHead';
 import { Scale, AlertTriangle, ShieldCheck, HelpCircle } from 'lucide-react';
+import { MODEL_COUNT } from '../data/modelCount';
 
 interface BenchmarksPageProps {
   benchmarks: Benchmark[];
@@ -13,8 +14,8 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
   const benchmarksSchema = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: 'NextVector AI Benchmark Radar (135 Models Evaluated)',
-    description: 'Empirical cross-domain benchmark audit evaluating 135 AI foundation models across LMSYS Chatbot Arena, Price-to-Performance Pareto Index, OSWorld, WebArena, SWE-bench, and Cyber-Eval.',
+    name: `NextVector AI Benchmark Radar (${MODEL_COUNT} Models Evaluated)`,
+    description: `Empirical cross-domain benchmark audit evaluating ${MODEL_COUNT} AI foundation models across LMSYS Chatbot Arena, Price-to-Performance Pareto Index, OSWorld, WebArena, SWE-bench, and Cyber-Eval.`,
     creator: {
       '@type': 'Person',
       name: 'Robiul Hasan',
@@ -30,8 +31,8 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
   return (
     <div className="space-y-12 pb-20">
       <SEOHead
-        title="AI Benchmarks & Evaluation Audit (135 Models) | NextVector"
-        description="Comprehensive 135-model leaderboards across LMSYS Chatbot Arena, Price-to-Performance Pareto Index, OSWorld, WebArena, SWE-bench Verified, and Cyber-Eval. Empirical data without marketing hype."
+        title={`AI Benchmarks & Evaluation Audit (${MODEL_COUNT} Models) | NextVector`}
+        description={`Comprehensive ${MODEL_COUNT}-model leaderboards across LMSYS Chatbot Arena, Price-to-Performance Pareto Index, OSWorld, WebArena, SWE-bench Verified, and Cyber-Eval. Empirical data without marketing hype.`}
         canonicalPath="/benchmarks"
         schemaData={benchmarksSchema}
       />

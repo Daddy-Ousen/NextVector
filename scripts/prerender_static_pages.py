@@ -11,6 +11,7 @@ import sys
 import re
 import json
 import html
+import subprocess
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -21,6 +22,7 @@ PUBLIC_DIR = ROOT_DIR / "public"
 INDEX_HTML = DIST_DIR / "index.html"
 ARTICLES_FILE = ROOT_DIR / "src" / "data" / "articlesData.ts"
 MODELS_FILE = ROOT_DIR / "src" / "data" / "modelsData.ts"
+COMPARE_FILE = ROOT_DIR / "src" / "pages" / "ComparePage.tsx"
 
 BASE_URL = "https://nextvector.rhasan.online"
 DEFAULT_IMAGE = f"{BASE_URL}/brand/nextvector-brand-system.jpg"
@@ -168,10 +170,140 @@ def parse_models():
 
     return models
 
+def parse_showdowns():
+    """Preset head-to-head showdowns defined in ComparePage.tsx (slug, SEO title/description, verdict)."""
+    if not COMPARE_FILE.exists():
+        return []
+    content = COMPARE_FILE.read_text(encoding="utf-8")
+    showdowns = []
+    for block in re.split(r"\n  \{\n", content)[1:]:
+        slug_m = re.search(r"^\s*slug:\s*'([^']+)'", block, re.MULTILINE)
+        title_m = re.search(r"seoTitle:\s*'((?:[^'\\]|\\.)*)'", block)
+        desc_m = re.search(r"seoDescription:\s*'((?:[^'\\]|\\.)*)'", block)
+        verdict_m = re.search(r"executiveVerdict:\s*'((?:[^'\\]|\\.)*)'", block, re.DOTALL)
+        name_m = re.search(r"^\s*name:\s*'((?:[^'\\]|\\.)*)'", block, re.MULTILINE)
+        if slug_m and title_m:
+            showdowns.append({
+                "slug": slug_m.group(1),
+                "name": (name_m.group(1) if name_m else slug_m.group(1)).replace("\\'", "'"),
+                "title": title_m.group(1).replace("\\'", "'"),
+                "description": (desc_m.group(1) if desc_m else "").replace("\\'", "'"),
+                "verdict": (verdict_m.group(1) if verdict_m else "").replace("\\'", "'"),
+            })
+    return showdowns
+
+_GIT_AVAILABLE = None
+
+def git_last_modified(*rel_paths):
+    """Last commit date (YYYY-MM-DD) touching any of the paths, or None when git history is unavailable."""
+    global _GIT_AVAILABLE
+    if _GIT_AVAILABLE is False:
+        return None
+    try:
+        res = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", *rel_paths],
+            cwd=ROOT_DIR, capture_output=True, text=True, timeout=15,
+        )
+    except Exception:
+        _GIT_AVAILABLE = False
+        return None
+    if res.returncode != 0:
+        _GIT_AVAILABLE = False
+        return None
+    _GIT_AVAILABLE = True
+    return res.stdout.strip() or None
+
+def generate_sitemap(articles, models, showdowns):
+    """Builds sitemap.xml from the real catalog. Needs git history for honest lastmod dates;
+    without it (e.g. CI clones with no .git) the committed public/sitemap.xml is kept as-is."""
+    if git_last_modified("src/data/articlesData.ts") is None:
+        print("Note: git history unavailable; keeping committed public/sitemap.xml unchanged.")
+        return
+
+    newest = articles[0]["publishedAt"][:10] if articles else None
+
+    def newest_where(pred):
+        for a in articles:
+            if pred(a):
+                return a["publishedAt"][:10]
+        return newest
+
+    def page_date(*paths):
+        return git_last_modified(*paths) or newest
+
+    models_date = page_date("src/data/modelsData.ts")
+    entries = [
+        ("/", newest, "daily", "1.0"),
+        ("/models", models_date, "daily", "0.95"),
+        ("/benchmarks", page_date("src/data/benchmarksData.ts", "src/data/modelsData.ts"), "daily", "0.95"),
+        ("/briefing", page_date("src/data/mockData.ts"), "daily", "0.95"),
+        ("/subscriptions", page_date("src/pages/SubscriptionsPage.tsx"), "weekly", "0.95"),
+        ("/compare", page_date("src/pages/ComparePage.tsx"), "weekly", "0.95"),
+        ("/timeline", page_date("src/data/mockData.ts"), "weekly", "0.85"),
+        ("/research", page_date("src/pages/ResearchPage.tsx", "src/data/mockData.ts"), "weekly", "0.85"),
+        ("/ai", newest_where(lambda a: a["category"] == "ai"), "daily", "0.90"),
+        ("/technology", newest_where(lambda a: a["category"] == "technology"), "daily", "0.90"),
+        ("/science", newest_where(lambda a: a["category"] == "science"), "daily", "0.90"),
+        ("/analysis", newest_where(lambda a: a["articleType"] == "analysis"), "daily", "0.85"),
+        ("/deep-dives", newest_where(lambda a: a["articleType"] == "deep-dive"), "daily", "0.85"),
+        ("/archive", newest, "daily", "0.90"),
+        ("/about", page_date("src/pages/AuthorPage.tsx"), "monthly", "0.80"),
+        ("/faq", page_date("src/pages/FAQPage.tsx"), "weekly", "0.85"),
+        ("/contact", page_date("src/pages/ContactPage.tsx"), "monthly", "0.80"),
+    ]
+    compare_date = page_date("src/pages/ComparePage.tsx")
+    for i, sd in enumerate(showdowns):
+        entries.append((f"/compare/{sd['slug']}", compare_date, "weekly", "0.95" if i < 3 else "0.90"))
+    for a in articles:
+        entries.append((f"/article/{a['slug']}", a["publishedAt"][:10], "weekly", "0.90"))
+    for m in models:
+        entries.append((f"/models/{m['id']}", models_date, "weekly", "0.80"))
+
+    rows = []
+    for path, lastmod, freq, prio in entries:
+        loc = BASE_URL if path == "/" else f"{BASE_URL}{path}"
+        rows.append(
+            f"  <url>\n    <loc>{escape(loc)}</loc>\n    <lastmod>{lastmod}</lastmod>\n"
+            f"    <changefreq>{freq}</changefreq>\n    <priority>{prio}</priority>\n  </url>"
+        )
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+           + "\n".join(rows) + "\n</urlset>\n")
+    (PUBLIC_DIR / "sitemap.xml").write_text(xml, encoding="utf-8")
+    if DIST_DIR.exists():
+        (DIST_DIR / "sitemap.xml").write_text(xml, encoding="utf-8")
+    print(f"Generated sitemap.xml ({len(entries)} URLs) in public/ and dist/")
+
+def build_not_found_page(template_html):
+    """dist/404.html: served by the host for unknown URLs with a real 404 status."""
+    body = """
+    <main class="max-w-3xl mx-auto px-4 py-16 text-center">
+      <div class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">Error 404</div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight mb-4">Page not found</h1>
+      <p class="text-zinc-400 mb-8">This page does not exist on NextVector.</p>
+      <nav class="flex flex-wrap justify-center gap-4 text-sm font-mono">
+        <a href="/" class="text-emerald-400 hover:underline">Home</a>
+        <a href="/models" class="text-emerald-400 hover:underline">Model Directory</a>
+        <a href="/archive" class="text-emerald-400 hover:underline">Complete Archive</a>
+      </nav>
+    </main>
+    """
+    meta = {
+        "title": "Page Not Found",
+        "description": "The page you requested does not exist on NextVector.",
+        "keywords": "",
+        "path": "/404",
+    }
+    out = build_prerendered_page(template_html, meta, body)
+    out = re.sub(r'<meta name="robots"[^>]*>', '<meta name="robots" content="noindex, follow" />', out, count=1)
+    out = re.sub(r'\s*<link rel="canonical"[^>]*>', '', out, count=1)
+    (DIST_DIR / "404.html").write_text(out, encoding="utf-8")
+
 def build_prerendered_page(template_html, page_meta, body_html):
     out = template_html
     full_title = f"{page_meta['title']} | NextVector" if "NextVector" not in page_meta['title'] else page_meta['title']
-    full_url = f"{BASE_URL}{page_meta['path']}" if page_meta['path'] != "/" else f"{BASE_URL}/"
+    canonical_path = page_meta.get('canonical', page_meta['path'])
+    full_url = f"{BASE_URL}{canonical_path}" if canonical_path != "/" else f"{BASE_URL}/"
     img_url = page_meta.get('image', DEFAULT_IMAGE)
     if not img_url.startswith("http"):
         img_url = f"{BASE_URL}{img_url}"
@@ -245,7 +377,12 @@ def generate_rss_feed(articles):
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>""")
 
-    now_rfc822 = format_datetime(datetime.now(timezone.utc))
+    # Newest item date keeps the feed byte-identical between builds of the same content
+    try:
+        newest_dt = datetime.fromisoformat(articles[0]["publishedAt"].replace("Z", "+00:00"))
+    except Exception:
+        newest_dt = datetime.now(timezone.utc)
+    now_rfc822 = format_datetime(newest_dt)
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -285,7 +422,7 @@ def generate_llms_full(articles, models):
     sections.append("- ChatGPT Pro ($200/mo): Recommended exclusively for full-time quantitative researchers and autonomous agent operators needing unrestricted max-compute reasoning passes.")
     sections.append("- Optimal $100/mo Power User Budget: Claude Pro ($20) + Cursor Pro ($20) + $60 in developer API credits (DeepSeek, Gemini Flash, Anthropic).\n")
 
-    sections.append("## Evaluated AI Models Directory (135 Models)")
+    sections.append(f"## Evaluated AI Models Directory ({len(models)} Models)")
     for m in models:
         rank_str = f"#{m['arenaRank']}" if m.get('arenaRank') else "Unranked"
         elo_str = f"{m['arenaElo']} Elo" if m.get('arenaElo') else "N/A"
@@ -328,9 +465,12 @@ def prerender_all():
         sys.exit(1)
 
     template_html = INDEX_HTML.read_text(encoding="utf-8")
-    articles = parse_articles()
-    models = parse_models()
-    print(f"Prerendering {len(articles)} articles and {len(models)} models...")
+    # Newest first: drives the homepage lead story, RSS (newest 60), archive and llms-full order
+    articles = sorted(parse_articles(), key=lambda a: a["publishedAt"], reverse=True)
+    # Arena rank order (unranked last) for leaderboard tables
+    models = sorted(parse_models(), key=lambda m: (m["arenaRank"] is None, m["arenaRank"] or 0))
+    showdowns = parse_showdowns()
+    print(f"Prerendering {len(articles)} articles, {len(models)} models and {len(showdowns)} showdowns...")
 
     generated_count = 0
 
@@ -439,7 +579,7 @@ def prerender_all():
 
       <!-- Footer Quick Navigation -->
       <nav class="pt-8 border-t border-zinc-800 flex flex-wrap gap-4 text-xs font-mono text-zinc-400">
-        <a href="/models" class="hover:text-emerald-400">135 Model Directory</a>
+        <a href="/models" class="hover:text-emerald-400">{len(models)} Model Directory</a>
         <span>|</span>
         <a href="/compare" class="hover:text-emerald-400">Model Showdowns</a>
         <span>|</span>
@@ -619,7 +759,7 @@ def prerender_all():
             <span>|</span>
             <a href="/ai" class="hover:text-emerald-400">AI News</a>
             <span>|</span>
-            <a href="/models" class="hover:text-emerald-400">135 Model Directory</a>
+            <a href="/models" class="hover:text-emerald-400">{len(models)} Model Directory</a>
             <span>|</span>
             <a href="/benchmarks" class="hover:text-emerald-400">Benchmark Radar</a>
             <span>|</span>
@@ -705,7 +845,7 @@ def prerender_all():
           </div>
 
           <div class="flex flex-wrap gap-4 text-xs font-mono text-zinc-400 pt-8 border-t border-zinc-800">
-            <a href="/models" class="hover:text-emerald-400">← Back to All 135 Models</a>
+            <a href="/models" class="hover:text-emerald-400">← Back to All {len(models)} Models</a>
             <span>|</span>
             <a href="/compare" class="hover:text-emerald-400">Head-to-Head Compare</a>
             <span>|</span>
@@ -742,13 +882,13 @@ def prerender_all():
     core_pages = [
         {
             "path": "/models",
-            "title": "AI Models Directory (135 Frontier & Open Architectures)",
-            "description": "Comprehensive technical database of 135 foundation models. Track LMSYS Arena Elo ratings, API token pricing, context windows, and parameters.",
+            "title": f"AI Models Directory ({len(models)} Frontier & Open Architectures)",
+            "description": f"Comprehensive technical database of {len(models)} foundation models. Track LMSYS Arena Elo ratings, API token pricing, context windows, and parameters.",
             "keywords": "AI models directory, foundation models, LLM specs, Claude Opus 5.5, GPT-6 Astra, Grok 4.7, DeepSeek, model pricing",
             "body": f"""
             <main class="max-w-6xl mx-auto px-4 py-12">
-              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight mb-4">AI Models Directory (135 Frontier &amp; Open Architectures)</h1>
-              <p class="text-lg text-zinc-300 mb-8 max-w-3xl leading-relaxed">Comprehensive technical database of 135 foundation models. Track LMSYS Arena Elo ratings, API token pricing, context windows, and parameter counts.</p>
+              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight mb-4">AI Models Directory ({len(models)} Frontier &amp; Open Architectures)</h1>
+              <p class="text-lg text-zinc-300 mb-8 max-w-3xl leading-relaxed">Comprehensive technical database of {len(models)} foundation models. Track LMSYS Arena Elo ratings, API token pricing, context windows, and parameter counts.</p>
               
               <div class="overflow-x-auto p-4 rounded-2xl bg-zinc-950 border border-zinc-800 mb-8">
                 <table class="w-full text-xs font-mono text-left">
@@ -980,8 +1120,37 @@ def prerender_all():
             "title": "About NextVector & Editor-in-Chief Robiul Hasan",
             "description": "Editorial mission, three-question methodology, and background of founder Robiul Hasan. High signal, zero noise.",
             "keywords": "about nextvector, robiul hasan, editorial rulebook, tech intelligence manifesto"
+        },
+        {
+            "path": "/author",
+            "canonical": "/about",
+            "title": "About NextVector & Editor-in-Chief Robiul Hasan",
+            "description": "Editorial mission, three-question methodology, and background of founder Robiul Hasan. High signal, zero noise.",
+            "keywords": "about nextvector, robiul hasan, editorial rulebook, tech intelligence manifesto"
+        },
+        {
+            "path": "/analysis",
+            "title": "News Analysis: Why Critical AI & Technology Announcements Matter",
+            "description": "Rigorous explanations of why critical announcements matter beyond corporate press releases.",
+            "keywords": "ai news analysis, technology analysis, frontier model analysis"
+        },
+        {
+            "path": "/deep-dives",
+            "title": "Technical Deep Dives: Engineering & Architecture Teardowns",
+            "description": "Exhaustive engineering and architectural teardowns of modern algorithms, hardware, and scientific mechanisms.",
+            "keywords": "technical deep dive, ai architecture, hardware teardown, engineering analysis"
         }
     ]
+
+    # Hub pages that list stories get crawlable links to their newest 40 reports
+    hub_filters = {
+        "/ai": lambda a: a["category"] == "ai",
+        "/technology": lambda a: a["category"] == "technology",
+        "/science": lambda a: a["category"] == "science",
+        "/analysis": lambda a: a["articleType"] == "analysis",
+        "/deep-dives": lambda a: a["articleType"] == "deep-dive",
+        "/briefing": lambda a: True,
+    }
 
     for cp in core_pages:
         rel_path = cp["path"].lstrip("/")
@@ -990,6 +1159,14 @@ def prerender_all():
 
         body_html = cp.get("body")
         if not body_html:
+            hub_links = ""
+            if cp["path"] in hub_filters:
+                picked = [a for a in articles if hub_filters[cp["path"]](a)][:40]
+                hub_links = "<ul class='mt-8 space-y-2 text-sm'>" + "".join(
+                    f"<li><a href='/article/{a['slug']}' class='text-zinc-200 hover:text-emerald-400'>{escape(a['title'])}</a> "
+                    f"<span class='text-zinc-500 font-mono text-xs'>({a['publishedAt'][:10]})</span></li>"
+                    for a in picked
+                ) + "</ul>"
             body_html = f"""
             <main class="max-w-6xl mx-auto px-4 py-12">
               <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight mb-4">{cp['title']}</h1>
@@ -1001,6 +1178,7 @@ def prerender_all():
                   <a href="/" class="text-emerald-400 hover:underline">Return to Home →</a>
                 </div>
               </div>
+              {hub_links}
             </main>
             """
 
@@ -1010,6 +1188,8 @@ def prerender_all():
             "keywords": cp["keywords"],
             "path": cp["path"]
         }
+        if cp.get("canonical"):
+            meta["canonical"] = cp["canonical"]
 
         page_html = build_prerendered_page(template_html, meta, body_html)
         (p_dir / "index.html").write_text(page_html, encoding="utf-8")
@@ -1056,8 +1236,47 @@ def prerender_all():
     (archive_dir / "index.html").write_text(archive_html, encoding="utf-8")
     generated_count += 1
 
-    # 5. Generate RSS 2.0 Feed & Full LLM Corpus
+    # 4b. Prerender head-to-head showdown pages (/compare/<slug>)
+    for sd in showdowns:
+        sd_dir = DIST_DIR / "compare" / sd["slug"]
+        sd_dir.mkdir(parents=True, exist_ok=True)
+        other_links = "".join(
+            f"<li><a href='/compare/{o['slug']}' class='text-emerald-400 hover:underline'>{escape(o['name'])}</a></li>"
+            for o in showdowns if o["slug"] != sd["slug"]
+        )
+        sd_body = f"""
+        <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
+          <header class="border-b border-zinc-800 pb-6">
+            <div class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">Head-to-Head Model Showdown</div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">{escape(sd['name'])}</h1>
+            <p class="text-sm md:text-base text-zinc-300 mt-3">{escape(sd['description'])}</p>
+          </header>
+          <section class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800">
+            <h2 class="text-sm font-mono font-bold text-emerald-400 uppercase mb-3">Executive Verdict</h2>
+            <p class="text-zinc-200 leading-relaxed">{escape(sd['verdict'])}</p>
+          </section>
+          <section>
+            <h2 class="text-sm font-mono font-bold text-zinc-300 uppercase mb-3">More Showdowns</h2>
+            <ul class="space-y-2 text-sm font-mono">{other_links}</ul>
+          </section>
+        </main>
+        """
+        sd_meta = {
+            "title": sd["title"],
+            "description": sd["description"],
+            "keywords": f"{sd['name']}, ai model comparison, llm showdown, arena elo, swe-bench",
+            "path": f"/compare/{sd['slug']}",
+        }
+        (sd_dir / "index.html").write_text(build_prerendered_page(template_html, sd_meta, sd_body), encoding="utf-8")
+        generated_count += 1
+
+    # 4c. Real 404 page for unknown URLs
+    build_not_found_page(template_html)
+    generated_count += 1
+
+    # 5. Generate RSS 2.0 Feed, Sitemap & Full LLM Corpus
     generate_rss_feed(articles)
+    generate_sitemap(articles, models, showdowns)
     generate_llms_full(articles, models)
 
     print(f"SUCCESS: Generated {generated_count} static HTML files across dist/ with complete titles, canonicals, Schema.org graphs, and crawlable semantic bodies.")

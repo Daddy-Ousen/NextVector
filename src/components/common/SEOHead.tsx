@@ -10,10 +10,25 @@ export interface SEOHeadProps {
   articleSection?: string;
   tags?: string[];
   schemaData?: Record<string, any>;
+  noindex?: boolean;
 }
 
 const BASE_URL = 'https://nextvector.rhasan.online';
 const DEFAULT_IMAGE = 'https://nextvector.rhasan.online/brand/nextvector-brand-system.jpg';
+
+const DEFAULT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsMediaOrganization',
+  name: 'NextVector',
+  url: BASE_URL,
+  logo: `${BASE_URL}/brand/nextvector-logo.jpg`,
+  founder: {
+    '@type': 'Person',
+    name: 'Robiul Hasan',
+    url: 'https://rhasan.online',
+    sameAs: ['https://rhasan.online', 'https://github.com/Daddy-Ousen'],
+  },
+};
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
   title,
@@ -25,7 +40,12 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   articleSection,
   tags = [],
   schemaData,
+  noindex = false,
 }) => {
+  // Stable string keys so the effect only re-runs when content actually changes
+  const tagsKey = tags.join(', ');
+  const schemaJson = JSON.stringify(schemaData || DEFAULT_SCHEMA);
+
   useEffect(() => {
     // 1. Update document title
     const fullTitle = title.includes('NextVector') ? title : `${title} | NextVector`;
@@ -58,9 +78,15 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     // 2. Standard Meta Tags & AI Directives
     setMeta('name', 'description', description);
     setMeta('name', 'author', 'Robiul Hasan');
-    setMeta('name', 'robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
-    if (tags.length > 0) {
-      setMeta('name', 'keywords', tags.join(', '));
+    setMeta(
+      'name',
+      'robots',
+      noindex
+        ? 'noindex, follow'
+        : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+    );
+    if (tagsKey) {
+      setMeta('name', 'keywords', tagsKey);
     }
     setLink('canonical', fullUrl);
 
@@ -70,19 +96,25 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:url', fullUrl);
     setMeta('property', 'og:type', ogType);
-    setMeta('property', 'og:image', ogImage);
+    const absImage = ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
+    setMeta('property', 'og:image', absImage);
 
     if (ogType === 'article') {
       if (articlePublishedTime) setMeta('property', 'article:published_time', articlePublishedTime);
       if (articleSection) setMeta('property', 'article:section', articleSection);
       setMeta('property', 'article:author', 'https://rhasan.online');
+    } else {
+      // Drop article-only tags left over from a previously viewed article
+      document
+        .querySelectorAll('meta[property^="article:"]')
+        .forEach((el) => el.remove());
     }
 
     // 4. Twitter Cards
     setMeta('name', 'twitter:card', 'summary_large_image');
     setMeta('name', 'twitter:title', fullTitle);
     setMeta('name', 'twitter:description', description);
-    setMeta('name', 'twitter:image', ogImage);
+    setMeta('name', 'twitter:image', absImage);
     setMeta('name', 'twitter:creator', '@NextVector');
 
     // 5. JSON-LD Schema for Google AI Overviews, Perplexity & Schema.org
@@ -94,22 +126,8 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       document.head.appendChild(scriptEl);
     }
 
-    const defaultSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'NewsMediaOrganization',
-      name: 'NextVector',
-      url: BASE_URL,
-      logo: `${BASE_URL}/brand/nextvector-logo.jpg`,
-      founder: {
-        '@type': 'Person',
-        name: 'Robiul Hasan',
-        url: 'https://rhasan.online',
-        sameAs: ['https://rhasan.online', 'https://github.com/Daddy-Ousen'],
-      },
-    };
-
-    scriptEl.textContent = JSON.stringify(schemaData || defaultSchema);
-  }, [title, description, canonicalPath, ogImage, ogType, articlePublishedTime, articleSection, tags, schemaData]);
+    scriptEl.textContent = schemaJson;
+  }, [title, description, canonicalPath, ogImage, ogType, articlePublishedTime, articleSection, tagsKey, schemaJson, noindex]);
 
   return null;
 };

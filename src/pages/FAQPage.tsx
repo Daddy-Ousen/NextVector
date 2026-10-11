@@ -13,6 +13,7 @@ import {
   BookOpen,
   ArrowRight
 } from 'lucide-react';
+import { MODEL_COUNT } from '../data/modelCount';
 
 interface FAQItem {
   id: string;
@@ -276,7 +277,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
             onClick={() => onNavigate?.('/models')}
             className="text-emerald-400 hover:underline flex items-center gap-1 font-bold"
           >
-            <span>Model Directory (135)</span>
+            <span>Model Directory ({MODEL_COUNT})</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
           <span>•</span>

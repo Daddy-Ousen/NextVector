@@ -226,7 +226,7 @@ export const ALL_ARTICLES: Article[] = [
       "Data Ingestion": "GOES-16/18, Meteosat Third Generation, surface WMO stations",
       "Cloud Distribution": "Google Cloud BigQuery, Zarr hierarchical arrays, Earth Engine"
 },
-    relatedModelId: "model-weathernext-3",
+    relatedPaperId: "paper-weathernext-3",
     audioDuration: "5m 25s",
     citations: [
       {
@@ -2565,7 +2565,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-08-22T10:15:00Z",
     readTimeMinutes: 7,
-    coverImage: "/images/articles/art-46-jwst-jades.png",
+    coverImage: "/images/articles/art-46-jwst-jades.jpg",
     coverImageAlt: "James Webb Space Telescope JADES deep field infrared view confirming primeval galaxy JADES-GS-z14-0",
     tags: ["JWST", "Astrophysics", "Cosmic Dawn", "Galaxies", "Spectroscopy", "NASA"],
     threeQuestions: {
@@ -3670,7 +3670,7 @@ export const ALL_ARTICLES: Article[] = [
       "Field Size Restoration": "Full 26mm × 33mm Exposure (No Reticle Stitching)",
       "Target Node Deployment": "Sub-1.4nm (Intel 14A, TSMC A14, Hyper-NA)"
     },
-    relatedBenchmarkId: "bench-swe-verified",
+    relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "5m 45s",
     citations: [
       {
@@ -3843,7 +3843,7 @@ export const ALL_ARTICLES: Article[] = [
       "Compute Performance": "180 Petaflops Dense FP8 / 360 Petaflops Sparse",
       "Interconnect Technology": "Direct-Wafer Silicon Photonics (3.6 Tbps Optical Fabric)"
     },
-    relatedBenchmarkId: "bench-swe-verified",
+    relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "5m 32s",
     citations: [
       {
@@ -3902,7 +3902,6 @@ export const ALL_ARTICLES: Article[] = [
       "Supported Modalities": "Continuous latent diffusion, categorical discrete text diffusion, multi-modal actions",
       "Repository License": "Apache 2.0 Open Source"
     },
-    relatedBenchmarkId: "bench-arc-agi",
     audioDuration: "6m 12s",
     citations: [
       {
@@ -3961,7 +3960,6 @@ export const ALL_ARTICLES: Article[] = [
       "Interconnect Technology": "Direct Cu-Cu Hybrid Bonding (Zero Micro-Bump)",
       "Base Die Lithography": "TSMC N4P / Samsung 4nm GAA FinFET"
     },
-    relatedBenchmarkId: "bench-gpqa",
     audioDuration: "5m 45s",
     citations: [
       {
@@ -4019,7 +4017,6 @@ export const ALL_ARTICLES: Article[] = [
       "Lambda-CDM Statistical Significance": "Reduced from 5.4 sigma to 2.8 sigma post-correction",
       "Publication Reference": "Nature Astronomy (Vol. 10, Art. 488, September 2026)"
     },
-    relatedBenchmarkId: "bench-gpqa",
     audioDuration: "7m 05s",
     citations: [
       {
@@ -4077,7 +4074,6 @@ export const ALL_ARTICLES: Article[] = [
       "Memory Bandwidth Reduction": "68% lower DRAM read operations (Zero KV Cache)",
       "Benchmark Accuracy": "58.4% MMLU-Pro / 71.2% HumanEval / 84.6% GSM8k"
     },
-    relatedBenchmarkId: "bench-humaneval",
     audioDuration: "5m 28s",
     citations: [
       {
@@ -4135,7 +4131,6 @@ export const ALL_ARTICLES: Article[] = [
       "Detection Instrumentation": "High-Purity Germanium (HPGe) Spectrometry and Silicon Surface Barrier Detectors",
       "Publication Reference": "Nature Communications (17:4189, September 2026)"
     },
-    relatedBenchmarkId: "bench-gpqa",
     audioDuration: "6m 38s",
     citations: [
       {
@@ -4195,7 +4190,6 @@ export const ALL_ARTICLES: Article[] = [
       "Formal Verification Speed": "14,200 Lemma Checks / Second across distributed compiler nodes",
       "Publication Status": "Peer-Reviewed Technical Report & Open Lean 4 Verification Artifacts"
     },
-    relatedBenchmarkId: "bench-arc-agi",
     audioDuration: "7m 15s",
     citations: [
       {
@@ -4253,7 +4247,7 @@ export const ALL_ARTICLES: Article[] = [
       "Interconnect Reach": "Up to 2.0 kilometers over standard Single-Mode Fiber (SMF)",
       "Deployment Platform": "NVIDIA Rubin Ultra NVL576 Datacenter Racks (2027 Commercial Rollout)"
     },
-    relatedBenchmarkId: "bench-swe-verified",
+    relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "6m 08s",
     citations: [
       {
@@ -4311,7 +4305,6 @@ export const ALL_ARTICLES: Article[] = [
       "Logical Gate Error Rate": "1.18 x 10^-5 (Fault-Tolerant Clifford & T-Gate Implementation)",
       "Operating Temperature": "15 Millikelvin (Dilution Refrigerator Vacuum Packaging)"
     },
-    relatedBenchmarkId: "bench-gpqa",
     audioDuration: "6m 45s",
     citations: [
       {
@@ -4369,7 +4362,6 @@ export const ALL_ARTICLES: Article[] = [
       "Detected Species Significance": "CH4 (5.8 sigma), CO2 (4.6 sigma), DMS + CS2 (4.2 sigma), NH3 (< 0.5 sigma)",
       "Publication Reference": "The Astrophysical Journal Letters (Vol. 991, Art. L18, September 2026)"
     },
-    relatedBenchmarkId: "bench-gpqa",
     audioDuration: "6m 22s",
     citations: [
       {
@@ -4427,7 +4419,7 @@ export const ALL_ARTICLES: Article[] = [
       "Benchmark Scores": "89.2% MMLU-Pro / 84.1% SWE-bench Verified / 91.4% GSM8k",
       "Licensing": "Apache 2.0 Open Weights with Native FP8 Calibration Tensors"
     },
-    relatedBenchmarkId: "bench-swe-verified",
+    relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "5m 55s",
     citations: [
       {
@@ -4488,7 +4480,7 @@ export const ALL_ARTICLES: Article[] = [
       "API Pricing": "$0.14 / 1M Input, $0.56 / 1M Output, $0.02 / 1M Cached Input",
       "Open Weights License": "Apache 2.0 with Native FP8 / INT4 Calibration Tensors"
     },
-    relatedBenchmarkId: "bench-swe-verified",
+    relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "6m 14s",
     citations: [
       {
@@ -6577,7 +6569,7 @@ export const ALL_ARTICLES: Article[] = [
       "Release Date": "September 22, 2026"
     },
     relatedModelId: "model-claude-opus-5-5",
-    relatedBenchmarkId: "bench-swe-verified",
+    relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "7m 30s",
     citations: [
       {

@@ -1,5 +1,4 @@
 // Utility functions for NextVector
-import { Article } from '../types';
 
 /**
  * Sorts articles strictly from newest to oldest.
@@ -7,7 +6,7 @@ import { Article } from '../types';
  * the higher signalRating (editorial importance) gets priority.
  * If signalRating is tied on the same day, newer timestamp gets priority.
  */
-export function sortArticlesByTimeAndImportance(articles: Article[]): Article[] {
+export function sortArticlesByTimeAndImportance<T extends { publishedAt: string; signalRating: number }>(articles: T[]): T[] {
   return [...articles].sort((a, b) => {
     const timeA = new Date(a.publishedAt).getTime();
     const timeB = new Date(b.publishedAt).getTime();
@@ -165,14 +164,14 @@ export function getSavedBookmarks(): string[] {
 }
 
 export function toggleBookmark(articleId: string): string[] {
+  const current = getSavedBookmarks();
+  const updated = current.includes(articleId)
+    ? current.filter(id => id !== articleId)
+    : [...current, articleId];
   try {
-    const current = getSavedBookmarks();
-    const updated = current.includes(articleId)
-      ? current.filter(id => id !== articleId)
-      : [...current, articleId];
     localStorage.setItem('nextvector_bookmarks', JSON.stringify(updated));
-    return updated;
   } catch {
-    return [];
+    // Storage unavailable (private mode / quota): keep the change for this session only
   }
+  return updated;
 }

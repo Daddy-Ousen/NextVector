@@ -1,21 +1,16 @@
 import { spawnSync } from 'node:child_process';
 
 const pyCmds = process.platform === 'win32' ? ['python', 'py', 'python3'] : ['python3', 'python'];
-let ran = false;
+const script = 'scripts/ping_indexnow.py';
 
 for (const cmd of pyCmds) {
-  try {
-    const res = spawnSync(cmd, ['scripts/ping_indexnow.py'], { stdio: 'inherit' });
-    if (res.status === 0) {
-      ran = true;
-      break;
-    }
-  } catch {
-    // try next candidate
-  }
+  const res = spawnSync(cmd, [script, ...process.argv.slice(2)], { stdio: 'inherit' });
+  // Interpreter not found: try the next candidate. Otherwise report the script's own result.
+  if (res.error && res.error.code === 'ENOENT') continue;
+  // 9009: Windows Store "python" alias stub with no real interpreter behind it
+  if (process.platform === 'win32' && res.status === 9009) continue;
+  process.exit(res.status ?? 1);
 }
 
-if (!ran) {
-  console.error('[Error] Neither python nor python3 could execute scripts/ping_indexnow.py');
-  process.exit(1);
-}
+console.error(`[Error] Neither python nor python3 could execute ${script}`);
+process.exit(1);

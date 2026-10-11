@@ -19,6 +19,7 @@ import {
   Flame,
 } from 'lucide-react';
 import { NextVectorLogo } from '../common/NextVectorLogo';
+import { MODEL_COUNT } from '../../data/modelCount';
 
 interface NavbarProps {
   currentPath: string;
@@ -74,9 +75,9 @@ const NEWS_DROPDOWN_ITEMS: DropdownItem[] = [
 const MODELS_DROPDOWN_ITEMS: DropdownItem[] = [
   {
     label: 'Model Spec Directory',
-    sublabel: '135 frontier & open architectures with specs',
+    sublabel: `${MODEL_COUNT} frontier & open architectures with specs`,
     path: '/models',
-    badge: '135 Models',
+    badge: `${MODEL_COUNT} Models`,
     icon: Layers,
   },
   {

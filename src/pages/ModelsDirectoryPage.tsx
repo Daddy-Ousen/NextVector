@@ -4,6 +4,7 @@ import { ModelCard } from '../components/models/ModelCard';
 import { ModelDecisionGuide } from '../components/models/ModelDecisionGuide';
 import { SEOHead } from '../components/common/SEOHead';
 import { Cpu, Search, Layers, Scale, CheckSquare, ArrowRight, LayoutGrid, Table, ArrowUpDown, ArrowUpRight, Check, Square, Compass, Sparkles } from 'lucide-react';
+import { MODEL_COUNT } from '../data/modelCount';
 
 interface ModelsDirectoryPageProps {
   models: AIModel[];
@@ -86,8 +87,8 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
   return (
     <div className="space-y-8 pb-16">
       <SEOHead
-        title="AI Model Directory & LMSYS Arena Leaderboard (135 Models) | NextVector"
-        description="Standardized technical specifications, verified LMSYS Arena Elo ratings, hardware inference metrics, and benchmark evaluations across 135 frontier AI models."
+        title={`AI Model Directory & LMSYS Arena Leaderboard (${MODEL_COUNT} Models) | NextVector`}
+        description={`Standardized technical specifications, verified LMSYS Arena Elo ratings, hardware inference metrics, and benchmark evaluations across ${MODEL_COUNT} frontier AI models.`}
         canonicalPath="/models"
       />
       {/* Header */}
@@ -124,7 +125,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
           }`}
         >
           <Table className="w-4 h-4 shrink-0" />
-          <span className="hidden sm:inline">LMSYS Arena Leaderboard (135 Models)</span>
+          <span className="hidden sm:inline">LMSYS Arena Leaderboard ({MODEL_COUNT} Models)</span>
           <span className="sm:hidden">Leaderboard</span>
         </button>
 
@@ -189,7 +190,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search across 135 models (e.g. GPT-6, Fable 5.1, Sakana, DeepSeek, Kimi)..."
+              placeholder={`Search across ${MODEL_COUNT} models (e.g. GPT-6, Fable 5.1, Sakana, DeepSeek, Kimi)...`}
               className="w-full bg-zinc-900 border border-zinc-800 rounded-xl pl-10 pr-4 py-2 text-xs font-mono text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
             />
           </div>
@@ -231,7 +232,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                 onChange={(e) => setSortBy(e.target.value)}
                 className="bg-transparent text-zinc-200 outline-none cursor-pointer"
               >
-                <option value="rank-asc" className="bg-zinc-900">Sort: Arena Rank (#1 → #135)</option>
+                <option value="rank-asc" className="bg-zinc-900">Sort: Arena Rank (#1 → #{MODEL_COUNT})</option>
                 <option value="elo-desc" className="bg-zinc-900">Sort: Arena Elo (High → Low)</option>
                 <option value="name-asc" className="bg-zinc-900">Sort: Name (A → Z)</option>
                 <option value="price-asc" className="bg-zinc-900">Sort: Input Price (Low → High)</option>

@@ -500,10 +500,11 @@ def faq_pairs():
     return [
         ("Which AI model scores highest right now?",
          f"Highest arena.ai text score (released models): {guide_line('top-arena')}. Best score under $1 per 1M tokens: {guide_line('value')}. "
-         f"Best open weights: {guide_line('open')}. Computer use (OSWorld-Verified): {guide_line('computer-use')}. Data checked {sd['asOf']}."),
+         f"Best open weights: {guide_line('open')}. Computer use (OSWorld-Verified): {guide_line('computer-use')}. "
+         f"Highest Artificial Analysis Intelligence Index: {guide_line('aa-intelligence')} (data: Artificial Analysis). Data checked {sd['asOf']}."),
         ("Claude vs ChatGPT: what does the data say?", f"{cvc} Data checked {sd['asOf']}."),
         ("Where do the model and benchmark numbers come from?",
-         "From public sources only: arena.ai (text leaderboard), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. "
+         "From public sources only: arena.ai (text leaderboard), the Artificial Analysis indexes (artificialanalysis.ai), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. "
          "We save a dated copy of each source and do not run the tests ourselves. Missing values are shown as \"Not disclosed\" or \"Not listed\"."),
         ("How are NextVector Signal Ratings calculated?",
          "Signal Ratings use a 4-part formula: Architectural Novelty (30%), Empirical Benchmark Verification (30%), Practical Engineering Utility (25%), and Primary Source Reliability (15%)."),
@@ -548,7 +549,7 @@ def generate_llms_txt(articles, models):
         "# NextVector",
         "",
         "> NextVector is an independent AI news site and model data hub. Stories use a three-question format (What happened? Why does it matter? What could happen next?). "
-        "Model pages carry sourced data: arena.ai text scores, OSWorld-Verified and SWE-bench Verified results, list prices and context windows.",
+        "Model pages carry sourced data: arena.ai text scores, Artificial Analysis indexes (data: Artificial Analysis, https://artificialanalysis.ai), OSWorld-Verified and SWE-bench Verified results, list prices and context windows.",
         "",
         "Editorial charter: Less noise. More signal. Sourced benchmarks over marketing claims. Founded and edited by Robiul Hasan (https://rhasan.online). "
         "Every story links its primary sources and gets a 1–100 Signal Rating (formula on the About page). "
@@ -559,7 +560,7 @@ def generate_llms_txt(articles, models):
         f"- [AI Models Directory]({BASE_URL}/models): {len(models)} tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.",
         f"- [Model Showdowns & Comparisons]({BASE_URL}/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).",
         f"- [AI Model Buyer's Guide]({BASE_URL}/subscriptions): Picks a model by a stated rule over public data; check each vendor's plan page for what a subscription includes.",
-        f"- [Benchmark Leaderboards]({BASE_URL}/benchmarks): arena.ai text, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.",
+        f"- [Benchmark Leaderboards]({BASE_URL}/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.",
         f"- [AI Breakthrough Timeline]({BASE_URL}/timeline): Chronological record of major AI and computing milestones.",
         f"- [Daily Intelligence Briefing]({BASE_URL}/briefing): A short scan of the day's main AI stories.",
         f"- [Research Explained]({BASE_URL}/research): Plain-language explanations of research papers.",
@@ -576,6 +577,7 @@ def generate_llms_txt(articles, models):
 
     boards = [
         ("arena", "arena.ai text leaderboard (tracked models, real arena.ai rank)", ""),
+        ("aa", f"Artificial Analysis Intelligence Index v{sd['aa']['indexVersion']} (data: Artificial Analysis, https://artificialanalysis.ai)", ""),
         ("osworld", "OSWorld-Verified (computer use, success rate)", "%"),
         ("swebench", "SWE-bench Verified (bash-only runs, % resolved)", "%"),
         ("pareto", "Price vs Arena score frontier (NextVector calculation over list prices)", ""),
@@ -624,7 +626,8 @@ def update_ai_summary():
     data.pop("topPicks2026", None)
     data["modelPicks"] = {
         "dataAsOf": sd["asOf"],
-        "method": "Each pick applies a stated rule to public data (arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified, list prices). NextVector does not run these tests.",
+        "method": "Each pick applies a stated rule to public data (arena.ai text leaderboard, Artificial Analysis indexes, OSWorld-Verified, SWE-bench Verified, list prices). NextVector does not run these tests.",
+        "credit": "Artificial Analysis index data: https://artificialanalysis.ai",
         "picks": [{
             "category": g["title"],
             "rule": g["rule"],
@@ -1126,15 +1129,16 @@ def prerender_all():
         },
         {
             "path": "/benchmarks",
-            "title": "AI Benchmarks: Arena, OSWorld & SWE-bench Leaderboards",
-            "description": "Arena text scores, OSWorld-Verified and SWE-bench Verified results, and a price vs score frontier. Every board links to its public source and date.",
-            "keywords": "ai benchmarks, arena leaderboard, swe-bench verified, osworld verified, price performance ai",
+            "title": "AI Benchmarks: Arena, Artificial Analysis, OSWorld & SWE-bench Leaderboards",
+            "description": "Arena text scores, the Artificial Analysis Intelligence Index, OSWorld-Verified and SWE-bench Verified results, and a price vs score frontier. Every board links to its public source and date.",
+            "keywords": "ai benchmarks, arena leaderboard, artificial analysis intelligence index, swe-bench verified, osworld verified, price performance ai",
             "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
               <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">AI Benchmark Leaderboards</h1>
               <p class="text-lg text-zinc-300 leading-relaxed">Results copied from public leaderboards, with the source and date for each board. NextVector does not run these tests.</p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs font-mono">
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">Arena text (arena.ai)</h2><p class="text-zinc-300">{board_top('arena')}</p></div>
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">Intelligence Index v{site_data()['aa']['indexVersion']} (data: <a href="https://artificialanalysis.ai/" class="underline">Artificial Analysis</a>)</h2><p class="text-zinc-300">{board_top('aa')}</p></div>
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">OSWorld-Verified (os-world.github.io)</h2><p class="text-zinc-300">{board_top('osworld', unit='%')}</p></div>
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">SWE-bench Verified, bash-only (swebench.com)</h2><p class="text-zinc-300">{board_top('swebench', unit='%')}</p></div>
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">Price vs Arena score (NextVector calculation)</h2><p class="text-zinc-300">{board_top('pareto')}</p></div>

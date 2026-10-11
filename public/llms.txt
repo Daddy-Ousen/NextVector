@@ -1,15 +1,15 @@
 # NextVector
 
-> NextVector is an independent AI news site and model data hub. Stories use a three-question format (What happened? Why does it matter? What could happen next?). Model pages carry sourced data: arena.ai text scores, OSWorld-Verified and SWE-bench Verified results, list prices and context windows.
+> NextVector is an independent AI news site and model data hub. Stories use a three-question format (What happened? Why does it matter? What could happen next?). Model pages carry sourced data: arena.ai text scores, Artificial Analysis indexes (data: Artificial Analysis, https://artificialanalysis.ai), OSWorld-Verified and SWE-bench Verified results, list prices and context windows.
 
 Editorial charter: Less noise. More signal. Sourced benchmarks over marketing claims. Founded and edited by Robiul Hasan (https://rhasan.online). Every story links its primary sources and gets a 1–100 Signal Rating (formula on the About page). NextVector does not run benchmarks itself: model numbers come from public leaderboards and vendor price pages, saved as dated copies. Model data checked 2026-10-11.
 
 ## Core Hubs
 - [NextVector Home](https://nextvector.rhasan.online/): Latest AI news, newest first, with the lead story on top.
-- [AI Models Directory](https://nextvector.rhasan.online/models): 135 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
+- [AI Models Directory](https://nextvector.rhasan.online/models): 136 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
 - [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).
 - [AI Model Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Picks a model by a stated rule over public data; check each vendor's plan page for what a subscription includes.
-- [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
+- [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
 - [AI Breakthrough Timeline](https://nextvector.rhasan.online/timeline): Chronological record of major AI and computing milestones.
 - [Daily Intelligence Briefing](https://nextvector.rhasan.online/briefing): A short scan of the day's main AI stories.
 - [Research Explained](https://nextvector.rhasan.online/research): Plain-language explanations of research papers.
@@ -22,6 +22,9 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 - Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.80 / $10.00 per 1M tokens.
 - Computer use: [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) (Anthropic): OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens.
 - Coding (shared-harness SWE-bench runs): [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) (Anthropic): SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens.
+- Highest Artificial Analysis Intelligence Index: [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): AA Intelligence Index 57.6; list price $4.00 / $20.00 per 1M tokens.
+- Coding (Artificial Analysis Coding Index): [Claude Fable 5.1](https://nextvector.rhasan.online/models/model-claude-fable-5-1) (Anthropic): AA Coding Index 81.6; list price $10.00 / $50.00 per 1M tokens.
+- Agent work (Artificial Analysis Agentic Index): [Claude Fable 5.1](https://nextvector.rhasan.online/models/model-claude-fable-5-1) (Anthropic): AA Agentic Index 57.9; list price $10.00 / $50.00 per 1M tokens.
 - Largest context window: [Grok 4.20](https://nextvector.rhasan.online/models/model-grok-4-20) (xAI): 2M tokens · Arena 1475; list price $1.25 / $2.50 per 1M tokens.
 
 ## Top Released Models by arena.ai Text Score (data checked 2026-10-11)
@@ -33,6 +36,7 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 
 ## Leaderboards (top 3 each)
 - [arena.ai text leaderboard (tracked models, real arena.ai rank)](https://nextvector.rhasan.online/benchmarks): #1 [Gemini 4 Argon](https://nextvector.rhasan.online/models/model-gemini-4-argon) 1525 (pre-release, Oct 2026); #2 [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) 1507 (Oct 2026); #3 [Claude Opus 4.6](https://nextvector.rhasan.online/models/model-claude-opus-4-6) 1504 (Oct 2026).
+- [Artificial Analysis Intelligence Index v4.3 (data: Artificial Analysis, https://artificialanalysis.ai)](https://nextvector.rhasan.online/benchmarks): #1 [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) 57.6 (Oct 2026); #2 [Claude Sonnet 5.5](https://nextvector.rhasan.online/models/model-claude-sonnet-5-5) 56 (Oct 2026); #3 [Claude Fable 5.1](https://nextvector.rhasan.online/models/model-claude-fable-5-1) 53.4 (Oct 2026).
 - [OSWorld-Verified (computer use, success rate)](https://nextvector.rhasan.online/benchmarks): #1 [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) 85.96% (Aug 2026); #2 [Claude Opus 5](https://nextvector.rhasan.online/models/model-claude-opus-5) 83.39% (Aug 2026); #3 Coasty CUA v1 82.81% (Jul 2026).
 - [SWE-bench Verified (bash-only runs, % resolved)](https://nextvector.rhasan.online/benchmarks): #1 [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) 76.8% (Feb 2026); #2 [Gemini 3 Flash](https://nextvector.rhasan.online/models/model-gemini-3-flash) 75.8% (Feb 2026); #3 [MiniMax M2.5](https://nextvector.rhasan.online/models/model-minimax-m2-5) 75.8% (Feb 2026).
 - [Price vs Arena score frontier (NextVector calculation over list prices)](https://nextvector.rhasan.online/benchmarks): #1 [Gemini 4 Argon](https://nextvector.rhasan.online/models/model-gemini-4-argon) 1525 ($4.00 / 1M blended, pre-release, Oct 2026); #2 [Gemini 3.8 Flash](https://nextvector.rhasan.online/models/model-gemini-3-8-flash) 1497 ($1.50 / 1M blended, Oct 2026); #3 [MiMo-V2.6-Pro](https://nextvector.rhasan.online/models/model-mimo-v2-6-pro) 1480 ($0.54 / 1M blended, Oct 2026).

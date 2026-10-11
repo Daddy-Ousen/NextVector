@@ -1579,6 +1579,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://nextvector.rhasan.online/models/model-gpt-5-2-chat</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://nextvector.rhasan.online/models/model-claude-sonnet-5-5</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>

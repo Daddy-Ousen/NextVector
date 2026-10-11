@@ -316,7 +316,7 @@ def check_model_benchmark_sync():
             errors.append(f"'{banned}' found in model data (synthetic-era field)")
 
     # 2. Snapshot freshness
-    for snap in ("arena_text.json", "openrouter.json", "osworld_verified.json", "swebench_verified.json"):
+    for snap in ("arena_text.json", "openrouter.json", "osworld_verified.json", "swebench_verified.json", "artificial_analysis.json"):
         f = snap_dir / snap
         if not f.exists():
             errors.append(f"missing snapshot {snap}")
@@ -334,7 +334,10 @@ def check_model_benchmark_sync():
     if len(ids) != len(set(ids)):
         errors.append("duplicate model ids")
     arena = {e["modelId"]: e for e in site["boards"]["arena"]}
+    aa_board = {e["modelId"]: e for e in site["boards"]["aa"]}
     for m in models:
+        if m.get("aaIntelligence") is not None and aa_board.get(m["id"], {}).get("score") != m["aaIntelligence"]:
+            errors.append(f"{m['name']}: aaIntelligence disagrees with the Artificial Analysis board")
         if not m.get("sources"):
             errors.append(f"{m['name']}: no sources")
         if m.get("arenaRank"):
@@ -355,7 +358,7 @@ def check_model_benchmark_sync():
         errors.append("Arena board ranks are not strictly increasing")
     if not strictly([e["score"] for e in ab], lambda a, b: a >= b):
         errors.append("Arena board scores are not in descending order")
-    for key in ("osworld", "swebench", "pareto"):
+    for key in ("osworld", "swebench", "pareto", "aa"):
         board = site["boards"][key]
         if [e["rank"] for e in board] != list(range(1, len(board) + 1)):
             errors.append(f"{key} board ranks are not 1..N")
@@ -382,7 +385,7 @@ def check_model_benchmark_sync():
         return False
     print(f"PASS: {len(models)} sourced models (data {site['asOf']}); boards Arena {len(ab)}, "
           f"OSWorld {len(site['boards']['osworld'])}, SWE-bench {len(site['boards']['swebench'])}, "
-          f"Pareto {len(site['boards']['pareto'])}; {len(site['showdowns'])} showdowns consistent.")
+          f"Pareto {len(site['boards']['pareto'])}, AA {len(site['boards']['aa'])}; {len(site['showdowns'])} showdowns consistent.")
     return True
 
 def check_seo_geo_readiness():

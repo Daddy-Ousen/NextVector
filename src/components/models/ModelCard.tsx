@@ -119,7 +119,8 @@ export const ModelCard: React.FC<ModelCardProps> = ({
             </div>
             <div className="flex flex-wrap gap-1.5">
               {model.benchmarks
-                .filter((b) => b.benchmarkName !== 'Arena Text Elo')
+                // Card stays short: Coding/Agentic indexes are on the model page
+                .filter((b) => !['Arena Text Elo', 'AA Coding Index', 'AA Agentic Index'].includes(b.benchmarkName))
                 .map((b) => (
                   <div
                     key={b.benchmarkName}

@@ -659,3 +659,1048 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "costPerRun": "$0.04 / 1M blended"
   }
 ];
+
+export const AA_DATA_AS_OF = '2026-10-11';
+export const AA_INDEX_VERSION = '4.3';
+
+export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
+  {
+    "rank": 1,
+    "modelName": "Claude Opus 5.5",
+    "developer": "Anthropic",
+    "score": 57.6,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-5-5"
+  },
+  {
+    "rank": 2,
+    "modelName": "Claude Sonnet 5.5",
+    "developer": "Anthropic",
+    "score": 56,
+    "date": "Oct 2026",
+    "modelId": "model-claude-sonnet-5-5"
+  },
+  {
+    "rank": 3,
+    "modelName": "Claude Fable 5.1",
+    "developer": "Anthropic",
+    "score": 53.4,
+    "date": "Oct 2026",
+    "modelId": "model-claude-fable-5-1",
+    "note": "Coding 81.6 · Agentic 57.9"
+  },
+  {
+    "rank": 4,
+    "modelName": "GPT-6 Astra",
+    "developer": "OpenAI",
+    "score": 52.7,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-6-astra",
+    "note": "Coding 77.1 · Agentic 51"
+  },
+  {
+    "rank": 5,
+    "modelName": "Gemini 4 Argon",
+    "developer": "Google DeepMind",
+    "score": 52.6,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-4-argon",
+    "note": "pre-release"
+  },
+  {
+    "rank": 6,
+    "modelName": "GPT-6.1 Sol",
+    "developer": "OpenAI",
+    "score": 51.8,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-6-1-sol"
+  },
+  {
+    "rank": 7,
+    "modelName": "Claude Opus 5",
+    "developer": "Anthropic",
+    "score": 50.8,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-5",
+    "note": "Coding 78 · Agentic 56.5"
+  },
+  {
+    "rank": 8,
+    "modelName": "Claude Fable 5",
+    "developer": "Anthropic",
+    "score": 49.6,
+    "date": "Oct 2026",
+    "modelId": "model-claude-fable-5",
+    "note": "Coding 76.5 · Agentic 50.7"
+  },
+  {
+    "rank": 9,
+    "modelName": "Muse Spark 1.3",
+    "developer": "Meta AI",
+    "score": 48.1,
+    "date": "Oct 2026",
+    "modelId": "model-muse-spark-1-3",
+    "note": "Coding 76.5 · Agentic 55.5"
+  },
+  {
+    "rank": 10,
+    "modelName": "GPT-6 Sol",
+    "developer": "OpenAI",
+    "score": 47.6,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-6-sol"
+  },
+  {
+    "rank": 11,
+    "modelName": "GPT-5.6 Sol",
+    "developer": "OpenAI",
+    "score": 47,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-6-sol",
+    "note": "Coding 78.3 · Agentic 50.2"
+  },
+  {
+    "rank": 12,
+    "modelName": "Grok 4.7",
+    "developer": "xAI",
+    "score": 46.4,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4-7"
+  },
+  {
+    "rank": 13,
+    "modelName": "MiMo-V2.6-Pro",
+    "developer": "Xiaomi AI",
+    "score": 46.3,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-6-pro"
+  },
+  {
+    "rank": 14,
+    "modelName": "Qwen3.8 Max",
+    "developer": "Alibaba Cloud",
+    "score": 45.4,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-8-max",
+    "note": "Coding 76.2 · Agentic 56"
+  },
+  {
+    "rank": 15,
+    "modelName": "GLM-5.3",
+    "developer": "Zhipu AI",
+    "score": 44.8,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-3",
+    "note": "Coding 74.8 · Agentic 53.1"
+  },
+  {
+    "rank": 16,
+    "modelName": "Grok 4.6",
+    "developer": "xAI",
+    "score": 44.3,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4-6",
+    "note": "Coding 76.8 · Agentic 53"
+  },
+  {
+    "rank": 17,
+    "modelName": "Step 5 Preview",
+    "developer": "StepFun",
+    "score": 43.7,
+    "date": "Oct 2026",
+    "modelId": "model-step-5-preview"
+  },
+  {
+    "rank": 18,
+    "modelName": "Kimi K3",
+    "developer": "Moonshot AI",
+    "score": 43.6,
+    "date": "Oct 2026",
+    "modelId": "model-kimi-k3",
+    "note": "Coding 76.2 · Agentic 50"
+  },
+  {
+    "rank": 19,
+    "modelName": "Claude Haiku 5.5",
+    "developer": "Anthropic",
+    "score": 43.4,
+    "date": "Oct 2026",
+    "modelId": "model-claude-haiku-5-5"
+  },
+  {
+    "rank": 20,
+    "modelName": "GPT-5.6 Terra",
+    "developer": "OpenAI",
+    "score": 42.1,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-6-terra",
+    "note": "Coding 76.7 · Agentic 43.2"
+  },
+  {
+    "rank": 21,
+    "modelName": "Claude Opus 4.8",
+    "developer": "Anthropic",
+    "score": 41.8,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-4-8",
+    "note": "Coding 74.3 · Agentic 41.9"
+  },
+  {
+    "rank": 22,
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "score": 41.8,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-3-flash",
+    "note": "Coding 71.5 · Agentic 50.9"
+  },
+  {
+    "rank": 23,
+    "modelName": "Gemini 3.8 Flash",
+    "developer": "Google DeepMind",
+    "score": 40.9,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-8-flash",
+    "note": "Coding 76.3 · Agentic 40.2"
+  },
+  {
+    "rank": 24,
+    "modelName": "Claude Opus 4.7",
+    "developer": "Anthropic",
+    "score": 40.7,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-4-7",
+    "note": "Coding 73.6 · Agentic 38.6"
+  },
+  {
+    "rank": 25,
+    "modelName": "Gemini 3.7 Flash",
+    "developer": "Google DeepMind",
+    "score": 39.6,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-7-flash",
+    "note": "Coding 76.1 · Agentic 35.2"
+  },
+  {
+    "rank": 26,
+    "modelName": "Muse Spark 1.2",
+    "developer": "Meta AI",
+    "score": 39.6,
+    "date": "Oct 2026",
+    "modelId": "model-muse-spark-1-2",
+    "note": "Coding 72.2 · Agentic 43.2"
+  },
+  {
+    "rank": 27,
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "score": 39.5,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-1-flash"
+  },
+  {
+    "rank": 28,
+    "modelName": "GPT-5.4",
+    "developer": "OpenAI",
+    "score": 39,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-4",
+    "note": "Coding 71.1"
+  },
+  {
+    "rank": 29,
+    "modelName": "Grok 4.5",
+    "developer": "xAI",
+    "score": 38.8,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4-5",
+    "note": "Coding 72.4 · Agentic 41.2"
+  },
+  {
+    "rank": 30,
+    "modelName": "GPT-5.5",
+    "developer": "OpenAI",
+    "score": 38.4,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-5",
+    "note": "Coding 74.9 · Agentic 36.4"
+  },
+  {
+    "rank": 31,
+    "modelName": "Mistral Large 4",
+    "developer": "Mistral AI",
+    "score": 38.4,
+    "date": "Oct 2026",
+    "modelId": "model-mistral-large-4"
+  },
+  {
+    "rank": 32,
+    "modelName": "Claude Sonnet 5",
+    "developer": "Anthropic",
+    "score": 38.2,
+    "date": "Oct 2026",
+    "modelId": "model-claude-sonnet-5",
+    "note": "Coding 71.5 · Agentic 43.6"
+  },
+  {
+    "rank": 33,
+    "modelName": "GPT-6 Luna",
+    "developer": "OpenAI",
+    "score": 38.1,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-6-luna"
+  },
+  {
+    "rank": 34,
+    "modelName": "GPT-5.6 Luna",
+    "developer": "OpenAI",
+    "score": 37.3,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-6-luna",
+    "note": "Coding 71.4 · Agentic 42.1"
+  },
+  {
+    "rank": 35,
+    "modelName": "DeepSeek-V4-Pro-0813",
+    "developer": "DeepSeek",
+    "score": 36,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-pro-0813",
+    "note": "Coding 68.8 · Agentic 41.3"
+  },
+  {
+    "rank": 36,
+    "modelName": "DeepSeek-V4-Flash-Vision-Exp",
+    "developer": "DeepSeek",
+    "score": 34.8,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-flash-vision-exp",
+    "note": "Coding 65 · Agentic 47.5"
+  },
+  {
+    "rank": 37,
+    "modelName": "DeepSeek-V4-Flash-0731",
+    "developer": "DeepSeek",
+    "score": 34.3,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-flash-0731",
+    "note": "Coding 69.1 · Agentic 41"
+  },
+  {
+    "rank": 38,
+    "modelName": "Gemini 3.6 Flash",
+    "developer": "Google DeepMind",
+    "score": 34,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-6-flash",
+    "note": "Coding 69.2 · Agentic 29"
+  },
+  {
+    "rank": 39,
+    "modelName": "Muse Spark 1.1",
+    "developer": "Meta AI",
+    "score": 33.7,
+    "date": "Oct 2026",
+    "modelId": "model-muse-spark-1-1",
+    "note": "Coding 71.3 · Agentic 25.8"
+  },
+  {
+    "rank": 40,
+    "modelName": "GLM-5.2",
+    "developer": "Zhipu AI",
+    "score": 33.7,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-2",
+    "note": "Coding 68.8 · Agentic 38.4"
+  },
+  {
+    "rank": 41,
+    "modelName": "Qwen3.8-27B",
+    "developer": "Alibaba Cloud",
+    "score": 33.7,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-8-27b",
+    "note": "Coding 68.1 · Agentic 45.8"
+  },
+  {
+    "rank": 42,
+    "modelName": "Gemini 3.5 Flash",
+    "developer": "Google DeepMind",
+    "score": 33.6,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-5-flash",
+    "note": "Coding 70.1 · Agentic 26"
+  },
+  {
+    "rank": 43,
+    "modelName": "GPT-5.3 Codex",
+    "developer": "OpenAI",
+    "score": 32.5,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-3-codex"
+  },
+  {
+    "rank": 44,
+    "modelName": "Claude Opus 4.6",
+    "developer": "Anthropic",
+    "score": 31.9,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-4-6"
+  },
+  {
+    "rank": 45,
+    "modelName": "Muse Spark",
+    "developer": "Meta AI",
+    "score": 31.3,
+    "date": "Oct 2026",
+    "modelId": "model-muse-spark",
+    "note": "Coding 58.6"
+  },
+  {
+    "rank": 46,
+    "modelName": "GPT-5.2",
+    "developer": "OpenAI",
+    "score": 30.4,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-2"
+  },
+  {
+    "rank": 47,
+    "modelName": "DeepSeek-V4-Pro",
+    "developer": "DeepSeek",
+    "score": 30.4,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-pro",
+    "note": "Coding 59.4 · Agentic 26.3"
+  },
+  {
+    "rank": 48,
+    "modelName": "Claude Sonnet 4.6",
+    "developer": "Anthropic",
+    "score": 30.1,
+    "date": "Oct 2026",
+    "modelId": "model-claude-sonnet-4-6",
+    "note": "Coding 63 · Agentic 31.8"
+  },
+  {
+    "rank": 49,
+    "modelName": "Gemini 3.1 Pro",
+    "developer": "Google DeepMind",
+    "score": 29.7,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-1-pro",
+    "note": "Coding 68.8 · Agentic 8.2"
+  },
+  {
+    "rank": 50,
+    "modelName": "Qwen3.7 Max",
+    "developer": "Alibaba Cloud",
+    "score": 29.5,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-7-max",
+    "note": "Coding 66 · Agentic 22.5"
+  },
+  {
+    "rank": 51,
+    "modelName": "MiniMax M3",
+    "developer": "MiniMax",
+    "score": 29.2,
+    "date": "Oct 2026",
+    "modelId": "model-minimax-m3",
+    "note": "Coding 58.6 · Agentic 29.5"
+  },
+  {
+    "rank": 52,
+    "modelName": "Claude Opus 4.5",
+    "developer": "Anthropic",
+    "score": 29.1,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-4-5"
+  },
+  {
+    "rank": 53,
+    "modelName": "MiMo-V2-Pro",
+    "developer": "Xiaomi AI",
+    "score": 28.6,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-pro"
+  },
+  {
+    "rank": 54,
+    "modelName": "GPT-5.2 Codex",
+    "developer": "OpenAI",
+    "score": 28.5,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-2-codex"
+  },
+  {
+    "rank": 55,
+    "modelName": "Solar Pro 4",
+    "developer": "Upstage",
+    "score": 28.2,
+    "date": "Oct 2026",
+    "modelId": "model-solar-pro-4",
+    "note": "Coding 52.7"
+  },
+  {
+    "rank": 56,
+    "modelName": "Gemini 3 Pro",
+    "developer": "Google DeepMind",
+    "score": 28,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-pro"
+  },
+  {
+    "rank": 57,
+    "modelName": "GLM-5",
+    "developer": "Zhipu AI",
+    "score": 27.9,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5"
+  },
+  {
+    "rank": 58,
+    "modelName": "Kimi K2.6",
+    "developer": "Moonshot AI",
+    "score": 27,
+    "date": "Oct 2026",
+    "modelId": "model-kimi-k2-6",
+    "note": "Coding 61.8 · Agentic 20.5"
+  },
+  {
+    "rank": 59,
+    "modelName": "Qwen3.6 Plus",
+    "developer": "Alibaba Cloud",
+    "score": 27,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-6-plus",
+    "note": "Coding 54.5"
+  },
+  {
+    "rank": 60,
+    "modelName": "Gemini 3 Flash",
+    "developer": "Google DeepMind",
+    "score": 26.3,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-flash"
+  },
+  {
+    "rank": 61,
+    "modelName": "GLM-5.1",
+    "developer": "Zhipu AI",
+    "score": 26.1,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-1",
+    "note": "Coding 55.8 · Agentic 23.9"
+  },
+  {
+    "rank": 62,
+    "modelName": "GPT-5.5 Instant",
+    "developer": "OpenAI",
+    "score": 26,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-5-instant",
+    "note": "Coding 39.4 · Agentic 16.6"
+  },
+  {
+    "rank": 63,
+    "modelName": "MiMo-V2.5-Pro",
+    "developer": "Xiaomi AI",
+    "score": 26,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-5-pro",
+    "note": "Coding 60.2 · Agentic 21.3"
+  },
+  {
+    "rank": 64,
+    "modelName": "Kimi K2.7 Code",
+    "developer": "Moonshot AI",
+    "score": 25.8,
+    "date": "Oct 2026",
+    "modelId": "model-kimi-k2-7-code",
+    "note": "Coding 60.8 · Agentic 21"
+  },
+  {
+    "rank": 65,
+    "modelName": "Grok 4.20",
+    "developer": "xAI",
+    "score": 25.7,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4-20"
+  },
+  {
+    "rank": 66,
+    "modelName": "Inkling Small",
+    "developer": "Thinking Machines Lab",
+    "score": 25.7,
+    "date": "Oct 2026",
+    "modelId": "model-inkling-small",
+    "note": "Coding 52.9 · Agentic 23.5"
+  },
+  {
+    "rank": 67,
+    "modelName": "Hy3",
+    "developer": "Tencent Hunyuan",
+    "score": 25.3,
+    "date": "Oct 2026",
+    "modelId": "model-hy3",
+    "note": "Coding 58.8 · Agentic 24.1"
+  },
+  {
+    "rank": 68,
+    "modelName": "Qwen3.7-Plus",
+    "developer": "Alibaba Cloud",
+    "score": 25.2,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-7-plus",
+    "note": "Coding 55.9 · Agentic 17.5"
+  },
+  {
+    "rank": 69,
+    "modelName": "MiMo-V2.5",
+    "developer": "Xiaomi AI",
+    "score": 25.2,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-5",
+    "note": "Coding 56.8 · Agentic 15.8"
+  },
+  {
+    "rank": 70,
+    "modelName": "Inkling",
+    "developer": "Thinking Machines Lab",
+    "score": 25,
+    "date": "Oct 2026",
+    "modelId": "model-inkling",
+    "note": "Coding 52.1 · Agentic 22.5"
+  },
+  {
+    "rank": 71,
+    "modelName": "Grok 4.3",
+    "developer": "xAI",
+    "score": 24.9,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4-3",
+    "note": "Coding 42.2 · Agentic 15.5"
+  },
+  {
+    "rank": 72,
+    "modelName": "GPT-5.1",
+    "developer": "OpenAI",
+    "score": 24.7,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-1",
+    "note": "Coding 49.4"
+  },
+  {
+    "rank": 73,
+    "modelName": "DeepSeek-V4-Flash",
+    "developer": "DeepSeek",
+    "score": 24.4,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-flash",
+    "note": "Coding 56.2 · Agentic 26.3"
+  },
+  {
+    "rank": 74,
+    "modelName": "GPT-5.4 mini",
+    "developer": "OpenAI",
+    "score": 24.1,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-4-mini",
+    "note": "Coding 56.1 · Agentic 17.9"
+  },
+  {
+    "rank": 75,
+    "modelName": "MiMo-V2-Omni",
+    "developer": "Xiaomi AI",
+    "score": 23.9,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-omni"
+  },
+  {
+    "rank": 76,
+    "modelName": "GPT-5.1 Codex",
+    "developer": "OpenAI",
+    "score": 23.7,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-1-codex"
+  },
+  {
+    "rank": 77,
+    "modelName": "Kimi K2.5",
+    "developer": "Moonshot AI",
+    "score": 23.5,
+    "date": "Oct 2026",
+    "modelId": "model-kimi-k2-5",
+    "note": "Coding 46.8"
+  },
+  {
+    "rank": 78,
+    "modelName": "GLM-5V-Turbo",
+    "developer": "Zhipu AI",
+    "score": 23.5,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5v-turbo"
+  },
+  {
+    "rank": 79,
+    "modelName": "GPT-5",
+    "developer": "OpenAI",
+    "score": 23,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5",
+    "note": "Coding 37.8"
+  },
+  {
+    "rank": 80,
+    "modelName": "Qwen3.5-27B",
+    "developer": "Alibaba Cloud",
+    "score": 22.9,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-5-27b"
+  },
+  {
+    "rank": 81,
+    "modelName": "Nemotron 3 Ultra (550B A55B)",
+    "developer": "NVIDIA",
+    "score": 22.9,
+    "date": "Oct 2026",
+    "modelId": "model-nemotron-3-ultra-550b-a55b",
+    "note": "Coding 49.3 · Agentic 20.1"
+  },
+  {
+    "rank": 82,
+    "modelName": "Claude Opus 4.1",
+    "developer": "Anthropic",
+    "score": 22.8,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-4-1"
+  },
+  {
+    "rank": 83,
+    "modelName": "MiniMax M2.7",
+    "developer": "MiniMax",
+    "score": 22.8,
+    "date": "Oct 2026",
+    "modelId": "model-minimax-m2-7",
+    "note": "Coding 52.6 · Agentic 15.3"
+  },
+  {
+    "rank": 84,
+    "modelName": "MiniMax M2.5",
+    "developer": "MiniMax",
+    "score": 22.8,
+    "date": "Oct 2026",
+    "modelId": "model-minimax-m2-5"
+  },
+  {
+    "rank": 85,
+    "modelName": "Grok 4",
+    "developer": "xAI",
+    "score": 22.5,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4"
+  },
+  {
+    "rank": 86,
+    "modelName": "Gemini 3.5 Flash-Lite",
+    "developer": "Google DeepMind",
+    "score": 22.2,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-5-flash-lite",
+    "note": "Coding 49.3 · Agentic 14.3"
+  },
+  {
+    "rank": 87,
+    "modelName": "GLM-4.7",
+    "developer": "Zhipu AI",
+    "score": 22.2,
+    "date": "Oct 2026",
+    "modelId": "model-glm-4-7",
+    "note": "Coding 45.3"
+  },
+  {
+    "rank": 88,
+    "modelName": "Kimi K2 Thinking",
+    "developer": "Moonshot AI",
+    "score": 22,
+    "date": "Oct 2026",
+    "modelId": "model-kimi-k2-thinking"
+  },
+  {
+    "rank": 89,
+    "modelName": "DeepSeek-V3.2",
+    "developer": "DeepSeek",
+    "score": 21.5,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v3-2",
+    "note": "Coding 44.2"
+  },
+  {
+    "rank": 90,
+    "modelName": "Qwen3.6-27B",
+    "developer": "Alibaba Cloud",
+    "score": 21.4,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-6-27b",
+    "note": "Coding 53.7 · Agentic 18.5"
+  },
+  {
+    "rank": 91,
+    "modelName": "Qwen3.5-397B-A17B",
+    "developer": "Alibaba Cloud",
+    "score": 21.4,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-5-397b-a17b",
+    "note": "Coding 48.2 · Agentic 8.3"
+  },
+  {
+    "rank": 92,
+    "modelName": "MiniMax M2.1",
+    "developer": "MiniMax",
+    "score": 20.9,
+    "date": "Oct 2026",
+    "modelId": "model-minimax-m2-1"
+  },
+  {
+    "rank": 93,
+    "modelName": "MiMo-V2-Flash",
+    "developer": "Xiaomi AI",
+    "score": 20.8,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-flash",
+    "note": "Coding 49.8"
+  },
+  {
+    "rank": 94,
+    "modelName": "Claude Sonnet 4.5",
+    "developer": "Anthropic",
+    "score": 20.7,
+    "date": "Oct 2026",
+    "modelId": "model-claude-sonnet-4-5",
+    "note": "Coding 52.1 · Agentic 15.8"
+  },
+  {
+    "rank": 95,
+    "modelName": "Claude Opus 4",
+    "developer": "Anthropic",
+    "score": 20.6,
+    "date": "Oct 2026",
+    "modelId": "model-claude-opus-4"
+  },
+  {
+    "rank": 96,
+    "modelName": "GPT-5 mini",
+    "developer": "OpenAI",
+    "score": 20.6,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-5-mini",
+    "note": "Coding 15.6 · Agentic 6.8"
+  },
+  {
+    "rank": 97,
+    "modelName": "o3",
+    "developer": "OpenAI",
+    "score": 20.2,
+    "date": "Oct 2026",
+    "modelId": "model-o3"
+  },
+  {
+    "rank": 98,
+    "modelName": "Qwen3.5-35B-A3B",
+    "developer": "Alibaba Cloud",
+    "score": 19.3,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-5-35b-a3b",
+    "note": "Coding 37"
+  },
+  {
+    "rank": 99,
+    "modelName": "MiniMax M2",
+    "developer": "MiniMax",
+    "score": 18.6,
+    "date": "Oct 2026",
+    "modelId": "model-minimax-m2"
+  },
+  {
+    "rank": 100,
+    "modelName": "GLM-4.6",
+    "developer": "Zhipu AI",
+    "score": 18.5,
+    "date": "Oct 2026",
+    "modelId": "model-glm-4-6",
+    "note": "Coding 45.8"
+  },
+  {
+    "rank": 101,
+    "modelName": "Qwen3.6-35B-A3B",
+    "developer": "Alibaba Cloud",
+    "score": 18.2,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-6-35b-a3b",
+    "note": "Coding 41.9 · Agentic 13.1"
+  },
+  {
+    "rank": 102,
+    "modelName": "Grok 4 Fast",
+    "developer": "xAI",
+    "score": 17.9,
+    "date": "Oct 2026",
+    "modelId": "model-grok-4-fast"
+  },
+  {
+    "rank": 103,
+    "modelName": "Qwen3.5-122B-A10B",
+    "developer": "Alibaba Cloud",
+    "score": 17.7,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-5-122b-a10b",
+    "note": "Coding 45.7 · Agentic 7.6"
+  },
+  {
+    "rank": 104,
+    "modelName": "Muse Glimmer 30B",
+    "developer": "Meta AI",
+    "score": 17.5,
+    "date": "Oct 2026",
+    "modelId": "model-muse-glimmer-30b",
+    "note": "Coding 49 · Agentic 8.5"
+  },
+  {
+    "rank": 105,
+    "modelName": "Step-3.5-Flash",
+    "developer": "StepFun",
+    "score": 17,
+    "date": "Oct 2026",
+    "modelId": "model-step-3-5-flash"
+  },
+  {
+    "rank": 106,
+    "modelName": "Claude Haiku 4.5",
+    "developer": "Anthropic",
+    "score": 16.9,
+    "date": "Oct 2026",
+    "modelId": "model-claude-haiku-4-5",
+    "note": "Coding 43.9 · Agentic 8"
+  },
+  {
+    "rank": 107,
+    "modelName": "o4-mini",
+    "developer": "OpenAI",
+    "score": 16.7,
+    "date": "Oct 2026",
+    "modelId": "model-o4-mini"
+  },
+  {
+    "rank": 108,
+    "modelName": "Gemma 4 26B-A4B",
+    "developer": "Google DeepMind",
+    "score": 16.7,
+    "date": "Oct 2026",
+    "modelId": "model-gemma-4-26b-a4b",
+    "note": "Coding 39.3 · Agentic 2.9"
+  },
+  {
+    "rank": 109,
+    "modelName": "DeepSeek-V3.2-Exp",
+    "developer": "DeepSeek",
+    "score": 16.6,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v3-2-exp"
+  },
+  {
+    "rank": 110,
+    "modelName": "Gemini 2.5 Pro",
+    "developer": "Google DeepMind",
+    "score": 16.1,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-2-5-pro",
+    "note": "Coding 33.3 · Agentic 1.6"
+  },
+  {
+    "rank": 111,
+    "modelName": "Gemini 3.1 Flash-Lite",
+    "developer": "Google DeepMind",
+    "score": 15.6,
+    "date": "Oct 2026",
+    "modelId": "model-gemini-3-1-flash-lite",
+    "note": "Coding 34.7 · Agentic 1.6"
+  },
+  {
+    "rank": 112,
+    "modelName": "Gemma 4 31B",
+    "developer": "Google DeepMind",
+    "score": 14.7,
+    "date": "Oct 2026",
+    "modelId": "model-gemma-4-31b",
+    "note": "Coding 43.4 · Agentic 4.2"
+  },
+  {
+    "rank": 113,
+    "modelName": "Grok 3 Mini",
+    "developer": "xAI",
+    "score": 14.6,
+    "date": "Oct 2026",
+    "modelId": "model-grok-3-mini"
+  },
+  {
+    "rank": 114,
+    "modelName": "ERNIE 5.0",
+    "developer": "Baidu",
+    "score": 14.3,
+    "date": "Oct 2026",
+    "modelId": "model-ernie-5-0"
+  },
+  {
+    "rank": 115,
+    "modelName": "GLM-4.5",
+    "developer": "Zhipu AI",
+    "score": 12.8,
+    "date": "Oct 2026",
+    "modelId": "model-glm-4-5"
+  },
+  {
+    "rank": 116,
+    "modelName": "Qwen3-235B-A22B-Thinking-2507",
+    "developer": "Alibaba Cloud",
+    "score": 12.7,
+    "date": "Oct 2026",
+    "modelId": "model-qwen3-235b-a22b-thinking-2507",
+    "note": "Coding 22.1 · Agentic 1.3"
+  },
+  {
+    "rank": 117,
+    "modelName": "Grok 3",
+    "developer": "xAI",
+    "score": 12.1,
+    "date": "Oct 2026",
+    "modelId": "model-grok-3"
+  },
+  {
+    "rank": 118,
+    "modelName": "gpt-oss-120b",
+    "developer": "OpenAI",
+    "score": 11.6,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-oss-120b",
+    "note": "Coding 30.4 · Agentic 3.7"
+  },
+  {
+    "rank": 119,
+    "modelName": "gpt-oss-20b",
+    "developer": "OpenAI",
+    "score": 10,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-oss-20b",
+    "note": "Coding 20.7 · Agentic 1.2"
+  },
+  {
+    "rank": 120,
+    "modelName": "Mistral Large 3",
+    "developer": "Mistral AI",
+    "score": 9.3,
+    "date": "Oct 2026",
+    "modelId": "model-mistral-large-3",
+    "note": "Coding 20.1 · Agentic 1"
+  }
+];

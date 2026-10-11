@@ -7,6 +7,9 @@ import {
   OSWORLD_DATA_AS_OF,
   SWE_BENCH_DATA_AS_OF,
   SWE_BENCH_LATEST_RUN,
+  AA_LEADERBOARD_ENTRIES,
+  AA_DATA_AS_OF,
+  AA_INDEX_VERSION,
 } from './benchmarksData';
 
 // Card/list fields only; full article bodies are lazy chunks (see vite.articleSplit.ts)
@@ -33,6 +36,20 @@ export const MOCK_BENCHMARKS: Benchmark[] = [
     whyItMatters: 'It is the largest public human-preference ranking and covers almost every major model, so it is the only board here that compares nearly all of them on one scale.',
     potentialLimitations: 'Preference is not correctness: style, length and formatting can sway votes. Models with few votes have wide intervals (shown as ±). Scores move as votes arrive, so check the date.',
     leaderboard: ARENA_LEADERBOARD_ENTRIES,
+  },
+  {
+    id: 'bench-artificial-analysis',
+    name: `Artificial Analysis Intelligence Index v${AA_INDEX_VERSION}`,
+    shortName: 'AA Intelligence Index',
+    category: 'Reasoning & Logic',
+    scoreMetricName: 'Index score',
+    sourceUrl: 'https://artificialanalysis.ai/',
+    dataAsOf: AA_DATA_AS_OF,
+    description: `Data: Artificial Analysis (artificialanalysis.ai). An independent group runs the same set of tests on models from every lab and combines them into one index. We show the ${AA_LEADERBOARD_ENTRIES.length} models we track that have a score. Each row also lists the Coding and Agentic indexes where Artificial Analysis publishes them.`,
+    whatItMeasures: 'A combined score from reasoning, knowledge, maths, coding and agent tests, all run by Artificial Analysis with one shared method. Most models appear at several settings (for example "max" or "low" effort); we show each model\'s best setting, the same rule we use for Arena, and name it on the model page.',
+    whyItMatters: 'Arena measures which chat answers people prefer. This index measures task results, including coding and agent work, with the same tests for every lab.',
+    potentialLimitations: 'Artificial Analysis picks the tests and their weights, and changes them between index versions, so compare scores only within one version. Some settings have no Coding or Agentic score yet. Some top settings use a fallback model when safety filters stop a task.',
+    leaderboard: AA_LEADERBOARD_ENTRIES,
   },
   {
     id: 'bench-price-performance',

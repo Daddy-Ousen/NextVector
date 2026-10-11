@@ -22,6 +22,7 @@ const TOP = pick('top-arena');
 const VALUE = pick('value');
 const OPEN = pick('open');
 const OSW = pick('computer-use');
+const AAI = pick('aa-intelligence');
 const CLAUDE_VS_CHATGPT = PRESET_SHOWDOWNS.find((s) => s.slug === 'claude-vs-chatgpt');
 // Arena gap between the best open-weights and the best proprietary released model
 const released = ALL_MODELS.filter((m) => m.arenaElo && !m.preRelease);
@@ -48,6 +49,7 @@ const FAQ_ITEMS: FAQItem[] = [
       VALUE && `Best Arena score under $1 per 1M tokens (blended): ${VALUE.modelName} (${VALUE.metric}).`,
       OPEN && `Best open-weights model: ${OPEN.modelName} (${OPEN.metric}).`,
       OSW && `Computer use (OSWorld-Verified): ${OSW.modelName} (${OSW.metric}).`,
+      AAI && `Highest Artificial Analysis Intelligence Index (data: Artificial Analysis): ${AAI.modelName} (${AAI.metric}).`,
       '"Best" depends on the task: Arena measures chat preference, not coding or agent work. Each pick links to its source on our benchmarks page.',
     ].filter(Boolean).join(' '),
   },
@@ -83,7 +85,7 @@ const FAQ_ITEMS: FAQItem[] = [
     id: 'faq-leaderboard-updates',
     category: 'methodology',
     question: 'Where do the model and benchmark numbers come from?',
-    shortAnswer: `From public sources only: arena.ai (text leaderboard), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. Last checked ${MODEL_DATA_AS_OF}.`,
+    shortAnswer: `From public sources only: arena.ai (text leaderboard), the Artificial Analysis indexes (artificialanalysis.ai), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. Last checked ${MODEL_DATA_AS_OF}.`,
     detailedAnswer: 'We save a dated copy of each source and build the model pages from it. We do not run the tests ourselves. Each model page lists its sources, and each leaderboard names its source and date. If a source does not list a value (for example parameter count), we show "Not disclosed" or "Not listed" instead of estimating it.',
   },
   {

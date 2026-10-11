@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Full Artificial Analysis download (local only; AA terms reserve redistribution)
+scripts/model_sources/snapshots/artificial_analysis_full.json
+__pycache__/

@@ -4,7 +4,7 @@ import { ModelCard } from '../components/models/ModelCard';
 import { ModelDecisionGuide } from '../components/models/ModelDecisionGuide';
 import { SEOHead } from '../components/common/SEOHead';
 import { Cpu, Search, Layers, Scale, CheckSquare, ArrowRight, LayoutGrid, Table, ArrowUpDown, ArrowUpRight, Check, Square, Compass, Sparkles } from 'lucide-react';
-import { MODEL_COUNT } from '../data/modelCount';
+import { MODEL_COUNT, ARENA_RANKED_COUNT } from '../data/modelCount';
 import { MODEL_DATA_AS_OF, ARENA_TOTAL_ENTRIES } from '../data/modelsData';
 import { blendedPrice, formatPricePair } from '../utils';
 import { PageHeader } from '../components/common/PageHeader';
@@ -100,7 +100,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
         eyebrow="Arena Leaderboard"
         icon={<Cpu className="w-4 h-4" />}
         title="AI Model Directory & Arena Leaderboard"
-        description={<>Prices, context size, licence and arena.ai scores for <strong>{models.length} AI models</strong>. Every number links to a public source. Data checked {MODEL_DATA_AS_OF}.</>}
+        description={<>Prices, context size, licence and arena.ai scores for <strong>{models.length} AI models</strong>. {ARENA_RANKED_COUNT} of them have an arena.ai text score; ranks are arena.ai's own, among all {ARENA_TOTAL_ENTRIES} entries on its board. Every number links to a public source. Data checked {MODEL_DATA_AS_OF}.</>}
       />
 
       {/* View Switcher: Leaderboard vs Decision & Tradeoff Guide */}

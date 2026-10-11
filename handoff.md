@@ -1,6 +1,36 @@
 # Handoff — 2026-10-11 (Site-level files fixed; commits 13773b5 + cb1f52e pushed)
 
-## Latest: index.html, llms.txt, ai-summary.json fixed (commit cb1f52e, pushed)
+## Latest: Artificial Analysis (AA) index added — verified, NOT committed (waiting for user OK)
+- Key is in `.env.local` (git-ignored). Fetch reads all 4 pages (697 rows, index v4.3). Full list → `snapshots/artificial_analysis_full.json` (git-ignored, for mapping). Committed `snapshots/artificial_analysis.json` keeps only the 256 rows our models use (repo is PUBLIC; AA terms reserve redistribution).
+- Mapping: `"aa": [all settings]` on 120 of 136 models in `curated_models.json`. Build uses each model's best setting per index (same rule as Arena). Hand fixes: AA's undated `deepseek-v4-pro` = 0813 and `deepseek-v4-flash` = 0731; April models use the `-0424` / `-0420` slugs; `hy3-preview` excluded; `qwen3-8-max` (0902) not `-0803`. Not on AA (16): GPT-5.2/5.3 Chat, GPT-5.2/5.5 Pro (no score), Mythos 5.1, Gemini 3.8 Live x2, ERNIE 5.1, Seed x3, Grok 4.1, Qwen3.8 Flash, Hy4, Laguna, Namazu.
+- Site: 5th board "AA Intelligence Index" (Coding/Agentic in row note), 3 index rows per model page (link to AA model page + setting), card shows Intelligence only, 3 new guide picks (aa-intelligence / aa-coding / aa-agentic), FAQ answer, footer credit "Model index data: Artificial Analysis", prerender /benchmarks + llms.txt + ai-summary credit, Gate 6 checks the AA board.
+- Side fix: BenchmarkChart default unit was '%' (index showed "57.6%"); now no unit unless `scoreUnit` is set.
+- Result: AA also ranks Anthropic first (Opus 5.5 57.6, Sonnet 5.5 56.0, Fable 5.1 53.4, GPT-6 Astra 52.7, Gemini 4 Argon 52.6 pre-release).
+- Checks: build, verify 8/8, tsc, lint 0 errors, browser (board, model page, footer).
+- Leftover: `scripts/model_sources/lab_reported_draft.json` (untracked, unused draft). Delete or keep — user call.
+
+## Before: waiting for the AA key (done)
+- AA free tier: `GET https://artificialanalysis.ai/api/v2/language/models/free`, header `x-api-key`, 100 requests/day. Fields: intelligence / coding / agentic index, `intelligence_index_version`, `release_date`, slug, creator. Attribution required on all tiers: visible byline or footer link to https://artificialanalysis.ai. Redistribution beyond display: "contact the team" (so: show index values with credit; no bulk export of their data).
+- Done: `fetch_artificial_analysis()` in `scripts/fetch_model_sources.py` (key from `AA_API_KEY` env or `.env.local`, git-ignored via `*.local`; skips without key). New filter: `python scripts/fetch_model_sources.py artificial_analysis` fetches only that source.
+- Next after key: run that command → map AA slugs to our ids (`aa` key in `curated_models.json`, build error on unknown slug like the other sources) → in `build_model_data.py` add model benchmarks "AA Intelligence/Coding/Agentic Index" + a 5th board → `benchmarksData.ts` export, BenchmarksPage/BenchmarkChart with credit line, prerender /benchmarks + llms.txt, Gate 6 → build, verify, browser.
+- Still uncommitted: GPT-5.2 Chat + explanation line (verified) and the fetch code.
+
+## Before: option 2 started (uncommitted) — lab-score findings
+- Done + verified (build, verify 8/8, tsc, lint 0 errors, browser on preview): GPT-5.2 Chat added (`model-gpt-5-2-chat`, arena #31, 136 models / 116 on Arena). Explanation line on /models and /benchmarks (`ARENA_RANKED_COUNT` in `src/data/modelCount.ts`).
+- Lab-reported scores: PAUSED. Problems: labs use different tests and versions (Terminal-Bench 2.1 vs 4.0; OSWorld-Verified vs 2.0 vs 2.1); many tables are images; OpenAI GPT-6.1 Sol page has only canvas charts (no exact numbers); labs print different numbers for the same rival model. Rule used: own lab's page only.
+- Draft data so far: `scripts/model_sources/lab_reported_draft.json` (Opus 5.5, Fable 5.1, Fable 5, Opus 5, GPT-6 Astra; GPT-6.1 Sol gap). Not used by the build.
+- Method that works for image tables: browser JS lists `img` URLs (scroll first for lazy load), then `curl` the `_next/image?url=...&w=1920` version into scratchpad `labimg/` and Read it. openai.com: WebFetch gets 403; the built-in browser works (`main.innerText`).
+- Alternative found: Artificial Analysis Intelligence Index (same tests for all labs). Its list on 2026-10-11 also puts Anthropic first (Opus 5.5 58, Sonnet 5.5 56, Fable 5.1 / GPT-6 Astra / Gemini 4 Argon 53). Using its data needs an API key (user must sign up) and its terms.
+
+## Previous: user asked "135 vs 115? GPT ranked low? Anthropic bias?" (answered, no code change)
+- 135 = models we track. 115 = those that have an arena.ai text row. 20 have none (e.g. GPT-5.5 Pro, Codex models, Haiku 5.5, Mythos 5.1).
+- 146 → 135 in the rebuild: 16 unverifiable ids dropped, 10 variant ids merged (redirects), 15 added.
+- Arena ranks are arena.ai's own (snapshot 2026-10-11). Anthropic holds 9 of the top 15 rows there; best OpenAI row is gpt-5.6-sol-xhigh #20.
+- Variant check (scratchpad `variant_check.py`): every model uses its best-ranked arena variant, all labs. Only gap: `gpt-5.2-chat-latest-20260210` (#31) is not tracked as its own model (GPT-5.3 Chat is).
+- Known weakness: SWE-bench board stops Feb 2026 and OSWorld only has submitted runs, so new GPT models have no task scores. Optional fix: lab-reported scores, clearly labelled.
+- Waiting for the user's choice (options in chat).
+
+## Previous: index.html, llms.txt, ai-summary.json fixed (commit cb1f52e, pushed)
 - What was done: old fake figures (1420/1417/1396 Elo, SWE-bench 98%, $0.14, Lean 4, OSWorld 68.4%, WebArena, wrong model links) are gone from all three files.
 - Now generated by `scripts/prerender_static_pages.py` at every `npm run build`, from `site_data.json` + `articlesData.ts`:
   - `public/llms.txt` (whole file, `generate_llms_txt()`). Do not hand-edit; change the text in the script.

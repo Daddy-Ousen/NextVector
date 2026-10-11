@@ -110,6 +110,11 @@ export interface AIModel {
   arenaCI?: number; // +/- score interval
   arenaVariant?: string; // arena.ai entry used (e.g. "claude-opus-5.5-high")
   preRelease?: boolean;
+  // Artificial Analysis indexes (best setting per model); credit artificialanalysis.ai wherever shown
+  aaIntelligence?: number;
+  aaCoding?: number;
+  aaAgentic?: number;
+  aaVariant?: string; // AA setting behind the Intelligence score, e.g. "GPT-6 Astra (Max)"
   sources?: SourceRef[];
   dataAsOf?: string;
 }

@@ -384,7 +384,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               Robiul Hasan
             </a>.
-           Filter the noise.
+           Filter the noise. Model index data:{' '}
+            <a
+              href="https://artificialanalysis.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:underline"
+            >
+              Artificial Analysis
+            </a>.
           </div>
           <div className="flex items-center gap-6">
             <a

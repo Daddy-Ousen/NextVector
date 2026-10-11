@@ -8,6 +8,8 @@ Rules:
   - No number is invented. Every score, price, context size and date comes from a snapshot or an
     official price page named in curated_models.json. Missing data stays missing ("Not listed").
   - The Price vs Arena board is a calculation (stated formula), not a measurement.
+  - Artificial Analysis (AA) indexes: each model lists all its AA settings ("aa" slugs); each index uses
+    the model's best setting, the same rule as Arena. AA requires visible credit wherever shown.
   - Old model ids listed as aliases / dropped_ids get permanent redirects in vercel.json.
 
 Run:  python scripts/build_model_data.py   (fails loudly if a curated source key is not found)
@@ -30,6 +32,8 @@ VERCEL = ROOT / "vercel.json"
 ARENA_URL = "https://arena.ai/leaderboard/text"
 OSWORLD_URL = "https://os-world.github.io/"
 SWE_URL = "https://www.swebench.com/"
+AA_URL = "https://artificialanalysis.ai/"
+AA_INDEXES = (("intelligence", "AA Intelligence Index"), ("coding", "AA Coding Index"), ("agentic", "AA Agentic Index"))
 PRICE_SOURCES = {
     "anthropic": ("Anthropic API pricing", "https://platform.claude.com/docs/en/about-claude/pricing"),
     "google": ("Gemini API pricing", "https://ai.google.dev/gemini-api/docs/pricing"),
@@ -255,6 +259,14 @@ def build_guide(models, frontier, as_of):
     swe = [m for m in models if task_score(m, "SWE-bench Verified") is not None]
     add("coding", "Coding (shared-harness SWE-bench runs)", "Highest SWE-bench Verified score in mini-SWE-agent runs. These runs stop in early 2026, so newer models are missing.",
         top(swe, lambda m: task_score(m, "SWE-bench Verified")), lambda m: f"SWE-bench Verified {task_score(m, 'SWE-bench Verified'):.1f}%")
+    released = [m for m in models if not m.get("preRelease")]
+    for field, pid, title in (("aaIntelligence", "aa-intelligence", "Highest Artificial Analysis Intelligence Index"),
+                              ("aaCoding", "aa-coding", "Coding (Artificial Analysis Coding Index)"),
+                              ("aaAgentic", "aa-agentic", "Agent work (Artificial Analysis Agentic Index)")):
+        label = title.split("(")[-1].rstrip(")") if "(" in title else "Artificial Analysis Intelligence Index"
+        add(pid, title, f"Highest {label} among generally released models we track (best setting per model).",
+            top([m for m in released if m.get(field) is not None], lambda m, f=field: m[f]),
+            lambda m, f=field, lb=label: f"{lb.replace('Artificial Analysis', 'AA')} {m[f]}")
     ctx = [m for m in ranked if m.get("contextTokens")]
     add("long-context", "Largest context window", "Largest listed context window among Arena-ranked models; ties go to the higher Arena score.",
         top(ctx, lambda m: (m["contextTokens"], m["arenaElo"])), lambda m: f"{m['contextWindow']} · Arena {m['arenaElo']}")
@@ -268,6 +280,9 @@ def main():
     cur = json.loads((SRC / "curated_models.json").read_text(encoding="utf-8"))
     arena_snap, or_snap = load("arena_text.json"), load("openrouter.json")
     osw_snap, swe_snap = load("osworld_verified.json"), load("swebench_verified.json")
+    aa_snap = load("artificial_analysis.json")
+    aa_rows = {r["slug"]: r for r in aa_snap["data"]}
+    aa_version, aa_as_of = aa_snap.get("indexVersion"), aa_snap["fetchedAt"][:10]
     arena = {e["modelDisplayName"]: e for e in arena_snap["data"]}
     orr = {m["id"]: m for m in or_snap["data"]}
     arena_total = len(arena_snap["data"])
@@ -305,6 +320,9 @@ def main():
             errors.append(f"{c['name']}: OSWorld key '{c['osw']}' not found")
         if c.get("swe") and c["swe"] not in swe_best:
             errors.append(f"{c['name']}: SWE-bench key '{c['swe']}' not found")
+        for slug in c.get("aa", []):
+            if slug not in aa_rows:
+                errors.append(f"{c['name']}: Artificial Analysis slug '{slug}' not in snapshot")
         if not (a or o or c.get("price")):
             errors.append(f"{c['name']}: no source at all (needs arena, OpenRouter or official price)")
 
@@ -404,6 +422,21 @@ def main():
                 "sourceUrl": SWE_URL,
             })
             sources.append({"label": "SWE-bench Verified leaderboard", "url": SWE_URL})
+        variants = [aa_rows[s] for s in c.get("aa", []) if s in aa_rows]
+        for field, label in AA_INDEXES:
+            scored = [r for r in variants if r.get(field) is not None]
+            if not scored:
+                continue
+            best = max(scored, key=lambda r: r[field])
+            benchmarks.append({
+                "benchmarkName": label, "score": round(best[field], 1),
+                "vsPreviousGen": f"Artificial Analysis v{aa_version} · best setting: {best['name']} · checked {aa_as_of}",
+                "sourceUrl": f"{AA_URL}models/{best['slug']}",
+            })
+            m["aa" + field.title()] = round(best[field], 1)
+            if field == "intelligence":
+                m["aaVariant"] = best["name"]
+                sources.append({"label": "Artificial Analysis", "url": f"{AA_URL}models/{best['slug']}"})
         m["benchmarks"] = benchmarks
         m["keyImprovements"], m["knownLimitations"], m["realWorldApplications"] = [], [], []
         m["architectureNotes"] = ""
@@ -494,6 +527,16 @@ def main():
                           cost=f"${blended(m['pricing']):.2f} / 1M blended",
                           note="pre-release on arena.ai" if m.get("preRelease") else None) for i, m in enumerate(frontier, 1)]
 
+    # 5. Artificial Analysis Intelligence Index: tracked models only, best setting per model
+    aa_ranked = sorted((m for m in models if m.get("aaIntelligence") is not None), key=lambda m: -m["aaIntelligence"])
+    aa_board = []
+    for i, m in enumerate(aa_ranked, 1):
+        extra = [f"Coding {m['aaCoding']}" if m.get("aaCoding") is not None else None,
+                 f"Agentic {m['aaAgentic']}" if m.get("aaAgentic") is not None else None,
+                 "pre-release" if m.get("preRelease") else None]
+        aa_board.append(entry(i, m["name"], m["developer"], m["aaIntelligence"], short_month(aa_as_of), m["id"],
+                              note=" · ".join(x for x in extra if x) or None))
+
     header = (f"// GENERATED by scripts/build_model_data.py on {as_of}. Do not edit by hand.\n"
               f"// Edit scripts/model_sources/curated_models.json, refresh snapshots with fetch_model_sources.py, then rebuild.\n")
     MODELS_TS.write_text(
@@ -510,7 +553,10 @@ def main():
         f"export const SWE_BENCH_LATEST_RUN = '{max(r['date'] for r in swe_rows)}';\n\n"
         "export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(osw_board, ensure_ascii=False, indent=2) + ";\n\n"
         "export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(swe_board, ensure_ascii=False, indent=2) + ";\n\n"
-        "export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(pareto_board, ensure_ascii=False, indent=2) + ";\n",
+        "export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(pareto_board, ensure_ascii=False, indent=2) + ";\n\n"
+        f"export const AA_DATA_AS_OF = '{aa_as_of}';\n"
+        f"export const AA_INDEX_VERSION = '{aa_version}';\n\n"
+        "export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(aa_board, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8")
 
     # Head-to-head showdowns and decision-guide picks, computed from the fields above
@@ -530,7 +576,8 @@ def main():
     SITE_JSON.parent.mkdir(parents=True, exist_ok=True)
     SITE_JSON.write_text(json.dumps({
         "asOf": as_of, "arenaTotal": arena_total, "models": models,
-        "boards": {"arena": arena_board, "osworld": osw_board, "swebench": swe_board, "pareto": pareto_board},
+        "boards": {"arena": arena_board, "osworld": osw_board, "swebench": swe_board, "pareto": pareto_board, "aa": aa_board},
+        "aa": {"asOf": aa_as_of, "indexVersion": aa_version, "url": AA_URL},
         "showdowns": showdowns, "guide": guide,
     }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
@@ -547,7 +594,7 @@ def main():
     VERCEL.write_text(json.dumps(vc, indent=2) + "\n", encoding="utf-8")
 
     print(f"Built {len(models)} models (data as of {as_of}).")
-    print(f"  Arena board {len(arena_board)} | OSWorld {len(osw_board)} | SWE-bench {len(swe_board)} | Pareto {len(pareto_board)}")
+    print(f"  Arena board {len(arena_board)} | OSWorld {len(osw_board)} | SWE-bench {len(swe_board)} | Pareto {len(pareto_board)} | AA {len(aa_board)}")
     print(f"  Redirects: {len(redirects)} | Showdowns: {len(showdowns)} | Guide picks: {len(guide)}")
 
 

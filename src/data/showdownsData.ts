@@ -484,6 +484,36 @@ export const GUIDE_PICKS: GuidePick[] = [
     "price": "$5.00 / $25.00 per 1M tokens"
   },
   {
+    "id": "aa-intelligence",
+    "title": "Highest Artificial Analysis Intelligence Index",
+    "rule": "Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).",
+    "modelId": "model-claude-opus-5-5",
+    "modelName": "Claude Opus 5.5",
+    "developer": "Anthropic",
+    "metric": "AA Intelligence Index 57.6",
+    "price": "$4.00 / $20.00 per 1M tokens"
+  },
+  {
+    "id": "aa-coding",
+    "title": "Coding (Artificial Analysis Coding Index)",
+    "rule": "Highest Artificial Analysis Coding Index among generally released models we track (best setting per model).",
+    "modelId": "model-claude-fable-5-1",
+    "modelName": "Claude Fable 5.1",
+    "developer": "Anthropic",
+    "metric": "AA Coding Index 81.6",
+    "price": "$10.00 / $50.00 per 1M tokens"
+  },
+  {
+    "id": "aa-agentic",
+    "title": "Agent work (Artificial Analysis Agentic Index)",
+    "rule": "Highest Artificial Analysis Agentic Index among generally released models we track (best setting per model).",
+    "modelId": "model-claude-fable-5-1",
+    "modelName": "Claude Fable 5.1",
+    "developer": "Anthropic",
+    "metric": "AA Agentic Index 57.9",
+    "price": "$10.00 / $50.00 per 1M tokens"
+  },
+  {
     "id": "long-context",
     "title": "Largest context window",
     "rule": "Largest listed context window among Arena-ranked models; ties go to the higher Arena score.",

@@ -18,7 +18,7 @@
 ## Key Platform Features
 
 ### 1. Sourced AI Model Registry & Arena Leaderboard
-* Model list: `scripts/model_sources/curated_models.json`. Numbers come from dated snapshots of arena.ai, OpenRouter, OSWorld-Verified, swebench.com and official lab price pages (`scripts/fetch_model_sources.py`), built by `scripts/build_model_data.py`. No hand-typed or formula values.
+* Model list: `scripts/model_sources/curated_models.json`. Numbers come from dated snapshots of arena.ai, Artificial Analysis (free API key in `.env.local`), OpenRouter, OSWorld-Verified, swebench.com and official lab price pages (`scripts/fetch_model_sources.py`), built by `scripts/build_model_data.py`. No hand-typed or formula values.
 * Table and card views, search, lab / type / licence filters, blended-price sort.
 
 ### 2. Side-by-Side Model Comparison

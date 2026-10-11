@@ -199,7 +199,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                       <span className={`text-sm font-bold ${isTop ? 'text-emerald-400' : 'text-zinc-100'}`}>
                         {isElo
                           ? `${Math.round(entry.score)}`
-                          : `${entry.score.toFixed(1)}${activeBenchmark.scoreUnit ?? '%'}`}
+                          : `${entry.score.toFixed(1)}${activeBenchmark.scoreUnit ?? ''}`}
                       </span>
                     </div>
                   </div>

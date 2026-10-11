@@ -12439,7 +12439,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T22:30:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1453873531674-2151bcd01707?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-212-anthropic-agent-fake-murder-tip-philadelphia-polic.jpg",
     coverImageAlt: "A Philadelphia-style police patrol car with lights on parked on a city street at dusk",
     tags: ["Anthropic", "AI agents", "Philadelphia Police", "agent safety", "incident response", "disclosure"],
     threeQuestions: {
@@ -12493,7 +12493,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T21:45:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-213-microsoft-brad-smith-ai-less-regulated-than-milk-g.jpg",
     coverImageAlt: "A wide view of a legislative chamber with rows of seated members under a vaulted ceiling",
     tags: ["Microsoft", "Brad Smith", "AI regulation", "AI Security Institute", "UK", "kill switch"],
     threeQuestions: {
@@ -12547,7 +12547,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T21:00:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-214-fired-openai-researchers-open-letter-safety-claims.jpg",
     coverImageAlt: "A person signing a paper document with a pen at a desk, representing an open letter",
     tags: ["OpenAI", "AI safety", "alignment", "chain-of-thought monitoring", "open letter", "employment dispute"],
     threeQuestions: {
@@ -12599,7 +12599,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T20:15:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-215-firmus-nvidia-backed-ai-data-centre-scraps-ipo-val.jpg",
     coverImageAlt: "A woman holding a tablet walks along a corridor lined with illuminated server racks in a data centre",
     tags: ["Firmus", "Nvidia", "data centres", "IPO", "AI infrastructure", "valuation", "Australia"],
     threeQuestions: {
@@ -12652,7 +12652,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T19:30:00Z",
     readTimeMinutes: 4,
-    coverImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-216-anthropic-usage-policy-ends-abusive-chats-claude-c.jpg",
     coverImageAlt: "A white humanoid robot hand held open palm up in a bright room",
     tags: ["Anthropic", "Claude", "usage policy", "model welfare", "AI ethics", "elections"],
     threeQuestions: {
@@ -12710,7 +12710,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T18:45:00Z",
     readTimeMinutes: 6,
-    coverImage: "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-217-reflection-ai-beam-501b-open-weight-moe-preview-we.jpg",
     coverImageAlt: "Overhead view of a developer workstation with two monitors and a laptop showing code",
     tags: ["Reflection AI", "Beam", "open weights", "mixture of experts", "Apache 2.0", "GLM-5.2", "Nvidia GB300"],
     threeQuestions: {
@@ -12770,7 +12770,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T18:00:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1561736778-92e52a7769ef?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-218-cloudflare-clef-omni-open-weight-multimodal-decisi.jpg",
     coverImageAlt: "A wide curved monitor showing code beside a keyboard and microphone on a desk",
     tags: ["Cloudflare", "Clef-omni", "open weights", "Qwen3-Omni", "multimodal", "Apache 2.0", "decision models"],
     threeQuestions: {
@@ -12824,8 +12824,8 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T17:15:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1600&q=80",
-    coverImageAlt: "A laptop screen showing dense line charts and grid axes",
+    coverImage: "/images/articles/art-219-metr-time-horizon-statistical-critique-nguyen-fith.jpg",
+    coverImageAlt: "A hand-drawn line chart of a rising trend on paper beside a ruler and two pens on a wooden desk",
     tags: ["METR", "time horizons", "AI evaluation", "statistics", "item response theory", "arXiv"],
     threeQuestions: {
       whatHappened: "In an arXiv paper submitted 8 October 2026 (2610.12466), Drew T. Nguyen and William Fithian re-estimate METR's 50% time horizon for 26 AI systems across 228 tasks. They drop METR's assumption that task difficulty scales linearly with the log of human completion time and use splines and item-response theory instead.",
@@ -12877,7 +12877,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T16:30:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-220-probes-detect-sabotage-unverbalized-deception-fibs.jpg",
     coverImageAlt: "A white and grey humanoid robot standing in front of a wall of screens",
     tags: ["AI safety", "deception detection", "probes", "agent monitoring", "SHADE-Arena", "arXiv"],
     threeQuestions: {
@@ -12931,7 +12931,7 @@ export const ALL_ARTICLES: Article[] = [
     author: AUTHOR_ROBIUL_HASAN,
     publishedAt: "2026-10-11T15:45:00Z",
     readTimeMinutes: 5,
-    coverImage: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&w=1600&q=80",
+    coverImage: "/images/articles/art-221-four-bit-adamw-rounding-in-preconditioner-space-zi.jpg",
     coverImageAlt: "An open hard disk drive showing the platter and read head on a dark background",
     tags: ["optimizers", "AdamW", "quantization", "4-bit training", "memory", "arXiv"],
     threeQuestions: {

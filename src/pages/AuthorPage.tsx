@@ -282,7 +282,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               Empirical Ground Truth
             </h3>
             <p className="text-xs text-zinc-300 font-sans leading-relaxed">
-              NextVector refuses to reprint synthetic marketing benchmarks or vendor press kits. We evaluate models based on direct coordinate vision testing (OSWorld), multi-step web agent execution (WebArena), and verified software engineering datasets (SWE-bench).
+              NextVector does not reprint vendor benchmark claims as fact. Model data comes from public leaderboards (arena.ai, OSWorld-Verified, SWE-bench Verified) and official price pages, each linked with the date we checked it.
             </p>
           </div>
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { AIModel } from '../types';
 import { SEOHead } from '../components/common/SEOHead';
-import { ArrowLeft, Cpu, DollarSign, Scale, ExternalLink, HardDrive, ShieldAlert, CheckCircle, Calculator } from 'lucide-react';
-import { formatBenchmarkScore } from '../utils';
+import { ArrowLeft, Cpu, Scale, ExternalLink, HardDrive, ShieldAlert, CheckCircle, Calculator, BookOpen } from 'lucide-react';
+import { formatBenchmarkScore, formatPrice } from '../utils';
 
 interface ModelDetailPageProps {
   model: AIModel;
@@ -19,16 +19,16 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
   const [inputTokensMillions, setInputTokensMillions] = useState(10);
   const [outputTokensMillions, setOutputTokensMillions] = useState(2);
 
-  const estimatedCost = (
-    inputTokensMillions * model.pricing.inputPer1M +
-    outputTokensMillions * model.pricing.outputPer1M
-  ).toFixed(2);
+  const hasPrice = model.pricing.inputPer1M !== null && model.pricing.outputPer1M !== null;
+  const estimatedCost = hasPrice
+    ? (inputTokensMillions * (model.pricing.inputPer1M ?? 0) + outputTokensMillions * (model.pricing.outputPer1M ?? 0)).toFixed(2)
+    : null;
 
   return (
     <div className="max-w-5xl space-y-10 pb-20">
       <SEOHead
-        title={`${model.name} — Technical Specs & Benchmark Audit`}
-        description={`${model.developer}'s ${model.name}. Architecture: ${model.modelType}, Context: ${model.contextWindow}. Verified benchmarks and pricing evaluation.`}
+        title={`${model.name}: Specs, Price & Benchmarks`}
+        description={model.summary || `${model.developer}'s ${model.name}. Context: ${model.contextWindow}.`}
         canonicalPath={`/models/${model.id}`}
         tags={model.modalities}
       />
@@ -64,8 +64,8 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
           </span>
           {model.arenaRank && (
             <span className="px-3 py-1 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
-              <span>LMSYS Arena #{model.arenaRank}</span>
-              {model.arenaElo && <span>• {model.arenaElo} Elo</span>}
+              <span>Arena #{model.arenaRank}</span>
+              {model.arenaElo && <span>• {model.arenaElo}</span>}
             </span>
           )}
         </div>
@@ -91,14 +91,20 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
             <div className="text-base font-bold text-zinc-100 mt-1">{model.contextWindow}</div>
           </div>
           <div className="p-4 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
-            <div className="text-2xs text-zinc-400 uppercase tracking-wider">Pricing (Input)</div>
-            <div className="text-base font-bold text-emerald-400 mt-1">${model.pricing.inputPer1M} / 1M</div>
+            <div className="text-2xs text-zinc-400 uppercase tracking-wider">Input / 1M tokens</div>
+            <div className="text-base font-bold text-emerald-400 mt-1">{formatPrice(model.pricing.inputPer1M)}</div>
           </div>
           <div className="p-4 bg-zinc-900/60 rounded-lg border border-zinc-800/80">
-            <div className="text-2xs text-zinc-400 uppercase tracking-wider">Pricing (Output)</div>
-            <div className="text-base font-bold text-zinc-100 mt-1">${model.pricing.outputPer1M} / 1M</div>
+            <div className="text-2xs text-zinc-400 uppercase tracking-wider">Output / 1M tokens</div>
+            <div className="text-base font-bold text-zinc-100 mt-1">{formatPrice(model.pricing.outputPer1M)}</div>
           </div>
         </div>
+        <p className="mt-3 text-xs text-zinc-400">
+          {model.pricing.cachedInputPer1M != null && <>Cached input: {formatPrice(model.pricing.cachedInputPer1M)} / 1M. </>}
+          {model.pricing.note && <>{model.pricing.note}. </>}
+          {model.pricing.source && <>Price source: {model.pricing.source}. </>}
+          {model.releaseDateSource && <>Date: {model.releaseDateSource}.</>}
+        </p>
       </header>
 
       {/* Architecture & Hardware Requirements */}
@@ -106,10 +112,10 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
           <div className="eyebrow flex items-center gap-2">
             <Cpu className="w-4 h-4" />
-            <span>Architecture & Training Notes</span>
+            <span>Summary</span>
           </div>
           <p className="text-sm text-zinc-300 leading-relaxed font-sans">
-            {model.architectureNotes}
+            {model.summary || model.architectureNotes}
           </p>
           <div className="pt-2 text-xs text-zinc-400">
             Supported Modalities: <span className="text-zinc-200">{model.modalities.join(', ')}</span>
@@ -119,7 +125,7 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
           <div className="eyebrow flex items-center gap-2">
             <HardDrive className="w-4 h-4" />
-            <span>Hardware & Inference Footprint</span>
+            <span>How to Run It</span>
           </div>
           <p className="text-sm text-zinc-300 leading-relaxed font-sans">
             {model.hardwareRequirements}
@@ -127,26 +133,35 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
         </div>
       </section>
 
-      {/* Verified Benchmarks & Generational Deltas */}
+      {/* Benchmark results, each linked to its public leaderboard */}
       <section className="rounded-2xl bg-zinc-950 border border-zinc-800 p-6 space-y-4">
         <div className="eyebrow flex items-center gap-2">
           <Scale className="w-4 h-4" />
-          <span>Verified Benchmark Performance</span>
+          <span>Benchmark Results</span>
         </div>
+        {model.benchmarks.length === 0 && (
+          <p className="text-sm text-zinc-400">No public leaderboard result for this model in our sources yet.</p>
+        )}
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs border-collapse">
             <thead>
               <tr className="border-b border-zinc-800 text-zinc-400 uppercase">
-                <th className="py-2.5 px-3">Benchmark Name</th>
-                <th className="py-2.5 px-3">Verified Score</th>
-                <th className="py-2.5 px-3">Generational Delta</th>
+                <th className="py-2.5 px-3">Benchmark</th>
+                <th className="py-2.5 px-3">Score</th>
+                <th className="py-2.5 px-3">Run details</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-800/60">
               {model.benchmarks.map((bench, idx) => (
                 <tr key={idx} className="hover:bg-zinc-900/40">
-                  <td className="py-3 px-3 text-zinc-200 font-semibold">{bench.benchmarkName}</td>
+                  <td className="py-3 px-3 text-zinc-200 font-semibold">
+                    {bench.sourceUrl ? (
+                      <a href={bench.sourceUrl} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 inline-flex items-center gap-1">
+                        {bench.benchmarkName} <ExternalLink className="w-3 h-3" />
+                      </a>
+                    ) : bench.benchmarkName}
+                  </td>
                   <td className="py-3 px-3 text-emerald-400 font-bold text-sm">
                     {formatBenchmarkScore(bench)}
                   </td>
@@ -158,7 +173,8 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
         </div>
       </section>
 
-      {/* Key Improvements vs Known Limitations */}
+      {/* Key Improvements vs Known Limitations (only shown when sourced text exists) */}
+      {(model.keyImprovements.length > 0 || model.knownLimitations.length > 0) && (
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
           <div className="eyebrow flex items-center gap-2">
@@ -184,15 +200,17 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
           </ul>
         </div>
       </section>
+      )}
 
       {/* Interactive Token Economics Calculator */}
+      {hasPrice && (
       <section className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4">
         <div className="flex items-center justify-between">
           <div className="eyebrow flex items-center gap-2">
             <Calculator className="w-4 h-4" />
             <span>Interactive Operational Token Cost Estimator</span>
           </div>
-          <span className="text-xs text-zinc-400">Based on published API rates</span>
+          <span className="text-xs text-zinc-400">List price, no cache or batch discounts</span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
@@ -226,6 +244,27 @@ export const ModelDetailPage: React.FC<ModelDetailPageProps> = ({
           </div>
         </div>
       </section>
+      )}
+
+      {/* Sources */}
+      {model.sources && model.sources.length > 0 && (
+        <section className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
+          <div className="eyebrow flex items-center gap-2">
+            <BookOpen className="w-4 h-4" />
+            <span>Sources</span>
+          </div>
+          <ul className="space-y-1.5 text-sm">
+            {model.sources.map((src) => (
+              <li key={src.url}>
+                <a href={src.url} target="_blank" rel="noopener noreferrer" className="tap inline-flex items-center gap-1 text-emerald-400 hover:underline">
+                  {src.label} <ExternalLink className="w-3 h-3" />
+                </a>
+              </li>
+            ))}
+          </ul>
+          {model.dataAsOf && <p className="text-xs text-zinc-400">Data checked {model.dataAsOf}. Missing values mean no public source lists them.</p>}
+        </section>
+      )}
     </div>
   );
 };

@@ -24,11 +24,10 @@ When receiving this trigger, the agent **MUST** execute the complete 7-stage wor
 
 ### Core Objectives & Rulebook Alignment:
 1. **At least 5 new intelligence reports** published to `src/data/articlesData.ts` covering verifiable developments from the **last 48 hours**, rigorously structured using the **Three-Question Framework** ([Rulebook §2](./EDITORIAL_RULEBOOK.md#2-the-three-question-analytical-framework)).
-2. **Mandatory Zero-Miss AI Model & Benchmark Synchronization**: If ANY new frontier or open-weights model, checkpoint, canary drop, or API tier was released or updated in the last 72 hours, execute a mandatory 4-way synchronization:
+2. **Mandatory Zero-Miss AI Model & Benchmark Synchronization**: If ANY new frontier or open-weights model, checkpoint, canary drop, or API tier was released or updated in the last 72 hours:
    - Create a dedicated standalone news article in `src/data/articlesData.ts`.
-   - Register the model in `src/data/modelsData.ts` with verified pricing cross-checked against official lab docs, OpenRouter, and Fireworks APIs (synthetic formulas strictly prohibited).
-   - Update and re-rank all applicable benchmark leaderboards in `src/data/benchmarksData.ts` (LMSYS Chatbot Arena, SWE-bench, OSWorld, etc.) including recalculated Elo ranks and cost-per-run metrics.
-   - Update the Model Decision Matrix in `src/components/models/ModelDecisionGuide.tsx` (frontier/value/speed recommendations and $20/month ROI calculators).
+   - Add the model to `scripts/model_sources/curated_models.json` (exact arena.ai / OpenRouter / OSWorld / SWE-bench keys, official price override only from a lab price page). Never hand-edit `src/data/modelsData.ts`, `benchmarksData.ts` or `showdownsData.ts`: they are generated.
+   - Run `python scripts/fetch_model_sources.py` then `python scripts/build_model_data.py`. Leaderboards, comparisons and the decision guide rebuild from data.
 3. **100% Factuality & Zero Hallucination**: No fabricated specs, parameters, or DOIs ([Rulebook §3.1](./EDITORIAL_RULEBOOK.md#31-strict-factuality-zero-hallucination-policy)).
 4. **100% Unique, Non-Generic Images**: Exactly **0 duplicate images** across the entire publication. Tier-1 public domain, Tier-2 bespoke technical diagrams, or Tier-3 verified URLs ([Rulebook §4](./EDITORIAL_RULEBOOK.md#4-visual-assets--media-standards-strict-compliance)).
 5. **Sole Authorship by Robiul Hasan**: Every report authored by Founder & Editor-in-Chief Robiul Hasan ([Rulebook §6.1](./EDITORIAL_RULEBOOK.md#61-sole-authorship)).
@@ -59,7 +58,7 @@ Before touching any code or searching the web, anchor the operational timeline, 
    - The next sequential ID (e.g. `art-85`, `art-86`, etc.).
    - Set of existing slugs, titles, and cover images to prevent duplicates.
 3. **Check Tracked Models**:
-   Inspect `src/data/modelsData.ts` to see current model count (e.g. `ALL_135_MODELS`).
+   Inspect `scripts/model_sources/curated_models.json` (the model list) and the snapshot dates in `scripts/model_sources/snapshots/`. Gate 6 fails when a snapshot is over 30 days old.
 
 ---
 
@@ -141,29 +140,27 @@ flowchart TD
   - **What Could Happen Next**: Impact on open-weights ecosystem, self-hosting economics, and enterprise displacement over the next 6–18 months.
 - Generate a bespoke, high-resolution visual asset saved to `public/images/articles/` (Tier-2 technical diagram or Tier-1 render, 0 duplicate images).
 
-#### Step 2: Model Registry & Cross-Checked Pricing (`src/data/modelsData.ts`)
-- Append the model to `ALL_135_MODELS` (or current catalog array) adhering strictly to the `AIModel` schema.
-- **Accurate Pricing Verification**:
-  - **PROHIBITED**: Synthetic, linear, or stair-stepped pricing formulas (e.g. `8.00 - rank * 0.05`).
-  - **REQUIRED**: Cross-check prices against official lab developer pricing, OpenRouter API rates, and Fireworks AI serverless rates:
-    - Frontier reasoning flagships (e.g. Opus class): ~$15.00 in / $75.00 out.
-    - Balanced frontier (e.g. Sonnet/Astra): ~$3.00–$5.00 in / $15.00–$20.00 out.
-    - High-efficiency flash tiers: ~$0.10–$0.15 in / $0.40–$0.60 out.
-    - Cached token discount ratios (typically 75%–90% lower than base input).
+#### Step 2: Register the Model (`scripts/model_sources/curated_models.json`)
+- Add one entry: `id`, `name`, `dev`, and the exact source keys that exist today:
+  - `arena`: the `modelDisplayName` on https://arena.ai/leaderboard/text (pick the setting you want shown, e.g. `-high`).
+  - `or`: the OpenRouter model id (https://openrouter.ai/api/v1/models).
+  - `osw` / `swe`: only if the model has a "General model" row on OSWorld-Verified or a mini-SWE-agent row on swebench.com.
+  - `price`: only when the lab publishes an official price page (`src`: `anthropic` or `google`, or add the page to `PRICE_SOURCES` in `build_model_data.py`). Otherwise the OpenRouter price is used.
+  - `params`: only with a source (`paramsSrc` URL, or `name` when the size is in the official model name).
+- A model needs at least one source (Arena, OpenRouter or official price). Unsourced models are rejected by the build.
+- **PROHIBITED**: typing scores, prices, dates or parameter counts by hand without a source; formula-based values of any kind.
 
-#### Step 3: Leaderboard Re-ranking & Cost Sync (`src/data/benchmarksData.ts`)
-- **LMSYS Chatbot Arena (`ARENA_LEADERBOARD_ENTRIES`)**:
-  - Insert or update the model entry with empirical Arena Elo, 95% confidence intervals, win rates, and verified `costPerRun` (`0.75 * inputPrice + 0.25 * outputPrice`).
-  - Automatically recalculate and resort all `rank` values across the entire table.
-- **Specialized Leaderboards**:
-  - Update `SWE_BENCH_LEADERBOARD_ENTRIES`, `OSWorld`, `WebArena`, `Cyber-Eval`, and `Price-to-Performance Pareto` tables as appropriate, recalculating ranks and Pareto frontiers.
+#### Step 3: Refresh Sources and Rebuild
+```bash
+python scripts/fetch_model_sources.py
+python scripts/build_model_data.py
+```
+- The build writes `src/data/modelsData.ts`, `src/data/benchmarksData.ts`, `src/data/showdownsData.ts`, `scripts/model_sources/build/site_data.json`, and model-page redirects in `vercel.json`.
+- Boards: Arena (real arena.ai ranks), OSWorld-Verified (General model runs), SWE-bench Verified (mini-SWE-agent bash-only runs), and the Price vs Arena Pareto frontier (blended price = (3 × input + output) / 4).
+- The build fails loudly if a curated key is not found in the snapshots. Fix the key; do not guess.
 
-#### Step 4: Decision Matrix Recalibration (`src/components/models/ModelDecisionGuide.tsx`)
-- Review and update the **Decision Matrix Recommendations** (`USE_CASE_GUIDES`):
-  - Check whether the new model displaces existing `frontierPick`, `valuePick`, or `speedPick` in any category (Autonomous Coding, Deep STEM Reasoning, High-Throughput Agents, Multimodal Vision, or Edge / On-Premise).
-- Recalibrate the **$20/Month Budget Optimizer**:
-  - Update token volume calculations (e.g. calculating exactly how many millions of blended tokens $20 purchases at the new model's rate).
-  - Update developer IDE plan comparisons and pay-as-you-go router deposit projections.
+#### Step 4: Comparisons and Decision Guide
+- Head-to-head pages (`showdowns` in `curated_models.json`) and decision-guide picks are computed from the data. Change a pair by editing the JSON; never write comparison claims by hand.
 
 ---
 
@@ -272,9 +269,7 @@ Execute the mandatory **8-Step Pre-Publication Release Gate** ([Rulebook §7](./
 5. **Step 5: Live Signal Ticker Integrity Check**: Confirm that `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` contains 5 fresh signals matching today's stories with valid `articleSlug` links.
 6. **Step 6: AI Model, Benchmark & Decision Matrix Synchronization Audit**: Confirm that whenever a new AI model, checkpoint, or canary drop is released or analyzed:
    - Dedicated standalone report published in `src/data/articlesData.ts`.
-   - Registered in `src/data/modelsData.ts` with cross-checked real pricing (lab docs + OpenRouter/Fireworks).
-   - LMSYS Chatbot Arena and specialized benchmark leaderboards in `src/data/benchmarksData.ts` are updated and ranks recalculated.
-   - Decision Matrix in `src/components/models/ModelDecisionGuide.tsx` is updated with fresh picks and $20/mo ROI math.
+   - Added to `scripts/model_sources/curated_models.json` with real source keys, snapshots refreshed, and `python scripts/build_model_data.py` run (Gate 6 checks the build).
 7. **Step 7: Automated Release Gate & Build Verification**:
    Compress any new cover images, run the production build (it regenerates `public/sitemap.xml`, `public/rss.xml` and `public/llms-full.txt` from the data files), then the verifier:
    ```bash

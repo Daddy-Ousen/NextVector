@@ -17,26 +17,15 @@
 
 ## Key Platform Features
 
-### 1. The 135 Frontier AI Models Registry & Arena Leaderboard
-* **LMSYS Chatbot Arena Integration:** Full registry of 135 frontier models ranked from **Rank #1 GPT-6 Astra** (1,420 Elo) down to **Rank #135 MiniMax M2** (1,178 Elo).
-* **24 Global AI Research Labs:** Comprehensive coverage spanning Western labs (OpenAI, Anthropic, Google DeepMind, Meta AI, xAI, Microsoft, AWS), Eastern powerhouses (DeepSeek, Alibaba Cloud Qwen, Moonshot AI Kimi, Zhipu AI GLM, ByteDance Seed, MiniMax, Tencent Hunyuan, Baidu, StepFun, Xiaomi), and specialized frontier innovators (Sakana AI, Poolside, Thinking Machines Lab, NVIDIA, Upstage).
-* **Dual View Modes:**
-  * **Arena Table View:** High-density, sortable table displaying rank, developer, Elo, context window, parameter tier, and real-time API input/output pricing.
-  * **Spec Cards View:** High-level card grid with verified `#<rank> • <elo> Elo` badges, hardware requirements, and pagination.
-* **Interactive Filtering:** Instant search, lab filters (24 labs), classification filters (`Reasoning`, `Multimodal Foundation`, `Code & Agent`, `Open Weights`, `Compact / Edge`), and licensing filters.
+### 1. Sourced AI Model Registry & Arena Leaderboard
+* Model list: `scripts/model_sources/curated_models.json`. Numbers come from dated snapshots of arena.ai, OpenRouter, OSWorld-Verified, swebench.com and official lab price pages (`scripts/fetch_model_sources.py`), built by `scripts/build_model_data.py`. No hand-typed or formula values.
+* Table and card views, search, lab / type / licence filters, blended-price sort.
 
-### 2. Side-by-Side Model Comparison Matrix
-* Interactive comparison tray supporting multi-model selection.
-* Side-by-side spec sheet comparing architecture, LMSYS Arena standing, context windows, parameter scales, token pricing, and verified benchmark scores.
+### 2. Side-by-Side Model Comparison
+* Comparison tray and head-to-head pages. All comparison text is generated from the data (Arena margin-of-error check, blended price, context, licence).
 
-### 3. Empirical Benchmark Radar & Evaluation Watchdog
-* Interactive benchmark visualizer distinguishing genuine capability shifts from dataset contamination and test-time scaffolding saturation.
-* Leaderboards for:
-  * **LMSYS Chatbot Arena Global Leaderboard (September 2026)** (135 models, Elo rating scale, in-chart search, top 15 toggle)
-  * **OSWorld** (Multimodal computer and desktop operating system tasks)
-  * **WebArena** (Autonomous browser navigation and multi-step web workflows)
-  * **SWE-bench Verified** (Real-world software engineering issue resolution)
-  * **Cyber-Eval** (Autonomous vulnerability discovery and automated patching)
+### 3. Benchmark Leaderboards
+* Arena text (real arena.ai ranks), OSWorld-Verified (General model runs), SWE-bench Verified (mini-SWE-agent bash-only runs), and a Price vs Arena score Pareto frontier (NextVector calculation). Each board shows its source and date.
 
 ### 4. Verified Real-World Breaking Intelligence (Last 30 Days)
 * Curated news stories and deep dives with Signal Ratings (0–100):
@@ -109,7 +98,8 @@ npm run preview
 NextVector/
 ├── public/                 # Static assets and icons
 ├── scripts/
-│   └── generateModelsData.cjs  # Generator mapping 135 models to 24 labs & Elo
+│   ├── fetch_model_sources.py  # Saves dated source snapshots
+│   ├── build_model_data.py     # Builds model/benchmark/showdown data from snapshots
 ├── src/
 │   ├── components/
 │   │   ├── benchmarks/     # Benchmark visualizers & radar

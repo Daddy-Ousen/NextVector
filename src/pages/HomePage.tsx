@@ -134,7 +134,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           height: 512,
         },
         image: 'https://nextvector.rhasan.online/brand/nextvector-brand-system.jpg',
-        description: 'Independent technology intelligence platform filtering noise to surface verified foundation models, LMSYS Arena benchmarks, and frontier AI breakthroughs.',
+        description: 'Independent technology news covering AI models, public benchmark leaderboards (arena.ai, OSWorld, SWE-bench) and frontier AI research.',
         publishingPrinciples: 'https://nextvector.rhasan.online/about',
         contactPoint: [
           {
@@ -151,7 +151,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           'Artificial Intelligence',
           'Large Language Models',
           'Foundation Models',
-          'LMSYS Chatbot Arena',
+          'Arena Leaderboard',
           'SWE-bench Verified',
           'Semiconductor Compute Fabrics',
           'Autonomous AI Agents',
@@ -181,7 +181,7 @@ export const HomePage: React.FC<HomePageProps> = ({
     <div className="space-y-12 pb-12">
       <SEOHead
         title="NextVector — AI News, Frontier Model Benchmarks & Intelligence"
-        description="Real-time AI news, verified frontier model benchmarks, LMSYS Chatbot Arena rankings, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and high-signal research intelligence. Less noise. More signal."
+        description="Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and high-signal research. Less noise. More signal."
         canonicalPath="/"
         schemaData={homeSchema}
         tags={[
@@ -332,7 +332,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           eyebrow="Model Specs"
           icon={<Cpu className="w-4 h-4" />}
           title="AI Models at a Glance"
-          description="Parameters, context windows, API economics, licensing, and benchmark deltas"
+          description="Top three by arena.ai text score, with price, context window and licence"
           actions={<>
             {selectedModelCompareIds.length > 0 && (
               <button
@@ -354,7 +354,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {models.slice(0, 3).map((model) => (
+          {[...models].filter((m) => m.arenaRank).sort((a, b) => (a.arenaRank ?? 0) - (b.arenaRank ?? 0)).slice(0, 3).map((model) => (
             <ModelCard
               key={model.id}
               model={model}

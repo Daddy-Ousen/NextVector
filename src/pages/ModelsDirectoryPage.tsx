@@ -5,6 +5,8 @@ import { ModelDecisionGuide } from '../components/models/ModelDecisionGuide';
 import { SEOHead } from '../components/common/SEOHead';
 import { Cpu, Search, Layers, Scale, CheckSquare, ArrowRight, LayoutGrid, Table, ArrowUpDown, ArrowUpRight, Check, Square, Compass, Sparkles } from 'lucide-react';
 import { MODEL_COUNT } from '../data/modelCount';
+import { MODEL_DATA_AS_OF, ARENA_TOTAL_ENTRIES } from '../data/modelsData';
+import { blendedPrice, formatPricePair } from '../utils';
 import { PageHeader } from '../components/common/PageHeader';
 
 interface ModelsDirectoryPageProps {
@@ -71,8 +73,8 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
         }
         if (selectedType !== 'all' && m.modelType !== selectedType) return false;
         if (selectedDev !== 'all' && m.developer !== selectedDev) return false;
-        if (selectedLicense === 'open' && !m.openSourceStatus.includes('Open')) return false;
-        if (selectedLicense === 'closed' && m.openSourceStatus.includes('Open')) return false;
+        if (selectedLicense === 'open' && m.openSourceStatus !== 'Open Weights') return false;
+        if (selectedLicense === 'closed' && m.openSourceStatus === 'Open Weights') return false;
         return true;
       })
       .sort((a, b) => {
@@ -80,7 +82,8 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
         if (sortBy === 'rank-desc') return (b.arenaRank || 0) - (a.arenaRank || 0);
         if (sortBy === 'elo-desc') return (b.arenaElo || 0) - (a.arenaElo || 0);
         if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
-        if (sortBy === 'price-asc') return a.pricing.inputPer1M - b.pricing.inputPer1M;
+        // Blended 3:1 input:output price; models without a public price go last
+        if (sortBy === 'price-asc') return (blendedPrice(a.pricing) ?? Infinity) - (blendedPrice(b.pricing) ?? Infinity);
         return 0;
       });
   }, [models, searchQuery, selectedType, selectedDev, selectedLicense, sortBy]);
@@ -88,16 +91,16 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
   return (
     <div className="space-y-5 md:space-y-8 pb-16">
       <SEOHead
-        title={`AI Model Directory & LMSYS Arena Leaderboard (${MODEL_COUNT} Models) | NextVector`}
-        description={`Standardized technical specifications, verified LMSYS Arena Elo ratings, hardware inference metrics, and benchmark evaluations across ${MODEL_COUNT} frontier AI models.`}
+        title={`AI Model Directory & Arena Leaderboard (${MODEL_COUNT} Models) | NextVector`}
+        description={`Prices, context size, licence and arena.ai scores for ${MODEL_COUNT} AI models, each linked to its public source. Data checked ${MODEL_DATA_AS_OF}.`}
         canonicalPath="/models"
       />
       {/* Header */}
       <PageHeader
-        eyebrow="LMSYS Arena Leaderboard"
+        eyebrow="Arena Leaderboard"
         icon={<Cpu className="w-4 h-4" />}
         title="AI Model Directory & Arena Leaderboard"
-        description={<>Specs, Arena Elo ratings, context size, and prices for <strong>{models.length} AI models</strong>.</>}
+        description={<>Prices, context size, licence and arena.ai scores for <strong>{models.length} AI models</strong>. Every number links to a public source. Data checked {MODEL_DATA_AS_OF}.</>}
       />
 
       {/* View Switcher: Leaderboard vs Decision & Tradeoff Guide */}
@@ -118,7 +121,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
           }`}
         >
           <Table className="w-4 h-4 shrink-0" />
-          <span className="hidden sm:inline">LMSYS Arena Leaderboard ({MODEL_COUNT} Models)</span>
+          <span className="hidden sm:inline">Arena Leaderboard ({MODEL_COUNT} Models)</span>
           <span className="sm:hidden">Leaderboard</span>
         </button>
 
@@ -202,9 +205,9 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                 className="bg-transparent text-zinc-200 outline-none cursor-pointer"
               >
                 <option value="rank-asc" className="bg-zinc-900">Sort: Arena rank</option>
-                <option value="elo-desc" className="bg-zinc-900">Sort: Elo (high → low)</option>
+                <option value="elo-desc" className="bg-zinc-900">Sort: Arena score (high → low)</option>
                 <option value="name-asc" className="bg-zinc-900">Sort: Name (A → Z)</option>
-                <option value="price-asc" className="bg-zinc-900">Sort: Price (low → high)</option>
+                <option value="price-asc" className="bg-zinc-900">Sort: Blended price (low → high)</option>
               </select>
             </div>
           </div>
@@ -281,14 +284,14 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="bg-zinc-900/80 border-b border-zinc-800 text-zinc-400 uppercase tracking-wider whitespace-nowrap">
-                  <th className="py-3.5 px-3 w-16 text-center">Rank</th>
+                  <th className="py-3.5 px-3 w-16 text-center" title={`Rank among all ${ARENA_TOTAL_ENTRIES} arena.ai entries`}>Arena #</th>
                   <th className="py-3.5 px-3">Model Name</th>
                   <th className="py-3.5 px-3">Developer</th>
-                  <th className="py-3.5 px-3 text-right">Arena Elo</th>
-                  <th className="py-3.5 px-3">Architecture</th>
+                  <th className="py-3.5 px-3 text-right">Arena score</th>
+                  <th className="py-3.5 px-3">Type</th>
                   <th className="py-3.5 px-3">Context</th>
                   <th className="py-3.5 px-3">Parameters</th>
-                  <th className="py-3.5 px-3">Pricing (In/Out)</th>
+                  <th className="py-3.5 px-3">$ / 1M (In / Out)</th>
                   <th className="py-3.5 px-3 text-center">Compare</th>
                 </tr>
               </thead>
@@ -310,7 +313,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                             ? 'text-zinc-400'
                             : 'bg-zinc-800/80 text-zinc-400 border border-zinc-700/60 text-2xs'
                         }`}>
-                          {model.arenaRank ? `#${model.arenaRank}` : 'Specialized'}
+                          {model.arenaRank ? `#${model.arenaRank}` : '—'}
                         </span>
                       </td>
 
@@ -334,9 +337,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                         {model.arenaElo ? (
                           model.arenaElo
                         ) : (
-                          <span className="text-2xs font-normal text-zinc-400">
-                            {model.modelType === 'Multimodal Foundation' ? 'Visual / 2K DiT' : 'Agent Runtime'}
-                          </span>
+                          <span className="text-2xs font-normal text-zinc-400">Not on Arena</span>
                         )}
                       </td>
 
@@ -355,7 +356,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                       </td>
 
                       <td className="py-3 px-3 text-zinc-300">
-                        ${model.pricing.inputPer1M} / ${model.pricing.outputPer1M}
+                        {formatPricePair(model.pricing)}
                       </td>
 
                       <td className="py-3 px-3 text-center">

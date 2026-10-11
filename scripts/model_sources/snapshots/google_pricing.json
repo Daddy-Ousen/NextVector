@@ -1,0 +1,203 @@
+{
+ "source": "https://ai.google.dev/gemini-api/docs/pricing",
+ "fetchedAt": "2026-10-11T15:09:49Z",
+ "count": 28,
+ "data": [
+  {
+   "title": "Gemini 3.8 Flash",
+   "ids": "gemini-3.8-flash",
+   "input": "$0.75 through December 31, 2026. $1.50 starting January 1, 2027.",
+   "output": "$3.75 through December 31, 2026. $7.50 starting January 1, 2027.",
+   "cache": "$0.075 through December 31, 2026. $0.15 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027."
+  },
+  {
+   "title": "Gemini 3.6 Flash",
+   "ids": "gemini-3.6-flash",
+   "input": "$0.75 through December 31, 2026. $1.50 starting January 1, 2027.",
+   "output": "$3.75 through December 31, 2026. $7.50 starting January 1, 2027.",
+   "cache": "$0.075 through December 31, 2026. $0.15 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027."
+  },
+  {
+   "title": "Gemini 3.8 Live, Gemini 3.8 Live Extended Thinking, and Gemini 3.1 Flash Live Preview",
+   "ids": "gemini-3.8-live , gemini-3.8-live-extended-thinking , and gemini-3.1-flash-live-preview",
+   "input": "$0.75 (text) $3.00 or $0.005/min (audio) $1.00 or $0.002/min (image/video)",
+   "output": "$4.50 (text) $12.00 or $0.018/min (audio)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.5 Live Translate",
+   "ids": "gemini-3.5-live-translate-preview",
+   "input": "$3.50 or $0.0053/min * (audio)",
+   "output": "$21.00 or $0.0315/min * (audio)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.5 Transcribe Live",
+   "ids": "gemini-3.5-transcribe-live",
+   "input": "$3.50 or $0.005/min * (audio)",
+   "output": "$21.00 or $0.004/min * (text)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.5 Transcribe",
+   "ids": "gemini-3.5-transcribe",
+   "input": "$2.00 or $0.003/min * (audio)",
+   "output": "$12.00 or $0.002/min * (text)",
+   "cache": "$0.03 $1.00 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 3.5 Flash-Lite",
+   "ids": "gemini-3.5-flash-lite",
+   "input": "$0.30 (text / image / video / audio)",
+   "output": "$2.50",
+   "cache": "$0.03 $1.00 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 3.1 Flash-Lite",
+   "ids": "gemini-3.1-flash-lite",
+   "input": "$0.25 (text / image / video) $0.50 (audio)",
+   "output": "$1.50",
+   "cache": "$0.025 (text / image / video) $0.05 (audio) $1.00 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini Omni Flash",
+   "ids": "gemini-omni-1.1-flash",
+   "input": "$1.50 (text / image / video / audio)",
+   "output": "$9.00 (text) $17.50 (video) *",
+   "cache": null
+  },
+  {
+   "title": "Gemini Omni Flash Preview",
+   "ids": "gemini-omni-flash-preview",
+   "input": "$1.50 (text / image / video / audio)",
+   "output": "$9.00 (text) $17.50 (video) *",
+   "cache": "$0.20, prompts $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 3.1 Pro Preview",
+   "ids": "gemini-3.1-pro-preview and gemini-3.1-pro-preview-customtools",
+   "input": "$2.00, prompts $4.00, prompts > 200k tokens",
+   "output": "$12.00, prompts $18.00, prompts > 200k",
+   "cache": "$0.20, prompts $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini Nano Banana 2.1 🍌",
+   "ids": "gemini-nano-banana-2.1",
+   "input": "$1.50 (text/image/video)",
+   "output": "$7.50 (text and thinking)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.1 Flash Image (Nano Banana 2) 🍌",
+   "ids": "gemini-3.1-flash-image",
+   "input": "$0.50 (text/image)",
+   "output": "$3 (text and thinking)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite) 🍌",
+   "ids": "gemini-3.1-flash-lite-image",
+   "input": "$0.25 (text/image/video)",
+   "output": "$1.50 (text and thinking)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.8 Flash TTS",
+   "ids": "gemini-3.8-flash-tts",
+   "input": "$0.50 (text) through December 31, 2026. $1.00 (text) starting January 1, 2027.",
+   "output": "$9.00 (audio) through December 31, 2026. $18.00 (audio) starting January 1, 2027. Equivalent to $0.00225 per 10s audio * through December 31, 2026. Equivalent to $0.0045 per 10s audio * starting January 1, 2027.",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.8 Flash-Lite TTS",
+   "ids": "gemini-3.8-flash-lite-tts",
+   "input": "$0.50 (text) through December 31, 2026. $1.00 (text) starting January 1, 2027.",
+   "output": "$6.00 (audio) through December 31, 2026. $12.00 (audio) starting January 1, 2027. Equivalent to $0.0015 per 10s audio * through December 31, 2026. Equivalent to $0.003 per 10s audio * starting January 1, 2027.",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3.1 Flash TTS Preview",
+   "ids": "gemini-3.1-flash-tts-preview",
+   "input": "$1.00 (text)",
+   "output": "$20.00 (audio)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 3 Flash Preview",
+   "ids": "gemini-3-flash-preview",
+   "input": "$0.50 (text / image / video) $1.00 (audio)",
+   "output": "$3.00",
+   "cache": "$0.05 (text / image / video) $0.10 (audio) $1.00 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 3 Pro Image (Nano Banana Pro) 🍌",
+   "ids": "gemini-3-pro-image",
+   "input": "$2.00 (text/image),",
+   "output": "$12.00 (text and thinking)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 2.5 Pro",
+   "ids": "gemini-2.5-pro",
+   "input": "$1.25, prompts $2.50, prompts > 200k tokens",
+   "output": "$10.00, prompts $15.00, prompts > 200k",
+   "cache": "$0.125, prompts $0.25, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 2.5 Flash",
+   "ids": "gemini-2.5-flash",
+   "input": "$0.30 (text / image / video) $1.00 (audio)",
+   "output": "$2.50",
+   "cache": "$0.03 (text / image / video) $0.1 (audio) $1.00 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 2.5 Flash-Lite",
+   "ids": "gemini-2.5-flash-lite",
+   "input": "$0.10 (text / image / video) $0.30 (audio)",
+   "output": "$0.40",
+   "cache": "$0.01 (text / image / video) $0.03 (audio) $1.00 / 1,000,000 tokens per hour (storage price)"
+  },
+  {
+   "title": "Gemini 2.5 Flash Native Audio (Live API)",
+   "ids": "gemini-2.5-flash-native-audio-preview-12-2025",
+   "input": "$0.50 (text) $3.00 (audio / video)",
+   "output": "$2.00 (text) $12.00 (audio)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 2.5 Flash Image (Nano Banana) 🍌",
+   "ids": "gemini-2.5-flash-image",
+   "input": "$0.30 (text / image)",
+   "output": "$0.039 per image*",
+   "cache": null
+  },
+  {
+   "title": "Gemini 2.5 Flash Preview TTS",
+   "ids": "gemini-2.5-flash-preview-tts",
+   "input": "$0.50 (text)",
+   "output": "$10.00 (audio)",
+   "cache": null
+  },
+  {
+   "title": "Gemini 2.5 Pro Preview TTS",
+   "ids": "gemini-2.5-pro-preview-tts",
+   "input": "$1.00 (text)",
+   "output": "$20.00 (audio)",
+   "cache": null
+  },
+  {
+   "title": "Gemini Robotics ER 2 Preview",
+   "ids": "gemini-robotics-er-2-preview",
+   "input": "$1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027.",
+   "output": "$5.00 through December 31, 2026. $10.00 starting January 1, 2027.",
+   "cache": "$0.10 through December 31, 2026. $0.20 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027."
+  },
+  {
+   "title": "Gemini Robotics ER 2 Streaming Preview",
+   "ids": "gemini-robotics-er-2-streaming-preview",
+   "input": "$1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027.",
+   "output": "$5.00 through December 31, 2026. $10.00 starting January 1, 2027.",
+   "cache": "Not available"
+  }
+ ]
+}

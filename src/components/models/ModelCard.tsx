@@ -1,7 +1,7 @@
 import React from 'react';
 import { AIModel } from '../../types';
 import { Cpu, Scale, ArrowUpRight, DollarSign, Layers, CheckSquare, Square } from 'lucide-react';
-import { formatBenchmarkScore } from '../../utils';
+import { formatBenchmarkScore, formatPricePair } from '../../utils';
 
 interface ModelCardProps {
   model: AIModel;
@@ -24,11 +24,11 @@ export const ModelCard: React.FC<ModelCardProps> = ({
           <div className="flex items-center gap-1.5 flex-wrap">
             {model.arenaRank ? (
               <span className="text-2xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-                #{model.arenaRank} • {model.arenaElo} Elo
+                Arena #{model.arenaRank} • {model.arenaElo}
               </span>
             ) : (
               <span className="text-2xs font-bold px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700/60">
-                Specialized Domain
+                Not on Arena
               </span>
             )}
             <span className="text-2xs px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700/60">
@@ -99,7 +99,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
           <div>
             <div className="text-2xs uppercase tracking-wider text-zinc-400">Pricing (In/Out)</div>
             <div className="text-zinc-200 font-semibold">
-              ${model.pricing.inputPer1M} / ${model.pricing.outputPer1M}
+              {formatPricePair(model.pricing)}
             </div>
           </div>
           <div>
@@ -110,24 +110,28 @@ export const ModelCard: React.FC<ModelCardProps> = ({
           </div>
         </div>
 
-        {/* Key Benchmark Badges */}
-        <div className="space-y-1.5 mb-4">
-          <div className="text-2xs text-zinc-400 flex items-center gap-1">
-            <Scale className="w-3 h-3 text-emerald-400" />
-            <span>Benchmark Highlights:</span>
+        {/* Task benchmarks (Arena score is in the badge above) */}
+        {model.benchmarks.some((b) => b.benchmarkName !== 'Arena Text Elo') && (
+          <div className="space-y-1.5 mb-4">
+            <div className="text-2xs text-zinc-400 flex items-center gap-1">
+              <Scale className="w-3 h-3 text-emerald-400" />
+              <span>Benchmarks:</span>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {model.benchmarks
+                .filter((b) => b.benchmarkName !== 'Arena Text Elo')
+                .map((b) => (
+                  <div
+                    key={b.benchmarkName}
+                    className="px-2 py-0.5 rounded-lg bg-zinc-800/80 border border-zinc-700/50 text-2xs text-zinc-300"
+                  >
+                    <span className="text-zinc-400">{b.benchmarkName}: </span>
+                    <span className="text-emerald-400 font-bold">{formatBenchmarkScore(b)}</span>
+                  </div>
+                ))}
+            </div>
           </div>
-          <div className="flex flex-wrap gap-1.5">
-            {model.benchmarks.slice(0, 2).map((b, i) => (
-              <div
-                key={i}
-                className="px-2 py-0.5 rounded-lg bg-zinc-800/80 border border-zinc-700/50 text-2xs text-zinc-300"
-              >
-                <span className="text-zinc-400">{b.benchmarkName.split(' ')[0]}: </span>
-                <span className="text-emerald-400 font-bold">{formatBenchmarkScore(b)}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        )}
       </div>
 
       {/* Action footer */}

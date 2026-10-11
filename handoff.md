@@ -1,6 +1,16 @@
-# Handoff — 2026-10-11 (Pass 6 design system done, pushed)
+# Handoff — 2026-10-11 (Model data rebuilt from real sources, uncommitted)
 
-## Latest: Pass 6 — design system (user picked option C after the visual audit)
+## Latest: option A done (see progress.md "Model data rebuild")
+- Model data is now GENERATED. Never hand-edit `src/data/modelsData.ts`, `benchmarksData.ts`, `showdownsData.ts`.
+- Refresh: `python scripts/fetch_model_sources.py` then `python scripts/build_model_data.py`, then `npm run build`, `npm run verify`.
+- Add/change models or showdown pairs in `scripts/model_sources/curated_models.json`. Build fails if a source key is missing.
+- Anthropic/Google prices are typed from official pages (`price` with `src`); others come from OpenRouter.
+- All checks passed. Nothing committed yet. Next: get user OK to commit/push.
+- Open: articles/timeline still contain old fake model numbers (separate editorial job).
+- Gotcha: shell heredocs break on mixed quotes; write edit scripts to scratchpad files (helper `edit_lib.py` pattern: counted exact replacements, keep CRLF).
+- Gotcha: substring type rules bit us ("gemini" contains "mini"); build uses whole-word matching.
+
+## Previous: Pass 6 — design system (user picked option C after the visual audit)
 - All 14 audit items (V1–V14) fixed and verified. Details: `progress.md` → "Pass 6 — Design system".
 - Rules for all new UI code: `DESIGN_SYSTEM.md`. Read it before touching any component.
 - Shared pieces: utilities in `src/index.css` (`container-page`, `eyebrow`, `eyebrow-warn`, `heading-page`, `heading-section`, `scrollbar-none`, `fade-right`); components `src/components/common/PageHeader.tsx` and `SectionHeader.tsx`; `formatBenchmarkScore()` and new `getSignalColor()` in `src/utils/index.ts`.

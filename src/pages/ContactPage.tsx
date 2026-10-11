@@ -140,7 +140,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   benchmarks@nextvector.rhasan.online
                 </a>
                 <span className="text-zinc-400 text-2xs mt-1 block">
-                  LMSYS Arena updates, SWE-bench telemetry, OSWorld submissions.
+                  Corrections to model, price or benchmark data (please include the source link).
                 </span>
               </div>
 

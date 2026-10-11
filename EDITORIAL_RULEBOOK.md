@@ -276,8 +276,8 @@ NextVector enforces 7 automated verification gates before any batch is cleared f
 5. **Gate 5: Temporal Sanity & 48-Hour Breaking News Window**
    - Newest published articles have valid ISO-8601 timestamps matching the active operational window.
 6. **Gate 6: Model Registry & Benchmark Sync**
-   - All 6 benchmark leaderboards (Arena, OSWorld, WebArena, SWE-bench, Cyber-Eval, Price-Performance) feature strictly sequential 1..N ranks with 0 rank jumps.
-   - Complete parity between leaderboard scores and `ALL_135_MODELS` attributes (`arenaRank`, `arenaElo`).
+   - Model data is the generated build of `scripts/build_model_data.py` (no hand edits), with source snapshots under 30 days old.
+   - Arena board uses real arena.ai ranks (strictly increasing); OSWorld, SWE-bench and Pareto boards rank 1..N; every model has sources and agrees with the Arena board.
 7. **Gate 7: SEO, GEO & AI Overview Readiness Audit**
    - Minimum 5 targeted keywords/tags per article (`tags: string[]`).
    - Complete Three-Question Framework (`whatHappened`, `whyItMatters`, `whatsNext`), with each answer $>80$ characters for high-density AI Overview and Schema.org `FAQPage` synthesis.

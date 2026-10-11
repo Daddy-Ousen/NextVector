@@ -1,52 +1,65 @@
 import React from 'react';
 import { ModelDecisionGuide } from '../components/models/ModelDecisionGuide';
 import { SEOHead } from '../components/common/SEOHead';
-import { Sparkles, Compass, ShieldCheck, ArrowRight, DollarSign } from 'lucide-react';
+import { Sparkles, ShieldCheck, ArrowRight, DollarSign } from 'lucide-react';
 import { PageHeader } from '../components/common/PageHeader';
+import { GUIDE_PICKS } from '../data/showdownsData';
+import { MODEL_DATA_AS_OF } from '../data/modelsData';
 
 interface SubscriptionsPageProps {
   onSelectModel: (modelId: string) => void;
   onNavigate: (path: string) => void;
 }
 
+const pick = (id: string) => GUIDE_PICKS.find((p) => p.id === id);
+
 export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
   onSelectModel,
   onNavigate,
 }) => {
+  const top = pick('top-arena');
+  const value = pick('value');
+  const open = pick('open');
+
+  // Answers use only generated data; plan prices are left to the vendors' own pages
   const subscriptionFaqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is the best AI subscription to get in 2026?',
+        name: 'Which AI model scores highest right now?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'For individual developers and knowledge workers, ChatGPT Plus ($20/mo) and Claude Pro ($20/mo) remain the top two choices. Claude Pro is superior for complex multi-file coding, formal logic, and prose writing due to Claude Opus 5.5 and Sonnet 5 with 1M context. ChatGPT Plus is superior for autonomous operating system navigation, web browsing integration, and multimodal voice interactions with GPT-6 Astra (limited caps) and GPT-5.6 Sol.',
+          text: top
+            ? `Among generally released models we track, ${top.modelName} (${top.developer}) has the highest arena.ai text score: ${top.metric}. List price: ${top.price}. Data checked ${MODEL_DATA_AS_OF}.`
+            : 'See the Arena leaderboard on our benchmarks page.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Is Claude Pro or ChatGPT Plus better for coding?',
+        name: 'What is the best value AI model for API use?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Claude Pro is widely preferred by software engineers for whole-file refactoring and architectural cleanliness, achieving 73.4% on SWE-bench Verified with native Lean 4 formal verification. ChatGPT Plus offers GPT-6 Astra for terminal navigation, but has stricter hourly rate limits on peak reasoning passes.',
+          text: value
+            ? `${value.modelName} has the highest Arena score among models under $1 per 1M tokens (blended 3 input : 1 output): ${value.metric}.`
+            : 'See the price vs Arena score frontier on our benchmarks page.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Is the $200/month ChatGPT Pro subscription worth it?',
+        name: 'Which open-weights model scores highest?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ChatGPT Pro ($200/month) is only justified for full-time quantitative researchers and autonomous agent operators who require unmetered, max-compute reasoning on GPT-6 Astra Operator with unrestricted desktop navigation. For most developers, spending $20 on Claude Pro plus $50–$80 on developer API credits (DeepSeek, Gemini, Anthropic) delivers far greater operational leverage.',
+          text: open ? `${open.modelName} (${open.developer}): ${open.metric}.` : 'See the model directory, filtered to open weights.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is the best AI setup for a $100/month budget?',
+        name: 'Which subscription plan should I buy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The optimal $100/month "Power User Stack" is: (1) Claude Pro ($20/mo) for primary coding and reasoning, (2) Cursor Pro or GitHub Copilot ($20/mo) for IDE inline autocompletion, and (3) $60/month in OpenRouter / DeepSeek API credits for ultra-low-cost high-volume batch processing.',
+          text: 'We do not track consumer plans, because what each plan includes changes often. First pick the model that fits your work using the guide on this page, then check which plan includes it on the vendor\'s pricing page.',
         },
       },
     ],
@@ -55,34 +68,24 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
   return (
     <div className="space-y-10 pb-24">
       <SEOHead
-        title="Best AI Subscriptions to Get (2026 Buyer's Guide) — ChatGPT Plus vs Claude Pro | NextVector"
-        description="Comprehensive, unbiased 2026 AI subscription buyer's guide. Direct comparison of ChatGPT Plus ($20), Claude Pro ($20), Gemini Advanced ($20), and ChatGPT Pro ($200). Know what models and rate limits are included before subscribing."
+        title="AI Model Buyer's Guide: Best Model by Score, Price & Use | NextVector"
+        description={`Pick an AI model by data: highest arena.ai score, best score per dollar, best open-weights model, computer use and coding results. Every pick shows its rule and source. Data checked ${MODEL_DATA_AS_OF}.`}
         canonicalPath="/subscriptions"
         schemaData={subscriptionFaqSchema}
-        tags={[
-          'Best AI Subscription',
-          'Best AI Subscription to Get',
-          'ChatGPT Plus vs Claude Pro',
-          'AI Plans Comparison',
-          'ChatGPT Pro 200',
-          'Gemini Advanced',
-          'AI Buyer Guide 2026',
-        ]}
+        tags={['Best AI Model', 'AI Model Comparison', 'AI Buyer Guide', 'Best Value LLM', 'Open Weights Models']}
       />
 
-      {/* Editorial Header / Primary Entity H1 */}
       <PageHeader
-        eyebrow={<>2026 AI Buyer's Guide &amp; ROI Architecture</>}
+        eyebrow={<>AI Buyer's Guide</>}
         icon={<Sparkles className="w-4 h-4" />}
-        title={<>Best AI Subscriptions to Get in 2026 <span className="text-zinc-400">— ChatGPT Plus vs Claude Pro</span></>}
-        description="Definitive, unbiased breakdown of $20/mo individual plans, $100/mo power-user stacks, and $200/mo ChatGPT Pro tiers. Zero vendor commissions."
+        title="Which AI Model Should You Use?"
+        description="Picks chosen by stated rules over public leaderboards and list prices. No vendor commissions."
       />
 
-      {/* Top Banner Notice */}
       <div className="p-4 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
         <div className="flex items-center gap-2 text-zinc-300">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-          <span>Independent editorial intelligence. NextVector receives zero affiliate commissions or vendor subsidies.</span>
+          <span>Independent. NextVector receives no affiliate commissions or vendor payments.</span>
         </div>
         <button
           onClick={() => onNavigate('/compare/claude-vs-chatgpt')}
@@ -93,18 +96,19 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
         </button>
       </div>
 
-      {/* Direct Intelligence Key Takeaway / BLUF for AI Retrieval Engines */}
-      <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs space-y-2">
-        <div className="eyebrow flex items-center gap-2">
-          <DollarSign className="w-4 h-4" />
-          <span>Key Conclusion: Optimal 2026 Subscription Decision</span>
+      {top && value && (
+        <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs space-y-2">
+          <div className="eyebrow flex items-center gap-2">
+            <DollarSign className="w-4 h-4" />
+            <span>Short Answer</span>
+          </div>
+          <p className="text-zinc-300 leading-relaxed font-sans text-sm">
+            Highest Arena score: <strong>{top.modelName}</strong> ({top.metric}; {top.price}). Best score under $1 per 1M
+            tokens: <strong>{value.modelName}</strong> ({value.metric}). Data checked {MODEL_DATA_AS_OF}.
+          </p>
         </div>
-        <p className="text-zinc-300 leading-relaxed font-sans text-sm">
-          <strong>Direct Answer:</strong> If you write multi-file code or handle large repositories, choose <strong>Claude Pro ($20/mo)</strong> for Claude Opus 5.5 and 1M token context. If you need computer control, voice, and live web browsing, choose <strong>ChatGPT Plus ($20/mo)</strong> for GPT-6 Astra and GPT-5.6 Sol. For maximum leverage with a $100 budget, pair Claude Pro ($20) with Cursor/Copilot ($20) and $60 in developer API credits.
-        </p>
-      </div>
+      )}
 
-      {/* Embedded Deep Decision Guide */}
       <ModelDecisionGuide onSelectModel={onSelectModel} />
     </div>
   );

@@ -15,8 +15,9 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
   const benchmarksSchema = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: `NextVector AI Benchmark Radar (${MODEL_COUNT} Models Evaluated)`,
-    description: `Empirical cross-domain benchmark audit evaluating ${MODEL_COUNT} AI foundation models across LMSYS Chatbot Arena, Price-to-Performance Pareto Index, OSWorld, WebArena, SWE-bench, and Cyber-Eval.`,
+    name: `NextVector AI Model Leaderboards (${MODEL_COUNT} Models Tracked)`,
+    description: `Public leaderboard results for ${MODEL_COUNT} AI models, compiled from arena.ai (text), OSWorld-Verified and SWE-bench Verified, plus a price vs Arena score frontier calculated from list prices.`,
+    isBasedOn: ['https://arena.ai/leaderboard/text', 'https://os-world.github.io/', 'https://www.swebench.com/'],
     creator: {
       '@type': 'Person',
       name: 'Robiul Hasan',
@@ -32,8 +33,8 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
   return (
     <div className="space-y-12 pb-20">
       <SEOHead
-        title={`AI Benchmarks & Evaluation Audit (${MODEL_COUNT} Models) | NextVector`}
-        description={`Comprehensive ${MODEL_COUNT}-model leaderboards across LMSYS Chatbot Arena, Price-to-Performance Pareto Index, OSWorld, WebArena, SWE-bench Verified, and Cyber-Eval. Empirical data without marketing hype.`}
+        title={`AI Benchmarks: Arena, OSWorld & SWE-bench Leaderboards | NextVector`}
+        description={`Arena text scores, OSWorld-Verified and SWE-bench Verified results, and a price vs score frontier for ${MODEL_COUNT} AI models. Every board links to its public source and date.`}
         canonicalPath="/benchmarks"
         schemaData={benchmarksSchema}
       />
@@ -41,8 +42,8 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
       <PageHeader
         eyebrow="Benchmarks & Methods"
         icon={<Scale className="w-4 h-4" />}
-        title="AI Benchmark Radar & Evaluation Audit"
-        description="Distinguishing genuine technological capability shifts from marketing-driven cherry-picking, benchmark saturation, and training data contamination."
+        title="AI Benchmark Leaderboards"
+        description="Results copied from public leaderboards, with the source and date for each board. We do not run these tests ourselves."
       />
 
       {/* Main Interactive Benchmark Visualizer */}
@@ -53,7 +54,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
         <div className="border-b border-zinc-800 pb-4">
           <h2 className="heading-section flex items-center gap-2">
             <ShieldCheck className="w-5 h-5 text-emerald-400" />
-            <span>The NextVector Benchmark Evaluation Protocol</span>
+            <span>How to Read These Boards</span>
           </h2>
           <p className="text-xs text-zinc-400 mt-1">
             Why raw leaderboard percentages often deceive enterprise and developer teams
@@ -75,7 +76,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
               2. Test-Time Compute Disparity
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-              Comparing a model running 500ms zero-shot completion against a model executing 64k thinking tokens or 100-sample majority voting creates false equivalencies. We normalize by cost and latency.
+              The same model can score very differently at different reasoning settings. Arena lists each setting separately (for example "high" or "max"); we show the best one and name it. For SWE-bench and OSWorld we only show runs that use the same harness, so models are compared on equal terms.
             </p>
           </div>
 

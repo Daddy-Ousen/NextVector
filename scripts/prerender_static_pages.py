@@ -129,68 +129,58 @@ def parse_articles():
 
     return articles
 
+SITE_DATA_FILE = ROOT_DIR / "scripts" / "model_sources" / "build" / "site_data.json"
+_SITE_DATA = None
+
+
+def site_data():
+    """Model registry, leaderboards, showdowns and guide picks written by scripts/build_model_data.py."""
+    global _SITE_DATA
+    if _SITE_DATA is None:
+        _SITE_DATA = json.loads(SITE_DATA_FILE.read_text(encoding="utf-8"))
+    return _SITE_DATA
+
+
+def fmt_price(v):
+    if v is None:
+        return "Not public"
+    digits = 3 if (v < 10 and abs(v * 100 - round(v * 100)) > 1e-9) else 2
+    return f"${v:.{digits}f}"
+
+
 def parse_models():
-    content = MODELS_FILE.read_text(encoding="utf-8")
-    m_start = content.find("export const ALL_135_MODELS: AIModel[] = [\n")
-    m_end = content.find("export const ARENA_LEADERBOARD_ENTRIES = [")
-    raw_models = re.split(r'\n  \},\n  \{\n', content[m_start:m_end])
     models = []
-
-    for m_str in raw_models:
-        id_m = re.search(r'["\']id["\']:\s*["\']([^"\']+)["\']', m_str)
-        name_m = re.search(r'["\']name["\']:\s*["\']([^"\']+)["\']', m_str)
-        dev_m = re.search(r'["\']developer["\']:\s*["\']([^"\']+)["\']', m_str)
-        rel_m = re.search(r'["\']releaseDate["\']:\s*["\']([^"\']+)["\']', m_str)
-        type_m = re.search(r'["\']modelType["\']:\s*["\']([^"\']+)["\']', m_str)
-        desc_m = re.search(r'["\']description["\']:\s*["\']([^"\']+)["\']', m_str)
-        params_m = re.search(r'["\']parameters["\']:\s*["\']([^"\']+)["\']', m_str)
-        ctx_m = re.search(r'["\']contextWindow["\']:\s*["\']([^"\']+)["\']', m_str)
-        license_m = re.search(r'["\']license["\']:\s*["\']([^"\']+)["\']', m_str)
-        rank_m = re.search(r'["\']arenaRank["\']:\s*(\d+)', m_str)
-        elo_m = re.search(r'["\']arenaElo["\']:\s*(\d+)', m_str)
-        in_p = re.search(r'["\']inputPer1M["\']:\s*([0-9.]+)', m_str)
-        out_p = re.search(r'["\']outputPer1M["\']:\s*([0-9.]+)', m_str)
-
-        if id_m and name_m:
-            models.append({
-                "id": id_m.group(1),
-                "name": name_m.group(1),
-                "developer": dev_m.group(1) if dev_m else "",
-                "releaseDate": rel_m.group(1) if rel_m else "2026",
-                "modelType": type_m.group(1) if type_m else "Foundation Model",
-                "description": desc_m.group(1) if desc_m else "",
-                "parameters": params_m.group(1) if params_m else "Undisclosed",
-                "contextWindow": ctx_m.group(1) if ctx_m else "200K tokens",
-                "license": license_m.group(1) if license_m else "Proprietary",
-                "arenaRank": int(rank_m.group(1)) if rank_m else None,
-                "arenaElo": int(elo_m.group(1)) if elo_m else None,
-                "inputPrice": float(in_p.group(1)) if in_p else 0.0,
-                "outputPrice": float(out_p.group(1)) if out_p else 0.0
-            })
-
+    for m in site_data()["models"]:
+        p = m["pricing"]
+        models.append({
+            "id": m["id"], "name": m["name"], "developer": m["developer"], "releaseDate": m["releaseDate"],
+            "modelType": m["modelType"], "description": m.get("summary", ""), "parameters": m["parameters"],
+            "contextWindow": m["contextWindow"], "license": m["license"],
+            "arenaRank": m.get("arenaRank"), "arenaElo": m.get("arenaElo"), "arenaCI": m.get("arenaCI"),
+            "inputPrice": p.get("inputPer1M"), "outputPrice": p.get("outputPer1M"),
+            "priceText": f"{fmt_price(p.get('inputPer1M'))} / {fmt_price(p.get('outputPer1M'))}" if p.get("inputPer1M") is not None else "Not public",
+            "sources": m.get("sources", []), "benchmarks": m.get("benchmarks", []),
+        })
     return models
 
+
 def parse_showdowns():
-    """Preset head-to-head showdowns defined in ComparePage.tsx (slug, SEO title/description, verdict)."""
-    if not COMPARE_FILE.exists():
-        return []
-    content = COMPARE_FILE.read_text(encoding="utf-8")
-    showdowns = []
-    for block in re.split(r"\n  \{\n", content)[1:]:
-        slug_m = re.search(r"^\s*slug:\s*'([^']+)'", block, re.MULTILINE)
-        title_m = re.search(r"seoTitle:\s*'((?:[^'\\]|\\.)*)'", block)
-        desc_m = re.search(r"seoDescription:\s*'((?:[^'\\]|\\.)*)'", block)
-        verdict_m = re.search(r"executiveVerdict:\s*'((?:[^'\\]|\\.)*)'", block, re.DOTALL)
-        name_m = re.search(r"^\s*name:\s*'((?:[^'\\]|\\.)*)'", block, re.MULTILINE)
-        if slug_m and title_m:
-            showdowns.append({
-                "slug": slug_m.group(1),
-                "name": (name_m.group(1) if name_m else slug_m.group(1)).replace("\\'", "'"),
-                "title": title_m.group(1).replace("\\'", "'"),
-                "description": (desc_m.group(1) if desc_m else "").replace("\\'", "'"),
-                "verdict": (verdict_m.group(1) if verdict_m else "").replace("\\'", "'"),
-            })
-    return showdowns
+    """Head-to-head showdowns generated from registry data (see build_model_data.py)."""
+    return [{
+        "slug": sd["slug"], "name": sd["name"], "title": sd["seoTitle"], "description": sd["seoDescription"],
+        "verdict": sd["executiveVerdict"], "faqs": sd.get("faqs", []),
+    } for sd in site_data()["showdowns"]]
+
+
+def board_top(board, n=3, unit=""):
+    rows = site_data()["boards"][board][:n]
+    return " | ".join(f"#{e['rank']} {escape(e['modelName'])} ({e['score']}{unit})" for e in rows)
+
+
+def guide_line(pick_id):
+    p = next((g for g in site_data()["guide"] if g["id"] == pick_id), None)
+    return f"{p['modelName']} ({p['metric']}; {p['price']})" if p else "n/a"
+
 
 _GIT_AVAILABLE = None
 
@@ -388,7 +378,7 @@ def generate_rss_feed(articles):
   <channel>
     <title>NextVector — AI News, Frontier Model Benchmarks &amp; Intelligence</title>
     <link>{BASE_URL}</link>
-    <description>Real-time AI news, verified frontier model benchmarks, LMSYS Chatbot Arena rankings, model showdowns, and high-signal research intelligence.</description>
+    <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
     <lastBuildDate>{now_rfc822}</lastBuildDate>
     <atom:link href="{BASE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
@@ -411,28 +401,33 @@ def generate_llms_full(articles, models):
     sections = []
     sections.append("# NextVector — Complete Frontier AI Intelligence & Model Evaluation Corpus")
     sections.append("> High-signal, noise-filtered journalism and engineering intelligence covering foundation models, autonomous agents, enterprise cybersecurity, and scientific breakthroughs.")
-    sections.append("Editorial Charter: Less noise. More signal. Verified benchmarks over marketing claims. Edited by Robiul Hasan (https://rhasan.online).\n")
+    sections.append("Editorial Charter: Less noise. More signal. Sourced benchmarks over marketing claims. Edited by Robiul Hasan (https://rhasan.online).\n")
     
     sections.append("## Platform Overview & Methodology")
     sections.append("NextVector evaluates foundation models and technical breakthroughs through an empirical, primary-source framework. Every report answers three core questions: (1) What happened? (2) Why does it matter? (3) What could happen next? Stories are assigned a Signal Rating from 1 to 100 based on architectural novelty, benchmark verification, practical engineering utility, and source reliability.\n")
 
-    sections.append("## 2026 Model Decision Guide & AI Subscription Breakdown")
-    sections.append("- Claude Pro ($20/mo): Recommended for software engineers, mathematicians, and technical writers. Key model: Claude Opus 5.5 (1417 LMSYS Arena Elo, 1M native context window, 75.8% SWE-bench Verified with native Lean 4 formal verification).")
-    sections.append("- ChatGPT Plus ($20/mo): Recommended for general multi-tool usage, voice interactions, and autonomous computer navigation. Key model: GPT-6 Astra (1420 LMSYS Arena Elo, 68.4% OSWorld).")
-    sections.append("- ChatGPT Pro ($200/mo): Recommended exclusively for full-time quantitative researchers and autonomous agent operators needing unrestricted max-compute reasoning passes.")
-    sections.append("- Optimal $100/mo Power User Budget: Claude Pro ($20) + Cursor Pro ($20) + $60 in developer API credits (DeepSeek, Gemini Flash, Anthropic).\n")
+    sd = site_data()
+    sections.append(f"## Model Decision Guide (data checked {sd['asOf']})")
+    sections.append("Each pick comes from a stated rule over public data: arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified and list prices. NextVector does not run these tests.")
+    for g in sd["guide"]:
+        sections.append(f"- {g['title']}: {g['modelName']} ({g['developer']}) — {g['metric']}; list price {g['price']}. Rule: {g['rule']}")
+    sections.append("")
 
-    sections.append(f"## Evaluated AI Models Directory ({len(models)} Models)")
+    sections.append(f"## AI Models Directory ({len(models)} Models, sourced data)")
     for m in models:
         rank_str = f"#{m['arenaRank']}" if m.get('arenaRank') else "Unranked"
-        elo_str = f"{m['arenaElo']} Elo" if m.get('arenaElo') else "N/A"
+        elo_str = f"score {m['arenaElo']} ±{m['arenaCI']}" if m.get('arenaElo') else "not on Arena"
         sections.append(f"### {m['name']} ({m['developer']})")
         sections.append(f"- Model Detail Page: {BASE_URL}/models/{m['id']}")
         sections.append(f"- Release Date: {m['releaseDate']} | Architecture Type: {m['modelType']}")
         sections.append(f"- Parameters: {m['parameters']} | Context Window: {m['contextWindow']} | License: {m['license']}")
-        sections.append(f"- LMSYS Arena: {rank_str} ({elo_str})")
-        sections.append(f"- API Token Pricing: ${m['inputPrice']} / 1M input | ${m['outputPrice']} / 1M output")
-        sections.append(f"- Summary: {m['description']}\n")
+        sections.append(f"- arena.ai text leaderboard: {rank_str} ({elo_str})")
+        sections.append(f"- API list price (input / output per 1M tokens): {m['priceText']}")
+        for bmk in m["benchmarks"]:
+            if bmk["benchmarkName"] != "Arena Text Elo":
+                sections.append(f"- {bmk['benchmarkName']}: {bmk['score']} ({bmk['vsPreviousGen']})")
+        sections.append(f"- Summary: {m['description']}")
+        sections.append(f"- Sources: {', '.join(src['url'] for src in m['sources'])}\n")
 
     sections.append("## Published Intelligence Reports (Full Text Corpus)")
     for art in articles:
@@ -502,8 +497,8 @@ def prerender_all():
       <td class="py-2.5 px-3 font-bold text-zinc-100"><a href="/models/{m['id']}" class="hover:text-emerald-400">{escape(m['name'])}</a></td>
       <td class="py-2.5 px-3 text-zinc-400">{escape(m['developer'])}</td>
       <td class="py-2.5 px-3 font-mono font-bold text-zinc-200">{m['arenaElo'] if m['arenaElo'] else '-'}</td>
-      <td class="py-2.5 px-3 text-zinc-400 font-mono">${m['inputPrice']} / ${m['outputPrice']}</td>
-    </tr>""" for m in models[:6]])
+      <td class="py-2.5 px-3 text-zinc-400 font-mono">{m['priceText']}</td>
+    </tr>""" for m in [x for x in models if x['arenaRank']][:6]])
 
     root_body = f"""
     <main class="max-w-6xl mx-auto px-4 py-8 space-y-10">
@@ -513,15 +508,15 @@ def prerender_all():
           NextVector — AI News, Frontier Model Benchmarks &amp; Intelligence
         </h1>
         <p class="text-sm md:text-base text-zinc-300 max-w-3xl leading-relaxed">
-          NextVector delivers real-time AI news, frontier model intelligence, verified LMSYS Arena leaderboards, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and buying guides. Less noise. More signal.
+          NextVector delivers real-time AI news, sourced model data and public leaderboards (arena.ai, OSWorld, SWE-bench), model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and buying guides. Less noise. More signal.
         </p>
       </header>
 
       <!-- Direct Key Answer / BLUF -->
       <section class="p-5 rounded-2xl bg-zinc-950 border border-emerald-500/30 text-xs font-mono space-y-2">
-        <span class="text-emerald-400 font-bold uppercase tracking-wider block">Frontier AI Overview (September 2026)</span>
+        <span class="text-emerald-400 font-bold uppercase tracking-wider block">Model Data Snapshot ({site_data()['asOf']})</span>
         <p class="text-zinc-200 text-sm font-sans leading-relaxed">
-          OpenAI GPT-6 Astra ranks #1 globally on LMSYS Arena (1420 Elo) and leads OSWorld computer use (68.4%). Anthropic Claude Opus 5.5 (1417 Elo) leads in formal Lean 4 mathematical verification and 1M context retention. DeepSeek-V4.1-Flash leads economic Pareto efficiency ($0.14/1M tokens).
+          Highest arena.ai text score (released models): {escape(guide_line('top-arena'))}. Best score under $1 per 1M tokens: {escape(guide_line('value'))}. Best open weights: {escape(guide_line('open'))}. Computer use (OSWorld-Verified): {escape(guide_line('computer-use'))}.
         </p>
       </section>
 
@@ -553,7 +548,7 @@ def prerender_all():
 
         <section class="lg:col-span-5 space-y-6">
           <div class="p-5 rounded-2xl bg-zinc-950 border border-zinc-800">
-            <h2 class="text-sm font-mono font-bold text-emerald-400 uppercase tracking-wider mb-4">LMSYS Arena Top Models</h2>
+            <h2 class="text-sm font-mono font-bold text-emerald-400 uppercase tracking-wider mb-4">Arena Top Models (arena.ai text)</h2>
             <div class="overflow-x-auto">
               <table class="w-full text-xs font-mono text-left">
                 <thead>
@@ -561,8 +556,8 @@ def prerender_all():
                     <th class="py-2 px-3">Rank</th>
                     <th class="py-2 px-3">Model</th>
                     <th class="py-2 px-3">Lab</th>
-                    <th class="py-2 px-3">Elo</th>
-                    <th class="py-2 px-3">Price / 1M</th>
+                    <th class="py-2 px-3">Score</th>
+                    <th class="py-2 px-3">$ / 1M (in / out)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -585,7 +580,7 @@ def prerender_all():
         <span>|</span>
         <a href="/subscriptions" class="hover:text-emerald-400">AI Subscription Buyer Guide</a>
         <span>|</span>
-        <a href="/benchmarks" class="hover:text-emerald-400">Benchmark Radar</a>
+        <a href="/benchmarks" class="hover:text-emerald-400">Benchmarks</a>
         <span>|</span>
         <a href="/faq" class="hover:text-emerald-400">FAQ</a>
         <span>|</span>
@@ -600,8 +595,8 @@ def prerender_all():
 
     root_meta = {
         "title": "NextVector — AI News, Frontier Model Benchmarks & Intelligence",
-        "description": "NextVector delivers real-time AI news, frontier model intelligence, verified LMSYS Arena leaderboards, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and buying guides. Less noise. More signal.",
-        "keywords": "AI news, latest AI info, best models, best AI subscription to get, claude vs chatgpt, opus vs gpt 6, chatbot arena leaderboard, frontier AI models, SWE-bench verified, AI decision guide, daily AI briefing",
+        "description": "NextVector delivers real-time AI news, sourced model data and public leaderboards, model showdowns (Claude vs ChatGPT, Opus vs GPT-6), and buying guides. Less noise. More signal.",
+        "keywords": "AI news, latest AI info, best models, best AI subscription to get, claude vs chatgpt, opus vs gpt 6, arena leaderboard, frontier AI models, SWE-bench verified, AI decision guide, daily AI briefing",
         "path": "/"
     }
 
@@ -761,7 +756,7 @@ def prerender_all():
             <span>|</span>
             <a href="/models" class="hover:text-emerald-400">{len(models)} Model Directory</a>
             <span>|</span>
-            <a href="/benchmarks" class="hover:text-emerald-400">Benchmark Radar</a>
+            <a href="/benchmarks" class="hover:text-emerald-400">Benchmarks</a>
             <span>|</span>
             <a href="/archive" class="hover:text-emerald-400">Full Archive</a>
           </footer>
@@ -789,8 +784,8 @@ def prerender_all():
         m_dir.mkdir(parents=True, exist_ok=True)
         m_url = f"{BASE_URL}/models/{m_id}"
 
-        title = f"{m['name']} — Specifications, Pricing & Arena Elo Ratings"
-        desc = m['description'] or f"{m['name']} by {m['developer']}: {m['parameters']} parameters, {m['contextWindow']} context window, ${m['inputPrice']}/1M input, ${m['outputPrice']}/1M output."
+        title = f"{m['name']}: Specs, Price & Benchmarks"
+        desc = m['description'] or f"{m['name']} by {m['developer']}: {m['contextWindow']} context, {m['priceText']} per 1M tokens."
 
         schema = {
             "@context": "https://schema.org",
@@ -798,16 +793,18 @@ def prerender_all():
             "name": m["name"],
             "applicationCategory": "AI Foundation Model",
             "creator": {"@type": "Organization", "name": m["developer"]},
-            "releaseDate": m["releaseDate"],
-            "offers": {
-                "@type": "Offer",
-                "price": str(m["inputPrice"]),
-                "priceCurrency": "USD",
-                "description": f"${m['inputPrice']} per 1M input tokens, ${m['outputPrice']} per 1M output tokens"
-            },
             "description": desc,
             "url": m_url
         }
+        if m["releaseDate"] != "Not listed":
+            schema["releaseDate"] = m["releaseDate"]
+        if m["inputPrice"] is not None:
+            schema["offers"] = {
+                "@type": "Offer",
+                "price": str(m["inputPrice"]),
+                "priceCurrency": "USD",
+                "description": f"{fmt_price(m['inputPrice'])} per 1M input tokens, {fmt_price(m['outputPrice'])} per 1M output tokens (list price)"
+            }
 
         body_html = f"""
         <main class="max-w-4xl mx-auto px-4 py-12">
@@ -815,12 +812,12 @@ def prerender_all():
             <div class="flex items-center gap-2 mb-2 text-xs font-mono text-zinc-400">
               <span class="text-emerald-400 font-bold">{m['developer']}</span>
               <span>•</span>
-              <span>Released {m['releaseDate']}</span>
+              <span>Listed {m['releaseDate']}</span>
               <span>•</span>
               <span>{m['modelType']}</span>
             </div>
             <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">{m['name']}</h1>
-            {f'<div class="mt-3 inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-mono font-bold">LMSYS Arena Rank #{m["arenaRank"]} • {m["arenaElo"]} Elo</div>' if m["arenaRank"] else ''}
+            {f'<div class="mt-3 inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-mono font-bold">Arena #{m["arenaRank"]} • score {m["arenaElo"]} ±{m["arenaCI"]}</div>' if m["arenaRank"] else ''}
           </header>
 
           <p class="text-base text-zinc-300 leading-relaxed mb-8">{escape(desc)}</p>
@@ -835,14 +832,21 @@ def prerender_all():
               <div class="text-zinc-200 font-bold text-base mt-1">{m['contextWindow']}</div>
             </div>
             <div>
-              <div class="text-zinc-500 uppercase">Input Pricing</div>
-              <div class="text-zinc-200 font-bold text-base mt-1">${m['inputPrice']} / 1M</div>
+              <div class="text-zinc-500 uppercase">Input / 1M tokens</div>
+              <div class="text-zinc-200 font-bold text-base mt-1">{fmt_price(m['inputPrice'])}</div>
             </div>
             <div>
-              <div class="text-zinc-500 uppercase">Output Pricing</div>
-              <div class="text-zinc-200 font-bold text-base mt-1">${m['outputPrice']} / 1M</div>
+              <div class="text-zinc-500 uppercase">Output / 1M tokens</div>
+              <div class="text-zinc-200 font-bold text-base mt-1">{fmt_price(m['outputPrice'])}</div>
             </div>
           </div>
+
+          <section class="mb-10 text-sm text-zinc-300">
+            <h2 class="text-sm font-mono font-bold text-emerald-400 uppercase mb-3">Benchmark Results</h2>
+            <ul class="space-y-1">{''.join(f"<li>{escape(b['benchmarkName'])}: <strong>{escape(str(b['score']))}</strong> <span class='text-zinc-500'>({escape(b['vsPreviousGen'])})</span></li>" for b in m['benchmarks']) or '<li>No public leaderboard result in our sources yet.</li>'}</ul>
+            <h2 class="text-sm font-mono font-bold text-emerald-400 uppercase mt-6 mb-3">Sources</h2>
+            <ul class="space-y-1">{''.join(f"<li><a href='{escape(src['url'])}' class='text-emerald-400 hover:underline' rel='noopener'>{escape(src['label'])}</a></li>" for src in m['sources'])}</ul>
+          </section>
 
           <div class="flex flex-wrap gap-4 text-xs font-mono text-zinc-400 pt-8 border-t border-zinc-800">
             <a href="/models" class="hover:text-emerald-400">← Back to All {len(models)} Models</a>
@@ -857,7 +861,7 @@ def prerender_all():
         meta = {
             "title": title,
             "description": desc,
-            "keywords": f"{m['name']}, {m['developer']}, AI foundation model, LMSYS Arena Elo, AI model pricing, context window",
+            "keywords": f"{m['name']}, {m['developer']}, AI model, arena leaderboard, AI model pricing, context window",
             "path": f"/models/{m_id}",
             "schema": schema
         }
@@ -875,31 +879,31 @@ def prerender_all():
       <td class="py-2.5 px-3 font-mono text-zinc-300">{escape(m['parameters'])}</td>
       <td class="py-2.5 px-3 font-mono text-zinc-300">{escape(m['contextWindow'])}</td>
       <td class="py-2.5 px-3 font-mono font-bold text-zinc-200">{m['arenaElo'] if m['arenaElo'] else '-'}</td>
-      <td class="py-2.5 px-3 font-mono text-emerald-400">${m['inputPrice']}</td>
-      <td class="py-2.5 px-3 font-mono text-cyan-400">${m['outputPrice']}</td>
+      <td class="py-2.5 px-3 font-mono text-emerald-400">{fmt_price(m['inputPrice'])}</td>
+      <td class="py-2.5 px-3 font-mono text-cyan-400">{fmt_price(m['outputPrice'])}</td>
     </tr>""" for m in models])
 
     core_pages = [
         {
             "path": "/models",
-            "title": f"AI Models Directory ({len(models)} Frontier & Open Architectures)",
-            "description": f"Comprehensive technical database of {len(models)} foundation models. Track LMSYS Arena Elo ratings, API token pricing, context windows, and parameters.",
+            "title": f"AI Models Directory ({len(models)} Models): Prices, Context & Arena Scores",
+            "description": f"Prices, context windows, licences and arena.ai scores for {len(models)} AI models, each linked to its public source.",
             "keywords": "AI models directory, foundation models, LLM specs, Claude Opus 5.5, GPT-6 Astra, Grok 4.7, DeepSeek, model pricing",
             "body": f"""
             <main class="max-w-6xl mx-auto px-4 py-12">
-              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight mb-4">AI Models Directory ({len(models)} Frontier &amp; Open Architectures)</h1>
-              <p class="text-lg text-zinc-300 mb-8 max-w-3xl leading-relaxed">Comprehensive technical database of {len(models)} foundation models. Track LMSYS Arena Elo ratings, API token pricing, context windows, and parameter counts.</p>
+              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight mb-4">AI Models Directory ({len(models)} Models)</h1>
+              <p class="text-lg text-zinc-300 mb-8 max-w-3xl leading-relaxed">Prices, context windows, licences and arena.ai scores for {len(models)} AI models. Data checked {site_data()['asOf']}; every model page lists its sources.</p>
               
               <div class="overflow-x-auto p-4 rounded-2xl bg-zinc-950 border border-zinc-800 mb-8">
                 <table class="w-full text-xs font-mono text-left">
                   <thead>
                     <tr class="border-b border-zinc-800 text-zinc-500 uppercase">
-                      <th class="py-2 px-3">Rank</th>
+                      <th class="py-2 px-3">Arena #</th>
                       <th class="py-2 px-3">Model</th>
                       <th class="py-2 px-3">Developer</th>
                       <th class="py-2 px-3">Params</th>
                       <th class="py-2 px-3">Context</th>
-                      <th class="py-2 px-3">Arena Elo</th>
+                      <th class="py-2 px-3">Arena score</th>
                       <th class="py-2 px-3">Input / 1M</th>
                       <th class="py-2 px-3">Output / 1M</th>
                     </tr>
@@ -913,123 +917,78 @@ def prerender_all():
         },
         {
             "path": "/compare",
-            "title": "Model Showdowns & Comparisons: Claude vs ChatGPT, Opus vs GPT-6",
-            "description": "In-depth head-to-head architectural showdowns between leading AI models. Benchmark comparisons across coding, reasoning, and context retention.",
-            "keywords": "claude vs chatgpt, opus vs gpt 6, ai model comparison, best model for coding, gemini vs claude, deepseek vs openai",
-            "body": """
+            "title": "Model Showdowns: Claude vs ChatGPT, Opus vs GPT-6 and More",
+            "description": "Head-to-head AI model comparisons built from sourced data: arena.ai text score, list price, context window and licence.",
+            "keywords": "claude vs chatgpt, opus vs gpt 6, ai model comparison, gemini vs claude, deepseek vs openai",
+            "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
-              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Model Showdowns &amp; Comparisons: Claude vs ChatGPT, Opus vs GPT-6</h1>
-              <p class="text-lg text-zinc-300 leading-relaxed">Head-to-head architectural showdowns pitting frontier models against empirical benchmark suites.</p>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-                  <span class="text-xs font-mono text-emerald-400 font-bold uppercase">Frontier Showdown</span>
-                  <h2 class="text-xl font-bold text-zinc-100"><a href="/compare/claude-vs-chatgpt">Claude Opus 5.5 vs GPT-6 Astra</a></h2>
-                  <p class="text-xs text-zinc-400">Lean 4 mathematical proofs and 1M context analysis vs autonomous desktop navigation and multi-modal tool integration.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-                  <span class="text-xs font-mono text-cyan-400 font-bold uppercase">Pareto Showdown</span>
-                  <h2 class="text-xl font-bold text-zinc-100"><a href="/compare/deepseek-vs-openai">DeepSeek-V4.1 vs GPT-5.6 Sol</a></h2>
-                  <p class="text-xs text-zinc-400">Open-weight sovereign pricing efficiency ($0.14/1M) vs commercial hyperscaler enterprise governance.</p>
-                </div>
-              </div>
+              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Model Showdowns &amp; Comparisons</h1>
+              <p class="text-lg text-zinc-300 leading-relaxed">Each comparison is built from sourced data (arena.ai, list prices, public leaderboards). Data checked {site_data()['asOf']}.</p>
+              <ul class="space-y-4">{''.join(f"<li class='p-5 rounded-2xl bg-zinc-950 border border-zinc-800'><h2 class='text-lg font-bold text-zinc-100'><a href='/compare/{sd["slug"]}'>{escape(sd["name"])}</a></h2><p class='text-xs text-zinc-400 mt-2'>{escape(sd["executiveVerdict"][:260])}…</p></li>" for sd in site_data()['showdowns'])}</ul>
             </main>"""
         },
         {
             "path": "/subscriptions",
-            "title": "Best AI Subscription to Get in 2026: ChatGPT Plus vs Claude Pro vs Team Plans",
-            "description": "2026 AI buyer's guide comparing ChatGPT Plus ($20), Claude Pro ($20), Gemini Advanced ($20), and ChatGPT Pro ($200) with ROI calculations.",
-            "keywords": "best ai subscription to get, chatgpt plus vs claude pro, ai pricing guide 2026, cursor vs copilot, best llm subscription",
-            "body": """
+            "title": "AI Model Buyer's Guide: Best Model by Score, Price & Use",
+            "description": "Pick an AI model by data: highest arena.ai score, best score per dollar, best open-weights model, computer use and coding results. Every pick shows its rule and source.",
+            "keywords": "best ai model, best value llm, open weights model, ai model comparison, ai buyer guide",
+            "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
-              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Best AI Subscription to Get in 2026: Definitive Buyer's Guide</h1>
-              <p class="text-lg text-zinc-300 leading-relaxed">Direct comparison of ChatGPT Plus ($20), Claude Pro ($20), Gemini Advanced ($20), and ChatGPT Pro ($200) with concrete ROI calculations.</p>
-
-              <div class="p-5 rounded-2xl bg-zinc-950 border border-emerald-500/30 text-xs font-mono space-y-2">
-                <span class="text-emerald-400 font-bold uppercase">Executive Decision Summary</span>
-                <p class="text-zinc-200 text-sm font-sans leading-relaxed">
-                  Choose <strong>Claude Pro ($20/mo)</strong> for whole-file coding, technical research, and 1M context retention. Choose <strong>ChatGPT Plus ($20/mo)</strong> for computer use, voice, and live web browsing. For power users with a $100 budget, combine Claude Pro ($20) + Cursor ($20) + $60 in developer API credits.
-                </p>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-                  <h2 class="text-base font-bold text-zinc-100 font-mono">$20 / Month Tier</h2>
-                  <p class="text-xs text-zinc-400">Top pick: Claude Pro (Claude Opus 5.5, Sonnet 5, Artifacts). Alternative: ChatGPT Plus (GPT-6 Astra, GPT-5.6 Sol).</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-                  <h2 class="text-base font-bold text-zinc-100 font-mono">$100 / Month Stack</h2>
-                  <p class="text-xs text-zinc-400">Optimal leverage: $20 Claude Pro + $20 Cursor IDE + $60 API credits for batch tasks.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-3">
-                  <h2 class="text-base font-bold text-zinc-100 font-mono">$200 / Month Tier</h2>
-                  <p class="text-xs text-zinc-400">ChatGPT Pro: Justified only for full-time quantitative researchers needing unmetered reasoning.</p>
-                </div>
-              </div>
+              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Which AI Model Should You Use?</h1>
+              <p class="text-lg text-zinc-300 leading-relaxed">Picks chosen by stated rules over public leaderboards and list prices (data checked {site_data()['asOf']}). We do not track consumer subscription plans; check the vendor's pricing page for what each plan includes.</p>
+              <ul class="space-y-4">{''.join(f"<li class='p-5 rounded-2xl bg-zinc-950 border border-zinc-800'><h2 class='text-base font-bold text-zinc-100'>{escape(g['title'])}: <a href='/models/{g['modelId']}' class='text-emerald-400'>{escape(g['modelName'])}</a></h2><p class='text-xs text-zinc-400 mt-1'>{escape(g['metric'])}. List price {escape(g['price'])}. Rule: {escape(g['rule'])}</p></li>" for g in site_data()['guide'])}</ul>
             </main>"""
         },
         {
             "path": "/benchmarks",
-            "title": "AI Benchmark Radar: LMSYS Arena, SWE-bench Verified, OSWorld & Price-Performance",
-            "description": "Six verified empirical AI leaderboards tracking coding performance, agentic computer use, and price-to-performance frontier Pareto champions.",
-            "keywords": "ai benchmarks, lmsys chatbot arena, swe-bench verified, osworld benchmark, price performance ai, frontier model leaderboard",
-            "body": """
+            "title": "AI Benchmarks: Arena, OSWorld & SWE-bench Leaderboards",
+            "description": "Arena text scores, OSWorld-Verified and SWE-bench Verified results, and a price vs score frontier. Every board links to its public source and date.",
+            "keywords": "ai benchmarks, arena leaderboard, swe-bench verified, osworld verified, price performance ai",
+            "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
-              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">AI Benchmark Radar &amp; Empirical Leaderboards</h1>
-              <p class="text-lg text-zinc-300 leading-relaxed">Six verified leaderboards tracking coding ability, computer control, and price-performance efficiency.</p>
-              
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2 text-xs font-mono">
-                  <h2 class="text-sm font-bold text-emerald-400 uppercase">LMSYS Chatbot Arena</h2>
-                  <p class="text-zinc-300">#1 GPT-6 Astra (1420 Elo) | #2 Claude Fable 5.1 (1418 Elo) | #3 Claude Opus 5.5 (1417 Elo)</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2 text-xs font-mono">
-                  <h2 class="text-sm font-bold text-cyan-400 uppercase">SWE-bench Verified (Code)</h2>
-                  <p class="text-zinc-300">#1 Claude Opus 5.5 (75.8% Pass@1) | #2 GPT-6 Astra (75.4%) | #3 Claude Fable (73.3%)</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2 text-xs font-mono">
-                  <h2 class="text-sm font-bold text-purple-400 uppercase">OSWorld (Computer Navigation)</h2>
-                  <p class="text-zinc-300">#1 GPT-6 Astra (68.4% Pass@1) | #2 Claude Fable 5.1 (57.3%) | #3 Grok 4.7 (55.1%)</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2 text-xs font-mono">
-                  <h2 class="text-sm font-bold text-amber-400 uppercase">Price-Performance Pareto</h2>
-                  <p class="text-zinc-300">#1 DeepSeek-V4.1-Flash ($0.14/1M) | #2 Gemini 3.8 Flash ($0.15/1M) | #3 Mistral 3B</p>
-                </div>
+              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">AI Benchmark Leaderboards</h1>
+              <p class="text-lg text-zinc-300 leading-relaxed">Results copied from public leaderboards, with the source and date for each board. NextVector does not run these tests.</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs font-mono">
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">Arena text (arena.ai)</h2><p class="text-zinc-300">{board_top('arena')}</p></div>
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">OSWorld-Verified (os-world.github.io)</h2><p class="text-zinc-300">{board_top('osworld', unit='%')}</p></div>
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">SWE-bench Verified, bash-only (swebench.com)</h2><p class="text-zinc-300">{board_top('swebench', unit='%')}</p></div>
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2"><h2 class="text-sm font-bold text-emerald-400 uppercase">Price vs Arena score (NextVector calculation)</h2><p class="text-zinc-300">{board_top('pareto')}</p></div>
               </div>
+              <p class="text-xs text-zinc-400">Data checked {site_data()['asOf']}.</p>
             </main>"""
         },
         {
             "path": "/faq",
-            "title": "Frequently Asked Questions (FAQ) — Frontier AI Models & Intelligence",
-            "description": "Comprehensive answers to the most common AI questions in 2026: What is the best AI model? Claude vs ChatGPT comparison, best AI subscriptions ($20 vs $200), and NextVector's signal rating formula.",
-            "keywords": "AI FAQ, best AI model 2026, claude vs chatgpt, best ai subscription, nextvector signal rating, ai benchmarks FAQ",
-            "body": """
+            "title": "Frequently Asked Questions (FAQ): AI Models, Benchmarks & NextVector",
+            "description": "Answers built from sourced data: which AI model scores highest, Claude vs ChatGPT by the numbers, where our model data comes from, and how Signal Ratings work.",
+            "keywords": "AI FAQ, best AI model, claude vs chatgpt, ai benchmarks FAQ, nextvector signal rating",
+            "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
               <header class="border-b border-zinc-800 pb-6">
-                <div class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">Knowledge Base &amp; Intelligence Q&amp;A</div>
+                <div class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">Knowledge Base</div>
                 <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Frequently Asked Questions (FAQ)</h1>
-                <p class="text-sm md:text-base text-zinc-300 mt-2">Verified answers to the most queried questions in artificial intelligence and model benchmarking.</p>
+                <p class="text-sm md:text-base text-zinc-300 mt-2">Model answers are built from sourced data checked {site_data()['asOf']}.</p>
               </header>
 
               <div class="space-y-6">
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">What is the best AI model in 2026?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">OpenAI GPT-6 Astra ranks #1 globally on LMSYS Arena (1420 Elo) and leads in autonomous OS navigation (68.4% on OSWorld). Claude Opus 5.5 ranks #4 (1417 Elo) and leads in software engineering, formal Lean 4 proof verification, and 1M context retention. DeepSeek-V4.1-Flash leads the economic Pareto frontier at $0.14/1M tokens.</p>
+                  <h2 class="text-lg font-bold text-zinc-100">Which AI model scores highest right now?</h2>
+                  <p class="text-sm text-zinc-300 leading-relaxed">Highest arena.ai text score (released models): {escape(guide_line('top-arena'))}. Best score under $1 per 1M tokens: {escape(guide_line('value'))}. Best open weights: {escape(guide_line('open'))}. Computer use (OSWorld-Verified): {escape(guide_line('computer-use'))}.</p>
                 </div>
 
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">Claude vs ChatGPT: Which should you choose in 2026?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">Choose Claude (Claude Opus 5.5 / Sonnet 5) for coding, large documents (1M tokens), and formal math verification. Choose ChatGPT (GPT-6 Astra / GPT-5.6 Sol) for computer automation, web browsing, and multimodal voice.</p>
+                  <h2 class="text-lg font-bold text-zinc-100">Claude vs ChatGPT: what does the data say?</h2>
+                  <p class="text-sm text-zinc-300 leading-relaxed">{escape(next((sd['executiveVerdict'] for sd in site_data()['showdowns'] if sd['slug'] == 'claude-vs-chatgpt'), ''))}</p>
                 </div>
 
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">What is the best AI subscription to get in 2026?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">For individual developers, Claude Pro ($20/mo) is top for coding and writing. ChatGPT Plus ($20/mo) is best for general multi-tool usage. Power users with a $100/mo budget get maximum leverage by combining Claude Pro ($20) + Cursor ($20) + $60 in developer API credits.</p>
+                  <h2 class="text-lg font-bold text-zinc-100">Where do the model and benchmark numbers come from?</h2>
+                  <p class="text-sm text-zinc-300 leading-relaxed">From public sources only: arena.ai (text leaderboard), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. We save a dated copy of each source and do not run the tests ourselves. Missing values are shown as "Not disclosed" or "Not listed".</p>
                 </div>
 
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
                   <h2 class="text-lg font-bold text-zinc-100">How are NextVector Signal Ratings calculated?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">Signal Ratings use a 4-part deterministic formula: Architectural Novelty (30%), Empirical Benchmark Verification (30%), Practical Engineering Utility (25%), and Primary Source Reliability (15%). Scores above 90 represent verified breakthrough paradigm shifts.</p>
+                  <p class="text-sm text-zinc-300 leading-relaxed">Signal Ratings use a 4-part formula: Architectural Novelty (30%), Empirical Benchmark Verification (30%), Practical Engineering Utility (25%), and Primary Source Reliability (15%).</p>
                 </div>
               </div>
             </main>"""

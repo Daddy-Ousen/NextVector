@@ -40,5 +40,162 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/models/model-claude-mythos-preview",
+      "destination": "/models/model-claude-mythos-5-1",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-1-thinking",
+      "destination": "/models/model-gpt-5-1",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-1-instant",
+      "destination": "/models/model-gpt-5-1",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-1-high",
+      "destination": "/models/model-gpt-5-1",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-1-medium",
+      "destination": "/models/model-gpt-5-1",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-1-codex-high",
+      "destination": "/models/model-gpt-5-1-codex",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-high",
+      "destination": "/models/model-gpt-5",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-5-medium",
+      "destination": "/models/model-gpt-5",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gpt-oss-20b-high",
+      "destination": "/models/model-gpt-oss-20b",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gemini-2-5-pro-preview-06-05",
+      "destination": "/models/model-gemini-2-5-pro",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-kimi-k2-thinking-0905",
+      "destination": "/models/model-kimi-k2-thinking",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-deepseek-v4-pro-max",
+      "destination": "/models/model-deepseek-v4-pro",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-deepseek-v4-flash-max",
+      "destination": "/models/model-deepseek-v4-flash",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-deepseek-v4-flash-0423",
+      "destination": "/models/model-deepseek-v4-flash",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-deepseek-v3-2-thinking",
+      "destination": "/models/model-deepseek-v3-2",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-qwen-image-2-1",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-jev-system-one",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gemini-3-deep-think",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-qwen3-8-flash-next",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-seed-2-1-pro",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gemini-3-8-flash-cyber",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-grok-4-heavy",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-gemini-3-5-flash-cyber",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-longcat-flash-thinking-2601",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-longcat-flash-thinking",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-deepseek-v3-2-speciale",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-mai-thinking-1",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-mai-code-1-flash",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-mai-code-1-1-flash",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-nova-2-pro",
+      "destination": "/models",
+      "permanent": true
+    },
+    {
+      "source": "/models/model-aleph-alpha-kolibri-1",
+      "destination": "/models",
+      "permanent": true
+    }
   ]
 }

@@ -1,1184 +1,1270 @@
 # NextVector — Complete Frontier AI Intelligence & Model Evaluation Corpus
 > High-signal, noise-filtered journalism and engineering intelligence covering foundation models, autonomous agents, enterprise cybersecurity, and scientific breakthroughs.
-Editorial Charter: Less noise. More signal. Verified benchmarks over marketing claims. Edited by Robiul Hasan (https://rhasan.online).
+Editorial Charter: Less noise. More signal. Sourced benchmarks over marketing claims. Edited by Robiul Hasan (https://rhasan.online).
 
 ## Platform Overview & Methodology
 NextVector evaluates foundation models and technical breakthroughs through an empirical, primary-source framework. Every report answers three core questions: (1) What happened? (2) Why does it matter? (3) What could happen next? Stories are assigned a Signal Rating from 1 to 100 based on architectural novelty, benchmark verification, practical engineering utility, and source reliability.
 
-## 2026 Model Decision Guide & AI Subscription Breakdown
-- Claude Pro ($20/mo): Recommended for software engineers, mathematicians, and technical writers. Key model: Claude Opus 5.5 (1417 LMSYS Arena Elo, 1M native context window, 75.8% SWE-bench Verified with native Lean 4 formal verification).
-- ChatGPT Plus ($20/mo): Recommended for general multi-tool usage, voice interactions, and autonomous computer navigation. Key model: GPT-6 Astra (1420 LMSYS Arena Elo, 68.4% OSWorld).
-- ChatGPT Pro ($200/mo): Recommended exclusively for full-time quantitative researchers and autonomous agent operators needing unrestricted max-compute reasoning passes.
-- Optimal $100/mo Power User Budget: Claude Pro ($20) + Cursor Pro ($20) + $60 in developer API credits (DeepSeek, Gemini Flash, Anthropic).
+## Model Decision Guide (data checked 2026-10-11)
+Each pick comes from a stated rule over public data: arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified and list prices. NextVector does not run these tests.
+- Highest Arena score (released models): Claude Opus 5.5 (Anthropic) — Arena 1507 (±8, #2); list price $4.00 / $20.00 per 1M tokens. Rule: Highest arena.ai text score among generally released models we track.
+- Best Arena score under $1 blended: MiMo-V2.6-Pro (Xiaomi AI) — Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens. Rule: Highest Arena score with a blended list price under $1 per 1M tokens (3 input : 1 output).
+- Best Arena score under $0.20 blended: Gemma 4 31B (Google DeepMind) — Arena 1452 at $0.15 blended; list price $0.09 / $0.34 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
+- Best open-weights model: Kimi K3 (Moonshot AI) — Arena 1488 · Kimi K3 license; list price $0.80 / $10.00 per 1M tokens. Rule: Highest Arena score among models with downloadable weights.
+- Computer use: Claude Fable 5 (Anthropic) — OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens. Rule: Highest OSWorld-Verified success rate (General model runs) among models we track.
+- Coding (shared-harness SWE-bench runs): Claude Opus 4.5 (Anthropic) — SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens. Rule: Highest SWE-bench Verified score in mini-SWE-agent runs. These runs stop in early 2026, so newer models are missing.
+- Largest context window: Grok 4.20 (xAI) — 2M tokens · Arena 1475; list price $1.25 / $2.50 per 1M tokens. Rule: Largest listed context window among Arena-ranked models; ties go to the higher Arena score.
 
-## Evaluated AI Models Directory (146 Models)
-### GPT-6 Astra (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-astra
-- Release Date: September 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Scale Multi-Expert Cluster | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #1 (1420 Elo)
-- API Token Pricing: $5.0 / 1M input | $20.0 / 1M output
-- Summary: 
+## AI Models Directory (135 Models, sourced data)
+### Gemini 4 Argon (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-4-argon
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #1 (score 1525 ±9)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- Summary: Proprietary model from Google DeepMind. Arena text score 1525 (#1 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/, https://arena.ai/leaderboard/text
 
-### Gemini 3 Deep Think (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-deep-think
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Neuro-Symbolic Cluster + AlphaProof-2 | Context Window: 2M tokens | License: Google Cloud Vertex API
-- LMSYS Arena: #2 (1419 Elo)
-- API Token Pricing: $5.0 / 1M input | $20.0 / 1M output
-- Summary: 
+### Claude Opus 5.5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-5-5
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #2 (score 1507 ±8)
+- API list price (input / output per 1M tokens): $4.00 / $20.00
+- Summary: Proprietary model from Anthropic, listed September 2026. Arena text score 1507 (#2 of 414 entries). $4.00 input / $20.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/claude-opus-5-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-5.5, https://arena.ai/leaderboard/text
+
+### Claude Opus 4.6 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-6
+- Release Date: February 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #3 (score 1504 ±3)
+- API list price (input / output per 1M tokens): $5.00 / $25.00
+- SWE-bench Verified: 75.6% (mini-SWE-agent (bash only) · run 'Claude 4.6 Opus' · 2026-02-17)
+- Summary: Proprietary model from Anthropic, listed February 2026. Arena text score 1504 (#3 of 414 entries). $5.00 input / $25.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-opus-4-6, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-4.6, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Claude Fable 5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-fable-5
+- Release Date: June 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #4 (score 1504 ±4)
+- API list price (input / output per 1M tokens): $10.00 / $50.00
+- OSWorld-Verified: 86.0% (Success rate · 100 steps · tested 2026-08-01)
+- Summary: Proprietary model from Anthropic, listed June 2026. Arena text score 1504 (#4 of 414 entries). $10.00 input / $50.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-fable-5-mythos-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-fable-5, https://arena.ai/leaderboard/text, https://os-world.github.io/
+
+### Claude Opus 4.7 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-7
+- Release Date: April 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #5 (score 1501 ±4)
+- API list price (input / output per 1M tokens): $5.00 / $25.00
+- Summary: Proprietary model from Anthropic, listed April 2026. Arena text score 1501 (#5 of 414 entries). $5.00 input / $25.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-opus-4-7, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-4.7, https://arena.ai/leaderboard/text
 
 ### Claude Fable 5.1 (Anthropic)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-claude-fable-5-1
 - Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Scale Multi-Expert Cluster | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #3 (1418 Elo)
-- API Token Pricing: $5.0 / 1M input | $20.0 / 1M output
-- Summary: 
-
-### Claude Opus 5.5 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-5-5
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Dense-Sparse Mixture-of-Experts (MoE) | Context Window: 1M tokens (Native) | License: Anthropic Commercial API Terms of Service
-- LMSYS Arena: #4 (1417 Elo)
-- API Token Pricing: $4.0 / 1M input | $20.0 / 1M output
-- Summary: 
-
-### Claude Opus 5 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-5
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Scale Multi-Expert Cluster | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #5 (1416 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
-
-### GPT-5.6 Sol (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-6-sol
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Scale Multi-Expert Cluster | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #6 (1415 Elo)
-- API Token Pricing: $3.0 / 1M input | $12.0 / 1M output
-- Summary: 
-
-### Grok 4.7 (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-7
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Dense-Sparse Mixture-of-Experts (MoE) | Context Window: 512k tokens (Native) | License: xAI Commercial API Terms of Service
-- LMSYS Arena: #7 (1414 Elo)
-- API Token Pricing: $3.0 / 1M input | $12.0 / 1M output
-- Summary: 
-
-### Muse Spark 1.3 (Meta AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark-1-3
-- Release Date: September 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #8 (1413 Elo)
-- API Token Pricing: $2.0 / 1M input | $2.0 / 1M output
-- Summary: 
-
-### Gemini 3.8 Live Extended Thinking (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-8-live-extended-thinking
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Dual-Channel Parallel Latent Reasoning Foundation Model | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #9 (1412 Elo)
-- API Token Pricing: $0.75 / 1M input | $4.5 / 1M output
-- Summary: 
-
-### Claude Mythos 5.1 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-mythos-preview
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Restricted Critical Infrastructure / Defense License
-- LMSYS Arena: #10 (1411 Elo)
-- API Token Pricing: $8.0 / 1M input | $32.0 / 1M output
-- Summary: 
-
-### Claude Fable 5 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-fable-5
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Scale Multi-Expert Cluster | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #11 (1409 Elo)
-- API Token Pricing: $5.0 / 1M input | $20.0 / 1M output
-- Summary: 
-
-### Kimi K3 (Moonshot AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k3
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #12 (1407 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### GLM-5.3 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-3
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #13 (1406 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Gemini 3.8 Live (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-8-live
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Scale Native Speech-to-Speech Transformer | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #14 (1404 Elo)
-- API Token Pricing: $0.75 / 1M input | $4.5 / 1M output
-- Summary: 
-
-### DeepSeek-V4-Pro-0813 (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-pro-0813
-- Release Date: September 2026 | Architecture Type: Open Weights
-- Parameters: 1.65T MoE (Multi-Head Latent Attention) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #15 (1404 Elo)
-- API Token Pricing: $0.55 / 1M input | $1.65 / 1M output
-- Summary: 
-
-### Qwen3.8 Max (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-8-max
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: 2.4T MoE (95B active) | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #16 (1402 Elo)
-- API Token Pricing: $1.2 / 1M input | $3.6 / 1M output
-- Summary: 
-
-### GPT-5.6 Terra (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-6-terra
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #17 (1400 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Claude Opus 4.8 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-8
-- Release Date: September 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #18 (1398 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
-
-### Hy4 preview (Tencent Hunyuan)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-hy4-preview
-- Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #19 (1397 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### DeepSeek-V4.1-Flash (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-1-flash
-- Release Date: September 2026 | Architecture Type: Open Weights
-- Parameters: 280B MoE (16.5B active per token) | Context Window: 256k tokens | License: Apache 2.0
-- LMSYS Arena: #20 (1396 Elo)
-- API Token Pricing: $0.14 / 1M input | $0.56 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #6 (score 1501 ±6)
+- API list price (input / output per 1M tokens): $10.00 / $50.00
+- Summary: Proprietary model from Anthropic, listed September 2026. Arena text score 1501 (#6 of 414 entries). $10.00 input / $50.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/claude-fable-and-mythos-5-1, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-fable-5.1, https://arena.ai/leaderboard/text
 
 ### Gemini 3.8 Flash (Google DeepMind)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-8-flash
 - Release Date: September 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #21 (1395 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #8 (score 1497 ±5)
+- API list price (input / output per 1M tokens): $0.75 / $3.75
+- Summary: Proprietary model from Google DeepMind, listed September 2026. Arena text score 1497 (#8 of 414 entries). $0.75 input / $3.75 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.8-flash, https://arena.ai/leaderboard/text
 
-### GLM-5.3-Flash (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-3-flash
+### Muse Spark 1.3 (Meta AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark-1-3
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #9 (score 1494 ±6)
+- API list price (input / output per 1M tokens): $1.25 / $4.25
+- Summary: Proprietary model from Meta AI, listed September 2026. Arena text score 1494 (#9 of 414 entries). $1.25 input / $4.25 output per 1M tokens. 1M tokens context.
+- Sources: https://developer.meta.com/ai/models/muse-spark/, https://openrouter.ai/meta/muse-spark-1.3, https://arena.ai/leaderboard/text
+
+### Muse Spark 1.2 (Meta AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark-1-2
 - Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #22 (1393 Elo)
-- API Token Pricing: $0.08 / 1M input | $0.24 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #11 (score 1492 ±8)
+- API list price (input / output per 1M tokens): $1.25 / $4.25
+- Summary: Proprietary model from Meta AI, listed August 2026. Arena text score 1492 (#11 of 414 entries). $1.25 input / $4.25 output per 1M tokens. 1M tokens context.
+- Sources: https://developer.meta.com/ai/models/muse-spark/, https://openrouter.ai/meta/muse-spark-1.2, https://arena.ai/leaderboard/text
 
 ### Muse Spark 1.1 (Meta AI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark-1-1
-- Release Date: August 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #23 (1391 Elo)
-- API Token Pricing: $0.8 / 1M input | $0.8 / 1M output
-- Summary: 
+- Release Date: July 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #12 (score 1491 ±4)
+- API list price (input / output per 1M tokens): $1.25 / $4.25
+- OSWorld-Verified: 80.7% (Success rate · 100 steps · tested 2026-07-09)
+- Summary: Proprietary model from Meta AI, listed July 2026. Arena text score 1491 (#12 of 414 entries). $1.25 input / $4.25 output per 1M tokens. 1M tokens context.
+- Sources: https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/, https://openrouter.ai/meta/muse-spark-1.1, https://arena.ai/leaderboard/text, https://os-world.github.io/
+
+### Claude Opus 5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-5
+- Release Date: July 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #13 (score 1490 ±4)
+- API list price (input / output per 1M tokens): $5.00 / $25.00
+- OSWorld-Verified: 83.4% (Success rate · 100 steps · tested 2026-08-01)
+- Summary: Proprietary model from Anthropic, listed July 2026. Arena text score 1490 (#13 of 414 entries). $5.00 input / $25.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-opus-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-5, https://arena.ai/leaderboard/text, https://os-world.github.io/
+
+### Muse Spark (Meta AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: #15 (score 1489 ±6)
+- API list price (input / output per 1M tokens): Not public
+- Summary: Proprietary model from Meta AI. Arena text score 1489 (#15 of 414 entries).
+- Sources: https://ai.meta.com/blog/introducing-muse-spark-msl/, https://arena.ai/leaderboard/text
+
+### Kimi K3 (Moonshot AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k3
+- Release Date: July 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Kimi K3 license
+- arena.ai text leaderboard: #16 (score 1488 ±5)
+- API list price (input / output per 1M tokens): $0.80 / $10.00
+- Summary: Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.80 input / $10.00 output per 1M tokens. 1M tokens context.
+- Sources: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart, https://openrouter.ai/moonshotai/kimi-k3, https://huggingface.co/moonshotai/Kimi-K3, https://arena.ai/leaderboard/text
+
+### Gemini 3.1 Pro (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-1-pro
+- Release Date: February 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #17 (score 1487 ±3)
+- API list price (input / output per 1M tokens): $2.00 / $12.00
+- Summary: Proprietary model from Google DeepMind, listed February 2026. Arena text score 1487 (#17 of 414 entries). $2.00 input / $12.00 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.1-pro-preview, https://arena.ai/leaderboard/text
 
 ### Gemini 3.7 Flash (Google DeepMind)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-7-flash
 - Release Date: August 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #24 (1389 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #18 (score 1486 ±5)
+- API list price (input / output per 1M tokens): $0.75 / $3.75
+- Summary: Proprietary model from Google DeepMind, listed August 2026. Arena text score 1486 (#18 of 414 entries). $0.75 input / $3.75 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/, https://openrouter.ai/google/gemini-3.7-flash, https://arena.ai/leaderboard/text
 
-### Mistral Large 3 (Mistral AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mistral-large-3
-- Release Date: September 2026 | Architecture Type: Open Weights
-- Parameters: 670B (38B active Dynamic MoD) | Context Window: 128k tokens | License: Apache 2.0
-- LMSYS Arena: #25 (1388 Elo)
-- API Token Pricing: $1.5 / 1M input | $4.5 / 1M output
-- Summary: 
+### Gemini 3 Pro (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-pro
+- Release Date: November 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #19 (score 1485 ±4)
+- API list price (input / output per 1M tokens): $2.00 / $12.00
+- SWE-bench Verified: 74.2% (mini-SWE-agent (bash only) · run 'Gemini 3 Pro Preview (2025-11-18)' · 2025-11-18)
+- Summary: Proprietary model from Google DeepMind, listed November 2025. Arena text score 1485 (#19 of 414 entries). $2.00 input / $12.00 output per 1M tokens. 1M tokens context.
+- Sources: http://aistudio.google.com/app/prompts/new_chat?model=gemini-3-pro-preview, https://arena.ai/leaderboard/text, https://www.swebench.com/
 
-### Qwen3.8-Flash-Next (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-8-flash-next
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #26 (1387 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.3 / 1M output
-- Summary: 
+### GPT-5.6 Sol (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-6-sol
+- Release Date: July 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #20 (score 1485 ±4)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1485 (#20 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/gpt-5-6/, https://openrouter.ai/openai/gpt-5.6-sol, https://arena.ai/leaderboard/text
 
-### Qwen3.8 Flash (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-8-flash
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #27 (1386 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.3 / 1M output
-- Summary: 
+### GPT-6.1 Sol (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-1-sol
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #21 (score 1484 ±9)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1484 (#21 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/introducing-gpt-6-1-sol/, https://openrouter.ai/openai/gpt-6.1-sol, https://arena.ai/leaderboard/text
 
-### Claude Sonnet 5 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-5
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #28 (1384 Elo)
-- API Token Pricing: $3.0 / 1M input | $15.0 / 1M output
-- Summary: 
+### Qwen3.8 Max (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-8-max
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #22 (score 1483 ±5)
+- API list price (input / output per 1M tokens): $2.00 / $6.00
+- Summary: Proprietary model from Alibaba Cloud, listed September 2026. Arena text score 1483 (#22 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.qwencloud.com/models/qwen3.8-max, https://openrouter.ai/qwen/qwen3.8-max-0902, https://arena.ai/leaderboard/text
+
+### Gemini 3.6 Flash (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-6-flash
+- Release Date: July 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #23 (score 1482 ±4)
+- API list price (input / output per 1M tokens): $0.75 / $3.75
+- Summary: Proprietary model from Google DeepMind, listed July 2026. Arena text score 1482 (#23 of 414 entries). $0.75 input / $3.75 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.6-flash, https://arena.ai/leaderboard/text
 
 ### GPT-5.5 (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-5
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #29 (1382 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
+- Release Date: April 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #24 (score 1482 ±4)
+- API list price (input / output per 1M tokens): $5.00 / $30.00
+- Summary: Proprietary model from OpenAI, listed April 2026. Arena text score 1482 (#24 of 414 entries). $5.00 input / $30.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/introducing-gpt-5-5/, https://openrouter.ai/openai/gpt-5.5, https://arena.ai/leaderboard/text
+
+### Claude Opus 4.8 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-8
+- Release Date: May 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #25 (score 1481 ±4)
+- API list price (input / output per 1M tokens): $5.00 / $25.00
+- Summary: Proprietary model from Anthropic, listed May 2026. Arena text score 1481 (#25 of 414 entries). $5.00 input / $25.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-opus-4-8, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-4.8, https://arena.ai/leaderboard/text
+
+### MiMo-V2.6-Pro (Xiaomi AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-6-pro
+- Release Date: September 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1.05M tokens | License: MIT
+- arena.ai text leaderboard: #26 (score 1480 ±9)
+- API list price (input / output per 1M tokens): $0.435 / $0.87
+- Summary: Open Weights model from Xiaomi AI, listed September 2026. Arena text score 1480 (#26 of 414 entries). $0.43 input / $0.87 output per 1M tokens. 1.05M tokens context.
+- Sources: https://mimo.xiaomi.com/mimo-v2-6, https://openrouter.ai/xiaomi/mimo-v2.6-pro, https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL, https://arena.ai/leaderboard/text
+
+### GLM-5.3 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-3
+- Release Date: August 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #27 (score 1478 ±5)
+- API list price (input / output per 1M tokens): $0.07 / $4.80
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.07 input / $4.80 output per 1M tokens. 1M tokens context.
+- Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3, https://huggingface.co/zai-org/GLM-5.3, https://arena.ai/leaderboard/text
+
+### Gemini 3.5 Flash (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-5-flash
+- Release Date: May 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #28 (score 1478 ±4)
+- API list price (input / output per 1M tokens): $1.50 / $9.00
+- Summary: Proprietary model from Google DeepMind, listed May 2026. Arena text score 1478 (#28 of 414 entries). $1.50 input / $9.00 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/, https://openrouter.ai/google/gemini-3.5-flash, https://arena.ai/leaderboard/text
+
+### Claude Sonnet 5.5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-5-5
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #32 (score 1476 ±9)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- Summary: Proprietary model from Anthropic, listed September 2026. Arena text score 1476 (#32 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/claude-sonnet-5-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-sonnet-5.5, https://arena.ai/leaderboard/text
+
+### GLM-5.2 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-2
+- Release Date: June 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #33 (score 1475 ±4)
+- API list price (input / output per 1M tokens): $0.06 / $7.00
+- Summary: Open Weights model from Zhipu AI, listed June 2026. Arena text score 1475 (#33 of 414 entries). $0.06 input / $7.00 output per 1M tokens. 1M tokens context.
+- Sources: https://huggingface.co/zai-org/GLM-5.2, https://openrouter.ai/z-ai/glm-5.2, https://arena.ai/leaderboard/text
+
+### GPT-5.4 (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-4
+- Release Date: March 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #34 (score 1475 ±4)
+- API list price (input / output per 1M tokens): $2.50 / $15.00
+- Summary: Proprietary model from OpenAI, listed March 2026. Arena text score 1475 (#34 of 414 entries). $2.50 input / $15.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://platform.openai.com/docs/models/gpt-5.4, https://openrouter.ai/openai/gpt-5.4, https://arena.ai/leaderboard/text
+
+### GPT-6 Astra (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-astra
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #35 (score 1475 ±7)
+- API list price (input / output per 1M tokens): $10.00 / $50.00
+- Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1475 (#35 of 414 entries). $10.00 input / $50.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/gpt-6-astra/, https://openrouter.ai/openai/gpt-6-astra, https://arena.ai/leaderboard/text
+
+### Qwen3.7 Max (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-7-max
+- Release Date: May 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #36 (score 1475 ±10)
+- API list price (input / output per 1M tokens): $1.475 / $4.425
+- Summary: Proprietary model from Alibaba Cloud, listed May 2026. Arena text score 1475 (#36 of 414 entries). $1.48 input / $4.42 output per 1M tokens. 1M tokens context.
+- Sources: https://chat.qwen.ai/?models=Qwen3.7-Max-Preview, https://openrouter.ai/qwen/qwen3.7-max, https://arena.ai/leaderboard/text
+
+### Grok 4.20 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-20
+- Release Date: March 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 2M tokens | License: Proprietary
+- arena.ai text leaderboard: #37 (score 1475 ±5)
+- API list price (input / output per 1M tokens): $1.25 / $2.50
+- Summary: Proprietary model from xAI, listed March 2026. Arena text score 1475 (#37 of 414 entries). $1.25 input / $2.50 output per 1M tokens. 2M tokens context.
+- Sources: https://grok.com/, https://openrouter.ai/x-ai/grok-4.20, https://arena.ai/leaderboard/text
+
+### GLM-5.3-Flash (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-3-flash
+- Release Date: August 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #38 (score 1475 ±5)
+- API list price (input / output per 1M tokens): $0.15 / $0.50
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.15 input / $0.50 output per 1M tokens. 1M tokens context.
+- Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3-flash, https://huggingface.co/zai-org/GLM-5.3-Flash, https://arena.ai/leaderboard/text
+
+### DeepSeek-V4.1-Flash (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-1-flash
+- Release Date: September 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #39 (score 1475 ±7)
+- API list price (input / output per 1M tokens): $0.30 / $1.20
+- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 1M tokens context.
+- Sources: https://www.deepseek.com/en/news/deepseek-v4-1-flash/, https://openrouter.ai/deepseek/deepseek-v4.1-flash, https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash, https://arena.ai/leaderboard/text
+
+### Claude Opus 4.5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-5
+- Release Date: November 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 200K tokens | License: Proprietary
+- arena.ai text leaderboard: #41 (score 1474 ±4)
+- API list price (input / output per 1M tokens): $5.00 / $25.00
+- SWE-bench Verified: 76.8% (mini-SWE-agent (bash only) · run 'Claude 4.5 Opus (high)' · 2026-02-17)
+- Summary: Proprietary model from Anthropic, listed November 2025. Arena text score 1474 (#41 of 414 entries). $5.00 input / $25.00 output per 1M tokens. 200K tokens context.
+- Sources: https://www.anthropic.com/news/claude-opus-4-5, https://openrouter.ai/anthropic/claude-opus-4.5, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### GPT-5.5 Instant (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-5-instant
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #42 (score 1473 ±5)
+- API list price (input / output per 1M tokens): $5.00 / $30.00
+- Summary: Proprietary model from OpenAI. Arena text score 1473 (#42 of 414 entries). $5.00 input / $30.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/gpt-5-5-instant, https://arena.ai/leaderboard/text
+
+### Gemini 3 Flash (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-flash
+- Release Date: December 2025 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #43 (score 1473 ±4)
+- API list price (input / output per 1M tokens): $0.50 / $3.00
+- SWE-bench Verified: 75.8% (mini-SWE-agent (bash only) · run 'Gemini 3 Flash (high)' · 2026-02-17)
+- Summary: Proprietary model from Google DeepMind, listed December 2025. Arena text score 1473 (#43 of 414 entries). $0.50 input / $3.00 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/products/gemini/gemini-3-flash, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3-flash-preview, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Claude Sonnet 4.6 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-4-6
+- Release Date: February 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #44 (score 1472 ±4)
+- API list price (input / output per 1M tokens): $3.00 / $15.00
+- OSWorld-Verified: 72.1% (Success rate · 100 steps · tested 2026-03-08)
+- Summary: Proprietary model from Anthropic, listed February 2026. Arena text score 1472 (#44 of 414 entries). $3.00 input / $15.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-sonnet-4-6, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-sonnet-4.6, https://arena.ai/leaderboard/text, https://os-world.github.io/
+
+### MiMo-V2.5-Pro (Xiaomi AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-5-pro
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1.05M tokens | License: MIT
+- arena.ai text leaderboard: #48 (score 1468 ±4)
+- API list price (input / output per 1M tokens): $0.435 / $0.87
+- Summary: Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1468 (#48 of 414 entries). $0.43 input / $0.87 output per 1M tokens. 1.05M tokens context.
+- Sources: https://mimo.xiaomi.com/mimo-v2-5-pro/, https://openrouter.ai/xiaomi/mimo-v2.5-pro, https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro, https://arena.ai/leaderboard/text
+
+### ERNIE 5.1 (Baidu)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-ernie-5-1
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 119K tokens | License: Proprietary
+- arena.ai text leaderboard: #49 (score 1467 ±5)
+- API list price (input / output per 1M tokens): $0.563 / $2.535
+- Summary: Proprietary model from Baidu. Arena text score 1467 (#49 of 414 entries). $0.56 input / $2.54 output per 1M tokens. 119K tokens context.
+- Sources: https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/, https://arena.ai/leaderboard/text
+
+### GPT-5.6 Terra (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-6-terra
+- Release Date: July 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #50 (score 1466 ±4)
+- API list price (input / output per 1M tokens): $2.00 / $12.00
+- Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1466 (#50 of 414 entries). $2.00 input / $12.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/gpt-5-6/, https://openrouter.ai/openai/gpt-5.6-terra, https://arena.ai/leaderboard/text
+
+### Grok 4.5 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-5
+- Release Date: July 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 500K tokens | License: Proprietary
+- arena.ai text leaderboard: #51 (score 1466 ±4)
+- API list price (input / output per 1M tokens): $2.00 / $6.00
+- Summary: Proprietary model from xAI, listed July 2026. Arena text score 1466 (#51 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 500K tokens context.
+- Sources: https://docs.x.ai/developers/models/grok-4.5, https://openrouter.ai/x-ai/grok-4.5, https://arena.ai/leaderboard/text
+
+### Grok 4.1 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-1
+- Release Date: November 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: #52 (score 1465 ±3)
+- API list price (input / output per 1M tokens): Not public
+- Summary: Proprietary model from xAI, listed November 2025. Arena text score 1465 (#52 of 414 entries).
+- Sources: https://x.ai/news/grok-4-1, https://arena.ai/leaderboard/text
+
+### DeepSeek-V4-Pro-0813 (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-pro-0813
+- Release Date: August 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #55 (score 1465 ±7)
+- API list price (input / output per 1M tokens): $0.66 / $1.98
+- Summary: Open Weights model from DeepSeek, listed August 2026. Arena text score 1465 (#55 of 414 entries). $0.66 input / $1.98 output per 1M tokens. 1M tokens context.
+- Sources: https://api-docs.deepseek.com/updates/#date-2026-08-13, https://openrouter.ai/deepseek/deepseek-v4-pro-0813, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813, https://arena.ai/leaderboard/text
+
+### GLM-5.1 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-1
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
+- arena.ai text leaderboard: #56 (score 1464 ±4)
+- API list price (input / output per 1M tokens): $0.966 / $3.036
+- Summary: Open Weights model from Zhipu AI, listed April 2026. Arena text score 1464 (#56 of 414 entries). $0.97 input / $3.04 output per 1M tokens. 205K tokens context.
+- Sources: https://huggingface.co/zai-org/GLM-5.1, https://openrouter.ai/z-ai/glm-5.1, https://arena.ai/leaderboard/text
+
+### Claude Sonnet 5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-5
+- Release Date: June 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #57 (score 1461 ±4)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- Summary: Proprietary model from Anthropic, listed June 2026. Arena text score 1461 (#57 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-sonnet-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-sonnet-5, https://arena.ai/leaderboard/text
+
+### Kimi K2.6 (Moonshot AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-6
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: Modified MIT
+- arena.ai text leaderboard: #58 (score 1461 ±4)
+- API list price (input / output per 1M tokens): $0.65 / $3.41
+- OSWorld-Verified: 73.1% (Success rate · 100 steps · tested 2026-04-20)
+- Summary: Open Weights model from Moonshot AI, listed April 2026. Arena text score 1461 (#58 of 414 entries). $0.65 input / $3.41 output per 1M tokens. 256K tokens context.
+- Sources: https://www.kimi.com/blog/kimi-k2-6, https://openrouter.ai/moonshotai/kimi-k2.6, https://huggingface.co/moonshotai/Kimi-K2.6, https://arena.ai/leaderboard/text, https://os-world.github.io/
+
+### DeepSeek-V4-Pro (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-pro
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #62 (score 1458 ±4)
+- API list price (input / output per 1M tokens): $0.209 / $0.418
+- Summary: Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.21 input / $0.42 output per 1M tokens. 1M tokens context.
+- Sources: https://api-docs.deepseek.com/news/news260424, https://openrouter.ai/deepseek/deepseek-v4-pro, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro, https://arena.ai/leaderboard/text
+
+### GLM-5 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5
+- Release Date: February 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
+- arena.ai text leaderboard: #63 (score 1458 ±4)
+- API list price (input / output per 1M tokens): $0.60 / $1.92
+- SWE-bench Verified: 72.8% (mini-SWE-agent (bash only) · run 'GLM 5 (high)' · 2026-02-17)
+- Summary: Open Weights model from Zhipu AI, listed February 2026. Arena text score 1458 (#63 of 414 entries). $0.60 input / $1.92 output per 1M tokens. 205K tokens context.
+- Sources: https://huggingface.co/zai-org/GLM-5, https://openrouter.ai/z-ai/glm-5, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Claude Sonnet 4.5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-4-5
+- Release Date: September 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #64 (score 1456 ±3)
+- API list price (input / output per 1M tokens): $3.00 / $15.00
+- OSWorld-Verified: 62.9% (Success rate · 100 steps · tested 2025-10-31)
+- SWE-bench Verified: 71.4% (mini-SWE-agent (bash only) · run 'Claude 4.5 Sonnet (high)' · 2026-02-17)
+- Summary: Proprietary model from Anthropic, listed September 2025. Arena text score 1456 (#64 of 414 entries). $3.00 input / $15.00 output per 1M tokens. 1M tokens context.
+- Sources: https://www.anthropic.com/news/claude-sonnet-4-5, https://openrouter.ai/anthropic/claude-sonnet-4.5, https://arena.ai/leaderboard/text, https://os-world.github.io/, https://www.swebench.com/
+
+### Seed 2.0 Pro (ByteDance)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-0-pro
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: #65 (score 1456 ±3)
+- API list price (input / output per 1M tokens): Not public
+- Summary: Proprietary model from ByteDance. Arena text score 1456 (#65 of 414 entries).
+- Sources: https://www.byteplus.com/en/blog/dola-seed-2-0-pro, https://arena.ai/leaderboard/text
+
+### Qwen3.7-Plus (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-7-plus
+- Release Date: June 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #66 (score 1456 ±4)
+- API list price (input / output per 1M tokens): $0.32 / $1.28
+- OSWorld-Verified: 73.3% (Success rate · 100 steps · tested 2026-05-25)
+- Summary: Proprietary model from Alibaba Cloud, listed June 2026. Arena text score 1456 (#66 of 414 entries). $0.32 input / $1.28 output per 1M tokens. 1M tokens context.
+- Sources: https://qwen.ai/blog?id=qwen3.7-plus, https://openrouter.ai/qwen/qwen3.7-plus, https://arena.ai/leaderboard/text, https://os-world.github.io/
+
+### GPT-6 Sol (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-sol
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #67 (score 1456 ±7)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1456 (#67 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/introducing-gpt-6-sol-and-luna/, https://openrouter.ai/openai/gpt-6-sol, https://arena.ai/leaderboard/text
+
+### GPT-5.1 (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1
+- Release Date: November 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: #68 (score 1456 ±4)
+- API list price (input / output per 1M tokens): $1.25 / $10.00
+- SWE-bench Verified: 66.0% (mini-SWE-agent (bash only) · run 'GPT 5.1 (2025-11-13) (medium)' · 2025-11-20)
+- Summary: Proprietary model from OpenAI, listed November 2025. Arena text score 1456 (#68 of 414 entries). $1.25 input / $10.00 output per 1M tokens. 400K tokens context.
+- Sources: https://openai.com/index/gpt-5-1/, https://openrouter.ai/openai/gpt-5.1, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Gemini 3.5 Flash-Lite (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-5-flash-lite
+- Release Date: July 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #70 (score 1455 ±4)
+- API list price (input / output per 1M tokens): $0.30 / $2.50
+- Summary: Proprietary model from Google DeepMind, listed July 2026. Arena text score 1455 (#70 of 414 entries). $0.30 input / $2.50 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.5-flash-lite, https://arena.ai/leaderboard/text
 
 ### Grok 4.6 (xAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-6
 - Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #30 (1380 Elo)
-- API Token Pricing: $5.0 / 1M input | $15.0 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 500K tokens | License: Proprietary
+- arena.ai text leaderboard: #72 (score 1454 ±5)
+- API list price (input / output per 1M tokens): $2.00 / $6.00
+- Summary: Proprietary model from xAI, listed August 2026. Arena text score 1454 (#72 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 500K tokens context.
+- Sources: https://docs.x.ai/developers/models/grok-4.6, https://openrouter.ai/x-ai/grok-4.6, https://arena.ai/leaderboard/text
 
-### DeepSeek-V4-Flash-Vision-Exp (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash-vision-exp
-- Release Date: August 2026 | Architecture Type: Open Weights
-- Parameters: 1.65T MoE (Multi-Head Latent Attention) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #31 (1378 Elo)
-- API Token Pricing: $0.14 / 1M input | $0.56 / 1M output
-- Summary: 
-
-### Seed 2.1 Pro (ByteDance)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-1-pro
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #32 (1377 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### GLM-5.2 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-2
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #33 (1375 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Grok 4.5 (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-5
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #34 (1373 Elo)
-- API Token Pricing: $3.0 / 1M input | $9.0 / 1M output
-- Summary: 
-
-### Qwen3.7 Max (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-7-max
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #35 (1371 Elo)
-- API Token Pricing: $1.2 / 1M input | $3.6 / 1M output
-- Summary: 
+### Hy3 (Tencent Hunyuan)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-hy3
+- Release Date: July 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #73 (score 1454 ±6)
+- API list price (input / output per 1M tokens): $0.132 / $0.528
+- Summary: Open Weights model from Tencent Hunyuan, listed July 2026. Arena text score 1454 (#73 of 414 entries). $0.13 input / $0.53 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/tencent/Hy3, https://openrouter.ai/tencent/hy3, https://arena.ai/leaderboard/text
 
 ### GPT-5.6 Luna (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-6-luna
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #36 (1369 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
+- Release Date: July 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #74 (score 1452 ±4)
+- API list price (input / output per 1M tokens): $0.20 / $1.20
+- Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1452 (#74 of 414 entries). $0.20 input / $1.20 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/gpt-5-6/, https://openrouter.ai/openai/gpt-5.6-luna, https://arena.ai/leaderboard/text
+
+### Gemma 4 31B (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemma-4-31b
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: 31B (dense) | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #75 (score 1452 ±7)
+- API list price (input / output per 1M tokens): $0.09 / $0.34
+- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1452 (#75 of 414 entries). $0.09 input / $0.34 output per 1M tokens. 256K tokens context.
+- Sources: https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-31b-it, https://openrouter.ai/google/gemma-4-31b-it, https://huggingface.co/google/gemma-4-31B-it, https://arena.ai/leaderboard/text
+
+### GPT-5.3 Chat (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-3-chat
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 128K tokens | License: Proprietary
+- arena.ai text leaderboard: #77 (score 1450 ±4)
+- API list price (input / output per 1M tokens): $1.75 / $14.00
+- Summary: Proprietary model from OpenAI. Arena text score 1450 (#77 of 414 entries). $1.75 input / $14.00 output per 1M tokens. 128K tokens context.
+- Sources: https://openai.com/index/gpt-5-3-instant/, https://arena.ai/leaderboard/text
+
+### Kimi K2.5 (Moonshot AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-5
+- Release Date: January 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: Modified MIT
+- arena.ai text leaderboard: #78 (score 1450 ±3)
+- API list price (input / output per 1M tokens): $0.50 / $2.50
+- OSWorld-Verified: 63.3% (Success rate · 100 steps · tested 2026-01-31)
+- SWE-bench Verified: 70.8% (mini-SWE-agent (bash only) · run 'Kimi K2.5 (high)' · 2026-02-17)
+- Summary: Open Weights model from Moonshot AI, listed January 2026. Arena text score 1450 (#78 of 414 entries). $0.50 input / $2.50 output per 1M tokens. 256K tokens context.
+- Sources: https://www.kimi.com/blog/kimi-k2-5.html, https://openrouter.ai/moonshotai/kimi-k2.5, https://huggingface.co/moonshotai/Kimi-K2.5, https://arena.ai/leaderboard/text, https://os-world.github.io/, https://www.swebench.com/
+
+### Claude Opus 4.1 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-1
+- Release Date: August 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 200K tokens | License: Proprietary
+- arena.ai text leaderboard: #79 (score 1450 ±3)
+- API list price (input / output per 1M tokens): $15.00 / $75.00
+- Summary: Proprietary model from Anthropic, listed August 2025. Arena text score 1450 (#79 of 414 entries). $15.00 input / $75.00 output per 1M tokens. 200K tokens context.
+- Sources: https://www.anthropic.com/news/claude-opus-4-1, https://openrouter.ai/anthropic/claude-opus-4.1, https://arena.ai/leaderboard/text
+
+### MiMo-V2-Pro (Xiaomi AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-pro
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #82 (score 1448 ±5)
+- API list price (input / output per 1M tokens): $1.10 / $3.30
+- Summary: Proprietary model from Xiaomi AI. Arena text score 1448 (#82 of 414 entries). $1.10 input / $3.30 output per 1M tokens. 1M tokens context.
+- Sources: https://mimo.xiaomi.com/mimo-v2-pro, https://arena.ai/leaderboard/text
+
+### Step 5 Preview (StepFun)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-step-5-preview
+- Release Date: October 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #83 (score 1447 ±9)
+- API list price (input / output per 1M tokens): $1.00 / $2.70
+- Summary: Proprietary model from StepFun, listed October 2026. Arena text score 1447 (#83 of 414 entries). $1.00 input / $2.70 output per 1M tokens. 1M tokens context.
+- Sources: https://stepfun.ai/, https://openrouter.ai/stepfun/step-5-preview, https://arena.ai/leaderboard/text
+
+### GPT-5.4 mini (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-4-mini
+- Release Date: March 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: #84 (score 1447 ±4)
+- API list price (input / output per 1M tokens): $0.75 / $4.50
+- Summary: Proprietary model from OpenAI, listed March 2026. Arena text score 1447 (#84 of 414 entries). $0.75 input / $4.50 output per 1M tokens. 400K tokens context.
+- Sources: https://openai.com/index/introducing-gpt-5-4-mini-and-nano/, https://openrouter.ai/openai/gpt-5.4-mini, https://arena.ai/leaderboard/text
+
+### ERNIE 5.0 (Baidu)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-ernie-5-0
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: #85 (score 1446 ±4)
+- API list price (input / output per 1M tokens): Not public
+- Summary: Proprietary model from Baidu. Arena text score 1446 (#85 of 414 entries).
+- Sources: https://ernie.baidu.com/blog/posts/ernie-5.0-0110-release-on-lmarena/, https://arena.ai/leaderboard/text
+
+### Gemini 2.5 Pro (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-2-5-pro
+- Release Date: June 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #86 (score 1445 ±2)
+- API list price (input / output per 1M tokens): $1.25 / $10.00
+- SWE-bench Verified: 53.6% (mini-SWE-agent (bash only) · run 'Gemini 2.5 Pro (2025-05-06)' · 2025-07-26)
+- Summary: Proprietary model from Google DeepMind, listed June 2025. Arena text score 1445 (#86 of 414 entries). $1.25 input / $10.00 output per 1M tokens. 1M tokens context.
+- Sources: http://aistudio.google.com/app/prompts/new_chat?model=gemini-2.5-pro, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-2.5-pro, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Qwen3.6 Plus (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-6-plus
+- Release Date: April 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #88 (score 1443 ±4)
+- API list price (input / output per 1M tokens): $0.325 / $1.95
+- Summary: Proprietary model from Alibaba Cloud, listed April 2026. Arena text score 1443 (#88 of 414 entries). $0.33 input / $1.95 output per 1M tokens. 1M tokens context.
+- Sources: https://qwen.ai/blog?id=qwen3.6, https://openrouter.ai/qwen/qwen3.6-plus, https://arena.ai/leaderboard/text
+
+### Grok 4.7 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-7
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 500K tokens | License: Proprietary
+- arena.ai text leaderboard: #90 (score 1443 ±7)
+- API list price (input / output per 1M tokens): $2.00 / $6.00
+- Summary: Proprietary model from xAI, listed September 2026. Arena text score 1443 (#90 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 500K tokens context.
+- Sources: https://docs.x.ai/developers/models/grok-4.7, https://openrouter.ai/x-ai/grok-4.7, https://arena.ai/leaderboard/text
+
+### GPT-6 Luna (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-luna
+- Release Date: September 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: #91 (score 1443 ±5)
+- API list price (input / output per 1M tokens): $0.10 / $0.50
+- Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1443 (#91 of 414 entries). $0.10 input / $0.50 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openai.com/index/introducing-gpt-6-sol-and-luna/, https://openrouter.ai/openai/gpt-6-luna, https://arena.ai/leaderboard/text
+
+### Qwen3.5-397B-A17B (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-397b-a17b
+- Release Date: February 2026 | Architecture Type: Open Weights
+- Parameters: 397B total, 17B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #92 (score 1442 ±3)
+- API list price (input / output per 1M tokens): $0.55 / $3.50
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1442 (#92 of 414 entries). $0.55 input / $3.50 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/Qwen/Qwen3.5-397B-A17B, https://openrouter.ai/qwen/qwen3.5-397b-a17b, https://arena.ai/leaderboard/text
+
+### Grok 4.3 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-3
+- Release Date: April 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #93 (score 1442 ±4)
+- API list price (input / output per 1M tokens): $1.25 / $2.50
+- Summary: Proprietary model from xAI, listed April 2026. Arena text score 1442 (#93 of 414 entries). $1.25 input / $2.50 output per 1M tokens. 1M tokens context.
+- Sources: https://docs.x.ai/developers/models/grok-4.3, https://openrouter.ai/x-ai/grok-4.3, https://arena.ai/leaderboard/text
+
+### GLM-4.7 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-4-7
+- Release Date: December 2025 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
+- arena.ai text leaderboard: #94 (score 1441 ±6)
+- API list price (input / output per 1M tokens): $0.60 / $2.20
+- Summary: Open Weights model from Zhipu AI, listed December 2025. Arena text score 1441 (#94 of 414 entries). $0.60 input / $2.20 output per 1M tokens. 205K tokens context.
+- Sources: https://huggingface.co/zai-org/GLM-4.7, https://openrouter.ai/z-ai/glm-4.7, https://arena.ai/leaderboard/text
+
+### Inkling (Thinking Machines Lab)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-inkling
+- Release Date: July 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 512K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #95 (score 1441 ±4)
+- API list price (input / output per 1M tokens): $1.00 / $4.05
+- Summary: Open Weights model from Thinking Machines Lab, listed July 2026. Arena text score 1441 (#95 of 414 entries). $1.00 input / $4.05 output per 1M tokens. 512K tokens context.
+- Sources: https://thinkingmachines.ai/news/introducing-inkling/, https://openrouter.ai/thinkingmachines/inkling, https://huggingface.co/thinkingmachines/Inkling, https://arena.ai/leaderboard/text
+
+### MiniMax M3 (MiniMax)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m3
+- Release Date: May 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MiniMax Community License
+- arena.ai text leaderboard: #96 (score 1440 ±4)
+- API list price (input / output per 1M tokens): $0.30 / $1.20
+- OSWorld-Verified: 75.2% (Success rate · 100 steps · tested 2026-06-08)
+- Summary: Open Weights model from MiniMax, listed May 2026. Arena text score 1440 (#96 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 1M tokens context.
+- Sources: https://www.minimax.io/models/text/m3, https://openrouter.ai/minimax/minimax-m3, https://huggingface.co/MiniMaxAI/Minimax-M3, https://arena.ai/leaderboard/text, https://os-world.github.io/
 
 ### Qwen3.8-27B (Alibaba Cloud)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-8-27b
 - Release Date: August 2026 | Architecture Type: Open Weights
-- Parameters: 27B Dense | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #37 (1368 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
+- Parameters: 27B (dense) | Context Window: 1M tokens | License: Apache 2.0
+- arena.ai text leaderboard: #99 (score 1438 ±5)
+- API list price (input / output per 1M tokens): $0.04 / $2.30
+- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1438 (#99 of 414 entries). $0.04 input / $2.30 output per 1M tokens. 1M tokens context.
+- Sources: https://huggingface.co/Qwen/Qwen3.8-27B, https://openrouter.ai/qwen/qwen3.8-27b, https://arena.ai/leaderboard/text
 
-### Claude Opus 4.6 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-6
-- Release Date: August 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #38 (1366 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
+### Gemma 4 26B-A4B (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemma-4-26b-a4b
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: 26B total, 4B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #100 (score 1438 ±7)
+- API list price (input / output per 1M tokens): $0.068 / $0.225
+- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1438 (#100 of 414 entries). $0.07 input / $0.23 output per 1M tokens. 256K tokens context.
+- Sources: https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-26b-a4b-it, https://openrouter.ai/google/gemma-4-26b-a4b-it, https://huggingface.co/google/gemma-4-26B-A4B-it, https://arena.ai/leaderboard/text
 
-### DeepSeek-V4-Flash-0731 (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash-0731
+### GPT-5.2 (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-2
+- Release Date: December 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: #101 (score 1437 ±4)
+- API list price (input / output per 1M tokens): $1.75 / $14.00
+- SWE-bench Verified: 72.8% (mini-SWE-agent (bash only) · run 'GPT 5.2 (high)' · 2026-02-17)
+- Summary: Proprietary model from OpenAI, listed December 2025. Arena text score 1437 (#101 of 414 entries). $1.75 input / $14.00 output per 1M tokens. 400K tokens context.
+- Sources: https://openai.com/index/introducing-gpt-5-2, https://openrouter.ai/openai/gpt-5.2, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### DeepSeek-V4-Flash (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
+- arena.ai text leaderboard: #103 (score 1436 ±4)
+- API list price (input / output per 1M tokens): $0.03 / $1.28
+- Summary: Open Weights model from DeepSeek, listed April 2026. Arena text score 1436 (#103 of 414 entries). $0.03 input / $1.28 output per 1M tokens. 1M tokens context.
+- Sources: https://api-docs.deepseek.com/news/news260424, https://openrouter.ai/deepseek/deepseek-v4-flash, https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash, https://arena.ai/leaderboard/text
+
+### GPT-5 (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5
+- Release Date: August 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: #105 (score 1435 ±5)
+- API list price (input / output per 1M tokens): $1.25 / $10.00
+- SWE-bench Verified: 65.0% (mini-SWE-agent (bash only) · run 'GPT 5 (2025-08-07) (medium)' · 2025-08-07)
+- Summary: Proprietary model from OpenAI, listed August 2025. Arena text score 1435 (#105 of 414 entries). $1.25 input / $10.00 output per 1M tokens. 400K tokens context.
+- Sources: https://platform.openai.com/docs/models/gpt-5, https://openrouter.ai/openai/gpt-5, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### MiMo-V2.5 (Xiaomi AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-5
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1.05M tokens | License: MIT
+- arena.ai text leaderboard: #107 (score 1434 ±4)
+- API list price (input / output per 1M tokens): $0.14 / $0.28
+- Summary: Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1434 (#107 of 414 entries). $0.14 input / $0.28 output per 1M tokens. 1.05M tokens context.
+- Sources: https://mimo.xiaomi.com/mimo-v2-5/, https://openrouter.ai/xiaomi/mimo-v2.5, https://huggingface.co/XiaomiMiMo/MiMo-V2.5, https://arena.ai/leaderboard/text
+
+### GLM-5V-Turbo (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5v-turbo
+- Release Date: April 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 203K tokens | License: Proprietary
+- arena.ai text leaderboard: #108 (score 1433 ±6)
+- API list price (input / output per 1M tokens): $1.20 / $4.00
+- Summary: Proprietary model from Zhipu AI, listed April 2026. Arena text score 1433 (#108 of 414 entries). $1.20 input / $4.00 output per 1M tokens. 203K tokens context.
+- Sources: https://docs.z.ai/guides/vlm/glm-5v-turbo, https://openrouter.ai/z-ai/glm-5v-turbo, https://arena.ai/leaderboard/text
+
+### Gemini 3.1 Flash-Lite (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-1-flash-lite
+- Release Date: May 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #109 (score 1433 ±4)
+- API list price (input / output per 1M tokens): $0.25 / $1.50
+- Summary: Proprietary model from Google DeepMind, listed May 2026. Arena text score 1433 (#109 of 414 entries). $0.25 input / $1.50 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.1-flash-lite, https://arena.ai/leaderboard/text
+
+### o3 (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-o3
+- Release Date: April 2025 | Architecture Type: Reasoning
+- Parameters: Not disclosed | Context Window: 200K tokens | License: Proprietary
+- arena.ai text leaderboard: #110 (score 1432 ±4)
+- API list price (input / output per 1M tokens): $2.00 / $8.00
+- OSWorld-Verified: 23.0% (Success rate · 100 steps · tested 2025-07-28)
+- SWE-bench Verified: 58.4% (mini-SWE-agent (bash only) · run 'o3 (2025-04-16)' · 2025-07-26)
+- Summary: Proprietary model from OpenAI, listed April 2025. Arena text score 1432 (#110 of 414 entries). $2.00 input / $8.00 output per 1M tokens. 200K tokens context.
+- Sources: https://openai.com/index/introducing-o3-and-o4-mini/, https://openrouter.ai/openai/o3, https://arena.ai/leaderboard/text, https://os-world.github.io/, https://www.swebench.com/
+
+### MiMo-V2-Omni (Xiaomi AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-omni
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 256K tokens | License: Proprietary
+- arena.ai text leaderboard: #111 (score 1431 ±6)
+- API list price (input / output per 1M tokens): $0.44 / $2.20
+- Summary: Proprietary model from Xiaomi AI. Arena text score 1431 (#111 of 414 entries). $0.44 input / $2.20 output per 1M tokens. 256K tokens context.
+- Sources: https://mimo.xiaomi.com/mimo-v2-omni, https://arena.ai/leaderboard/text
+
+### Kimi K2 Thinking (Moonshot AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-thinking
+- Release Date: November 2025 | Architecture Type: Open Weights
+- Parameters: 1T total, 32B active (MoE) | Context Window: 256K tokens | License: Modified MIT
+- arena.ai text leaderboard: #114 (score 1430 ±3)
+- API list price (input / output per 1M tokens): $0.60 / $2.50
+- SWE-bench Verified: 63.4% (mini-SWE-agent (bash only) · run 'Kimi K2 Thinking' · 2025-12-10)
+- Summary: Open Weights model from Moonshot AI, listed November 2025. Arena text score 1430 (#114 of 414 entries). $0.60 input / $2.50 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/moonshotai/Kimi-K2-Thinking, https://openrouter.ai/moonshotai/kimi-k2-thinking, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Mistral Large 4 (Mistral AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mistral-large-4
+- Release Date: October 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: #115 (score 1429 ±9)
+- API list price (input / output per 1M tokens): $0.68 / $2.09
+- Summary: Proprietary model from Mistral AI, listed October 2026. Arena text score 1429 (#115 of 414 entries). $0.68 input / $2.09 output per 1M tokens. 1M tokens context.
+- Sources: https://mistral.ai/news/mistral-large-4/, https://openrouter.ai/mistralai/mistral-large-4-0, https://arena.ai/leaderboard/text
+
+### Claude Opus 4 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4
+- Release Date: May 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 200K tokens | License: Proprietary
+- arena.ai text leaderboard: #119 (score 1426 ±4)
+- API list price (input / output per 1M tokens): $15.00 / $75.00
+- SWE-bench Verified: 67.6% (mini-SWE-agent (bash only) · run 'Claude 4 Opus (20250514)' · 2025-08-02)
+- Summary: Proprietary model from Anthropic, listed May 2025. Arena text score 1426 (#119 of 414 entries). $15.00 input / $75.00 output per 1M tokens. 200K tokens context.
+- Sources: https://www.anthropic.com/news/claude-4, https://platform.claude.com/docs/en/about-claude/pricing, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Nemotron 3 Ultra (550B A55B) (NVIDIA)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-nemotron-3-ultra-550b-a55b
+- Release Date: June 2026 | Architecture Type: Open Weights
+- Parameters: 550B total, 55B active (MoE) | Context Window: 256K tokens | License: OpenMDW-1.1
+- arena.ai text leaderboard: #120 (score 1426 ±7)
+- API list price (input / output per 1M tokens): $0.60 / $2.40
+- Summary: Open Weights model from NVIDIA, listed June 2026. Arena text score 1426 (#120 of 414 entries). $0.60 input / $2.40 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16, https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b, https://arena.ai/leaderboard/text
+
+### DeepSeek-V3.2-Exp (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v3-2-exp
+- Release Date: September 2025 | Architecture Type: Open Weights
+- Parameters: 671B total, 37B active (MoE) | Context Window: 164K tokens | License: MIT
+- arena.ai text leaderboard: #121 (score 1425 ±7)
+- API list price (input / output per 1M tokens): $0.27 / $0.41
+- Summary: Open Weights model from DeepSeek, listed September 2025. Arena text score 1425 (#121 of 414 entries). $0.27 input / $0.41 output per 1M tokens. 164K tokens context.
+- Sources: https://api-docs.deepseek.com/news/news250929, https://openrouter.ai/deepseek/deepseek-v3.2-exp, https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp, https://arena.ai/leaderboard/text
+
+### DeepSeek-V3.2 (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v3-2
+- Release Date: December 2025 | Architecture Type: Open Weights
+- Parameters: 671B total, 37B active (MoE) | Context Window: 164K tokens | License: MIT
+- arena.ai text leaderboard: #122 (score 1425 ±3)
+- API list price (input / output per 1M tokens): $0.259 / $0.80
+- SWE-bench Verified: 70.0% (mini-SWE-agent (bash only) · run 'DeepSeek V3.2 (high)' · 2026-02-17)
+- Summary: Open Weights model from DeepSeek, listed December 2025. Arena text score 1425 (#122 of 414 entries). $0.26 input / $0.80 output per 1M tokens. 164K tokens context.
+- Sources: https://api-docs.deepseek.com/news/news250929, https://openrouter.ai/deepseek/deepseek-v3.2, https://huggingface.co/deepseek-ai/DeepSeek-V3.2, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Muse Glimmer 30B (Meta AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-glimmer-30b
 - Release Date: August 2026 | Architecture Type: Open Weights
-- Parameters: 1.65T MoE (Multi-Head Latent Attention) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #39 (1364 Elo)
-- API Token Pricing: $0.14 / 1M input | $0.56 / 1M output
-- Summary: 
+- Parameters: Not listed in our sources | Context Window: 128K tokens | License: Apache-2.0
+- arena.ai text leaderboard: #123 (score 1425 ±10)
+- API list price (input / output per 1M tokens): $0.30 / $1.20
+- Summary: Open Weights model from Meta AI, listed August 2026. Arena text score 1425 (#123 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 128K tokens context.
+- Sources: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model, https://openrouter.ai/meta/muse-glimmer-30b, https://huggingface.co/meta-models/Muse-Glimmer-30B, https://arena.ai/leaderboard/text
 
-### GPT-5.5 Pro (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-5-pro
+### GLM-4.6 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-4-6
+- Release Date: September 2025 | Architecture Type: Open Weights
+- Parameters: 355B total, 32B active (MoE) | Context Window: 205K tokens | License: MIT
+- arena.ai text leaderboard: #124 (score 1424 ±4)
+- API list price (input / output per 1M tokens): $0.50 / $2.00
+- SWE-bench Verified: 55.4% (mini-SWE-agent (bash only) · run 'GLM 4.6 (T=1)' · 2025-12-01)
+- Summary: Open Weights model from Zhipu AI, listed September 2025. Arena text score 1424 (#124 of 414 entries). $0.50 input / $2.00 output per 1M tokens. 205K tokens context.
+- Sources: https://docs.z.ai/guides/llm/glm-4.6, https://openrouter.ai/z-ai/glm-4.6, https://huggingface.co/zai-org/GLM-4.6, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Qwen3.5-122B-A10B (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-122b-a10b
+- Release Date: February 2026 | Architecture Type: Open Weights
+- Parameters: 122B total, 10B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #135 (score 1416 ±4)
+- API list price (input / output per 1M tokens): $0.26 / $2.08
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1416 (#135 of 414 entries). $0.26 input / $2.08 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/Qwen/Qwen3.5-122B-A10B, https://openrouter.ai/qwen/qwen3.5-122b-a10b, https://arena.ai/leaderboard/text
+
+### MiniMax M2.7 (MiniMax)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2-7
+- Release Date: March 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 205K tokens | License: Modified MIT
+- arena.ai text leaderboard: #138 (score 1415 ±3)
+- API list price (input / output per 1M tokens): $0.21 / $0.84
+- Summary: Open Weights model from MiniMax, listed March 2026. Arena text score 1415 (#138 of 414 entries). $0.21 input / $0.84 output per 1M tokens. 205K tokens context.
+- Sources: https://www.minimax.io/news/minimax-m27-en, https://openrouter.ai/minimax/minimax-m2.7, https://huggingface.co/MiniMaxAI/MiniMax-M2.7, https://arena.ai/leaderboard/text
+
+### Claude Haiku 4.5 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-haiku-4-5
+- Release Date: October 2025 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 200K tokens | License: Proprietary
+- arena.ai text leaderboard: #142 (score 1414 ±2)
+- API list price (input / output per 1M tokens): $1.00 / $5.00
+- SWE-bench Verified: 66.6% (mini-SWE-agent (bash only) · run 'Claude 4.5 Haiku (high)' · 2026-02-17)
+- Summary: Proprietary model from Anthropic, listed October 2025. Arena text score 1414 (#142 of 414 entries). $1.00 input / $5.00 output per 1M tokens. 200K tokens context.
+- Sources: https://www.anthropic.com/news/claude-haiku-4-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-haiku-4.5, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Mistral Large 3 (Mistral AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mistral-large-3
+- Release Date: December 2025 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #143 (score 1414 ±3)
+- API list price (input / output per 1M tokens): $0.50 / $1.50
+- Summary: Open Weights model from Mistral AI, listed December 2025. Arena text score 1414 (#143 of 414 entries). $0.50 input / $1.50 output per 1M tokens. 256K tokens context.
+- Sources: https://mistral.ai/news/mistral-3, https://openrouter.ai/mistralai/mistral-large-2512, https://arena.ai/leaderboard/text
+
+### Grok 3 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-3
+- Release Date: February 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 128K tokens | License: Proprietary
+- arena.ai text leaderboard: #146 (score 1411 ±4)
+- API list price (input / output per 1M tokens): $3.00 / $15.00
+- Summary: Proprietary model from xAI, listed February 2025. Arena text score 1411 (#146 of 414 entries). $3.00 input / $15.00 output per 1M tokens. 128K tokens context.
+- Sources: https://x.ai/blog/grok-3, https://arena.ai/leaderboard/text
+
+### Grok 4 (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4
+- Release Date: July 2025 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 256K tokens | License: Proprietary
+- arena.ai text leaderboard: #147 (score 1411 ±4)
+- API list price (input / output per 1M tokens): $1.25 / $2.50
+- Summary: Proprietary model from xAI, listed July 2025. Arena text score 1411 (#147 of 414 entries). $1.25 input / $2.50 output per 1M tokens. 256K tokens context.
+- Sources: https://docs.x.ai/docs/models/grok-4-0709, https://arena.ai/leaderboard/text
+
+### GLM-4.5 (Zhipu AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-4-5
+- Release Date: July 2025 | Architecture Type: Open Weights
+- Parameters: 355B total, 32B active (MoE) | Context Window: 128K tokens | License: MIT
+- arena.ai text leaderboard: #148 (score 1411 ±5)
+- API list price (input / output per 1M tokens): $0.60 / $2.20
+- SWE-bench Verified: 54.2% (mini-SWE-agent (bash only) · run 'GLM 4.5 (2025-08-22)' · 2025-08-22)
+- Summary: Open Weights model from Zhipu AI, listed July 2025. Arena text score 1411 (#148 of 414 entries). $0.60 input / $2.20 output per 1M tokens. 128K tokens context.
+- Sources: https://z.ai/blog/glm-4.5, https://openrouter.ai/z-ai/glm-4.5, https://huggingface.co/zai-org/GLM-4.5, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### Qwen3.5-27B (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-27b
+- Release Date: February 2026 | Architecture Type: Open Weights
+- Parameters: 27B (dense) | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #151 (score 1409 ±4)
+- API list price (input / output per 1M tokens): $0.26 / $2.60
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#151 of 414 entries). $0.26 input / $2.60 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/Qwen/Qwen3.5-27B, https://openrouter.ai/qwen/qwen3.5-27b, https://arena.ai/leaderboard/text
+
+### Inkling Small (Thinking Machines Lab)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-inkling-small
+- Release Date: July 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 512K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #153 (score 1405 ±5)
+- API list price (input / output per 1M tokens): $0.45 / $1.20
+- Summary: Open Weights model from Thinking Machines Lab, listed July 2026. Arena text score 1405 (#153 of 414 entries). $0.45 input / $1.20 output per 1M tokens. 512K tokens context.
+- Sources: https://thinkingmachines.ai/news/inkling-small/, https://openrouter.ai/thinkingmachines/inkling-small, https://huggingface.co/thinkingmachines/Inkling-Small, https://arena.ai/leaderboard/text
+
+### Grok 4 Fast (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-fast
+- Release Date: September 2025 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: #154 (score 1405 ±5)
+- API list price (input / output per 1M tokens): $0.20 / $0.50
+- Summary: Proprietary model from xAI, listed September 2025. Arena text score 1405 (#154 of 414 entries). $0.20 input / $0.50 output per 1M tokens.
+- Sources: https://x.ai/news/grok-4-fast, https://arena.ai/leaderboard/text
+
+### Qwen3-235B-A22B-Thinking-2507 (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-235b-a22b-thinking-2507
+- Release Date: July 2025 | Architecture Type: Open Weights
+- Parameters: 235B total, 22B active (MoE) | Context Window: 128K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #161 (score 1400 ±7)
+- API list price (input / output per 1M tokens): $0.45 / $3.50
+- Summary: Open Weights model from Alibaba Cloud, listed July 2025. Arena text score 1400 (#161 of 414 entries). $0.45 input / $3.50 output per 1M tokens. 128K tokens context.
+- Sources: https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507, https://openrouter.ai/qwen/qwen3-235b-a22b-thinking-2507, https://arena.ai/leaderboard/text
+
+### Qwen3.5-35B-A3B (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-35b-a3b
+- Release Date: February 2026 | Architecture Type: Open Weights
+- Parameters: 35B total, 3B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #167 (score 1394 ±4)
+- API list price (input / output per 1M tokens): $0.08 / $0.75
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1394 (#167 of 414 entries). $0.08 input / $0.75 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/Qwen/Qwen3.5-35B-A3B, https://openrouter.ai/qwen/qwen3.5-35b-a3b, https://arena.ai/leaderboard/text
+
+### Step-3.5-Flash (StepFun)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-step-3-5-flash
+- Release Date: January 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #169 (score 1393 ±4)
+- API list price (input / output per 1M tokens): $0.10 / $0.30
+- Summary: Open Weights model from StepFun, listed January 2026. Arena text score 1393 (#169 of 414 entries). $0.10 input / $0.30 output per 1M tokens. 256K tokens context.
+- Sources: https://huggingface.co/stepfun-ai/Step-3.5-Flash, https://openrouter.ai/stepfun/step-3.5-flash, https://arena.ai/leaderboard/text
+
+### o4-mini (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-o4-mini
+- Release Date: April 2025 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 200K tokens | License: Proprietary
+- arena.ai text leaderboard: #172 (score 1391 ±4)
+- API list price (input / output per 1M tokens): $1.10 / $4.40
+- SWE-bench Verified: 45.0% (mini-SWE-agent (bash only) · run 'o4-mini (2025-04-16)' · 2025-07-26)
+- Summary: Proprietary model from OpenAI, listed April 2025. Arena text score 1391 (#172 of 414 entries). $1.10 input / $4.40 output per 1M tokens. 200K tokens context.
+- Sources: https://openai.com/index/introducing-o3-and-o4-mini/, https://openrouter.ai/openai/o4-mini, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### MiniMax M2.5 (MiniMax)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2-5
+- Release Date: February 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 205K tokens | License: Modified MIT
+- arena.ai text leaderboard: #174 (score 1391 ±4)
+- API list price (input / output per 1M tokens): $0.27 / $1.08
+- SWE-bench Verified: 75.8% (mini-SWE-agent (bash only) · run 'MiniMax M2.5 (high)' · 2026-02-17)
+- Summary: Open Weights model from MiniMax, listed February 2026. Arena text score 1391 (#174 of 414 entries). $0.27 input / $1.08 output per 1M tokens. 205K tokens context.
+- Sources: https://www.minimax.io/news/minimax-m25, https://openrouter.ai/minimax/minimax-m2.5, https://huggingface.co/MiniMaxAI/MiniMax-M2.5, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### GPT-5 mini (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-mini
+- Release Date: August 2025 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: #175 (score 1390 ±5)
+- API list price (input / output per 1M tokens): $0.25 / $2.00
+- SWE-bench Verified: 59.8% (mini-SWE-agent (bash only) · run 'GPT 5 mini (2025-08-07) (medium)' · 2025-08-07)
+- Summary: Proprietary model from OpenAI, listed August 2025. Arena text score 1390 (#175 of 414 entries). $0.25 input / $2.00 output per 1M tokens. 400K tokens context.
+- Sources: https://platform.openai.com/docs/models/gpt-5-mini, https://openrouter.ai/openai/gpt-5-mini, https://arena.ai/leaderboard/text, https://www.swebench.com/
+
+### MiMo-V2-Flash (Xiaomi AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-flash
+- Release Date: Not listed | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: MIT
+- arena.ai text leaderboard: #181 (score 1386 ±6)
+- API list price (input / output per 1M tokens): $0.10 / $0.30
+- Summary: Open Weights model from Xiaomi AI. Arena text score 1386 (#181 of 414 entries). $0.10 input / $0.30 output per 1M tokens. 256K tokens context.
+- Sources: https://mimo.xiaomi.com/blog/mimo-v2-flash, https://arena.ai/leaderboard/text
+
+### Solar Pro 4 (Upstage)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-solar-pro-4
 - Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #40 (1362 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 512K tokens | License: Proprietary
+- arena.ai text leaderboard: #182 (score 1386 ±6)
+- API list price (input / output per 1M tokens): $0.09 / $0.36
+- Summary: Proprietary model from Upstage, listed August 2026. Arena text score 1386 (#182 of 414 entries). $0.09 input / $0.36 output per 1M tokens. 512K tokens context.
+- Sources: https://www.upstage.ai/blog/en/solar-pro-4, https://openrouter.ai/upstage/solar-pro4, https://arena.ai/leaderboard/text
 
-### Claude Opus 4.7 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-7
-- Release Date: August 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #41 (1360 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
+### MiniMax M2.1 (MiniMax)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2-1
+- Release Date: December 2025 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
+- arena.ai text leaderboard: #183 (score 1385 ±5)
+- API list price (input / output per 1M tokens): $0.30 / $1.20
+- Summary: Open Weights model from MiniMax, listed December 2025. Arena text score 1385 (#183 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 205K tokens context.
+- Sources: https://www.minimax.io/news/minimax-m21, https://openrouter.ai/minimax/minimax-m2.1, https://huggingface.co/MiniMaxAI/MiniMax-M2.1, https://arena.ai/leaderboard/text
 
-### Kimi K2.6 (Moonshot AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-6
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #42 (1359 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
+### Grok 3 Mini (xAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-3-mini
+- Release Date: February 2025 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: #201 (score 1364 ±5)
+- API list price (input / output per 1M tokens): $0.25 / $1.27
+- Summary: Proprietary model from xAI, listed February 2025. Arena text score 1364 (#201 of 414 entries). $0.25 input / $1.27 output per 1M tokens.
+- Sources: https://docs.x.ai/docs/models, https://arena.ai/leaderboard/text
 
-### Gemini 3.6 Flash (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-6-flash
-- Release Date: August 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #43 (1357 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
+### gpt-oss-120b (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-oss-120b
+- Release Date: August 2025 | Architecture Type: Open Weights
+- Parameters: 117B total, 5.1B active (MoE) | Context Window: 128K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #213 (score 1352 ±4)
+- API list price (input / output per 1M tokens): $0.037 / $0.17
+- SWE-bench Verified: 26.0% (mini-SWE-agent (bash only) · run 'gpt-oss-120b' · 2025-08-07)
+- Summary: Open Weights model from OpenAI, listed August 2025. Arena text score 1352 (#213 of 414 entries). $0.04 input / $0.17 output per 1M tokens. 128K tokens context.
+- Sources: https://openai.com/index/introducing-gpt-oss/, https://openrouter.ai/openai/gpt-oss-120b, https://huggingface.co/openai/gpt-oss-120b, https://arena.ai/leaderboard/text, https://www.swebench.com/
 
-### DeepSeek-V4-Pro-Max (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-pro-max
-- Release Date: August 2026 | Architecture Type: Open Weights
-- Parameters: 1.65T MoE (Multi-Head Latent Attention) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #44 (1355 Elo)
-- API Token Pricing: $0.55 / 1M input | $1.65 / 1M output
-- Summary: 
+### MiniMax M2 (MiniMax)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2
+- Release Date: October 2025 | Architecture Type: Open Weights
+- Parameters: 230B total, 10B active (MoE) | Context Window: 205K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #227 (score 1343 ±8)
+- API list price (input / output per 1M tokens): $0.30 / $1.20
+- SWE-bench Verified: 61.0% (mini-SWE-agent (bash only) · run 'MiniMax M2' · 2025-11-24)
+- Summary: Open Weights model from MiniMax, listed October 2025. Arena text score 1343 (#227 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 205K tokens context.
+- Sources: https://www.minimax.io/news/minimax-m2, https://openrouter.ai/minimax/minimax-m2, https://huggingface.co/MiniMaxAI/MiniMax-M2, https://arena.ai/leaderboard/text, https://www.swebench.com/
 
-### Seed 2.1 Turbo (ByteDance)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-1-turbo
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #45 (1353 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.6 / 1M output
-- Summary: 
+### gpt-oss-20b (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-oss-20b
+- Release Date: August 2025 | Architecture Type: Open Weights
+- Parameters: 21B total, 3.6B active (MoE) | Context Window: 128K tokens | License: Apache 2.0
+- arena.ai text leaderboard: #265 (score 1317 ±6)
+- API list price (input / output per 1M tokens): $0.018 / $0.09
+- Summary: Open Weights model from OpenAI, listed August 2025. Arena text score 1317 (#265 of 414 entries). $0.02 input / $0.09 output per 1M tokens. 128K tokens context.
+- Sources: https://openai.com/index/introducing-gpt-oss/, https://openrouter.ai/openai/gpt-oss-20b, https://huggingface.co/openai/gpt-oss-20b, https://arena.ai/leaderboard/text
 
-### Gemini 3.1 Pro (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-1-pro
-- Release Date: August 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #46 (1351 Elo)
-- API Token Pricing: $1.25 / 1M input | $5.0 / 1M output
-- Summary: 
-
-### GPT-5.2 Pro (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-2-pro
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #47 (1350 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Gemini 3.5 Flash (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-5-flash
-- Release Date: August 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #48 (1348 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### Hy3 (Tencent Hunyuan)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-hy3
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #49 (1346 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Sakana Namazu (Sakana AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-sakana-namazu
-- Release Date: August 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #50 (1344 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### Qwen3.7-Plus (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-7-plus
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #51 (1342 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### GPT-5.4 (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-4
-- Release Date: August 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #52 (1341 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Gemini 3.8 Flash Cyber (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-8-flash-cyber
-- Release Date: July 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #53 (1339 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
+### Claude Mythos 5.1 (Anthropic)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-mythos-5-1
+- Release Date: Not listed | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $10.00 / $50.00
+- Summary: Proprietary model from Anthropic. $10.00 input / $50.00 output per 1M tokens. 1M tokens context. Project Glasswing only (restricted access).
+- Sources: https://www.anthropic.com/glasswing, https://platform.claude.com/docs/en/about-claude/pricing
 
 ### Claude Haiku 5.5 (Anthropic)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-claude-haiku-5-5
 - Release Date: October 2026 | Architecture Type: Compact / Edge
-- Parameters: High-Efficiency Sparse Mixture-of-Experts (MoE) | Context Window: 200k tokens (Native) | License: Anthropic Commercial API Terms of Service
-- LMSYS Arena: #54 (1338 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.5 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.10 / $0.50
+- Summary: Proprietary model from Anthropic, listed October 2026. $0.10 input / $0.50 output per 1M tokens. 1M tokens context.
+- Sources: https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-haiku-5.5
 
-### Muse Spark (Meta AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark
-- Release Date: July 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #55 (1337 Elo)
-- API Token Pricing: $0.8 / 1M input | $0.8 / 1M output
-- Summary: 
-
-### GPT-5.2 (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-2
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #56 (1335 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### MiniMax M3 (MiniMax)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m3
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #57 (1333 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Grok-4 Heavy (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-heavy
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #58 (1332 Elo)
-- API Token Pricing: $5.0 / 1M input | $15.0 / 1M output
-- Summary: 
-
-### Laguna S 2.1 (Poolside)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-laguna-s-2-1
-- Release Date: July 2026 | Architecture Type: Code & Agent
-- Parameters: 118B (8B active MoE) | Context Window: 256k tokens | License: Open Weights Commercial
-- LMSYS Arena: #59 (1330 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.0 / 1M output
-- Summary: 
-
-### Muse Spark 1.2 (Meta AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark-1-2
-- Release Date: July 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #60 (1328 Elo)
-- API Token Pricing: $2.0 / 1M input | $2.0 / 1M output
-- Summary: 
-
-### DeepSeek-V4-Flash-Max (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash-max
-- Release Date: July 2026 | Architecture Type: Open Weights
-- Parameters: 1.65T MoE (Multi-Head Latent Attention) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #61 (1326 Elo)
-- API Token Pricing: $0.14 / 1M input | $0.56 / 1M output
-- Summary: 
-
-### Qwen3.6 Plus (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-6-plus
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #62 (1324 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### GLM-5.1 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5-1
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #63 (1322 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Seed 2.0 Pro (ByteDance)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-0-pro
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #64 (1321 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Kimi K2.7 Code (Moonshot AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-7-code
-- Release Date: July 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #65 (1319 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### Kimi K2.5 (Moonshot AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-5
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #66 (1317 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Inkling-Small (Thinking Machines Lab)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-inkling-small
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: 276B (12B active MoE) | Context Window: 1M tokens | License: Open Weights Commercial
-- LMSYS Arena: #67 (1315 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.0 / 1M output
-- Summary: 
-
-### Qwen3.5-397B-A17B (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-397b-a17b
-- Release Date: July 2026 | Architecture Type: Open Weights
-- Parameters: 397B (17B active MoE) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #68 (1313 Elo)
-- API Token Pricing: $0.4 / 1M input | $0.8 / 1M output
-- Summary: 
-
-### Gemini 3.5 Flash Cyber (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-5-flash-cyber
-- Release Date: July 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #69 (1312 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### Gemini 3 Pro (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-pro
-- Release Date: July 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #70 (1310 Elo)
-- API Token Pricing: $1.25 / 1M input | $5.0 / 1M output
-- Summary: 
-
-### Claude Opus 4.5 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-5
-- Release Date: July 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #71 (1308 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
-
-### Claude Sonnet 4.6 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-4-6
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #72 (1306 Elo)
-- API Token Pricing: $3.0 / 1M input | $15.0 / 1M output
-- Summary: 
-
-### GLM-5 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #73 (1304 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Step-3.5-Flash (StepFun)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-step-3-5-flash
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #74 (1303 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### MiniMax M2.5 (MiniMax)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2-5
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #75 (1301 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Gemini 3 Flash (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-flash
-- Release Date: July 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #76 (1299 Elo)
-- API Token Pricing: $0.1 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### GPT-5.1 Thinking (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1-thinking
-- Release Date: July 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #77 (1297 Elo)
-- API Token Pricing: $15.0 / 1M input | $60.0 / 1M output
-- Summary: 
-
-### GPT-5.1 Instant (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1-instant
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #78 (1295 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
+### GPT-5.5 Pro (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-5-pro
+- Release Date: April 2026 | Architecture Type: Reasoning
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $30.00 / $180.00
+- Summary: Proprietary model from OpenAI, listed April 2026. $30.00 input / $180.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://openrouter.ai/openai/gpt-5.5-pro
 
 ### GPT-5.3 Codex (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-3-codex
-- Release Date: July 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #79 (1294 Elo)
-- API Token Pricing: $1.5 / 1M input | $6.0 / 1M output
-- Summary: 
+- Release Date: February 2026 | Architecture Type: Code & Agent
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $1.75 / $14.00
+- Summary: Proprietary model from OpenAI, listed February 2026. $1.75 input / $14.00 output per 1M tokens. 400K tokens context.
+- Sources: https://openrouter.ai/openai/gpt-5.3-codex
 
-### GPT-5.1 (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #80 (1292 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
-
-### DeepSeek-V4-Flash-0423 (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash-0423
-- Release Date: July 2026 | Architecture Type: Open Weights
-- Parameters: 1.65T MoE (Multi-Head Latent Attention) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #81 (1290 Elo)
-- API Token Pricing: $0.14 / 1M input | $0.56 / 1M output
-- Summary: 
-
-### Nemotron 3 Ultra (550B A55B) (NVIDIA)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-nemotron-3-ultra-550b-a55b
-- Release Date: July 2026 | Architecture Type: Open Weights
-- Parameters: 550B (55B active MoE) | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #82 (1288 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.0 / 1M output
-- Summary: 
-
-### Kimi K2-Thinking-0905 (Moonshot AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-thinking-0905
-- Release Date: July 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #83 (1286 Elo)
-- API Token Pricing: $1.5 / 1M input | $4.5 / 1M output
-- Summary: 
-
-### MiMo-V2-Pro (Xiaomi AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-pro
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #84 (1285 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### Solar Pro 4 (Upstage)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-solar-pro-4
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Scale Multi-Expert Cluster | Context Window: 256k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #85 (1283 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### LongCat-Flash-Thinking-2601 (Meituan AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-longcat-flash-thinking-2601
-- Release Date: July 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #86 (1281 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### Qwen3.6-27B (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-6-27b
-- Release Date: July 2026 | Architecture Type: Open Weights
-- Parameters: 27B Dense | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #87 (1279 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### GPT-5.1 High (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1-high
-- Release Date: July 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #88 (1277 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
-
-### MiniMax M2.7 (MiniMax)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2-7
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #89 (1276 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### MiMo-V2.5 (Xiaomi AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-5
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #90 (1274 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### Muse Glimmer-30B (Meta AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-glimmer-30b
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Open Weights Commercial
-- LMSYS Arena: #91 (1272 Elo)
-- API Token Pricing: $0.3 / 1M input | $0.3 / 1M output
-- Summary: 
-
-### Qwen3.5-122B-A10B (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-122b-a10b
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: 122B (10B active MoE) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #92 (1270 Elo)
-- API Token Pricing: $0.4 / 1M input | $0.8 / 1M output
-- Summary: 
-
-### GLM-4.7 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-4-7
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #93 (1268 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
+### GPT-5.2 Pro (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-2-pro
+- Release Date: December 2025 | Architecture Type: Reasoning
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $21.00 / $168.00
+- Summary: Proprietary model from OpenAI, listed December 2025. $21.00 input / $168.00 output per 1M tokens. 400K tokens context.
+- Sources: https://openrouter.ai/openai/gpt-5.2-pro
 
 ### GPT-5.2 Codex (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-2-codex
-- Release Date: June 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #94 (1266 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### DeepSeek-V3.2-Speciale (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v3-2-speciale
-- Release Date: June 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #95 (1265 Elo)
-- API Token Pricing: $0.35 / 1M input | $1.4 / 1M output
-- Summary: 
-
-### GPT-5 (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #96 (1263 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### GPT-5 High (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-high
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #97 (1261 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
-
-### Qwen3.5-27B (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-27b
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: 27B Dense | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #98 (1259 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### Grok-4 (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #99 (1257 Elo)
-- API Token Pricing: $3.0 / 1M input | $9.0 / 1M output
-- Summary: 
-
-### ERNIE 5.0 (Baidu)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-ernie-5-0
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #100 (1256 Elo)
-- API Token Pricing: $0.8 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### DeepSeek-V3.2 (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v3-2
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #101 (1254 Elo)
-- API Token Pricing: $0.27 / 1M input | $1.1 / 1M output
-- Summary: 
-
-### Gemma 4 31B (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemma-4-31b
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: 31B Dense | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #102 (1252 Elo)
-- API Token Pricing: $1.25 / 1M input | $5.0 / 1M output
-- Summary: 
-
-### DeepSeek-V3.2 (Thinking) (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v3-2-thinking
-- Release Date: June 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #103 (1250 Elo)
-- API Token Pricing: $0.35 / 1M input | $1.4 / 1M output
-- Summary: 
-
-### MAI-Thinking-1 (Microsoft AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mai-thinking-1
-- Release Date: June 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #104 (1248 Elo)
-- API Token Pricing: $1.5 / 1M input | $4.5 / 1M output
-- Summary: 
-
-### Qwen3.6-35B-A3B (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-6-35b-a3b
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: 35B (3B active MoE) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #105 (1247 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### Claude Sonnet 4.5 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-sonnet-4-5
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #106 (1245 Elo)
-- API Token Pricing: $3.0 / 1M input | $15.0 / 1M output
-- Summary: 
-
-### Seed 2.0 Lite (ByteDance)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-0-lite
-- Release Date: June 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 128k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #107 (1243 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.6 / 1M output
-- Summary: 
-
-### MiniMax M2.1 (MiniMax)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2-1
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #108 (1241 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Grok 4 Fast (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-4-fast
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #109 (1239 Elo)
-- API Token Pricing: $0.3 / 1M input | $0.9 / 1M output
-- Summary: 
-
-### GPT-5.5 Instant (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-5-instant
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #110 (1238 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Grok-3 Mini (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-3-mini
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #111 (1236 Elo)
-- API Token Pricing: $0.3 / 1M input | $0.9 / 1M output
-- Summary: 
-
-### GPT-5.1 Medium (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1-medium
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #112 (1234 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
-
-### o3 (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-o3
-- Release Date: June 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #113 (1232 Elo)
-- API Token Pricing: $15.0 / 1M input | $60.0 / 1M output
-- Summary: 
-
-### Gemini 3.1 Flash-Lite (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-1-flash-lite
-- Release Date: June 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #114 (1230 Elo)
-- API Token Pricing: $0.05 / 1M input | $0.2 / 1M output
-- Summary: 
-
-### Nova 2 Pro (Amazon AWS)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-nova-2-pro
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #115 (1229 Elo)
-- API Token Pricing: $0.8 / 1M input | $3.2 / 1M output
-- Summary: 
-
-### MiMo-V2-Flash (Xiaomi AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-flash
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #116 (1227 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### Qwen3.5-35B-A3B (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-5-35b-a3b
-- Release Date: June 2026 | Architecture Type: Open Weights
-- Parameters: 35B (3B active MoE) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #117 (1225 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### Grok-3 (xAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-grok-3
-- Release Date: June 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #118 (1223 Elo)
-- API Token Pricing: $2.0 / 1M input | $6.0 / 1M output
-- Summary: 
-
-### GLM-5V-Turbo (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-5v-turbo
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 1M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #119 (1221 Elo)
-- API Token Pricing: $0.3 / 1M input | $0.9 / 1M output
-- Summary: 
-
-### GPT-5.4 mini (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-4-mini
-- Release Date: Early 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 128k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #120 (1220 Elo)
-- API Token Pricing: $0.6 / 1M input | $2.4 / 1M output
-- Summary: 
-
-### Gemini 3.5 Flash-Lite (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-5-flash-lite
-- Release Date: Early 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #121 (1218 Elo)
-- API Token Pricing: $0.05 / 1M input | $0.2 / 1M output
-- Summary: 
-
-### GPT-5 Medium (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-medium
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #122 (1216 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
-
-### Claude Opus 4.1 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4-1
-- Release Date: Early 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #123 (1214 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
-
-### Gemini 2.5 Pro Preview 06-05 (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-2-5-pro-preview-06-05
-- Release Date: Early 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #124 (1212 Elo)
-- API Token Pricing: $1.25 / 1M input | $5.0 / 1M output
-- Summary: 
-
-### Gemma 4 26B-A4B (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemma-4-26b-a4b
-- Release Date: Early 2026 | Architecture Type: Open Weights
-- Parameters: 26B (4B active MoE) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #125 (1211 Elo)
-- API Token Pricing: $1.25 / 1M input | $5.0 / 1M output
-- Summary: 
+- Release Date: January 2026 | Architecture Type: Code & Agent
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $1.75 / $14.00
+- SWE-bench Verified: 72.8% (mini-SWE-agent (bash only) · run 'GPT 5.2 Codex' · 2026-02-19)
+- Summary: Proprietary model from OpenAI, listed January 2026. $1.75 input / $14.00 output per 1M tokens. 400K tokens context.
+- Sources: https://openrouter.ai/openai/gpt-5.2-codex, https://www.swebench.com/
 
 ### GPT-5.1 Codex (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1-codex
-- Release Date: Early 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #126 (1209 Elo)
-- API Token Pricing: $1.5 / 1M input | $6.0 / 1M output
-- Summary: 
+- Release Date: November 2025 | Architecture Type: Code & Agent
+- Parameters: Not disclosed | Context Window: 400K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $1.25 / $10.00
+- SWE-bench Verified: 66.0% (mini-SWE-agent (bash only) · run 'GPT 5.1 Codex (medium)' · 2025-11-24)
+- Summary: Proprietary model from OpenAI, listed November 2025. $1.25 input / $10.00 output per 1M tokens. 400K tokens context.
+- Sources: https://openrouter.ai/openai/gpt-5.1-codex, https://www.swebench.com/
 
-### GPT-5.3 Chat (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-3-chat
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #127 (1207 Elo)
-- API Token Pricing: $2.5 / 1M input | $10.0 / 1M output
-- Summary: 
-
-### GPT-5.1 Codex High (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-1-codex-high
-- Release Date: Early 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #128 (1205 Elo)
-- API Token Pricing: $1.5 / 1M input | $6.0 / 1M output
-- Summary: 
-
-### GLM-4.6 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-4-6
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #129 (1203 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### MAI-Code-1-Flash (Microsoft AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mai-code-1-flash
-- Release Date: Early 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #130 (1201 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.6 / 1M output
-- Summary: 
-
-### GPT OSS 120B (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-oss-120b
-- Release Date: Early 2026 | Architecture Type: Open Weights
-- Parameters: 20B Dense | Context Window: 128k tokens | License: Open Weights Commercial
-- LMSYS Arena: #131 (1200 Elo)
-- API Token Pricing: $0.5 / 1M input | $0.5 / 1M output
-- Summary: 
-
-### LongCat-Flash-Thinking (Meituan AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-longcat-flash-thinking
-- Release Date: Early 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #132 (1198 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### DeepSeek-V3.2-Exp (DeepSeek)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v3-2-exp
-- Release Date: Early 2026 | Architecture Type: Open Weights
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #133 (1196 Elo)
-- API Token Pricing: $0.27 / 1M input | $1.1 / 1M output
-- Summary: 
-
-### MAI-Code-1.1-Flash (Microsoft AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mai-code-1-1-flash
-- Release Date: Early 2026 | Architecture Type: Code & Agent
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #134 (1194 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.6 / 1M output
-- Summary: 
-
-### Qwen3-235B-A22B-Thinking-2507 (Alibaba Cloud)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-235b-a22b-thinking-2507
-- Release Date: Early 2026 | Architecture Type: Reasoning
-- Parameters: 235B (22B active MoE) | Context Window: 200k tokens | License: Apache 2.0 / MIT
-- LMSYS Arena: #135 (1192 Elo)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
-
-### GLM-4.5 (Zhipu AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-glm-4-5
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #136 (1191 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Gemini 2.5 Pro (Google DeepMind)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-2-5-pro
-- Release Date: Early 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 2M tokens | License: Proprietary Commercial API
-- LMSYS Arena: #137 (1189 Elo)
-- API Token Pricing: $1.25 / 1M input | $5.0 / 1M output
-- Summary: 
-
-### Claude Opus 4 (Anthropic)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-claude-opus-4
-- Release Date: Early 2026 | Architecture Type: Reasoning
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #138 (1187 Elo)
-- API Token Pricing: $15.0 / 1M input | $75.0 / 1M output
-- Summary: 
-
-### MiMo-V2-Omni (Xiaomi AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-omni
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #139 (1185 Elo)
-- API Token Pricing: $1.0 / 1M input | $3.0 / 1M output
-- Summary: 
-
-### o4-mini (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-o4-mini
-- Release Date: Early 2026 | Architecture Type: Reasoning
-- Parameters: 8B - 14B Dense | Context Window: 128k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #140 (1183 Elo)
-- API Token Pricing: $1.1 / 1M input | $4.4 / 1M output
-- Summary: 
-
-### GPT OSS 20B High (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-oss-20b-high
-- Release Date: Early 2026 | Architecture Type: Open Weights
-- Parameters: 20B Dense | Context Window: 128k tokens | License: Open Weights Commercial
-- LMSYS Arena: #141 (1182 Elo)
-- API Token Pricing: $0.15 / 1M input | $0.15 / 1M output
-- Summary: 
-
-### GPT-5 mini (OpenAI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-mini
-- Release Date: Early 2026 | Architecture Type: Compact / Edge
-- Parameters: 8B - 14B Dense | Context Window: 128k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #142 (1180 Elo)
-- API Token Pricing: $0.15 / 1M input | $0.6 / 1M output
-- Summary: 
-
-### MiniMax M2 (MiniMax)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-minimax-m2
-- Release Date: Early 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Frontier Mixture-of-Experts | Context Window: 200k tokens | License: Proprietary Commercial API
-- LMSYS Arena: #143 (1178 Elo)
-- API Token Pricing: $0.5 / 1M input | $1.5 / 1M output
-- Summary: 
-
-### Qwen-Image-2.1 (Alibaba Cloud / Qwen)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen-image-2-1
+### Gemini 3.8 Live (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-8-live
 - Release Date: September 2026 | Architecture Type: Multimodal Foundation
-- Parameters: 7B visual diffusion transformer parameters | Context Window: 2k image resolution (2048x2048 native) | License: Qwen Research License Agreement (Non-commercial research)
-- LMSYS Arena: Unranked (N/A)
-- API Token Pricing: $0.2 / 1M input | $0.4 / 1M output
-- Summary: 
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.75 / $4.50
+- Summary: Proprietary model from Google DeepMind, listed September 2026. $0.75 input / $4.50 output per 1M tokens.
+- Sources: https://ai.google.dev/gemini-api/docs/pricing
 
-### Jev (System One) (TypeSafe AI)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-jev-system-one
-- Release Date: September 2026 | Architecture Type: Code & Agent
-- Parameters: Specialized Decision-Only Transformer with RLCD Calibration | Context Window: 128k tokens | License: Proprietary Commercial API
-- LMSYS Arena: Unranked (N/A)
-- API Token Pricing: $0.05 / 1M input | $0.1 / 1M output
-- Summary: 
+### Gemini 3.8 Live Extended Thinking (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-3-8-live-extended-thinking
+- Release Date: September 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: Not listed | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.75 / $4.50
+- Summary: Proprietary model from Google DeepMind, listed September 2026. $0.75 input / $4.50 output per 1M tokens.
+- Sources: https://ai.google.dev/gemini-api/docs/pricing
 
-### Kolibri-1 (Aleph Alpha)
-- Model Detail Page: https://nextvector.rhasan.online/models/model-aleph-alpha-kolibri-1
-- Release Date: October 2026 | Architecture Type: Open Weights
-- Parameters: 78.1B (3.46B active MoE) | Context Window: 262K tokens (Native, 1M Validated) | License: Apache 2.0
-- LMSYS Arena: Unranked (N/A)
-- API Token Pricing: $0.2 / 1M input | $0.8 / 1M output
-- Summary: 
+### Kimi K2.7 Code (Moonshot AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-kimi-k2-7-code
+- Release Date: June 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.671 / $3.35
+- Summary: Open Weights model from Moonshot AI, listed June 2026. $0.67 input / $3.35 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/moonshotai/kimi-k2.7-code, https://huggingface.co/moonshotai/Kimi-K2.7-Code
+
+### DeepSeek-V4-Flash-Vision-Exp (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash-vision-exp
+- Release Date: August 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.216 / $0.647
+- Summary: Open Weights model from DeepSeek, listed August 2026. $0.22 input / $0.65 output per 1M tokens. 1M tokens context.
+- Sources: https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp, https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+
+### DeepSeek-V4-Flash-0731 (DeepSeek)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-deepseek-v4-flash-0731
+- Release Date: July 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.018 / $0.64
+- Summary: Open Weights model from DeepSeek, listed July 2026. $0.02 input / $0.64 output per 1M tokens. 1M tokens context.
+- Sources: https://openrouter.ai/deepseek/deepseek-v4-flash-0731, https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+
+### Qwen3.8 Flash (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-8-flash
+- Release Date: August 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.15 / $0.47
+- Summary: Open Weights model from Alibaba Cloud, listed August 2026. $0.15 input / $0.47 output per 1M tokens. 1M tokens context.
+- Sources: https://openrouter.ai/qwen/qwen3.8-flash, https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+
+### Qwen3.6-27B (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-6-27b
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: 27B (dense) | Context Window: 256K tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.32 / $3.20
+- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.32 input / $3.20 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/qwen/qwen3.6-27b, https://huggingface.co/Qwen/Qwen3.6-27B
+
+### Qwen3.6-35B-A3B (Alibaba Cloud)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-qwen3-6-35b-a3b
+- Release Date: April 2026 | Architecture Type: Open Weights
+- Parameters: 35B total, 3B active (MoE) | Context Window: 256K tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.10 / $0.95
+- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.95 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/qwen/qwen3.6-35b-a3b, https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+
+### Hy4 preview (Tencent Hunyuan)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-hy4-preview
+- Release Date: August 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.834 / $2.501
+- Summary: Open Weights model from Tencent Hunyuan, listed August 2026. $0.83 input / $2.50 output per 1M tokens. 1M tokens context.
+- Sources: https://openrouter.ai/tencent/hy4-preview, https://huggingface.co/tencent/Hy4-preview
+
+### Seed 2.1 Turbo (ByteDance)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-1-turbo
+- Release Date: August 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 256K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.50 / $2.50
+- Summary: Proprietary model from ByteDance, listed August 2026. $0.50 input / $2.50 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/bytedance-seed/seed-2-1-turbo
+
+### Seed 2.0 Lite (ByteDance)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-seed-2-0-lite
+- Release Date: March 2026 | Architecture Type: Compact / Edge
+- Parameters: Not disclosed | Context Window: 256K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.25 / $2.00
+- Summary: Proprietary model from ByteDance, listed March 2026. $0.25 input / $2.00 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/bytedance-seed/seed-2.0-lite
+
+### Sakana Namazu (Sakana AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-sakana-namazu
+- Release Date: August 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 256K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.95 / $4.00
+- Summary: Proprietary model from Sakana AI, listed August 2026. $0.95 input / $4.00 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/sakana/sakana-namazu
+
+### Laguna S 2.1 (Poolside)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-laguna-s-2-1
+- Release Date: July 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.09 / $0.18
+- Summary: Open Weights model from Poolside, listed July 2026. $0.09 input / $0.18 output per 1M tokens. 1M tokens context.
+- Sources: https://openrouter.ai/poolside/laguna-s-2.1, https://huggingface.co/poolside/Laguna-S-2.1
 
 ## Published Intelligence Reports (Full Text Corpus)
 ### Nvidia in Advanced Talks to Acquire Reflection AI for $1.5B to Bolster Open Nemotron Stack

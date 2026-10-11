@@ -259,3 +259,27 @@ export function formatBenchmarkScore(b: { benchmarkName: string; score: number |
   const isPercent = !/elo|index|pareto/.test(name) && Number(score) <= 100;
   return isPercent ? `${score}%` : score;
 }
+
+/** "$4.00" for a per-1M-token price; prices with a third decimal keep it ("$0.075", "$0.435"). null = no public price. */
+export function formatPrice(v: number | null | undefined): string {
+  if (v === null || v === undefined) return 'Not public';
+  const digits = v < 10 && Math.abs(v * 100 - Math.round(v * 100)) > 1e-9 ? 3 : 2;
+  return `$${v.toFixed(digits)}`;
+}
+
+/** "$4.00 / $20.00" (input / output per 1M tokens) or "Not public". */
+export function formatPricePair(pricing: { inputPer1M: number | null; outputPer1M: number | null }): string {
+  if (pricing.inputPer1M === null || pricing.outputPer1M === null) return 'Not public';
+  return `${formatPrice(pricing.inputPer1M)} / ${formatPrice(pricing.outputPer1M)}`;
+}
+
+/** Blended price per 1M tokens at 3 input : 1 output, as used on the Price vs Score board. */
+export function blendedPrice(pricing: { inputPer1M: number | null; outputPer1M: number | null }): number | null {
+  if (pricing.inputPer1M === null || pricing.outputPer1M === null) return null;
+  return (3 * pricing.inputPer1M + pricing.outputPer1M) / 4;
+}
+
+/** A model's own result on a named benchmark (exact name match), or undefined. */
+export function findBenchmark<T extends { benchmarks: { benchmarkName: string }[] }>(model: T, name: string) {
+  return model.benchmarks.find((b) => b.benchmarkName === name) as T['benchmarks'][number] | undefined;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { AIModel } from '../../types';
 import { X, Check, AlertTriangle, Cpu, ExternalLink } from 'lucide-react';
-import { formatBenchmarkScore } from '../../utils';
+import { formatBenchmarkScore, formatPrice, findBenchmark } from '../../utils';
+import { MODEL_DATA_AS_OF } from '../../data/modelsData';
 
 interface ModelComparisonModalProps {
   isOpen: boolean;
@@ -20,7 +21,8 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
 }) => {
   if (!isOpen) return null;
 
-  const benchmarkKeys = ['SWE-bench Verified', 'AIME 2024', 'MATH-500', 'GPQA Diamond', 'MMLU-Pro'];
+  // Exact names from the generated registry; each links to one public leaderboard
+  const benchmarkKeys = ['OSWorld-Verified', 'SWE-bench Verified'];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
@@ -39,7 +41,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                 Side-by-Side Model Architecture & Benchmark Matrix
               </h2>
               <p className="text-xs text-zinc-400">
-                Comparing {models.length} frontier models across specs, economics, and verified capabilities
+                Comparing {models.length} models on specs, list prices and public leaderboard results
               </p>
             </div>
           </div>
@@ -112,19 +114,17 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                 {/* Arena Standing */}
                 <tr>
                   <td className="p-3 bg-zinc-900/40 border border-zinc-800 font-mono text-xs text-zinc-400 font-medium sticky left-0 z-10">
-                    LMSYS Arena Standing
+                    Arena Text Elo
                   </td>
                   {models.map((model) => (
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 font-mono text-xs">
                       {model.arenaRank ? (
                         <div className="flex items-center gap-1.5">
-                          <span className="font-bold text-amber-400">Rank #{model.arenaRank}</span>
-                          {model.arenaElo && (
-                            <span className="text-emerald-400 font-semibold">• {model.arenaElo} Elo</span>
-                          )}
+                          <span className="text-emerald-400 font-semibold">{model.arenaElo}</span>
+                          <span className="text-zinc-400">#{model.arenaRank} · ±{model.arenaCI}</span>
                         </div>
                       ) : (
-                        <span className="text-zinc-400">Unranked</span>
+                        <span className="text-zinc-400">Not on Arena</span>
                       )}
                     </td>
                   ))}
@@ -163,10 +163,10 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 font-mono text-xs">
                       <div className="flex flex-col gap-0.5">
                         <div>
-                          <span className="text-zinc-400">In:</span> <span className="text-emerald-400">${model.pricing.inputPer1M.toFixed(2)}</span>
+                          <span className="text-zinc-400">In:</span> <span className="text-emerald-400">{formatPrice(model.pricing.inputPer1M)}</span>
                         </div>
                         <div>
-                          <span className="text-zinc-400">Out:</span> <span className="text-zinc-200">${model.pricing.outputPer1M.toFixed(2)}</span>
+                          <span className="text-zinc-400">Out:</span> <span className="text-zinc-200">{formatPrice(model.pricing.outputPer1M)}</span>
                         </div>
                       </div>
                     </td>
@@ -189,7 +189,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                 {/* Hardware Inference Requirements */}
                 <tr>
                   <td className="p-3 bg-zinc-900/40 border border-zinc-800 font-mono text-xs text-zinc-400 font-medium sticky left-0 z-10">
-                    Hardware Footprint
+                    How to Run It
                   </td>
                   {models.map((model) => (
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 text-xs">
@@ -205,9 +205,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                       {benchName}
                     </td>
                     {models.map((model) => {
-                      const benchmarkEntry = model.benchmarks.find((b) =>
-                        b.benchmarkName.toLowerCase().includes(benchName.toLowerCase().slice(0, 5))
-                      );
+                      const benchmarkEntry = findBenchmark(model, benchName);
                       return (
                         <td key={model.id} className="p-3 border border-zinc-800">
                           {benchmarkEntry ? (
@@ -220,7 +218,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                               </div>
                             </div>
                           ) : (
-                            <span className="text-zinc-600 text-xs">—</span>
+                            <span className="text-zinc-400 text-xs">No result in source</span>
                           )}
                         </td>
                       );
@@ -228,38 +226,14 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                   </tr>
                 ))}
 
-                {/* Key Improvements */}
+                {/* Release date */}
                 <tr>
                   <td className="p-3 bg-zinc-900/40 border border-zinc-800 font-mono text-xs text-zinc-400 font-medium sticky left-0 z-10">
-                    Key Strengths
+                    Listed Since
                   </td>
                   {models.map((model) => (
                     <td key={model.id} className="p-3 border border-zinc-800 text-xs text-zinc-300">
-                      <ul className="space-y-1.5 list-disc list-inside">
-                        {model.keyImprovements.slice(0, 3).map((imp, idx) => (
-                          <li key={idx} className="leading-snug">
-                            {imp}
-                          </li>
-                        ))}
-                      </ul>
-                    </td>
-                  ))}
-                </tr>
-
-                {/* Known Limitations */}
-                <tr>
-                  <td className="p-3 bg-zinc-900/40 border border-zinc-800 font-mono text-xs text-zinc-400 font-medium sticky left-0 z-10">
-                    Known Caveats / Limits
-                  </td>
-                  {models.map((model) => (
-                    <td key={model.id} className="p-3 border border-zinc-800 text-xs text-zinc-400">
-                      <ul className="space-y-1.5 list-disc list-inside">
-                        {model.knownLimitations.slice(0, 3).map((lim, idx) => (
-                          <li key={idx} className="leading-snug">
-                            {lim}
-                          </li>
-                        ))}
-                      </ul>
+                      {model.releaseDate}
                     </td>
                   ))}
                 </tr>
@@ -270,7 +244,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
 
         {/* Footer */}
         <div className="px-6 py-3 border-t border-zinc-800 bg-zinc-950 flex items-center justify-between text-xs text-zinc-400">
-          <span>All scores verified independently by NextVector Evaluation Labs.</span>
+          <span>Sources: arena.ai, OSWorld-Verified, swebench.com, lab price pages. Checked {MODEL_DATA_AS_OF}.</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-200 transition-colors font-medium"

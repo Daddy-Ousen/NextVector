@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Benchmark } from '../../types';
-import { ShieldCheck, AlertCircle, CheckCircle, BarChart3, Info, Search, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { ShieldCheck, AlertCircle, BarChart3, Info, Search, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 
 interface BenchmarkChartProps {
   benchmarks: Benchmark[];
@@ -21,9 +21,9 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
 
   const activeBenchmark = benchmarks.find((b) => b.id === activeBenchmarkId) || benchmarks[0];
 
-  // Check if active benchmark is Elo-based (like LMSYS Chatbot Arena)
-  const isElo = activeBenchmark?.category === 'Overall Arena Elo' || (activeBenchmark?.leaderboard[0]?.score > 150);
-  const isPricePerformance = activeBenchmark?.id === 'bench-price-performance' || activeBenchmark?.category === 'Cost-Efficiency & Pareto';
+  // Arena boards (incl. the price frontier, which lists Arena scores) use score scaling, not percent
+  const isPricePerformance = activeBenchmark?.category === 'Cost-Efficiency & Pareto';
+  const isElo = activeBenchmark?.category === 'Overall Arena Elo' || isPricePerformance;
 
   // Maximum and minimum scores for normalization
   const maxScore = useMemo(() => {
@@ -66,13 +66,13 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
         <div>
           <div className="flex items-center gap-2 text-xs text-emerald-400 font-semibold mb-1">
             <BarChart3 className="w-4 h-4" />
-            <span>NextVector Benchmark Radar</span>
+            <span>Public Leaderboards</span>
           </div>
           <h2 className="heading-section">
             AI Model Performance
           </h2>
           <p className="text-xs text-zinc-400 mt-1">
-            Distinguishing real capability shifts from synthetic dataset memorization
+            Each board comes from one public source, linked on the right with its date
           </p>
         </div>
 
@@ -136,8 +136,8 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
             <span>Model & Developer</span>
             <span>
               {isElo
-                ? 'Arena Elo Rating'
-                : activeBenchmark.scoreMetricName || (isPricePerformance ? 'Pareto Efficiency Index' : 'Verified Score (Pass@1)')}
+                ? activeBenchmark.scoreMetricName || 'Arena score'
+                : activeBenchmark.scoreMetricName || 'Score'}
             </span>
           </div>
 
@@ -161,12 +161,9 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                       <span className={`text-2xs w-6 ${entry.rank <= 3 ? 'text-amber-400 font-bold' : 'text-zinc-400'}`}>
                         #{entry.rank}
                       </span>
-                      {onSelectModel ? (
+                      {onSelectModel && entry.modelId ? (
                         <button
-                          onClick={() => {
-                            const modelId = `model-${entry.modelName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-                            onSelectModel(modelId);
-                          }}
+                          onClick={() => onSelectModel(entry.modelId as string)}
                           className={`tap font-semibold text-left transition-colors hover:underline hover:text-emerald-300 flex items-center gap-1 ${
                             isTop ? 'text-emerald-400 font-bold' : 'text-zinc-200'
                           }`}
@@ -182,10 +179,8 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                       <span className="text-2xs text-zinc-400">
                         ({entry.developer})
                       </span>
-                      {entry.verifiedByNextVector && (
-                        <span title="Verified by NextVector Labs">
-                          <CheckCircle className="w-3 h-3 text-emerald-400 inline" />
-                        </span>
+                      {entry.note && (
+                        <span className="text-2xs text-zinc-500 hidden md:inline">{entry.note}</span>
                       )}
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
@@ -196,17 +191,15 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                               ? 'text-emerald-300 font-semibold bg-emerald-500/15 px-2 py-0.5 rounded-lg border border-emerald-500/30'
                               : 'text-zinc-400'
                           }`}
-                          title={isPricePerformance ? 'Blended API Inference Pricing ($ / 1M Tokens)' : 'Estimated Compute Cost Per Evaluation Run'}
+                          title="Blended list price: (3 × input + 1 × output) / 4 per 1M tokens"
                         >
                           {entry.costPerRun}
                         </span>
                       )}
                       <span className={`text-sm font-bold ${isTop ? 'text-emerald-400' : 'text-zinc-100'}`}>
                         {isElo
-                          ? `${Math.round(entry.score)} Elo`
-                          : activeBenchmark.scoreUnit
-                          ? `${entry.score.toFixed(1)} ${activeBenchmark.scoreUnit}`
-                          : `${entry.score.toFixed(1)}%`}
+                          ? `${Math.round(entry.score)}`
+                          : `${entry.score.toFixed(1)}${activeBenchmark.scoreUnit ?? '%'}`}
                       </span>
                     </div>
                   </div>
@@ -242,7 +235,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                 onClick={() => setShowAllEntries(!showAllEntries)}
                 className="tap px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-all inline-flex items-center gap-1.5"
               >
-                <span>{showAllEntries ? 'Collapse to Top 15 Models' : `Show All ${filteredEntries.length} Arena Models`}</span>
+                <span>{showAllEntries ? 'Collapse to Top 15' : `Show All ${filteredEntries.length}`}</span>
                 {showAllEntries ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
               </button>
             </div>
@@ -274,11 +267,21 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
           <div className="pt-3 border-t border-zinc-800">
             <div className="eyebrow flex items-center gap-2 mb-1">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Editorial Significance</span>
+              <span>Why It Matters</span>
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
               {activeBenchmark.whyItMatters}
             </p>
+          </div>
+
+          <div className="pt-3 border-t border-zinc-800 text-xs text-zinc-400 space-y-1">
+            <p className="text-zinc-300 leading-relaxed">{activeBenchmark.description}</p>
+            {activeBenchmark.sourceUrl && (
+              <a href={activeBenchmark.sourceUrl} target="_blank" rel="noopener noreferrer" className="tap inline-flex items-center gap-1 text-emerald-400 hover:underline">
+                Source: {new URL(activeBenchmark.sourceUrl).hostname} <ExternalLink className="w-3 h-3" />
+              </a>
+            )}
+            {activeBenchmark.dataAsOf && <p>Data checked {activeBenchmark.dataAsOf}.</p>}
           </div>
         </div>
       </div>

@@ -112,7 +112,6 @@ export const ALL_ARTICLES: Article[] = [
       "Attribution Confirmation": "Verified by OpenAI Safety & Security Committee"
 },
     relatedModelId: "model-gpt-6-astra",
-    relatedBenchmarkId: "bench-cyber-eval",
     audioDuration: "6m 10s",
     citations: [
       {
@@ -2139,7 +2138,6 @@ export const ALL_ARTICLES: Article[] = [
       "Update Deployment Standard": "Mandatory 4-stage canary deployment ring",
       "Participating Vendors": "Microsoft, CrowdStrike, SentinelOne, Sophos, Broadcom"
 },
-    relatedBenchmarkId: "bench-cyber-eval",
     audioDuration: "5m 30s",
     citations: [
       {
@@ -2253,7 +2251,6 @@ export const ALL_ARTICLES: Article[] = [
       "Post-Exploitation Persistence": "Custom kernel-level rootkits in network appliances",
       "Mitigation Mandate": "CISA Emergency Directive 26-02 (Zero-Trust Intercept Isolation)"
 },
-    relatedBenchmarkId: "bench-cyber-eval",
     audioDuration: "5m 25s",
     citations: [
       {
@@ -2480,7 +2477,6 @@ export const ALL_ARTICLES: Article[] = [
       "Mathematical Foundation": "Module Learning with Errors (M-LWE) in High-Dimensional Lattices",
       "Mandated Migration Deadline": "US Federal Executive Order 14028 (Phased 2026\u20132030)"
 },
-    relatedBenchmarkId: "bench-cyber-eval",
     audioDuration: "5m 45s",
     citations: [
       {
@@ -3727,7 +3723,6 @@ export const ALL_ARTICLES: Article[] = [
       "Security Target": "AES-192 Classical & Quantum Security Equivalent",
       "Enforcement Mandate": "CISA Binding Operational Directive (Federal Systems & Defense Ingress)"
     },
-    relatedBenchmarkId: "bench-cyber-eval",
     audioDuration: "5m 18s",
     citations: [
       {

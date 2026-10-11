@@ -14,6 +14,19 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { MODEL_COUNT } from '../data/modelCount';
+import { ALL_MODELS, MODEL_DATA_AS_OF } from '../data/modelsData';
+import { GUIDE_PICKS, PRESET_SHOWDOWNS } from '../data/showdownsData';
+
+const pick = (id: string) => GUIDE_PICKS.find((p) => p.id === id);
+const TOP = pick('top-arena');
+const VALUE = pick('value');
+const OPEN = pick('open');
+const OSW = pick('computer-use');
+const CLAUDE_VS_CHATGPT = PRESET_SHOWDOWNS.find((s) => s.slug === 'claude-vs-chatgpt');
+// Arena gap between the best open-weights and the best proprietary released model
+const released = ALL_MODELS.filter((m) => m.arenaElo && !m.preRelease);
+const bestOpen = released.filter((m) => m.openSourceStatus === 'Open Weights').sort((a, b) => (b.arenaElo ?? 0) - (a.arenaElo ?? 0))[0];
+const bestClosed = released.filter((m) => m.openSourceStatus !== 'Open Weights').sort((a, b) => (b.arenaElo ?? 0) - (a.arenaElo ?? 0))[0];
 import { PageHeader } from '../components/common/PageHeader';
 
 interface FAQItem {
@@ -29,29 +42,35 @@ const FAQ_ITEMS: FAQItem[] = [
     id: 'faq-best-model-2026',
     category: 'models',
     question: 'What is the best AI model in 2026?',
-    shortAnswer: 'OpenAI GPT-6 Astra ranks #1 globally on LMSYS Arena (1420 Elo), while Claude Opus 5.5 ranks #4 (1417 Elo) and leads in formal Lean 4 mathematical proof certification and 1M context retention.',
-    detailedAnswer: 'As of September 2026, the frontier AI landscape has diverged into specialized domain leaders. For autonomous operating system execution and general computer use, OpenAI GPT-6 Astra leads with 68.4% on OSWorld and 1420 LMSYS Elo. For deep software engineering, formal mathematical reasoning, and full-repository refactoring, Anthropic Claude Opus 5.5 is widely preferred due to its native Lean 4 verification and 1M token context window. For pure economic efficiency, DeepSeek-V4.1-Flash leads the Pareto frontier at $0.14 per 1M input tokens.',
+    shortAnswer: TOP ? `By arena.ai text score, ${TOP.modelName} (${TOP.developer}) leads the generally released models we track: ${TOP.metric}. Data checked ${MODEL_DATA_AS_OF}.` : 'See the Arena leaderboard on our benchmarks page.',
+    detailedAnswer: [
+      TOP && `Highest Arena score: ${TOP.modelName} (${TOP.metric}; ${TOP.price}).`,
+      VALUE && `Best Arena score under $1 per 1M tokens (blended): ${VALUE.modelName} (${VALUE.metric}).`,
+      OPEN && `Best open-weights model: ${OPEN.modelName} (${OPEN.metric}).`,
+      OSW && `Computer use (OSWorld-Verified): ${OSW.modelName} (${OSW.metric}).`,
+      '"Best" depends on the task: Arena measures chat preference, not coding or agent work. Each pick links to its source on our benchmarks page.',
+    ].filter(Boolean).join(' '),
   },
   {
     id: 'faq-claude-vs-chatgpt',
     category: 'models',
     question: 'Claude vs ChatGPT: Which should you choose in 2026?',
-    shortAnswer: 'Choose Claude (Claude Opus 5.5 / Sonnet 5) for coding, large documents (1M tokens), and nuanced reasoning. Choose ChatGPT (GPT-6 Astra / GPT-5.6 Sol) for computer automation, web browsing, and multimodal voice.',
-    detailedAnswer: 'If your daily workflow revolves around programming, reviewing complex codebases, or drafting technical research, Claude Pro ($20/mo) provides significantly higher coding accuracy (75.8% SWE-bench Verified) and vastly superior prompt caching discounts ($0.20/1M tokens). If you need an autonomous agent that navigates desktop software, browses the live web with interactive tools, and processes real-time voice, ChatGPT Plus ($20/mo) provides superior multi-tool flexibility.',
+    shortAnswer: CLAUDE_VS_CHATGPT ? `${CLAUDE_VS_CHATGPT.verdictA.title} ${CLAUDE_VS_CHATGPT.verdictA.points.join(' ')} ${CLAUDE_VS_CHATGPT.verdictB.title} ${CLAUDE_VS_CHATGPT.verdictB.points.join(' ')}` : 'See our Claude vs ChatGPT showdown.',
+    detailedAnswer: CLAUDE_VS_CHATGPT ? `${CLAUDE_VS_CHATGPT.executiveVerdict} Data checked ${MODEL_DATA_AS_OF}.` : '',
   },
   {
     id: 'faq-best-ai-subscription',
     category: 'subscriptions',
-    question: 'What is the best AI subscription to get in 2026?',
-    shortAnswer: 'For most developers and professionals, Claude Pro ($20/mo) or ChatGPT Plus ($20/mo) deliver the highest value. The optimal power-user setup on a $100/mo budget combines Claude Pro ($20) + Cursor ($20) + $60 in developer API credits.',
-    detailedAnswer: 'Individual subscriptions should be matched to your primary work modality. ChatGPT Plus ($20) provides GPT-6 Astra (with hourly caps) and GPT-5.6 Sol. Claude Pro ($20) provides Claude Opus 5.5, Sonnet 5, and Artifacts 2.0. Power users who have a $100/mo budget get the most leverage by pairing a single $20 desktop subscription (Claude Pro) with an IDE assistant like Cursor Pro ($20) and allocating the remaining $60 to developer API keys (Anthropic, DeepSeek, and Google) for unmetered batch tasks.',
+    question: 'What is the best AI subscription to get?',
+    shortAnswer: 'Pick the model first, then the plan. Our buyer\'s guide picks models by stated rules over public data; consumer plans change often, so check what each plan includes on the vendor\'s pricing page.',
+    detailedAnswer: 'We do not track consumer subscription plans, their usage limits or which models each plan includes, because vendors change them often. Use the decision guide to choose a model by Arena score, price, open weights or task results, then confirm on the vendor\'s pricing page that your plan includes it.',
   },
   {
     id: 'faq-chatgpt-pro-200',
     category: 'subscriptions',
-    question: 'Is the $200/month ChatGPT Pro subscription worth it?',
-    shortAnswer: 'Only for full-time quantitative researchers, algorithmic traders, or autonomous agent operators who require unmetered maximum-compute reasoning on GPT-6 Astra Operator.',
-    detailedAnswer: 'ChatGPT Pro ($200/mo) provides unrestricted access to OpenAI\'s maximum-compute reasoning tiers without standard hourly message limits. However, for 98% of software engineers and corporate knowledge workers, spending $20 on Claude Pro plus $50–$100 on developer API tokens provides 5x–10x greater operational value and prevents vendor lock-in.',
+    question: 'Is a high-end AI subscription worth it?',
+    shortAnswer: 'Only if you hit the usage limits of the cheaper plan often. We do not track plan limits; compare them on the vendor\'s pricing page.',
+    detailedAnswer: 'For API use, our model pages give list prices and a cost calculator, so you can estimate monthly spend for your token volume and compare it with a subscription price. Plan limits are set by each vendor and change often, so we do not quote them.',
   },
   {
     id: 'faq-signal-rating-formula',
@@ -63,9 +82,9 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-leaderboard-updates',
     category: 'methodology',
-    question: 'How often are the LMSYS Arena and SWE-bench leaderboards updated?',
-    shortAnswer: 'NextVector updates benchmark ratings daily from verified public harnesses (LMSYS Chatbot Arena, SWE-bench Verified, OSWorld, and WebArena).',
-    detailedAnswer: 'Our evaluation engine ingests newly published Elo evaluations and verified benchmark runs daily. Each entry records the model developer, parameter scale, input/output pricing per million tokens, context window limit, and official evaluation date to guarantee absolute transparency.',
+    question: 'Where do the model and benchmark numbers come from?',
+    shortAnswer: `From public sources only: arena.ai (text leaderboard), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. Last checked ${MODEL_DATA_AS_OF}.`,
+    detailedAnswer: 'We save a dated copy of each source and build the model pages from it. We do not run the tests ourselves. Each model page lists its sources, and each leaderboard names its source and date. If a source does not list a value (for example parameter count), we show "Not disclosed" or "Not listed" instead of estimating it.',
   },
   {
     id: 'faq-independence',
@@ -78,15 +97,17 @@ const FAQ_ITEMS: FAQItem[] = [
     id: 'faq-open-weights-vs-proprietary',
     category: 'models',
     question: 'What is the state of open-weight models vs proprietary APIs in 2026?',
-    shortAnswer: 'Leading open-weight models (DeepSeek-V4-Pro, Qwen 3.5, Mistral 3B) achieve within 15 Elo points of proprietary frontier models at 80–90% lower hosting cost.',
-    detailedAnswer: 'In 2026, the gap between proprietary frontier models and open-weight architectures has closed dramatically on standard coding and math benchmarks. While proprietary APIs (GPT-6 Astra, Claude Opus 5.5) retain a distinct edge on complex multi-step tool orchestration and autonomous desktop actions, open-weight models deployed on private enterprise clusters offer total data privacy and zero API rate-limit bottlenecks.',
+    shortAnswer: bestOpen && bestClosed
+      ? `On arena.ai, the best open-weights model we track (${bestOpen.name}, ${bestOpen.arenaElo}) is ${(bestClosed.arenaElo ?? 0) - (bestOpen.arenaElo ?? 0)} points behind the best proprietary one (${bestClosed.name}, ${bestClosed.arenaElo}).`
+      : 'See the model directory, filtered to open weights.',
+    detailedAnswer: 'Open weights let you run a model on your own hardware, which keeps data in-house and avoids API rate limits, but you pay for the GPUs and operations. The model directory has an "Open Weights" filter and lists each model\'s licence.',
   },
   {
     id: 'faq-benchmark-submission',
     category: 'platform',
     question: 'How can AI labs submit model benchmark results to NextVector?',
-    shortAnswer: 'Labs can submit audited evaluation logs, model weights, or API access endpoints to benchmarks@nextvector.rhasan.online.',
-    detailedAnswer: 'To ensure data integrity, NextVector only indexes model benchmarks that include reproducible evaluation scripts, public test harness logs (e.g. Inspect, LM-Eval-Harness, SWE-bench Docker containers), or verified LMSYS Chatbot Arena battle IDs. Disclosures are audited by our editorial desk within 24 hours.',
+    shortAnswer: 'Send corrections with a link to the public source to benchmarks@nextvector.rhasan.online.',
+    detailedAnswer: 'We only list results that appear on a public leaderboard (arena.ai, OSWorld-Verified, swebench.com) or prices from an official price page or OpenRouter. If a number on our site is wrong or out of date, send the link and we will update the dated snapshot.',
   },
 ];
 

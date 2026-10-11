@@ -15,7 +15,7 @@
 - `src/index.css`: `.fade-edges` class.
 - Jargon labels changed in ~17 files (list in `progress.md`).
 - Docs: ticker label/position in `DAILY_UPDATE_PIPELINE.md` §5.4 and `EDITORIAL_RULEBOOK.md` §9.
-- Nothing is committed. 44 files changed.
+- Committed as `cd6b75a` and pushed to `main` (Vercel deploys from `main`). Next: check the live site (404 status, `/compare/<slug>` pages) per `progress.md` open items.
 - USER TODO (from Pass 2): upload new wordmark images to Substack.
 
 ## Pass 4 starting points

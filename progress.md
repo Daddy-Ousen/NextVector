@@ -26,7 +26,7 @@
   - Speed: `scripts/optimize_images.py` (`npm run images`): article images 87 MB → 21 MB; 1 PNG converted to JPG. Cache header for `/images` and `/brand`.
 
 ## Open items
-- [ ] Commit and deploy (user decision).
+- [x] Commit and deploy: passes 1-3 committed as `cd6b75a` and pushed to `main` on 2026-10-11 (bug/speed fixes were `678f93a`).
 - [ ] After first deploy: check that Vercel serves `404.html` with status 404 for unknown URLs, and that `/compare/<slug>` pages load.
 - [ ] `public/_redirects` (`/* /index.html 200`) is Netlify/Cloudflare-only. Vercel ignores it. Delete it if you never deploy there.
 - [ ] ~130 lint warnings (unused imports). No errors.

@@ -118,16 +118,16 @@ Full report: `MODEL_DATA_AUDIT.md`.
 - Finding: `scripts/generateModelsData.cjs` makes Elo (straight line 1420→1178), prices, release dates, 2nd benchmark and text by formula. 134 of 146 models are template entries. OSWorld/WebArena/SWE-bench/Cyber-Eval boards copy Arena order (97–98% of pairs). Price index has 416 logic breaks. All rows say "verified by NextVector".
 - Wrong facts: Anthropic prices/context (Fable 5.1, Fable 5, Mythos 5.1, Opus 5, Opus 4.5–4.8, Sonnet 5, Sonnet 4.6, Haiku 5.5 context); Sonnet 5.5 and Haiku 4.5 missing; older models (Opus 4/4.1/4.5, Sonnet 4.5, Gemini 2.5 Pro, o3, GPT-5, MiniMax M2, GLM-4.5, DeepSeek-V3.2) have wrong dates, prices, licenses, scores.
 - Contradictions: 15 model-page SWE-bench scores ≠ board; 140/141 "Rank #N" texts wrong; ~25 wrong figures in `ComparePage.tsx` and `ModelDecisionGuide.tsx`; comparison modal AIME/GPQA rows broken; license filter drops "Research Weights".
-- User picked option A (rebuild with real sourced data). DONE 2026-10-11, NOT committed yet.
+- User picked option A (rebuild with real sourced data). DONE 2026-10-11, commit `1845086`, pushed.
 
-## Model data rebuild (option A, 2026-10-11, uncommitted)
+## Model data rebuild (option A, 2026-10-11, commit `1845086`, pushed)
 Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, lint 0 errors, browser check (model page, compare, benchmarks, guide, /models at 375px, no side scroll).
 - [x] New pipeline: `scripts/fetch_model_sources.py` (dated snapshots in `scripts/model_sources/snapshots/`), `scripts/model_sources/curated_models.json` (model list + source keys + showdown pairs), `scripts/build_model_data.py` (writes `modelsData.ts`, `benchmarksData.ts`, `showdownsData.ts`, `scripts/model_sources/build/site_data.json`, vercel.json redirects). `generateModelsData.cjs` deleted.
 - [x] 135 real models (16 unverifiable dropped, variants merged, 15 added e.g. Sonnet 5.5, Haiku 4.5, GPT-6.1 Sol, Gemini 4 Argon). 31 redirects for old model URLs.
 - [x] Boards: Arena (real ranks, 115), OSWorld-Verified (24), SWE-bench Verified bash-only (42, runs end Feb 2026), Price vs Arena Pareto (9). WebArena and fake "Cyber-Eval" removed (5 article links removed).
 - [x] UI rewired: ModelCard, ModelDetailPage (sources, price notes), comparison modal, directory (blended sort, licence filter), BenchmarkChart (modelId links, source/date), ComparePage + DecisionGuide + Subscriptions + FAQ now data-driven; "verified by NextVector" claims removed. Prerender + llms-full read site_data.json. Gate 6 rewritten. Docs updated (pipeline, rulebook, README).
-- [ ] Commit + push (needs user OK).
-- [ ] Follow-up: articles (211) and timeline still repeat old fake figures (e.g. "Lean 4" x62, 73.4%, 68.4%, 94.6% Cyber-Eval). Needs an editorial audit.
+- [x] Committed `1845086` and pushed to `main` (user OK, option A).
+- [ ] Follow-up (separate session started 2026-10-11): articles (211) and timeline still repeat old fake figures (e.g. "Lean 4" x62, 73.4%, 68.4%, 94.6% Cyber-Eval). Needs an editorial audit.
 - [ ] Optional: lab-reported SWE-bench for 2026 models; ComparePage unused icon imports.
 
 ## Architectural decisions

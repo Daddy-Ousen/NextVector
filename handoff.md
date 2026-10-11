@@ -1,12 +1,12 @@
-# Handoff — 2026-10-11 (Model data rebuilt from real sources, uncommitted)
+# Handoff — 2026-10-11 (Model data rebuilt from real sources, pushed as 1845086)
 
 ## Latest: option A done (see progress.md "Model data rebuild")
 - Model data is now GENERATED. Never hand-edit `src/data/modelsData.ts`, `benchmarksData.ts`, `showdownsData.ts`.
 - Refresh: `python scripts/fetch_model_sources.py` then `python scripts/build_model_data.py`, then `npm run build`, `npm run verify`.
 - Add/change models or showdown pairs in `scripts/model_sources/curated_models.json`. Build fails if a source key is missing.
 - Anthropic/Google prices are typed from official pages (`price` with `src`); others come from OpenRouter.
-- All checks passed. Nothing committed yet. Next: get user OK to commit/push.
-- Open: articles/timeline still contain old fake model numbers (separate editorial job).
+- All checks passed. Committed `1845086`, pushed to `main`. Next: check the live site after the Vercel deploy (redirects for old /models/ URLs, /compare pages).
+- Open: articles/timeline still contain old fake model numbers. A separate session is doing that editorial audit.
 - Gotcha: shell heredocs break on mixed quotes; write edit scripts to scratchpad files (helper `edit_lib.py` pattern: counted exact replacements, keep CRLF).
 - Gotcha: substring type rules bit us ("gemini" contains "mini"); build uses whole-word matching.
 

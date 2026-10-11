@@ -3,7 +3,8 @@
 NextVector Static Pre-Rendering (SSG) & GEO Optimization Pipeline
 Generates standalone, SEO/GEO-optimized static HTML files for all articles,
 models, core hubs, /faq, /contact, and the root homepage in dist/ after Vite build.
-Also generates valid RSS 2.0 (rss.xml) and comprehensive LLM full-text corpus (llms-full.txt).
+Also generates valid RSS 2.0 (rss.xml), the LLM files (llms.txt, llms-full.txt), the model picks in
+ai-summary.json, and the <noscript> model list in index.html, all from site_data.json and articlesData.ts.
 """
 
 import os
@@ -31,6 +32,13 @@ LOGO_URL = f"{BASE_URL}/brand/nextvector-logo.jpg"
 def escape(s):
     return html.escape(str(s or ""), quote=True)
 
+_JS_ESCAPES = {'"': '"', "'": "'", "\\": "\\", "n": "\n", "t": "\t"}
+
+def js_unescape(s):
+    """Decode JS string escapes (\\u2019, \\", \\') so pages show ’ and — instead of the escape text."""
+    return re.sub(r'\\(u[0-9a-fA-F]{4}|["\'\\nt])',
+                  lambda m: chr(int(m.group(1)[1:], 16)) if m.group(1)[0] == "u" else _JS_ESCAPES[m.group(1)], s)
+
 def parse_articles():
     content = ARTICLES_FILE.read_text(encoding="utf-8")
     blocks = re.split(r'(?=\{\s*id:\s*["\']art-\d+["\'])', content)[1:]
@@ -40,7 +48,7 @@ def parse_articles():
         m = re.search(name + r':\s*(?:"([^"\\]*(?:\\.[^"\\]*)*)"|\'([^\'\\]*(?:\\.[^\'\\]*)*)\')', text, re.DOTALL)
         if m:
             val = m.group(1) if m.group(1) is not None else m.group(2)
-            return val.replace('\\"', '"').replace("\\'", "'")
+            return js_unescape(val)
         return None
 
     for b in blocks:
@@ -75,7 +83,7 @@ def parse_articles():
         if kt_start != -1:
             kt_block_m = re.search(r'keyTakeaways:\s*\[(.*?)\n\s*\]', b, re.DOTALL)
             if kt_block_m:
-                takeaways = re.findall(r'^\s*["\'](.*?)["\'],?\s*$', kt_block_m.group(1), re.MULTILINE)
+                takeaways = [js_unescape(s) for s in re.findall(r'^\s*["\'](.*?)["\'],?\s*$', kt_block_m.group(1), re.MULTILINE)]
 
         # Content paragraphs
         content_paras = []
@@ -83,7 +91,7 @@ def parse_articles():
         if c_start != -1:
             c_block_m = re.search(r'content:\s*\[(.*?)\n\s*\]', b, re.DOTALL)
             if c_block_m:
-                content_paras = re.findall(r'^\s*["\'](.*?)["\'],?\s*$', c_block_m.group(1), re.MULTILINE)
+                content_paras = [js_unescape(s) for s in re.findall(r'^\s*["\'](.*?)["\'],?\s*$', c_block_m.group(1), re.MULTILINE)]
 
         # Citations
         citations = []
@@ -454,12 +462,189 @@ def generate_llms_full(articles, models):
         (DIST_DIR / "llms-full.txt").write_text(full_corpus, encoding="utf-8")
     print(f"Generated comprehensive llms-full.txt ({len(full_corpus.encode('utf-8'))} bytes) in public/ and dist/")
 
+def top_released_models(n=5):
+    """Highest arena.ai text scores among generally released models (pre-release entries skipped)."""
+    ranked = [m for m in site_data()["models"] if m.get("arenaRank") and not m.get("preRelease")]
+    return sorted(ranked, key=lambda m: m["arenaRank"])[:n]
+
+
+def model_fact_line(m):
+    p = m["pricing"]
+    price = (f"{fmt_price(p['inputPer1M'])} / {fmt_price(p['outputPer1M'])} per 1M tokens (input / output)"
+             if p.get("inputPer1M") is not None else "price not public")
+    return (f"arena.ai text score {m['arenaElo']} ±{m['arenaCI']} (#{m['arenaRank']} of {site_data()['arenaTotal']}), "
+            f"{price}, {m['contextWindow']} context")
+
+
+def inject_top_models(template_html):
+    """Fill the <noscript> model list in index.html (#nv-top-models) from site_data.json."""
+    sd = site_data()
+    items = "".join(
+        f'\n            <li><a href="/models/{m["id"]}"><strong>{escape(m["name"])}</strong></a> ({escape(m["developer"])}): {escape(model_fact_line(m))}.</li>'
+        for m in top_released_models())
+    block = (f'<div id="nv-top-models">\n'
+             f'          <h2>Top AI Models by arena.ai Text Score (data checked {sd["asOf"]})</h2>\n'
+             f'          <ol>{items}\n          </ol>\n'
+             f'          <p>Released models only. Sources and full tables: <a href="/models">AI Models Directory</a>, <a href="/benchmarks">leaderboards</a>.</p>\n'
+             f'        </div>')
+    out, n = re.subn(r'<div id="nv-top-models">.*?</div>', lambda _: block, template_html, count=1, flags=re.DOTALL)
+    if n != 1:
+        sys.exit("Error: <div id=\"nv-top-models\"> not found in dist/index.html")
+    return out
+
+
+def faq_pairs():
+    """Question/answer pairs shown on the prerendered /faq page and used for its FAQPage schema."""
+    sd = site_data()
+    cvc = next((s["executiveVerdict"] for s in sd["showdowns"] if s["slug"] == "claude-vs-chatgpt"), "")
+    return [
+        ("Which AI model scores highest right now?",
+         f"Highest arena.ai text score (released models): {guide_line('top-arena')}. Best score under $1 per 1M tokens: {guide_line('value')}. "
+         f"Best open weights: {guide_line('open')}. Computer use (OSWorld-Verified): {guide_line('computer-use')}. Data checked {sd['asOf']}."),
+        ("Claude vs ChatGPT: what does the data say?", f"{cvc} Data checked {sd['asOf']}."),
+        ("Where do the model and benchmark numbers come from?",
+         "From public sources only: arena.ai (text leaderboard), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. "
+         "We save a dated copy of each source and do not run the tests ourselves. Missing values are shown as \"Not disclosed\" or \"Not listed\"."),
+        ("How are NextVector Signal Ratings calculated?",
+         "Signal Ratings use a 4-part formula: Architectural Novelty (30%), Empirical Benchmark Verification (30%), Practical Engineering Utility (25%), and Primary Source Reliability (15%)."),
+    ]
+
+
+def faq_html():
+    cards = "".join(f"""
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
+                  <h2 class="text-lg font-bold text-zinc-100">{escape(q)}</h2>
+                  <p class="text-sm text-zinc-300 leading-relaxed">{escape(a)}</p>
+                </div>
+""" for q, a in faq_pairs())
+    return f'<div class="space-y-6">{cards}              </div>'
+
+
+def faq_schema():
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": f"{BASE_URL}/faq#faq",
+        "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+                       for q, a in faq_pairs()],
+    }
+
+
+def first_sentence(text):
+    return re.split(r'(?<=[.!?])\s+', text.strip(), maxsplit=1)[0]
+
+
+def write_public_and_dist(name, text):
+    PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
+    (PUBLIC_DIR / name).write_text(text, encoding="utf-8")
+    if DIST_DIR.exists():
+        (DIST_DIR / name).write_text(text, encoding="utf-8")
+
+
+def generate_llms_txt(articles, models):
+    """Short llms.txt index. Model figures come from site_data.json; latest stories from articlesData.ts."""
+    sd = site_data()
+    L = [
+        "# NextVector",
+        "",
+        "> NextVector is an independent AI news site and model data hub. Stories use a three-question format (What happened? Why does it matter? What could happen next?). "
+        "Model pages carry sourced data: arena.ai text scores, OSWorld-Verified and SWE-bench Verified results, list prices and context windows.",
+        "",
+        "Editorial charter: Less noise. More signal. Sourced benchmarks over marketing claims. Founded and edited by Robiul Hasan (https://rhasan.online). "
+        "Every story links its primary sources and gets a 1–100 Signal Rating (formula on the About page). "
+        f"NextVector does not run benchmarks itself: model numbers come from public leaderboards and vendor price pages, saved as dated copies. Model data checked {sd['asOf']}.",
+        "",
+        "## Core Hubs",
+        f"- [NextVector Home]({BASE_URL}/): Latest AI news, newest first, with the lead story on top.",
+        f"- [AI Models Directory]({BASE_URL}/models): {len(models)} tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.",
+        f"- [Model Showdowns & Comparisons]({BASE_URL}/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).",
+        f"- [AI Model Buyer's Guide]({BASE_URL}/subscriptions): Picks a model by a stated rule over public data; check each vendor's plan page for what a subscription includes.",
+        f"- [Benchmark Leaderboards]({BASE_URL}/benchmarks): arena.ai text, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.",
+        f"- [AI Breakthrough Timeline]({BASE_URL}/timeline): Chronological record of major AI and computing milestones.",
+        f"- [Daily Intelligence Briefing]({BASE_URL}/briefing): A short scan of the day's main AI stories.",
+        f"- [Research Explained]({BASE_URL}/research): Plain-language explanations of research papers.",
+        f"- [Story Archive]({BASE_URL}/archive): Crawlable list of every published story.",
+        "",
+        f"## Model Decision Guide (data checked {sd['asOf']})",
+    ]
+    for g in sd["guide"]:
+        L.append(f"- {g['title']}: [{g['modelName']}]({BASE_URL}/models/{g['modelId']}) ({g['developer']}): {g['metric']}; list price {g['price']}.")
+
+    L += ["", f"## Top Released Models by arena.ai Text Score (data checked {sd['asOf']})"]
+    for m in top_released_models():
+        L.append(f"- [{m['name']}]({BASE_URL}/models/{m['id']}) ({m['developer']}): {model_fact_line(m)}.")
+
+    boards = [
+        ("arena", "arena.ai text leaderboard (tracked models, real arena.ai rank)", ""),
+        ("osworld", "OSWorld-Verified (computer use, success rate)", "%"),
+        ("swebench", "SWE-bench Verified (bash-only runs, % resolved)", "%"),
+        ("pareto", "Price vs Arena score frontier (NextVector calculation over list prices)", ""),
+    ]
+    L += ["", "## Leaderboards (top 3 each)"]
+    for key, label, unit in boards:
+        tops = []
+        for e in sd["boards"][key][:3]:
+            name = f"[{e['modelName']}]({BASE_URL}/models/{e['modelId']})" if e.get("modelId") else e["modelName"]
+            extra = [x for x in (e.get("costPerRun"), "pre-release" if "pre-release" in (e.get("note") or "") else None, e["date"]) if x]
+            tops.append(f"#{e['rank']} {name} {e['score']}{unit} ({', '.join(extra)})")
+        L.append(f"- [{label}]({BASE_URL}/benchmarks): " + "; ".join(tops) + ".")
+
+    L += ["", "## Model Showdowns"]
+    for s in sd["showdowns"]:
+        L.append(f"- [{s['name']}]({BASE_URL}/compare/{s['slug']}): {first_sentence(s['executiveVerdict'])}")
+
+    L += ["", "## Latest Stories"]
+    for a in articles[:5]:
+        L.append(f"- [{a['title']}]({BASE_URL}/article/{a['slug']}) ({a['publishedAt'][:10]}): {a['subtitle']}")
+
+    L += [
+        "",
+        "## Editorial Standards",
+        f"- [About NextVector & Robiul Hasan]({BASE_URL}/about): Founder background, editorial principles and the 1–100 Signal Rating formula.",
+        f"- [Frequently Asked Questions]({BASE_URL}/faq): Answers on AI models, where our data comes from and how Signal Ratings work.",
+        f"- [Contact]({BASE_URL}/contact): Editorial contact, corrections and benchmark submissions.",
+        "",
+        "## Machine-Readable Endpoints",
+        f"- [XML Sitemap]({BASE_URL}/sitemap.xml): Every published story, model and hub page.",
+        f"- [RSS 2.0 Feed]({BASE_URL}/rss.xml): The 60 newest stories.",
+        f"- [Full Text for LLMs]({BASE_URL}/llms-full.txt): Every story in full plus the complete model directory with sources.",
+        f"- [Machine AI Summary]({BASE_URL}/ai-summary.json): Site facts, endpoints and current model picks as JSON.",
+        "",
+    ]
+    text = "\n".join(L)
+    write_public_and_dist("llms.txt", text)
+    print(f"Generated llms.txt ({len(text.encode('utf-8'))} bytes) in public/ and dist/")
+
+
+def update_ai_summary():
+    """Refresh the model picks in ai-summary.json from site_data.json. Other keys are kept as written."""
+    sd = site_data()
+    path = PUBLIC_DIR / "ai-summary.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data.pop("topPicks2026", None)
+    data["modelPicks"] = {
+        "dataAsOf": sd["asOf"],
+        "method": "Each pick applies a stated rule to public data (arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified, list prices). NextVector does not run these tests.",
+        "picks": [{
+            "category": g["title"],
+            "rule": g["rule"],
+            "model": g["modelName"],
+            "developer": g["developer"],
+            "metric": g["metric"],
+            "listPrice": g["price"],
+            "url": f"{BASE_URL}/models/{g['modelId']}",
+        } for g in sd["guide"]],
+    }
+    write_public_and_dist("ai-summary.json", json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    print(f"Updated ai-summary.json model picks (data as of {sd['asOf']}) in public/ and dist/")
+
+
 def prerender_all():
     if not INDEX_HTML.exists():
         print(f"Error: {INDEX_HTML} not found. Please run 'npm run build' first.")
         sys.exit(1)
 
-    template_html = INDEX_HTML.read_text(encoding="utf-8")
+    template_html = inject_top_models(INDEX_HTML.read_text(encoding="utf-8"))
     # Newest first: drives the homepage lead story, RSS (newest 60), archive and llms-full order
     articles = sorted(parse_articles(), key=lambda a: a["publishedAt"], reverse=True)
     # Arena rank order (unranked last) for leaderboard tables
@@ -962,6 +1147,7 @@ def prerender_all():
             "title": "Frequently Asked Questions (FAQ): AI Models, Benchmarks & NextVector",
             "description": "Answers built from sourced data: which AI model scores highest, Claude vs ChatGPT by the numbers, where our model data comes from, and how Signal Ratings work.",
             "keywords": "AI FAQ, best AI model, claude vs chatgpt, ai benchmarks FAQ, nextvector signal rating",
+            "schema": faq_schema(),
             "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
               <header class="border-b border-zinc-800 pb-6">
@@ -970,27 +1156,7 @@ def prerender_all():
                 <p class="text-sm md:text-base text-zinc-300 mt-2">Model answers are built from sourced data checked {site_data()['asOf']}.</p>
               </header>
 
-              <div class="space-y-6">
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">Which AI model scores highest right now?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">Highest arena.ai text score (released models): {escape(guide_line('top-arena'))}. Best score under $1 per 1M tokens: {escape(guide_line('value'))}. Best open weights: {escape(guide_line('open'))}. Computer use (OSWorld-Verified): {escape(guide_line('computer-use'))}.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">Claude vs ChatGPT: what does the data say?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">{escape(next((sd['executiveVerdict'] for sd in site_data()['showdowns'] if sd['slug'] == 'claude-vs-chatgpt'), ''))}</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">Where do the model and benchmark numbers come from?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">From public sources only: arena.ai (text leaderboard), OSWorld-Verified, swebench.com, OpenRouter's model catalog and the labs' own price pages. We save a dated copy of each source and do not run the tests ourselves. Missing values are shown as "Not disclosed" or "Not listed".</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2">
-                  <h2 class="text-lg font-bold text-zinc-100">How are NextVector Signal Ratings calculated?</h2>
-                  <p class="text-sm text-zinc-300 leading-relaxed">Signal Ratings use a 4-part formula: Architectural Novelty (30%), Empirical Benchmark Verification (30%), Practical Engineering Utility (25%), and Primary Source Reliability (15%).</p>
-                </div>
-              </div>
+              {faq_html()}
             </main>"""
         },
         {
@@ -1145,7 +1311,8 @@ def prerender_all():
             "title": cp["title"],
             "description": cp["description"],
             "keywords": cp["keywords"],
-            "path": cp["path"]
+            "path": cp["path"],
+            "schema": cp.get("schema"),
         }
         if cp.get("canonical"):
             meta["canonical"] = cp["canonical"]
@@ -1237,6 +1404,8 @@ def prerender_all():
     generate_rss_feed(articles)
     generate_sitemap(articles, models, showdowns)
     generate_llms_full(articles, models)
+    generate_llms_txt(articles, models)
+    update_ai_summary()
 
     print(f"SUCCESS: Generated {generated_count} static HTML files across dist/ with complete titles, canonicals, Schema.org graphs, and crawlable semantic bodies.")
 

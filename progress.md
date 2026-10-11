@@ -136,10 +136,14 @@ Full list: `ARTICLE_CLAIMS_AUDIT.md`. Verified: `npx tsc -b`, `npm run build`, `
 - [x] Removed: Cyber-Eval 94.6%, all fake Elo (1396/1404/1412/1417/1418/1338/1386/1425), fake SWE-bench (58.2/62.4/73.4/84.1/91.4), OSWorld/WebArena 68.4/74.2, MMLU-Pro/HumanEval/MATH-500 fakes, Opus 5.5 "native Lean 4 prover".
 - [x] Corrected from site_data/official pages: prices (Fable 5.1 $10/$50, Sonnet 5.5 $2/$10, Grok 4.7 $2/$6, DeepSeek-V4.1-Flash $0.30/$1.20, Haiku 5.5 cache $0.01, Argon $2/$10 intro), context sizes, arena.ai scores/ranks, Opus 5.5 "20% lower token prices; Anthropic says 40% less to run".
 - Note: Anthropic's Opus 5.5 page really says "costs 40% less to run than Opus 5" (per task). Per-token cut is 20%. Both are now stated.
-- [ ] HIGH follow-up: `index.html` (FAQ schema + model list, on every page), `public/ai-summary.json`, `public/llms.txt` still show 1420/1417/1396 Elo, SWE-bench 98%, $0.14, Lean 4, OSWorld 68.4%, wrong model links. Newsletters archive also repeats them.
+- [x] Site-level files fixed (2026-10-11, NOT committed yet). Verified: `npm run build`, `npm run verify` 8/8, `npx tsc -b`, `npm run lint` 0 errors, dist files checked (0 old figures, `/faq` FAQPage schema valid JSON).
+  - `index.html`: removed the global FAQPage schema (fake figures, not visible on most pages). Wording: "verified LMSYS" → "sourced … arena.ai"; no plan prices. No-JS model list is now a placeholder `<div id="nv-top-models">`, filled at build time.
+  - `scripts/prerender_static_pages.py`: new `inject_top_models()` (top 5 released models by arena.ai score), `generate_llms_txt()` (whole `public/llms.txt`), `update_ai_summary()` (`modelPicks` key in `public/ai-summary.json`; `topPicks2026` removed), `faq_pairs()`/`faq_schema()` (one source for `/faq` body + schema). Core pages now pass `schema` through.
+  - Side fix: new `js_unescape()` in the article parser. 59 prerendered pages and llms-full.txt showed raw `’` / `\'` text; now 0.
+- [ ] Newsletters archive still repeats old fake figures (sent emails; editorial call).
 - [ ] Follow-ups: art-78 Mixture-of-Depths premise vs Mistral's real post; art-79 architecture numbers vs DeepSeek page; art-197 invented API header/model ID.
 
 ## Architectural decisions
 - `src/data/articlesData.ts` stays the single source of truth. The app reads it only through virtual modules `virtual:article-summaries` and `virtual:article-body/<id>` (see `vite.articleSplit.ts`). Types: `ArticleSummary` (lists) vs `Article` (detail).
-- `public/sitemap.xml`, `public/rss.xml`, `public/llms-full.txt` are build outputs. Do not hand-edit. Sitemap regenerates only when git history is available; otherwise the committed file is kept.
+- `public/sitemap.xml`, `public/rss.xml`, `public/llms-full.txt`, `public/llms.txt` are build outputs. Do not hand-edit. In `public/ai-summary.json` only `modelPicks` is generated; other keys are hand-written. The `index.html` no-JS model list (`#nv-top-models`) is filled at build time. Sitemap regenerates only when git history is available; otherwise the committed file is kept.
 - Vercel routing: no SPA rewrite. Every route is a prerendered file; unknown URLs get `404.html`, which still boots the SPA.

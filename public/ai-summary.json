@@ -3,7 +3,7 @@
   "name": "NextVector",
   "legalName": "NextVector Media",
   "tagline": "Technology & AI Intelligence Platform",
-  "description": "High-signal AI news, frontier model benchmarks, LMSYS Chatbot Arena leaderboards, model showdowns, and buyer guides. Primary-source verified with zero marketing fluff.",
+  "description": "High-signal AI news, sourced model data, public leaderboards (arena.ai, OSWorld-Verified, SWE-bench Verified), model showdowns, and buyer guides. Primary sources linked, no marketing fluff.",
   "url": "https://nextvector.rhasan.online",
   "editorInChief": {
     "name": "Robiul Hasan",
@@ -16,7 +16,7 @@
     ]
   },
   "editorialCharter": {
-    "manifesto": "Less noise. More signal. Verified benchmarks over marketing claims.",
+    "manifesto": "Less noise. More signal. Sourced benchmarks over marketing claims.",
     "evaluationFramework": "The Three Questions: What happened? Why does it matter? What could happen next?",
     "signalPurityScale": "1-100 deterministic scoring based on architectural novelty, benchmark verification, engineering utility, and source reliability."
   },
@@ -24,7 +24,7 @@
     "Artificial Intelligence (Foundation Models, LLMs, Reasoning Systems, Autonomous Agents)",
     "Computing & Hardware (Semiconductors, Lithography, Quantum Computing, Datacenter Fabrics)",
     "Fundamental Science (Astrophysics, Quantum Mechanics, Computational Biology)",
-    "Empirical Benchmarking (LMSYS Chatbot Arena, SWE-bench Verified, OSWorld, WebArena)"
+    "Public Benchmarks (arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified)"
   ],
   "machineEndpoints": {
     "llmsTxt": "https://nextvector.rhasan.online/llms.txt",
@@ -34,10 +34,73 @@
     "faq": "https://nextvector.rhasan.online/faq",
     "contact": "https://nextvector.rhasan.online/contact"
   },
-  "topPicks2026": {
-    "globalEloLeader": "OpenAI GPT-6 Astra (1420 Elo)",
-    "codingAndReasoningLeader": "Anthropic Claude Opus 5.5 (1417 Elo, 1M Context, Lean 4 Verified)",
-    "pricePerformanceLeader": "DeepSeek-V4.1-Flash ($0.14 per 1M tokens)",
-    "bestSubscriptionIndividual": "Claude Pro ($20/mo) for software engineers; ChatGPT Plus ($20/mo) for general computer use and voice."
+  "modelPicks": {
+    "dataAsOf": "2026-10-11",
+    "method": "Each pick applies a stated rule to public data (arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified, list prices). NextVector does not run these tests.",
+    "picks": [
+      {
+        "category": "Highest Arena score (released models)",
+        "rule": "Highest arena.ai text score among generally released models we track.",
+        "model": "Claude Opus 5.5",
+        "developer": "Anthropic",
+        "metric": "Arena 1507 (±8, #2)",
+        "listPrice": "$4.00 / $20.00 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-claude-opus-5-5"
+      },
+      {
+        "category": "Best Arena score under $1 blended",
+        "rule": "Highest Arena score with a blended list price under $1 per 1M tokens (3 input : 1 output).",
+        "model": "MiMo-V2.6-Pro",
+        "developer": "Xiaomi AI",
+        "metric": "Arena 1480 at $0.54 blended",
+        "listPrice": "$0.435 / $0.87 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-mimo-v2-6-pro"
+      },
+      {
+        "category": "Best Arena score under $0.20 blended",
+        "rule": "Highest Arena score with a blended list price under $0.20 per 1M tokens.",
+        "model": "Gemma 4 31B",
+        "developer": "Google DeepMind",
+        "metric": "Arena 1452 at $0.15 blended",
+        "listPrice": "$0.09 / $0.34 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-gemma-4-31b"
+      },
+      {
+        "category": "Best open-weights model",
+        "rule": "Highest Arena score among models with downloadable weights.",
+        "model": "Kimi K3",
+        "developer": "Moonshot AI",
+        "metric": "Arena 1488 · Kimi K3 license",
+        "listPrice": "$0.80 / $10.00 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-kimi-k3"
+      },
+      {
+        "category": "Computer use",
+        "rule": "Highest OSWorld-Verified success rate (General model runs) among models we track.",
+        "model": "Claude Fable 5",
+        "developer": "Anthropic",
+        "metric": "OSWorld-Verified 86.0%",
+        "listPrice": "$10.00 / $50.00 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-claude-fable-5"
+      },
+      {
+        "category": "Coding (shared-harness SWE-bench runs)",
+        "rule": "Highest SWE-bench Verified score in mini-SWE-agent runs. These runs stop in early 2026, so newer models are missing.",
+        "model": "Claude Opus 4.5",
+        "developer": "Anthropic",
+        "metric": "SWE-bench Verified 76.8%",
+        "listPrice": "$5.00 / $25.00 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-claude-opus-4-5"
+      },
+      {
+        "category": "Largest context window",
+        "rule": "Largest listed context window among Arena-ranked models; ties go to the higher Arena score.",
+        "model": "Grok 4.20",
+        "developer": "xAI",
+        "metric": "2M tokens · Arena 1475",
+        "listPrice": "$1.25 / $2.50 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-grok-4-20"
+      }
+    ]
   }
 }

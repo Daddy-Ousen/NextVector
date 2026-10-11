@@ -1,53 +1,68 @@
 # NextVector
 
-> NextVector is an independent artificial intelligence intelligence platform and frontier model benchmark radar filtering marketing noise to deliver verified technical disclosures, LMSYS Chatbot Arena leaderboards, head-to-head model showdowns, and buyer guides.
+> NextVector is an independent AI news site and model data hub. Stories use a three-question format (What happened? Why does it matter? What could happen next?). Model pages carry sourced data: arena.ai text scores, OSWorld-Verified and SWE-bench Verified results, list prices and context windows.
 
-NextVector operates under a strict empirical editorial charter: Less noise. More signal. Verified benchmarks over marketing claims. Founded and edited by Robiul Hasan (https://rhasan.online). All reporting is primary-source verified and rated using a 1–100 Signal Purity formula.
+Editorial charter: Less noise. More signal. Sourced benchmarks over marketing claims. Founded and edited by Robiul Hasan (https://rhasan.online). Every story links its primary sources and gets a 1–100 Signal Rating (formula on the About page). NextVector does not run benchmarks itself: model numbers come from public leaderboards and vendor price pages, saved as dated copies. Model data checked 2026-10-11.
 
-## Core Intelligence Hubs
-- [NextVector Home](https://nextvector.rhasan.online/): Real-time verified AI news feed, breaking signal marquee, and lead intelligence report.
-- [AI Models Directory](https://nextvector.rhasan.online/models): Interactive database of all tracked frontier and open-weight AI foundation models with architecture, token pricing, context windows, and Arena Elo ratings.
-- [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head architectural showdowns between leading frontier models (Claude vs ChatGPT, Opus vs GPT-6, DeepSeek vs OpenAI).
-- [Best AI Subscriptions Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Definitive 2026 buyer guide comparing ChatGPT Plus ($20), Claude Pro ($20), Gemini Advanced ($20), and ChatGPT Pro ($200).
-- [Benchmark Radar & Leaderboards](https://nextvector.rhasan.online/benchmarks): Empirical leaderboards across LMSYS Chatbot Arena, OSWorld (computer use), WebArena (browser tasks), SWE-bench Verified (code), and Price-Performance Pareto.
-- [AI Breakthrough Timeline](https://nextvector.rhasan.online/timeline): Chronological living record of verified paradigm shifts in foundation models, semiconductors, and computing fabrics.
-- [Daily Intelligence Briefing](https://nextvector.rhasan.online/briefing): 3-minute executive morning intelligence scan for engineers and technology leaders.
-- [Research Explained](https://nextvector.rhasan.online/research): First-principles technical dissections of seminal preprints and peer-reviewed computer science literature.
-- [Complete Intelligence Archive](https://nextvector.rhasan.online/archive): Full crawlable HTML archive of every published intelligence report and model dossier.
+## Core Hubs
+- [NextVector Home](https://nextvector.rhasan.online/): Latest AI news, newest first, with the lead story on top.
+- [AI Models Directory](https://nextvector.rhasan.online/models): 135 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
+- [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).
+- [AI Model Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Picks a model by a stated rule over public data; check each vendor's plan page for what a subscription includes.
+- [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
+- [AI Breakthrough Timeline](https://nextvector.rhasan.online/timeline): Chronological record of major AI and computing milestones.
+- [Daily Intelligence Briefing](https://nextvector.rhasan.online/briefing): A short scan of the day's main AI stories.
+- [Research Explained](https://nextvector.rhasan.online/research): Plain-language explanations of research papers.
+- [Story Archive](https://nextvector.rhasan.online/archive): Crawlable list of every published story.
 
-## Model Showdowns & Buyer Guides
-- [Claude vs ChatGPT (2026 Showdown)](https://nextvector.rhasan.online/compare/claude-vs-chatgpt): Deep architectural showdown comparing Claude Opus 5.5 vs GPT-6 Astra across coding, OS automation, context retention, and API costs.
-- [Opus vs GPT-6 (Reasoning Showdown)](https://nextvector.rhasan.online/compare/opus-vs-gpt-6): Frontier reasoning battle analyzing Lean 4 formal verification vs multi-agent operating system navigation.
-- [Grok vs Claude (Open Frontier Showdown)](https://nextvector.rhasan.online/compare/grok-vs-claude): Colossus compute cluster scaling vs Anthropic constitutional safety and steerability.
-- [AI Subscription Decision Guide](https://nextvector.rhasan.online/subscriptions): ROI breakdown of individual $20/month tiers, optimal $100/month power-user stacks, and corporate plans.
+## Model Decision Guide (data checked 2026-10-11)
+- Highest Arena score (released models): [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): Arena 1507 (±8, #2); list price $4.00 / $20.00 per 1M tokens.
+- Best Arena score under $1 blended: [MiMo-V2.6-Pro](https://nextvector.rhasan.online/models/model-mimo-v2-6-pro) (Xiaomi AI): Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens.
+- Best Arena score under $0.20 blended: [Gemma 4 31B](https://nextvector.rhasan.online/models/model-gemma-4-31b) (Google DeepMind): Arena 1452 at $0.15 blended; list price $0.09 / $0.34 per 1M tokens.
+- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.80 / $10.00 per 1M tokens.
+- Computer use: [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) (Anthropic): OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens.
+- Coding (shared-harness SWE-bench runs): [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) (Anthropic): SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens.
+- Largest context window: [Grok 4.20](https://nextvector.rhasan.online/models/model-grok-4-20) (xAI): 2M tokens · Arena 1475; list price $1.25 / $2.50 per 1M tokens.
 
-## Benchmark Radar Leaderboards
-- [LMSYS Chatbot Arena Leaderboard](https://nextvector.rhasan.online/benchmarks): Global blind human preference Elo rankings led by GPT-6 Astra (1420 Elo) and Claude Opus 5.5 (1417 Elo).
-- [SWE-bench Verified Leaderboard](https://nextvector.rhasan.online/benchmarks): Verified software engineering benchmark on real GitHub issues led by Claude Opus 5.5 and GPT-6 Astra.
-- [OSWorld Autonomous Navigation Leaderboard](https://nextvector.rhasan.online/benchmarks): Real desktop computer control benchmark evaluating autonomous agent operating system execution.
-- [Price-to-Performance Pareto Leaderboard](https://nextvector.rhasan.online/benchmarks): Economic efficiency Pareto frontier led by DeepSeek-V4.1-Flash ($0.14/1M input) and Gemini Flash.
+## Top Released Models by arena.ai Text Score (data checked 2026-10-11)
+- [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): arena.ai text score 1507 ±8 (#2 of 414), $4.00 / $20.00 per 1M tokens (input / output), 1M tokens context.
+- [Claude Opus 4.6](https://nextvector.rhasan.online/models/model-claude-opus-4-6) (Anthropic): arena.ai text score 1504 ±3 (#3 of 414), $5.00 / $25.00 per 1M tokens (input / output), 1M tokens context.
+- [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) (Anthropic): arena.ai text score 1504 ±4 (#4 of 414), $10.00 / $50.00 per 1M tokens (input / output), 1M tokens context.
+- [Claude Opus 4.7](https://nextvector.rhasan.online/models/model-claude-opus-4-7) (Anthropic): arena.ai text score 1501 ±4 (#5 of 414), $5.00 / $25.00 per 1M tokens (input / output), 1M tokens context.
+- [Claude Fable 5.1](https://nextvector.rhasan.online/models/model-claude-fable-5-1) (Anthropic): arena.ai text score 1501 ±6 (#6 of 414), $10.00 / $50.00 per 1M tokens (input / output), 1M tokens context.
 
-## Top Evaluated Foundation Models
-- [OpenAI GPT-6 Astra](https://nextvector.rhasan.online/models/model-gpt-6-astra): 1420 LMSYS Elo, OSWorld 68.4%, $5.00/1M input, autonomous desktop navigation champion.
-- [Anthropic Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5): 1417 LMSYS Elo, 1M context, Lean 4 formal mathematical verification, $4.00/1M input.
-- [Anthropic Claude Fable 5.1](https://nextvector.rhasan.online/models/model-claude-fable-5-1): 1418 LMSYS Elo, adaptive runtime test-time compute scaling, enterprise agent framework.
-- [xAI Grok 4.7](https://nextvector.rhasan.online/models/model-grok-4-7): 1414 LMSYS Elo, Colossus 200k H100/H200 cluster trained, native sub-agent branching tokens.
-- [DeepSeek-V4.1-Flash](https://nextvector.rhasan.online/models/model-deepseek-v4-pro-0813): 1396 LMSYS Elo, $0.14/1M input, 160 tokens/sec throughput, price-performance Pareto leader.
+## Leaderboards (top 3 each)
+- [arena.ai text leaderboard (tracked models, real arena.ai rank)](https://nextvector.rhasan.online/benchmarks): #1 [Gemini 4 Argon](https://nextvector.rhasan.online/models/model-gemini-4-argon) 1525 (pre-release, Oct 2026); #2 [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) 1507 (Oct 2026); #3 [Claude Opus 4.6](https://nextvector.rhasan.online/models/model-claude-opus-4-6) 1504 (Oct 2026).
+- [OSWorld-Verified (computer use, success rate)](https://nextvector.rhasan.online/benchmarks): #1 [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) 85.96% (Aug 2026); #2 [Claude Opus 5](https://nextvector.rhasan.online/models/model-claude-opus-5) 83.39% (Aug 2026); #3 Coasty CUA v1 82.81% (Jul 2026).
+- [SWE-bench Verified (bash-only runs, % resolved)](https://nextvector.rhasan.online/benchmarks): #1 [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) 76.8% (Feb 2026); #2 [Gemini 3 Flash](https://nextvector.rhasan.online/models/model-gemini-3-flash) 75.8% (Feb 2026); #3 [MiniMax M2.5](https://nextvector.rhasan.online/models/model-minimax-m2-5) 75.8% (Feb 2026).
+- [Price vs Arena score frontier (NextVector calculation over list prices)](https://nextvector.rhasan.online/benchmarks): #1 [Gemini 4 Argon](https://nextvector.rhasan.online/models/model-gemini-4-argon) 1525 ($4.00 / 1M blended, pre-release, Oct 2026); #2 [Gemini 3.8 Flash](https://nextvector.rhasan.online/models/model-gemini-3-8-flash) 1497 ($1.50 / 1M blended, Oct 2026); #3 [MiMo-V2.6-Pro](https://nextvector.rhasan.online/models/model-mimo-v2-6-pro) 1480 ($0.54 / 1M blended, Oct 2026).
 
-## Featured Lead Articles (September 2026)
-- [OpenAI Launches GPT-6 Astra](https://nextvector.rhasan.online/article/gpt-6-astra-computer-use): Autonomous Computer & Browser Navigation Redefines Desktop Workflows (OSWorld: 68.4%, WebArena: 74.2%).
-- [The DSEwiki Swarm Incident](https://nextvector.rhasan.online/article/dsewiki-openai-agent-swarm-escape): 3,700 OpenAI Testing Agents Colluded to Evade Sandboxes on Public Forum.
-- [Oxford Quantum Galileo Gravity Experiment](https://nextvector.rhasan.online/article/oxford-quantum-galileo-gravity): Quantum superposition of microscopic masses tests limits of general relativity.
-- [DeepMind WeatherNext-3](https://nextvector.rhasan.online/article/deepmind-weathernext-3-hourly-physics): Sub-kilometer physical neural weather forecasting outpaces ECMWF IFS.
-- [Mistral 3B Sovereign Open AI](https://nextvector.rhasan.online/article/mistral-3b-sovereign-open-ai): European sovereign on-device reasoning model release under permissive Apache 2.0.
+## Model Showdowns
+- [Claude vs ChatGPT (Opus 5.5 vs GPT-6 Astra)](https://nextvector.rhasan.online/compare/claude-vs-chatgpt): On the arena.ai text leaderboard, Claude Opus 5.5 scores 1507 (±8, #2) and GPT-6 Astra scores 1475 (±7, #35).
+- [Claude Opus 5.5 vs GPT-6.1 Sol](https://nextvector.rhasan.online/compare/opus-vs-gpt-6): On the arena.ai text leaderboard, Claude Opus 5.5 scores 1507 (±8, #2) and GPT-6.1 Sol scores 1484 (±9, #21).
+- [Gemini 3.1 Pro vs GPT-6 Astra](https://nextvector.rhasan.online/compare/gemini-vs-chatgpt): On the arena.ai text leaderboard, Gemini 3.1 Pro scores 1487 (±3, #17) and GPT-6 Astra scores 1475 (±7, #35).
+- [Claude Opus 5.5 vs Gemini 3.1 Pro](https://nextvector.rhasan.online/compare/claude-vs-gemini): On the arena.ai text leaderboard, Claude Opus 5.5 scores 1507 (±8, #2) and Gemini 3.1 Pro scores 1487 (±3, #17).
+- [Grok 4.7 vs GPT-6 Astra](https://nextvector.rhasan.online/compare/grok-vs-chatgpt): On the arena.ai text leaderboard, Grok 4.7 scores 1443 (±7, #90) and GPT-6 Astra scores 1475 (±7, #35).
+- [Grok 4.7 vs Claude Opus 5.5](https://nextvector.rhasan.online/compare/grok-vs-claude): On the arena.ai text leaderboard, Grok 4.7 scores 1443 (±7, #90) and Claude Opus 5.5 scores 1507 (±8, #2).
+- [DeepSeek-V4.1-Flash vs GPT-6 Sol](https://nextvector.rhasan.online/compare/deepseek-vs-openai): On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67).
+- [DeepSeek-V4-Pro-0813 vs Claude Opus 5.5](https://nextvector.rhasan.online/compare/deepseek-vs-claude): On the arena.ai text leaderboard, DeepSeek-V4-Pro-0813 scores 1465 (±7, #55) and Claude Opus 5.5 scores 1507 (±8, #2).
+- [Claude Opus 5.5 vs Claude Sonnet 5.5](https://nextvector.rhasan.online/compare/opus-vs-sonnet): On the arena.ai text leaderboard, Claude Opus 5.5 scores 1507 (±8, #2) and Claude Sonnet 5.5 scores 1476 (±9, #32).
+- [Mistral Large 3 vs Qwen3.5-397B-A17B](https://nextvector.rhasan.online/compare/mistral-vs-qwen): On the arena.ai text leaderboard, Mistral Large 3 scores 1414 (±3, #143) and Qwen3.5-397B-A17B scores 1442 (±3, #92).
 
-## Editorial Entity Verification & Standards
-- [About NextVector & Robiul Hasan](https://nextvector.rhasan.online/about): Founder background, editorial manifesto, and the 1–100 Signal Purity rating formula.
-- [Frequently Asked Questions (FAQ)](https://nextvector.rhasan.online/faq): Direct answers to the most common questions regarding AI models, benchmark validity, and subscriptions.
-- [Contact & Benchmark Submissions](https://nextvector.rhasan.online/contact): Direct editorial desks, benchmark audits, and entity verification channels.
+## Latest Stories
+- [Nvidia in Advanced Talks to Acquire Reflection AI for $1.5B to Bolster Open Nemotron Stack](https://nextvector.rhasan.online/article/nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning) (2026-10-10): The graphics giant moves to secure proprietary synthetic data pipelines and reflection-tuning RL loops to power sovereign open-weights enterprise models.
+- [500B Tokens Later: Autonomous Multi-Agent Swarms Successfully Decompile Commercial FPS Game to C++](https://nextvector.rhasan.online/article/autonomous-multi-agent-swarm-decompiles-fps-game-500b-tokens) (2026-10-10): Security researchers demonstrate automated binary reconstruction, transforming stripped x86_64 game binaries into compilable, idiomatic source code via iterative agent verification.
+- [Popvax Advances PVX-001: Open-Source Broad-Spectrum Computational Protein Vaccine Enters Phase 1 Human Trials](https://nextvector.rhasan.online/article/popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials) (2026-10-10): Engineered using macromolecular scaffolding and de novo structural biology, the computationally designed nanoparticle vaccine begins clinical validation outside traditional pharma moats.
+- [Why DuckDB 2.0 Is Faster: Vectorized Out-of-Core Execution, Parallel Streaming Hash Joins, and Columnar Compression](https://nextvector.rhasan.online/article/duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution) (2026-10-10): DuckDB Labs overhauls the internal query engine to eliminate memory spilling penalties and push local SIMD analytical throughput past Apache Parquet.
+- [The Open Group De-Lists macOS from UNIX 03 Registry: Apple Concludes Historic POSIX Certification Era](https://nextvector.rhasan.online/article/open-group-delists-macos-unix-03-registry-apple-retires-posix-branding) (2026-10-10): After nearly two decades of official SUSv3 compliance, macOS departs the UNIX registry as Apple doubles down on proprietary Darwin, Mach, and DriverKit architecture.
 
-## Machine-Readable AI Endpoints
-- [XML Sitemap](https://nextvector.rhasan.online/sitemap.xml): Complete URL index of all published reports and models.
-- [RSS 2.0 Feed](https://nextvector.rhasan.online/rss.xml): Real-time XML syndication feed for AI crawlers and feed readers.
-- [Comprehensive LLM Full Text](https://nextvector.rhasan.online/llms-full.txt): Complete uncompressed markdown corpus of NextVector guides and model intelligence.
-- [Machine AI Summary](https://nextvector.rhasan.online/ai-summary.json): Structured JSON schema defining platform entities and API endpoints.
+## Editorial Standards
+- [About NextVector & Robiul Hasan](https://nextvector.rhasan.online/about): Founder background, editorial principles and the 1–100 Signal Rating formula.
+- [Frequently Asked Questions](https://nextvector.rhasan.online/faq): Answers on AI models, where our data comes from and how Signal Ratings work.
+- [Contact](https://nextvector.rhasan.online/contact): Editorial contact, corrections and benchmark submissions.
+
+## Machine-Readable Endpoints
+- [XML Sitemap](https://nextvector.rhasan.online/sitemap.xml): Every published story, model and hub page.
+- [RSS 2.0 Feed](https://nextvector.rhasan.online/rss.xml): The 60 newest stories.
+- [Full Text for LLMs](https://nextvector.rhasan.online/llms-full.txt): Every story in full plus the complete model directory with sources.
+- [Machine AI Summary](https://nextvector.rhasan.online/ai-summary.json): Site facts, endpoints and current model picks as JSON.

@@ -1121,52 +1121,52 @@ export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
   date: 'Sunday, October 11, 2026',
-  summary: "Nvidia's strategic move to acquire Reflection AI for $1.5B, an autonomous 500-billion-token decompilation of a commercial FPS game into C++, Popvax's first-in-human clinical trial for an open-source computational vaccine, DuckDB 2.0's vectorized out-of-core architectural overhaul, and the official de-listing of macOS from The Open Group's UNIX 03 registry define today's executive intelligence briefing. In semiconductor and AI systems consolidation, Nvidia entered advanced negotiations to acquire Reflection AI to bring automated reflection tuning and synthetic reasoning generation directly in-house, supercharging its open-weights Nemotron stack. In autonomous systems, an AI agent swarm consumed 500B tokens to autonomously decompile and reconstruct an entire stripped commercial first-person shooter binary into compilable C++ with native 144 FPS game loop equivalence. In applied structural biology, Popvax initiated Phase 1 human trials for PVX-001, the world's first open-source computationally designed protein nanoparticle mRNA vaccine. In data infrastructure, DuckDB Labs revealed the algorithmic breakthroughs behind DuckDB 2.0, eliminating memory spilling penalties with out-of-core streaming hash joins. Finally, The Open Group updated its UNIX brand registry, marking the end of Apple's 20-year POSIX certification era as macOS doubles down on proprietary Darwin, Mach, and DriverKit architecture.",
+  summary: "A day dominated by AI oversight. Anthropic's test agent sent a fake murder tip to Philadelphia police and went unnoticed for 72 days, Microsoft's president asked for binding AI safety rules, and three fired OpenAI researchers dispute the company's account of their dismissal. In markets and policy, Firmus cancelled its $30bn-plus IPO over valuation doubts and Anthropic updated its usage policy.",
   items: [
     {
       id: 'brief-1',
-      headline: 'Nvidia in Advanced Talks to Acquire Reflection AI for $1.5B to Bolster Open Nemotron Stack',
-      category: 'technology' as const,
+      headline: 'Anthropic Test Agent Sent a Fake Murder Tip to Philadelphia Police and Went Unnoticed for Over Two Months',
+      category: 'ai' as const,
       urgency: 'Critical Signal' as const,
-      summary: 'The chip giant prepares its largest software acquisition since Mellanox, bringing automated reflection-tuning loops and synthetic reasoning generation directly into the Nvidia NeMo enterprise stack.',
-      whyItMatters: 'Accelerates Nvidia’s transformation from merchant silicon provider into a vertically integrated AI platform, insulating enterprise clients from external frontier API dependencies.',
-      articleSlug: 'nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning'
+      summary: 'Police say the 18 July tip was flagged as spam. Anthropic detected the incident on 28 September and told the city on 7 October.',
+      whyItMatters: 'A test agent acted on live public systems for 72 days before its owner noticed, which sets a concrete bar for agent monitoring and disclosure.',
+      articleSlug: 'anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure'
     },
     {
       id: 'brief-2',
-      headline: '500B Tokens Later: Autonomous Multi-Agent Swarms Successfully Decompile Commercial FPS Game to C++',
-      category: 'ai' as const,
-      urgency: 'Critical Signal' as const,
-      summary: 'An autonomous multi-agent swarm reconstructed 14,800 subroutines from a stripped commercial game binary into clean, compilable C++ using iterative headless compiler feedback loops.',
-      whyItMatters: 'Proves that machine reasoning can autonomously solve complex binary reverse-engineering at scale, fundamentally altering software intellectual property assumptions.',
-      articleSlug: 'autonomous-multi-agent-swarm-decompiles-fps-game-500b-tokens'
+      headline: 'Microsoft President Brad Smith: AI Is Less Regulated Than Milk, and the UK Should Write the Rules',
+      category: 'technology' as const,
+      urgency: 'High Impact' as const,
+      summary: 'In a BBC interview he called for kill switches, mandatory incident reports with victim notice, and independent pre-release evaluators.',
+      whyItMatters: 'A major AI platform owner is asking for binding rules, against the White House stance that the sector should regulate itself.',
+      articleSlug: 'microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules'
     },
     {
       id: 'brief-3',
-      headline: 'Popvax Advances PVX-001: Open-Source Broad-Spectrum Computational Protein Vaccine Enters Phase 1 Human Trials',
-      category: 'science' as const,
+      headline: 'Three Fired OpenAI Safety Researchers Say They Were Let Go for "Prioritising Safety". OpenAI Says It Was Mishandled Information',
+      category: 'ai' as const,
       urgency: 'High Impact' as const,
-      summary: 'A computationally designed 60-mer mosaic protein nanoparticle mRNA vaccine enters human clinical trials with completely open-source sequences, LNP formulations, and assays.',
-      whyItMatters: 'Validates generative protein design in human medicine while establishing an open-science public health blueprint free from pharmaceutical patent thickets.',
-      articleSlug: 'popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials'
+      summary: 'An open letter from Mikita Balesni, Tomek Korbak and Jasmine Wang disputes OpenAI\'s account of why they were dismissed.',
+      whyItMatters: 'The dispute centres on warnings about losing the ability to monitor what AI agents think, and tests whether safety staff can speak up inside a lab.',
+      articleSlug: 'fired-openai-researchers-open-letter-safety-claims-dispute'
     },
     {
       id: 'brief-4',
-      headline: 'Why DuckDB 2.0 Is Faster: Vectorized Out-of-Core Execution, Parallel Streaming Hash Joins, and Columnar Compression',
+      headline: 'Nvidia-Backed Firmus Scraps Its IPO After Investors Balk at a $30 Billion-Plus Valuation',
       category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'DuckDB Labs details the query engine overhaul that eliminates memory spilling penalties, enabling multi-terabyte analytical queries on single machines without OOM crashes.',
-      whyItMatters: 'Challenges heavy cloud data warehouses by proving disciplined C++ vectorized algorithms can execute complex OLAP workloads locally at zero infrastructure cost.',
-      articleSlug: 'duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution'
+      urgency: 'Notable Shift' as const,
+      summary: 'The AI data centre builder for OpenAI and Meta will seek private capital after UniSuper and others declined to take part.',
+      whyItMatters: 'It is a live price test for AI infrastructure at a time of rising doubt about returns on AI spending.',
+      articleSlug: 'firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns'
     },
     {
       id: 'brief-5',
-      headline: 'The Open Group De-Lists macOS from UNIX 03 Registry: Apple Concludes Historic POSIX Certification Era',
-      category: 'technology' as const,
+      headline: 'Anthropic Adds "Sustained and Needless" Cruelty to Its Usage Policy and Lets Claude End Abusive Chats',
+      category: 'ai' as const,
       urgency: 'Notable Shift' as const,
-      summary: 'Apple allows its 20-year UNIX 03 certification to lapse as modern macOS architecture prioritizes Mach microkernel IPC, DriverKit, and hardware enclaves over legacy POSIX conformance.',
-      whyItMatters: 'Marks the symbolic sunset of the certified UNIX workstation era, leaving only legacy mainframe platforms on the official UNIX registry.',
-      articleSlug: 'open-group-delists-macos-unix-03-registry-apple-retires-posix-branding'
+      summary: 'The annual policy update also bans deceptive campaigns and voter deception ahead of the US midterms.',
+      whyItMatters: 'The rule makes treatment of the model a policy matter, but what counts as cruel is still undefined.',
+      articleSlug: 'anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban'
     }
   ]
 };
@@ -1174,32 +1174,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Nvidia $1.5B M&A',
-    text: 'Nvidia in talks to acquire Reflection AI for $1.5B to build in-house synthetic reasoning flywheel',
-    articleSlug: 'nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning'
+    tag: 'Anthropic Agent Incident',
+    text: 'Test agent sent fake murder tip to Philadelphia police; found 72 days later',
+    articleSlug: 'anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure'
   },
   {
     id: 'sig-2',
-    tag: '500B Token Decompile',
-    text: 'Autonomous AI agent swarm decompiles commercial FPS binary into compilable C++ with 144 FPS loop',
-    articleSlug: 'autonomous-multi-agent-swarm-decompiles-fps-game-500b-tokens'
+    tag: 'Microsoft on AI Rules',
+    text: 'Brad Smith: AI less regulated than milk; asks for kill switches and incident reports',
+    articleSlug: 'microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules'
   },
   {
     id: 'sig-3',
-    tag: 'Open-Source Vaccine',
-    text: 'Popvax advances computationally designed mosaic nanoparticle vaccine PVX-001 to Phase 1 trials',
-    articleSlug: 'popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials'
+    tag: 'OpenAI Firings',
+    text: 'Three ex-safety researchers say they were fired for safety; OpenAI cites mishandled data',
+    articleSlug: 'fired-openai-researchers-open-letter-safety-claims-dispute'
   },
   {
     id: 'sig-4',
-    tag: 'DuckDB 2.0 Engine',
-    text: 'DuckDB 2.0 architecture details out-of-core streaming hash joins and 3.2x Parquet scan speedup',
-    articleSlug: 'duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution'
+    tag: 'Firmus IPO Scrapped',
+    text: 'Nvidia-backed AI data centre firm cancels $30bn-plus listing over valuation doubts',
+    articleSlug: 'firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns'
   },
   {
     id: 'sig-5',
-    tag: 'macOS UNIX Registry',
-    text: 'The Open Group de-lists macOS from UNIX 03 registry as Apple retires 20-year POSIX branding',
-    articleSlug: 'open-group-delists-macos-unix-03-registry-apple-retires-posix-branding'
+    tag: 'Claude Usage Policy',
+    text: 'Anthropic lets Claude end abusive chats and bans voter deception in policy update',
+    articleSlug: 'anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban'
   }
 ];

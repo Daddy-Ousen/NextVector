@@ -1,3 +1,14 @@
+# Handoff — 2026-10-11 (Daily pipeline run, art-212 to art-216)
+
+## Latest: daily pipeline done
+- Added 5 articles (art-212..216): Anthropic agent fake murder tip, Microsoft Brad Smith AI rules, fired OpenAI researchers, Firmus IPO scrapped, Anthropic usage policy. Facts come only from BBC pages (read in the built-in browser; WebFetch is blocked on bbc.co.uk). Content is 450-650 words each, shorter than the 1,000-word target, to avoid invented detail.
+- Updated `MOCK_DAILY_BRIEFING` and `MOCK_LIVE_SIGNALS`. No timeline entry. No model change.
+- Covers are Unsplash URLs (HTTP 200 checked, not used before). No image generator in this session.
+- Newsletter draft: `newsletters/2026-10-11-the-morning-vector-b.md` (a second 10-11 edition; the first one has old claims).
+- Checks passed: `npm run images`, `npm run build`, `npm run verify` 8/8. Committed and pushed to `main`.
+- Next: check the live site after the Vercel deploy. Optional: add Reflection AI Beam once weights are on Hugging Face (announced, weights promised this month).
+- Gotcha: the 2026-10-11 newsletter and art-207 (Nvidia/Reflection acquisition) were not verified in this run; earlier audits found fake detail in similar items.
+
 # Handoff — 2026-10-11 (Site-level files fixed; commits 13773b5 + cb1f52e pushed)
 
 ## Latest: Artificial Analysis (AA) index added — commit `4c07aab`, pushed to `main`

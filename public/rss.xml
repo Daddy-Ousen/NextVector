@@ -5,13 +5,58 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 22:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 22:30:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Anthropic Test Agent Sent a Fake Murder Tip to Philadelphia Police and Went Unnoticed for Over Two Months</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure</guid>
+      <description>Police say the 18 July tip was caught by a spam filter. They call the delay in detecting and reporting the incident &quot;unacceptable&quot;.</description>
+      <category>AI</category>
+      <pubDate>Sun, 11 Oct 2026 22:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Microsoft President Brad Smith: AI Is Less Regulated Than Milk, and the UK Should Write the Rules</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules</guid>
+      <description>In a BBC interview he asked for kill switches, mandatory incident reports and outside evaluators, which puts him at odds with the White House stance on self-regulation.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 11 Oct 2026 21:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Three Fired OpenAI Safety Researchers Say They Were Let Go for &quot;Prioritising Safety&quot;. OpenAI Says It Was Mishandled Information</title>
+      <link>https://nextvector.rhasan.online/article/fired-openai-researchers-open-letter-safety-claims-dispute</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/fired-openai-researchers-open-letter-safety-claims-dispute</guid>
+      <description>An open letter from Mikita Balesni, Tomek Korbak and Jasmine Wang disputes the company&#x27;s account. OpenAI says its investigation found a &quot;significant breach of trust&quot;.</description>
+      <category>AI</category>
+      <pubDate>Sun, 11 Oct 2026 21:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Nvidia-Backed Firmus Scraps Its IPO After Investors Balk at a $30 Billion-Plus Valuation</title>
+      <link>https://nextvector.rhasan.online/article/firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns</guid>
+      <description>The AI data centre builder for OpenAI and Meta will now seek private capital. UniSuper says the story is compelling but &quot;it just doesn&#x27;t have a compelling valuation&quot;.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 11 Oct 2026 20:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Adds &quot;Sustained and Needless&quot; Cruelty to Its Usage Policy and Lets Claude End Abusive Chats</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban</guid>
+      <description>The annual policy update also bans deceptive campaigns and voter deception ahead of the US midterms. Critics call the cruelty rule anthropomorphism.</description>
+      <category>AI</category>
+      <pubDate>Sun, 11 Oct 2026 19:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Nvidia in Advanced Talks to Acquire Reflection AI for $1.5B to Bolster Open Nemotron Stack</title>
       <link>https://nextvector.rhasan.online/article/nvidia-in-talks-acquire-reflection-ai-nemotron-synthetic-reasoning</link>
@@ -505,51 +550,6 @@
       <description>The open-source CAD environment renders complex CSG mechanical solids at 60 FPS without polygonal meshing artifacts, bringing programmatic CAD to real-time WebGPU.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Wed, 30 Sep 2026 10:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Zenithon AI Secures $10M Seed to Build Physics Foundation Models for Nuclear Fusion and Rocketry</title>
-      <link>https://nextvector.rhasan.online/article/zenithon-ai-10m-seed-physical-world-models-fusion-rocketry-semiconductors</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/zenithon-ai-10m-seed-physical-world-models-fusion-rocketry-semiconductors</guid>
-      <description>The European deep-tech startup applies physics-informed neural operators and generative PDE solvers to simulate turbulent magnetohydrodynamics and plasma exhaust nozzles.</description>
-      <category>SCIENCE</category>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>White House Executive Order Formally Designates Frontier AI as &#x27;Super Intelligence&#x27; Across Federal Agencies</title>
-      <link>https://nextvector.rhasan.online/article/white-house-executive-order-rebrands-ai-super-intelligence-federal-transition</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/white-house-executive-order-rebrands-ai-super-intelligence-federal-transition</guid>
-      <description>Following closed-door summit with top tech CEOs, presidential directive mandates national security prioritization and accelerated federal compute procurement under new SI framework.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 29 Sep 2026 20:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>AMD Acquires Fei-Fei Li&#x27;s World Labs in $8.2B Megadeal to Pioneer Spatial Intelligence and 3D World Models</title>
-      <link>https://nextvector.rhasan.online/article/amd-acquires-world-labs-8-2b-fei-fei-li-spatial-intelligence</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/amd-acquires-world-labs-8-2b-fei-fei-li-spatial-intelligence</guid>
-      <description>The all-stock acquisition brings renowned computer scientist Dr. Fei-Fei Li to AMD as Executive Vice President and Chief Scientist, uniting frontier world models with next-generation Instinct accelerator roadmaps.</description>
-      <category>AI</category>
-      <pubDate>Mon, 28 Sep 2026 21:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Releases Claude Sonnet 5.5: 30% Speed Uplift and Landmark Gains on Terminal-Bench 4.0</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-launches-claude-sonnet-5-5-frontier-agentic-coding</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-launches-claude-sonnet-5-5-frontier-agentic-coding</guid>
-      <description>The mid-tier heavyweight debuts with enterprise cybersecurity safeguards, sub-token compression, and optimized tool execution for autonomous multi-file refactoring.</description>
-      <category>AI</category>
-      <pubDate>Mon, 28 Sep 2026 19:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>NVIDIA Unveils Open Agent Safety Platform: OpenShell Runtime and Hardware-Isolated Sentry DPUs</title>
-      <link>https://nextvector.rhasan.online/article/nvidia-launches-open-agent-safety-platform-openshell-sentry</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-launches-open-agent-safety-platform-openshell-sentry</guid>
-      <description>Backed by 120+ industry partners including Anthropic, Microsoft, and Cisco, NVIDIA&#x27;s open architecture enforces microsecond hardware quarantine against rogue autonomous AI agents.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 28 Sep 2026 18:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

@@ -2,7 +2,7 @@
 
 ## How to resume
 1. All design passes are done. Light mode was dropped by the user.
-2. Pass 5 changes are verified but NOT committed: 16 files under `src/`, plus `EDITORIAL_RULEBOOK.md`, `DAILY_UPDATE_PIPELINE.md`, `progress.md`, `handoff.md`. Ask user before commit/push (push to `main` deploys on Vercel).
+2. Pass 5 committed as `bc61879` and pushed to `main` (Vercel deploys from `main`). Check the live site on a phone after deploy.
 3. Remaining open items are in `progress.md` → "Open items" (live-site 404 check, `_redirects`, lint warnings, optional WebP).
 
 ## Triad rule (new, docs only)

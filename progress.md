@@ -77,7 +77,7 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] Side fix: article category badge got `[object Object]` as its class (`getCategoryBadge` returns an object). Now uses `.color` and `.label`.
 - Light mode: DROPPED by user decision 2026-10-11. Site stays dark only.
 
-### Pass 5 — Accessibility leftovers (DONE 2026-10-11, NOT committed yet)
+### Pass 5 — Accessibility leftovers (DONE 2026-10-11, commit `bc61879`, pushed)
 Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser at 375px (touch emulation) and 1024px (mouse).
 - [x] Tap targets: on touch screens (`pointer: coarse`) controls are now ≥ 40×40px. Mouse layouts do not change (checked: topic chip still 28px at 1024px).
   - Base rule in `src/index.css` (`@layer base`): every `button`, `select`, `summary`, text `input` gets `min-height: 2.5rem`; buttons also `min-width`.

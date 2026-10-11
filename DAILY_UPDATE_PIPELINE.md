@@ -187,6 +187,9 @@ Enforce the strict **Visual Asset Rules** ([Rulebook §4](./EDITORIAL_RULEBOOK.m
    - **Tier 3 (Verified Topic Photography)**: Unsplash verified CDN URL. **Must test with python script to guarantee HTTP 200.**
 4. **Mandatory Descriptive Alt Text** ([Rulebook §4.4](./EDITORIAL_RULEBOOK.md#44-mandatory-descriptive-alt-text-coverimagealt)):
    - Write rich, descriptive `coverImageAlt` explaining the visual mechanics and technical context.
+5. **Strict Prohibition of Programmatic Text/Slide Infographics**:
+   - Agents are **strictly forbidden** from generating 2D Pillow/PIL slide graphics, flowchart boxes, or text-heavy infographics with bullet points as article cover images.
+   - Cover images must always be **clean, atmospheric, high-resolution photography** (cleanrooms, hardware setups, astronomical observatories, biochemical testbeds, or photorealistic renders). Text and summaries belong in the website layout, never drawn across the hero image!
 
 ---
 

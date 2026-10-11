@@ -1,13 +1,13 @@
 # Handoff — 2026-10-11 (Site-level files fixed; commits 13773b5 + cb1f52e pushed)
 
-## Latest: Artificial Analysis (AA) index added — verified, NOT committed (waiting for user OK)
+## Latest: Artificial Analysis (AA) index added — commit `4c07aab`, pushed to `main`
 - Key is in `.env.local` (git-ignored). Fetch reads all 4 pages (697 rows, index v4.3). Full list → `snapshots/artificial_analysis_full.json` (git-ignored, for mapping). Committed `snapshots/artificial_analysis.json` keeps only the 256 rows our models use (repo is PUBLIC; AA terms reserve redistribution).
 - Mapping: `"aa": [all settings]` on 120 of 136 models in `curated_models.json`. Build uses each model's best setting per index (same rule as Arena). Hand fixes: AA's undated `deepseek-v4-pro` = 0813 and `deepseek-v4-flash` = 0731; April models use the `-0424` / `-0420` slugs; `hy3-preview` excluded; `qwen3-8-max` (0902) not `-0803`. Not on AA (16): GPT-5.2/5.3 Chat, GPT-5.2/5.5 Pro (no score), Mythos 5.1, Gemini 3.8 Live x2, ERNIE 5.1, Seed x3, Grok 4.1, Qwen3.8 Flash, Hy4, Laguna, Namazu.
 - Site: 5th board "AA Intelligence Index" (Coding/Agentic in row note), 3 index rows per model page (link to AA model page + setting), card shows Intelligence only, 3 new guide picks (aa-intelligence / aa-coding / aa-agentic), FAQ answer, footer credit "Model index data: Artificial Analysis", prerender /benchmarks + llms.txt + ai-summary credit, Gate 6 checks the AA board.
 - Side fix: BenchmarkChart default unit was '%' (index showed "57.6%"); now no unit unless `scoreUnit` is set.
 - Result: AA also ranks Anthropic first (Opus 5.5 57.6, Sonnet 5.5 56.0, Fable 5.1 53.4, GPT-6 Astra 52.7, Gemini 4 Argon 52.6 pre-release).
 - Checks: build, verify 8/8, tsc, lint 0 errors, browser (board, model page, footer).
-- Leftover: `scripts/model_sources/lab_reported_draft.json` (untracked, unused draft). Delete or keep — user call.
+- Draft `lab_reported_draft.json` deleted (user OK). Next: check the live site after the Vercel deploy (/benchmarks AA tab, a model page, footer credit).
 
 ## Before: waiting for the AA key (done)
 - AA free tier: `GET https://artificialanalysis.ai/api/v2/language/models/free`, header `x-api-key`, 100 requests/day. Fields: intelligence / coding / agentic index, `intelligence_index_version`, `release_date`, slug, creator. Attribution required on all tiers: visible byline or footer link to https://artificialanalysis.ai. Redistribution beyond display: "contact the team" (so: show index values with credit; no bulk export of their data).

@@ -129,9 +129,9 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, lint 0 errors, br
 - [x] Committed `1845086` and pushed to `main` (user OK, option A).
 - [x] Follow-up: article/timeline audit DONE 2026-10-11 (see next section).
 - [ ] Optional: lab-reported SWE-bench for 2026 models; ComparePage unused icon imports.
-- [x] Bias check 2026-10-11 (user question): all labs use their best arena.ai variant. GPT-5.2 Chat added (136 models, 116 on Arena). Explanation line on /models and /benchmarks. Verified: build, verify 8/8, tsc, lint 0 errors, browser. NOT committed.
+- [x] Bias check 2026-10-11 (user question): all labs use their best arena.ai variant. GPT-5.2 Chat added (136 models, 116 on Arena). Explanation line on /models and /benchmarks. Verified: build, verify 8/8, tsc, lint 0 errors, browser. Commit `4c07aab`, pushed.
 - [ ] Lab-reported scores (user option 2): replaced by user choice 1 = Artificial Analysis index. Draft lab data kept in `scripts/model_sources/lab_reported_draft.json` (not used).
-- [x] Artificial Analysis index (2026-10-12, NOT committed): 120 of 136 models mapped, 5th board, model page rows, guide picks, footer credit, trimmed public snapshot (256 rows), full list local only. Verified: build, verify 8/8, tsc, lint 0 errors, browser. Side fix: chart no longer adds "%" to index scores.
+- [x] Artificial Analysis index (2026-10-12, commit `4c07aab`, pushed): 120 of 136 models mapped, 5th board, model page rows, guide picks, footer credit, trimmed public snapshot (256 rows), full list local only. Verified: build, verify 8/8, tsc, lint 0 errors, browser. Side fix: chart no longer adds "%" to index scores.
 
 ## Article & timeline model-claims audit (2026-10-11, commit `13773b5`, pushed)
 Full list: `ARTICLE_CLAIMS_AUDIT.md`. Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, built Opus 5.5 page spot-checked.

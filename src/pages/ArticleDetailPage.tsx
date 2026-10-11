@@ -1,10 +1,12 @@
-import React, { useState, use, useMemo } from 'react';
+import React, { useState, use, useMemo, useRef } from 'react';
 import { Article, ArticleSummary, AIModel, Benchmark, ResearchPaper } from '../types';
 import { loadArticleBody } from '../data/articleBodies';
 import { ThreeQuestionsBlock } from '../components/common/ThreeQuestionsBlock';
 import { SignalRatingBadge } from '../components/common/SignalRatingBadge';
 import { AudioBriefingPlayer } from '../components/common/AudioBriefingPlayer';
 import { SEOHead } from '../components/common/SEOHead';
+import { SubstackEmbed, SUBSTACK_URL } from '../components/common/SubstackEmbed';
+import { ReadingProgressBar } from '../components/common/ReadingProgressBar';
 import { getCategoryBadge, formatRelativeTime, getArticleTypeLabel } from '../utils';
 import { 
   ArrowLeft, 
@@ -17,7 +19,9 @@ import {
   BarChart2, 
   ExternalLink,
   BookOpen,
-  Headphones
+  Headphones,
+  Mail,
+  ArrowRight
 } from 'lucide-react';
 
 interface ArticleDetailViewProps {
@@ -32,6 +36,8 @@ interface ArticleDetailViewProps {
   onSelectBenchmark: (id: string) => void;
   onSelectPaper: (id: string) => void;
   onSelectAuthor?: () => void;
+  readNext?: ArticleSummary[];
+  onSelectArticle?: (slug: string) => void;
 }
 
 type ArticleDetailPageProps = Omit<ArticleDetailViewProps, 'article'> & {
@@ -57,17 +63,31 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
   onSelectBenchmark,
   onSelectPaper,
   onSelectAuthor,
+  readNext = [],
+  onSelectArticle,
 }) => {
+  const articleRef = useRef<HTMLElement>(null);
   const [copied, setCopied] = useState(false);
   const [showAudioPlayer, setShowAudioPlayer] = useState(false);
   const categoryStyle = getCategoryBadge(article.category);
   const typeLabel = getArticleTypeLabel(article.articleType);
 
+  const canonicalUrl = `https://nextvector.rhasan.online/article/${article.slug}`;
+  const shareX = `https://x.com/intent/post?url=${encodeURIComponent(canonicalUrl)}&text=${encodeURIComponent(article.title)}`;
+  const shareLinkedIn = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalUrl)}`;
+
   const handleShare = () => {
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    navigator.clipboard?.writeText(canonicalUrl).then(
+      () => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      },
+      () => {},
+    );
   };
+
+  // Newsletter box goes after the middle paragraph of longer stories
+  const newsletterAfter = article.content.length >= 4 ? Math.ceil(article.content.length / 2) - 1 : -1;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -158,7 +178,8 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
   };
 
   return (
-    <article itemScope itemType="https://schema.org/TechArticle" className="max-w-3xl mx-auto pb-20">
+    <article ref={articleRef} itemScope itemType="https://schema.org/TechArticle" className="max-w-3xl mx-auto pb-20">
+      <ReadingProgressBar targetRef={articleRef} />
       <SEOHead
         title={article.title}
         description={article.subtitle}
@@ -207,10 +228,33 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-current' : ''}`} />
           </button>
 
+          <a
+            href={shareX}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
+            title="Share on X"
+            aria-label="Share on X"
+          >
+            <XLogo className="w-4 h-4" />
+          </a>
+
+          <a
+            href={shareLinkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
+            title="Share on LinkedIn"
+            aria-label="Share on LinkedIn"
+          >
+            <LinkedInLogo className="w-4 h-4" />
+          </a>
+
           <button
             onClick={handleShare}
             className="p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition-colors"
             title="Copy link to clipboard"
+            aria-label={copied ? 'Link copied' : 'Copy link'}
           >
             {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Share2 className="w-4 h-4" />}
           </button>
@@ -234,8 +278,8 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       {/* Article Header & Editorial Badges */}
       <header className="space-y-6 mb-8">
         <div className="flex flex-wrap items-center gap-3">
-          <span className={`px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider ${categoryStyle}`}>
-            {article.category}
+          <span className={`px-3 py-1 rounded-full text-xs font-bold border ${categoryStyle.color}`}>
+            {categoryStyle.label}
           </span>
           <span className="px-3 py-1 rounded-full text-xs bg-zinc-900 border border-zinc-800 text-zinc-300">
             {typeLabel}
@@ -344,9 +388,12 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       {/* Main Body Content */}
       <article className="prose prose-invert max-w-[42rem] space-y-6 text-zinc-200 font-sans text-base md:text-lg leading-relaxed">
         {article.content.map((paragraph, idx) => (
-          <p key={idx} className="text-zinc-300 leading-relaxed font-sans">
-            {paragraph}
-          </p>
+          <React.Fragment key={idx}>
+            <p className="text-zinc-300 leading-relaxed font-sans">
+              {paragraph}
+            </p>
+            {idx === newsletterAfter && <NewsletterInline />}
+          </React.Fragment>
         ))}
       </article>
 
@@ -433,6 +480,46 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         </section>
       )}
 
+      {/* Read Next */}
+      {readNext.length > 0 && (
+        <section className="mt-12 pt-8 border-t border-zinc-800" aria-labelledby="read-next-heading">
+          <h2 id="read-next-heading" className="text-lg font-bold text-zinc-100 mb-4">
+            Read next
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {readNext.map((next) => (
+              <li key={next.id}>
+                <a
+                  href={`/article/${next.slug}`}
+                  onClick={(e) => {
+                    if (onSelectArticle && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      onSelectArticle(next.slug);
+                    }
+                  }}
+                  className="group flex sm:flex-col gap-3 h-full rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 p-3 transition-colors"
+                >
+                  <img
+                    src={next.coverImage}
+                    alt=""
+                    loading="lazy"
+                    className="w-24 h-20 sm:w-full sm:h-28 rounded-lg object-cover bg-zinc-950 shrink-0"
+                  />
+                  <div className="min-w-0 flex flex-col gap-1.5">
+                    <span className="text-sm font-semibold text-zinc-100 group-hover:text-emerald-400 transition-colors leading-snug line-clamp-3">
+                      {next.title}
+                    </span>
+                    <time dateTime={next.publishedAt} className="text-2xs text-zinc-400 mt-auto">
+                      {formatRelativeTime(next.publishedAt)} · {next.readTimeMinutes} min read
+                    </time>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Author Bio Box */}
       <section className="mt-12 p-6 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
         <div className="flex items-center gap-4">
@@ -516,3 +603,40 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
     </article>
   );
 };
+
+/** Mid-article newsletter sign-up (Substack form). */
+const NewsletterInline: React.FC = () => (
+  <aside className="not-prose my-8 rounded-2xl bg-zinc-950 border border-zinc-800 p-5" aria-label="Newsletter sign-up">
+    <div className="flex items-center justify-between gap-2 mb-1">
+      <div className="flex items-center gap-2 text-sm font-bold text-zinc-100">
+        <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
+        <span>Get the daily AI briefing</span>
+      </div>
+      <a
+        href={SUBSTACK_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold shrink-0"
+      >
+        <span>On Substack</span>
+        <ArrowRight className="w-3 h-3" />
+      </a>
+    </div>
+    <p className="text-sm text-zinc-400 mb-4 leading-relaxed">
+      The top AI and tech stories in a short email. Free.
+    </p>
+    <SubstackEmbed showArchiveLink={false} />
+  </aside>
+);
+
+const XLogo: React.FC<{ className?: string }> = ({ className }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
+const LinkedInLogo: React.FC<{ className?: string }> = ({ className }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+  </svg>
+);

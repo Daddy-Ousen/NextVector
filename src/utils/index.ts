@@ -62,6 +62,74 @@ export function formatRelativeTime(isoString: string): string {
   }
 }
 
+/** Local calendar-day key (YYYY-MM-DD) for grouping. */
+function localDayKey(date: Date): string {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+/** "Today", "Yesterday", or a full date such as "Wednesday, Oct 8". */
+export function getDayGroupLabel(isoString: string, now: Date = new Date()): string {
+  const date = new Date(isoString);
+  if (isNaN(date.getTime())) return isoString;
+  const key = localDayKey(date);
+  if (key === localDayKey(now)) return 'Today';
+  const yesterday = new Date(now);
+  yesterday.setDate(now.getDate() - 1);
+  if (key === localDayKey(yesterday)) return 'Yesterday';
+  return new Intl.DateTimeFormat('en-US', {
+    weekday: 'long',
+    month: 'short',
+    day: 'numeric',
+    ...(date.getFullYear() !== now.getFullYear() ? { year: 'numeric' } : {}),
+  }).format(date);
+}
+
+/** Clock time in the reader's zone, e.g. "4:30 PM". */
+export function formatClockTime(isoString: string): string {
+  const date = new Date(isoString);
+  if (isNaN(date.getTime())) return '';
+  return new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit' }).format(date);
+}
+
+/** Splits an already-sorted list into consecutive day groups. */
+export function groupByDay<T extends { publishedAt: string }>(items: T[], now: Date = new Date()): { label: string; items: T[] }[] {
+  const groups: { label: string; items: T[] }[] = [];
+  for (const item of items) {
+    const label = getDayGroupLabel(item.publishedAt, now);
+    const last = groups[groups.length - 1];
+    if (last && last.label === label) last.items.push(item);
+    else groups.push({ label, items: [item] });
+  }
+  return groups;
+}
+
+/**
+ * Picks follow-up stories for an article: same category, most shared tags first,
+ * then newest. Falls back to the newest stories from any category to fill `count`.
+ */
+export function pickReadNext<T extends { id: string; category: string; tags: string[]; publishedAt: string }>(
+  current: T,
+  all: T[],
+  count = 3,
+): T[] {
+  const tags = new Set(current.tags);
+  const time = (a: T) => new Date(a.publishedAt).getTime();
+  const others = all.filter((a) => a.id !== current.id);
+  const sameCategory = others
+    .filter((a) => a.category === current.category)
+    .map((a) => ({ a, shared: a.tags.filter((t) => tags.has(t)).length }))
+    .sort((x, y) => y.shared - x.shared || time(y.a) - time(x.a))
+    .map((x) => x.a);
+  const picks = sameCategory.slice(0, count);
+  if (picks.length < count) {
+    const fill = others
+      .filter((a) => !picks.includes(a))
+      .sort((x, y) => time(y) - time(x));
+    picks.push(...fill.slice(0, count - picks.length));
+  }
+  return picks;
+}
+
 export function getSignalColor(rating: number): {
   badgeBg: string;
   badgeText: string;

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArticleSummary, AIModel, Benchmark } from '../types';
 import { ArticleCard } from '../components/cards/ArticleCard';
+import { StoryList } from '../components/cards/StoryList';
 import { ModelCard } from '../components/models/ModelCard';
 import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
@@ -8,7 +9,18 @@ import { SEOHead } from '../components/common/SEOHead';
 import { usePagedList, LoadMoreButton } from '../components/common/LoadMore';
 import { sortArticlesByTimeAndImportance, formatDate } from '../utils';
 import { MOCK_LIVE_SIGNALS } from '../data/mockData';
-import { ArrowRight, Cpu, Flame } from 'lucide-react';
+import { ArrowRight, Cpu, Flame, LayoutGrid, List } from 'lucide-react';
+
+type FeedView = 'grid' | 'list';
+const FEED_VIEW_KEY = 'nv-feed-view';
+
+function readFeedView(): FeedView {
+  try {
+    return localStorage.getItem(FEED_VIEW_KEY) === 'list' ? 'list' : 'grid';
+  } catch {
+    return 'grid';
+  }
+}
 
 interface HomePageProps {
   articles: ArticleSummary[];
@@ -67,6 +79,16 @@ export const HomePage: React.FC<HomePageProps> = ({
   });
 
   const feed = usePagedList(filteredArticles, `${minSignal}|${selectedType}|${selectedTag}`);
+
+  const [feedView, setFeedViewState] = useState<FeedView>(readFeedView);
+  const setFeedView = (view: FeedView) => {
+    setFeedViewState(view);
+    try {
+      localStorage.setItem(FEED_VIEW_KEY, view);
+    } catch {
+      // View choice is a convenience; ignore storage failures
+    }
+  };
 
   // Categorized slices for section highlights (inheriting chronological order)
   const aiStories = filteredArticles.filter((a) => a.category === 'ai');
@@ -251,13 +273,34 @@ export const HomePage: React.FC<HomePageProps> = ({
             </p>
           </div>
 
-          <button
-            onClick={() => onNavigate('/ai')}
-            className="text-xs text-emerald-400 hover:text-emerald-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
-          >
-            <span>All AI news</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </button>
+          <div className="flex items-center gap-3 shrink-0">
+            <div className="flex rounded-lg border border-zinc-800 bg-zinc-900 p-0.5" role="group" aria-label="Story layout">
+              {([
+                { view: 'grid', label: 'Cards', Icon: LayoutGrid },
+                { view: 'list', label: 'List', Icon: List },
+              ] as const).map(({ view, label, Icon }) => (
+                <button
+                  key={view}
+                  onClick={() => setFeedView(view)}
+                  aria-pressed={feedView === view}
+                  title={`${label} view`}
+                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs transition-colors ${
+                    feedView === view ? 'bg-zinc-800 text-emerald-400' : 'text-zinc-400 hover:text-zinc-200'
+                  }`}
+                >
+                  <Icon className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">{label}</span>
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => onNavigate('/ai')}
+              className="flex text-xs text-emerald-400 hover:text-emerald-300 items-center gap-1 whitespace-nowrap"
+            >
+              <span>All AI news</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
         </div>
 
         {filteredArticles.length === 0 ? (
@@ -267,6 +310,9 @@ export const HomePage: React.FC<HomePageProps> = ({
           </div>
         ) : (
           <>
+          {feedView === 'list' ? (
+            <StoryList articles={feed.visible} onSelectArticle={onSelectArticle} />
+          ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {feed.visible.map((article) => (
               <ArticleCard
@@ -279,6 +325,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               />
             ))}
           </div>
+          )}
           <LoadMoreButton remaining={feed.remaining} onClick={feed.showMore} />
           </>
         )}

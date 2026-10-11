@@ -2,6 +2,7 @@ import React from 'react';
 import { Mail, ShieldCheck, Zap, BookOpen, ExternalLink } from 'lucide-react';
 import { NextVectorLogo } from '../common/NextVectorLogo';
 import { MODEL_COUNT } from '../../data/modelCount';
+import { SubstackEmbed } from '../common/SubstackEmbed';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -75,31 +76,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
 
             <div className="mt-4">
-              <div className="rounded-xl overflow-hidden bg-white shadow-lg border border-zinc-700/60">
-                <iframe
-                  src="https://nextvectorr.substack.com/embed"
-                  width="100%"
-                  height="155"
-                  style={{ border: 'none', background: 'white', display: 'block' }}
-                  frameBorder="0"
-                  scrolling="no"
-                  title="Subscribe to The Morning Vector on Substack"
-                />
-              </div>
-              <div className="flex items-center justify-between text-2xs text-zinc-400 mt-2.5 px-1">
-                <span className="flex items-center gap-1.5 text-zinc-400">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                  Sign-up handled by Substack
-                </span>
-                <a
-                  href="https://nextvectorr.substack.com/archive"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-emerald-400 hover:text-emerald-300 underline"
-                >
-                  Substack Archive ↗
-                </a>
-              </div>
+              <SubstackEmbed />
             </div>
           </div>
         </div>

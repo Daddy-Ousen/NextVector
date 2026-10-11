@@ -67,13 +67,15 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] Jargon: plain labels in Navbar search ("Search news & models..."), nav menus, Bookmarks ("Saved Stories"), Command palette, Footer ("Sections"), BenchmarkChart, Article page ("Back to all news", "Related Models, Benchmarks & Papers"), Author, Benchmarks, Category ("All News"), Briefing, FAQ, 404, Timeline, Archive ("Story Archive"), Compare FAQ, Decision Guide. Hero button "Read Signal" → "Read story".
 - Kept on purpose: SEO `<title>`s, Schema.org, brand tagline "Technology & AI Intelligence", "Daily Intelligence Briefing" product name, per-article Signal score and Signal filter.
 
-### Pass 4 — Engagement
-- [ ] "Read next" block at article end: 3 stories, same category/topic (no related-article field exists; pick by category + date).
-- [ ] Share buttons (X, LinkedIn) next to existing copy-link button in `ArticleDetailPage.tsx`.
-- [ ] "Latest" list view: headline + time, grouped Today / Yesterday.
-- [ ] Newsletter box mid-article (Substack embed is in `Footer.tsx`; reuse).
-- [ ] Reading progress bar on article pages.
-- [ ] Optional: light mode (site is dark only; `index.html` has `class="dark"`).
+### Pass 4 — Engagement (DONE 2026-10-11, not committed yet)
+Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser at 1024px and 375px (no side scroll).
+- [x] "Read next" block (`ArticleDetailPage.tsx`, after related models, before author box): 3 stories from `pickReadNext()` in `src/utils/index.ts` = same category, most shared tags first, then newest; fills from newest any-category. Wired in `App.tsx`. Real links (`<a href>`), so crawlable.
+- [x] Share on X and LinkedIn (inline SVG logos; lucide has no brand icons) next to copy-link. All share the canonical URL. Copy-link now copies the canonical URL and only shows the tick when the copy worked.
+- [x] Home "Latest Stories": Cards / List toggle. List = time + headline + category, grouped Today / Yesterday / "Friday, Oct 9" (reader's local time). `src/components/cards/StoryList.tsx`. Choice saved in localStorage `nv-feed-view` (try/catch). List sorts by exact time before grouping (feed order is UTC day + importance, which split groups).
+- [x] Mid-article newsletter box after the middle paragraph (stories with 4+ paragraphs). Shared `src/components/common/SubstackEmbed.tsx` now also used by `Footer.tsx`. Iframe is `loading="lazy"`.
+- [x] Reading progress bar (`src/components/common/ReadingProgressBar.tsx`): fixed 4px emerald bar at the top, uses scaleX, rAF-throttled scroll.
+- [x] Side fix: article category badge got `[object Object]` as its class (`getCategoryBadge` returns an object). Now uses `.color` and `.label`.
+- [ ] Optional, NOT done: light mode (site is dark only; `index.html` has `class="dark"`). Large job (hundreds of zinc-* classes). Ask user.
 
 ### Pass 5 — Accessibility leftovers
 - [ ] Mobile tap targets: 118 of 175 links/buttons were under 32px at 375px. Target ≥ 40px for main controls.

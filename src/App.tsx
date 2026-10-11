@@ -64,7 +64,7 @@ const ModelComparisonModal = React.lazy(() =>
 );
 
 import { MOCK_ARTICLES, MOCK_MODELS, MOCK_BENCHMARKS, MOCK_RESEARCH_PAPERS, MOCK_TIMELINE } from './data/mockData';
-import { getSavedBookmarks, toggleBookmark } from './utils';
+import { getSavedBookmarks, toggleBookmark, pickReadNext } from './utils';
 import { CheckCircle2 } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
@@ -243,6 +243,8 @@ export function App() {
           onSelectBenchmark={() => navigateTo('/benchmarks')}
           onSelectPaper={() => navigateTo('/research')}
           onSelectAuthor={() => navigateTo('/about')}
+          readNext={pickReadNext(article, MOCK_ARTICLES)}
+          onSelectArticle={(slug) => navigateTo(`/article/${slug}`)}
         />
       );
     }

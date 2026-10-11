@@ -250,7 +250,7 @@ Audit each of today's 5+ stories against the permanent timeline criteria ([Ruleb
     - `articleSlug`: exact slug of the corresponding NextVector report for seamless cross-linking
 
 ### 5.4 Update Live Breaking Signal Ticker (`MOCK_LIVE_SIGNALS` in `src/data/mockData.ts`)
-The homepage features a live horizontal scrolling marquee (`LIVE SIGNAL`) at the top of the feed. To ensure this ticker reflects today's breaking developments in real time ([Rulebook §9](./EDITORIAL_RULEBOOK.md#9-live-breaking-signal-ticker-standards)):
+The homepage features a live horizontal scrolling marquee (label `Breaking`) just below the lead story. To ensure this ticker reflects today's breaking developments in real time ([Rulebook §9](./EDITORIAL_RULEBOOK.md#9-live-breaking-signal-ticker-standards)):
 - Update `MOCK_LIVE_SIGNALS` with exactly 5 punchy entity-action ticker items corresponding to today's 5+ stories:
   - `id`: sequential identifier (e.g. `'sig-1'` through `'sig-5'`)
   - `tag`: 2-3 word bold entity or event label (e.g. `'OpenAI Lean 4'`, `'ASML & Intel'`, `'CISA Directive'`)

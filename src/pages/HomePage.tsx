@@ -6,9 +6,9 @@ import { BenchmarkChart } from '../components/benchmarks/BenchmarkChart';
 import { SignalFilterBar } from '../components/filters/SignalFilterBar';
 import { SEOHead } from '../components/common/SEOHead';
 import { usePagedList, LoadMoreButton } from '../components/common/LoadMore';
-import { sortArticlesByTimeAndImportance } from '../utils';
+import { sortArticlesByTimeAndImportance, formatDate } from '../utils';
 import { MOCK_LIVE_SIGNALS } from '../data/mockData';
-import { Sparkles, ArrowRight, TrendingUp, Cpu, Flame, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Cpu, Flame } from 'lucide-react';
 
 interface HomePageProps {
   articles: ArticleSummary[];
@@ -113,12 +113,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         image: 'https://nextvector.rhasan.online/brand/nextvector-brand-system.jpg',
         description: 'Independent technology intelligence platform filtering noise to surface verified foundation models, LMSYS Arena benchmarks, and frontier AI breakthroughs.',
         publishingPrinciples: 'https://nextvector.rhasan.online/about',
-        address: {
-          '@type': 'PostalAddress',
-          addressCountry: 'US',
-          addressLocality: 'San Francisco',
-          addressRegion: 'CA',
-        },
         contactPoint: [
           {
             '@type': 'ContactPoint',
@@ -180,35 +174,40 @@ export const HomePage: React.FC<HomePageProps> = ({
         ]}
       />
 
-      {/* Editorial Header / Primary Entity H1 */}
-      <header className="border-b border-zinc-800/80 pb-6 pt-1">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              <span>Primary Source AI &amp; Computing Intelligence</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 font-sans tracking-tight leading-tight">
-              NextVector <span className="text-zinc-600 font-light">—</span>{' '}
-              <span className="bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-                AI News, Frontier Model Benchmarks &amp; Intelligence
-              </span>
-            </h1>
-          </div>
-          <p className="text-xs sm:text-sm font-mono text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
-            Real-time foundation model radar, LMSYS Arena Elo rankings, model showdowns, and buyer guides. Verified empirical signal over marketing noise.
-          </p>
-        </div>
-      </header>
+      {/* News-first top: small H1 line, then the lead story right away */}
+      <div className="space-y-4">
+        <header className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 pt-1">
+          <h1 className="text-lg sm:text-xl font-bold text-zinc-100 tracking-tight">
+            AI News, Model Benchmarks &amp; Research
+          </h1>
+          {sortedArticles[0] && (
+            <p className="text-xs text-zinc-400">
+              Updated {formatDate(sortedArticles[0].publishedAt)}
+            </p>
+          )}
+        </header>
 
-      {/* Live Breaking Signal Ticker */}
+        {heroArticle && (
+          <section aria-label="Top story">
+            <ArticleCard
+              article={heroArticle}
+              variant="hero"
+              isBookmarked={bookmarkedIds.includes(heroArticle.id)}
+              onToggleBookmark={onToggleBookmark}
+              onSelectArticle={onSelectArticle}
+            />
+          </section>
+        )}
+      </div>
+
+      {/* Breaking ticker (items set by the daily pipeline) */}
       <div className="w-full bg-zinc-950 border border-zinc-800/90 rounded-2xl p-2.5 sm:p-3 shadow-lg flex items-center overflow-hidden">
-        <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-[10px] sm:text-xs font-bold shrink-0 mr-2.5 sm:mr-4">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-          <span className="whitespace-nowrap">LIVE SIGNAL</span>
+        <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold shrink-0 mr-1 sm:mr-2">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="whitespace-nowrap">Breaking</span>
         </div>
-        <div className="overflow-hidden whitespace-nowrap min-w-0 flex-1">
-          <div className="animate-marquee flex items-center gap-8 sm:gap-10 text-xs font-mono text-zinc-400">
+        <div className="fade-edges overflow-hidden whitespace-nowrap min-w-0 flex-1">
+          <div className="animate-marquee flex items-center gap-8 sm:gap-10 text-xs text-zinc-400 pl-8">
             {[...MOCK_LIVE_SIGNALS, ...MOCK_LIVE_SIGNALS].map((sig, idx) => (
               <React.Fragment key={`${sig.id}-${idx}`}>
                 <button
@@ -228,29 +227,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </div>
 
-      {/* Hero Story Section */}
-      {heroArticle && (
-        <section>
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 mb-3 sm:mb-4">
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold shrink-0">
-              <Sparkles className="w-4 h-4 shrink-0" />
-              <span>Lead Intelligence Report</span>
-            </div>
-            <span className="hidden sm:inline text-xs font-mono text-zinc-400 truncate">
-              Primary Focus: {heroArticle.tags && heroArticle.tags.length > 0 ? heroArticle.tags.slice(0, 3).join(' • ') : 'Frontier Intelligence'}
-            </span>
-          </div>
-
-          <ArticleCard
-            article={heroArticle}
-            variant="hero"
-            isBookmarked={bookmarkedIds.includes(heroArticle.id)}
-            onToggleBookmark={onToggleBookmark}
-            onSelectArticle={onSelectArticle}
-          />
-        </section>
-      )}
-
       {/* Signal Filter Bar */}
       <SignalFilterBar
         selectedTag={selectedTag}
@@ -265,30 +241,27 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Primary Bento Stream */}
       <section>
-        <div className="flex items-center justify-between mb-6 border-b border-zinc-800 pb-3">
-          <div>
-            <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans flex items-center gap-2">
-              <span>Frontier Stream</span>
-              <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400">
-                Verified Developments
-              </span>
+        <div className="flex items-end justify-between gap-4 mb-6 border-b border-zinc-800 pb-3">
+          <div className="min-w-0">
+            <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans">
+              Latest Stories
             </h2>
-            <p className="text-xs font-mono text-zinc-400 mt-0.5">
-              Filtered for architectural significance, technical depth, and empirical validity
+            <p className="text-xs text-zinc-400 mt-0.5">
+              Newest first
             </p>
           </div>
 
           <button
             onClick={() => onNavigate('/ai')}
-            className="text-xs font-mono text-emerald-400 hover:text-emerald-300 flex items-center gap-1"
+            className="text-xs text-emerald-400 hover:text-emerald-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
           >
-            <span>View All Stream</span>
+            <span>All AI news</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
 
         {filteredArticles.length === 0 ? (
-          <div className="py-16 text-center text-zinc-500 bg-zinc-950 border border-zinc-800 rounded-2xl">
+          <div className="py-16 text-center text-zinc-400 bg-zinc-950 border border-zinc-800 rounded-2xl">
             <p className="text-sm font-semibold">No stories match your current signal filters.</p>
             <p className="text-xs mt-1">Try lowering the minimum signal threshold or resetting the format filter.</p>
           </div>
@@ -317,12 +290,12 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div>
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-1">
               <Cpu className="w-4 h-4" />
-              <span>Standardized Specification Cards</span>
+              <span>Model Specs</span>
             </div>
             <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans">
-              AI Model Radar & Specifications
+              AI Models at a Glance
             </h2>
-            <p className="text-xs font-mono text-zinc-400 mt-0.5">
+            <p className="text-xs text-zinc-400 mt-0.5">
               Parameters, context windows, API economics, licensing, and benchmark deltas
             </p>
           </div>
@@ -331,7 +304,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             {selectedModelCompareIds.length > 0 && (
               <button
                 onClick={onOpenCompareModal}
-                className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+                className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
               >
                 <span>Compare {selectedModelCompareIds.length} Models</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -339,7 +312,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             )}
             <button
               onClick={() => onNavigate('/models')}
-              className="text-xs font-mono text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800"
+              className="text-xs text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800"
             >
               <span>Explore All {models.length} Models</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -367,22 +340,22 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Deep Dives & Analysis Section */}
       <section>
-        <div className="flex items-center justify-between mb-6 border-b border-zinc-800 pb-3">
-          <div>
+        <div className="flex items-end justify-between gap-4 mb-6 border-b border-zinc-800 pb-3">
+          <div className="min-w-0">
             <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans flex items-center gap-2">
-              <span>Deep Dives & News Analysis</span>
-              <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300">
+              <span>Deep Dives & Analysis</span>
+              <span className="hidden sm:inline text-xs px-2 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300">
                 Long-Form Technical
               </span>
             </h2>
-            <p className="text-xs font-mono text-zinc-400 mt-0.5">
+            <p className="text-xs text-zinc-400 mt-0.5">
               Explaining the underlying physics, math, and architectural tradeoffs behind the headlines
             </p>
           </div>
 
           <button
             onClick={() => onNavigate('/deep-dives')}
-            className="text-xs font-mono text-purple-400 hover:text-purple-300 flex items-center gap-1"
+            className="text-xs text-purple-400 hover:text-purple-300 flex items-center gap-1 shrink-0 whitespace-nowrap"
           >
             <span>All Deep Dives</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -405,15 +378,15 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Trending / High-Impact Signals Bar */}
       <section className="rounded-3xl bg-zinc-950 border border-zinc-800/80 p-6">
-        <div className="flex items-center justify-between mb-4 border-b border-zinc-800/80 pb-3">
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 mb-4 border-b border-zinc-800/80 pb-3">
           <div className="flex items-center gap-2">
             <Flame className="w-4 h-4 text-amber-400" />
             <h3 className="text-base font-bold text-zinc-100 font-sans">
-              Highest Technical Impact Index
+              Highest-Rated Stories
             </h3>
           </div>
-          <span className="text-xs font-mono text-zinc-400">
-            Ranked by signal score & peer discussion
+          <span className="text-xs text-zinc-400">
+            Ranked by Signal score
           </span>
         </div>
 
@@ -428,16 +401,16 @@ export const HomePage: React.FC<HomePageProps> = ({
                 onClick={() => onSelectArticle(article.slug)}
                 className="p-4 rounded-xl bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-800/60 hover:border-zinc-700 cursor-pointer transition-all flex items-start gap-3"
               >
-                <span className="font-mono text-2xl font-black text-zinc-700 shrink-0">
+                <span className="font-mono text-2xl font-black text-zinc-500 shrink-0">
                   0{idx + 1}
                 </span>
                 <div>
-                  <div className="flex items-center gap-2 text-[10px] font-mono text-emerald-400 mb-1">
-                    <span>SIGNAL: {article.signalRating}/100</span>
+                  <div className="flex items-center gap-2 text-2xs font-mono text-emerald-400 mb-1">
+                    <span>Signal {article.signalRating}/100</span>
                     <span>•</span>
                     <span className="text-zinc-400 uppercase">{article.category}</span>
                   </div>
-                  <h4 className="text-xs font-bold text-zinc-200 line-clamp-2 hover:text-emerald-400 transition-colors">
+                  <h4 className="text-sm font-bold text-zinc-200 line-clamp-3 hover:text-emerald-400 transition-colors">
                     {article.title}
                   </h4>
                 </div>

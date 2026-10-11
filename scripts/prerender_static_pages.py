@@ -1066,7 +1066,7 @@ def prerender_all():
 
                 <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4 text-xs font-mono">
                   <h2 class="text-sm font-bold text-emerald-400 uppercase">Entity Identity &amp; Verification</h2>
-                  <p class="text-zinc-300 leading-relaxed font-sans">NextVector is an independent digital publishing entity founded and edited by Robiul Hasan. Operating hubs in San Francisco, CA and Dhaka, Bangladesh.</p>
+                  <p class="text-zinc-300 leading-relaxed font-sans">NextVector is an independent digital publishing entity founded and edited by Robiul Hasan.</p>
                   <div>
                     <span class="text-zinc-500 uppercase block">Founder Website:</span>
                     <a href="https://rhasan.online" class="text-emerald-400 hover:underline">https://rhasan.online</a>

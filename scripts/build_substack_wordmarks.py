@@ -176,7 +176,7 @@ HTML_DARK = f"""<!DOCTYPE html>
       <div class="subline">
         <span>Frontier AI &amp; Silicon Architectures</span>
         <span class="bullet">&bull;</span>
-        <span>99%+ Signal Purity</span>
+        <span>Less Noise. More Signal.</span>
         <span class="bullet">&bull;</span>
         <span>Zero Hype</span>
       </div>
@@ -296,7 +296,7 @@ HTML_TRANSPARENT_FULL = f"""<!DOCTYPE html>
       <div class="subline">
         <span>Frontier AI &amp; Silicon Architectures</span>
         <span class="bullet">&bull;</span>
-        <span>99%+ Signal Purity</span>
+        <span>Less Noise. More Signal.</span>
         <span class="bullet">&bull;</span>
         <span>Zero Hype</span>
       </div>
@@ -554,7 +554,7 @@ HTML_TRANSPARENT_LIGHT = f"""<!DOCTYPE html>
       <div class="subline">
         <span>Frontier AI &amp; Silicon Architectures</span>
         <span class="bullet">&bull;</span>
-        <span>99%+ Signal Purity</span>
+        <span>Less Noise. More Signal.</span>
         <span class="bullet">&bull;</span>
         <span>Zero Hype</span>
       </div>

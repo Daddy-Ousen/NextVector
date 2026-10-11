@@ -41,7 +41,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-purple-400 font-bold mb-3">
             <Scale className="w-4 h-4" />
-            <span>Empirical Intelligence & Audit</span>
+            <span>Benchmarks & Methods</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
             AI Benchmark Radar & Evaluation Audit
@@ -62,7 +62,7 @@ export const BenchmarksPage: React.FC<BenchmarksPageProps> = ({ benchmarks, onSe
             <ShieldCheck className="w-5 h-5 text-emerald-400" />
             <span>The NextVector Benchmark Evaluation Protocol</span>
           </h2>
-          <p className="text-xs font-mono text-zinc-400 mt-1">
+          <p className="text-xs text-zinc-400 mt-1">
             Why raw leaderboard percentages often deceive enterprise and developer teams
           </p>
         </div>

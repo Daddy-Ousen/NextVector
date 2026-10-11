@@ -75,8 +75,8 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
         };
       default:
         return {
-          title: 'Intelligence Feed',
-          subtitle: 'All verified technology, AI, and science intelligence.',
+          title: 'All News',
+          subtitle: 'Every story on technology, AI, and science, newest first.',
           icon: <Compass className="w-5 h-5 text-emerald-400" />,
           filterFn: () => true,
         };
@@ -148,7 +148,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({
 
       {/* Articles Grid */}
       {filteredArticles.length === 0 ? (
-        <div className="py-20 text-center text-zinc-500 bg-zinc-950 border border-zinc-800 rounded-2xl">
+        <div className="py-20 text-center text-zinc-400 bg-zinc-950 border border-zinc-800 rounded-2xl">
           <p className="text-sm font-semibold">No stories match your current filters in this section.</p>
           <p className="text-xs mt-1">Try relaxing the signal score or topic filter.</p>
         </div>

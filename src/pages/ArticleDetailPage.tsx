@@ -158,7 +158,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
   };
 
   return (
-    <article itemScope itemType="https://schema.org/TechArticle" className="max-w-4xl mx-auto pb-20">
+    <article itemScope itemType="https://schema.org/TechArticle" className="max-w-3xl mx-auto pb-20">
       <SEOHead
         title={article.title}
         description={article.subtitle}
@@ -174,17 +174,17 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       <div className="flex items-center justify-between gap-2 sm:gap-4 mb-6 pt-2">
         <button
           onClick={onBack}
-          className="flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors group shrink-0"
+          className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-emerald-400 transition-colors group shrink-0"
         >
           <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1 shrink-0" />
-          <span className="hidden sm:inline">Back to Intelligence Feed</span>
+          <span className="hidden sm:inline">Back to all news</span>
           <span className="sm:hidden">Back</span>
         </button>
 
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <button
             onClick={() => setShowAudioPlayer(!showAudioPlayer)}
-            className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-colors border shrink-0 ${
+            className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg text-xs transition-colors border shrink-0 ${
               showAudioPlayer
                 ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
                 : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border-zinc-800'
@@ -237,7 +237,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
           <span className={`px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider ${categoryStyle}`}>
             {article.category}
           </span>
-          <span className="px-3 py-1 rounded-full text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300">
+          <span className="px-3 py-1 rounded-full text-xs bg-zinc-900 border border-zinc-800 text-zinc-300">
             {typeLabel}
           </span>
           <SignalRatingBadge score={article.signalRating} size="md" showDetails />
@@ -252,7 +252,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         </p>
 
         {/* Metadata & Author Review Badge */}
-        <div className="pt-4 border-t border-zinc-800/80 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+        <div className="pt-4 border-t border-zinc-800/80 flex flex-wrap items-center justify-between gap-4 text-xs text-zinc-400">
           <div className="flex items-center gap-3">
             <img
               onClick={onSelectAuthor}
@@ -279,14 +279,14 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                     href={article.author.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-emerald-400 hover:text-emerald-300 hover:border-emerald-500 flex items-center gap-1 transition-all"
+                    className="text-2xs px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-emerald-400 hover:text-emerald-300 hover:border-emerald-500 flex items-center gap-1 transition-all"
                   >
                     <span>rhasan.online</span>
                     <ExternalLink className="w-2.5 h-2.5" />
                   </a>
                 )}
               </div>
-              <div className="text-[11px] text-zinc-400">{article.author.role}</div>
+              <div className="text-2xs text-zinc-400">{article.author.role}</div>
             </div>
           </div>
 
@@ -312,7 +312,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
           className="w-full h-full object-cover"
         />
         {article.coverImageAlt && (
-          <div className="absolute bottom-0 inset-x-0 p-3 bg-zinc-950/80 backdrop-blur-sm text-[11px] font-mono text-zinc-400">
+          <div className="absolute bottom-0 inset-x-0 p-3 bg-zinc-950/80 backdrop-blur-sm text-2xs text-zinc-400">
             {article.coverImageAlt}
           </div>
         )}
@@ -330,7 +330,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             <ShieldCheck className="w-4 h-4" />
             <span>Executive Takeaways</span>
           </div>
-          <ul className="space-y-2.5 text-sm text-zinc-200 font-sans">
+          <ul className="space-y-2.5 text-base text-zinc-200 font-sans">
             {article.keyTakeaways.map((takeaway, idx) => (
               <li key={idx} className="flex items-start gap-2.5">
                 <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
@@ -342,7 +342,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       )}
 
       {/* Main Body Content */}
-      <article className="prose prose-invert max-w-none space-y-6 text-zinc-200 font-sans text-base md:text-lg leading-relaxed">
+      <article className="prose prose-invert max-w-[42rem] space-y-6 text-zinc-200 font-sans text-base md:text-lg leading-relaxed">
         {article.content.map((paragraph, idx) => (
           <p key={idx} className="text-zinc-300 leading-relaxed font-sans">
             {paragraph}
@@ -360,7 +360,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {Object.entries(article.technicalSpecs).map(([key, val]) => (
               <div key={key} className="p-3 bg-zinc-900/60 rounded-xl border border-zinc-800/80">
-                <div className="text-[11px] font-mono text-zinc-400 uppercase tracking-wider">{key}</div>
+                <div className="text-2xs font-mono text-zinc-400 uppercase tracking-wider">{key}</div>
                 <div className="text-sm font-mono font-bold text-zinc-100 mt-0.5">{val}</div>
               </div>
             ))}
@@ -372,7 +372,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
       {(relatedModel || relatedBenchmark || relatedPaper) && (
         <section className="mt-12 pt-8 border-t border-zinc-800 space-y-4">
           <div className="text-xs font-mono uppercase tracking-wider text-zinc-400 font-semibold">
-            Linked Intelligence Entities
+            Related Models, Benchmarks & Papers
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -381,14 +381,14 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                 onClick={() => onSelectModel(relatedModel.id)}
                 className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-emerald-500/50 cursor-pointer transition-all group"
               >
-                <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-400 mb-1">
+                <div className="flex items-center gap-1.5 text-xs text-emerald-400 mb-1">
                   <Cpu className="w-3.5 h-3.5" />
                   <span>Model Spec Sheet</span>
                 </div>
                 <div className="text-sm font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">
                   {relatedModel.name}
                 </div>
-                <div className="text-xs font-mono text-zinc-400 mt-1">
+                <div className="text-xs text-zinc-400 mt-1">
                   {relatedModel.parameters} • {relatedModel.openSourceStatus}
                 </div>
               </div>
@@ -399,14 +399,14 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                 onClick={() => onSelectBenchmark(relatedBenchmark.id)}
                 className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-purple-500/50 cursor-pointer transition-all group"
               >
-                <div className="flex items-center gap-1.5 text-xs font-mono text-purple-400 mb-1">
+                <div className="flex items-center gap-1.5 text-xs text-purple-400 mb-1">
                   <BarChart2 className="w-3.5 h-3.5" />
                   <span>Benchmark Leaderboard</span>
                 </div>
                 <div className="text-sm font-bold text-zinc-100 group-hover:text-purple-400 transition-colors">
                   {relatedBenchmark.name}
                 </div>
-                <div className="text-xs font-mono text-zinc-400 mt-1">
+                <div className="text-xs text-zinc-400 mt-1">
                   {relatedBenchmark.category}
                 </div>
               </div>
@@ -417,14 +417,14 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                 onClick={() => onSelectPaper(relatedPaper.id)}
                 className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-amber-500/50 cursor-pointer transition-all group"
               >
-                <div className="flex items-center gap-1.5 text-xs font-mono text-amber-400 mb-1">
+                <div className="flex items-center gap-1.5 text-xs text-amber-400 mb-1">
                   <BookOpen className="w-3.5 h-3.5" />
                   <span>Research Breakdown</span>
                 </div>
                 <div className="text-sm font-bold text-zinc-100 group-hover:text-amber-400 transition-colors">
                   {relatedPaper.title}
                 </div>
-                <div className="text-xs font-mono text-zinc-400 mt-1">
+                <div className="text-xs text-zinc-400 mt-1">
                   {relatedPaper.institution}
                 </div>
               </div>
@@ -447,13 +447,12 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             <div className="flex items-center gap-2">
               <span className="text-base font-bold text-zinc-100">{article.author.name}</span>
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span className="text-[11px] font-mono text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
+              <span className="text-2xs text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                 Founder & Editor-in-Chief
               </span>
             </div>
             <p className="text-xs text-zinc-400 mt-1 max-w-xl font-sans leading-relaxed">
               IT Infrastructure & Systems Support Engineer, Cybersecurity Practitioner, and Founder of NextVector.
-              Filtering noise with peer-grade technical rigor.
             </p>
           </div>
         </div>
@@ -461,7 +460,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         <div className="flex items-center gap-2.5 shrink-0 flex-wrap">
           <button
             onClick={onSelectAuthor}
-            className="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-200 transition-colors"
+            className="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 transition-colors"
           >
             Author Profile
           </button>
@@ -470,7 +469,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
               href={article.author.substack}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-1.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-mono font-bold transition-colors flex items-center gap-1"
+              className="px-3 py-1.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-bold transition-colors flex items-center gap-1"
               title="NextVector on Substack"
             >
               <span>Substack</span>
@@ -481,7 +480,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
             href="https://rhasan.online"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-md flex items-center gap-1"
+            className="px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-md flex items-center gap-1"
           >
             <span>rhasan.online</span>
             <ExternalLink className="w-3 h-3" />
@@ -491,7 +490,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
 
       {/* Citations & Primary Sources */}
       {article.citations && article.citations.length > 0 && (
-        <section className="mt-10 p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 text-xs font-mono">
+        <section className="mt-10 p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 text-xs">
           <div className="text-zinc-400 uppercase tracking-wider mb-2 font-semibold">
             Primary Sources & Verification Audit
           </div>
@@ -508,7 +507,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                   <span>{cite.title}</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
-                <span className="text-zinc-500">({cite.source})</span>
+                <span className="text-zinc-400">({cite.source})</span>
               </li>
             ))}
           </ul>

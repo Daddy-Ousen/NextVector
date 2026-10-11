@@ -157,16 +157,16 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
           <div>
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold mb-2">
               <HelpCircle className="w-4 h-4 text-emerald-400" />
-              <span>Knowledge Base &amp; Intelligence Q&amp;A</span>
+              <span>Knowledge Base &amp; Q&amp;A</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 font-sans tracking-tight leading-tight">
               Frequently Asked Questions <span className="text-zinc-600 font-light">—</span>{' '}
               <span className="bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-                Frontier AI &amp; Platform Intelligence
+                AI Models &amp; NextVector
               </span>
             </h1>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
+          <p className="text-xs sm:text-sm text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
             Concise, empirical answers to the most queried questions in artificial intelligence, model benchmarks, subscription tradeoffs, and editorial methodology.
           </p>
         </div>
@@ -176,18 +176,18 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
       <div className="space-y-4">
         {/* Search Bar */}
         <div className="relative">
-          <Search className="w-4 h-4 text-zinc-500 absolute left-4 top-1/2 -translate-y-1/2" />
+          <Search className="w-4 h-4 text-zinc-400 absolute left-4 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search questions (e.g., 'Claude vs ChatGPT', 'best subscription', 'Elo ratings')..."
-            className="w-full pl-11 pr-4 py-3 rounded-2xl bg-zinc-950 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs sm:text-sm font-mono focus:outline-none focus:border-emerald-500 transition-colors shadow-lg"
+            className="w-full pl-11 pr-4 py-3 rounded-2xl bg-zinc-950 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs sm:text-sm focus:outline-none focus:border-emerald-500 transition-colors shadow-lg"
           />
         </div>
 
         {/* Category Pills */}
-        <div className="flex flex-wrap items-center gap-2 text-xs font-mono">
+        <div className="flex flex-wrap items-center gap-2 text-xs">
           {[
             { id: 'all', label: 'All Questions' },
             { id: 'models', label: 'Frontier Models' },
@@ -213,7 +213,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
       {/* FAQ Accordion List */}
       <div className="space-y-4">
         {filteredItems.length === 0 ? (
-          <div className="p-12 text-center rounded-2xl bg-zinc-950 border border-zinc-800 text-zinc-500 text-xs font-mono">
+          <div className="p-12 text-center rounded-2xl bg-zinc-950 border border-zinc-800 text-zinc-400 text-xs">
             No questions matched your query. Contact our editorial desk directly at{' '}
             <a href="mailto:editor@nextvector.rhasan.online" className="text-emerald-400 hover:underline">
               editor@nextvector.rhasan.online
@@ -233,7 +233,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
                   className="w-full p-5 sm:p-6 text-left flex items-start justify-between gap-4 cursor-pointer hover:bg-zinc-900/40 transition-colors"
                 >
                   <div className="space-y-1.5">
-                    <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest font-bold">
+                    <span className="text-2xs font-mono text-emerald-400 uppercase tracking-widest font-bold">
                       {item.category}
                     </span>
                     <h2 className="text-base sm:text-lg font-bold text-zinc-100 font-sans tracking-tight">
@@ -248,8 +248,8 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
                 {isExpanded && (
                   <div className="px-5 sm:px-6 pb-6 pt-2 border-t border-zinc-800/60 space-y-3">
                     {/* Front-loaded Key Takeaway / BLUF */}
-                    <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-emerald-500/20 text-xs font-mono">
-                      <span className="text-emerald-400 font-bold uppercase tracking-wider block text-[10px] mb-1">
+                    <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-emerald-500/20 text-xs">
+                      <span className="text-emerald-400 font-bold uppercase tracking-wider block text-2xs mb-1">
                         Executive Takeaway (Direct Answer)
                       </span>
                       <p className="text-zinc-200 leading-relaxed font-sans">{item.shortAnswer}</p>
@@ -267,7 +267,7 @@ export const FAQPage: React.FC<FAQPageProps> = ({ onNavigate }) => {
       </div>
 
       {/* Bottom Cross-Navigation Hubs */}
-      <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+      <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-400">
         <div className="flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>Need technical verification on a specific foundation model?</span>

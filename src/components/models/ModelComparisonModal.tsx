@@ -37,7 +37,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
               <h2 className="text-base md:text-lg font-bold text-zinc-100 font-sans">
                 Side-by-Side Model Architecture & Benchmark Matrix
               </h2>
-              <p className="text-xs font-mono text-zinc-400">
+              <p className="text-xs text-zinc-400">
                 Comparing {models.length} frontier models across specs, economics, and verified capabilities
               </p>
             </div>
@@ -52,7 +52,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
 
         {/* Comparison Content */}
         {models.length === 0 ? (
-          <div className="py-20 text-center text-zinc-500">
+          <div className="py-20 text-center text-zinc-400">
             <p className="text-sm font-medium">No models currently selected for comparison.</p>
             <p className="text-xs mt-1">Select 2 or more models from the Models Directory to compare.</p>
           </div>
@@ -79,13 +79,13 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                       <div className="text-base font-bold text-zinc-100 flex items-center gap-1.5">
                         <span>{model.name}</span>
                       </div>
-                      <div className="text-xs font-mono text-emerald-400 mt-0.5">{model.developer}</div>
+                      <div className="text-xs text-emerald-400 mt-0.5">{model.developer}</div>
                       <button
                         onClick={() => {
                           onClose();
                           onSelectModelDetail(model.id);
                         }}
-                        className="mt-2 text-[11px] font-mono text-cyan-400 hover:underline inline-flex items-center gap-1"
+                        className="mt-2 text-2xs text-cyan-400 hover:underline inline-flex items-center gap-1"
                       >
                         Full Model Report <ExternalLink className="w-3 h-3" />
                       </button>
@@ -101,7 +101,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                   </td>
                   {models.map((model) => (
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 font-sans">
-                      <span className="px-2 py-0.5 rounded bg-zinc-800 text-xs font-mono text-zinc-200 border border-zinc-700">
+                      <span className="px-2 py-0.5 rounded bg-zinc-800 text-xs text-zinc-200 border border-zinc-700">
                         {model.modelType}
                       </span>
                     </td>
@@ -123,7 +123,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                           )}
                         </div>
                       ) : (
-                        <span className="text-zinc-500">Unranked</span>
+                        <span className="text-zinc-400">Unranked</span>
                       )}
                     </td>
                   ))}
@@ -162,10 +162,10 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 font-mono text-xs">
                       <div className="flex flex-col gap-0.5">
                         <div>
-                          <span className="text-zinc-500">In:</span> <span className="text-emerald-400">${model.pricing.inputPer1M.toFixed(2)}</span>
+                          <span className="text-zinc-400">In:</span> <span className="text-emerald-400">${model.pricing.inputPer1M.toFixed(2)}</span>
                         </div>
                         <div>
-                          <span className="text-zinc-500">Out:</span> <span className="text-zinc-200">${model.pricing.outputPer1M.toFixed(2)}</span>
+                          <span className="text-zinc-400">Out:</span> <span className="text-zinc-200">${model.pricing.outputPer1M.toFixed(2)}</span>
                         </div>
                       </div>
                     </td>
@@ -180,7 +180,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                   {models.map((model) => (
                     <td key={model.id} className="p-3 border border-zinc-800 text-zinc-300 text-xs font-mono">
                       <div className="font-semibold text-zinc-100">{model.openSourceStatus}</div>
-                      <div className="text-[11px] text-zinc-400">{model.license}</div>
+                      <div className="text-2xs text-zinc-400">{model.license}</div>
                     </td>
                   ))}
                 </tr>
@@ -211,16 +211,16 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
                         <td key={model.id} className="p-3 border border-zinc-800">
                           {benchmarkEntry ? (
                             <div>
-                              <div className="font-mono text-sm font-bold text-zinc-100">
+                              <div className="text-sm font-bold text-zinc-100">
                                 {benchmarkEntry.score}
                                 {benchmarkEntry.unit || '%'}
                               </div>
-                              <div className="text-[10px] font-mono text-emerald-400 mt-0.5">
+                              <div className="text-2xs text-emerald-400 mt-0.5">
                                 {benchmarkEntry.vsPreviousGen}
                               </div>
                             </div>
                           ) : (
-                            <span className="text-zinc-600 font-mono text-xs">—</span>
+                            <span className="text-zinc-600 text-xs">—</span>
                           )}
                         </td>
                       );
@@ -269,7 +269,7 @@ export const ModelComparisonModal: React.FC<ModelComparisonModalProps> = ({
         )}
 
         {/* Footer */}
-        <div className="px-6 py-3 border-t border-zinc-800 bg-zinc-950 flex items-center justify-between text-xs font-mono text-zinc-500">
+        <div className="px-6 py-3 border-t border-zinc-800 bg-zinc-950 flex items-center justify-between text-xs text-zinc-400">
           <span>All scores verified independently by NextVector Evaluation Labs.</span>
           <button
             onClick={onClose}

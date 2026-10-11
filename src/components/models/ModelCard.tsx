@@ -22,22 +22,22 @@ export const ModelCard: React.FC<ModelCardProps> = ({
         <div className="flex items-center justify-between gap-2 mb-3">
           <div className="flex items-center gap-1.5 flex-wrap">
             {model.arenaRank ? (
-              <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+              <span className="text-2xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
                 #{model.arenaRank} • {model.arenaElo} Elo
               </span>
             ) : (
-              <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700/60">
+              <span className="text-2xs font-bold px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700/60">
                 Specialized Domain
               </span>
             )}
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700/60">
+            <span className="text-2xs px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700/60">
               {model.modelType}
             </span>
           </div>
 
           <button
             onClick={() => onToggleCompare(model.id)}
-            className={`flex items-center gap-1 text-[11px] font-mono px-2.5 py-1 rounded-md transition-colors ${
+            className={`flex items-center gap-1 text-2xs px-2.5 py-1 rounded-md transition-colors ${
               isSelectedForCompare
                 ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40'
                 : 'bg-zinc-800/60 text-zinc-400 hover:text-zinc-200 border border-zinc-700/40 hover:bg-zinc-800'
@@ -71,10 +71,10 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               className="hover:text-emerald-400 transition-colors flex items-center justify-between w-full"
             >
               <span>{model.name}</span>
-              <ArrowUpRight className="w-4 h-4 text-zinc-500 group-hover:text-emerald-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-emerald-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </h3>
-          <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mt-1">
+          <div className="flex items-center gap-2 text-xs text-zinc-400 mt-1">
             <span className="text-emerald-400 font-medium">{model.developer}</span>
             <span>•</span>
             <span>{model.releaseDate}</span>
@@ -82,27 +82,27 @@ export const ModelCard: React.FC<ModelCardProps> = ({
         </div>
 
         {/* Standardized Specification Grid */}
-        <div className="grid grid-cols-2 gap-2 p-3 bg-zinc-950/60 rounded-xl border border-zinc-800/80 mb-4 text-xs font-mono">
+        <div className="grid grid-cols-2 gap-2 p-3 bg-zinc-950/60 rounded-xl border border-zinc-800/80 mb-4 text-xs">
           <div>
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500">Parameters</div>
+            <div className="text-2xs uppercase tracking-wider text-zinc-400">Parameters</div>
             <div className="text-zinc-200 font-semibold truncate" title={model.parameters}>
               {model.parameters}
             </div>
           </div>
           <div>
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500">Context Window</div>
+            <div className="text-2xs uppercase tracking-wider text-zinc-400">Context Window</div>
             <div className="text-zinc-200 font-semibold truncate" title={model.contextWindow}>
               {model.contextWindow}
             </div>
           </div>
           <div>
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500">Pricing (In/Out)</div>
+            <div className="text-2xs uppercase tracking-wider text-zinc-400">Pricing (In/Out)</div>
             <div className="text-zinc-200 font-semibold">
               ${model.pricing.inputPer1M} / ${model.pricing.outputPer1M}
             </div>
           </div>
           <div>
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500">License</div>
+            <div className="text-2xs uppercase tracking-wider text-zinc-400">License</div>
             <div className="text-zinc-200 font-semibold truncate" title={model.license}>
               {model.license}
             </div>
@@ -111,7 +111,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
 
         {/* Key Benchmark Badges */}
         <div className="space-y-1.5 mb-4">
-          <div className="text-[11px] font-mono text-zinc-400 flex items-center gap-1">
+          <div className="text-2xs text-zinc-400 flex items-center gap-1">
             <Scale className="w-3 h-3 text-cyan-400" />
             <span>Benchmark Highlights:</span>
           </div>
@@ -119,7 +119,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
             {model.benchmarks.slice(0, 2).map((b, i) => (
               <div
                 key={i}
-                className="px-2 py-0.5 rounded bg-zinc-800/80 border border-zinc-700/50 text-[11px] font-mono text-zinc-300"
+                className="px-2 py-0.5 rounded bg-zinc-800/80 border border-zinc-700/50 text-2xs text-zinc-300"
               >
                 <span className="text-zinc-400">{b.benchmarkName.split(' ')[0]}: </span>
                 <span className="text-emerald-400 font-bold">{b.score}{b.unit || '%'}</span>
@@ -131,7 +131,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
 
       {/* Action footer */}
       <div className="pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs">
-        <span className="text-[11px] font-mono text-zinc-400 truncate max-w-[150px]">
+        <span className="text-2xs text-zinc-400 truncate max-w-[150px]">
           {model.openSourceStatus}
         </span>
         <a
@@ -142,7 +142,7 @@ export const ModelCard: React.FC<ModelCardProps> = ({
               onSelectDetail(model.id);
             }
           }}
-          className="text-emerald-400 hover:text-emerald-300 font-mono font-medium flex items-center gap-1 hover:underline cursor-pointer"
+          className="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1 hover:underline cursor-pointer"
         >
           <span>View Report</span>
           <ArrowUpRight className="w-3.5 h-3.5" />

@@ -543,7 +543,7 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
             <Radio className="w-3.5 h-3.5" />
             Executive Signal Briefing
           </span>
-          <span className="text-[11px] font-mono text-zinc-400 bg-zinc-800/80 px-2 py-0.5 rounded border border-zinc-700/40">
+          <span className="text-2xs text-zinc-400 bg-zinc-800/80 px-2 py-0.5 rounded border border-zinc-700/40">
             {duration}
           </span>
         </div>
@@ -554,19 +554,19 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
           <div className="relative">
             <button
               onClick={() => setShowVoiceMenu(!showVoiceMenu)}
-              className="px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700 text-xs font-mono font-medium text-zinc-300 flex items-center gap-1.5 border border-zinc-700/60 transition-colors"
+              className="px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700 text-xs font-medium text-zinc-300 flex items-center gap-1.5 border border-zinc-700/60 transition-colors"
               title="Select calibrated broadcast voice"
             >
               <Headphones className="w-3.5 h-3.5 text-emerald-400" />
               <span>{activeProfile.name}</span>
-              <span className="text-[10px] text-zinc-500 hidden sm:inline">({activeProfile.preferredPitch > 1 ? 'Anchor' : 'Radio'})</span>
+              <span className="text-2xs text-zinc-400 hidden sm:inline">({activeProfile.preferredPitch > 1 ? 'Anchor' : 'Radio'})</span>
               <ChevronDown className="w-3 h-3 text-zinc-400 ml-0.5" />
             </button>
 
             {/* Dropdown Menu */}
             {showVoiceMenu && (
               <div className="absolute right-0 top-full mt-1.5 w-64 bg-zinc-900 border border-zinc-700/80 rounded-xl shadow-2xl p-1.5 z-50 backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
-                <div className="px-2.5 py-1.5 text-[10px] font-mono uppercase tracking-wider text-zinc-400 font-semibold border-b border-zinc-800 mb-1">
+                <div className="px-2.5 py-1.5 text-2xs font-mono uppercase tracking-wider text-zinc-400 font-semibold border-b border-zinc-800 mb-1">
                   Calibrated Broadcast Voices
                 </div>
                 {VOICE_PROFILES.map((prof) => (
@@ -583,7 +583,7 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
                       <div className="font-semibold flex items-center gap-1.5">
                         {prof.label}
                       </div>
-                      <div className="text-[10px] text-zinc-400 mt-0.5 font-sans leading-tight">
+                      <div className="text-2xs text-zinc-400 mt-0.5 font-sans leading-tight">
                         {prof.description}
                       </div>
                     </div>
@@ -593,7 +593,7 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
                   </button>
                 ))}
 
-                <div className="mt-1 pt-1.5 border-t border-zinc-800/80 px-2.5 py-1 text-[10px] text-zinc-500 italic">
+                <div className="mt-1 pt-1.5 border-t border-zinc-800/80 px-2.5 py-1 text-2xs text-zinc-400 italic">
                   Tuned pitch & prosody eliminates robotic timbre.
                 </div>
               </div>
@@ -603,7 +603,7 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
           {/* Studio Warmth Toggle */}
           <button
             onClick={handleToggleStudioWarmth}
-            className={`px-2 py-1 rounded text-xs font-mono font-medium flex items-center gap-1 transition-colors border ${
+            className={`px-2 py-1 rounded text-xs font-medium flex items-center gap-1 transition-colors border ${
               studioWarmthEnabled
                 ? 'bg-emerald-950/60 border-emerald-600/40 text-emerald-400'
                 : 'bg-zinc-800 hover:bg-zinc-700 border-zinc-700/40 text-zinc-400'
@@ -617,7 +617,7 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
           {/* Speed Toggle */}
           <button
             onClick={cycleSpeed}
-            className="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-xs font-mono font-semibold text-zinc-200 transition-colors border border-zinc-700/50"
+            className="px-2.5 py-1 rounded bg-zinc-800 hover:bg-zinc-700 text-xs font-semibold text-zinc-200 transition-colors border border-zinc-700/50"
             title="Cycle broadcast speed"
           >
             {playbackSpeed}x
@@ -638,12 +638,12 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
 
       {/* Broadcast Transcript Card (Live Naturalized Prose) */}
       <div className="bg-zinc-950/80 border border-zinc-800/80 rounded-lg p-3.5 mb-3 shadow-inner">
-        <div className="flex items-center justify-between text-[11px] font-mono mb-1.5">
+        <div className="flex items-center justify-between text-2xs mb-1.5">
           <span className="text-emerald-400 font-bold tracking-wider uppercase flex items-center gap-1.5">
             <Sparkles className="w-3 h-3 text-emerald-400" />
             {currentSegment.label}
           </span>
-          <span className="text-zinc-500 font-medium">
+          <span className="text-zinc-400 font-medium">
             Section {currentSegmentIndex + 1} of {segments.length}
           </span>
         </div>
@@ -730,14 +730,14 @@ export const AudioBriefingPlayer: React.FC<AudioBriefingPlayerProps> = ({
                 <span className="w-1 bg-emerald-400 rounded-full animate-[pulse_0.7s_ease-in-out_infinite_0.4s] h-2" />
                 <span className="w-1 bg-emerald-400 rounded-full animate-[pulse_0.5s_ease-in-out_infinite_0.1s] h-3" />
               </div>
-              <span className="text-[11px] font-mono text-emerald-400 font-medium">
+              <span className="text-2xs text-emerald-400 font-medium">
                 Narrating ({overallProgress}%)
               </span>
             </div>
           ) : isPaused ? (
-            <span className="text-[11px] font-mono text-amber-400">Briefing Paused</span>
+            <span className="text-2xs text-amber-400">Briefing Paused</span>
           ) : (
-            <span className="text-[11px] font-mono text-zinc-400">
+            <span className="text-2xs text-zinc-400">
               Press play to listen
             </span>
           )}

@@ -54,7 +54,7 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold mb-3">
             <Compass className="w-4 h-4" />
-            <span>Chronological Intelligence</span>
+            <span>Timeline</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
             Technology & Science Breakthrough Timeline
@@ -71,7 +71,7 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
           <button
             key={c.value}
             onClick={() => setSelectedCategory(c.value)}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-mono transition-all shrink-0 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-xl text-xs transition-all shrink-0 cursor-pointer ${
               selectedCategory === c.value
                 ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 font-bold'
                 : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
@@ -85,7 +85,7 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
       {/* Timeline Stream */}
       <div className="relative border-l-2 border-zinc-800 ml-3 sm:ml-4 md:ml-8 pl-5 sm:pl-6 md:pl-10 space-y-8 md:space-y-10">
         {filteredEvents.length === 0 ? (
-          <div className="rounded-2xl bg-zinc-950 border border-zinc-800 p-8 text-center text-zinc-400 font-mono text-sm">
+          <div className="rounded-2xl bg-zinc-950 border border-zinc-800 p-8 text-center text-zinc-400 text-sm">
             No milestones registered for this category yet.
           </div>
         ) : (
@@ -96,17 +96,17 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
 
               {/* Event Card */}
               <div className="rounded-2xl bg-zinc-950 border border-zinc-800/90 p-5 sm:p-6 hover:border-zinc-700 transition-all shadow-xl">
-                <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-zinc-800/80 mb-3 text-xs font-mono">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-zinc-800/80 mb-3 text-xs">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="font-bold text-cyan-400 text-sm whitespace-nowrap">
                       {event.month} {event.year}
                     </span>
                     <span className="text-zinc-600">•</span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-[11px] sm:text-xs whitespace-nowrap">
+                    <span className="px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-2xs sm:text-xs whitespace-nowrap">
                       {event.category}
                     </span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-emerald-400 font-bold text-[11px] sm:text-xs whitespace-nowrap">
+                  <div className="flex items-center gap-1.5 text-emerald-400 font-bold text-2xs sm:text-xs whitespace-nowrap">
                     <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
                     <span>Impact Score: {event.impactScore}/100</span>
                   </div>
@@ -120,8 +120,8 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
                   {event.summary}
                 </p>
 
-                <div className="mt-4 p-3 bg-zinc-900/60 rounded-xl border border-zinc-800 text-xs font-mono text-zinc-400">
-                  <span className="text-cyan-400 font-semibold uppercase text-[10px] tracking-wider block mb-0.5">
+                <div className="mt-4 p-3 bg-zinc-900/60 rounded-xl border border-zinc-800 text-xs text-zinc-400">
+                  <span className="text-cyan-400 font-semibold uppercase text-2xs tracking-wider block mb-0.5">
                     Paradigm Shift:
                   </span>
                   <span className="text-zinc-200">{event.keyShift}</span>
@@ -137,9 +137,9 @@ export const TimelinePage: React.FC<TimelinePageProps> = ({ events, onSelectArti
                           window.location.href = `/article/${event.articleSlug}`;
                         }
                       }}
-                      className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:text-cyan-300 transition-colors group/btn font-semibold cursor-pointer"
+                      className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 transition-colors group/btn font-semibold cursor-pointer"
                     >
-                      <span>Read In-Depth Intelligence Deconstruction</span>
+                      <span>Read the full story</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
                     </button>
                   </div>

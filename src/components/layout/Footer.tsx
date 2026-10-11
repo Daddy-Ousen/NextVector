@@ -32,18 +32,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               NextVector is an independent digital intelligence platform dedicated to surfacing genuine technological progress and scientific breakthroughs. Every report rigorously answers three core questions: <strong className="text-zinc-200">What happened? Why does it matter? What could happen next?</strong>
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-2 text-xs font-mono text-zinc-400">
+            <div className="flex flex-wrap gap-4 pt-2 text-xs text-zinc-400">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                Zero Clickbait Guarantee
+                No Clickbait Policy
               </span>
               <span className="flex items-center gap-1.5">
                 <Zap className="w-4 h-4 text-cyan-400" />
-                Primary Source Verified
+                Primary Sources Linked
               </span>
               <span className="flex items-center gap-1.5">
                 <BookOpen className="w-4 h-4 text-purple-400" />
-                Peer-Grade Analysis
+                Three-Question Format
               </span>
             </div>
           </div>
@@ -60,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="https://nextvectorr.substack.com/?r=92ang8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-mono text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold"
+                  className="text-2xs text-[#FF6719] hover:underline inline-flex items-center gap-1 font-semibold"
                 >
                   <span>Substack Edition</span>
                   <ExternalLink className="w-2.5 h-2.5" />
@@ -70,7 +70,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 The 3-Minute Executive Signal Briefing
               </h4>
               <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday via Substack.
+                A short AI and technology briefing for researchers, engineers, and tech leaders. Free on Substack.
               </p>
             </div>
 
@@ -86,10 +86,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   title="Subscribe to The Morning Vector on Substack"
                 />
               </div>
-              <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mt-2.5 px-1">
+              <div className="flex items-center justify-between text-2xs text-zinc-400 mt-2.5 px-1">
                 <span className="flex items-center gap-1.5 text-zinc-400">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                  Official Substack Instant Verification
+                  Sign-up handled by Substack
                 </span>
                 <a
                   href="https://nextvectorr.substack.com/archive"
@@ -105,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Directory Navigation Links */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-b border-zinc-800/80 text-xs font-mono">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-b border-zinc-800/80 text-xs">
           <div>
             <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Coverage Areas</h5>
             <ul className="space-y-2">
@@ -169,7 +169,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           <div>
-            <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Intelligence Hubs</h5>
+            <h5 className="font-bold text-zinc-200 uppercase tracking-wider mb-3">Sections</h5>
             <ul className="space-y-2">
               <li>
                 <a
@@ -396,7 +396,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Copyright & Disclaimer */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] font-mono text-zinc-400">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-2xs text-zinc-400">
           <div>
             © {new Date().getFullYear()} NextVector Intelligence. Founded and Edited by{' '}
             <a
@@ -406,8 +406,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="text-emerald-400 hover:underline font-semibold"
             >
               Robiul Hasan
-            </a>{' '}
-            (Dhaka &amp; San Francisco). Filter the noise.
+            </a>.
+           Filter the noise.
           </div>
           <div className="flex items-center gap-6">
             <a
@@ -446,7 +446,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               Contact
             </a>
-            <span>Status: Operational (100%)</span>
           </div>
         </div>
       </div>

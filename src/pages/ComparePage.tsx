@@ -525,7 +525,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
         <div className="absolute -left-20 bottom-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
             <Scale className="w-3.5 h-3.5" />
             <span>NextVector Head-to-Head Architecture Audit • September 2026</span>
           </div>
@@ -540,14 +540,14 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
 
           {/* Category Tabs */}
           <div className="pt-2 flex items-center gap-2 overflow-x-auto scrollbar-none pb-1">
-            <span className="text-xs font-mono text-zinc-500 uppercase tracking-wider shrink-0 mr-1">
+            <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider shrink-0 mr-1">
               Category:
             </span>
             {['all', 'Frontier Flagships', 'Reasoning & Agents', 'Cost & Pareto', 'Open Weights'].map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategoryFilter(cat)}
-                className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer shrink-0 ${
+                className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer shrink-0 ${
                   selectedCategoryFilter === cat
                     ? 'bg-zinc-800 text-emerald-400 border border-emerald-500/40 font-bold'
                     : 'bg-zinc-900/60 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
@@ -566,7 +566,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                 <button
                   key={p.slug}
                   onClick={() => onNavigate(`/compare/${p.slug}`)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1.5 rounded-xl text-xs transition-all cursor-pointer ${
                     isActive
                       ? 'bg-emerald-500 text-zinc-950 font-bold shadow-md shadow-emerald-500/20'
                       : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800'
@@ -593,14 +593,14 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-zinc-800/80">
           <div className="p-5 bg-zinc-900/60 rounded-2xl border border-zinc-800 space-y-3">
-            <h3 className="text-sm font-bold text-emerald-400 font-mono flex items-center gap-2">
+            <h3 className="text-sm font-bold text-emerald-400 flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4" />
               <span>{currentPreset.verdictA.title}</span>
             </h3>
             <ul className="space-y-2 text-xs text-zinc-300 font-sans">
               {currentPreset.verdictA.points.map((pt, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-emerald-400 font-mono mt-0.5">•</span>
+                  <span className="text-emerald-400 mt-0.5">•</span>
                   <span>{pt}</span>
                 </li>
               ))}
@@ -608,14 +608,14 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
           </div>
 
           <div className="p-5 bg-zinc-900/60 rounded-2xl border border-zinc-800 space-y-3">
-            <h3 className="text-sm font-bold text-cyan-400 font-mono flex items-center gap-2">
+            <h3 className="text-sm font-bold text-cyan-400 flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4" />
               <span>{currentPreset.verdictB.title}</span>
             </h3>
             <ul className="space-y-2 text-xs text-zinc-300 font-sans">
               {currentPreset.verdictB.points.map((pt, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-cyan-400 font-mono mt-0.5">•</span>
+                  <span className="text-cyan-400 mt-0.5">•</span>
                   <span>{pt}</span>
                 </li>
               ))}
@@ -631,17 +631,17 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
             <h2 className="text-2xl font-bold text-zinc-100 font-sans">
               Side-by-Side Architectural Specifications
             </h2>
-            <p className="text-xs font-mono text-zinc-400 mt-1">
+            <p className="text-xs text-zinc-400 mt-1">
               Select any model from the {MODEL_COUNT}-model registry to compare in real time
             </p>
           </div>
 
           {/* Model Selectors */}
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto min-w-0">
             <select
               value={selectedIdA}
               onChange={(e) => setSelectedIdA(e.target.value)}
-              className="bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-200 px-3 py-1.5 rounded-xl focus:outline-none focus:border-emerald-500"
+              className="min-w-0 flex-1 sm:flex-none sm:max-w-xs bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 px-3 py-1.5 rounded-xl focus:outline-none focus:border-emerald-500"
             >
               {models.map((m) => (
                 <option key={m.id} value={m.id}>
@@ -649,11 +649,11 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                 </option>
               ))}
             </select>
-            <span className="text-xs font-mono text-zinc-500 font-bold">VS</span>
+            <span className="text-xs text-zinc-400 font-bold">VS</span>
             <select
               value={selectedIdB}
               onChange={(e) => setSelectedIdB(e.target.value)}
-              className="bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-200 px-3 py-1.5 rounded-xl focus:outline-none focus:border-cyan-500"
+              className="min-w-0 flex-1 sm:flex-none sm:max-w-xs bg-zinc-900 border border-zinc-800 text-xs text-zinc-200 px-3 py-1.5 rounded-xl focus:outline-none focus:border-cyan-500"
             >
               {models.map((m) => (
                 <option key={m.id} value={m.id}>
@@ -675,12 +675,12 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                     <span>{modelA.name}</span>
                     <button
                       onClick={() => onSelectModelDetail(modelA.id)}
-                      className="text-xs font-mono text-emerald-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
+                      className="text-xs text-emerald-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
                     >
                       Spec Sheet <ArrowRight className="w-3 h-3" />
                     </button>
                   </div>
-                  <span className="text-xs font-mono text-zinc-400 block font-normal mt-0.5">
+                  <span className="text-xs text-zinc-400 block font-normal mt-0.5">
                     {modelA.developer}
                   </span>
                 </th>
@@ -689,12 +689,12 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
                     <span>{modelB.name}</span>
                     <button
                       onClick={() => onSelectModelDetail(modelB.id)}
-                      className="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
+                      className="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-normal cursor-pointer"
                     >
                       Spec Sheet <ArrowRight className="w-3 h-3" />
                     </button>
                   </div>
-                  <span className="text-xs font-mono text-zinc-400 block font-normal mt-0.5">
+                  <span className="text-xs text-zinc-400 block font-normal mt-0.5">
                     {modelB.developer}
                   </span>
                 </th>
@@ -776,7 +776,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
         <div className="space-y-1">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">
             <Sparkles className="w-4 h-4" />
-            <span>AI Overview & Search Intelligence FAQ</span>
+            <span>Frequently Asked Questions</span>
           </div>
           <h2 className="text-2xl font-bold text-zinc-100 font-sans">
             Frequently Asked Questions: {currentPreset.shortTitle}
@@ -812,7 +812,7 @@ const ComparePageContent: React.FC<ComparePageProps> = ({
         </div>
         <button
           onClick={() => onNavigate('/subscriptions')}
-          className="px-6 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold font-mono text-xs sm:text-sm transition-all shadow-lg shadow-emerald-500/20 shrink-0 flex items-center gap-2 cursor-pointer"
+          className="px-6 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs sm:text-sm transition-all shadow-lg shadow-emerald-500/20 shrink-0 flex items-center gap-2 cursor-pointer"
         >
           <span>Open AI Subscription Guide</span>
           <ArrowRight className="w-4 h-4" />

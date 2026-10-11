@@ -274,9 +274,9 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
         <div className="absolute right-32 bottom-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
             <Compass className="w-3.5 h-3.5" />
-            <span>NextVector Strategic Intelligence • September 2026</span>
+            <span>NextVector Buyer's Guide • September 2026</span>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-100 font-sans tracking-tight">
@@ -290,30 +290,30 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
         {/* Highlight Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-8 border-t border-zinc-800/80">
           <div>
-            <span className="text-xs font-mono text-zinc-500 uppercase block">Global #1 Model</span>
-            <span className="text-lg font-bold text-zinc-100 font-mono">GPT-6 Astra</span>
-            <span className="text-[11px] text-emerald-400 font-mono block">1420 Elo • Plus (Limited), Pro ($200), API</span>
+            <span className="text-xs font-mono text-zinc-400 uppercase block">Global #1 Model</span>
+            <span className="text-lg font-bold text-zinc-100">GPT-6 Astra</span>
+            <span className="text-2xs text-emerald-400 block">1420 Elo • Plus (Limited), Pro ($200), API</span>
           </div>
           <div>
-            <span className="text-xs font-mono text-zinc-500 uppercase block">Reasoning Leader</span>
-            <span className="text-lg font-bold text-zinc-100 font-mono">Claude Opus 5</span>
-            <span className="text-[11px] text-purple-400 font-mono block">1416 Elo • Claude Pro ($20), API, Team</span>
+            <span className="text-xs font-mono text-zinc-400 uppercase block">Reasoning Leader</span>
+            <span className="text-lg font-bold text-zinc-100">Claude Opus 5</span>
+            <span className="text-2xs text-purple-400 block">1416 Elo • Claude Pro ($20), API, Team</span>
           </div>
           <div>
-            <span className="text-xs font-mono text-zinc-500 uppercase block">Pareto Champion</span>
-            <span className="text-lg font-bold text-zinc-100 font-mono">DeepSeek-V4-Pro</span>
-            <span className="text-[11px] text-cyan-400 font-mono block">$0.75 / 1M • Open API & Weights</span>
+            <span className="text-xs font-mono text-zinc-400 uppercase block">Pareto Champion</span>
+            <span className="text-lg font-bold text-zinc-100">DeepSeek-V4-Pro</span>
+            <span className="text-2xs text-cyan-400 block">$0.75 / 1M • Open API & Weights</span>
           </div>
           <div>
-            <span className="text-xs font-mono text-zinc-500 uppercase block">Context Record</span>
-            <span className="text-lg font-bold text-zinc-100 font-mono">Gemini 3.8 Flash</span>
-            <span className="text-[11px] text-amber-400 font-mono block">2,000,000 Tokens • $20 Sub / API</span>
+            <span className="text-xs font-mono text-zinc-400 uppercase block">Context Record</span>
+            <span className="text-lg font-bold text-zinc-100">Gemini 3.8 Flash</span>
+            <span className="text-2xs text-amber-400 block">2,000,000 Tokens • $20 Sub / API</span>
           </div>
         </div>
       </div>
 
       {/* CLAUDE MYTHOS & FRONTIER ACCESS AUDIT ALERT */}
-      <div className="p-4 md:p-5 rounded-2xl bg-amber-950/20 border border-amber-500/40 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs font-mono shadow-lg">
+      <div className="p-4 md:p-5 rounded-2xl bg-amber-950/20 border border-amber-500/40 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs shadow-lg">
         <div className="flex items-start gap-3">
           <ShieldAlert className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
           <div className="space-y-1">
@@ -327,7 +327,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             </p>
           </div>
         </div>
-        <div className="shrink-0 px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 text-[11px] font-bold">
+        <div className="shrink-0 px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 text-2xs font-bold">
           Live Model Menus Verified
         </div>
       </div>
@@ -350,10 +350,10 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
 
           {/* Budget Tier Selector */}
           <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-1.5 bg-zinc-900 border border-zinc-800 rounded-2xl shrink-0 overflow-x-auto max-w-full scrollbar-none">
-            <span className="text-[11px] font-mono text-zinc-500 pl-2 pr-1 hidden sm:inline">Budget:</span>
+            <span className="text-2xs text-zinc-400 pl-2 pr-1 hidden sm:inline">Budget:</span>
             <button
               onClick={() => setActiveBudget('20')}
-              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeBudget === '20'
                   ? 'bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -364,7 +364,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             </button>
             <button
               onClick={() => setActiveBudget('100')}
-              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeBudget === '100'
                   ? 'bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -375,7 +375,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             </button>
             <button
               onClick={() => setActiveBudget('200')}
-              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeBudget === '200'
                   ? 'bg-emerald-500 text-zinc-950 shadow-md shadow-emerald-500/20'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -391,13 +391,13 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
         {activeBudget === '20' && (
           <div className="space-y-6">
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-xs font-mono text-zinc-400">
+              <span className="text-xs text-zinc-400">
                 Evaluating paths for a <strong>$20/Month</strong> entry / solo developer budget:
               </span>
               <div className="flex items-center gap-1.5 p-1 bg-zinc-900 border border-zinc-800 rounded-xl overflow-x-auto max-w-full scrollbar-none">
                 <button
                   onClick={() => setSelected20Tab('deepseek')}
-                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selected20Tab === 'deepseek'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -407,7 +407,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected20Tab('cursor')}
-                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selected20Tab === 'cursor'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -417,7 +417,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected20Tab('router')}
-                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                  className={`px-2.5 sm:px-3 py-1 rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selected20Tab === 'router'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -436,7 +436,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 whitespace-nowrap">
                       Option 1 (Consumer Sub)
                     </span>
-                    <span className="text-lg font-bold font-mono text-zinc-100 whitespace-nowrap">$20 / Month</span>
+                    <span className="text-lg font-bold text-zinc-100 whitespace-nowrap">$20 / Month</span>
                   </div>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
                     Single Lab Web Subscription
@@ -465,7 +465,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-zinc-400">
                   Best for: Conversational daily chat, interactive web artifacts & brainstorming.
                 </div>
               </div>
@@ -479,7 +479,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                       {selected20Tab === 'cursor' && 'Option 2 (Multi-Model IDE)'}
                       {selected20Tab === 'router' && 'Option 2 (API Router)'}
                     </span>
-                    <span className="text-lg font-bold font-mono text-emerald-400 whitespace-nowrap">
+                    <span className="text-lg font-bold text-emerald-400 whitespace-nowrap">
                       {selected20Tab === 'deepseek' && '$20 Total'}
                       {selected20Tab === 'cursor' && '$20 / Month'}
                       {selected20Tab === 'router' && '$20 Deposit'}
@@ -494,17 +494,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                       <p className="text-xs text-zinc-300 leading-relaxed font-sans">
                         At <strong>$0.14 in / $0.56 out</strong> per 1M tokens, your $20 purchases an astonishing <strong>81,600,000+ blended tokens</strong> (or 142M prompt tokens) of verified 1396 Elo intelligence.
                       </p>
-                      <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                      <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">Equivalent Reading:</span>
+                          <span className="text-zinc-400">Equivalent Reading:</span>
                           <span className="text-emerald-400 font-semibold">~160 Complete Textbooks</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">Code Refactors:</span>
+                          <span className="text-zinc-400">Code Refactors:</span>
                           <span className="text-emerald-400 font-semibold">~40,000 Autonomous Steps</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">Typical Duration:</span>
+                          <span className="text-zinc-400">Typical Duration:</span>
                           <span className="text-emerald-400 font-semibold">8 to 14 Months of Usage</span>
                         </div>
                       </div>
@@ -519,17 +519,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                       <p className="text-xs text-zinc-300 leading-relaxed font-sans">
                         Instead of paying $40/mo for separate consumer accounts, a single $20 IDE plan provides in-editor access to <strong>Claude Sonnet 5, GPT-5.6 Sol, and DeepSeek-V4</strong>.
                       </p>
-                      <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                      <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">Dual Lab Cost:</span>
-                          <span className="line-through text-zinc-600">$40.00 / mo</span>
+                          <span className="text-zinc-400">Dual Lab Cost:</span>
+                          <span className="line-through text-zinc-400">$40.00 / mo</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">IDE Plan Cost:</span>
+                          <span className="text-zinc-400">IDE Plan Cost:</span>
                           <span className="text-emerald-400 font-semibold">$20.00 / mo (Save 50%)</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">Fast Requests:</span>
+                          <span className="text-zinc-400">Fast Requests:</span>
                           <span className="text-emerald-400 font-semibold">500 / mo + Unlimited Standard</span>
                         </div>
                       </div>
@@ -544,17 +544,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                       <p className="text-xs text-zinc-300 leading-relaxed font-sans">
                         Deposit $20 into an API router (OpenRouter, Together, or direct keys). You pay only for what you run with <strong>zero subscription expiration</strong>.
                       </p>
-                      <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                      <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">10 Deep Proofs:</span>
+                          <span className="text-zinc-400">10 Deep Proofs:</span>
                           <span className="text-zinc-300 font-semibold">$0.30 (Claude Opus 5)</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">50 Complex Edits:</span>
+                          <span className="text-zinc-400">50 Complex Edits:</span>
                           <span className="text-zinc-300 font-semibold">$1.20 (GPT-6 Astra API)</span>
                         </div>
                         <div className="flex justify-between">
-                          <span className="text-zinc-500">2,000 Routine Queries:</span>
+                          <span className="text-zinc-400">2,000 Routine Queries:</span>
                           <span className="text-emerald-400 font-semibold">$1.50 (DeepSeek-V4)</span>
                         </div>
                         <div className="flex justify-between border-t border-zinc-800 pt-1 text-emerald-400">
@@ -592,7 +592,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-emerald-400 font-semibold">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-emerald-400 font-semibold">
                   Best for: Developers & engineers optimizing for maximum ROI.
                 </div>
               </div>
@@ -604,7 +604,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 whitespace-nowrap">
                       Option 3 (Zero Cost)
                     </span>
-                    <span className="text-lg font-bold font-mono text-cyan-400 whitespace-nowrap">$0 / Month</span>
+                    <span className="text-lg font-bold text-cyan-400 whitespace-nowrap">$0 / Month</span>
                   </div>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
                     Local Open-Weights Deployment
@@ -623,13 +623,13 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                       <span>100% private, zero telemetry, air-gapped security, unlimited usage.</span>
                     </div>
                     <div className="flex items-start gap-2 text-zinc-400">
-                      <AlertTriangle className="w-4 h-4 text-zinc-500 shrink-0 mt-0.5" />
+                      <AlertTriangle className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
                       <span>Requires workstation hardware (e.g. RTX 4090/5090 or Apple Silicon 64GB+).</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-zinc-400">
                   Best for: Strict corporate compliance, offline privacy & hobbyists.
                 </div>
               </div>
@@ -641,13 +641,13 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
         {activeBudget === '100' && (
           <div className="space-y-6">
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-xs font-mono text-zinc-400">
+              <span className="text-xs text-zinc-400">
                 Evaluating paths for a <strong>$100/Month</strong> pro engineer / prototype stack budget:
               </span>
               <div className="flex items-center gap-1.5 p-1 bg-zinc-900 border border-zinc-800 rounded-xl">
                 <button
                   onClick={() => setSelected100Tab('multisub')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer ${
                     selected100Tab === 'multisub'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -657,7 +657,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected100Tab('api100')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer ${
                     selected100Tab === 'api100'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -667,7 +667,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected100Tab('team100')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer ${
                     selected100Tab === 'team100'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -686,7 +686,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 whitespace-nowrap">
                       Option 1 (Pro Suite)
                     </span>
-                    <span className="text-lg font-bold font-mono text-zinc-100 whitespace-nowrap">$100 / Month</span>
+                    <span className="text-lg font-bold text-zinc-100 whitespace-nowrap">$100 / Month</span>
                   </div>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
                     The Tri-Lab Suite + API Buffer
@@ -695,7 +695,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     Combines the best of OpenAI, Anthropic, and in-editor agent tools while maintaining a dedicated API headroom buffer.
                   </p>
 
-                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                     <div className="flex justify-between">
                       <span className="text-zinc-400">ChatGPT Plus:</span>
                       <span className="text-zinc-200 font-semibold">$20 (Astra [ltd] + Sol/Terra)</span>
@@ -726,7 +726,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-zinc-400">
                   Best for: Technical product leads & consultants needing all UIs.
                 </div>
               </div>
@@ -738,7 +738,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
                       Option 2 (API Powerhouse)
                     </span>
-                    <span className="text-lg font-bold font-mono text-emerald-400 whitespace-nowrap">$100 in Credits</span>
+                    <span className="text-lg font-bold text-emerald-400 whitespace-nowrap">$100 in Credits</span>
                   </div>
 
                   <h4 className="text-lg font-bold text-zinc-100 font-sans flex items-center gap-2">
@@ -748,17 +748,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     Direct developer credit allocation yielding massive programmatic throughput across autonomous agents like Claude Code, Cline, and Aider.
                   </p>
 
-                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">DeepSeek Volume:</span>
+                      <span className="text-zinc-400">DeepSeek Volume:</span>
                       <span className="text-emerald-400 font-semibold">133,333,000 Tokens</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Frontier Equivalent:</span>
+                      <span className="text-zinc-400">Frontier Equivalent:</span>
                       <span className="text-zinc-200 font-semibold">12.6M Tokens (Astra/Fable)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Cached Read Volume:</span>
+                      <span className="text-zinc-400">Cached Read Volume:</span>
                       <span className="text-emerald-400 font-semibold">Up to 400M Cached Tokens</span>
                     </div>
                     <div className="flex justify-between border-t border-zinc-800 pt-1 text-emerald-400">
@@ -779,7 +779,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-emerald-400 font-semibold">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-emerald-400 font-semibold">
                   Best for: Software engineers running high-volume autonomous agents.
                 </div>
               </div>
@@ -791,7 +791,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 whitespace-nowrap">
                       Option 3 (Team Seats)
                     </span>
-                    <span className="text-lg font-bold font-mono text-cyan-400 whitespace-nowrap">$100 / Month</span>
+                    <span className="text-lg font-bold text-cyan-400 whitespace-nowrap">$100 / Month</span>
                   </div>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
                     Claude Team / ChatGPT Team (3 Seats)
@@ -816,7 +816,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-zinc-400">
                   Best for: Small engineering squads, startups & agency teams.
                 </div>
               </div>
@@ -828,13 +828,13 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
         {activeBudget === '200' && (
           <div className="space-y-6">
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-xs font-mono text-zinc-400">
+              <span className="text-xs text-zinc-400">
                 Evaluating paths for a <strong>$200/Month</strong> frontier power-user / autonomous agent budget:
               </span>
               <div className="flex items-center gap-1.5 p-1 bg-zinc-900 border border-zinc-800 rounded-xl">
                 <button
                   onClick={() => setSelected200Tab('chatgptpro')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer ${
                     selected200Tab === 'chatgptpro'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -844,7 +844,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected200Tab('api200')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer ${
                     selected200Tab === 'api200'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -854,7 +854,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </button>
                 <button
                   onClick={() => setSelected200Tab('cloudgpu')}
-                  className={`px-3 py-1 rounded-lg text-xs font-mono transition-all cursor-pointer ${
+                  className={`px-3 py-1 rounded-lg text-xs transition-all cursor-pointer ${
                     selected200Tab === 'cloudgpu'
                       ? 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-zinc-400 hover:text-zinc-200'
@@ -873,7 +873,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
                       Option 1 (Frontier Consumer)
                     </span>
-                    <span className="text-lg font-bold font-mono text-emerald-400 whitespace-nowrap">$200 / Month</span>
+                    <span className="text-lg font-bold text-emerald-400 whitespace-nowrap">$200 / Month</span>
                   </div>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
                     ChatGPT Pro (Frontier Operator)
@@ -882,21 +882,21 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     The only consumer subscription that unlocks <strong>unmetered GPT-6 Astra Operator</strong> with native pixel-based autonomous computer & browser control.
                   </p>
 
-                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Flagship Model:</span>
+                      <span className="text-zinc-400">Flagship Model:</span>
                       <span className="text-emerald-400 font-semibold">GPT-6 Astra (Rank #1, 1420 Elo)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Autonomous Execution:</span>
+                      <span className="text-zinc-400">Autonomous Execution:</span>
                       <span className="text-emerald-400 font-semibold">OSWorld Leader (Desktop/Web)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Reasoning Quota:</span>
+                      <span className="text-zinc-400">Reasoning Quota:</span>
                       <span className="text-emerald-400 font-semibold">Unlimited High-Compute Runs</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Research Agent:</span>
+                      <span className="text-zinc-400">Research Agent:</span>
                       <span className="text-zinc-300 font-semibold">Multi-Hour Deep Research</span>
                     </div>
                   </div>
@@ -913,7 +913,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-emerald-400 font-semibold">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-emerald-400 font-semibold">
                   Best for: Technical founders, power researchers & non-dev operators.
                 </div>
               </div>
@@ -925,7 +925,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 whitespace-nowrap">
                       Option 2 (Agent Swarm)
                     </span>
-                    <span className="text-lg font-bold font-mono text-zinc-100 whitespace-nowrap">$200 in Credits</span>
+                    <span className="text-lg font-bold text-zinc-100 whitespace-nowrap">$200 in Credits</span>
                   </div>
 
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
@@ -935,17 +935,17 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     Allocates $200 directly into API endpoints to power autonomous coding agents across multi-thousand-step refactoring loops.
                   </p>
 
-                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 font-mono text-xs text-zinc-300">
+                  <div className="p-3 bg-zinc-900/80 border border-zinc-800 rounded-xl space-y-1.5 text-xs text-zinc-300">
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">DeepSeek Token Volume:</span>
+                      <span className="text-zinc-400">DeepSeek Token Volume:</span>
                       <span className="text-emerald-400 font-semibold">266,666,000 Tokens</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Frontier API Volume:</span>
+                      <span className="text-zinc-400">Frontier API Volume:</span>
                       <span className="text-zinc-200 font-semibold">25.3M Tokens (Astra / Fable)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Cached Context Read:</span>
+                      <span className="text-zinc-400">Cached Context Read:</span>
                       <span className="text-emerald-400 font-semibold">Up to 800M Tokens</span>
                     </div>
                     <div className="flex justify-between border-t border-zinc-800 pt-1 text-emerald-400">
@@ -966,7 +966,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-zinc-400">
                   Best for: AI software engineers, quantitative teams & agent architects.
                 </div>
               </div>
@@ -978,7 +978,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                     <span className="text-xs font-mono uppercase px-2 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 whitespace-nowrap">
                       Option 3 (Dedicated Cloud)
                     </span>
-                    <span className="text-lg font-bold font-mono text-cyan-400 whitespace-nowrap">$200 / Month</span>
+                    <span className="text-lg font-bold text-cyan-400 whitespace-nowrap">$200 / Month</span>
                   </div>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">
                     Dedicated Cloud GPU Instance (RunPod / Lambda)
@@ -1003,7 +1003,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs font-mono text-zinc-500">
+                <div className="pt-6 mt-6 border-t border-zinc-900 text-xs text-zinc-400">
                   Best for: Enterprise security compliance, privacy-first startups & continuous batch pipelines.
                 </div>
               </div>
@@ -1015,7 +1015,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
         <div className="p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800 flex items-start gap-3 text-xs font-sans">
           <Sparkles className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
           <div className="space-y-1">
-            <span className="font-bold text-zinc-200 font-mono">NextVector Capital Efficiency Rule:</span>
+            <span className="font-bold text-zinc-200">NextVector Capital Efficiency Rule:</span>
             {activeBudget === '20' && (
               <p className="text-zinc-400 leading-relaxed">
                 Both $20 subscriptions now provide access to premier frontier intelligence: <strong>ChatGPT Plus ($20)</strong> offers <strong>GPT-6 Astra (limited)</strong> plus Sol, Terra, and Luna, while <strong>Claude Pro ($20)</strong> offers <strong>Opus 5</strong> (complex tasks) and <strong>Sonnet 5</strong> (everyday default) with Artifacts 3.0. However, if your daily workflow is high-volume coding, <strong>Cursor Pro ($20)</strong> or <strong>$20 in DeepSeek API credits (26.6M tokens)</strong> provides dramatically higher throughput without 5-hour rate limits.
@@ -1063,7 +1063,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <button
                 key={cat.value}
                 onClick={() => setActiveCategory(cat.value as UseCaseCategory)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   activeCategory === cat.value
                     ? 'bg-zinc-800 text-emerald-400 border border-zinc-700 shadow-sm'
                     : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
@@ -1084,7 +1084,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             >
               <div className="space-y-4">
                 <div className="border-b border-zinc-850 pb-3">
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-400 font-semibold block mb-1">
+                  <span className="text-2xs font-mono uppercase tracking-wider text-emerald-400 font-semibold block mb-1">
                     {guide.subtitle}
                   </span>
                   <h4 className="text-lg font-bold text-zinc-100 font-sans">{guide.title}</h4>
@@ -1099,26 +1099,26 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   <div className="p-3 rounded-xl bg-zinc-900/60 border border-zinc-800/80 flex items-start justify-between gap-3">
                     <div className="space-y-1.5">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-[10px] font-mono uppercase font-bold px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                        <span className="text-2xs font-mono uppercase font-bold px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                           🥇 Gold Standard
                         </span>
-                        <span className="text-xs font-mono text-zinc-400">Rank #{guide.frontierPick.rank} • {guide.frontierPick.elo} Elo</span>
+                        <span className="text-xs text-zinc-400">Rank #{guide.frontierPick.rank} • {guide.frontierPick.elo} Elo</span>
                       </div>
                       <button
                         onClick={() => onSelectModel(guide.frontierPick.modelId)}
                         className="text-sm font-bold text-zinc-100 hover:text-emerald-400 cursor-pointer transition-colors inline-flex items-center gap-1 text-left"
                       >
                         <span>{guide.frontierPick.name}</span>
-                        <ArrowRight className="w-3 h-3 text-zinc-500" />
+                        <ArrowRight className="w-3 h-3 text-zinc-400" />
                       </button>
-                      <p className="text-[11px] text-zinc-400 leading-normal font-sans">
+                      <p className="text-2xs text-zinc-400 leading-normal font-sans">
                         {guide.frontierPick.why}
                       </p>
-                      <div className="text-[10px] font-mono text-emerald-400/90 bg-emerald-950/30 px-2 py-0.5 rounded border border-emerald-500/20">
+                      <div className="text-2xs text-emerald-400/90 bg-emerald-950/30 px-2 py-0.5 rounded border border-emerald-500/20">
                         {guide.frontierPick.tierAvailability}
                       </div>
                     </div>
-                    <span className="text-[11px] font-mono text-zinc-300 bg-zinc-800 px-2 py-1 rounded shrink-0">
+                    <span className="text-2xs text-zinc-300 bg-zinc-800 px-2 py-1 rounded shrink-0">
                       {guide.frontierPick.price}
                     </span>
                   </div>
@@ -1127,43 +1127,43 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   <div className="p-3 rounded-xl bg-emerald-950/20 border border-emerald-500/30 flex items-start justify-between gap-3">
                     <div className="space-y-1.5">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-[10px] font-mono uppercase font-bold px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                        <span className="text-2xs font-mono uppercase font-bold px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
                           💰 Value Champion
                         </span>
-                        <span className="text-[10px] font-mono text-emerald-400 font-bold">{guide.valuePick.savings}</span>
+                        <span className="text-2xs text-emerald-400 font-bold">{guide.valuePick.savings}</span>
                       </div>
                       <button
                         onClick={() => onSelectModel(guide.valuePick.modelId)}
                         className="text-sm font-bold text-zinc-100 hover:text-emerald-400 cursor-pointer transition-colors inline-flex items-center gap-1 text-left"
                       >
                         <span>{guide.valuePick.name}</span>
-                        <ArrowRight className="w-3 h-3 text-zinc-500" />
+                        <ArrowRight className="w-3 h-3 text-zinc-400" />
                       </button>
-                      <p className="text-[11px] text-zinc-300 leading-normal font-sans">
+                      <p className="text-2xs text-zinc-300 leading-normal font-sans">
                         {guide.valuePick.why}
                       </p>
-                      <div className="text-[10px] font-mono text-emerald-400/90 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-500/20">
+                      <div className="text-2xs text-emerald-400/90 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-500/20">
                         {guide.valuePick.tierAvailability}
                       </div>
                     </div>
-                    <span className="text-[11px] font-mono text-emerald-400 font-bold bg-emerald-950/60 px-2 py-1 rounded shrink-0 border border-emerald-500/30">
+                    <span className="text-2xs text-emerald-400 font-bold bg-emerald-950/60 px-2 py-1 rounded shrink-0 border border-emerald-500/30">
                       {guide.valuePick.price}
                     </span>
                   </div>
 
                   {/* Speed & Local row */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                     <button
                       onClick={() => onSelectModel(guide.speedPick.modelId)}
                       className="p-2.5 rounded-lg bg-zinc-900/40 border border-zinc-800/60 hover:border-zinc-700 text-left transition-colors cursor-pointer group"
                     >
-                      <span className="text-[10px] text-zinc-500 block uppercase">⚡ Latency Winner</span>
+                      <span className="text-2xs text-zinc-400 block uppercase">⚡ Latency Winner</span>
                       <span className="text-zinc-200 font-semibold group-hover:text-emerald-400 transition-colors flex items-center gap-1">
                         {guide.speedPick.name}
                         <ArrowRight className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </span>
-                      <p className="text-[10px] text-zinc-400 mt-0.5">{guide.speedPick.metric}</p>
-                      <span className="text-[9px] text-zinc-500 block mt-1">{guide.speedPick.tierAvailability}</span>
+                      <p className="text-2xs text-zinc-400 mt-0.5">{guide.speedPick.metric}</p>
+                      <span className="text-2xs text-zinc-400 block mt-1">{guide.speedPick.tierAvailability}</span>
                     </button>
 
                     {guide.localPick && (
@@ -1171,13 +1171,13 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                         onClick={() => guide.localPick && onSelectModel(guide.localPick.modelId)}
                         className="p-2.5 rounded-lg bg-zinc-900/40 border border-zinc-800/60 hover:border-zinc-700 text-left transition-colors cursor-pointer group"
                       >
-                        <span className="text-[10px] text-zinc-500 block uppercase">🔒 Open-Weights</span>
+                        <span className="text-2xs text-zinc-400 block uppercase">🔒 Open-Weights</span>
                         <span className="text-zinc-200 font-semibold group-hover:text-cyan-400 transition-colors flex items-center gap-1">
                           {guide.localPick.name}
                           <ArrowRight className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </span>
-                        <p className="text-[10px] text-cyan-400 mt-0.5">{guide.localPick.license}</p>
-                        <span className="text-[9px] text-zinc-500 block mt-1">{guide.localPick.tierAvailability}</span>
+                        <p className="text-2xs text-cyan-400 mt-0.5">{guide.localPick.license}</p>
+                        <span className="text-2xs text-zinc-400 block mt-1">{guide.localPick.tierAvailability}</span>
                       </button>
                     )}
                   </div>
@@ -1185,8 +1185,8 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               </div>
 
               {/* Pro Tip Footer */}
-              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl text-[11px] text-zinc-400 font-sans border-l-2 border-l-emerald-500">
-                <span className="font-bold text-zinc-300 font-mono">NextVector Take: </span>
+              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl text-2xs text-zinc-400 font-sans border-l-2 border-l-emerald-500">
+                <span className="font-bold text-zinc-300">NextVector Take: </span>
                 {guide.proTip}
               </div>
             </div>
@@ -1214,7 +1214,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
           <div className="flex items-center gap-1.5 p-1 bg-zinc-900 border border-zinc-800 rounded-xl">
             <button
               onClick={() => setSelectedSubTab('consumer')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                 selectedSubTab === 'consumer'
                   ? 'bg-zinc-800 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -1224,7 +1224,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
             </button>
             <button
               onClick={() => setSelectedSubTab('pro')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                 selectedSubTab === 'pro'
                   ? 'bg-zinc-800 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-200'
@@ -1243,7 +1243,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-purple-400 uppercase">Anthropic</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 border border-purple-500/30">$20 / mo</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 border border-purple-500/30">$20 / mo</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Claude Pro</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1251,20 +1251,20 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </p>
 
                 {/* Verified Model Selector Menu Display */}
-                <div className="p-3 rounded-xl bg-zinc-900/80 border border-zinc-800 space-y-1.5 text-xs font-mono">
+                <div className="p-3 rounded-xl bg-zinc-900/80 border border-zinc-800 space-y-1.5 text-xs">
                   <div className="flex justify-between items-center text-purple-300 font-semibold">
                     <span>Opus 5</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">Complex tasks</span>
+                    <span className="text-2xs text-zinc-400 font-normal">Complex tasks</span>
                   </div>
                   <div className="flex justify-between items-center text-emerald-400 font-semibold">
                     <span>Sonnet 5 ✓</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">Everyday default</span>
+                    <span className="text-2xs text-zinc-400 font-normal">Everyday default</span>
                   </div>
                   <div className="flex justify-between items-center text-zinc-300">
                     <span>Haiku 5.5</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">Fastest answers & effort controls</span>
+                    <span className="text-2xs text-zinc-400 font-normal">Fastest answers & effort controls</span>
                   </div>
-                  <div className="border-t border-zinc-800 pt-1 text-[10px] text-zinc-500">
+                  <div className="border-t border-zinc-800 pt-1 text-2xs text-zinc-400">
                     Legacy: Opus 4.8, 4.7, 4.6 & Sonnet 4.6
                   </div>
                 </div>
@@ -1280,11 +1280,11 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="p-2.5 rounded-lg bg-amber-950/20 border border-amber-500/20 text-[10px] font-mono text-amber-300/90 leading-tight">
+                <div className="p-2.5 rounded-lg bg-amber-950/20 border border-amber-500/20 text-2xs text-amber-300/90 leading-tight">
                   ⚠️ <strong>Note:</strong> Claude Fable 5.1 is API/Enterprise ($7.90/1M). Claude Mythos 5.1 is restricted to Project Glasswing defense enclaves.
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-purple-300">Best for:</strong> Technical writers, essayists & researchers.
               </div>
             </div>
@@ -1294,7 +1294,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-emerald-400 uppercase">OpenAI</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">$20 / mo</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">$20 / mo</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">ChatGPT Plus</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1302,20 +1302,20 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                 </p>
 
                 {/* Verified Model Selector Menu Display */}
-                <div className="p-3 rounded-xl bg-zinc-900/80 border border-zinc-800 space-y-1.5 text-xs font-mono">
+                <div className="p-3 rounded-xl bg-zinc-900/80 border border-zinc-800 space-y-1.5 text-xs">
                   <div className="flex justify-between items-center text-emerald-400 font-semibold">
                     <span>GPT-6 Astra</span>
-                    <span className="text-[10px] text-amber-400 font-normal">Limited rate caps</span>
+                    <span className="text-2xs text-amber-400 font-normal">Limited rate caps</span>
                   </div>
                   <div className="flex justify-between items-center text-zinc-200 font-semibold">
                     <span>GPT-5.6 Sol</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">Rank #4, 1415 Elo</span>
+                    <span className="text-2xs text-zinc-400 font-normal">Rank #4, 1415 Elo</span>
                   </div>
                   <div className="flex justify-between items-center text-zinc-300">
                     <span>GPT-5.6 Terra</span>
-                    <span className="text-[10px] text-zinc-400 font-normal">Rank #12, 1400 Elo</span>
+                    <span className="text-2xs text-zinc-400 font-normal">Rank #12, 1400 Elo</span>
                   </div>
-                  <div className="border-t border-zinc-800 pt-1 text-[10px] text-zinc-500 flex justify-between">
+                  <div className="border-t border-zinc-800 pt-1 text-2xs text-zinc-400 flex justify-between">
                     <span>GPT-5.6 Luna</span>
                     <span>Rank #29, 1369 Elo</span>
                   </div>
@@ -1332,11 +1332,11 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="p-2.5 rounded-lg bg-amber-950/20 border border-amber-500/20 text-[10px] font-mono text-amber-300/90 leading-tight">
+                <div className="p-2.5 rounded-lg bg-amber-950/20 border border-amber-500/20 text-2xs text-amber-300/90 leading-tight">
                   ⚠️ <strong>Note:</strong> Unmetered Astra Operator (desktop/browser agent) requires ChatGPT Pro ($200/mo) or the API.
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-emerald-300">Best for:</strong> Generalists, operators & product teams.
               </div>
             </div>
@@ -1346,7 +1346,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-blue-400 uppercase">Google</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/30">$20 / mo</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/30">$20 / mo</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Gemini Advanced</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1367,11 +1367,11 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="p-2.5 rounded-lg bg-emerald-950/20 border border-emerald-500/20 text-[10px] font-mono text-emerald-400 leading-tight">
+                <div className="p-2.5 rounded-lg bg-emerald-950/20 border border-emerald-500/20 text-2xs text-emerald-400 leading-tight">
                   ✨ <strong>Bonus:</strong> Directly integrates with Gmail, Docs, Drive, and Google Calendar.
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-blue-300">Best for:</strong> Media analysts & Google Workspace users.
               </div>
             </div>
@@ -1381,7 +1381,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-cyan-400 uppercase">IDE Multi-Lab</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">$20 / mo</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">$20 / mo</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Cursor Pro / Windsurf</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1402,11 +1402,11 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
 
-                <div className="p-2.5 rounded-lg bg-cyan-950/20 border border-cyan-500/20 text-[10px] font-mono text-cyan-400 leading-tight">
+                <div className="p-2.5 rounded-lg bg-cyan-950/20 border border-cyan-500/20 text-2xs text-cyan-400 leading-tight">
                   ✨ <strong>Developer Value:</strong> Saves $20/mo vs paying OpenAI & Anthropic separately.
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-cyan-300">Best for:</strong> Professional software engineers.
               </div>
             </div>
@@ -1421,7 +1421,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-emerald-400 uppercase">OpenAI Elite</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">$200 / mo</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">$200 / mo</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">ChatGPT Pro</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1442,7 +1442,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-emerald-300">Best for:</strong> Technical founders & research directors.
               </div>
             </div>
@@ -1452,7 +1452,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-purple-400 uppercase">Anthropic Team</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/40 font-bold">$100 / mo (3 seats)</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/40 font-bold">$100 / mo (3 seats)</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Claude Team</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1473,7 +1473,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-purple-300">Best for:</strong> Engineering teams & security-conscious startups.
               </div>
             </div>
@@ -1483,7 +1483,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-cyan-400 uppercase">Direct API</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">$100 - $200 Pool</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">$100 - $200 Pool</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Frontier API Keys</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1504,7 +1504,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-cyan-300">Best for:</strong> Agent developers & automation architects.
               </div>
             </div>
@@ -1514,7 +1514,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono font-bold text-zinc-400 uppercase">Self-Hosted Cloud</span>
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-zinc-900 text-zinc-300 border border-zinc-800 font-bold">$200 / mo</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-zinc-900 text-zinc-300 border border-zinc-800 font-bold">$200 / mo</span>
                 </div>
                 <h4 className="text-lg font-bold text-zinc-100 font-sans">Dedicated GPU Cloud</h4>
                 <p className="text-xs text-zinc-400 font-sans leading-relaxed">
@@ -1535,7 +1535,7 @@ export const ModelDecisionGuide: React.FC<ModelDecisionGuideProps> = ({ onSelect
                   </div>
                 </div>
               </div>
-              <div className="pt-4 border-t border-zinc-900 text-[11px] font-mono text-zinc-400">
+              <div className="pt-4 border-t border-zinc-900 text-2xs text-zinc-400">
                 <strong className="text-zinc-300">Best for:</strong> Defense contractors & high-volume batch pipelines.
               </div>
             </div>

@@ -84,14 +84,14 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
               </span>
             </h1>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
+          <p className="text-xs sm:text-sm text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
             Definitive, unbiased breakdown of $20/mo individual plans, $100/mo power-user stacks, and $200/mo ChatGPT Pro tiers. Zero vendor commissions.
           </p>
         </div>
       </header>
 
       {/* Top Banner Notice */}
-      <div className="p-4 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono">
+      <div className="p-4 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
         <div className="flex items-center gap-2 text-zinc-300">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>Independent editorial intelligence. NextVector receives zero affiliate commissions or vendor subsidies.</span>
@@ -106,7 +106,7 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
       </div>
 
       {/* Direct Intelligence Key Takeaway / BLUF for AI Retrieval Engines */}
-      <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs font-mono space-y-2">
+      <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs space-y-2">
         <div className="flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider">
           <DollarSign className="w-4 h-4" />
           <span>Key Conclusion: Optimal 2026 Subscription Decision</span>

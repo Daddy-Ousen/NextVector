@@ -85,24 +85,24 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
   }, [models, searchQuery, selectedType, selectedDev, selectedLicense, sortBy]);
 
   return (
-    <div className="space-y-8 pb-16">
+    <div className="space-y-5 md:space-y-8 pb-16">
       <SEOHead
         title={`AI Model Directory & LMSYS Arena Leaderboard (${MODEL_COUNT} Models) | NextVector`}
         description={`Standardized technical specifications, verified LMSYS Arena Elo ratings, hardware inference metrics, and benchmark evaluations across ${MODEL_COUNT} frontier AI models.`}
         canonicalPath="/models"
       />
       {/* Header */}
-      <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-10 shadow-2xl relative overflow-hidden">
+      <div className="rounded-3xl bg-zinc-950 border border-zinc-800/90 p-5 md:p-8 shadow-2xl relative overflow-hidden">
         <div className="max-w-3xl">
-          <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
+          <div className="hidden sm:flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-3">
             <Cpu className="w-4 h-4" />
-            <span>LMSYS Arena Global Evaluation Registry</span>
+            <span>LMSYS Arena Leaderboard</span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
+          <h1 className="text-2xl md:text-4xl font-extrabold text-zinc-100 font-sans tracking-tight leading-tight">
             AI Model Directory & Arena Leaderboard
           </h1>
-          <p className="text-sm md:text-base text-zinc-400 font-sans mt-3 leading-relaxed">
-            Standardized technical specifications, verified LMSYS Arena Elo ratings, architectural classifications, and hardware inference metrics across <strong>{models.length} frontier models</strong>.
+          <p className="text-sm md:text-base text-zinc-400 font-sans mt-2 leading-relaxed">
+            Specs, Arena Elo ratings, context size, and prices for <strong>{models.length} AI models</strong>.
           </p>
         </div>
       </div>
@@ -118,7 +118,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
               window.history.replaceState({}, '', url.pathname + (url.search ? url.search : ''));
             }
           }}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 cursor-pointer ${
             activeTab === 'leaderboard'
               ? 'bg-zinc-800 text-emerald-400 border border-zinc-700 shadow-md'
               : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60'
@@ -138,7 +138,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
               window.history.replaceState({}, '', url.pathname + url.search);
             }
           }}
-          className={`flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-mono text-xs font-bold transition-all shrink-0 cursor-pointer ${
+          className={`flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 cursor-pointer ${
             activeTab === 'guide'
               ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/40 shadow-md shadow-emerald-950/20'
               : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60'
@@ -147,7 +147,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
           <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
           <span className="hidden sm:inline">Decision Matrix & $20 Tradeoff Guide</span>
           <span className="sm:hidden">Decision Guide</span>
-          <span className="hidden sm:inline text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30">
+          <span className="hidden sm:inline text-2xs px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-semibold border border-emerald-500/30">
             Buyer's Guide
           </span>
         </button>
@@ -157,41 +157,17 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
         <ModelDecisionGuide onSelectModel={onSelectModelDetail} />
       ) : (
         <>
-          {/* Quick Jump Callout inside Leaderboard */}
-          <div className="p-4 rounded-2xl bg-zinc-950 border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono shadow-md">
-            <div className="flex items-center gap-2.5">
-              <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span className="text-zinc-300">
-                Need help deciding which model or subscription fits your workflow?
-              </span>
-            </div>
-            <button
-              onClick={() => {
-                setActiveTab('guide');
-                if (typeof window !== 'undefined') {
-                  const url = new URL(window.location.href);
-                  url.searchParams.set('tab', 'guide');
-                  window.history.replaceState({}, '', url.pathname + url.search);
-                }
-              }}
-              className="text-emerald-400 hover:text-emerald-300 font-bold underline inline-flex items-center gap-1 shrink-0 cursor-pointer"
-            >
-              <span>Open Decision Matrix & $20 Tradeoff Guide</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
-
           {/* Filter, Search & View Mode Bar */}
-          <div className="p-4 bg-zinc-950 border border-zinc-800 rounded-2xl space-y-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="p-3 sm:p-4 bg-zinc-950 border border-zinc-800 rounded-2xl space-y-3 sm:space-y-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 md:gap-4">
           <div className="relative flex-1">
-            <Search className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-zinc-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={`Search across ${MODEL_COUNT} models (e.g. GPT-6, Fable 5.1, Sakana, DeepSeek, Kimi)...`}
-              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl pl-10 pr-4 py-2 text-xs font-mono text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
+              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl pl-10 pr-4 py-2 text-xs text-zinc-100 placeholder-zinc-500 outline-none focus:border-emerald-500 transition-colors"
             />
           </div>
 
@@ -200,7 +176,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
             <div className="flex items-center bg-zinc-900 border border-zinc-800 rounded-xl p-1">
               <button
                 onClick={() => setViewMode('table')}
-                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-mono transition-colors ${
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs transition-colors ${
                   viewMode === 'table'
                     ? 'bg-zinc-800 text-emerald-400 font-bold border border-zinc-700/60'
                     : 'text-zinc-400 hover:text-zinc-200'
@@ -212,7 +188,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
               </button>
               <button
                 onClick={() => setViewMode('grid')}
-                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-mono transition-colors ${
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs transition-colors ${
                   viewMode === 'grid'
                     ? 'bg-zinc-800 text-emerald-400 font-bold border border-zinc-700/60'
                     : 'text-zinc-400 hover:text-zinc-200'
@@ -225,28 +201,28 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
             </div>
 
             {/* Sort Dropdown */}
-            <div className="flex items-center gap-1.5 bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-1.5 text-xs font-mono text-zinc-300">
-              <ArrowUpDown className="w-3.5 h-3.5 text-zinc-500" />
+            <div className="flex items-center gap-1.5 bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-1.5 text-xs text-zinc-300">
+              <ArrowUpDown className="w-3.5 h-3.5 text-zinc-400" />
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
                 className="bg-transparent text-zinc-200 outline-none cursor-pointer"
               >
-                <option value="rank-asc" className="bg-zinc-900">Sort: Arena Rank (#1 → #{MODEL_COUNT})</option>
-                <option value="elo-desc" className="bg-zinc-900">Sort: Arena Elo (High → Low)</option>
+                <option value="rank-asc" className="bg-zinc-900">Sort: Arena rank</option>
+                <option value="elo-desc" className="bg-zinc-900">Sort: Elo (high → low)</option>
                 <option value="name-asc" className="bg-zinc-900">Sort: Name (A → Z)</option>
-                <option value="price-asc" className="bg-zinc-900">Sort: Input Price (Low → High)</option>
+                <option value="price-asc" className="bg-zinc-900">Sort: Price (low → high)</option>
               </select>
             </div>
           </div>
         </div>
 
         {/* Secondary Filters */}
-        <div className="flex items-center gap-3 flex-wrap pt-2 border-t border-zinc-900 text-xs font-mono">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap pt-2 border-t border-zinc-900 text-xs">
           <select
             value={selectedDev}
             onChange={(e) => setSelectedDev(e.target.value)}
-            className="bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-1.5 text-zinc-200 outline-none focus:border-emerald-500"
+            className="flex-1 min-w-0 sm:flex-none bg-zinc-900 border border-zinc-800 rounded-xl px-2 sm:px-3 py-1.5 text-zinc-200 outline-none focus:border-emerald-500"
           >
             {developers.map((d) => (
               <option key={d.value} value={d.value} className="bg-zinc-900">
@@ -258,7 +234,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
           <select
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
-            className="bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-1.5 text-zinc-200 outline-none focus:border-emerald-500"
+            className="flex-1 min-w-0 sm:flex-none bg-zinc-900 border border-zinc-800 rounded-xl px-2 sm:px-3 py-1.5 text-zinc-200 outline-none focus:border-emerald-500"
           >
             {modelTypes.map((t) => (
               <option key={t.value} value={t.value} className="bg-zinc-900">
@@ -270,7 +246,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
           <select
             value={selectedLicense}
             onChange={(e) => setSelectedLicense(e.target.value)}
-            className="bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-1.5 text-zinc-200 outline-none focus:border-emerald-500"
+            className="flex-1 min-w-0 sm:flex-none bg-zinc-900 border border-zinc-800 rounded-xl px-2 sm:px-3 py-1.5 text-zinc-200 outline-none focus:border-emerald-500"
           >
             {licenses.map((l) => (
               <option key={l.value} value={l.value} className="bg-zinc-900">
@@ -279,7 +255,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
             ))}
           </select>
 
-          <div className="ml-auto text-zinc-400 font-mono">
+          <div className="w-full sm:w-auto sm:ml-auto text-zinc-400">
             Showing <strong className="text-emerald-400">{filteredAndSortedModels.length}</strong> of {models.length} models
           </div>
         </div>
@@ -288,18 +264,18 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
       {/* Comparison Drawer (Sticky if active) */}
       {selectedModelCompareIds.length > 0 && (
         <div className="sticky top-20 z-30 p-4 bg-emerald-950/90 border border-emerald-500/40 rounded-2xl backdrop-blur-md shadow-2xl flex items-center justify-between gap-4 animate-in slide-in-from-top-2 duration-200">
-          <div className="flex items-center gap-2 text-xs font-mono text-emerald-300">
+          <div className="flex items-center gap-2 text-xs text-emerald-300">
             <CheckSquare className="w-4 h-4 text-emerald-400" />
             <span>
-              <strong>{selectedModelCompareIds.length} models</strong> selected for side-by-side comparison
+              <strong>{selectedModelCompareIds.length} {selectedModelCompareIds.length === 1 ? 'model' : 'models'}</strong> selected to compare
             </span>
           </div>
 
           <button
             onClick={onOpenCompareModal}
-            className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-lg active:scale-95 flex items-center gap-1.5 cursor-pointer"
+            className="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-lg active:scale-95 flex items-center gap-1.5 cursor-pointer"
           >
-            <span>Launch Comparison Matrix</span>
+            <span>Compare now</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
@@ -309,7 +285,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
       {viewMode === 'table' ? (
         <div className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl">
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs font-mono border-collapse">
+            <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="bg-zinc-900/80 border-b border-zinc-800 text-zinc-400 uppercase tracking-wider">
                   <th className="py-3.5 px-4 w-16 text-center">Rank</th>
@@ -339,7 +315,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
                             : model.arenaRank
                             ? 'text-zinc-400'
-                            : 'bg-zinc-800/80 text-zinc-400 border border-zinc-700/60 text-[10px]'
+                            : 'bg-zinc-800/80 text-zinc-400 border border-zinc-700/60 text-2xs'
                         }`}>
                           {model.arenaRank ? `#${model.arenaRank}` : 'Specialized'}
                         </span>
@@ -365,14 +341,14 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
                         {model.arenaElo ? (
                           model.arenaElo
                         ) : (
-                          <span className="text-[10px] font-normal text-zinc-500 font-mono">
+                          <span className="text-2xs font-normal text-zinc-400">
                             {model.modelType === 'Multimodal Foundation' ? 'Visual / 2K DiT' : 'Agent Runtime'}
                           </span>
                         )}
                       </td>
 
                       <td className="py-3 px-4 text-zinc-400">
-                        <span className="text-[11px] px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300">
+                        <span className="text-2xs px-2 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300">
                           {model.modelType}
                         </span>
                       </td>
@@ -432,7 +408,7 @@ export const ModelsDirectoryPage: React.FC<ModelsDirectoryPageProps> = ({
             <div className="text-center pt-6">
               <button
                 onClick={() => setVisibleCount((prev) => prev + 30)}
-                className="px-6 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs font-mono text-zinc-200 font-bold transition-all shadow-lg cursor-pointer"
+                className="px-6 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs text-zinc-200 font-bold transition-all shadow-lg cursor-pointer"
               >
                 Load More Models ({visibleCount} of {filteredAndSortedModels.length})
               </button>

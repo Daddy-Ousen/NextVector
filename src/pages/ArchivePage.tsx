@@ -52,23 +52,23 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
           <Archive className="w-4 h-4" />
           Complete Archive
         </div>
-        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight">Intelligence Archive</h1>
-        <p className="text-sm text-zinc-400 font-mono">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight">Story Archive</h1>
+        <p className="text-sm text-zinc-400">
           {articles.length} reports • {models.length} model dossiers
         </p>
       </header>
 
       {months.map((group) => (
         <section key={group.label} className="space-y-3">
-          <h2 className="text-lg font-bold text-zinc-100 font-mono">
-            {group.label} <span className="text-zinc-500 font-normal">({group.items.length})</span>
+          <h2 className="text-lg font-bold text-zinc-100">
+            {group.label} <span className="text-zinc-400 font-normal">({group.items.length})</span>
           </h2>
           <ul className="divide-y divide-zinc-800/60 rounded-2xl border border-zinc-800 bg-zinc-950/60">
             {group.items.map((a) => {
               const cat = getCategoryBadge(a.category);
               return (
                 <li key={a.id} className="px-4 py-3 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                  <span className="text-xs font-mono text-zinc-500 shrink-0 sm:w-28">{formatDate(a.publishedAt)}</span>
+                  <span className="text-xs font-mono text-zinc-400 shrink-0 sm:w-28">{formatDate(a.publishedAt)}</span>
                   <a
                     href={`/article/${a.slug}`}
                     onClick={link(`/article/${a.slug}`)}
@@ -76,7 +76,7 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
                   >
                     {a.title}
                   </a>
-                  <span className="text-[10px] font-mono uppercase text-zinc-500 shrink-0">{cat.shortLabel}</span>
+                  <span className="text-2xs font-mono uppercase text-zinc-400 shrink-0">{cat.shortLabel}</span>
                 </li>
               );
             })}
@@ -85,8 +85,8 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
       ))}
 
       <section className="space-y-3">
-        <h2 className="text-lg font-bold text-zinc-100 font-mono">
-          Foundation Models <span className="text-zinc-500 font-normal">({models.length})</span>
+        <h2 className="text-lg font-bold text-zinc-100">
+          Foundation Models <span className="text-zinc-400 font-normal">({models.length})</span>
         </h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
           {sortedModels.map((m) => (
@@ -98,7 +98,7 @@ export const ArchivePage: React.FC<ArchivePageProps> = ({ articles, models, onNa
               >
                 {m.name}
               </a>
-              <span className="text-xs font-mono text-zinc-500 shrink-0">{m.developer}</span>
+              <span className="text-xs text-zinc-400 shrink-0">{m.developer}</span>
             </li>
           ))}
         </ul>

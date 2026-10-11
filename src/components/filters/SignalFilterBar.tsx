@@ -49,7 +49,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3.5 border-b border-zinc-800/80">
         {/* Signal Threshold Slider / Buttons */}
         <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-          <div className="flex items-center gap-1.5 text-xs font-mono text-emerald-400 font-semibold shrink-0">
+          <div className="flex items-center gap-1.5 text-xs text-emerald-400 font-semibold shrink-0">
             <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" />
             <span className="hidden sm:inline">Signal Filter:</span>
             <span className="sm:hidden">Signal:</span>
@@ -64,7 +64,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
               <button
                 key={option.value}
                 onClick={() => onMinSignalChange(option.value)}
-                className={`px-2 sm:px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-mono transition-all whitespace-nowrap ${
+                className={`px-2 sm:px-2.5 py-1 rounded-lg text-2xs sm:text-xs transition-all whitespace-nowrap ${
                   minSignal === option.value
                     ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 font-bold'
                     : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
@@ -79,11 +79,11 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
 
         {/* Format Selector */}
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-xs font-mono text-zinc-500 hidden lg:inline">Format:</span>
+          <span className="text-xs text-zinc-400 hidden lg:inline">Format:</span>
           <select
             value={selectedType}
             onChange={(e) => onSelectType(e.target.value)}
-            className="bg-zinc-900 border border-zinc-700/80 text-xs font-mono text-zinc-200 rounded-lg px-2.5 py-1 outline-none focus:border-emerald-500"
+            className="bg-zinc-900 border border-zinc-700/80 text-xs text-zinc-200 rounded-lg px-2.5 py-1 outline-none focus:border-emerald-500"
           >
             {types.map((t) => (
               <option key={t.value} value={t.value} className="bg-zinc-900 text-zinc-200">
@@ -93,10 +93,10 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
           </select>
 
           {/* Noise suppression telemetry */}
-          <div className="text-[11px] font-mono text-zinc-400 bg-zinc-900/80 px-2.5 py-1 rounded-lg border border-zinc-800">
+          <div className="text-2xs text-zinc-400 bg-zinc-900/80 px-2.5 py-1 rounded-lg border border-zinc-800">
             Showing <strong className="text-emerald-400">{totalVisible}</strong> stories
             {suppressedCount > 0 && (
-              <span className="text-zinc-500 ml-1">({suppressedCount} low-signal hidden)</span>
+              <span className="text-zinc-400 ml-1">({suppressedCount} low-signal hidden)</span>
             )}
           </div>
         </div>
@@ -104,7 +104,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
 
       {/* Bottom row: Topic pills */}
       <div className="flex items-center gap-2 overflow-x-auto pt-3 pb-1 scrollbar-none">
-        <span className="text-[11px] font-mono text-zinc-500 uppercase shrink-0 mr-1">
+        <span className="text-2xs font-mono text-zinc-400 uppercase shrink-0 mr-1">
           Topics:
         </span>
         {tags.map((tag) => {
@@ -113,7 +113,7 @@ export const SignalFilterBar: React.FC<SignalFilterBarProps> = ({
             <button
               key={tag}
               onClick={() => onSelectTag(tag === 'All Topics' ? '' : tag)}
-              className={`text-xs font-mono px-3 py-1 rounded-full shrink-0 transition-all ${
+              className={`text-xs px-3 py-1 rounded-full shrink-0 transition-all ${
                 isSelected
                   ? 'bg-zinc-200 text-zinc-950 font-bold shadow-sm'
                   : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 border border-zinc-800'

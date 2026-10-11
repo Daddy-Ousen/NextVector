@@ -65,7 +65,7 @@ export const ResearchPage: React.FC<ResearchPageProps> = ({ papers }) => {
           <button
             key={f.value}
             onClick={() => setSelectedField(f.value)}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-mono transition-all shrink-0 ${
+            className={`px-3.5 py-1.5 rounded-xl text-xs transition-all shrink-0 ${
               selectedField === f.value
                 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40 font-bold'
                 : 'bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
@@ -91,28 +91,28 @@ export const ResearchPage: React.FC<ResearchPageProps> = ({ papers }) => {
               {/* Header: Field & Progression Pipeline */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-zinc-800">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-amber-400">
+                  <span className="text-xs px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-amber-400">
                     {paper.field}
                   </span>
                   {paper.arxivId && (
-                    <span className="text-xs font-mono text-zinc-500">
+                    <span className="text-xs text-zinc-400">
                       arXiv:{paper.arxivId}
                     </span>
                   )}
                 </div>
 
                 {/* Pipeline Stage Tracker */}
-                <div className="flex items-center gap-2 text-xs font-mono">
-                  <span className="text-zinc-500 mr-1 text-[11px] uppercase tracking-wider">Pipeline:</span>
-                  <span className={`px-2 py-0.5 rounded-full border ${isPaper ? 'bg-blue-500/20 text-blue-400 border-blue-500/40 font-bold' : 'text-zinc-500 border-zinc-800'}`}>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-zinc-400 mr-1 text-2xs uppercase tracking-wider">Pipeline:</span>
+                  <span className={`px-2 py-0.5 rounded-full border ${isPaper ? 'bg-blue-500/20 text-blue-400 border-blue-500/40 font-bold' : 'text-zinc-400 border-zinc-800'}`}>
                     Paper
                   </span>
                   <span className="text-zinc-600">→</span>
-                  <span className={`px-2 py-0.5 rounded-full border ${isProto ? 'bg-purple-500/20 text-purple-400 border-purple-500/40 font-bold' : 'text-zinc-500 border-zinc-800'}`}>
+                  <span className={`px-2 py-0.5 rounded-full border ${isProto ? 'bg-purple-500/20 text-purple-400 border-purple-500/40 font-bold' : 'text-zinc-400 border-zinc-800'}`}>
                     Prototype
                   </span>
                   <span className="text-zinc-600">→</span>
-                  <span className={`px-2 py-0.5 rounded-full border ${isProduct ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40 font-bold' : 'text-zinc-500 border-zinc-800'}`}>
+                  <span className={`px-2 py-0.5 rounded-full border ${isProduct ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40 font-bold' : 'text-zinc-400 border-zinc-800'}`}>
                     Product
                   </span>
                 </div>
@@ -123,7 +123,7 @@ export const ResearchPage: React.FC<ResearchPageProps> = ({ papers }) => {
                 <h2 className="text-xl md:text-2xl font-bold text-zinc-100 font-sans leading-snug">
                   {paper.title}
                 </h2>
-                <div className="flex flex-wrap items-center gap-2 text-xs font-mono text-zinc-400 mt-2">
+                <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-400 mt-2">
                   <span className="text-zinc-200">{paper.authors.slice(0, 3).join(', ')}{paper.authors.length > 3 ? ' et al.' : ''}</span>
                   <span>•</span>
                   <span>{paper.institution}</span>
@@ -156,7 +156,7 @@ export const ResearchPage: React.FC<ResearchPageProps> = ({ papers }) => {
               </div>
 
               {/* Footer timeline and link */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono pt-3 border-t border-zinc-800/80 text-zinc-400">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs pt-3 border-t border-zinc-800/80 text-zinc-400">
                 <div>
                   Commercial Horizon: <strong className="text-zinc-200">{paper.commercialTimeline}</strong>
                 </div>

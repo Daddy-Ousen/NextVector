@@ -55,7 +55,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
           </div>
           <button
             onClick={handlePrint}
-            className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-mono text-zinc-300 transition-colors shrink-0"
+            className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs text-zinc-300 transition-colors shrink-0"
           >
             <Printer className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Print Scan</span>
@@ -66,7 +66,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
         <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-100 font-serif tracking-tight">
           Daily Intelligence Briefing
         </h1>
-        <div className="text-sm font-mono text-zinc-400 mt-2">
+        <div className="text-sm text-zinc-400 mt-2">
           {briefing.date} • Estimated Read Time: 3 minutes
         </div>
 
@@ -83,9 +83,9 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
             key={item.id}
             className="rounded-2xl bg-zinc-950 border border-zinc-800/90 p-6 md:p-8 space-y-4 hover:border-zinc-700 transition-colors shadow-lg"
           >
-            <div className="flex items-center justify-between gap-2 text-xs font-mono">
+            <div className="flex items-center justify-between gap-2 text-xs">
               <div className="flex items-center gap-2">
-                <span className="font-bold text-zinc-500">0{idx + 1}.</span>
+                <span className="font-bold text-zinc-400">0{idx + 1}.</span>
                 <span className="px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800 uppercase text-zinc-300">
                   {item.category}
                 </span>
@@ -107,7 +107,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
 
             <div className="space-y-3 text-sm font-sans">
               <div>
-                <strong className="text-zinc-200 block text-xs font-mono uppercase text-zinc-500 mb-1">
+                <strong className="text-zinc-200 block text-xs font-mono uppercase text-zinc-400 mb-1">
                   The Development:
                 </strong>
                 <p className="text-zinc-300 leading-relaxed">{item.summary}</p>
@@ -127,9 +127,9 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
               <div className="pt-2 flex justify-end">
                 <button
                   onClick={() => onSelectArticle(item.articleSlug!)}
-                  className="text-xs font-mono text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center gap-1 hover:underline"
+                  className="text-xs text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center gap-1 hover:underline"
                 >
-                  <span>Read Full Intelligence Report</span>
+                  <span>Read the full story</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -153,13 +153,13 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
               </h4>
             </div>
           </div>
-          <span className="text-[10px] font-mono uppercase px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold shrink-0">
+          <span className="text-2xs font-mono uppercase px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold shrink-0">
             Published Every Weekday
           </span>
         </div>
 
         <p className="text-xs md:text-sm text-zinc-300 font-sans leading-relaxed">
-          Join 45,000+ AI researchers, systems architects, and technology leaders. Delivered every weekday via Substack.
+          A short AI and technology briefing for researchers, engineers, and tech leaders. Free on Substack.
         </p>
 
         <div className="mt-5">
@@ -174,7 +174,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
               title="Subscribe to The Morning Vector on Substack"
             />
           </div>
-          <div className="flex items-center justify-between text-xs font-mono text-zinc-400 mt-3 px-1 max-w-xl">
+          <div className="flex items-center justify-between text-xs text-zinc-400 mt-3 px-1 max-w-xl">
             <span className="flex items-center gap-1.5 text-zinc-300">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
               Official Substack Verification & Instant Dispatch
@@ -192,7 +192,7 @@ export const DailyBriefingPage: React.FC<DailyBriefingPageProps> = ({ onSelectAr
       </div>
 
       {/* Verification footer */}
-      <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 text-center space-y-2 text-xs font-mono text-zinc-500">
+      <div className="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 text-center space-y-2 text-xs text-zinc-400">
         <div className="flex items-center justify-center gap-1.5 text-zinc-400 font-bold">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
           <span>Curated by NextVector Editorial Board</span>

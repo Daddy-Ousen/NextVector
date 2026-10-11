@@ -312,7 +312,7 @@ Every `TimelineEvent` must contain:
 
 ## 9. Live Breaking Signal Ticker Standards
 
-NextVector features a prominent horizontal marquee ticker (`LIVE SIGNAL`) at the top of the homepage feed, providing readers with real-time signal density.
+NextVector features a prominent horizontal marquee ticker (label `Breaking`) just below the homepage lead story, providing readers with real-time signal density.
 
 ### 9.1 Daily Synchronization Rule (Zero Stale Signals)
 The live ticker must never display stale developments from previous days. During every execution of the daily update pipeline (Stage 5.4), `MOCK_LIVE_SIGNALS` in `src/data/mockData.ts` MUST be refreshed with 5 punchy items corresponding directly to today's published reports.

@@ -12,16 +12,16 @@ export const ThreeQuestionsBlock: React.FC<ThreeQuestionsBlockProps> = ({ questi
     return (
       <div className="space-y-2 text-xs border-t border-zinc-800/80 pt-3 mt-3">
         <div className="flex items-start gap-2">
-          <span className="font-mono text-blue-400 font-semibold shrink-0 uppercase tracking-wider text-[10px]">What:</span>
-          <p className="text-zinc-300 line-clamp-1">{questions.whatHappened}</p>
+          <span className="font-mono text-blue-400 font-semibold shrink-0 uppercase tracking-wider text-2xs">What:</span>
+          <p className="text-zinc-300 line-clamp-2">{questions.whatHappened}</p>
         </div>
         <div className="flex items-start gap-2">
-          <span className="font-mono text-emerald-400 font-semibold shrink-0 uppercase tracking-wider text-[10px]">Why:</span>
-          <p className="text-zinc-300 line-clamp-1">{questions.whyItMatters}</p>
+          <span className="font-mono text-emerald-400 font-semibold shrink-0 uppercase tracking-wider text-2xs">Why:</span>
+          <p className="text-zinc-300 line-clamp-2">{questions.whyItMatters}</p>
         </div>
         <div className="flex items-start gap-2">
-          <span className="font-mono text-purple-400 font-semibold shrink-0 uppercase tracking-wider text-[10px]">Next:</span>
-          <p className="text-zinc-300 line-clamp-1">{questions.whatsNext}</p>
+          <span className="font-mono text-purple-400 font-semibold shrink-0 uppercase tracking-wider text-2xs">Next:</span>
+          <p className="text-zinc-300 line-clamp-2">{questions.whatsNext}</p>
         </div>
       </div>
     );
@@ -37,19 +37,19 @@ export const ThreeQuestionsBlock: React.FC<ThreeQuestionsBlockProps> = ({ questi
             NextVector Editorial Triad
           </span>
         </div>
-        <div className="text-[11px] font-mono text-zinc-400 bg-zinc-800/70 px-3 py-1 rounded-full border border-zinc-700/60">
+        <div className="text-2xs text-zinc-400 bg-zinc-800/70 px-3 py-1 rounded-full border border-zinc-700/60">
           Core Signal Framework
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-4">
         {/* Question 1: What Happened? */}
         <div className="flex flex-col bg-zinc-950/60 rounded-xl p-5 border-t-2 border-blue-500/80 border-x border-b border-zinc-800/60 hover:border-blue-500/40 transition-colors">
           <div className="flex items-center gap-2 mb-3 text-blue-400 font-mono text-xs uppercase tracking-wider font-bold">
             <HelpCircle className="w-4 h-4 shrink-0" />
             <span>1. What Happened?</span>
           </div>
-          <p className="text-sm text-zinc-200 leading-relaxed font-sans">
+          <p className="text-base text-zinc-200 leading-relaxed font-sans">
             {questions.whatHappened}
           </p>
         </div>
@@ -60,7 +60,7 @@ export const ThreeQuestionsBlock: React.FC<ThreeQuestionsBlockProps> = ({ questi
             <Zap className="w-4 h-4 shrink-0" />
             <span>2. Why Does It Matter?</span>
           </div>
-          <p className="text-sm text-zinc-200 leading-relaxed font-sans">
+          <p className="text-base text-zinc-200 leading-relaxed font-sans">
             {questions.whyItMatters}
           </p>
         </div>
@@ -71,7 +71,7 @@ export const ThreeQuestionsBlock: React.FC<ThreeQuestionsBlockProps> = ({ questi
             <Compass className="w-4 h-4 shrink-0" />
             <span>3. What's Next?</span>
           </div>
-          <p className="text-sm text-zinc-200 leading-relaxed font-sans">
+          <p className="text-base text-zinc-200 leading-relaxed font-sans">
             {questions.whatsNext}
           </p>
         </div>

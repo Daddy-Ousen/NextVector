@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* Type scale floor: nothing below 12px. text-xs is 13px (Tailwind default 12px). */
+@theme {
+  --text-2xs: 0.75rem;
+  --text-2xs--line-height: 1.125rem;
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.25rem;
+}
+
 @layer base {
   :root {
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -16,6 +24,22 @@
 
   code, pre, .font-mono {
     font-family: var(--font-mono);
+  }
+
+  :focus-visible {
+    outline: 2px solid #34d399;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
@@ -69,4 +93,10 @@
 }
 .text-glow-cyan {
   text-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+}
+
+/* Soft fade at the left and right edges (ticker) so cut-off text does not look broken. */
+.fade-edges {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent);
 }

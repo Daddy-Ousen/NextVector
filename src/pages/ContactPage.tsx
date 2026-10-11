@@ -3,7 +3,6 @@ import { SEOHead } from '../components/common/SEOHead';
 import {
   Mail,
   ShieldCheck,
-  MapPin,
   Send,
   MessageSquare,
   CheckCircle2,
@@ -54,12 +53,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
         alternateName: ['NextVector AI', 'NextVector Intelligence'],
         url: 'https://nextvector.rhasan.online',
         logo: 'https://nextvector.rhasan.online/brand/nextvector-logo.jpg',
-        address: {
-          '@type': 'PostalAddress',
-          addressCountry: 'US',
-          addressLocality: 'San Francisco',
-          addressRegion: 'CA',
-        },
         contactPoint: [
           {
             '@type': 'ContactPoint',
@@ -116,7 +109,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               </span>
             </h1>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
+          <p className="text-xs sm:text-sm text-zinc-400 max-w-md leading-relaxed border-l-2 border-emerald-500/50 pl-3">
             Direct communication channels for AI labs, computer science researchers, journalists, and readers. All tips and benchmark audits are verified against primary sources.
           </p>
         </div>
@@ -132,9 +125,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <span>Direct Communication Desks</span>
             </h2>
 
-            <div className="space-y-4 text-xs font-mono">
+            <div className="space-y-4 text-xs">
               <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="text-emerald-400 font-semibold uppercase block text-[11px]">
+                <span className="text-emerald-400 font-semibold uppercase block text-2xs">
                   Editorial &amp; Lead Inquiries
                 </span>
                 <a
@@ -143,13 +136,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 >
                   editor@nextvector.rhasan.online
                 </a>
-                <span className="text-zinc-400 text-[11px] mt-1 block">
+                <span className="text-zinc-400 text-2xs mt-1 block">
                   Lead stories, breaking AI disclosures, and executive interviews.
                 </span>
               </div>
 
               <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="text-cyan-400 font-semibold uppercase block text-[11px]">
+                <span className="text-cyan-400 font-semibold uppercase block text-2xs">
                   Benchmark &amp; Model Auditing
                 </span>
                 <a
@@ -158,13 +151,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 >
                   benchmarks@nextvector.rhasan.online
                 </a>
-                <span className="text-zinc-400 text-[11px] mt-1 block">
+                <span className="text-zinc-400 text-2xs mt-1 block">
                   LMSYS Arena updates, SWE-bench telemetry, OSWorld submissions.
                 </span>
               </div>
 
               <div className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="text-purple-400 font-semibold uppercase block text-[11px]">
+                <span className="text-purple-400 font-semibold uppercase block text-2xs">
                   Corrections &amp; Factual Disputes
                 </span>
                 <a
@@ -173,17 +166,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 >
                   corrections@nextvector.rhasan.online
                 </a>
-                <span className="text-zinc-400 text-[11px] mt-1 block">
+                <span className="text-zinc-400 text-2xs mt-1 block">
                   Rigorously investigated within 4 hours in adherence to §8 Rulebook.
                 </span>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-zinc-800/80 space-y-3 text-xs font-mono text-zinc-400">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Operating Hub: San Francisco, CA &amp; Dhaka, Bangladesh</span>
-              </div>
+            <div className="pt-4 border-t border-zinc-800/80 space-y-3 text-xs text-zinc-400">
               <div className="flex items-center gap-2">
                 <Lock className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>PGP Encrypted Submissions Available on Request</span>
@@ -196,8 +185,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Founder Verification Box */}
-          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 text-xs font-mono space-y-3">
-            <span className="text-zinc-500 uppercase tracking-wider block text-[11px]">Editor-in-Chief</span>
+          <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800 text-xs space-y-3">
+            <span className="text-zinc-400 uppercase tracking-wider block text-2xs">Editor-in-Chief</span>
             <div className="flex items-center gap-3">
               <img
                 src="https://rhasan.online/avatar.jpg"
@@ -209,7 +198,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               />
               <div>
                 <div className="font-bold text-zinc-100 text-sm">Robiul Hasan</div>
-                <div className="text-zinc-400 text-[11px]">Systems Architect &amp; Research Editor</div>
+                <div className="text-zinc-400 text-2xs">Systems Architect &amp; Research Editor</div>
               </div>
             </div>
             <div className="flex items-center gap-3 pt-2 text-emerald-400">
@@ -252,7 +241,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
             <h2 className="text-xl font-bold text-zinc-100 font-sans tracking-tight mb-2">
               Dispatch an Editorial Inquiry or Research Signal
             </h2>
-            <p className="text-xs font-mono text-zinc-400 mb-6">
+            <p className="text-xs text-zinc-400 mb-6">
               Messages are routed directly to NextVector's editorial queue. Response turnaround is typically under 12 hours.
             </p>
 
@@ -262,7 +251,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   <CheckCircle2 className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-zinc-100 font-sans">Inquiry Received</h3>
-                <p className="text-xs font-mono text-zinc-400 max-w-sm mx-auto">
+                <p className="text-xs text-zinc-400 max-w-sm mx-auto">
                   Thank you for submitting to NextVector. Our research desk will verify your information against primary sources.
                 </p>
                 <button
@@ -271,7 +260,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     setIsSubmitted(false);
                     setFormState({ name: '', email: '', category: 'editorial', subject: '', message: '' });
                   }}
-                  className="px-4 py-2 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-zinc-200 hover:border-emerald-500 transition-colors"
+                  className="px-4 py-2 rounded-xl bg-zinc-900 border border-zinc-700 text-xs text-zinc-200 hover:border-emerald-500 transition-colors"
                 >
                   Submit Another Note
                 </button>
@@ -280,36 +269,36 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-zinc-300 block">Your Name / Organization</label>
+                    <label className="text-xs text-zinc-300 block">Your Name / Organization</label>
                     <input
                       type="text"
                       required
                       value={formState.name}
                       onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                       placeholder="e.g. Dr. Elena Vance / Anthropic"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-600 text-xs font-mono focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-zinc-300 block">Email Address (for response)</label>
+                    <label className="text-xs text-zinc-300 block">Email Address (for response)</label>
                     <input
                       type="email"
                       required
                       value={formState.email}
                       onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                       placeholder="e.g. researcher@lab.ai"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-600 text-xs font-mono focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-zinc-300 block">Inquiry Type</label>
+                    <label className="text-xs text-zinc-300 block">Inquiry Type</label>
                     <select
                       value={formState.category}
                       onChange={(e) => setFormState({ ...formState, category: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 text-xs font-mono focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 text-xs focus:outline-none focus:border-emerald-500"
                     >
                       <option value="editorial">Breaking Story / Lead Tip</option>
                       <option value="benchmark">Benchmark Data Audit Submission</option>
@@ -319,38 +308,38 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     </select>
                   </div>
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono text-zinc-300 block">Subject</label>
+                    <label className="text-xs text-zinc-300 block">Subject</label>
                     <input
                       type="text"
                       required
                       value={formState.subject}
                       onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
                       placeholder="Brief topic summary"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-600 text-xs font-mono focus:outline-none focus:border-emerald-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-mono text-zinc-300 block">Message &amp; Primary Source Links</label>
+                  <label className="text-xs text-zinc-300 block">Message &amp; Primary Source Links</label>
                   <textarea
                     required
                     rows={6}
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                     placeholder="Provide technical details, benchmark replication links, arXiv IDs, or disclosure specifics..."
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-600 text-xs font-mono focus:outline-none focus:border-emerald-500 leading-relaxed"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder:text-zinc-500 text-xs focus:outline-none focus:border-emerald-500 leading-relaxed"
                   />
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-                  <span className="text-[11px] font-mono text-zinc-500 flex items-center gap-1.5">
+                  <span className="text-2xs text-zinc-400 flex items-center gap-1.5">
                     <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                     Whistleblower &amp; source protection guaranteed
                   </span>
                   <button
                     type="submit"
-                    className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold font-mono text-xs flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-500/20 cursor-pointer"
+                    className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-500/20 cursor-pointer"
                   >
                     <span>Dispatch to Editorial Desk</span>
                     <Send className="w-3.5 h-3.5" />

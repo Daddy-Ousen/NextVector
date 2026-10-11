@@ -217,21 +217,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
-      {/* Top Telemetry & Signal Purity Bar */}
+      {/* Top utility bar */}
       <div className="bg-zinc-950/90 border-b border-zinc-800/80 px-2.5 sm:px-4 py-1.5 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-[11px] font-mono text-zinc-400 gap-2">
+        <div className="max-w-7xl mx-auto flex items-center justify-between text-2xs font-mono text-zinc-400 gap-2">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 shrink">
-            <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-              </span>
-              <span className="hidden sm:inline font-semibold tracking-wide whitespace-nowrap">
-                SIGNAL PURITY: 99.4%
-              </span>
-              <span className="sm:hidden font-semibold tracking-wide whitespace-nowrap">99.4%</span>
-            </div>
-            <span className="text-zinc-700 shrink-0">|</span>
             <div
               className="flex items-center gap-1.5 text-zinc-300 font-mono shrink-0"
               title="Live Publication Timestamp (UTC)"
@@ -245,7 +234,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             </div>
             <span className="hidden xl:inline text-zinc-700">|</span>
-            <span className="hidden xl:inline text-zinc-500 whitespace-nowrap">
+            <span className="hidden xl:inline text-zinc-400 whitespace-nowrap">
               Editorial Rule: <span className="text-zinc-300">Less noise. More signal.</span>
             </span>
           </div>
@@ -262,11 +251,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="flex items-center gap-1 sm:gap-1.5 text-zinc-300 hover:text-emerald-400 transition-colors shrink-0 cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-              <span className="font-semibold text-[11px] hidden sm:inline whitespace-nowrap">
+              <span className="font-semibold text-2xs hidden sm:inline whitespace-nowrap">
                 Daily Briefing
               </span>
-              <span className="font-semibold text-[10px] sm:hidden whitespace-nowrap">Briefing</span>
-              <span className="hidden md:inline text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
+              <span className="font-semibold text-2xs sm:hidden whitespace-nowrap">Briefing</span>
+              <span className="hidden md:inline text-2xs px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 whitespace-nowrap">
                 3-Min Scan
               </span>
             </a>
@@ -277,9 +266,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               title="View Bookmarks"
             >
               <Bookmark className="w-3.5 h-3.5 shrink-0" />
-              <span className="text-[10px] sm:text-[11px] whitespace-nowrap">Saved</span>
+              <span className="text-2xs whitespace-nowrap">Saved</span>
               {bookmarksCount > 0 && (
-                <span className="w-4 h-4 rounded-full bg-emerald-500 text-zinc-950 text-[10px] font-bold flex items-center justify-center shrink-0">
+                <span className="w-4 h-4 rounded-full bg-emerald-500 text-zinc-950 text-2xs font-bold flex items-center justify-center shrink-0">
                   {bookmarksCount}
                 </span>
               )}
@@ -329,7 +318,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <button
                 onClick={() => setActiveDropdown(activeDropdown === 'news' ? null : 'news')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   isNewsActive || activeDropdown === 'news'
                     ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -339,7 +328,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>News</span>
                 <ChevronDown
                   className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                    activeDropdown === 'news' ? 'rotate-180 text-emerald-400' : 'text-zinc-500'
+                    activeDropdown === 'news' ? 'rotate-180 text-emerald-400' : 'text-zinc-400'
                   }`}
                 />
               </button>
@@ -351,7 +340,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onMouseEnter={() => handleMouseEnter('news')}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="px-3 py-1.5 text-[10px] font-mono uppercase tracking-wider text-zinc-500 font-semibold border-b border-zinc-800/80 mb-1">
+                  <div className="px-3 py-1.5 text-2xs font-mono uppercase tracking-wider text-zinc-400 font-semibold border-b border-zinc-800/80 mb-1">
                     Editorial Coverage & Formats
                   </div>
                   <div className="space-y-1">
@@ -386,7 +375,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             </div>
                             <div className="min-w-0">
                               <div
-                                className={`text-xs font-mono font-semibold transition-colors flex items-center gap-1.5 ${
+                                className={`text-xs font-semibold transition-colors flex items-center gap-1.5 ${
                                   isItemActive
                                     ? 'text-emerald-300'
                                     : 'text-zinc-200 group-hover:text-emerald-300'
@@ -394,13 +383,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                               >
                                 <span>{item.label}</span>
                               </div>
-                              <div className="text-[11px] text-zinc-500 font-sans leading-tight mt-0.5 truncate group-hover:text-zinc-400">
+                              <div className="text-2xs text-zinc-400 font-sans leading-tight mt-0.5 truncate group-hover:text-zinc-400">
                                 {item.sublabel}
                               </div>
                             </div>
                           </div>
                           {item.badge && (
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
+                            <span className="px-1.5 py-0.5 rounded text-2xs font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
                               {item.badge}
                             </span>
                           )}
@@ -420,7 +409,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <button
                 onClick={() => setActiveDropdown(activeDropdown === 'models' ? null : 'models')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   isModelsActive || activeDropdown === 'models'
                     ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -430,7 +419,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>AI Models</span>
                 <ChevronDown
                   className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                    activeDropdown === 'models' ? 'rotate-180 text-emerald-400' : 'text-zinc-500'
+                    activeDropdown === 'models' ? 'rotate-180 text-emerald-400' : 'text-zinc-400'
                   }`}
                 />
               </button>
@@ -442,8 +431,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onMouseEnter={() => handleMouseEnter('models')}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="px-3 py-1.5 text-[10px] font-mono uppercase tracking-wider text-zinc-500 font-semibold border-b border-zinc-800/80 mb-1">
-                    Model Intelligence & Benchmarks
+                  <div className="px-3 py-1.5 text-2xs font-mono uppercase tracking-wider text-zinc-400 font-semibold border-b border-zinc-800/80 mb-1">
+                    Models & Benchmarks
                   </div>
                   <div className="space-y-1">
                     {MODELS_DROPDOWN_ITEMS.map((item) => {
@@ -478,7 +467,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             </div>
                             <div className="min-w-0">
                               <div
-                                className={`text-xs font-mono font-semibold transition-colors flex items-center gap-1.5 ${
+                                className={`text-xs font-semibold transition-colors flex items-center gap-1.5 ${
                                   isItemActive
                                     ? 'text-emerald-300'
                                     : 'text-zinc-200 group-hover:text-emerald-300'
@@ -486,13 +475,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                               >
                                 <span>{item.label}</span>
                               </div>
-                              <div className="text-[11px] text-zinc-500 font-sans leading-tight mt-0.5 truncate group-hover:text-zinc-400">
+                              <div className="text-2xs text-zinc-400 font-sans leading-tight mt-0.5 truncate group-hover:text-zinc-400">
                                 {item.sublabel}
                               </div>
                             </div>
                           </div>
                           {item.badge && (
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
+                            <span className="px-1.5 py-0.5 rounded text-2xs font-mono bg-zinc-900 border border-zinc-700/80 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 shrink-0 ml-2">
                               {item.badge}
                             </span>
                           )}
@@ -513,7 +502,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/research');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/research'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -531,7 +520,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/timeline');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/timeline'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -549,7 +538,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/about');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/about'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -567,7 +556,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   handleLinkClick('/faq');
                 }
               }}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer inline-block ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer inline-block ${
                 currentPath === '/faq'
                   ? 'bg-zinc-800/90 text-emerald-400 border border-zinc-700 shadow-sm'
                   : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/60'
@@ -581,11 +570,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-2">
             <button
               onClick={onOpenSearch}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs font-mono text-zinc-400 hover:text-zinc-200 transition-all cursor-pointer"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-xs text-zinc-400 hover:text-zinc-200 transition-all cursor-pointer"
             >
               <Search className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="hidden sm:inline">Search Intelligence...</span>
-              <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-[10px] text-zinc-500">
+              <span className="hidden sm:inline">Search news & models...</span>
+              <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-2xs text-zinc-400">
                 ⌘K
               </kbd>
             </button>
@@ -608,14 +597,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 overflow-hidden">
               <button
                 onClick={() => setMobileNewsExpanded(!mobileNewsExpanded)}
-                className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-mono font-bold text-zinc-300 hover:text-white cursor-pointer"
+                className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-bold text-zinc-300 hover:text-white cursor-pointer"
               >
                 <span className="flex items-center gap-2">
                   <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
                   <span>News & Editorial Coverage</span>
                 </span>
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform text-zinc-500 ${
+                  className={`w-4 h-4 transition-transform text-zinc-400 ${
                     mobileNewsExpanded ? 'rotate-180 text-emerald-400' : ''
                   }`}
                 />
@@ -635,7 +624,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             handleLinkClick(item.path);
                           }
                         }}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono transition-colors cursor-pointer ${
+                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-colors cursor-pointer ${
                           isItemActive
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                             : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50'
@@ -657,14 +646,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 overflow-hidden">
               <button
                 onClick={() => setMobileModelsExpanded(!mobileModelsExpanded)}
-                className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-mono font-bold text-zinc-300 hover:text-white cursor-pointer"
+                className="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-bold text-zinc-300 hover:text-white cursor-pointer"
               >
                 <span className="flex items-center gap-2">
                   <Layers className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>AI Models & Intelligence</span>
+                  <span>AI Models & Benchmarks</span>
                 </span>
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform text-zinc-500 ${
+                  className={`w-4 h-4 transition-transform text-zinc-400 ${
                     mobileModelsExpanded ? 'rotate-180 text-emerald-400' : ''
                   }`}
                 />
@@ -685,7 +674,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             handleLinkClick(item.path);
                           }
                         }}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-mono transition-colors cursor-pointer ${
+                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-colors cursor-pointer ${
                           isItemActive
                             ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                             : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50'
@@ -713,7 +702,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/research');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
                   currentPath === '/research'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -731,7 +720,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/timeline');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
                   currentPath === '/timeline'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -749,7 +738,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/about');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
                   currentPath === '/about'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -767,7 +756,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/faq');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
                   currentPath === '/faq'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'
@@ -785,7 +774,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     handleLinkClick('/contact');
                   }
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-mono transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
                   currentPath === '/contact'
                     ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                     : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900'

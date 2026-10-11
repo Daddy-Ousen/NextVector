@@ -17,7 +17,7 @@ export const SignalRatingBadge: React.FC<SignalRatingBadgeProps> = ({
   const colorStyle = getSignalColor(score);
 
   const sizeClasses = {
-    sm: 'text-[11px] px-2 py-0.5',
+    sm: 'text-2xs px-2 py-0.5',
     md: 'text-xs px-2.5 py-1',
     lg: 'text-sm px-3.5 py-1.5 font-semibold'
   };
@@ -31,9 +31,9 @@ export const SignalRatingBadge: React.FC<SignalRatingBadgeProps> = ({
       >
         <span className="inline-block w-1.5 h-1.5 rounded-full bg-current opacity-80" />
         <span className="font-bold">{score}</span>
-        <span className="text-[10px] opacity-70">/100</span>
+        <span className="text-2xs opacity-70">/100</span>
         {showDetails && (
-          <span className="hidden sm:inline-block pl-1 border-l border-current/20 text-[11px] font-sans font-medium">
+          <span className="hidden sm:inline-block pl-1 border-l border-current/20 text-2xs font-sans font-medium">
             {colorStyle.label}
           </span>
         )}
@@ -57,7 +57,7 @@ export const SignalRatingBadge: React.FC<SignalRatingBadgeProps> = ({
               ? 'High technical significance with architectural implications.'
               : 'Substantive verified industry or research development.'}
           </p>
-          <div className="space-y-1 text-[10px] font-mono text-zinc-400">
+          <div className="space-y-1 text-2xs font-mono text-zinc-400">
             <div className="flex justify-between">
               <span>Marketing Noise Filtered:</span>
               <span className="text-emerald-400 font-semibold">&gt;92%</span>

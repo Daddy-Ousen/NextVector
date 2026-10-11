@@ -106,14 +106,14 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           {/* Core Profile Narrative */}
           <div className="space-y-4 flex-1">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
+              <span className="px-3 py-1 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
                 <CheckCircle className="w-3.5 h-3.5" />
                 <span>Founder & Editor-in-Chief</span>
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-400">
+              <span className="px-3 py-1 rounded-full text-xs bg-zinc-900 border border-zinc-800 text-zinc-400">
                 Dhaka (UTC+6)
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-semibold flex items-center gap-1.5">
+              <span className="px-3 py-1 rounded-full text-xs bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-semibold flex items-center gap-1.5">
                 <Radio className="w-3 h-3 text-cyan-400 animate-pulse" />
                 <span>Enterprise MSP & Agentic AI</span>
               </span>
@@ -134,7 +134,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://rhasan.online"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold transition-all shadow-lg hover:shadow-emerald-500/20 active:scale-95 flex items-center gap-2"
+                className="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-bold transition-all shadow-lg hover:shadow-emerald-500/20 active:scale-95 flex items-center gap-2"
                 title="Visit Official Website"
               >
                 <span>rhasan.online</span>
@@ -145,7 +145,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://nextvectorr.substack.com/?r=92ang8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-mono font-bold transition-colors flex items-center gap-1.5"
+                className="px-3.5 py-2.5 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] text-xs font-bold transition-colors flex items-center gap-1.5"
                 title="NextVector on Substack"
               >
                 <span>Substack</span>
@@ -156,7 +156,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://github.com/Daddy-Ousen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-mono transition-colors flex items-center gap-2"
+                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
                 title="GitHub Profile"
               >
                 <GithubIcon className="w-3.5 h-3.5" />
@@ -167,7 +167,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 href="https://linkedin.com/in/robiul-hasan-401296137"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-zinc-100 text-xs font-mono transition-colors flex items-center gap-2"
+                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-300 hover:text-zinc-100 text-xs transition-colors flex items-center gap-2"
                 title="LinkedIn Profile"
               >
                 <span>LinkedIn</span>
@@ -176,7 +176,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
               <button
                 onClick={handleCopyEmail}
-                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs font-mono transition-colors flex items-center gap-2"
+                className="px-3.5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs transition-colors flex items-center gap-2"
                 title="Copy email to clipboard"
               >
                 {copiedEmail ? (
@@ -205,49 +205,49 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
-            <div className="text-2xl md:text-4xl font-extrabold text-emerald-400 font-mono tracking-tight">
+            <div className="text-2xl md:text-4xl font-extrabold text-emerald-400 tracking-tight">
               2,500+
             </div>
             <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
               Endpoints Monitored
             </div>
-            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+            <p className="text-2xs text-zinc-400 mt-1 font-sans leading-relaxed">
               Managed monthly maintenance & RMM telemetry across diverse enterprise environments.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
-            <div className="text-2xl md:text-4xl font-extrabold text-cyan-400 font-mono tracking-tight">
+            <div className="text-2xl md:text-4xl font-extrabold text-cyan-400 tracking-tight">
               1,100+
             </div>
             <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
               Security Assets
             </div>
-            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+            <p className="text-2xs text-zinc-400 mt-1 font-sans leading-relaxed">
               Active endpoint security, EDR, and antivirus administration across client fleets.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
-            <div className="text-2xl md:text-4xl font-extrabold text-purple-400 font-mono tracking-tight">
+            <div className="text-2xl md:text-4xl font-extrabold text-purple-400 tracking-tight">
               25+
             </div>
             <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
               IT Projects Delivered
             </div>
-            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+            <p className="text-2xs text-zinc-400 mt-1 font-sans leading-relaxed">
               Led technical delivery and architecture coordination for major client migrations.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-950 border border-zinc-800/80 hover:border-zinc-700 transition-colors">
-            <div className="text-2xl md:text-4xl font-extrabold text-emerald-400 font-mono tracking-tight">
+            <div className="text-2xl md:text-4xl font-extrabold text-emerald-400 tracking-tight">
               &gt;90%
             </div>
             <div className="text-xs font-semibold text-zinc-200 mt-1 font-sans">
               Client Satisfaction
             </div>
-            <p className="text-[11px] text-zinc-400 mt-1 font-sans leading-relaxed">
+            <p className="text-2xs text-zinc-400 mt-1 font-sans leading-relaxed">
               Sustained CSAT rating while handling complex multi-account escalations.
             </p>
           </div>
@@ -268,16 +268,16 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
           <button
             onClick={() => onNavigate('/')}
-            className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-300 flex items-center gap-1.5 transition-colors shrink-0"
+            className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 flex items-center gap-1.5 transition-colors shrink-0"
           >
-            <span>Explore Live Intelligence</span>
+            <span>Read the latest news</span>
             <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
           </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs">
+            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-bold text-emerald-400 text-xs">
               01
             </div>
             <h3 className="text-sm font-bold text-zinc-100 font-sans">
@@ -289,7 +289,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center font-mono font-bold text-cyan-400 text-xs">
+            <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-400 text-xs">
               02
             </div>
             <h3 className="text-sm font-bold text-zinc-100 font-sans">
@@ -301,7 +301,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
-            <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center font-mono font-bold text-purple-400 text-xs">
+            <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center font-bold text-purple-400 text-xs">
               03
             </div>
             <h3 className="text-sm font-bold text-zinc-100 font-sans">
@@ -328,46 +328,46 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <div>
                 <h3 className="text-lg font-bold text-zinc-100 font-sans flex items-center gap-2">
                   <span>L2 Support Engineer & Service Desk Co-Leader</span>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 font-semibold">
+                  <span className="px-2 py-0.5 rounded text-2xs bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 font-semibold">
                     Current
                   </span>
                 </h3>
-                <div className="text-xs font-mono text-zinc-400 mt-0.5">
+                <div className="text-xs text-zinc-400 mt-0.5">
                   Techants Solutions Pty Ltd (Managed Service Provider) • Dhaka, Bangladesh
                 </div>
               </div>
-              <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
+              <div className="text-xs text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
                 Oct 2022 – Present
               </div>
             </div>
 
             <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   <strong>Project Delivery & Coordination:</strong> Led technical delivery and coordination for 25+ enterprise IT projects across diverse client accounts, collaborating on 5+ additional large-scale cloud and endpoint rollouts.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   <strong>Infrastructure Fleet Management:</strong> Oversee monthly maintenance and real-time monitoring across 2,500+ endpoints; administer antivirus and endpoint security for 1,100+ critical devices.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   <strong>Service Desk Co-Leadership:</strong> Co-lead a 10+ member Service Desk team, evaluating escalation pathways, mentoring L1 engineers, and creating structured SOP runbooks for new system rollouts.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   <strong>BCDR & Compliance:</strong> Own quarterly Backup & Disaster Recovery (BCDR) reporting, deploying backup agents across client endpoints while sustaining strict SDO compliance.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   <strong>Customer Satisfaction:</strong> Maintained customer satisfaction above 90% while managing high-priority technical escalations across multiple concurrent corporate accounts.
                 </span>
@@ -382,24 +382,24 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 <h3 className="text-lg font-bold text-zinc-100 font-sans">
                   Jr. Support Engineer
                 </h3>
-                <div className="text-xs font-mono text-zinc-400 mt-0.5">
+                <div className="text-xs text-zinc-400 mt-0.5">
                   Cobait Dhaka • Dhaka, Bangladesh
                 </div>
               </div>
-              <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
+              <div className="text-xs text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
                 2021 – 2022
               </div>
             </div>
 
             <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Served as primary frontline contact for client support requests, diagnosing complex application-level issues in a fast-paced, high-ticket-volume MSP environment.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-cyan-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Administered managed client server infrastructure, configuring Active Directory permissions, DNS configurations, and server data backup procedures.
                 </span>
@@ -414,24 +414,24 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
                 <h3 className="text-lg font-bold text-zinc-100 font-sans">
                   Information Technology Executive
                 </h3>
-                <div className="text-xs font-mono text-zinc-400 mt-0.5">
+                <div className="text-xs text-zinc-400 mt-0.5">
                   AQSBD • Dhaka, Bangladesh
                 </div>
               </div>
-              <div className="text-xs font-mono text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
+              <div className="text-xs text-zinc-400 bg-zinc-900 px-3 py-1 rounded-lg border border-zinc-800 shrink-0 self-start md:self-auto">
                 2020
               </div>
             </div>
 
             <ul className="space-y-2.5 text-xs md:text-sm text-zinc-300 font-sans">
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-purple-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-purple-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Spearheaded the digitization of outdated manual tracking systems, implementing standardized infrastructure documentation and incident escalation processes.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="font-mono text-purple-400 font-bold shrink-0 mt-0.5">•</span>
+                <span className="text-purple-400 font-bold shrink-0 mt-0.5">•</span>
                 <span className="leading-relaxed">
                   Streamlined internal corporate communications and technical support procedures across all departments.
                 </span>
@@ -448,11 +448,11 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-6">
           <div className="space-y-2">
             <div className="flex items-center gap-2">
-              <span className="px-3 py-0.5 rounded-full text-[10px] font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
+              <span className="px-3 py-0.5 rounded-full text-2xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
                 <Bot className="w-3.5 h-3.5" />
                 <span>Featured Engineering Project</span>
               </span>
-              <span className="text-xs font-mono text-zinc-400">
+              <span className="text-xs text-zinc-400">
                 Feb 2026 – Present
               </span>
             </div>
@@ -465,7 +465,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://github.com/Daddy-Ousen"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
+            className="px-4 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-200 flex items-center gap-2 transition-colors shrink-0"
           >
             <GithubIcon className="w-3.5 h-3.5" />
             <span>GitHub Repository</span>
@@ -479,7 +479,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-            <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 font-bold">
+            <div className="flex items-center gap-2 text-xs text-emerald-400 font-bold">
               <Terminal className="w-3.5 h-3.5" />
               <span>Multi-Step Tool Calling</span>
             </div>
@@ -489,7 +489,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-            <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 font-bold">
+            <div className="flex items-center gap-2 text-xs text-cyan-400 font-bold">
               <Layers className="w-3.5 h-3.5" />
               <span>Browser Automation</span>
             </div>
@@ -499,7 +499,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           </div>
 
           <div className="p-4 rounded-xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-            <div className="flex items-center gap-2 text-xs font-mono text-purple-400 font-bold">
+            <div className="flex items-center gap-2 text-xs text-purple-400 font-bold">
               <Lock className="w-3.5 h-3.5" />
               <span>Sandboxed Execution</span>
             </div>
@@ -536,7 +536,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               ].map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                  className="px-3 py-1 rounded-lg text-xs bg-zinc-900 border border-zinc-800 text-zinc-300"
                 >
                   {skill}
                 </span>
@@ -562,7 +562,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               ].map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                  className="px-3 py-1 rounded-lg text-xs bg-zinc-900 border border-zinc-800 text-zinc-300"
                 >
                   {skill}
                 </span>
@@ -588,7 +588,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               ].map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                  className="px-3 py-1 rounded-lg text-xs bg-zinc-900 border border-zinc-800 text-zinc-300"
                 >
                   {skill}
                 </span>
@@ -614,7 +614,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               ].map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-lg text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300"
+                  className="px-3 py-1 rounded-lg text-xs bg-zinc-900 border border-zinc-800 text-zinc-300"
                 >
                   {skill}
                 </span>
@@ -640,10 +640,10 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <div className="text-sm font-bold text-zinc-100 font-sans">
                 Microsoft 365 Certified: Endpoint Administrator Associate
               </div>
-              <div className="text-xs font-mono text-emerald-400 mt-0.5">
+              <div className="text-xs text-emerald-400 mt-0.5">
                 Credential: MD-102
               </div>
-              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+              <p className="text-2xs text-zinc-400 mt-1 font-sans">
                 Enterprise endpoint deployment, policy compliance, Intune management, and identity protection.
               </p>
             </div>
@@ -657,10 +657,10 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <div className="text-sm font-bold text-zinc-100 font-sans">
                 Microsoft Certified: Modern Desktop Administrator Associate
               </div>
-              <div className="text-xs font-mono text-cyan-400 mt-0.5">
+              <div className="text-xs text-cyan-400 mt-0.5">
                 Credential: MD-100
               </div>
-              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+              <p className="text-2xs text-zinc-400 mt-1 font-sans">
                 Windows client architecture, network configuration, local storage, and security maintenance.
               </p>
             </div>
@@ -674,10 +674,10 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <div className="text-sm font-bold text-zinc-100 font-sans">
                 Python Programming Specialization
               </div>
-              <div className="text-xs font-mono text-purple-400 mt-0.5">
+              <div className="text-xs text-purple-400 mt-0.5">
                 University of Michigan (Coursera)
               </div>
-              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+              <p className="text-2xs text-zinc-400 mt-1 font-sans">
                 Data structures, API integrations, networked application development, and automated scripting.
               </p>
             </div>
@@ -691,10 +691,10 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               <div className="text-sm font-bold text-zinc-100 font-sans">
                 Bachelor of Business Administration (BBA)
               </div>
-              <div className="text-xs font-mono text-emerald-400 mt-0.5">
+              <div className="text-xs text-emerald-400 mt-0.5">
                 Bangladesh University of Professionals (BUP) • Graduated 2022
               </div>
-              <p className="text-[11px] text-zinc-400 mt-1 font-sans">
+              <p className="text-2xs text-zinc-400 mt-1 font-sans">
                 Rigorous operational management, analytical modeling, and technical project delivery.
               </p>
             </div>
@@ -721,7 +721,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
               href="/brand/nextvector-brand-system.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-300 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs text-zinc-300 flex items-center gap-1.5 transition-colors"
             >
               <span>View Brand Board</span>
               <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
@@ -729,7 +729,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             <a
               href="/brand/nextvector-mark.svg"
               download="nextvector-mark.svg"
-              className="px-3.5 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-xs font-mono text-emerald-400 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-xs text-emerald-400 flex items-center gap-1.5 transition-colors"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Download Vector SVG</span>
@@ -741,13 +741,13 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
             <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Core Metaphor</div>
             <p className="text-xs text-zinc-300 leading-relaxed font-sans">
-              The symbol fuses the capital <strong className="text-emerald-400 font-mono">N</strong> (Next) with a forward-pointing vector chevron <strong className="text-cyan-400 font-mono">&gt;</strong> and a precision coordinate aperture ring in negative space.
+              The symbol fuses the capital <strong className="text-emerald-400">N</strong> (Next) with a forward-pointing vector chevron <strong className="text-cyan-400">&gt;</strong> and a precision coordinate aperture ring in negative space.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3">
             <div className="text-xs font-mono uppercase text-zinc-400 font-semibold">Chromatic Palette</div>
-            <div className="flex flex-wrap gap-2 text-[11px] font-mono">
+            <div className="flex flex-wrap gap-2 text-2xs">
               <span className="px-2 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                 #10B981 Signal Emerald
               </span>
@@ -772,7 +772,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
       {/* 9. Direct Contact & Communication Footer */}
       <section className="rounded-3xl bg-gradient-to-b from-zinc-950 to-zinc-900 border border-zinc-800 p-8 md:p-12 text-center space-y-6 shadow-2xl">
         <div className="max-w-xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold">
             <Mail className="w-3.5 h-3.5" />
             <span>Direct Inquiries & Collaboration</span>
           </div>
@@ -789,7 +789,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://rhasan.online"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold text-xs transition-all shadow-lg active:scale-95 flex items-center gap-2"
+            className="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-all shadow-lg active:scale-95 flex items-center gap-2"
           >
             <span>Visit rhasan.online</span>
             <ExternalLink className="w-4 h-4" />
@@ -799,7 +799,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://nextvectorr.substack.com/?r=92ang8"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] font-mono font-bold text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-xl bg-[#FF6719]/15 hover:bg-[#FF6719]/25 border border-[#FF6719]/40 text-[#FF6719] font-bold text-xs transition-colors flex items-center gap-2"
           >
             <span>Read on Substack</span>
             <ExternalLink className="w-4 h-4" />
@@ -807,7 +807,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
 
           <a
             href="mailto:rhasan229@gmail.com"
-            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
           >
             <Mail className="w-4 h-4 text-emerald-400" />
             <span>Send Email</span>
@@ -817,7 +817,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://github.com/Daddy-Ousen"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
           >
             <GithubIcon className="w-4 h-4" />
             <span>GitHub Profile</span>
@@ -827,7 +827,7 @@ export const AuthorPage: React.FC<AuthorPageProps> = ({
             href="https://linkedin.com/in/robiul-hasan-401296137"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs transition-colors flex items-center gap-2"
+            className="px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs transition-colors flex items-center gap-2"
           >
             <span>LinkedIn Profile</span>
             <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />

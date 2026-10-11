@@ -33,6 +33,53 @@
 - [ ] Optional: WebP/AVIF + `srcset` for covers; brand folder is 6.5 MB.
 - [ ] Optional: Gate 5 uses file order (`articles[-5:]`), not dates.
 
+## Design work plan (from audit 2026-10-11)
+User decision: do ALL passes, in this order: Pass 2 → Pass 1 → Pass 3 → Pass 4 → Pass 5.
+Audit numbers were measured on `vite preview` (home at 1440px and 375px, an article page, /models).
+Rule: tick a box only after `npx tsc -b`, `npm run build`, `npm run verify` (8/8) and a browser check pass.
+
+### Pass 2 — Trust (DONE 2026-10-11)
+- [x] Removed site-wide "Signal Purity 99.4%" (top bar) and footer "Status: Operational (100%)".
+- [x] "Join 45,000+" → "Free on Substack" text (footer + `/briefing`). Footer badges → "No Clickbait Policy", "Primary Sources Linked", "Three-Question Format". "Official Substack Instant Verification" → "Sign-up handled by Substack". Removed "peer-grade" line from article author box.
+- [x] Removed "Dhaka & San Francisco" claims: footer credit, Contact "Operating Hub" row, Schema.org `PostalAddress` (index.html, HomePage, ContactPage), prerender About text.
+- [x] Wordmark tagline "99%+ Signal Purity" → "Less Noise. More Signal."; images rebuilt (`python scripts/build_substack_wordmarks.py`).
+- Kept on purpose: per-article Signal Purity score (formula on /about); `/briefing` "Published Every Weekday" (user decision); AuthorPage job locations (resume facts).
+- [ ] USER: upload new wordmark images to Substack (Settings → Branding).
+
+### Pass 1 — Readability (DONE 2026-10-11)
+Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser at 1440px and 375px.
+- [x] Text size: new token `text-2xs` = 12px (all `text-[9/10/11px]` → `text-2xs`, 159 places); `text-xs` raised to 13px in `src/index.css` `@theme`. Home: 0 text items under 12px (was 280). Grid card summary `text-xs` → `text-sm`.
+- [x] Less monospace: home 73% → 23% mono. `font-mono` removed from non-data UI in all pages (scripts kept mono for uppercase eyebrows, td/th/code/kbd/pre, tabular-nums, text-right, ⌘ key, score badge, top-bar time, rank numbers, spec values, archive dates).
+- [x] Contrast: `text-zinc-500` → `text-zinc-400` (108 places); `placeholder:text-zinc-600` → `-500`; 2 informational zinc-600/700 texts lightened. Home: 0 text items under 4.5:1 (was ~77).
+- [x] Article body: container `max-w-4xl` → `max-w-3xl`; body text `max-w-[42rem]` → 65–75 characters per line (was ~100). Takeaways list `text-sm` → `text-base`.
+- [x] Article Triad: stacked one column, body text `text-sm` → `text-base` (`ThreeQuestionsBlock.tsx`).
+- [x] Global `:focus-visible` emerald ring + `prefers-reduced-motion` rule (`src/index.css`).
+- [x] Side fixes found during check: logo tagline hidden under `sm` (header was 10px too wide at 375px, `NextVectorLogo.tsx`); `/compare` model dropdowns overflowed to 822px on phones (old bug) → now fit (`ComparePage.tsx`).
+- Note: `/research` reports 1px extra width at 375px; no visible element overflows; body has `overflow-x: hidden`. Ignored.
+
+### Pass 3 — Home page (DONE 2026-10-11)
+Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser at 1440px and 375px.
+- [x] News-first top (`HomePage.tsx`): big SEO H1 block → one small H1 line "AI News, Model Benchmarks & Research" + "Updated <date>"; lead story right under it. Ticker moved below the lead story. At 375px the lead headline now starts at 455px (first screen; was ~1.5 screens down). Hero image on phones is 200px high (`ArticleCard.tsx`).
+- [x] Cards (`ArticleCard.tsx`): grid headline `line-clamp-3`; grid What/Why/Next teaser removed; grid author byline replaced by relative time. Hero keeps author; hero Triad teaser shows from `sm` up, 2 lines each (`ThreeQuestionsBlock.tsx` compact).
+- [x] "Frontier Stream" + pill → "Latest Stories" / "Newest first"; link "All AI news" does not wrap. Deep Dives pill hidden on phones. "Highest Technical Impact Index … peer discussion" → "Highest-Rated Stories / Ranked by Signal score" (the old text claimed a ranking input that does not exist).
+- [x] Ticker: label "LIVE SIGNAL" → "Breaking"; fade edges (`.fade-edges` in `src/index.css`). Ticker items still come from `MOCK_LIVE_SIGNALS` (daily pipeline step). Docs updated: `DAILY_UPDATE_PIPELINE.md` §5.4, `EDITORIAL_RULEBOOK.md` §9.
+- [x] /models: compare list starts empty (`App.tsx`; was 2 preset models, so the "2 models selected" bar showed on first load). Duplicate "Open Decision Matrix" callout removed (tab does the same). Header and filter box made compact; sort labels shortened. At 375px the table header is at ~640px and the first model row is on the first screen (table was at 838px).
+- [x] Jargon: plain labels in Navbar search ("Search news & models..."), nav menus, Bookmarks ("Saved Stories"), Command palette, Footer ("Sections"), BenchmarkChart, Article page ("Back to all news", "Related Models, Benchmarks & Papers"), Author, Benchmarks, Category ("All News"), Briefing, FAQ, 404, Timeline, Archive ("Story Archive"), Compare FAQ, Decision Guide. Hero button "Read Signal" → "Read story".
+- Kept on purpose: SEO `<title>`s, Schema.org, brand tagline "Technology & AI Intelligence", "Daily Intelligence Briefing" product name, per-article Signal score and Signal filter.
+
+### Pass 4 — Engagement
+- [ ] "Read next" block at article end: 3 stories, same category/topic (no related-article field exists; pick by category + date).
+- [ ] Share buttons (X, LinkedIn) next to existing copy-link button in `ArticleDetailPage.tsx`.
+- [ ] "Latest" list view: headline + time, grouped Today / Yesterday.
+- [ ] Newsletter box mid-article (Substack embed is in `Footer.tsx`; reuse).
+- [ ] Reading progress bar on article pages.
+- [ ] Optional: light mode (site is dark only; `index.html` has `class="dark"`).
+
+### Pass 5 — Accessibility leftovers
+- [ ] Mobile tap targets: 118 of 175 links/buttons were under 32px at 375px. Target ≥ 40px for main controls.
+- [ ] "Skip to content" link.
+- [ ] Article body repeats the Triad text (content/pipeline issue; see `DAILY_UPDATE_PIPELINE.md`). Decide with user.
+
 ## Architectural decisions
 - `src/data/articlesData.ts` stays the single source of truth. The app reads it only through virtual modules `virtual:article-summaries` and `virtual:article-body/<id>` (see `vite.articleSplit.ts`). Types: `ArticleSummary` (lists) vs `Article` (detail).
 - `public/sitemap.xml`, `public/rss.xml`, `public/llms-full.txt` are build outputs. Do not hand-edit. Sitemap regenerates only when git history is available; otherwise the committed file is kept.

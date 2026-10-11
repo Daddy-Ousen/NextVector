@@ -116,10 +116,7 @@ export function App() {
   const [bookmarkedIds, setBookmarkedIds] = useState<string[]>(() => getSavedBookmarks());
 
   // Model comparison state
-  const [compareModelIds, setCompareModelIds] = useState<string[]>([
-    'model-gpt-6-astra',
-    'model-muse-spark',
-  ]);
+  const [compareModelIds, setCompareModelIds] = useState<string[]>([]);
 
   // Global filters
   const [selectedTag, setSelectedTag] = useState<string>('');
@@ -496,7 +493,7 @@ export function App() {
 
       {/* Toast Notification Alert */}
       {toastMessage && (
-        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/40 text-emerald-300 font-mono text-xs shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/40 text-emerald-300 text-xs shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>{toastMessage}</span>
         </div>

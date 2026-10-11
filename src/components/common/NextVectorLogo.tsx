@@ -106,7 +106,7 @@ export const NextVectorLogo: React.FC<NextVectorLogoProps> = ({
             </span>
           </div>
           {tagline && (
-            <p className="text-[10px] font-mono text-zinc-400 tracking-wider uppercase -mt-0.5 font-medium">
+            <p className="hidden sm:block text-2xs font-mono text-zinc-400 tracking-wider uppercase -mt-0.5 font-medium">
               {tagline}
             </p>
           )}

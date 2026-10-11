@@ -488,7 +488,7 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
     month: 'Sep 29',
     title: 'Anthropic Releases Claude Sonnet 5.5 with 30% Speed Gain and Terminal-Bench Lead',
     category: 'AI Breakthrough',
-    summary: 'Anthropic releases Claude Sonnet 5.5 featuring a 30% latency reduction, record 68.4% on Terminal-Bench 4.0, and ASL-2 embedded cybersecurity safeguards.',
+    summary: 'Anthropic releases Claude Sonnet 5.5 featuring 30%+ faster output, 70.6% on Terminal-Bench 4.0 (Anthropic-reported), and ASL-2 embedded cybersecurity safeguards.',
     impactScore: 97,
     keyShift: 'The arrival of high-throughput, token-compressed models specifically optimized for autonomous multi-file terminal coding swarms.',
     articleSlug: 'anthropic-launches-claude-sonnet-5-5-frontier-agentic-coding'
@@ -840,7 +840,7 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
     month: 'Sep 13',
     title: 'Mistral AI Releases 670B Mistral Large 3 with Mixture-of-Depths Under Apache 2.0',
     category: 'Computing Architecture',
-    summary: 'Mistral AI releases an open-weights 670B model using dynamic depth routing to skip middle layers on low-entropy tokens, scoring 89.2% on MMLU-Pro and cutting inference FLOPs by 60%.',
+    summary: 'Mistral AI releases an open-weights 670B model using dynamic depth routing to skip middle layers on low-entropy tokens, claiming 60% lower inference FLOPs.',
     impactScore: 96,
     keyShift: 'Production deployment of Mixture-of-Depths routing, freeing transformers from static per-token compute budgets.',
     articleSlug: 'mistral-large-3-mixture-of-depths-apache-release'

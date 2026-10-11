@@ -106,7 +106,7 @@
       <title>Anthropic Releases Claude Haiku 5.5: Native Effort Controls, Sub-Agent Concurrency, and $0.10 Inference</title>
       <link>https://nextvector.rhasan.online/article/anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows</link>
       <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows</guid>
-      <description>Completing the Claude 5.5 family, Anthropic&#x27;s fastest model introduces granular test-time compute tuning, 200k context windows, and sub-200ms latency for autonomous swarms.</description>
+      <description>Completing the Claude 5.5 family, Anthropic&#x27;s fastest model introduces granular test-time compute tuning, a 1M-token context window, and Anthropic&#x27;s fastest response times for autonomous swarms.</description>
       <category>AI</category>
       <pubDate>Wed, 07 Oct 2026 21:30:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>

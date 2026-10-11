@@ -1,12 +1,22 @@
-# Handoff — 2026-10-11 (Model data rebuilt from real sources, pushed as 1845086)
+# Handoff — 2026-10-11 (Article/timeline model-claims audit, committed locally, NOT pushed)
 
-## Latest: option A done (see progress.md "Model data rebuild")
+## Latest: article & timeline claims audit (see `ARTICLE_CLAIMS_AUDIT.md`)
+- What was done: 12 articles + 2 timeline entries now match `scripts/model_sources/build/site_data.json` and official lab pages. Fake Elo, Cyber-Eval, fake SWE-bench/OSWorld/WebArena/MMLU-Pro numbers and the Opus 5.5 "native Lean 4 prover" are gone.
+- Checks passed: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors.
+- State: committed on `main`, NOT pushed. Waiting for the user to approve the push (`git push origin main`).
+- Next (HIGH): `index.html` (FAQ schema + model list, lines ~131–190), `public/ai-summary.json` (lines 38–39), `public/llms.txt` (lines 12–35) still carry the old fake figures and wrong model links. `public/llms-full.txt` is generated and already clean of them. Newsletters archive also repeats them (sent emails; editorial call).
+- Other follow-ups: art-78 Mixture-of-Depths premise, art-79 architecture numbers, art-197 invented API header. Details in the audit file.
+- Gotcha: Opus 5.5 "40%" is Anthropic's own per-task cost claim; per-token prices fell 20%. Say both.
+- Gotcha: articlesData mixes `’` escapes and raw `’`/`—` characters. Match raw file text exactly in edit scripts.
+- Method that worked: scratchpad `edits.py` with (id, old, new, count) tuples, dry-run count check, CRLF kept.
+
+## Previous: option A done (see progress.md "Model data rebuild")
 - Model data is now GENERATED. Never hand-edit `src/data/modelsData.ts`, `benchmarksData.ts`, `showdownsData.ts`.
 - Refresh: `python scripts/fetch_model_sources.py` then `python scripts/build_model_data.py`, then `npm run build`, `npm run verify`.
 - Add/change models or showdown pairs in `scripts/model_sources/curated_models.json`. Build fails if a source key is missing.
 - Anthropic/Google prices are typed from official pages (`price` with `src`); others come from OpenRouter.
 - All checks passed. Committed `1845086`, pushed to `main`. Next: check the live site after the Vercel deploy (redirects for old /models/ URLs, /compare pages).
-- Open: articles/timeline still contain old fake model numbers. A separate session is doing that editorial audit.
+- Articles/timeline audit: done (see Latest above).
 - Gotcha: shell heredocs break on mixed quotes; write edit scripts to scratchpad files (helper `edit_lib.py` pattern: counted exact replacements, keep CRLF).
 - Gotcha: substring type rules bit us ("gemini" contains "mini"); build uses whole-word matching.
 

@@ -127,8 +127,17 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, lint 0 errors, br
 - [x] Boards: Arena (real ranks, 115), OSWorld-Verified (24), SWE-bench Verified bash-only (42, runs end Feb 2026), Price vs Arena Pareto (9). WebArena and fake "Cyber-Eval" removed (5 article links removed).
 - [x] UI rewired: ModelCard, ModelDetailPage (sources, price notes), comparison modal, directory (blended sort, licence filter), BenchmarkChart (modelId links, source/date), ComparePage + DecisionGuide + Subscriptions + FAQ now data-driven; "verified by NextVector" claims removed. Prerender + llms-full read site_data.json. Gate 6 rewritten. Docs updated (pipeline, rulebook, README).
 - [x] Committed `1845086` and pushed to `main` (user OK, option A).
-- [ ] Follow-up (separate session started 2026-10-11): articles (211) and timeline still repeat old fake figures (e.g. "Lean 4" x62, 73.4%, 68.4%, 94.6% Cyber-Eval). Needs an editorial audit.
+- [x] Follow-up: article/timeline audit DONE 2026-10-11 (see next section).
 - [ ] Optional: lab-reported SWE-bench for 2026 models; ComparePage unused icon imports.
+
+## Article & timeline model-claims audit (2026-10-11, committed locally, NOT pushed)
+Full list: `ARTICLE_CLAIMS_AUDIT.md`. Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, built Opus 5.5 page spot-checked.
+- [x] 12 articles fixed (art-1, 7, 60, 78, 79, 90, 110, 115, 146, 155, 186, 197) + 2 timeline entries (Sonnet 5.5, Mistral 3). Daily briefing and live signals were clean.
+- [x] Removed: Cyber-Eval 94.6%, all fake Elo (1396/1404/1412/1417/1418/1338/1386/1425), fake SWE-bench (58.2/62.4/73.4/84.1/91.4), OSWorld/WebArena 68.4/74.2, MMLU-Pro/HumanEval/MATH-500 fakes, Opus 5.5 "native Lean 4 prover".
+- [x] Corrected from site_data/official pages: prices (Fable 5.1 $10/$50, Sonnet 5.5 $2/$10, Grok 4.7 $2/$6, DeepSeek-V4.1-Flash $0.30/$1.20, Haiku 5.5 cache $0.01, Argon $2/$10 intro), context sizes, arena.ai scores/ranks, Opus 5.5 "20% lower token prices; Anthropic says 40% less to run".
+- Note: Anthropic's Opus 5.5 page really says "costs 40% less to run than Opus 5" (per task). Per-token cut is 20%. Both are now stated.
+- [ ] HIGH follow-up: `index.html` (FAQ schema + model list, on every page), `public/ai-summary.json`, `public/llms.txt` still show 1420/1417/1396 Elo, SWE-bench 98%, $0.14, Lean 4, OSWorld 68.4%, wrong model links. Newsletters archive also repeats them.
+- [ ] Follow-ups: art-78 Mixture-of-Depths premise vs Mistral's real post; art-79 architecture numbers vs DeepSeek page; art-197 invented API header/model ID.
 
 ## Architectural decisions
 - `src/data/articlesData.ts` stays the single source of truth. The app reads it only through virtual modules `virtual:article-summaries` and `virtual:article-body/<id>` (see `vite.articleSplit.ts`). Types: `ArticleSummary` (lists) vs `Article` (detail).

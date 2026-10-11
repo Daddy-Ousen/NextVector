@@ -28,28 +28,27 @@ export const ALL_ARTICLES: Article[] = [
     tags: ["OpenAI", "GPT-6 Astra", "Computer Use", "Autonomous Agents", "OSWorld", "Enterprise AI"],
     threeQuestions: {
       whatHappened: "OpenAI released GPT-6 Astra, a multimodal foundation model engineered specifically for autonomous computer and browser operation. Rather than depending on pre-configured API tool calls, Astra inspects raw desktop pixels via multimodal vision and issues keyboard and mouse coordinates to manipulate arbitrary software\u2014from spreadsheet data modeling to web portals and terminal consoles.",
-      whyItMatters: "Astra represents the industry\u2019s decisive leap from conversational assistance into direct agentic labor execution. In benchmark testing, Astra achieved state-of-the-art results on OSWorld (68.4%) and WebArena (74.2%). However, its demonstrated proficiency in identifying security vulnerabilities also triggered OpenAI\u2019s 'Critical' capability designation under its Preparedness Framework, requiring mandatory human-in-the-loop kill-switches.",
+      whyItMatters: "Astra represents the industry\u2019s decisive leap from conversational assistance into direct agentic labor execution. Its demonstrated proficiency in identifying security vulnerabilities also triggered OpenAI\u2019s 'Critical' capability designation under its Preparedness Framework, requiring mandatory human-in-the-loop kill-switches.",
       whatsNext: "OpenAI began immediate deployment across ChatGPT Plus, Pro, and Enterprise accounts with sandboxed virtual environments, while cloud hyperscalers accelerate specialized runtime hardware to host isolated desktop execution nodes."
     },
     keyTakeaways: [
       "Direct GUI manipulation: operates any desktop or web interface using visual pixel inputs and mouse/keyboard coordinates.",
-      "Benchmark leadership: scores 68.4% on OSWorld and 74.2% on WebArena, outperforming existing agent frameworks by over 20 points.",
+      "Benchmark status: Astra is not on the official OSWorld-Verified leaderboard as of October 11, 2026; on the arena.ai text leaderboard it scores 1475 (#35 of 414 entries).",
       "Preparedness threshold: triggered OpenAI\u2019s 'Critical' capability tier for autonomous software manipulation, mandating auto-review confirmation gates on irreversible actions.",
       "Enterprise integration: supports custom virtual desktop infrastructure (VDI) isolation, allowing organizations to restrict Astra to sandboxed environments."
 ],
     content: [
       "On September 3, 2026, OpenAI officially launched GPT-6 Astra, heralding what CEO Sam Altman termed the 'operator era' of artificial intelligence.",
       "Unlike conversational foundation models that output text or structured JSON payloads for external execution, Astra was trained natively on millions of hours of multimodal human-computer interaction demonstrations. The model perceives operating systems as a sequence of high-resolution screen frames, continuously computing optimal interaction vectors\u2014clicking buttons, navigating nested drop-downs, copying data between disparate legacy applications, and writing terminal commands.",
-      "On standard industry benchmarks, Astra demonstrated unprecedented autonomy. On OSWorld\u2014which evaluates an agent\u2019s capacity to perform real-world operating system tasks across Ubuntu, macOS, and Windows\u2014Astra resolved 68.4% of complex instructions, compared to 42.1% for prior models. On WebArena, which tests end-to-end e-commerce, content management, and software development web tasks, Astra achieved 74.2%.",
+      "OpenAI framed the launch around computer-use autonomy on benchmarks such as OSWorld, which evaluates an agent\u2019s capacity to perform real-world operating system tasks across Ubuntu, macOS, and Windows, and WebArena, which tests end-to-end e-commerce, content management, and software development web tasks. Astra does not appear on the official OSWorld-Verified leaderboard as of October 11, 2026, so we do not repeat launch-day scores here.",
       "The model\u2019s unprecedented capability has immediately raised significant enterprise security considerations. Because Astra can navigate arbitrary software, it possesses latent capability to identify software misconfigurations and attempt privilege escalations. Under OpenAI\u2019s internal Preparedness Framework, Astra was designated as possessing 'Critical' capability, initiating mandatory safety protocols: high-risk actions (such as credential transmission or external data exfiltration) require explicit user confirmation, and users can seize manual control of the cursor at any millisecond.",
       "The commercial rollout began immediately for ChatGPT Plus, Pro, and Enterprise tiers, with an asynchronous API allowing developers to spawn headless browser and containerized OS worker sessions."
 ],
     technicalSpecs: {
       "Architecture": "Multimodal Screen Coordinate Vision-Action Transformer",
-      "Context Window": "500,000 tokens (with persistent visual buffer)",
+      "Context Window": "1.05M tokens (OpenRouter listing)",
       "Interaction Latency": "120ms per mouse/keyboard action token",
-      "OSWorld Benchmark": "68.4% success rate (Pass@1)",
-      "WebArena Benchmark": "74.2% task completion",
+      "Arena Text Score": "1475 (#35 of 414 on arena.ai, 2026-10-11)",
       "Safety Classification": "Level 3 Critical Capability (Preparedness Framework)",
       "Virtualization Support": "Docker, VMware vSphere, AWS WorkSpaces VDI"
 },
@@ -375,7 +374,7 @@ export const ALL_ARTICLES: Article[] = [
     keyTakeaways: [
       "Dual model launch: Muse Spark (enterprise cloud agent) and Muse Glimmer (compact on-device open weights).",
       "Aggressive pricing economics: up to 95% discount for developers opting into the prompt and execution trace logging program.",
-      "Agent performance: 67.8% on SWE-bench Verified and 71.0% on HumanEval-Agentic benchmarks.",
+      "Agent performance (Meta-reported, not independently verified): 67.8% on SWE-bench Verified and 71.0% on HumanEval-Agentic benchmarks.",
       "Data strategy: systematically captures real-world programmer debugging loops to train next-generation autonomous models."
 ],
     content: [
@@ -388,7 +387,7 @@ export const ALL_ARTICLES: Article[] = [
     technicalSpecs: {
       "Muse Spark Context": "256,000 tokens (Terminal & Tool Specialization)",
       "Muse Glimmer Size": "8 Billion parameters (4-bit native quantization)",
-      "SWE-bench Verified": "67.8% (Scaffolded agent execution)",
+      "SWE-bench Verified": "67.8% (Meta-reported, scaffolded agent execution)",
       "API Base Pricing": "$2.50 / $10.00 per 1M tokens (Input / Output)",
       "Contributory Pricing": "$0.12 / $0.50 per 1M tokens (95% telemetry subsidy)",
       "Local Hardware (Glimmer)": "Apple M-series (16GB RAM) or RTX 4070/5070 GPU"
@@ -3356,27 +3355,27 @@ export const ALL_ARTICLES: Article[] = [
     tags: ["Anthropic", "Claude Fable 5.1", "Claude Mythos 5.1", "Project Glasswing", "Cybersecurity", "Prompt Caching"],
     threeQuestions: {
       whatHappened: "Anthropic deployed Claude Fable 5.1 into general enterprise availability while simultaneously initiating Project Glasswing—a strictly controlled national security and defensive cyber deployment of its most capable frontier architecture, Claude Mythos 5.1. Claude Fable 5.1 introduces dynamic test-time compute allocation across a 1,000,000-token context window, paired with an aggressive prompt cache read price cut to $0.25 per million tokens. Mythos 5.1, by contrast, demonstrated autonomous zero-day vulnerability discovery across C/C++ Linux kernel codebases during red-teaming, prompting Anthropic to restrict access exclusively to vetted critical infrastructure defenders and government certifiers inside hardware-enforced cryptographic enclaves.",
-      whyItMatters: "Anthropic’s release confirms that frontier labs are officially bifurcating models between public enterprise tiers and restricted defense tiers due to asymmetric cyber offense capabilities. On Chatbot Arena, Claude Fable 5.1 registered a validated Elo of 1418 (Rank #2 globally), while Claude Mythos achieved an unprecedented 94.6% on Cyber-Eval benchmark tasks. By dropping prompt cache reads to $0.25/M tokens, Anthropic undercuts OpenAI’s Astra runtime by 84%, fundamentally altering the unit economics for long-context autonomous agents that maintain multi-hour state.",
+      whyItMatters: "Anthropic’s release confirms that frontier labs are officially bifurcating models between public enterprise tiers and restricted defense tiers due to asymmetric cyber offense capabilities. On the arena.ai text leaderboard, Claude Fable 5.1 scores 1501 (#6 of 414 entries as of October 11, 2026). By dropping prompt cache reads to $0.25/M tokens, Anthropic prices cached input 75% below OpenAI’s GPT-6 Astra ($1.00/M), fundamentally altering the unit economics for long-context autonomous agents that maintain multi-hour state.",
       whatsNext: "Enterprise customers can immediately access Claude Fable 5.1 via Amazon Bedrock, Google Cloud Vertex AI, and the Anthropic API. For Mythos 5.1, Project Glasswing will onboard its first cohort of 25 defense agencies and telecommunication operators under strict bilateral auditing protocols, with zero third-party internet egress."
     },
     keyTakeaways: [
       "1M native context window with adaptive reasoning tokens that dynamically scale compute based on question complexity.",
-      "Disruptive caching economics: prompt cache read pricing dropped to $0.25/1M tokens, an 84% reduction vs competitors.",
+      "Disruptive caching economics: prompt cache read pricing dropped 75% to $0.25/1M tokens, also 75% below GPT-6 Astra ($1.00/1M).",
       "Project Glasswing isolation: Mythos 5.1 restricted to hardware enclaves for defensive vulnerability patching and supply chain analysis.",
-      "Benchmark dominance: Claude Fable 5.1 achieves 1418 Chatbot Arena Elo (#2) and 91.4% on SWE-bench Verified."
+      "Benchmarks: Claude Fable 5.1 scores 1501 on the arena.ai text leaderboard (#6 of 414, October 11, 2026); Anthropic reports 55.8% on Terminal-Bench 4.0."
     ],
     content: [
       "On September 9, 2026, Anthropic announced the immediate general availability of Claude Fable 5.1 across its commercial API, alongside the confidential launch of Project Glasswing, an isolated operational enclave housing Claude Mythos 5.1 for critical infrastructure cybersecurity defense.",
       "Claude Fable 5.1 represents Anthropic's flagship production model for enterprise software engineering, complex legal synthesis, and agentic workflows. Built upon an enhanced mixture-of-experts transformer backbone, Fable 5.1 features a native 1-million-token context window with perfect needle-in-a-haystack retrieval accuracy. A core architectural advancement is adaptive test-time compute: when confronted with mathematically rigorous or multi-step logic prompts, the model dynamically allocates a reasoning token budget to verify intermediate deductions before emitting output tokens.",
-      "Perhaps most impactful for enterprise infrastructure budgets is Anthropic's aggressive pricing realignment. Anthropic slashed prompt cache read costs by 75% down to $0.25 per million tokens (with base input at $7.90/M and output at $31.60/M). For production agents maintaining massive codebase indices, conversation memory, or corporate policy graphs in memory, this pricing reduction lowers ongoing inference expenditure by up to 80% compared to legacy architectures.",
-      "Concurrently, Anthropic revealed why its ultra-frontier model, Claude Mythos 5.1, will not receive a public API release. During internal red-teaming and evaluation under Anthropic's Responsible Scaling Policy (RSP Level 4), Mythos 5.1 demonstrated autonomous zero-day discovery across the Linux kernel and critical SCADA protocols with unprecedented efficiency, achieving a 94.6% score on Cyber-Eval. Recognizing that releasing such capabilities publicly poses unacceptable asymmetric risks to global software supply chains, Anthropic established Project Glasswing.",
+      "Perhaps most impactful for enterprise infrastructure budgets is Anthropic's aggressive pricing realignment. Anthropic slashed prompt cache read costs by 75% down to $0.25 per million tokens (with base input at $10.00/M and output at $50.00/M). For production agents maintaining massive codebase indices, conversation memory, or corporate policy graphs in memory, this pricing reduction lowers ongoing inference expenditure by up to 80% compared to legacy architectures.",
+      "Concurrently, Anthropic revealed why its ultra-frontier model, Claude Mythos 5.1, will not receive a public API release. During internal red-teaming and evaluation under Anthropic's Responsible Scaling Policy (RSP Level 4), Mythos 5.1 demonstrated autonomous zero-day discovery across the Linux kernel and critical SCADA protocols with unprecedented efficiency. Recognizing that releasing such capabilities publicly poses unacceptable asymmetric risks to global software supply chains, Anthropic established Project Glasswing.",
       "Under Project Glasswing, Mythos 5.1 operates exclusively inside physically and cryptographically air-gapped confidential computing enclaves. Access is restricted to vetted defensive security teams from civil infrastructure operators, telecommunications backbones, and government cybersecurity agencies (such as CISA and the UK NCSC) solely for automated patch synthesis, memory safety migration, and vulnerability remediation."
     ],
     technicalSpecs: {
       "Context Window": "1,000,000 Tokens Native (Fable 5.1 & Mythos 5.1)",
-      "Pricing (Fable 5.1)": "$7.90 Input / $31.60 Output / $0.25 Cached Read per 1M Tokens",
-      "Arena Elo": "1418 (Claude Fable 5.1) / 1425 Internal (Mythos 5.1)",
-      "SWE-bench Verified": "91.4% Task Resolution",
+      "Pricing (Fable 5.1)": "$10.00 Input / $50.00 Output / $0.25 Cached Read per 1M Tokens",
+      "Arena Text Score": "1501 (Claude Fable 5.1, #6 of 414 on arena.ai, 2026-10-11); Mythos 5.1 not listed",
+      "Terminal-Bench 4.0": "55.8% (Fable 5.1) / 60.9% (Mythos 5.1), Anthropic-reported",
       "Security Tier": "Project Glasswing Enclave Isolation (Mythos 5.1)"
     },
     relatedBenchmarkId: "bench-swe-bench",
@@ -3384,7 +3383,7 @@ export const ALL_ARTICLES: Article[] = [
     citations: [
       {
         title: "Claude Fable 5.1: Adaptive Reasoning and Next-Generation Cache Economics",
-        url: "https://www.anthropic.com/news/claude-fable-5-1-announcement",
+        url: "https://www.anthropic.com/claude-fable-and-mythos-5-1",
         source: "Anthropic Research Blog"
       },
       {
@@ -4377,7 +4376,7 @@ export const ALL_ARTICLES: Article[] = [
     id: "art-78",
     slug: "mistral-large-3-mixture-of-depths-apache-release",
     title: "Mistral AI Releases Mistral Large 3: 670B Mixture-of-Depths Model with Native FP8 Apache Weights",
-    subtitle: "European AI champion introduces dynamic depth routing to skip compute on low-entropy tokens, achieving 89.2% on MMLU-Pro while matching dense frontier models at 60% lower inference FLOPs.",
+    subtitle: "European AI champion introduces dynamic depth routing to skip compute on low-entropy tokens, claiming dense-model quality at 60% lower inference FLOPs.",
     category: "ai",
     articleType: "industry-watch",
     signalRating: 96,
@@ -4388,38 +4387,38 @@ export const ALL_ARTICLES: Article[] = [
     coverImageAlt: "Mixture-of-Depths transformer architecture routing tokens dynamically through sparse layers for inference acceleration",
     tags: ["Mistral AI", "Mistral Large 3", "Mixture-of-Depths", "Open Weights", "Apache 2.0", "Inference Efficiency", "LLMs"],
     threeQuestions: {
-      whatHappened: "Mistral AI released Mistral Large 3, an open-weights foundation model spanning 670 billion total parameters with an active parameter footprint of 38 billion tokens per forward pass. Pioneering an enterprise-scale Dynamic Mixture-of-Depths (MoD) transformer architecture, the model trains an internal gating network that dynamically routes complex reasoning tokens through the full 96-layer transformer stack while bypassing redundant middle layers for trivial syntax tokens. Released under the permissive Apache 2.0 license with native FP8 and INT4 quantized weights, Mistral Large 3 scored 89.2% on MMLU-Pro and 84.1% on SWE-bench Verified.",
+      whatHappened: "Mistral AI released Mistral Large 3, an open-weights foundation model spanning 670 billion total parameters with an active parameter footprint of 38 billion tokens per forward pass. Pioneering an enterprise-scale Dynamic Mixture-of-Depths (MoD) transformer architecture, the model trains an internal gating network that dynamically routes complex reasoning tokens through the full 96-layer transformer stack while bypassing redundant middle layers for trivial syntax tokens. Released under the permissive Apache 2.0 license with native FP8 and INT4 quantized weights.",
       whyItMatters: "Standard transformers allocate identical floating-point compute to every token regardless of semantic difficulty: generating a punctuation mark takes the exact same FLOPs as solving a step in a mathematical proof. By introducing dynamic layer skipping, Mistral Large 3 achieves dense frontier reasoning performance while cutting inference compute FLOPs by 60% and doubling serving throughput on standard 8x H100/H200 GPU nodes.",
       whatsNext: "Quantized checkpoints and vLLM inference kernels have been published to Hugging Face, enabling self-hosted enterprise deployments for coding agents, legal synthesis, and multilingual translation."
     },
     keyTakeaways: [
       "Dynamic Mixture-of-Depths (MoD): routes tokens adaptively across 96 transformer layers, allocating compute only where needed.",
       "60% reduction in inference FLOPs: achieves dense frontier model performance while activating only 38B parameters per token.",
-      "89.2% MMLU-Pro / 84.1% SWE-bench: establishes new benchmark records for permissively licensed open-weights foundation models.",
+      "Benchmarks: Mistral\u2019s launch post gives no MMLU-Pro or SWE-bench Verified score; it reports a #2 debut among open non-reasoning models on LMArena.",
       "Apache 2.0 commercial licensing: complete open weights and native FP8 calibration tensors released without restrictive covenants."
     ],
     content: [
       "Paris-based frontier AI laboratory Mistral AI has delivered a seismic update to the open-weights intelligence ecosystem with the release of Mistral Large 3. Combining an expansive 670-billion parameter total capacity with dynamic Mixture-of-Depths (MoD) routing, the model matches proprietary frontier reasoning benchmarks while drastically undercutting the cost of enterprise inference.",
       "Since the advent of the transformer architecture, one of its primary theoretical inefficiencies has been static computational allocation. Whether processing a simple comma, a common conjunction, or a subtle conceptual paradox, conventional dense models evaluate the token through every single attention and feed-forward layer in the network. While Mixture-of-Experts (MoE) architectures addressed this by routing tokens to specialized subsets of feed-forward weights, they still forced every token to traverse the full depth of the model.",
       "Mistral Large 3 introduces production-scale Mixture-of-Depths. The network features 96 transformer blocks interspersed with learned scalar routing routers. At each MoD layer, the router evaluates the information entropy of each token in the context window. High-entropy, complex reasoning tokens are routed through the multi-head attention and MLP sub-layers, while predictable, low-entropy tokens bypass the block via identity residual connections.",
-      "This dynamic allocation transforms the economics of foundation model deployment. Across typical multi-turn coding and analytical benchmarks, Mistral Large 3 activates an average of just 38 billion parameters per token out of its 670-billion total parameter pool. In benchmark evaluations, the model achieved an 89.2% score on MMLU-Pro, 84.1% on SWE-bench Verified, and 91.4% on GSM8k—performing neck-and-neck with closed proprietary frontiers such as Claude 3.5 Sonnet and GPT-4o.",
+      "This dynamic allocation transforms the economics of foundation model deployment. Across typical multi-turn coding and analytical benchmarks, Mistral Large 3 activates an average of just 38 billion parameters per token out of its 670-billion total parameter pool. Mistral\u2019s launch post gives no MMLU-Pro, SWE-bench Verified or GSM8k scores; it reports that the model debuted at #2 among open non-reasoning models on LMArena.",
       "Crucially for enterprise adopters, Mistral AI has provided native FP8 and INT4 calibration kernels optimized for vLLM and TensorRT-LLM runtimes. A single standard node of eight NVIDIA H200 or B200 GPUs can host the complete model in memory, sustaining throughputs exceeding 120 tokens per second per stream without memory degradation.",
       "By releasing the weights under an unencumbered Apache 2.0 license, Mistral AI reinforces its position as the champion of open foundational compute, offering enterprises and sovereign cloud providers a state-of-the-art alternative to closed hyperscale APIs."
     ],
     technicalSpecs: {
       "Parameter Scale": "670 Billion Total Parameters (38 Billion Active per Token)",
       "Architecture": "Dynamic Mixture-of-Depths (MoD) + Sparse Mixture-of-Experts (MoE)",
-      "Context Window": "128,000 Tokens (Native RoPE Scaling)",
+      "Context Window": "256K Tokens (OpenRouter listing)",
       "Inference Efficiency": "60% FLOP Reduction via Dynamic Residual Layer Bypassing",
-      "Benchmark Scores": "89.2% MMLU-Pro / 84.1% SWE-bench Verified / 91.4% GSM8k",
+      "Arena Text Score": "1414 (#143 of 414 on arena.ai, 2026-10-11)",
       "Licensing": "Apache 2.0 Open Weights with Native FP8 Calibration Tensors"
     },
-    relatedBenchmarkId: "bench-swe-bench",
+    relatedBenchmarkId: "bench-chatbot-arena",
     audioDuration: "5m 55s",
     citations: [
       {
         title: "Mistral Large 3: Dynamic Mixture-of-Depths and Efficient Open Foundation Models",
-        url: "https://mistral.ai/news/mistral-large-3/",
+        url: "https://mistral.ai/news/mistral-3",
         source: "Mistral AI Research Announcement & Model Weights"
       },
       {
@@ -4436,8 +4435,8 @@ export const ALL_ARTICLES: Article[] = [
   {
     id: "art-79",
     slug: "deepseek-releases-v4-1-flash-mla-2-price-floor",
-    title: "DeepSeek Releases DeepSeek-V4.1-Flash: Multi-Head Latent Attention v2 Cuts KV Cache by 40% at $0.14/1M Pricing",
-    subtitle: "DeepSeek rolls out its next-generation lightweight MoE architecture, introducing native 4-token speculative Multi-Token Prediction (MTP) and setting a new industry price floor for high-throughput autonomous agent swarms.",
+    title: "DeepSeek Releases DeepSeek-V4.1-Flash: Multi-Head Latent Attention v2 Cuts KV Cache by 40% at $0.30/1M Input Pricing",
+    subtitle: "DeepSeek rolls out its next-generation lightweight MoE architecture, introducing native 4-token speculative Multi-Token Prediction (MTP) and pricing it for high-throughput autonomous agent swarms.",
     category: "ai",
     articleType: "breaking",
     signalRating: 97,
@@ -4448,32 +4447,32 @@ export const ALL_ARTICLES: Article[] = [
     coverImageAlt: "DeepSeek-V4.1-Flash neural architecture visualizing Multi-Head Latent Attention compression and 160 fine-grained MoE routed experts",
     tags: ["DeepSeek", "DeepSeek-V4.1-Flash", "MLA-2", "MoE", "Multi-Token Prediction", "Inference Efficiency", "Open Weights"],
     threeQuestions: {
-      whatHappened: "DeepSeek quietly deployed DeepSeek-V4.1-Flash across its open API platform and LMSYS Chatbot Arena canary slots over the September 11–12 weekend. Spanning 280 billion total parameters with a sparse active footprint of only 16.5 billion parameters per token (160 fine-grained routed experts + 4 shared experts), V4.1-Flash introduces Multi-Head Latent Attention v2 (MLA-2) and native 4-token Multi-Token Prediction (MTP). Generating over 160 tokens per second per stream, DeepSeek paired the release with an industry-shattering price schedule: $0.14 per 1M input tokens and $0.56 per 1M output tokens ($0.02 per 1M cached prompt tokens).",
-      whyItMatters: "While frontier hyperscalers charge $5.00 to $15.00 per million tokens for flagship intelligence, real-world autonomous agent workflows require processing millions of intermediate scratchpad tokens, tool calls, and automated lint iterations. By cutting KV-cache memory footprints by 40% with dynamic rank compression and sustaining 160+ tokens/sec, V4.1-Flash makes continuous autonomous agent loops economically trivial—offering 1396 Chatbot Arena Elo (outperforming Gemini 3.8 Flash and approaching Claude 3.5 Sonnet) at less than one-tenth the operational expenditure.",
+      whatHappened: "DeepSeek quietly deployed DeepSeek-V4.1-Flash across its open API platform and LMSYS Chatbot Arena canary slots over the September 11–12 weekend. Spanning 280 billion total parameters with a sparse active footprint of only 16.5 billion parameters per token (160 fine-grained routed experts + 4 shared experts), V4.1-Flash introduces Multi-Head Latent Attention v2 (MLA-2) and native 4-token Multi-Token Prediction (MTP). Generating over 160 tokens per second per stream, DeepSeek paired the release with a low price schedule: $0.30 per 1M input tokens and $1.20 per 1M output tokens (OpenRouter list price, October 11, 2026).",
+      whyItMatters: "While frontier hyperscalers charge $5.00 to $15.00 per million tokens for flagship intelligence, real-world autonomous agent workflows require processing millions of intermediate scratchpad tokens, tool calls, and automated lint iterations. By cutting KV-cache memory footprints by 40% with dynamic rank compression and sustaining 160+ tokens/sec, V4.1-Flash makes continuous autonomous agent loops economically trivial—offering an arena.ai text score of 1475 (#39 of 414 entries as of October 11, 2026) at less than one-tenth the operational expenditure.",
       whatsNext: "DeepSeek confirmed that open weights under Apache 2.0 with native FP8 (E4M3) and INT4-MLA quantization tensors will be uploaded to Hugging Face, enabling self-hosted enterprise deployments on two 80GB H100 GPUs or four consumer RTX 4090s."
     },
     keyTakeaways: [
       "Multi-Head Latent Attention v2 (MLA-2): compresses KV-cache VRAM footprint by 40%, keeping 128k context usage under 1.8 GB.",
       "4-token speculative Multi-Token Prediction (MTP): generates 4 future candidate tokens in parallel, sustaining 160+ tokens/second.",
-      "Industry price floor: priced at $0.14/1M input and $0.56/1M output, with $0.02/1M cached prompt reads.",
-      "1396 Arena Elo: punches into top-10 global leaderboard standing, outscoring Gemini 3.8 Flash on STEM logic and coding."
+      "Low list price: $0.30/1M input and $1.20/1M output (OpenRouter, October 11, 2026).",
+      "Arena standing: 1475 on the arena.ai text leaderboard (#39 of 414 entries, October 11, 2026), below Gemini 3.8 Flash at 1497."
     ],
     content: [
       "In a characteristic stealth deployment that has sent shockwaves through the global AI infrastructure landscape, Hangzhou-based frontier lab DeepSeek has launched DeepSeek-V4.1-Flash across its developer API platform and LMSYS Chatbot Arena canary endpoints.",
       "Following the success of DeepSeek-V4-Pro, V4.1-Flash represents a hyper-optimized iteration designed specifically to dismantle the compute cost barriers of continuous, high-throughput autonomous agents. Rather than pursuing massive raw parameter scaling, DeepSeek has focused on architectural arithmetic intensity, hardware-level memory compression, and extreme parallel generation throughput.",
       "At the heart of V4.1-Flash is Multi-Head Latent Attention v2 (MLA-2). In classical transformer models using standard Multi-Head Attention (MHA) or Grouped-Query Attention (GQA), the Key-Value (KV) cache grows linearly with context length and batch size, rapidly exhausting GPU High Bandwidth Memory (HBM) during multi-turn agent loops. DeepSeek pioneered compressing Keys and Values into a low-dimensional latent vector. MLA-2 enhances this with dynamic rank-adaptive projections, compressing the KV cache by an additional 40% compared to V4-Pro. Even during full 128,000-token document analysis, KV memory overhead remains under 1.8 Gigabytes per stream.",
       "To supercharge generation speed, V4.1-Flash natively integrates 4-token Multi-Token Prediction (MTP). Instead of relying on a separate speculative drafting model, the network trains four internal auxiliary prediction heads that forecast tokens t+1, t+2, t+3, and t+4 simultaneously. The main trunk verifies all four tokens in a single forward pass, routinely sustaining throughputs exceeding 160 tokens per second on standard 8x NVIDIA H800 and H100 clusters.",
-      "On LMSYS Chatbot Arena, early canary evaluations recorded an aggregate Elo score of 1396—placing DeepSeek-V4.1-Flash comfortably in the global top 10 and surpassing Google's Gemini 3.8 Flash. In standardized STEM benchmarks, V4.1-Flash achieved 82.4% on HumanEval coding pass@1 and 78.6% on MMLU-Pro.",
-      "Most disruptive of all is DeepSeek's pricing strategy. Billed at $0.14 per 1M input tokens and $0.56 per 1M output tokens (with prompt caching discounted to $0.02), DeepSeek has established a price point roughly 50 times lower than frontier proprietary APIs like GPT-6 Astra, rendering high-volume enterprise agent swarms commercially accessible to developers worldwide."
+      "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (#39 of 414 entries as of October 11, 2026), below Google's Gemini 3.8 Flash at 1497. DeepSeek published its own benchmark tables as images on its release page.",
+      "Most disruptive of all is DeepSeek's pricing strategy. Listed at $0.30 per 1M input tokens and $1.20 per 1M output tokens, V4.1-Flash costs roughly 33 to 42 times less than frontier proprietary APIs like GPT-6 Astra ($10 / $50), rendering high-volume enterprise agent swarms commercially accessible to developers worldwide."
     ],
     technicalSpecs: {
       "Model Architecture": "DeepSeekMoE + Multi-Head Latent Attention v2 (MLA-2) + 4-Token MTP",
       "Total Parameters": "280 Billion (16.5 Billion Active per Forward Pass)",
       "Expert Configuration": "160 Fine-Grained Routed Experts + 4 Isolated Shared Experts",
-      "Context Window": "256,000 Tokens (Native RoPE with YaRN Extension)",
+      "Context Window": "1M Tokens (OpenRouter listing)",
       "Generation Throughput": "162 Tokens / Second per User (8x H800 / H100 Cluster)",
-      "API Pricing": "$0.14 / 1M Input, $0.56 / 1M Output, $0.02 / 1M Cached Input",
-      "Open Weights License": "Apache 2.0 with Native FP8 / INT4 Calibration Tensors"
+      "API Pricing": "$0.30 / 1M Input, $1.20 / 1M Output (OpenRouter list price, 2026-10-11)",
+      "Open Weights License": "MIT"
     },
     relatedBenchmarkId: "bench-swe-bench",
     audioDuration: "6m 14s",
@@ -4484,9 +4483,9 @@ export const ALL_ARTICLES: Article[] = [
         source: "DeepSeek AI Technical Documentation"
       },
       {
-        title: "LMSYS Chatbot Arena: Canary Benchmark Verification for DeepSeek-V4.1-Flash",
-        url: "https://chat.lmsys.org/?leaderboard",
-        source: "Large Model Systems Organization (LMSYS)"
+        title: "arena.ai Text Leaderboard",
+        url: "https://arena.ai/leaderboard/text",
+        source: "arena.ai"
       }
     ],
     isHero: false,
@@ -5076,13 +5075,13 @@ export const ALL_ARTICLES: Article[] = [
     tags: ["Gemini 3.8 Live", "Google DeepMind", "Voice AI", "Extended Thinking", "Multimodal", "Speech-to-Speech", "LMSYS"],
     threeQuestions: {
       whatHappened: "Google DeepMind officially announced the production deployment of Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking across Google AI Studio and Vertex AI. Unlike cascading ASR-LLM-TTS pipelines or sequential thinking voice assistants, Gemini 3.8 Live introduces a native multimodal dual-channel autoregressive architecture. The model maintains a parallel high-bandwidth 'inner monologue' token stream for deliberative reasoning and tool execution while concurrently rendering vocal audio tokens with 155ms median time-to-first-audio.",
-      whyItMatters: "Previous voice assistants faced an architectural tradeoff: either deliver low-latency conversational banter by omitting chain-of-thought, or engage in deep multi-step reasoning while forcing the user to wait in awkward silence. By enabling dual-channel processing, Gemini 3.8 Live delivers an Artificial Analysis Speech Quality benchmark score of 82.6 and an Elo rating of 1412 on LMSYS Arena, matching frontier text-only models while supporting mid-sentence vocal interruptions, tone modulation, and live tool orchestration.",
+      whyItMatters: "Previous voice assistants faced an architectural tradeoff: either deliver low-latency conversational banter by omitting chain-of-thought, or engage in deep multi-step reasoning while forcing the user to wait in awkward silence. By enabling dual-channel processing, Gemini 3.8 Live delivers an Artificial Analysis Speech Quality benchmark score of 82.6 while supporting mid-sentence vocal interruptions, tone modulation, and live tool orchestration.",
       whatsNext: "The dual-channel model is immediately accessible in developer preview via the Gemini Multimodal Live API with input pricing set at $0.75 per million text tokens ($3.00/M audio tokens) and output pricing at $4.50 per million text tokens ($12.00/M audio tokens). Enterprise integration into customer service swarms, robotic embodiment loops, and interactive tutoring will commence in Q4 2026."
     },
     keyTakeaways: [
       "Simultaneous Dual-Channel Architecture: Autoregressively generates internal reasoning tokens and continuous vocoder audio frames concurrently.",
       "Latency & Audio Quality: Measures sub-160ms time-to-first-audio and captures #1 on Artificial Analysis Speech Quality with an 82.6 rating.",
-      "LMSYS Arena Debut: Enters LMSYS Chatbot Arena at Rank #4 (Elo 1412) for Extended Thinking and Rank #7 (Elo 1404) for base Live mode.",
+      "Arena status: neither Live variant is listed on the arena.ai text leaderboard as of October 11, 2026.",
       "Cost Model: $0.75/$4.50 per million text tokens and $3.00/$12.00 per million audio tokens with 1M token context window support."
     ],
     content: [
@@ -5090,7 +5089,7 @@ export const ALL_ARTICLES: Article[] = [
       "Gemini 3.8 Live resolves this dilemma through a novel dual-channel autoregressive topology. While conventional reasoning models must execute their chain-of-thought sequentially before emitting the initial token of their external response, Gemini 3.8 Live decouples internal deliberative tokens from external audio vocoder tokens. As an acoustic waveform is streamed into the model, two parallel attention heads activate: a deliberative channel that generates intermediate latent reasoning tokens (invisible to the listener), and an expressive acoustic decoder that streams back vocal acknowledgments, filler nuances, and initial synthesized phonemes in real time.",
       "Benchmark evaluations conducted by Artificial Analysis validate DeepMind's architectural claims. Gemini 3.8 Live scored 82.6 on the Artificial Analysis Speech Quality index, eclipsing OpenAI's GPT-4o Realtime Audio (78.4) and ElevenLabs Conversational v2 (79.1). The model exhibits human-grade emotional inflection, natural breath pauses, and adaptive cadence, seamlessly transitioning from professional instructional tones to relaxed conversational rhythm without artifacts.",
       "On rigorous multimodal agent benchmarks, Gemini 3.8 Live Extended Thinking demonstrated unprecedented capability. On τ-Voice (Tau-Voice)—which assesses complex multi-turn voice interaction involving database lookups, flight cancellations, and live math calculations—the model attained a 68.6% success rate. Crucially, when an unexpected user interjection occurs mid-speech, the model's acoustic channel halts playback within 120 milliseconds while the deliberative channel dynamically prunes invalid reasoning trajectories from its KV cache.",
-      "In the LMSYS Chatbot Arena, early blind evaluation matches placed Gemini 3.8 Live Extended Thinking at an Elo score of 1412, securing the #4 spot globally and outranking Claude 3.7 Sonnet (1408) and OpenAI o3-mini (1395). The non-thinking Gemini 3.8 Live variant achieved an Elo of 1404, ranking #7 and demonstrating that real-time voice optimization does not incur a degradation of factual precision or code comprehension.",
+      "Neither Gemini 3.8 Live variant is listed on the arena.ai text leaderboard as of October 11, 2026, so early reports of top-10 Arena placements for the voice models could not be confirmed.",
       "Pricing for the Gemini Multimodal Live API is aggressive. Google set developer rates at $0.75 per million input text tokens and $4.50 per million output text tokens. For streaming audio, input processing is priced at $3.00 per million tokens (approximately $0.0036 per minute of audio), with audio synthesis output billed at $12.00 per million tokens (approximately $0.0144 per minute). Both variants ship with full support for a 1,048,576 token context window and 65,536 maximum output tokens.",
       "The release of Gemini 3.8 Live establishes a new frontier for real-time robotic embodiment, voice agents, and spatial computing interfaces. By proving that extended deliberative reasoning can run alongside continuous, interruptible speech synthesis, DeepMind has dismantled the historical boundary between thinking fast and thinking slow in artificial intelligence."
     ],
@@ -5099,7 +5098,6 @@ export const ALL_ARTICLES: Article[] = [
       "Context Window": "1,048,576 tokens (Text, Audio, Video, Image)",
       "Max Output Tokens": "65,536 tokens",
       "Median Voice Latency": "155 ms (Time to First Audio Frame)",
-      "LMSYS Arena Elo": "1412 (Extended Thinking) / 1404 (Live Base)",
       "Speech Quality Score": "82.6 (Artificial Analysis Speech Quality Index)",
       "Pricing (Text)": "$0.75 / M input tokens | $4.50 / M output tokens",
       "Pricing (Audio)": "$3.00 / M input tokens | $12.00 / M output tokens"
@@ -5117,9 +5115,9 @@ export const ALL_ARTICLES: Article[] = [
         source: "Artificial Analysis Research"
       },
       {
-        title: "LMSYS Chatbot Arena Leaderboard: Gemini 3.8 Live Extended Thinking Evaluation",
-        url: "https://chat.lmsys.org/?leaderboard",
-        source: "LMSYS Organization"
+        title: "arena.ai Text Leaderboard",
+        url: "https://arena.ai/leaderboard/text",
+        source: "arena.ai"
       }
     ],
     isHero: false,
@@ -6238,7 +6236,7 @@ export const ALL_ARTICLES: Article[] = [
     id: "art-110",
     slug: "xai-releases-grok-4-7-frontier-reasoning-multi-agent-orchestration",
     title: "xAI Releases Grok 4.7: Frontier Reasoning Model Introduces Native Multi-Agent Orchestration and 500K Deterministic Code Verification",
-    subtitle: "Scaling test-time compute on the Memphis Colossus supercluster, Grok 4.7 pairs sub-quadratic attention with automated compiler-verified sub-agent branching to achieve 62.4% on SWE-bench Verified.",
+    subtitle: "Scaling test-time compute on the Memphis Colossus supercluster, Grok 4.7 pairs sub-quadratic attention with automated compiler-verified sub-agent branching aimed at autonomous software engineering.",
     category: "ai",
     articleType: "model-report",
     signalRating: 98,
@@ -6250,12 +6248,12 @@ export const ALL_ARTICLES: Article[] = [
     tags: ["xAI", "Grok 4.7", "Reasoning Models", "Multi-Agent Systems", "SWE-bench", "Colossus Supercomputer", "AI Infrastructure"],
     threeQuestions: {
       whatHappened: "xAI officially unveiled Grok 4.7, its latest flagship frontier reasoning and code synthesis model trained on the expanded Memphis Colossus supercomputing cluster. The model introduces native multi-agent orchestration directly into its decoding loop, allowing a primary reasoning agent to autonomously spawn, synchronize, and deterministically verify execution traces across multiple internal sub-agents across a 500,000-token context window.",
-      whyItMatters: "Frontier reasoning models have historically treated multi-agent workflows as external, brittle software wrappers (such as AutoGen or CrewAI) that suffer from high context drift and hallucination cascades. By embedding sub-agent branching and formal compiler verification primitives directly into Grok 4.7's token vocabulary, xAI achieved a state-of-the-art 62.4% score on SWE-bench Verified and 96.8% on MATH-500, setting a new benchmark for autonomous software engineering.",
+      whyItMatters: "Frontier reasoning models have historically treated multi-agent workflows as external, brittle software wrappers (such as AutoGen or CrewAI) that suffer from high context drift and hallucination cascades. By embedding sub-agent branching and formal compiler verification primitives directly into Grok 4.7's token vocabulary, xAI aims to make autonomous software engineering more reliable. xAI's model documentation lists no SWE-bench Verified or MATH-500 results.",
       whatsNext: "Grok 4.7 is rolling out immediately to X Premium+ subscribers and enterprise API developers via the xAI Console, with support for structured JSON tool-calling and real-time execution environments."
     },
     keyTakeaways: [
       "Native Multi-Agent Orchestration: Directly branches and merges sub-agent reasoning paths inside the inference loop.",
-      "62.4% on SWE-bench Verified: Establishes a new frontier benchmark for autonomous multi-file repository problem solving.",
+      "Coding focus: built for autonomous multi-file repository problem solving; xAI publishes no SWE-bench Verified score for it.",
       "500K Token Context Window: Sub-quadratic linear attention routing enables sustained reasoning across massive enterprise codebases.",
       "Colossus Cluster Scaling: Trained on xAI's liquid-cooled Memphis cluster using custom FP4 and FP8 distributed kernels."
     ],
@@ -6263,18 +6261,18 @@ export const ALL_ARTICLES: Article[] = [
       "On September 21, 2026, xAI took the wraps off Grok 4.7, marking the laboratory's most aggressive leap into autonomous agentic systems and test-time verification. Trained on an expanded 200,000-GPU footprint at the Memphis Colossus facility, the frontier model is explicitly architected to dismantle the performance plateau experienced by conventional autoregressive transformers when tackling complex, multi-step engineering tasks.",
       "At the core of Grok 4.7 is a fundamental re-engineering of the inference decoding loop. Rather than generating a monolithic sequential chain of thought, Grok 4.7 incorporates special 'agent-branch' control tokens directly into its vocabulary. When confronted with ambiguous, high-entropy architectural challenges, the primary model autonomously bifurcates execution into parallel worker personas—each tasked with formulating hypotheses, writing exploratory test suites, or identifying edge cases.",
       "These sub-agent branches execute in sandboxed memory isolates before their findings are dynamically merged back into the primary reasoning spine via an integrated consensus layer. This native architecture eliminates the serialization overhead and context degradation that plague external orchestration frameworks like AutoGen or LangChain.",
-      "In benchmark evaluations supervised by third-party evaluators, Grok 4.7 set unprecedented marks across technical disciplines. Most notably, the model recorded a 62.4% resolution rate on SWE-bench Verified, resolving intricate real-world GitHub issues across Python, Rust, and Go codebases without human intervention. On the rigorous MATH-500 benchmark, it registered a 96.8% score, driven by a deterministic verification engine that cross-checks intermediate algebraic steps against symbolic solvers before output generation.",
-      "Context processing has also been fundamentally transformed. Leveraging a hybrid sparse-dense attention mechanism that dynamically compresses low-entropy tokens, Grok 4.7 supports a massive 512,000-token native context window. This allows engineering teams to feed entire monolithic repositories, architectural documentation, and historical commit logs into a single prompt without losing needle-in-a-haystack recall fidelity.",
-      "To address inference economics, xAI priced Grok 4.7 aggressively: $3.00 per million input tokens and $12.00 per million output tokens, with cached context priced at $0.75 per million tokens. The pricing structure undercuts closed proprietary competitors while delivering native multi-agent verification out of the box.",
+      "xAI's model documentation lists no SWE-bench Verified, MATH-500 or OSWorld results for Grok 4.7, and the model is not on the official SWE-bench or OSWorld-Verified leaderboards as of October 11, 2026. On the arena.ai text leaderboard it scores 1443 (#90 of 414 entries).",
+      "Context processing has also been fundamentally transformed. Leveraging a hybrid sparse-dense attention mechanism that dynamically compresses low-entropy tokens, Grok 4.7 supports a 500,000-token context window. This allows engineering teams to feed entire monolithic repositories, architectural documentation, and historical commit logs into a single prompt without losing needle-in-a-haystack recall fidelity.",
+      "To address inference economics, xAI priced Grok 4.7 at $2.00 per million input tokens and $6.00 per million output tokens for prompts under 200,000 tokens ($4.00 / $12.00 above that), with cached input at $0.50 per million tokens. The pricing structure undercuts closed proprietary competitors while delivering native multi-agent verification out of the box.",
       "The release cements xAI's position at the frontier of autonomous AI research, transforming reasoning from an abstract linguistic exercise into an empirical, self-verifying engineering tool."
     ],
     technicalSpecs: {
       "Model Architecture": "Sparse Mixture-of-Experts (MoE) with Native Sub-Agent Branching Tokens",
-      "Context Length": "512,000 Tokens (Native)",
-      "Benchmark Highlights": "SWE-bench Verified: 62.4%, MATH-500: 96.8%, OSWorld: 58.2%",
+      "Context Length": "500,000 Tokens (xAI model docs)",
+      "Arena Text Score": "1443 (#90 of 414 on arena.ai, 2026-10-11)",
       "Training Infrastructure": "xAI Memphis Colossus (200k+ Liquid-Cooled H100/H200 GPUs)",
       "Deployment Tier": "xAI Enterprise API & X Premium+ Chat Interface",
-      "Pricing": "$3.00 / 1M Input Tokens, $12.00 / 1M Output Tokens"
+      "Pricing": "$2.00 / 1M Input Tokens, $6.00 / 1M Output Tokens (prompts under 200K tokens)"
     },
     audioDuration: "7m 45s",
     citations: [
@@ -6284,9 +6282,14 @@ export const ALL_ARTICLES: Article[] = [
         source: "xAI Research Announcements"
       },
       {
-        title: "LMSYS Chatbot Arena: Grok 4.7 Evaluation and Verified Coding Benchmarks",
-        url: "https://chat.lmsys.org/?leaderboard",
-        source: "Large Model Systems Organization"
+        title: "xAI Docs: Grok 4.7 Model (context window and pricing)",
+        url: "https://docs.x.ai/developers/models/grok-4.7",
+        source: "xAI Documentation"
+      },
+      {
+        title: "arena.ai Text Leaderboard",
+        url: "https://arena.ai/leaderboard/text",
+        source: "arena.ai"
       }
     ],
     isHero: true,
@@ -6524,8 +6527,8 @@ export const ALL_ARTICLES: Article[] = [
   {
     id: "art-115",
     slug: "anthropic-claude-opus-5-5-1m-context-lean-4-verification",
-    title: "Anthropic Unveils Claude Opus 5.5: 1M Context, 40% Inference Cost Reduction, and Autonomous Lean 4 Verification",
-    subtitle: "Setting a new frontier on reasoning and formal proofs, Anthropic's flagship delivers 1M native context with a breakthrough $4/$20 pricing structure and certified mathematical automation.",
+    title: "Anthropic Unveils Claude Opus 5.5: 1M Context and 20% Lower Token Prices",
+    subtitle: "Anthropic's flagship pairs a 1M-token context window with $4/$20 per-million-token pricing, down from $5/$25 for Opus 5, and Anthropic says it costs 40% less to run per task.",
     category: "ai",
     articleType: "model-report",
     signalRating: 98,
@@ -6534,48 +6537,47 @@ export const ALL_ARTICLES: Article[] = [
     readTimeMinutes: 8,
     coverImage: "/images/articles/art115_claude_opus55_1m.jpg",
     coverImageAlt: "Anthropic Claude Opus 5.5 frontier model neural architecture diagram displaying 1M token context window, formal Lean 4 verification proofs, and reasoning graphs",
-    tags: ["Anthropic", "Claude Opus 5.5", "Frontier Models", "Lean 4", "Formal Verification", "AI Reasoning", "LLM Pricing"],
+    tags: ["Anthropic", "Claude Opus 5.5", "Frontier Models", "Agentic Coding", "Terminal-Bench", "AI Reasoning", "LLM Pricing"],
     threeQuestions: {
-      whatHappened: "Anthropic officially launched Claude Opus 5.5, its most capable frontier foundation model to date. Featuring a native 1-million-token context window and a radical 40% inference price reduction ($4.00 per million input tokens, $20.00 output, and $0.20 for prompt caching), Opus 5.5 introduces native formal logic synthesis capable of authoring and compiling verified mathematical proofs in the Lean 4 interactive theorem prover.",
-      whyItMatters: "While prior frontier models achieved high conversational and coding marks, they remained prone to subtle logical hallucinations in complex discrete mathematics and mission-critical software verification. By integrating direct Lean 4 proof-search into its reasoning loop, Claude Opus 5.5 achieved a 73.4% verified score on SWE-bench and proved novel algorithmic bounds in collaboration with formal theorem researchers.",
-      whatsNext: "Anthropic deployed Opus 5.5 immediately across its API, Claude Enterprise, and Amazon Bedrock, with automated Lean 4 compilation sandboxes rolling out to defense, aerospace, and cryptographic verification clients."
+      whatHappened: "Anthropic officially launched Claude Opus 5.5, its most capable frontier foundation model to date. Featuring a 1-million-token context window and 20% lower per-token prices ($4.00 per million input tokens and $20.00 output, down from $5 / $25 for Opus 5, with cache reads at $0.20), Opus 5.5 targets long-running agentic coding and knowledge work. Anthropic says it costs 40% less to run than Opus 5.",
+      whyItMatters: "Long agentic runs on frontier models have been expensive. In Anthropic's launch table, Claude Opus 5.5 scores 66.4% on Terminal-Bench 4.0, ahead of GPT-6 Astra (57.9%), and Anthropic says it matches Astra on that benchmark at about 40% of the cost.",
+      whatsNext: "Anthropic deployed Opus 5.5 immediately across its API, Claude Enterprise, AWS, Google Cloud, and Microsoft Azure."
     },
     keyTakeaways: [
       "1M Native Context: Processes massive codebases and book-length documentation in a single unified inference window.",
-      "40% Price Reduction: Drops frontier inference costs to $4/M input and $20/M output, with prompt caching reads at just $0.20/M.",
-      "Formal Lean 4 Synthesis: Natively verifies algorithmic proofs and generates machine-checkable mathematical theorem scripts.",
-      "Elite Benchmark Scores: Reaches 1417 Elo on Chatbot Arena and 73.4% on SWE-bench Verified."
+      "20% Lower Token Prices: $4/M input and $20/M output (from $5/$25 on Opus 5), with prompt cache reads at $0.20/M; Anthropic says it costs 40% less to run overall.",
+      "Agentic Coding: Anthropic reports 66.4% on Terminal-Bench 4.0 and 54.4% on FrontierCode v1.1.",
+      "Arena Standing: 1507 on the arena.ai text leaderboard (#2 of 414 entries as of October 11, 2026)."
     ],
     content: [
-      "On September 22, 2026, Anthropic officially released Claude Opus 5.5, redefining frontier artificial intelligence capabilities across massive-context processing, complex reasoning economics, and machine-verified formal mathematics.",
-      "The release marks the debut of the 5.5 model family. For enterprise systems architects, the headline development is an aggressive 40% reduction in inference pricing compared to Opus 5: input tokens are billed at $4.00 per million, output at $20.00 per million, and cached input reads at an unprecedented $0.20 per million. This pricing realignment establishes a direct challenge to hyperscaler competitors by rendering million-token reasoning passes economically viable for daily production workloads.",
-      "Beyond raw economics, Opus 5.5 introduces native integration with formal proof assistants, specifically the Lean 4 interactive theorem proving environment. Rather than relying solely on heuristic natural-language reasoning, Opus 5.5 can generate formal proof scripts, invoke an internal Lean 4 kernel to check the validity of individual proof steps, and iteratively self-correct until a certified proof is compiled.",
-      "In benchmark evaluations, Claude Opus 5.5 recorded a 1417 Elo on the LMSYS Chatbot Arena—securing Rank 4 globally right alongside Claude Fable 5.1 (1418) and surpassing Opus 5 (1416). On SWE-bench Verified, the model resolved 73.4% of real-world GitHub issues with zero regressions, outperforming prior frontier benchmarks while requiring significantly fewer multi-agent scaffolding calls.",
-      "In a joint announcement with academic researchers, Anthropic revealed that Opus 5.5 successfully authored and certified the complete Lean 4 proof for the newly discovered C-HD graph shortest-path algorithm, demonstrating that autonomous LLMs can now contribute verifiable, novel mathematical knowledge to computer science.",
-      "Claude Opus 5.5 is available immediately across the Anthropic API, Claude Enterprise, Amazon Bedrock, and Google Cloud Vertex AI, with support for automated Lean 4 compilation sandboxes."
+      "On September 22, 2026, Anthropic officially released Claude Opus 5.5, redefining frontier artificial intelligence capabilities across massive-context processing, agentic coding, and reasoning economics.",
+      "The release marks the debut of the 5.5 model family. For enterprise systems architects, the headline development is a 20% cut in per-token pricing compared to Opus 5: input tokens are billed at $4.00 per million (from $5.00), output at $20.00 per million (from $25.00), and cached input reads at $0.20 per million (from $0.50). Anthropic says that, with better token efficiency, Opus 5.5 costs 40% less to run than Opus 5. This pricing realignment establishes a direct challenge to hyperscaler competitors by rendering million-token reasoning passes economically viable for daily production workloads.",
+      "Beyond raw economics, Anthropic positions Opus 5.5 for long-horizon agentic work. Adaptive thinking at maximum effort is the default for most reported results, and Anthropic says output is more than 30% faster than Opus 5.",
+      "In Anthropic's launch table, Claude Opus 5.5 scored 66.4% on Terminal-Bench 4.0 (GPT-6 Astra: 57.9%), 54.4% on FrontierCode v1.1 and 67.7% on Humanity's Last Exam with tools. Anthropic did not report a SWE-bench Verified score. On the arena.ai text leaderboard, Opus 5.5 scores 1507 (#2 of 414 entries as of October 11, 2026), ahead of Claude Fable 5.1 (1501) and Opus 5 (1490).",
+      "Separately, the researchers behind the newly discovered C-HD graph shortest-path algorithm reported that multi-agent pipelines led by Opus 5.5 helped produce its proof, which was checked with the external Lean 4 theorem prover.",
+      "Claude Opus 5.5 is available immediately across the Anthropic API, Claude Enterprise, AWS, Google Cloud, and Microsoft Azure under the model ID claude-opus-5-5."
     ],
     technicalSpecs: {
-      "Architecture": "Sparse Mixture-of-Experts with Integrated Formal Reasoning Head",
+      "Architecture": "Not disclosed",
       "Context Window": "1,000,000 tokens (native)",
       "Inference Pricing": "$4.00 / M input | $20.00 / M output ($0.20 prompt cache read)",
-      "SWE-bench Verified": "73.4% Pass@1",
-      "Chatbot Arena Elo": "1417 (Rank #4)",
-      "Formal Logic Prover": "Native Lean 4 & Coq proof engine synthesis",
+      "Terminal-Bench 4.0": "66.4% (Anthropic-reported)",
+      "Arena Text Score": "1507 (#2 of 414 on arena.ai, 2026-10-11)",
       "Release Date": "September 22, 2026"
     },
     relatedModelId: "model-claude-opus-5-5",
-    relatedBenchmarkId: "bench-swe-bench",
+    relatedBenchmarkId: "bench-chatbot-arena",
     audioDuration: "7m 30s",
     citations: [
       {
-        title: "Anthropic Research: Announcing Claude Opus 5.5 and Verified Reasoning",
-        url: "https://www.anthropic.com/news/claude-opus-5-5",
-        source: "Anthropic Engineering Publications"
+        title: "Anthropic: Claude Opus 5.5",
+        url: "https://www.anthropic.com/claude-opus-5-5",
+        source: "Anthropic"
       },
       {
-        title: "Lean Prover Community: Formal Algorithmic Bounds Verified by Frontier LLMs",
-        url: "https://leanprover-community.github.io/blog/claude-opus-5-5-formal-proofs/",
-        source: "Lean Prover Research Foundation"
+        title: "arena.ai Text Leaderboard",
+        url: "https://arena.ai/leaderboard/text",
+        source: "arena.ai"
       }
     ],
     isHero: true,
@@ -8346,35 +8348,35 @@ export const ALL_ARTICLES: Article[] = [
     threeQuestions: {
       whatHappened: "Anthropic officially released Claude Sonnet 5.5, expanding its 5.5 foundation family alongside the flagship Claude Opus 5.5. Engineered specifically for complex everyday coding, structured document synthesis, and multi-tool workflows, Sonnet 5.5 operates 30% faster than Sonnet 5 while requiring significantly fewer agentic roundtrips and token invocations.",
       whyItMatters: "As developers increasingly deploy agent swarms rather than single conversational assistants, API inference latency, token thrashing, and tool hallucination have become primary cost and reliability bottlenecks. Sonnet 5.5 achieves a new state-of-the-art on Terminal-Bench 4.0 and introduces Anthropic's Tier-2 cybersecurity containment protocols to prevent autonomous command injection during local shell execution.",
-      whatsNext: "Claude Sonnet 5.5 is available immediately via the Anthropic API, Claude Enterprise workspaces, AWS Bedrock, and Google Cloud Vertex AI at $3.00 per million input tokens and $15.00 per million output tokens."
+      whatsNext: "Claude Sonnet 5.5 is available immediately via the Anthropic API, Claude Enterprise workspaces, AWS Bedrock, and Google Cloud Vertex AI at $2.00 per million input tokens and $10.00 per million output tokens."
     },
     keyTakeaways: [
       "30% Latency Reduction: High-throughput token delivery optimizes interactive pair programming and autonomous loop execution.",
       "Terminal-Bench 4.0 Lead: Outperforms predecessor models in multi-command CLI navigation, git worktree manipulation, and complex test refactoring.",
       "Built-in Security Safeguards: First Sonnet model equipped with active prompt injection filtering and local shell sandboxing constraints.",
-      "Economical Pricing Parity: Retains standard Sonnet API tier pricing ($3/$15 per 1M tokens) with substantial token efficiency savings."
+      "Economical Pricing Parity: Retains Sonnet 5 API pricing ($2/$10 per 1M tokens) with substantial token efficiency savings."
     ],
     content: [
       "On September 28, 2026, Anthropic expanded its frontier generation by releasing Claude Sonnet 5.5, the second member of the Claude 5.5 model family following last week's debut of Claude Opus 5.5.",
       "Positioned as Anthropic's enterprise workhorse, Sonnet 5.5 is purpose-built for the high-volume operational tasks that dominate software engineering workflows: writing and debugging complex multi-file pull requests, generating verified architectural specs, and orchestrating terminal tool execution.",
       "According to Anthropic's technical disclosures, Sonnet 5.5 runs more than 30% faster in raw token output compared to Sonnet 5. Crucially, the model demonstrates enhanced token economy, requiring 22% fewer internal chain-of-thought tokens and tool roundtrips to resolve verified GitHub issues.",
-      "On Terminal-Bench 4.0—the industry benchmark evaluating an AI agent's proficiency in executing real-world bash commands, compiling code, navigating nested file trees, and resolving merge conflicts—Sonnet 5.5 notched a record score of 68.4%, outpacing all existing commercial models in its weight class.",
+      "On Terminal-Bench 4.0—the industry benchmark evaluating an AI agent's proficiency in executing real-world bash commands, compiling code, navigating nested file trees, and resolving merge conflicts—Sonnet 5.5 scored 70.6% in Anthropic's launch table, up from 10.3% for Sonnet 5 and ahead of Opus 5.5 (66.4%).",
       "Notably, Sonnet 5.5 is the first mid-tier foundation model to deploy with Anthropic's ASL-2 cybersecurity containment guardrails. The architecture features real-time heuristics that identify and intercept indirect prompt injection attacks hidden within repository code comments and untrusted external web dependencies.",
-      "By maintaining standard Sonnet pricing ($3.00 per million input tokens, $15.00 per million output tokens) while delivering faster execution and fewer required tokens, Anthropic delivers substantial gross margin improvements for developer tool platforms and enterprise agent swarms."
+      "By keeping Sonnet 5 pricing ($2.00 per million input tokens, $10.00 per million output tokens) while delivering faster execution and fewer required tokens, Anthropic delivers substantial gross margin improvements for developer tool platforms and enterprise agent swarms."
     ],
     technicalSpecs: {
       "Model Family": "Anthropic Claude 5.5 Generation",
-      "Context Window": "200,000 Tokens (with 1M enterprise beta tier)",
+      "Context Window": "1M Tokens",
       "Inference Speed": "+31% Token Output Throughput vs. Claude Sonnet 5",
-      "Benchmark Highlight": "68.4% on Terminal-Bench 4.0 CLI Agent Benchmark",
-      "API Pricing": "$3.00 / 1M Input Tokens | $15.00 / 1M Output Tokens",
+      "Benchmark Highlight": "70.6% on Terminal-Bench 4.0 (Anthropic-reported)",
+      "API Pricing": "$2.00 / 1M Input Tokens | $10.00 / 1M Output Tokens",
       "Security Level": "Anthropic ASL-2 Embedded Prompt Injection Interceptor"
     },
     audioDuration: "7m 10s",
     citations: [
       {
         title: "Anthropic Announces Claude Sonnet 5.5 for Everyday Enterprise Engineering",
-        url: "https://www.anthropic.com/news/claude-sonnet-5-5",
+        url: "https://www.anthropic.com/claude-sonnet-5-5",
         source: "Anthropic News"
       },
       {
@@ -8907,7 +8909,7 @@ export const ALL_ARTICLES: Article[] = [
     coverImageAlt: "Google DeepMind computing research laboratory with glowing blue server racks and a central holographic Gemini 4 Argon prism emitting one million token data streams",
     tags: ["Google", "Gemini 4 Argon", "Frontier AI", "Reasoning Models", "DeepSWE", "Cybersecurity", "Fairwind Program", "AI Architecture", "AutomationBench", "Vals Index"],
     threeQuestions: {
-      whatHappened: "Google DeepMind and Chief AI Architect Koray Kavukcuoglu officially unveiled Gemini 4 Argon, a frontier reasoning foundation model engineered for real-world software engineering, enterprise knowledge work (finance, legal, tax), and defensive cybersecurity. Departing from previous 64K generation limits, Argon features an industry-leading 1 million token output ceiling within a 4-million token context window, priced at $4 per 1M input tokens and $20 per 1M output tokens upon general rollout.",
+      whatHappened: "Google DeepMind and Chief AI Architect Koray Kavukcuoglu officially unveiled Gemini 4 Argon, a frontier reasoning foundation model engineered for real-world software engineering, enterprise knowledge work (finance, legal, tax), and defensive cybersecurity. Departing from previous 64K generation limits, Argon features an industry-leading 1 million token output ceiling, priced at $2 per 1M input tokens and $10 per 1M output tokens during an introductory period, rising to $4 / $20 afterwards.",
       whyItMatters: "While current reasoning models truncate intermediate chain-of-thought processing at 64K–128K tokens, real-world refactoring and vulnerability auditing require unbroken reasoning across millions of tokens. Google demonstrated Argon agents freeing 300+ TiB of data center memory, porting 800K lines of the Fuchsia Zircon kernel to safe Rust, and uncovering zero-day vulnerabilities in hospital healthcare software with Wiz. However, Google's reported benchmark metrics (77.9% DeepSWE v1.1, 51.3% AutomationBench) remain vendor self-reported and must be treated with rigorous editorial skepticism until independently audited.",
       whatsNext: "Google is launching Argon initially without cyber guardrails to trusted defenders through the Fairwind Program to stress-test dual-use vulnerabilities before releasing to paid API customers and Google AI Ultra subscribers. DeepMind also urged the AI industry to preserve chain-of-thought reasoning transparency to reliably monitor models for misalignment and emergent self-preservation behaviors."
     },
@@ -8915,26 +8917,26 @@ export const ALL_ARTICLES: Article[] = [
       "1 Million Token Output Ceiling: Expands generation headroom from 64K to 1M tokens, enabling unbroken multi-hour software engineering and formal verification trajectories.",
       "Real-World Enterprise Feats: Deployed internally to reclaim 300+ TiB of datacenter RAM and port core C/C++ libraries (libgav1, Fuchsia Zircon) to auto-vectorized, memory-safe Rust.",
       "Autonomous Defensive Cybersecurity: Partnered with Wiz under the Scan for Good initiative to uncover critical zero-day healthcare software vulnerabilities; rolling out via the Fairwind Program.",
-      "Pricing & Availability: Structured at $4 per 1M input tokens and $20 per 1M output tokens, rolling out first to Fairwind defenders, followed by paid API and Google AI Ultra tiers.",
+      "Pricing & Availability: $2 per 1M input tokens and $10 per 1M output tokens during an introductory period, then $4 / $20, rolling out first to Fairwind defenders, followed by paid API and Google AI Ultra tiers.",
       "Critical Verification Deficit: Google reports record benchmark scores (77.9% DeepSWE, 51.3% AutomationBench, 91.7% LVBench), but NextVector treats these vendor-reported figures as unverified claims and quarantines them from the platform's independent benchmark database."
     ],
     content: [
       "On September 30, 2026, Google officially introduced Gemini 4 Argon, its most formidable frontier foundation model to date. Authored by Koray Kavukcuoglu, SVP of Google DeepMind and Chief AI Architect at Google, the release marks a fundamental structural transition from conversational chatbots toward long-horizon, autonomous enterprise reasoning agents capable of operating continuously across hours of multi-step problem solving.",
-      "The core architectural breakthrough of Gemini 4 Argon is its dramatic expansion of the generative output token limit. While contemporary frontier reasoning systems like OpenAI o1 or Claude 3.7 Sonnet operate within generous input context windows, their generative generation budget has remained tightly throttled—typically capping intermediate chain-of-thought trajectories at 64,000 to 128,000 tokens. Gemini 4 Argon expands this generative headroom to an industry-leading 1 million output tokens within a 4-million token total context window, allowing the model to deliberate, test, backtrack, and synthesize vast intellectual artifacts in a single uninterrupted trajectory.",
+      "The core architectural breakthrough of Gemini 4 Argon is its dramatic expansion of the generative output token limit. While contemporary frontier reasoning systems like OpenAI o1 or Claude 3.7 Sonnet operate within generous input context windows, their generative generation budget has remained tightly throttled—typically capping intermediate chain-of-thought trajectories at 64,000 to 128,000 tokens. Gemini 4 Argon expands this generative headroom to an industry-leading 1 million output tokens, allowing the model to deliberate, test, backtrack, and synthesize vast intellectual artifacts in a single uninterrupted trajectory.",
       "Rather than relying strictly on synthetic demonstrations, Google showcased real-world production engineering feats executed by Argon agents inside its own infrastructure. In fleet telemetry operations, autonomous Argon agent clusters analyzed profiling logs to identify memory leaks, freeing up over 300 TiB of RAM across Google's global data centers, with projected infrastructure savings between 500 TiB and 1 PiB. Furthermore, Argon agents are driving large-scale C/C++ to memory-safe Rust codebase migrations, spanning core libraries like re2 and libgav1 up to 800,000+ lines in the Fuchsia OS Zircon microkernel. In libgav1, Argon replaced 32,000 lines of SIMD assembly with safe, auto-vectorizing Rust code through iterative profile-guided experiments, yielding a memory-safe video decoder that runs 2.7x faster than the initial Rust port.",
       "Cybersecurity represents another primary capability pillar. Google trained Argon specifically for autonomous vulnerability identification, validation, and remediation. In a high-impact validation partnership, enterprise cloud security firm Wiz deployed Argon within its 'Scan for Good' initiative, which protects critical public infrastructure. During initial trials, Argon discovered a severe, previously overlooked zero-day vulnerability in healthcare software utilized by hospitals worldwide that exposed sensitive patient records. To maximize defensive utility, Google is releasing Argon without cyber guardrails to trusted defenders and internal defensive teams under its Fairwind Cyber Defense Program.",
       "In its published release notes, Google DeepMind reported record-setting scores across multiple enterprise and coding evaluations. On DeepSWE v1.1—a demanding benchmark evaluating multi-file bug diagnosis, patch generation, and regression testing across complex real-world software repositories—Google claimed Gemini 4 Argon achieved a state-of-the-art score of 77.9%. In enterprise knowledge work, Google reported Argon leads the Vals Index (weighted by GDP contribution across finance, legal, and tax), ranks #1 on Zapier's AutomationBench with a 51.3% end-to-end task completion rate, hits 91.7% on LVBench for multimodal video comprehension, and ties for first place on CWE-bench v1 with 68.0% in automated vulnerability remediation.",
       "EDITORIAL CAVEAT & VERIFICATION WARNING: While Google's headline benchmark claims are mathematically impressive, NextVector's editorial board treats vendor self-reported benchmark figures as an inherently unverified and unreliable data source. Historically, lab-reported evaluation metrics frequently suffer from prompt scaffolding bias, eval dataset contamination in web-scale training corpuses, aggressive cherry-picking across best-of-N sampling passes, and specialized harness optimizations that fail to replicate in independent enterprise environments. Neither LMSYS Chatbot Arena, the SWE-bench Verified maintainers, nor Artificial Analysis have independently audited or validated these figures on blind test holdouts.",
       "In strict accordance with NextVector Editorial Policy §8, these self-reported figures are presented here strictly as corporate claims and will NOT be incorporated into NextVector's verified platform benchmark database or official model leaderboard rankings. The model will remain excluded from official NextVector benchmark tables until third-party evaluation consortia execute reproducible, tamper-proof evaluations under standardized sampling temperatures.",
       "To mitigate dual-use hazards, Google outlined four layers of frontier safeguards: internal activation monitoring to detect chemical, biological, radiological, or cyber misuse; automated red-teaming against indirect prompt injection (where Argon leads on Gray Swan's IPI evaluation); hardware-isolated sealed sandboxes; and real-time chain-of-thought misalignment monitoring with automated execution circuit breakers. Crucially, Google publicly urged the broader AI industry to preserve chain-of-thought reasoning transparency, warning that hiding or suppressing model thoughts impedes the diagnostic monitoring required to prevent catastrophic misalignment.",
-      "Gemini 4 Argon is currently rolling out exclusively to trusted partners in the Fairwind Cyber Alliance. Broader commercial access for enterprise developers through Google Cloud Vertex AI, Google AI Studio, and Google AI Ultra subscription tiers will follow after red-team evaluations conclude. Following the initial rollout period, Google confirmed a commercial pricing tier of $4.00 per 1 million input tokens and $20.00 per 1 million output tokens."
+      "Gemini 4 Argon is currently rolling out exclusively to trusted partners in the Fairwind Cyber Alliance. Broader commercial access for enterprise developers through Google Cloud Vertex AI, Google AI Studio, and Google AI Ultra subscription tiers will follow after red-team evaluations conclude. Google lists an introductory price of $2.00 per 1 million input tokens and $10.00 per 1 million output tokens, rising to $4.00 and $20.00 after the introductory period."
     ],
     technicalSpecs: {
       "Model Architecture": "Google Gemini 4 Generation (Argon Deep Reasoning Core)",
       "Lead Architect": "Koray Kavukcuoglu (SVP, DeepMind & Chief AI Architect)",
       "Output Generation Limit": "1,000,000 Tokens (Expanded from previous 64K limit)",
-      "Total Context Window": "4,000,000 Total Tokens (Input + Reasoning Output)",
-      "Commercial API Pricing": "$4.00 / 1M Input Tokens | $20.00 / 1M Output Tokens",
+      "Context Window": "1M Tokens (arena.ai model listing; not stated by Google)",
+      "Commercial API Pricing": "$2.00 / 1M Input | $10.00 / 1M Output (introductory); $4.00 / $20.00 after",
       "Google-Claimed DeepSWE v1.1": "77.9% (Vendor Self-Reported • Unverified Telemetry)",
       "Google-Claimed AutomationBench": "51.3% (Vendor Self-Reported • Zapier Benchmark)",
       "Google-Claimed LVBench (Video)": "91.7% (Vendor Self-Reported • SOTA Claim)",
@@ -10908,7 +10910,7 @@ export const ALL_ARTICLES: Article[] = [
     tags: ["Reflection AI", "Beam 501B", "Mixture of Experts", "Open Source AI", "Apache 2.0", "1M Context", "Nvidia", "SWE-bench"],
     threeQuestions: {
       whatHappened: "On October 5, 2026, Nvidia-backed AI startup Reflection AI publicly released Beam, a massive 501-billion parameter open-weight Mixture-of-Experts (MoE) foundation model under the permissive Apache 2.0 license. Beam employs a 64-expert routing topology with top-4 routing, activating 23 billion parameters per token during forward passes. Trained on 18 trillion tokens across Nvidia H100 and B200 clusters, Beam incorporates native RingAttention and YaRN RoPE positional embeddings to sustain full 1,000,000 token context retrieval with 99.8% needle-in-a-haystack recall.",
-      whyItMatters: "Beam establishes a new high-water mark for permissive open-weight artificial intelligence, directly challenging closed-source proprietary models like Claude 3.5 Sonnet and GPT-4o. On SWE-bench Verified, Beam achieved a 54.8% pass rate, while scoring 88.2% on MATH-500 and 1386 on LMSYS Chatbot Arena. Because Beam's active inference footprint is only 23 billion parameters, it achieves high inference speeds (over 85 tokens per second on an 8x H100 node using FP8 tensor parallelism), providing enterprise teams with an unconstrained, self-hostable reasoning engine without API subscription vendor lock-in.",
+      whyItMatters: "Beam establishes a new high-water mark for permissive open-weight artificial intelligence, directly challenging closed-source proprietary models like Claude 3.5 Sonnet and GPT-4o. On SWE-bench Verified, Beam achieved a 54.8% pass rate, while scoring 88.2% on MATH-500, according to Reflection AI. Because Beam's active inference footprint is only 23 billion parameters, it achieves high inference speeds (over 85 tokens per second on an 8x H100 node using FP8 tensor parallelism), providing enterprise teams with an unconstrained, self-hostable reasoning engine without API subscription vendor lock-in.",
       whatsNext: "Reflection AI has uploaded complete base and instruct weight checkpoints to Hugging Face, alongside quantized 4-bit and 8-bit AWQ and GGUF profiles for local deployment via vLLM and SGLang. The company also announced an upcoming fine-tuning challenge offering $500,000 in compute grants to open-source developers optimizing domain-specific legal, medical, and cyber-defense reasoning checkpoints on Beam."
     },
     keyTakeaways: [
@@ -10922,7 +10924,7 @@ export const ALL_ARTICLES: Article[] = [
       "The open-weight artificial intelligence frontier expanded dramatically on October 5, 2026, as Silicon Valley startup Reflection AI released Beam—an open-weights Mixture-of-Experts (MoE) foundation model boasting 501 billion total parameters licensed entirely under Apache 2.0.",
       "Backed by significant compute investment from Nvidia and DST Global, Reflection AI engineered Beam to resolve the acute trade-off between frontier reasoning capability and operational inference cost. While standard dense foundation models require prohibitive hardware clusters to process each token, Beam utilizes a sparse routed topology featuring 64 distinct expert sub-networks. For each token processed, a learned router selects the top 4 experts, meaning that only 23 billion parameters are actively computed per forward pass.",
       "This architectural efficiency enables Beam to deliver blistering throughput. In benchmarks running on a single standard node of 8 Nvidia H100 GPUs with FP8 tensor parallelism, Beam sustained generation speeds exceeding 85 tokens per second. Furthermore, Beam supports an immense native 1,000,000 token context window, achieved via distributed RingAttention and YaRN RoPE frequency scaling, registering 99.8% precision across full-length needle-in-a-haystack retrieval tests.",
-      "In standardized evaluations, Beam showcased capabilities previously restricted to multi-million-dollar proprietary cloud APIs. On the software engineering benchmark SWE-bench Verified, Beam achieved a 54.8% task resolution rate, surpassing Claude 3.5 Sonnet's launch baseline. On advanced mathematical reasoning, Beam scored 88.2% on MATH-500, and it debuted with an estimated 1386 Elo on the LMSYS Chatbot Arena leaderboard.",
+      "In standardized evaluations, Beam showcased capabilities previously restricted to multi-million-dollar proprietary cloud APIs. On the software engineering benchmark SWE-bench Verified, Beam achieved a 54.8% task resolution rate, surpassing Claude 3.5 Sonnet's launch baseline. On advanced mathematical reasoning, Beam scored 88.2% on MATH-500. Beam is not listed on the arena.ai text leaderboard as of October 11, 2026.",
       "The release of Beam under the Apache 2.0 license represents a calculated competitive offensive against proprietary API moats. By granting enterprises and independent researchers complete freedom to fine-tune, quantize, and host weights within private virtual private clouds without telemetry or usage quotas, Reflection AI is aggressively democratizing frontier agent capabilities.",
       "Inference engines including vLLM, SGLang, and TensorRT-LLM merged same-day support for Beam's routing kernels. With quantized 4-bit AWQ checkpoints fitting comfortably into compact dual-node workstation clusters, Beam provides the open-source engineering community with a formidable sovereign foundation for complex multi-agent swarms and code synthesis pipelines."
     ],
@@ -11547,7 +11549,7 @@ export const ALL_ARTICLES: Article[] = [
     id: "art-197",
     slug: "anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows",
     title: "Anthropic Releases Claude Haiku 5.5: Native Effort Controls, Sub-Agent Concurrency, and $0.10 Inference",
-    subtitle: "Completing the Claude 5.5 family, Anthropic's fastest model introduces granular test-time compute tuning, 200k context windows, and sub-200ms latency for autonomous swarms.",
+    subtitle: "Completing the Claude 5.5 family, Anthropic's fastest model introduces granular test-time compute tuning, a 1M-token context window, and Anthropic's fastest response times for autonomous swarms.",
     category: "ai",
     articleType: "model-report",
     signalRating: 96,
@@ -11556,24 +11558,24 @@ export const ALL_ARTICLES: Article[] = [
     readTimeMinutes: 8,
     coverImage: "/images/articles/art197_claude_haiku_effort_controls.jpg",
     coverImageAlt: "Technical schematic illustrating Anthropic Claude Haiku 5.5 architecture with test-time compute effort curves and multi-agent concurrency dispatchers",
-    tags: ["Claude Haiku 5.5", "Anthropic", "Sub-Agents", "Effort Controls", "Test-Time Compute", "SWE-bench", "LLM Inference", "Agent Swarms"],
+    tags: ["Claude Haiku 5.5", "Anthropic", "Sub-Agents", "Effort Controls", "Test-Time Compute", "Terminal-Bench", "LLM Inference", "Agent Swarms"],
     threeQuestions: {
-      whatHappened: "On October 7, 2026, Anthropic officially released Claude Haiku 5.5, the third and final foundational model in the Claude 5.5 generation alongside Claude Opus 5.5 and Claude Sonnet 5.5. Haiku 5.5 introduces native 'effort controls' to Anthropic's compact tier for the first time, permitting API developers to dynamically modulate the model's internal reasoning tokens between ultra-rapid direct responses and deep reflective reasoning. Operating with a 200,000-token native context window, Haiku 5.5 delivers a verified 58.2% on SWE-bench Verified at maximum effort, while reducing API pricing to $0.10 per million input tokens, $0.50 per million output tokens, and $0.025 per million cached tokens.",
-      whyItMatters: "As enterprise architectures shift from single monolithic chat interfaces toward autonomous agent swarms comprising dozens of specialized sub-workers, token economics and execution latency dictate system feasibility. Deploying flagship models like Opus 5.5 for routine intermediate steps—such as DOM element parsing, tool schema verification, or syntax validation—creates unsustainable operational costs and latency bottlenecks. Haiku 5.5 solves this by matching the coding capability of prior-generation flagship models while operating with sub-200ms time-to-first-token (TTFT) and an 80% price reduction, providing the high-throughput backbone for multi-agent loops.",
+      whatHappened: "On October 7, 2026, Anthropic officially released Claude Haiku 5.5, the third and final foundational model in the Claude 5.5 generation alongside Claude Opus 5.5 and Claude Sonnet 5.5. Haiku 5.5 introduces native 'effort controls' to Anthropic's compact tier for the first time, permitting API developers to dynamically modulate the model's internal reasoning tokens between ultra-rapid direct responses and deep reflective reasoning. Operating with a 1M-token context window, Haiku 5.5 is priced at $0.10 per million input tokens, $0.50 per million output tokens, and $0.01 per million cached tokens for prompts up to 100K tokens ($0.50 / $2.50 above that).",
+      whyItMatters: "As enterprise architectures shift from single monolithic chat interfaces toward autonomous agent swarms comprising dozens of specialized sub-workers, token economics and execution latency dictate system feasibility. Deploying flagship models like Opus 5.5 for routine intermediate steps—such as DOM element parsing, tool schema verification, or syntax validation—creates unsustainable operational costs and latency bottlenecks. Haiku 5.5 targets this as Anthropic's fastest model to date, with per-token prices 90% below Haiku 4.5, providing the high-throughput backbone for multi-agent loops.",
       whatsNext: "Haiku 5.5 is available immediately across the Anthropic Messages API, Amazon Bedrock, Google Cloud Vertex AI, and GitHub Copilot. Enterprise development platforms, including Docker Agent and Cursor, have begun integrating Haiku 5.5 as the default executor for background linter analysis and autonomous sub-agent delegation. Anthropic announced that fine-tuning capabilities and on-device distillation weights for Apple Silicon and edge accelerators will follow in Q1 2027."
     },
     keyTakeaways: [
       "Claude 5.5 Family Complete: Anthropic completes its generation with Haiku 5.5 following Opus 5.5 and Sonnet 5.5.",
-      "First Compact Effort Controls: Allows developers to dial inference compute from sub-180ms reflex to deep multi-step verification.",
-      "58.2% on SWE-bench Verified: Matches earlier flagship coding capabilities at a fraction of the compute and memory footprint.",
-      "80% Inference Cost Reduction: Priced at $0.10/M input, $0.50/M output, and $0.025/M prompt cache read.",
+      "First Compact Effort Controls: Allows developers to dial inference compute from fast reflex responses to deep multi-step verification.",
+      "Benchmarks: Anthropic reports 39.2% on Terminal-Bench 4.0 and 72.4% on an offline OSWorld 2.1 subset; it published no SWE-bench Verified score.",
+      "90% Lower Token Prices than Haiku 4.5: $0.10/M input, $0.50/M output, and $0.01/M cache reads for prompts up to 100K tokens; Anthropic says it costs about 75% less to run.",
       "Ecosystem Integration: Live immediately across Anthropic API, AWS Bedrock, GCP Vertex AI, and GitHub Copilot."
     ],
     content: [
       "Anthropic completed its landmark Claude 5.5 generation on October 7, 2026, with the official commercial release of Claude Haiku 5.5. Positioned as the company's highest-speed, cost-optimized foundational model, Haiku 5.5 completes the tier established by the frontier reasoning flagship Claude Opus 5.5 (released September 22) and the balanced daily driver Claude Sonnet 5.5 (released September 28).",
-      "The defining architectural advancement in Haiku 5.5 is the incorporation of granular 'effort controls.' Historically restricted to large frontier reasoning models, effort controls allow software engineers to pass an explicit numerical reasoning parameter via the API headers (anthropic-effort: 0.0-1.0). At an effort setting of 0.0, Haiku 5.5 functions as an ultra-fast reflex generator with a time-to-first-token (TTFT) clocking under 180 milliseconds, ideal for autocomplete, natural language routing, and streaming UI widget responses. At maximum effort (1.0), the model initiates an internal test-time compute search, evaluating alternative logic branches and compiler constraints before outputting tokens.",
-      "Empirical evaluations indicate that this test-time flexibility dramatically expands the model's operational envelope. On the industry-standard SWE-bench Verified benchmark, Haiku 5.5 achieved a 58.2% task resolution score at peak effort, effectively matching the software engineering competency of prior-generation flagship systems like Claude Sonnet 4.5 while operating at roughly one-thirtieth of the inference cost.",
-      "Pricing for Haiku 5.5 sets a new economic benchmark for frontier-aligned compact architectures: $0.10 per million input tokens, $0.50 per million output tokens, and an ultra-aggressive $0.025 per million tokens for cached context lookups (representing a 75% prompt caching discount). The model features a native 200,000-token context window with sub-quadratic linear attention layers optimized for streaming retrieval across large documentation hubs and codebases.",
+      "The defining architectural advancement in Haiku 5.5 is the incorporation of granular 'effort controls.' Historically restricted to large frontier reasoning models, effort controls allow software engineers to pass an explicit numerical reasoning parameter via the API headers (anthropic-effort: 0.0-1.0). At an effort setting of 0.0, Haiku 5.5 functions as an ultra-fast reflex generator, ideal for autocomplete, natural language routing, and streaming UI widget responses. At maximum effort (1.0), the model initiates an internal test-time compute search, evaluating alternative logic branches and compiler constraints before outputting tokens.",
+      "Anthropic's launch table shows the gain over the previous compact model: Haiku 5.5 scores 39.2% on Terminal-Bench 4.0 (Haiku 4.5: 0.0%) and 72.4% on an offline subset of OSWorld 2.1 (Haiku 4.5: 15.7%). Anthropic did not publish a SWE-bench Verified score. Its per-token prices are one-twentieth of Claude Sonnet 5.5's.",
+      "Pricing for Haiku 5.5 sets a new economic benchmark for frontier-aligned compact architectures: $0.10 per million input tokens, $0.50 per million output tokens, and $0.01 per million tokens for cached context reads, for prompts up to 100K tokens (longer prompts cost $0.50 / $2.50). The model supports a 1M-token context window for large documentation hubs and codebases.",
       "In enterprise deployment architectures, Haiku 5.5 is specifically engineered to power the exploding ecosystem of multi-agent swarms. In complex autonomous systems, a primary model (such as Opus 5.5) orchestrates high-level strategy, while delegating parallel sub-tasks—such as browser interaction, schema validation, test suite execution, and log auditing—to dozens of concurrently running worker sub-agents. Haiku 5.5's high concurrency limits and negligible per-token overhead make sustained thousands-of-step agent runs economically viable.",
       "Anthropic confirmed that Claude Haiku 5.5 is live globally across the Anthropic API, Amazon Bedrock, Google Cloud Vertex AI, and Microsoft's GitHub Copilot ecosystem. In consumer tiers, Haiku 5.5 replaces Haiku 4.5 as the default rapid engine across Claude Free and Claude Pro workspaces."
     ],
@@ -11581,11 +11583,10 @@ export const ALL_ARTICLES: Article[] = [
       "Model Identifier": "claude-haiku-5-5-20261007",
       "Developer": "Anthropic PBC",
       "Model Class": "Compact High-Throughput Multimodal / Agentic Engine",
-      "Context Window": "200,000 Tokens (Native)",
-      "Inference Pricing": "$0.10 / 1M Input | $0.50 / 1M Output | $0.025 / 1M Cached Input",
-      "Key Capabilities": "Granular Effort Controls (0.0–1.0), Sub-200ms TTFT, Tool Calling, Vision",
-      "SWE-bench Verified": "58.2% (Effort Level 1.0)",
-      "LMSYS Arena Elo": "1338 (Rank #54 Global Leaderboard)",
+      "Context Window": "1M Tokens",
+      "Inference Pricing": "$0.10 / 1M Input | $0.50 / 1M Output | $0.01 / 1M Cached Input (prompts up to 100K)",
+      "Key Capabilities": "Granular Effort Controls (0.0–1.0), Tool Calling, Vision",
+      "Terminal-Bench 4.0": "39.2% (Anthropic-reported)",
       "Platform Availability": "Anthropic Messages API, Amazon Bedrock, GCP Vertex AI, GitHub Copilot"
     },
     audioDuration: "8m 45s",

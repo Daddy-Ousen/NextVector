@@ -358,7 +358,7 @@ def check_model_benchmark_sync():
         errors.append("Arena board ranks are not strictly increasing")
     if not strictly([e["score"] for e in ab], lambda a, b: a >= b):
         errors.append("Arena board scores are not in descending order")
-    for key in ("osworld", "swebench", "pareto", "aa"):
+    for key in ("osworld", "swebench", "pareto", "aa", "osworldAll", "paretoAll"):
         board = site["boards"][key]
         if [e["rank"] for e in board] != list(range(1, len(board) + 1)):
             errors.append(f"{key} board ranks are not 1..N")
@@ -367,6 +367,20 @@ def check_model_benchmark_sync():
     pareto_prices = [float(e["costPerRun"].split()[0].lstrip("$")) for e in site["boards"]["pareto"]]
     if not strictly(pareto_prices, lambda a, b: a >= b):
         errors.append("Pareto frontier is not monotonic (a higher score must cost more)")
+    # Chart points: one per priced model, and the marked frontier is exactly the frontier board
+    points = site["pricePoints"]
+    if len(points) != len(site["boards"]["paretoAll"]):
+        errors.append(f"price chart has {len(points)} points but {len(site['boards']['paretoAll'])} priced models")
+    if {p["modelId"] for p in points if p["frontier"]} != {e["modelId"] for e in site["boards"]["pareto"]}:
+        errors.append("price chart frontier points do not match the Pareto board")
+    for p in points:
+        if p["modelId"] not in ids:
+            errors.append(f"price chart point references unknown {p['modelId']}")
+        # Beaten = another model costs no more and scores at least as high, and is better on one of the two
+        beaten = any(q["price"] <= p["price"] and q["score"] >= p["score"] and (q["price"] < p["price"] or q["score"] > p["score"])
+                     for q in points)
+        if beaten == p["frontier"]:
+            errors.append(f"price chart point {p['modelName']} has the wrong frontier flag")
 
     # 5. Showdowns and guide picks reference real models
     for sd in site["showdowns"]:

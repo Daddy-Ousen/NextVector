@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Benchmark } from '../../types';
 import { ShieldCheck, AlertCircle, BarChart3, Info, Search, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { PriceScoreScatter } from './PriceScoreScatter';
 
 interface BenchmarkChartProps {
   benchmarks: Benchmark[];
@@ -18,36 +19,39 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
   );
   const [searchQuery, setSearchQuery] = useState('');
   const [showAllEntries, setShowAllEntries] = useState(false);
+  const [showAltView, setShowAltView] = useState(false);
 
   const activeBenchmark = benchmarks.find((b) => b.id === activeBenchmarkId) || benchmarks[0];
+  const altView = activeBenchmark?.altView;
+  const useAlt = Boolean(altView && showAltView);
+  const leaderboard = useMemo(
+    () => (useAlt && altView ? altView.leaderboard : activeBenchmark?.leaderboard ?? []),
+    [useAlt, altView, activeBenchmark]
+  );
 
   // Arena boards (incl. the price frontier, which lists Arena scores) use score scaling, not percent
   const isPricePerformance = activeBenchmark?.category === 'Cost-Efficiency & Pareto';
   const isElo = activeBenchmark?.category === 'Overall Arena Elo' || isPricePerformance;
 
   // Maximum and minimum scores for normalization
-  const maxScore = useMemo(() => {
-    if (!activeBenchmark) return 100;
-    return Math.max(...activeBenchmark.leaderboard.map((item) => item.score), 100);
-  }, [activeBenchmark]);
+  const maxScore = useMemo(() => Math.max(...leaderboard.map((item) => item.score), 100), [leaderboard]);
 
   const minScore = useMemo(() => {
-    if (!activeBenchmark || !isElo) return 0;
-    return Math.min(...activeBenchmark.leaderboard.map((item) => item.score));
-  }, [activeBenchmark, isElo]);
+    if (!isElo || leaderboard.length === 0) return 0;
+    return Math.min(...leaderboard.map((item) => item.score));
+  }, [leaderboard, isElo]);
 
   // Filtered leaderboard entries based on search query
   const filteredEntries = useMemo(() => {
-    if (!activeBenchmark) return [];
-    if (!searchQuery.trim()) return activeBenchmark.leaderboard;
+    if (!searchQuery.trim()) return leaderboard;
     const q = searchQuery.toLowerCase().trim();
-    return activeBenchmark.leaderboard.filter(
+    return leaderboard.filter(
       (entry) =>
         entry.modelName.toLowerCase().includes(q) ||
         entry.developer.toLowerCase().includes(q) ||
         entry.rank.toString() === q
     );
-  }, [activeBenchmark, searchQuery]);
+  }, [leaderboard, searchQuery]);
 
   // Displayed entries (top 15 by default unless expanded or searching)
   const displayedEntries = useMemo(() => {
@@ -85,6 +89,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
                 setActiveBenchmarkId(b.id);
                 setSearchQuery('');
                 setShowAllEntries(false);
+                setShowAltView(false);
               }}
               className={`tap px-3 py-1.5 rounded-lg text-xs transition-all ${
                 activeBenchmarkId === b.id
@@ -98,23 +103,54 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
         </div>
       </div>
 
-      {/* Leaderboard Toolbar: Search & Counts */}
-      {activeBenchmark.leaderboard.length > 10 && (
+      {/* Price vs score: every priced model on one chart */}
+      {activeBenchmark.pricePoints && activeBenchmark.pricePoints.length > 0 && (
+        <div className="pt-6 pb-2 border-b border-zinc-800">
+          <PriceScoreScatter points={activeBenchmark.pricePoints} onSelectModel={onSelectModel} />
+        </div>
+      )}
+
+      {/* Leaderboard Toolbar: View switch, Search & Counts */}
+      {(leaderboard.length > 10 || altView) && (
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4 pb-2">
+          {altView && (
+            <div className="flex gap-2 shrink-0" role="group" aria-label="Rows to show">
+              {[false, true].map((alt) => (
+                <button
+                  key={String(alt)}
+                  onClick={() => {
+                    setShowAltView(alt);
+                    setSearchQuery('');
+                    setShowAllEntries(false);
+                  }}
+                  aria-pressed={showAltView === alt}
+                  className={`tap px-3 py-1.5 rounded-lg text-xs transition-colors border ${
+                    showAltView === alt
+                      ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40 font-bold'
+                      : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:text-zinc-200'
+                  }`}
+                >
+                  {alt ? altView.label : altView.baseLabel}
+                </button>
+              ))}
+            </div>
+          )}
+          {leaderboard.length > 10 && (
           <div className="relative flex-1 max-w-sm">
             <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder={`Search ${activeBenchmark.leaderboard.length} models or labs...`}
+              placeholder={`Search ${leaderboard.length} ${useAlt && !isElo ? 'runs' : 'models'} or labs...`}
               className="tap w-full pl-9 pr-3 py-1.5 text-xs bg-zinc-900 border border-zinc-800 rounded-lg text-zinc-200 placeholder:text-zinc-500 focus:outline-none focus:border-emerald-500/50"
             />
           </div>
+          )}
           <div className="flex items-center gap-3 text-xs text-zinc-400">
             <span>
               Showing <strong className="text-emerald-400">{displayedEntries.length}</strong> of{' '}
-              {filteredEntries.length} {isElo ? 'Arena models' : 'benchmarked models'}
+              {filteredEntries.length} {useAlt && !isElo ? 'runs' : isElo ? 'Arena models' : 'benchmarked models'}
             </span>
             {filteredEntries.length > 15 && !searchQuery.trim() && (
               <button
@@ -276,6 +312,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
 
           <div className="pt-3 border-t border-zinc-800 text-xs text-zinc-400 space-y-1">
             <p className="text-zinc-300 leading-relaxed">{activeBenchmark.description}</p>
+            {useAlt && altView && <p className="text-zinc-300 leading-relaxed">{altView.description}</p>}
             {activeBenchmark.sourceUrl && (
               <a href={activeBenchmark.sourceUrl} target="_blank" rel="noopener noreferrer" className="tap inline-flex items-center gap-1 text-emerald-400 hover:underline">
                 Source: {new URL(activeBenchmark.sourceUrl).hostname} <ExternalLink className="w-3 h-3" />

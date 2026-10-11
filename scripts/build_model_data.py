@@ -505,6 +505,20 @@ def main():
                                round(r["successRate"], 2), short_month(r["date"]), by_name[nm]["id"] if nm else None,
                                note=f"{r['maxSteps']} steps"))
 
+    # 2b. OSWorld-Verified, all runs: every approach (general model, agent framework, specialized model),
+    # best per model name and approach. Shown behind a toggle; frameworks add tools, so these are not equal-terms runs.
+    osw_any = {}
+    for r in osw_snap["data"]:
+        k = (r["model"], r["approach"])
+        if k not in osw_any or r["successRate"] > osw_any[k]["successRate"]:
+            osw_any[k] = r
+    osw_all_board = []
+    for i, r in enumerate(sorted(osw_any.values(), key=lambda r: -r["successRate"]), 1):
+        nm = name_by_osw.get(r["model"]) if r["approach"] == "General model" else None
+        osw_all_board.append(entry(i, nm or r["model"], by_name[nm]["developer"] if nm else (r["institution"] or ""),
+                                   round(r["successRate"], 2), short_month(r["date"]), by_name[nm]["id"] if nm else None,
+                                   note=f"{r['approach']} · {r['maxSteps']} steps"))
+
     # 3. SWE-bench Verified: mini-SWE-agent (bash only) runs, best per model
     swe_rows = sorted(swe_best.values(), key=lambda r: -float(r["resolved"]))
     swe_board = []
@@ -526,6 +540,20 @@ def main():
     pareto_board = [entry(i, m["name"], m["developer"], m["arenaElo"], arena_month, m["id"],
                           cost=f"${blended(m['pricing']):.2f} / 1M blended",
                           note="pre-release on arena.ai" if m.get("preRelease") else None) for i, m in enumerate(frontier, 1)]
+    # Every priced model (not only the frontier): list by Arena score, plus points for the price/score chart
+    frontier_ids = {m["id"] for m in frontier}
+    pareto_all_board = [entry(i, m["name"], m["developer"], m["arenaElo"], arena_month, m["id"],
+                              cost=f"${blended(m['pricing']):.2f} / 1M blended",
+                              note=" · ".join(x for x in ("on frontier" if m["id"] in frontier_ids else None,
+                                                          "pre-release" if m.get("preRelease") else None) if x) or None)
+                        for i, m in enumerate(sorted(priced, key=lambda m: -m["arenaElo"]), 1)]
+    price_points = []
+    for m in priced:
+        p = {"modelId": m["id"], "modelName": m["name"], "developer": m["developer"],
+             "price": round(blended(m["pricing"]), 4), "score": m["arenaElo"], "frontier": m["id"] in frontier_ids}
+        if m.get("preRelease"):
+            p["preRelease"] = True
+        price_points.append(p)
 
     # 5. Artificial Analysis Intelligence Index: tracked models only, best setting per model
     aa_ranked = sorted((m for m in models if m.get("aaIntelligence") is not None), key=lambda m: -m["aaIntelligence"])
@@ -547,13 +575,16 @@ def main():
         "export const ARENA_LEADERBOARD_ENTRIES = " + json.dumps(arena_board, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8")
     BENCH_TS.write_text(
-        header + "import { LeaderboardEntry } from '../types';\n\n"
+        header + "import { LeaderboardEntry, PriceScorePoint } from '../types';\n\n"
         f"export const OSWORLD_DATA_AS_OF = '{osw_snap['fetchedAt'][:10]}';\n"
         f"export const SWE_BENCH_DATA_AS_OF = '{swe_snap['fetchedAt'][:10]}';\n"
         f"export const SWE_BENCH_LATEST_RUN = '{max(r['date'] for r in swe_rows)}';\n\n"
         "export const OSWORLD_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(osw_board, ensure_ascii=False, indent=2) + ";\n\n"
         "export const SWE_BENCH_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(swe_board, ensure_ascii=False, indent=2) + ";\n\n"
+        "export const OSWORLD_ALL_RUNS_ENTRIES: LeaderboardEntry[] = " + json.dumps(osw_all_board, ensure_ascii=False, indent=2) + ";\n\n"
         "export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(pareto_board, ensure_ascii=False, indent=2) + ";\n\n"
+        "export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = " + json.dumps(pareto_all_board, ensure_ascii=False, indent=2) + ";\n\n"
+        "export const PRICE_SCORE_POINTS: PriceScorePoint[] = " + json.dumps(price_points, ensure_ascii=False, indent=2) + ";\n\n"
         f"export const AA_DATA_AS_OF = '{aa_as_of}';\n"
         f"export const AA_INDEX_VERSION = '{aa_version}';\n\n"
         "export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = " + json.dumps(aa_board, ensure_ascii=False, indent=2) + ";\n",
@@ -576,7 +607,9 @@ def main():
     SITE_JSON.parent.mkdir(parents=True, exist_ok=True)
     SITE_JSON.write_text(json.dumps({
         "asOf": as_of, "arenaTotal": arena_total, "models": models,
-        "boards": {"arena": arena_board, "osworld": osw_board, "swebench": swe_board, "pareto": pareto_board, "aa": aa_board},
+        "boards": {"arena": arena_board, "osworld": osw_board, "swebench": swe_board, "pareto": pareto_board, "aa": aa_board,
+                   "osworldAll": osw_all_board, "paretoAll": pareto_all_board},
+        "pricePoints": price_points,
         "aa": {"asOf": aa_as_of, "indexVersion": aa_version, "url": AA_URL},
         "showdowns": showdowns, "guide": guide,
     }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -594,7 +627,8 @@ def main():
     VERCEL.write_text(json.dumps(vc, indent=2) + "\n", encoding="utf-8")
 
     print(f"Built {len(models)} models (data as of {as_of}).")
-    print(f"  Arena board {len(arena_board)} | OSWorld {len(osw_board)} | SWE-bench {len(swe_board)} | Pareto {len(pareto_board)} | AA {len(aa_board)}")
+    print(f"  Arena board {len(arena_board)} | OSWorld {len(osw_board)} | SWE-bench {len(swe_board)} | Pareto {len(pareto_board)} of {len(pareto_all_board)} priced | AA {len(aa_board)}")
+    print(f"  OSWorld all runs (toggle): {len(osw_all_board)}")
     print(f"  Redirects: {len(redirects)} | Showdowns: {len(showdowns)} | Guide picks: {len(guide)}")
 
 

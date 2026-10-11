@@ -6,6 +6,11 @@
 - Daily pipeline: see `DAILY_UPDATE_PIPELINE.md`. Order now: `npm run images` → `npm run build` → `npm run verify` (8 gates).
 
 ## Completed
+- 2026-10-12: Benchmarks board option 4 (user pick). UNCOMMITTED, verified: build, verify 8/8, tsc, lint 0 errors, browser at 375px and desktop.
+  - Price vs Score: new scatter chart (`src/components/benchmarks/PriceScoreScatter.tsx`) with all 112 priced models, log price axis, frontier (9) in emerald with a step line, hover box, click opens model page. List switch: Frontier (9) / All priced (112).
+  - OSWorld-Verified: list switch Models only (24) / All runs (66). All runs = every approach (general, agent framework, specialized), best per name + type, with a note that they are not equal-terms runs.
+  - Build: `build_model_data.py` writes `OSWORLD_ALL_RUNS_ENTRIES`, `PRICE_ALL_PRICED_ENTRIES`, `PRICE_SCORE_POINTS`; `site_data.json` has `boards.osworldAll`, `boards.paretoAll`, `pricePoints`. Types: `Benchmark.altView`, `Benchmark.pricePoints`, `PriceScorePoint`.
+  - Gate 6 checks the two new lists and that chart frontier flags match the Pareto board (a score tie goes to the cheaper model).
 - 2026-10-11: Daily pipeline run. 10 articles added (art-212 to art-216 from BBC reports; art-217 to art-221 from a Hugging Face model card, arXiv abstracts and a secondary Beam write-up; Unsplash covers). Briefing + ticker refreshed. No timeline event (none reached impact 95). No new model (Haiku 5.5, Mistral Large 4 already tracked). Newsletter: `newsletters/2026-10-11-the-morning-vector-b.md`. Checks: images, build, verify 8/8.
 - 2026-10-11: Full project audit.
 - 2026-10-11: Bug fixes + speed fixes (uncommitted, verified: build, tsc, 8/8 verify gates, browser test on `vite preview`).

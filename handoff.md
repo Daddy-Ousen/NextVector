@@ -2,7 +2,7 @@
 
 ## How to resume
 1. Read `progress.md` → "Design work plan". Unticked = still to do.
-2. Pass 4 code is done and verified but NOT committed. Ask the user before commit/push (push to `main` deploys on Vercel).
+2. Pass 4 committed as `92672e5` and pushed to `main` (Vercel deploys from `main`). Check the live site after deploy.
 3. Next pass: **Pass 5 — Accessibility leftovers** (tap targets, skip link, Triad repeat decision).
 4. Open user decision: light mode (optional Pass 4 item) — do it or drop it.
 
@@ -11,9 +11,6 @@
 - New files: `src/components/common/SubstackEmbed.tsx`, `src/components/common/ReadingProgressBar.tsx`, `src/components/cards/StoryList.tsx`.
 - Changed: `src/pages/ArticleDetailPage.tsx` (progress bar, X/LinkedIn share, mid-article newsletter, Read next, category badge fix), `src/pages/HomePage.tsx` (Cards/List toggle), `src/utils/index.ts` (`getDayGroupLabel`, `formatClockTime`, `groupByDay`, `pickReadNext`), `src/App.tsx` (passes `readNext`, `onSelectArticle`), `src/components/layout/Footer.tsx` (uses `SubstackEmbed`).
 - `public/sitemap.xml` changed from the build (expected).
-
-## Uncommitted files
-public/sitemap.xml, src/App.tsx, src/components/layout/Footer.tsx, src/pages/ArticleDetailPage.tsx, src/pages/HomePage.tsx, src/utils/index.ts, + 3 new component files above.
 
 ## Still open from earlier
 - Check live site: Vercel serves `404.html` with status 404; `/compare/<slug>` pages load.

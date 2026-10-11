@@ -67,7 +67,7 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 
 - [x] Jargon: plain labels in Navbar search ("Search news & models..."), nav menus, Bookmarks ("Saved Stories"), Command palette, Footer ("Sections"), BenchmarkChart, Article page ("Back to all news", "Related Models, Benchmarks & Papers"), Author, Benchmarks, Category ("All News"), Briefing, FAQ, 404, Timeline, Archive ("Story Archive"), Compare FAQ, Decision Guide. Hero button "Read Signal" → "Read story".
 - Kept on purpose: SEO `<title>`s, Schema.org, brand tagline "Technology & AI Intelligence", "Daily Intelligence Briefing" product name, per-article Signal score and Signal filter.
 
-### Pass 4 — Engagement (DONE 2026-10-11, not committed yet)
+### Pass 4 — Engagement (DONE 2026-10-11, commit `92672e5`, pushed)
 Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser at 1024px and 375px (no side scroll).
 - [x] "Read next" block (`ArticleDetailPage.tsx`, after related models, before author box): 3 stories from `pickReadNext()` in `src/utils/index.ts` = same category, most shared tags first, then newest; fills from newest any-category. Wired in `App.tsx`. Real links (`<a href>`), so crawlable.
 - [x] Share on X and LinkedIn (inline SVG logos; lucide has no brand icons) next to copy-link. All share the canonical URL. Copy-link now copies the canonical URL and only shows the tick when the copy worked.

@@ -130,13 +130,13 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, lint 0 errors, br
 - [x] Follow-up: article/timeline audit DONE 2026-10-11 (see next section).
 - [ ] Optional: lab-reported SWE-bench for 2026 models; ComparePage unused icon imports.
 
-## Article & timeline model-claims audit (2026-10-11, committed locally, NOT pushed)
+## Article & timeline model-claims audit (2026-10-11, commit `13773b5`, pushed)
 Full list: `ARTICLE_CLAIMS_AUDIT.md`. Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, built Opus 5.5 page spot-checked.
 - [x] 12 articles fixed (art-1, 7, 60, 78, 79, 90, 110, 115, 146, 155, 186, 197) + 2 timeline entries (Sonnet 5.5, Mistral 3). Daily briefing and live signals were clean.
 - [x] Removed: Cyber-Eval 94.6%, all fake Elo (1396/1404/1412/1417/1418/1338/1386/1425), fake SWE-bench (58.2/62.4/73.4/84.1/91.4), OSWorld/WebArena 68.4/74.2, MMLU-Pro/HumanEval/MATH-500 fakes, Opus 5.5 "native Lean 4 prover".
 - [x] Corrected from site_data/official pages: prices (Fable 5.1 $10/$50, Sonnet 5.5 $2/$10, Grok 4.7 $2/$6, DeepSeek-V4.1-Flash $0.30/$1.20, Haiku 5.5 cache $0.01, Argon $2/$10 intro), context sizes, arena.ai scores/ranks, Opus 5.5 "20% lower token prices; Anthropic says 40% less to run".
 - Note: Anthropic's Opus 5.5 page really says "costs 40% less to run than Opus 5" (per task). Per-token cut is 20%. Both are now stated.
-- [x] Site-level files fixed (2026-10-11, NOT committed yet). Verified: `npm run build`, `npm run verify` 8/8, `npx tsc -b`, `npm run lint` 0 errors, dist files checked (0 old figures, `/faq` FAQPage schema valid JSON).
+- [x] Site-level files fixed (2026-10-11, commit `cb1f52e`, pushed). Verified: `npm run build`, `npm run verify` 8/8, `npx tsc -b`, `npm run lint` 0 errors, dist files checked (0 old figures, `/faq` FAQPage schema valid JSON).
   - `index.html`: removed the global FAQPage schema (fake figures, not visible on most pages). Wording: "verified LMSYS" → "sourced … arena.ai"; no plan prices. No-JS model list is now a placeholder `<div id="nv-top-models">`, filled at build time.
   - `scripts/prerender_static_pages.py`: new `inject_top_models()` (top 5 released models by arena.ai score), `generate_llms_txt()` (whole `public/llms.txt`), `update_ai_summary()` (`modelPicks` key in `public/ai-summary.json`; `topPicks2026` removed), `faq_pairs()`/`faq_schema()` (one source for `/faq` body + schema). Core pages now pass `schema` through.
   - Side fix: new `js_unescape()` in the article parser. 59 prerendered pages and llms-full.txt showed raw `’` / `\'` text; now 0.

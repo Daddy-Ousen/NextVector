@@ -26,3 +26,7 @@ dist-ssr
 # Full Artificial Analysis download (local only; AA terms reserve redistribution)
 scripts/model_sources/snapshots/artificial_analysis_full.json
 __pycache__/
+
+# Daily pipeline run files (harvest output and batch JSON); keep only the template
+pipeline_runs/*
+!pipeline_runs/TEMPLATE.json

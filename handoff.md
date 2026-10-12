@@ -1,3 +1,17 @@
+# Handoff — 2026-10-12 (Daily pipeline set up for Antigravity + Gemini 3.8 Flash)
+
+## Latest: pipeline tooling and docs, committed locally (NOT pushed)
+- User runs the daily pipeline in Antigravity with Gemini 3.8 Flash. Goal: make the setup safe for a smaller model.
+- Antigravity loads `AGENTS.md` (root, always on) and skills from `.agents/skills/` (project root `D:/AntigravityProjects/News`, confirmed in `~/.gemini/config/projects`). Workflows stop working on 2026-10-19, so the runbook is the skill `.agents/skills/daily-update/SKILL.md` (trigger: "Run the daily update pipeline" or `/daily-update`).
+- New flow: `npm run harvest` → fill `pipeline_runs/YYYY-MM-DD.json` from `pipeline_runs/TEMPLATE.json` → `python scripts/add_articles.py <file> --check` → same without `--check` → `npm run images` → `npm run build` → `npm run verify`.
+- Changed: `scripts/fetch_live_intel.py` (rewrite), `scripts/verify_daily_pipeline.py` (new checks, `LEGACY_MAX_ARTICLE = 221`), new `scripts/add_articles.py`, `DAILY_UPDATE_PIPELINE.md`, `EDITORIAL_RULEBOOK.md`, `.gitignore` (`pipeline_runs/*` except TEMPLATE).
+- Checks: verify 8/8 now; full test with a temporary art-222 passed tsc/build/verify, then was removed.
+- Next: user runs "Run the daily update pipeline" in Antigravity. Check its first run: articles added via the script, verify 8/8, handoff updated. The Antigravity push will also push this commit.
+- Open: 7 near-duplicate old cover pairs (see progress.md Open items); untracked models found by model watch.
+- Gotcha: near-duplicate check uses dhash (64-bit), limit 8 bits. Real duplicates in the catalog scored 0-7.
+- Gotcha: `add_articles.py` writes JSON-style double-quoted strings; prerender and verify parse them fine (tested).
+- Gotcha: shell heredocs with mixed quotes or non-ASCII break in this Bash tool; write Python edit scripts with the Write tool.
+
 # Handoff — 2026-10-12 (Article page: wide cover image)
 
 ## Latest: option 3 done, pushed to `main`

@@ -29,6 +29,20 @@ BENCHMARKS_FILE = ROOT_DIR / "src" / "data" / "benchmarksData.ts"
 SEO_HEAD_FILE = ROOT_DIR / "src" / "components" / "common" / "SEOHead.tsx"
 ARTICLE_DETAIL_FILE = ROOT_DIR / "src" / "pages" / "ArticleDetailPage.tsx"
 
+# Articles up to this id were published before the stricter daily-batch rules (2026-10-12).
+# Problems in them are warnings; problems in newer articles fail the gate.
+LEGACY_MAX_ARTICLE = 221
+NEAR_DUP_BITS = 8  # dhash bit distance; the same photo re-sized or re-cropped scores 0-7
+
+def art_num(art_id):
+    return int(art_id.split("-")[1])
+
+def dhash(path):
+    from PIL import Image
+    small = Image.open(path).convert("L").resize((9, 8), Image.LANCZOS)
+    px = list(small.getdata())
+    return sum(1 << i for i in range(64) if px[(i // 8) * 9 + i % 8] > px[(i // 8) * 9 + i % 8 + 1])
+
 BANNED_ANACHRONISMS = [
     (r"claude\s*3\.?7\s*sonnet.*(?:release|launch|unveil|drop|introduc)", "Claude 3.7 Sonnet is a Feb 2025 model; cannot be reported as a new release in 2026"),
     (r"(?:release|launch|unveil|drop|introduc).*claude\s*3\.?7\s*sonnet", "Claude 3.7 Sonnet is a Feb 2025 model; cannot be reported as a new release in 2026"),
@@ -122,6 +136,19 @@ def check_articles():
                 else:
                     seen_article_sha256[sha] = (art_id, local_path)
 
+        # Stricter rules for new articles (after LEGACY_MAX_ARTICLE)
+        if art_num(art_id) > LEGACY_MAX_ARTICLE:
+            if not cover.startswith("/images/articles/"):
+                errors.append(f"{art_id}: coverImage must be a local file under /images/articles/ (no hotlinking); use scripts/add_articles.py to download it")
+            if "author: AUTHOR_ROBIUL_HASAN" not in body:
+                errors.append(f"{art_id}: author must be AUTHOR_ROBIUL_HASAN")
+            try:
+                dt = datetime.fromisoformat(pub.replace("Z", "+00:00"))
+                if (dt - datetime.now(timezone.utc)).total_seconds() > 3600:
+                    errors.append(f"{art_id}: publishedAt {pub} is in the future")
+            except ValueError:
+                errors.append(f"{art_id}: publishedAt {pub} is not ISO-8601")
+
         # Check for banned anachronisms
         text_to_audit = f"{title} {summary}".lower()
         for pattern, reason in BANNED_ANACHRONISMS:
@@ -147,6 +174,28 @@ def check_articles():
                     errors.append(f"DUPLICATE BINARY ON DISK: '{img_file.name}' is identical to '{disk_hashes[h]}' (SHA: {h[:12]})")
                 else:
                     disk_hashes[h] = img_file.name
+
+    # Near-duplicate covers: the same photo at another size or crop (SHA-256 cannot see this)
+    warnings = []
+    hashed = []
+    for a in articles:
+        if a["cover"].startswith("/"):
+            f = PUBLIC_IMAGES_DIR / a["cover"].lstrip("/")
+            if f.exists():
+                try:
+                    hashed.append((a["id"], dhash(f)))
+                except Exception:
+                    pass
+    for i, (id_a, h_a) in enumerate(hashed):
+        for id_b, h_b in hashed[i + 1:]:
+            if bin(h_a ^ h_b).count("1") <= NEAR_DUP_BITS:
+                msg = f"NEAR-DUPLICATE COVER: {id_a} and {id_b} use the same photo"
+                if max(art_num(id_a), art_num(id_b)) > LEGACY_MAX_ARTICLE:
+                    errors.append(msg)
+                else:
+                    warnings.append(msg)
+    for w in warnings:
+        print(f"  [WARN] {w} (older articles)")
 
     print(f"-> Total catalog articles parsed: {len(articles)}")
     print(f"-> Total unique cover image strings: {len(seen_covers)}")
@@ -180,6 +229,17 @@ def check_briefing_and_signals(articles):
         brief_items = briefing_match.group(2)
         item_slugs = re.findall(r"articleSlug:\s*['\"]([^'\"]+)['\"]", brief_items)
         print(f"-> Briefing Date: {brief_date}")
+        if articles:
+            newest = max(articles, key=lambda a: a["publishedAt"])
+            try:
+                d = datetime.fromisoformat(newest["publishedAt"].replace("Z", "+00:00"))
+                expected = f"{d:%A}, {d:%B} {d.day}, {d.year}"
+                if brief_date != expected:
+                    print(f"  [WARN] Briefing date '{brief_date}' is not the newest article date '{expected}' (UTC). Update MOCK_DAILY_BRIEFING.")
+            except ValueError:
+                pass
+        if len(item_slugs) != 5:
+            errors.append(f"MOCK_DAILY_BRIEFING must have 5 items, found {len(item_slugs)}")
         print(f"-> Briefing Linked Slugs: {len(item_slugs)}")
         for s in item_slugs:
             if s not in existing_slugs:
@@ -198,6 +258,10 @@ def check_briefing_and_signals(articles):
         for s in sig_slugs:
             if s not in existing_slugs:
                 errors.append(f"Live Signal references non-existent article slug: '{s}'")
+        for t in re.findall(r"""\btext:\s*(?:'((?:[^'\\]|\\.)*)'|"((?:[^"\\]|\\.)*)")""", sig_items):
+            text = t[0] or t[1]
+            if len(text) > 95:
+                errors.append(f"Live Signal text over 95 chars ({len(text)}): '{text[:60]}...'")
 
     if errors:
         for err in errors:

@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "slug": "lowercase-kebab-case-slug-of-the-story",
+      "title": "Plain, specific headline that states what happened (no hype words)",
+      "subtitle": "One sentence that adds the key number or consequence the title leaves out.",
+      "category": "ai",
+      "articleType": "breaking",
+      "signalRating": 85,
+      "publishedAt": "2026-10-12T09:30:00Z",
+      "readTimeMinutes": 5,
+      "coverImage": "https://images.unsplash.com/photo-XXXXXXXX?w=1600&q=80",
+      "coverImageAlt": "What the photo shows, and how it relates to the story",
+      "tags": ["Company", "Product or paper name", "Mechanism", "Field", "Search term"],
+      "threeQuestions": {
+        "whatHappened": "Who did what, when, with the exact numbers from the primary source. More than 80 characters.",
+        "whyItMatters": "The concrete consequence: cost, capability, risk or rule that changes, and for whom. More than 80 characters.",
+        "whatsNext": "Named next steps with dates or thresholds to watch, as stated by sources. More than 80 characters."
+      },
+      "keyTakeaways": [
+        "First fact a reader should keep.",
+        "Second fact.",
+        "Third fact."
+      ],
+      "content": [
+        "Source line: what you read (e.g. 'Source: the company's announcement of 11 October 2026 and the arXiv abstract').",
+        "Paragraph with facts, figures or mechanisms that are NOT already in threeQuestions.",
+        "Another paragraph with new detail, a quote, a timeline, or a counter-argument.",
+        "Limits: what is not known yet, what the source does not say."
+      ],
+      "technicalSpecs": {
+        "Label": "Value from the source"
+      },
+      "citations": [
+        { "title": "Exact title of the primary source page", "url": "https://primary-source.example/real-page", "source": "Publisher name" }
+      ],
+      "isHero": false,
+      "isFeatured": false
+    }
+  ],
+  "briefing": {
+    "date": "Monday, October 12, 2026",
+    "summary": "Two sentences that sum up today's top stories.",
+    "items": [
+      { "headline": "Story 1 headline", "category": "ai", "urgency": "Critical Signal", "summary": "Two sentences.", "whyItMatters": "One sentence.", "articleSlug": "slug-of-story-1" },
+      { "headline": "Story 2 headline", "category": "technology", "urgency": "High Impact", "summary": "Two sentences.", "whyItMatters": "One sentence.", "articleSlug": "slug-of-story-2" },
+      { "headline": "Story 3 headline", "category": "science", "urgency": "High Impact", "summary": "Two sentences.", "whyItMatters": "One sentence.", "articleSlug": "slug-of-story-3" },
+      { "headline": "Story 4 headline", "category": "research", "urgency": "Notable Shift", "summary": "Two sentences.", "whyItMatters": "One sentence.", "articleSlug": "slug-of-story-4" },
+      { "headline": "Story 5 headline", "category": "ai", "urgency": "Notable Shift", "summary": "Two sentences.", "whyItMatters": "One sentence.", "articleSlug": "slug-of-story-5" }
+    ]
+  },
+  "signals": [
+    { "tag": "Two Word Tag", "text": "One sentence, 95 characters or fewer.", "articleSlug": "slug-of-story-1" },
+    { "tag": "Two Word Tag", "text": "One sentence, 95 characters or fewer.", "articleSlug": "slug-of-story-2" },
+    { "tag": "Two Word Tag", "text": "One sentence, 95 characters or fewer.", "articleSlug": "slug-of-story-3" },
+    { "tag": "Two Word Tag", "text": "One sentence, 95 characters or fewer.", "articleSlug": "slug-of-story-4" },
+    { "tag": "Two Word Tag", "text": "One sentence, 95 characters or fewer.", "articleSlug": "slug-of-story-5" }
+  ]
+}

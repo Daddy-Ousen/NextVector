@@ -140,7 +140,7 @@ Generic stock clichés are strictly prohibited:
 ├─────────────────────────────────────────────────────────────┤
 │ TIER 3: Verified Topic-Specific High-Resolution Photography │
 │         (Cleanroom equipment, foundry machinery, courts)    │
-│         → Verified Unsplash CDN URL (HTTP 200 guaranteed)   │
+│         → Unsplash URL, downloaded to /public/images/articles/ │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -156,7 +156,8 @@ Generic stock clichés are strictly prohibited:
 
 #### Tier 3: Verified Topic-Specific High-Resolution Photography
 - Use for real-world hardware, semiconductor fabs, courtrooms, printing plants, and clinical testbeds.
-- Must be directly verified via automated HTTP requests (status code 200).
+- Put the Unsplash image URL in the daily batch JSON. `scripts/add_articles.py` downloads it to `public/images/articles/art-N-<slug>.jpg`; new articles never hotlink a remote cover.
+- The script rejects a photo already used in the catalog, including the same photo at another size or crop.
 - Must have exact thematic alignment with the article subject.
 
 ### 4.4 Mandatory Descriptive Alt Text (`coverImageAlt`)
@@ -168,39 +169,36 @@ Generic stock clichés are strictly prohibited:
 
 ## 5. Article Data Schema & Field Specifications
 
-Every article entry in `src/data/articlesData.ts` must conform strictly to the TypeScript interface:
+The real type is `Article` in `src/types/index.ts`. Agents write new articles as JSON in the daily batch file (`pipeline_runs/TEMPLATE.json`) and add them with `python scripts/add_articles.py`, which validates every field below.
 
 ```typescript
 export interface Article {
-  id: string;                      // e.g. 'art-59' (sequential)
-  slug: string;                    // e.g. 'deepseek-v3-dualpipe-mla-architecture'
-  title: string;                   // Technical, high-signal, non-clickbait title
-  summary: string;                 // 1-2 sentence executive synopsis
-  content: string;                 // Full markdown report (1,000 - 3,500 words)
+  id: string;                      // 'art-222' (assigned by add_articles.py; never set by hand)
+  slug: string;                    // lowercase kebab-case, unique
+  title: string;                   // Technical, specific, non-clickbait
+  subtitle: string;                // One sentence that adds the key number or consequence
   category: 'ai' | 'technology' | 'science' | 'research';
-  tags: string[];                  // 3-6 specific lowercase tags
-  publishedAt: string;             // ISO-8601 string (e.g. '2026-09-08T06:00:00Z')
-  readTime: string;                // e.g. '8 min read'
-  author: {
-    name: 'Robiul Hasan';
-    role: 'Founder & Editor-in-Chief';
-    avatar: string;
-    bio: string;
-  };
-  coverImage: string;              // Local path (/images/articles/...) or verified URL
-  coverImageAlt: string;           // Detailed descriptive alt text
-  signalScore: number;             // Numerical score between 70 and 100
-  isLeadStory?: boolean;           // true for the primary featured report
-  isBreakthrough?: boolean;        // true for signalScore >= 95
+  articleType: 'breaking' | 'analysis' | 'deep-dive' | 'model-report' | 'benchmark-report'
+             | 'research-explained' | 'discovery' | 'industry-watch';
+  signalRating: number;            // 70-100 (95+ only for historic events)
+  author: AUTHOR_ROBIUL_HASAN;     // set by add_articles.py
+  publishedAt: string;             // ISO-8601 UTC, e.g. '2026-10-12T08:15:00Z'; never in the future
+  readTimeMinutes: number;         // words / 200, rounded up
+  coverImage: string;              // '/images/articles/art-N-<slug>.jpg' (local file)
+  coverImageAlt: string;           // What the photo shows and how it relates to the story
+  tags: string[];                  // 5 or more
   threeQuestions: {
-    whatHappened: string;          // Rigorous breakdown of empirical facts
-    whyDoesItMatter: string;       // Architectural / systemic significance
-    whatCouldHappenNext: string;   // Second-order projections (3-24 months)
+    whatHappened: string;          // > 80 chars, facts with numbers
+    whyItMatters: string;          // > 80 chars, consequence
+    whatsNext: string;             // > 80 chars, named next steps
   };
-  sources: Array<{
-    title: string;                 // Primary paper or filing title
-    url: string;                   // Direct URL (DOI, GitHub, official blog)
-  }>;
+  keyTakeaways: string[];          // 3 or more
+  content: string[];               // Paragraphs. Length follows the sources (usually 400-1,200 words). No restating (§2.4)
+  technicalSpecs?: Record<string, string>;
+  relatedModelId?: string;         // Must exist in modelsData.ts
+  citations: { title: string; url: string; source: string }[];  // 1 or more primary sources you opened
+  isHero?: boolean;                // true on exactly one lead story per day
+  isFeatured?: boolean;
 }
 ```
 
@@ -251,7 +249,7 @@ Before committing any new article to the repository or deploying to production, 
 ├────────────────────────────────────────────────────────┤
 │ STEP 7: AUTOMATED RELEASE GATE & BUILD VERIFICATION    │
 │         Run `npm run verify` & `npm run build`         │
-│         (must pass with 0 errors across all 7 gates).  │
+│         (must pass with 0 errors across all 8 gates).  │
 ├────────────────────────────────────────────────────────┤
 │ STEP 8: ATOMIC GIT COMMIT & REMOTE PUSH                │
 │         Commit with semantic prefix: `feat(news): ...` │
@@ -259,14 +257,17 @@ Before committing any new article to the repository or deploying to production, 
 ```
 
 ### 7.1 Automated Pre-Publication Release Gates (`scripts/verify_daily_pipeline.py`)
-NextVector enforces 7 automated verification gates before any batch is cleared for production release:
+NextVector enforces 8 automated verification gates before any batch is cleared for production release:
 
 1. **Gate 1: Catalog Integrity, IDs, Slugs & Image Uniqueness**
    - 100% unique cover images across the entire catalog (0 duplicate strings, 0 duplicate local SHA-256 binaries, 0 duplicate Unsplash tokens).
    - All local image files exist on disk and exceed 5KB.
    - Zero historical model anachronisms (e.g., Claude 3.5/3.7, GPT-4o reported as new 2026 releases).
+   - No near-duplicate covers (same photo at another size or crop). Articles after art-221 fail the gate; older pairs are warnings.
+   - Articles after art-221: local cover only, author `AUTHOR_ROBIUL_HASAN`, `publishedAt` not in the future.
 2. **Gate 2: Daily Briefing & Live Signals Deep-Link Parity**
-   - Briefing matches the operational run date with valid article slugs.
+   - Briefing has exactly 5 items with valid article slugs; a warning prints if its date is not the newest article date.
+   - Ticker texts are 95 characters or fewer.
    - Live Signal marquee ticker contains $\ge 5$ fresh items with valid deep-links.
 3. **Gate 3: Breakthrough Timeline Integrity**
    - All timeline entries strictly meet `impactScore >= 95`.
@@ -284,6 +285,8 @@ NextVector enforces 7 automated verification gates before any batch is cleared f
    - Minimum 3 executive key takeaway bullet points per article for featured snippet extraction (`keyTakeaways: string[]`).
    - Minimum 1 primary source citation link per article (`citations: Array<{title, url, source}>`).
    - Schema.org `@graph` verification: `TechArticle`, `FAQPage`, and `SpeakableSpecification` (`.three-questions-block`, `.key-takeaways`).
+8. **Gate 8: Related Links**
+   - Every `relatedModelId` / `relatedBenchmarkId` / `relatedPaperId` points to a real record.
 
 ---
 

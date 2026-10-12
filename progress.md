@@ -3,9 +3,16 @@
 ## Roadmap status
 - Site: React 19 + Vite 8 SPA, Python prerender (SSG) step, deployed on Vercel.
 - Content: 221 articles (art-1 to art-221), 146 models, 6 leaderboards, 87 timeline events.
-- Daily pipeline: see `DAILY_UPDATE_PIPELINE.md`. Order now: `npm run images` → `npm run build` → `npm run verify` (8 gates).
+- Daily pipeline: run by Antigravity (Gemini 3.8 Flash). Runbook `.agents/skills/daily-update/SKILL.md`, always-on rules `AGENTS.md`, reference `DAILY_UPDATE_PIPELINE.md`. Order: `npm run harvest` → batch JSON → `python scripts/add_articles.py <file> --check` → write → `npm run images` → `npm run build` → `npm run verify` (8 gates).
 
 ## Completed
+- 2026-10-12: Daily pipeline set up for Antigravity + Gemini 3.8 Flash.
+  - New `AGENTS.md` (always-on rules) and `.agents/skills/daily-update/SKILL.md` (14-step runbook). Antigravity workflows stop on 2026-10-19, so this uses a skill, not a workflow.
+  - New `scripts/add_articles.py`: validates a batch JSON (real field names, enums, lengths, dates, citations, No-Restating similarity check), assigns ids + author, downloads covers locally, blocks exact and near-duplicate photos (dhash), writes articles + briefing + ticker. Template `pipeline_runs/TEMPLATE.json`; run files git-ignored.
+  - `scripts/fetch_live_intel.py`: printed only 15 items (all Hacker News), so BBC/arXiv never showed. Now prints all, by source; BBC limited to 48h; HN by points; arXiv 30; new MODEL WATCH (OpenRouter 72h + untracked 14 days, Hugging Face lab orgs 72h); saves `pipeline_runs/harvest-DATE.json`.
+  - `scripts/verify_daily_pipeline.py`: near-duplicate cover check (error after art-221, warning before), new articles need local cover / Robiul author / no future date, briefing must have 5 items (+ date warning), ticker text ≤ 95.
+  - Docs: `DAILY_UPDATE_PIPELINE.md` and `EDITORIAL_RULEBOOK.md` §5 used wrong field names (signalScore, readTime, sources, whyDoesItMatter, content: string). Fixed to the real type; arena.ai; git add list; covers downloaded; 8 gates.
+  - Tested: test article art-222 written by the script → tsc, build, verify 8/8 passed → duplicate-cover re-run blocked → test removed, rebuilt, sitemap/RSS back to committed state.
 - 2026-10-12: Article page wide cover image (user pick, option 3). Text column stays 42rem (672 px). On screens 1024 px and wider, the cover image breaks out to `min(72rem, 100vw - 4rem)` (1152 px max), 21:9 crop, max 520 px tall. Mobile unchanged. File: `src/pages/ArticleDetailPage.tsx` (Hero Image div). Verified: tsc, build, verify 8/8, lint 0 errors, browser at 1600 / 1100 / 375 px (no side scroll). Commit `233a26c`, pushed.
 - 2026-10-12: Benchmarks board option 4 (user pick). Commit `b494452`, pushed. Verified: build, verify 8/8, tsc, lint 0 errors, browser at 375px and desktop.
   - Price vs Score: new scatter chart (`src/components/benchmarks/PriceScoreScatter.tsx`) with all 112 priced models, log price axis, frontier (9) in emerald with a step line, hover box, click opens model page. List switch: Frontier (9) / All priced (112).
@@ -39,6 +46,9 @@
 - [ ] ~130 lint warnings (unused imports). No errors.
 - [ ] Optional: WebP/AVIF + `srcset` for covers; brand folder is 6.5 MB.
 - [ ] Optional: Gate 5 uses file order (`articles[-5:]`), not dates.
+- [ ] Old near-duplicate covers (same photo twice): art-91/172/192, art-98/195, art-100/193, art-182/198 (hotel bedroom, off-topic), art-194/209. Replace the later ones. Gate 1 lists them as warnings.
+- [ ] 41 old articles still hotlink Unsplash covers (221 covers, 180 local).
+- [ ] Model watch on 2026-10-12 found untracked OpenRouter models: GPT-6.1 Sol Pro, Ling 3.1 Flash, Pareto 26.10 Preview, Nano Banana 2.1 (image). Decide in the next daily run.
 
 ## Design work plan (from audit 2026-10-11)
 User decision: do ALL passes, in this order: Pass 2 → Pass 1 → Pass 3 → Pass 4 → Pass 5.

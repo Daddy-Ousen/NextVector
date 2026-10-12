@@ -22,6 +22,10 @@ Every day, the user will trigger the daily update by prompting the AI agent with
 
 When receiving this trigger, the agent **MUST** execute the complete 7-stage workflow outlined below without skipping steps.
 
+> [!IMPORTANT]
+> **Runbook for agents**: the step-by-step checklist is `.agents/skills/daily-update/SKILL.md` (Antigravity loads it as the `daily-update` skill; `AGENTS.md` points to it). This document is the reference behind it. If the two disagree, the skill wins.
+> **Tools**: `npm run harvest` (leads + model watch) → `pipeline_runs/YYYY-MM-DD.json` from `pipeline_runs/TEMPLATE.json` → `python scripts/add_articles.py <file> --check`, then without `--check` (writes articles, covers, briefing, ticker) → `npm run images` → `npm run build` → `npm run verify`.
+
 ### Core Objectives & Rulebook Alignment:
 1. **At least 5 new intelligence reports** published to `src/data/articlesData.ts` covering verifiable developments from the **last 48 hours**, rigorously structured using the **Three-Question Framework** ([Rulebook §2](./EDITORIAL_RULEBOOK.md#2-the-three-question-analytical-framework)).
 2. **Mandatory Zero-Miss AI Model & Benchmark Synchronization**: If ANY new frontier or open-weights model, checkpoint, canary drop, or API tier was released or updated in the last 72 hours:
@@ -53,11 +57,8 @@ Before touching any code or searching the web, anchor the operational timeline, 
      ```
    - **Define the 48-Hour Breaking Window**: The discovery window is strictly `[Current Time - 48 Hours, Current Time]`.
    - **Zero-Anachronism Directive**: The agent must NEVER treat past-year models (such as Claude 3.7 Sonnet released in February 2025, Claude 3.5 Sonnet released in 2024, or GPT-4o) as breaking news.
-2. **Find Current Article ID and Slugs**:
-   Run a quick scan on `src/data/articlesData.ts` to identify:
-   - Total existing articles (e.g. IDs `art-1` through `art-84`).
-   - The next sequential ID (e.g. `art-85`, `art-86`, etc.).
-   - Set of existing slugs, titles, and cover images to prevent duplicates.
+2. **Existing Articles**:
+   Search `src/data/articlesData.ts` for each candidate topic to avoid repeats. Do not pick article IDs yourself: `scripts/add_articles.py` assigns the next `art-N` and rejects duplicate slugs, titles and cover photos.
 3. **Check Tracked Models**:
    Inspect `scripts/model_sources/curated_models.json` (the model list) and the snapshot dates in `scripts/model_sources/snapshots/`. Gate 6 fails when a snapshot is over 30 days old.
 
@@ -75,10 +76,14 @@ Execute the automated harvester tool to gather verified live candidate stories f
 npm run harvest
 # or: python scripts/fetch_live_intel.py
 ```
-This automatically queries:
-1. **Hacker News (Algolia API / Firebase)**: Filtering for submissions with >30 points and timestamps strictly within the last 48 hours.
-2. **BBC Technology / World RSS Feeds**: Real-time syndicated alerts.
-3. **arXiv cs.AI / cs.CL**: Recent preprint listings.
+This automatically queries, prints every item grouped by source, and saves `pipeline_runs/harvest-YYYY-MM-DD.json`:
+1. **Hacker News (Algolia API)**: stories with 30+ points from the last 48 hours, most points first.
+2. **BBC Technology RSS**: items from the last 48 hours.
+3. **arXiv cs.AI / cs.CL / cs.LG**: the 30 newest submissions.
+4. **Model watch, OpenRouter**: models added in the last 72 hours, plus any model from the last 14 days that is not in `curated_models.json` (marked NEW).
+5. **Model watch, Hugging Face**: uploads from major lab organisations in the last 72 hours.
+
+A harvest item is a lead, not a fact: open the primary source before writing.
 
 Inspect the harvested signals. Every candidate story must have:
 - A verifiable primary URL.
@@ -111,7 +116,7 @@ Perform an exhaustive, multi-source sweep to answer: **Were any AI models, check
 
 ### 3.1 Multi-Source Discovery Channels (Zero-Miss Protocol)
 Never rely on arXiv preprints alone. Many labs (such as DeepSeek, Mistral, Alibaba/Qwen, or Meta) drop weights, API endpoints, or LMSYS arena battle slots days before submitting formal papers. The daily sweep **MUST** explicitly audit:
-1. **LMSYS Chatbot Arena (`arena.lmsys.org`)**: Check newly added battle slots, canary testing models (e.g., anonymous preview IDs), and updated Elo leaderboard rankings.
+1. **Arena (`arena.ai/leaderboard/text`, formerly LMSYS)**: Check newly ranked models and updated leaderboard rankings. The harvester's MODEL WATCH section lists new OpenRouter and Hugging Face entries.
 2. **Hugging Face Model Hub (`huggingface.co/models?sort=createdAt`)**: Scan newly uploaded weights from verified lab organizations (`deepseek-ai`, `meta-llama`, `mistralai`, `Qwen`, `google`, `microsoft`).
 3. **API Aggregators & Router Providers**: Audit **OpenRouter** (`openrouter.ai/models`) and **Fireworks AI** (`fireworks.ai/models`) for newly hosted model IDs, pricing tiers, and context length support.
 4. **Lab GitHub Repositories & Release Tags**: Inspect `github.com/deepseek-ai`, `github.com/vllm-project/vllm`, `github.com/sgl-project/sglang`, and official lab blogs.
@@ -124,22 +129,22 @@ Whenever a new model or major checkpoint is detected, the agent **MUST** execute
 ```mermaid
 flowchart TD
     Detect["Model Release Detected (Lab / Arena / HF / OpenRouter)"] --> Art["1. Dedicated Standalone Article
-(src/data/articlesData.ts)"]
-    Detect --> Reg["2. Model Registry & Real Pricing
-(src/data/modelsData.ts)"]
-    Detect --> Bench["3. Benchmark Leaderboards & Elo Reranking
-(src/data/benchmarksData.ts)"]
-    Detect --> Guide["4. Decision Matrix & ROI Recalculation
-(src/components/models/ModelDecisionGuide.tsx)"]
+(batch JSON + scripts/add_articles.py)"]
+    Detect --> Reg["2. Register the model
+(scripts/model_sources/curated_models.json)"]
+    Reg --> Fetch["3. python scripts/fetch_model_sources.py
+python scripts/build_model_data.py"]
+    Fetch --> Gen["Generated: modelsData.ts, benchmarksData.ts,
+showdownsData.ts, site_data.json, guide picks"]
 ```
 
-#### Step 1: Standalone News Report (`src/data/articlesData.ts`)
+#### Step 1: Standalone News Report (batch JSON → `scripts/add_articles.py`)
 - The model release **MUST** be treated as a dedicated standalone news article (never just a bullet point in a briefing).
 - Rigorously apply the **Three-Question Framework**:
   - **What Happened**: Exact parameter counts (total vs. active for MoE), architecture changes (e.g. MLA-2, MTP, RoPE theta, FP8/FP4 training), context window, and benchmark numbers.
   - **Why It Matters**: Cost per million tokens, inference hardware requirements (e.g. VRAM footprint, KV cache compression), and competitive positioning against OpenAI/Anthropic/Google flagships.
   - **What Could Happen Next**: Impact on open-weights ecosystem, self-hosting economics, and enterprise displacement over the next 6–18 months.
-- Generate a bespoke, high-resolution visual asset saved to `public/images/articles/` (Tier-2 technical diagram or Tier-1 render, 0 duplicate images).
+- Use a unique, on-topic cover image (see Stage 4). Never invent architecture details, parameter counts or scores that the lab did not publish.
 
 #### Step 2: Register the Model (`scripts/model_sources/curated_models.json`)
 - Add one entry: `id`, `name`, `dev`, and the exact source keys that exist today:
@@ -182,7 +187,7 @@ Enforce the strict **Visual Asset Rules** ([Rulebook §4](./EDITORIAL_RULEBOOK.m
 3. **Sourcing Priority** ([Rulebook §4.3](./EDITORIAL_RULEBOOK.md#43-asset-sourcing--selection-hierarchy)):
    - **Tier 1 (Public Domain NASA/ESO/Science)**: Download to `public/images/articles/art-{id}-{slug}.jpg`.
    - **Tier 2 (Bespoke Technical Diagrams)**: Use image generation for novel AI architectures/exploits with Swiss typography and clean schematics. Save to `public/images/articles/art-{id}-{slug}.jpg`.
-   - **Tier 3 (Verified Topic Photography)**: Unsplash verified CDN URL. **Must test with python script to guarantee HTTP 200.**
+   - **Tier 3 (Verified Topic Photography)**: Unsplash image URL (`https://images.unsplash.com/photo-...`) in the batch JSON. `scripts/add_articles.py` downloads it to `public/images/articles/art-N-<slug>.jpg`, checks it is at least 800px wide, and rejects a photo that is already used (exact copy or the same photo at another size/crop). New articles must not hotlink remote covers; Gate 1 fails if they do.
 4. **Mandatory Descriptive Alt Text** ([Rulebook §4.4](./EDITORIAL_RULEBOOK.md#44-mandatory-descriptive-alt-text-coverimagealt)):
    - Write rich, descriptive `coverImageAlt` explaining the visual mechanics and technical context.
 5. **Strict Prohibition of Programmatic Text/Slide Infographics**:
@@ -193,39 +198,26 @@ Enforce the strict **Visual Asset Rules** ([Rulebook §4](./EDITORIAL_RULEBOOK.m
 
 ## Stage 5: Codebase Content Injection
 
-### 5.1 Append New Articles to `src/data/articlesData.ts`
-For each of the 5+ new stories, append a valid `Article` object strictly adhering to the schema ([Rulebook §5](./EDITORIAL_RULEBOOK.md#5-article-data-schema--field-specifications)):
-- Sequential `id`: `art-{next_number}`
-- `slug`: kebab-case URL slug
-- `title`: technical, executive, high-signal
-- `summary`: 1-2 sentence executive synopsis
+### 5.1 Write the Daily Batch File
+Copy `pipeline_runs/TEMPLATE.json` to `pipeline_runs/YYYY-MM-DD.json` and fill it. The field names are the real `Article` type in `src/types/index.ts`:
+- `slug` (kebab-case, unique), `title`, `subtitle` (one sentence)
 - `category`: `'ai'` | `'technology'` | `'science'` | `'research'`
-- `tags`: 3-6 specific lowercase tags
-- `publishedAt`: ISO-8601 string for today
-- `readTime`: realistic duration (e.g. `'7 min read'`)
-- `author`: `AUTHOR_ROBIUL_HASAN` (Founder & Editor-in-Chief, [Rulebook §6.1](./EDITORIAL_RULEBOOK.md#61-sole-authorship))
-- `coverImage`: unique local path or verified URL
-- `coverImageAlt`: topic-specific descriptive text
-- `signalScore`: 70–100
-- `isLeadStory`: `true` for today's #1 top story
-- `threeQuestions` ([Rulebook §2](./EDITORIAL_RULEBOOK.md#2-the-three-question-analytical-framework)):
-  - `whatHappened`: factual breakdown with numbers
-  - `whyDoesItMatter`: architectural/economic impact
-  - `whatCouldHappenNext`: second-order projections (3-24 months)
-- `content`: full markdown report (1,000–2,500 words with H2 sections, architecture analysis, and citations). It must NOT restate the `threeQuestions` answers in other words: every paragraph adds facts, figures, mechanisms or sources the Triad does not have ([Rulebook §2.4](./EDITORIAL_RULEBOOK.md#24-no-restating-rule-triad-vs-article-body)).
-- `sources`: array of primary URLs
+- `articleType`: `breaking` | `analysis` | `deep-dive` | `model-report` | `benchmark-report` | `research-explained` | `discovery` | `industry-watch`
+- `signalRating`: 70–100 · `publishedAt`: ISO UTC with `Z`, not in the future · `readTimeMinutes`: number
+- `coverImage` (Unsplash/NASA URL or existing local path) + `coverImageAlt`
+- `tags`: 5 or more · `keyTakeaways`: 3 or more
+- `threeQuestions`: `whatHappened`, `whyItMatters`, `whatsNext` (each > 80 characters)
+- `content`: **array of paragraph strings**. Length follows the sources (usually 400–1,200 words); never pad with unsourced detail. It must NOT restate the `threeQuestions` answers in other words: every paragraph adds facts, figures, mechanisms or sources the Triad does not have ([Rulebook §2.4](./EDITORIAL_RULEBOOK.md#24-no-restating-rule-triad-vs-article-body)).
+- `technicalSpecs` (optional, string → string), `citations`: `[{ title, url, source }]` with primary URLs you opened
+- `relatedModelId` (optional, must exist), `isHero: true` on exactly one lead story, `isFeatured` optional
+- Do not set `id` or `author`: the script assigns `art-N` and `AUTHOR_ROBIUL_HASAN`.
 
-### 5.2 Update `MOCK_DAILY_BRIEFING` in `src/data/mockData.ts`
-- Update `date` to today's date string (e.g. `Wednesday, September 9, 2026`).
-- Update `summary` with a 2-sentence macro synthesis of today's top developments.
-- Replace `items` with the top 5 curated briefing items matching today's new articles:
-  - `id`: `brief-1` to `brief-5`
-  - `headline`: punchy, executive title
-  - `category`: `'ai'` | `'technology'` | `'science'` | `'research'`
-  - `urgency`: `'Critical Signal'` | `'High Impact'` | `'Notable Shift'`
-  - `summary`: 2-sentence summary
-  - `whyItMatters`: 1-sentence bottom-line takeaway
-  - `articleSlug`: exact slug of the corresponding article
+Then run `python scripts/add_articles.py pipeline_runs/YYYY-MM-DD.json --check` until it passes, and once more without `--check` to write. Never paste article objects into the 1.4 MB `articlesData.ts` by hand.
+
+### 5.2 Daily Briefing (`MOCK_DAILY_BRIEFING`) — in the same batch file
+- `briefing.date`: today, e.g. `Monday, October 12, 2026` (Gate 2 warns if it does not match the newest article date).
+- `briefing.summary`: 2-sentence macro synthesis of today's top developments.
+- `briefing.items`: exactly 5 items, each `headline`, `category`, `urgency` (`'Critical Signal'` | `'High Impact'` | `'Notable Shift'`), `summary` (2 sentences), `whyItMatters` (1 sentence), `articleSlug`. The script numbers them `brief-1`..`brief-5`.
 
 ### 5.3 Breakthrough Timeline Synchronization (`MOCK_TIMELINE_EVENTS` in `src/data/mockData.ts`)
 Audit each of today's 5+ stories against the permanent timeline criteria ([Rulebook §8](./EDITORIAL_RULEBOOK.md#8-technology--science-breakthrough-timeline-curation)):
@@ -247,13 +239,13 @@ Audit each of today's 5+ stories against the permanent timeline criteria ([Ruleb
     - `keyShift`: single-sentence description of the permanent technical/structural inflection point
     - `articleSlug`: exact slug of the corresponding NextVector report for seamless cross-linking
 
-### 5.4 Update Live Breaking Signal Ticker (`MOCK_LIVE_SIGNALS` in `src/data/mockData.ts`)
-The homepage features a live horizontal scrolling marquee (label `Breaking`) just below the lead story. To ensure this ticker reflects today's breaking developments in real time ([Rulebook §9](./EDITORIAL_RULEBOOK.md#9-live-breaking-signal-ticker-standards)):
-- Update `MOCK_LIVE_SIGNALS` with exactly 5 punchy entity-action ticker items corresponding to today's 5+ stories:
-  - `id`: sequential identifier (e.g. `'sig-1'` through `'sig-5'`)
-  - `tag`: 2-3 word bold entity or event label (e.g. `'OpenAI Lean 4'`, `'ASML & Intel'`, `'CISA Directive'`)
-  - `text`: single-sentence empirical action or spec highlight (under 95 chars)
-  - `articleSlug`: exact slug of the corresponding NextVector report so users can click any ticker item to open the article
+### 5.4 Live Breaking Signal Ticker (`MOCK_LIVE_SIGNALS`) — in the same batch file
+The homepage ticker (label `Breaking`) must show today's stories ([Rulebook §9](./EDITORIAL_RULEBOOK.md#9-live-breaking-signal-ticker-standards)). In the batch file, `signals` holds exactly 5 items:
+- `tag`: 1–4 word entity or event label (e.g. `'ASML & Intel'`, `'CISA Directive'`)
+- `text`: one factual sentence, 95 characters or fewer
+- `articleSlug`: slug of today's matching report
+
+The script numbers them `sig-1`..`sig-5` and replaces the old list.
 
 ---
 
@@ -287,14 +279,17 @@ Execute the mandatory **8-Step Pre-Publication Release Gate** ([Rulebook §7](./
      - Temporal sanity (valid ISO dates, zero historical anachronisms).
      - Full sitemap coverage for all published slugs.
      - Every `relatedModelId` / `relatedBenchmarkId` / `relatedPaperId` points to a real record.
+     - New articles (after art-221): local cover only, author `AUTHOR_ROBIUL_HASAN`, no future `publishedAt`, no near-duplicate cover photo; briefing has 5 items; ticker texts ≤ 95 characters.
    - `npm run build` (`tsc -b && vite build && prerender`) must compile with 0 TypeScript/JSX errors.
 8. **Step 8: Atomic Git Commit & Remote Push**:
    Stage modified and new files:
    ```bash
-   git add src/data/articlesData.ts src/data/modelsData.ts src/data/benchmarksData.ts src/data/mockData.ts public/images/articles/ public/sitemap.xml public/rss.xml public/llms-full.txt
+   git status
+   git add src/data public/images/articles public/sitemap.xml public/rss.xml public/llms.txt public/llms-full.txt public/ai-summary.json scripts/model_sources vercel.json newsletters
    git commit -m "feat(intelligence): daily briefing and articles update [YYYY-MM-DD]"
    git push origin main
    ```
+   Never stage `.env.local` or `pipeline_runs/` (both git-ignored).
 
 ---
 

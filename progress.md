@@ -139,6 +139,15 @@ Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, lint 0 errors, br
 - [ ] Lab-reported scores (user option 2): replaced by user choice 1 = Artificial Analysis index. Draft lab data kept in `scripts/model_sources/lab_reported_draft.json` (not used).
 - [x] Artificial Analysis index (2026-10-12, commit `4c07aab`, pushed): 120 of 136 models mapped, 5th board, model page rows, guide picks, footer credit, trimmed public snapshot (256 rows), full list local only. Verified: build, verify 8/8, tsc, lint 0 errors, browser. Side fix: chart no longer adds "%" to index scores.
 
+## Subscription guide restored (2026-10-12)
+User: the `1845086` rebuild deleted the plain subscription guide; the data-only page was too hard for non-experts. User picked "restore old page, fix facts".
+- [x] New `src/components/models/SubscriptionGuide.tsx` = old layout (budget planner $20/$100/$200, use-case matrix, $20 plans, $100-$200 plans). Model ranks/prices/scores read from `ALL_MODELS` + `GUIDE_PICKS`; plan facts typed in, checked 2026-10-12 on vendor pages (`PLANS_CHECKED`).
+- [x] `src/pages/SubscriptionsPage.tsx`: old title/H1/short answer/FAQ schema back, facts fixed. `/models` keeps the data-only `ModelDecisionGuide`.
+- [x] `scripts/prerender_static_pages.py`: `/subscriptions` no-JS body = `PLAN_SUMMARIES`; llms.txt line updated. Keep `PLANS_CHECKED`/`PLAN_SUMMARIES` in sync with the TSX.
+- [x] Verified: `npx tsc -b`, `npm run lint` (0 errors), `npm run build`, `npm run verify` 8/8, browser on preview (all tabs, 375px no side scroll, desktop screenshot).
+- [x] Committed and pushed to `main` (user OK).
+- [ ] Re-check plan prices about monthly; vendors change plans often (ChatGPT Pro tiers changed 2026-09-29).
+
 ## Article & timeline model-claims audit (2026-10-11, commit `13773b5`, pushed)
 Full list: `ARTICLE_CLAIMS_AUDIT.md`. Verified: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, built Opus 5.5 page spot-checked.
 - [x] 12 articles fixed (art-1, 7, 60, 78, 79, 90, 110, 115, 146, 155, 186, 197) + 2 timeline entries (Sonnet 5.5, Mistral 3). Daily briefing and live signals were clean.

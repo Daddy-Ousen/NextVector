@@ -1,3 +1,14 @@
+# Handoff — 2026-10-12 (Subscription guide restored, pushed)
+
+## Latest: /subscriptions guide back, facts fixed — committed and pushed to `main`
+- Why: commit `1845086` (model data rebuild) replaced the plain plan guide with leaderboard picks. User said non-experts could not use it. User chose "restore old page, fix facts".
+- Files: new `src/components/models/SubscriptionGuide.tsx`; `src/pages/SubscriptionsPage.tsx`; `scripts/prerender_static_pages.py` (`PLANS_CHECKED`, `PLAN_SUMMARIES`, `/subscriptions` body, llms.txt line). `/models` still uses the data-only `ModelDecisionGuide.tsx` (unchanged).
+- Facts source (checked 2026-10-12): claude.com/pricing (Pro $20 / $17 yearly, Max from $100, Team $25/$20, Premium $125, Fable via credits on Pro, 50% weekly on Max), support.claude.com Max 5x $100 / 20x $200; chatgpt.com/pricing (Go $8, Plus $20, model table, Business $25/$20); help.openai.com Pro 100/200/500; gemini.google/subscriptions (AI Pro: 3.8 Flash + 3.1 Pro, 5 TB) + blog.google (Ultra $100/$200); Google AI Pro $19.99 from third-party sites (Google page shows BDT here); cursor.com/pricing + /docs/models; runpod.io/pricing (4090 $0.34-$0.89/h, page conflicts).
+- Model numbers on the page come from `ALL_MODELS` / `GUIDE_PICKS`, so they update with each data build.
+- Checks passed: tsc, lint 0 errors, build, verify 8/8, browser (all tabs, 375px no side scroll).
+- Next: check live /subscriptions after the Vercel deploy.
+- Gotcha: openai.com/chatgpt pricing blocks WebFetch (403); use the built-in browser. Google One and gemini.google pages show Bangladesh prices from here.
+
 # Handoff — 2026-10-12 (Benchmarks: price scatter + OSWorld all-runs switch)
 
 ## Latest: option 4 done, commit `b494452`, pushed to `main`

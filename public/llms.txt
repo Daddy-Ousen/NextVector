@@ -8,7 +8,7 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 - [NextVector Home](https://nextvector.rhasan.online/): Latest AI news, newest first, with the lead story on top.
 - [AI Models Directory](https://nextvector.rhasan.online/models): 136 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
 - [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).
-- [AI Model Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Picks a model by a stated rule over public data; check each vendor's plan page for what a subscription includes.
+- [AI Subscription Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Plain-English guide to ChatGPT Plus, Claude Pro, Google AI Pro, Cursor Pro and the $100-$200 plans, with budget options. Plan prices checked on vendor pages October 12, 2026.
 - [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
 - [AI Breakthrough Timeline](https://nextvector.rhasan.online/timeline): Chronological record of major AI and computing milestones.
 - [Daily Intelligence Briefing](https://nextvector.rhasan.online/briefing): A short scan of the day's main AI stories.

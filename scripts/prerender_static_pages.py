@@ -26,6 +26,17 @@ MODELS_FILE = ROOT_DIR / "src" / "data" / "modelsData.ts"
 COMPARE_FILE = ROOT_DIR / "src" / "pages" / "ComparePage.tsx"
 
 BASE_URL = "https://nextvector.rhasan.online"
+
+# /subscriptions plan facts, copied from vendor pricing pages (keep in sync with src/components/models/SubscriptionGuide.tsx)
+PLANS_CHECKED = "October 12, 2026"
+PLAN_SUMMARIES = [
+    ("Claude Pro — $20/mo", "Opus 5.5, Sonnet 5.5 and Haiku 5.5, plus Claude Code and Projects. Fable 5.1 costs extra usage credits. Best for writing, research and coding."),
+    ("ChatGPT Plus — $20/mo", "GPT-6.1 Sol, GPT-6 Astra, GPT-6 Sol and GPT-5.6 Sol, Terra and Luna, plus voice chats, image creation, deep research and Codex. ChatGPT Go costs $8/mo."),
+    ("Google AI Pro — $19.99/mo", "Gemini 3.8 Flash and Gemini 3.1 Pro, about 4x the Free usage, 5 TB of storage, Gemini in Gmail, Docs and Sheets. Best for Google users and families."),
+    ("Cursor Pro — $20/mo", "A coding editor with models from Anthropic, OpenAI and Google (for example Claude Opus 5.5, GPT-5.6 Sol, Gemini 3.8 Flash). Best for software engineers."),
+    ("$100-$200 plans", "ChatGPT Pro ($100, $200 or $500), Claude Max 5x ($100) or 20x ($200), Google AI Ultra ($100 or $200). Worth it only if you hit the $20 limits every day."),
+    ("Pay-per-use API credits", "Developers can put $20-$200 into API credits instead and pay only for what they use. Cheap models such as DeepSeek cost a small fraction of the top models."),
+]
 DEFAULT_IMAGE = f"{BASE_URL}/brand/nextvector-brand-system.jpg"
 LOGO_URL = f"{BASE_URL}/brand/nextvector-logo.jpg"
 
@@ -559,7 +570,7 @@ def generate_llms_txt(articles, models):
         f"- [NextVector Home]({BASE_URL}/): Latest AI news, newest first, with the lead story on top.",
         f"- [AI Models Directory]({BASE_URL}/models): {len(models)} tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.",
         f"- [Model Showdowns & Comparisons]({BASE_URL}/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).",
-        f"- [AI Model Buyer's Guide]({BASE_URL}/subscriptions): Picks a model by a stated rule over public data; check each vendor's plan page for what a subscription includes.",
+        f"- [AI Subscription Buyer's Guide]({BASE_URL}/subscriptions): Plain-English guide to ChatGPT Plus, Claude Pro, Google AI Pro, Cursor Pro and the $100-$200 plans, with budget options. Plan prices checked on vendor pages {PLANS_CHECKED}.",
         f"- [Benchmark Leaderboards]({BASE_URL}/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.",
         f"- [AI Breakthrough Timeline]({BASE_URL}/timeline): Chronological record of major AI and computing milestones.",
         f"- [Daily Intelligence Briefing]({BASE_URL}/briefing): A short scan of the day's main AI stories.",
@@ -1117,14 +1128,14 @@ def prerender_all():
         },
         {
             "path": "/subscriptions",
-            "title": "AI Model Buyer's Guide: Best Model by Score, Price & Use",
-            "description": "Pick an AI model by data: highest arena.ai score, best score per dollar, best open-weights model, computer use and coding results. Every pick shows its rule and source.",
-            "keywords": "best ai model, best value llm, open weights model, ai model comparison, ai buyer guide",
+            "title": "Best AI Subscriptions to Get (2026 Buyer's Guide) — ChatGPT Plus vs Claude Pro",
+            "description": f"Plain-English 2026 AI subscription buyer's guide. Compare ChatGPT Plus ($20), Claude Pro ($20), Google AI Pro ($19.99), Cursor Pro and the $100-$200 plans. Prices checked on vendor pages {PLANS_CHECKED}.",
+            "keywords": "best ai subscription to get, chatgpt plus vs claude pro, google ai pro, chatgpt pro worth it, claude max, ai buyer guide",
             "body": f"""
             <main class="max-w-5xl mx-auto px-4 py-12 space-y-8">
-              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Which AI Model Should You Use?</h1>
-              <p class="text-lg text-zinc-300 leading-relaxed">Picks chosen by stated rules over public leaderboards and list prices (data checked {site_data()['asOf']}). We do not track consumer subscription plans; check the vendor's pricing page for what each plan includes.</p>
-              <ul class="space-y-4">{''.join(f"<li class='p-5 rounded-2xl bg-zinc-950 border border-zinc-800'><h2 class='text-base font-bold text-zinc-100'>{escape(g['title'])}: <a href='/models/{g['modelId']}' class='text-emerald-400'>{escape(g['modelName'])}</a></h2><p class='text-xs text-zinc-400 mt-1'>{escape(g['metric'])}. List price {escape(g['price'])}. Rule: {escape(g['rule'])}</p></li>" for g in site_data()['guide'])}</ul>
+              <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-100 tracking-tight leading-tight">Best AI Subscriptions to Get in 2026</h1>
+              <p class="text-lg text-zinc-300 leading-relaxed">Plan prices and contents checked on each vendor's pricing page on {PLANS_CHECKED} (US prices). Model ranks from arena.ai, checked {site_data()['asOf']}.</p>
+              <ul class="space-y-4">{''.join(f"<li class='p-5 rounded-2xl bg-zinc-950 border border-zinc-800'><h2 class='text-base font-bold text-zinc-100'>{escape(n)}</h2><p class='text-xs text-zinc-400 mt-1'>{escape(t)}</p></li>" for n, t in PLAN_SUMMARIES)}</ul>
             </main>"""
         },
         {

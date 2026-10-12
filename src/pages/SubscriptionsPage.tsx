@@ -1,65 +1,57 @@
 import React from 'react';
-import { ModelDecisionGuide } from '../components/models/ModelDecisionGuide';
+import { SubscriptionGuide, PLANS_CHECKED } from '../components/models/SubscriptionGuide';
 import { SEOHead } from '../components/common/SEOHead';
 import { Sparkles, ShieldCheck, ArrowRight, DollarSign } from 'lucide-react';
 import { PageHeader } from '../components/common/PageHeader';
 import { GUIDE_PICKS } from '../data/showdownsData';
-import { MODEL_DATA_AS_OF } from '../data/modelsData';
 
 interface SubscriptionsPageProps {
   onSelectModel: (modelId: string) => void;
   onNavigate: (path: string) => void;
 }
 
-const pick = (id: string) => GUIDE_PICKS.find((p) => p.id === id);
+const top = GUIDE_PICKS.find((p) => p.id === 'top-arena');
+const topCoding = GUIDE_PICKS.find((p) => p.id === 'aa-coding');
 
 export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
   onSelectModel,
   onNavigate,
 }) => {
-  const top = pick('top-arena');
-  const value = pick('value');
-  const open = pick('open');
-
-  // Answers use only generated data; plan prices are left to the vendors' own pages
+  // Plan facts copied from vendor pricing pages on PLANS_CHECKED (see SubscriptionGuide.tsx header)
   const subscriptionFaqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Which AI model scores highest right now?',
+        name: 'What is the best AI subscription to get in 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: top
-            ? `Among generally released models we track, ${top.modelName} (${top.developer}) has the highest arena.ai text score: ${top.metric}. List price: ${top.price}. Data checked ${MODEL_DATA_AS_OF}.`
-            : 'See the Arena leaderboard on our benchmarks page.',
+          text: `For most people, ChatGPT Plus ($20/mo) or Claude Pro ($20/mo). Claude Pro includes ${top?.modelName ?? 'Claude Opus 5.5'}, the released model with the highest arena.ai text score, plus Claude Code. ChatGPT Plus includes GPT-6.1 Sol, GPT-6 Astra and GPT-5.6 Sol, plus voice chats and image creation. Google AI Pro ($19.99/mo) suits Gmail and Drive users and adds 5 TB of storage. Plans checked ${PLANS_CHECKED}.`,
         },
       },
       {
         '@type': 'Question',
-        name: 'What is the best value AI model for API use?',
+        name: 'Is Claude Pro or ChatGPT Plus better for coding?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: value
-            ? `${value.modelName} has the highest Arena score among models under $1 per 1M tokens (blended 3 input : 1 output): ${value.metric}.`
-            : 'See the price vs Arena score frontier on our benchmarks page.',
+          text: `Claude Pro is the usual pick for coding. Anthropic models lead the Artificial Analysis Coding Index (${topCoding ? `${topCoding.modelName}: ${topCoding.metric.replace('AA Coding Index ', '')}` : 'Claude Fable 5.1'}), and Claude Pro includes the Claude Code agent. ChatGPT Plus includes Codex, so it also works for coding.`,
         },
       },
       {
         '@type': 'Question',
-        name: 'Which open-weights model scores highest?',
+        name: 'Is the ChatGPT Pro subscription worth it?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: open ? `${open.modelName} (${open.developer}): ${open.metric}.` : 'See the model directory, filtered to open weights.',
+          text: 'ChatGPT Pro comes in three tiers: $100, $200 and $500 per month. It adds GPT-5.6 Sol Pro, more GPT-6 Astra reasoning, Dot (an always-on agent) and maximum deep research. It is worth it only if you hit the Plus limits every day. Most people get more from a $20 plan plus pay-per-use API credits.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Which subscription plan should I buy?',
+        name: 'What is the best AI setup for a $100/month budget?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We do not track consumer plans, because what each plan includes changes often. First pick the model that fits your work using the guide on this page, then check which plan includes it on the vendor\'s pricing page.',
+          text: 'For developers: Claude Pro ($20/mo) or Cursor Pro ($20/mo) plus about $80 of API credits (a cheap model such as DeepSeek for bulk work, a top model for hard problems). For everyone else: one $100 plan from the lab you use most (Claude Max 5x, ChatGPT Pro 100 or Google AI Ultra).',
         },
       },
     ],
@@ -68,18 +60,26 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
   return (
     <div className="space-y-10 pb-24">
       <SEOHead
-        title="AI Model Buyer's Guide: Best Model by Score, Price & Use | NextVector"
-        description={`Pick an AI model by data: highest arena.ai score, best score per dollar, best open-weights model, computer use and coding results. Every pick shows its rule and source. Data checked ${MODEL_DATA_AS_OF}.`}
+        title="Best AI Subscriptions to Get (2026 Buyer's Guide) — ChatGPT Plus vs Claude Pro | NextVector"
+        description={`Plain-English 2026 AI subscription buyer's guide. Compare ChatGPT Plus ($20), Claude Pro ($20), Google AI Pro ($19.99), Cursor Pro and the $100–$200 plans. Prices checked on vendor pages ${PLANS_CHECKED}.`}
         canonicalPath="/subscriptions"
         schemaData={subscriptionFaqSchema}
-        tags={['Best AI Model', 'AI Model Comparison', 'AI Buyer Guide', 'Best Value LLM', 'Open Weights Models']}
+        tags={[
+          'Best AI Subscription',
+          'Best AI Subscription to Get',
+          'ChatGPT Plus vs Claude Pro',
+          'AI Plans Comparison',
+          'ChatGPT Pro',
+          'Google AI Pro',
+          'AI Buyer Guide 2026',
+        ]}
       />
 
       <PageHeader
-        eyebrow={<>AI Buyer's Guide</>}
+        eyebrow={<>2026 AI Buyer's Guide</>}
         icon={<Sparkles className="w-4 h-4" />}
-        title="Which AI Model Should You Use?"
-        description="Picks chosen by stated rules over public leaderboards and list prices. No vendor commissions."
+        title={<>Best AI Subscriptions to Get in 2026 <span className="text-zinc-400">— ChatGPT Plus vs Claude Pro</span></>}
+        description="A plain breakdown of the $20/mo plans, $100/mo power-user setups, and $100–$200/mo top tiers. Zero vendor commissions."
       />
 
       <div className="p-4 rounded-2xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
@@ -96,20 +96,20 @@ export const SubscriptionsPage: React.FC<SubscriptionsPageProps> = ({
         </button>
       </div>
 
-      {top && value && (
-        <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs space-y-2">
-          <div className="eyebrow flex items-center gap-2">
-            <DollarSign className="w-4 h-4" />
-            <span>Short Answer</span>
-          </div>
-          <p className="text-zinc-300 leading-relaxed font-sans text-sm">
-            Highest Arena score: <strong>{top.modelName}</strong> ({top.metric}; {top.price}). Best score under $1 per 1M
-            tokens: <strong>{value.modelName}</strong> ({value.metric}). Data checked {MODEL_DATA_AS_OF}.
-          </p>
+      <div className="p-5 rounded-2xl bg-zinc-950/80 border border-emerald-500/30 text-xs space-y-2">
+        <div className="eyebrow flex items-center gap-2">
+          <DollarSign className="w-4 h-4" />
+          <span>Short Answer: Which $20 Plan?</span>
         </div>
-      )}
+        <p className="text-zinc-300 leading-relaxed font-sans text-sm">
+          If you write, research or code, choose <strong>Claude Pro ($20/mo)</strong>. It includes {top?.modelName ?? 'Claude Opus 5.5'}, the top released model on Arena, and Claude Code.
+          If you want voice chats, image creation and the GPT-6 models, choose <strong>ChatGPT Plus ($20/mo)</strong>.
+          If you live in Gmail and Google Drive, choose <strong>Google AI Pro ($19.99/mo)</strong>, which also adds 5 TB of storage.
+          With $100 to spend, see the budget planner below.
+        </p>
+      </div>
 
-      <ModelDecisionGuide onSelectModel={onSelectModel} />
+      <SubscriptionGuide onSelectModel={onSelectModel} />
     </div>
   );
 };

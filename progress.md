@@ -13,6 +13,7 @@
   - `scripts/verify_daily_pipeline.py`: near-duplicate cover check (error after art-221, warning before), new articles need local cover / Robiul author / no future date, briefing must have 5 items (+ date warning), ticker text ≤ 95.
   - Docs: `DAILY_UPDATE_PIPELINE.md` and `EDITORIAL_RULEBOOK.md` §5 used wrong field names (signalScore, readTime, sources, whyDoesItMatter, content: string). Fixed to the real type; arena.ai; git add list; covers downloaded; 8 gates.
   - Tested: test article art-222 written by the script → tsc, build, verify 8/8 passed → duplicate-cover re-run blocked → test removed, rebuilt, sitemap/RSS back to committed state.
+  - Commit `ee1224f`, pushed to `main`.
 - 2026-10-12: Article page wide cover image (user pick, option 3). Text column stays 42rem (672 px). On screens 1024 px and wider, the cover image breaks out to `min(72rem, 100vw - 4rem)` (1152 px max), 21:9 crop, max 520 px tall. Mobile unchanged. File: `src/pages/ArticleDetailPage.tsx` (Hero Image div). Verified: tsc, build, verify 8/8, lint 0 errors, browser at 1600 / 1100 / 375 px (no side scroll). Commit `233a26c`, pushed.
 - 2026-10-12: Benchmarks board option 4 (user pick). Commit `b494452`, pushed. Verified: build, verify 8/8, tsc, lint 0 errors, browser at 375px and desktop.
   - Price vs Score: new scatter chart (`src/components/benchmarks/PriceScoreScatter.tsx`) with all 112 priced models, log price axis, frontier (9) in emerald with a step line, hover box, click opens model page. List switch: Frontier (9) / All priced (112).

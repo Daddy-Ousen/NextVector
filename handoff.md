@@ -1,10 +1,10 @@
 # Handoff — 2026-10-12 (Article page: wide cover image)
 
-## Latest: option 3 done, NOT committed
+## Latest: option 3 done, pushed to `main`
 - User asked why article content is a narrow centered column on wide Windows screens. Cause: `max-w-[42rem] mx-auto` on the article (set in commit `b3fbd80` for reading width). User picked option 3: wide image, narrow text.
 - Change: Hero Image div in `src/pages/ArticleDetailPage.tsx` gets `lg:w-[min(72rem,calc(100vw-4rem))] lg:left-1/2 lg:-translate-x-1/2 lg:aspect-[21/9] lg:max-h-[520px]`. Text column unchanged.
 - Checks passed: `npx tsc -b`, `npm run build`, `npm run verify` 8/8, `npm run lint` 0 errors, browser: 1600 px (image 1152 px, centered), 1100 px (image fills to 32 px gutters), 375 px (unchanged, no side scroll).
-- Next: commit and push to `main` when the user says so; then check a live article page after the Vercel deploy.
+- Pushed as `233a26c`. Next: check a live article page after the Vercel deploy.
 - Gotcha: do not put max-width on all article children; `ReadingProgressBar` is a fixed bar inside the article and would shrink.
 
 # Handoff — 2026-10-12 (Subscription guide restored, pushed)

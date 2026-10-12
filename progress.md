@@ -6,6 +6,7 @@
 - Daily pipeline: see `DAILY_UPDATE_PIPELINE.md`. Order now: `npm run images` → `npm run build` → `npm run verify` (8 gates).
 
 ## Completed
+- 2026-10-12: Article page wide cover image (user pick, option 3). Text column stays 42rem (672 px). On screens 1024 px and wider, the cover image breaks out to `min(72rem, 100vw - 4rem)` (1152 px max), 21:9 crop, max 520 px tall. Mobile unchanged. File: `src/pages/ArticleDetailPage.tsx` (Hero Image div). Verified: tsc, build, verify 8/8, lint 0 errors, browser at 1600 / 1100 / 375 px (no side scroll). Not committed yet.
 - 2026-10-12: Benchmarks board option 4 (user pick). Commit `b494452`, pushed. Verified: build, verify 8/8, tsc, lint 0 errors, browser at 375px and desktop.
   - Price vs Score: new scatter chart (`src/components/benchmarks/PriceScoreScatter.tsx`) with all 112 priced models, log price axis, frontier (9) in emerald with a step line, hover box, click opens model page. List switch: Frontier (9) / All priced (112).
   - OSWorld-Verified: list switch Models only (24) / All runs (66). All runs = every approach (general, agent framework, specialized), best per name + type, with a note that they are not equal-terms runs.

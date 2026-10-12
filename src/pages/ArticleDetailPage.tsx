@@ -348,8 +348,8 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         </div>
       </header>
 
-      {/* Hero Image */}
-      <div className="relative rounded-2xl overflow-hidden border border-zinc-800 mb-8 max-h-[460px] bg-zinc-950">
+      {/* Hero Image: breaks out of the 42rem text column on wide screens */}
+      <div className="relative rounded-2xl overflow-hidden border border-zinc-800 mb-8 max-h-[460px] bg-zinc-950 lg:w-[min(72rem,calc(100vw-4rem))] lg:left-1/2 lg:-translate-x-1/2 lg:aspect-[21/9] lg:max-h-[520px]">
         <img
           src={article.coverImage}
           alt={article.coverImageAlt || article.title}

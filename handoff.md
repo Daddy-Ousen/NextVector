@@ -1,3 +1,39 @@
+# Handoff — 2026-10-13 (Daily Intelligence Pipeline Run: art-228 to art-233)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-228`: `anthropic-migrates-monorepo-from-git-to-scion` (Hero, Signal 94, Anthropic engineering retrospective on replacing Git with Scion after merges exceeded 30,000/day).
+  - `art-229`: `liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model` (Featured / Model Report, Signal 91, Liquid AI LFM2.5-24B-A2B hybrid convolution-MoE edge reasoning model, 2.45B active parameters, 184 tok/s on M5 Max).
+  - `art-230`: `rust-compiler-unsoundness-borrow-checker-covariant-field-assignment` (Signal 90, Rust issue #164250, 11-year borrow checker unsoundness via covariant field assignment).
+  - `art-231`: `ai-models-provably-conceal-capabilities-cryptographic-backdoors` (Featured / Research Explained, Signal 92, Oxford/frontier lab proof in arXiv:2610.13928 on cryptographic digital lockers concealing neural capabilities from audits).
+  - `art-232`: `apple-unveils-minions-distributed-virtual-gpu-cloud` (Signal 89, Apple ML Research Minions framework pooling idle Mac unified memory for distributed inference).
+  - `art-233`: `tfg-london-cyberattack-phase-eight-hobbs-supply-chain` (Signal 88, TFG London Phase Eight/Hobbs/Whistles cyber incident and H&M ShinyHunters probe).
+- **Model Watch:**
+  - Added `model-lfm-2-5-24b-a2b` (`liquid/lfm-2.5-24b-a2b` on OpenRouter, 24B total / 2.45B active, 131K context, $0.05/$0.70 per M tokens).
+  - Added OpenRouter key `"or": "google/gemini-4-argon"` to `model-gemini-4-argon` ($2/$10 per M tokens, 1M context).
+  - Rebuilt registry via `python scripts/build_model_data.py` (138 models).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Tuesday, October 13, 2026` (5 links).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars).
+- **Images:**
+  - All 6 local images downloaded and saved to `public/images/articles/` with unique tokens and dhash distances ≥ 14 bits from catalog (pairwise ≥ 27 bits).
+  - Ran `npm run images` to optimize images.
+- **Verification & Builds:**
+  - `npm run build` prerendered 233 articles, 138 models, 10 showdowns; 400 static HTML pages.
+  - `npm run verify` passed ALL 8 RELEASE GATES.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-13-the-morning-vector.md` (`769cbd7`).
+- **Commits:**
+  - `0a1adb5`: `feat(intelligence): daily briefing and articles update [2026-10-13]`
+  - `769cbd7`: `docs(newsletter): The Morning Vector [2026-10-13]`
+- **Stories Dropped / Excluded:**
+  - Character.ai voluntary chapter 11 reorganization dropped in favor of deeper technical systems reports (Rust compiler borrow checker unsoundness and Apple Minions virtual GPU cloud).
+- **Open Items:**
+  - Monitor Vercel automatic deployment for `main`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - In `pipeline_runs/YYYY-MM-DD.json`, `briefing.items` requires `headline`, `category`, `urgency`, `summary`, `whyItMatters`, `articleSlug`. `signals` requires `tag`, `text`, `articleSlug`.
+
 # Handoff — 2026-10-12 (Daily Intelligence Pipeline Run: art-222 to art-227)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch, Verification 8/8 Passed, Newsletter Published

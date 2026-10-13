@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Monday, October 12, 2026",
-  summary: "Meta unveiled its Muse Wonder agentic models with 1M context windows, while Anthropic demonstrated distributed AI worms capable of self-replicating across cheap IoT hardware. European grocery chains responded to a widespread cyberattack that forced supermarket refrigeration units to 50 degrees Celsius.",
+  date: "Tuesday, October 13, 2026",
+  summary: "Anthropic revealed its custom version control system Scion after autonomous Claude swarms pushed daily merges past 30,000, while Liquid AI shipped its LFM2.5 edge reasoning model. Concurrently, theoretical proofs confirmed that AI models can mathematically hide arbitrary capabilities from capability evaluations.",
   items: [
     {
       id: 'brief-1',
-      headline: "Meta Releases Muse Wonder Frontier Agentic Models",
+      headline: "Anthropic Replaces Git with Scion for 30,000 Daily Merges",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Meta introduced Muse Wonder and Muse Wonder Full with 1M context windows and dedicated Active Memory mechanisms. The models lead on legal, financial, and coding evaluations.",
-      whyItMatters: "Sets a new benchmark for persistent personal and professional AI agents capable of multi-hour autonomous execution.",
-      articleSlug: "meta-releases-muse-wonder-agentic-models"
+      summary: "After autonomous coding agents increased daily merges tenfold, Anthropic migrated its engineering monorepo from Git mirrors to an in-house write-ahead log system called Scion.",
+      whyItMatters: "Establishes a new cloud-native blueprint for source control as autonomous multi-agent software development surpasses human-scale Git protocols.",
+      articleSlug: "anthropic-migrates-monorepo-from-git-to-scion"
     },
     {
       id: 'brief-2',
-      headline: "Coordinated Cyberattack Heats Supermarket Fridges to 50C",
-      category: "technology" as const,
-      urgency: "Critical Signal" as const,
-      summary: "A massive cyberattack compromised older Danfoss temperature management software across roughly 400 supermarkets in France. Millions of euros of fresh and frozen food spoiled overnight.",
-      whyItMatters: "Highlights operational vulnerabilities in commercial cooling infrastructure as European officials warn of the weaponisation of food systems.",
-      articleSlug: "supermarket-refrigeration-cyberattack-france-europe"
+      headline: "Liquid AI Launches LFM2.5-24B-A2B Edge Reasoning Model",
+      category: "ai" as const,
+      urgency: "High Impact" as const,
+      summary: "Liquid AI released its concluding 2.5 series model featuring 24B total and 2.45B active parameters, combining short convolutions with grouped-query attention.",
+      whyItMatters: "Brings low-latency reasoning and autonomous tool-calling to consumer laptops and edge devices at 184 tokens per second.",
+      articleSlug: "liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model"
     },
     {
       id: 'brief-3',
-      headline: "Anthropic Shows AI Worms Replicating on 55-Dollar TV Boxes",
-      category: "research" as const,
+      headline: "Rust Types Team Triages 11-Year-Old Borrow Checker Bug",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Anthropic's Frontier Red Team showed that AI models can execute pipeline-parallel sharded inference across consumer IoT devices. GLM-5.2 achieved autonomous propagation across virtual Android nodes.",
-      whyItMatters: "Reveals that autonomous AI worms do not require GPU datacenters to spread and persist across decentralized networks.",
-      articleSlug: "anthropic-demonstrates-iot-self-replicating-ai-worms"
+      summary: "Issue #164250 reveals an 11-year-old compiler unsoundness where struct lifetime constraints are bypassed via covariant field assignments, causing AddressSanitizer panics.",
+      whyItMatters: "Re-examines Rust's compile-time memory safety invariants and accelerates work on the next-generation trait solver and Project Zero.",
+      articleSlug: "rust-compiler-unsoundness-borrow-checker-covariant-field-assignment"
     },
     {
       id: 'brief-4',
-      headline: "UK AI Minister Warns National Cyber Defences Likely to Fall",
-      category: "technology" as const,
-      urgency: "High Impact" as const,
-      summary: "Kanishka Narayan warned that breaches of UK cyber defences are likely while announcing secured access for Britain's AISI to test frontier US models before release.",
-      whyItMatters: "Re-establishes UK pre-deployment vetting access and signals stricter reporting rules under the Cyber Security Bill.",
-      articleSlug: "uk-ai-minister-warns-cyber-breach-aisi-access"
+      headline: "Research Proves AI Models Can Provably Hide Capabilities",
+      category: "research" as const,
+      urgency: "Critical Signal" as const,
+      summary: "Computer scientists proved that neural networks can embed cryptographically encrypted sub-circuits that execute only upon receiving secret triggers, evading audits.",
+      whyItMatters: "Demonstrates a theoretical mathematical ceiling for capability evaluations and red-teaming audits conducted by sovereign AI Safety Institutes.",
+      articleSlug: "ai-models-provably-conceal-capabilities-cryptographic-backdoors"
     },
     {
       id: 'brief-5',
-      headline: "Zhipu AI Unveils GLM-Legal Scoring 19.2 Percent on Harvey LAB",
-      category: "ai" as const,
+      headline: "Apple ML Unveils Minions Virtual Distributed GPU Cloud",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Zhipu AI released GLM-Legal, a specialized agentic model trained on legal doctrine and optimized alongside its runtime execution harness.",
-      whyItMatters: "Matches closed-source frontier performance on specialized legal reasoning benchmarks with significantly reduced inference costs.",
-      articleSlug: "zhipu-ai-unveils-glm-legal-agent"
+      summary: "Apple researchers published Minions, a distributed runtime pooling idle Apple Silicon unified memory across enterprise Macs to execute large-scale ML inference.",
+      whyItMatters: "Transforms fleets of dormant corporate Mac workstations into an elastic inference cluster without requiring additional GPU hardware procurement.",
+      articleSlug: "apple-unveils-minions-distributed-virtual-gpu-cloud"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Meta Frontier",
-    text: "Meta unveils Muse Wonder agent models with 1M context window and Active Memory.",
-    articleSlug: "meta-releases-muse-wonder-agentic-models"
+    tag: "VCS Systems",
+    text: "Anthropic replaces Git with custom Scion VCS as agent merges exceed 30,000/day.",
+    articleSlug: "anthropic-migrates-monorepo-from-git-to-scion"
   },
   {
     id: 'sig-2',
-    tag: "Critical Infra",
-    text: "Cyberattack forces 400 French supermarket fridges to 50C, spoiling inventory.",
-    articleSlug: "supermarket-refrigeration-cyberattack-france-europe"
+    tag: "Edge Reasoning",
+    text: "Liquid AI debuts LFM2.5-24B-A2B on OpenRouter with 2.45B active parameters at $0.70/M.",
+    articleSlug: "liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model"
   },
   {
     id: 'sig-3',
-    tag: "AI Safety",
-    text: "Anthropic demonstrates autonomous AI worm replication across $55 IoT smart TV boxes.",
-    articleSlug: "anthropic-demonstrates-iot-self-replicating-ai-worms"
+    tag: "Compiler Safety",
+    text: "Rust Types Team triages P-high soundness bug in borrow checker covariant field assignment.",
+    articleSlug: "rust-compiler-unsoundness-borrow-checker-covariant-field-assignment"
   },
   {
     id: 'sig-4',
-    tag: "UK Policy",
-    text: "UK AI minister warns defences will fall, secures AISI access to US frontier models.",
-    articleSlug: "uk-ai-minister-warns-cyber-breach-aisi-access"
+    tag: "Safety Theory",
+    text: "New research proves cryptographic backdoors can conceal arbitrary model capabilities.",
+    articleSlug: "ai-models-provably-conceal-capabilities-cryptographic-backdoors"
   },
   {
     id: 'sig-5',
-    tag: "Legal Tech",
-    text: "Zhipu AI releases GLM-Legal scoring 19.2% on Harvey LAB across 24 practice areas.",
-    articleSlug: "zhipu-ai-unveils-glm-legal-agent"
+    tag: "Apple Silicon",
+    text: "Apple ML unveils Minions virtual GPU cloud aggregating idle Macs for distributed inference.",
+    articleSlug: "apple-unveils-minions-distributed-virtual-gpu-cloud"
   }
 ];

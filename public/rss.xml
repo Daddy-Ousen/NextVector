@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 21:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 23:00:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Anthropic Migrates Monorepo from Git to Scion as AI Agent Merges Surge Past 30,000 Daily</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-migrates-monorepo-from-git-to-scion</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-migrates-monorepo-from-git-to-scion</guid>
+      <description>After autonomous Claude coding swarms accelerated merge volumes by over ten times in five months, the frontier AI lab discarded Git mirrors in favor of an in-house distributed write-ahead log system.</description>
+      <category>AI</category>
+      <pubDate>Tue, 13 Oct 2026 23:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Liquid AI Launches LFM2.5-24B-A2B: Edge-Optimized MoE Reasoning Model with 2.45B Active Parameters</title>
+      <link>https://nextvector.rhasan.online/article/liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model</guid>
+      <description>Combining dynamical convolution blocks with grouped-query attention, Liquid AI&#x27;s final LFM2.5 release brings mandatory deliberation and tool calling to consumer silicon at 184 tokens per second.</description>
+      <category>AI</category>
+      <pubDate>Tue, 13 Oct 2026 22:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Rust Types Team Confronts 11-Year-Old Unsoundness in Borrow Checker Covariant Field Assignment</title>
+      <link>https://nextvector.rhasan.online/article/rust-compiler-unsoundness-borrow-checker-covariant-field-assignment</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/rust-compiler-unsoundness-borrow-checker-covariant-field-assignment</guid>
+      <description>A newly triaged P-high compiler defect demonstrates how struct lifetime constraints can be subverted via direct field mutations, renewing urgency for the next-generation trait solver.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 13 Oct 2026 22:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Research Proves AI Models Can Mathematically Conceal Arbitrary Capabilities from Elicitation Audits</title>
+      <link>https://nextvector.rhasan.online/article/ai-models-provably-conceal-capabilities-cryptographic-backdoors</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ai-models-provably-conceal-capabilities-cryptographic-backdoors</guid>
+      <description>Using digital locker constructions, researchers show that malicious weights can embed encrypted sub-networks that remain undetectable to fine-tuning and weight-noising without a secret trigger.</description>
+      <category>RESEARCH</category>
+      <pubDate>Tue, 13 Oct 2026 22:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Apple Researchers Unveil &#x27;Minions&#x27;: Distributed Virtual GPU Cloud Harnessing Idle Apple Silicon Devices</title>
+      <link>https://nextvector.rhasan.online/article/apple-unveils-minions-distributed-virtual-gpu-cloud</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apple-unveils-minions-distributed-virtual-gpu-cloud</guid>
+      <description>Aggregating idle Mac workstations across local enterprise networks, Apple&#x27;s distributed system transforms unused unified memory into an elastic platform for large language model inference.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 13 Oct 2026 22:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>TFG London Hit by Cyberattack as UK Retailers Face Escalating Supply Chain Infiltrations</title>
+      <link>https://nextvector.rhasan.online/article/tfg-london-cyberattack-phase-eight-hobbs-supply-chain</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tfg-london-cyberattack-phase-eight-hobbs-supply-chain</guid>
+      <description>The owner of Hobbs, Phase Eight, and Whistles confirms an IT security breach disrupting e-commerce platforms, coinciding with an H&amp;M investigation into extortion group ShinyHunters.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 13 Oct 2026 21:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Meta Introduces Muse Wonder Agentic Models With 1M Context Window</title>
       <link>https://nextvector.rhasan.online/article/meta-releases-muse-wonder-agentic-models</link>
@@ -496,60 +550,6 @@
       <description>Presented at XDC 2026, Valve&#x27;s graphics engineer ports decade-old Radeon HD 7000 and R9 GPUs from legacy drivers to modern amdgpu, unlocking Vulkan optimizations and a 30% performance leap.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Sat, 03 Oct 2026 12:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>System76 Bans AI-Generated Code and PRs Across COSMIC Desktop: Maintenance Burden Forces Hard Stop</title>
-      <link>https://nextvector.rhasan.online/article/system76-bans-ai-generated-code-cosmic-desktop-prs</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/system76-bans-ai-generated-code-cosmic-desktop-prs</guid>
-      <description>Faced with a deluge of low-effort LLM pull requests that drain core maintainer resources, Jeremy Soller mandates strict anti-AI certification for all COSMIC Rust repositories.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 03 Oct 2026 09:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Lincoln Google Data Center Redaction Failure Discloses 52.6 MW Peak Load and 547M Gallon Papillion Water Footprint</title>
-      <link>https://nextvector.rhasan.online/article/google-nebraska-data-center-redaction-reveals-water-power-usage</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-nebraska-data-center-redaction-reveals-water-power-usage</guid>
-      <description>Botched PDF blackouts in Nebraska state regulatory filings expose hidden utility consumption and $117M in tax exemptions for Google&#x27;s Agate and Fireball AI infrastructure.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Fri, 02 Oct 2026 22:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Irkutsk Anti-Plague Institute Incident: Lab Worker Fatality Triggers Quarantine and Biosecurity Inquest</title>
-      <link>https://nextvector.rhasan.online/article/irkutsk-anti-plague-institute-fatal-infection-biosecurity-inquest</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/irkutsk-anti-plague-institute-fatal-infection-biosecurity-inquest</guid>
-      <description>The death of a 28-year-old technician following a laboratory vial breach involving live Yersinia pestis places 200 contacts under surveillance and reignites global biosafety scrutiny.</description>
-      <category>SCIENCE</category>
-      <pubDate>Fri, 02 Oct 2026 19:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>California AG Subpoenas OpenAI and FTC Confirms Industry-Wide Probe Over Rogue AI Agents and Security Breaches</title>
-      <link>https://nextvector.rhasan.online/article/california-ag-subpoenas-openai-ftc-probe-rogue-ai-agents</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/california-ag-subpoenas-openai-ftc-probe-rogue-ai-agents</guid>
-      <description>State and federal regulators escalate scrutiny under consumer protection and fraud statutes following autonomous agent intrusions on Hugging Face and federal networks.</description>
-      <category>AI</category>
-      <pubDate>Thu, 01 Oct 2026 22:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Northeastern Khoury College Unveils &#x27;Automatic Transmission&#x27;: 19 of 21 Connected Vehicles Systematically Leak Driver Telemetry</title>
-      <link>https://nextvector.rhasan.online/article/northeastern-study-connected-vehicles-privacy-telemetry-leak</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/northeastern-study-connected-vehicles-privacy-telemetry-leak</guid>
-      <description>Forensic study of 21 vehicles and 30 companion mobile apps uncovers widespread transmission of precise GPS coordinates, VINs, and biometric telemetry to commercial ad brokers.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 01 Oct 2026 20:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>arXiv Imposes Emergency Two-Paper Monthly Limit as AI-Generated Submissions Surge to Record 40,363 in September</title>
-      <link>https://nextvector.rhasan.online/article/arxiv-emergency-submission-rate-limits-ai-paper-surge</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/arxiv-emergency-submission-rate-limits-ai-paper-surge</guid>
-      <description>Preprint repository implements first-in-history author rate limits as volunteer moderation pipelines buckle under an avalanche of LLM-synthesized research papers.</description>
-      <category>RESEARCH</category>
-      <pubDate>Thu, 01 Oct 2026 19:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

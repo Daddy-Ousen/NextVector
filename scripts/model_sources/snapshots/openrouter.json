@@ -1,8 +1,105 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-12T23:27:25Z",
- "count": 459,
+ "fetchedAt": "2026-10-13T23:15:59Z",
+ "count": 461,
  "data": [
+  {
+   "id": "liquid/lfm-2.5-24b-a2b",
+   "name": "LiquidAI: LFM2.5-24B-A2B",
+   "created": 1791912025,
+   "createdDate": "2026-10-13",
+   "context_length": 128000,
+   "hugging_face_id": "LiquidAI/LFM2.5-24B-A2B",
+   "input": 0.05,
+   "output": 0.7,
+   "cache_read": 0.025,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-argon",
+   "name": "Google: Gemini 4 Argon",
+   "created": 1791907477,
+   "createdDate": "2026-10-13",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.1,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-argon:batch",
+   "name": "Google: Gemini 4 Argon (batch)",
+   "created": 1791907477,
+   "createdDate": "2026-10-13",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "scaledown/summarize",
+   "name": "ScaleDown: Summarize",
+   "created": 1791893360,
+   "createdDate": "2026-10-13",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 0.04,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "file"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "scaledown/extract",
+   "name": "ScaleDown: Extract",
+   "created": 1791893351,
+   "createdDate": "2026-10-13",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 0.04,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "file"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "meta/muse-wonder",
    "name": "Meta: Muse Wonder",
@@ -125,26 +222,9 @@
    "createdDate": "2026-10-02",
    "context_length": 262144,
    "hugging_face_id": null,
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "apodex/apodex-1.1-mini:free",
-   "name": "Apodex: Apodex 1.1 Mini (free)",
-   "created": 1790875335,
-   "createdDate": "2026-10-01",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
+   "input": 0.075,
+   "output": 0.225,
+   "cache_read": 0.015,
    "input_modalities": [
     "text"
    ],
@@ -816,9 +896,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.24948,
-   "output": 0.74844,
-   "cache_read": 0.007938,
+   "input": 0.16236,
+   "output": 0.48708,
+   "cache_read": 0.005166,
    "input_modalities": [
     "text"
    ],
@@ -833,9 +913,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0336,
-   "output": 1.188,
-   "cache_read": 0.0336,
+   "input": 0.0441,
+   "output": 0.765,
+   "cache_read": 0.0054,
    "input_modalities": [
     "text",
     "image"
@@ -997,11 +1077,11 @@
    "name": "inclusionAI: Ling 3.0 Flash VL",
    "created": 1789056114,
    "createdDate": "2026-09-10",
-   "context_length": 262144,
+   "context_length": 131072,
    "hugging_face_id": "inclusionAI/Ling-3.0-flash-VL",
-   "input": 0.021,
-   "output": 0.0616,
-   "cache_read": 0.0042,
+   "input": 0.06,
+   "output": 0.18,
+   "cache_read": 0.012,
    "input_modalities": [
     "text",
     "image",
@@ -1018,9 +1098,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.15,
-   "output": 0.6,
-   "cache_read": 0.003,
+   "input": 0.0441,
+   "output": 0.765,
+   "cache_read": 0.0054,
    "input_modalities": [
     "text",
     "image"
@@ -1170,23 +1250,6 @@
    "input_modalities": [
     "file",
     "image",
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "inclusionai/ling-3.0-flash-sante",
-   "name": "inclusionAI: Ling 3.0 Flash Sante",
-   "created": 1788545946,
-   "createdDate": "2026-09-04",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.042,
-   "output": 0.1232,
-   "cache_read": 0.0084,
-   "input_modalities": [
     "text"
    ],
    "output_modalities": [
@@ -1367,32 +1430,15 @@
    ]
   },
   {
-   "id": "inclusionai/ling-3.0-flash-fin",
-   "name": "inclusionAI: Ling 3.0 Flash Fin",
-   "created": 1787846290,
-   "createdDate": "2026-08-27",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.042,
-   "output": 0.1232,
-   "cache_read": 0.0084,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "~z-ai/glm-flash-latest",
    "name": "Z.ai: GLM Flash Latest",
    "created": 1787817633,
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0232,
-   "output": 1.2,
-   "cache_read": 0.0232,
+   "input": 0.0297,
+   "output": 0.9,
+   "cache_read": 0.0108,
    "input_modalities": [
     "text",
     "image",
@@ -1428,9 +1474,9 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.0232,
-   "output": 1.2,
-   "cache_read": 0.0232,
+   "input": 0.0297,
+   "output": 0.9,
+   "cache_read": 0.0108,
    "input_modalities": [
     "text",
     "image",
@@ -1538,9 +1584,9 @@
    "createdDate": "2026-08-19",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.055,
-   "output": 5.0,
-   "cache_read": 0.06,
+   "input": 0.063,
+   "output": 4.4,
+   "cache_read": 0.0586,
    "input_modalities": [
     "text"
    ],
@@ -1901,9 +1947,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0128,
-   "output": 0.768,
-   "cache_read": 0.0128,
+   "input": 0.0144,
+   "output": 0.576,
+   "cache_read": 0.0108,
    "input_modalities": [
     "text"
    ],
@@ -2781,9 +2827,9 @@
    "createdDate": "2026-06-16",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.2",
-   "input": 0.06,
+   "input": 0.08,
    "output": 7.0,
-   "cache_read": 0.059,
+   "cache_read": 0.07,
    "input_modalities": [
     "text"
    ],
@@ -3367,9 +3413,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.73,
-   "output": 10.0,
-   "cache_read": 0.55,
+   "input": 0.72,
+   "output": 24.0,
+   "cache_read": 0.3,
    "input_modalities": [
     "text",
     "image",
@@ -3578,9 +3624,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.41238,
-   "output": 0.82476,
-   "cache_read": 0.034365,
+   "input": 0.383496,
+   "output": 0.766992,
+   "cache_read": 0.031958,
    "input_modalities": [
     "text"
    ],
@@ -3595,9 +3641,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
-   "input": 0.0099,
-   "output": 1.28,
-   "cache_read": 0.0099,
+   "input": 0.091,
+   "output": 0.182,
+   "cache_read": 0.0182,
    "input_modalities": [
     "text"
    ],
@@ -4021,9 +4067,9 @@
    "createdDate": "2026-03-18",
    "context_length": 204800,
    "hugging_face_id": "MiniMaxAI/MiniMax-M2.7",
-   "input": 0.21,
-   "output": 0.84,
-   "cache_read": 0.042,
+   "input": 0.3,
+   "output": 1.2,
+   "cache_read": 0.06,
    "input_modalities": [
     "text"
    ],
@@ -4391,9 +4437,9 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-35B-A3B",
-   "input": 0.08,
-   "output": 0.75,
-   "cache_read": 0.04,
+   "input": 0.15,
+   "output": 1.0,
+   "cache_read": 0.05,
    "input_modalities": [
     "text",
     "image",
@@ -7652,9 +7698,9 @@
    "createdDate": "2024-12-06",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
-   "input": 0.22,
-   "output": 0.5,
-   "cache_read": 0.11,
+   "input": 0.59,
+   "output": 0.79,
+   "cache_read": 0.295,
    "input_modalities": [
     "text"
    ],

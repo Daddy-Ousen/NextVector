@@ -69,7 +69,7 @@
     {"id": "model-gpt-oss-120b", "name": "gpt-oss-120b", "dev": "OpenAI", "arena": "gpt-oss-120b", "or": "openai/gpt-oss-120b", "swe": "gpt-oss-120b", "params": "117B total, 5.1B active (MoE)", "paramsSrc": "https://openai.com/index/introducing-gpt-oss/", "aa": ["gpt-oss-120b", "gpt-oss-120b-low"]},
     {"id": "model-gpt-oss-20b", "name": "gpt-oss-20b", "dev": "OpenAI", "arena": "gpt-oss-20b", "or": "openai/gpt-oss-20b", "aliases": ["model-gpt-oss-20b-high"], "params": "21B total, 3.6B active (MoE)", "paramsSrc": "https://openai.com/index/introducing-gpt-oss/", "aa": ["gpt-oss-20b", "gpt-oss-20b-low"]},
 
-    {"id": "model-gemini-4-argon", "name": "Gemini 4 Argon", "dev": "Google DeepMind", "arena": "gemini-4-argon-high", "aa": ["gemini-4-argon"]},
+    {"id": "model-gemini-4-argon", "name": "Gemini 4 Argon", "dev": "Google DeepMind", "arena": "gemini-4-argon-high", "or": "google/gemini-4-argon", "aa": ["gemini-4-argon"]},
     {"id": "model-gemini-3-8-flash", "name": "Gemini 3.8 Flash", "dev": "Google DeepMind", "arena": "gemini-3.8-flash-high", "or": "google/gemini-3.8-flash", "price": {"in": 0.75, "out": 3.75, "cache": 0.075, "src": "google", "note": "Introductory price through Dec 31, 2026; $1.50 / $7.50 from Jan 1, 2027"}, "aa": ["gemini-3-8-flash", "gemini-3-8-flash-low", "gemini-3-8-flash-medium"]},
     {"id": "model-gemini-3-8-live", "released": "2026-09-15", "name": "Gemini 3.8 Live", "dev": "Google DeepMind", "price": {"in": 0.75, "out": 4.5, "src": "google", "note": "Text price. Audio: $3.00 in / $12.00 out per 1M tokens"}, "type": "Multimodal Foundation", "modalities": ["Text", "Audio", "Image", "Video"]},
     {"id": "model-gemini-3-8-live-extended-thinking", "released": "2026-09-15", "name": "Gemini 3.8 Live Extended Thinking", "dev": "Google DeepMind", "price": {"in": 0.75, "out": 4.5, "src": "google", "note": "Text price. Audio: $3.00 in / $12.00 out per 1M tokens"}, "type": "Multimodal Foundation", "modalities": ["Text", "Audio", "Image", "Video"]},
@@ -171,6 +171,7 @@
     {"id": "model-step-5-preview", "name": "Step 5 Preview", "dev": "StepFun", "arena": "Step 5 Preview", "or": "stepfun/step-5-preview", "aa": ["step-5"]},
     {"id": "model-step-3-5-flash", "name": "Step-3.5-Flash", "dev": "StepFun", "arena": "step-3.5-flash", "or": "stepfun/step-3.5-flash", "aa": ["step-3-5-flash"]},
     {"id": "model-nemotron-3-ultra-550b-a55b", "name": "Nemotron 3 Ultra (550B A55B)", "dev": "NVIDIA", "arena": "nvidia-nemotron-3-ultra-550b-a55b-nvfp4", "or": "nvidia/nemotron-3-ultra-550b-a55b", "params": "550B total, 55B active (MoE)", "paramsSrc": "name", "aa": ["nvidia-nemotron-3-ultra-550b-a55b"]},
-    {"id": "model-solar-pro-4", "name": "Solar Pro 4", "dev": "Upstage", "arena": "solar-pro4", "or": "upstage/solar-pro4", "aa": ["solar-pro4"]}
+    {"id": "model-solar-pro-4", "name": "Solar Pro 4", "dev": "Upstage", "arena": "solar-pro4", "or": "upstage/solar-pro4", "aa": ["solar-pro4"]},
+    {"id": "model-lfm-2-5-24b-a2b", "name": "LFM2.5-24B-A2B", "dev": "Liquid AI", "or": "liquid/lfm-2.5-24b-a2b", "params": "24B total, 2.45B active (MoE)", "paramsSrc": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"}
   ]
 }

@@ -3380,19 +3380,24 @@ export const ALL_MODELS: AIModel[] = [
     "id": "model-gemini-4-argon",
     "name": "Gemini 4 Argon",
     "developer": "Google DeepMind",
-    "releaseDate": "Not listed",
-    "releaseDateSource": null,
+    "releaseDate": "October 2026",
+    "releaseDateSource": "OpenRouter listing date",
     "modelType": "Multimodal Foundation",
     "modalities": [
-      "Text"
+      "Text",
+      "Audio",
+      "Files",
+      "Video",
+      "Vision"
     ],
     "contextWindow": "1M tokens",
-    "contextTokens": 1000000,
+    "contextTokens": 1048576,
     "parameters": "Not disclosed",
     "pricing": {
-      "inputPer1M": 2,
-      "outputPer1M": 10,
-      "source": "arena.ai model listing"
+      "inputPer1M": 2.0,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.1,
+      "source": "OpenRouter list price"
     },
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary",
@@ -3402,7 +3407,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 4892,
     "arenaCI": 9,
     "arenaVariant": "gemini-4-argon-high",
-    "preRelease": true,
     "aaIntelligence": 52.6,
     "aaVariant": "Gemini 4 Argon (High)",
     "benchmarks": [
@@ -3424,11 +3428,15 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-    "summary": "Proprietary model from Google DeepMind. Arena text score 1525 (#1 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.",
+    "summary": "Proprietary model from Google DeepMind, listed October 2026. Arena text score 1525 (#1 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      },
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/google/gemini-4-argon"
       },
       {
         "label": "arena.ai text leaderboard",
@@ -6304,9 +6312,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.0232,
-      "outputPer1M": 1.2,
-      "cachedInputPer1M": 0.0232,
+      "inputPer1M": 0.0297,
+      "outputPer1M": 0.9,
+      "cachedInputPer1M": 0.0108,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6352,7 +6360,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://z.ai/blog/glm-5.3",
-    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.02 input / $1.20 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.03 input / $0.90 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -6391,9 +6399,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.06,
+      "inputPer1M": 0.08,
       "outputPer1M": 7.0,
-      "cachedInputPer1M": 0.059,
+      "cachedInputPer1M": 0.07,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6439,7 +6447,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/zai-org/GLM-5.2",
-    "summary": "Open Weights model from Zhipu AI, listed June 2026. Arena text score 1475 (#33 of 414 entries). $0.06 input / $7.00 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed June 2026. Arena text score 1475 (#33 of 414 entries). $0.08 input / $7.00 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -6957,9 +6965,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 0.6,
-      "cachedInputPer1M": 0.003,
+      "inputPer1M": 0.0441,
+      "outputPer1M": 0.765,
+      "cachedInputPer1M": 0.0054,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6991,7 +6999,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
-    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.15 input / $0.60 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.04 input / $0.77 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7117,9 +7125,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.4124,
-      "outputPer1M": 0.8248,
-      "cachedInputPer1M": 0.0344,
+      "inputPer1M": 0.3835,
+      "outputPer1M": 0.767,
+      "cachedInputPer1M": 0.032,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7165,7 +7173,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://api-docs.deepseek.com/news/news260424",
-    "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.41 input / $0.82 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.38 input / $0.77 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7341,9 +7349,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.0099,
-      "outputPer1M": 1.28,
-      "cachedInputPer1M": 0.0099,
+      "inputPer1M": 0.091,
+      "outputPer1M": 0.182,
+      "cachedInputPer1M": 0.0182,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7389,7 +7397,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://api-docs.deepseek.com/news/news260424",
-    "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1436 (#103 of 414 entries). $0.01 input / $1.28 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1436 (#103 of 414 entries). $0.09 input / $0.18 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -8367,9 +8375,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "35B total, 3B active (MoE)",
     "pricing": {
-      "inputPer1M": 0.08,
-      "outputPer1M": 0.75,
-      "cachedInputPer1M": 0.04,
+      "inputPer1M": 0.15,
+      "outputPer1M": 1.0,
+      "cachedInputPer1M": 0.05,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -8408,7 +8416,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
-    "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1394 (#167 of 414 entries). $0.08 input / $0.75 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1394 (#167 of 414 entries). $0.15 input / $1.00 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -9146,9 +9154,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 204800,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.21,
-      "outputPer1M": 0.84,
-      "cachedInputPer1M": 0.042,
+      "inputPer1M": 0.3,
+      "outputPer1M": 1.2,
+      "cachedInputPer1M": 0.06,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -9194,7 +9202,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://www.minimax.io/news/minimax-m27-en",
-    "summary": "Open Weights model from MiniMax, listed March 2026. Arena text score 1415 (#138 of 414 entries). $0.21 input / $0.84 output per 1M tokens. 205K tokens context.",
+    "summary": "Open Weights model from MiniMax, listed March 2026. Arena text score 1415 (#138 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 205K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -10535,6 +10543,47 @@ export const ALL_MODELS: AIModel[] = [
       }
     ],
     "dataAsOf": "2026-10-11"
+  },
+  {
+    "id": "model-lfm-2-5-24b-a2b",
+    "name": "LFM2.5-24B-A2B",
+    "developer": "Liquid AI",
+    "releaseDate": "October 2026",
+    "releaseDateSource": "OpenRouter listing date",
+    "modelType": "Open Weights",
+    "modalities": [
+      "Text"
+    ],
+    "contextWindow": "128K tokens",
+    "contextTokens": 128000,
+    "parameters": "24B total, 2.45B active (MoE)",
+    "pricing": {
+      "inputPer1M": 0.05,
+      "outputPer1M": 0.7,
+      "cachedInputPer1M": 0.025,
+      "source": "OpenRouter list price"
+    },
+    "openSourceStatus": "Open Weights",
+    "license": "Open weights (see Hugging Face)",
+    "hardwareRequirements": "Open weights on Hugging Face (LiquidAI/LFM2.5-24B-A2B)",
+    "benchmarks": [],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b",
+    "summary": "Open Weights model from Liquid AI, listed October 2026. $0.05 input / $0.70 output per 1M tokens. 128K tokens context.",
+    "sources": [
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b"
+      },
+      {
+        "label": "Hugging Face weights",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
+      }
+    ],
+    "dataAsOf": "2026-10-11"
   }
 ];
 
@@ -10546,7 +10595,7 @@ export const ARENA_LEADERBOARD_ENTRIES = [
     "score": 1525,
     "date": "Oct 2026",
     "modelId": "model-gemini-4-argon",
-    "note": "±9 · 4,892 votes · pre-release"
+    "note": "±9 · 4,892 votes"
   },
   {
     "rank": 2,

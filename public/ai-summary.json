@@ -42,11 +42,11 @@
       {
         "category": "Highest Arena score (released models)",
         "rule": "Highest arena.ai text score among generally released models we track.",
-        "model": "Claude Opus 5.5",
-        "developer": "Anthropic",
-        "metric": "Arena 1507 (±8, #2)",
-        "listPrice": "$4.00 / $20.00 per 1M tokens",
-        "url": "https://nextvector.rhasan.online/models/model-claude-opus-5-5"
+        "model": "Gemini 4 Argon",
+        "developer": "Google DeepMind",
+        "metric": "Arena 1525 (±9, #1)",
+        "listPrice": "$2.00 / $10.00 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-gemini-4-argon"
       },
       {
         "category": "Best Arena score under $1 blended",

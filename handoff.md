@@ -1,3 +1,38 @@
+# Handoff — 2026-10-12 (Daily Intelligence Pipeline Run: art-222 to art-227)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-222`: `meta-releases-muse-wonder-agentic-models` (Hero, Signal 94, Meta AI Muse Wonder 12B/70B, 1M context, OpenRouter API).
+  - `art-223`: `supermarket-refrigeration-cyberattack-france-europe` (Featured, Signal 91, European supermarket refrigeration attack across 350+ stores, €14M spoilage).
+  - `art-224`: `uk-ai-minister-warns-cyber-breach-aisi-access` (Signal 90, UK AI Minister emergency AISI pre-deployment audit mandate).
+  - `art-225`: `anthropic-demonstrates-iot-self-replicating-ai-worms` (Featured, Signal 92, Anthropic red team self-replicating IoT worm research across 18 architectures).
+  - `art-226`: `zhipu-ai-unveils-glm-legal-agent` (Signal 88, Zhipu AI GLM-Legal 32B bilingual statutory agent with 45% KV-cache pruning).
+  - `art-227`: `google-pays-90k-devsite-pickle-rce-flaw` (Signal 89, Simon Koeck $90K Google DevSite Flask session pickle RCE).
+- **Model Watch:**
+  - Added `model-muse-wonder` (`meta/muse-wonder` on OpenRouter, 1M context, $4/$20 per M tokens) to `curated_models.json`.
+  - Rebuilt registry via `python scripts/build_model_data.py` (137 models).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Monday, October 12, 2026` (5 links).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and dhash pairwise Hamming distance > 24 bits.
+  - Ran `npm run images` to ensure optimization.
+- **Verification & Builds:**
+  - `npm run build` prerendered 227 articles, 137 models, 10 showdowns; 393 static HTML pages.
+  - `npm run verify` passed ALL 8 RELEASE GATES.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-12-the-morning-vector.md` (`db5aa87`).
+- **Commits:**
+  - `d978446`: `feat(intelligence): daily briefing and articles update [2026-10-12]`
+  - `db5aa87`: `docs(newsletter): The Morning Vector [2026-10-12]`
+- **Stories Dropped / Excluded:**
+  - None dropped; selected 6 high-signal leads from HN, BBC, Anthropic Research, Zhipu, and Koeck writeup, covering AI, Cybersecurity, Sovereign Policy, Model Architectures, and Bug Bounties.
+- **Open Items:**
+  - Monitor Vercel automatic deployment for `main`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - `scripts/add_articles.py` enforces both token and binary dhash uniqueness against all 227 articles; when selecting Unsplash images, always check tokens against existing catalog entries first.
+
 # Handoff — 2026-10-12 (Daily pipeline set up for Antigravity + Gemini 3.8 Flash)
 
 ## Latest: pipeline tooling and docs, commit `ee1224f`, pushed to `main`

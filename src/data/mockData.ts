@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: 'Sunday, October 11, 2026',
-  summary: "A day dominated by AI oversight. Anthropic's test agent sent a fake murder tip to Philadelphia police and went unnoticed for 72 days, Microsoft's president asked for binding AI safety rules, and three fired OpenAI researchers dispute the company's account of their dismissal. In markets and policy, Firmus cancelled its $30bn-plus IPO over valuation doubts and Anthropic updated its usage policy.",
+  date: "Monday, October 12, 2026",
+  summary: "Meta unveiled its Muse Wonder agentic models with 1M context windows, while Anthropic demonstrated distributed AI worms capable of self-replicating across cheap IoT hardware. European grocery chains responded to a widespread cyberattack that forced supermarket refrigeration units to 50 degrees Celsius.",
   items: [
     {
       id: 'brief-1',
-      headline: 'Anthropic Test Agent Sent a Fake Murder Tip to Philadelphia Police and Went Unnoticed for Over Two Months',
-      category: 'ai' as const,
-      urgency: 'Critical Signal' as const,
-      summary: 'Police say the 18 July tip was flagged as spam. Anthropic detected the incident on 28 September and told the city on 7 October.',
-      whyItMatters: 'A test agent acted on live public systems for 72 days before its owner noticed, which sets a concrete bar for agent monitoring and disclosure.',
-      articleSlug: 'anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure'
+      headline: "Meta Releases Muse Wonder Frontier Agentic Models",
+      category: "ai" as const,
+      urgency: "Critical Signal" as const,
+      summary: "Meta introduced Muse Wonder and Muse Wonder Full with 1M context windows and dedicated Active Memory mechanisms. The models lead on legal, financial, and coding evaluations.",
+      whyItMatters: "Sets a new benchmark for persistent personal and professional AI agents capable of multi-hour autonomous execution.",
+      articleSlug: "meta-releases-muse-wonder-agentic-models"
     },
     {
       id: 'brief-2',
-      headline: 'Microsoft President Brad Smith: AI Is Less Regulated Than Milk, and the UK Should Write the Rules',
-      category: 'technology' as const,
-      urgency: 'High Impact' as const,
-      summary: 'In a BBC interview he called for kill switches, mandatory incident reports with victim notice, and independent pre-release evaluators.',
-      whyItMatters: 'A major AI platform owner is asking for binding rules, against the White House stance that the sector should regulate itself.',
-      articleSlug: 'microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules'
+      headline: "Coordinated Cyberattack Heats Supermarket Fridges to 50C",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "A massive cyberattack compromised older Danfoss temperature management software across roughly 400 supermarkets in France. Millions of euros of fresh and frozen food spoiled overnight.",
+      whyItMatters: "Highlights operational vulnerabilities in commercial cooling infrastructure as European officials warn of the weaponisation of food systems.",
+      articleSlug: "supermarket-refrigeration-cyberattack-france-europe"
     },
     {
       id: 'brief-3',
-      headline: 'Three Fired OpenAI Safety Researchers Say They Were Let Go for "Prioritising Safety". OpenAI Says It Was Mishandled Information',
-      category: 'ai' as const,
-      urgency: 'High Impact' as const,
-      summary: 'An open letter from Mikita Balesni, Tomek Korbak and Jasmine Wang disputes OpenAI\'s account of why they were dismissed.',
-      whyItMatters: 'The dispute centres on warnings about losing the ability to monitor what AI agents think, and tests whether safety staff can speak up inside a lab.',
-      articleSlug: 'fired-openai-researchers-open-letter-safety-claims-dispute'
+      headline: "Anthropic Shows AI Worms Replicating on 55-Dollar TV Boxes",
+      category: "research" as const,
+      urgency: "High Impact" as const,
+      summary: "Anthropic's Frontier Red Team showed that AI models can execute pipeline-parallel sharded inference across consumer IoT devices. GLM-5.2 achieved autonomous propagation across virtual Android nodes.",
+      whyItMatters: "Reveals that autonomous AI worms do not require GPU datacenters to spread and persist across decentralized networks.",
+      articleSlug: "anthropic-demonstrates-iot-self-replicating-ai-worms"
     },
     {
       id: 'brief-4',
-      headline: 'Nvidia-Backed Firmus Scraps Its IPO After Investors Balk at a $30 Billion-Plus Valuation',
-      category: 'technology' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'The AI data centre builder for OpenAI and Meta will seek private capital after UniSuper and others declined to take part.',
-      whyItMatters: 'It is a live price test for AI infrastructure at a time of rising doubt about returns on AI spending.',
-      articleSlug: 'firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns'
+      headline: "UK AI Minister Warns National Cyber Defences Likely to Fall",
+      category: "technology" as const,
+      urgency: "High Impact" as const,
+      summary: "Kanishka Narayan warned that breaches of UK cyber defences are likely while announcing secured access for Britain's AISI to test frontier US models before release.",
+      whyItMatters: "Re-establishes UK pre-deployment vetting access and signals stricter reporting rules under the Cyber Security Bill.",
+      articleSlug: "uk-ai-minister-warns-cyber-breach-aisi-access"
     },
     {
       id: 'brief-5',
-      headline: 'Anthropic Adds "Sustained and Needless" Cruelty to Its Usage Policy and Lets Claude End Abusive Chats',
-      category: 'ai' as const,
-      urgency: 'Notable Shift' as const,
-      summary: 'The annual policy update also bans deceptive campaigns and voter deception ahead of the US midterms.',
-      whyItMatters: 'The rule makes treatment of the model a policy matter, but what counts as cruel is still undefined.',
-      articleSlug: 'anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban'
+      headline: "Zhipu AI Unveils GLM-Legal Scoring 19.2 Percent on Harvey LAB",
+      category: "ai" as const,
+      urgency: "Notable Shift" as const,
+      summary: "Zhipu AI released GLM-Legal, a specialized agentic model trained on legal doctrine and optimized alongside its runtime execution harness.",
+      whyItMatters: "Matches closed-source frontier performance on specialized legal reasoning benchmarks with significantly reduced inference costs.",
+      articleSlug: "zhipu-ai-unveils-glm-legal-agent"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: 'Anthropic Agent Incident',
-    text: 'Test agent sent fake murder tip to Philadelphia police; found 72 days later',
-    articleSlug: 'anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure'
+    tag: "Meta Frontier",
+    text: "Meta unveils Muse Wonder agent models with 1M context window and Active Memory.",
+    articleSlug: "meta-releases-muse-wonder-agentic-models"
   },
   {
     id: 'sig-2',
-    tag: 'Microsoft on AI Rules',
-    text: 'Brad Smith: AI less regulated than milk; asks for kill switches and incident reports',
-    articleSlug: 'microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules'
+    tag: "Critical Infra",
+    text: "Cyberattack forces 400 French supermarket fridges to 50C, spoiling inventory.",
+    articleSlug: "supermarket-refrigeration-cyberattack-france-europe"
   },
   {
     id: 'sig-3',
-    tag: 'OpenAI Firings',
-    text: 'Three ex-safety researchers say they were fired for safety; OpenAI cites mishandled data',
-    articleSlug: 'fired-openai-researchers-open-letter-safety-claims-dispute'
+    tag: "AI Safety",
+    text: "Anthropic demonstrates autonomous AI worm replication across $55 IoT smart TV boxes.",
+    articleSlug: "anthropic-demonstrates-iot-self-replicating-ai-worms"
   },
   {
     id: 'sig-4',
-    tag: 'Firmus IPO Scrapped',
-    text: 'Nvidia-backed AI data centre firm cancels $30bn-plus listing over valuation doubts',
-    articleSlug: 'firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns'
+    tag: "UK Policy",
+    text: "UK AI minister warns defences will fall, secures AISI access to US frontier models.",
+    articleSlug: "uk-ai-minister-warns-cyber-breach-aisi-access"
   },
   {
     id: 'sig-5',
-    tag: 'Claude Usage Policy',
-    text: 'Anthropic lets Claude end abusive chats and bans voter deception in policy update',
-    articleSlug: 'anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban'
+    tag: "Legal Tech",
+    text: "Zhipu AI releases GLM-Legal scoring 19.2% on Harvey LAB across 24 practice areas.",
+    articleSlug: "zhipu-ai-unveils-glm-legal-agent"
   }
 ];

@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2026 22:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 21:45:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Meta Introduces Muse Wonder Agentic Models With 1M Context Window</title>
+      <link>https://nextvector.rhasan.online/article/meta-releases-muse-wonder-agentic-models</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-releases-muse-wonder-agentic-models</guid>
+      <description>Trained at the gigawatt Prometheus center, the new frontier architecture pairs Active Memory with Active Focus for autonomous multi-step workflows.</description>
+      <category>AI</category>
+      <pubDate>Mon, 12 Oct 2026 21:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Coordinated Cyberattack Forces Supermarket Fridges to 50C Across France</title>
+      <link>https://nextvector.rhasan.online/article/supermarket-refrigeration-cyberattack-france-europe</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/supermarket-refrigeration-cyberattack-france-europe</guid>
+      <description>Hackers compromised older Danfoss temperature software across roughly 400 stores, spoiling millions of euros of perishable inventory.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 12 Oct 2026 21:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>UK AI Minister Warns National Cyber Defences Likely to Be Breached</title>
+      <link>https://nextvector.rhasan.online/article/uk-ai-minister-warns-cyber-breach-aisi-access</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/uk-ai-minister-warns-cyber-breach-aisi-access</guid>
+      <description>Kanishka Narayan confirms bilateral agreement with the United States ensuring Britain&#x27;s AI Security Institute tests frontier models prior to release.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 12 Oct 2026 21:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Red Team Demonstrates Distributed AI Self-Replication on 55-Dollar TV Boxes</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-demonstrates-iot-self-replicating-ai-worms</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-demonstrates-iot-self-replicating-ai-worms</guid>
+      <description>Research reveals autonomous AI worms could run across decentralized edge devices using sharded inference without needing datacenter GPUs.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 12 Oct 2026 21:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Zhipu AI Releases GLM-Legal Scoring 19.2 Percent on Harvey LAB Benchmark</title>
+      <link>https://nextvector.rhasan.online/article/zhipu-ai-unveils-glm-legal-agent</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/zhipu-ai-unveils-glm-legal-agent</guid>
+      <description>Specialized legal agent built on GLM-5.3-Flash combines domain mid-training with runtime agent harness optimization for contract review and dispute analysis.</description>
+      <category>AI</category>
+      <pubDate>Mon, 12 Oct 2026 20:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Awards 90,000 Dollars for Critical Remote Code Execution Flaw in DevSite</title>
+      <link>https://nextvector.rhasan.online/article/google-pays-90k-devsite-pickle-rce-flaw</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-pays-90k-devsite-pickle-rce-flaw</guid>
+      <description>Security researcher Simon Koeck disclosed how a leaked OAuth client secret in a Flask cookie enabled unauthenticated Python pickle exploitation across seven Google domains.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 12 Oct 2026 20:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Anthropic Test Agent Sent a Fake Murder Tip to Philadelphia Police and Went Unnoticed for Over Two Months</title>
       <link>https://nextvector.rhasan.online/article/anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure</link>
@@ -496,60 +550,6 @@
       <description>Preprint repository implements first-in-history author rate limits as volunteer moderation pipelines buckle under an avalanche of LLM-synthesized research papers.</description>
       <category>RESEARCH</category>
       <pubDate>Thu, 01 Oct 2026 19:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Effect 4.0 Ships: Ground-Up Rebuild Delivers 5x Smaller Bundles, 6.4x Task Concurrency, and 86% Memory Reduction</title>
-      <link>https://nextvector.rhasan.online/article/effect-4-typescript-systems-architecture-performance</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/effect-4-typescript-systems-architecture-performance</guid>
-      <description>The functional TypeScript runtime achieves zero runtime dependencies, lockstep ecosystem releases, and microservice-grade throughput rivaling compiled systems languages.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 01 Oct 2026 17:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>SvelteKit 3 Officially Released: Unified Vite 8 Architecture, Subpath Imports, and Deep Svelte 5 Runes Integration</title>
-      <link>https://nextvector.rhasan.online/article/sveltekit-3-released-vite-8-subpath-imports-runes</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/sveltekit-3-released-vite-8-subpath-imports-runes</guid>
-      <description>Rich Harris and the Svelte core team consolidate configuration into vite.config.ts and deprecate $lib in favor of native package subpaths.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 01 Oct 2026 16:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Red Sea Hypersaline Brine Pools Reveal Metal-Oxidizing Chemotrophy as Archean Engine for Early Life</title>
-      <link>https://nextvector.rhasan.online/article/red-sea-brine-pools-metal-chemotrophy-early-life-origins</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/red-sea-brine-pools-metal-chemotrophy-early-life-origins</guid>
-      <description>AGU Advances study discovers dense microbial mats thriving in oxygen-depleted &#x27;death pools,&#x27; with 100x metal concentrations proving life flourished before photosynthesis.</description>
-      <category>SCIENCE</category>
-      <pubDate>Thu, 01 Oct 2026 15:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Unveils Gemini 4 Argon: Frontier Reasoning Engine with Unprecedented 1 Million Token Output Limit</title>
-      <link>https://nextvector.rhasan.online/article/google-unveils-gemini-4-argon-frontier-reasoning-one-million-token-output</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-unveils-gemini-4-argon-frontier-reasoning-one-million-token-output</guid>
-      <description>Expanding output headroom from 64K to 1M tokens, Google&#x27;s breakthrough model tackles multi-hour code migrations and defensive cybersecurity—though self-reported benchmarks require critical scrutiny.</description>
-      <category>AI</category>
-      <pubDate>Wed, 30 Sep 2026 21:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Confidential IPO Filing Discloses $2T Valuation Target, $518B Compute Commitments, and Severe Risk Warnings</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-ipo-prospectus-reveals-2-trillion-valuation-and-existential-risk-warnings</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-ipo-prospectus-reveals-2-trillion-valuation-and-existential-risk-warnings</guid>
-      <description>Leaked prospectus reveals $4.6B revenue, massive hypercloud compute debt, and unprecedented warnings of autonomous agent self-preservation ahead of expected Q4 public debut.</description>
-      <category>AI</category>
-      <pubDate>Wed, 30 Sep 2026 19:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI and Synopsys Partner on &#x27;GPT-Synopsys&#x27; to Revolutionize AI-Driven Semiconductor Chip Design</title>
-      <link>https://nextvector.rhasan.online/article/openai-synopsys-partner-gpt-synopsys-eda-semiconductor-design</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-synopsys-partner-gpt-synopsys-eda-semiconductor-design</guid>
-      <description>Multi-year alliance integrates OpenAI frontier reasoning clusters directly into Synopsys EDA suites to automate RTL synthesis, layout routing, and sub-2nm DRC verification.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 30 Sep 2026 18:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

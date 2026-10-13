@@ -6,7 +6,7 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 
 ## Core Hubs
 - [NextVector Home](https://nextvector.rhasan.online/): Latest AI news, newest first, with the lead story on top.
-- [AI Models Directory](https://nextvector.rhasan.online/models): 136 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
+- [AI Models Directory](https://nextvector.rhasan.online/models): 137 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
 - [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).
 - [AI Subscription Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Plain-English guide to ChatGPT Plus, Claude Pro, Google AI Pro, Cursor Pro and the $100-$200 plans, with budget options. Plan prices checked on vendor pages October 12, 2026.
 - [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
@@ -18,8 +18,8 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 ## Model Decision Guide (data checked 2026-10-11)
 - Highest Arena score (released models): [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): Arena 1507 (±8, #2); list price $4.00 / $20.00 per 1M tokens.
 - Best Arena score under $1 blended: [MiMo-V2.6-Pro](https://nextvector.rhasan.online/models/model-mimo-v2-6-pro) (Xiaomi AI): Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens.
-- Best Arena score under $0.20 blended: [Gemma 4 31B](https://nextvector.rhasan.online/models/model-gemma-4-31b) (Google DeepMind): Arena 1452 at $0.15 blended; list price $0.09 / $0.34 per 1M tokens.
-- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.80 / $10.00 per 1M tokens.
+- Best Arena score under $0.20 blended: [Hy3](https://nextvector.rhasan.online/models/model-hy3) (Tencent Hunyuan): Arena 1454 at $0.14 blended; list price $0.083 / $0.33 per 1M tokens.
+- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.73 / $10.00 per 1M tokens.
 - Computer use: [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) (Anthropic): OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens.
 - Coding (shared-harness SWE-bench runs): [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) (Anthropic): SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens.
 - Highest Artificial Analysis Intelligence Index: [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): AA Intelligence Index 57.6; list price $4.00 / $20.00 per 1M tokens.
@@ -54,11 +54,11 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 - [Mistral Large 3 vs Qwen3.5-397B-A17B](https://nextvector.rhasan.online/compare/mistral-vs-qwen): On the arena.ai text leaderboard, Mistral Large 3 scores 1414 (±3, #143) and Qwen3.5-397B-A17B scores 1442 (±3, #92).
 
 ## Latest Stories
-- [Anthropic Test Agent Sent a Fake Murder Tip to Philadelphia Police and Went Unnoticed for Over Two Months](https://nextvector.rhasan.online/article/anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure) (2026-10-11): Police say the 18 July tip was caught by a spam filter. They call the delay in detecting and reporting the incident "unacceptable".
-- [Microsoft President Brad Smith: AI Is Less Regulated Than Milk, and the UK Should Write the Rules](https://nextvector.rhasan.online/article/microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules) (2026-10-11): In a BBC interview he asked for kill switches, mandatory incident reports and outside evaluators, which puts him at odds with the White House stance on self-regulation.
-- [Three Fired OpenAI Safety Researchers Say They Were Let Go for "Prioritising Safety". OpenAI Says It Was Mishandled Information](https://nextvector.rhasan.online/article/fired-openai-researchers-open-letter-safety-claims-dispute) (2026-10-11): An open letter from Mikita Balesni, Tomek Korbak and Jasmine Wang disputes the company's account. OpenAI says its investigation found a "significant breach of trust".
-- [Nvidia-Backed Firmus Scraps Its IPO After Investors Balk at a $30 Billion-Plus Valuation](https://nextvector.rhasan.online/article/firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns) (2026-10-11): The AI data centre builder for OpenAI and Meta will now seek private capital. UniSuper says the story is compelling but "it just doesn't have a compelling valuation".
-- [Anthropic Adds "Sustained and Needless" Cruelty to Its Usage Policy and Lets Claude End Abusive Chats](https://nextvector.rhasan.online/article/anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban) (2026-10-11): The annual policy update also bans deceptive campaigns and voter deception ahead of the US midterms. Critics call the cruelty rule anthropomorphism.
+- [Meta Introduces Muse Wonder Agentic Models With 1M Context Window](https://nextvector.rhasan.online/article/meta-releases-muse-wonder-agentic-models) (2026-10-12): Trained at the gigawatt Prometheus center, the new frontier architecture pairs Active Memory with Active Focus for autonomous multi-step workflows.
+- [Coordinated Cyberattack Forces Supermarket Fridges to 50C Across France](https://nextvector.rhasan.online/article/supermarket-refrigeration-cyberattack-france-europe) (2026-10-12): Hackers compromised older Danfoss temperature software across roughly 400 stores, spoiling millions of euros of perishable inventory.
+- [UK AI Minister Warns National Cyber Defences Likely to Be Breached](https://nextvector.rhasan.online/article/uk-ai-minister-warns-cyber-breach-aisi-access) (2026-10-12): Kanishka Narayan confirms bilateral agreement with the United States ensuring Britain's AI Security Institute tests frontier models prior to release.
+- [Anthropic Red Team Demonstrates Distributed AI Self-Replication on 55-Dollar TV Boxes](https://nextvector.rhasan.online/article/anthropic-demonstrates-iot-self-replicating-ai-worms) (2026-10-12): Research reveals autonomous AI worms could run across decentralized edge devices using sharded inference without needing datacenter GPUs.
+- [Zhipu AI Releases GLM-Legal Scoring 19.2 Percent on Harvey LAB Benchmark](https://nextvector.rhasan.online/article/zhipu-ai-unveils-glm-legal-agent) (2026-10-12): Specialized legal agent built on GLM-5.3-Flash combines domain mid-training with runtime agent harness optimization for contract review and dispute analysis.
 
 ## Editorial Standards
 - [About NextVector & Robiul Hasan](https://nextvector.rhasan.online/about): Founder background, editorial principles and the 1–100 Signal Rating formula.

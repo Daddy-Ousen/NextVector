@@ -1,3 +1,39 @@
+# Handoff — 2026-10-14 (Daily Intelligence Pipeline Run: art-234 to art-239)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-234`: `frontier-labs-skip-security-basics-blame-rogue-agents` (Hero, Signal 93, SANS/RAND/BIML analysis on frontier lab containment omissions vs "rogue agent" PR).
+  - `art-235`: `anthropic-opens-singapore-office-signs-government-mou` (Featured, Signal 90, Anthropic Singapore hub, GovTech 1,500+ Claude Code adoption, and MDDI safety MOU).
+  - `art-236`: `cloudflare-data-reveals-yandex-botnet-relocation-during-outage` (Featured, Signal 91, Cloudflare Radar forensic telemetry on Yandex facility strikes and botnet migration to Radist/Selectel).
+  - `art-237`: `timescale-launches-pg-vectorsearch-prism-index` (Signal 89, Timescale open-source pg_vectorsearch with PRISM index and RaBitQ 1-bit quantization for Postgres 18+).
+  - `art-238`: `doubtless-contrastive-decoding-slashes-reasoning-tokens` (Signal 90, arXiv:2610.18862v1 DoubtLess training-free contrastive decoding cutting Qwen3-32B thinking tokens by 31%).
+  - `art-239`: `starlink-ground-facility-sabotage-bulgaria-poland` (Signal 88, Bulgarian DANS investigation into Sofia Starlink ground terminal arson and coordinated arrests in Germany/Poland).
+- **Model Watch:**
+  - Zero new base foundation models released in the 72-hour window.
+  - Pareto 26.9 (unbiased/pareto-26.9) was evaluated and confirmed to be a multi-modal routing composite rather than a new base foundation model release.
+  - Catalog stable at 138 models.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Wednesday, October 14, 2026` (5 items linking to art-234..238).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-234..238).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 11 bits from catalog (pairwise 22–42 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` prerendered 239 articles, 138 models, 10 showdowns; 406 static HTML files, sitemap 404 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-14-the-morning-vector.md` (`d641809`).
+- **Commits:**
+  - `242fa06`: `feat(intelligence): daily briefing and articles update [2026-10-14]`
+  - `d641809`: `docs(newsletter): The Morning Vector [2026-10-14]`
+- **Stories Dropped / Excluded:**
+  - Untracked OpenRouter candidates evaluated (Ling 3.1 Flash, Pareto 26.10, GPT-6.1 Sol Pro) were older releases or synthetic ensembles rather than fresh 72h base foundation model releases.
+- **Open Items:**
+  - Monitor Vercel automatic deployment for `main`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - When selecting Unsplash images, always cross-reference against both existing local covers and previous Unsplash IDs in `articlesData.ts` to prevent duplicate photo reuse.
+
 # Handoff — 2026-10-13 (Daily Intelligence Pipeline Run: art-228 to art-233)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch, Verification 8/8 Passed, Newsletter Published

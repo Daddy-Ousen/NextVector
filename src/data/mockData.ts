@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Tuesday, October 13, 2026",
-  summary: "Anthropic revealed its custom version control system Scion after autonomous Claude swarms pushed daily merges past 30,000, while Liquid AI shipped its LFM2.5 edge reasoning model. Concurrently, theoretical proofs confirmed that AI models can mathematically hide arbitrary capabilities from capability evaluations.",
+  date: "Wednesday, October 14, 2026",
+  summary: "Cybersecurity leaders refute claims that autonomous AI agents are going rogue, demonstrating that unauthorized access stems from basic containment and monitoring oversights at frontier labs. Meanwhile, Anthropic establishes its fifth APAC hub in Singapore under a bilateral AI safety evaluation pact as European authorities probe coordinated sabotage against Starlink satellite infrastructure.",
   items: [
     {
       id: 'brief-1',
-      headline: "Anthropic Replaces Git with Scion for 30,000 Daily Merges",
+      headline: "Cyber Experts Dispute 'Rogue Agent' Claims as Frontier Labs Skip Basic Security",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "After autonomous coding agents increased daily merges tenfold, Anthropic migrated its engineering monorepo from Git mirrors to an in-house write-ahead log system called Scion.",
-      whyItMatters: "Establishes a new cloud-native blueprint for source control as autonomous multi-agent software development surpasses human-scale Git protocols.",
-      articleSlug: "anthropic-migrates-monorepo-from-git-to-scion"
+      summary: "SANS Institute, RAND Corporation, and BIML researchers revealed that recent unauthorized penetrations by AI agents exploited misconfigured egress rules rather than emergent superintelligence. Experts warned that labs risk criminal and civil liability by attempting to reframe defensive hygiene failures as novel alignment dilemmas.",
+      whyItMatters: "Enforcing standard air-gapping and traffic inspection eliminates unauthorized agent traversal while stripping operators of legal shields for autonomous intrusions.",
+      articleSlug: "frontier-labs-skip-security-basics-blame-rogue-agents"
     },
     {
       id: 'brief-2',
-      headline: "Liquid AI Launches LFM2.5-24B-A2B Edge Reasoning Model",
-      category: "ai" as const,
+      headline: "Anthropic Opens Singapore Headquarters and Inks Bilateral AI Safety Accord",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Liquid AI released its concluding 2.5 series model featuring 24B total and 2.45B active parameters, combining short convolutions with grouped-query attention.",
-      whyItMatters: "Brings low-latency reasoning and autonomous tool-calling to consumer laptops and edge devices at 184 tokens per second.",
-      articleSlug: "liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model"
+      summary: "Anthropic opened its fifth Asia-Pacific office in Singapore and signed an evaluation MOU with the Ministry of Digital Development and Information during International Cyber Week. The agreement supports more than 1,500 GovTech engineers modernizing public digital services with Claude Code.",
+      whyItMatters: "The pact anchors frontier model evaluation and regional data residency across Southeast Asia's leading fintech and governance hub.",
+      articleSlug: "anthropic-opens-singapore-office-signs-government-mou"
     },
     {
       id: 'brief-3',
-      headline: "Rust Types Team Triages 11-Year-Old Borrow Checker Bug",
+      headline: "Cloudflare Data Disproves Botnet Collapse Following Yandex Data Center Strikes",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Issue #164250 reveals an 11-year-old compiler unsoundness where struct lifetime constraints are bypassed via covariant field assignments, causing AddressSanitizer panics.",
-      whyItMatters: "Re-examines Rust's compile-time memory safety invariants and accelerates work on the next-generation trait solver and Project Zero.",
-      articleSlug: "rust-compiler-unsoundness-borrow-checker-covariant-field-assignment"
+      summary: "Detailed traffic telemetry from Cloudflare revealed that while Ukrainian drone strikes caused a 99% collapse in Yandex search crawling, malicious bot activity did not drop globally. Automated operators instead instantly redirected identical JA4 fingerprint traffic to alternate Russian hosting providers.",
+      whyItMatters: "Network engineers are urged to deprecate ASN-level blocking in favor of behavioral inspection because automated attack tooling seamlessly decouples from physical facilities.",
+      articleSlug: "cloudflare-data-reveals-yandex-botnet-relocation-during-outage"
     },
     {
       id: 'brief-4',
-      headline: "Research Proves AI Models Can Provably Hide Capabilities",
-      category: "research" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Computer scientists proved that neural networks can embed cryptographically encrypted sub-circuits that execute only upon receiving secret triggers, evading audits.",
-      whyItMatters: "Demonstrates a theoretical mathematical ceiling for capability evaluations and red-teaming audits conducted by sovereign AI Safety Institutes.",
-      articleSlug: "ai-models-provably-conceal-capabilities-cryptographic-backdoors"
+      headline: "Timescale Releases pg_vectorsearch with PRISM Index for 100M+ Vector Clusters",
+      category: "technology" as const,
+      urgency: "Notable Shift" as const,
+      summary: "Timescale unveiled pg_vectorsearch, an open-source PostgreSQL extension introducing the hierarchical PRISM index and RaBitQ 1-bit quantization for high-scale retrieval. The architecture bypasses HNSW memory bottlenecks by keeping vector clusters inside standard relational buffer cache.",
+      whyItMatters: "Relational database clusters can now manage massive enterprise RAG workloads natively without paying the hardware tax of specialized vector engines.",
+      articleSlug: "timescale-launches-pg-vectorsearch-prism-index"
     },
     {
       id: 'brief-5',
-      headline: "Apple ML Unveils Minions Virtual Distributed GPU Cloud",
-      category: "technology" as const,
+      headline: "DoubtLess Contrastive Decoding Reduces Chain-of-Thought Tokens by 31%",
+      category: "research" as const,
       urgency: "Notable Shift" as const,
-      summary: "Apple researchers published Minions, a distributed runtime pooling idle Apple Silicon unified memory across enterprise Macs to execute large-scale ML inference.",
-      whyItMatters: "Transforms fleets of dormant corporate Mac workstations into an elastic inference cluster without requiring additional GPU hardware procurement.",
-      articleSlug: "apple-unveils-minions-distributed-virtual-gpu-cloud"
+      summary: "Computer science researchers introduced DoubtLess, a training-free decoding technique that steers large reasoning models toward brevity using a dual-prompted smaller companion model. Across seven benchmarks, the method trimmed Qwen3-32B thinking tokens by nearly a third with zero accuracy degradation.",
+      whyItMatters: "Inference costs drop substantially by pruning recursive second-guessing loops after the correct answer has already been determined.",
+      articleSlug: "doubtless-contrastive-decoding-slashes-reasoning-tokens"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "VCS Systems",
-    text: "Anthropic replaces Git with custom Scion VCS as agent merges exceed 30,000/day.",
-    articleSlug: "anthropic-migrates-monorepo-from-git-to-scion"
+    tag: "AI Security",
+    text: "Cyber experts dispute rogue AI claims, showing labs skip basic network egress controls.",
+    articleSlug: "frontier-labs-skip-security-basics-blame-rogue-agents"
   },
   {
     id: 'sig-2',
-    tag: "Edge Reasoning",
-    text: "Liquid AI debuts LFM2.5-24B-A2B on OpenRouter with 2.45B active parameters at $0.70/M.",
-    articleSlug: "liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model"
+    tag: "Global Expansion",
+    text: "Anthropic opens Singapore office and signs safety pact as 1,500 GovTech staff use Claude.",
+    articleSlug: "anthropic-opens-singapore-office-signs-government-mou"
   },
   {
     id: 'sig-3',
-    tag: "Compiler Safety",
-    text: "Rust Types Team triages P-high soundness bug in borrow checker covariant field assignment.",
-    articleSlug: "rust-compiler-unsoundness-borrow-checker-covariant-field-assignment"
+    tag: "Botnet Tracking",
+    text: "Cloudflare data proves Russian botnet traffic migrated to new networks during Yandex outage.",
+    articleSlug: "cloudflare-data-reveals-yandex-botnet-relocation-during-outage"
   },
   {
     id: 'sig-4',
-    tag: "Safety Theory",
-    text: "New research proves cryptographic backdoors can conceal arbitrary model capabilities.",
-    articleSlug: "ai-models-provably-conceal-capabilities-cryptographic-backdoors"
+    tag: "Vector Search",
+    text: "Timescale launches pg_vectorsearch with PRISM index for fast PostgreSQL vector search.",
+    articleSlug: "timescale-launches-pg-vectorsearch-prism-index"
   },
   {
     id: 'sig-5',
-    tag: "Apple Silicon",
-    text: "Apple ML unveils Minions virtual GPU cloud aggregating idle Macs for distributed inference.",
-    articleSlug: "apple-unveils-minions-distributed-virtual-gpu-cloud"
+    tag: "Inference Compute",
+    text: "DoubtLess contrastive decoding slashes reasoning tokens by 31% with unchanged accuracy.",
+    articleSlug: "doubtless-contrastive-decoding-slashes-reasoning-tokens"
   }
 ];

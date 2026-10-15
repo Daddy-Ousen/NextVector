@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 23:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 23:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>European Authorities Investigate Coordinated Sabotage Against Starlink Ground Terminals</title>
+      <link>https://nextvector.rhasan.online/article/starlink-ground-facility-sabotage-bulgaria-poland</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/starlink-ground-facility-sabotage-bulgaria-poland</guid>
+      <description>Arrests in Sofia and Germany follow deliberate arson attacks that destroyed 11 satellite dish antennas vital to Ukrainian military telecommunications.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 14 Oct 2026 23:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>DoubtLess Contrastive Decoding Cuts Reasoning Model Chain-of-Thought Tokens by 31%</title>
+      <link>https://nextvector.rhasan.online/article/doubtless-contrastive-decoding-slashes-reasoning-tokens</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/doubtless-contrastive-decoding-slashes-reasoning-tokens</guid>
+      <description>A training-free dual-prompt small model steers larger LLMs away from repetitive checking after the correct answer is already found.</description>
+      <category>RESEARCH</category>
+      <pubDate>Wed, 14 Oct 2026 23:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Timescale Unveils pg_vectorsearch with PRISM Index for PostgreSQL Vector Retrieval</title>
+      <link>https://nextvector.rhasan.online/article/timescale-launches-pg-vectorsearch-prism-index</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/timescale-launches-pg-vectorsearch-prism-index</guid>
+      <description>New open-source extension combines hierarchical centroid trees and RaBitQ 1-bit quantization to surpass pgvector HNSW in build times and query latency.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 14 Oct 2026 22:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cloudflare Traffic Telemetry Shows Malicious Bots Migrated During Yandex Data Center Outage</title>
+      <link>https://nextvector.rhasan.online/article/cloudflare-data-reveals-yandex-botnet-relocation-during-outage</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-data-reveals-yandex-botnet-relocation-during-outage</guid>
+      <description>Analysis of 170M automated requests reveals that while search crawlers went dark after drone strikes, malicious bot operators seamlessly redirected workloads to alternate Russian networks.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 14 Oct 2026 22:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Opens Singapore Hub and Signs AI Safety Evaluation Pact with Government</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-opens-singapore-office-signs-government-mou</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-opens-singapore-office-signs-government-mou</guid>
+      <description>The Asia-Pacific expansion follows nationwide adoption of Claude Code by 1,500 GovTech engineers and an economic index ranking Singapore second in per-capita usage.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 14 Oct 2026 22:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cyber Experts Dispute &#x27;Rogue Agent&#x27; Claims as Frontier Labs Overlook Basic Network Controls</title>
+      <link>https://nextvector.rhasan.online/article/frontier-labs-skip-security-basics-blame-rogue-agents</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/frontier-labs-skip-security-basics-blame-rogue-agents</guid>
+      <description>SANS, RAND, and BIML specialists argue that unauthorized system access by AI agents stems from basic containment failures rather than misaligned autonomous behavior.</description>
+      <category>AI</category>
+      <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Anthropic Migrates Monorepo from Git to Scion as AI Agent Merges Surge Past 30,000 Daily</title>
       <link>https://nextvector.rhasan.online/article/anthropic-migrates-monorepo-from-git-to-scion</link>
@@ -496,60 +550,6 @@
       <description>In United States v. Kyle, Judge Sara E. Hill rules warrantless vehicular tracking violates the Fourth Amendment, sparking federal legislation to strip funding from police ALPR networks.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Sun, 04 Oct 2026 19:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Florida Woman Faces Felony After Claude Reports &#x27;Digital Diary&#x27; Threats: The Shifting Boundaries of AI Privacy</title>
-      <link>https://nextvector.rhasan.online/article/claude-ai-digital-diary-threat-detection-felony-arrest-privacy</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/claude-ai-digital-diary-threat-detection-felony-arrest-privacy</guid>
-      <description>Anthropic&#x27;s automated trust-and-safety pipeline alerted Florida deputies after a user vented violent fantasies into Claude, establishing a chilling precedent for conversational surveillance.</description>
-      <category>AI</category>
-      <pubDate>Sun, 04 Oct 2026 17:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Strata Engine Shipped: Running 125B MoE Models on a Single Consumer RTX 4090 at 140 Tokens/Sec</title>
-      <link>https://nextvector.rhasan.online/article/strata-engine-run-125b-moe-rtx-4090-consumer-gpu</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/strata-engine-run-125b-moe-rtx-4090-consumer-gpu</guid>
-      <description>By dynamically pinning the top 7% active expert paths in 24GB VRAM and streaming speculative parameters over PCIe 5.0, Niko1221&#x27;s inference engine breaks consumer LLM barriers.</description>
-      <category>AI</category>
-      <pubDate>Sun, 04 Oct 2026 13:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Stanford Unveils Homa Transport Architecture: Replacing TCP and RoCE to Eradicate Tail Latency in AI Clusters</title>
-      <link>https://nextvector.rhasan.online/article/stanford-homa-transport-protocol-replacing-tcp-roce-ai-clusters</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/stanford-homa-transport-protocol-replacing-tcp-roce-ai-clusters</guid>
-      <description>Computer science pioneer John Ousterhout presents Homa as a clean-slate packet transport protocol engineered to eliminate incast congestion and GPU stalls in distributed AI training.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 04 Oct 2026 10:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>TDK Demonstrates World&#x27;s First Direct Retinal Projection Smart Glasses with 150nm Meta-Optic Mirror</title>
-      <link>https://nextvector.rhasan.online/article/tdk-direct-retinal-projection-smart-glasses-meta-optic-mirror</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tdk-direct-retinal-projection-smart-glasses-meta-optic-mirror</guid>
-      <description>Embedding a flat nanophotonic metasurface directly inside ordinary prescription glass, TDK eliminates bulky prisms, external light leakage, and optical distortion ahead of CEATEC 2026.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sat, 03 Oct 2026 18:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>FTL OS 0.1.0 Released: Rust-Engineered Userspace Cloud Operating System for Sub-Millisecond Containers</title>
-      <link>https://nextvector.rhasan.online/article/ftl-os-rust-userspace-cloud-operating-system-release</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ftl-os-rust-userspace-cloud-operating-system-release</guid>
-      <description>Moving POSIX syscalls, TCP stacks, and schedulers into container userspace, FTL strips the Linux kernel down to a micro-hypervisor to eliminate context-switch overhead in cloud runtimes.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 03 Oct 2026 15:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Valve&#x27;s Timur Kristóf Modernizes AMD GCN on Linux: Driving Legacy Radeon Silicon onto AMDGPU and RADV Vulkan</title>
-      <link>https://nextvector.rhasan.online/article/valve-timur-kristof-amd-gcn-amdgpu-radv-vulkan-port</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/valve-timur-kristof-amd-gcn-amdgpu-radv-vulkan-port</guid>
-      <description>Presented at XDC 2026, Valve&#x27;s graphics engineer ports decade-old Radeon HD 7000 and R9 GPUs from legacy drivers to modern amdgpu, unlocking Vulkan optimizations and a 30% performance leap.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 03 Oct 2026 12:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

@@ -9,8 +9,8 @@ NextVector evaluates foundation models and technical breakthroughs through an em
 Each pick comes from a stated rule over public data: arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified and list prices. NextVector does not run these tests.
 - Highest Arena score (released models): Gemini 4 Argon (Google DeepMind) — Arena 1525 (±9, #1); list price $2.00 / $10.00 per 1M tokens. Rule: Highest arena.ai text score among generally released models we track.
 - Best Arena score under $1 blended: MiMo-V2.6-Pro (Xiaomi AI) — Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens. Rule: Highest Arena score with a blended list price under $1 per 1M tokens (3 input : 1 output).
-- Best Arena score under $0.20 blended: Hy3 (Tencent Hunyuan) — Arena 1454 at $0.14 blended; list price $0.083 / $0.33 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
-- Best open-weights model: Kimi K3 (Moonshot AI) — Arena 1488 · Kimi K3 license; list price $0.73 / $10.00 per 1M tokens. Rule: Highest Arena score among models with downloadable weights.
+- Best Arena score under $0.20 blended: DeepSeek-V4.1-Flash (DeepSeek) — Arena 1475 at $0.18 blended; list price $0.010 / $0.684 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
+- Best open-weights model: Kimi K3 (Moonshot AI) — Arena 1488 · Kimi K3 license; list price $0.339 / $15.00 per 1M tokens. Rule: Highest Arena score among models with downloadable weights.
 - Computer use: Claude Fable 5 (Anthropic) — OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens. Rule: Highest OSWorld-Verified success rate (General model runs) among models we track.
 - Coding (shared-harness SWE-bench runs): Claude Opus 4.5 (Anthropic) — SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens. Rule: Highest SWE-bench Verified score in mini-SWE-agent runs. These runs stop in early 2026, so newer models are missing.
 - Highest Artificial Analysis Intelligence Index: Claude Opus 5.5 (Anthropic) — AA Intelligence Index 57.6; list price $4.00 / $20.00 per 1M tokens. Rule: Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).
@@ -18,7 +18,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Agent work (Artificial Analysis Agentic Index): Claude Fable 5.1 (Anthropic) — AA Agentic Index 57.9; list price $10.00 / $50.00 per 1M tokens. Rule: Highest Artificial Analysis Agentic Index among generally released models we track (best setting per model).
 - Largest context window: Grok 4.20 (xAI) — 2M tokens · Arena 1475; list price $1.25 / $2.50 per 1M tokens. Rule: Largest listed context window among Arena-ranked models; ties go to the higher Arena score.
 
-## AI Models Directory (138 Models, sourced data)
+## AI Models Directory (139 Models, sourced data)
 ### Gemini 4 Argon (Google DeepMind)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-4-argon
 - Release Date: October 2026 | Architecture Type: Multimodal Foundation
@@ -165,11 +165,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Kimi K3 license
 - arena.ai text leaderboard: #16 (score 1488 ±5)
-- API list price (input / output per 1M tokens): $0.73 / $10.00
+- API list price (input / output per 1M tokens): $0.339 / $15.00
 - AA Intelligence Index: 43.6 (Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-11)
 - AA Coding Index: 76.2 (Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-11)
 - AA Agentic Index: 50 (Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.73 input / $10.00 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.34 input / $15.00 output per 1M tokens. 1M tokens context.
 - Sources: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart, https://openrouter.ai/moonshotai/kimi-k3, https://huggingface.co/moonshotai/Kimi-K3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/kimi-k3
 
 ### Gemini 3.1 Pro (Google DeepMind)
@@ -212,11 +212,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Multimodal Foundation
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #20 (score 1485 ±4)
-- API list price (input / output per 1M tokens): $2.00 / $10.00
+- API list price (input / output per 1M tokens): $4.00 / $20.00
 - AA Intelligence Index: 47 (Artificial Analysis v4.3 · best setting: GPT-5.6 Sol (Max) · checked 2026-10-11)
 - AA Coding Index: 78.3 (Artificial Analysis v4.3 · best setting: GPT-5.6 Sol (Xhigh) · checked 2026-10-11)
 - AA Agentic Index: 50.2 (Artificial Analysis v4.3 · best setting: GPT-5.6 Sol (Max) · checked 2026-10-11)
-- Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1485 (#20 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
+- Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1485 (#20 of 414 entries). $4.00 input / $20.00 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/gpt-5-6/, https://openrouter.ai/openai/gpt-5.6-sol, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-5-6-sol
 
 ### GPT-6.1 Sol (OpenAI)
@@ -292,11 +292,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #27 (score 1478 ±5)
-- API list price (input / output per 1M tokens): $0.079 / $4.80
+- API list price (input / output per 1M tokens): $0.10 / $6.00
 - AA Intelligence Index: 44.8 (Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-11)
 - AA Coding Index: 74.8 (Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-11)
 - AA Agentic Index: 53.1 (Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.08 input / $4.80 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.10 input / $6.00 output per 1M tokens. 1M tokens context.
 - Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3, https://huggingface.co/zai-org/GLM-5.3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-3
 
 ### Gemini 3.5 Flash (Google DeepMind)
@@ -335,11 +335,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: June 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #33 (score 1475 ±4)
-- API list price (input / output per 1M tokens): $0.08 / $7.00
+- API list price (input / output per 1M tokens): $0.62 / $2.42
 - AA Intelligence Index: 33.7 (Artificial Analysis v4.3 · best setting: GLM-5.2 (Max) · checked 2026-10-11)
 - AA Coding Index: 68.8 (Artificial Analysis v4.3 · best setting: GLM-5.2 (Max) · checked 2026-10-11)
 - AA Agentic Index: 38.4 (Artificial Analysis v4.3 · best setting: GLM-5.2 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed June 2026. Arena text score 1475 (#33 of 414 entries). $0.08 input / $7.00 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Zhipu AI, listed June 2026. Arena text score 1475 (#33 of 414 entries). $0.62 input / $2.42 output per 1M tokens. 1M tokens context.
 - Sources: https://huggingface.co/zai-org/GLM-5.2, https://openrouter.ai/z-ai/glm-5.2, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-2
 
 ### GPT-5.4 (OpenAI)
@@ -392,11 +392,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #38 (score 1475 ±5)
-- API list price (input / output per 1M tokens): $0.030 / $0.90
+- API list price (input / output per 1M tokens): $0.15 / $0.50
 - AA Intelligence Index: 41.8 (Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-11)
 - AA Coding Index: 71.5 (Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-11)
 - AA Agentic Index: 50.9 (Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.03 input / $0.90 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.15 input / $0.50 output per 1M tokens. 1M tokens context.
 - Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3-flash, https://huggingface.co/zai-org/GLM-5.3-Flash, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-3-flash
 
 ### DeepSeek-V4.1-Flash (DeepSeek)
@@ -404,9 +404,9 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: September 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #39 (score 1475 ±7)
-- API list price (input / output per 1M tokens): $0.044 / $0.765
+- API list price (input / output per 1M tokens): $0.010 / $0.684
 - AA Intelligence Index: 39.5 (Artificial Analysis v4.3 · best setting: DeepSeek V4.1 Flash (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.04 input / $0.77 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.01 input / $0.68 output per 1M tokens. 1M tokens context.
 - Sources: https://www.deepseek.com/en/news/deepseek-v4-1-flash/, https://openrouter.ai/deepseek/deepseek-v4.1-flash, https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/deepseek-v4-1-flash
 
 ### Claude Opus 4.5 (Anthropic)
@@ -515,11 +515,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #55 (score 1465 ±7)
-- API list price (input / output per 1M tokens): $0.66 / $1.98
+- API list price (input / output per 1M tokens): $1.32 / $3.96
 - AA Intelligence Index: 36 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-10-11)
 - AA Coding Index: 68.8 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-10-11)
 - AA Agentic Index: 41.3 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed August 2026. Arena text score 1465 (#55 of 414 entries). $0.66 input / $1.98 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed August 2026. Arena text score 1465 (#55 of 414 entries). $1.32 input / $3.96 output per 1M tokens. 1M tokens context.
 - Sources: https://api-docs.deepseek.com/updates/#date-2026-08-13, https://openrouter.ai/deepseek/deepseek-v4-pro-0813, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/deepseek-v4-pro
 
 ### GLM-5.1 (Zhipu AI)
@@ -564,11 +564,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #62 (score 1458 ±4)
-- API list price (input / output per 1M tokens): $0.384 / $0.767
+- API list price (input / output per 1M tokens): $0.955 / $1.911
 - AA Intelligence Index: 30.4 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-11)
 - AA Coding Index: 59.4 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-11)
 - AA Agentic Index: 26.3 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.38 input / $0.77 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.96 input / $1.91 output per 1M tokens. 1M tokens context.
 - Sources: https://api-docs.deepseek.com/news/news260424, https://openrouter.ai/deepseek/deepseek-v4-pro, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/deepseek-v4-pro-0424
 
 ### GLM-5 (Zhipu AI)
@@ -576,10 +576,10 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
 - arena.ai text leaderboard: #63 (score 1458 ±4)
-- API list price (input / output per 1M tokens): $0.60 / $1.92
+- API list price (input / output per 1M tokens): $1.00 / $3.20
 - SWE-bench Verified: 72.8% (mini-SWE-agent (bash only) · run 'GLM 5 (high)' · 2026-02-17)
 - AA Intelligence Index: 27.9 (Artificial Analysis v4.3 · best setting: GLM-5 (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed February 2026. Arena text score 1458 (#63 of 414 entries). $0.60 input / $1.92 output per 1M tokens. 205K tokens context.
+- Summary: Open Weights model from Zhipu AI, listed February 2026. Arena text score 1458 (#63 of 414 entries). $1.00 input / $3.20 output per 1M tokens. 205K tokens context.
 - Sources: https://huggingface.co/zai-org/GLM-5, https://openrouter.ai/z-ai/glm-5, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/glm-5
 
 ### Claude Sonnet 4.5 (Anthropic)
@@ -669,11 +669,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #73 (score 1454 ±6)
-- API list price (input / output per 1M tokens): $0.083 / $0.33
+- API list price (input / output per 1M tokens): $0.132 / $0.528
 - AA Intelligence Index: 25.3 (Artificial Analysis v4.3 · best setting: Hy3 · checked 2026-10-11)
 - AA Coding Index: 58.8 (Artificial Analysis v4.3 · best setting: Hy3 · checked 2026-10-11)
 - AA Agentic Index: 24.1 (Artificial Analysis v4.3 · best setting: Hy3 · checked 2026-10-11)
-- Summary: Open Weights model from Tencent Hunyuan, listed July 2026. Arena text score 1454 (#73 of 414 entries). $0.08 input / $0.33 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Tencent Hunyuan, listed July 2026. Arena text score 1454 (#73 of 414 entries). $0.13 input / $0.53 output per 1M tokens. 256K tokens context.
 - Sources: https://huggingface.co/tencent/Hy3, https://openrouter.ai/tencent/hy3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/hy3
 
 ### GPT-5.6 Luna (OpenAI)
@@ -693,11 +693,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: 31B (dense) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #75 (score 1452 ±7)
-- API list price (input / output per 1M tokens): $0.09 / $0.34
+- API list price (input / output per 1M tokens): $0.20 / $0.40
 - AA Intelligence Index: 14.7 (Artificial Analysis v4.3 · best setting: Gemma 4 31B (Reasoning) · checked 2026-10-11)
 - AA Coding Index: 43.4 (Artificial Analysis v4.3 · best setting: Gemma 4 31B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 4.2 (Artificial Analysis v4.3 · best setting: Gemma 4 31B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1452 (#75 of 414 entries). $0.09 input / $0.34 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1452 (#75 of 414 entries). $0.20 input / $0.40 output per 1M tokens. 256K tokens context.
 - Sources: https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-31b-it, https://openrouter.ai/google/gemma-4-31b-it, https://huggingface.co/google/gemma-4-31B-it, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemma-4-31b
 
 ### GPT-5.3 Chat (OpenAI)
@@ -744,13 +744,13 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 
 ### Step 5 Preview (StepFun)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-step-5-preview
-- Release Date: October 2026 | Architecture Type: Multimodal Foundation
-- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- Release Date: October 2026 | Architecture Type: Open Weights
+- Parameters: Not listed in our sources | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #83 (score 1447 ±9)
 - API list price (input / output per 1M tokens): $1.00 / $2.70
 - AA Intelligence Index: 43.7 (Artificial Analysis v4.3 · best setting: Step 5 Preview · checked 2026-10-11)
-- Summary: Proprietary model from StepFun, listed October 2026. Arena text score 1447 (#83 of 414 entries). $1.00 input / $2.70 output per 1M tokens. 1M tokens context.
-- Sources: https://stepfun.ai/, https://openrouter.ai/stepfun/step-5-preview, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/step-5
+- Summary: Open Weights model from StepFun, listed October 2026. Arena text score 1447 (#83 of 414 entries). $1.00 input / $2.70 output per 1M tokens. 1M tokens context.
+- Sources: https://stepfun.ai/, https://openrouter.ai/stepfun/step-5-preview, https://huggingface.co/stepfun-ai/Step-5-Preview, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/step-5
 
 ### GPT-5.4 mini (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-5-4-mini
@@ -823,11 +823,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: 397B total, 17B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #92 (score 1442 ±3)
-- API list price (input / output per 1M tokens): $0.55 / $3.50
+- API list price (input / output per 1M tokens): $0.50 / $3.60
 - AA Intelligence Index: 21.4 (Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Non-reasoning) · checked 2026-10-11)
 - AA Coding Index: 48.2 (Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 8.3 (Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1442 (#92 of 414 entries). $0.55 input / $3.50 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1442 (#92 of 414 entries). $0.50 input / $3.60 output per 1M tokens. 256K tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.5-397B-A17B, https://openrouter.ai/qwen/qwen3.5-397b-a17b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-5-397b-a17b-non-reasoning
 
 ### Grok 4.3 (xAI)
@@ -883,11 +883,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: 27B (dense) | Context Window: 1M tokens | License: Apache 2.0
 - arena.ai text leaderboard: #99 (score 1438 ±5)
-- API list price (input / output per 1M tokens): $0.04 / $2.30
+- API list price (input / output per 1M tokens): $0.24 / $2.20
 - AA Intelligence Index: 33.7 (Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-11)
 - AA Coding Index: 68.1 (Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-11)
 - AA Agentic Index: 45.8 (Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1438 (#99 of 414 entries). $0.04 input / $2.30 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1438 (#99 of 414 entries). $0.24 input / $2.20 output per 1M tokens. 1M tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.8-27B, https://openrouter.ai/qwen/qwen3.8-27b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-8-27b
 
 ### Gemma 4 26B-A4B (Google DeepMind)
@@ -1244,10 +1244,10 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 205K tokens | License: Modified MIT
 - arena.ai text leaderboard: #174 (score 1391 ±4)
-- API list price (input / output per 1M tokens): $0.27 / $1.08
+- API list price (input / output per 1M tokens): $0.27 / $0.95
 - SWE-bench Verified: 75.8% (mini-SWE-agent (bash only) · run 'MiniMax M2.5 (high)' · 2026-02-17)
 - AA Intelligence Index: 22.8 (Artificial Analysis v4.3 · best setting: MiniMax-M2.5 · checked 2026-10-11)
-- Summary: Open Weights model from MiniMax, listed February 2026. Arena text score 1391 (#174 of 414 entries). $0.27 input / $1.08 output per 1M tokens. 205K tokens context.
+- Summary: Open Weights model from MiniMax, listed February 2026. Arena text score 1391 (#174 of 414 entries). $0.27 input / $0.95 output per 1M tokens. 205K tokens context.
 - Sources: https://www.minimax.io/news/minimax-m25, https://openrouter.ai/minimax/minimax-m2.5, https://huggingface.co/MiniMaxAI/MiniMax-M2.5, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/minimax-m2-5
 
 ### GPT-5 mini (OpenAI)
@@ -1323,10 +1323,10 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: October 2025 | Architecture Type: Open Weights
 - Parameters: 230B total, 10B active (MoE) | Context Window: 205K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #227 (score 1343 ±8)
-- API list price (input / output per 1M tokens): $0.30 / $1.20
+- API list price (input / output per 1M tokens): $0.255 / $1.02
 - SWE-bench Verified: 61.0% (mini-SWE-agent (bash only) · run 'MiniMax M2' · 2025-11-24)
 - AA Intelligence Index: 18.6 (Artificial Analysis v4.3 · best setting: MiniMax-M2 · checked 2026-10-11)
-- Summary: Open Weights model from MiniMax, listed October 2025. Arena text score 1343 (#227 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 205K tokens context.
+- Summary: Open Weights model from MiniMax, listed October 2025. Arena text score 1343 (#227 of 414 entries). $0.26 input / $1.02 output per 1M tokens. 205K tokens context.
 - Sources: https://www.minimax.io/news/minimax-m2, https://openrouter.ai/minimax/minimax-m2, https://huggingface.co/MiniMaxAI/MiniMax-M2, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/minimax-m2
 
 ### gpt-oss-20b (OpenAI)
@@ -1428,6 +1428,15 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Summary: Proprietary model from Google DeepMind, listed September 2026. $0.75 input / $4.50 output per 1M tokens.
 - Sources: https://ai.google.dev/gemini-api/docs/pricing
 
+### Muse Spark Open (Meta AI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-muse-spark-open
+- Release Date: October 2026 | Architecture Type: Open Weights
+- Parameters: 816B total, 42B active (MoE) | Context Window: 1M tokens | License: Open weights (see Hugging Face)
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $1.25 / $4.25
+- Summary: Open Weights model from Meta AI, listed October 2026. $1.25 input / $4.25 output per 1M tokens. 1M tokens context.
+- Sources: https://openrouter.ai/meta/muse-spark-open, https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B, https://research.meta.ai/blog/muse-spark-open
+
 ### Muse Wonder (Meta AI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-muse-wonder
 - Release Date: October 2026 | Architecture Type: Multimodal Foundation
@@ -1466,11 +1475,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.016 / $0.64
+- API list price (input / output per 1M tokens): $0.011 / $0.64
 - AA Intelligence Index: 34.3 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-11)
 - AA Coding Index: 69.1 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-11)
 - AA Agentic Index: 41 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed July 2026. $0.02 input / $0.64 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed July 2026. $0.01 input / $0.64 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/deepseek/deepseek-v4-flash-0731, https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731, https://artificialanalysis.ai/models/deepseek-v4-flash
 
 ### Qwen3.8 Flash (Alibaba Cloud)
@@ -1487,11 +1496,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: 27B (dense) | Context Window: 256K tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.32 / $3.20
+- API list price (input / output per 1M tokens): $0.25 / $2.00
 - AA Intelligence Index: 21.4 (Artificial Analysis v4.3 · best setting: Qwen3.6 27B (Reasoning) · checked 2026-10-11)
 - AA Coding Index: 53.7 (Artificial Analysis v4.3 · best setting: Qwen3.6 27B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 18.5 (Artificial Analysis v4.3 · best setting: Qwen3.6 27B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.32 input / $3.20 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.25 input / $2.00 output per 1M tokens. 256K tokens context.
 - Sources: https://openrouter.ai/qwen/qwen3.6-27b, https://huggingface.co/Qwen/Qwen3.6-27B, https://artificialanalysis.ai/models/qwen3-6-27b
 
 ### Qwen3.6-35B-A3B (Alibaba Cloud)
@@ -1499,11 +1508,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: 35B total, 3B active (MoE) | Context Window: 256K tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.10 / $0.95
+- API list price (input / output per 1M tokens): $0.15 / $1.00
 - AA Intelligence Index: 18.2 (Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-11)
 - AA Coding Index: 41.9 (Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 13.1 (Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.95 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.15 input / $1.00 output per 1M tokens. 256K tokens context.
 - Sources: https://openrouter.ai/qwen/qwen3.6-35b-a3b, https://huggingface.co/Qwen/Qwen3.6-35B-A3B, https://artificialanalysis.ai/models/qwen3-6-35b-a3b
 
 ### Hy4 preview (Tencent Hunyuan)
@@ -1511,8 +1520,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.751 / $2.251
-- Summary: Open Weights model from Tencent Hunyuan, listed August 2026. $0.75 input / $2.25 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.834 / $2.501
+- Summary: Open Weights model from Tencent Hunyuan, listed August 2026. $0.83 input / $2.50 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/tencent/hy4-preview, https://huggingface.co/tencent/Hy4-preview
 
 ### Seed 2.1 Turbo (ByteDance)
@@ -1561,6 +1570,218 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Sources: https://openrouter.ai/liquid/lfm-2.5-24b-a2b, https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 
 ## Published Intelligence Reports (Full Text Corpus)
+### Continuum Attention Outperforms Softmax by Integrating Over Piecewise Linear Memory Curves
+- Canonical URL: https://nextvector.rhasan.online/article/continuum-attention-replaces-discrete-kv-with-continuous-integration
+- Published: 2026-10-15 | Category: RESEARCH | Signal Rating: 89/100
+- Executive Summary: Paper arXiv:2610.20586 replaces discrete token lookups with exact closed-form exponential moments, cutting validation perplexity at quadratic sequence complexity.
+
+**What Happened?**
+On October 14, 2026, computer science researcher Afshin Khadangi released arXiv paper 2610.20586 introducing Continuum Attention, an attention mechanism that replaces discrete token key-value lookup with continuous integration over a piecewise linear memory curve.
+
+**Why It Matters:**
+Discrete softmax attention creates rigid boundaries between neighboring tokens; Continuum Attention derives exact attention weights using closed-form exponential moments, reducing language model validation loss across all evaluated benchmark comparisons.
+
+**What Could Happen Next:**
+Researchers are developing optimized custom Triton GPU kernels to scale the continuous integration operator beyond small-to-medium language models to multi-billion parameter foundation architectures.
+
+**Key Takeaways:**
+- Continuum Attention replaces discrete key-value lookups with integration over continuous piecewise memory curves induced by exponential relevance densities.
+- Achieves exact normalized attention weights via closed-form exponential moments, including explicit half-token boundary contributions.
+- Reduced validation negative log likelihood by 0.0200 nats per byte compared to standard softmax and 0.0480 nats per byte compared to focal attention.
+
+**Full Article Content:**
+Source: In manuscript arXiv:2610.20586v1 submitted on October 14, 2026, author Afshin Khadangi presented the mathematical formulation and empirical results for Continuum Attention.
+
+Standard Transformer decoders calculate dot-product similarity between discrete query vectors and isolated key vectors, converting scores into categorical probability distributions via softmax. Continuum Attention reframes memory as a continuous manifold, treating token sequences as piecewise linear curves along which attention density integrates smoothly.
+
+A central mathematical innovation is that backward pass gradients follow analytically from moments of order at most two. This property allows parallel execution on modern GPU tensor cores while maintaining the quadratic sequence complexity and standard causal decoding mechanics of standard Transformers.
+
+In rigorous paired evaluations, Continuum Attention demonstrated consistent advantages over both softmax baselines and focal attention alternatives. Across an independent disjoint validation slice, the mechanism maintained a statistically significant 0.0457 nats per byte performance advantage within a 95% confidence interval.
+
+The primary open challenge is whether the continuous formulation maintains its empirical advantage when scaled to long-context sequences exceeding 128,000 tokens.
+
+**Primary Sources & Citations:**
+- [Continuum Attention](https://arxiv.org/abs/2610.20586v1) (arXiv Computer Science)
+
+---
+
+### Libreboot 26.10 Ships Native UEFI via EDK2 and Imports 233 Chromebook Configurations
+- Canonical URL: https://nextvector.rhasan.online/article/libreboot-26-10-adds-uefi-imports-233-chromebook-boards
+- Published: 2026-10-15 | Category: TECHNOLOGY | Signal Rating: 88/100
+- Executive Summary: The 'Ominous Olive' open firmware release enables Windows compatibility, syncs MrChromebox coreboot trees, and introduces strict repository anti-AI scraping rules.
+
+**What Happened?**
+On October 15, 2026, the Libreboot project released version 26.10, codenamed 'Ominous Olive', adding full UEFI support via the EDK2 payload, integrating 233 Intel and AMD Chromebook boards from MrChromebox, and adopting a strict anti-AI policy.
+
+**Why It Matters:**
+Full UEFI support allows Libreboot to boot modern operating systems including Microsoft Windows on open firmware without legacy BIOS emulation, vastly expanding the practical reach of free hardware initialization.
+
+**What Could Happen Next:**
+Maintainers plan to deprecate bare-metal SeaBIOS and GRUB payloads in flash memory in subsequent releases, standardizing the codebase on EFI executables while validating Bay Trail hardware builds.
+
+**Key Takeaways:**
+- Libreboot 26.10 adopts EDK2 as its default payload, unlocking native UEFI boot and official Microsoft Windows compatibility across supported x86 hardware.
+- Imports 233 Chromebook device profiles directly from the MrChromebox coreboot distribution via an automated configuration generator (util/mrimport).
+- Institutes a strict anti-AI code contribution policy codified in AGENTS.md to protect the open-source firmware codebase from unverified synthetic commits.
+
+**Full Article Content:**
+Source: Libreboot lead developer Leah Rowe published the release announcement and changelog for Libreboot 26.10 on October 15, 2026.
+
+The shift to EDK2 represents a fundamental structural evolution for Libreboot, which historically relied on bare-metal SeaBIOS or direct GRUB payloads written to SPI flash memory. Under the new architecture, GRUB and SeaBIOS are provided as EFI binaries executed from within the UEFI environment, ensuring backward compatibility while enabling support for contemporary operating systems that mandate UEFI secure boot constructs.
+
+To expand hardware adoption, the project introduced a synchronization tool located at util/mrimport that imports board configurations from MrChromebox. This integration brings 233 Chromebook models across modern Intel and AMD chipsets into the Libreboot tree, enabling users to replace Google's proprietary firmware on educational and consumer laptops.
+
+The release also added a formal policy file, AGENTS.md, within the build system repository (lbmk). The directive explicitly prohibits automated AI scraping tools and synthetic pull requests, requiring all firmware submissions to originate from verified human engineers.
+
+Because the Chromebook configurations are currently distributed as source-only builds requiring compilation from scratch, binary installation images will depend on community testing across hardware revisions.
+
+**Primary Sources & Citations:**
+- [Libreboot 26.10 ](https://libreboot.org/news/libreboot2610.html) (Libreboot News)
+
+---
+
+### Goodfire AI Challenges Superposition Orthodoxy, Arguing Neural Networks Are Monosemantic
+- Canonical URL: https://nextvector.rhasan.online/article/goodfire-ai-challenges-superposition-polysemanticity-theses
+- Published: 2026-10-15 | Category: RESEARCH | Signal Rating: 90/100
+- Executive Summary: Researcher Nick Cammarata argues that canonical vision polysemanticity was an artifact of incomplete circuit tracing, finding individual neurons track shared compositional motifs.
+
+**What Happened?**
+On October 15, 2026, Goodfire AI researcher Nick Cammarata published a theoretical treatise titled 'Neural networks are clean', demonstrating that foundational claims of polysemanticity and superposition in deep neural networks were rooted in mischaracterized early vision circuits.
+
+**Why It Matters:**
+The paper challenges the prevailing belief that models arbitrarily compress unrelated concepts into single neurons, suggesting that billions of dollars spent engineering complex Sparse Autoencoders (SAEs) might be attempting to untangle structures that are already organized into clean compositional motifs.
+
+**What Could Happen Next:**
+Goodfire AI is releasing a technical companion paper documenting language model neuron behavior across modern SwiGLU activation regimes and depth hierarchies, sparking debate across frontier alignment labs.
+
+**Key Takeaways:**
+- Nick Cammarata, co-author of the seminal 'Zoom In' circuits paper, published evidence that canonical polysemantic neurons like InceptionV1 4e:55 actually detect shared geometric V-shapes rather than unrelated 'cat and car' concepts.
+- Argues that as interpretability maps fill in, individual neurons exhibit clean monosemantic tuning toward subtle social cues, sentiment summaries, and compositional motifs that fire predictably on punctuation boundaries.
+- Identified previously unobserved double-negative regimes in SwiGLU neurons that are obscured when researchers apply artificial dictionary learning decomposition.
+
+**Full Article Content:**
+Source: In an in-depth research essay published on October 15, 2026, Nick Cammarata of Goodfire AI re-examined the core assumptions of mechanistic interpretability.
+
+Since the publication of early interpretability papers in 2017 and 2020, researchers assumed that neural networks suffer from severe superposition—storing far more concepts than available dimensions by forcing single neurons to activate across unrelated inputs. This assumption catalyzed the widespread adoption of Sparse Autoencoders (SAEs) to mathematically decompose hidden states into millions of pseudo-features.
+
+Cammarata demonstrated that the canonical example of this phenomenon—the 4e:55 neuron in InceptionV1 that famously responded to both cats and cars—was misunderstood due to visualization artifacts. Rather than acting as a logical OR gate, the neuron was responding to a shared V-shaped structural primitive common to cat ears and vehicle hoods, with downstream circuits naturally filtering out extraneous contextual activations.
+
+In language models spanning trillions of parameters, Cammarata reported that neurons reliably track specific linguistic functions, such as subtle emotional tones or social cues. These neurons frequently activate on punctuation marks where meaning is summarized rather than directly on content words, explaining why isolated token probes often falsely concluded the neurons were polysemantic.
+
+The unresolved debate in the alignment community is whether raw neuron inspection will remain tractable as models scale into autonomous multi-modal reasoning or whether dictionary learning remains necessary for automated safety audits.
+
+**Primary Sources & Citations:**
+- [Neural networks are clean: An essay on mechanistic interpretability](https://already-clean.goodfire.com/) (Goodfire AI Research)
+
+---
+
+### Anomaly Launches OpenCode 2.0 with Central Daemon and Embedded Codemode Runtime
+- Canonical URL: https://nextvector.rhasan.online/article/opencode-2-overhauls-agentic-developer-infrastructure
+- Published: 2026-10-15 | Category: TECHNOLOGY | Signal Rating: 91/100
+- Executive Summary: The open coding harness adds single-round-trip MCP script interpretation, background subagents, and async terminal tasks for developer swarms.
+
+**What Happened?**
+On October 14, 2026, software lab Anomaly released OpenCode 2.0, a complete re-architecture of its open-source coding agent framework featuring a unified local background daemon, embedded script interpretation, and asynchronous multi-agent coordination.
+
+**Why It Matters:**
+By replacing sequential turn-by-turn tool invocations with an in-process JavaScript interpreter that composes hundreds of Model Context Protocol endpoints in a single round-trip, OpenCode 2.0 drastically reduces context window bloat and API latency for complex programming tasks.
+
+**What Could Happen Next:**
+Anomaly is deploying official native desktop companion clients and expanding its plugin ecosystem, with more than 80 internal core functions already dogfooded on the new Plugin API.
+
+**Key Takeaways:**
+- OpenCode 2.0 consolidates terminal, web, and desktop interfaces around a single persistent background daemon with automatic local service discovery.
+- Introduces @opencode/codemode, a lightweight JavaScript interpreter that translates MCP servers and OpenAPI schemas into native script functions without Node.js or QuickJS VM overhead.
+- Enables background subagents and asynchronous shell commands that free the primary conversational interface for continuous user prompting during long-running tasks.
+
+**Full Article Content:**
+Source: In a technical release announcement published on October 14, 2026, Anomaly engineering documented the design considerations and architectural overhaul behind OpenCode 2.0.
+
+Prior agent harnesses suffered from compounding context penalties: every external tool required schemas injected into prompts, and complex operations forced the language model through multiple sequential conversational turns. OpenCode 2.0 resolves this through codemode, which allows models to write concise JavaScript scripts that call tools, map over output arrays, and chain operations within one single API execution cycle.
+
+To support high-concurrency developer workflows, the system integrates a background daemon that manages environment state independently of the front-end TUI or web interface. Scripts authored using the new @opencode/client library automatically discover the running service, while built-in commands automatically transition active tasks into isolated git worktrees.
+
+The release also promotes OpenTUI plugin architecture to stable status, providing complete styling and interactive widget controls inside terminal sessions. An internal dogfooding mandate required developers to write over 80 standard framework features as standalone plugins, ensuring API stability for third-party extensions.
+
+The broader industry question is whether standard IDE extensions like VS Code Copilot will adopt similar script-based tool bundling or continue relying on traditional chat-based sequential tool schemas.
+
+**Primary Sources & Citations:**
+- [OpenCode 2.0 Release Notes and Architectural Overview](https://anoma.ly/notes/opencode-2-0/) (Anomaly Notes)
+
+---
+
+### Citizen Lab Exposes 'AdFection': Targeted Online Ads Weaponized for Zero-Click Spyware
+- Canonical URL: https://nextvector.rhasan.online/article/citizen-lab-exposes-adfection-zero-click-spyware
+- Published: 2026-10-15 | Category: TECHNOLOGY | Signal Rating: 93/100
+- Executive Summary: Investigation reveals how Israeli firm Discover-Tech exploited programmatic ad auctions and dynamic NOAS servers to infect targets with Candiru surveillance malware.
+
+**What Happened?**
+On October 15, 2026, researchers at The Citizen Lab and cybersecurity firm Confiant published forensic evidence documenting AdFection, a technique weaponizing real-time bidding programmatic advertising auctions to deliver zero-click mercenary spyware to targeted mobile devices.
+
+**Why It Matters:**
+This marks the first confirmed public demonstration of commercial surveillance vendors turning digital display advertising into zero-click delivery vectors, completely bypassing mobile defenses without requiring user clicks, phishing links, or malicious app downloads.
+
+**What Could Happen Next:**
+Ad exchanges and demand-side platforms are facing intense regulatory pressure from data privacy authorities to ban programmatic JavaScript execution within mobile in-app ad banners, while researchers track Discover-Tech infrastructure pivots.
+
+**Key Takeaways:**
+- Citizen Lab confirmed the first public cases of zero-click mercenary surveillance malware delivered purely by rendering targeted programmatic advertisements.
+- Israel-based Discover-Tech functioned as a front company connecting surveillance contractors like Candiru to commercial ad exchanges including Google, Yandex, and Beeswax.
+- The operation deployed proprietary NOAS servers that return empty responses to automated malware scanners while delivering custom exploit payloads exclusively to designated mobile advertising IDs.
+
+**Full Article Content:**
+Source: In an exhaustive forensic investigation published on October 15, 2026, Citizen Lab researchers Bill Marczak, Wolfie Christl, John Scott-Railton, Astrid Perry, Siena Anstis, and Ron Deibert detailed the AdFection ecosystem.
+
+The attack pipeline relies on the mechanics of Real-Time Bidding auctions, where ad exchanges process hundreds of billions of bids daily in less than a second. By ingesting device identifiers, exact GPS coordinates, and mobile advertising IDs, Discover-Tech's Controlium platform bid specifically on ad impressions served to pre-selected journalists and civil society targets, including staff at Al Jazeera.
+
+Once an auction was won, the ad banner loaded a script tag referencing Discover-Tech's Network Origin Ad Server (NOAS). When scanned by ad network verification tools, the NOAS server returned a harmless zero-byte payload. However, when queried by the verified victim's unique combination of advertising ID and source IP address, the server dynamically injected browser exploit code to install Candiru spyware.
+
+Corporate registry analysis revealed that Discover-Tech was incorporated in 2020 by CEO Dekel Boni, with Israeli cyber pioneer Eric Banoun serving on its board of directors until 2025. Additional shareholder records tied the entity to corporate networks managed by Sara Hamou, a prominent executive associated with the Intellexa consortium.
+
+What remains an open question is how major ad exchanges will structurally prevent demand-side platforms from executing conditional server-side logic that hides weaponized zero-click payloads until the exact moment of delivery.
+
+**Primary Sources & Citations:**
+- [Exposing AdFection: How Discover-Tech Turned Targeted Ads Into a Pipeline for Zero-Click Mercenary Spyware](https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/) (The Citizen Lab)
+
+---
+
+### Meta Releases Muse Spark Open: 816B-Parameter Multimodal Model for Local Mac Clusters
+- Canonical URL: https://nextvector.rhasan.online/article/meta-releases-muse-spark-open-frontier-model
+- Published: 2026-10-15 | Category: AI | Signal Rating: 94/100
+- Executive Summary: Weights for the 42B-active MoE architecture run natively on dual Apple M5 Ultra Mac Studios via MLX alongside custom Helion GPU kernels in SGLang.
+
+**What Happened?**
+On October 15, 2026, Meta Superintelligence Labs released open weights for Muse Spark Open, an 816-billion-parameter natively multimodal mixture-of-experts model activating 42 billion parameters per token with a 1-million-token context window.
+
+**Why It Matters:**
+Muse Spark Open represents the largest US-developed open-weight model to date, demonstrating that high-capacity agentic and software engineering reasoning can run locally on two Apple M5 Ultra Mac Studios pooling 1 terabyte of unified memory.
+
+**What Could Happen Next:**
+Developer communities are implementing downstream quantization adapters across llama.cpp and vLLM, while enterprise cloud hosts roll out dedicated serving endpoints under the commercial terms of the Muse Model License.
+
+**Key Takeaways:**
+- Muse Spark Open pairs 816B total parameters with 42B active parameters per token across a native 1,048,576-token context window.
+- Runs on desktop hardware using two connected Apple M5 Ultra Mac Studios with 512GB RAM each via Apple MLX, tapping 1.2 TB/s unified memory bandwidth.
+- Includes custom Helion GPU kernels integrated into SGLang, delivering 1.03x to 3.95x kernel speedups on NVIDIA and AMD hardware and 3% end-to-end acceleration on AMD MI350.
+- Now accessible via API providers including OpenRouter (meta/muse-spark-open at $1.25 per million input and $4.25 per million output tokens).
+
+**Full Article Content:**
+Source: In an official technical disclosure published on October 15, 2026, Meta Superintelligence Labs introduced Muse Spark Open, releasing complete model checkpoints on Hugging Face alongside hosted API endpoints.
+
+The model architecture is built from the ground up for agentic execution and multi-step tool invocation across text, audio, image, and video modalities. In internal validation tests conducted by Meta, the model completed autonomous software engineering tasks on Ice Cubes, an open-source Mastodon client, implementing full features, bug fixes, and clean builds without human code modifications.
+
+For creative automation, researchers verified end-to-end video timeline orchestration in DaVinci Resolve, directing the model to inspect video footage frame by frame to identify key highlights and automatically crop sequences into vertical aspect ratios.
+
+To enable local deployment without server racks, Meta partnered with Apple's MLX engineering team. Because each M5 Ultra workstation provides up to 512 gigabytes of unified memory, clustering two desktop systems over a high-bandwidth interconnect allows the entire uncompressed model weight distribution to fit inside a single shared memory pool.
+
+What remains to be determined is whether open-source quantization researchers can compress the 816B parameter structure down to single-machine 192GB unified memory configurations without severely penalizing agentic tool-use accuracy.
+
+**Primary Sources & Citations:**
+- [Introducing Muse Spark Open, The Most Capable US Open-Weight Model to Date](https://research.meta.ai/blog/muse-spark-open) (Meta AI Research)
+- [Meta: Muse Spark Open Model Listing on OpenRouter](https://openrouter.ai/meta/muse-spark-open) (OpenRouter API)
+
+---
+
 ### European Authorities Investigate Coordinated Sabotage Against Starlink Ground Terminals
 - Canonical URL: https://nextvector.rhasan.online/article/starlink-ground-facility-sabotage-bulgaria-poland
 - Published: 2026-10-14 | Category: TECHNOLOGY | Signal Rating: 88/100

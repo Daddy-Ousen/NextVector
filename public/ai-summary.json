@@ -60,11 +60,11 @@
       {
         "category": "Best Arena score under $0.20 blended",
         "rule": "Highest Arena score with a blended list price under $0.20 per 1M tokens.",
-        "model": "Hy3",
-        "developer": "Tencent Hunyuan",
-        "metric": "Arena 1454 at $0.14 blended",
-        "listPrice": "$0.083 / $0.33 per 1M tokens",
-        "url": "https://nextvector.rhasan.online/models/model-hy3"
+        "model": "DeepSeek-V4.1-Flash",
+        "developer": "DeepSeek",
+        "metric": "Arena 1475 at $0.18 blended",
+        "listPrice": "$0.010 / $0.684 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-deepseek-v4-1-flash"
       },
       {
         "category": "Best open-weights model",
@@ -72,7 +72,7 @@
         "model": "Kimi K3",
         "developer": "Moonshot AI",
         "metric": "Arena 1488 · Kimi K3 license",
-        "listPrice": "$0.73 / $10.00 per 1M tokens",
+        "listPrice": "$0.339 / $15.00 per 1M tokens",
         "url": "https://nextvector.rhasan.online/models/model-kimi-k3"
       },
       {

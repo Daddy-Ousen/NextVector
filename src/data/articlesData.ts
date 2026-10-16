@@ -13818,6 +13818,305 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-240",
+    slug: "meta-releases-muse-spark-open-frontier-model",
+    title: "Meta Releases Muse Spark Open: 816B-Parameter Multimodal Model for Local Mac Clusters",
+    subtitle: "Weights for the 42B-active MoE architecture run natively on dual Apple M5 Ultra Mac Studios via MLX alongside custom Helion GPU kernels in SGLang.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 94,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-15T22:00:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-240-meta-releases-muse-spark-open-frontier-model.jpg",
+    coverImageAlt: "Minimalist high-performance desktop workstation setup configured for local foundation model inference",
+    tags: ["Meta AI", "Muse Spark Open", "Open Weights", "Apple Silicon", "MLX", "Mixture of Experts"],
+    threeQuestions: {
+      whatHappened: "On October 15, 2026, Meta Superintelligence Labs released open weights for Muse Spark Open, an 816-billion-parameter natively multimodal mixture-of-experts model activating 42 billion parameters per token with a 1-million-token context window.",
+      whyItMatters: "Muse Spark Open represents the largest US-developed open-weight model to date, demonstrating that high-capacity agentic and software engineering reasoning can run locally on two Apple M5 Ultra Mac Studios pooling 1 terabyte of unified memory.",
+      whatsNext: "Developer communities are implementing downstream quantization adapters across llama.cpp and vLLM, while enterprise cloud hosts roll out dedicated serving endpoints under the commercial terms of the Muse Model License."
+    },
+    keyTakeaways: [
+      "Muse Spark Open pairs 816B total parameters with 42B active parameters per token across a native 1,048,576-token context window.",
+      "Runs on desktop hardware using two connected Apple M5 Ultra Mac Studios with 512GB RAM each via Apple MLX, tapping 1.2 TB/s unified memory bandwidth.",
+      "Includes custom Helion GPU kernels integrated into SGLang, delivering 1.03x to 3.95x kernel speedups on NVIDIA and AMD hardware and 3% end-to-end acceleration on AMD MI350.",
+      "Now accessible via API providers including OpenRouter (meta/muse-spark-open at $1.25 per million input and $4.25 per million output tokens)."
+    ],
+    content: [
+      "Source: In an official technical disclosure published on October 15, 2026, Meta Superintelligence Labs introduced Muse Spark Open, releasing complete model checkpoints on Hugging Face alongside hosted API endpoints.",
+      "The model architecture is built from the ground up for agentic execution and multi-step tool invocation across text, audio, image, and video modalities. In internal validation tests conducted by Meta, the model completed autonomous software engineering tasks on Ice Cubes, an open-source Mastodon client, implementing full features, bug fixes, and clean builds without human code modifications.",
+      "For creative automation, researchers verified end-to-end video timeline orchestration in DaVinci Resolve, directing the model to inspect video footage frame by frame to identify key highlights and automatically crop sequences into vertical aspect ratios.",
+      "To enable local deployment without server racks, Meta partnered with Apple's MLX engineering team. Because each M5 Ultra workstation provides up to 512 gigabytes of unified memory, clustering two desktop systems over a high-bandwidth interconnect allows the entire uncompressed model weight distribution to fit inside a single shared memory pool.",
+      "What remains to be determined is whether open-source quantization researchers can compress the 816B parameter structure down to single-machine 192GB unified memory configurations without severely penalizing agentic tool-use accuracy."
+    ],
+    technicalSpecs: {
+      "Total Parameters": "816B",
+      "Active Parameters": "42B MoE",
+      "Context Window": "1,048,576 tokens (1M)",
+      "Local Serving Requirement": "2x Apple M5 Ultra Mac Studios (1TB unified RAM via MLX)",
+      "Kernel Optimizations": "Auto-tunable Helion kernels in SGLang (1.03-3.95x speedup)",
+      "OpenRouter Identifier": "meta/muse-spark-open ($1.25 in / $4.25 out per 1M tokens)",
+      "Hugging Face Repository": "meta-models/Muse-Spark-Open-816B-A42B"
+    },
+    relatedModelId: "model-muse-spark-open",
+    citations: [
+      {
+        title: "Introducing Muse Spark Open, The Most Capable US Open-Weight Model to Date",
+        url: "https://research.meta.ai/blog/muse-spark-open",
+        source: "Meta AI Research"
+      },
+      {
+        title: "Meta: Muse Spark Open Model Listing on OpenRouter",
+        url: "https://openrouter.ai/meta/muse-spark-open",
+        source: "OpenRouter API"
+      }
+    ],
+    isHero: true,
+    isFeatured: false
+  },
+  {
+    id: "art-241",
+    slug: "citizen-lab-exposes-adfection-zero-click-spyware",
+    title: "Citizen Lab Exposes 'AdFection': Targeted Online Ads Weaponized for Zero-Click Spyware",
+    subtitle: "Investigation reveals how Israeli firm Discover-Tech exploited programmatic ad auctions and dynamic NOAS servers to infect targets with Candiru surveillance malware.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 93,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-15T22:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-241-citizen-lab-exposes-adfection-zero-click-spyware.jpg",
+    coverImageAlt: "Digital analytics display tracking user behavior across mobile ad auction exchanges",
+    tags: ["Cybersecurity", "Citizen Lab", "AdFection", "Zero-Click Exploit", "Spyware", "Ad Tech"],
+    threeQuestions: {
+      whatHappened: "On October 15, 2026, researchers at The Citizen Lab and cybersecurity firm Confiant published forensic evidence documenting AdFection, a technique weaponizing real-time bidding programmatic advertising auctions to deliver zero-click mercenary spyware to targeted mobile devices.",
+      whyItMatters: "This marks the first confirmed public demonstration of commercial surveillance vendors turning digital display advertising into zero-click delivery vectors, completely bypassing mobile defenses without requiring user clicks, phishing links, or malicious app downloads.",
+      whatsNext: "Ad exchanges and demand-side platforms are facing intense regulatory pressure from data privacy authorities to ban programmatic JavaScript execution within mobile in-app ad banners, while researchers track Discover-Tech infrastructure pivots."
+    },
+    keyTakeaways: [
+      "Citizen Lab confirmed the first public cases of zero-click mercenary surveillance malware delivered purely by rendering targeted programmatic advertisements.",
+      "Israel-based Discover-Tech functioned as a front company connecting surveillance contractors like Candiru to commercial ad exchanges including Google, Yandex, and Beeswax.",
+      "The operation deployed proprietary NOAS servers that return empty responses to automated malware scanners while delivering custom exploit payloads exclusively to designated mobile advertising IDs."
+    ],
+    content: [
+      "Source: In an exhaustive forensic investigation published on October 15, 2026, Citizen Lab researchers Bill Marczak, Wolfie Christl, John Scott-Railton, Astrid Perry, Siena Anstis, and Ron Deibert detailed the AdFection ecosystem.",
+      "The attack pipeline relies on the mechanics of Real-Time Bidding auctions, where ad exchanges process hundreds of billions of bids daily in less than a second. By ingesting device identifiers, exact GPS coordinates, and mobile advertising IDs, Discover-Tech's Controlium platform bid specifically on ad impressions served to pre-selected journalists and civil society targets, including staff at Al Jazeera.",
+      "Once an auction was won, the ad banner loaded a script tag referencing Discover-Tech's Network Origin Ad Server (NOAS). When scanned by ad network verification tools, the NOAS server returned a harmless zero-byte payload. However, when queried by the verified victim's unique combination of advertising ID and source IP address, the server dynamically injected browser exploit code to install Candiru spyware.",
+      "Corporate registry analysis revealed that Discover-Tech was incorporated in 2020 by CEO Dekel Boni, with Israeli cyber pioneer Eric Banoun serving on its board of directors until 2025. Additional shareholder records tied the entity to corporate networks managed by Sara Hamou, a prominent executive associated with the Intellexa consortium.",
+      "What remains an open question is how major ad exchanges will structurally prevent demand-side platforms from executing conditional server-side logic that hides weaponized zero-click payloads until the exact moment of delivery."
+    ],
+    technicalSpecs: {
+      "Surveillance Technique": "AdFection (RTB-mediated zero-click delivery)",
+      "Targeted Spyware Payload": "Candiru mercenary surveillance suite",
+      "Ad Server Infrastructure": "NOAS (Network Origin Ad Server / getAd server)",
+      "Interfaced Ad Platforms": "Google, Yandex, Vungle (Liftoff), Sunteng, Beeswax",
+      "Investigating Bodies": "The Citizen Lab (Univ. of Toronto) and Confiant"
+    },
+    citations: [
+      {
+        title: "Exposing AdFection: How Discover-Tech Turned Targeted Ads Into a Pipeline for Zero-Click Mercenary Spyware",
+        url: "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+        source: "The Citizen Lab"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-242",
+    slug: "opencode-2-overhauls-agentic-developer-infrastructure",
+    title: "Anomaly Launches OpenCode 2.0 with Central Daemon and Embedded Codemode Runtime",
+    subtitle: "The open coding harness adds single-round-trip MCP script interpretation, background subagents, and async terminal tasks for developer swarms.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 91,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-15T22:30:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-242-opencode-2-overhauls-agentic-developer-infrastruct.jpg",
+    coverImageAlt: "Computer monitor displaying complex terminal code routines and multi-task development workflows",
+    tags: ["OpenCode", "Developer Tools", "Coding Agents", "Model Context Protocol", "Subagents", "Software Engineering"],
+    threeQuestions: {
+      whatHappened: "On October 14, 2026, software lab Anomaly released OpenCode 2.0, a complete re-architecture of its open-source coding agent framework featuring a unified local background daemon, embedded script interpretation, and asynchronous multi-agent coordination.",
+      whyItMatters: "By replacing sequential turn-by-turn tool invocations with an in-process JavaScript interpreter that composes hundreds of Model Context Protocol endpoints in a single round-trip, OpenCode 2.0 drastically reduces context window bloat and API latency for complex programming tasks.",
+      whatsNext: "Anomaly is deploying official native desktop companion clients and expanding its plugin ecosystem, with more than 80 internal core functions already dogfooded on the new Plugin API."
+    },
+    keyTakeaways: [
+      "OpenCode 2.0 consolidates terminal, web, and desktop interfaces around a single persistent background daemon with automatic local service discovery.",
+      "Introduces @opencode/codemode, a lightweight JavaScript interpreter that translates MCP servers and OpenAPI schemas into native script functions without Node.js or QuickJS VM overhead.",
+      "Enables background subagents and asynchronous shell commands that free the primary conversational interface for continuous user prompting during long-running tasks."
+    ],
+    content: [
+      "Source: In a technical release announcement published on October 14, 2026, Anomaly engineering documented the design considerations and architectural overhaul behind OpenCode 2.0.",
+      "Prior agent harnesses suffered from compounding context penalties: every external tool required schemas injected into prompts, and complex operations forced the language model through multiple sequential conversational turns. OpenCode 2.0 resolves this through codemode, which allows models to write concise JavaScript scripts that call tools, map over output arrays, and chain operations within one single API execution cycle.",
+      "To support high-concurrency developer workflows, the system integrates a background daemon that manages environment state independently of the front-end TUI or web interface. Scripts authored using the new @opencode/client library automatically discover the running service, while built-in commands automatically transition active tasks into isolated git worktrees.",
+      "The release also promotes OpenTUI plugin architecture to stable status, providing complete styling and interactive widget controls inside terminal sessions. An internal dogfooding mandate required developers to write over 80 standard framework features as standalone plugins, ensuring API stability for third-party extensions.",
+      "The broader industry question is whether standard IDE extensions like VS Code Copilot will adopt similar script-based tool bundling or continue relying on traditional chat-based sequential tool schemas."
+    ],
+    technicalSpecs: {
+      "Framework Version": "OpenCode 2.0",
+      "Scripting Engine": "@opencode/codemode (zero-VM embedded JavaScript interpreter)",
+      "Client Libraries": "@opencode/client supporting Vanilla JS and Effect",
+      "Interface Layer": "Unified daemon supporting OpenTUI, Web UI, and Desktop",
+      "Tool Interoperability": "Native Model Context Protocol (MCP) and OpenAPI ingestion"
+    },
+    citations: [
+      {
+        title: "OpenCode 2.0 Release Notes and Architectural Overview",
+        url: "https://anoma.ly/notes/opencode-2-0/",
+        source: "Anomaly Notes"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-243",
+    slug: "goodfire-ai-challenges-superposition-polysemanticity-theses",
+    title: "Goodfire AI Challenges Superposition Orthodoxy, Arguing Neural Networks Are Monosemantic",
+    subtitle: "Researcher Nick Cammarata argues that canonical vision polysemanticity was an artifact of incomplete circuit tracing, finding individual neurons track shared compositional motifs.",
+    category: "research",
+    articleType: "research-explained",
+    signalRating: 90,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-15T22:45:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-243-goodfire-ai-challenges-superposition-polysemantici.jpg",
+    coverImageAlt: "Precision optical microscope in an advanced scientific neural research laboratory",
+    tags: ["Goodfire AI", "Mechanistic Interpretability", "Superposition", "Polysemanticity", "Sparse Autoencoders", "Deep Learning"],
+    threeQuestions: {
+      whatHappened: "On October 15, 2026, Goodfire AI researcher Nick Cammarata published a theoretical treatise titled 'Neural networks are clean', demonstrating that foundational claims of polysemanticity and superposition in deep neural networks were rooted in mischaracterized early vision circuits.",
+      whyItMatters: "The paper challenges the prevailing belief that models arbitrarily compress unrelated concepts into single neurons, suggesting that billions of dollars spent engineering complex Sparse Autoencoders (SAEs) might be attempting to untangle structures that are already organized into clean compositional motifs.",
+      whatsNext: "Goodfire AI is releasing a technical companion paper documenting language model neuron behavior across modern SwiGLU activation regimes and depth hierarchies, sparking debate across frontier alignment labs."
+    },
+    keyTakeaways: [
+      "Nick Cammarata, co-author of the seminal 'Zoom In' circuits paper, published evidence that canonical polysemantic neurons like InceptionV1 4e:55 actually detect shared geometric V-shapes rather than unrelated 'cat and car' concepts.",
+      "Argues that as interpretability maps fill in, individual neurons exhibit clean monosemantic tuning toward subtle social cues, sentiment summaries, and compositional motifs that fire predictably on punctuation boundaries.",
+      "Identified previously unobserved double-negative regimes in SwiGLU neurons that are obscured when researchers apply artificial dictionary learning decomposition."
+    ],
+    content: [
+      "Source: In an in-depth research essay published on October 15, 2026, Nick Cammarata of Goodfire AI re-examined the core assumptions of mechanistic interpretability.",
+      "Since the publication of early interpretability papers in 2017 and 2020, researchers assumed that neural networks suffer from severe superposition—storing far more concepts than available dimensions by forcing single neurons to activate across unrelated inputs. This assumption catalyzed the widespread adoption of Sparse Autoencoders (SAEs) to mathematically decompose hidden states into millions of pseudo-features.",
+      "Cammarata demonstrated that the canonical example of this phenomenon—the 4e:55 neuron in InceptionV1 that famously responded to both cats and cars—was misunderstood due to visualization artifacts. Rather than acting as a logical OR gate, the neuron was responding to a shared V-shaped structural primitive common to cat ears and vehicle hoods, with downstream circuits naturally filtering out extraneous contextual activations.",
+      "In language models spanning trillions of parameters, Cammarata reported that neurons reliably track specific linguistic functions, such as subtle emotional tones or social cues. These neurons frequently activate on punctuation marks where meaning is summarized rather than directly on content words, explaining why isolated token probes often falsely concluded the neurons were polysemantic.",
+      "The unresolved debate in the alignment community is whether raw neuron inspection will remain tractable as models scale into autonomous multi-modal reasoning or whether dictionary learning remains necessary for automated safety audits."
+    ],
+    technicalSpecs: {
+      "Lead Researcher": "Nick Cammarata (Goodfire AI)",
+      "Canonical Circuit Re-evaluated": "InceptionV1 4e:55 (Cat/Car feature)",
+      "Activation Mechanics Evaluated": "SwiGLU non-linearities and double-negative regimes",
+      "Primary Theoretical Thesis": "Compositional generalization replaces superposition hypothesis",
+      "Publication Domain": "already-clean.goodfire.com"
+    },
+    citations: [
+      {
+        title: "Neural networks are clean: An essay on mechanistic interpretability",
+        url: "https://already-clean.goodfire.com/",
+        source: "Goodfire AI Research"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-244",
+    slug: "libreboot-26-10-adds-uefi-imports-233-chromebook-boards",
+    title: "Libreboot 26.10 Ships Native UEFI via EDK2 and Imports 233 Chromebook Configurations",
+    subtitle: "The 'Ominous Olive' open firmware release enables Windows compatibility, syncs MrChromebox coreboot trees, and introduces strict repository anti-AI scraping rules.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-15T23:00:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-244-libreboot-26-10-adds-uefi-imports-233-chromebook-b.jpg",
+    coverImageAlt: "Open computer motherboard silicon surface and semiconductor firmware components",
+    tags: ["Libreboot", "Firmware", "Open Source", "UEFI", "Chromebook", "Hardware Security"],
+    threeQuestions: {
+      whatHappened: "On October 15, 2026, the Libreboot project released version 26.10, codenamed 'Ominous Olive', adding full UEFI support via the EDK2 payload, integrating 233 Intel and AMD Chromebook boards from MrChromebox, and adopting a strict anti-AI policy.",
+      whyItMatters: "Full UEFI support allows Libreboot to boot modern operating systems including Microsoft Windows on open firmware without legacy BIOS emulation, vastly expanding the practical reach of free hardware initialization.",
+      whatsNext: "Maintainers plan to deprecate bare-metal SeaBIOS and GRUB payloads in flash memory in subsequent releases, standardizing the codebase on EFI executables while validating Bay Trail hardware builds."
+    },
+    keyTakeaways: [
+      "Libreboot 26.10 adopts EDK2 as its default payload, unlocking native UEFI boot and official Microsoft Windows compatibility across supported x86 hardware.",
+      "Imports 233 Chromebook device profiles directly from the MrChromebox coreboot distribution via an automated configuration generator (util/mrimport).",
+      "Institutes a strict anti-AI code contribution policy codified in AGENTS.md to protect the open-source firmware codebase from unverified synthetic commits."
+    ],
+    content: [
+      "Source: Libreboot lead developer Leah Rowe published the release announcement and changelog for Libreboot 26.10 on October 15, 2026.",
+      "The shift to EDK2 represents a fundamental structural evolution for Libreboot, which historically relied on bare-metal SeaBIOS or direct GRUB payloads written to SPI flash memory. Under the new architecture, GRUB and SeaBIOS are provided as EFI binaries executed from within the UEFI environment, ensuring backward compatibility while enabling support for contemporary operating systems that mandate UEFI secure boot constructs.",
+      "To expand hardware adoption, the project introduced a synchronization tool located at util/mrimport that imports board configurations from MrChromebox. This integration brings 233 Chromebook models across modern Intel and AMD chipsets into the Libreboot tree, enabling users to replace Google's proprietary firmware on educational and consumer laptops.",
+      "The release also added a formal policy file, AGENTS.md, within the build system repository (lbmk). The directive explicitly prohibits automated AI scraping tools and synthetic pull requests, requiring all firmware submissions to originate from verified human engineers.",
+      "Because the Chromebook configurations are currently distributed as source-only builds requiring compilation from scratch, binary installation images will depend on community testing across hardware revisions."
+    ],
+    technicalSpecs: {
+      "Release Version": "Libreboot 26.10 (Ominous Olive)",
+      "Default Firmware Payload": "EDK2 (Tianocore UEFI)",
+      "Newly Supported Hardware": "233 Intel and AMD Chromebook boards",
+      "Legacy Payloads Status": "Bare-metal SeaBIOS/GRUB deprecated in favor of EFI builds",
+      "Upstream Coreboot Tree": "MrChromebox coreboot distribution",
+      "Code Policy Update": "Strict anti-AI repository rules in AGENTS.md"
+    },
+    citations: [
+      {
+        title: "Libreboot 26.10 'Ominous Olive' released with full UEFI support",
+        url: "https://libreboot.org/news/libreboot2610.html",
+        source: "Libreboot News"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-245",
+    slug: "continuum-attention-replaces-discrete-kv-with-continuous-integration",
+    title: "Continuum Attention Outperforms Softmax by Integrating Over Piecewise Linear Memory Curves",
+    subtitle: "Paper arXiv:2610.20586 replaces discrete token lookups with exact closed-form exponential moments, cutting validation perplexity at quadratic sequence complexity.",
+    category: "research",
+    articleType: "research-explained",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-10-15T23:15:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-245-continuum-attention-replaces-discrete-kv-with-cont.jpg",
+    coverImageAlt: "Vibrant laser optical wave light patterns demonstrating continuous mathematical energy distributions",
+    tags: ["Continuum Attention", "Transformer Architecture", "Attention Mechanism", "Inference Efficiency", "arXiv", "Deep Learning"],
+    threeQuestions: {
+      whatHappened: "On October 14, 2026, computer science researcher Afshin Khadangi released arXiv paper 2610.20586 introducing Continuum Attention, an attention mechanism that replaces discrete token key-value lookup with continuous integration over a piecewise linear memory curve.",
+      whyItMatters: "Discrete softmax attention creates rigid boundaries between neighboring tokens; Continuum Attention derives exact attention weights using closed-form exponential moments, reducing language model validation loss across all evaluated benchmark comparisons.",
+      whatsNext: "Researchers are developing optimized custom Triton GPU kernels to scale the continuous integration operator beyond small-to-medium language models to multi-billion parameter foundation architectures."
+    },
+    keyTakeaways: [
+      "Continuum Attention replaces discrete key-value lookups with integration over continuous piecewise memory curves induced by exponential relevance densities.",
+      "Achieves exact normalized attention weights via closed-form exponential moments, including explicit half-token boundary contributions.",
+      "Reduced validation negative log likelihood by 0.0200 nats per byte compared to standard softmax and 0.0480 nats per byte compared to focal attention."
+    ],
+    content: [
+      "Source: In manuscript arXiv:2610.20586v1 submitted on October 14, 2026, author Afshin Khadangi presented the mathematical formulation and empirical results for Continuum Attention.",
+      "Standard Transformer decoders calculate dot-product similarity between discrete query vectors and isolated key vectors, converting scores into categorical probability distributions via softmax. Continuum Attention reframes memory as a continuous manifold, treating token sequences as piecewise linear curves along which attention density integrates smoothly.",
+      "A central mathematical innovation is that backward pass gradients follow analytically from moments of order at most two. This property allows parallel execution on modern GPU tensor cores while maintaining the quadratic sequence complexity and standard causal decoding mechanics of standard Transformers.",
+      "In rigorous paired evaluations, Continuum Attention demonstrated consistent advantages over both softmax baselines and focal attention alternatives. Across an independent disjoint validation slice, the mechanism maintained a statistically significant 0.0457 nats per byte performance advantage within a 95% confidence interval.",
+      "The primary open challenge is whether the continuous formulation maintains its empirical advantage when scaled to long-context sequences exceeding 128,000 tokens."
+    ],
+    technicalSpecs: {
+      "Paper Identifier": "arXiv:2610.20586v1 (cs.LG, cs.AI)",
+      "Author": "Afshin Khadangi",
+      "Core Operator": "Continuum Attention (CA) via piecewise linear integration",
+      "Mathematical Framework": "Closed-form exponential moments of order <= 2",
+      "Perplexity Improvement": "0.0200 nats/byte over softmax; 0.0480 nats/byte over focal attention",
+      "Computational Complexity": "Quadratic sequence complexity with analytical GPU gradients"
+    },
+    citations: [
+      {
+        title: "Continuum Attention",
+        url: "https://arxiv.org/abs/2610.20586v1",
+        source: "arXiv Computer Science"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

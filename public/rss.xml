@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 23:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 23:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Continuum Attention Outperforms Softmax by Integrating Over Piecewise Linear Memory Curves</title>
+      <link>https://nextvector.rhasan.online/article/continuum-attention-replaces-discrete-kv-with-continuous-integration</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/continuum-attention-replaces-discrete-kv-with-continuous-integration</guid>
+      <description>Paper arXiv:2610.20586 replaces discrete token lookups with exact closed-form exponential moments, cutting validation perplexity at quadratic sequence complexity.</description>
+      <category>RESEARCH</category>
+      <pubDate>Thu, 15 Oct 2026 23:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Libreboot 26.10 Ships Native UEFI via EDK2 and Imports 233 Chromebook Configurations</title>
+      <link>https://nextvector.rhasan.online/article/libreboot-26-10-adds-uefi-imports-233-chromebook-boards</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/libreboot-26-10-adds-uefi-imports-233-chromebook-boards</guid>
+      <description>The &#x27;Ominous Olive&#x27; open firmware release enables Windows compatibility, syncs MrChromebox coreboot trees, and introduces strict repository anti-AI scraping rules.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 15 Oct 2026 23:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Goodfire AI Challenges Superposition Orthodoxy, Arguing Neural Networks Are Monosemantic</title>
+      <link>https://nextvector.rhasan.online/article/goodfire-ai-challenges-superposition-polysemanticity-theses</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/goodfire-ai-challenges-superposition-polysemanticity-theses</guid>
+      <description>Researcher Nick Cammarata argues that canonical vision polysemanticity was an artifact of incomplete circuit tracing, finding individual neurons track shared compositional motifs.</description>
+      <category>RESEARCH</category>
+      <pubDate>Thu, 15 Oct 2026 22:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anomaly Launches OpenCode 2.0 with Central Daemon and Embedded Codemode Runtime</title>
+      <link>https://nextvector.rhasan.online/article/opencode-2-overhauls-agentic-developer-infrastructure</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/opencode-2-overhauls-agentic-developer-infrastructure</guid>
+      <description>The open coding harness adds single-round-trip MCP script interpretation, background subagents, and async terminal tasks for developer swarms.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 15 Oct 2026 22:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Citizen Lab Exposes &#x27;AdFection&#x27;: Targeted Online Ads Weaponized for Zero-Click Spyware</title>
+      <link>https://nextvector.rhasan.online/article/citizen-lab-exposes-adfection-zero-click-spyware</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/citizen-lab-exposes-adfection-zero-click-spyware</guid>
+      <description>Investigation reveals how Israeli firm Discover-Tech exploited programmatic ad auctions and dynamic NOAS servers to infect targets with Candiru surveillance malware.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 15 Oct 2026 22:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Meta Releases Muse Spark Open: 816B-Parameter Multimodal Model for Local Mac Clusters</title>
+      <link>https://nextvector.rhasan.online/article/meta-releases-muse-spark-open-frontier-model</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-releases-muse-spark-open-frontier-model</guid>
+      <description>Weights for the 42B-active MoE architecture run natively on dual Apple M5 Ultra Mac Studios via MLX alongside custom Helion GPU kernels in SGLang.</description>
+      <category>AI</category>
+      <pubDate>Thu, 15 Oct 2026 22:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>European Authorities Investigate Coordinated Sabotage Against Starlink Ground Terminals</title>
       <link>https://nextvector.rhasan.online/article/starlink-ground-facility-sabotage-bulgaria-poland</link>
@@ -496,60 +550,6 @@
       <description>Autonomous multi-agent materials chemistry workflow screens 420,000 crystal structures to isolate YBaMnFeO5 and KV[Cr(CN)6] with validated DFT Curie temperatures above 340 K.</description>
       <category>SCIENCE</category>
       <pubDate>Mon, 05 Oct 2026 21:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Reflection AI Unveils Beam: 501B Open-Weight Mixture-of-Experts with 1M Context Window Under Apache 2.0</title>
-      <link>https://nextvector.rhasan.online/article/reflection-ai-unveils-beam-501b-open-weight-mixture-of-experts</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/reflection-ai-unveils-beam-501b-open-weight-mixture-of-experts</guid>
-      <description>Backed by Nvidia and DST Global, the startup releases a 501-billion parameter architecture activating 23B tokens per pass, challenging proprietary reasoning frontiers.</description>
-      <category>AI</category>
-      <pubDate>Mon, 05 Oct 2026 20:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Mold Linker 3.0 Released: Rui Ueyama Rewrites Ultra-Fast Linker from C++ to Rust, Drops oneTBB</title>
-      <link>https://nextvector.rhasan.online/article/mold-linker-3-rust-rewrite-high-performance-systems</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mold-linker-3-rust-rewrite-high-performance-systems</guid>
-      <description>The fastest Unix linker in software engineering migrates to pure Rust, adopting rayon parallelism, simplifying cross-platform compilation, and cutting peak memory by 22%.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 05 Oct 2026 18:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Q Labs Introduces Dust: Zeroth-Order Node Perturbation Pre-Trains Transformers Without Backpropagation</title>
-      <link>https://nextvector.rhasan.online/article/q-labs-dust-zeroth-order-transformer-pretraining-without-backprop</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/q-labs-dust-zeroth-order-transformer-pretraining-without-backprop</guid>
-      <description>By replacing memory-heavy gradient computation with stochastic forward-only perturbation passes, Dust slashes VRAM requirements by 68% on commodity hardware.</description>
-      <category>AI</category>
-      <pubDate>Mon, 05 Oct 2026 16:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Aleph Alpha Releases Kolibri-1: Sovereign 78B Open-Weight MoE Redefines European AI Independence</title>
-      <link>https://nextvector.rhasan.online/article/aleph-alpha-kolibri-1-sovereign-open-weight-moe</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/aleph-alpha-kolibri-1-sovereign-open-weight-moe</guid>
-      <description>Featuring 384 routed experts with 3.46B active parameters, 1M validated context, and Apache 2.0 licensing, Germany&#x27;s flagship foundation model delivers frontier reasoning on the Pareto frontier.</description>
-      <category>AI</category>
-      <pubDate>Mon, 05 Oct 2026 06:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Safety Leader David Robinson Resigns: Declares Company Culture &#x27;Broken&#x27; Over Iterative Deployment</title>
-      <link>https://nextvector.rhasan.online/article/openai-safety-leader-david-robinson-resigns-broken-culture</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-safety-leader-david-robinson-resigns-broken-culture</guid>
-      <description>Writing in The Atlantic after leading safety disclosures for 12 frontier launches, Robinson warns that trial-and-error commercial sprints make catastrophic agent breakout events inevitable.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 04 Oct 2026 22:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Federal Judge Declares Flock Safety ALPR Network &#x27;Indiscriminate Mass Surveillance&#x27; as Ban Flock Act Hits Senate</title>
-      <link>https://nextvector.rhasan.online/article/federal-judge-flock-safety-alpr-mass-surveillance-ban-flock-act</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/federal-judge-flock-safety-alpr-mass-surveillance-ban-flock-act</guid>
-      <description>In United States v. Kyle, Judge Sara E. Hill rules warrantless vehicular tracking violates the Fourth Amendment, sparking federal legislation to strip funding from police ALPR networks.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 04 Oct 2026 19:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

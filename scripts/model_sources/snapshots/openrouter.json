@@ -1,8 +1,139 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-13T23:15:59Z",
- "count": 461,
+ "fetchedAt": "2026-10-16T01:25:27Z",
+ "count": 465,
  "data": [
+  {
+   "id": "moondream/moondream3-preview",
+   "name": "Moondream: Moondream 3 Preview",
+   "created": 1792102385,
+   "createdDate": "2026-10-15",
+   "context_length": 32000,
+   "hugging_face_id": "moondream/moondream3-preview",
+   "input": 0.3,
+   "output": 2.5,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "moondream/moondream3.1-9b-a2b",
+   "name": "Moondream: Moondream 3.1",
+   "created": 1792102373,
+   "createdDate": "2026-10-15",
+   "context_length": 32000,
+   "hugging_face_id": "moondream/moondream3.1-9B-A2B",
+   "input": 0.3,
+   "output": 2.5,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "meta/muse-spark-open",
+   "name": "Meta: Muse Spark Open",
+   "created": 1792087069,
+   "createdDate": "2026-10-15",
+   "context_length": 1048576,
+   "hugging_face_id": "meta-models/Muse-Spark-Open-816B-A42B",
+   "input": 1.25,
+   "output": 4.25,
+   "cache_read": 0.15,
+   "input_modalities": [
+    "text",
+    "image",
+    "video",
+    "file",
+    "audio"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "created": 1792076662,
+   "createdDate": "2026-10-15",
+   "context_length": 1048576,
+   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "input": 0.15,
+   "output": 0.5,
+   "cache_read": 0.02,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl:free",
+   "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+   "created": 1792076662,
+   "createdDate": "2026-10-15",
+   "context_length": 1000000,
+   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "~unbiased/pareto-latest",
+   "name": "Pareto Latest",
+   "created": 1791933050,
+   "createdDate": "2026-10-13",
+   "context_length": 262144,
+   "hugging_face_id": null,
+   "input": 2.5,
+   "output": 7.5,
+   "cache_read": 0.25,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "unbiased/pareto-26.9",
+   "name": "Pareto 26.9",
+   "created": 1791930537,
+   "createdDate": "2026-10-13",
+   "context_length": 262144,
+   "hugging_face_id": null,
+   "input": 2.5,
+   "output": 7.5,
+   "cache_read": 0.25,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "liquid/lfm-2.5-24b-a2b",
    "name": "LiquidAI: LFM2.5-24B-A2B",
@@ -126,11 +257,11 @@
    "name": "StepFun: Step 5 Preview",
    "created": 1791462849,
    "createdDate": "2026-10-08",
-   "context_length": 1000000,
-   "hugging_face_id": null,
+   "context_length": 1048576,
+   "hugging_face_id": "stepfun-ai/Step-5-Preview",
    "input": 1.0,
    "output": 2.7,
-   "cache_read": 0.05,
+   "cache_read": 0.1,
    "input_modalities": [
     "text",
     "image",
@@ -227,24 +358,6 @@
    "cache_read": 0.015,
    "input_modalities": [
     "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "unbiased/pareto-26.10-preview",
-   "name": "Pareto 26.10 Preview",
-   "created": 1790863623,
-   "createdDate": "2026-10-01",
-   "context_length": 1048576,
-   "hugging_face_id": null,
-   "input": 0.8,
-   "output": 3.2,
-   "cache_read": 0.03,
-   "input_modalities": [
-    "text",
-    "image"
    ],
    "output_modalities": [
     "text"
@@ -872,33 +985,15 @@
    ]
   },
   {
-   "id": "unbiased/pareto",
-   "name": "Pareto",
-   "created": 1789686178,
-   "createdDate": "2026-09-17",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 2.5,
-   "output": 7.5,
-   "cache_read": 0.25,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "~deepseek/deepseek-pro-latest",
    "name": "DeepSeek: DeepSeek Pro Latest",
    "created": 1789399174,
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.16236,
-   "output": 0.48708,
-   "cache_read": 0.005166,
+   "input": 0.225,
+   "output": 8.0,
+   "cache_read": 0.23,
    "input_modalities": [
     "text"
    ],
@@ -913,8 +1008,8 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0441,
-   "output": 0.765,
+   "input": 0.01035,
+   "output": 0.684,
    "cache_read": 0.0054,
    "input_modalities": [
     "text",
@@ -1098,8 +1193,8 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.0441,
-   "output": 0.765,
+   "input": 0.01035,
+   "output": 0.684,
    "cache_read": 0.0054,
    "input_modalities": [
     "text",
@@ -1322,9 +1417,9 @@
    "createdDate": "2026-09-02",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.75,
-   "output": 3.75,
-   "cache_read": 0.075,
+   "input": 0.825,
+   "output": 4.125,
+   "cache_read": 0.0825,
    "input_modalities": [
     "text",
     "image",
@@ -1419,9 +1514,9 @@
    "createdDate": "2026-08-28",
    "context_length": 1048576,
    "hugging_face_id": "tencent/Hy4-preview",
-   "input": 0.7506,
-   "output": 2.2509,
-   "cache_read": 0.0378,
+   "input": 0.834,
+   "output": 2.501,
+   "cache_read": 0.042,
    "input_modalities": [
     "text"
    ],
@@ -1436,9 +1531,9 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0297,
+   "input": 0.0225,
    "output": 0.9,
-   "cache_read": 0.0108,
+   "cache_read": 0.01125,
    "input_modalities": [
     "text",
     "image",
@@ -1474,9 +1569,9 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.0297,
-   "output": 0.9,
-   "cache_read": 0.0108,
+   "input": 0.15,
+   "output": 0.5,
+   "cache_read": 0.03,
    "input_modalities": [
     "text",
     "image",
@@ -1584,9 +1679,9 @@
    "createdDate": "2026-08-19",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.063,
+   "input": 0.0608,
    "output": 4.4,
-   "cache_read": 0.0586,
+   "cache_read": 0.0565,
    "input_modalities": [
     "text"
    ],
@@ -1618,9 +1713,9 @@
    "createdDate": "2026-08-18",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3",
-   "input": 0.079,
-   "output": 4.8,
-   "cache_read": 0.059,
+   "input": 0.1,
+   "output": 6.0,
+   "cache_read": 0.099,
    "input_modalities": [
     "text"
    ],
@@ -1652,9 +1747,9 @@
    "createdDate": "2026-08-14",
    "context_length": 1000000,
    "hugging_face_id": "Qwen/Qwen3.8-27B",
-   "input": 0.04,
-   "output": 2.3,
-   "cache_read": 0.0198,
+   "input": 0.24,
+   "output": 2.2,
+   "cache_read": 0.05,
    "input_modalities": [
     "text",
     "image",
@@ -1786,9 +1881,9 @@
    "createdDate": "2026-08-12",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-   "input": 0.66,
-   "output": 1.98,
-   "cache_read": 0.022,
+   "input": 1.32,
+   "output": 3.96,
+   "cache_read": 0.044,
    "input_modalities": [
     "text"
    ],
@@ -1947,9 +2042,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0144,
-   "output": 0.576,
-   "cache_read": 0.0108,
+   "input": 0.0111,
+   "output": 0.64,
+   "cache_read": 0.0111,
    "input_modalities": [
     "text"
    ],
@@ -1964,9 +2059,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.016,
+   "input": 0.0111,
    "output": 0.64,
-   "cache_read": 0.016,
+   "cache_read": 0.0111,
    "input_modalities": [
     "text"
    ],
@@ -2288,9 +2383,9 @@
    "createdDate": "2026-07-16",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
-   "input": 0.73,
-   "output": 10.0,
-   "cache_read": 0.55,
+   "input": 0.339,
+   "output": 15.0,
+   "cache_read": 0.237,
    "input_modalities": [
     "text",
     "image",
@@ -2498,9 +2593,9 @@
    "createdDate": "2026-07-09",
    "context_length": 1050000,
    "hugging_face_id": null,
-   "input": 2.0,
-   "output": 10.0,
-   "cache_read": 0.2,
+   "input": 4.0,
+   "output": 20.0,
+   "cache_read": 0.4,
    "input_modalities": [
     "file",
     "image",
@@ -2517,9 +2612,9 @@
    "createdDate": "2026-07-09",
    "context_length": 1050000,
    "hugging_face_id": null,
-   "input": 1.0,
-   "output": 5.0,
-   "cache_read": 0.1,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.2,
    "input_modalities": [
     "file",
     "image",
@@ -2536,9 +2631,9 @@
    "createdDate": "2026-07-09",
    "context_length": 1050000,
    "hugging_face_id": null,
-   "input": 2.0,
-   "output": 10.0,
-   "cache_read": 0.2,
+   "input": 4.0,
+   "output": 20.0,
+   "cache_read": 0.4,
    "input_modalities": [
     "file",
     "image",
@@ -2555,9 +2650,9 @@
    "createdDate": "2026-07-09",
    "context_length": 1050000,
    "hugging_face_id": null,
-   "input": 1.0,
-   "output": 5.0,
-   "cache_read": 0.1,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.2,
    "input_modalities": [
     "file",
     "image",
@@ -2646,9 +2741,9 @@
    "createdDate": "2026-07-06",
    "context_length": 262144,
    "hugging_face_id": "tencent/Hy3",
-   "input": 0.0825,
-   "output": 0.33,
-   "cache_read": 0.020625,
+   "input": 0.132,
+   "output": 0.528,
+   "cache_read": 0.033,
    "input_modalities": [
     "text"
    ],
@@ -2827,9 +2922,9 @@
    "createdDate": "2026-06-16",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.2",
-   "input": 0.08,
-   "output": 7.0,
-   "cache_read": 0.07,
+   "input": 0.62,
+   "output": 2.42,
+   "cache_read": 0.14,
    "input_modalities": [
     "text"
    ],
@@ -3393,8 +3488,8 @@
    "context_length": 1048576,
    "hugging_face_id": null,
    "input": 2.0,
-   "output": 12.0,
-   "cache_read": 0.2,
+   "output": 10.0,
+   "cache_read": 0.1,
    "input_modalities": [
     "audio",
     "file",
@@ -3413,9 +3508,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.72,
+   "input": 0.319,
    "output": 24.0,
-   "cache_read": 0.3,
+   "cache_read": 0.309,
    "input_modalities": [
     "text",
     "image",
@@ -3510,9 +3605,9 @@
    "createdDate": "2026-04-27",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
-   "input": 0.1,
-   "output": 0.95,
-   "cache_read": 0.1,
+   "input": 0.15,
+   "output": 1.0,
+   "cache_read": 0.05,
    "input_modalities": [
     "text",
     "image",
@@ -3529,9 +3624,9 @@
    "createdDate": "2026-04-27",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-27B",
-   "input": 0.32,
-   "output": 3.2,
-   "cache_read": null,
+   "input": 0.25,
+   "output": 2.0,
+   "cache_read": 0.025,
    "input_modalities": [
     "text",
     "image",
@@ -3624,9 +3719,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.383496,
-   "output": 0.766992,
-   "cache_read": 0.031958,
+   "input": 0.95526,
+   "output": 1.91052,
+   "cache_read": 0.079605,
    "input_modalities": [
     "text"
    ],
@@ -3879,9 +3974,9 @@
    "createdDate": "2026-04-02",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-31B-it",
-   "input": 0.09,
-   "output": 0.34,
-   "cache_read": 0.05,
+   "input": 0.2,
+   "output": 0.4,
+   "cache_read": null,
    "input_modalities": [
     "image",
     "text",
@@ -4669,9 +4764,9 @@
    "createdDate": "2026-02-16",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-397B-A17B",
-   "input": 0.55,
-   "output": 3.5,
-   "cache_read": 0.225,
+   "input": 0.5,
+   "output": 3.6,
+   "cache_read": 0.3,
    "input_modalities": [
     "text",
     "image",
@@ -4689,8 +4784,8 @@
    "context_length": 204800,
    "hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
    "input": 0.27,
-   "output": 1.08,
-   "cache_read": 0.027,
+   "output": 0.95,
+   "cache_read": 0.03,
    "input_modalities": [
     "text"
    ],
@@ -4705,9 +4800,9 @@
    "createdDate": "2026-02-11",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5",
-   "input": 0.6,
-   "output": 1.92,
-   "cache_read": 0.12,
+   "input": 1.0,
+   "output": 3.2,
+   "cache_read": 0.2,
    "input_modalities": [
     "text"
    ],
@@ -5636,8 +5731,8 @@
    "createdDate": "2025-10-23",
    "context_length": 204800,
    "hugging_face_id": "MiniMaxAI/MiniMax-M2",
-   "input": 0.3,
-   "output": 1.2,
+   "input": 0.255,
+   "output": 1.02,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -6034,9 +6129,9 @@
    "createdDate": "2025-09-11",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-   "input": 0.1,
+   "input": 0.09,
    "output": 1.1,
-   "cache_read": 0.07,
+   "cache_read": null,
    "input_modalities": [
     "text"
    ],
@@ -6847,25 +6942,6 @@
    ]
   },
   {
-   "id": "anthropic/claude-sonnet-4",
-   "name": "Anthropic: Claude Sonnet 4",
-   "created": 1747930371,
-   "createdDate": "2025-05-22",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 3.0,
-   "output": 15.0,
-   "cache_read": 0.3,
-   "input_modalities": [
-    "image",
-    "text",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "mistralai/mistral-medium-3",
    "name": "Mistral: Mistral Medium 3",
    "created": 1746627341,
@@ -7628,8 +7704,8 @@
    "createdDate": "2024-12-26",
    "context_length": 163840,
    "hugging_face_id": "deepseek-ai/DeepSeek-V3",
-   "input": 0.32,
-   "output": 0.89,
+   "input": 0.2574,
+   "output": 1.0287,
    "cache_read": null,
    "input_modalities": [
     "text"

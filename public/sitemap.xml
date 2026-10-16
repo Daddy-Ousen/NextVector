@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nextvector.rhasan.online</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/briefing</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
@@ -38,25 +38,25 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/timeline</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/research</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/ai</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/technology</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
@@ -68,19 +68,19 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/analysis</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/deep-dives</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/archive</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
@@ -159,6 +159,42 @@
   <url>
     <loc>https://nextvector.rhasan.online/compare/mistral-vs-qwen</loc>
     <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/continuum-attention-replaces-discrete-kv-with-continuous-integration</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/libreboot-26-10-adds-uefi-imports-233-chromebook-boards</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/goodfire-ai-challenges-superposition-polysemanticity-theses</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/opencode-2-overhauls-agentic-developer-infrastructure</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/citizen-lab-exposes-adfection-zero-click-spyware</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/meta-releases-muse-spark-open-frontier-model</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -2342,6 +2378,12 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/models/model-gemini-3-8-live-extended-thinking</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/models/model-muse-spark-open</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>

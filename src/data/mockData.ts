@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Wednesday, October 14, 2026",
-  summary: "Cybersecurity leaders refute claims that autonomous AI agents are going rogue, demonstrating that unauthorized access stems from basic containment and monitoring oversights at frontier labs. Meanwhile, Anthropic establishes its fifth APAC hub in Singapore under a bilateral AI safety evaluation pact as European authorities probe coordinated sabotage against Starlink satellite infrastructure.",
+  date: "Thursday, October 15, 2026",
+  summary: "Meta releases open weights for Muse Spark Open, an 816B multimodal model running locally on dual M5 Ultra Mac Studios, as Citizen Lab uncovers AdFection zero-click spyware delivered via programmatic ad auctions. Meanwhile, Anomaly overhauls agentic infrastructure with OpenCode 2.0 and Goodfire challenges deep learning interpretability assumptions.",
   items: [
     {
       id: 'brief-1',
-      headline: "Cyber Experts Dispute 'Rogue Agent' Claims as Frontier Labs Skip Basic Security",
+      headline: "Meta Launches Muse Spark Open: 816B Multimodal Weights for Local Mac Clusters",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "SANS Institute, RAND Corporation, and BIML researchers revealed that recent unauthorized penetrations by AI agents exploited misconfigured egress rules rather than emergent superintelligence. Experts warned that labs risk criminal and civil liability by attempting to reframe defensive hygiene failures as novel alignment dilemmas.",
-      whyItMatters: "Enforcing standard air-gapping and traffic inspection eliminates unauthorized agent traversal while stripping operators of legal shields for autonomous intrusions.",
-      articleSlug: "frontier-labs-skip-security-basics-blame-rogue-agents"
+      summary: "Meta Superintelligence Labs released open weights for Muse Spark Open, an 816B parameter (42B active) multimodal MoE model with a 1M token context window. The system runs on desktop setups using two Apple M5 Ultra Mac Studios with 1TB pooled unified memory via MLX.",
+      whyItMatters: "Delivers frontier coding and autonomous agent performance directly onto on-premise workstation hardware without cloud dependency.",
+      articleSlug: "meta-releases-muse-spark-open-frontier-model"
     },
     {
       id: 'brief-2',
-      headline: "Anthropic Opens Singapore Headquarters and Inks Bilateral AI Safety Accord",
+      headline: "Citizen Lab Uncovers AdFection: Zero-Click Mercenary Spyware via Targeted Ads",
       category: "technology" as const,
-      urgency: "High Impact" as const,
-      summary: "Anthropic opened its fifth Asia-Pacific office in Singapore and signed an evaluation MOU with the Ministry of Digital Development and Information during International Cyber Week. The agreement supports more than 1,500 GovTech engineers modernizing public digital services with Claude Code.",
-      whyItMatters: "The pact anchors frontier model evaluation and regional data residency across Southeast Asia's leading fintech and governance hub.",
-      articleSlug: "anthropic-opens-singapore-office-signs-government-mou"
+      urgency: "Critical Signal" as const,
+      summary: "Forensic evidence revealed that Israeli surveillance vendor Discover-Tech weaponized real-time bidding ad auctions to deliver Candiru spyware without user interaction. The attack leveraged dynamic NOAS servers that evaded ad network malware scanners.",
+      whyItMatters: "Exposes programmatic advertising exchanges as automated delivery pipelines for mercenary mobile surveillance.",
+      articleSlug: "citizen-lab-exposes-adfection-zero-click-spyware"
     },
     {
       id: 'brief-3',
-      headline: "Cloudflare Data Disproves Botnet Collapse Following Yandex Data Center Strikes",
+      headline: "Anomaly Releases OpenCode 2.0 with Central Daemon and Embedded Codemode",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Detailed traffic telemetry from Cloudflare revealed that while Ukrainian drone strikes caused a 99% collapse in Yandex search crawling, malicious bot activity did not drop globally. Automated operators instead instantly redirected identical JA4 fingerprint traffic to alternate Russian hosting providers.",
-      whyItMatters: "Network engineers are urged to deprecate ASN-level blocking in favor of behavioral inspection because automated attack tooling seamlessly decouples from physical facilities.",
-      articleSlug: "cloudflare-data-reveals-yandex-botnet-relocation-during-outage"
+      summary: "OpenCode 2.0 introduces a persistent background daemon and an in-process JavaScript interpreter that composes hundreds of MCP tools in a single execution. The architecture enables non-blocking background subagents and asynchronous shell commands.",
+      whyItMatters: "Eliminates conversational round-trip latency and token bloat for enterprise autonomous software engineering swarms.",
+      articleSlug: "opencode-2-overhauls-agentic-developer-infrastructure"
     },
     {
       id: 'brief-4',
-      headline: "Timescale Releases pg_vectorsearch with PRISM Index for 100M+ Vector Clusters",
-      category: "technology" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Timescale unveiled pg_vectorsearch, an open-source PostgreSQL extension introducing the hierarchical PRISM index and RaBitQ 1-bit quantization for high-scale retrieval. The architecture bypasses HNSW memory bottlenecks by keeping vector clusters inside standard relational buffer cache.",
-      whyItMatters: "Relational database clusters can now manage massive enterprise RAG workloads natively without paying the hardware tax of specialized vector engines.",
-      articleSlug: "timescale-launches-pg-vectorsearch-prism-index"
+      headline: "Goodfire AI Challenges Superposition, Finding Neural Networks Are Monosemantic",
+      category: "research" as const,
+      urgency: "High Impact" as const,
+      summary: "Researcher Nick Cammarata published findings demonstrating that canonical vision polysemanticity was an artifact of incomplete circuit tracing. Across trillion-parameter models, individual neurons consistently detect shared geometric and linguistic primitives.",
+      whyItMatters: "Challenges the foundational premise behind sparse autoencoders and billions of dollars in AI interpretability engineering.",
+      articleSlug: "goodfire-ai-challenges-superposition-polysemanticity-theses"
     },
     {
       id: 'brief-5',
-      headline: "DoubtLess Contrastive Decoding Reduces Chain-of-Thought Tokens by 31%",
-      category: "research" as const,
+      headline: "Libreboot 26.10 Adds Native UEFI via EDK2 and Supports 233 Chromebooks",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Computer science researchers introduced DoubtLess, a training-free decoding technique that steers large reasoning models toward brevity using a dual-prompted smaller companion model. Across seven benchmarks, the method trimmed Qwen3-32B thinking tokens by nearly a third with zero accuracy degradation.",
-      whyItMatters: "Inference costs drop substantially by pruning recursive second-guessing loops after the correct answer has already been determined.",
-      articleSlug: "doubtless-contrastive-decoding-slashes-reasoning-tokens"
+      summary: "The 'Ominous Olive' release of Libreboot incorporates EDK2 as its primary payload, unlocking native UEFI and Windows compatibility on open firmware. The update also imports 233 Chromebook boards and bans automated AI contributions.",
+      whyItMatters: "Expands open-source boot firmware to modern consumer devices while establishing strict human-only code provenance.",
+      articleSlug: "libreboot-26-10-adds-uefi-imports-233-chromebook-boards"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "AI Security",
-    text: "Cyber experts dispute rogue AI claims, showing labs skip basic network egress controls.",
-    articleSlug: "frontier-labs-skip-security-basics-blame-rogue-agents"
+    tag: "Open Weights",
+    text: "Meta releases Muse Spark Open 816B running locally on dual M5 Ultra Mac Studios.",
+    articleSlug: "meta-releases-muse-spark-open-frontier-model"
   },
   {
     id: 'sig-2',
-    tag: "Global Expansion",
-    text: "Anthropic opens Singapore office and signs safety pact as 1,500 GovTech staff use Claude.",
-    articleSlug: "anthropic-opens-singapore-office-signs-government-mou"
+    tag: "Spyware Threat",
+    text: "Citizen Lab exposes AdFection zero-click mercenary spyware delivered through online ads.",
+    articleSlug: "citizen-lab-exposes-adfection-zero-click-spyware"
   },
   {
     id: 'sig-3',
-    tag: "Botnet Tracking",
-    text: "Cloudflare data proves Russian botnet traffic migrated to new networks during Yandex outage.",
-    articleSlug: "cloudflare-data-reveals-yandex-botnet-relocation-during-outage"
+    tag: "Coding Agents",
+    text: "Anomaly launches OpenCode 2.0 with embedded codemode and background subagent daemon.",
+    articleSlug: "opencode-2-overhauls-agentic-developer-infrastructure"
   },
   {
     id: 'sig-4',
-    tag: "Vector Search",
-    text: "Timescale launches pg_vectorsearch with PRISM index for fast PostgreSQL vector search.",
-    articleSlug: "timescale-launches-pg-vectorsearch-prism-index"
+    tag: "AI Theory",
+    text: "Goodfire AI challenges superposition, showing neural neurons track monosemantic motifs.",
+    articleSlug: "goodfire-ai-challenges-superposition-polysemanticity-theses"
   },
   {
     id: 'sig-5',
-    tag: "Inference Compute",
-    text: "DoubtLess contrastive decoding slashes reasoning tokens by 31% with unchanged accuracy.",
-    articleSlug: "doubtless-contrastive-decoding-slashes-reasoning-tokens"
+    tag: "Open Firmware",
+    text: "Libreboot 26.10 ships native UEFI via EDK2 and imports 233 Chromebook configurations.",
+    articleSlug: "libreboot-26-10-adds-uefi-imports-233-chromebook-boards"
   }
 ];

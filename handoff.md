@@ -1,3 +1,39 @@
+# Handoff — 2026-10-15 (Daily Intelligence Pipeline Run: art-240 to art-245)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch (Muse Spark Open), Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-240`: `meta-releases-muse-spark-open-frontier-model` (Hero / Model Report, Signal 94, Meta Muse Spark Open 816B total / 42B active multimodal MoE, 1M context, running on dual Apple M5 Ultra Mac Studios via MLX, $1.25/$4.25 per M tokens on OpenRouter).
+  - `art-241`: `citizen-lab-exposes-adfection-zero-click-spyware` (Featured / Deep Dive, Signal 93, Citizen Lab & Confiant exposure of AdFection zero-click mercenary spyware delivered through RTB ad auctions by Discover-Tech).
+  - `art-242`: `opencode-2-overhauls-agentic-developer-infrastructure` (Featured / Analysis, Signal 91, Anomaly OpenCode 2.0 architecture overhaul with persistent daemon, embedded codemode JS interpreter for MCP tools, and async subagents).
+  - `art-243`: `goodfire-ai-challenges-superposition-polysemanticity-theses` (Research Explained, Signal 90, Nick Cammarata of Goodfire AI theoretical analysis re-evaluating canonical vision circuits and arguing neural networks exhibit monosemantic composition).
+  - `art-244`: `libreboot-26-10-adds-uefi-imports-233-chromebook-boards` (Breaking, Signal 88, Libreboot 26.10 'Ominous Olive' shipping native UEFI via EDK2, Windows compatibility, importing 233 Chromebook boards, and adding strict anti-AI policy in AGENTS.md).
+  - `art-245`: `continuum-attention-replaces-discrete-kv-with-continuous-integration` (Research Explained, Signal 89, Afshin Khadangi arXiv:2610.20586v1 Continuum Attention replacing discrete token lookup with closed-form exponential moments over piecewise memory curves).
+- **Model Watch:**
+  - Added `model-muse-spark-open` (`meta/muse-spark-open` on OpenRouter, 816B total / 42B active MoE, 1,048,576 token context, $1.25 in / $4.25 out per 1M tokens) to `curated_models.json`.
+  - Rebuilt model registry via `python scripts/build_model_data.py` (total models tracked: 139).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Thursday, October 15, 2026` (5 items linking to art-240..244).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-240..244).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 18 bits from catalog (pairwise 28–40 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` prerendered 245 articles, 139 models, 10 showdowns; 413 static HTML files, sitemap 411 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-15-the-morning-vector.md` (`4be7e3e`).
+- **Commits:**
+  - `cfc1710`: `feat(intelligence): daily briefing and articles update [2026-10-15]`
+  - `4be7e3e`: `docs(newsletter): The Morning Vector [2026-10-15]`
+- **Stories Dropped / Excluded:**
+  - BBC Anthropic investor outreach / IPO preparations dropped as speculative financial commentary in favor of deep technical breakthroughs (Continuum Attention and Libreboot UEFI).
+  - Saudi OpenAI engineer arrest dropped as crime reporting without architectural/security relevance.
+- **Open Items:**
+  - Monitor Vercel automatic deployment for `main`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Many common Unsplash images have already been referenced in earlier articles. Always use `scripts/add_articles.py --check` or a dhash probing script to guarantee min distance > 8 bits and no reuse of photo IDs.
+
 # Handoff — 2026-10-14 (Daily Intelligence Pipeline Run: art-234 to art-239)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

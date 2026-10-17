@@ -1,8 +1,61 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-16T01:25:27Z",
- "count": 465,
+ "fetchedAt": "2026-10-17T07:33:07Z",
+ "count": 469,
  "data": [
+  {
+   "id": "elorian/glimpse",
+   "name": "Elorian: Glimpse",
+   "created": 1792206629,
+   "createdDate": "2026-10-17",
+   "context_length": 262144,
+   "hugging_face_id": null,
+   "input": 0.6,
+   "output": 3.0,
+   "cache_read": 0.06,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "xingchen-agi/xing4.0-29b-a4b:free",
+   "name": "XingChen: Xing4.0 29B A4B (free)",
+   "created": 1792177496,
+   "createdDate": "2026-10-16",
+   "context_length": 262144,
+   "hugging_face_id": "XingChen-AGI/Xing4.0-29B-A4B",
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "name": "Reflection: Beam 1.0 501B A23B",
+   "created": 1792160499,
+   "createdDate": "2026-10-16",
+   "context_length": 1048576,
+   "hugging_face_id": "reflection/Beam-1.0-501B-A23B",
+   "input": 1.0,
+   "output": 3.0,
+   "cache_read": 0.1,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "moondream/moondream3-preview",
    "name": "Moondream: Moondream 3 Preview",
@@ -67,9 +120,9 @@
    "createdDate": "2026-10-15",
    "context_length": 1048576,
    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
-   "input": 0.15,
-   "output": 0.5,
-   "cache_read": 0.02,
+   "input": 0.1,
+   "output": 0.4,
+   "cache_read": 0.08,
    "input_modalities": [
     "text",
     "image",
@@ -991,9 +1044,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.225,
-   "output": 8.0,
-   "cache_read": 0.23,
+   "input": 0.18668,
+   "output": 0.7497,
+   "cache_read": 0.19,
    "input_modalities": [
     "text"
    ],
@@ -1008,9 +1061,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.01035,
-   "output": 0.684,
-   "cache_read": 0.0054,
+   "input": 0.027,
+   "output": 0.4026,
+   "cache_read": 0.027,
    "input_modalities": [
     "text",
     "image"
@@ -1193,9 +1246,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.01035,
-   "output": 0.684,
-   "cache_read": 0.0054,
+   "input": 0.15,
+   "output": 0.6,
+   "cache_read": 0.003,
    "input_modalities": [
     "text",
     "image"
@@ -1211,9 +1264,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.112,
-   "output": 0.336,
-   "cache_read": 0.00336,
+   "input": 0.05,
+   "output": 0.15,
+   "cache_read": 0.004,
    "input_modalities": [
     "text",
     "image"
@@ -1531,9 +1584,9 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0225,
-   "output": 0.9,
-   "cache_read": 0.01125,
+   "input": 0.0419,
+   "output": 0.4182,
+   "cache_read": 0.0419,
    "input_modalities": [
     "text",
     "image",
@@ -1569,9 +1622,9 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.15,
-   "output": 0.5,
-   "cache_read": 0.03,
+   "input": 0.0419,
+   "output": 0.4182,
+   "cache_read": 0.0419,
    "input_modalities": [
     "text",
     "image",
@@ -1588,9 +1641,9 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.06,
-   "output": 0.2,
-   "cache_read": 0.012,
+   "input": 0.05,
+   "output": 0.18,
+   "cache_read": 0.01,
    "input_modalities": [
     "text",
     "image",
@@ -1679,9 +1732,9 @@
    "createdDate": "2026-08-19",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0608,
-   "output": 4.4,
-   "cache_read": 0.0565,
+   "input": 0.069,
+   "output": 2.2044,
+   "cache_read": 0.069,
    "input_modalities": [
     "text"
    ],
@@ -1713,9 +1766,9 @@
    "createdDate": "2026-08-18",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3",
-   "input": 0.1,
-   "output": 6.0,
-   "cache_read": 0.099,
+   "input": 0.079,
+   "output": 4.8,
+   "cache_read": 0.078,
    "input_modalities": [
     "text"
    ],
@@ -1881,9 +1934,9 @@
    "createdDate": "2026-08-12",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-   "input": 1.32,
-   "output": 3.96,
-   "cache_read": 0.044,
+   "input": 0.66,
+   "output": 1.98,
+   "cache_read": 0.022,
    "input_modalities": [
     "text"
    ],
@@ -2042,9 +2095,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0111,
-   "output": 0.64,
-   "cache_read": 0.0111,
+   "input": 0.0146,
+   "output": 0.9653,
+   "cache_read": 0.0146,
    "input_modalities": [
     "text"
    ],
@@ -2059,9 +2112,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.0111,
-   "output": 0.64,
-   "cache_read": 0.0111,
+   "input": 0.0146,
+   "output": 0.9653,
+   "cache_read": 0.0146,
    "input_modalities": [
     "text"
    ],
@@ -2383,9 +2436,9 @@
    "createdDate": "2026-07-16",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
-   "input": 0.339,
-   "output": 15.0,
-   "cache_read": 0.237,
+   "input": 0.304,
+   "output": 11.936,
+   "cache_read": 0.21,
    "input_modalities": [
     "text",
     "image",
@@ -3113,6 +3166,24 @@
    ]
   },
   {
+   "id": "qwen/qwen3.7-plus:batch",
+   "name": "Qwen: Qwen3.7 Plus (batch)",
+   "created": 1780491783,
+   "createdDate": "2026-06-03",
+   "context_length": 262144,
+   "hugging_face_id": null,
+   "input": 0.23,
+   "output": 0.92,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
    "id": "minimax/minimax-m3",
    "name": "MiniMax: MiniMax M3",
    "created": 1780245374,
@@ -3508,9 +3579,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.319,
-   "output": 24.0,
-   "cache_read": 0.309,
+   "input": 0.25,
+   "output": 8.5378,
+   "cache_read": 0.25,
    "input_modalities": [
     "text",
     "image",
@@ -3719,9 +3790,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.95526,
-   "output": 1.91052,
-   "cache_read": 0.079605,
+   "input": 0.2088,
+   "output": 0.4176,
+   "cache_read": 0.0174,
    "input_modalities": [
     "text"
    ],
@@ -3936,9 +4007,9 @@
    "createdDate": "2026-04-03",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-26B-A4B-it",
-   "input": 0.0765,
-   "output": 0.255,
-   "cache_read": 0.0425,
+   "input": 0.0675,
+   "output": 0.225,
+   "cache_read": 0.0375,
    "input_modalities": [
     "image",
     "text",
@@ -5104,9 +5175,9 @@
    "createdDate": "2025-12-22",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-4.7",
-   "input": 0.6,
-   "output": 2.2,
-   "cache_read": 0.11,
+   "input": 0.54,
+   "output": 1.98,
+   "cache_read": 0.099,
    "input_modalities": [
     "text"
    ],
@@ -5494,9 +5565,9 @@
    "createdDate": "2025-12-01",
    "context_length": 163840,
    "hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
-   "input": 0.259,
-   "output": 0.8,
-   "cache_read": 0.14,
+   "input": 0.28,
+   "output": 0.42,
+   "cache_read": 0.028,
    "input_modalities": [
     "text"
    ],
@@ -7263,8 +7334,8 @@
    "createdDate": "2025-04-05",
    "context_length": 1310720,
    "hugging_face_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
-   "input": 0.18,
-   "output": 0.59,
+   "input": 0.1,
+   "output": 0.3,
    "cache_read": null,
    "input_modalities": [
     "text",
@@ -7704,8 +7775,8 @@
    "createdDate": "2024-12-26",
    "context_length": 163840,
    "hugging_face_id": "deepseek-ai/DeepSeek-V3",
-   "input": 0.2574,
-   "output": 1.0287,
+   "input": 0.32,
+   "output": 0.89,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -7774,9 +7845,9 @@
    "createdDate": "2024-12-06",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
-   "input": 0.59,
-   "output": 0.79,
-   "cache_read": 0.295,
+   "input": 0.1,
+   "output": 0.32,
+   "cache_read": null,
    "input_modalities": [
     "text"
    ],

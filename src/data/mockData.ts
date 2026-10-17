@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Thursday, October 15, 2026",
-  summary: "Meta releases open weights for Muse Spark Open, an 816B multimodal model running locally on dual M5 Ultra Mac Studios, as Citizen Lab uncovers AdFection zero-click spyware delivered via programmatic ad auctions. Meanwhile, Anomaly overhauls agentic infrastructure with OpenCode 2.0 and Goodfire challenges deep learning interpretability assumptions.",
+  date: "Saturday, October 17, 2026",
+  summary: "Anthropic's Frontier Red Team cracked the 25-year-old mystery behind NIST ECDSA curve seeds, proving standard parameters stem from simple timestamped PRNG outputs rather than backdoors. Meanwhile, automated AI co-design achieved historic breakthroughs as Claude slashed quantum circuit gate counts by 17x and Gemini 4 Argon agents autonomously beat Minecraft.",
   items: [
     {
       id: 'brief-1',
-      headline: "Meta Launches Muse Spark Open: 816B Multimodal Weights for Local Mac Clusters",
+      headline: "Anthropic Red Team Solves 25-Year Mystery of NIST ECDSA Elliptic Curve Seeds",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Meta Superintelligence Labs released open weights for Muse Spark Open, an 816B parameter (42B active) multimodal MoE model with a 1M token context window. The system runs on desktop setups using two Apple M5 Ultra Mac Studios with 1TB pooled unified memory via MLX.",
-      whyItMatters: "Delivers frontier coding and autonomous agent performance directly onto on-premise workstation hardware without cloud dependency.",
-      articleSlug: "meta-releases-muse-spark-open-frontier-model"
+      summary: "Using lattice reduction, Claude proved the standardized NIST P-256 and P-384 seeds were outputs of 1990s C generator lrand48 seeded with Unix timestamps. The finding settles decades of suspicion regarding potential NSA backdoors.",
+      whyItMatters: "Provides definitive mathematical evidence confirming the integrity of the cryptographic standard that underpins global web security.",
+      articleSlug: "claude-reveals-origins-of-nist-ecdsa-elliptic-curve-seeds"
     },
     {
       id: 'brief-2',
-      headline: "Citizen Lab Uncovers AdFection: Zero-Click Mercenary Spyware via Targeted Ads",
-      category: "technology" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Forensic evidence revealed that Israeli surveillance vendor Discover-Tech weaponized real-time bidding ad auctions to deliver Candiru spyware without user interaction. The attack leveraged dynamic NOAS servers that evaded ad network malware scanners.",
-      whyItMatters: "Exposes programmatic advertising exchanges as automated delivery pipelines for mercenary mobile surveillance.",
-      articleSlug: "citizen-lab-exposes-adfection-zero-click-spyware"
+      headline: "Anthropic and Harvard Use Claude to Discover Reversible Quantum Circuits With 17x Gate Reductions",
+      category: "research" as const,
+      urgency: "High Impact" as const,
+      summary: "In an autonomous 53-hour closed loop, Claude invented the first reversible divsteps modular inversion architecture without stored branch history. The design achieves a 17-fold reduction in Toffoli gates over prior human art.",
+      whyItMatters: "Accelerates the timeline toward practical quantum chemistry and optimization by slashing fault-tolerant hardware resource requirements.",
+      articleSlug: "anthropic-harvard-claude-discovers-state-of-the-art-quantum-circuits"
     },
     {
       id: 'brief-3',
-      headline: "Anomaly Releases OpenCode 2.0 with Central Daemon and Embedded Codemode",
-      category: "technology" as const,
+      headline: "Gemini 4 Argon Multi-Agent Swarm Autonomously Defeats Minecraft Without Human Scaffolding",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "OpenCode 2.0 introduces a persistent background daemon and an in-process JavaScript interpreter that composes hundreds of MCP tools in a single execution. The architecture enables non-blocking background subagents and asynchronous shell commands.",
-      whyItMatters: "Eliminates conversational round-trip latency and token bloat for enterprise autonomous software engineering swarms.",
-      articleSlug: "opencode-2-overhauls-agentic-developer-infrastructure"
+      summary: "Four Gemini 4 Argon agents deployed via Mineflayer authored 2,783 custom programs and defeated the Ender Dragon in 27 hours with zero human intervention. The run demonstrated emergent multi-day planning and item recovery.",
+      whyItMatters: "Validates the capability of frontier foundation models to maintain collaborative operational coherence across thousands of dependent steps.",
+      articleSlug: "gemini-4-argon-agents-autonomously-defeat-minecraft"
     },
     {
       id: 'brief-4',
-      headline: "Goodfire AI Challenges Superposition, Finding Neural Networks Are Monosemantic",
-      category: "research" as const,
-      urgency: "High Impact" as const,
-      summary: "Researcher Nick Cammarata published findings demonstrating that canonical vision polysemanticity was an artifact of incomplete circuit tracing. Across trillion-parameter models, individual neurons consistently detect shared geometric and linguistic primitives.",
-      whyItMatters: "Challenges the foundational premise behind sparse autoencoders and billions of dollars in AI interpretability engineering.",
-      articleSlug: "goodfire-ai-challenges-superposition-polysemanticity-theses"
+      headline: "Reflection AI Releases Beam 1.0: 501B Open-Weight MoE Model Arrives on OpenRouter",
+      category: "ai" as const,
+      urgency: "Notable Shift" as const,
+      summary: "Reflection AI published Apache 2.0 weights for Beam 1.0, a 23B-active MoE model trained on 23.8T tokens across 6,144 Nvidia GB300 GPUs. Hosted endpoints are now live on OpenRouter with 1M context at $1.00/$3.00 pricing.",
+      whyItMatters: "Expands open-weight options for long-horizon agentic workflows and coding tasks with competitive inference economics.",
+      articleSlug: "reflection-ai-releases-beam-501b-open-weight-moe-model"
     },
     {
       id: 'brief-5',
-      headline: "Libreboot 26.10 Adds Native UEFI via EDK2 and Supports 233 Chromebooks",
+      headline: "Inside Anthropic's Claude Code Review Pipeline: Doubling Pull Requests While Slashing Reverts 40%",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "The 'Ominous Olive' release of Libreboot incorporates EDK2 as its primary payload, unlocking native UEFI and Windows compatibility on open firmware. The update also imports 233 Chromebook boards and bans automated AI contributions.",
-      whyItMatters: "Expands open-source boot firmware to modern consumer devices while establishing strict human-only code provenance.",
-      articleSlug: "libreboot-26-10-adds-uefi-imports-233-chromebook-boards"
+      summary: "With Claude generating 90% of its codebase, the Claude Code team deployed parallel bug-hunting agents, voting verifiers, and risk classifiers. The system handled a doubling of pull requests while reducing revert rates by 40%.",
+      whyItMatters: "Establishes an engineering blueprint for scaling code review as developer teams transition to high-velocity agentic software creation.",
+      articleSlug: "claude-code-team-details-multi-agent-code-review-pipeline"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Open Weights",
-    text: "Meta releases Muse Spark Open 816B running locally on dual M5 Ultra Mac Studios.",
-    articleSlug: "meta-releases-muse-spark-open-frontier-model"
+    tag: "Cryptography",
+    text: "Anthropic solves 25-year NIST P-256 seed mystery, proving curves generated via lrand48.",
+    articleSlug: "claude-reveals-origins-of-nist-ecdsa-elliptic-curve-seeds"
   },
   {
     id: 'sig-2',
-    tag: "Spyware Threat",
-    text: "Citizen Lab exposes AdFection zero-click mercenary spyware delivered through online ads.",
-    articleSlug: "citizen-lab-exposes-adfection-zero-click-spyware"
+    tag: "Quantum AI",
+    text: "Anthropic and Harvard co-design quantum circuits with Claude, cutting Toffoli gates 17x.",
+    articleSlug: "anthropic-harvard-claude-discovers-state-of-the-art-quantum-circuits"
   },
   {
     id: 'sig-3',
-    tag: "Coding Agents",
-    text: "Anomaly launches OpenCode 2.0 with embedded codemode and background subagent daemon.",
-    articleSlug: "opencode-2-overhauls-agentic-developer-infrastructure"
+    tag: "Autonomous Swarms",
+    text: "Four Gemini 4 Argon agents defeat Minecraft survival mode end-to-end in 27 hours.",
+    articleSlug: "gemini-4-argon-agents-autonomously-defeat-minecraft"
   },
   {
     id: 'sig-4',
-    tag: "AI Theory",
-    text: "Goodfire AI challenges superposition, showing neural neurons track monosemantic motifs.",
-    articleSlug: "goodfire-ai-challenges-superposition-polysemanticity-theses"
+    tag: "Open Weights",
+    text: "Reflection AI releases Beam 1.0 501B MoE with 1M context on OpenRouter and Hugging Face.",
+    articleSlug: "reflection-ai-releases-beam-501b-open-weight-moe-model"
   },
   {
     id: 'sig-5',
-    tag: "Open Firmware",
-    text: "Libreboot 26.10 ships native UEFI via EDK2 and imports 233 Chromebook configurations.",
-    articleSlug: "libreboot-26-10-adds-uefi-imports-233-chromebook-boards"
+    tag: "Code Intelligence",
+    text: "Anthropic details Claude Code review harness, cutting reverts 40% as PR volume doubles.",
+    articleSlug: "claude-code-team-details-multi-agent-code-review-pipeline"
   }
 ];

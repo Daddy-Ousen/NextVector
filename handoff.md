@@ -1,3 +1,39 @@
+# Handoff — 2026-10-17 (Daily Intelligence Pipeline Run: art-246 to art-251)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch (Beam 1.0 501B), Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-246`: `claude-reveals-origins-of-nist-ecdsa-elliptic-curve-seeds` (Hero / Deep Dive, Signal 95, Filippo Valsorda and Anthropic use Claude to reconstruct the natural-language English/French SHA-1 and Mersenne Twister seeds behind NIST P-192..P-521 elliptic curves, resolving 25-year NSA backdoor speculation).
+  - `art-247`: `anthropic-harvard-claude-discovers-state-of-the-art-quantum-circuits` (Featured / Research Explained, Signal 93, Anthropic & Harvard arXiv:2610.22367v1 demonstrating Claude finding stabilizer state preparation circuits achieving 2.5x to 7.5x gate depth reductions in Surface-17, Surface-49, and Floquet color codes).
+  - `art-248`: `gemini-4-argon-agents-autonomously-defeat-minecraft` (Featured / Discovery, Signal 91, Google DeepMind arXiv:2610.22319v1 detailing Gemini 4 Argon defeating the Ender Dragon from scratch with a 48.7% success rate under raw visual inputs and continuous controls).
+  - `art-249`: `reflection-ai-releases-beam-501b-open-weight-moe-model` (Model Report, Signal 91, Reflection AI Apache 2.0 release of Beam-1.0-501B-A23B, 501B total / 23B active MoE with 1M-token context, $1.00 prompt / $3.00 completion on OpenRouter).
+  - `art-250`: `claude-code-team-details-multi-agent-code-review-pipeline` (Analysis, Signal 90, Anthropic Claude Code engineering post revealing 4-stage multi-agent code review architecture achieving 84.2% precision and 63% PR latency reduction).
+  - `art-251`: `black-forest-labs-releases-flux-3-image-klein` (Discovery, Signal 88, Black Forest Labs FLUX 3 Image Klein 8-step rectified flow distillation running sub-50ms inference on consumer RTX 4090 GPUs).
+- **Model Watch:**
+  - Added `model-beam-1-0-501b-a23b` (`reflection/beam-1.0-501b-a23b` on OpenRouter, 501B total / 23B active MoE, 1,048,576 token context, $1.00 in / $3.00 out per 1M tokens) to `curated_models.json`.
+  - Rebuilt model registry via `python scripts/build_model_data.py` (total models tracked: 140).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Saturday, October 17, 2026` (5 items linking to art-246..250).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-246..250).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 16 bits from catalog (pairwise 26–41 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` prerendered 251 articles, 140 models, 10 showdowns; 420 static HTML files, sitemap 418 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-17-the-morning-vector.md` (`747fd0b`).
+- **Commits:**
+  - `8d36df4`: `feat(intelligence): daily briefing and articles update [2026-10-17]`
+  - `747fd0b`: `docs(newsletter): The Morning Vector [2026-10-17]`
+- **Stories Dropped / Excluded:**
+  - Synnovis NHS cyberattack fallout dropped as regional/non-architectural health IT reporting.
+  - Mercor labor index and speculative market valuations dropped in favor of technical breakthroughs.
+- **Open Items:**
+  - Monitor Vercel automatic deployment for `main`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Standard Unsplash queries for popular tech concepts often collide with older catalog articles (e.g., photo-1581092160607-ee22621dd758 and photo-1519389950473-47ba0277781c were rejected by `add_articles.py`). Always verify candidate photo IDs and dhash distance before batch write.
+
 # Handoff — 2026-10-15 (Daily Intelligence Pipeline Run: art-240 to art-245)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch (Muse Spark Open), Verification 8/8 Passed, Newsletter Published

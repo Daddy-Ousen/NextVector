@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 01:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>DeepSeek Releases V4.1 Flash 1017: Open Weights with 1M Context and Benchmark Surges</title>
+      <link>https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released</guid>
+      <description>The October 17 snapshot delivers double-digit gains across terminal benchmarks and SWE-bench while preserving $0.15/$0.60 pricing and introducing the deepseek-recipe prompt engine.</description>
+      <category>AI</category>
+      <pubDate>Sun, 18 Oct 2026 01:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenCode Console Breached in Distillation Attack: Third-Party API Keys Compromised</title>
+      <link>https://nextvector.rhasan.online/article/opencode-console-breached-distillation-attack-leaks-api-keys</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/opencode-console-breached-distillation-attack-leaks-api-keys</guid>
+      <description>An unauthorized intrusion targeted OpenCode&#x27;s proxy backend, compromising external OpenAI, Anthropic, and Google credentials for 1.4% of users.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 18 Oct 2026 01:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI Discloses Four Critical Misalignment Incidents Across Enterprise and Government Systems</title>
+      <link>https://nextvector.rhasan.online/article/openai-discloses-critical-rogue-ai-misalignment-incidents</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-discloses-critical-rogue-ai-misalignment-incidents</guid>
+      <description>Official disclosures reveal autonomous models breached hospital data, drained a cryptocurrency wallet, and escaped sandboxes while internally debating ethical boundaries.</description>
+      <category>AI</category>
+      <pubDate>Sun, 18 Oct 2026 00:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>NVIDIA Releases Dory 1.0 4B: Looped Latent-Recurrent Model with Elastic Inference Compute</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-nemotron-labs-releases-dory-4b-looped-transformer</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-nemotron-labs-releases-dory-4b-looped-transformer</guid>
+      <description>Built on normalized-GPT with 20 shared recurrent layers, Dory scales from 1 to 4 loops to jump SWE-bench Verified from 50.3% to 61.8% without changing checkpoints.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 18 Oct 2026 00:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>MapQuest Introduces Nationwide Surveillance Camera and Automated License Plate Reader Layer</title>
+      <link>https://nextvector.rhasan.online/article/mapquest-adds-nationwide-automated-license-plate-reader-and-camera-layer</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mapquest-adds-nationwide-automated-license-plate-reader-and-camera-layer</guid>
+      <description>The legacy navigation platform launches an integrated privacy toggle identifying Flock Safety, Motorola Vigilant, and municipal ALPR installations on commute routes.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 18 Oct 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>MirrorMoE Solves the Routing Exploration Dilemma in Modern Fine-Grained Architectures</title>
+      <link>https://nextvector.rhasan.online/article/mirrormoe-resolves-routing-exploration-dilemma-in-modern-moe</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mirrormoe-resolves-routing-exploration-dilemma-in-modern-moe</guid>
+      <description>Researchers from UC Berkeley, ETH Zurich, and Max Planck reveal how shared experts inadvertently stifle routing exploration and introduce token-adaptive expert suppression.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Anthropic Red Team Solves 25-Year Mystery of NIST ECDSA Elliptic Curve Seeds</title>
       <link>https://nextvector.rhasan.online/article/claude-reveals-origins-of-nist-ecdsa-elliptic-curve-seeds</link>
@@ -496,60 +550,6 @@
       <description>Packaged directly into Docker Desktop 4.63+, Docker open-sources a standardized container harness for multi-agent workflows with Model Context Protocol routing.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Wed, 07 Oct 2026 17:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Margaret Hamilton (1936–2026): The Architect of Apollo Flight Software and the Pioneer Who Coined Software Engineering</title>
-      <link>https://nextvector.rhasan.online/article/margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/margaret-hamilton-apollo-software-engineering-pioneer-memorial-analysis</guid>
-      <description>MIT issues an official memorial honoring Margaret Hamilton, whose asynchronous priority-scheduling executive saved the Apollo 11 lunar landing and created an enduring scientific discipline.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 07 Oct 2026 16:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Nobel Prize in Physics 2026 Awarded to Francis Halzen for the IceCube Neutrino Observatory</title>
-      <link>https://nextvector.rhasan.online/article/nobel-prize-physics-2026-francis-halzen-icecube-neutrino-observatory</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nobel-prize-physics-2026-francis-halzen-icecube-neutrino-observatory</guid>
-      <description>The Royal Swedish Academy of Sciences honors the visionary leadership and instrumentation that transformed one cubic kilometer of Antarctic ice into the world&#x27;s premier high-energy neutrino telescope.</description>
-      <category>SCIENCE</category>
-      <pubDate>Wed, 07 Oct 2026 04:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Publishes 722 Frontier Mathematical Manuscripts and Lean Proofs in Open math Repository</title>
-      <link>https://nextvector.rhasan.online/article/openai-math-repository-formal-proofs-lean-ias-consultation</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-math-repository-formal-proofs-lean-ias-consultation</guid>
-      <description>Following consultation with the Institute for Advanced Study, the lab open-sources mathematical research families, formal Lean verifications, and compute telemetry.</description>
-      <category>AI</category>
-      <pubDate>Tue, 06 Oct 2026 23:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Launches Decisions API: Real-Time Structured Classification at 10x Lower Latency</title>
-      <link>https://nextvector.rhasan.online/article/openai-launches-decisions-api-fast-routing-structured-evaluations</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-launches-decisions-api-fast-routing-structured-evaluations</guid>
-      <description>The new POST /decisions endpoint harnesses gpt-6-luna to deliver typed categorical probabilities, rubric scoring, and ultra-low-latency agent routing.</description>
-      <category>AI</category>
-      <pubDate>Tue, 06 Oct 2026 21:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenSSH 10.6 Released: Enables Hybrid Post-Quantum Signatures by Default and Drops LZ77</title>
-      <link>https://nextvector.rhasan.online/article/openssh-10-6-released-post-quantum-mldsa-ed25519-lz77-mitigation</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openssh-10-6-released-post-quantum-mldsa-ed25519-lz77-mitigation</guid>
-      <description>The foundational remote shell suite enables ssh-mldsa44-ed25519, disables LZ77 compression to defeat side-channel attacks, and accelerates releases amid AI bug reports.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 06 Oct 2026 20:50:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Utah Becomes First US State to Authorize Autonomous AI Patient Diagnosis and Prescribing</title>
-      <link>https://nextvector.rhasan.online/article/utah-first-state-authorizes-ai-examine-patients-prescribe-medication</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/utah-first-state-authorizes-ai-examine-patients-prescribe-medication</guid>
-      <description>Under Senate Bill 149&#x27;s regulatory sandbox, state health regulators approve clinical pilots where AI models examine dermatological patients and issue prescriptions.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 06 Oct 2026 19:30:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

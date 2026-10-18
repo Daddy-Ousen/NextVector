@@ -262,12 +262,12 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
     "modelIdB": "model-gpt-6-sol",
     "seoTitle": "DeepSeek-V4.1-Flash vs GPT-6 Sol: Arena Score, Price & Context | NextVector",
     "seoDescription": "DeepSeek-V4.1-Flash vs GPT-6 Sol side by side: arena.ai text score, list price per 1M tokens, context window and licence, with sources. Data checked 2026-10-11.",
-    "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67). DeepSeek-V4.1-Flash leads by 19 points, outside the margin of error. DeepSeek-V4.1-Flash: $0.15 input / $0.60 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 93% less ($0.26 vs $4.00 per 1M tokens). Context windows are about the same: DeepSeek-V4.1-Flash 1M tokens, GPT-6 Sol 1.05M tokens. DeepSeek-V4.1-Flash has open weights (MIT) and can be self-hosted; GPT-6 Sol is available only as a hosted API.",
+    "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67). DeepSeek-V4.1-Flash leads by 19 points, outside the margin of error. DeepSeek-V4.1-Flash: $0.054 input / $0.144 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 98% less ($0.08 vs $4.00 per 1M tokens). Context windows are about the same: DeepSeek-V4.1-Flash 1M tokens, GPT-6 Sol 1.05M tokens. DeepSeek-V4.1-Flash has open weights (MIT) and can be self-hosted; GPT-6 Sol is available only as a hosted API.",
     "verdictA": {
       "title": "Where DeepSeek-V4.1-Flash leads (by the data):",
       "points": [
         "Higher arena.ai text score (1475 vs 1456).",
-        "93% lower blended list price ($0.26 vs $4.00 per 1M tokens).",
+        "98% lower blended list price ($0.08 vs $4.00 per 1M tokens).",
         "Open weights (MIT): can be self-hosted."
       ]
     },
@@ -284,7 +284,7 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
       },
       {
         "question": "Which is cheaper: DeepSeek-V4.1-Flash or GPT-6 Sol?",
-        "answer": "DeepSeek-V4.1-Flash: $0.15 input / $0.60 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 93% less ($0.26 vs $4.00 per 1M tokens)."
+        "answer": "DeepSeek-V4.1-Flash: $0.054 input / $0.144 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 98% less ($0.08 vs $4.00 per 1M tokens)."
       },
       {
         "question": "Which has the larger context window?",
@@ -450,8 +450,8 @@ export const GUIDE_PICKS: GuidePick[] = [
     "modelId": "model-glm-5-3-flash",
     "modelName": "GLM-5.3-Flash",
     "developer": "Zhipu AI",
-    "metric": "Arena 1475 at $0.14 blended",
-    "price": "$0.042 / $0.418 per 1M tokens"
+    "metric": "Arena 1475 at $0.09 blended",
+    "price": "$0.048 / $0.20 per 1M tokens"
   },
   {
     "id": "open",

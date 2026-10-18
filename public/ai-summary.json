@@ -62,8 +62,8 @@
         "rule": "Highest Arena score with a blended list price under $0.20 per 1M tokens.",
         "model": "GLM-5.3-Flash",
         "developer": "Zhipu AI",
-        "metric": "Arena 1475 at $0.14 blended",
-        "listPrice": "$0.042 / $0.418 per 1M tokens",
+        "metric": "Arena 1475 at $0.09 blended",
+        "listPrice": "$0.048 / $0.20 per 1M tokens",
         "url": "https://nextvector.rhasan.online/models/model-glm-5-3-flash"
       },
       {

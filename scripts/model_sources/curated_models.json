@@ -120,6 +120,7 @@
     {"id": "model-glm-4-6", "name": "GLM-4.6", "dev": "Zhipu AI", "arena": "glm-4.6", "or": "z-ai/glm-4.6", "swe": "GLM 4.6", "params": "355B total, 32B active (MoE)", "paramsSrc": "https://huggingface.co/zai-org/GLM-4.6", "aa": ["glm-4-6", "glm-4-6-reasoning"]},
     {"id": "model-glm-4-5", "name": "GLM-4.5", "dev": "Zhipu AI", "arena": "glm-4.5", "or": "z-ai/glm-4.5", "swe": "GLM 4.5", "params": "355B total, 32B active (MoE)", "paramsSrc": "https://huggingface.co/zai-org/GLM-4.5", "aa": ["glm-4.5"]},
 
+    {"id": "model-deepseek-v4-1-flash-1017", "name": "DeepSeek-V4.1-Flash-1017", "dev": "DeepSeek", "or": "deepseek/deepseek-v4.1-flash-1017"},
     {"id": "model-deepseek-v4-1-flash", "name": "DeepSeek-V4.1-Flash", "dev": "DeepSeek", "arena": "deepseek-v4.1-flash-max", "or": "deepseek/deepseek-v4.1-flash", "aa": ["deepseek-v4-1-flash", "deepseek-v4-1-flash-non-reasoning"]},
     {"id": "model-deepseek-v4-pro-0813", "name": "DeepSeek-V4-Pro-0813", "dev": "DeepSeek", "arena": "deepseek-v4-pro-high-20260813", "or": "deepseek/deepseek-v4-pro-0813", "aa": ["deepseek-v4-pro", "deepseek-v4-pro-non-reasoning"]},
     {"id": "model-deepseek-v4-pro", "name": "DeepSeek-V4-Pro", "dev": "DeepSeek", "arena": "deepseek-v4-pro", "or": "deepseek/deepseek-v4-pro", "aliases": ["model-deepseek-v4-pro-max"], "aa": ["deepseek-v4-pro-0424", "deepseek-v4-pro-0424-high", "deepseek-v4-pro-0424-non-reasoning"]},

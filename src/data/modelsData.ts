@@ -6272,7 +6272,7 @@ export const ALL_MODELS: AIModel[] = [
     "parameters": "Not listed in our sources",
     "pricing": {
       "inputPer1M": 0.079,
-      "outputPer1M": 4.8,
+      "outputPer1M": 3.2,
       "cachedInputPer1M": 0.078,
       "source": "OpenRouter list price"
     },
@@ -6319,7 +6319,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://z.ai/blog/glm-5.3",
-    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.08 input / $4.80 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.08 input / $3.20 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -6360,9 +6360,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.0419,
-      "outputPer1M": 0.4182,
-      "cachedInputPer1M": 0.0419,
+      "inputPer1M": 0.048,
+      "outputPer1M": 0.2,
+      "cachedInputPer1M": 0.006,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6408,7 +6408,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://z.ai/blog/glm-5.3",
-    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.04 input / $0.42 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.05 input / $0.20 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -6999,6 +6999,48 @@ export const ALL_MODELS: AIModel[] = [
     "dataAsOf": "2026-10-11"
   },
   {
+    "id": "model-deepseek-v4-1-flash-1017",
+    "name": "DeepSeek-V4.1-Flash-1017",
+    "developer": "DeepSeek",
+    "releaseDate": "October 2026",
+    "releaseDateSource": "OpenRouter listing date",
+    "modelType": "Open Weights",
+    "modalities": [
+      "Text",
+      "Vision"
+    ],
+    "contextWindow": "1M tokens",
+    "contextTokens": 1048576,
+    "parameters": "Not listed in our sources",
+    "pricing": {
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.003,
+      "source": "OpenRouter list price"
+    },
+    "openSourceStatus": "Open Weights",
+    "license": "Open weights (see Hugging Face)",
+    "hardwareRequirements": "Open weights on Hugging Face (deepseek-ai/DeepSeek-V4.1-Flash-1017)",
+    "benchmarks": [],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+    "summary": "Open Weights model from DeepSeek, listed October 2026. $0.15 input / $0.60 output per 1M tokens. 1M tokens context.",
+    "sources": [
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+      },
+      {
+        "label": "Hugging Face weights",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      }
+    ],
+    "dataAsOf": "2026-10-11"
+  },
+  {
     "id": "model-deepseek-v4-1-flash",
     "name": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",
@@ -7013,9 +7055,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 0.6,
-      "cachedInputPer1M": 0.003,
+      "inputPer1M": 0.0536,
+      "outputPer1M": 0.144,
+      "cachedInputPer1M": 0.0016,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7047,7 +7089,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
-    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.15 input / $0.60 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.05 input / $0.14 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7329,9 +7371,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.0146,
-      "outputPer1M": 0.9653,
-      "cachedInputPer1M": 0.0146,
+      "inputPer1M": 0.1,
+      "outputPer1M": 0.3,
+      "cachedInputPer1M": 0.03,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7366,7 +7408,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
-    "summary": "Open Weights model from DeepSeek, listed July 2026. $0.01 input / $0.97 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed July 2026. $0.10 input / $0.30 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",

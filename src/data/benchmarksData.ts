@@ -1146,24 +1146,15 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 4,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
     "score": 1475,
     "date": "Oct 2026",
-    "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.14 / 1M blended"
+    "modelId": "model-deepseek-v4-1-flash",
+    "costPerRun": "$0.08 / 1M blended"
   },
   {
     "rank": 5,
-    "modelName": "Gemma 4 26B-A4B",
-    "developer": "Google DeepMind",
-    "score": 1438,
-    "date": "Oct 2026",
-    "modelId": "model-gemma-4-26b-a4b",
-    "costPerRun": "$0.11 / 1M blended"
-  },
-  {
-    "rank": 6,
     "modelName": "gpt-oss-20b",
     "developer": "OpenAI",
     "score": 1317,
@@ -1382,7 +1373,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1478,
     "date": "Oct 2026",
     "modelId": "model-glm-5-3",
-    "costPerRun": "$1.26 / 1M blended"
+    "costPerRun": "$0.86 / 1M blended"
   },
   {
     "rank": 24,
@@ -1413,22 +1404,22 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 27,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
-    "score": 1475,
-    "date": "Oct 2026",
-    "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.14 / 1M blended",
-    "note": "on frontier"
-  },
-  {
-    "rank": 28,
     "modelName": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",
     "score": 1475,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-1-flash",
-    "costPerRun": "$0.26 / 1M blended"
+    "costPerRun": "$0.08 / 1M blended",
+    "note": "on frontier"
+  },
+  {
+    "rank": 28,
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "score": 1475,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-3-flash",
+    "costPerRun": "$0.09 / 1M blended"
   },
   {
     "rank": 29,
@@ -1824,8 +1815,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1438,
     "date": "Oct 2026",
     "modelId": "model-gemma-4-26b-a4b",
-    "costPerRun": "$0.11 / 1M blended",
-    "note": "on frontier"
+    "costPerRun": "$0.11 / 1M blended"
   },
   {
     "rank": 73,
@@ -2200,12 +2190,28 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": true
   },
   {
+    "modelId": "model-deepseek-v4-1-flash",
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "price": 0.0762,
+    "score": 1475,
+    "frontier": true
+  },
+  {
+    "modelId": "model-glm-5-3-flash",
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "price": 0.086,
+    "score": 1475,
+    "frontier": false
+  },
+  {
     "modelId": "model-gemma-4-26b-a4b",
     "modelName": "Gemma 4 26B-A4B",
     "developer": "Google DeepMind",
     "price": 0.1069,
     "score": 1438,
-    "frontier": true
+    "frontier": false
   },
   {
     "modelId": "model-deepseek-v4-flash",
@@ -2214,14 +2220,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "price": 0.1138,
     "score": 1436,
     "frontier": false
-  },
-  {
-    "modelId": "model-glm-5-3-flash",
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
-    "price": 0.136,
-    "score": 1475,
-    "frontier": true
   },
   {
     "modelId": "model-step-3-5-flash",
@@ -2285,14 +2283,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "DeepSeek",
     "price": 0.261,
     "score": 1458,
-    "frontier": false
-  },
-  {
-    "modelId": "model-deepseek-v4-1-flash",
-    "modelName": "DeepSeek-V4.1-Flash",
-    "developer": "DeepSeek",
-    "price": 0.2625,
-    "score": 1475,
     "frontier": false
   },
   {
@@ -2496,6 +2486,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-glm-5-3",
+    "modelName": "GLM-5.3",
+    "developer": "Zhipu AI",
+    "price": 0.8593,
+    "score": 1478,
+    "frontier": false
+  },
+  {
     "modelId": "model-glm-4-6",
     "modelName": "GLM-4.6",
     "developer": "Zhipu AI",
@@ -2597,14 +2595,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Alibaba Cloud",
     "price": 1.2125,
     "score": 1400,
-    "frontier": false
-  },
-  {
-    "modelId": "model-glm-5-3",
-    "modelName": "GLM-5.3",
-    "developer": "Zhipu AI",
-    "price": 1.2592,
-    "score": 1478,
     "frontier": false
   },
   {

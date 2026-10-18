@@ -1,8 +1,26 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-17T07:33:07Z",
- "count": 469,
+ "fetchedAt": "2026-10-18T01:06:33Z",
+ "count": 471,
  "data": [
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "created": 1792225624,
+   "createdDate": "2026-10-17",
+   "context_length": 1048576,
+   "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "input": 0.15,
+   "output": 0.6,
+   "cache_read": 0.003,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "elorian/glimpse",
    "name": "Elorian: Glimpse",
@@ -152,15 +170,33 @@
    ]
   },
   {
+   "id": "unbiased/pareto-26.10",
+   "name": "Pareto 26.10",
+   "created": 1792073620,
+   "createdDate": "2026-10-15",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.8,
+   "output": 3.2,
+   "cache_read": 0.03,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
    "id": "~unbiased/pareto-latest",
    "name": "Pareto Latest",
    "created": 1791933050,
    "createdDate": "2026-10-13",
-   "context_length": 262144,
+   "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 2.5,
-   "output": 7.5,
-   "cache_read": 0.25,
+   "input": 0.8,
+   "output": 3.2,
+   "cache_read": 0.03,
    "input_modalities": [
     "text",
     "image"
@@ -1044,9 +1080,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.18668,
-   "output": 0.7497,
-   "cache_read": 0.19,
+   "input": 0.12,
+   "output": 8.0,
+   "cache_read": 0.12,
    "input_modalities": [
     "text"
    ],
@@ -1061,9 +1097,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.027,
-   "output": 0.4026,
-   "cache_read": 0.027,
+   "input": 0.08,
+   "output": 0.5,
+   "cache_read": 0.008,
    "input_modalities": [
     "text",
     "image"
@@ -1246,9 +1282,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.15,
-   "output": 0.6,
-   "cache_read": 0.003,
+   "input": 0.0536,
+   "output": 0.144,
+   "cache_read": 0.0016,
    "input_modalities": [
     "text",
     "image"
@@ -1584,9 +1620,9 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0419,
-   "output": 0.4182,
-   "cache_read": 0.0419,
+   "input": 0.048,
+   "output": 0.2,
+   "cache_read": 0.006,
    "input_modalities": [
     "text",
     "image",
@@ -1622,9 +1658,9 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.0419,
-   "output": 0.4182,
-   "cache_read": 0.0419,
+   "input": 0.048,
+   "output": 0.2,
+   "cache_read": 0.006,
    "input_modalities": [
     "text",
     "image",
@@ -1732,9 +1768,9 @@
    "createdDate": "2026-08-19",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.069,
-   "output": 2.2044,
-   "cache_read": 0.069,
+   "input": 0.0632,
+   "output": 4.4,
+   "cache_read": 0.0588,
    "input_modalities": [
     "text"
    ],
@@ -1767,7 +1803,7 @@
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3",
    "input": 0.079,
-   "output": 4.8,
+   "output": 3.2,
    "cache_read": 0.078,
    "input_modalities": [
     "text"
@@ -2095,9 +2131,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0146,
-   "output": 0.9653,
-   "cache_read": 0.0146,
+   "input": 0.00392,
+   "output": 0.143616,
+   "cache_read": 0.001523,
    "input_modalities": [
     "text"
    ],
@@ -2112,9 +2148,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.0146,
-   "output": 0.9653,
-   "cache_read": 0.0146,
+   "input": 0.1,
+   "output": 0.3,
+   "cache_read": 0.03,
    "input_modalities": [
     "text"
    ],
@@ -3579,9 +3615,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.25,
-   "output": 8.5378,
-   "cache_read": 0.25,
+   "input": 0.27,
+   "output": 14.0,
+   "cache_read": 0.27,
    "input_modalities": [
     "text",
     "image",
@@ -6597,7 +6633,7 @@
    "createdDate": "2025-07-29",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
-   "input": 0.1,
+   "input": 0.09,
    "output": 0.3,
    "cache_read": null,
    "input_modalities": [
@@ -7477,7 +7513,7 @@
    "context_length": 131072,
    "hugging_face_id": "google/gemma-3-27b-it",
    "input": 0.08,
-   "output": 0.45,
+   "output": 0.35,
    "cache_read": 0.04,
    "input_modalities": [
     "text",

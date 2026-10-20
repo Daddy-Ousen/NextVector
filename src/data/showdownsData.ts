@@ -262,12 +262,12 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
     "modelIdB": "model-gpt-6-sol",
     "seoTitle": "DeepSeek-V4.1-Flash vs GPT-6 Sol: Arena Score, Price & Context | NextVector",
     "seoDescription": "DeepSeek-V4.1-Flash vs GPT-6 Sol side by side: arena.ai text score, list price per 1M tokens, context window and licence, with sources. Data checked 2026-10-11.",
-    "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67). DeepSeek-V4.1-Flash leads by 19 points, outside the margin of error. DeepSeek-V4.1-Flash: $0.054 input / $0.144 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 98% less ($0.08 vs $4.00 per 1M tokens). Context windows are about the same: DeepSeek-V4.1-Flash 1M tokens, GPT-6 Sol 1.05M tokens. DeepSeek-V4.1-Flash has open weights (MIT) and can be self-hosted; GPT-6 Sol is available only as a hosted API.",
+    "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67). DeepSeek-V4.1-Flash leads by 19 points, outside the margin of error. DeepSeek-V4.1-Flash: $0.056 input / $0.12 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 98% less ($0.07 vs $4.00 per 1M tokens). Context windows are about the same: DeepSeek-V4.1-Flash 1M tokens, GPT-6 Sol 1.05M tokens. DeepSeek-V4.1-Flash has open weights (MIT) and can be self-hosted; GPT-6 Sol is available only as a hosted API.",
     "verdictA": {
       "title": "Where DeepSeek-V4.1-Flash leads (by the data):",
       "points": [
         "Higher arena.ai text score (1475 vs 1456).",
-        "98% lower blended list price ($0.08 vs $4.00 per 1M tokens).",
+        "98% lower blended list price ($0.07 vs $4.00 per 1M tokens).",
         "Open weights (MIT): can be self-hosted."
       ]
     },
@@ -284,7 +284,7 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
       },
       {
         "question": "Which is cheaper: DeepSeek-V4.1-Flash or GPT-6 Sol?",
-        "answer": "DeepSeek-V4.1-Flash: $0.054 input / $0.144 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 98% less ($0.08 vs $4.00 per 1M tokens)."
+        "answer": "DeepSeek-V4.1-Flash: $0.056 input / $0.12 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 98% less ($0.07 vs $4.00 per 1M tokens)."
       },
       {
         "question": "Which has the larger context window?",
@@ -388,11 +388,11 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
     "modelIdB": "model-qwen3-5-397b-a17b",
     "seoTitle": "Mistral Large 3 vs Qwen3.5-397B-A17B: Arena Score, Price & Context | NextVector",
     "seoDescription": "Mistral Large 3 vs Qwen3.5-397B-A17B side by side: arena.ai text score, list price per 1M tokens, context window and licence, with sources. Data checked 2026-10-11.",
-    "executiveVerdict": "On the arena.ai text leaderboard, Mistral Large 3 scores 1414 (±3, #143) and Qwen3.5-397B-A17B scores 1442 (±3, #92). Qwen3.5-397B-A17B leads by 28 points, outside the margin of error. Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.50 / $3.60. Blended at 3 input : 1 output, Mistral Large 3 costs 41% less ($0.75 vs $1.27 per 1M tokens). Both accept 256K tokens. Both publish open weights (Apache 2.0; Apache 2.0), so both can be self-hosted.",
+    "executiveVerdict": "On the arena.ai text leaderboard, Mistral Large 3 scores 1414 (±3, #143) and Qwen3.5-397B-A17B scores 1442 (±3, #92). Qwen3.5-397B-A17B leads by 28 points, outside the margin of error. Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.39 / $2.34. Blended at 3 input : 1 output, Mistral Large 3 costs 15% less ($0.75 vs $0.88 per 1M tokens). Both accept 256K tokens. Both publish open weights (Apache 2.0; Apache 2.0), so both can be self-hosted.",
     "verdictA": {
       "title": "Where Mistral Large 3 leads (by the data):",
       "points": [
-        "41% lower blended list price ($0.75 vs $1.27 per 1M tokens)."
+        "15% lower blended list price ($0.75 vs $0.88 per 1M tokens)."
       ]
     },
     "verdictB": {
@@ -408,7 +408,7 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
       },
       {
         "question": "Which is cheaper: Mistral Large 3 or Qwen3.5-397B-A17B?",
-        "answer": "Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.50 / $3.60. Blended at 3 input : 1 output, Mistral Large 3 costs 41% less ($0.75 vs $1.27 per 1M tokens)."
+        "answer": "Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.39 / $2.34. Blended at 3 input : 1 output, Mistral Large 3 costs 15% less ($0.75 vs $0.88 per 1M tokens)."
       },
       {
         "question": "Which has the larger context window?",
@@ -450,8 +450,8 @@ export const GUIDE_PICKS: GuidePick[] = [
     "modelId": "model-glm-5-3-flash",
     "modelName": "GLM-5.3-Flash",
     "developer": "Zhipu AI",
-    "metric": "Arena 1475 at $0.09 blended",
-    "price": "$0.048 / $0.20 per 1M tokens"
+    "metric": "Arena 1475 at $0.08 blended",
+    "price": "$0.047 / $0.16 per 1M tokens"
   },
   {
     "id": "open",
@@ -461,7 +461,7 @@ export const GUIDE_PICKS: GuidePick[] = [
     "modelName": "Kimi K3",
     "developer": "Moonshot AI",
     "metric": "Arena 1488 · Kimi K3 license",
-    "price": "$0.304 / $11.94 per 1M tokens"
+    "price": "$0.239 / $11.94 per 1M tokens"
   },
   {
     "id": "computer-use",

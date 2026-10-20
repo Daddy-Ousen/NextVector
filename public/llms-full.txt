@@ -9,8 +9,8 @@ NextVector evaluates foundation models and technical breakthroughs through an em
 Each pick comes from a stated rule over public data: arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified and list prices. NextVector does not run these tests.
 - Highest Arena score (released models): Gemini 4 Argon (Google DeepMind) — Arena 1525 (±9, #1); list price $2.00 / $10.00 per 1M tokens. Rule: Highest arena.ai text score among generally released models we track.
 - Best Arena score under $1 blended: MiMo-V2.6-Pro (Xiaomi AI) — Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens. Rule: Highest Arena score with a blended list price under $1 per 1M tokens (3 input : 1 output).
-- Best Arena score under $0.20 blended: GLM-5.3-Flash (Zhipu AI) — Arena 1475 at $0.09 blended; list price $0.048 / $0.20 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
-- Best open-weights model: Kimi K3 (Moonshot AI) — Arena 1488 · Kimi K3 license; list price $0.304 / $11.94 per 1M tokens. Rule: Highest Arena score among models with downloadable weights.
+- Best Arena score under $0.20 blended: GLM-5.3-Flash (Zhipu AI) — Arena 1475 at $0.08 blended; list price $0.047 / $0.16 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
+- Best open-weights model: Kimi K3 (Moonshot AI) — Arena 1488 · Kimi K3 license; list price $0.239 / $11.94 per 1M tokens. Rule: Highest Arena score among models with downloadable weights.
 - Computer use: Claude Fable 5 (Anthropic) — OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens. Rule: Highest OSWorld-Verified success rate (General model runs) among models we track.
 - Coding (shared-harness SWE-bench runs): Claude Opus 4.5 (Anthropic) — SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens. Rule: Highest SWE-bench Verified score in mini-SWE-agent runs. These runs stop in early 2026, so newer models are missing.
 - Highest Artificial Analysis Intelligence Index: Claude Opus 5.5 (Anthropic) — AA Intelligence Index 57.6; list price $4.00 / $20.00 per 1M tokens. Rule: Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).
@@ -18,7 +18,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Agent work (Artificial Analysis Agentic Index): Claude Fable 5.1 (Anthropic) — AA Agentic Index 57.9; list price $10.00 / $50.00 per 1M tokens. Rule: Highest Artificial Analysis Agentic Index among generally released models we track (best setting per model).
 - Largest context window: Grok 4.20 (xAI) — 2M tokens · Arena 1475; list price $1.25 / $2.50 per 1M tokens. Rule: Largest listed context window among Arena-ranked models; ties go to the higher Arena score.
 
-## AI Models Directory (141 Models, sourced data)
+## AI Models Directory (142 Models, sourced data)
 ### Gemini 4 Argon (Google DeepMind)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-4-argon
 - Release Date: October 2026 | Architecture Type: Multimodal Foundation
@@ -165,11 +165,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Kimi K3 license
 - arena.ai text leaderboard: #16 (score 1488 ±5)
-- API list price (input / output per 1M tokens): $0.304 / $11.94
+- API list price (input / output per 1M tokens): $0.239 / $11.94
 - AA Intelligence Index: 43.6 (Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-11)
 - AA Coding Index: 76.2 (Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-11)
 - AA Agentic Index: 50 (Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.30 input / $11.94 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.24 input / $11.94 output per 1M tokens. 1M tokens context.
 - Sources: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart, https://openrouter.ai/moonshotai/kimi-k3, https://huggingface.co/moonshotai/Kimi-K3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/kimi-k3
 
 ### Gemini 3.1 Pro (Google DeepMind)
@@ -292,11 +292,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #27 (score 1478 ±5)
-- API list price (input / output per 1M tokens): $0.079 / $3.20
+- API list price (input / output per 1M tokens): $0.079 / $1.40
 - AA Intelligence Index: 44.8 (Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-11)
 - AA Coding Index: 74.8 (Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-11)
 - AA Agentic Index: 53.1 (Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.08 input / $3.20 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.08 input / $1.40 output per 1M tokens. 1M tokens context.
 - Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3, https://huggingface.co/zai-org/GLM-5.3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-3
 
 ### Gemini 3.5 Flash (Google DeepMind)
@@ -392,11 +392,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #38 (score 1475 ±5)
-- API list price (input / output per 1M tokens): $0.048 / $0.20
+- API list price (input / output per 1M tokens): $0.047 / $0.16
 - AA Intelligence Index: 41.8 (Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-11)
 - AA Coding Index: 71.5 (Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-11)
 - AA Agentic Index: 50.9 (Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.05 input / $0.20 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1475 (#38 of 414 entries). $0.05 input / $0.16 output per 1M tokens. 1M tokens context.
 - Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3-flash, https://huggingface.co/zai-org/GLM-5.3-Flash, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-3-flash
 
 ### DeepSeek-V4.1-Flash (DeepSeek)
@@ -404,9 +404,9 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: September 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #39 (score 1475 ±7)
-- API list price (input / output per 1M tokens): $0.054 / $0.144
+- API list price (input / output per 1M tokens): $0.056 / $0.12
 - AA Intelligence Index: 39.5 (Artificial Analysis v4.3 · best setting: DeepSeek V4.1 Flash (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.05 input / $0.14 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.06 input / $0.12 output per 1M tokens. 1M tokens context.
 - Sources: https://www.deepseek.com/en/news/deepseek-v4-1-flash/, https://openrouter.ai/deepseek/deepseek-v4.1-flash, https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/deepseek-v4-1-flash
 
 ### Claude Opus 4.5 (Anthropic)
@@ -564,11 +564,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #62 (score 1458 ±4)
-- API list price (input / output per 1M tokens): $0.209 / $0.418
+- API list price (input / output per 1M tokens): $0.955 / $1.911
 - AA Intelligence Index: 30.4 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-11)
 - AA Coding Index: 59.4 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-11)
 - AA Agentic Index: 26.3 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.21 input / $0.42 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.96 input / $1.91 output per 1M tokens. 1M tokens context.
 - Sources: https://api-docs.deepseek.com/news/news260424, https://openrouter.ai/deepseek/deepseek-v4-pro, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/deepseek-v4-pro-0424
 
 ### GLM-5 (Zhipu AI)
@@ -576,10 +576,10 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
 - arena.ai text leaderboard: #63 (score 1458 ±4)
-- API list price (input / output per 1M tokens): $1.00 / $3.20
+- API list price (input / output per 1M tokens): $0.60 / $1.92
 - SWE-bench Verified: 72.8% (mini-SWE-agent (bash only) · run 'GLM 5 (high)' · 2026-02-17)
 - AA Intelligence Index: 27.9 (Artificial Analysis v4.3 · best setting: GLM-5 (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed February 2026. Arena text score 1458 (#63 of 414 entries). $1.00 input / $3.20 output per 1M tokens. 205K tokens context.
+- Summary: Open Weights model from Zhipu AI, listed February 2026. Arena text score 1458 (#63 of 414 entries). $0.60 input / $1.92 output per 1M tokens. 205K tokens context.
 - Sources: https://huggingface.co/zai-org/GLM-5, https://openrouter.ai/z-ai/glm-5, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/glm-5
 
 ### Claude Sonnet 4.5 (Anthropic)
@@ -823,11 +823,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: 397B total, 17B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #92 (score 1442 ±3)
-- API list price (input / output per 1M tokens): $0.50 / $3.60
+- API list price (input / output per 1M tokens): $0.39 / $2.34
 - AA Intelligence Index: 21.4 (Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Non-reasoning) · checked 2026-10-11)
 - AA Coding Index: 48.2 (Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 8.3 (Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1442 (#92 of 414 entries). $0.50 input / $3.60 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1442 (#92 of 414 entries). $0.39 input / $2.34 output per 1M tokens. 256K tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.5-397B-A17B, https://openrouter.ai/qwen/qwen3.5-397b-a17b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-5-397b-a17b-non-reasoning
 
 ### Grok 4.3 (xAI)
@@ -883,11 +883,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: 27B (dense) | Context Window: 1M tokens | License: Apache 2.0
 - arena.ai text leaderboard: #99 (score 1438 ±5)
-- API list price (input / output per 1M tokens): $0.24 / $2.20
+- API list price (input / output per 1M tokens): $0.04 / $1.35
 - AA Intelligence Index: 33.7 (Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-11)
 - AA Coding Index: 68.1 (Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-11)
 - AA Agentic Index: 45.8 (Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1438 (#99 of 414 entries). $0.24 input / $2.20 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1438 (#99 of 414 entries). $0.04 input / $1.35 output per 1M tokens. 1M tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.8-27B, https://openrouter.ai/qwen/qwen3.8-27b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-8-27b
 
 ### Gemma 4 26B-A4B (Google DeepMind)
@@ -895,11 +895,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: 26B total, 4B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #100 (score 1438 ±7)
-- API list price (input / output per 1M tokens): $0.068 / $0.225
+- API list price (input / output per 1M tokens): $0.09 / $0.30
 - AA Intelligence Index: 16.7 (Artificial Analysis v4.3 · best setting: Gemma 4 26B A4B (Reasoning) · checked 2026-10-11)
 - AA Coding Index: 39.3 (Artificial Analysis v4.3 · best setting: Gemma 4 26B A4B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 2.9 (Artificial Analysis v4.3 · best setting: Gemma 4 26B A4B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1438 (#100 of 414 entries). $0.07 input / $0.23 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1438 (#100 of 414 entries). $0.09 input / $0.30 output per 1M tokens. 256K tokens context.
 - Sources: https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-26b-a4b-it, https://openrouter.ai/google/gemma-4-26b-a4b-it, https://huggingface.co/google/gemma-4-26B-A4B-it, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemma-4-26b-a4b
 
 ### GPT-5.2 (OpenAI)
@@ -1076,11 +1076,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: September 2025 | Architecture Type: Open Weights
 - Parameters: 355B total, 32B active (MoE) | Context Window: 205K tokens | License: MIT
 - arena.ai text leaderboard: #124 (score 1424 ±4)
-- API list price (input / output per 1M tokens): $0.50 / $2.00
+- API list price (input / output per 1M tokens): $0.55 / $2.20
 - SWE-bench Verified: 55.4% (mini-SWE-agent (bash only) · run 'GLM 4.6 (T=1)' · 2025-12-01)
 - AA Intelligence Index: 18.5 (Artificial Analysis v4.3 · best setting: GLM-4.6 (Reasoning) · checked 2026-10-11)
 - AA Coding Index: 45.8 (Artificial Analysis v4.3 · best setting: GLM-4.6 (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Zhipu AI, listed September 2025. Arena text score 1424 (#124 of 414 entries). $0.50 input / $2.00 output per 1M tokens. 205K tokens context.
+- Summary: Open Weights model from Zhipu AI, listed September 2025. Arena text score 1424 (#124 of 414 entries). $0.55 input / $2.20 output per 1M tokens. 205K tokens context.
 - Sources: https://docs.z.ai/guides/llm/glm-4.6, https://openrouter.ai/z-ai/glm-4.6, https://huggingface.co/zai-org/GLM-4.6, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/glm-4-6-reasoning
 
 ### Qwen3.5-122B-A10B (Alibaba Cloud)
@@ -1168,9 +1168,9 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: 27B (dense) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #151 (score 1409 ±4)
-- API list price (input / output per 1M tokens): $0.26 / $2.60
+- API list price (input / output per 1M tokens): $0.27 / $2.16
 - AA Intelligence Index: 22.9 (Artificial Analysis v4.3 · best setting: Qwen3.5 27B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#151 of 414 entries). $0.26 input / $2.60 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#151 of 414 entries). $0.27 input / $2.16 output per 1M tokens. 256K tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.5-27B, https://openrouter.ai/qwen/qwen3.5-27b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-5-27b
 
 ### Inkling Small (Thinking Machines Lab)
@@ -1279,10 +1279,10 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Multimodal Foundation
 - Parameters: Not disclosed | Context Window: 512K tokens | License: Proprietary
 - arena.ai text leaderboard: #182 (score 1386 ±6)
-- API list price (input / output per 1M tokens): $0.09 / $0.36
+- API list price (input / output per 1M tokens): $0.15 / $0.60
 - AA Intelligence Index: 28.2 (Artificial Analysis v4.3 · best setting: Solar Pro 4 · checked 2026-10-11)
 - AA Coding Index: 52.7 (Artificial Analysis v4.3 · best setting: Solar Pro 4 · checked 2026-10-11)
-- Summary: Proprietary model from Upstage, listed August 2026. Arena text score 1386 (#182 of 414 entries). $0.09 input / $0.36 output per 1M tokens. 512K tokens context.
+- Summary: Proprietary model from Upstage, listed August 2026. Arena text score 1386 (#182 of 414 entries). $0.15 input / $0.60 output per 1M tokens. 512K tokens context.
 - Sources: https://www.upstage.ai/blog/en/solar-pro-4, https://openrouter.ai/upstage/solar-pro4, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/solar-pro4
 
 ### MiniMax M2.1 (MiniMax)
@@ -1463,8 +1463,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: October 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.15 / $0.60
-- Summary: Open Weights model from DeepSeek, listed October 2026. $0.15 input / $0.60 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.30 / $1.20
+- Summary: Open Weights model from DeepSeek, listed October 2026. $0.30 input / $1.20 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017, https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 
 ### DeepSeek-V4-Flash-Vision-Exp (DeepSeek)
@@ -1484,11 +1484,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.10 / $0.30
+- API list price (input / output per 1M tokens): $0.44 / $1.32
 - AA Intelligence Index: 34.3 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-11)
 - AA Coding Index: 69.1 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-11)
 - AA Agentic Index: 41 (Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-11)
-- Summary: Open Weights model from DeepSeek, listed July 2026. $0.10 input / $0.30 output per 1M tokens. 1M tokens context.
+- Summary: Open Weights model from DeepSeek, listed July 2026. $0.44 input / $1.32 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/deepseek/deepseek-v4-flash-0731, https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731, https://artificialanalysis.ai/models/deepseek-v4-flash
 
 ### Qwen3.8 Flash (Alibaba Cloud)
@@ -1517,11 +1517,11 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: 35B total, 3B active (MoE) | Context Window: 256K tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.15 / $1.00
+- API list price (input / output per 1M tokens): $0.10 / $0.95
 - AA Intelligence Index: 18.2 (Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-11)
 - AA Coding Index: 41.9 (Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-11)
 - AA Agentic Index: 13.1 (Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-11)
-- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.15 input / $1.00 output per 1M tokens. 256K tokens context.
+- Summary: Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.95 output per 1M tokens. 256K tokens context.
 - Sources: https://openrouter.ai/qwen/qwen3.6-35b-a3b, https://huggingface.co/Qwen/Qwen3.6-35B-A3B, https://artificialanalysis.ai/models/qwen3-6-35b-a3b
 
 ### Hy4 preview (Tencent Hunyuan)
@@ -1583,11 +1583,244 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: October 2026 | Architecture Type: Open Weights
 - Parameters: 501B total, 23B active (MoE) | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $1.00 / $3.00
-- Summary: Open Weights model from Reflection AI, listed October 2026. $1.00 input / $3.00 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.30 / $1.00
+- Summary: Open Weights model from Reflection AI, listed October 2026. $0.30 input / $1.00 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/reflection/beam-1.0-501b-a23b, https://huggingface.co/reflection/Beam-1.0-501B-A23B
 
+### Glimpse (Elorian)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-elorian-glimpse
+- Release Date: October 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 256K tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $0.60 / $3.00
+- Summary: Proprietary model from Elorian, listed October 2026. $0.60 input / $3.00 output per 1M tokens. 256K tokens context.
+- Sources: https://openrouter.ai/elorian/glimpse
+
 ## Published Intelligence Reports (Full Text Corpus)
+### Elorian Launches Glimpse: Visual Scratch Space Model by Ex-DeepMind Team
+- Canonical URL: https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model
+- Published: 2026-10-19 | Category: AI | Signal Rating: 93/100
+- Executive Summary: Palo Alto startup founded by Gemini co-creator Andrew Dai debuts 262K-context vision model that actively re-inspects images and video frames during inference.
+
+**What Happened?**
+Elorian, an AI startup founded by former Google DeepMind director Andrew Dai and researchers from Apple, launched its debut multimodal foundation model Glimpse with a 262,144-token context window and dynamic visual scratch space inference.
+
+**Why It Matters:**
+Conventional multimodal models encode visual inputs into static tokens once upon receipt, whereas Glimpse actively re-interrogates raw visual data during intermediate reasoning steps by zooming into subregions, sampling dense video frames, and executing measurement code.
+
+**What Could Happen Next:**
+The model is accessible via research preview API and public routing on OpenRouter at $0.60 per million input tokens and $3.00 per million output tokens, targeting robotics teleoperation labeling and scientific imaging pipelines.
+
+**Key Takeaways:**
+- Elorian launched Glimpse, a multimodal foundation model supporting text, image, and video inputs across a 262,144-token context window.
+- Features a visual scratch space mechanism that lets the model crop subregions, request dense temporal video frames, and execute verification code on the fly.
+- The Palo Alto startup raised a $55 million seed round at a $300 million valuation from investors including Menlo Ventures, Altimeter Capital, NVIDIA, and Jeff Dean.
+- Available on OpenRouter (elorian/glimpse) at $0.60 per million prompt tokens, $3.00 per million completion tokens, and $0.06 per million cache read tokens.
+- Founded by former Google DeepMind director Andrew Dai alongside researchers Yinfei Yang and Dustin Tran, trained on a compute cluster of several hundred GPUs.
+
+**Full Article Content:**
+According to official technical disclosures published by Elorian and API telemetry confirmed via OpenRouter on October 17, 2026, the Palo Alto-based artificial intelligence startup has released Glimpse, its first foundation model engineered around an interactive visual reasoning architecture. Founded by former Google DeepMind director and Gemini data lead Andrew Dai alongside former Apple and Google researchers Yinfei Yang and Dustin Tran, Elorian previously secured $55 million in seed funding at a $300 million valuation from Menlo Ventures, Altimeter Capital, NVIDIA, and Google chief scientist Jeff Dean.
+
+Glimpse introduces an architectural departure from standard vision-language models. In conventional multimodal architectures, high-resolution images or video clips are processed through a vision encoder once at the start of inference, generating a fixed sequence of token embeddings from which the language backbone must reason without further access to original pixel data. Elorian's engineers argue that this static tokenization forces models to answer visual queries from degraded memory, leading to persistent failures on dense spatial tasks such as reading text-free assembly diagrams, parsing electronic schematics, or tracking game pieces across cluttered physical environments.
+
+To circumvent this bottleneck, Glimpse implements an active visual scratch space. During the chain-of-thought generation phase, the model can emit intermediate visual tool calls that re-interrogate the raw source image or video feed. It can dynamically request crops of fine-grained regions to resolve small features, adjust temporal sampling rates across video intervals to track rapid motion, or execute lightweight code routines to compute exact geometric coordinates and pixel distances before outputting a terminal response.
+
+Trained on an open-weight base architecture across an internal cluster of several hundred GPUs, Glimpse was optimized for compute efficiency rather than brute-force parameter scaling. In early evaluations across multi-image spatial reasoning and dense object counting, the model demonstrated accuracy parity with commercial frontier systems while operating at substantially lower serving latency.
+
+Elorian has opened public access to Glimpse through a waitlisted web chat interface and an API gateway, alongside immediate listing on OpenRouter under the identifier elorian/glimpse. The endpoint is priced at $0.60 per million input tokens, $3.00 per million output tokens, and $0.06 per million prompt cache read tokens across its native 262,144-token context window. Initial deployment partnerships focus on robotic teleoperation data curation, automated electronics inspection, and scientific laboratory microscopy.
+
+**Primary Sources & Citations:**
+- [Elorian Glimpse Research Preview and Technical Specifications](https://elorian.ai/) (Elorian Official)
+- [Elorian Glimpse API Pricing and Modality Telemetry](https://openrouter.ai/elorian/glimpse) (OpenRouter)
+
+---
+
+### DeepSeek Launches Native Web Search and Fetch API at $0.75 per 1,000 Requests
+- Canonical URL: https://nextvector.rhasan.online/article/deepseek-launches-native-web-search-and-fetch-api
+- Published: 2026-10-19 | Category: TECHNOLOGY | Signal Rating: 92/100
+- Executive Summary: The Beijing lab opens standalone HTTP endpoints for live web crawling and Markdown conversion, charging strictly for successful responses across agent workflows.
+
+**What Happened?**
+DeepSeek released standalone Search and Fetch API endpoints powered by its proprietary in-house web index, offering structured search result rankings and clean Markdown extraction at $0.75 per 1,000 successful queries.
+
+**Why It Matters:**
+Provides autonomous AI agents and retrieval-augmented generation (RAG) pipelines with an inexpensive, dedicated web gateway that bills strictly for successful responses while eliminating third-party proxy maintenance.
+
+**What Could Happen Next:**
+While currently offered free during platform integration previews across developer harnesses, per-request meter billing takes effect on November 1, 2026, as developers adapt search tool calls across local coding environments.
+
+**Key Takeaways:**
+- DeepSeek opened dedicated Search (/v1/tools/search) and Fetch (/v1/tools/fetch) API endpoints powered by its internal web index.
+- Pricing is set at $0.75 per 1,000 successful requests (approx. 5 RMB), with no charges incurred for failed queries, timeouts, or empty payloads.
+- The Fetch endpoint converts live web pages directly into formatted Markdown alongside extracted page titles, reducing token overhead for agent tool use.
+- The Search endpoint supports optional full-text content extraction via the need_content parameter, returning ranked multi-domain search results.
+- Commercial per-request billing goes live on November 1, 2026 at 00:00 Beijing time, concluding an initial free evaluation period.
+
+**Full Article Content:**
+According to official developer documentation published on api-docs.deepseek.com on October 18, 2026, DeepSeek has introduced native Search and Fetch API services designed to provide autonomous AI agents and retrieval-augmented generation (RAG) pipelines with real-time access to the public internet. The endpoints operate directly on DeepSeek's internal web indexing and crawler infrastructure, bypassing reliance on third-party commercial search aggregators.
+
+The release divides functionality into two specialized developer endpoints. The Search API, hosted at /v1/tools/search, ingests user or agent queries and returns ranked collections of relevant web URLs, snippets, and domain metadata. Developers can toggle the need_content parameter to retrieve extracted body text directly within the search response, eliminating subsequent network round-trips. Complementing this, the Fetch API at /v1/tools/fetch accepts an arbitrary target URL, downloads the underlying HTML document, strips advertising scripts and boilerplate styling, and returns the sanitized content as clean Markdown formatted for large language model ingestion.
+
+Pricing is anchored at $0.75 per 1,000 successful requests across both services, translating to approximately 5 RMB for international and domestic accounts. Crucially, DeepSeek established a success-only billing policy: applications are not billed for requests that encounter server timeouts, network interruptions, or queries that yield zero matching documents. Community analysis on Hacker News noted that this flat rate undercuts commercial web retrieval APIs such as Tavily and Exa, while avoiding the aggressive rate-limiting and CAPTCHA blocks associated with self-hosted scraping frameworks like SearXNG.
+
+The introduction of first-party search tooling addresses a major operational bottleneck for autonomous coding and research agents. During iterative research runs, models frequently generate dozens of exploratory queries and web fetches; having low-latency, deterministic endpoints built into the model provider's cloud ecosystem curtails latency spikes and simplifies security credential management.
+
+DeepSeek confirmed that while the Search and Fetch endpoints are accessible free of charge during initial ecosystem testing across tools such as DeepSeek Harness, Claude Code, and Codex, metered production billing will officially take effect on November 1, 2026, at 00:00 Beijing time (October 31 at 16:00 UTC). Integration documentation and SDK wrapper scripts are available immediately through the DeepSeek developer portal.
+
+**Primary Sources & Citations:**
+- [Search & Fetch API Developer Guide and Parameter Reference](https://api-docs.deepseek.com/guides/search/) (DeepSeek API Docs)
+- [Hacker News Technical Discussion: DeepSeek search and fetch](https://news.ycombinator.com/item?id=50138531) (Hacker News)
+
+---
+
+### Anthropic Commits Initial 5% Equity Stake to New Public Benefit Fund, Scaling With Valuation
+- Canonical URL: https://nextvector.rhasan.online/article/anthropic-commits-equity-stake-to-public-benefit-fund
+- Published: 2026-10-19 | Category: AI | Signal Rating: 90/100
+- Executive Summary: The AI lab pledges corporate shares to a dedicated LLC designed to expand contributions by 2% for every 50% valuation gain above baseline.
+
+**What Happened?**
+Anthropic announced the creation of the Anthropic Public Benefit Fund, committing an initial 5% equity stake subject to stockholder approval, with an additional 2% pledged for each 50% increase in company valuation.
+
+**Why It Matters:**
+Establishes a permanent philanthropic corporate governance vehicle that scales non-dilutive capital alongside frontier AI commercial growth, bringing total equity pledged to the public good to roughly 20%.
+
+**What Could Happen Next:**
+Structured as a wholly-owned LLC barred from political lobbying, the fund will announce formal governance rules and target initiatives addressing AI labor market displacement, building on an existing $200 million research commitment.
+
+**Key Takeaways:**
+- Anthropic is committing an initial 5% stake of company shares to the newly established Anthropic Public Benefit Fund, subject to shareholder vote.
+- The fund includes a ratcheting mechanism: an additional 2% equity stake may be granted at board discretion for every 50% increase in valuation above a set baseline.
+- Combined with founder pledges (80% of personal equity) and an employee matching program, approximately 20% of Anthropic equity is now dedicated to the public good.
+- The fund is organized as a wholly-owned LLC to preserve operational versatility between charitable grants and direct economic distributions.
+- Corporate bylaws explicitly forbid the LLC from deploying equity assets toward political lobbying or campaign contributions in the US or internationally.
+
+**Full Article Content:**
+In a corporate governance announcement released on October 18, 2026, artificial intelligence research laboratory Anthropic announced the establishment of the Anthropic Public Benefit Fund, committing a meaningful ownership stake of the company to public interest initiatives. Under the framework, which remains subject to formal stockholder ratification, an initial 5% equity stake will be allocated to the fund, accompanied by a dynamic scaling provision tied directly to the firm's commercial appreciation.
+
+The fund features a governance ratchet designed to redirect frontier upside toward societal safety nets. For every 50% increase in Anthropic's enterprise valuation above an established baseline, the company's board of directors holds discretion to grant an additional 2% equity tranche to the fund. Anthropic executives contrasted the mechanism with conventional Silicon Valley compensation practices, noting that while tech firms frequently distribute escalating equity pools to senior leadership during rapid expansion, the Public Benefit Fund channels that appreciation directly into social and economic mitigation.
+
+Legally, Anthropic opted to structure the Public Benefit Fund as a wholly-owned limited liability company (LLC) rather than a traditional 501(c)(3) nonprofit corporation. The company explained that the LLC structure provides operational latitude to execute diverse forms of public intervention, ranging from direct capital grants to civic organizations to potential direct cash transfers for populations experiencing technological displacement. The governing operating agreement strictly prohibits the entity from utilizing any held shares or derived proceeds for political campaign contributions or lobbying activities within the United States or foreign jurisdictions.
+
+The initiative significantly expands Anthropic's existing mission-oriented capital allocations. At founding, the company's co-founders pledged to donate 80% of their personal equity holdings to philanthropic causes, while an internal employee matching program allows staff to pledge personal equity that Anthropic matches. With approximately half of Anthropic's workforce currently enrolled in the matching initiative, the new fund elevates the proportion of total company equity dedicated to the public good to approximately 20%.
+
+A primary focal area for the fund will be mitigating labor market disruptions driven by autonomous AI agency. Anthropic noted that while it has previously committed $200 million toward its Economic Futures Research Fund to study technological unemployment, the accelerating pace of foundation model reasoning necessitates more direct intervention tools. Detailed governance structures, independent oversight committees, and baseline valuation benchmarks will be formally published in an upcoming public benefit audit report.
+
+**Primary Sources & Citations:**
+- [Investing in the public benefit: Announcing the Anthropic Public Benefit Fund](https://www.anthropic.com/news/public-benefit-fund) (Anthropic Official)
+
+---
+
+### Anthropic Drafts Federal AI Safety Bill Requiring 50 Deaths or $1B in Damages for Intervention
+- Canonical URL: https://nextvector.rhasan.online/article/anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds
+- Published: 2026-10-19 | Category: TECHNOLOGY | Signal Rating: 89/100
+- Executive Summary: Legislative proposal establishes Department of Commerce evaluation jurisdiction, barring state agencies from ordering unilateral model shutdowns.
+
+**What Happened?**
+Details emerged regarding an AI safety legislative proposal drafted by Anthropic that establishes federal statutory thresholds of $1 billion in damage or 50 human casualties before regulators can halt model deployments.
+
+**Why It Matters:**
+The framework concentrates enforcement authority exclusively within the US Department of Commerce and the DC District Court, preempting state-level regulatory bodies and other federal agencies from imposing emergency kill-switches.
+
+**What Could Happen Next:**
+Congressional committees are weighing the proposal alongside competing legislation, including a bill from Senator Bernie Sanders proposing 20-year criminal penalties for unauthorized superintelligence development.
+
+**Key Takeaways:**
+- Anthropic's proposed legislative framework authorizes federal intervention only if a model poses risk of $1 billion in property damage or killing/injuring over 50 individuals.
+- The bill designates third-party evaluators registered with the Department of Commerce to conduct periodic capability audits of frontier laboratories.
+- If catastrophic thresholds are breached, evaluators must alert the Commerce Department within 72 hours, which must then seek a judicial injunction in DC District Court.
+- The statute explicitly bars any other federal agency, department, or state government official from ordering an AI laboratory to cease model deployment.
+- Covered threat vectors specifically include bioweapon synthesis, autonomous cyberattacks, and loss of human operational control over agentic swarms.
+
+**Full Article Content:**
+As reported by Tom's Hardware and Politico on October 18, 2026, artificial intelligence developer Anthropic has drafted and circulated a comprehensive legislative proposal for federal AI safety regulation. The draft statute would establish narrow statutory triggers empowering the federal government to block or halt the deployment of frontier models, restricting intervention to scenarios where an AI system threatens at least $1 billion in economic damages or the death or severe injury of more than 50 people.
+
+Under the legislative framework, which formalizes proposals from Anthropic's internal Advanced AI Framework advocated before federal lawmakers since June 2026, frontier labs would undergo periodic capability assessments conducted by accredited third-party evaluators registered directly with the U.S. Department of Commerce. While AI developers would be permitted to compensate evaluators for testing compute and engineering labor, statutory guardrails would mandate that funding arrangements preserve audit independence.
+
+The bill confines federal enforcement to three severe catastrophic threat categories: the autonomous synthesis or dissemination of biological weapons, the orchestration of critical infrastructure cyberattacks, and scenarios where a developer suffers a definitive loss of control over autonomous agent systems. Should an evaluator identify plausible risk of such an event, they must notify the Department of Commerce within 72 hours. To halt model distribution, the Commerce Department would be required to present verified forensic evidence before a federal judge in the U.S. District Court for the District of Columbia to obtain an emergency injunction.
+
+Crucially, the proposal includes robust preemption language that restricts regulatory oversight to federal authorities. The text specifies that no other department, executive agency, municipal entity, or state attorney general would possess statutory standing to order an AI laboratory to cease model inference or deployment, consolidating national authority solely within the Commerce Department.
+
+The emergence of the draft bill coincides with escalating congressional scrutiny surrounding autonomous agentic safety. Following verified sandbox escapes and unprompted external communication incidents earlier this year, lawmakers have debated competing statutory remedies, including proposals from Senator Bernie Sanders establishing 20-year criminal sentences for developing runaway superintelligence. Industry observers expect Anthropic's centralized framework to serve as a primary corporate benchmark as Capitol Hill committees prepare formal AI governance hearings.
+
+**Primary Sources & Citations:**
+- [Anthropic proposed AI safety bill only kicks in if 50 deaths or $1 billion in damages are on the line](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model) (Tom)
+
+---
+
+### Web Services and Financial Platforms Deploy Widespread Blocking Against Autonomous AI Agents
+- Canonical URL: https://nextvector.rhasan.online/article/websites-and-financial-platforms-block-autonomous-ai-agents
+- Published: 2026-10-18 | Category: TECHNOLOGY | Signal Rating: 88/100
+- Executive Summary: Amazon, Delta Air Lines, and major banks shut out browser agents from OpenAI, Meta, and xAI, triggering disputes over data rights and scraping boundaries.
+
+**What Happened?**
+An investigation revealed that major online enterprises—including Amazon, Delta Air Lines, Yelp, Charles Schwab, and JPMorgan Chase—have deployed technical blocks preventing autonomous AI agents from accessing their services.
+
+**Why It Matters:**
+As frontier labs market agents capable of browsing and operating web interfaces on behalf of consumers, incumbent web platforms are actively restricting agentic traffic to preserve advertising models and protect transaction security.
+
+**What Could Happen Next:**
+While Meta has pivoted toward structured commercial partnerships with retailers like Walmart and Sephora, ongoing litigation between Amazon and Perplexity continues through federal appeals.
+
+**Key Takeaways:**
+- Major commercial platforms including Amazon, Delta Air Lines, Yelp, Amtrak, and Cars.com are actively blocking consumer AI browsing agents.
+- Financial institutions including JPMorgan Chase and Charles Schwab confirmed blocking automated agents to mitigate credential compromise and unauthorized account execution.
+- Cloudflare and edge networking providers have expanded bot defenses, blocking crawlers that attempt simultaneous search indexing and AI training extraction.
+- Amazon's legal challenge against Perplexity's shopping agent continues following an appellate court decision overturning an initial injunction in August.
+- Meta is responding by negotiating bilateral retail partnerships for Muse with brands including Walmart, Gap, Sephora, and Best Buy, alongside Shopify's storefront network.
+
+**Full Article Content:**
+In an investigative analysis published by The Verge on October 17, 2026, technology reporter Emma Roth reported that prominent consumer web services, airlines, and financial institutions are systematically erecting technical barriers to block autonomous AI agents from interacting with their platforms. The defensive measures affect flagship browsing agents across the industry, including Meta's Muse, xAI's Grok, OpenAI's Dots, and enterprise agent harnesses from Instinct.
+
+The friction spans multiple commercial sectors. Review portal Yelp confirmed that it strictly excludes automated AI agents unless providers license access through formal data partnerships. Delta Air Lines has configured bot mitigations to terminate booking sessions initiated by AI browser workers, while rail provider Amtrak and automotive portal Cars.com have recently instituted similar access blocks. In the banking sector, financial institutions including JPMorgan Chase and Charles Schwab verified that they intentionally disallow AI agent sessions due to concerns regarding credential security, session hijacking, and regulatory liability in transactional execution.
+
+The core dispute centers on commercial incentives and digital labor rights. E-commerce giant Amazon, which engaged in extensive litigation against Perplexity last year after banning its agentic purchasing service, has barred Muse and competing agents from checkout workflows, asserting that third-party agents violate site terms of service. While Perplexity argued in court that personal AI agents represent legitimate user-hired digital assistants and won an appellate reversal of a preliminary injunction in August, Amazon has filed an amended complaint to preserve its closed browsing environment.
+
+Infrastructure providers are playing an instrumental role in filtering agent traffic. Edge networking provider Cloudflare has expanded its automated mitigation tools, implementing rules that detect and block automated crawlers attempting to harvest data for simultaneous search indexing and AI training. Chris Canal, chief executive of AI evaluation firm EquiStamp, cautioned that because autonomous agents navigate websites using headless browsers and programmatic coordinate inputs, they inevitably trigger standard fraud and anti-bot defenses engineered to stop automated credential stuffing and scalping bots.
+
+In response to web-wide gating, AI developers are splitting into divergent strategies. While xAI leadership publicly threatened to launch competing e-commerce infrastructure, Meta has sought bilateral commercial agreements, establishing authorized shopping integrations for Muse with retailers including Walmart, Sephora, Best Buy, Gap, and Shopify. However, industry analysts observe that if autonomous agents cannot freely navigate open web destinations, their practical utility as general-purpose consumer operators remains constrained.
+
+**Primary Sources & Citations:**
+- [Websites are closing their doors to AI agents](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web) (The Verge)
+
+---
+
+### Sepp Hochreiter's Lab Introduces KronLSTM: Kronecker Delta Rule for Stable Long-Context Linear Attention
+- Canonical URL: https://nextvector.rhasan.online/article/kronlstm-kronecker-delta-rule-linear-attention
+- Published: 2026-10-18 | Category: RESEARCH | Signal Rating: 87/100
+- Executive Summary: Austrian researchers develop rank-one matrix memory revision mechanism that bounds state norm and avoids degradation across extended sequence benchmarks.
+
+**What Happened?**
+Researchers from Johannes Kepler University Linz led by LSTM inventor Sepp Hochreiter published arXiv:2610.26834v1, introducing KronLSTM, an associative matrix memory architecture operating on the Kronecker Delta Rule.
+
+**Why It Matters:**
+Standard delta rules in recurrent linear attention can cause runaway memory states or overwrite past context; KronLSTM restricts memory revisions to a single matrix direction, provably converging to a steady-state distribution with uniformly bounded norm.
+
+**What Could Happen Next:**
+The authors released open-source PyTorch reference kernels and pre-trained checkpoints, demonstrating competitive solve rates and superior context retention against Gated DeltaNet baselines.
+
+**Key Takeaways:**
+- KronLSTM introduces the Kronecker Delta Rule, an update mechanism for associative matrix memories in recurrent linear attention architectures.
+- Extends the xLSTM family by restricting memory updates to a single matrix direction, minimizing interference with previously stored token associations.
+- Memory dynamics are mathematically proven to form a Markov chain converging to a steady-state distribution with uniformly bounded expected matrix norm.
+- Eliminates the requirement for ad-hoc state normalization layers or numerical dampening heuristics common in delta-rule recurrent models.
+- Achieves superior performance on long-context sequence modeling tasks compared to Gated DeltaNet and existing linear attention variants.
+
+**Full Article Content:**
+In a machine learning research paper published on arXiv on October 19, 2026 (arXiv:2610.26834v1), an academic team from Johannes Kepler University Linz and the ELLIS Unit Linz led by Long Short-Term Memory (LSTM) co-inventor Sepp Hochreiter unveiled KronLSTM. The model introduces the Kronecker Delta Rule, a mathematically grounded memory-revision rule engineered to solve the persistent stability and interference issues that hinder recurrent linear attention architectures during long-context sequence modeling.
+
+Over recent years, linear attention and state-space architectures—such as Mamba, RWKV, and DeltaNet variants—have emerged as scalable alternatives to standard softmax transformers, offering O(1) inference memory and O(N) sequence scaling. Many leading formulations employ the delta rule, an associative memory update that subtracts the memory's existing prediction before adding a new key-value association. However, the authors demonstrate that standard delta updates modify the entire memory state matrix simultaneously, inadvertently creating destructive interference with previously acquired tokens and requiring fragile normalization heuristics to prevent numerical explosion over long context sequences.
+
+KronLSTM addresses this instability by implementing a targeted revision mechanism. When updating the associative matrix, the Kronecker Delta Rule restricts adjustments strictly along a single direction in matrix space. By making memory revisions minimally invasive, KronLSTM updates erroneous associations without perturbing orthogonal representations stored across earlier sequence intervals.
+
+The authors prove analytically that the memory transition dynamics of KronLSTM can be formulated as a discrete Markov chain that rigorously converges to a unique steady-state distribution. Consequently, the expected Frobenius norm of the recurrent memory matrix remains uniformly bounded across sequences of arbitrary length, ensuring mathematical stability without requiring external normalization layers, clipping penalties, or hand-tuned decay factors.
+
+In empirical evaluations spanning synthetic retrieval benchmarks and natural language modeling suites, KronLSTM consistently outperformed baseline delta-rule architectures, including members of the Gated DeltaNet family, recording especially pronounced advantages on long-context multi-query associative recall tasks. The research group has open-sourced PyTorch model implementations, CUDA-optimized recurrent scan kernels, and pre-trained evaluation checkpoints on GitHub.
+
+**Primary Sources & Citations:**
+- [Kronecker Delta Rule for Long Context Linear Attention](https://arxiv.org/abs/2610.26834v1) (arXiv)
+
+---
+
 ### DeepSeek Releases V4.1 Flash 1017: Open Weights with 1M Context and Benchmark Surges
 - Canonical URL: https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released
 - Published: 2026-10-18 | Category: AI | Signal Rating: 94/100

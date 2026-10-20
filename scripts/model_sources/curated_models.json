@@ -175,6 +175,7 @@
     {"id": "model-nemotron-3-ultra-550b-a55b", "name": "Nemotron 3 Ultra (550B A55B)", "dev": "NVIDIA", "arena": "nvidia-nemotron-3-ultra-550b-a55b-nvfp4", "or": "nvidia/nemotron-3-ultra-550b-a55b", "params": "550B total, 55B active (MoE)", "paramsSrc": "name", "aa": ["nvidia-nemotron-3-ultra-550b-a55b"]},
     {"id": "model-solar-pro-4", "name": "Solar Pro 4", "dev": "Upstage", "arena": "solar-pro4", "or": "upstage/solar-pro4", "aa": ["solar-pro4"]},
     {"id": "model-lfm-2-5-24b-a2b", "name": "LFM2.5-24B-A2B", "dev": "Liquid AI", "or": "liquid/lfm-2.5-24b-a2b", "params": "24B total, 2.45B active (MoE)", "paramsSrc": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"},
-    {"id": "model-beam-1-0-501b-a23b", "name": "Beam 1.0 (501B A23B)", "dev": "Reflection AI", "or": "reflection/beam-1.0-501b-a23b", "params": "501B total, 23B active (MoE)", "paramsSrc": "https://openrouter.ai/reflection/beam-1.0-501b-a23b"}
+    {"id": "model-beam-1-0-501b-a23b", "name": "Beam 1.0 (501B A23B)", "dev": "Reflection AI", "or": "reflection/beam-1.0-501b-a23b", "params": "501B total, 23B active (MoE)", "paramsSrc": "https://openrouter.ai/reflection/beam-1.0-501b-a23b"},
+    {"id": "model-elorian-glimpse", "name": "Glimpse", "dev": "Elorian", "or": "elorian/glimpse"}
   ]
 }

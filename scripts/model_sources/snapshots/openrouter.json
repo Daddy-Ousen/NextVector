@@ -1,8 +1,27 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-18T01:06:33Z",
- "count": 471,
+ "fetchedAt": "2026-10-20T08:15:46Z",
+ "count": 470,
  "data": [
+  {
+   "id": "minimax/minimax-m3.1-flash:free",
+   "name": "MiniMax: MiniMax M3.1 Flash (free)",
+   "created": 1792379569,
+   "createdDate": "2026-10-19",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "deepseek/deepseek-v4.1-flash-1017",
    "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
@@ -10,9 +29,9 @@
    "createdDate": "2026-10-17",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "input": 0.15,
-   "output": 0.6,
-   "cache_read": 0.003,
+   "input": 0.3,
+   "output": 1.2,
+   "cache_read": 0.006,
    "input_modalities": [
     "text",
     "image"
@@ -64,9 +83,26 @@
    "createdDate": "2026-10-16",
    "context_length": 1048576,
    "hugging_face_id": "reflection/Beam-1.0-501B-A23B",
-   "input": 1.0,
-   "output": 3.0,
-   "cache_read": 0.1,
+   "input": 0.3,
+   "output": 1.0,
+   "cache_read": 0.04,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "inception/mercury-3",
+   "name": "Inception: Mercury 3",
+   "created": 1792158337,
+   "createdDate": "2026-10-16",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 0.1,
+   "output": 0.35,
+   "cache_read": 0.01,
    "input_modalities": [
     "text"
    ],
@@ -138,9 +174,9 @@
    "createdDate": "2026-10-15",
    "context_length": 1048576,
    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
-   "input": 0.1,
-   "output": 0.4,
-   "cache_read": 0.08,
+   "input": 0.15,
+   "output": 0.5,
+   "cache_read": 0.02,
    "input_modalities": [
     "text",
     "image",
@@ -1080,9 +1116,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.12,
+   "input": 0.225,
    "output": 8.0,
-   "cache_read": 0.12,
+   "cache_read": 0.23,
    "input_modalities": [
     "text"
    ],
@@ -1097,7 +1133,7 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.08,
+   "input": 0.07,
    "output": 0.5,
    "cache_read": 0.008,
    "input_modalities": [
@@ -1282,8 +1318,8 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.0536,
-   "output": 0.144,
+   "input": 0.056,
+   "output": 0.12,
    "cache_read": 0.0016,
    "input_modalities": [
     "text",
@@ -1620,8 +1656,8 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.048,
-   "output": 0.2,
+   "input": 0.0472,
+   "output": 0.16,
    "cache_read": 0.006,
    "input_modalities": [
     "text",
@@ -1658,8 +1694,8 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.048,
-   "output": 0.2,
+   "input": 0.0472,
+   "output": 0.16,
    "cache_read": 0.006,
    "input_modalities": [
     "text",
@@ -1768,9 +1804,9 @@
    "createdDate": "2026-08-19",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0632,
-   "output": 4.4,
-   "cache_read": 0.0588,
+   "input": 0.079,
+   "output": 1.4,
+   "cache_read": 0.078,
    "input_modalities": [
     "text"
    ],
@@ -1803,7 +1839,7 @@
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3",
    "input": 0.079,
-   "output": 3.2,
+   "output": 1.4,
    "cache_read": 0.078,
    "input_modalities": [
     "text"
@@ -1836,9 +1872,9 @@
    "createdDate": "2026-08-14",
    "context_length": 1000000,
    "hugging_face_id": "Qwen/Qwen3.8-27B",
-   "input": 0.24,
-   "output": 2.2,
-   "cache_read": 0.05,
+   "input": 0.04,
+   "output": 1.35,
+   "cache_read": 0.018,
    "input_modalities": [
     "text",
     "image",
@@ -2076,9 +2112,9 @@
    "createdDate": "2026-08-10",
    "context_length": 524288,
    "hugging_face_id": null,
-   "input": 0.09,
-   "output": 0.36,
-   "cache_read": 0.018,
+   "input": 0.15,
+   "output": 0.6,
+   "cache_read": 0.03,
    "input_modalities": [
     "text"
    ],
@@ -2131,9 +2167,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.00392,
-   "output": 0.143616,
-   "cache_read": 0.001523,
+   "input": 0.0052,
+   "output": 0.12,
+   "cache_read": 0.00336,
    "input_modalities": [
     "text"
    ],
@@ -2148,9 +2184,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.1,
-   "output": 0.3,
-   "cache_read": 0.03,
+   "input": 0.44,
+   "output": 1.32,
+   "cache_read": 0.014,
    "input_modalities": [
     "text"
    ],
@@ -2472,7 +2508,7 @@
    "createdDate": "2026-07-16",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
-   "input": 0.304,
+   "input": 0.239,
    "output": 11.936,
    "cache_read": 0.21,
    "input_modalities": [
@@ -3615,9 +3651,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.27,
-   "output": 14.0,
-   "cache_read": 0.27,
+   "input": 0.238,
+   "output": 16.0,
+   "cache_read": 0.228,
    "input_modalities": [
     "text",
     "image",
@@ -3712,8 +3748,8 @@
    "createdDate": "2026-04-27",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
-   "input": 0.15,
-   "output": 1.0,
+   "input": 0.1,
+   "output": 0.95,
    "cache_read": 0.05,
    "input_modalities": [
     "text",
@@ -3826,9 +3862,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.2088,
-   "output": 0.4176,
-   "cache_read": 0.0174,
+   "input": 0.95526,
+   "output": 1.91052,
+   "cache_read": 0.079605,
    "input_modalities": [
     "text"
    ],
@@ -4043,9 +4079,9 @@
    "createdDate": "2026-04-03",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-26B-A4B-it",
-   "input": 0.0675,
-   "output": 0.225,
-   "cache_read": 0.0375,
+   "input": 0.09,
+   "output": 0.3,
+   "cache_read": 0.05,
    "input_modalities": [
     "image",
     "text",
@@ -4658,9 +4694,9 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-27B",
-   "input": 0.26,
-   "output": 2.6,
-   "cache_read": null,
+   "input": 0.27,
+   "output": 2.16,
+   "cache_read": 0.27,
    "input_modalities": [
     "text",
     "image",
@@ -4871,9 +4907,9 @@
    "createdDate": "2026-02-16",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-397B-A17B",
-   "input": 0.5,
-   "output": 3.6,
-   "cache_read": 0.3,
+   "input": 0.39,
+   "output": 2.34,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image",
@@ -4907,9 +4943,9 @@
    "createdDate": "2026-02-11",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5",
-   "input": 1.0,
-   "output": 3.2,
-   "cache_read": 0.2,
+   "input": 0.6,
+   "output": 1.92,
+   "cache_read": 0.12,
    "input_modalities": [
     "text"
    ],
@@ -6061,9 +6097,9 @@
    "createdDate": "2025-09-30",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-4.6",
-   "input": 0.5,
-   "output": 2.0,
-   "cache_read": 0.1,
+   "input": 0.55,
+   "output": 2.2,
+   "cache_read": 0.11,
    "input_modalities": [
     "text"
    ],
@@ -6861,7 +6897,7 @@
    "name": "Morph: Morph V3 Fast",
    "created": 1751910002,
    "createdDate": "2025-07-07",
-   "context_length": 81920,
+   "context_length": 262144,
    "hugging_face_id": null,
    "input": 0.8,
    "output": 1.2,
@@ -7350,7 +7386,7 @@
    "name": "Meta: Llama 4 Maverick",
    "created": 1743881822,
    "createdDate": "2025-04-05",
-   "context_length": 1048576,
+   "context_length": 524288,
    "hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
    "input": 0.1875,
    "output": 0.6525,
@@ -7442,9 +7478,9 @@
    "createdDate": "2025-03-13",
    "context_length": 131072,
    "hugging_face_id": "google/gemma-3-4b-it",
-   "input": 0.05,
-   "output": 0.1,
-   "cache_read": null,
+   "input": 0.04,
+   "output": 0.05,
+   "cache_read": 0.02,
    "input_modalities": [
     "text",
     "image"
@@ -7753,23 +7789,6 @@
    ]
   },
   {
-   "id": "deepseek/deepseek-r1",
-   "name": "DeepSeek: R1",
-   "created": 1737381095,
-   "createdDate": "2025-01-20",
-   "context_length": 64000,
-   "hugging_face_id": "deepseek-ai/DeepSeek-R1",
-   "input": 0.7,
-   "output": 2.5,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "minimax/minimax-01",
    "name": "MiniMax: MiniMax-01",
    "created": 1736915462,
@@ -7811,25 +7830,8 @@
    "createdDate": "2024-12-26",
    "context_length": 163840,
    "hugging_face_id": "deepseek-ai/DeepSeek-V3",
-   "input": 0.32,
-   "output": 0.89,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "sao10k/l3.3-euryale-70b",
-   "name": "Sao10K: Llama 3.3 Euryale 70B",
-   "created": 1734535928,
-   "createdDate": "2024-12-18",
-   "context_length": 131072,
-   "hugging_face_id": "Sao10K/L3.3-70B-Euryale-v2.3",
-   "input": 0.65,
-   "output": 0.75,
+   "input": 0.2574,
+   "output": 1.0287,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -8073,8 +8075,8 @@
    "createdDate": "2024-09-25",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
-   "input": 0.05,
-   "output": 0.33,
+   "input": 0.0509,
+   "output": 0.335,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -8416,23 +8418,6 @@
    "input_modalities": [
     "text",
     "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "microsoft/wizardlm-2-8x22b",
-   "name": "WizardLM-2 8x22B",
-   "created": 1713225600,
-   "createdDate": "2024-04-16",
-   "context_length": 65535,
-   "hugging_face_id": "microsoft/WizardLM-2-8x22B",
-   "input": 0.62,
-   "output": 0.62,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
    ],
    "output_modalities": [
     "text"

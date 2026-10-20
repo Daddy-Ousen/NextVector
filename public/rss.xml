@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 01:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:45:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Elorian Launches Glimpse: Visual Scratch Space Model by Ex-DeepMind Team</title>
+      <link>https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model</guid>
+      <description>Palo Alto startup founded by Gemini co-creator Andrew Dai debuts 262K-context vision model that actively re-inspects images and video frames during inference.</description>
+      <category>AI</category>
+      <pubDate>Mon, 19 Oct 2026 00:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>DeepSeek Launches Native Web Search and Fetch API at $0.75 per 1,000 Requests</title>
+      <link>https://nextvector.rhasan.online/article/deepseek-launches-native-web-search-and-fetch-api</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-launches-native-web-search-and-fetch-api</guid>
+      <description>The Beijing lab opens standalone HTTP endpoints for live web crawling and Markdown conversion, charging strictly for successful responses across agent workflows.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 19 Oct 2026 00:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Commits Initial 5% Equity Stake to New Public Benefit Fund, Scaling With Valuation</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-commits-equity-stake-to-public-benefit-fund</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-commits-equity-stake-to-public-benefit-fund</guid>
+      <description>The AI lab pledges corporate shares to a dedicated LLC designed to expand contributions by 2% for every 50% valuation gain above baseline.</description>
+      <category>AI</category>
+      <pubDate>Mon, 19 Oct 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Drafts Federal AI Safety Bill Requiring 50 Deaths or $1B in Damages for Intervention</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds</guid>
+      <description>Legislative proposal establishes Department of Commerce evaluation jurisdiction, barring state agencies from ordering unilateral model shutdowns.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Web Services and Financial Platforms Deploy Widespread Blocking Against Autonomous AI Agents</title>
+      <link>https://nextvector.rhasan.online/article/websites-and-financial-platforms-block-autonomous-ai-agents</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/websites-and-financial-platforms-block-autonomous-ai-agents</guid>
+      <description>Amazon, Delta Air Lines, and major banks shut out browser agents from OpenAI, Meta, and xAI, triggering disputes over data rights and scraping boundaries.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 18 Oct 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Sepp Hochreiter&#x27;s Lab Introduces KronLSTM: Kronecker Delta Rule for Stable Long-Context Linear Attention</title>
+      <link>https://nextvector.rhasan.online/article/kronlstm-kronecker-delta-rule-linear-attention</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/kronlstm-kronecker-delta-rule-linear-attention</guid>
+      <description>Austrian researchers develop rank-one matrix memory revision mechanism that bounds state norm and avoids degradation across extended sequence benchmarks.</description>
+      <category>RESEARCH</category>
+      <pubDate>Sun, 18 Oct 2026 23:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>DeepSeek Releases V4.1 Flash 1017: Open Weights with 1M Context and Benchmark Surges</title>
       <link>https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released</link>
@@ -496,60 +550,6 @@
       <description>At Kernel Recipes in Paris, WG14 members unveil proposals N3806–N3808, adding bounded semantics, contracts, and trapping behaviors to preserve C in the memory-safety era.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Thu, 08 Oct 2026 19:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Epistemology in the Age of Automated Provers: Terence Tao and Álvaro Lozano-Robledo on the Future of Mathematical Education</title>
-      <link>https://nextvector.rhasan.online/article/mathematical-epistemology-automated-provers-terence-tao-lozano-robledo</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mathematical-epistemology-automated-provers-terence-tao-lozano-robledo</guid>
-      <description>Addressing anxieties across university mathematics departments, Fields Medalist Terence Tao publishes an influential manifesto on the division between creative intuition and machine verification.</description>
-      <category>RESEARCH</category>
-      <pubDate>Thu, 08 Oct 2026 17:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Bevy 0.20 Released: Solari Real-Time Path Tracing on Metal, WESL Shading Language, and Bevy Scene Notation</title>
-      <link>https://nextvector.rhasan.online/article/bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/bevy-0-20-released-solari-path-tracing-metal-wesl-scene-notation</guid>
-      <description>The open-source Rust game engine expands its graphics pipeline with Apple Metal ray tracing, DLSS 3.7 integration, and declarative ECS scene notation.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 08 Oct 2026 16:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Releases Claude Haiku 5.5: Native Effort Controls, Sub-Agent Concurrency, and $0.10 Inference</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-claude-haiku-5-5-released-effort-controls-subagent-workflows</guid>
-      <description>Completing the Claude 5.5 family, Anthropic&#x27;s fastest model introduces granular test-time compute tuning, a 1M-token context window, and Anthropic&#x27;s fastest response times for autonomous swarms.</description>
-      <category>AI</category>
-      <pubDate>Wed, 07 Oct 2026 21:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Nobel Prize in Chemistry 2026: Henri Kagan and Kenso Soai Honored for Asymmetric Autocatalysis and Homochirality</title>
-      <link>https://nextvector.rhasan.online/article/nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nobel-prize-chemistry-2026-henri-kagan-kenso-soai-asymmetric-autocatalysis</guid>
-      <description>The Royal Swedish Academy of Sciences honors pioneering discoveries in non-linear chiral amplification and the Soai reaction, explaining how life&#x27;s mirror symmetry was broken.</description>
-      <category>SCIENCE</category>
-      <pubDate>Wed, 07 Oct 2026 20:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Rolls Out GPT-6 Globally with Intelligent UI: Dynamic Interactive Workspaces and Thinking Streaming</title>
-      <link>https://nextvector.rhasan.online/article/openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-gpt-6-intelligent-ui-interactive-generative-workspaces-rollout</guid>
-      <description>ChatGPT transforms from a text-centric messaging interface into a generative execution canvas, rendering interactive widgets, sliders, and dynamic charts in-flight.</description>
-      <category>AI</category>
-      <pubDate>Wed, 07 Oct 2026 18:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Docker Launches Docker Agent: Declarative YAML Runtime, Native MCP Tooling, and OCI Packaging for AI Swarms</title>
-      <link>https://nextvector.rhasan.online/article/docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/docker-agent-open-source-yaml-runtime-mcp-oci-registry-distribution</guid>
-      <description>Packaged directly into Docker Desktop 4.63+, Docker open-sources a standardized container harness for multi-agent workflows with Model Context Protocol routing.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 07 Oct 2026 17:30:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

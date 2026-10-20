@@ -62,8 +62,8 @@
         "rule": "Highest Arena score with a blended list price under $0.20 per 1M tokens.",
         "model": "GLM-5.3-Flash",
         "developer": "Zhipu AI",
-        "metric": "Arena 1475 at $0.09 blended",
-        "listPrice": "$0.048 / $0.20 per 1M tokens",
+        "metric": "Arena 1475 at $0.08 blended",
+        "listPrice": "$0.047 / $0.16 per 1M tokens",
         "url": "https://nextvector.rhasan.online/models/model-glm-5-3-flash"
       },
       {
@@ -72,7 +72,7 @@
         "model": "Kimi K3",
         "developer": "Moonshot AI",
         "metric": "Arena 1488 · Kimi K3 license",
-        "listPrice": "$0.304 / $11.94 per 1M tokens",
+        "listPrice": "$0.239 / $11.94 per 1M tokens",
         "url": "https://nextvector.rhasan.online/models/model-kimi-k3"
       },
       {

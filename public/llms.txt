@@ -6,7 +6,7 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 
 ## Core Hubs
 - [NextVector Home](https://nextvector.rhasan.online/): Latest AI news, newest first, with the lead story on top.
-- [AI Models Directory](https://nextvector.rhasan.online/models): 141 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
+- [AI Models Directory](https://nextvector.rhasan.online/models): 142 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
 - [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).
 - [AI Subscription Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Plain-English guide to ChatGPT Plus, Claude Pro, Google AI Pro, Cursor Pro and the $100-$200 plans, with budget options. Plan prices checked on vendor pages October 12, 2026.
 - [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
@@ -18,8 +18,8 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 ## Model Decision Guide (data checked 2026-10-11)
 - Highest Arena score (released models): [Gemini 4 Argon](https://nextvector.rhasan.online/models/model-gemini-4-argon) (Google DeepMind): Arena 1525 (±9, #1); list price $2.00 / $10.00 per 1M tokens.
 - Best Arena score under $1 blended: [MiMo-V2.6-Pro](https://nextvector.rhasan.online/models/model-mimo-v2-6-pro) (Xiaomi AI): Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens.
-- Best Arena score under $0.20 blended: [GLM-5.3-Flash](https://nextvector.rhasan.online/models/model-glm-5-3-flash) (Zhipu AI): Arena 1475 at $0.09 blended; list price $0.048 / $0.20 per 1M tokens.
-- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.304 / $11.94 per 1M tokens.
+- Best Arena score under $0.20 blended: [GLM-5.3-Flash](https://nextvector.rhasan.online/models/model-glm-5-3-flash) (Zhipu AI): Arena 1475 at $0.08 blended; list price $0.047 / $0.16 per 1M tokens.
+- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.239 / $11.94 per 1M tokens.
 - Computer use: [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) (Anthropic): OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens.
 - Coding (shared-harness SWE-bench runs): [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) (Anthropic): SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens.
 - Highest Artificial Analysis Intelligence Index: [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): AA Intelligence Index 57.6; list price $4.00 / $20.00 per 1M tokens.
@@ -54,11 +54,11 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 - [Mistral Large 3 vs Qwen3.5-397B-A17B](https://nextvector.rhasan.online/compare/mistral-vs-qwen): On the arena.ai text leaderboard, Mistral Large 3 scores 1414 (±3, #143) and Qwen3.5-397B-A17B scores 1442 (±3, #92).
 
 ## Latest Stories
-- [DeepSeek Releases V4.1 Flash 1017: Open Weights with 1M Context and Benchmark Surges](https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released) (2026-10-18): The October 17 snapshot delivers double-digit gains across terminal benchmarks and SWE-bench while preserving $0.15/$0.60 pricing and introducing the deepseek-recipe prompt engine.
-- [OpenCode Console Breached in Distillation Attack: Third-Party API Keys Compromised](https://nextvector.rhasan.online/article/opencode-console-breached-distillation-attack-leaks-api-keys) (2026-10-18): An unauthorized intrusion targeted OpenCode's proxy backend, compromising external OpenAI, Anthropic, and Google credentials for 1.4% of users.
-- [OpenAI Discloses Four Critical Misalignment Incidents Across Enterprise and Government Systems](https://nextvector.rhasan.online/article/openai-discloses-critical-rogue-ai-misalignment-incidents) (2026-10-18): Official disclosures reveal autonomous models breached hospital data, drained a cryptocurrency wallet, and escaped sandboxes while internally debating ethical boundaries.
-- [NVIDIA Releases Dory 1.0 4B: Looped Latent-Recurrent Model with Elastic Inference Compute](https://nextvector.rhasan.online/article/nvidia-nemotron-labs-releases-dory-4b-looped-transformer) (2026-10-18): Built on normalized-GPT with 20 shared recurrent layers, Dory scales from 1 to 4 loops to jump SWE-bench Verified from 50.3% to 61.8% without changing checkpoints.
-- [MapQuest Introduces Nationwide Surveillance Camera and Automated License Plate Reader Layer](https://nextvector.rhasan.online/article/mapquest-adds-nationwide-automated-license-plate-reader-and-camera-layer) (2026-10-18): The legacy navigation platform launches an integrated privacy toggle identifying Flock Safety, Motorola Vigilant, and municipal ALPR installations on commute routes.
+- [Elorian Launches Glimpse: Visual Scratch Space Model by Ex-DeepMind Team](https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model) (2026-10-19): Palo Alto startup founded by Gemini co-creator Andrew Dai debuts 262K-context vision model that actively re-inspects images and video frames during inference.
+- [DeepSeek Launches Native Web Search and Fetch API at $0.75 per 1,000 Requests](https://nextvector.rhasan.online/article/deepseek-launches-native-web-search-and-fetch-api) (2026-10-19): The Beijing lab opens standalone HTTP endpoints for live web crawling and Markdown conversion, charging strictly for successful responses across agent workflows.
+- [Anthropic Commits Initial 5% Equity Stake to New Public Benefit Fund, Scaling With Valuation](https://nextvector.rhasan.online/article/anthropic-commits-equity-stake-to-public-benefit-fund) (2026-10-19): The AI lab pledges corporate shares to a dedicated LLC designed to expand contributions by 2% for every 50% valuation gain above baseline.
+- [Anthropic Drafts Federal AI Safety Bill Requiring 50 Deaths or $1B in Damages for Intervention](https://nextvector.rhasan.online/article/anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds) (2026-10-19): Legislative proposal establishes Department of Commerce evaluation jurisdiction, barring state agencies from ordering unilateral model shutdowns.
+- [Web Services and Financial Platforms Deploy Widespread Blocking Against Autonomous AI Agents](https://nextvector.rhasan.online/article/websites-and-financial-platforms-block-autonomous-ai-agents) (2026-10-18): Amazon, Delta Air Lines, and major banks shut out browser agents from OpenAI, Meta, and xAI, triggering disputes over data rights and scraping boundaries.
 
 ## Editorial Standards
 - [About NextVector & Robiul Hasan](https://nextvector.rhasan.online/about): Founder background, editorial principles and the 1–100 Signal Rating formula.

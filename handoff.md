@@ -1,3 +1,39 @@
+# Handoff — 2026-10-19 (Daily Intelligence Pipeline Run: art-258 to art-263)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch (Elorian Glimpse), Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-258`: `elorian-releases-glimpse-visual-scratch-space-model` (Hero / Model Report, Signal 93, Elorian launches Glimpse: multimodal foundation model by ex-DeepMind Gemini co-creator Andrew Dai featuring active visual scratch space inference and 262,144-token context, priced at $0.60/$3.00 on OpenRouter).
+  - `art-259`: `deepseek-launches-native-web-search-and-fetch-api` (Featured / Breaking, Signal 92, DeepSeek launches standalone /v1/tools/search and /v1/tools/fetch APIs powered by proprietary web crawler, billing strictly for successful queries at $0.75 per 1,000 requests ahead of Nov 1 commercial billing).
+  - `art-260`: `anthropic-commits-equity-stake-to-public-benefit-fund` (Featured / Analysis, Signal 90, Anthropic creates Public Benefit Fund LLC with initial 5% equity commitment scaling +2% per 50% valuation surge, elevating total public-interest equity to ~20%).
+  - `art-261`: `anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds` (Analysis, Signal 89, Leaked legislative proposals reveal Anthropic proposing federal AI safety criteria requiring $1B damages or 50 human deaths before Commerce Department can halt model deployments in DC District Court, preempting state-level bans).
+  - `art-262`: `websites-and-financial-platforms-block-autonomous-ai-agents` (Deep Dive, Signal 88, Investigation by The Verge reveals Amazon, Delta Air Lines, Yelp, Amtrak, JPMorgan Chase, and Charles Schwab blocking autonomous browsing agents from Meta, OpenAI, and xAI).
+  - `art-263`: `kronlstm-kronecker-delta-rule-linear-attention` (Research Explained, Signal 87, JKU Linz / ELLIS Unit Linz led by Sepp Hochreiter publish arXiv:2610.26834v1 introducing KronLSTM with Kronecker Delta Rule, provably converging to steady-state Markovian distribution with uniformly bounded matrix norm).
+- **Model Watch:**
+  - Added `model-elorian-glimpse` (`elorian/glimpse` on OpenRouter, 262,144 token context, $0.60 prompt / $3.00 completion / $0.06 cache read per 1M tokens, text/image/video modalities) to `scripts/model_sources/curated_models.json`.
+  - Refreshed snapshot via `python scripts/fetch_model_sources.py openrouter`.
+  - Rebuilt model registry via `python scripts/build_model_data.py` (total models tracked: 142, Pareto frontier: 6 of 112 priced models).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Monday, October 19, 2026` (5 items linking to art-258..262).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-258..262).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 16 bits from catalog (pairwise 24–45 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed with `$env:NODE_OPTIONS="--max-old-space-size=8192"`; prerendered 263 articles, 142 models, 10 showdowns; 434 static HTML files, sitemap 432 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-19-the-morning-vector.md` (`aa59c9d`).
+- **Commits:**
+  - `f96cde9`: `feat(intelligence): daily briefing and articles update [2026-10-19]`
+  - `aa59c9d`: `docs(newsletter): The Morning Vector [2026-10-19]`
+- **Stories Dropped / Excluded:**
+  - `arXiv:2610.18861` (Hybrid Reasoning Agents) was excluded because the primary arXiv submission date was October 13, 2026 (> 48h breaking window).
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `aa59c9d` / `f96cde9`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - When building large catalogs (~263 articles + 142 models), Node heap memory can exceed defaults on Windows during Rollup/Vite native bundling. Always run `npm run build` with `$env:NODE_OPTIONS="--max-old-space-size=8192"`.
+
 # Handoff — 2026-10-18 (Daily Intelligence Pipeline Run: art-252 to art-257)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch (DeepSeek V4.1 Flash 1017), Verification 8/8 Passed, Newsletter Published

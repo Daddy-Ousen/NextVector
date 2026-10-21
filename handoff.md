@@ -1,3 +1,39 @@
+# Handoff — 2026-10-21 (Daily Intelligence Pipeline Run: art-264 to art-269)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-264`: `claude-designs-protein-binders-against-fatal-scorpion-neurotoxins` (Hero / Discovery, Signal 94, Anthropic, Citrini Research, Adaptyv Bio, and Twist Bioscience publish wet-lab results confirming 17 functional de novo protein minibinders designed by Claude against lethal scorpion venom neurotoxins).
+  - `art-265`: `mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk` (Featured / Model Report, Signal 93, Mistral AI unveils Voxtral 3 suite: Voxtral Small Transcribe 3 achieving 4.0% inferred WER across FLEURS 45, Voxtral Mini Transcribe 3 4B parameters at $0.0035/min, Voxtral Mini TTS 3 across 50+ dialects, and sovereign Voice Agent SDK).
+  - `art-266`: `cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port` (Featured / Breaking, Signal 91, Cloudflare, VoidZero, and Owner.com announce tsrs, a faithful Rust port of the TypeScript compiler delivering up to 8x speedup and 70% memory reduction with GC-free WebAssembly execution).
+  - `art-267`: `deepseek-open-sources-deepinfer-production-inference-engine` (Breaking, Signal 90, DeepSeek open-sources DeepInfer on GitHub, releasing its production serving runtime for DeepSeek-V4.1-Flash across NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs with DSpark and batch-invariant inference).
+  - `art-268`: `flawed-key-generation-exposes-eight-emudhra-intermediate-cas` (Breaking, Signal 89, Security researchers confirm mathematical compromise of private keys for eight eMudhra intermediate CAs due to flawed key generation, triggering emergency blocks across Chrome, Firefox, Apple, and Microsoft trust stores).
+  - `art-269`: `us-homeland-security-directs-civilian-agencies-to-remove-deepseek` (Analysis, Signal 88, US Department of Homeland Security issues binding operational directive instructing civilian federal agencies to purge DeepSeek AI models and derivative tooling).
+- **Model Watch:**
+  - Zero new foundation language models met tracking criteria in the last 72 hours.
+  - Tracked Voxtral 3 (speech models with 4B Mini Transcribe at $0.0035/min) and DeepInfer (inference engine).
+  - Maintained 142 tracked models in registry.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Wednesday, October 21, 2026` (5 items linking to art-264..268).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-264..268).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 18 bits from catalog (pairwise 21–39 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed with `$env:NODE_OPTIONS="--max-old-space-size=8192"`; prerendered 269 articles, 142 models, 10 showdowns; 440 static HTML files, sitemap 438 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-21-the-morning-vector.md` (`a49f910`).
+- **Commits:**
+  - `944108d`: `feat(intelligence): daily briefing and articles update [2026-10-21]`
+  - `a49f910`: `docs(newsletter): The Morning Vector [2026-10-21]`
+- **Stories Dropped / Excluded:**
+  - `Inception Mercury 3` was evaluated but released October 16 (> 72h window for new model entry).
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `a49f910` / `944108d`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Always verify that candidate cover photo Unsplash IDs are not present anywhere in `src/data/articlesData.ts` even if perceptual dhash passes, because `add_articles.py` enforces exact-token uniqueness across all catalog entries.
+
 # Handoff — 2026-10-19 (Daily Intelligence Pipeline Run: art-258 to art-263)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch (Elorian Glimpse), Verification 8/8 Passed, Newsletter Published

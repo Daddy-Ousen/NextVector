@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Monday, October 19, 2026",
-  summary: "Elorian introduced Glimpse, an optical-reasoning foundation model featuring an interactive visual scratch space, while DeepSeek launched native Search and Fetch API endpoints. In policy and infrastructure, Anthropic pledged 5% equity to a new Public Benefit Fund and drafted federal safety thresholds, while web platforms intensified bot blocking against autonomous agents.",
+  date: "Wednesday, October 21, 2026",
+  summary: "Anthropic demonstrated Claude autonomously engineering 17 wet-lab-validated protein binders against lethal scorpion neurotoxins, while Mistral AI unveiled Voxtral 3 with speech models across 50+ languages. In infrastructure and security, Cloudflare and VoidZero ported TypeScript to Rust, DeepSeek open-sourced DeepInfer, and eMudhra suffered an intermediate CA key exposure.",
   items: [
     {
       id: 'brief-1',
-      headline: "Elorian Launches Glimpse: Visual Scratch Space Model by Ex-DeepMind Team",
-      category: "ai" as const,
+      headline: "Claude Designs De Novo Protein Binders Against Fatal Scorpion Neurotoxins in Wet-Lab Validation",
+      category: "science" as const,
       urgency: "Critical Signal" as const,
-      summary: "Former Google DeepMind Gemini co-creator Andrew Dai launched Elorian Glimpse, a 262K-context vision model that actively re-inspects images and video frames during intermediate reasoning.",
-      whyItMatters: "Moves beyond static one-pass visual tokenization into dynamic visual tool use and spatial reasoning across robotics and scientific inspection.",
-      articleSlug: "elorian-releases-glimpse-visual-scratch-space-model"
+      summary: "Claude autonomously generated candidate minibinders that yielded 17 lab-confirmed binders against fatal scorpion neurotoxins in synthesis tests by Adaptyv Bio and Twist Bioscience.",
+      whyItMatters: "Compresses target-to-binder discovery cycles from months to days for neglected diseases lacking commercial antivenom investment.",
+      articleSlug: "claude-designs-protein-binders-against-fatal-scorpion-neurotoxins"
     },
     {
       id: 'brief-2',
-      headline: "DeepSeek Launches Native Web Search and Fetch API at $0.75 per 1,000 Requests",
-      category: "technology" as const,
+      headline: "Mistral AI Launches Voxtral 3: Real-Time Multilingual Speech Models and Voice Agent SDK",
+      category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "DeepSeek unveiled dedicated Search and Fetch endpoints powered by its proprietary web index, billing strictly for successful queries at $0.75 per 1,000 requests.",
-      whyItMatters: "Provides developers and autonomous RAG agents with an inexpensive, first-party web retrieval alternative ahead of November 1 commercial cutover.",
-      articleSlug: "deepseek-launches-native-web-search-and-fetch-api"
+      summary: "Mistral released Voxtral 3, pairing state-of-the-art multilingual transcription and emotional TTS across 50+ languages with a low-latency voice agent SDK.",
+      whyItMatters: "Delivers an EU-hosted or on-premise sovereign voice alternative that outperforms Whisper large-v3 and Gemini on multilingual benchmarks.",
+      articleSlug: "mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk"
     },
     {
       id: 'brief-3',
-      headline: "Anthropic Commits Initial 5% Equity Stake to New Public Benefit Fund, Scaling With Valuation",
-      category: "ai" as const,
+      headline: "Cloudflare, VoidZero, and Oxc Unveil tsrs: Native TypeScript Port to Rust with 8x Speedup",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Anthropic established a wholly-owned LLC Public Benefit Fund with an initial 5% equity pledge, expanding by 2% for every 50% valuation gain above baseline.",
-      whyItMatters: "Brings total equity pledged to the public good to roughly 20%, establishing a scalable corporate mechanism to address technological labor disruption.",
-      articleSlug: "anthropic-commits-equity-stake-to-public-benefit-fund"
+      summary: "Cloudflare and VoidZero unveiled an open-source Rust port of TypeScript delivering up to 8x faster type checking and ~70% lower memory usage.",
+      whyItMatters: "Enables WebAssembly execution without garbage-collection overhead while upstreaming optimizations into TypeScript 7.1 beta.",
+      articleSlug: "cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port"
     },
     {
       id: 'brief-4',
-      headline: "Anthropic Drafts Federal AI Safety Bill Requiring 50 Deaths or $1B in Damages for Intervention",
-      category: "technology" as const,
+      headline: "DeepSeek Open-Sources DeepInfer: High-Performance Production Inference Engine for V4.1",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Leaked legislative text reveals Anthropic advocating a federal framework granting the Commerce Department exclusive authority to halt models exceeding catastrophic harm thresholds.",
-      whyItMatters: "Preempts state-level regulation and judicial injunctions, focusing federal scrutiny strictly on bioweapons, cyberwarfare, and loss-of-control risks.",
-      articleSlug: "anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds"
+      summary: "DeepSeek published its internal serving framework powering V4.1-Flash across NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs.",
+      whyItMatters: "Open-sources proprietary DSpark multi-token prediction and bounded replay sliding-window attention kernels.",
+      articleSlug: "deepseek-open-sources-deepinfer-production-inference-engine"
     },
     {
       id: 'brief-5',
-      headline: "Web Services and Financial Platforms Deploy Widespread Blocking Against Autonomous AI Agents",
+      headline: "Flawed Key Generation Exposes Eight eMudhra Intermediate Certificate Authorities",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Amazon, Delta Air Lines, Yelp, and top commercial banks implemented bot defenses blocking browser agents from Meta, OpenAI, and xAI.",
-      whyItMatters: "Highlights growing economic and legal friction between autonomous AI consumer agency and closed web monetization models.",
-      articleSlug: "websites-and-financial-platforms-block-autonomous-ai-agents"
+      summary: "Cryptographic key derivation flaws exposed eight eMudhra intermediate CAs, prompting urgent revocations across Chrome, Firefox, Apple, and Microsoft.",
+      whyItMatters: "Highlights systemic trust-store vulnerabilities in non-browser systems that do not consume dynamic certificate revocation feeds.",
+      articleSlug: "flawed-key-generation-exposes-eight-emudhra-intermediate-cas"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Vision AI",
-    text: "Elorian debuts Glimpse, enabling dynamic visual scratch space reasoning with 262K context.",
-    articleSlug: "elorian-releases-glimpse-visual-scratch-space-model"
+    tag: "Bio AI",
+    text: "Claude designs 17 wet-lab validated protein minibinders against fatal scorpion neurotoxins.",
+    articleSlug: "claude-designs-protein-binders-against-fatal-scorpion-neurotoxins"
   },
   {
     id: 'sig-2',
-    tag: "Developer API",
-    text: "DeepSeek launches native web Search and Fetch APIs priced at $0.75 per 1,000 queries.",
-    articleSlug: "deepseek-launches-native-web-search-and-fetch-api"
+    tag: "Speech AI",
+    text: "Mistral AI debuts Voxtral 3 voice agent SDK and speech models across 50+ languages.",
+    articleSlug: "mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk"
   },
   {
     id: 'sig-3',
-    tag: "Corporate Governance",
-    text: "Anthropic establishes Public Benefit Fund with initial 5% equity stake scaling on valuation.",
-    articleSlug: "anthropic-commits-equity-stake-to-public-benefit-fund"
+    tag: "Dev Tools",
+    text: "Cloudflare and VoidZero unveil tsrs, porting TypeScript to Rust with 8x faster checking.",
+    articleSlug: "cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port"
   },
   {
     id: 'sig-4',
-    tag: "AI Legislation",
-    text: "Anthropic drafts federal safety bill requiring $1B damages or 50 deaths for shutdowns.",
-    articleSlug: "anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds"
+    tag: "LLM Serving",
+    text: "DeepSeek open-sources DeepInfer inference framework for NVIDIA SM100 and Ascend 950.",
+    articleSlug: "deepseek-open-sources-deepinfer-production-inference-engine"
   },
   {
     id: 'sig-5',
-    tag: "Agent Infrastructure",
-    text: "Amazon, Delta, and major banks deploy network blocks against autonomous browsing agents.",
-    articleSlug: "websites-and-financial-platforms-block-autonomous-ai-agents"
+    tag: "Cybersecurity",
+    text: "Flawed key generation compromises eight eMudhra intermediate CAs across trust stores.",
+    articleSlug: "flawed-key-generation-exposes-eight-emudhra-intermediate-cas"
   }
 ];

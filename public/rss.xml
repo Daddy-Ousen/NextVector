@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 04:30:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Claude Designs De Novo Protein Binders Against Fatal Scorpion Neurotoxins in Wet-Lab Validation</title>
+      <link>https://nextvector.rhasan.online/article/claude-designs-protein-binders-against-fatal-scorpion-neurotoxins</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/claude-designs-protein-binders-against-fatal-scorpion-neurotoxins</guid>
+      <description>Anthropic researchers, Citrini, and Twist Bioscience validate 17 AI-engineered minibinders in the lab to accelerate neglected antivenom discovery.</description>
+      <category>SCIENCE</category>
+      <pubDate>Wed, 21 Oct 2026 04:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Mistral AI Launches Voxtral 3: Real-Time Multilingual Speech Models and Voice Agent SDK</title>
+      <link>https://nextvector.rhasan.online/article/mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk</guid>
+      <description>Paris lab unveils Voxtral Small and Mini Transcribe, emotional TTS across 50 dialects, and an end-to-end voice agent SDK for sovereign enterprise deployment.</description>
+      <category>AI</category>
+      <pubDate>Wed, 21 Oct 2026 04:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cloudflare, VoidZero, and Oxc Unveil tsrs: Native TypeScript Port to Rust with 8x Speedup</title>
+      <link>https://nextvector.rhasan.online/article/cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port</guid>
+      <description>Collaborative project with Microsoft TypeScript team delivers 70% memory reduction and garbage-collection-free WebAssembly compiler execution.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 21 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>DeepSeek Open-Sources DeepInfer: High-Performance Production Inference Engine for V4.1</title>
+      <link>https://nextvector.rhasan.online/article/deepseek-open-sources-deepinfer-production-inference-engine</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-open-sources-deepinfer-production-inference-engine</guid>
+      <description>The Beijing lab releases its internal serving framework powering DeepSeek-V4.1-Flash across NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs.</description>
+      <category>AI</category>
+      <pubDate>Wed, 21 Oct 2026 03:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Flawed Key Generation Exposes Eight eMudhra Intermediate Certificate Authorities</title>
+      <link>https://nextvector.rhasan.online/article/flawed-key-generation-exposes-eight-emudhra-intermediate-cas</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/flawed-key-generation-exposes-eight-emudhra-intermediate-cas</guid>
+      <description>Cryptographic breakdown allows mathematical derivation of private keys, triggering emergency certificate revocations across Firefox, Chrome, Apple, and Microsoft.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 21 Oct 2026 03:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>US Homeland Security Directs Civilian Agencies to Remove DeepSeek AI Models</title>
+      <link>https://nextvector.rhasan.online/article/us-homeland-security-directs-civilian-agencies-to-remove-deepseek</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/us-homeland-security-directs-civilian-agencies-to-remove-deepseek</guid>
+      <description>Federal directive mandates elimination of Chinese open-weight models and derivative code across Treasury, State, and Justice departments.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 21 Oct 2026 03:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Elorian Launches Glimpse: Visual Scratch Space Model by Ex-DeepMind Team</title>
       <link>https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model</link>
@@ -496,60 +550,6 @@
       <description>Security researchers demonstrate automated binary reconstruction, transforming stripped x86_64 game binaries into compilable, idiomatic source code via iterative agent verification.</description>
       <category>AI</category>
       <pubDate>Sat, 10 Oct 2026 20:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Popvax Advances PVX-001: Open-Source Broad-Spectrum Computational Protein Vaccine Enters Phase 1 Human Trials</title>
-      <link>https://nextvector.rhasan.online/article/popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/popvax-pvx-001-open-source-computational-vaccine-phase-1-clinical-trials</guid>
-      <description>Engineered using macromolecular scaffolding and de novo structural biology, the computationally designed nanoparticle vaccine begins clinical validation outside traditional pharma moats.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sat, 10 Oct 2026 18:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Why DuckDB 2.0 Is Faster: Vectorized Out-of-Core Execution, Parallel Streaming Hash Joins, and Columnar Compression</title>
-      <link>https://nextvector.rhasan.online/article/duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/duckdb-2-0-architectural-deep-dive-vectorized-out-of-core-execution</guid>
-      <description>DuckDB Labs overhauls the internal query engine to eliminate memory spilling penalties and push local SIMD analytical throughput past Apache Parquet.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 10 Oct 2026 16:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>The Open Group De-Lists macOS from UNIX 03 Registry: Apple Concludes Historic POSIX Certification Era</title>
-      <link>https://nextvector.rhasan.online/article/open-group-delists-macos-unix-03-registry-apple-retires-posix-branding</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/open-group-delists-macos-unix-03-registry-apple-retires-posix-branding</guid>
-      <description>After nearly two decades of official SUSv3 compliance, macOS departs the UNIX registry as Apple doubles down on proprietary Darwin, Mach, and DriverKit architecture.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 10 Oct 2026 14:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>The Virtual Cell Coalition: Biohub, DOE, DeepMind, and Meta Commit $1.8B to AI-Ready Biology Data</title>
-      <link>https://nextvector.rhasan.online/article/virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/virtual-cell-coalition-biohub-doe-deepmind-meta-1-8b-biological-data</guid>
-      <description>A coordinated cross-sector initiative unifies exascale supercomputing, cryo-ET, and foundation model architectures to simulate complete human cellular biology in silico.</description>
-      <category>SCIENCE</category>
-      <pubDate>Thu, 08 Oct 2026 22:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Crypto Enters &#x27;Bunker Mode&#x27; Debate: Ethereum Researchers Warn AI Math Solvers Could Threaten ECDSA Before Quantum Computers</title>
-      <link>https://nextvector.rhasan.online/article/ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ethereum-bunker-mode-debate-ai-math-solvers-ecdsa-cryptanalysis</guid>
-      <description>Following formal mathematical proof releases, Justin Drake urges migration to unspent key addresses, sparking an intense clash with Vitalik Buterin over algorithmic cryptanalysis.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 08 Oct 2026 20:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>ISO C Working Group 14 Moves to Systematically Eliminate Undefined Behavior in Upcoming C2y Standard</title>
-      <link>https://nextvector.rhasan.online/article/iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/iso-c-wg14-moves-to-eliminate-undefined-behavior-c2y-standard</guid>
-      <description>At Kernel Recipes in Paris, WG14 members unveil proposals N3806–N3808, adding bounded semantics, contracts, and trapping behaviors to preserve C in the memory-safety era.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 08 Oct 2026 19:15:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

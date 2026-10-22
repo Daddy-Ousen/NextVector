@@ -1,3 +1,39 @@
+# Handoff — 2026-10-22 (Daily Intelligence Pipeline Run: art-270 to art-275)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-270`: `php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php` (Hero / Breaking, Signal 94, Wiz Research and OpenAI's Patch the Planet uncover CVE-2026-109618/109619 in core PHP dating back to PHP 5.4, affecting 70% of the web).
+  - `art-271`: `anthropic-unveils-claude-duet-proactive-autonomous-agent` (Featured / Discovery, Signal 93, Anthropic debuts proactive ambient agent powered by Opus 5.5 across 6,000+ connectors with human-in-the-loop approval gating).
+  - `art-272`: `openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden` (Featured / Industry Watch, Signal 92, OpenAI models and Codex arrive on Google Cloud Model Garden with GCP commit spend drawdown).
+  - `art-273`: `duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode` (Breaking, Signal 90, DuckDB 2.0.0 LTS Cinnamon Teal debuts with Quack client-server protocol, async I/O on S3, native VARIANT, LTS to Oct 2027).
+  - `art-274`: `compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor` (Breaking, Signal 89, PyPI version 1.107.0 of LiteLLM compromised with credential stealer and RAT executing on every Python process startup).
+  - `art-275`: `meta-penalized-25-billion-in-new-mexico-cambridge-analytica-suit` (Analysis, Signal 88, New Mexico state judge orders Meta to pay $25 billion civil penalty for deceptive user data practices under state UPA).
+- **Model Watch:**
+  - Zero new foundation language models met tracking criteria in the last 72 hours.
+  - Tracked Claude Duet (ambient proactive agent powered by Opus 5.5) and OpenAI Google Cloud Model Garden availability.
+  - Maintained 142 tracked models in registry.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Thursday, October 22, 2026` (5 items linking to art-270..274).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-270..274).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 18 bits from catalog (pairwise 24–36 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed with `$env:NODE_OPTIONS="--max-old-space-size=8192"`; prerendered 275 articles, 142 models, 10 showdowns; 446 static HTML files, sitemap 444 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-22-the-morning-vector.md` (`2ed79f8`).
+- **Commits:**
+  - `1dfb7ea`: `feat(intelligence): daily briefing and articles update [2026-10-22]`
+  - `2ed79f8`: `docs(newsletter): The Morning Vector [2026-10-22]`
+- **Stories Dropped / Excluded:**
+  - `Mistral Large 4` release link was harvested but dates to October 6, 2026 (> 48h window).
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `2ed79f8` / `1dfb7ea`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - `build` requires `$env:NODE_OPTIONS="--max-old-space-size=8192"` on Windows to avoid Rollup heap exhaustion.
+
 # Handoff — 2026-10-21 (Daily Intelligence Pipeline Run: art-264 to art-269)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

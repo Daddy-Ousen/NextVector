@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Wednesday, October 21, 2026",
-  summary: "Anthropic demonstrated Claude autonomously engineering 17 wet-lab-validated protein binders against lethal scorpion neurotoxins, while Mistral AI unveiled Voxtral 3 with speech models across 50+ languages. In infrastructure and security, Cloudflare and VoidZero ported TypeScript to Rust, DeepSeek open-sourced DeepInfer, and eMudhra suffered an intermediate CA key exposure.",
+  date: "Thursday, October 22, 2026",
+  summary: "Security researchers uncovered PHP2Shell, a critical AI-discovered RCE flaw affecting 70% of web servers, as Anthropic debuted proactive agent Claude Duet powered by Opus 5.5. In infrastructure, OpenAI brought frontier models to Google Cloud Model Garden, DuckDB launched 2.0.0 LTS with network server mode, and LiteLLM suffered a PyPI supply chain compromise.",
   items: [
     {
       id: 'brief-1',
-      headline: "Claude Designs De Novo Protein Binders Against Fatal Scorpion Neurotoxins in Wet-Lab Validation",
-      category: "science" as const,
+      headline: "PHP2Shell: AI Uncovers Decade-Old Critical RCE Vulnerability in Core PHP Engine",
+      category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "Claude autonomously generated candidate minibinders that yielded 17 lab-confirmed binders against fatal scorpion neurotoxins in synthesis tests by Adaptyv Bio and Twist Bioscience.",
-      whyItMatters: "Compresses target-to-binder discovery cycles from months to days for neglected diseases lacking commercial antivenom investment.",
-      articleSlug: "claude-designs-protein-binders-against-fatal-scorpion-neurotoxins"
+      summary: "Wiz Research and OpenAI disclosed PHP2Shell, memory safety flaws present since PHP 5.4 that enable unauthenticated RCE across 70% of global web servers.",
+      whyItMatters: "Frontier AI automated the mapping of complex exploit chains that human analysts could not assemble, spurring emergency patches across the PHP ecosystem.",
+      articleSlug: "php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php"
     },
     {
       id: 'brief-2',
-      headline: "Mistral AI Launches Voxtral 3: Real-Time Multilingual Speech Models and Voice Agent SDK",
+      headline: "Anthropic Unveils Claude Duet: Proactive Autonomous Agent Powered by Opus 5.5",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Mistral released Voxtral 3, pairing state-of-the-art multilingual transcription and emotional TTS across 50+ languages with a low-latency voice agent SDK.",
-      whyItMatters: "Delivers an EU-hosted or on-premise sovereign voice alternative that outperforms Whisper large-v3 and Gemini on multilingual benchmarks.",
-      articleSlug: "mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk"
+      summary: "Anthropic announced Claude Duet, an ambient agent running on Opus 5.5 that works continuously in the background, drafts morning briefs, and manages 6,000+ connectors.",
+      whyItMatters: "Pivots agentic design from on-demand chat prompts to persistent background execution with human-in-the-loop approval gates.",
+      articleSlug: "anthropic-unveils-claude-duet-proactive-autonomous-agent"
     },
     {
       id: 'brief-3',
-      headline: "Cloudflare, VoidZero, and Oxc Unveil tsrs: Native TypeScript Port to Rust with 8x Speedup",
-      category: "technology" as const,
+      headline: "OpenAI Partners with Google Cloud: Frontier Models and Codex Enter Model Garden",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Cloudflare and VoidZero unveiled an open-source Rust port of TypeScript delivering up to 8x faster type checking and ~70% lower memory usage.",
-      whyItMatters: "Enables WebAssembly execution without garbage-collection overhead while upstreaming optimizations into TypeScript 7.1 beta.",
-      articleSlug: "cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port"
+      summary: "OpenAI partnered with Google Cloud to distribute GPT-6 Astra, GPT-6.1 Sol, and Codex natively via Model Garden and GCP Marketplace.",
+      whyItMatters: "Enables enterprise buyers to draw down pre-committed Google Cloud spending commitments to pay for OpenAI inference.",
+      articleSlug: "openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden"
     },
     {
       id: 'brief-4',
-      headline: "DeepSeek Open-Sources DeepInfer: High-Performance Production Inference Engine for V4.1",
-      category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "DeepSeek published its internal serving framework powering V4.1-Flash across NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs.",
-      whyItMatters: "Open-sources proprietary DSpark multi-token prediction and bounded replay sliding-window attention kernels.",
-      articleSlug: "deepseek-open-sources-deepinfer-production-inference-engine"
+      headline: "DuckDB Releases Version 2.0.0 LTS 'Cinnamon Teal' with Network Server Mode and Async I/O",
+      category: "technology" as const,
+      urgency: "Notable Shift" as const,
+      summary: "DuckDB debuted version 2.0.0 LTS 'Cinnamon Teal', adding client-server networking via the Quack protocol, asynchronous I/O, and native VARIANT types.",
+      whyItMatters: "Establishes DuckDB's first official Long-Term Support release with guaranteed stability updates through October 2027.",
+      articleSlug: "duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode"
     },
     {
       id: 'brief-5',
-      headline: "Flawed Key Generation Exposes Eight eMudhra Intermediate Certificate Authorities",
+      headline: "Compromised LiteLLM Release on PyPI Deploys Stealth Credential Stealer and Backdoor",
       category: "technology" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Cryptographic key derivation flaws exposed eight eMudhra intermediate CAs, prompting urgent revocations across Chrome, Firefox, Apple, and Microsoft.",
-      whyItMatters: "Highlights systemic trust-store vulnerabilities in non-browser systems that do not consume dynamic certificate revocation feeds.",
-      articleSlug: "flawed-key-generation-exposes-eight-emudhra-intermediate-cas"
+      urgency: "High Impact" as const,
+      summary: "Threat actors injected a persistent credential stealer into LiteLLM 1.107.0 wheels on PyPI, executing on every host Python process startup.",
+      whyItMatters: "Highlights growing supply chain risks in AI orchestration libraries, weaponizing packaging hooks to harvest cloud and LLM API keys.",
+      articleSlug: "compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Bio AI",
-    text: "Claude designs 17 wet-lab validated protein minibinders against fatal scorpion neurotoxins.",
-    articleSlug: "claude-designs-protein-binders-against-fatal-scorpion-neurotoxins"
+    tag: "Cybersecurity",
+    text: "Wiz & OpenAI disclose PHP2Shell, an AI-discovered RCE flaw affecting 70% of the web.",
+    articleSlug: "php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php"
   },
   {
     id: 'sig-2',
-    tag: "Speech AI",
-    text: "Mistral AI debuts Voxtral 3 voice agent SDK and speech models across 50+ languages.",
-    articleSlug: "mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk"
+    tag: "Agentic AI",
+    text: "Anthropic debuts Claude Duet, an ambient proactive agent powered by Claude Opus 5.5.",
+    articleSlug: "anthropic-unveils-claude-duet-proactive-autonomous-agent"
   },
   {
     id: 'sig-3',
-    tag: "Dev Tools",
-    text: "Cloudflare and VoidZero unveil tsrs, porting TypeScript to Rust with 8x faster checking.",
-    articleSlug: "cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port"
+    tag: "Cloud AI",
+    text: "OpenAI models arrive on Google Cloud Model Garden with GCP commit spend drawdown.",
+    articleSlug: "openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden"
   },
   {
     id: 'sig-4',
-    tag: "LLM Serving",
-    text: "DeepSeek open-sources DeepInfer inference framework for NVIDIA SM100 and Ascend 950.",
-    articleSlug: "deepseek-open-sources-deepinfer-production-inference-engine"
+    tag: "Databases",
+    text: "DuckDB releases 2.0.0 LTS Cinnamon Teal with Quack network protocol and async I/O.",
+    articleSlug: "duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode"
   },
   {
     id: 'sig-5',
-    tag: "Cybersecurity",
-    text: "Flawed key generation compromises eight eMudhra intermediate CAs across trust stores.",
-    articleSlug: "flawed-key-generation-exposes-eight-emudhra-intermediate-cas"
+    tag: "Supply Chain",
+    text: "LiteLLM 1.107.0 PyPI release compromised with stealth startup credential stealer.",
+    articleSlug: "compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor"
   }
 ];

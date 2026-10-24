@@ -1155,15 +1155,42 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 5,
-    "modelName": "DeepSeek-V4.1-Flash",
-    "developer": "DeepSeek",
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
     "score": 1475,
     "date": "Oct 2026",
-    "modelId": "model-deepseek-v4-1-flash",
-    "costPerRun": "$0.07 / 1M blended"
+    "modelId": "model-glm-5-3-flash",
+    "costPerRun": "$0.24 / 1M blended"
   },
   {
     "rank": 6,
+    "modelName": "Hy3",
+    "developer": "Tencent Hunyuan",
+    "score": 1454,
+    "date": "Oct 2026",
+    "modelId": "model-hy3",
+    "costPerRun": "$0.23 / 1M blended"
+  },
+  {
+    "rank": 7,
+    "modelName": "GPT-6 Luna",
+    "developer": "OpenAI",
+    "score": 1443,
+    "date": "Oct 2026",
+    "modelId": "model-gpt-6-luna",
+    "costPerRun": "$0.20 / 1M blended"
+  },
+  {
+    "rank": 8,
+    "modelName": "Gemma 4 26B-A4B",
+    "developer": "Google DeepMind",
+    "score": 1438,
+    "date": "Oct 2026",
+    "modelId": "model-gemma-4-26b-a4b",
+    "costPerRun": "$0.11 / 1M blended"
+  },
+  {
+    "rank": 9,
     "modelName": "gpt-oss-20b",
     "developer": "OpenAI",
     "score": 1317,
@@ -1282,7 +1309,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1488,
     "date": "Oct 2026",
     "modelId": "model-kimi-k3",
-    "costPerRun": "$3.16 / 1M blended"
+    "costPerRun": "$2.88 / 1M blended"
   },
   {
     "rank": 13,
@@ -1414,40 +1441,40 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 27,
-    "modelName": "DeepSeek-V4.1-Flash",
-    "developer": "DeepSeek",
-    "score": 1475,
-    "date": "Oct 2026",
-    "modelId": "model-deepseek-v4-1-flash",
-    "costPerRun": "$0.07 / 1M blended",
-    "note": "on frontier"
-  },
-  {
-    "rank": 28,
     "modelName": "GLM-5.3-Flash",
     "developer": "Zhipu AI",
     "score": 1475,
     "date": "Oct 2026",
     "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.08 / 1M blended"
+    "costPerRun": "$0.24 / 1M blended",
+    "note": "on frontier"
+  },
+  {
+    "rank": 28,
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "score": 1475,
+    "date": "Oct 2026",
+    "modelId": "model-deepseek-v4-1-flash",
+    "costPerRun": "$0.27 / 1M blended"
   },
   {
     "rank": 29,
-    "modelName": "GLM-5.2",
-    "developer": "Zhipu AI",
-    "score": 1475,
-    "date": "Oct 2026",
-    "modelId": "model-glm-5-2",
-    "costPerRun": "$1.07 / 1M blended"
-  },
-  {
-    "rank": 30,
     "modelName": "Grok 4.20",
     "developer": "xAI",
     "score": 1475,
     "date": "Oct 2026",
     "modelId": "model-grok-4-20",
     "costPerRun": "$1.56 / 1M blended"
+  },
+  {
+    "rank": 30,
+    "modelName": "GLM-5.2",
+    "developer": "Zhipu AI",
+    "score": 1475,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-2",
+    "costPerRun": "$1.78 / 1M blended"
   },
   {
     "rank": 31,
@@ -1519,7 +1546,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1468,
     "date": "Oct 2026",
     "modelId": "model-mimo-v2-5-pro",
-    "costPerRun": "$0.54 / 1M blended"
+    "costPerRun": "$0.38 / 1M blended"
   },
   {
     "rank": 39,
@@ -1564,7 +1591,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1464,
     "date": "Oct 2026",
     "modelId": "model-glm-5-1",
-    "costPerRun": "$1.48 / 1M blended"
+    "costPerRun": "$2.15 / 1M blended"
   },
   {
     "rank": 44,
@@ -1586,21 +1613,21 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 46,
-    "modelName": "GLM-5",
-    "developer": "Zhipu AI",
-    "score": 1458,
-    "date": "Oct 2026",
-    "modelId": "model-glm-5",
-    "costPerRun": "$0.93 / 1M blended"
-  },
-  {
-    "rank": 47,
     "modelName": "DeepSeek-V4-Pro",
     "developer": "DeepSeek",
     "score": 1458,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-pro",
-    "costPerRun": "$1.19 / 1M blended"
+    "costPerRun": "$0.74 / 1M blended"
+  },
+  {
+    "rank": 47,
+    "modelName": "GLM-5",
+    "developer": "Zhipu AI",
+    "score": 1458,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5",
+    "costPerRun": "$1.55 / 1M blended"
   },
   {
     "rank": 48,
@@ -1654,7 +1681,8 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1454,
     "date": "Oct 2026",
     "modelId": "model-hy3",
-    "costPerRun": "$0.23 / 1M blended"
+    "costPerRun": "$0.23 / 1M blended",
+    "note": "on frontier"
   },
   {
     "rank": 54,
@@ -1753,7 +1781,8 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1443,
     "date": "Oct 2026",
     "modelId": "model-gpt-6-luna",
-    "costPerRun": "$0.20 / 1M blended"
+    "costPerRun": "$0.20 / 1M blended",
+    "note": "on frontier"
   },
   {
     "rank": 65,
@@ -1780,7 +1809,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1442,
     "date": "Oct 2026",
     "modelId": "model-qwen3-5-397b-a17b",
-    "costPerRun": "$0.88 / 1M blended"
+    "costPerRun": "$1.27 / 1M blended"
   },
   {
     "rank": 68,
@@ -1825,7 +1854,8 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1438,
     "date": "Oct 2026",
     "modelId": "model-gemma-4-26b-a4b",
-    "costPerRun": "$0.14 / 1M blended"
+    "costPerRun": "$0.11 / 1M blended",
+    "note": "on frontier"
   },
   {
     "rank": 73,
@@ -1834,7 +1864,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1438,
     "date": "Oct 2026",
     "modelId": "model-qwen3-8-27b",
-    "costPerRun": "$0.37 / 1M blended"
+    "costPerRun": "$0.78 / 1M blended"
   },
   {
     "rank": 74,
@@ -1870,7 +1900,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1434,
     "date": "Oct 2026",
     "modelId": "model-mimo-v2-5",
-    "costPerRun": "$0.18 / 1M blended"
+    "costPerRun": "$0.15 / 1M blended"
   },
   {
     "rank": 78,
@@ -1924,7 +1954,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1429,
     "date": "Oct 2026",
     "modelId": "model-mistral-large-4",
-    "costPerRun": "$1.03 / 1M blended"
+    "costPerRun": "$2.06 / 1M blended"
   },
   {
     "rank": 84,
@@ -1987,7 +2017,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1416,
     "date": "Oct 2026",
     "modelId": "model-qwen3-5-122b-a10b",
-    "costPerRun": "$0.72 / 1M blended"
+    "costPerRun": "$1.10 / 1M blended"
   },
   {
     "rank": 91,
@@ -2086,7 +2116,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1394,
     "date": "Oct 2026",
     "modelId": "model-qwen3-5-35b-a3b",
-    "costPerRun": "$0.36 / 1M blended"
+    "costPerRun": "$0.35 / 1M blended"
   },
   {
     "rank": 102,
@@ -2200,20 +2230,12 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": true
   },
   {
-    "modelId": "model-deepseek-v4-1-flash",
-    "modelName": "DeepSeek-V4.1-Flash",
-    "developer": "DeepSeek",
-    "price": 0.072,
-    "score": 1475,
+    "modelId": "model-gemma-4-26b-a4b",
+    "modelName": "Gemma 4 26B-A4B",
+    "developer": "Google DeepMind",
+    "price": 0.1069,
+    "score": 1438,
     "frontier": true
-  },
-  {
-    "modelId": "model-glm-5-3-flash",
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
-    "price": 0.0754,
-    "score": 1475,
-    "frontier": false
   },
   {
     "modelId": "model-deepseek-v4-flash",
@@ -2224,11 +2246,11 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-gemma-4-26b-a4b",
-    "modelName": "Gemma 4 26B-A4B",
-    "developer": "Google DeepMind",
-    "price": 0.1425,
-    "score": 1438,
+    "modelId": "model-mimo-v2-5",
+    "modelName": "MiMo-V2.5",
+    "developer": "Xiaomi AI",
+    "price": 0.1487,
+    "score": 1434,
     "frontier": false
   },
   {
@@ -2248,20 +2270,12 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-mimo-v2-5",
-    "modelName": "MiMo-V2.5",
-    "developer": "Xiaomi AI",
-    "price": 0.175,
-    "score": 1434,
-    "frontier": false
-  },
-  {
     "modelId": "model-gpt-6-luna",
     "modelName": "GPT-6 Luna",
     "developer": "OpenAI",
     "price": 0.2,
     "score": 1443,
-    "frontier": false
+    "frontier": true
   },
   {
     "modelId": "model-hy3",
@@ -2269,7 +2283,15 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Tencent Hunyuan",
     "price": 0.231,
     "score": 1454,
-    "frontier": false
+    "frontier": true
+  },
+  {
+    "modelId": "model-glm-5-3-flash",
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "price": 0.2375,
+    "score": 1475,
+    "frontier": true
   },
   {
     "modelId": "model-gemma-4-31b",
@@ -2293,6 +2315,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "OpenAI",
     "price": 0.2625,
     "score": 1352,
+    "frontier": false
+  },
+  {
+    "modelId": "model-deepseek-v4-1-flash",
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "price": 0.265,
+    "score": 1475,
     "frontier": false
   },
   {
@@ -2323,16 +2353,16 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "modelId": "model-qwen3-5-35b-a3b",
     "modelName": "Qwen3.5-35B-A3B",
     "developer": "Alibaba Cloud",
-    "price": 0.3625,
+    "price": 0.355,
     "score": 1394,
     "frontier": false
   },
   {
-    "modelId": "model-qwen3-8-27b",
-    "modelName": "Qwen3.8-27B",
-    "developer": "Alibaba Cloud",
-    "price": 0.3675,
-    "score": 1438,
+    "modelId": "model-mimo-v2-5-pro",
+    "modelName": "MiMo-V2.5-Pro",
+    "developer": "Xiaomi AI",
+    "price": 0.3806,
+    "score": 1468,
     "frontier": false
   },
   {
@@ -2416,14 +2446,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": true
   },
   {
-    "modelId": "model-mimo-v2-5-pro",
-    "modelName": "MiMo-V2.5-Pro",
-    "developer": "Xiaomi AI",
-    "price": 0.5437,
-    "score": 1468,
-    "frontier": false
-  },
-  {
     "modelId": "model-qwen3-7-plus",
     "modelName": "Qwen3.7-Plus",
     "developer": "Alibaba Cloud",
@@ -2456,19 +2478,19 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-qwen3-5-122b-a10b",
-    "modelName": "Qwen3.5-122B-A10B",
-    "developer": "Alibaba Cloud",
-    "price": 0.715,
-    "score": 1416,
-    "frontier": false
-  },
-  {
     "modelId": "model-qwen3-6-plus",
     "modelName": "Qwen3.6 Plus",
     "developer": "Alibaba Cloud",
     "price": 0.7312,
     "score": 1443,
+    "frontier": false
+  },
+  {
+    "modelId": "model-deepseek-v4-pro",
+    "modelName": "DeepSeek-V4-Pro",
+    "developer": "DeepSeek",
+    "price": 0.7391,
+    "score": 1458,
     "frontier": false
   },
   {
@@ -2488,19 +2510,19 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-qwen3-8-27b",
+    "modelName": "Qwen3.8-27B",
+    "developer": "Alibaba Cloud",
+    "price": 0.775,
+    "score": 1438,
+    "frontier": false
+  },
+  {
     "modelId": "model-gemini-3-5-flash-lite",
     "modelName": "Gemini 3.5 Flash-Lite",
     "developer": "Google DeepMind",
     "price": 0.85,
     "score": 1455,
-    "frontier": false
-  },
-  {
-    "modelId": "model-qwen3-5-397b-a17b",
-    "modelName": "Qwen3.5-397B-A17B",
-    "developer": "Alibaba Cloud",
-    "price": 0.8775,
-    "score": 1442,
     "frontier": false
   },
   {
@@ -2517,14 +2539,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Zhipu AI",
     "price": 0.9,
     "score": 1441,
-    "frontier": false
-  },
-  {
-    "modelId": "model-glm-5",
-    "modelName": "GLM-5",
-    "developer": "Zhipu AI",
-    "price": 0.93,
-    "score": 1458,
     "frontier": false
   },
   {
@@ -2560,14 +2574,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-mistral-large-4",
-    "modelName": "Mistral Large 4",
-    "developer": "Mistral AI",
-    "price": 1.0325,
-    "score": 1429,
-    "frontier": false
-  },
-  {
     "modelId": "model-nemotron-3-ultra-550b-a55b",
     "modelName": "Nemotron 3 Ultra (550B A55B)",
     "developer": "NVIDIA",
@@ -2584,19 +2590,19 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-glm-5-2",
-    "modelName": "GLM-5.2",
-    "developer": "Zhipu AI",
-    "price": 1.07,
-    "score": 1475,
-    "frontier": false
-  },
-  {
     "modelId": "model-kimi-k2-thinking",
     "modelName": "Kimi K2 Thinking",
     "developer": "Moonshot AI",
     "price": 1.075,
     "score": 1430,
+    "frontier": false
+  },
+  {
+    "modelId": "model-qwen3-5-122b-a10b",
+    "modelName": "Qwen3.5-122B-A10B",
+    "developer": "Alibaba Cloud",
+    "price": 1.1,
+    "score": 1416,
     "frontier": false
   },
   {
@@ -2608,19 +2614,19 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-deepseek-v4-pro",
-    "modelName": "DeepSeek-V4-Pro",
-    "developer": "DeepSeek",
-    "price": 1.1941,
-    "score": 1458,
-    "frontier": false
-  },
-  {
     "modelId": "model-qwen3-235b-a22b-thinking-2507",
     "modelName": "Qwen3-235B-A22B-Thinking-2507",
     "developer": "Alibaba Cloud",
     "price": 1.2125,
     "score": 1400,
+    "frontier": false
+  },
+  {
+    "modelId": "model-qwen3-5-397b-a17b",
+    "modelName": "Qwen3.5-397B-A17B",
+    "developer": "Alibaba Cloud",
+    "price": 1.275,
+    "score": 1442,
     "frontier": false
   },
   {
@@ -2637,14 +2643,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "StepFun",
     "price": 1.425,
     "score": 1447,
-    "frontier": false
-  },
-  {
-    "modelId": "model-glm-5-1",
-    "modelName": "GLM-5.1",
-    "developer": "Zhipu AI",
-    "price": 1.4835,
-    "score": 1464,
     "frontier": false
   },
   {
@@ -2669,6 +2667,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Google DeepMind",
     "price": 1.5,
     "score": 1482,
+    "frontier": false
+  },
+  {
+    "modelId": "model-glm-5",
+    "modelName": "GLM-5",
+    "developer": "Zhipu AI",
+    "price": 1.55,
+    "score": 1458,
     "frontier": false
   },
   {
@@ -2720,6 +2726,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-glm-5-2",
+    "modelName": "GLM-5.2",
+    "developer": "Zhipu AI",
+    "price": 1.7756,
+    "score": 1475,
+    "frontier": false
+  },
+  {
     "modelId": "model-glm-5v-turbo",
     "modelName": "GLM-5V-Turbo",
     "developer": "Zhipu AI",
@@ -2768,11 +2782,35 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-mistral-large-4",
+    "modelName": "Mistral Large 4",
+    "developer": "Mistral AI",
+    "price": 2.065,
+    "score": 1429,
+    "frontier": false
+  },
+  {
+    "modelId": "model-glm-5-1",
+    "modelName": "GLM-5.1",
+    "developer": "Zhipu AI",
+    "price": 2.15,
+    "score": 1464,
+    "frontier": false
+  },
+  {
     "modelId": "model-qwen3-7-max",
     "modelName": "Qwen3.7 Max",
     "developer": "Alibaba Cloud",
     "price": 2.2125,
     "score": 1475,
+    "frontier": false
+  },
+  {
+    "modelId": "model-kimi-k3",
+    "modelName": "Kimi K3",
+    "developer": "Moonshot AI",
+    "price": 2.8793,
+    "score": 1488,
     "frontier": false
   },
   {
@@ -2805,14 +2843,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "xAI",
     "price": 3.0,
     "score": 1443,
-    "frontier": false
-  },
-  {
-    "modelId": "model-kimi-k3",
-    "modelName": "Kimi K3",
-    "developer": "Moonshot AI",
-    "price": 3.1633,
-    "score": 1488,
     "frontier": false
   },
   {
@@ -3089,7 +3119,7 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
   }
 ];
 
-export const AA_DATA_AS_OF = '2026-10-11';
+export const AA_DATA_AS_OF = '2026-10-24';
 export const AA_INDEX_VERSION = '4.3';
 
 export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
@@ -3111,6 +3141,14 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 3,
+    "modelName": "Kimi K3.1 Pro",
+    "developer": "Moonshot AI",
+    "score": 55.1,
+    "date": "Oct 2026",
+    "modelId": "model-kimi-k3-1-pro"
+  },
+  {
+    "rank": 4,
     "modelName": "Claude Fable 5.1",
     "developer": "Anthropic",
     "score": 53.4,
@@ -3119,7 +3157,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 81.6 · Agentic 57.9"
   },
   {
-    "rank": 4,
+    "rank": 5,
     "modelName": "GPT-6 Astra",
     "developer": "OpenAI",
     "score": 52.7,
@@ -3128,7 +3166,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 77.1 · Agentic 51"
   },
   {
-    "rank": 5,
+    "rank": 6,
     "modelName": "Gemini 4 Argon",
     "developer": "Google DeepMind",
     "score": 52.6,
@@ -3136,7 +3174,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gemini-4-argon"
   },
   {
-    "rank": 6,
+    "rank": 7,
     "modelName": "GPT-6.1 Sol",
     "developer": "OpenAI",
     "score": 51.8,
@@ -3144,7 +3182,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gpt-6-1-sol"
   },
   {
-    "rank": 7,
+    "rank": 8,
     "modelName": "Claude Opus 5",
     "developer": "Anthropic",
     "score": 50.8,
@@ -3153,7 +3191,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 78 · Agentic 56.5"
   },
   {
-    "rank": 8,
+    "rank": 9,
     "modelName": "Claude Fable 5",
     "developer": "Anthropic",
     "score": 49.6,
@@ -3162,7 +3200,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.5 · Agentic 50.7"
   },
   {
-    "rank": 9,
+    "rank": 10,
     "modelName": "Muse Spark 1.3",
     "developer": "Meta AI",
     "score": 48.1,
@@ -3171,7 +3209,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.5 · Agentic 55.5"
   },
   {
-    "rank": 10,
+    "rank": 11,
     "modelName": "GPT-6 Sol",
     "developer": "OpenAI",
     "score": 47.6,
@@ -3179,7 +3217,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gpt-6-sol"
   },
   {
-    "rank": 11,
+    "rank": 12,
     "modelName": "GPT-5.6 Sol",
     "developer": "OpenAI",
     "score": 47,
@@ -3188,7 +3226,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 78.3 · Agentic 50.2"
   },
   {
-    "rank": 12,
+    "rank": 13,
     "modelName": "Grok 4.7",
     "developer": "xAI",
     "score": 46.4,
@@ -3196,7 +3234,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-grok-4-7"
   },
   {
-    "rank": 13,
+    "rank": 14,
     "modelName": "MiMo-V2.6-Pro",
     "developer": "Xiaomi AI",
     "score": 46.3,
@@ -3204,7 +3242,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-mimo-v2-6-pro"
   },
   {
-    "rank": 14,
+    "rank": 15,
     "modelName": "Qwen3.8 Max",
     "developer": "Alibaba Cloud",
     "score": 45.4,
@@ -3213,7 +3251,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.2 · Agentic 56"
   },
   {
-    "rank": 15,
+    "rank": 16,
     "modelName": "GLM-5.3",
     "developer": "Zhipu AI",
     "score": 44.8,
@@ -3222,7 +3260,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 74.8 · Agentic 53.1"
   },
   {
-    "rank": 16,
+    "rank": 17,
     "modelName": "Grok 4.6",
     "developer": "xAI",
     "score": 44.3,
@@ -3231,7 +3269,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.8 · Agentic 53"
   },
   {
-    "rank": 17,
+    "rank": 18,
     "modelName": "Step 5 Preview",
     "developer": "StepFun",
     "score": 43.7,
@@ -3239,7 +3277,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-step-5-preview"
   },
   {
-    "rank": 18,
+    "rank": 19,
     "modelName": "Kimi K3",
     "developer": "Moonshot AI",
     "score": 43.6,
@@ -3248,7 +3286,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.2 · Agentic 50"
   },
   {
-    "rank": 19,
+    "rank": 20,
     "modelName": "Claude Haiku 5.5",
     "developer": "Anthropic",
     "score": 43.4,
@@ -3256,7 +3294,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-claude-haiku-5-5"
   },
   {
-    "rank": 20,
+    "rank": 21,
     "modelName": "GPT-5.6 Terra",
     "developer": "OpenAI",
     "score": 42.1,
@@ -3265,7 +3303,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.7 · Agentic 43.2"
   },
   {
-    "rank": 21,
+    "rank": 22,
     "modelName": "Claude Opus 4.8",
     "developer": "Anthropic",
     "score": 41.8,
@@ -3274,7 +3312,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 74.3 · Agentic 41.9"
   },
   {
-    "rank": 22,
+    "rank": 23,
     "modelName": "GLM-5.3-Flash",
     "developer": "Zhipu AI",
     "score": 41.8,
@@ -3283,7 +3321,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 71.5 · Agentic 50.9"
   },
   {
-    "rank": 23,
+    "rank": 24,
     "modelName": "Gemini 3.8 Flash",
     "developer": "Google DeepMind",
     "score": 40.9,
@@ -3292,7 +3330,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.3 · Agentic 40.2"
   },
   {
-    "rank": 24,
+    "rank": 25,
     "modelName": "Claude Opus 4.7",
     "developer": "Anthropic",
     "score": 40.7,
@@ -3301,7 +3339,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 73.6 · Agentic 38.6"
   },
   {
-    "rank": 25,
+    "rank": 26,
     "modelName": "Gemini 3.7 Flash",
     "developer": "Google DeepMind",
     "score": 39.6,
@@ -3310,7 +3348,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 76.1 · Agentic 35.2"
   },
   {
-    "rank": 26,
+    "rank": 27,
     "modelName": "Muse Spark 1.2",
     "developer": "Meta AI",
     "score": 39.6,
@@ -3319,7 +3357,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 72.2 · Agentic 43.2"
   },
   {
-    "rank": 27,
+    "rank": 28,
     "modelName": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",
     "score": 39.5,
@@ -3327,7 +3365,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-deepseek-v4-1-flash"
   },
   {
-    "rank": 28,
+    "rank": 29,
     "modelName": "GPT-5.4",
     "developer": "OpenAI",
     "score": 39,
@@ -3336,7 +3374,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 71.1"
   },
   {
-    "rank": 29,
+    "rank": 30,
     "modelName": "Grok 4.5",
     "developer": "xAI",
     "score": 38.8,
@@ -3345,7 +3383,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 72.4 · Agentic 41.2"
   },
   {
-    "rank": 30,
+    "rank": 31,
     "modelName": "GPT-5.5",
     "developer": "OpenAI",
     "score": 38.4,
@@ -3354,7 +3392,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 74.9 · Agentic 36.4"
   },
   {
-    "rank": 31,
+    "rank": 32,
     "modelName": "Mistral Large 4",
     "developer": "Mistral AI",
     "score": 38.4,
@@ -3362,7 +3400,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-mistral-large-4"
   },
   {
-    "rank": 32,
+    "rank": 33,
     "modelName": "Claude Sonnet 5",
     "developer": "Anthropic",
     "score": 38.2,
@@ -3371,7 +3409,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 71.5 · Agentic 43.6"
   },
   {
-    "rank": 33,
+    "rank": 34,
     "modelName": "GPT-6 Luna",
     "developer": "OpenAI",
     "score": 38.1,
@@ -3379,7 +3417,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gpt-6-luna"
   },
   {
-    "rank": 34,
+    "rank": 35,
     "modelName": "GPT-5.6 Luna",
     "developer": "OpenAI",
     "score": 37.3,
@@ -3388,7 +3426,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 71.4 · Agentic 42.1"
   },
   {
-    "rank": 35,
+    "rank": 36,
     "modelName": "DeepSeek-V4-Pro-0813",
     "developer": "DeepSeek",
     "score": 36,
@@ -3397,7 +3435,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 68.8 · Agentic 41.3"
   },
   {
-    "rank": 36,
+    "rank": 37,
     "modelName": "DeepSeek-V4-Flash-Vision-Exp",
     "developer": "DeepSeek",
     "score": 34.8,
@@ -3406,7 +3444,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 65 · Agentic 47.5"
   },
   {
-    "rank": 37,
+    "rank": 38,
     "modelName": "DeepSeek-V4-Flash-0731",
     "developer": "DeepSeek",
     "score": 34.3,
@@ -3415,7 +3453,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 69.1 · Agentic 41"
   },
   {
-    "rank": 38,
+    "rank": 39,
     "modelName": "Gemini 3.6 Flash",
     "developer": "Google DeepMind",
     "score": 34,
@@ -3424,7 +3462,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 69.2 · Agentic 29"
   },
   {
-    "rank": 39,
+    "rank": 40,
     "modelName": "Muse Spark 1.1",
     "developer": "Meta AI",
     "score": 33.7,
@@ -3433,7 +3471,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 71.3 · Agentic 25.8"
   },
   {
-    "rank": 40,
+    "rank": 41,
     "modelName": "GLM-5.2",
     "developer": "Zhipu AI",
     "score": 33.7,
@@ -3442,7 +3480,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 68.8 · Agentic 38.4"
   },
   {
-    "rank": 41,
+    "rank": 42,
     "modelName": "Qwen3.8-27B",
     "developer": "Alibaba Cloud",
     "score": 33.7,
@@ -3451,7 +3489,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 68.1 · Agentic 45.8"
   },
   {
-    "rank": 42,
+    "rank": 43,
     "modelName": "Gemini 3.5 Flash",
     "developer": "Google DeepMind",
     "score": 33.6,
@@ -3460,7 +3498,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 70.1 · Agentic 26"
   },
   {
-    "rank": 43,
+    "rank": 44,
     "modelName": "GPT-5.3 Codex",
     "developer": "OpenAI",
     "score": 32.5,
@@ -3468,7 +3506,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gpt-5-3-codex"
   },
   {
-    "rank": 44,
+    "rank": 45,
     "modelName": "Claude Opus 4.6",
     "developer": "Anthropic",
     "score": 31.9,
@@ -3476,7 +3514,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-claude-opus-4-6"
   },
   {
-    "rank": 45,
+    "rank": 46,
     "modelName": "Muse Spark",
     "developer": "Meta AI",
     "score": 31.3,
@@ -3485,7 +3523,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 58.6"
   },
   {
-    "rank": 46,
+    "rank": 47,
     "modelName": "GPT-5.2",
     "developer": "OpenAI",
     "score": 30.4,
@@ -3493,7 +3531,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gpt-5-2"
   },
   {
-    "rank": 47,
+    "rank": 48,
     "modelName": "DeepSeek-V4-Pro",
     "developer": "DeepSeek",
     "score": 30.4,
@@ -3502,7 +3540,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 59.4 · Agentic 26.3"
   },
   {
-    "rank": 48,
+    "rank": 49,
     "modelName": "Claude Sonnet 4.6",
     "developer": "Anthropic",
     "score": 30.1,
@@ -3511,7 +3549,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 63 · Agentic 31.8"
   },
   {
-    "rank": 49,
+    "rank": 50,
     "modelName": "Gemini 3.1 Pro",
     "developer": "Google DeepMind",
     "score": 29.7,
@@ -3520,7 +3558,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 68.8 · Agentic 8.2"
   },
   {
-    "rank": 50,
+    "rank": 51,
     "modelName": "Qwen3.7 Max",
     "developer": "Alibaba Cloud",
     "score": 29.5,
@@ -3529,7 +3567,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 66 · Agentic 22.5"
   },
   {
-    "rank": 51,
+    "rank": 52,
     "modelName": "MiniMax M3",
     "developer": "MiniMax",
     "score": 29.2,
@@ -3538,7 +3576,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 58.6 · Agentic 29.5"
   },
   {
-    "rank": 52,
+    "rank": 53,
     "modelName": "Claude Opus 4.5",
     "developer": "Anthropic",
     "score": 29.1,
@@ -3546,7 +3584,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-claude-opus-4-5"
   },
   {
-    "rank": 53,
+    "rank": 54,
     "modelName": "MiMo-V2-Pro",
     "developer": "Xiaomi AI",
     "score": 28.6,
@@ -3554,21 +3592,12 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-mimo-v2-pro"
   },
   {
-    "rank": 54,
+    "rank": 55,
     "modelName": "GPT-5.2 Codex",
     "developer": "OpenAI",
     "score": 28.5,
     "date": "Oct 2026",
     "modelId": "model-gpt-5-2-codex"
-  },
-  {
-    "rank": 55,
-    "modelName": "Solar Pro 4",
-    "developer": "Upstage",
-    "score": 28.2,
-    "date": "Oct 2026",
-    "modelId": "model-solar-pro-4",
-    "note": "Coding 52.7"
   },
   {
     "rank": 56,
@@ -3606,6 +3635,15 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 60,
+    "modelName": "Solar Pro 4",
+    "developer": "Upstage",
+    "score": 26.6,
+    "date": "Oct 2026",
+    "modelId": "model-solar-pro-4",
+    "note": "Agentic 28.8"
+  },
+  {
+    "rank": 61,
     "modelName": "Gemini 3 Flash",
     "developer": "Google DeepMind",
     "score": 26.3,
@@ -3613,7 +3651,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-gemini-3-flash"
   },
   {
-    "rank": 61,
+    "rank": 62,
     "modelName": "GLM-5.1",
     "developer": "Zhipu AI",
     "score": 26.1,
@@ -3622,7 +3660,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 55.8 · Agentic 23.9"
   },
   {
-    "rank": 62,
+    "rank": 63,
     "modelName": "GPT-5.5 Instant",
     "developer": "OpenAI",
     "score": 26,
@@ -3631,7 +3669,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 39.4 · Agentic 16.6"
   },
   {
-    "rank": 63,
+    "rank": 64,
     "modelName": "MiMo-V2.5-Pro",
     "developer": "Xiaomi AI",
     "score": 26,
@@ -3640,7 +3678,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 60.2 · Agentic 21.3"
   },
   {
-    "rank": 64,
+    "rank": 65,
     "modelName": "Kimi K2.7 Code",
     "developer": "Moonshot AI",
     "score": 25.8,
@@ -3649,7 +3687,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 60.8 · Agentic 21"
   },
   {
-    "rank": 65,
+    "rank": 66,
     "modelName": "Grok 4.20",
     "developer": "xAI",
     "score": 25.7,
@@ -3657,7 +3695,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-grok-4-20"
   },
   {
-    "rank": 66,
+    "rank": 67,
     "modelName": "Inkling Small",
     "developer": "Thinking Machines Lab",
     "score": 25.7,
@@ -3666,7 +3704,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 52.9 · Agentic 23.5"
   },
   {
-    "rank": 67,
+    "rank": 68,
     "modelName": "Hy3",
     "developer": "Tencent Hunyuan",
     "score": 25.3,
@@ -3675,22 +3713,13 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 58.8 · Agentic 24.1"
   },
   {
-    "rank": 68,
+    "rank": 69,
     "modelName": "Qwen3.7-Plus",
     "developer": "Alibaba Cloud",
     "score": 25.2,
     "date": "Oct 2026",
     "modelId": "model-qwen3-7-plus",
     "note": "Coding 55.9 · Agentic 17.5"
-  },
-  {
-    "rank": 69,
-    "modelName": "MiMo-V2.5",
-    "developer": "Xiaomi AI",
-    "score": 25.2,
-    "date": "Oct 2026",
-    "modelId": "model-mimo-v2-5",
-    "note": "Coding 56.8 · Agentic 15.8"
   },
   {
     "rank": 70,
@@ -3857,6 +3886,15 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 89,
+    "modelName": "MiMo-V2.5",
+    "developer": "Xiaomi AI",
+    "score": 21.8,
+    "date": "Oct 2026",
+    "modelId": "model-mimo-v2-5",
+    "note": "Coding 56.8 · Agentic 15.8"
+  },
+  {
+    "rank": 90,
     "modelName": "DeepSeek-V3.2",
     "developer": "DeepSeek",
     "score": 21.5,
@@ -3865,7 +3903,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 44.2"
   },
   {
-    "rank": 90,
+    "rank": 91,
     "modelName": "Qwen3.6-27B",
     "developer": "Alibaba Cloud",
     "score": 21.4,
@@ -3874,7 +3912,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 53.7 · Agentic 18.5"
   },
   {
-    "rank": 91,
+    "rank": 92,
     "modelName": "Qwen3.5-397B-A17B",
     "developer": "Alibaba Cloud",
     "score": 21.4,
@@ -3883,7 +3921,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 48.2 · Agentic 8.3"
   },
   {
-    "rank": 92,
+    "rank": 93,
     "modelName": "MiniMax M2.1",
     "developer": "MiniMax",
     "score": 20.9,
@@ -3891,7 +3929,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-minimax-m2-1"
   },
   {
-    "rank": 93,
+    "rank": 94,
     "modelName": "MiMo-V2-Flash",
     "developer": "Xiaomi AI",
     "score": 20.8,
@@ -3900,7 +3938,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 49.8"
   },
   {
-    "rank": 94,
+    "rank": 95,
     "modelName": "Claude Sonnet 4.5",
     "developer": "Anthropic",
     "score": 20.7,
@@ -3909,7 +3947,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 52.1 · Agentic 15.8"
   },
   {
-    "rank": 95,
+    "rank": 96,
     "modelName": "Claude Opus 4",
     "developer": "Anthropic",
     "score": 20.6,
@@ -3917,7 +3955,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-claude-opus-4"
   },
   {
-    "rank": 96,
+    "rank": 97,
     "modelName": "GPT-5 mini",
     "developer": "OpenAI",
     "score": 20.6,
@@ -3926,7 +3964,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 15.6 · Agentic 6.8"
   },
   {
-    "rank": 97,
+    "rank": 98,
     "modelName": "o3",
     "developer": "OpenAI",
     "score": 20.2,
@@ -3934,7 +3972,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-o3"
   },
   {
-    "rank": 98,
+    "rank": 99,
     "modelName": "Qwen3.5-35B-A3B",
     "developer": "Alibaba Cloud",
     "score": 19.3,
@@ -3943,7 +3981,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 37"
   },
   {
-    "rank": 99,
+    "rank": 100,
     "modelName": "MiniMax M2",
     "developer": "MiniMax",
     "score": 18.6,
@@ -3951,7 +3989,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-minimax-m2"
   },
   {
-    "rank": 100,
+    "rank": 101,
     "modelName": "GLM-4.6",
     "developer": "Zhipu AI",
     "score": 18.5,
@@ -3960,7 +3998,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 45.8"
   },
   {
-    "rank": 101,
+    "rank": 102,
     "modelName": "Qwen3.6-35B-A3B",
     "developer": "Alibaba Cloud",
     "score": 18.2,
@@ -3969,7 +4007,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 41.9 · Agentic 13.1"
   },
   {
-    "rank": 102,
+    "rank": 103,
     "modelName": "Grok 4 Fast",
     "developer": "xAI",
     "score": 17.9,
@@ -3977,7 +4015,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-grok-4-fast"
   },
   {
-    "rank": 103,
+    "rank": 104,
     "modelName": "Qwen3.5-122B-A10B",
     "developer": "Alibaba Cloud",
     "score": 17.7,
@@ -3986,7 +4024,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 45.7 · Agentic 7.6"
   },
   {
-    "rank": 104,
+    "rank": 105,
     "modelName": "Muse Glimmer 30B",
     "developer": "Meta AI",
     "score": 17.5,
@@ -3995,7 +4033,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 49 · Agentic 8.5"
   },
   {
-    "rank": 105,
+    "rank": 106,
     "modelName": "Step-3.5-Flash",
     "developer": "StepFun",
     "score": 17,
@@ -4003,7 +4041,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-step-3-5-flash"
   },
   {
-    "rank": 106,
+    "rank": 107,
     "modelName": "Claude Haiku 4.5",
     "developer": "Anthropic",
     "score": 16.9,
@@ -4012,7 +4050,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 43.9 · Agentic 8"
   },
   {
-    "rank": 107,
+    "rank": 108,
     "modelName": "o4-mini",
     "developer": "OpenAI",
     "score": 16.7,
@@ -4020,7 +4058,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-o4-mini"
   },
   {
-    "rank": 108,
+    "rank": 109,
     "modelName": "Gemma 4 26B-A4B",
     "developer": "Google DeepMind",
     "score": 16.7,
@@ -4029,7 +4067,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 39.3 · Agentic 2.9"
   },
   {
-    "rank": 109,
+    "rank": 110,
     "modelName": "DeepSeek-V3.2-Exp",
     "developer": "DeepSeek",
     "score": 16.6,
@@ -4037,7 +4075,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-deepseek-v3-2-exp"
   },
   {
-    "rank": 110,
+    "rank": 111,
     "modelName": "Gemini 2.5 Pro",
     "developer": "Google DeepMind",
     "score": 16.1,
@@ -4046,7 +4084,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 33.3 · Agentic 1.6"
   },
   {
-    "rank": 111,
+    "rank": 112,
     "modelName": "Gemini 3.1 Flash-Lite",
     "developer": "Google DeepMind",
     "score": 15.6,
@@ -4055,7 +4093,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 34.7 · Agentic 1.6"
   },
   {
-    "rank": 112,
+    "rank": 113,
     "modelName": "Gemma 4 31B",
     "developer": "Google DeepMind",
     "score": 14.7,
@@ -4064,7 +4102,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 43.4 · Agentic 4.2"
   },
   {
-    "rank": 113,
+    "rank": 114,
     "modelName": "Grok 3 Mini",
     "developer": "xAI",
     "score": 14.6,
@@ -4072,7 +4110,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-grok-3-mini"
   },
   {
-    "rank": 114,
+    "rank": 115,
     "modelName": "ERNIE 5.0",
     "developer": "Baidu",
     "score": 14.3,
@@ -4080,7 +4118,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-ernie-5-0"
   },
   {
-    "rank": 115,
+    "rank": 116,
     "modelName": "GLM-4.5",
     "developer": "Zhipu AI",
     "score": 12.8,
@@ -4088,7 +4126,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-glm-4-5"
   },
   {
-    "rank": 116,
+    "rank": 117,
     "modelName": "Qwen3-235B-A22B-Thinking-2507",
     "developer": "Alibaba Cloud",
     "score": 12.7,
@@ -4097,7 +4135,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 22.1 · Agentic 1.3"
   },
   {
-    "rank": 117,
+    "rank": 118,
     "modelName": "Grok 3",
     "developer": "xAI",
     "score": 12.1,
@@ -4105,7 +4143,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "modelId": "model-grok-3"
   },
   {
-    "rank": 118,
+    "rank": 119,
     "modelName": "gpt-oss-120b",
     "developer": "OpenAI",
     "score": 11.6,
@@ -4114,7 +4152,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 30.4 · Agentic 3.7"
   },
   {
-    "rank": 119,
+    "rank": 120,
     "modelName": "gpt-oss-20b",
     "developer": "OpenAI",
     "score": 10,
@@ -4123,7 +4161,7 @@ export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
     "note": "Coding 20.7 · Agentic 1.2"
   },
   {
-    "rank": 120,
+    "rank": 121,
     "modelName": "Mistral Large 3",
     "developer": "Mistral AI",
     "score": 9.3,

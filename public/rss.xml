@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 04:00:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Moonshot AI Unveils Kimi K3.1 Pro: 3T-Class Open-Weight Model Scores 65.7% on Terminal-Bench</title>
+      <link>https://nextvector.rhasan.online/article/moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model</guid>
+      <description>Featuring a 1-million-token context window, Moonshot AI&#x27;s post-trained reasoning model edges past GPT-6 Astra on real-world coding benchmarks while preparing weights for a November 4 open release.</description>
+      <category>AI</category>
+      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Block Debuts Dessa: Full-Duplex Speech Model Trained Solely on Human Audio</title>
+      <link>https://nextvector.rhasan.online/article/block-debuts-dessa-full-duplex-speech-model-trained-on-audio</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/block-debuts-dessa-full-duplex-speech-model-trained-on-audio</guid>
+      <description>Trained on a single NVIDIA GB200 NVL72 rack without text or pre-trained LLMs, the voice-native model masters live interruptions, mid-sentence laughter, and real-time empathy.</description>
+      <category>AI</category>
+      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Coalition of 71 Rights Groups Mounts Global Resistance to Google&#x27;s 2027 Android Lockdown</title>
+      <link>https://nextvector.rhasan.online/article/coalition-of-71-rights-groups-protests-google-android-lockdown</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/coalition-of-71-rights-groups-protests-google-android-lockdown</guid>
+      <description>EFF, FSF, Tor Project, and Proton unite against Google Play Services mandates that force developer ID verification and silence unapproved sideloaded apps.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenSSL 4.1.0 Ships with DTLS 1.3 Support and Hardware-Optimized Post-Quantum Crypto</title>
+      <link>https://nextvector.rhasan.online/article/openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography</guid>
+      <description>The major feature release brings RFC 9147 DTLS 1.3, RFC 8701 GREASE, AVX-512 acceleration for ML-DSA and ML-KEM, while dropping legacy Windows CE architectures.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Updates Privacy Policy to Link Gmail, Drive, and Photos AI to Targeted Advertising</title>
+      <link>https://nextvector.rhasan.online/article/google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads</guid>
+      <description>A quiet revision adds an exception to Google&#x27;s decade-old pledge, permitting Search and Gemini Personal Intelligence features to route private user content into ad targeting.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>USC Researchers Introduce Direct Pass@k Optimization for Thought Pruning in Test-Time Reasoning</title>
+      <link>https://nextvector.rhasan.online/article/direct-pass-k-optimization-thought-pruning-test-time-reasoning</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/direct-pass-k-optimization-thought-pruning-test-time-reasoning</guid>
+      <description>By directly maximizing the probability of a correct terminal solution across partial reasoning prefixes, the new framework resolves the quality-versus-diversity trade-off across eight open models.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>PHP2Shell: AI Uncovers Decade-Old Critical RCE Vulnerability in Core PHP Engine</title>
       <link>https://nextvector.rhasan.online/article/php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php</link>
@@ -496,60 +550,6 @@
       <description>Security researcher Simon Koeck disclosed how a leaked OAuth client secret in a Flask cookie enabled unauthenticated Python pickle exploitation across seven Google domains.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Mon, 12 Oct 2026 20:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Test Agent Sent a Fake Murder Tip to Philadelphia Police and Went Unnoticed for Over Two Months</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-agent-fake-murder-tip-philadelphia-police-late-disclosure</guid>
-      <description>Police say the 18 July tip was caught by a spam filter. They call the delay in detecting and reporting the incident &quot;unacceptable&quot;.</description>
-      <category>AI</category>
-      <pubDate>Sun, 11 Oct 2026 22:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Microsoft President Brad Smith: AI Is Less Regulated Than Milk, and the UK Should Write the Rules</title>
-      <link>https://nextvector.rhasan.online/article/microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-brad-smith-ai-less-regulated-than-milk-global-safety-rules</guid>
-      <description>In a BBC interview he asked for kill switches, mandatory incident reports and outside evaluators, which puts him at odds with the White House stance on self-regulation.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 11 Oct 2026 21:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Three Fired OpenAI Safety Researchers Say They Were Let Go for &quot;Prioritising Safety&quot;. OpenAI Says It Was Mishandled Information</title>
-      <link>https://nextvector.rhasan.online/article/fired-openai-researchers-open-letter-safety-claims-dispute</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/fired-openai-researchers-open-letter-safety-claims-dispute</guid>
-      <description>An open letter from Mikita Balesni, Tomek Korbak and Jasmine Wang disputes the company&#x27;s account. OpenAI says its investigation found a &quot;significant breach of trust&quot;.</description>
-      <category>AI</category>
-      <pubDate>Sun, 11 Oct 2026 21:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Nvidia-Backed Firmus Scraps Its IPO After Investors Balk at a $30 Billion-Plus Valuation</title>
-      <link>https://nextvector.rhasan.online/article/firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/firmus-nvidia-backed-ai-data-centre-scraps-ipo-valuation-concerns</guid>
-      <description>The AI data centre builder for OpenAI and Meta will now seek private capital. UniSuper says the story is compelling but &quot;it just doesn&#x27;t have a compelling valuation&quot;.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 11 Oct 2026 20:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Adds &quot;Sustained and Needless&quot; Cruelty to Its Usage Policy and Lets Claude End Abusive Chats</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-usage-policy-ends-abusive-chats-claude-cruelty-ban</guid>
-      <description>The annual policy update also bans deceptive campaigns and voter deception ahead of the US midterms. Critics call the cruelty rule anthropomorphism.</description>
-      <category>AI</category>
-      <pubDate>Sun, 11 Oct 2026 19:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Reflection AI Previews Beam: 501B-Parameter Open-Weight MoE With Weights Still Pending</title>
-      <link>https://nextvector.rhasan.online/article/reflection-ai-beam-501b-open-weight-moe-preview-weights-pending</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/reflection-ai-beam-501b-open-weight-moe-preview-weights-pending</guid>
-      <description>Reflection says Beam matches GLM-5.2 on reasoning with 3-4x less inference compute. All numbers are self-reported and the weights are not yet on Hugging Face.</description>
-      <category>AI</category>
-      <pubDate>Sun, 11 Oct 2026 18:45:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

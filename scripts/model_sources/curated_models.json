@@ -104,6 +104,7 @@
     {"id": "model-muse-spark", "name": "Muse Spark", "dev": "Meta AI", "arena": "muse-spark", "aa": ["muse-spark"]},
     {"id": "model-muse-glimmer-30b", "name": "Muse Glimmer 30B", "dev": "Meta AI", "arena": "muse-glimmer", "or": "meta/muse-glimmer-30b", "aa": ["muse-glimmer"]},
 
+    {"id": "model-kimi-k3-1-pro", "name": "Kimi K3.1 Pro", "dev": "Moonshot AI", "or": "moonshotai/kimi-k3.1-pro", "aa": ["kimi-k3-1-pro"]},
     {"id": "model-kimi-k3", "name": "Kimi K3", "dev": "Moonshot AI", "arena": "kimi-k3-max", "or": "moonshotai/kimi-k3", "aa": ["kimi-k3", "kimi-k3-low"]},
     {"id": "model-kimi-k2-7-code", "name": "Kimi K2.7 Code", "dev": "Moonshot AI", "or": "moonshotai/kimi-k2.7-code", "aa": ["kimi-k2-7-code"]},
     {"id": "model-kimi-k2-6", "name": "Kimi K2.6", "dev": "Moonshot AI", "arena": "kimi-k2.6", "or": "moonshotai/kimi-k2.6", "osw": "Kimi K2.6", "aa": ["kimi-k2-6", "kimi-k2-6-non-reasoning"]},

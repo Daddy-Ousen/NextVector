@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Thursday, October 22, 2026",
-  summary: "Security researchers uncovered PHP2Shell, a critical AI-discovered RCE flaw affecting 70% of web servers, as Anthropic debuted proactive agent Claude Duet powered by Opus 5.5. In infrastructure, OpenAI brought frontier models to Google Cloud Model Garden, DuckDB launched 2.0.0 LTS with network server mode, and LiteLLM suffered a PyPI supply chain compromise.",
+  date: "Saturday, October 24, 2026",
+  summary: "Moonshot AI unveiled Kimi K3.1 Pro, a 3T-class open-weight reasoning model outscoring GPT-6 Astra on Terminal-Bench, as Block debuted Dessa, a full-duplex voice model trained purely on speech. Meanwhile, 71 rights groups mounted resistance against Google's 2027 Android lockdown, OpenSSL 4.1.0 shipped DTLS 1.3 and post-quantum crypto, and Google linked Gmail AI to targeted ads.",
   items: [
     {
       id: 'brief-1',
-      headline: "PHP2Shell: AI Uncovers Decade-Old Critical RCE Vulnerability in Core PHP Engine",
-      category: "technology" as const,
+      headline: "Moonshot AI Unveils Kimi K3.1 Pro: 3T-Class Open-Weight Model Scores 65.7% on Terminal-Bench",
+      category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Wiz Research and OpenAI disclosed PHP2Shell, memory safety flaws present since PHP 5.4 that enable unauthenticated RCE across 70% of global web servers.",
-      whyItMatters: "Frontier AI automated the mapping of complex exploit chains that human analysts could not assemble, spurring emergency patches across the PHP ecosystem.",
-      articleSlug: "php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php"
+      summary: "Moonshot AI launched Kimi K3.1 Pro, a 3T-class multimodal reasoning model with a 1M context window that beats GPT-6 Astra on Terminal-Bench, ahead of an open-weights release on Nov 4.",
+      whyItMatters: "Proves open-weight post-training compute can rival proprietary frontier systems across terminal coding and 3D CAD modeling.",
+      articleSlug: "moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model"
     },
     {
       id: 'brief-2',
-      headline: "Anthropic Unveils Claude Duet: Proactive Autonomous Agent Powered by Opus 5.5",
+      headline: "Block Debuts Dessa: Full-Duplex Speech Model Trained Solely on Human Audio",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Anthropic announced Claude Duet, an ambient agent running on Opus 5.5 that works continuously in the background, drafts morning briefs, and manages 6,000+ connectors.",
-      whyItMatters: "Pivots agentic design from on-demand chat prompts to persistent background execution with human-in-the-loop approval gates.",
-      articleSlug: "anthropic-unveils-claude-duet-proactive-autonomous-agent"
+      summary: "Block's AI lab unveiled Dessa, the first full-duplex conversational model trained entirely on raw spoken audio without text, tokenizers, or pre-trained LLMs.",
+      whyItMatters: "Trained on a single GB200 NVL72 rack and running locally on Apple M4 Max chips, Dessa achieves natural live interruptions and mid-sentence laughter.",
+      articleSlug: "block-debuts-dessa-full-duplex-speech-model-trained-on-audio"
     },
     {
       id: 'brief-3',
-      headline: "OpenAI Partners with Google Cloud: Frontier Models and Codex Enter Model Garden",
-      category: "ai" as const,
+      headline: "Coalition of 71 Rights Groups Mounts Global Resistance to Google's 2027 Android Lockdown",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "OpenAI partnered with Google Cloud to distribute GPT-6 Astra, GPT-6.1 Sol, and Codex natively via Model Garden and GCP Marketplace.",
-      whyItMatters: "Enables enterprise buyers to draw down pre-committed Google Cloud spending commitments to pay for OpenAI inference.",
-      articleSlug: "openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden"
+      summary: "EFF, FSF, Tor Project, and 68 other organizations launched Keep Android Open to oppose Google's 2027 mandate requiring developer ID verification for all app installs.",
+      whyItMatters: "The policy strips open sideloading retroactively, forcing independent and dissident developers worldwide to register with Google.",
+      articleSlug: "coalition-of-71-rights-groups-protests-google-android-lockdown"
     },
     {
       id: 'brief-4',
-      headline: "DuckDB Releases Version 2.0.0 LTS 'Cinnamon Teal' with Network Server Mode and Async I/O",
+      headline: "OpenSSL 4.1.0 Ships with DTLS 1.3 Support and Hardware-Optimized Post-Quantum Crypto",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "DuckDB debuted version 2.0.0 LTS 'Cinnamon Teal', adding client-server networking via the Quack protocol, asynchronous I/O, and native VARIANT types.",
-      whyItMatters: "Establishes DuckDB's first official Long-Term Support release with guaranteed stability updates through October 2027.",
-      articleSlug: "duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode"
+      summary: "OpenSSL 4.1.0 officially launched, delivering RFC 9147 DTLS 1.3 for secure datagrams, RFC 8701 GREASE, and AVX-512 acceleration for ML-DSA and ML-KEM.",
+      whyItMatters: "Modernizes secure UDP communications for WebRTC while preparing internet infrastructure for post-quantum handshakes.",
+      articleSlug: "openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography"
     },
     {
       id: 'brief-5',
-      headline: "Compromised LiteLLM Release on PyPI Deploys Stealth Credential Stealer and Backdoor",
+      headline: "Google Updates Privacy Policy to Link Gmail, Drive, and Photos AI to Targeted Advertising",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Threat actors injected a persistent credential stealer into LiteLLM 1.107.0 wheels on PyPI, executing on every host Python process startup.",
-      whyItMatters: "Highlights growing supply chain risks in AI orchestration libraries, weaponizing packaging hooks to harvest cloud and LLM API keys.",
-      articleSlug: "compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor"
+      summary: "Google revised its privacy policy to permit Personal Intelligence AI features in Gmail, Drive, and Google Photos to inform targeted ads across Search and YouTube.",
+      whyItMatters: "Reverses a decade-old promise never to scan private Workspace files for advertising, leveraging AI assistants as a re-monetization vector.",
+      articleSlug: "google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Cybersecurity",
-    text: "Wiz & OpenAI disclose PHP2Shell, an AI-discovered RCE flaw affecting 70% of the web.",
-    articleSlug: "php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php"
+    tag: "Reasoning Models",
+    text: "Moonshot AI launches Kimi K3.1 Pro, topping GPT-6 Astra on Terminal-Bench at 65.7%.",
+    articleSlug: "moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model"
   },
   {
     id: 'sig-2',
-    tag: "Agentic AI",
-    text: "Anthropic debuts Claude Duet, an ambient proactive agent powered by Claude Opus 5.5.",
-    articleSlug: "anthropic-unveils-claude-duet-proactive-autonomous-agent"
+    tag: "Speech AI",
+    text: "Block unveils Dessa, a full-duplex conversational model trained purely on human audio.",
+    articleSlug: "block-debuts-dessa-full-duplex-speech-model-trained-on-audio"
   },
   {
     id: 'sig-3',
-    tag: "Cloud AI",
-    text: "OpenAI models arrive on Google Cloud Model Garden with GCP commit spend drawdown.",
-    articleSlug: "openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden"
+    tag: "Digital Rights",
+    text: "71 rights groups launch Keep Android Open against Google's 2027 sideloading lockdown.",
+    articleSlug: "coalition-of-71-rights-groups-protests-google-android-lockdown"
   },
   {
     id: 'sig-4',
-    tag: "Databases",
-    text: "DuckDB releases 2.0.0 LTS Cinnamon Teal with Quack network protocol and async I/O.",
-    articleSlug: "duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode"
+    tag: "Cryptography",
+    text: "OpenSSL 4.1.0 released with DTLS 1.3 and AVX-512 accelerated post-quantum primitives.",
+    articleSlug: "openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography"
   },
   {
     id: 'sig-5',
-    tag: "Supply Chain",
-    text: "LiteLLM 1.107.0 PyPI release compromised with stealth startup credential stealer.",
-    articleSlug: "compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor"
+    tag: "Privacy",
+    text: "Google updates privacy terms allowing Gmail and Photos AI data to target ads.",
+    articleSlug: "google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads"
   }
 ];

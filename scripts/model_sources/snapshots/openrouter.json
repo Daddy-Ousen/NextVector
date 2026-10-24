@@ -1,18 +1,54 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-20T08:15:46Z",
- "count": 470,
+ "fetchedAt": "2026-10-24T04:22:12Z",
+ "count": 469,
  "data": [
   {
-   "id": "minimax/minimax-m3.1-flash:free",
-   "name": "MiniMax: MiniMax M3.1 Flash (free)",
-   "created": 1792379569,
-   "createdDate": "2026-10-19",
-   "context_length": 1000000,
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "created": 1792778188,
+   "createdDate": "2026-10-23",
+   "context_length": 1048576,
    "hugging_face_id": null,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.2,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "recursive/flint-v1.0:free",
+   "name": "Recursive: Flint (free)",
+   "created": 1792622765,
+   "createdDate": "2026-10-21",
+   "context_length": 262144,
+   "hugging_face_id": "RecursiveSI/flint",
    "input": 0.0,
    "output": 0.0,
    "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "created": 1792379569,
+   "createdDate": "2026-10-19",
+   "context_length": 1048576,
+   "hugging_face_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+   "input": 0.15,
+   "output": 0.6,
+   "cache_read": 0.015,
    "input_modalities": [
     "text",
     "image",
@@ -29,9 +65,9 @@
    "createdDate": "2026-10-17",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "input": 0.3,
-   "output": 1.2,
-   "cache_read": 0.006,
+   "input": 0.15,
+   "output": 0.6,
+   "cache_read": 0.003,
    "input_modalities": [
     "text",
     "image"
@@ -83,9 +119,9 @@
    "createdDate": "2026-10-16",
    "context_length": 1048576,
    "hugging_face_id": "reflection/Beam-1.0-501B-A23B",
-   "input": 0.3,
+   "input": 0.25,
    "output": 1.0,
-   "cache_read": 0.04,
+   "cache_read": 0.05,
    "input_modalities": [
     "text"
    ],
@@ -460,9 +496,9 @@
    "createdDate": "2026-10-06",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.68,
-   "output": 2.09,
-   "cache_read": 0.07,
+   "input": 1.36,
+   "output": 4.18,
+   "cache_read": 0.14,
    "input_modalities": [
     "text",
     "image"
@@ -1116,9 +1152,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.225,
+   "input": 0.1188,
    "output": 8.0,
-   "cache_read": 0.23,
+   "cache_read": 0.12,
    "input_modalities": [
     "text"
    ],
@@ -1133,9 +1169,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.07,
-   "output": 0.5,
-   "cache_read": 0.008,
+   "input": 0.02,
+   "output": 1.0,
+   "cache_read": 0.015,
    "input_modalities": [
     "text",
     "image"
@@ -1318,9 +1354,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.056,
-   "output": 0.12,
-   "cache_read": 0.0016,
+   "input": 0.02,
+   "output": 1.0,
+   "cache_read": 0.015,
    "input_modalities": [
     "text",
     "image"
@@ -1656,9 +1692,9 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0472,
-   "output": 0.16,
-   "cache_read": 0.006,
+   "input": 0.0304,
+   "output": 0.0852,
+   "cache_read": 0.03,
    "input_modalities": [
     "text",
     "image",
@@ -1694,9 +1730,9 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.0472,
-   "output": 0.16,
-   "cache_read": 0.006,
+   "input": 0.15,
+   "output": 0.5,
+   "cache_read": 0.03,
    "input_modalities": [
     "text",
     "image",
@@ -1872,9 +1908,9 @@
    "createdDate": "2026-08-14",
    "context_length": 1000000,
    "hugging_face_id": "Qwen/Qwen3.8-27B",
-   "input": 0.04,
-   "output": 1.35,
-   "cache_read": 0.018,
+   "input": 0.2,
+   "output": 2.5,
+   "cache_read": 0.09,
    "input_modalities": [
     "text",
     "image",
@@ -2167,9 +2203,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0052,
-   "output": 0.12,
-   "cache_read": 0.00336,
+   "input": 0.0422,
+   "output": 0.1694,
+   "cache_read": 0.028,
    "input_modalities": [
     "text"
    ],
@@ -2184,9 +2220,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.44,
-   "output": 1.32,
-   "cache_read": 0.014,
+   "input": 0.04444,
+   "output": 0.13332,
+   "cache_read": 0.001414,
    "input_modalities": [
     "text"
    ],
@@ -2509,7 +2545,7 @@
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
    "input": 0.239,
-   "output": 11.936,
+   "output": 10.8,
    "cache_read": 0.21,
    "input_modalities": [
     "text",
@@ -3047,9 +3083,9 @@
    "createdDate": "2026-06-16",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.2",
-   "input": 0.62,
-   "output": 2.42,
-   "cache_read": 0.14,
+   "input": 0.0341,
+   "output": 7.0,
+   "cache_read": 0.033,
    "input_modalities": [
     "text"
    ],
@@ -3083,7 +3119,7 @@
    "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
    "input": 0.6712,
    "output": 3.35,
-   "cache_read": 0.18,
+   "cache_read": 0.15,
    "input_modalities": [
     "text",
     "image"
@@ -3862,9 +3898,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.95526,
-   "output": 1.91052,
-   "cache_read": 0.079605,
+   "input": 0.591252,
+   "output": 1.182504,
+   "cache_read": 0.049271,
    "input_modalities": [
     "text"
    ],
@@ -3913,9 +3949,9 @@
    "createdDate": "2026-04-22",
    "context_length": 1050000,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
-   "input": 0.435,
-   "output": 0.87,
-   "cache_read": 0.0036,
+   "input": 0.3045,
+   "output": 0.609,
+   "cache_read": 0.0028,
    "input_modalities": [
     "text"
    ],
@@ -3930,9 +3966,9 @@
    "createdDate": "2026-04-22",
    "context_length": 1050000,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
-   "input": 0.14,
-   "output": 0.28,
-   "cache_read": 0.0028,
+   "input": 0.119,
+   "output": 0.238,
+   "cache_read": 0.00255,
    "input_modalities": [
     "text",
     "audio",
@@ -4062,9 +4098,9 @@
    "createdDate": "2026-04-07",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5.1",
-   "input": 0.966,
-   "output": 3.036,
-   "cache_read": 0.1794,
+   "input": 1.4,
+   "output": 4.4,
+   "cache_read": 0.26,
    "input_modalities": [
     "text"
    ],
@@ -4079,9 +4115,9 @@
    "createdDate": "2026-04-03",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-26B-A4B-it",
-   "input": 0.09,
-   "output": 0.3,
-   "cache_read": 0.05,
+   "input": 0.0675,
+   "output": 0.225,
+   "cache_read": 0.0375,
    "input_modalities": [
     "image",
     "text",
@@ -4451,9 +4487,9 @@
    "createdDate": "2026-03-11",
    "context_length": 262144,
    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "input": 0.08,
-   "output": 0.45,
-   "cache_read": null,
+   "input": 0.3,
+   "output": 2.4,
+   "cache_read": 0.15,
    "input_modalities": [
     "text"
    ],
@@ -4504,8 +4540,8 @@
    "createdDate": "2026-03-10",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-9B",
-   "input": 0.1,
-   "output": 0.15,
+   "input": 0.17,
+   "output": 0.25,
    "cache_read": null,
    "input_modalities": [
     "text",
@@ -4675,7 +4711,7 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-35B-A3B",
-   "input": 0.15,
+   "input": 0.14,
    "output": 1.0,
    "cache_read": 0.05,
    "input_modalities": [
@@ -4713,8 +4749,8 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-122B-A10B",
-   "input": 0.26,
-   "output": 2.08,
+   "input": 0.4,
+   "output": 3.2,
    "cache_read": null,
    "input_modalities": [
     "text",
@@ -4907,9 +4943,9 @@
    "createdDate": "2026-02-16",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-397B-A17B",
-   "input": 0.39,
-   "output": 2.34,
-   "cache_read": null,
+   "input": 0.5,
+   "output": 3.6,
+   "cache_read": 0.3,
    "input_modalities": [
     "text",
     "image",
@@ -4943,9 +4979,9 @@
    "createdDate": "2026-02-11",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5",
-   "input": 0.6,
-   "output": 1.92,
-   "cache_read": 0.12,
+   "input": 1.0,
+   "output": 3.2,
+   "cache_read": 0.2,
    "input_modalities": [
     "text"
    ],
@@ -5455,7 +5491,7 @@
    "hugging_face_id": "zai-org/GLM-4.6V",
    "input": 0.3,
    "output": 0.9,
-   "cache_read": 0.055,
+   "cache_read": 0.05,
    "input_modalities": [
     "image",
     "text",
@@ -6787,27 +6823,6 @@
    ]
   },
   {
-   "id": "google/gemini-2.5-flash-lite:batch",
-   "name": "Google: Gemini 2.5 Flash Lite (batch)",
-   "created": 1753200276,
-   "createdDate": "2025-07-22",
-   "context_length": 1048576,
-   "hugging_face_id": null,
-   "input": 0.05,
-   "output": 0.2,
-   "cache_read": 0.01,
-   "input_modalities": [
-    "text",
-    "image",
-    "file",
-    "audio",
-    "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "qwen/qwen3-235b-a22b-2507",
    "name": "Qwen: Qwen3 235B A22B Instruct 2507",
    "created": 1753119555,
@@ -6916,8 +6931,8 @@
    "createdDate": "2025-06-20",
    "context_length": 256000,
    "hugging_face_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-   "input": 0.09375,
-   "output": 0.25,
+   "input": 0.075,
+   "output": 0.2,
    "cache_read": null,
    "input_modalities": [
     "image",
@@ -6966,27 +6981,6 @@
    ]
   },
   {
-   "id": "google/gemini-2.5-flash:batch",
-   "name": "Google: Gemini 2.5 Flash (batch)",
-   "created": 1750172488,
-   "createdDate": "2025-06-17",
-   "context_length": 1048576,
-   "hugging_face_id": null,
-   "input": 0.15,
-   "output": 1.25,
-   "cache_read": 0.03,
-   "input_modalities": [
-    "file",
-    "image",
-    "text",
-    "audio",
-    "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "google/gemini-2.5-pro",
    "name": "Google: Gemini 2.5 Pro",
    "created": 1750169544,
@@ -6995,27 +6989,6 @@
    "hugging_face_id": null,
    "input": 1.25,
    "output": 10.0,
-   "cache_read": 0.125,
-   "input_modalities": [
-    "text",
-    "image",
-    "file",
-    "audio",
-    "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "google/gemini-2.5-pro:batch",
-   "name": "Google: Gemini 2.5 Pro (batch)",
-   "created": 1750169544,
-   "createdDate": "2025-06-17",
-   "context_length": 1048576,
-   "hugging_face_id": null,
-   "input": 0.625,
-   "output": 5.0,
    "cache_read": 0.125,
    "input_modalities": [
     "text",

@@ -1,3 +1,40 @@
+# Handoff — 2026-10-24 (Daily Intelligence Pipeline Run: art-276 to art-281)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Kimi K3.1 Pro Model Tracked, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-276`: `moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model` (Hero / Model Report, Signal 94, Moonshot AI launches Kimi K3.1 Pro, a 3T-class open-weight multimodal reasoning model with a 1M context window scoring 65.7% on Terminal-Bench 4.0 to beat GPT-6 Astra, with full weights dropping Nov 4).
+  - `art-277`: `block-debuts-dessa-full-duplex-speech-model-trained-on-audio` (Featured / Discovery, Signal 93, Block Research Lab unveils Dessa, the first full-duplex conversational model trained purely on spoken human sound on a single NVIDIA GB200 NVL72 rack, running locally on Apple M4 Max).
+  - `art-278`: `coalition-of-71-rights-groups-protests-google-android-lockdown` (Featured / Analysis, Signal 91, Coalition of 71 rights groups including EFF, FSF, Tor Project, and Proton launch Keep Android Open against Google's mandatory 2027 Play Services developer ID registration).
+  - `art-279`: `openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography` (Breaking, Signal 90, OpenSSL 4.1.0 feature release arrives with RFC 9147 DTLS 1.3, RFC 8701 GREASE, AVX-512 accelerated ML-DSA and ML-KEM, and removes Windows CE/Itanium).
+  - `art-280`: `google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads` (Analysis, Signal 89, Google quietly revises privacy policy with an exception permitting Search and Gemini Personal Intelligence features connected to Gmail, Drive, and Photos to inform targeted ads).
+  - `art-281`: `direct-pass-k-optimization-thought-pruning-test-time-reasoning` (Research Explained, Signal 88, USC researchers publish arXiv:2610.31667 introducing Direct Pass@k Optimization for test-time thought pruning, mathematically resolving quality vs diversity across 8 models).
+- **Model Watch:**
+  - Added `model-kimi-k3-1-pro` to `scripts/model_sources/curated_models.json` (OpenRouter `moonshotai/kimi-k3.1-pro`, 1M context, $2.00/$10.00 pricing, AA Intelligence Index 55.1).
+  - Re-fetched Artificial Analysis snapshot and ran `build_model_data.py`.
+  - Maintained 143 tracked models in registry (Pareto frontier: 9 of 112 priced models).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Saturday, October 24, 2026` (5 items linking to art-276..280).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-276..280).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 18 bits from catalog (pairwise 25–43 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed with `$env:NODE_OPTIONS="--max-old-space-size=8192"`; prerendered 281 articles, 143 models, 10 showdowns; 453 static HTML files, sitemap 451 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+  - `npm run lint` passed with 0 errors.
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-24-the-morning-vector.md` (`5eea983`).
+- **Commits:**
+  - `006ee29`: `feat(intelligence): daily briefing, Kimi K3.1 Pro model, and articles update [2026-10-24]`
+  - `5eea983`: `docs(newsletter): The Morning Vector [2026-10-24]`
+- **Stories Dropped / Excluded:**
+  - `Calif iPhone Exploit` was on HN top list but primary source blog post was dated October 16, 2026 (> 48h recency limit).
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `5eea983` / `006ee29`.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Always execute `build` with `$env:NODE_OPTIONS="--max-old-space-size=8192"` on Windows to prevent Rollup heap exhaustion.
+
 # Handoff — 2026-10-22 (Daily Intelligence Pipeline Run: art-270 to art-275)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

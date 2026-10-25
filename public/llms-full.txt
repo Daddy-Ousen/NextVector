@@ -1607,6 +1607,228 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Sources: https://openrouter.ai/elorian/glimpse
 
 ## Published Intelligence Reports (Full Text Corpus)
+### Analysis Details Why Frontier AI Token Prices Dropped Up to 80%
+- Canonical URL: https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure
+- Published: 2026-10-26 | Category: AI | Signal Rating: 89/100
+- Executive Summary: Data scientist Max Woolf breaks down the economics of token deflation, finding prompt caching and 29 OpenRouter providers drove API prices down to marginal cost.
+
+**What Happened?**
+Data scientist Max Woolf published a detailed unit-economics analysis tracking how aggressive price cuts from OpenAI, Anthropic, and open-weight hosters slashed frontier LLM inference costs by up to 80% between June and October 2026.
+
+**Why It Matters:**
+Because prompt cache reads constitute 96% to 99% of token spend in agentic workflows, cache discounts of 75% drive compound savings that make advanced coding agents commercially viable while eliminating vendor lock-in.
+
+**What Could Happen Next:**
+With Anthropic and OpenAI preparing for public offerings, upcoming S-1 prospectuses will reveal whether inference margins remain durable as dozens of independent providers converge on marginal-cost pricing.
+
+**Key Takeaways:**
+- Vercel AI Gateway data indicates average cost-per-token fell to 43.3% of April 2026 levels across commercial production workloads.
+- In agentic software engineering, cache hits occur on 90% to 100% of turns, meaning cache price reductions dominate overall invoice totals.
+- DeepSeek V4.1 Flash 1017 is hosted by 29 independent inference providers on OpenRouter, preventing closed labs from raising prices above marginal cost.
+
+**Full Article Content:**
+Source: Empirical unit-economics retrospective published by data scientist Max Woolf on October 25, 2026.
+
+Tracing pricing trajectories from June to October 2026, the investigation highlights aggressive price cuts across flagship model families. OpenAI reduced GPT-5.6 Luna by 80% to $0.20 per million input tokens, followed by GPT-6.1 Sol halving cache read pricing to $0.10. Concurrently, Anthropic introduced Opus 5.5 at $4/$20 with a 5% cache read ratio, producing an effective 40% to 60% expenditure decline.
+
+The economic mechanics of modern agent harnesses explain why cache pricing dictates total cost. In environments like Codex and Claude Code, conversations re-ingest entire workspace context trees on every turn. With cache hit ratios consistently spanning 90% to 100%, read tokens represent virtually the entire token volume, rendering nominal output generation rates secondary in enterprise budgeting.
+
+Market pressures from open-weight deployments have eliminated pricing monopolies. DeepSeek V4.1 Flash 1017, offering an Artificial Analysis Intelligence Index score of 45 at $0.15/$0.60/$0.003, is served by 29 independent hosters on OpenRouter. Similarly, Moonshot AI's Kimi K3.1 Pro established a 55 rating at $2/$10 with 20 hosters prepared for weights deployment, preventing closed labs from extracting monopoly rents.
+
+Woolf disputes the hypothesis that token deflation represents predatory loss-leading analogous to ridesharing subsidies. Because third-party inference providers operate without proprietary venture subsidies and quickly de-list unprofitable models, prevailing API charges reflect legitimate hardware throughput gains and marginal-cost equilibria.
+
+What remains unresolved is how hardware capital expenditure will balance against diminishing software margins, particularly if architectural efficiency improvements outpace developer token consumption.
+
+**Primary Sources & Citations:**
+- [OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?](https://minimaxir.com/2026/10/cheap-llms/) (Max Woolf)
+
+---
+
+### GVS5H Harness Enables Five Qwen3.8-27B Models to Match Claude Fable 5
+- Canonical URL: https://nextvector.rhasan.online/article/gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5
+- Published: 2026-10-26 | Category: AI | Signal Rating: 90/100
+- Executive Summary: Ledger-based zero-shot self-orchestration lifts local open weights from 66.8% to 92.4% pass@1 on LiveCodeBench Hard, beating frontier models at 9% of the cost.
+
+**What Happened?**
+Researchers published GVS5H, an open-source ledger-based self-orchestration framework that coordinates five instances of Qwen3.8-27B via a shared filesystem, boosting pass@1 accuracy on LiveCodeBench Hard from 66.8% to 92.4%.
+
+**Why It Matters:**
+The method demonstrates that structured multi-agent decomposition and persistent scratchpads allow self-hostable open models to match or exceed frontier proprietary models like Claude Fable 5 (90.4%) at a fraction of the inference cost.
+
+**What Could Happen Next:**
+The team released the benchmark runner and evaluation traces under MIT/CC-BY-4.0 licenses, inviting labs to test ledger decomposition across complex SWE-bench engineering workloads.
+
+**Key Takeaways:**
+- Orchestrated Qwen3.8 Flash Next achieved 93.0% pass@1 on 100 hard LiveCodeBench problems, surpassing Claude Fable 5 (90.4%) at 9% of the cost.
+- Locally served Qwen3.8-27B surged from a baseline of 66.8% to 92.4% pass@1 without fine-tuning, running entirely on consumer GPU hardware.
+- The scaffold utilizes zero-shot self-orchestration where fresh model instances share a plan, notes, and solution drafts through a common ledger.
+
+**Full Article Content:**
+Source: Technical paper and open-source implementation repository for GVS5H released by slee-persis on GitHub on October 25, 2026.
+
+GVS5H ('Gorilla vs. 5 Humans') introduces a training-free inference scaffolding that coordinates multiple independent invocations of a single language model. Rather than relying on monolithic generation or iterative conversational prompting, the harness partitions challenging software engineering tasks into modular phases coordinated via a structured ledger file.
+
+Evaluated across the 100 most demanding problem statements in the LiveCodeBench v6 release, the ledger protocol yielded accuracy improvements of up to 25.6 percentage points on pinned inference endpoints. When applied to Qwen3.8 Flash Next, the multi-agent ensemble recorded 93.0% pass@1, eclipsing Claude Fable 5 (90.4%) while consuming roughly one-tenth the financial expenditure.
+
+Transcript analysis conducted by the authors revealed that gains stem primarily from context isolation and state persistence. Individual subagents focus strictly on sub-problems—such as edge-case enumeration, algorithmic derivation, and syntax verification—without allowing earlier speculative reasoning paths to pollute subsequent inference windows.
+
+The researchers noted that performance gains are not uniform across all model families; certain architectures failed to respect ledger boundaries or exhibited recursive error propagation. However, for aligned open-weight models like Qwen3.8-27B, the approach establishes parity with proprietary flagship models on local hardware.
+
+What remains unquantified is latency overhead, as executing sequential multi-instance ledger steps increases wall-clock solution times by roughly three to five times compared to direct single-pass sampling.
+
+**Primary Sources & Citations:**
+- [GVS5H: Five Qwen3.8-27B Models Match Claude Fable 5 on LiveCodeBench Hard](https://github.com/slee-persis/GVS5H) (GVS5H Project)
+
+---
+
+### Study Finds 10-Year-Old CNN Beats Frontier LLMs at Skin Cancer Diagnosis
+- Canonical URL: https://nextvector.rhasan.online/article/lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis
+- Published: 2026-10-26 | Category: AI | Signal Rating: 91/100
+- Executive Summary: Testing on 200 biopsy-proven lesions from the MILK10k dataset reveals Inception v3 achieved 62% accuracy against 42% for GPT-6 Astra and Claude Fable 5.1.
+
+**What Happened?**
+Dr. Magnus Lynch of Guy's Hospital and King's College London evaluated GPT-6 Astra, Claude Fable 5.1, and a 2015 Inception v3 CNN across 200 biopsy-proven lesions from the MILK10k dataset, finding the CNN reached 62% accuracy while both LLMs achieved 42%.
+
+**Why It Matters:**
+The findings show that general-purpose multimodal frontier models suffer from systematic clinical biases and struggle with fine-grained dermoscopic classification compared to lightweight, domain-tuned convolutional baselines.
+
+**What Could Happen Next:**
+Lynch Lab released the evaluation harness and phone-browser WebGPU model runner to enable independent verification, while clinical teams continue developing image transformer ensembles for regulatory clearance.
+
+**Key Takeaways:**
+- Inception v3 correctly diagnosed 125 of 200 lesions (62%), beating both Claude Fable 5.1 (85/200, 42%) and GPT-6 Astra (84/200, 42%).
+- Frontier LLMs exhibited severe classification skew: GPT-6 Astra diagnosed basal cell carcinoma on 75 cases (only 25 true), while Claude over-called actinic keratosis on 53 cases.
+- The fine-tuned CNN recognized 37 of 50 benign moles and 26 of 50 seborrhoeic keratoses, whereas GPT-6 Astra recognized only 16 and 13 respectively.
+
+**Full Article Content:**
+Source: Clinical study and open-source evaluation benchmark published by Dr. Magnus Lynch on October 25, 2026.
+
+Dr. Magnus Lynch, Consultant Dermatologist and Mohs Surgeon at Guy's Hospital and Honorary Reader at King's College London, constructed an empirical evaluation utilizing 200 histopathologically confirmed cutaneous lesions from the MILK10k archive. The dataset pairs clinical macroscopic photography with dermoscopic microscopy under illuminated magnification.
+
+The benchmark challenged the systems with 100 lesions requiring clinical intervention (30 melanomas, 25 basal cell carcinomas, 25 squamous cell carcinomas, and 20 actinic keratoses) alongside 100 safe lesions (50 benign naevi and 50 seborrhoeic keratoses). Inception v3 was fine-tuned on 68,011 archival ISIC images across a single NVIDIA H100 GPU in approximately twenty minutes, with all test cases and patient identities strictly sequestered.
+
+When permitting a second diagnostic differential, Inception v3 achieved 173 correct classifications out of 200, compared to 138 for Claude Fable 5.1 and 134 for GPT-6 Astra. While the frontier models retained 96 to 97 unsafe lesions, they suffered from defensive over-calling that misclassified common benign growths as malignant, severely degrading triage specificity.
+
+Notably, the fine-tuned CNN operates with a parameter footprint small enough to execute entirely on-device via WebGPU in a mobile browser without cloud offloading. Both frontier LLMs demonstrated significant vulnerability to prompt sensitivity, defaulting to conservative recommendations to consult physicians when presented with clinical macroscopic images alone.
+
+What remains unexplored is how modern vision-language models would perform if fine-tuned directly on calibrated dermoscopic datasets rather than evaluated zero-shot with general-purpose multimodal weights.
+
+**Primary Sources & Citations:**
+- [A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis](https://lynchlab.net/llm-skin-cancer) (Lynch Lab)
+
+---
+
+### JetBrains Open-Sources ThinkRail Agentic IDE with Worktree Isolation
+- Canonical URL: https://nextvector.rhasan.online/article/jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces
+- Published: 2026-10-25 | Category: TECHNOLOGY | Signal Rating: 91/100
+- Executive Summary: The developer tools company releases an Apache 2.0 IDE structured around the pi coding agent, connected SPEC.md knowledge graphs, and native MCP support.
+
+**What Happened?**
+JetBrains open-sourced ThinkRail under the Apache 2.0 license on GitHub, introducing an agentic IDE built around the pi coding agent that executes tasks inside isolated Git worktrees and maintains living spec graphs.
+
+**Why It Matters:**
+By running autonomous coding agents inside dedicated worktrees with their own branches, ThinkRail allows developers to safely parallelize agent tasks without clobbering their working tree or checkout state.
+
+**What Could Happen Next:**
+JetBrains has shipped native desktop builds for macOS Apple Silicon, Windows x64, and Linux, alongside the thinkrail CLI, with planned extensions to enable autonomous agent tool creation.
+
+**Key Takeaways:**
+- ThinkRail isolates agent execution into parallel Git worktrees, shelving dormant workspaces and automatically synchronizing pull request statuses.
+- Project architectural intent is preserved across turns via a connected graph of `SPEC.md` files searchable and editable by dedicated tools.
+- Native support for Model Context Protocol (MCP) servers includes interactive permission prompting and OAuth authorization.
+
+**Full Article Content:**
+Source: JetBrains' open-source repository release and architectural documentation for ThinkRail published on GitHub on October 25, 2026.
+
+ThinkRail embeds the pi coding agent within a multi-session Monaco workbench. Rather than executing modifications directly against the active repository directory, the environment automatically spawns temporary `git worktree` instances. Each workspace maintains its own branch and status indicators, enabling developers to assign independent coding tasks across subagents without risking checkout collisions.
+
+To combat context degradation over protracted sessions, the platform organizes architectural constraints into an explicit hierarchy of `SPEC.md` files. Dedicated `spec_*` tools allow models to inspect specifications, propose amendments, and link code changes to documented technical requirements, preventing agent drift across successive implementation turns.
+
+Integration with the Model Context Protocol (MCP) permits connection to external tooling registered in `mcp.json`. ThinkRail introduces interactive security gating for mutations, prompting users before non-read-only tool calls execute while storing authorized developer workflows and credential scopes locally under `~/.thinkrail`.
+
+The application is distributed as a self-contained desktop binary and as a headless CLI that serves the Monaco interface over local HTTP. Both runtimes integrate with GitHub's command-line tool `gh` to translate workspace plans, test executions, and commit histories into formatted pull request submissions.
+
+What remains unannounced is JetBrains' long-term monetization and commercial licensing timeline for proprietary IDE integrations, as well as whether ThinkRail will remain a standalone community harness or be subsumed into future IntelliJ platform releases.
+
+**Primary Sources & Citations:**
+- [JetBrains/thinkrail: Vibe code with pi in a lightweight, real IDE that customises itself around the way you work](https://github.com/JetBrains/thinkrail) (JetBrains)
+
+---
+
+### Wiz Uncovers Gheist Campaign Exploiting Stolen GitHub Tokens to Dump Secrets
+- Canonical URL: https://nextvector.rhasan.online/article/gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration
+- Published: 2026-10-25 | Category: TECHNOLOGY | Signal Rating: 93/100
+- Executive Summary: Threat actors deployed automated sync-check workflows across 850 accounts and 13,500 branches, exploiting base32 log encoding to bypass GitHub secret masking.
+
+**What Happened?**
+Wiz Research disclosed Gheist, an automated attack campaign that abused compromised GitHub tokens across 850 accounts to plant secret-dumping GitHub Actions workflows in over 13,500 branches and exfiltrate secrets via the GitHub API.
+
+**Why It Matters:**
+The attackers bypassed GitHub log masking by encoding environment secrets in base32, avoided outbound network indicators by downloading logs directly through GitHub's API, and executed unhindered inside private repositories.
+
+**What Could Happen Next:**
+Organizations must audit GitHub logs for user agent gheist and ci-sync- branches, rotate exposed secrets across cloud environments, and scope OpenID Connect policies to prevent unauthorized Actions runs.
+
+**Key Takeaways:**
+- Gheist commits `.github/workflows/sync-check.yml` to branches matching `^ci-sync-[0-9a-z]{6}$` with commit message `ci: sync config`.
+- The workflow dumps `${{ toJSON(secrets) }}` and `env` piped through `base32 -w 120`, defeating GitHub verbatim log masking.
+- GitHub's July 2026 public repository approval hold caught public runs, but private repositories and GitHub Enterprise Server ran automatically.
+
+**Full Article Content:**
+Source: Wiz Research's security advisory authored by Rami McCarthy and Hila Ramati, published on October 25, 2026.
+
+Telemetry tracked by Wiz confirms the Gheist campaign began active operations on September 15, 2026, systematically cycling through stolen personal access tokens and automation credentials. For every accessible repository, the tool generated an unsigned commit under the token owner's identity, adding `.github/workflows/sync-check.yml` to trigger execution on push.
+
+The attack weaponized architectural nuances in GitHub Actions. Although the workflow declared empty permissions (`permissions: {}`), this directive only constrains the temporary `GITHUB_TOKEN`, leaving repository and organizational secret contexts completely accessible. By piping environment dumps into `base32 -w 120`, the script circumvented GitHub's string-matching log sanitizers, which only mask raw secret values matching stored credentials.
+
+A second variant identified on October 19 introduced a dedicated `sync-host` job targeting repositories equipped with self-hosted runners. This payload dropped investigative scripts (`.gdmp_pat`, `.gdmp_patg`, `.gdmp_sweep`) to parse crontab files, inspect `/proc/*/environ`, interrogate the Docker socket for container breakouts, and harvest credentials for 31 distinct cloud and AI providers, including Anthropic, Groq, NVIDIA, and Hugging Face.
+
+Threat actor cross-pollination indicates the compromised credentials originated from infostealer logs and historic supply-chain exposures such as the March Trivy breach. Approximately 391 implicated accounts were concurrently abused to distribute cracked software lures, while 25 accounts spawned cryptocurrency mining runners within minutes of token ingestion.
+
+What remains uncertain is the full perimeter of cloud assets compromised following successful token extractions. While Wiz reported that roughly two-thirds of implicated GitHub accounts have been decommissioned, lateral movement via stolen AWS instance roles and OIDC tokens may persist in downstream enterprise networks.
+
+**Primary Sources & Citations:**
+- [Gheist: Attempted Scaled Abuse of Stolen GitHub Tokens Stumbles](https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles) (Wiz Research)
+
+---
+
+### Merck and Moderna Phase 3 Trial Cuts Melanoma Recurrence by 42%
+- Canonical URL: https://nextvector.rhasan.online/article/merck-moderna-interpath-001-phase-3-melanoma-vaccine
+- Published: 2026-10-25 | Category: SCIENCE | Signal Rating: 94/100
+- Executive Summary: Landmark INTerpath-001 results demonstrate individualized mRNA neoantigen therapy intismeran autogene paired with Keytruda significantly improves recurrence-free survival.
+
+**What Happened?**
+Merck and Moderna announced results from the global Phase 3 INTerpath-001 trial showing that intismeran autogene (V940/mRNA-4157) combined with pembrolizumab (Keytruda) reduced the risk of recurrence or death by 42% (HR=0.58, p<0.001) in 1,137 patients with resected stage IIB–IV melanoma.
+
+**Why It Matters:**
+This establishes the first Phase 3 validation that individualized neoantigen mRNA vaccines targeting patient-specific tumor mutations produce durable clinical efficacy in the adjuvant setting over standard checkpoint immunotherapy.
+
+**What Could Happen Next:**
+Merck and Moderna are engaging global regulatory authorities for marketing authorization while advancing nine Phase 2 and 3 INTerpath trials across non-small cell lung cancer, gastric carcinoma, and pancreatic ductal adenocarcinoma.
+
+**Key Takeaways:**
+- Intismeran plus Keytruda achieved a two-year recurrence-free survival rate of 82.2% versus 70.0% for Keytruda alone across 1,137 randomized patients.
+- Distant metastasis or death was reduced by 38% (HR=0.62, p=0.002) with 2-year DMFS reaching 88.5% compared to 80.2% for the active comparator arm.
+- Following the six-month immunization window, sensitivity analysis demonstrated a 58% reduction in recurrence or death (piecewise HR=0.42).
+
+**Full Article Content:**
+Source: Merck and Moderna's joint presentation at the ESMO 2026 Presidential Symposium (Presentation #LBA1) and formal clinical release on October 22, 2026, alongside acceptance in The New England Journal of Medicine.
+
+The double-blind, active-controlled INTerpath-001 trial (ClinicalTrials.gov identifier NCT05933577) enrolled 1,137 participants who underwent complete surgical resection of high-risk cutaneous melanoma. Patients were randomized 2:1 to receive either intismeran (1 mg intramuscularly every three weeks for up to nine doses) alongside pembrolizumab (400 mg intravenously every six weeks for approximately one year), or placebo paired with pembrolizumab for a 56-week maximum course.
+
+Intismeran autogene is manufactured using proprietary next-generation sequencing and bioinformatic algorithms that analyze both tumor tissue and germline DNA. The resulting synthetic single-stranded messenger RNA encodes up to 34 patient-specific neoantigens, prompting host antigen-presenting cells to express and display mutated peptide epitopes to circulating cytotoxic T lymphocytes.
+
+In the pre-specified modified intent-to-treat cohort, excluding participants who failed to receive at least one dose of the assigned intervention, the combination reduced the hazard of recurrence or death by 49% (HR=0.51, 95% CI 0.39–0.67). While efficacy during the initial six-month priming window mirrored pembrolizumab monotherapy (HR=0.99), divergence widened sharply once neoantigen-specific immune memory matured, cutting long-term metastatic risk in half.
+
+Treatment-related adverse events occurred in 95.8% of combination patients compared to 90.0% receiving pembrolizumab monotherapy, with Grade 3 to 5 toxicities remaining balanced at 14.2% versus 13.4%. The most prevalent adverse reactions attributed to intismeran were transient pyrexia (52.2%), injection-site soreness (51.0%), and generalized fatigue (38.5%).
+
+What remains to be established is overall survival maturity, as median follow-up stands at 24.6 months with survival events still accumulating. Additionally, commercial turnaround times for bespoke mRNA manufacturing and logistical pricing frameworks for individualized immunotherapy will determine global health system uptake.
+
+**Primary Sources & Citations:**
+- [Merck and Moderna Will Present Results From Landmark Phase 3 INTerpath-001 Trial for Intismeran Autogene Plus KEYTRUDA® (pembrolizumab) at ESMO 2026 Presidential Symposium](https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/) (Merck & Co., Inc.)
+
+---
+
 ### HTTP2Shell: Critical Brotli Flaw Enables Bidirectional RCE Across Node, Python, and Envoy
 - Canonical URL: https://nextvector.rhasan.online/article/http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks
 - Published: 2026-10-25 | Category: TECHNOLOGY | Signal Rating: 94/100

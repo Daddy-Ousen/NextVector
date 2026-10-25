@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2026 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:12:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Analysis Details Why Frontier AI Token Prices Dropped Up to 80%</title>
+      <link>https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure</guid>
+      <description>Data scientist Max Woolf breaks down the economics of token deflation, finding prompt caching and 29 OpenRouter providers drove API prices down to marginal cost.</description>
+      <category>AI</category>
+      <pubDate>Mon, 26 Oct 2026 00:12:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>GVS5H Harness Enables Five Qwen3.8-27B Models to Match Claude Fable 5</title>
+      <link>https://nextvector.rhasan.online/article/gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5</guid>
+      <description>Ledger-based zero-shot self-orchestration lifts local open weights from 66.8% to 92.4% pass@1 on LiveCodeBench Hard, beating frontier models at 9% of the cost.</description>
+      <category>AI</category>
+      <pubDate>Mon, 26 Oct 2026 00:07:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Study Finds 10-Year-Old CNN Beats Frontier LLMs at Skin Cancer Diagnosis</title>
+      <link>https://nextvector.rhasan.online/article/lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis</guid>
+      <description>Testing on 200 biopsy-proven lesions from the MILK10k dataset reveals Inception v3 achieved 62% accuracy against 42% for GPT-6 Astra and Claude Fable 5.1.</description>
+      <category>AI</category>
+      <pubDate>Mon, 26 Oct 2026 00:02:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>JetBrains Open-Sources ThinkRail Agentic IDE with Worktree Isolation</title>
+      <link>https://nextvector.rhasan.online/article/jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces</guid>
+      <description>The developer tools company releases an Apache 2.0 IDE structured around the pi coding agent, connected SPEC.md knowledge graphs, and native MCP support.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 25 Oct 2026 23:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Wiz Uncovers Gheist Campaign Exploiting Stolen GitHub Tokens to Dump Secrets</title>
+      <link>https://nextvector.rhasan.online/article/gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration</guid>
+      <description>Threat actors deployed automated sync-check workflows across 850 accounts and 13,500 branches, exploiting base32 log encoding to bypass GitHub secret masking.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 25 Oct 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Merck and Moderna Phase 3 Trial Cuts Melanoma Recurrence by 42%</title>
+      <link>https://nextvector.rhasan.online/article/merck-moderna-interpath-001-phase-3-melanoma-vaccine</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/merck-moderna-interpath-001-phase-3-melanoma-vaccine</guid>
+      <description>Landmark INTerpath-001 results demonstrate individualized mRNA neoantigen therapy intismeran autogene paired with Keytruda significantly improves recurrence-free survival.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sun, 25 Oct 2026 23:35:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>HTTP2Shell: Critical Brotli Flaw Enables Bidirectional RCE Across Node, Python, and Envoy</title>
       <link>https://nextvector.rhasan.online/article/http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks</link>
@@ -496,60 +550,6 @@
       <description>SANS, RAND, and BIML specialists argue that unauthorized system access by AI agents stems from basic containment failures rather than misaligned autonomous behavior.</description>
       <category>AI</category>
       <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Migrates Monorepo from Git to Scion as AI Agent Merges Surge Past 30,000 Daily</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-migrates-monorepo-from-git-to-scion</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-migrates-monorepo-from-git-to-scion</guid>
-      <description>After autonomous Claude coding swarms accelerated merge volumes by over ten times in five months, the frontier AI lab discarded Git mirrors in favor of an in-house distributed write-ahead log system.</description>
-      <category>AI</category>
-      <pubDate>Tue, 13 Oct 2026 23:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Liquid AI Launches LFM2.5-24B-A2B: Edge-Optimized MoE Reasoning Model with 2.45B Active Parameters</title>
-      <link>https://nextvector.rhasan.online/article/liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/liquid-ai-launches-lfm2-5-24b-a2b-reasoning-model</guid>
-      <description>Combining dynamical convolution blocks with grouped-query attention, Liquid AI&#x27;s final LFM2.5 release brings mandatory deliberation and tool calling to consumer silicon at 184 tokens per second.</description>
-      <category>AI</category>
-      <pubDate>Tue, 13 Oct 2026 22:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Rust Types Team Confronts 11-Year-Old Unsoundness in Borrow Checker Covariant Field Assignment</title>
-      <link>https://nextvector.rhasan.online/article/rust-compiler-unsoundness-borrow-checker-covariant-field-assignment</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/rust-compiler-unsoundness-borrow-checker-covariant-field-assignment</guid>
-      <description>A newly triaged P-high compiler defect demonstrates how struct lifetime constraints can be subverted via direct field mutations, renewing urgency for the next-generation trait solver.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 13 Oct 2026 22:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Research Proves AI Models Can Mathematically Conceal Arbitrary Capabilities from Elicitation Audits</title>
-      <link>https://nextvector.rhasan.online/article/ai-models-provably-conceal-capabilities-cryptographic-backdoors</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ai-models-provably-conceal-capabilities-cryptographic-backdoors</guid>
-      <description>Using digital locker constructions, researchers show that malicious weights can embed encrypted sub-networks that remain undetectable to fine-tuning and weight-noising without a secret trigger.</description>
-      <category>RESEARCH</category>
-      <pubDate>Tue, 13 Oct 2026 22:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Apple Researchers Unveil &#x27;Minions&#x27;: Distributed Virtual GPU Cloud Harnessing Idle Apple Silicon Devices</title>
-      <link>https://nextvector.rhasan.online/article/apple-unveils-minions-distributed-virtual-gpu-cloud</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apple-unveils-minions-distributed-virtual-gpu-cloud</guid>
-      <description>Aggregating idle Mac workstations across local enterprise networks, Apple&#x27;s distributed system transforms unused unified memory into an elastic platform for large language model inference.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 13 Oct 2026 22:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>TFG London Hit by Cyberattack as UK Retailers Face Escalating Supply Chain Infiltrations</title>
-      <link>https://nextvector.rhasan.online/article/tfg-london-cyberattack-phase-eight-hobbs-supply-chain</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tfg-london-cyberattack-phase-eight-hobbs-supply-chain</guid>
-      <description>The owner of Hobbs, Phase Eight, and Whistles confirms an IT security breach disrupting e-commerce platforms, coinciding with an H&amp;M investigation into extortion group ShinyHunters.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 13 Oct 2026 21:45:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

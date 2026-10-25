@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Sunday, October 25, 2026",
-  summary: "Security researchers uncovered HTTP2Shell, a critical bidirectional RCE flaw in Google Brotli affecting Node, Python, and Envoy, while the UK committed £100m to establish an AI Biosecurity Lab. In macroeconomics, Apollo Chief Economist Torsten Sløk found zero AI productivity payoff across the S&P 493, GrapheneOS cleared banking attestation hurdles, and OBS Studio 33 launched with Chromium 150.",
+  date: "Monday, October 26, 2026",
+  summary: "Merck and Moderna published Phase 3 INTerpath-001 trial results showing an individualized mRNA cancer vaccine cuts melanoma recurrence by 42%, while Wiz Research uncovered the Gheist campaign exploiting stolen GitHub tokens for CI/CD secret exfiltration. In developer infrastructure, JetBrains open-sourced ThinkRail, Lynch Lab revealed fine-tuned CNNs beat frontier LLMs at skin cancer diagnosis, and economic telemetry documented up to 80% token price deflation.",
   items: [
     {
       id: 'brief-1',
-      headline: "HTTP2Shell: Critical Brotli Flaw Enables Bidirectional RCE Across Node, Python, and Envoy",
-      category: "technology" as const,
+      headline: "Merck and Moderna Phase 3 trial cuts melanoma recurrence by 42%",
+      category: "science" as const,
       urgency: "Critical Signal" as const,
-      summary: "Aikido Security disclosed that Brotli decoder flaw CVE-2026-111497 enables bidirectional remote code execution across Node.js, Python, Bun, and Envoy.",
-      whyItMatters: "Unauthenticated attackers can compromise backend servers via POST payloads or seize client applications accepting compressed responses.",
-      articleSlug: "http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks"
+      summary: "The landmark Phase 3 INTerpath-001 trial demonstrated that intismeran autogene combined with Keytruda significantly improved recurrence-free survival in 1,137 patients with resected high-risk melanoma. Following the six-month immunization window, the combination cut the risk of recurrence or death by 58%.",
+      whyItMatters: "Establishes the first late-stage clinical validation for individualized neoantigen mRNA cancer vaccines in the adjuvant setting.",
+      articleSlug: "merck-moderna-interpath-001-phase-3-melanoma-vaccine"
     },
     {
       id: 'brief-2',
-      headline: "UK Government Commits £100M to Launch 'World First' AI Biosecurity Lab",
-      category: "ai" as const,
-      urgency: "Critical Signal" as const,
-      summary: "The UK government pledged £100m to establish the AI Biosecurity Lab, backed by £200m in compute credits from OpenAI and Anthropic.",
-      whyItMatters: "Anchors a £350M national defence tech package aimed at evaluating and neutralizing algorithmic biological synthesis risks.",
-      articleSlug: "uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package"
+      headline: "Wiz uncovers Gheist campaign exploiting stolen GitHub tokens",
+      category: "technology" as const,
+      urgency: "High Impact" as const,
+      summary: "Automated attackers committed base32 secret-dumping workflows across more than 13,500 branches in 850 compromised accounts. While GitHub's approval hold protected public repos, private repos and enterprise servers executed without gating.",
+      whyItMatters: "Bypasses native log masking and exfiltrates environment credentials directly through the GitHub API without external C2.",
+      articleSlug: "gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration"
     },
     {
       id: 'brief-3',
-      headline: "Apollo Chief Economist Sløk Finds Zero AI Productivity Payoff in the S&P 493",
-      category: "ai" as const,
+      headline: "JetBrains open-sources ThinkRail agentic IDE",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Apollo Global Management macro data reveals revenue per worker and profit margins are flat across the S&P 493, with zero measurable TFP gains from AI.",
-      whyItMatters: "Mainstream corporate America is pulling back from frontier models, viewing token spending as a cost center that compresses margins.",
-      articleSlug: "apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493"
+      summary: "ThinkRail wraps the pi coding agent in a native desktop workbench featuring Git worktree isolation and living SPEC.md knowledge graphs. The environment allows parallel agent branches to run without disturbing the working directory.",
+      whyItMatters: "Solves working tree pollution and agent context drift through persistent architectural specs and MCP tooling.",
+      articleSlug: "jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces"
     },
     {
       id: 'brief-4',
-      headline: "GrapheneOS Surpasses Major Compatibility Hurdle as Banking Apps Add Native Attestation Support",
-      category: "technology" as const,
+      headline: "Study finds 10-year-old CNN beats frontier LLMs at skin cancer diagnosis",
+      category: "ai" as const,
       urgency: "Notable Shift" as const,
-      summary: "Around a dozen international banks began explicitly whitelisting privacy-hardened GrapheneOS despite Google Play Integrity attestation barriers.",
-      whyItMatters: "Demonstrates that third-party open-source mobile platforms can achieve native financial compatibility without platform monopolies.",
-      articleSlug: "grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os"
+      summary: "Lynch Lab benchmarked GPT-6 Astra and Claude Fable 5.1 against an Inception v3 baseline across 200 biopsy-proven lesions from the MILK10k dataset. The lightweight CNN achieved 62% accuracy compared to 42% for both frontier models.",
+      whyItMatters: "Demonstrates that general-purpose vision LLMs suffer from severe diagnostic skew compared to specialized convolutional vision baselines.",
+      articleSlug: "lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis"
     },
     {
       id: 'brief-5',
-      headline: "OBS Studio 33.0 Launches with Major Chromium 150 Upgrade and Overhauled Plugin Engine",
-      category: "technology" as const,
+      headline: "GVS5H harness enables five Qwen3.8 models to match Claude Fable 5",
+      category: "ai" as const,
       urgency: "Notable Shift" as const,
-      summary: "The OBS Project released OBS Studio 33.0, updating its embedded browser engine to CEF 150, restructuring plugins, and enabling NVENC on Arm64.",
-      whyItMatters: "Modernizes web standards for streaming overlays by two years while isolating core capture loops from third-party plugin crashes.",
-      articleSlug: "obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc"
+      summary: "Researchers introduced ledger-based zero-shot self-orchestration, raising local open-weight Qwen3.8-27B from 66.8% to 92.4% pass@1 on LiveCodeBench Hard. The multi-instance decomposition matched Fable 5 at 9% of the cost.",
+      whyItMatters: "Shows inference-time ledger coordination on commodity hardware can overcome parameter gaps without fine-tuning.",
+      articleSlug: "gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Cybersecurity",
-    text: "HTTP2Shell Brotli flaw enables bidirectional RCE across Node.js, Python, and Envoy.",
-    articleSlug: "http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks"
+    tag: "mRNA Oncology",
+    text: "Merck and Moderna Phase 3 INTerpath-001 trial cuts melanoma recurrence or death by 42%.",
+    articleSlug: "merck-moderna-interpath-001-phase-3-melanoma-vaccine"
   },
   {
     id: 'sig-2',
-    tag: "Biosecurity",
-    text: "UK commits £100m for national AI Biosecurity Lab with OpenAI and Anthropic compute.",
-    articleSlug: "uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package"
+    tag: "Token Compromise",
+    text: "Wiz tracks Gheist campaign abusing stolen GitHub tokens across 13,500 branches.",
+    articleSlug: "gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration"
   },
   {
     id: 'sig-3',
-    tag: "Macroeconomics",
-    text: "Apollo data shows zero AI productivity gains in the S&P 493 as firms trim token spend.",
-    articleSlug: "apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493"
+    tag: "Developer Tools",
+    text: "JetBrains open-sources ThinkRail agentic IDE with Git worktrees and SPEC.md graphs.",
+    articleSlug: "jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces"
   },
   {
     id: 'sig-4',
-    tag: "Mobile Privacy",
-    text: "Commercial banking apps begin explicitly permitting privacy-hardened GrapheneOS.",
-    articleSlug: "grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os"
+    tag: "Clinical AI",
+    text: "10-year-old Inception v3 CNN beats GPT-6 Astra and Claude on dermoscopy benchmarks.",
+    articleSlug: "lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis"
   },
   {
     id: 'sig-5',
-    tag: "Open Source",
-    text: "OBS Studio 33 debuts with CEF 150 web engine, isolated plugins, and Arm64 NVENC.",
-    articleSlug: "obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc"
+    tag: "Multi-Agent Code",
+    text: "GVS5H self-orchestration lifts local Qwen3.8-27B to 92.4% pass@1 on LiveCodeBench Hard.",
+    articleSlug: "gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5"
   }
 ];

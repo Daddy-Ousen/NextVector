@@ -1,3 +1,42 @@
+# Handoff — 2026-10-26 (Daily Intelligence Pipeline Run: art-288 to art-293)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-288`: `merck-moderna-interpath-001-phase-3-melanoma-vaccine` (Hero / Discovery, Signal 94, Merck and Moderna announce Phase 3 INTerpath-001 trial results showing individualized mRNA neoantigen therapy intismeran autogene combined with Keytruda cuts melanoma recurrence or death by 42% [HR=0.58, p<0.001], expanding to a 58% reduction post-immunization).
+  - `art-289`: `gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration` (Featured / Breaking, Signal 93, Wiz Research discloses Gheist, an automated campaign abusing stolen GitHub Personal Access Tokens across 850 accounts and 13,500 branches using base32 log encoding to bypass GitHub secret masking and exfiltrate credentials via the GitHub API).
+  - `art-290`: `jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces` (Featured / Breaking, Signal 91, JetBrains open-sources ThinkRail under Apache 2.0, introducing a native agentic IDE built around the pi coding agent with parallel Git worktrees, connected SPEC.md knowledge graphs, and MCP server tooling).
+  - `art-291`: `lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis` (Research Explained, Signal 91, Dr. Magnus Lynch of Guy's Hospital benchmarks GPT-6 Astra, Claude Fable 5.1, and an Inception v3 CNN across 200 biopsy-proven lesions from MILK10k, revealing the 2015 CNN reached 62% accuracy compared to 42% for both frontier LLMs).
+  - `art-292`: `gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5` (Research Explained, Signal 90, GVS5H framework introduces ledger-based zero-shot self-orchestration, lifting local open-weight Qwen3.8-27B from 66.8% to 92.4% pass@1 on LiveCodeBench Hard, matching Claude Fable 5 at 9% of the cost).
+  - `art-293`: `llm-token-price-collapse-prompt-caching-open-weight-pressure` (Deep Dive, Signal 89, Data scientist Max Woolf analyzes the unit economics of token deflation, showing prompt caching [96-99% of agent token spend] and 29 OpenRouter providers drove API inference costs down by up to 80% to marginal cost).
+- **Model Watch:**
+  - Zero new foundation language models met tracking criteria in the last 72 hours (untracked OpenRouter models evaluated—MiniMax M3.1 Flash, Inception Mercury 3, Moondream 3.1—were released >72h ago; Hugging Face upload was an image diffusion model).
+  - Maintained 143 models in the curated registry (`scripts/model_sources/curated_models.json`).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Monday, October 26, 2026` (5 items linking to art-288..292).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-288..292).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 18 bits from catalog (pairwise 25–38 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed with `$env:NODE_OPTIONS="--max-old-space-size=8192"`; prerendered 293 articles, 143 models, 10 showdowns; 465 static HTML files, sitemap 463 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-26-the-morning-vector.md` (`dd4ce50`).
+- **Commits:**
+  - `1bbe983`: `feat(intelligence): daily briefing and articles update [2026-10-26]`
+  - `dd4ce50`: `docs(newsletter): The Morning Vector [2026-10-26]`
+- **Stories Dropped / Excluded:**
+  - `Cerebras Trillion-Parameter AI Deployment` was evaluated from HN top list, but primary source blog post was dated October 22, 2026 (>48h breaking window).
+  - `Blast France Emergency Social Media DNS Cutoff` was evaluated, but technical details on telecom implementation were secondary compared to the open-source release of JetBrains ThinkRail and GVS5H multi-agent benchmarks.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `dd4ce50` / `1bbe983`.
+  - Watch for Moonshot AI's public weight release for Kimi K3.1 Pro on November 4, 2026.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Many common technology Unsplash images have already been referenced in earlier articles. Pre-screen candidate image URLs with a dhash probing script against the catalog to avoid exact or near-duplicate hash collisions.
+  - Node.js heap memory can exceed defaults during Vite bundling on Windows when catalogs exceed 290 articles. Always run `build` with `$env:NODE_OPTIONS="--max-old-space-size=8192"`.
+
 # Handoff — 2026-10-25 (Daily Intelligence Pipeline Run: art-282 to art-287)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

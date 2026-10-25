@@ -1,3 +1,42 @@
+# Handoff — 2026-10-25 (Daily Intelligence Pipeline Run: art-282 to art-287)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-282`: `http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks` (Hero / Breaking, Signal 94, Aikido Security discloses CVE-2026-111497 "HTTP2Shell", an out-of-bounds write in Google's Brotli decoder affecting versions 1.0.3-1.2.0 enabling bidirectional unauthenticated RCE across Node.js, Python, Bun, Envoy, and Istio).
+  - `art-283`: `uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package` (Featured / Policy, Signal 92, UK Chancellor Rachel Reeves announces £100m to establish a national AI Biosecurity Lab supported by £200m in compute credits from OpenAI and Anthropic as part of a £350M defence tech package).
+  - `art-284`: `apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493` (Featured / Analysis, Signal 91, Apollo Global Management Chief Economist Dr. Torsten Sløk finds generative AI adoption delivers zero measurable revenue per worker, margin, or TFP gains across the S&P 493 as token spend becomes an operating cost drag).
+  - `art-285`: `grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os` (Discovery, Signal 89, GrapheneOS announces ~12 commercial banking apps in the UK, EU, and Nordic regions have added explicit hardware attestation whitelisting for sandboxed Play Services).
+  - `art-286`: `obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc` (Breaking, Signal 88, OBS Project ships OBS Studio 33.0.0 with Chromium 150/CEF 7871, plugin directory restructuring into core/third-party, native Arm64 Linux NVENC, and deprecation of Ubuntu 24.04).
+  - `art-287`: `human-deference-collapse-study-reveals-users-adopt-llm-falsehoods` (Research Explained, Signal 90, Controlled study arXiv:2610.31579 across 1,040 trials demonstrates users adopt model falsehoods 64.9% of the time, dropping accuracy by 61% with 8.4/10 subjective confidence).
+- **Model Watch:**
+  - Zero new foundation language models met tracking criteria in the last 72 hours (Kimi K3.1 Pro tracked on Oct 24; model weights release scheduled for Nov 4, 2026).
+  - Maintained 143 models in the curated registry (`scripts/model_sources/curated_models.json`).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Sunday, October 25, 2026` (5 items linking to art-282..286).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-282..286).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 19 bits from catalog (pairwise 32–37 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed with `$env:NODE_OPTIONS="--max-old-space-size=8192"`; prerendered 287 articles, 143 models, 10 showdowns; 459 static HTML files, sitemap 457 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly.
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-25-the-morning-vector.md` (`7ac48aa`).
+- **Commits:**
+  - `92a5be8`: `feat(intelligence): daily briefing and articles update [2026-10-25]`
+  - `7ac48aa`: `docs(newsletter): The Morning Vector [2026-10-25]`
+- **Stories Dropped / Excluded:**
+  - `Kimi K3.1 Pro` secondary benchmarks: model was already given hero coverage on Oct 24; avoided redundancy.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `7ac48aa` / `92a5be8`.
+  - Watch for Moonshot AI's public weight release for Kimi K3.1 Pro on November 4, 2026.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Unsplash download timeouts: `scripts/add_articles.py` uses urllib which can timeout if an Unsplash asset hangs. Always test-fetch cover URLs before writing the batch.
+  - PowerShell syntax: In PowerShell, avoid `&&` (which is Bash or PowerShell 7+ only in specific configurations); use `;` or run separate commands.
+  - Always execute `build` with `$env:NODE_OPTIONS="--max-old-space-size=8192"` on Windows to avoid Rollup heap exhaustion.
+
 # Handoff — 2026-10-24 (Daily Intelligence Pipeline Run: art-276 to art-281)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Kimi K3.1 Pro Model Tracked, Verification 8/8 Passed, Newsletter Published

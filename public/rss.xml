@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 04:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 04:00:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>HTTP2Shell: Critical Brotli Flaw Enables Bidirectional RCE Across Node, Python, and Envoy</title>
+      <link>https://nextvector.rhasan.online/article/http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks</guid>
+      <description>Tracked as CVE-2026-111497 with a 9.2 CVSS rating, the out-of-bounds write in Google&#x27;s compression decoder allows unauthenticated takeovers of both web servers and client applications.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>UK Government Commits £100M to Launch &#x27;World First&#x27; AI Biosecurity Lab</title>
+      <link>https://nextvector.rhasan.online/article/uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package</guid>
+      <description>Backed by £200M in compute credits from OpenAI and Anthropic, the new national institute anchors a £350M defence tech package targeting biological and automated cyber threats.</description>
+      <category>AI</category>
+      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Apollo Chief Economist Sløk Finds Zero AI Productivity Payoff in the S&amp;P 493</title>
+      <link>https://nextvector.rhasan.online/article/apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493</guid>
+      <description>While the Magnificent 7 log soaring revenue and profit margins, mainstream enterprise America experiences flat worker productivity and begins viewing token spend as a margin drag.</description>
+      <category>AI</category>
+      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>GrapheneOS Surpasses Major Compatibility Hurdle as Banking Apps Add Native Attestation Support</title>
+      <link>https://nextvector.rhasan.online/article/grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os</guid>
+      <description>Roughly a dozen commercial banking applications now explicitly permit the hardened mobile OS, establishing an alternative to Google Play Integrity monopolies.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OBS Studio 33.0 Launches with Major Chromium 150 Upgrade and Overhauled Plugin Engine</title>
+      <link>https://nextvector.rhasan.online/article/obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc</guid>
+      <description>The milestone streaming release upgrades browser dock frameworks to modern web standards, introduces a multi-tier plugin hierarchy, and activates NVENC hardware encoding on Arm64.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Study Reveals Human Deference Collapse: Users Adopt Confident LLM Falsehoods 65% of the Time</title>
+      <link>https://nextvector.rhasan.online/article/human-deference-collapse-study-reveals-users-adopt-llm-falsehoods</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/human-deference-collapse-study-reveals-users-adopt-llm-falsehoods</guid>
+      <description>Controlled research introducing the Human Deference Index finds that confident AI misinformation plummets subject quiz accuracy from 7.4 to 2.9 out of 10 while preserving high subjective trust.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Moonshot AI Unveils Kimi K3.1 Pro: 3T-Class Open-Weight Model Scores 65.7% on Terminal-Bench</title>
       <link>https://nextvector.rhasan.online/article/moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model</link>
@@ -496,60 +550,6 @@
       <description>The owner of Hobbs, Phase Eight, and Whistles confirms an IT security breach disrupting e-commerce platforms, coinciding with an H&amp;M investigation into extortion group ShinyHunters.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Tue, 13 Oct 2026 21:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Meta Introduces Muse Wonder Agentic Models With 1M Context Window</title>
-      <link>https://nextvector.rhasan.online/article/meta-releases-muse-wonder-agentic-models</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-releases-muse-wonder-agentic-models</guid>
-      <description>Trained at the gigawatt Prometheus center, the new frontier architecture pairs Active Memory with Active Focus for autonomous multi-step workflows.</description>
-      <category>AI</category>
-      <pubDate>Mon, 12 Oct 2026 21:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Coordinated Cyberattack Forces Supermarket Fridges to 50C Across France</title>
-      <link>https://nextvector.rhasan.online/article/supermarket-refrigeration-cyberattack-france-europe</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/supermarket-refrigeration-cyberattack-france-europe</guid>
-      <description>Hackers compromised older Danfoss temperature software across roughly 400 stores, spoiling millions of euros of perishable inventory.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 12 Oct 2026 21:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>UK AI Minister Warns National Cyber Defences Likely to Be Breached</title>
-      <link>https://nextvector.rhasan.online/article/uk-ai-minister-warns-cyber-breach-aisi-access</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/uk-ai-minister-warns-cyber-breach-aisi-access</guid>
-      <description>Kanishka Narayan confirms bilateral agreement with the United States ensuring Britain&#x27;s AI Security Institute tests frontier models prior to release.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 12 Oct 2026 21:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Red Team Demonstrates Distributed AI Self-Replication on 55-Dollar TV Boxes</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-demonstrates-iot-self-replicating-ai-worms</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-demonstrates-iot-self-replicating-ai-worms</guid>
-      <description>Research reveals autonomous AI worms could run across decentralized edge devices using sharded inference without needing datacenter GPUs.</description>
-      <category>RESEARCH</category>
-      <pubDate>Mon, 12 Oct 2026 21:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Zhipu AI Releases GLM-Legal Scoring 19.2 Percent on Harvey LAB Benchmark</title>
-      <link>https://nextvector.rhasan.online/article/zhipu-ai-unveils-glm-legal-agent</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/zhipu-ai-unveils-glm-legal-agent</guid>
-      <description>Specialized legal agent built on GLM-5.3-Flash combines domain mid-training with runtime agent harness optimization for contract review and dispute analysis.</description>
-      <category>AI</category>
-      <pubDate>Mon, 12 Oct 2026 20:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Awards 90,000 Dollars for Critical Remote Code Execution Flaw in DevSite</title>
-      <link>https://nextvector.rhasan.online/article/google-pays-90k-devsite-pickle-rce-flaw</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-pays-90k-devsite-pickle-rce-flaw</guid>
-      <description>Security researcher Simon Koeck disclosed how a leaked OAuth client secret in a Flask cookie enabled unauthenticated Python pickle exploitation across seven Google domains.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 12 Oct 2026 20:30:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Saturday, October 24, 2026",
-  summary: "Moonshot AI unveiled Kimi K3.1 Pro, a 3T-class open-weight reasoning model outscoring GPT-6 Astra on Terminal-Bench, as Block debuted Dessa, a full-duplex voice model trained purely on speech. Meanwhile, 71 rights groups mounted resistance against Google's 2027 Android lockdown, OpenSSL 4.1.0 shipped DTLS 1.3 and post-quantum crypto, and Google linked Gmail AI to targeted ads.",
+  date: "Sunday, October 25, 2026",
+  summary: "Security researchers uncovered HTTP2Shell, a critical bidirectional RCE flaw in Google Brotli affecting Node, Python, and Envoy, while the UK committed £100m to establish an AI Biosecurity Lab. In macroeconomics, Apollo Chief Economist Torsten Sløk found zero AI productivity payoff across the S&P 493, GrapheneOS cleared banking attestation hurdles, and OBS Studio 33 launched with Chromium 150.",
   items: [
     {
       id: 'brief-1',
-      headline: "Moonshot AI Unveils Kimi K3.1 Pro: 3T-Class Open-Weight Model Scores 65.7% on Terminal-Bench",
-      category: "ai" as const,
+      headline: "HTTP2Shell: Critical Brotli Flaw Enables Bidirectional RCE Across Node, Python, and Envoy",
+      category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "Moonshot AI launched Kimi K3.1 Pro, a 3T-class multimodal reasoning model with a 1M context window that beats GPT-6 Astra on Terminal-Bench, ahead of an open-weights release on Nov 4.",
-      whyItMatters: "Proves open-weight post-training compute can rival proprietary frontier systems across terminal coding and 3D CAD modeling.",
-      articleSlug: "moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model"
+      summary: "Aikido Security disclosed that Brotli decoder flaw CVE-2026-111497 enables bidirectional remote code execution across Node.js, Python, Bun, and Envoy.",
+      whyItMatters: "Unauthenticated attackers can compromise backend servers via POST payloads or seize client applications accepting compressed responses.",
+      articleSlug: "http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks"
     },
     {
       id: 'brief-2',
-      headline: "Block Debuts Dessa: Full-Duplex Speech Model Trained Solely on Human Audio",
+      headline: "UK Government Commits £100M to Launch 'World First' AI Biosecurity Lab",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Block's AI lab unveiled Dessa, the first full-duplex conversational model trained entirely on raw spoken audio without text, tokenizers, or pre-trained LLMs.",
-      whyItMatters: "Trained on a single GB200 NVL72 rack and running locally on Apple M4 Max chips, Dessa achieves natural live interruptions and mid-sentence laughter.",
-      articleSlug: "block-debuts-dessa-full-duplex-speech-model-trained-on-audio"
+      summary: "The UK government pledged £100m to establish the AI Biosecurity Lab, backed by £200m in compute credits from OpenAI and Anthropic.",
+      whyItMatters: "Anchors a £350M national defence tech package aimed at evaluating and neutralizing algorithmic biological synthesis risks.",
+      articleSlug: "uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package"
     },
     {
       id: 'brief-3',
-      headline: "Coalition of 71 Rights Groups Mounts Global Resistance to Google's 2027 Android Lockdown",
-      category: "technology" as const,
+      headline: "Apollo Chief Economist Sløk Finds Zero AI Productivity Payoff in the S&P 493",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "EFF, FSF, Tor Project, and 68 other organizations launched Keep Android Open to oppose Google's 2027 mandate requiring developer ID verification for all app installs.",
-      whyItMatters: "The policy strips open sideloading retroactively, forcing independent and dissident developers worldwide to register with Google.",
-      articleSlug: "coalition-of-71-rights-groups-protests-google-android-lockdown"
+      summary: "Apollo Global Management macro data reveals revenue per worker and profit margins are flat across the S&P 493, with zero measurable TFP gains from AI.",
+      whyItMatters: "Mainstream corporate America is pulling back from frontier models, viewing token spending as a cost center that compresses margins.",
+      articleSlug: "apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493"
     },
     {
       id: 'brief-4',
-      headline: "OpenSSL 4.1.0 Ships with DTLS 1.3 Support and Hardware-Optimized Post-Quantum Crypto",
+      headline: "GrapheneOS Surpasses Major Compatibility Hurdle as Banking Apps Add Native Attestation Support",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "OpenSSL 4.1.0 officially launched, delivering RFC 9147 DTLS 1.3 for secure datagrams, RFC 8701 GREASE, and AVX-512 acceleration for ML-DSA and ML-KEM.",
-      whyItMatters: "Modernizes secure UDP communications for WebRTC while preparing internet infrastructure for post-quantum handshakes.",
-      articleSlug: "openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography"
+      summary: "Around a dozen international banks began explicitly whitelisting privacy-hardened GrapheneOS despite Google Play Integrity attestation barriers.",
+      whyItMatters: "Demonstrates that third-party open-source mobile platforms can achieve native financial compatibility without platform monopolies.",
+      articleSlug: "grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os"
     },
     {
       id: 'brief-5',
-      headline: "Google Updates Privacy Policy to Link Gmail, Drive, and Photos AI to Targeted Advertising",
+      headline: "OBS Studio 33.0 Launches with Major Chromium 150 Upgrade and Overhauled Plugin Engine",
       category: "technology" as const,
-      urgency: "High Impact" as const,
-      summary: "Google revised its privacy policy to permit Personal Intelligence AI features in Gmail, Drive, and Google Photos to inform targeted ads across Search and YouTube.",
-      whyItMatters: "Reverses a decade-old promise never to scan private Workspace files for advertising, leveraging AI assistants as a re-monetization vector.",
-      articleSlug: "google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads"
+      urgency: "Notable Shift" as const,
+      summary: "The OBS Project released OBS Studio 33.0, updating its embedded browser engine to CEF 150, restructuring plugins, and enabling NVENC on Arm64.",
+      whyItMatters: "Modernizes web standards for streaming overlays by two years while isolating core capture loops from third-party plugin crashes.",
+      articleSlug: "obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Reasoning Models",
-    text: "Moonshot AI launches Kimi K3.1 Pro, topping GPT-6 Astra on Terminal-Bench at 65.7%.",
-    articleSlug: "moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model"
+    tag: "Cybersecurity",
+    text: "HTTP2Shell Brotli flaw enables bidirectional RCE across Node.js, Python, and Envoy.",
+    articleSlug: "http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks"
   },
   {
     id: 'sig-2',
-    tag: "Speech AI",
-    text: "Block unveils Dessa, a full-duplex conversational model trained purely on human audio.",
-    articleSlug: "block-debuts-dessa-full-duplex-speech-model-trained-on-audio"
+    tag: "Biosecurity",
+    text: "UK commits £100m for national AI Biosecurity Lab with OpenAI and Anthropic compute.",
+    articleSlug: "uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package"
   },
   {
     id: 'sig-3',
-    tag: "Digital Rights",
-    text: "71 rights groups launch Keep Android Open against Google's 2027 sideloading lockdown.",
-    articleSlug: "coalition-of-71-rights-groups-protests-google-android-lockdown"
+    tag: "Macroeconomics",
+    text: "Apollo data shows zero AI productivity gains in the S&P 493 as firms trim token spend.",
+    articleSlug: "apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493"
   },
   {
     id: 'sig-4',
-    tag: "Cryptography",
-    text: "OpenSSL 4.1.0 released with DTLS 1.3 and AVX-512 accelerated post-quantum primitives.",
-    articleSlug: "openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography"
+    tag: "Mobile Privacy",
+    text: "Commercial banking apps begin explicitly permitting privacy-hardened GrapheneOS.",
+    articleSlug: "grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os"
   },
   {
     id: 'sig-5',
-    tag: "Privacy",
-    text: "Google updates privacy terms allowing Gmail and Photos AI data to target ads.",
-    articleSlug: "google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads"
+    tag: "Open Source",
+    text: "OBS Studio 33 debuts with CEF 150 web engine, isolated plugins, and Arm64 NVENC.",
+    articleSlug: "obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc"
   }
 ];

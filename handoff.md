@@ -1,3 +1,42 @@
+# Handoff — 2026-10-27 (Daily Intelligence Pipeline Run: art-294 to art-299)
+
+## Latest: Daily Pipeline Complete — 6 Articles, GPT-6.1 Terra Added, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-294`: `anthropic-files-form-s-1-public-benefit-corporation-ipo` (Hero / Breaking, Signal 95, Anthropic files Form S-1 registration statement with the SEC revealing revenue expanded from $41M in 2023 to $4.585B in 2025 and $16.286B in H1 2026, operating losses narrowed to $693M in H1 2026, revenue per employee surpassed $6.6M, enterprise accounts >=$100k ARR reached 11,900, governed by Delaware Public Benefit Corporation charter and the Long-Term Benefit Trust).
+  - `art-295`: `openai-releases-gpt-6-1-terra-vision-computer-use` (Featured / Model Report, Signal 93, OpenAI launches GPT-6.1 Terra, a 1.05M-token context mid-tier reasoning model delivering 3x faster routine desktop computer use and UI navigation at $1.00/M input, $5.00/M output, and $0.05/M prompt cache read; linked to `model-gpt-6-1-terra`).
+  - `art-296`: `microsoft-offers-mass-buyouts-to-60000-corporate-employees` (Featured / Analysis, Signal 91, Microsoft extends voluntary severance exit buyouts to ~60,000 corporate employees [~25% of workforce] across US, UK, Canada, and India to flatten management across Windows, Gaming, Copilot, and Finance while funding $190B in annual AI infrastructure capex).
+  - `art-297`: `microsoft-open-sources-type-server-protocol-in-pylance` (Breaking / Infrastructure, Signal 90, Microsoft releases Type Server Protocol [TSP] v0.2.0, standardizing a JSON-RPC interface that decouples static type-inference and AST evaluation from Language Server Protocol editors, enabling shared immutable workspace snapshot handles across multi-agent IDEs).
+  - `art-298`: `paperpilot-pure-rust-pdf-engine-mcp-wasm` (Discovery / Open Source, Signal 89, Developer Krushna Vardhan Reddy ships PaperPilot, an open-source, pure-Rust PDF manipulation toolkit with native Model Context Protocol stdio server and in-browser WebAssembly engine with zero telemetry or cloud calls).
+  - `art-299`: `evaluating-energy-costs-of-iterative-llm-code-optimizations` (Research Explained, Signal 88, Controlled study arXiv:2610.32891 accepted at ICSE 2027 evaluating 11 open models on 1,000 EffiBench problems shows LLM self-refinement increases hardware execution energy by up to 886% over human reference solutions in 42 of 44 configurations, with break-even points requiring 10^6 to 10^7 production runs).
+- **Model Watch:**
+  - Found new base foundation model `openai/gpt-6.1-terra` on OpenRouter (released Oct 26, 2026; 1.05M context; $1.00/$5.00 per M tokens; $0.05 cache read).
+  - Added `model-gpt-6-1-terra` to `scripts/model_sources/curated_models.json`.
+  - Executed `python scripts/build_model_data.py`: built 144 models, 6 leaderboards, 10 showdowns cleanly.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Tuesday, October 27, 2026` (5 items linking to art-294..298).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-294..298).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 17 bits from catalog (pairwise 21–38 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed; prerendered 299 articles, 144 models, 10 showdowns; 472 static HTML files, sitemap 470 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly (0 warnings on content/briefing/timestamps).
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-27-the-morning-vector.md` (`29da46d`).
+- **Commits:**
+  - `799b67a`: `feat(intelligence): daily briefing, GPT-6.1 Terra model, and articles update [2026-10-27]`
+  - `29da46d`: `docs(newsletter): The Morning Vector [2026-10-27]`
+- **Stories Dropped / Excluded:**
+  - `Cohere concerning behavior in open-weight models`: blog post was broad security analysis without fresh benchmark quantitative datasets compared to the ICSE 2027 controlled empirical energy evaluation.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `29da46d` / `799b67a`.
+  - Watch for SEC review timeline and S-1/A amendments for Anthropic (ANTH).
+  - Watch for Moonshot AI's public weight release for Kimi K3.1 Pro on November 4, 2026.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - Date alignment in Gate 2 computes expected briefing date from `newest["publishedAt"]` in UTC. For pipeline runs dated for morning Tuesday (+06:00), ensure newest article published timestamp crosses into `00:00:00Z` to `00:15:00Z` on Tuesday so both UTC date and briefing date resolve to Tuesday.
+
 # Handoff — 2026-10-26 (Daily Intelligence Pipeline Run: art-288 to art-293)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

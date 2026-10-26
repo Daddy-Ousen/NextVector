@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 00:12:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 00:12:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Controlled Study Finds LLM Code Refinement Rarely Offsets Execution Energy Costs</title>
+      <link>https://nextvector.rhasan.online/article/evaluating-energy-costs-of-iterative-llm-code-optimizations</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/evaluating-energy-costs-of-iterative-llm-code-optimizations</guid>
+      <description>Evaluating 11 open models on 1,000 EffiBench problems shows self-refinement increases energy consumption by up to 886% over canonical human reference code.</description>
+      <category>RESEARCH</category>
+      <pubDate>Tue, 27 Oct 2026 00:12:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>PaperPilot Ships Zero-Cloud Pure-Rust PDF Engine with WASM and Native MCP</title>
+      <link>https://nextvector.rhasan.online/article/paperpilot-pure-rust-pdf-engine-mcp-wasm</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/paperpilot-pure-rust-pdf-engine-mcp-wasm</guid>
+      <description>The local-first document processing toolkit equips autonomous coding agents with deterministic PDF extraction, OCR, and compression without C++ or Chromium.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 27 Oct 2026 00:07:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Microsoft Open-Sources Type Server Protocol to Decouple Python IDE Analysis</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-open-sources-type-server-protocol-in-pylance</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-open-sources-type-server-protocol-in-pylance</guid>
+      <description>The JSON-RPC standard separates Language Server Protocol state from deep type-inference engines, enabling shared workspace snapshots across agentic developer tools.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 27 Oct 2026 00:02:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Microsoft Offers Voluntary Buyouts to 60,000 Corporate Employees</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-offers-mass-buyouts-to-60000-corporate-employees</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-offers-mass-buyouts-to-60000-corporate-employees</guid>
+      <description>The restructuring program targets roughly a quarter of Redmond&#x27;s workforce across Windows, Copilot, gaming, and finance amid $190B in annual AI capital expenditures.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 26 Oct 2026 23:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI Releases GPT-6.1 Terra for Scaled Agentic Workflows and Computer Use</title>
+      <link>https://nextvector.rhasan.online/article/openai-releases-gpt-6-1-terra-vision-computer-use</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-releases-gpt-6-1-terra-vision-computer-use</guid>
+      <description>The 1.05M-token mid-tier reasoning model delivers 3x faster routine task completion at $1.00 per million input tokens with native screenshot perception.</description>
+      <category>AI</category>
+      <pubDate>Mon, 26 Oct 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Files Form S-1 with SEC for Public Benefit Corporation IPO</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-files-form-s-1-public-benefit-corporation-ipo</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-files-form-s-1-public-benefit-corporation-ipo</guid>
+      <description>Regulatory filing reveals $16.29B in H1 2026 revenue, narrowing operating losses, and a multi-class governance model led by the Long-Term Benefit Trust.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 26 Oct 2026 23:35:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Analysis Details Why Frontier AI Token Prices Dropped Up to 80%</title>
       <link>https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure</link>
@@ -496,60 +550,6 @@
       <description>Weights for the 42B-active MoE architecture run natively on dual Apple M5 Ultra Mac Studios via MLX alongside custom Helion GPU kernels in SGLang.</description>
       <category>AI</category>
       <pubDate>Thu, 15 Oct 2026 22:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>European Authorities Investigate Coordinated Sabotage Against Starlink Ground Terminals</title>
-      <link>https://nextvector.rhasan.online/article/starlink-ground-facility-sabotage-bulgaria-poland</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/starlink-ground-facility-sabotage-bulgaria-poland</guid>
-      <description>Arrests in Sofia and Germany follow deliberate arson attacks that destroyed 11 satellite dish antennas vital to Ukrainian military telecommunications.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 14 Oct 2026 23:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>DoubtLess Contrastive Decoding Cuts Reasoning Model Chain-of-Thought Tokens by 31%</title>
-      <link>https://nextvector.rhasan.online/article/doubtless-contrastive-decoding-slashes-reasoning-tokens</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/doubtless-contrastive-decoding-slashes-reasoning-tokens</guid>
-      <description>A training-free dual-prompt small model steers larger LLMs away from repetitive checking after the correct answer is already found.</description>
-      <category>RESEARCH</category>
-      <pubDate>Wed, 14 Oct 2026 23:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Timescale Unveils pg_vectorsearch with PRISM Index for PostgreSQL Vector Retrieval</title>
-      <link>https://nextvector.rhasan.online/article/timescale-launches-pg-vectorsearch-prism-index</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/timescale-launches-pg-vectorsearch-prism-index</guid>
-      <description>New open-source extension combines hierarchical centroid trees and RaBitQ 1-bit quantization to surpass pgvector HNSW in build times and query latency.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 14 Oct 2026 22:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Cloudflare Traffic Telemetry Shows Malicious Bots Migrated During Yandex Data Center Outage</title>
-      <link>https://nextvector.rhasan.online/article/cloudflare-data-reveals-yandex-botnet-relocation-during-outage</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-data-reveals-yandex-botnet-relocation-during-outage</guid>
-      <description>Analysis of 170M automated requests reveals that while search crawlers went dark after drone strikes, malicious bot operators seamlessly redirected workloads to alternate Russian networks.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 14 Oct 2026 22:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Opens Singapore Hub and Signs AI Safety Evaluation Pact with Government</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-opens-singapore-office-signs-government-mou</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-opens-singapore-office-signs-government-mou</guid>
-      <description>The Asia-Pacific expansion follows nationwide adoption of Claude Code by 1,500 GovTech engineers and an economic index ranking Singapore second in per-capita usage.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 14 Oct 2026 22:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Cyber Experts Dispute &#x27;Rogue Agent&#x27; Claims as Frontier Labs Overlook Basic Network Controls</title>
-      <link>https://nextvector.rhasan.online/article/frontier-labs-skip-security-basics-blame-rogue-agents</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/frontier-labs-skip-security-basics-blame-rogue-agents</guid>
-      <description>SANS, RAND, and BIML specialists argue that unauthorized system access by AI agents stems from basic containment failures rather than misaligned autonomous behavior.</description>
-      <category>AI</category>
-      <pubDate>Wed, 14 Oct 2026 22:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

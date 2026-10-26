@@ -1,8 +1,46 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-24T04:22:12Z",
- "count": 469,
+ "fetchedAt": "2026-10-26T23:09:27Z",
+ "count": 462,
  "data": [
+  {
+   "id": "openai/gpt-6.1-terra",
+   "name": "OpenAI: GPT-6.1 Terra",
+   "created": 1793038409,
+   "createdDate": "2026-10-26",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.1-terra:batch",
+   "name": "OpenAI: GPT-6.1 Terra (batch)",
+   "created": 1793038409,
+   "createdDate": "2026-10-26",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 0.5,
+   "output": 2.5,
+   "cache_read": 0.025,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "moonshotai/kimi-k3.1-pro",
    "name": "MoonshotAI: Kimi K3.1 Pro",
@@ -1169,9 +1207,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.02,
-   "output": 1.0,
-   "cache_read": 0.015,
+   "input": 0.04,
+   "output": 0.5,
+   "cache_read": 0.03,
    "input_modalities": [
     "text",
     "image"
@@ -1259,9 +1297,9 @@
    "createdDate": "2026-09-11",
    "context_length": 1050000,
    "hugging_face_id": null,
-   "input": 2.0,
-   "output": 12.0,
-   "cache_read": 0.2,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
    "input_modalities": [
     "file",
     "image",
@@ -1354,9 +1392,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.02,
-   "output": 1.0,
-   "cache_read": 0.015,
+   "input": 0.3,
+   "output": 1.2,
+   "cache_read": 0.006,
    "input_modalities": [
     "text",
     "image"
@@ -1675,9 +1713,9 @@
    "createdDate": "2026-08-28",
    "context_length": 1048576,
    "hugging_face_id": "tencent/Hy4-preview",
-   "input": 0.834,
-   "output": 2.501,
-   "cache_read": 0.042,
+   "input": 0.7506,
+   "output": 2.2509,
+   "cache_read": 0.0378,
    "input_modalities": [
     "text"
    ],
@@ -1692,8 +1730,8 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0304,
-   "output": 0.0852,
+   "input": 0.0413,
+   "output": 0.0758,
    "cache_read": 0.03,
    "input_modalities": [
     "text",
@@ -1840,9 +1878,9 @@
    "createdDate": "2026-08-19",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.079,
+   "input": 0.0699,
    "output": 1.4,
-   "cache_read": 0.078,
+   "cache_read": 0.0689,
    "input_modalities": [
     "text"
    ],
@@ -1874,9 +1912,9 @@
    "createdDate": "2026-08-18",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3",
-   "input": 0.079,
+   "input": 0.0699,
    "output": 1.4,
-   "cache_read": 0.078,
+   "cache_read": 0.0689,
    "input_modalities": [
     "text"
    ],
@@ -2066,6 +2104,23 @@
     "text",
     "image",
     "file"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "liquid/lfm-2.5-2.6b",
+   "name": "LiquidAI: LFM2.5-2.6B",
+   "created": 1786470519,
+   "createdDate": "2026-08-11",
+   "context_length": 128000,
+   "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
+   "input": 0.35,
+   "output": 0.5,
+   "cache_read": 0.04,
+   "input_modalities": [
+    "text"
    ],
    "output_modalities": [
     "text"
@@ -2544,9 +2599,9 @@
    "createdDate": "2026-07-16",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
-   "input": 0.239,
-   "output": 10.8,
-   "cache_read": 0.21,
+   "input": 0.189,
+   "output": 20.0,
+   "cache_read": 0.179,
    "input_modalities": [
     "text",
     "image",
@@ -2902,9 +2957,9 @@
    "createdDate": "2026-07-06",
    "context_length": 262144,
    "hugging_face_id": "tencent/Hy3",
-   "input": 0.132,
-   "output": 0.528,
-   "cache_read": 0.033,
+   "input": 0.0825,
+   "output": 0.33,
+   "cache_read": 0.020625,
    "input_modalities": [
     "text"
    ],
@@ -3117,8 +3172,8 @@
    "createdDate": "2026-06-12",
    "context_length": 262144,
    "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
-   "input": 0.6712,
-   "output": 3.35,
+   "input": 0.56,
+   "output": 3.1,
    "cache_read": 0.15,
    "input_modalities": [
     "text",
@@ -3687,9 +3742,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.238,
-   "output": 16.0,
-   "cache_read": 0.228,
+   "input": 0.1795,
+   "output": 8.099,
+   "cache_read": 0.17,
    "input_modalities": [
     "text",
     "image",
@@ -3785,8 +3840,8 @@
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
    "input": 0.1,
-   "output": 0.95,
-   "cache_read": 0.05,
+   "output": 0.9,
+   "cache_read": 0.03,
    "input_modalities": [
     "text",
     "image",
@@ -3803,9 +3858,9 @@
    "createdDate": "2026-04-27",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-27B",
-   "input": 0.25,
-   "output": 2.0,
-   "cache_read": 0.025,
+   "input": 0.32,
+   "output": 3.2,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image",
@@ -3898,9 +3953,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.591252,
-   "output": 1.182504,
-   "cache_read": 0.049271,
+   "input": 0.709746,
+   "output": 1.419492,
+   "cache_read": 0.059145,
    "input_modalities": [
     "text"
    ],
@@ -4115,9 +4170,9 @@
    "createdDate": "2026-04-03",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-26B-A4B-it",
-   "input": 0.0675,
-   "output": 0.225,
-   "cache_read": 0.0375,
+   "input": 0.0765,
+   "output": 0.255,
+   "cache_read": 0.0425,
    "input_modalities": [
     "image",
     "text",
@@ -4217,23 +4272,6 @@
     "image",
     "text",
     "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "arcee-ai/trinity-large-thinking",
-   "name": "Arcee AI: Trinity Large Thinking",
-   "created": 1775058318,
-   "createdDate": "2026-04-01",
-   "context_length": 262144,
-   "hugging_face_id": "arcee-ai/Trinity-Large-Thinking",
-   "input": 0.25,
-   "output": 0.8,
-   "cache_read": 0.06,
-   "input_modalities": [
-    "text"
    ],
    "output_modalities": [
     "text"
@@ -4437,24 +4475,6 @@
    "input": 0.15,
    "output": 0.6,
    "cache_read": 0.015,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "mistralai/mistral-small-2603:batch",
-   "name": "Mistral: Mistral Small 4 (batch)",
-   "created": 1773695685,
-   "createdDate": "2026-03-16",
-   "context_length": 262144,
-   "hugging_face_id": "mistralai/Mistral-Small-4-119B-2603",
-   "input": 0.075,
-   "output": 0.3,
-   "cache_read": 0.0075,
    "input_modalities": [
     "text",
     "image"
@@ -4749,8 +4769,8 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-122B-A10B",
-   "input": 0.4,
-   "output": 3.2,
+   "input": 0.26,
+   "output": 2.08,
    "cache_read": null,
    "input_modalities": [
     "text",
@@ -4962,8 +4982,8 @@
    "createdDate": "2026-02-12",
    "context_length": 204800,
    "hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
-   "input": 0.27,
-   "output": 0.95,
+   "input": 0.3,
+   "output": 1.2,
    "cache_read": 0.03,
    "input_modalities": [
     "text"
@@ -5593,24 +5613,6 @@
    ]
   },
   {
-   "id": "mistralai/ministral-8b-2512:batch",
-   "name": "Mistral: Ministral 3 8B 2512 (batch)",
-   "created": 1764681654,
-   "createdDate": "2025-12-02",
-   "context_length": 262144,
-   "hugging_face_id": "mistralai/Ministral-3-8B-Instruct-2512",
-   "input": 0.075,
-   "output": 0.075,
-   "cache_read": 0.0075,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "mistralai/ministral-3b-2512",
    "name": "Mistral: Ministral 3 3B 2512",
    "created": 1764681560,
@@ -5638,25 +5640,6 @@
    "input": 0.5,
    "output": 1.5,
    "cache_read": 0.05,
-   "input_modalities": [
-    "text",
-    "image",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "mistralai/mistral-large-2512:batch",
-   "name": "Mistral: Mistral Large 3 2512 (batch)",
-   "created": 1764624472,
-   "createdDate": "2025-12-01",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.25,
-   "output": 0.75,
-   "cache_read": 0.025,
    "input_modalities": [
     "text",
     "image",
@@ -5912,23 +5895,6 @@
    "hugging_face_id": "MiniMaxAI/MiniMax-M2",
    "input": 0.255,
    "output": 1.02,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "ibm-granite/granite-4.0-h-micro",
-   "name": "IBM: Granite 4.0 Micro",
-   "created": 1760927695,
-   "createdDate": "2025-10-20",
-   "context_length": 131000,
-   "hugging_face_id": "ibm-granite/granite-4.0-h-micro",
-   "input": 0.017,
-   "output": 0.112,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -6389,25 +6355,6 @@
    ]
   },
   {
-   "id": "mistralai/mistral-medium-3.1:batch",
-   "name": "Mistral: Mistral Medium 3.1 (batch)",
-   "created": 1755095639,
-   "createdDate": "2025-08-13",
-   "context_length": 131072,
-   "hugging_face_id": null,
-   "input": 0.2,
-   "output": 1.0,
-   "cache_read": 0.02,
-   "input_modalities": [
-    "text",
-    "image",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "z-ai/glm-4.5v",
    "name": "Z.ai: GLM 4.5V",
    "created": 1754922288,
@@ -6664,24 +6611,6 @@
    ]
   },
   {
-   "id": "mistralai/codestral-2508:batch",
-   "name": "Mistral: Codestral 2508 (batch)",
-   "created": 1754079630,
-   "createdDate": "2025-08-01",
-   "context_length": 256000,
-   "hugging_face_id": null,
-   "input": 0.15,
-   "output": 0.45,
-   "cache_read": 0.015,
-   "input_modalities": [
-    "text",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "qwen/qwen3-coder-30b-a3b-instruct",
    "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
    "created": 1753972379,
@@ -6705,7 +6634,7 @@
    "createdDate": "2025-07-29",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
-   "input": 0.09,
+   "input": 0.1,
    "output": 0.3,
    "cache_read": null,
    "input_modalities": [
@@ -7325,7 +7254,7 @@
    "hugging_face_id": null,
    "input": 0.1,
    "output": 0.4,
-   "cache_read": 0.025,
+   "cache_read": 0.03,
    "input_modalities": [
     "image",
     "text",
@@ -8048,8 +7977,8 @@
    "createdDate": "2024-09-25",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
-   "input": 0.0509,
-   "output": 0.335,
+   "input": 0.05,
+   "output": 0.33,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -8490,23 +8419,6 @@
    ]
   },
   {
-   "id": "openai/gpt-3.5-turbo-instruct",
-   "name": "OpenAI: GPT-3.5 Turbo Instruct",
-   "created": 1695859200,
-   "createdDate": "2023-09-28",
-   "context_length": 4095,
-   "hugging_face_id": null,
-   "input": 1.5,
-   "output": 2.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "openai/gpt-3.5-turbo-16k",
    "name": "OpenAI: GPT-3.5 Turbo 16k",
    "created": 1693180800,
@@ -8566,40 +8478,6 @@
    "hugging_face_id": "Gryphe/MythoMax-L2-13b",
    "input": 0.08,
    "output": 0.11,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openai/gpt-3.5-turbo",
-   "name": "OpenAI: GPT-3.5 Turbo",
-   "created": 1685232000,
-   "createdDate": "2023-05-28",
-   "context_length": 16385,
-   "hugging_face_id": null,
-   "input": 0.5,
-   "output": 1.5,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openai/gpt-3.5-turbo:batch",
-   "name": "OpenAI: GPT-3.5 Turbo (batch)",
-   "created": 1685232000,
-   "createdDate": "2023-05-28",
-   "context_length": 16385,
-   "hugging_face_id": null,
-   "input": 0.25,
-   "output": 0.75,
    "cache_read": null,
    "input_modalities": [
     "text"

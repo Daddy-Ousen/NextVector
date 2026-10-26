@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Monday, October 26, 2026",
-  summary: "Merck and Moderna published Phase 3 INTerpath-001 trial results showing an individualized mRNA cancer vaccine cuts melanoma recurrence by 42%, while Wiz Research uncovered the Gheist campaign exploiting stolen GitHub tokens for CI/CD secret exfiltration. In developer infrastructure, JetBrains open-sourced ThinkRail, Lynch Lab revealed fine-tuned CNNs beat frontier LLMs at skin cancer diagnosis, and economic telemetry documented up to 80% token price deflation.",
+  date: "Tuesday, October 27, 2026",
+  summary: "Anthropic filed its Form S-1 registration statement with the SEC, disclosing $16.29 billion in H1 2026 revenue and narrowing operating losses under its Public Benefit Corporation charter. Concurrently, OpenAI launched GPT-6.1 Terra with 1.05M tokens for scaled desktop computer use, while Microsoft extended voluntary buyout offers to 60,000 corporate employees to absorb $190 billion in annual AI datacenter capital spending.",
   items: [
     {
       id: 'brief-1',
-      headline: "Merck and Moderna Phase 3 trial cuts melanoma recurrence by 42%",
-      category: "science" as const,
+      headline: "Anthropic files Form S-1 with SEC for Public Benefit Corporation IPO",
+      category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "The landmark Phase 3 INTerpath-001 trial demonstrated that intismeran autogene combined with Keytruda significantly improved recurrence-free survival in 1,137 patients with resected high-risk melanoma. Following the six-month immunization window, the combination cut the risk of recurrence or death by 58%.",
-      whyItMatters: "Establishes the first late-stage clinical validation for individualized neoantigen mRNA cancer vaccines in the adjuvant setting.",
-      articleSlug: "merck-moderna-interpath-001-phase-3-melanoma-vaccine"
+      summary: "Anthropic's registration statement reveals revenue soared from $41M in 2023 to $4.59B in 2025, reaching $16.29B in the first six months of 2026. Operating loss narrowed to $693M in H1 2026 as revenue per employee reached $6.6M, governed by the Long-Term Benefit Trust.",
+      whyItMatters: "Establishes the premier public equity test for a frontier AI lab operating with binding governance duties to safety and public benefit.",
+      articleSlug: "anthropic-files-form-s-1-public-benefit-corporation-ipo"
     },
     {
       id: 'brief-2',
-      headline: "Wiz uncovers Gheist campaign exploiting stolen GitHub tokens",
-      category: "technology" as const,
+      headline: "OpenAI launches GPT-6.1 Terra for scaled desktop agentic workflows",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Automated attackers committed base32 secret-dumping workflows across more than 13,500 branches in 850 compromised accounts. While GitHub's approval hold protected public repos, private repos and enterprise servers executed without gating.",
-      whyItMatters: "Bypasses native log masking and exfiltrates environment credentials directly through the GitHub API without external C2.",
-      articleSlug: "gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration"
+      summary: "The new mid-tier reasoning model features a 1.05M-token context window at $1.00/M input tokens and $0.05/M cached reads. Engineered for high-cadence UI navigation, Terra completes routine computer tasks three times faster than heavier frontier models.",
+      whyItMatters: "Dramatically lowers operational inference costs for automated computer use and continuous subagent loops.",
+      articleSlug: "openai-releases-gpt-6-1-terra-vision-computer-use"
     },
     {
       id: 'brief-3',
-      headline: "JetBrains open-sources ThinkRail agentic IDE",
+      headline: "Microsoft offers voluntary buyouts to roughly 60,000 employees",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "ThinkRail wraps the pi coding agent in a native desktop workbench featuring Git worktree isolation and living SPEC.md knowledge graphs. The environment allows parallel agent branches to run without disturbing the working directory.",
-      whyItMatters: "Solves working tree pollution and agent context drift through persistent architectural specs and MCP tooling.",
-      articleSlug: "jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces"
+      summary: "Covering approximately 25% of corporate staff in the US, UK, Canada, and India, the severance program seeks to flatten management across Windows, Gaming, Copilot, and Finance. The restructuring balances $190 billion in annual AI datacenter investments.",
+      whyItMatters: "Signals how hyperscalers are flattening organizational hierarchies to fund historic infrastructure capital expenditures.",
+      articleSlug: "microsoft-offers-mass-buyouts-to-60000-corporate-employees"
     },
     {
       id: 'brief-4',
-      headline: "Study finds 10-year-old CNN beats frontier LLMs at skin cancer diagnosis",
-      category: "ai" as const,
+      headline: "Microsoft open-sources Type Server Protocol in Pylance",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Lynch Lab benchmarked GPT-6 Astra and Claude Fable 5.1 against an Inception v3 baseline across 200 biopsy-proven lesions from the MILK10k dataset. The lightweight CNN achieved 62% accuracy compared to 42% for both frontier models.",
-      whyItMatters: "Demonstrates that general-purpose vision LLMs suffer from severe diagnostic skew compared to specialized convolutional vision baselines.",
-      articleSlug: "lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis"
+      summary: "The JSON-RPC standard decouples workspace type analysis from user-facing language servers. By creating shared immutable snapshot handles, TSP allows concurrent coding agents and background linters to query semantic state without duplicating memory.",
+      whyItMatters: "Eliminates multi-process AST duplication across autonomous coding agent workspaces.",
+      articleSlug: "microsoft-open-sources-type-server-protocol-in-pylance"
     },
     {
       id: 'brief-5',
-      headline: "GVS5H harness enables five Qwen3.8 models to match Claude Fable 5",
-      category: "ai" as const,
+      headline: "ICSE study finds LLM code refinement increases execution energy",
+      category: "research" as const,
       urgency: "Notable Shift" as const,
-      summary: "Researchers introduced ledger-based zero-shot self-orchestration, raising local open-weight Qwen3.8-27B from 66.8% to 92.4% pass@1 on LiveCodeBench Hard. The multi-instance decomposition matched Fable 5 at 9% of the cost.",
-      whyItMatters: "Shows inference-time ledger coordination on commodity hardware can overcome parameter gaps without fine-tuning.",
-      articleSlug: "gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5"
+      summary: "Benchmarking 11 open models on 1,000 EffiBench problems revealed that 42 of 44 configurations produced code consuming up to 886% more hardware energy than human references. Break-even points for the two passing cases required up to 10 million production runs.",
+      whyItMatters: "Disproves the assumption that execution-time speed optimizations by LLMs naturally lead to green, energy-efficient software.",
+      articleSlug: "evaluating-energy-costs-of-iterative-llm-code-optimizations"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "mRNA Oncology",
-    text: "Merck and Moderna Phase 3 INTerpath-001 trial cuts melanoma recurrence or death by 42%.",
-    articleSlug: "merck-moderna-interpath-001-phase-3-melanoma-vaccine"
+    tag: "Anthropic S-1",
+    text: "Anthropic files Form S-1 for IPO, posting $16.29B in H1 2026 revenue and narrowing loss.",
+    articleSlug: "anthropic-files-form-s-1-public-benefit-corporation-ipo"
   },
   {
     id: 'sig-2',
-    tag: "Token Compromise",
-    text: "Wiz tracks Gheist campaign abusing stolen GitHub tokens across 13,500 branches.",
-    articleSlug: "gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration"
+    tag: "GPT-6.1 Terra",
+    text: "OpenAI launches 1.05M-token GPT-6.1 Terra at $1.00/M input for scaled computer use.",
+    articleSlug: "openai-releases-gpt-6-1-terra-vision-computer-use"
   },
   {
     id: 'sig-3',
-    tag: "Developer Tools",
-    text: "JetBrains open-sources ThinkRail agentic IDE with Git worktrees and SPEC.md graphs.",
-    articleSlug: "jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces"
+    tag: "Microsoft Buyouts",
+    text: "Microsoft offers voluntary exit buyouts to 60,000 staff amid $190B AI infra spending.",
+    articleSlug: "microsoft-offers-mass-buyouts-to-60000-corporate-employees"
   },
   {
     id: 'sig-4',
-    tag: "Clinical AI",
-    text: "10-year-old Inception v3 CNN beats GPT-6 Astra and Claude on dermoscopy benchmarks.",
-    articleSlug: "lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis"
+    tag: "Type Server Protocol",
+    text: "Microsoft open-sources Type Server Protocol to decouple Python semantic analysis in IDEs.",
+    articleSlug: "microsoft-open-sources-type-server-protocol-in-pylance"
   },
   {
     id: 'sig-5',
-    tag: "Multi-Agent Code",
-    text: "GVS5H self-orchestration lifts local Qwen3.8-27B to 92.4% pass@1 on LiveCodeBench Hard.",
-    articleSlug: "gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5"
+    tag: "Green Computing",
+    text: "ICSE study shows LLM code self-refinement increases runtime energy by up to 886%.",
+    articleSlug: "evaluating-energy-costs-of-iterative-llm-code-optimizations"
   }
 ];

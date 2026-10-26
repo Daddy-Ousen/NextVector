@@ -6,7 +6,7 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 
 ## Core Hubs
 - [NextVector Home](https://nextvector.rhasan.online/): Latest AI news, newest first, with the lead story on top.
-- [AI Models Directory](https://nextvector.rhasan.online/models): 143 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
+- [AI Models Directory](https://nextvector.rhasan.online/models): 144 tracked AI models with sourced list prices, context windows, licences and arena.ai text scores.
 - [Model Showdowns & Comparisons](https://nextvector.rhasan.online/compare): Head-to-head comparisons built from the same data (arena.ai score, list price, context, licence).
 - [AI Subscription Buyer's Guide](https://nextvector.rhasan.online/subscriptions): Plain-English guide to ChatGPT Plus, Claude Pro, Google AI Pro, Cursor Pro and the $100-$200 plans, with budget options. Plan prices checked on vendor pages October 12, 2026.
 - [Benchmark Leaderboards](https://nextvector.rhasan.online/benchmarks): arena.ai text, the Artificial Analysis Intelligence Index, OSWorld-Verified (computer use), SWE-bench Verified (code, bash-only runs) and a price vs Arena score frontier.
@@ -18,8 +18,8 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 ## Model Decision Guide (data checked 2026-10-11)
 - Highest Arena score (released models): [Gemini 4 Argon](https://nextvector.rhasan.online/models/model-gemini-4-argon) (Google DeepMind): Arena 1525 (±9, #1); list price $2.00 / $10.00 per 1M tokens.
 - Best Arena score under $1 blended: [MiMo-V2.6-Pro](https://nextvector.rhasan.online/models/model-mimo-v2-6-pro) (Xiaomi AI): Arena 1480 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens.
-- Best Arena score under $0.20 blended: [Gemma 4 26B-A4B](https://nextvector.rhasan.online/models/model-gemma-4-26b-a4b) (Google DeepMind): Arena 1438 at $0.11 blended; list price $0.068 / $0.225 per 1M tokens.
-- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.239 / $10.80 per 1M tokens.
+- Best Arena score under $0.20 blended: [Hy3](https://nextvector.rhasan.online/models/model-hy3) (Tencent Hunyuan): Arena 1454 at $0.14 blended; list price $0.083 / $0.33 per 1M tokens.
+- Best open-weights model: [Kimi K3](https://nextvector.rhasan.online/models/model-kimi-k3) (Moonshot AI): Arena 1488 · Kimi K3 license; list price $0.189 / $20.00 per 1M tokens.
 - Computer use: [Claude Fable 5](https://nextvector.rhasan.online/models/model-claude-fable-5) (Anthropic): OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens.
 - Coding (shared-harness SWE-bench runs): [Claude Opus 4.5](https://nextvector.rhasan.online/models/model-claude-opus-4-5) (Anthropic): SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens.
 - Highest Artificial Analysis Intelligence Index: [Claude Opus 5.5](https://nextvector.rhasan.online/models/model-claude-opus-5-5) (Anthropic): AA Intelligence Index 57.6; list price $4.00 / $20.00 per 1M tokens.
@@ -54,11 +54,11 @@ Editorial charter: Less noise. More signal. Sourced benchmarks over marketing cl
 - [Mistral Large 3 vs Qwen3.5-397B-A17B](https://nextvector.rhasan.online/compare/mistral-vs-qwen): On the arena.ai text leaderboard, Mistral Large 3 scores 1414 (±3, #143) and Qwen3.5-397B-A17B scores 1442 (±3, #92).
 
 ## Latest Stories
-- [Analysis Details Why Frontier AI Token Prices Dropped Up to 80%](https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure) (2026-10-26): Data scientist Max Woolf breaks down the economics of token deflation, finding prompt caching and 29 OpenRouter providers drove API prices down to marginal cost.
-- [GVS5H Harness Enables Five Qwen3.8-27B Models to Match Claude Fable 5](https://nextvector.rhasan.online/article/gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5) (2026-10-26): Ledger-based zero-shot self-orchestration lifts local open weights from 66.8% to 92.4% pass@1 on LiveCodeBench Hard, beating frontier models at 9% of the cost.
-- [Study Finds 10-Year-Old CNN Beats Frontier LLMs at Skin Cancer Diagnosis](https://nextvector.rhasan.online/article/lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis) (2026-10-26): Testing on 200 biopsy-proven lesions from the MILK10k dataset reveals Inception v3 achieved 62% accuracy against 42% for GPT-6 Astra and Claude Fable 5.1.
-- [JetBrains Open-Sources ThinkRail Agentic IDE with Worktree Isolation](https://nextvector.rhasan.online/article/jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces) (2026-10-25): The developer tools company releases an Apache 2.0 IDE structured around the pi coding agent, connected SPEC.md knowledge graphs, and native MCP support.
-- [Wiz Uncovers Gheist Campaign Exploiting Stolen GitHub Tokens to Dump Secrets](https://nextvector.rhasan.online/article/gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration) (2026-10-25): Threat actors deployed automated sync-check workflows across 850 accounts and 13,500 branches, exploiting base32 log encoding to bypass GitHub secret masking.
+- [Controlled Study Finds LLM Code Refinement Rarely Offsets Execution Energy Costs](https://nextvector.rhasan.online/article/evaluating-energy-costs-of-iterative-llm-code-optimizations) (2026-10-27): Evaluating 11 open models on 1,000 EffiBench problems shows self-refinement increases energy consumption by up to 886% over canonical human reference code.
+- [PaperPilot Ships Zero-Cloud Pure-Rust PDF Engine with WASM and Native MCP](https://nextvector.rhasan.online/article/paperpilot-pure-rust-pdf-engine-mcp-wasm) (2026-10-27): The local-first document processing toolkit equips autonomous coding agents with deterministic PDF extraction, OCR, and compression without C++ or Chromium.
+- [Microsoft Open-Sources Type Server Protocol to Decouple Python IDE Analysis](https://nextvector.rhasan.online/article/microsoft-open-sources-type-server-protocol-in-pylance) (2026-10-27): The JSON-RPC standard separates Language Server Protocol state from deep type-inference engines, enabling shared workspace snapshots across agentic developer tools.
+- [Microsoft Offers Voluntary Buyouts to 60,000 Corporate Employees](https://nextvector.rhasan.online/article/microsoft-offers-mass-buyouts-to-60000-corporate-employees) (2026-10-26): The restructuring program targets roughly a quarter of Redmond's workforce across Windows, Copilot, gaming, and finance amid $190B in annual AI capital expenditures.
+- [OpenAI Releases GPT-6.1 Terra for Scaled Agentic Workflows and Computer Use](https://nextvector.rhasan.online/article/openai-releases-gpt-6-1-terra-vision-computer-use) (2026-10-26): The 1.05M-token mid-tier reasoning model delivers 3x faster routine task completion at $1.00 per million input tokens with native screenshot perception.
 
 ## Editorial Standards
 - [About NextVector & Robiul Hasan](https://nextvector.rhasan.online/about): Founder background, editorial principles and the 1–100 Signal Rating formula.

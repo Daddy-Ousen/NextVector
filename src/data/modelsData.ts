@@ -1500,6 +1500,45 @@ export const ALL_MODELS: AIModel[] = [
     "dataAsOf": "2026-10-11"
   },
   {
+    "id": "model-gpt-6-1-terra",
+    "name": "GPT-6.1 Terra",
+    "developer": "OpenAI",
+    "releaseDate": "October 2026",
+    "releaseDateSource": "OpenRouter listing date",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Files",
+      "Vision"
+    ],
+    "contextWindow": "1.05M tokens",
+    "contextTokens": 1050000,
+    "parameters": "Not disclosed",
+    "pricing": {
+      "inputPer1M": 1.0,
+      "outputPer1M": 5.0,
+      "cachedInputPer1M": 0.05,
+      "source": "OpenRouter list price"
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary",
+    "hardwareRequirements": "Hosted API",
+    "benchmarks": [],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://openrouter.ai/openai/gpt-6.1-terra",
+    "summary": "Proprietary model from OpenAI, listed October 2026. $1.00 input / $5.00 output per 1M tokens. 1.05M tokens context.",
+    "sources": [
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/openai/gpt-6.1-terra"
+      }
+    ],
+    "dataAsOf": "2026-10-11"
+  },
+  {
     "id": "model-gpt-6-astra",
     "name": "GPT-6 Astra",
     "developer": "OpenAI",
@@ -4526,9 +4565,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "26B total, 4B active (MoE)",
     "pricing": {
-      "inputPer1M": 0.0675,
-      "outputPer1M": 0.225,
-      "cachedInputPer1M": 0.0375,
+      "inputPer1M": 0.0765,
+      "outputPer1M": 0.255,
+      "cachedInputPer1M": 0.0425,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -4574,7 +4613,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-26b-a4b-it",
-    "summary": "Open Weights model from Google DeepMind, listed April 2026. Arena text score 1438 (#100 of 414 entries). $0.07 input / $0.23 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Google DeepMind, listed April 2026. Arena text score 1438 (#100 of 414 entries). $0.08 input / $0.26 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -5889,9 +5928,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.239,
-      "outputPer1M": 10.8,
-      "cachedInputPer1M": 0.21,
+      "inputPer1M": 0.189,
+      "outputPer1M": 20.0,
+      "cachedInputPer1M": 0.179,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -5937,7 +5976,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
-    "summary": "Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.24 input / $10.80 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.19 input / $20.00 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -5977,8 +6016,8 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.6712,
-      "outputPer1M": 3.35,
+      "inputPer1M": 0.56,
+      "outputPer1M": 3.1,
       "cachedInputPer1M": 0.15,
       "source": "OpenRouter list price"
     },
@@ -6014,7 +6053,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
-    "summary": "Open Weights model from Moonshot AI, listed June 2026. $0.67 input / $3.35 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Moonshot AI, listed June 2026. $0.56 input / $3.10 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -6323,9 +6362,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.079,
+      "inputPer1M": 0.0699,
       "outputPer1M": 1.4,
-      "cachedInputPer1M": 0.078,
+      "cachedInputPer1M": 0.0689,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6371,7 +6410,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://z.ai/blog/glm-5.3",
-    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.08 input / $1.40 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1478 (#27 of 414 entries). $0.07 input / $1.40 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7107,9 +7146,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.02,
-      "outputPer1M": 1.0,
-      "cachedInputPer1M": 0.015,
+      "inputPer1M": 0.3,
+      "outputPer1M": 1.2,
+      "cachedInputPer1M": 0.006,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7141,7 +7180,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
-    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.02 input / $1.00 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7267,9 +7306,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.5913,
-      "outputPer1M": 1.1825,
-      "cachedInputPer1M": 0.0493,
+      "inputPer1M": 0.7097,
+      "outputPer1M": 1.4195,
+      "cachedInputPer1M": 0.0591,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7315,7 +7354,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://api-docs.deepseek.com/news/news260424",
-    "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.59 input / $1.18 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.71 input / $1.42 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -8209,9 +8248,8 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "27B (dense)",
     "pricing": {
-      "inputPer1M": 0.25,
-      "outputPer1M": 2.0,
-      "cachedInputPer1M": 0.025,
+      "inputPer1M": 0.32,
+      "outputPer1M": 3.2,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -8246,7 +8284,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/qwen/qwen3.6-27b",
-    "summary": "Open Weights model from Alibaba Cloud, listed April 2026. $0.25 input / $2.00 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Alibaba Cloud, listed April 2026. $0.32 input / $3.20 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -8280,8 +8318,8 @@ export const ALL_MODELS: AIModel[] = [
     "parameters": "35B total, 3B active (MoE)",
     "pricing": {
       "inputPer1M": 0.1,
-      "outputPer1M": 0.95,
-      "cachedInputPer1M": 0.05,
+      "outputPer1M": 0.9,
+      "cachedInputPer1M": 0.03,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -8316,7 +8354,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/qwen/qwen3.6-35b-a3b",
-    "summary": "Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.95 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.90 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -8434,8 +8472,8 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "122B total, 10B active (MoE)",
     "pricing": {
-      "inputPer1M": 0.4,
-      "outputPer1M": 3.2,
+      "inputPer1M": 0.26,
+      "outputPer1M": 2.08,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -8481,7 +8519,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
-    "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1416 (#135 of 414 entries). $0.40 input / $3.20 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1416 (#135 of 414 entries). $0.26 input / $2.08 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -9385,8 +9423,8 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 204800,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.27,
-      "outputPer1M": 0.95,
+      "inputPer1M": 0.3,
+      "outputPer1M": 1.2,
       "cachedInputPer1M": 0.03,
       "source": "OpenRouter list price"
     },
@@ -9425,7 +9463,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://www.minimax.io/news/minimax-m25",
-    "summary": "Open Weights model from MiniMax, listed February 2026. Arena text score 1391 (#174 of 414 entries). $0.27 input / $0.95 output per 1M tokens. 205K tokens context.",
+    "summary": "Open Weights model from MiniMax, listed February 2026. Arena text score 1391 (#174 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 205K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -9623,9 +9661,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.834,
-      "outputPer1M": 2.501,
-      "cachedInputPer1M": 0.042,
+      "inputPer1M": 0.7506,
+      "outputPer1M": 2.2509,
+      "cachedInputPer1M": 0.0378,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -9637,7 +9675,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/tencent/hy4-preview",
-    "summary": "Open Weights model from Tencent Hunyuan, listed August 2026. $0.83 input / $2.50 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Tencent Hunyuan, listed August 2026. $0.75 input / $2.25 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -9664,9 +9702,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.132,
-      "outputPer1M": 0.528,
-      "cachedInputPer1M": 0.033,
+      "inputPer1M": 0.0825,
+      "outputPer1M": 0.33,
+      "cachedInputPer1M": 0.0206,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -9712,7 +9750,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/tencent/Hy3",
-    "summary": "Open Weights model from Tencent Hunyuan, listed July 2026. Arena text score 1454 (#73 of 414 entries). $0.13 input / $0.53 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Tencent Hunyuan, listed July 2026. Arena text score 1454 (#73 of 414 entries). $0.08 input / $0.33 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",

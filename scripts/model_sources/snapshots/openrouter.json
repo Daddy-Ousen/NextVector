@@ -1,8 +1,46 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-26T23:09:27Z",
- "count": 462,
+ "fetchedAt": "2026-10-27T23:40:27Z",
+ "count": 464,
  "data": [
+  {
+   "id": "openai/gpt-6.1-terra-pro",
+   "name": "OpenAI: GPT-6.1 Terra Pro",
+   "created": 1793038556,
+   "createdDate": "2026-10-26",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.1-terra-pro:batch",
+   "name": "OpenAI: GPT-6.1 Terra Pro (batch)",
+   "created": 1793038556,
+   "createdDate": "2026-10-26",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 0.5,
+   "output": 2.5,
+   "cache_read": 0.025,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "openai/gpt-6.1-terra",
    "name": "OpenAI: GPT-6.1 Terra",
@@ -179,6 +217,24 @@
    "cache_read": 0.01,
    "input_modalities": [
     "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "prism-ml/ternary-bonsai-2-9b",
+   "name": "PrismML: Ternary Bonsai 2 9B",
+   "created": 1792130995,
+   "createdDate": "2026-10-16",
+   "context_length": 262144,
+   "hugging_face_id": "prism-ml/Ternary-Bonsai-2-9B-gguf",
+   "input": 0.08,
+   "output": 0.13,
+   "cache_read": 0.04,
+   "input_modalities": [
+    "text",
+    "image"
    ],
    "output_modalities": [
     "text"
@@ -1190,9 +1246,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.1188,
+   "input": 0.1259,
    "output": 8.0,
-   "cache_read": 0.12,
+   "cache_read": 0.13,
    "input_modalities": [
     "text"
    ],
@@ -1207,9 +1263,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.04,
-   "output": 0.5,
-   "cache_read": 0.03,
+   "input": 0.0182,
+   "output": 1.8,
+   "cache_read": 0.0165,
    "input_modalities": [
     "text",
     "image"
@@ -1392,9 +1448,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.3,
-   "output": 1.2,
-   "cache_read": 0.006,
+   "input": 0.14,
+   "output": 0.42,
+   "cache_read": 0.0042,
    "input_modalities": [
     "text",
     "image"
@@ -1730,8 +1786,8 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0413,
-   "output": 0.0758,
+   "input": 0.0379,
+   "output": 0.0771,
    "cache_read": 0.03,
    "input_modalities": [
     "text",
@@ -2275,9 +2331,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.04444,
-   "output": 0.13332,
-   "cache_read": 0.001414,
+   "input": 0.119,
+   "output": 0.238,
+   "cache_read": 0.0238,
    "input_modalities": [
     "text"
    ],
@@ -2599,9 +2655,9 @@
    "createdDate": "2026-07-16",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
-   "input": 0.189,
+   "input": 0.15,
    "output": 20.0,
-   "cache_read": 0.179,
+   "cache_read": 0.14,
    "input_modalities": [
     "text",
     "image",
@@ -3742,9 +3798,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.1795,
-   "output": 8.099,
-   "cache_read": 0.17,
+   "input": 0.15,
+   "output": 20.0,
+   "cache_read": 0.14,
    "input_modalities": [
     "text",
     "image",
@@ -3840,8 +3896,8 @@
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
    "input": 0.1,
-   "output": 0.9,
-   "cache_read": 0.03,
+   "output": 0.95,
+   "cache_read": 0.05,
    "input_modalities": [
     "text",
     "image",
@@ -3953,9 +4009,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.709746,
-   "output": 1.419492,
-   "cache_read": 0.059145,
+   "input": 0.875394,
+   "output": 1.750788,
+   "cache_read": 0.07295,
    "input_modalities": [
     "text"
    ],
@@ -3970,9 +4026,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
-   "input": 0.091,
-   "output": 0.182,
-   "cache_read": 0.0182,
+   "input": 0.14,
+   "output": 0.28,
+   "cache_read": 0.028,
    "input_modalities": [
     "text"
    ],
@@ -4004,9 +4060,9 @@
    "createdDate": "2026-04-22",
    "context_length": 1050000,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
-   "input": 0.3045,
-   "output": 0.609,
-   "cache_read": 0.0028,
+   "input": 0.48,
+   "output": 1.8,
+   "cache_read": 0.096,
    "input_modalities": [
     "text"
    ],
@@ -4021,9 +4077,9 @@
    "createdDate": "2026-04-22",
    "context_length": 1050000,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
-   "input": 0.119,
-   "output": 0.238,
-   "cache_read": 0.00255,
+   "input": 0.4,
+   "output": 2.0,
+   "cache_read": 0.08,
    "input_modalities": [
     "text",
     "audio",
@@ -4153,9 +4209,9 @@
    "createdDate": "2026-04-07",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5.1",
-   "input": 1.4,
-   "output": 4.4,
-   "cache_read": 0.26,
+   "input": 0.966,
+   "output": 3.036,
+   "cache_read": 0.1794,
    "input_modalities": [
     "text"
    ],
@@ -4518,23 +4574,6 @@
    ]
   },
   {
-   "id": "nvidia/nemotron-3-super-120b-a12b:free",
-   "name": "NVIDIA: Nemotron 3 Super (free)",
-   "created": 1773245239,
-   "createdDate": "2026-03-11",
-   "context_length": 262144,
-   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "bytedance-seed/seed-2.0-lite",
    "name": "ByteDance Seed: Seed-2.0-Lite",
    "created": 1773157231,
@@ -4750,9 +4789,9 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-27B",
-   "input": 0.27,
-   "output": 2.16,
-   "cache_read": 0.27,
+   "input": 0.26,
+   "output": 2.6,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image",
@@ -5364,7 +5403,7 @@
    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
    "input": 0.06,
    "output": 0.24,
-   "cache_read": null,
+   "cache_read": 0.012,
    "input_modalities": [
     "text"
    ],
@@ -5511,7 +5550,7 @@
    "hugging_face_id": "zai-org/GLM-4.6V",
    "input": 0.3,
    "output": 0.9,
-   "cache_read": 0.05,
+   "cache_read": 0.055,
    "input_modalities": [
     "image",
     "text",
@@ -6310,7 +6349,7 @@
    "hugging_face_id": "NousResearch/Hermes-4-405B",
    "input": 1.0,
    "output": 3.0,
-   "cache_read": null,
+   "cache_read": 0.2,
    "input_modalities": [
     "text"
    ],
@@ -6636,7 +6675,7 @@
    "hugging_face_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
    "input": 0.1,
    "output": 0.3,
-   "cache_read": null,
+   "cache_read": 0.1,
    "input_modalities": [
     "text"
    ],
@@ -7380,9 +7419,9 @@
    "createdDate": "2025-03-13",
    "context_length": 131072,
    "hugging_face_id": "google/gemma-3-4b-it",
-   "input": 0.04,
-   "output": 0.05,
-   "cache_read": 0.02,
+   "input": 0.05,
+   "output": 0.1,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image"

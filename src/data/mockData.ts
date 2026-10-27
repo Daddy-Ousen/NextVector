@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Tuesday, October 27, 2026",
-  summary: "Anthropic filed its Form S-1 registration statement with the SEC, disclosing $16.29 billion in H1 2026 revenue and narrowing operating losses under its Public Benefit Corporation charter. Concurrently, OpenAI launched GPT-6.1 Terra with 1.05M tokens for scaled desktop computer use, while Microsoft extended voluntary buyout offers to 60,000 corporate employees to absorb $190 billion in annual AI datacenter capital spending.",
+  date: "Wednesday, October 28, 2026",
+  summary: "Google DeepMind introduced Genie 4, a frontier real-time interactive world model with live physics and native spatial audio, while OpenAI announced an academic shepherd framework to verify AI proofs in harmonic analysis and quantum field theory. Concurrently, Apple debuted the 2nm M6 chip in the MacBook Pro and iMac, Cloudflare patched an SGLang KV-cache leak in Workers AI, and the Python Steering Council retired the experimental copy-and-patch JIT.",
   items: [
     {
       id: 'brief-1',
-      headline: "Anthropic files Form S-1 with SEC for Public Benefit Corporation IPO",
-      category: "technology" as const,
+      headline: "Google DeepMind unveils Genie 4 real-time interactive world model",
+      category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Anthropic's registration statement reveals revenue soared from $41M in 2023 to $4.59B in 2025, reaching $16.29B in the first six months of 2026. Operating loss narrowed to $693M in H1 2026 as revenue per employee reached $6.6M, governed by the Long-Term Benefit Trust.",
-      whyItMatters: "Establishes the premier public equity test for a frontier AI lab operating with binding governance duties to safety and public benefit.",
-      articleSlug: "anthropic-files-form-s-1-public-benefit-corporation-ipo"
+      summary: "Genie 4 generates fully interactive 3D simulations navigable via keyboard and mouse controls with native spatial audio and dialogue. Powered by Gemini Omni for physical grounding, the model supports runtime prompt steering for synthetic robotics training.",
+      whyItMatters: "Establishes a photorealistic, zero-risk synthetic environment for training humanoid robots and rapid interactive prototyping.",
+      articleSlug: "google-deepmind-unveils-genie-4-world-simulation-model"
     },
     {
       id: 'brief-2',
-      headline: "OpenAI launches GPT-6.1 Terra for scaled desktop agentic workflows",
-      category: "ai" as const,
+      headline: "OpenAI partners with academia to verify AI scientific discoveries",
+      category: "research" as const,
       urgency: "High Impact" as const,
-      summary: "The new mid-tier reasoning model features a 1.05M-token context window at $1.00/M input tokens and $0.05/M cached reads. Engineered for high-cadence UI navigation, Terra completes routine computer tasks three times faster than heavier frontier models.",
-      whyItMatters: "Dramatically lowers operational inference costs for automated computer use and continuous subagent loops.",
-      articleSlug: "openai-releases-gpt-6-1-terra-vision-computer-use"
+      summary: "OpenAI published a new collaboration framework that treats AI outputs as raw empirical data rather than finished papers, appointing academic shepherds to evaluate candidate proofs across harmonic analysis, complexity theory, and 4D quantum field theories.",
+      whyItMatters: "Establishes a transparent precedent where frontier labs renounce authorship credit and NDAs in favor of independent academic peer review.",
+      articleSlug: "openai-academic-partnerships-verify-ai-scientific-breakthroughs"
     },
     {
       id: 'brief-3',
-      headline: "Microsoft offers voluntary buyouts to roughly 60,000 employees",
+      headline: "Apple debuts M6 chip in 14-inch MacBook Pro and iMac",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Covering approximately 25% of corporate staff in the US, UK, Canada, and India, the severance program seeks to flatten management across Windows, Gaming, Copilot, and Finance. The restructuring balances $190 billion in annual AI datacenter investments.",
-      whyItMatters: "Signals how hyperscalers are flattening organizational hierarchies to fund historic infrastructure capital expenditures.",
-      articleSlug: "microsoft-offers-mass-buyouts-to-60000-corporate-employees"
+      summary: "Built on TSMC's 2nm process, the M6 processor delivers up to 13x faster prompt processing on local LLMs compared to M1 and 1.3x over M5. The platform extends battery life to 24 hours while adding Wi-Fi 7 and dual external display support.",
+      whyItMatters: "Sets a new standard for power-efficient on-device artificial intelligence execution across consumer and pro laptops.",
+      articleSlug: "apple-introduces-14-inch-macbook-pro-and-imac-with-m6"
     },
     {
       id: 'brief-4',
-      headline: "Microsoft open-sources Type Server Protocol in Pylance",
+      headline: "Cloudflare discloses cross-request KV-cache leak in Workers AI",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "The JSON-RPC standard decouples workspace type analysis from user-facing language servers. By creating shared immutable snapshot handles, TSP allows concurrent coding agents and background linters to query semantic state without duplicating memory.",
-      whyItMatters: "Eliminates multi-process AST duplication across autonomous coding agent workspaces.",
-      articleSlug: "microsoft-open-sources-type-server-protocol-in-pylance"
+      summary: "A misconfigured prefill buffer on GLM-5.3 combined with an upstream SGLang soft-rejection defect exposed prompt fragments across 155 customer responses. Cloudflare expanded prefill memory to 2.04M tokens and upstreamed zero-fill patches.",
+      whyItMatters: "Highlights critical memory boundary risks in disaggregated high-throughput multi-tenant LLM serving.",
+      articleSlug: "cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure"
     },
     {
       id: 'brief-5',
-      headline: "ICSE study finds LLM code refinement increases execution energy",
-      category: "research" as const,
+      headline: "Python Steering Council retires experimental copy-and-patch JIT",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Benchmarking 11 open models on 1,000 EffiBench problems revealed that 42 of 44 configurations produced code consuming up to 886% more hardware energy than human references. Break-even points for the two passing cases required up to 10 million production runs.",
-      whyItMatters: "Disproves the assumption that execution-time speed optimizations by LLMs naturally lead to green, energy-efficient software.",
-      articleSlug: "evaluating-energy-costs-of-iterative-llm-code-optimizations"
+      summary: "CPython core developers decided to remove the experimental copy-and-patch JIT introduced in Python 3.13, closing PEP 836. Modest 2% to 7% performance gains failed to justify toolchain maintenance complexity for redistributors.",
+      whyItMatters: "Redirects Faster CPython resources toward Tier 2 adaptive bytecode specialization and trace optimization.",
+      articleSlug: "python-steering-council-retires-experimental-copy-patch-jit"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Anthropic S-1",
-    text: "Anthropic files Form S-1 for IPO, posting $16.29B in H1 2026 revenue and narrowing loss.",
-    articleSlug: "anthropic-files-form-s-1-public-benefit-corporation-ipo"
+    tag: "World Simulation",
+    text: "Google DeepMind unveils Genie 4 real-time interactive 3D world simulation model.",
+    articleSlug: "google-deepmind-unveils-genie-4-world-simulation-model"
   },
   {
     id: 'sig-2',
-    tag: "GPT-6.1 Terra",
-    text: "OpenAI launches 1.05M-token GPT-6.1 Terra at $1.00/M input for scaled computer use.",
-    articleSlug: "openai-releases-gpt-6-1-terra-vision-computer-use"
+    tag: "Scientific AI",
+    text: "OpenAI enlists academic shepherds to verify AI proofs in harmonic analysis and physics.",
+    articleSlug: "openai-academic-partnerships-verify-ai-scientific-breakthroughs"
   },
   {
     id: 'sig-3',
-    tag: "Microsoft Buyouts",
-    text: "Microsoft offers voluntary exit buyouts to 60,000 staff amid $190B AI infra spending.",
-    articleSlug: "microsoft-offers-mass-buyouts-to-60000-corporate-employees"
+    tag: "Apple Silicon",
+    text: "Apple launches M6 generation in MacBook Pro and iMac, boosting on-device LLM speed 13x.",
+    articleSlug: "apple-introduces-14-inch-macbook-pro-and-imac-with-m6"
   },
   {
     id: 'sig-4',
-    tag: "Type Server Protocol",
-    text: "Microsoft open-sources Type Server Protocol to decouple Python semantic analysis in IDEs.",
-    articleSlug: "microsoft-open-sources-type-server-protocol-in-pylance"
+    tag: "Workers AI",
+    text: "Cloudflare details cross-request KV-cache exposure in GLM-5.3 and SGLang remediation.",
+    articleSlug: "cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure"
   },
   {
     id: 'sig-5',
-    tag: "Green Computing",
-    text: "ICSE study shows LLM code self-refinement increases runtime energy by up to 886%.",
-    articleSlug: "evaluating-energy-costs-of-iterative-llm-code-optimizations"
+    tag: "CPython JIT",
+    text: "Python Steering Council retires experimental copy-and-patch JIT compiler in PEP 836.",
+    articleSlug: "python-steering-council-retires-experimental-copy-patch-jit"
   }
 ];

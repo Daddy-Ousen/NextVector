@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:12:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:35:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Mitchell Hashimoto Releases Ghostty 1.4 with Full Kitty Graphics and Security Overhaul</title>
+      <link>https://nextvector.rhasan.online/article/ghostty-1-4-releases-kitty-graphics-performance-audit</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ghostty-1-4-releases-kitty-graphics-performance-audit</guid>
+      <description>The Zig-based terminal emulator closes seven months of development with 100% protocol compliance and patches for eight security advisories.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 28 Oct 2026 00:35:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Python Steering Council Retires Experimental Copy-and-Patch JIT</title>
+      <link>https://nextvector.rhasan.online/article/python-steering-council-retires-experimental-copy-patch-jit</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/python-steering-council-retires-experimental-copy-patch-jit</guid>
+      <description>CPython core developers abandon PEP 836 in Python 3.15, redirecting compiler resources toward Tier 2 specialization and trace optimization.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 28 Oct 2026 00:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cloudflare Discloses Cross-Request KV Cache Memory Leak in Workers AI</title>
+      <link>https://nextvector.rhasan.online/article/cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure</guid>
+      <description>An SGLang disaggregated prefill bug coupled with pool undersizing caused 155 responses to expose fragments of other users&#x27; prompt history.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 28 Oct 2026 00:24:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Apple Debuts M6 Generation Silicon in 14-Inch MacBook Pro and iMac</title>
+      <link>https://nextvector.rhasan.online/article/apple-introduces-14-inch-macbook-pro-and-imac-with-m6</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apple-introduces-14-inch-macbook-pro-and-imac-with-m6</guid>
+      <description>The 2nm processor architecture boosts on-device LLM time-to-first-token by up to 13x over M1 while extending battery endurance to 24 hours.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 28 Oct 2026 00:18:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI Partners with Academia to Verify Frontier AI Discoveries in Math and Physics</title>
+      <link>https://nextvector.rhasan.online/article/openai-academic-partnerships-verify-ai-scientific-breakthroughs</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-academic-partnerships-verify-ai-scientific-breakthroughs</guid>
+      <description>The lab treats model outputs as raw data, enlisting academic shepherds to verify proofs in harmonic analysis, quantum field theory, and computational complexity.</description>
+      <category>RESEARCH</category>
+      <pubDate>Wed, 28 Oct 2026 00:12:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google DeepMind Unveils Genie 4 Real-Time Interactive World Simulation Model</title>
+      <link>https://nextvector.rhasan.online/article/google-deepmind-unveils-genie-4-world-simulation-model</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-deepmind-unveils-genie-4-world-simulation-model</guid>
+      <description>The frontier foundation model generates controllable 3D environments with live physics, dynamic natural-language steering, and native spatial audio.</description>
+      <category>AI</category>
+      <pubDate>Wed, 28 Oct 2026 00:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Controlled Study Finds LLM Code Refinement Rarely Offsets Execution Energy Costs</title>
       <link>https://nextvector.rhasan.online/article/evaluating-energy-costs-of-iterative-llm-code-optimizations</link>
@@ -496,60 +550,6 @@
       <description>At 5.6 billion parameters, the open-weight diffusion model runs on 8GB VRAM consumer cards and achieves 0.55-second 1MP generation on Blackwell hardware.</description>
       <category>AI</category>
       <pubDate>Sat, 17 Oct 2026 07:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Continuum Attention Outperforms Softmax by Integrating Over Piecewise Linear Memory Curves</title>
-      <link>https://nextvector.rhasan.online/article/continuum-attention-replaces-discrete-kv-with-continuous-integration</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/continuum-attention-replaces-discrete-kv-with-continuous-integration</guid>
-      <description>Paper arXiv:2610.20586 replaces discrete token lookups with exact closed-form exponential moments, cutting validation perplexity at quadratic sequence complexity.</description>
-      <category>RESEARCH</category>
-      <pubDate>Thu, 15 Oct 2026 23:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Libreboot 26.10 Ships Native UEFI via EDK2 and Imports 233 Chromebook Configurations</title>
-      <link>https://nextvector.rhasan.online/article/libreboot-26-10-adds-uefi-imports-233-chromebook-boards</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/libreboot-26-10-adds-uefi-imports-233-chromebook-boards</guid>
-      <description>The &#x27;Ominous Olive&#x27; open firmware release enables Windows compatibility, syncs MrChromebox coreboot trees, and introduces strict repository anti-AI scraping rules.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 15 Oct 2026 23:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Goodfire AI Challenges Superposition Orthodoxy, Arguing Neural Networks Are Monosemantic</title>
-      <link>https://nextvector.rhasan.online/article/goodfire-ai-challenges-superposition-polysemanticity-theses</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/goodfire-ai-challenges-superposition-polysemanticity-theses</guid>
-      <description>Researcher Nick Cammarata argues that canonical vision polysemanticity was an artifact of incomplete circuit tracing, finding individual neurons track shared compositional motifs.</description>
-      <category>RESEARCH</category>
-      <pubDate>Thu, 15 Oct 2026 22:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anomaly Launches OpenCode 2.0 with Central Daemon and Embedded Codemode Runtime</title>
-      <link>https://nextvector.rhasan.online/article/opencode-2-overhauls-agentic-developer-infrastructure</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/opencode-2-overhauls-agentic-developer-infrastructure</guid>
-      <description>The open coding harness adds single-round-trip MCP script interpretation, background subagents, and async terminal tasks for developer swarms.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 15 Oct 2026 22:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Citizen Lab Exposes &#x27;AdFection&#x27;: Targeted Online Ads Weaponized for Zero-Click Spyware</title>
-      <link>https://nextvector.rhasan.online/article/citizen-lab-exposes-adfection-zero-click-spyware</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/citizen-lab-exposes-adfection-zero-click-spyware</guid>
-      <description>Investigation reveals how Israeli firm Discover-Tech exploited programmatic ad auctions and dynamic NOAS servers to infect targets with Candiru surveillance malware.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 15 Oct 2026 22:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Meta Releases Muse Spark Open: 816B-Parameter Multimodal Model for Local Mac Clusters</title>
-      <link>https://nextvector.rhasan.online/article/meta-releases-muse-spark-open-frontier-model</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-releases-muse-spark-open-frontier-model</guid>
-      <description>Weights for the 42B-active MoE architecture run natively on dual Apple M5 Ultra Mac Studios via MLX alongside custom Helion GPU kernels in SGLang.</description>
-      <category>AI</category>
-      <pubDate>Thu, 15 Oct 2026 22:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

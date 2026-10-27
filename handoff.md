@@ -1,3 +1,42 @@
+# Handoff — 2026-10-28 (Daily Intelligence Pipeline Run: art-300 to art-305)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-300`: `google-deepmind-unveils-genie-4-world-simulation-model` (Hero / Discovery, Signal 94, Google DeepMind announces Genie 4, a real-time multimodal world model generating controllable 3D environments with live physics, dynamic natural-language steering, native spatial audio, and Gemini Omni integration for humanoid robotics synthetic training).
+  - `art-301`: `openai-academic-partnerships-verify-ai-scientific-breakthroughs` (Featured / Deep Dive, Signal 93, OpenAI announces an academic collaboration protocol that treats model outputs as raw data, enlisting academic shepherds across harmonic analysis [local smoothing], computational complexity [Lean-formalized refutation of Exponential Time Hypothesis], and 4D Yang-Mills quantum field theory with zero NDAs and complete forfeiture of authorship).
+  - `art-302`: `apple-introduces-14-inch-macbook-pro-and-imac-with-m6` (Featured / Breaking, Signal 91, Apple unveils the M6 chip architecture built on TSMC's 2nm node in the 14-inch MacBook Pro and 24-inch iMac, delivering up to 13x faster prompt processing on local LLMs vs M1 and 1.3x vs M5, 11.7x faster ray tracing in Blender, 24-hour battery life, and Wi-Fi 7).
+  - `art-303`: `cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure` (Analysis, Signal 91, Cloudflare discloses a multi-tenant memory leak affecting 155 responses on the GLM-5.3 Workers AI endpoint caused by a 1M-token context buffer misallocation colliding with an upstream SGLang soft-rejection bug, remediated by expanding prefill KV memory to 2.04M tokens and upstream zero-fill patches).
+  - `art-304`: `python-steering-council-retires-experimental-copy-patch-jit` (Breaking, Signal 89, CPython core developers and the Python Steering Council formally decide to remove the experimental copy-and-patch JIT compiler in Python 3.15, closing PEP 836 after 2%–7% real-world speedups failed to justify cross-compilation toolchain friction for Linux packagers).
+  - `art-305`: `ghostty-1-4-releases-kitty-graphics-performance-audit` (Discovery, Signal 88, Mitchell Hashimoto ships Ghostty 1.4.0 following seven months of development and 2,889 commits, achieving 100% Kitty graphics protocol compliance with animations and relative placement, a 35% scrollback memory reduction, and fixes for eight security advisories including paste bypass GHSA-4hwh-wx3w-3fqg).
+- **Model Watch:**
+  - Zero new untracked foundation language models in the 72h window (`openai/gpt-6.1-terra` was added Oct 27; `nvidia/Metatron-v1` on Hugging Face is a robotics reinforcement learning policy; untracked OpenRouter models are >72h old).
+  - Maintained 144 models in curated registry (`scripts/model_sources/curated_models.json`).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Wednesday, October 28, 2026` (5 items linking to art-300..304).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-300..304).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 16 bits from catalog (pairwise 24–38 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed; prerendered 305 articles, 144 models, 10 showdowns; 478 static HTML files, sitemap 476 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly (0 warnings on content/briefing/timestamps).
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-28-the-morning-vector.md` (`9dd57bb`).
+- **Commits:**
+  - `e09b24e`: `feat(intelligence): daily briefing and articles update [2026-10-28]`
+  - `9dd57bb`: `docs(newsletter): The Morning Vector [2026-10-28]`
+- **Stories Dropped / Excluded:**
+  - `Roblox downloaded 145GB models without asking`: Community IP dispute on 3D models; secondary impact compared to major systems announcements from DeepMind, Apple, Cloudflare, and Python Steering Council.
+  - `Wikipedia cleanup of AI-generated content`: Ongoing administrative initiative, lacks specific newly released quantitative milestone dataset.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `9dd57bb` / `e09b24e`.
+  - Monitor academic review of OpenAI's Lean-formalized Exponential Time Hypothesis preprint.
+  - Watch for Moonshot AI's public weight release for Kimi K3.1 Pro on November 4, 2026.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - The date alignment in Gate 2 computes expected briefing date from `newest["publishedAt"]` in UTC. For pipeline runs dated for Wednesday morning (+06:00), ensure newest article published timestamp is set in `00:00:00Z` to `00:35:00Z` on Wednesday so UTC date matches the briefing date.
+
 # Handoff — 2026-10-27 (Daily Intelligence Pipeline Run: art-294 to art-299)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, GPT-6.1 Terra Added, Verification 8/8 Passed, Newsletter Published

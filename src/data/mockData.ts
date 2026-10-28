@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Wednesday, October 28, 2026",
-  summary: "Google DeepMind introduced Genie 4, a frontier real-time interactive world model with live physics and native spatial audio, while OpenAI announced an academic shepherd framework to verify AI proofs in harmonic analysis and quantum field theory. Concurrently, Apple debuted the 2nm M6 chip in the MacBook Pro and iMac, Cloudflare patched an SGLang KV-cache leak in Workers AI, and the Python Steering Council retired the experimental copy-and-patch JIT.",
+  date: "Thursday, October 29, 2026",
+  summary: "Google DeepMind unveils Gemini 4 Carbon, capturing the #1 spot on the revamped Artificial Analysis Intelligence Index v5.0 with record cyberdefense capabilities. Meanwhile, a critical 16-year-old pre-boot RCE vulnerability in EDK2 UEFI firmware impacts enterprise servers globally as Tailscale remediates lateral SSH privilege escalation.",
   items: [
     {
       id: 'brief-1',
-      headline: "Google DeepMind unveils Genie 4 real-time interactive world model",
+      headline: "Google DeepMind Debuts Gemini 4 Carbon with Top Benchmark Ranks",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Genie 4 generates fully interactive 3D simulations navigable via keyboard and mouse controls with native spatial audio and dialogue. Powered by Gemini Omni for physical grounding, the model supports runtime prompt steering for synthetic robotics training.",
-      whyItMatters: "Establishes a photorealistic, zero-risk synthetic environment for training humanoid robots and rapid interactive prototyping.",
-      articleSlug: "google-deepmind-unveils-genie-4-world-simulation-model"
+      summary: "Google DeepMind announces Gemini 4 Carbon, scoring 59 to take #1 on the Artificial Analysis Intelligence Index v5.0. The frontier model leads SEC-bench Pro with 88.2% and registers a 0.0% prompt injection attack success rate.",
+      whyItMatters: "Accelerates autonomous vulnerability discovery and patching while establishing new safety baselines for production deployment.",
+      articleSlug: "google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model"
     },
     {
       id: 'brief-2',
-      headline: "OpenAI partners with academia to verify AI scientific discoveries",
-      category: "research" as const,
-      urgency: "High Impact" as const,
-      summary: "OpenAI published a new collaboration framework that treats AI outputs as raw empirical data rather than finished papers, appointing academic shepherds to evaluate candidate proofs across harmonic analysis, complexity theory, and 4D quantum field theories.",
-      whyItMatters: "Establishes a transparent precedent where frontier labs renounce authorship credit and NDAs in favor of independent academic peer review.",
-      articleSlug: "openai-academic-partnerships-verify-ai-scientific-breakthroughs"
+      headline: "Critical 16-Year-Old EDK2 UEFI Vulnerability Threatens Enterprise Servers",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "TianoCore discloses CVE-2026-97631, a 9.5-severity buffer overflow in the EDK2 PXE network boot driver that allows remote code execution. The pre-boot flaw circumvents Secure Boot and TPM trust chains before the operating system initializes.",
+      whyItMatters: "Exposes bare-metal server fleets across major BIOS vendors, necessitating immediate disabling of unused PXE booting.",
+      articleSlug: "tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi"
     },
     {
       id: 'brief-3',
-      headline: "Apple debuts M6 chip in 14-inch MacBook Pro and iMac",
-      category: "technology" as const,
+      headline: "Artificial Analysis Rebuilds Intelligence Index v5.0 on Private Datasets",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Built on TSMC's 2nm process, the M6 processor delivers up to 13x faster prompt processing on local LLMs compared to M1 and 1.3x over M5. The platform extends battery life to 24 hours while adding Wi-Fi 7 and dual external display support.",
-      whyItMatters: "Sets a new standard for power-efficient on-device artificial intelligence execution across consumer and pro laptops.",
-      articleSlug: "apple-introduces-14-inch-macbook-pro-and-imac-with-m6"
+      summary: "Artificial Analysis launches Intelligence Index v5.0 and Progress Index v1, balancing evaluation across four equal quadrants. The contamination-resistant methodology expands the performance gap between frontier and open-weight models to 12 points.",
+      whyItMatters: "Provides enterprises with rigorous, uncompromised evaluation benchmarks while measuring long-term AI capability velocity.",
+      articleSlug: "artificial-analysis-launches-intelligence-index-v5-and-progress-index"
     },
     {
       id: 'brief-4',
-      headline: "Cloudflare discloses cross-request KV-cache leak in Workers AI",
+      headline: "Tailscale Ships v1.104.4 to Patch Lateral SSH Privilege Escalation",
       category: "technology" as const,
-      urgency: "Notable Shift" as const,
-      summary: "A misconfigured prefill buffer on GLM-5.3 combined with an upstream SGLang soft-rejection defect exposed prompt fragments across 155 customer responses. Cloudflare expanded prefill memory to 2.04M tokens and upstreamed zero-fill patches.",
-      whyItMatters: "Highlights critical memory boundary risks in disaggregated high-throughput multi-tenant LLM serving.",
-      articleSlug: "cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure"
+      urgency: "High Impact" as const,
+      summary: "Tailscale issues four security bulletins following the 'Tailworm' disclosure, correcting Unix permission boundaries in Tailscale SSH. The update prevents authenticated sessions from abusing SSH forwarding to exceed assigned user privileges.",
+      whyItMatters: "Restores strict privilege isolation within mesh networks while reinforcing zero-trust access control policies.",
+      articleSlug: "tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding"
     },
     {
       id: 'brief-5',
-      headline: "Python Steering Council retires experimental copy-and-patch JIT",
-      category: "technology" as const,
+      headline: "Mistral AI Releases Timestral Foundation Models for Probabilistic Forecasting",
+      category: "research" as const,
       urgency: "Notable Shift" as const,
-      summary: "CPython core developers decided to remove the experimental copy-and-patch JIT introduced in Python 3.13, closing PEP 836. Modest 2% to 7% performance gains failed to justify toolchain maintenance complexity for redistributors.",
-      whyItMatters: "Redirects Faster CPython resources toward Tier 2 adaptive bytecode specialization and trace optimization.",
-      articleSlug: "python-steering-council-retires-experimental-copy-patch-jit"
+      summary: "Mistral AI introduces Timestral, an open-weight model family spanning 5M to 209M parameters using Decoupled Horizon Forecasting. Checkpoints swept top rankings across GIFT-Eval, TIME, and fev-bench time-series suites.",
+      whyItMatters: "Demonstrates how decoupling future forecast tokens from causal context overcomes multi-step temporal prediction limits.",
+      articleSlug: "mistral-ai-introduces-timestral-open-time-series-foundation-models"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "World Simulation",
-    text: "Google DeepMind unveils Genie 4 real-time interactive 3D world simulation model.",
-    articleSlug: "google-deepmind-unveils-genie-4-world-simulation-model"
+    tag: "Gemini 4 Carbon",
+    text: "Google DeepMind unveils Gemini 4 Carbon, scoring 59 on Artificial Analysis v5.0.",
+    articleSlug: "google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model"
   },
   {
     id: 'sig-2',
-    tag: "Scientific AI",
-    text: "OpenAI enlists academic shepherds to verify AI proofs in harmonic analysis and physics.",
-    articleSlug: "openai-academic-partnerships-verify-ai-scientific-breakthroughs"
+    tag: "EDK2 UEFI Flaw",
+    text: "Critical 9.5 buffer overflow in EDK2 UEFI PXE boot allows pre-boot remote execution.",
+    articleSlug: "tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi"
   },
   {
     id: 'sig-3',
-    tag: "Apple Silicon",
-    text: "Apple launches M6 generation in MacBook Pro and iMac, boosting on-device LLM speed 13x.",
-    articleSlug: "apple-introduces-14-inch-macbook-pro-and-imac-with-m6"
+    tag: "Benchmark Overhaul",
+    text: "Artificial Analysis Intelligence Index v5 rebuilds on private data, widening gap.",
+    articleSlug: "artificial-analysis-launches-intelligence-index-v5-and-progress-index"
   },
   {
     id: 'sig-4',
-    tag: "Workers AI",
-    text: "Cloudflare details cross-request KV-cache exposure in GLM-5.3 and SGLang remediation.",
-    articleSlug: "cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure"
+    tag: "Tailscale Security",
+    text: "Tailscale v1.104.4 fixes post-authorization SSH forwarding privilege escalation.",
+    articleSlug: "tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding"
   },
   {
     id: 'sig-5',
-    tag: "CPython JIT",
-    text: "Python Steering Council retires experimental copy-and-patch JIT compiler in PEP 836.",
-    articleSlug: "python-steering-council-retires-experimental-copy-patch-jit"
+    tag: "Timestral Open Weights",
+    text: "Mistral AI releases Timestral 5M-209M time series models sweeping forecasting SOTA.",
+    articleSlug: "mistral-ai-introduces-timestral-open-time-series-foundation-models"
   }
 ];

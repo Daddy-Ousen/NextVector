@@ -1,3 +1,43 @@
+# Handoff — 2026-10-29 (Daily Intelligence Pipeline Run: art-306 to art-311)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-306`: `google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model` (Hero / Breaking, Signal 95, Google DeepMind announces Gemini 4 Carbon, scoring 59 to take #1 on the Artificial Analysis Intelligence Index v5.0, sweeping SEC-bench Pro with 88.2%, ExploitGym with 54.8%, CWE-bench with 71.0%, and achieving a 0.0% prompt injection attack success rate on Gray Swan IPI).
+  - `art-307`: `tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi` (Featured / Breaking, Signal 93, TianoCore discloses CVE-2026-97631, a 16-year-old 9.5-severity buffer overflow in the EDK2 PXE Base Code driver NetworkPkg/UefiPxeBcDxe allowing pre-boot remote code execution on adjacent networks before Secure Boot and TPM initialize).
+  - `art-308`: `artificial-analysis-launches-intelligence-index-v5-and-progress-index` (Featured / Benchmark Report, Signal 92, Artificial Analysis overhauls frontier AI benchmarking with Intelligence Index v5.0 and Progress Index v1, rebuilding evaluation across four 25% quadrants on private datasets [FrontierCode 2.0, Terminal-Bench-Science, HLE-Diamond], widening the open-weights gap to 12 points).
+  - `art-309`: `tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding` (Analysis, Signal 90, Tailscale releases v1.104.4 and four security bulletins TS-2026-014..017 following 'Tailworm', remediating post-authorization Unix privilege escalation and SSH forwarding leaks while resolving three Serve/Funnel interface bugs).
+  - `art-310`: `mistral-ai-introduces-timestral-open-time-series-foundation-models` (Research Explained, Signal 90, Mistral AI researchers publish arXiv:2610.37585 introducing Timestral, an open-weight 5M-209M time-series foundation model family featuring Decoupled Horizon Forecasting and native known-future covariates, sweeping GIFT-Eval and TIME SOTA).
+  - `art-311`: `nvidia-unveils-nemotron-3-5-transcribe-and-granary-v2-speech-stack` (Discovery, Signal 89, NVIDIA releases Nemotron 3.5 Transcribe across 40 languages alongside the Granary v2 curation pipeline, capturing #1 on Hugging Face Open ASR with 5.33% English WER and transcribing 100 hours of audio in under three minutes on a single GPU).
+- **Model Watch:**
+  - Zero new untracked foundation language models in the 72h window. Evaluated `particle-ai/particle-1` (fine-tune of DeepSeek V4.1 Flash), `openai/gpt-6.1-terra-pro` (serving mode endpoint of tracked GPT-6.1 Terra), and `Gemini 4 Carbon` (currently restricted to pre-release cyber defenders under Google's Fairwind Program without public API pricing/endpoints on OpenRouter/Arena).
+  - Maintained 144 models in curated registry (`scripts/model_sources/curated_models.json`).
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Thursday, October 29, 2026` (5 items linking to art-306..310).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-306..310).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 14 bits from catalog (pairwise 22–39 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed; prerendered 311 articles, 144 models, 10 showdowns; 484 static HTML files, sitemap 482 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly (0 warnings on content/briefing/timestamps).
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-29-the-morning-vector.md` (`2bfdf47`).
+- **Commits:**
+  - `34b2e00`: `feat(intelligence): daily briefing and articles update [2026-10-29]`
+  - `2bfdf47`: `docs(newsletter): The Morning Vector [2026-10-29]`
+- **Stories Dropped / Excluded:**
+  - `Anthropic early progress in drug development`: High-level partner ecosystem overview; deferred in favor of concrete empirical releases (Gemini 4 Carbon, EDK2 CVE-2026-97631, and AA Index v5).
+  - `DHS employee data leak`: General security/privacy news; prioritized fundamental server infrastructure firmware vulnerability (CVE-2026-97631) and Tailscale SSH privilege escalation.
+  - `US agency approves Amazon Leo $11.5B acquisition of Globalstar`: Corporate telecom M&A regulatory approval; secondary technical relevance compared to foundational models and firmware architecture.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `2bfdf47` / `34b2e00`.
+  - Watch for public developer API availability and OpenRouter/Arena endpoints for Gemini 4 Carbon.
+  - Watch for Moonshot AI's public weight release for Kimi K3.1 Pro on November 4, 2026.
+  - 7 older pre-existing near-duplicate cover pairs (art-91/172/192, etc.) from earlier catalog entries remain as warnings in Gate 1.
+- **Gotchas:**
+  - The date alignment in Gate 2 computes expected briefing date from `newest["publishedAt"]` in UTC. For pipeline runs executed in morning UTC+6, setting article timestamps to start at `00:00:00Z` to `00:20:00Z` on the edition date (which is <1 hour in the future from ~23:40 UTC) cleanly resolves both the UTC edition date and the briefing date without future-date warnings.
+
 # Handoff — 2026-10-28 (Daily Intelligence Pipeline Run: art-300 to art-305)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

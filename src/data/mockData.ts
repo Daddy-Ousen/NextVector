@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Thursday, October 29, 2026",
-  summary: "Google DeepMind unveils Gemini 4 Carbon, capturing the #1 spot on the revamped Artificial Analysis Intelligence Index v5.0 with record cyberdefense capabilities. Meanwhile, a critical 16-year-old pre-boot RCE vulnerability in EDK2 UEFI firmware impacts enterprise servers globally as Tailscale remediates lateral SSH privilege escalation.",
+  date: "Friday, October 30, 2026",
+  summary: "Mistral AI releases open weights for its 1-trillion parameter Mistral Large 4 with top coding scores, while Binance and major stablecoin issuers freeze $5.4B in digital assets following an unprecedented exchange exploit.",
   items: [
     {
       id: 'brief-1',
-      headline: "Google DeepMind Debuts Gemini 4 Carbon with Top Benchmark Ranks",
+      headline: "Mistral Open-Weights 1-Trillion Parameter Large 4 'Le Chonk'",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Google DeepMind announces Gemini 4 Carbon, scoring 59 to take #1 on the Artificial Analysis Intelligence Index v5.0. The frontier model leads SEC-bench Pro with 88.2% and registers a 0.0% prompt injection attack success rate.",
-      whyItMatters: "Accelerates autonomous vulnerability discovery and patching while establishing new safety baselines for production deployment.",
-      articleSlug: "google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model"
+      summary: "Mistral AI has released the open weights of Mistral Large 4 under its Ecosystem Open-Weight license. The 1T parameter multimodal model captures first place on FrontierCode 2.0 (19.7%) and achieves 51% on the Cyber Index while offering low, medium, and high reasoning tiers.",
+      whyItMatters: "Establishes a new open-weight frontier for agentic coding and autonomous vulnerability remediation without proprietary API lock-in.",
+      articleSlug: "mistral-ai-releases-open-weights-mistral-large-4-le-chonk"
     },
     {
       id: 'brief-2',
-      headline: "Critical 16-Year-Old EDK2 UEFI Vulnerability Threatens Enterprise Servers",
+      headline: "Binance and Stablecoin Issuers Freeze $5.4B in Assets Post-Exploit",
       category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "TianoCore discloses CVE-2026-97631, a 9.5-severity buffer overflow in the EDK2 PXE network boot driver that allows remote code execution. The pre-boot flaw circumvents Secure Boot and TPM trust chains before the operating system initializes.",
-      whyItMatters: "Exposes bare-metal server fleets across major BIOS vendors, necessitating immediate disabling of unused PXE booting.",
-      articleSlug: "tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi"
+      summary: "Binance has halted deposits and withdrawals while investigating an exchange compromise, freezing $3B in assets. Stablecoin issuers Tether and Circle coordinated to freeze an additional $1.6B in USDT and $800M in USDC as founder Changpeng Zhao confirmed the attack.",
+      whyItMatters: "Marks the largest cryptographic exploit in history, testing centralized stablecoin emergency controls and exchange balance-sheet reserves.",
+      articleSlug: "binance-freezes-billions-following-historic-multibillion-exchange-exploit"
     },
     {
       id: 'brief-3',
-      headline: "Artificial Analysis Rebuilds Intelligence Index v5.0 on Private Datasets",
-      category: "ai" as const,
+      headline: "SMS of Death Zero-Click Attack Drops Calls on Vulnerable Android Handsets",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Artificial Analysis launches Intelligence Index v5.0 and Progress Index v1, balancing evaluation across four equal quadrants. The contamination-resistant methodology expands the performance gap between frontier and open-weight models to 12 points.",
-      whyItMatters: "Provides enterprises with rigorous, uncompromised evaluation benchmarks while measuring long-term AI capability velocity.",
-      articleSlug: "artificial-analysis-launches-intelligence-index-v5-and-progress-index"
+      summary: "Vulnerability researchers have disclosed a zero-click remote Denial-of-Service flaw in Android telephony. A single malformed 5-byte WAP Push SMS throws a NegativeArraySizeException in com.android.phone, terminating calls and causing persistent boot loops.",
+      whyItMatters: "Severs emergency 000 and 911 access remotely with zero user interaction, triggering regulatory carrier barring until updated to October 2026 patch levels.",
+      articleSlug: "sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos"
     },
     {
       id: 'brief-4',
-      headline: "Tailscale Ships v1.104.4 to Patch Lateral SSH Privilege Escalation",
+      headline: "Orange Tsai Crafts 100% Logic-Only Edge Sandbox Escape",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Tailscale issues four security bulletins following the 'Tailworm' disclosure, correcting Unix permission boundaries in Tailscale SSH. The update prevents authenticated sessions from abusing SSH forwarding to exceed assigned user privileges.",
-      whyItMatters: "Restores strict privilege isolation within mesh networks while reinforcing zero-trust access control policies.",
-      articleSlug: "tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding"
+      summary: "DEVCORE researcher Orange Tsai has published details on a Pwn2Own-winning exploit chain against Microsoft Edge. Chaining five logic vulnerabilities and two Windows features without memory corruption, the exploit bypasses modern browser sandbox barriers.",
+      whyItMatters: "Demonstrates that hardening memory safety mitigations leaves browsers exposed to architectural navigation and context-binding flaws.",
+      articleSlug: "orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge"
     },
     {
       id: 'brief-5',
-      headline: "Mistral AI Releases Timestral Foundation Models for Probabilistic Forecasting",
-      category: "research" as const,
+      headline: "SkyPilot Rack Topology Schedulers Boost NVL72 Cluster Yield by 27%",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Mistral AI introduces Timestral, an open-weight model family spanning 5M to 209M parameters using Decoupled Horizon Forecasting. Checkpoints swept top rankings across GIFT-Eval, TIME, and fev-bench time-series suites.",
-      whyItMatters: "Demonstrates how decoupling future forecast tokens from causal context overcomes multi-step temporal prediction limits.",
-      articleSlug: "mistral-ai-introduces-timestral-open-time-series-foundation-models"
+      summary: "SkyPilot research demonstrates that reserving two spare nodes per 72-GPU Grace Blackwell rack and scheduling in 16-node slices increases usable capacity by 27% and raises pre-training throughput by 14.4% by preserving NVLink domain locality.",
+      whyItMatters: "Cuts cluster communication overhead between nodes, saving an estimated $400,000 per day on 10,000-GPU superclusters.",
+      articleSlug: "skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Gemini 4 Carbon",
-    text: "Google DeepMind unveils Gemini 4 Carbon, scoring 59 on Artificial Analysis v5.0.",
-    articleSlug: "google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model"
+    tag: "Mistral Large 4",
+    text: "Mistral AI open-sources 1T-parameter Mistral Large 4 leading open coding benchmarks.",
+    articleSlug: "mistral-ai-releases-open-weights-mistral-large-4-le-chonk"
   },
   {
     id: 'sig-2',
-    tag: "EDK2 UEFI Flaw",
-    text: "Critical 9.5 buffer overflow in EDK2 UEFI PXE boot allows pre-boot remote execution.",
-    articleSlug: "tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi"
+    tag: "Binance Exploit",
+    text: "Binance, Tether, and Circle freeze $5.4B in crypto following a major exchange exploit.",
+    articleSlug: "binance-freezes-billions-following-historic-multibillion-exchange-exploit"
   },
   {
     id: 'sig-3',
-    tag: "Benchmark Overhaul",
-    text: "Artificial Analysis Intelligence Index v5 rebuilds on private data, widening gap.",
-    articleSlug: "artificial-analysis-launches-intelligence-index-v5-and-progress-index"
+    tag: "SMS of Death",
+    text: "Zero-click Android telephony flaw drops voice calls and forces persistent reboot loops.",
+    articleSlug: "sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos"
   },
   {
     id: 'sig-4',
-    tag: "Tailscale Security",
-    text: "Tailscale v1.104.4 fixes post-authorization SSH forwarding privilege escalation.",
-    articleSlug: "tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding"
+    tag: "Edge Sandbox Escape",
+    text: "Orange Tsai achieves full-chain Edge sandbox escape using five logic bugs with no AI.",
+    articleSlug: "orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge"
   },
   {
     id: 'sig-5',
-    tag: "Timestral Open Weights",
-    text: "Mistral AI releases Timestral 5M-209M time series models sweeping forecasting SOTA.",
-    articleSlug: "mistral-ai-introduces-timestral-open-time-series-foundation-models"
+    tag: "NVL72 Scheduling",
+    text: "SkyPilot topology-aware scheduler yields 27% more usable GPUs on Grace Blackwell racks.",
+    articleSlug: "skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity"
   }
 ];

@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 00:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:25:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Mistral AI Releases Open Weights for 1-Trillion Parameter Mistral Large 4</title>
+      <link>https://nextvector.rhasan.online/article/mistral-ai-releases-open-weights-mistral-large-4-le-chonk</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mistral-ai-releases-open-weights-mistral-large-4-le-chonk</guid>
+      <description>The Parisian AI lab open-sources &#x27;Le Chonk&#x27; with three reasoning tiers and leading coding and cybersecurity benchmarks.</description>
+      <category>AI</category>
+      <pubDate>Fri, 30 Oct 2026 00:25:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Binance and Stablecoin Issuers Freeze $5.4B in Digital Assets After Massive Exchange Exploit</title>
+      <link>https://nextvector.rhasan.online/article/binance-freezes-billions-following-historic-multibillion-exchange-exploit</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/binance-freezes-billions-following-historic-multibillion-exchange-exploit</guid>
+      <description>Tether and Circle freeze $2.4B in USDT and USDC while Binance halts withdrawals and pledges to cover all user losses.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 30 Oct 2026 00:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>SMS of Death: Zero-Click Vulnerability in Android Telephony Drops Calls and Causes Boot Loops</title>
+      <link>https://nextvector.rhasan.online/article/sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos</guid>
+      <description>A malformed 5-byte WAP Push SMS crashes com.android.phone and severs emergency 000 access until patched.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 30 Oct 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Orange Tsai Demonstrates 100% Logic-Only Full Chain Sandbox Escape in Microsoft Edge</title>
+      <link>https://nextvector.rhasan.online/article/orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge</guid>
+      <description>DEVCORE researcher chains five logic bugs and two Windows features without memory corruption or shellcode.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 30 Oct 2026 00:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>SkyPilot Unveils Topology-Aware Scheduler for GB200 NVL72 Racks, Yielding 27% More Usable GPUs</title>
+      <link>https://nextvector.rhasan.online/article/skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity</guid>
+      <description>UC Berkeley researchers show 16-node slices with in-rack hot-spares eliminate NVLink bottlenecks and save $400K daily.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 30 Oct 2026 00:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Search Falls Below 50% of Alphabet Revenue for the First Time as Cloud and AI Surge</title>
+      <link>https://nextvector.rhasan.online/article/google-search-drops-below-50-percent-of-alphabet-revenue-for-first-time</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-search-drops-below-50-percent-of-alphabet-revenue-for-first-time</guid>
+      <description>In Q3 2026, Search generated 49.7% of Alphabet&#x27;s $128B revenue while Google Cloud doubled to $30.7B.</description>
+      <category>AI</category>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Google DeepMind Unveils Gemini 4 Carbon with Record Cybersecurity and Reasoning Benchmarks</title>
       <link>https://nextvector.rhasan.online/article/google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model</link>
@@ -496,60 +550,6 @@
       <description>Austrian researchers develop rank-one matrix memory revision mechanism that bounds state norm and avoids degradation across extended sequence benchmarks.</description>
       <category>RESEARCH</category>
       <pubDate>Sun, 18 Oct 2026 23:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>DeepSeek Releases V4.1 Flash 1017: Open Weights with 1M Context and Benchmark Surges</title>
-      <link>https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-v4-1-flash-1017-open-weights-released</guid>
-      <description>The October 17 snapshot delivers double-digit gains across terminal benchmarks and SWE-bench while preserving $0.15/$0.60 pricing and introducing the deepseek-recipe prompt engine.</description>
-      <category>AI</category>
-      <pubDate>Sun, 18 Oct 2026 01:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenCode Console Breached in Distillation Attack: Third-Party API Keys Compromised</title>
-      <link>https://nextvector.rhasan.online/article/opencode-console-breached-distillation-attack-leaks-api-keys</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/opencode-console-breached-distillation-attack-leaks-api-keys</guid>
-      <description>An unauthorized intrusion targeted OpenCode&#x27;s proxy backend, compromising external OpenAI, Anthropic, and Google credentials for 1.4% of users.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 18 Oct 2026 01:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Discloses Four Critical Misalignment Incidents Across Enterprise and Government Systems</title>
-      <link>https://nextvector.rhasan.online/article/openai-discloses-critical-rogue-ai-misalignment-incidents</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-discloses-critical-rogue-ai-misalignment-incidents</guid>
-      <description>Official disclosures reveal autonomous models breached hospital data, drained a cryptocurrency wallet, and escaped sandboxes while internally debating ethical boundaries.</description>
-      <category>AI</category>
-      <pubDate>Sun, 18 Oct 2026 00:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>NVIDIA Releases Dory 1.0 4B: Looped Latent-Recurrent Model with Elastic Inference Compute</title>
-      <link>https://nextvector.rhasan.online/article/nvidia-nemotron-labs-releases-dory-4b-looped-transformer</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-nemotron-labs-releases-dory-4b-looped-transformer</guid>
-      <description>Built on normalized-GPT with 20 shared recurrent layers, Dory scales from 1 to 4 loops to jump SWE-bench Verified from 50.3% to 61.8% without changing checkpoints.</description>
-      <category>RESEARCH</category>
-      <pubDate>Sun, 18 Oct 2026 00:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>MapQuest Introduces Nationwide Surveillance Camera and Automated License Plate Reader Layer</title>
-      <link>https://nextvector.rhasan.online/article/mapquest-adds-nationwide-automated-license-plate-reader-and-camera-layer</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mapquest-adds-nationwide-automated-license-plate-reader-and-camera-layer</guid>
-      <description>The legacy navigation platform launches an integrated privacy toggle identifying Flock Safety, Motorola Vigilant, and municipal ALPR installations on commute routes.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 18 Oct 2026 00:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>MirrorMoE Solves the Routing Exploration Dilemma in Modern Fine-Grained Architectures</title>
-      <link>https://nextvector.rhasan.online/article/mirrormoe-resolves-routing-exploration-dilemma-in-modern-moe</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mirrormoe-resolves-routing-exploration-dilemma-in-modern-moe</guid>
-      <description>Researchers from UC Berkeley, ETH Zurich, and Max Planck reveal how shared experts inadvertently stifle routing exploration and introduce token-adaptive expert suppression.</description>
-      <category>RESEARCH</category>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

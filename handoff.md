@@ -1,3 +1,37 @@
+# Handoff — 2026-10-30 (Daily Intelligence Pipeline Run: art-312 to art-317)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-312`: `mistral-ai-releases-open-weights-mistral-large-4-le-chonk` (Hero / Breaking, Signal 98, Mistral AI releases open weights for 1T-parameter multimodal Mistral Large 4 under its Ecosystem Open-Weight license, capturing #1 on Cognition FrontierCode 2.0 with 19.7%, matching 48% on Coding Agent Index using 47% fewer tokens than GLM-5.3, and scoring 51% on Cyber Index with 96.6% malicious refusal rate).
+  - `art-313`: `binance-freezes-billions-following-historic-multibillion-exchange-exploit` (Featured / Breaking, Signal 95, Binance suspends withdrawals and freezes ~$3.0B following an estimated $5.6B platform exploit, while Tether freezes $1.6B in USDT and Circle blacklists >$800M in USDC to contain $2.4B in stolen stablecoins as Binance commits to 100% balance restitution).
+  - `art-314`: `sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos` (Featured / Deep-Dive, Signal 92, Security researcher Mark B discloses zero-click remote DoS flaw in Android WapPushOverSms where an unchecked 5-byte uintvar cast evaluates to -2147483648, killing com.android.phone, terminating calls and emergency 000 access, and triggering 90-second RescueParty boot loops until patched in October 2026 release).
+  - `art-315`: `orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge` (Analysis, Signal 91, DEVCORE researcher Orange Tsai reveals details of Pwn2Own Berlin winning full-chain sandbox escape on Microsoft Edge using 5 logic flaws and 2 Windows features with zero memory corruption, anchored by 'Sourceless Navigation' UXSS in EdgeCAGuidanceNavigationThrottle).
+  - `art-316`: `skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity` (Analysis, Signal 91, SkyPilot researchers show 16-node slices with two reserved in-rack spares on NVIDIA GB200 NVL72 racks provide 27% higher usable capacity and raise pre-training throughput by 14.4% by eliminating 43% InfiniBand networking penalties, saving $400K daily per 10K GPUs).
+  - `art-317`: `google-search-drops-below-50-percent-of-alphabet-revenue-for-first-time` (Industry-Watch, Signal 90, Google Search generated $63.4B (49.7%) of Alphabet's $128B Q3 revenue—falling below 50% for the first time after 31 quarters above 52%—as Google Cloud doubled to $30.7B and AI capex drove negative free cash flow of -$9B, wiping $500B off market cap).
+- **Model Watch:**
+  - Verified Mistral Large 4 weights release (1T parameters, modified MIT Ecosystem license); `model-mistral-large-4` already curated and generated in `modelsData.ts`.
+  - Evaluated 72h window candidates: `particle-ai/particle-1` (fine-tune of DeepSeek V4.1 Flash), `openai/gpt-6.1-terra-pro` (serving mode endpoint of tracked GPT-6.1 Terra), and `nvidia/Metatron-v1` (robotics policy checkpoint).
+  - Curated registry maintained at 144 models.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Friday, October 30, 2026` (5 items linking to art-312..316).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-312..316).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 17 bits from catalog (pairwise 26–43 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed; prerendered 317 articles, 144 models, 10 showdowns; 490 static HTML files, sitemap 488 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly (0 warnings on content/briefing/timestamps).
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-10-30-the-morning-vector.md` (`4d7881a`).
+- **Commits:**
+  - `a90f1d0`: `feat(intelligence): daily briefing and articles update [2026-10-30]`
+  - `4d7881a`: `docs(newsletter): The Morning Vector [2026-10-30]`
+- **Stories Dropped / Excluded:**
+  - `DoorDash is buying Instacart for $17 billion`: Commercial e-commerce M&A; secondary technical relevance compared to frontier foundation models, high-impact security exploits, and supercomputing infrastructure.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `4d7881a` / `a90f1d0`.
+
 # Handoff — 2026-10-29 (Daily Intelligence Pipeline Run: art-306 to art-311)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

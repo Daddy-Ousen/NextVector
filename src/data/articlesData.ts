@@ -17849,6 +17849,312 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-318",
+    slug: "microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent",
+    title: "Microsoft Releases Mage-VL-Cowork: 4B Hybrid Computer-Use Model Bridging GUI Clicks and Terminal Code",
+    subtitle: "The Apache 2.0 vision-language policy scores 66.0% on OSWorld-Verified without relying on an external orchestrator.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 94,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-01T06:10:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-318-microsoft-releases-mage-vl-cowork-hybrid-computer.jpg",
+    coverImageAlt: "A modern laptop display illuminated in a workspace, illustrating on-device multimodal agent execution.",
+    tags: ["Microsoft", "Mage-VL-Cowork", "Computer Use Agent", "OSWorld-Verified", "Open Weights", "Multimodal AI", "On-Device AI"],
+    threeQuestions: {
+      whatHappened: "On October 30, 2026, Microsoft's Mage team open-sourced Mage-VL-Cowork, a 4-billion parameter hybrid computer-use agent (CUA) model released under the Apache 2.0 license on Hugging Face. Combining screenshot-grounded visual interaction and persistent bash execution inside a single vision-language policy, the checkpoint achieves a record 66.0% on the OSWorld-Verified benchmark under a 50-step budget, outperforming all existing 4B-scale foundation models.",
+      whyItMatters: "Conventional computer-use agents face an efficiency barrier: processing pure screenshots consumes thousands of tokens per action, while naive multi-agent routers fail to arbitrate cleanly between clicks and scripts. Mage-VL-Cowork internalizes turn-level channel switching, routing visual canvas tasks to GUI primitives and structured document or spreadsheet edits to bash commands. Online reinforcement learning added 10.16 percentage points over supervised fine-tuning while cutting token consumption by 25.4%.",
+      whatsNext: "The model weights and training artifacts are available for local deployment and fine-tuning via Hugging Face in safetensors format. Developers can execute on-device workloads across Linux and macOS desktop environments using standard Transformers pipelines, with quantized 4-bit and 8-bit checkpoints planned for resource-constrained edge systems. Microsoft plans to publish the accompanying full technical report detailing the Mage-CUA-Forge task synthesis pipeline."
+    },
+    keyTakeaways: [
+      "Microsoft open-sources 4B Mage-VL-Cowork under Apache 2.0, achieving 66.0% on OSWorld-Verified to lead all 4B models.",
+      "Unifies screenshot GUI manipulation (computer_use) and persistent bash execution in a single policy without an external router.",
+      "Online RL via GRPO with verifiable task rewards boosts accuracy by 10.16 pp while cutting interaction tokens by 25.4%."
+    ],
+    content: [
+      "Source: Microsoft official model release and technical documentation published October 30, 2026, on Hugging Face, titled 'microsoft/Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use from Evolved Harnesses'.",
+      "Built upon the llava_onevision2 architecture, the model fuses Microsoft's custom Mage-ViT visual backbone with a Qwen3-4B language core (Qwen3-4B-Instruct-2507). To resolve the channel arbitration tax that plagues multi-agent systems, the architecture internalizes routing decisions within a three-part turn format: chain-of-thought rationale enclosed in thought tags, an action summary, and a formal tool call. Visual grounding operates across 11 normalized GUI coordinates between 0 and 999, while programmatic operations execute inside an interactive shell environment pre-configured with Python libraries including python-pptx, openpyxl, pandas, and pypdf.",
+      "The training curriculum relied on Mage-CUA-Forge, an environment synthesis engine that generated 293,806 distinct tasks spanning 6,915 atomic skills across desktop applications, synthetic InfiniteWeb pages, and SQLite-backed WebHarbor containers. By optimizing the teacher execution harness before trajectory collection—pruning redundant utilities such as xdotool and verbose accessibility trees—engineers lifted the GPT-5.4 teacher to 92.0% accuracy with 29.2% fewer interaction steps, translating into a 12.5 percentage point boost in distilled student capability.",
+      "Across task categories in OSWorld-Verified, Mage-VL-Cowork demonstrated marked domain strengths, scoring 87.5% on core Operating System tasks and 62.7% on Multi-Application Workflows. Training consumed 7.79 ZFLOPs of nominal compute across 32 NVIDIA B200 accelerators paired with 1,120 CPU sandbox slots for asynchronous reinforcement learning rollouts. Hardware requirements remain modest, requiring 9.48 GB of bfloat16 memory across two safetensors shards for standard local inference."
+    ],
+    technicalSpecs: {
+      "Parameter Scale": "4 Billion parameters (9.48 GB bfloat16)",
+      "Architecture": "llava_onevision2 (Mage-ViT + Qwen3-4B-Instruct-2507)",
+      "OSWorld-Verified Score": "66.0% (50-step budget, #1 at 4B scale)",
+      "OS Tasks Accuracy": "87.5% on OSWorld Operating System suite",
+      "Multi-App Accuracy": "62.7% on Multi-Application Workflows",
+      "Context Window": "32,768 active tokens (architecture supports up to 262,144)",
+      "Working Memory": "3 recent screenshots + 4 full responses + folded action history",
+      "Training Compute": "7.79 ZFLOPs across 32 NVIDIA B200 GPUs and 1,120 CPU sandboxes",
+      "Task Synthesis Engine": "Mage-CUA-Forge (293,806 tasks, 6,915 atomic skills)",
+      "License": "Apache-2.0 open-source license"
+    },
+    citations: [
+      {
+        title: "microsoft/Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use from Evolved Harnesses",
+        url: "https://huggingface.co/microsoft/Mage-VL-Cowork",
+        source: "Hugging Face"
+      }
+    ],
+    isHero: true,
+    isFeatured: false
+  },
+  {
+    id: "art-319",
+    slug: "linux-kernel-cve-2026-98432-tcp-handshake-use-after-free",
+    title: "Critical Linux TCP Handshake Use-After-Free Flaw Disclosed: CVE-2026-98432 Exposes Enterprise Kernels",
+    subtitle: "The CVSS 9.8 memory bug in IPv4 options allows unauthenticated remote execution on servers with multipath TCP listeners.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 93,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-01T05:55:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-319-linux-kernel-cve-2026-98432-tcp-handshake-use-afte.jpg",
+    coverImageAlt: "Vibrant fiber optic network cables connected to an enterprise networking switch.",
+    tags: ["Linux", "Kernel Security", "CVE-2026-98432", "TCP/IP", "Networking", "Red Hat", "Vulnerability Research"],
+    threeQuestions: {
+      whatHappened: "On October 30 and 31, 2026, security bulletins from Red Hat, Amazon Linux, and independent infrastructure monitors confirmed the critical status of CVE-2026-98432, a CVSS 9.8 remote use-after-free vulnerability located within the Linux kernel IPv4 TCP handshake. Discovered by Anthropic security researcher Xinyang Ge and patched upstream by Eric Dumazet, the flaw allows unauthenticated network attackers to corrupt kernel heap memory and achieve root execution on systems configured with multipath TCP listeners.",
+      whyItMatters: "Because the defect executes in low-level socket option processing (inet_opt and ireq_opt) before incoming traffic reaches application space, network defenses and user-space firewalls cannot inspect the payload. Anthropic confirmed that an internal Claude reasoning model synthesized a fully functional remote root exploit against affected targets. Furthermore, the Go Security Team noted that standard Go runtime networking opens multipath TCP listeners by default, expanding the vulnerable attack surface across modern microservice architectures.",
+      whatsNext: "System administrators must deploy patched kernel builds and perform system reboots immediately. While stable upstream kernels (5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.56, 7.2.10, and 7.3) and distributions like Amazon Linux and Debian have shipped remediations, Red Hat Enterprise Linux (RHEL 8, 9, 10) and Ubuntu tracked the flaw as unpatched going into November. Teams unable to reboot should filter IPv4 packets containing TCP options at boundary firewalls."
+    },
+    keyTakeaways: [
+      "CVE-2026-98432 assigned CVSS 9.8 Critical rating by Linux Kernel CNA and Red Hat for remote IPv4 TCP handshake use-after-free.",
+      "Flaw resides in pre-application kernel networking code dating back to Linux 4.4, enabling remote root execution with zero credentials.",
+      "Go runtime opens multipath TCP listeners by default, leaving default Go microservices on vulnerable kernels exposed."
+    ],
+    content: [
+      "Source: Atlas Security advisory and Linux kernel CVE disclosures updated October 31, 2026, titled 'Linux's October 2026 TCP Use-After-Free: CVE-2026-98432'.",
+      "The vulnerability originates in the premature reclamation of IP option structures during connection handshakes. In vulnerable branches, inet_opt and ireq_opt data buffers were freed without enforcing an adequate Read-Copy-Update (RCU) grace period. When handling high-concurrency connection attempts carrying crafted IPv4 options, an unauthenticated remote peer can race the connection cleanup daemon, triggering an access to deallocated kernel heap chunks and enabling controlled memory overwrite.",
+      "Although the upstream patch is a concise four-line adjustment ensuring option pointers remain valid across the RCU cycle, rollout across production Linux fleets remains fragmented. As of late October 31, trackers for Canonical's Ubuntu across all releases and Red Hat Enterprise Linux versions 8, 9, and 10 showed the vulnerability as unpatched in standard repositories, whereas Amazon Linux and Oracle UEK had published corrected images.",
+      "Security researchers emphasize that containerized workloads offer no isolation against CVE-2026-98432, as all container namespaces share the underlying host kernel network stack. In environments where kernel upgrades cannot be scheduled immediately, network engineering teams are advised to implement perimeter packet-filtering rules dropping external IPv4 packets with TCP option headers or explicitly disable multipath TCP interfaces via sysctl configuration."
+    ],
+    technicalSpecs: {
+      "Vulnerability Identifier": "CVE-2026-98432",
+      "CVSS 3.1 Severity Score": "9.8 (Critical, AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)",
+      "Flaw Mechanism": "Use-after-free in inet_opt / ireq_opt handling during IPv4 TCP handshake",
+      "Affected Versions": "Linux kernels from 4.4 up to 5.10.271, 5.15.222, 6.1.189, 6.6.158, 6.12.112, 6.18.55, 7.2.9",
+      "Fixed Upstream Releases": "5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.56, 7.2.10, 7.3",
+      "Discovery Credit": "Xinyang Ge (Anthropic)",
+      "Kernel Patch Authors": "Eric Dumazet (fix), Kuniyuki Iwashima (review)",
+      "Exploitation Vector": "Remote unauthenticated via multipath TCP listeners"
+    },
+    citations: [
+      {
+        title: "Linux's October 2026 TCP Use-After-Free: CVE-2026-98432",
+        url: "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+        source: "Atlas Security"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-320",
+    slug: "google-project-suncatcher-receives-first-tpu-ai-response-from-orbit",
+    title: "Google Achieves Orbit Milestone: Project Suncatcher Receives First TPU AI Response from Space",
+    subtitle: "A satellite-hosted Tensor Processing Unit executes Gemma 4 inference, transmitting orbital poetry to ground receivers.",
+    category: "science",
+    articleType: "discovery",
+    signalRating: 92,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-01T05:40:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-320-google-project-suncatcher-receives-first-tpu-ai-re.jpg",
+    coverImageAlt: "The International Space Station orbiting high above the Earth with solar arrays extended into deep space.",
+    tags: ["Google Research", "Project Suncatcher", "TPU", "Space AI", "Gemma 4", "Orbital Computing", "Aerospace"],
+    threeQuestions: {
+      whatHappened: "On October 30, 2026, Google Research announced the successful receipt of the first operational machine learning output from a datacenter-class Tensor Processing Unit (TPU) operating in orbit. Deployed aboard the Project Suncatcher prototype satellite launched on October 1, the hardware completed host and TPU tray commissioning before executing local inference with an onboard Gemma 4 model, transmitting space telemetry and a downlinked haiku to a tracking station in Svalbard, Norway.",
+      whyItMatters: "Powering AI compute clusters in space represents a long-term strategy to bypass terrestrial power grid and water cooling bottlenecks. However, datacenter silicon typically degrades quickly outside Earth's magnetosphere due to cosmic radiation single-event upsets (SEUs) and extreme thermal swings. Suncatcher's successful execution confirms that Google's enterprise TPU architecture can execute production neural network inference in microgravity without unrecoverable hardware halts.",
+      whatsNext: "Google engineering teams are initiating an extended battery of stress trials, evaluating TPU operational reliability under orbital thermal cycling and solar radiation flares. The telemetry gathered from this single-satellite prototype will inform the architecture of Project Suncatcher's next phase: launching a pair of interconnected orbital compute nodes in 2027 to evaluate satellite-to-satellite optical interlinks and distributed space-to-ground pipeline processing."
+    },
+    keyTakeaways: [
+      "Google's Project Suncatcher achieves first operational AI inference from a datacenter-grade TPU in low Earth orbit.",
+      "Onboard Gemma 4 model successfully generates and transmits telemetry and orbital poetry to Svalbard ground station.",
+      "Validates spaceborne tensor accelerator survivability ahead of twin interconnected satellite trial planned for 2027."
+    ],
+    content: [
+      "Source: Google Research announcement published October 30, 2026, by Travis Beals, Senior Director of Paradigms of Intelligence, titled 'Google receives response from Project Suncatcher prototype satellite in space'.",
+      "Project Suncatcher launched its initial prototype satellite on October 1, 2026, embarking on a multi-phase research effort to assess the viability of placing hyperscale machine learning compute directly into orbital solar environments. Commissioning procedures spanned several weeks, focusing on gradual power distribution across the satellite's primary bus, thermal radiator loops, host controller trays, and enterprise TPU accelerator boards.",
+      "During an orbital transit over northern Europe, ground engineers uplinked prompt instructions to the satellite's local Gemma 4 checkpoint. Passing within range of the ground receiving station in Svalbard, Norway, the satellite downlinked its verification payload—a three-line haiku ('Blue marble below / Data streams in silent grace / Starlight feeds my core.') followed by detailed system health diagnostics and component telemetry confirms nominal operating status across the accelerator cores.",
+      "Subsequent phases of the flight test will deliberately push the silicon across wider temperature tolerances and monitor error-correcting code (ECC) memory event rates induced by spaceborne heavy ion impacts. Demonstrating robust radiation tolerance at commercial accelerator densities is critical to validating Google's 2027 road map, which envisions coordinated multi-satellite clusters exchanging high-bandwidth tensor shards via optical free-space communication."
+    ],
+    technicalSpecs: {
+      "Mission Program": "Project Suncatcher Prototype Satellite",
+      "Lead Organization": "Google Research (Paradigms of Intelligence)",
+      "Principal Investigator": "Travis Beals (Senior Director)",
+      "Launch Date": "October 1, 2026",
+      "Orbital Hardware": "Datacenter-class Google TPU hardware trays",
+      "Onboard Model": "Gemma 4 open foundation model",
+      "Downlink Ground Station": "Svalbard, Norway polar satellite station",
+      "Downlink Payload": "Space telemetry, limericks, and orbital haiku",
+      "Next Flight Milestone": "Twin interconnected compute satellites in 2027"
+    },
+    citations: [
+      {
+        title: "Google receives response from Project Suncatcher prototype satellite in space",
+        url: "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        source: "Google Research"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-321",
+    slug: "cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal",
+    title: "Cisco Talos Uncovers VOLTA Malware Using LLMs to Value and Prioritize Victims",
+    subtitle: "The Windows infostealer routes exfiltrated credentials through a multi-model fallback chain to generate target dossiers.",
+    category: "ai",
+    articleType: "deep-dive",
+    signalRating: 90,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-01T05:25:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-321-cisco-talos-uncovers-volta-infostealer-using-llms.jpg",
+    coverImageAlt: "Macro view of microelectronic semiconductor logic gates on a motherboard circuit.",
+    tags: ["Cisco Talos", "VOLTA", "Malware", "Infostealer", "AI Security", "OpenRouter", "Cybercrime"],
+    threeQuestions: {
+      whatHappened: "On October 31, 2026, Cisco Talos published an investigation by researcher Ryan Fetterman exposing VOLTA-AUTODOXER, a self-deleting Windows infostealer implant that integrates commercial large language models to automate post-theft victim appraisal. Operating without attacker-owned command-and-control servers, VOLTA harvests local credentials, queries OpenRouter directly from the victim's machine, and generates structured dossiers categorizing targets by monetization potential.",
+      whyItMatters: "While prior threat operations focused on using AI for automated malware development or phishing copy, VOLTA represents a shift toward effort displacement in intelligence analysis. To circumvent model alignment guardrails, the implant implements an automated failover chain starting with Claude Opus 4.6 and falling back to Kimi K2 and Gemini 2.5 Flash, parsing JSON responses to rank financial holdings, cloud infrastructure keys, and operational security weaknesses.",
+      whatsNext: "Cisco Talos recommends implementing endpoint application control policies blocking unauthorized background processes from spawning Chrome with headless flags, which neutralizes VOLTA's method for bypassing App-Bound Encryption (ABE). Organizations should audit local directories for leftover artifact logs (volta_debug.txt) following suspected incidents and revoke any exposed cloud provider tokens and cryptocurrency wallets immediately."
+    },
+    keyTakeaways: [
+      "Cisco Talos identifies VOLTA-AUTODOXER, the first observed infostealer using LLMs as automated forensic intelligence analysts.",
+      "Implant bypasses safety refusals using a three-tier model fallback chain (Claude Opus 4.6 to Kimi K2 to Gemini 2.5 Flash).",
+      "Executes inference through victim's network via OpenRouter, categorizing target monetization value without attacker-owned C2."
+    ],
+    content: [
+      "Source: Cisco Talos Threat Spotlight published October 31, 2026, by Ryan Fetterman, titled 'Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer'.",
+      "VOLTA surfaces as a 64-bit Windows PE binary (SHA256: 57ef4242666d78c50df145b34023df564f0fad38812d6a580e66433d427e2279) originating from the collaborative CAIRN research tracking effort. After gaining local execution, the malware performs aggressive data harvesting, capturing browser cookies, stored credit cards, cryptocurrency seed phrases, Discord tokens, Slack workspaces, SSH keys, and cloud credentials. It further enriches this footprint by querying local Gmail caches for purchase receipts, UberEats and DoorDash order histories, and live Roblox digital account valuations.",
+      "Once the telemetry bundle is assembled, VOLTA bypasses traditional command-and-control infrastructure by issuing an authenticated POST request directly to OpenRouter's chat completion endpoint (api/v1/chat/completions) using the victim's outbound internet connection. Operating under a low temperature of 0.2 for deterministic output, the system prompt instructs the model to act as a forensic intelligence analyst drafting an appraisal dossier. The required JSON schema outputs two mandatory sections: 'WHAT THEY'RE WORTH' (ranking assets into low, medium, and high monetary tiers) and 'THEIR OPSEC' (analyzing password reuse and credential hygiene).",
+      "To ensure resilience against refusal responses, VOLTA's code inspects returning text for standard refusal strings such as 'I can’t' or 'I’m not able'. Upon detecting a refusal, it automatically falls back from its primary model, anthropic/claude-opus-4.6, to moonshotai/kimi-k2, and ultimately to google/gemini-2.5-flash. Exfiltration occurs in three separate ZIP archives dispatched via Telegram bot API, after which the implant wipes its binary from disk to hinder forensic recovery."
+    ],
+    technicalSpecs: {
+      "Threat Classification": "Windows Infostealer with AI Victim Appraisal (VOLTA-AUTODOXER)",
+      "Sample Hash (SHA256)": "57ef4242666d78c50df145b34023df564f0fad38812d6a580e66433d427e2279",
+      "Binary Architecture": "PE32+ x86-64 executable",
+      "AI Inference Endpoint": "OpenRouter API (https://openrouter.ai/api/v1/chat/completions)",
+      "Primary Model": "anthropic/claude-opus-4.6 (temperature: 0.2)",
+      "Fallback Cascade": "moonshotai/kimi-k2 -> google/gemini-2.5-flash",
+      "Browser Defense Bypass": "Spawns Chrome with --headless to defeat App-Bound Encryption",
+      "Exfiltration Channels": "Multi-stage ZIP archives via Telegram Bot API",
+      "Research Attribution": "Ryan Fetterman, Cisco Talos / CAIRN Research"
+    },
+    citations: [
+      {
+        title: "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
+        url: "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+        source: "Cisco Talos"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-322",
+    slug: "jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb",
+    title: "Jepsen Analysis Exposes 96 Integrity and ACID Failures in ParticleDB AI Database",
+    subtitle: "Kyle Kingsbury documents lost committed writes, ghost rows, and serializability breakdowns in Orkes' database engine.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-01T05:10:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-322-jepsen-analysis-exposes-96-integrity-and-acid-fail.jpg",
+    coverImageAlt: "Close-up of integrated electronic storage and logic components on a computing PCB.",
+    tags: ["Jepsen", "ParticleDB", "Distributed Systems", "ACID", "Database Testing", "Orkes", "Data Integrity"],
+    threeQuestions: {
+      whatHappened: "On October 31, 2026, distributed systems analysis firm Jepsen published an exhaustive evaluation by Kyle Kingsbury investigating ParticleDB versions 1.1.4 through 1.1.18.11.rc-22. Commissioned by database creator Orkes, the testing revealed 96 separate functional and data integrity defects, demonstrating that marketing claims of 'Full ACID' compliance and formal mathematical verification were severely premature.",
+      whyItMatters: "ParticleDB was engineered from scratch in Rust to provide a high-performance unified backend for AI agents, offering relational SQL, vector search, key-value storage, and workflow state for Orkes Conductor. However, Jepsen proved that even on a single server without network faults, ParticleDB suffered committed write loss under default optimistic concurrency control (OCC), lost updates under serializable isolation, and severe logical anomalies like WHERE 4 = 5 evaluations returning matching rows.",
+      whatsNext: "Orkes has released ParticleDB version 1.1.19-rc.13, asserting that all 96 defects identified in Jepsen's report have been remediated in the codebase. Engineering teams deploying ParticleDB in production are strongly advised to audit existing datasets for silent logical corruption, verify Write-Ahead Log (WAL) fsync settings, and upgrade to the latest release candidate before deploying mission-critical AI agent state."
+    },
+    keyTakeaways: [
+      "Kyle Kingsbury's Jepsen audit uncovers 96 integrity, consistency, and crash bugs in ParticleDB versions 1.1.4 to 1.1.18.11.rc-22.",
+      "Database lost committed writes during normal operation under default OCC mode and permitted Lost Updates under serializable mode.",
+      "Most anomalies reproduced on a single server without injecting network partitions or hardware failures."
+    ],
+    content: [
+      "Source: Jepsen technical evaluation report published October 31, 2026, by Kyle Kingsbury, titled 'Jepsen: ParticleDB 1.1.4'.",
+      "Built by Orkes to replace Redis and PostgreSQL within its Conductor workflow engine, ParticleDB claimed orders-of-magnitude performance advantages while guaranteeing strict transactional safety. Jepsen's independent investigation, funded by Orkes under Jepsen's standard ethics policy, subjected the single-node storage engine to rigorous consistency verification suites, evaluating SQL query execution, transaction isolation, and Write-Ahead Log (WAL) durability across three sync tactics: sync, groupsync, and nosync.",
+      "The findings revealed pervasive breakdowns across basic relational invariants. Among the 96 documented issues, Jepsen identified instances of ghost rows that were partially invisible yet impossible to delete, dropped database tables re-emerging in distorted shapes, strings mutating into integers during storage, and query planner errors where contradictory filter expressions such as WHERE 4 = 5 successfully matched table records. Most significantly, committed transactions vanished under standard concurrent execution without introducing node crashes or simulated power failures.",
+      "While Orkes resolved 86 of the documented issues throughout iterative testing reaching version 1.1.18.11.rc-22, core transactional guarantees remained breached. In tests modeling read-write registers, ParticleDB allowed Lost Updates under its highest serializable isolation tier and lost committed write transactions under default OCC mode. Orkes claims full remediation in subsequent release candidate 1.1.19-rc.13."
+    ],
+    technicalSpecs: {
+      "Tested Software": "ParticleDB (versions 1.1.4 through 1.1.18.11.rc-22)",
+      "Lead Auditor": "Kyle Kingsbury (Jepsen, LLC)",
+      "Publication Date": "October 31, 2026",
+      "Total Documented Defects": "96 distinct safety and integrity issues",
+      "Primary Failures": "Lost committed writes (OCC mode), Lost Updates (serializable mode)",
+      "Implementation Language": "Rust (proprietary multi-model storage engine)",
+      "Supported Protocols": "PostgreSQL wire protocol, Redis API, gRPC, HTTP/2",
+      "Claimed Verifications": "TLA+ formal proof (no formal specification was provided)",
+      "Vendor Remediation": "ParticleDB version 1.1.19-rc.13 released by Orkes"
+    },
+    citations: [
+      {
+        title: "Jepsen: ParticleDB 1.1.4",
+        url: "https://jepsen.io/analyses/particledb-1.1.4",
+        source: "Jepsen Analyses"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-323",
+    slug: "parameter-details-full-chain-chatgpt-account-takeover-via-shared-chats",
+    title: "Parameter Discloses Full-Chain ChatGPT Account Takeover via HTML Previews in Shared Chats",
+    subtitle: "Security researchers chain MathLive postMessage handlers to escape iframes and seize victim chat sessions.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-01T04:55:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-323-parameter-details-full-chain-chatgpt-account-takeo.jpg",
+    coverImageAlt: "User interface design layouts and wireframes depicting web application security boundaries.",
+    tags: ["OpenAI", "ChatGPT", "Parameter Security", "Account Takeover", "App Security", "Cross-Site Scripting", "CSP Bypass"],
+    threeQuestions: {
+      whatHappened: "On October 31, 2026, security research firm Parameter disclosed the technical details of a P1-severity account takeover vulnerability chain in ChatGPT. By sharing a crafted conversation containing an interactive graph and an HTML Preview, researchers escaped ChatGPT's sandbox iframe via an unvalidated postMessage listener in the MathLive virtual keyboard library, executing arbitrary JavaScript in the victim's signed-in chatgpt.com session upon opening the link.",
+      whyItMatters: "The attack required zero interaction beyond clicking a legitimate public chatgpt.com/share URL—no browser extensions, developer tools, or prompt injection inputs were necessary. Once triggered, the injected script gained access to the victim's authenticated session, allowing the attacker to enumerate chat history, exfiltrate private unshared conversations and files, and execute arbitrary API operations as the victim.",
+      whatsNext: "OpenAI remediated the vulnerability on October 26, 2026, classifying the discovery as a P1 report under its bug bounty program. Engineering teams hardened MathLive origin verification in the parent frame, updated Content Security Policy (CSP) directives, and restricted postMessage IPC communication between sandboxed preview sandboxes and the core application shell."
+    },
+    keyTakeaways: [
+      "Parameter researchers detail one-click ChatGPT account takeover via public conversation sharing links.",
+      "Unvalidated postMessage listener in MathLive virtual keyboard allowed sandboxed HTML previews to inject HTML into parent chatgpt.com frame.",
+      "Payload gained full access to authenticated web session, enabling enumeration and exfiltration of private conversations."
+    ],
+    content: [
+      "Source: Parameter Security research disclosure published by Mukul Goyal, titled 'Do the Math: How We Took Over ChatGPT Accounts', disclosed October 31, 2026.",
+      "ChatGPT executes user-generated HTML code blocks inside isolated, cross-origin iframe sandboxes to prevent untrusted code from accessing top-level DOM properties or session cookies. However, when conversations incorporate mathematical graphs, ChatGPT loads the MathLive rendering library. The library initializes a global window message listener to receive configuration updates for its on-screen virtual keyboard but failed to validate the origin (event.origin) of incoming postMessage dispatches.",
+      "Parameter's exploit weaponized this omission by embedding an HTML Preview that dispatched two targeted messages to the top-level parent window. The first message updated MathLive's keyboard layout setting with a crafted HTML structure containing an execution payload, while the second instructed the library to render the virtual keyboard on screen. By injecting into the parent document context, the payload escaped the cross-origin iframe boundary and executed directly within the chatgpt.com origin.",
+      "To overcome ChatGPT's Content Security Policy, the researchers bypassed script restrictions by executing within the context of trusted Angular and UI gadgets already initialized in the page. The payload successfully issued authenticated GraphQL and REST calls to OpenAI backend endpoints, dumping conversation titles, reading unshared message threads, and demonstrating complete administrative control over the active session before OpenAI deployed hotfixes on October 26."
+    ],
+    technicalSpecs: {
+      "Target Application": "ChatGPT Web Application (chatgpt.com)",
+      "Vulnerability Class": "Cross-Origin Sandbox Escape / Universal Account Takeover",
+      "Vendor Severity Rating": "P1 (High / Critical Priority)",
+      "Discovery Team": "Mukul Goyal, Parameter Research Team",
+      "Root Cause": "Missing event.origin validation in MathLive postMessage listener",
+      "Exploit Delivery": "Public ChatGPT share link (chatgpt.com/share/...)",
+      "Attacker Capabilities": "Read private chats, exfiltrate files, call authenticated APIs",
+      "Vendor Remediation Date": "October 26, 2026",
+      "Public Disclosure Date": "October 31, 2026"
+    },
+    citations: [
+      {
+        title: "Do the Math: How We Took Over ChatGPT Accounts",
+        url: "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+        source: "Parameter Research"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

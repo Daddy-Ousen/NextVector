@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 06:10:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Microsoft Releases Mage-VL-Cowork: 4B Hybrid Computer-Use Model Bridging GUI Clicks and Terminal Code</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent</guid>
+      <description>The Apache 2.0 vision-language policy scores 66.0% on OSWorld-Verified without relying on an external orchestrator.</description>
+      <category>AI</category>
+      <pubDate>Sun, 01 Nov 2026 06:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Critical Linux TCP Handshake Use-After-Free Flaw Disclosed: CVE-2026-98432 Exposes Enterprise Kernels</title>
+      <link>https://nextvector.rhasan.online/article/linux-kernel-cve-2026-98432-tcp-handshake-use-after-free</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/linux-kernel-cve-2026-98432-tcp-handshake-use-after-free</guid>
+      <description>The CVSS 9.8 memory bug in IPv4 options allows unauthenticated remote execution on servers with multipath TCP listeners.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 01 Nov 2026 05:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Achieves Orbit Milestone: Project Suncatcher Receives First TPU AI Response from Space</title>
+      <link>https://nextvector.rhasan.online/article/google-project-suncatcher-receives-first-tpu-ai-response-from-orbit</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-project-suncatcher-receives-first-tpu-ai-response-from-orbit</guid>
+      <description>A satellite-hosted Tensor Processing Unit executes Gemma 4 inference, transmitting orbital poetry to ground receivers.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sun, 01 Nov 2026 05:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cisco Talos Uncovers VOLTA Malware Using LLMs to Value and Prioritize Victims</title>
+      <link>https://nextvector.rhasan.online/article/cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal</guid>
+      <description>The Windows infostealer routes exfiltrated credentials through a multi-model fallback chain to generate target dossiers.</description>
+      <category>AI</category>
+      <pubDate>Sun, 01 Nov 2026 05:25:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Jepsen Analysis Exposes 96 Integrity and ACID Failures in ParticleDB AI Database</title>
+      <link>https://nextvector.rhasan.online/article/jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb</guid>
+      <description>Kyle Kingsbury documents lost committed writes, ghost rows, and serializability breakdowns in Orkes&#x27; database engine.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 01 Nov 2026 05:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Parameter Discloses Full-Chain ChatGPT Account Takeover via HTML Previews in Shared Chats</title>
+      <link>https://nextvector.rhasan.online/article/parameter-details-full-chain-chatgpt-account-takeover-via-shared-chats</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/parameter-details-full-chain-chatgpt-account-takeover-via-shared-chats</guid>
+      <description>Security researchers chain MathLive postMessage handlers to escape iframes and seize victim chat sessions.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sun, 01 Nov 2026 04:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Mistral AI Releases Open Weights for 1-Trillion Parameter Mistral Large 4</title>
       <link>https://nextvector.rhasan.online/article/mistral-ai-releases-open-weights-mistral-large-4-le-chonk</link>
@@ -496,60 +550,6 @@
       <description>Federal directive mandates elimination of Chinese open-weight models and derivative code across Treasury, State, and Justice departments.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Wed, 21 Oct 2026 03:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Elorian Launches Glimpse: Visual Scratch Space Model by Ex-DeepMind Team</title>
-      <link>https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/elorian-releases-glimpse-visual-scratch-space-model</guid>
-      <description>Palo Alto startup founded by Gemini co-creator Andrew Dai debuts 262K-context vision model that actively re-inspects images and video frames during inference.</description>
-      <category>AI</category>
-      <pubDate>Mon, 19 Oct 2026 00:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>DeepSeek Launches Native Web Search and Fetch API at $0.75 per 1,000 Requests</title>
-      <link>https://nextvector.rhasan.online/article/deepseek-launches-native-web-search-and-fetch-api</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-launches-native-web-search-and-fetch-api</guid>
-      <description>The Beijing lab opens standalone HTTP endpoints for live web crawling and Markdown conversion, charging strictly for successful responses across agent workflows.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 19 Oct 2026 00:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Commits Initial 5% Equity Stake to New Public Benefit Fund, Scaling With Valuation</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-commits-equity-stake-to-public-benefit-fund</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-commits-equity-stake-to-public-benefit-fund</guid>
-      <description>The AI lab pledges corporate shares to a dedicated LLC designed to expand contributions by 2% for every 50% valuation gain above baseline.</description>
-      <category>AI</category>
-      <pubDate>Mon, 19 Oct 2026 00:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Drafts Federal AI Safety Bill Requiring 50 Deaths or $1B in Damages for Intervention</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-drafts-federal-ai-safety-bill-setting-commerce-thresholds</guid>
-      <description>Legislative proposal establishes Department of Commerce evaluation jurisdiction, barring state agencies from ordering unilateral model shutdowns.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Web Services and Financial Platforms Deploy Widespread Blocking Against Autonomous AI Agents</title>
-      <link>https://nextvector.rhasan.online/article/websites-and-financial-platforms-block-autonomous-ai-agents</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/websites-and-financial-platforms-block-autonomous-ai-agents</guid>
-      <description>Amazon, Delta Air Lines, and major banks shut out browser agents from OpenAI, Meta, and xAI, triggering disputes over data rights and scraping boundaries.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 18 Oct 2026 23:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Sepp Hochreiter&#x27;s Lab Introduces KronLSTM: Kronecker Delta Rule for Stable Long-Context Linear Attention</title>
-      <link>https://nextvector.rhasan.online/article/kronlstm-kronecker-delta-rule-linear-attention</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/kronlstm-kronecker-delta-rule-linear-attention</guid>
-      <description>Austrian researchers develop rank-one matrix memory revision mechanism that bounds state norm and avoids degradation across extended sequence benchmarks.</description>
-      <category>RESEARCH</category>
-      <pubDate>Sun, 18 Oct 2026 23:30:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

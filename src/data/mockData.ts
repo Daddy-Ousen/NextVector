@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Friday, October 30, 2026",
-  summary: "Mistral AI releases open weights for its 1-trillion parameter Mistral Large 4 with top coding scores, while Binance and major stablecoin issuers freeze $5.4B in digital assets following an unprecedented exchange exploit.",
+  date: "Sunday, November 1, 2026",
+  summary: "Microsoft open-sources Mage-VL-Cowork, a 4B hybrid computer-use model achieving 66.0% on OSWorld-Verified, while security teams race to patch a critical CVSS 9.8 use-after-free flaw in Linux kernel IPv4 TCP handshakes.",
   items: [
     {
       id: 'brief-1',
-      headline: "Mistral Open-Weights 1-Trillion Parameter Large 4 'Le Chonk'",
+      headline: "Microsoft Releases Mage-VL-Cowork 4B Hybrid Computer-Use Agent",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Mistral AI has released the open weights of Mistral Large 4 under its Ecosystem Open-Weight license. The 1T parameter multimodal model captures first place on FrontierCode 2.0 (19.7%) and achieves 51% on the Cyber Index while offering low, medium, and high reasoning tiers.",
-      whyItMatters: "Establishes a new open-weight frontier for agentic coding and autonomous vulnerability remediation without proprietary API lock-in.",
-      articleSlug: "mistral-ai-releases-open-weights-mistral-large-4-le-chonk"
+      summary: "Microsoft's Mage team has open-sourced Mage-VL-Cowork, a compact 4B multimodal model combining GUI screenshot interactions and persistent bash terminal execution without an external orchestrator, scoring 66.0% on OSWorld-Verified.",
+      whyItMatters: "Proves that small 4B on-device vision-language models can master complex computer tasks while cutting inference token consumption by 25.4% through online reinforcement learning.",
+      articleSlug: "microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent"
     },
     {
       id: 'brief-2',
-      headline: "Binance and Stablecoin Issuers Freeze $5.4B in Assets Post-Exploit",
+      headline: "Critical Linux TCP Handshake Use-After-Free CVE-2026-98432 Disclosed",
       category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "Binance has halted deposits and withdrawals while investigating an exchange compromise, freezing $3B in assets. Stablecoin issuers Tether and Circle coordinated to freeze an additional $1.6B in USDT and $800M in USDC as founder Changpeng Zhao confirmed the attack.",
-      whyItMatters: "Marks the largest cryptographic exploit in history, testing centralized stablecoin emergency controls and exchange balance-sheet reserves.",
-      articleSlug: "binance-freezes-billions-following-historic-multibillion-exchange-exploit"
+      summary: "Linux kernel maintainers and Red Hat have elevated CVE-2026-98432 to CVSS 9.8 Critical. The remote unauthenticated use-after-free flaw in IPv4 TCP option processing enables arbitrary code execution on servers running multipath TCP listeners.",
+      whyItMatters: "Affects Linux kernels dating back to version 4.4, with major enterprise distributions including RHEL and Ubuntu remaining unpatched as of October 31.",
+      articleSlug: "linux-kernel-cve-2026-98432-tcp-handshake-use-after-free"
     },
     {
       id: 'brief-3',
-      headline: "SMS of Death Zero-Click Attack Drops Calls on Vulnerable Android Handsets",
-      category: "technology" as const,
+      headline: "Google Project Suncatcher Receives First TPU AI Response from Space",
+      category: "science" as const,
       urgency: "High Impact" as const,
-      summary: "Vulnerability researchers have disclosed a zero-click remote Denial-of-Service flaw in Android telephony. A single malformed 5-byte WAP Push SMS throws a NegativeArraySizeException in com.android.phone, terminating calls and causing persistent boot loops.",
-      whyItMatters: "Severs emergency 000 and 911 access remotely with zero user interaction, triggering regulatory carrier barring until updated to October 2026 patch levels.",
-      articleSlug: "sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos"
+      summary: "Google Research has confirmed the first operational AI response from a datacenter-class TPU in Earth orbit. An onboard Gemma 4 open model generated space telemetry and poetry downlinked to a ground station in Svalbard, Norway.",
+      whyItMatters: "Validates the survivability and execution of production tensor accelerator silicon in orbital radiation environments ahead of twin interconnected satellite trials in 2027.",
+      articleSlug: "google-project-suncatcher-receives-first-tpu-ai-response-from-orbit"
     },
     {
       id: 'brief-4',
-      headline: "Orange Tsai Crafts 100% Logic-Only Edge Sandbox Escape",
-      category: "technology" as const,
+      headline: "Cisco Talos Identifies VOLTA Malware Leveraging LLMs for Victim Triage",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "DEVCORE researcher Orange Tsai has published details on a Pwn2Own-winning exploit chain against Microsoft Edge. Chaining five logic vulnerabilities and two Windows features without memory corruption, the exploit bypasses modern browser sandbox barriers.",
-      whyItMatters: "Demonstrates that hardening memory safety mitigations leaves browsers exposed to architectural navigation and context-binding flaws.",
-      articleSlug: "orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge"
+      summary: "Cisco Talos has documented VOLTA-AUTODOXER, a self-deleting Windows infostealer that POSTs stolen credentials and session data to OpenRouter, using a three-model fallback chain to appraise victims and evaluate operational security posture.",
+      whyItMatters: "Marks the first observed real-world crimeware deployment where foundation models serve as automated intelligence analysts rather than basic code-generation tools.",
+      articleSlug: "cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal"
     },
     {
       id: 'brief-5',
-      headline: "SkyPilot Rack Topology Schedulers Boost NVL72 Cluster Yield by 27%",
+      headline: "Jepsen Analysis Reveals 96 Integrity and ACID Defects in ParticleDB",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "SkyPilot research demonstrates that reserving two spare nodes per 72-GPU Grace Blackwell rack and scheduling in 16-node slices increases usable capacity by 27% and raises pre-training throughput by 14.4% by preserving NVLink domain locality.",
-      whyItMatters: "Cuts cluster communication overhead between nodes, saving an estimated $400,000 per day on 10,000-GPU superclusters.",
-      articleSlug: "skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity"
+      summary: "Kyle Kingsbury's Jepsen analysis of ParticleDB versions 1.1.4 through 1.1.18.11.rc-22 uncovered 96 distinct bugs, demonstrating lost committed writes under default optimistic concurrency control and lost updates under serializable isolation.",
+      whyItMatters: "Exposes significant divergence between formal marketing claims of full ACID compliance and actual distributed database safety in production AI data backends.",
+      articleSlug: "jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Mistral Large 4",
-    text: "Mistral AI open-sources 1T-parameter Mistral Large 4 leading open coding benchmarks.",
-    articleSlug: "mistral-ai-releases-open-weights-mistral-large-4-le-chonk"
+    tag: "Mage-VL-Cowork",
+    text: "Microsoft open-sources 4B Mage-VL-Cowork leading OSWorld-Verified with 66.0% score.",
+    articleSlug: "microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent"
   },
   {
     id: 'sig-2',
-    tag: "Binance Exploit",
-    text: "Binance, Tether, and Circle freeze $5.4B in crypto following a major exchange exploit.",
-    articleSlug: "binance-freezes-billions-following-historic-multibillion-exchange-exploit"
+    tag: "Linux TCP UAF",
+    text: "Critical CVSS 9.8 flaw CVE-2026-98432 threatens Linux IPv4 TCP handshakes on servers.",
+    articleSlug: "linux-kernel-cve-2026-98432-tcp-handshake-use-after-free"
   },
   {
     id: 'sig-3',
-    tag: "SMS of Death",
-    text: "Zero-click Android telephony flaw drops voice calls and forces persistent reboot loops.",
-    articleSlug: "sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos"
+    tag: "Project Suncatcher",
+    text: "Google downlinks first TPU AI response from prototype orbit satellite in Svalbard.",
+    articleSlug: "google-project-suncatcher-receives-first-tpu-ai-response-from-orbit"
   },
   {
     id: 'sig-4',
-    tag: "Edge Sandbox Escape",
-    text: "Orange Tsai achieves full-chain Edge sandbox escape using five logic bugs with no AI.",
-    articleSlug: "orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge"
+    tag: "VOLTA Infostealer",
+    text: "Cisco Talos finds malware using LLM fallback chain to appraise and dox stolen assets.",
+    articleSlug: "cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal"
   },
   {
     id: 'sig-5',
-    tag: "NVL72 Scheduling",
-    text: "SkyPilot topology-aware scheduler yields 27% more usable GPUs on Grace Blackwell racks.",
-    articleSlug: "skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity"
+    tag: "ParticleDB Jepsen",
+    text: "Jepsen audit uncovers 96 integrity issues and lost writes in ParticleDB AI database.",
+    articleSlug: "jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb"
   }
 ];

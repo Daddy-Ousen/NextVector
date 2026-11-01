@@ -1,3 +1,41 @@
+# Handoff — 2026-11-02 (Daily Intelligence Pipeline Run: art-324 to art-329)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-324`: `memdoor-5-model-team-qwen-beats-fable-on-livecodebench` (Hero / Research-Explained, Signal 93, Memdoor v1.773.0 releases GVS5H implementation coordinating 5 Qwen3.8-27B agents through isolated context windows and disk-based ledgers to achieve 9.8 / 10 mean on LiveCodeBench Hard, beating single-call Fable 5 [8.0 / 10] for $0.39 per run).
+  - `art-325`: `anthropic-blocks-claude-video-game-cloning-reverse-engineering` (Featured / Analysis, Signal 91, Anthropic deploys automated guardrails in Claude Code and Opus 5.5 prohibiting video game recreations following Steam Next Fest demo cloning threats; sweeping filter triggers widespread false positives across benign crash dump triage and anti-cheat reviews).
+  - `art-326`: `hermantown-city-council-approves-google-data-center-over-protests` (Featured / Breaking, Signal 90, Hermantown City Council votes unanimously in a midnight session to approve a 1.7M sq ft, 500MW Google data center campus backed by a $210M decommissioning bond despite heated protests over electric load matching all homes in Minneapolis, St. Paul, Duluth, and Rochester combined).
+  - `art-327`: `minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy` (Research-Explained, Signal 89, Y Combinator and Olam Labs deploy 50 GPT-6.1 Sol agents in Minecraft to build civilization; colony collapses into paralyzed bureaucracy [11 minutes to appoint single fertilizer operator] after nocturnal zombie attacks, while GPT hive coordination defeats Claude democratic consensus 6-1 in PvP trials).
+  - `art-328`: `karpathy-launches-hackertube-hn-curated-video-discovery-engine` (Discovery, Signal 89, Andrej Karpathy builds and launches hackertube.org in two hours using Claude Opus 5.5 and Sonnet workflows with zero manual coding, indexing 6,454 high-signal YouTube videos from 40,000 historical Hacker News recommendations across 150 topics).
+  - `art-329`: `kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty` (Industry-Watch, Signal 88, KDE developer Eike Hein introduces Kwi, an experimental GPU-accelerated terminal emulator for KDE Plasma and Wayland embedding Mitchell Hashimoto's libghostty-vt parser and Qt Scene Graph to achieve 3x–35x speedups over legacy Konsole).
+- **Model Watch:**
+  - Evaluated 72h window feeds: `particle-ai/particle-1` (fine-tune of DeepSeek V4.1 Flash), `openai/gpt-6.1-terra-pro` (serving mode endpoint of tracked GPT-6.1 Terra), `nvidia/DeepSeek-V4.1-Flash-1017-NVFP4` (NVFP4 quantized weights of DeepSeek V4.1 Flash).
+  - No new untracked foundation language models requiring addition to `scripts/model_sources/curated_models.json`. Model count maintained at 144 models.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Monday, November 2, 2026` (5 items linking to art-324..328).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-324..328).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 18 bits from catalog (pairwise 21–37 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed; prerendered 329 articles, 144 models, 10 showdowns; 502 static HTML files, sitemap 500 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly (0 warnings on content/briefing/timestamps).
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-11-02-the-morning-vector.md` (`75bdc80`).
+- **Commits:**
+  - `e5d9104`: `feat(intelligence): daily briefing and articles update [2026-11-02]`
+  - `75bdc80`: `docs(newsletter): The Morning Vector [2026-11-02]`
+- **Stories Dropped / Excluded:**
+  - `Brazilian Court Sanctions Lawyers for Prompt Injection`: Dropped because primary source article was published July 1, 2026 (outside 48h news window).
+  - `Police Chief Unplugs Flock Cameras`: Dropped because The Drive article was published October 23, 2026 (outside 48h news window).
+  - `NASA Voyager 1 Light-Day Milestone`: Dropped because NASA Science explainer was published August 19, 2026 (outside 48h news window).
+  - `Nature IEEE 1,400 Paper Retraction`: Dropped because Nature article was published October 30 00:00 UTC (outside 48h news window).
+  - `Terence Tao on Modern Mathematics`: HTTP 403 on automated fetch; deferred in favor of verified open primary sources.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `e5d9104` / `75bdc80`.
+  - Watch for public benchmark/routing feeds for `microsoft/Mage-VL-Cowork`.
+
 # Handoff — 2026-11-01 (Daily Intelligence Pipeline Run: art-318 to art-323)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated Mage-VL-Cowork, Verification 8/8 Passed, Newsletter Published

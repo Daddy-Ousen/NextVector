@@ -1,3 +1,40 @@
+# Handoff — 2026-11-01 (Daily Intelligence Pipeline Run: art-318 to art-323)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated Mage-VL-Cowork, Verification 8/8 Passed, Newsletter Published
+- **Articles Published (6):**
+  - `art-318`: `microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent` (Hero / Model-Report, Signal 94, Microsoft open-sources Mage-VL-Cowork 4B vision-language model under Apache 2.0, achieving 66.0% on OSWorld-Verified [87.5% on OS tasks] by unifying GUI manipulation and bash terminal execution without an external orchestrator, with online RL cutting token overhead by 25.4%).
+  - `art-319`: `linux-kernel-cve-2026-98432-tcp-handshake-use-after-free` (Featured / Breaking, Signal 93, Linux kernel CNA and Red Hat elevate CVE-2026-98432 to CVSS 9.8 Critical for remote use-after-free in IPv4 TCP option processing allowing pre-application root execution on servers running multipath TCP listeners; RHEL 8/9/10 and Ubuntu remain unpatched).
+  - `art-320`: `google-project-suncatcher-receives-first-tpu-ai-response-from-orbit` (Featured / Discovery, Signal 92, Google Research achieves aerospace milestone with Project Suncatcher, downlinking first operational machine learning inference from a datacenter-grade TPU in orbit to Svalbard polar station via onboard Gemma 4 model).
+  - `art-321`: `cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal` (Deep-Dive, Signal 90, Cisco Talos discovers VOLTA-AUTODOXER, a self-deleting Windows infostealer that routes stolen credentials through OpenRouter using a Claude Opus 4.6 / Kimi K2 / Gemini 2.5 Flash fallback cascade to automatically appraise and prioritize victim assets).
+  - `art-322`: `jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb` (Deep-Dive, Signal 89, Kyle Kingsbury's Jepsen audit of ParticleDB 1.1.4..1.1.18.11.rc-22 reveals 96 bugs including lost committed writes under default OCC mode and Lost Updates under serializable isolation, demonstrating that marketing claims of 'Full ACID' were premature).
+  - `art-323`: `parameter-details-full-chain-chatgpt-account-takeover-via-shared-chats` (Analysis, Signal 89, Parameter researchers detail P1 full-chain account takeover in ChatGPT via public share links, weaponizing an unvalidated postMessage listener in the MathLive virtual keyboard to escape the preview sandbox into the authenticated chatgpt.com session).
+- **Model Watch:**
+  - Evaluated `microsoft/Mage-VL-Cowork` 4B Apache 2.0 release on Hugging Face (66.0% OSWorld-Verified, 87.5% OS tasks). Open weights published on HF without public OpenRouter/Arena listing yet; noted for inclusion when benchmark/routing feeds track it.
+  - Evaluated 72h window candidates: `particle-ai/particle-1` (fine-tune of DeepSeek V4.1 Flash), `openai/gpt-6.1-terra-pro` (serving mode endpoint of tracked GPT-6.1 Terra), `nvidia/DeepSeek-V4.1-Flash-1017-NVFP4` (quantization format of existing model).
+  - Curated registry maintained at 144 models.
+- **Briefing & Signals:**
+  - Updated `MOCK_DAILY_BRIEFING` dated `Sunday, November 1, 2026` (5 items linking to art-318..322).
+  - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-318..322).
+- **Images:**
+  - All 6 local images saved in `public/images/articles/` with unique tokens and perceptual dhash distances ≥ 17 bits from catalog (pairwise 27–40 bits).
+  - `npm run images` executed.
+- **Verification & Builds:**
+  - `npm run build` executed; prerendered 323 articles, 144 models, 10 showdowns; 496 static HTML files, sitemap 494 URLs, RSS 60 items.
+  - `npm run verify` passed ALL 8 RELEASE GATES cleanly (0 warnings on content/briefing/timestamps).
+  - `npm run lint` passed with 0 errors (112 warnings).
+- **Newsletter:**
+  - Drafted, committed, and pushed `newsletters/2026-11-01-the-morning-vector.md` (`6859e9b`).
+- **Commits:**
+  - `8f7308e`: `feat(intelligence): daily briefing and articles update [2026-11-01]`
+  - `6859e9b`: `docs(newsletter): The Morning Vector [2026-11-01]`
+- **Stories Dropped / Excluded:**
+  - `North Korea suspect in Binance hack`: Follow-up attribution speculation; covered core $5.6B breach in art-313.
+  - `Anthropic blocks users / video game cloning`: Terms of service enforcement controversy; prioritized foundational model releases, critical Linux kernel RCE, and orbital AI milestones.
+  - `OpenAI raises less than half of $30B target`: Venture fundraising speculation; deferred in favor of technical vulnerabilities and scientific discoveries.
+- **Open Items:**
+  - Monitor live Vercel deployment of commit `6859e9b` / `8f7308e`.
+  - Watch for OpenRouter or Arena model endpoints for `microsoft/Mage-VL-Cowork`.
+
 # Handoff — 2026-10-30 (Daily Intelligence Pipeline Run: art-312 to art-317)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

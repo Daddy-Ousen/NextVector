@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 06:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:25:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Memdoor Deploys 5-Model Team of Qwen3.8-27B to Outscore Single-Call Frontier Models on LiveCodeBench Hard</title>
+      <link>https://nextvector.rhasan.online/article/memdoor-5-model-team-qwen-beats-fable-on-livecodebench</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/memdoor-5-model-team-qwen-beats-fable-on-livecodebench</guid>
+      <description>By decomposing programming challenges across five fresh-context agents communicating exclusively through disk ledgers, open-weight models achieve a 9.8 out of 10 mean score for $0.39 per run.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 02 Nov 2026 00:25:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Restricts Claude from Video Game Reverse Engineering and Automated Cloning</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-blocks-claude-video-game-cloning-reverse-engineering</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-blocks-claude-video-game-cloning-reverse-engineering</guid>
+      <description>New automated alignment rules targeting demo duplication on Steam Next Fest trigger widespread refusals for developers working on reverse engineering, decompilation, and system troubleshooting.</description>
+      <category>AI</category>
+      <pubDate>Mon, 02 Nov 2026 00:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Hermantown City Council Approves 500MW Google Data Center Development Despite Heated Community Protests</title>
+      <link>https://nextvector.rhasan.online/article/hermantown-city-council-approves-google-data-center-over-protests</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/hermantown-city-council-approves-google-data-center-over-protests</guid>
+      <description>In a midnight session following hours of public opposition, municipal leaders in northeast Minnesota authorized a 1.7 million-square-foot campus backed by a $210 million decommissioning bond.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 02 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>50-Agent AI Swarms in Minecraft Collapse into Paralyzing Bureaucracy in Y Combinator and Olam Labs Study</title>
+      <link>https://nextvector.rhasan.online/article/minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy</guid>
+      <description>Tasked with building a thriving society within a three-hour window, autonomous LLM agents devolved into procedural stalemates, while competitive PvP trials revealed striking architectural divergence.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 02 Nov 2026 00:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Andrej Karpathy Releases HackerTube: An Enshittification-Free Video Engine Built with Claude Code Workflows</title>
+      <link>https://nextvector.rhasan.online/article/karpathy-launches-hackertube-hn-curated-video-discovery-engine</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/karpathy-launches-hackertube-hn-curated-video-discovery-engine</guid>
+      <description>Constructed in two hours using Claude Opus 5.5 and Sonnet automation, the platform indexes 6,454 high-signal YouTube videos recommended across 40,000 historical Hacker News comments.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 02 Nov 2026 00:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>KDE Unveils Kwi: A Next-Generation GPU-Accelerated Terminal Emulator Powered by libghostty</title>
+      <link>https://nextvector.rhasan.online/article/kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty</guid>
+      <description>KDE developer Eike Hein introduces an experimental terminal built on Mitchell Hashimoto&#x27;s libghostty-vt and Qt 6, delivering up to 35x rendering speedups over Konsole alongside modern Kitty graphics protocols.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Microsoft Releases Mage-VL-Cowork: 4B Hybrid Computer-Use Model Bridging GUI Clicks and Terminal Code</title>
       <link>https://nextvector.rhasan.online/article/microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent</link>
@@ -496,60 +550,6 @@
       <description>State court judge reduces potential $219B statutory assessment to record-setting penalty following jury verdict on deceptive user data practices.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Thu, 22 Oct 2026 02:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Claude Designs De Novo Protein Binders Against Fatal Scorpion Neurotoxins in Wet-Lab Validation</title>
-      <link>https://nextvector.rhasan.online/article/claude-designs-protein-binders-against-fatal-scorpion-neurotoxins</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/claude-designs-protein-binders-against-fatal-scorpion-neurotoxins</guid>
-      <description>Anthropic researchers, Citrini, and Twist Bioscience validate 17 AI-engineered minibinders in the lab to accelerate neglected antivenom discovery.</description>
-      <category>SCIENCE</category>
-      <pubDate>Wed, 21 Oct 2026 04:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Mistral AI Launches Voxtral 3: Real-Time Multilingual Speech Models and Voice Agent SDK</title>
-      <link>https://nextvector.rhasan.online/article/mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mistral-ai-launches-voxtral-3-multilingual-speech-models-and-sdk</guid>
-      <description>Paris lab unveils Voxtral Small and Mini Transcribe, emotional TTS across 50 dialects, and an end-to-end voice agent SDK for sovereign enterprise deployment.</description>
-      <category>AI</category>
-      <pubDate>Wed, 21 Oct 2026 04:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Cloudflare, VoidZero, and Oxc Unveil tsrs: Native TypeScript Port to Rust with 8x Speedup</title>
-      <link>https://nextvector.rhasan.online/article/cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-voidzero-oxc-unveil-tsrs-typescript-rust-port</guid>
-      <description>Collaborative project with Microsoft TypeScript team delivers 70% memory reduction and garbage-collection-free WebAssembly compiler execution.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 21 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>DeepSeek Open-Sources DeepInfer: High-Performance Production Inference Engine for V4.1</title>
-      <link>https://nextvector.rhasan.online/article/deepseek-open-sources-deepinfer-production-inference-engine</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/deepseek-open-sources-deepinfer-production-inference-engine</guid>
-      <description>The Beijing lab releases its internal serving framework powering DeepSeek-V4.1-Flash across NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs.</description>
-      <category>AI</category>
-      <pubDate>Wed, 21 Oct 2026 03:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Flawed Key Generation Exposes Eight eMudhra Intermediate Certificate Authorities</title>
-      <link>https://nextvector.rhasan.online/article/flawed-key-generation-exposes-eight-emudhra-intermediate-cas</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/flawed-key-generation-exposes-eight-emudhra-intermediate-cas</guid>
-      <description>Cryptographic breakdown allows mathematical derivation of private keys, triggering emergency certificate revocations across Firefox, Chrome, Apple, and Microsoft.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 21 Oct 2026 03:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>US Homeland Security Directs Civilian Agencies to Remove DeepSeek AI Models</title>
-      <link>https://nextvector.rhasan.online/article/us-homeland-security-directs-civilian-agencies-to-remove-deepseek</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/us-homeland-security-directs-civilian-agencies-to-remove-deepseek</guid>
-      <description>Federal directive mandates elimination of Chinese open-weight models and derivative code across Treasury, State, and Justice departments.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 21 Oct 2026 03:15:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

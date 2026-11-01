@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Sunday, November 1, 2026",
-  summary: "Microsoft open-sources Mage-VL-Cowork, a 4B hybrid computer-use model achieving 66.0% on OSWorld-Verified, while security teams race to patch a critical CVSS 9.8 use-after-free flaw in Linux kernel IPv4 TCP handshakes.",
+  date: "Monday, November 2, 2026",
+  summary: "Multi-agent coordination takes center stage as Memdoor's five-model team of open-weight 27B models outscores single-call frontier models on LiveCodeBench Hard, while Y Combinator's 50-agent Minecraft society stalls in administrative gridlock. Concurrently, municipal authorities in Minnesota approve Google's 500MW data center, Anthropic restricts video game reverse engineering in Claude, and KDE introduces a GPU-accelerated terminal powered by libghostty.",
   items: [
     {
       id: 'brief-1',
-      headline: "Microsoft Releases Mage-VL-Cowork 4B Hybrid Computer-Use Agent",
+      headline: "Memdoor Proves 5-Model Open Architecture Rivals Frontier Coding on LiveCodeBench",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Microsoft's Mage team has open-sourced Mage-VL-Cowork, a compact 4B multimodal model combining GUI screenshot interactions and persistent bash terminal execution without an external orchestrator, scoring 66.0% on OSWorld-Verified.",
-      whyItMatters: "Proves that small 4B on-device vision-language models can master complex computer tasks while cutting inference token consumption by 25.4% through online reinforcement learning.",
-      articleSlug: "microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent"
+      summary: "Coordinating five fresh-context Qwen3.8-27B agents through disk-based ledgers yields a 9.8 / 10 mean on LiveCodeBench Hard for $0.39 per run.",
+      whyItMatters: "Modular workflow decomposition demonstrates that specialized open-weight models can outscore monolithic proprietary models at a fraction of the inference cost.",
+      articleSlug: "memdoor-5-model-team-qwen-beats-fable-on-livecodebench"
     },
     {
       id: 'brief-2',
-      headline: "Critical Linux TCP Handshake Use-After-Free CVE-2026-98432 Disclosed",
-      category: "technology" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Linux kernel maintainers and Red Hat have elevated CVE-2026-98432 to CVSS 9.8 Critical. The remote unauthenticated use-after-free flaw in IPv4 TCP option processing enables arbitrary code execution on servers running multipath TCP listeners.",
-      whyItMatters: "Affects Linux kernels dating back to version 4.4, with major enterprise distributions including RHEL and Ubuntu remaining unpatched as of October 31.",
-      articleSlug: "linux-kernel-cve-2026-98432-tcp-handshake-use-after-free"
+      headline: "Anthropic Clamps Down on Claude Video Game Cloning and Reverse Engineering",
+      category: "ai" as const,
+      urgency: "High Impact" as const,
+      summary: "Automated guardrails targeting Steam demo duplication trigger widespread refusals across benign developer debugging and security workflows.",
+      whyItMatters: "Broad commercial safeguards are accelerating developer migration toward self-hosted open-weight models for systems and security engineering.",
+      articleSlug: "anthropic-blocks-claude-video-game-cloning-reverse-engineering"
     },
     {
       id: 'brief-3',
-      headline: "Google Project Suncatcher Receives First TPU AI Response from Space",
-      category: "science" as const,
+      headline: "Hermantown Approves 500MW Google Data Center Despite Vocal Citizen Pushback",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Google Research has confirmed the first operational AI response from a datacenter-class TPU in Earth orbit. An onboard Gemma 4 open model generated space telemetry and poetry downlinked to a ground station in Svalbard, Norway.",
-      whyItMatters: "Validates the survivability and execution of production tensor accelerator silicon in orbital radiation environments ahead of twin interconnected satellite trials in 2027.",
-      articleSlug: "google-project-suncatcher-receives-first-tpu-ai-response-from-orbit"
+      summary: "City Council votes unanimously at midnight to greenlight a 1.7M sq ft campus backed by a $210M decommissioning bond amid heavy power grid concerns.",
+      whyItMatters: "Hyperscale AI infrastructure continues to collide with municipal electrical capacity, drawing legal challenges across Minnesota.",
+      articleSlug: "hermantown-city-council-approves-google-data-center-over-protests"
     },
     {
       id: 'brief-4',
-      headline: "Cisco Talos Identifies VOLTA Malware Leveraging LLMs for Victim Triage",
+      headline: "50-Agent Minecraft Swarm Stalls in Bureaucracy in Y Combinator Simulation",
       category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "Cisco Talos has documented VOLTA-AUTODOXER, a self-deleting Windows infostealer that POSTs stolen credentials and session data to OpenRouter, using a three-model fallback chain to appraise victims and evaluate operational security posture.",
-      whyItMatters: "Marks the first observed real-world crimeware deployment where foundation models serve as automated intelligence analysts rather than basic code-generation tools.",
-      articleSlug: "cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal"
+      urgency: "Notable Shift" as const,
+      summary: "Large autonomous agent populations fail to build civilization after early setbacks, devolving into circular negotiations over minor chores.",
+      whyItMatters: "Highlights that naive agent population scaling introduces severe organizational overhead and procedural gridlock.",
+      articleSlug: "minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy"
     },
     {
       id: 'brief-5',
-      headline: "Jepsen Analysis Reveals 96 Integrity and ACID Defects in ParticleDB",
+      headline: "KDE Unveils Kwi: A GPU-Accelerated Terminal Emulator Built on libghostty",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Kyle Kingsbury's Jepsen analysis of ParticleDB versions 1.1.4 through 1.1.18.11.rc-22 uncovered 96 distinct bugs, demonstrating lost committed writes under default optimistic concurrency control and lost updates under serializable isolation.",
-      whyItMatters: "Exposes significant divergence between formal marketing claims of full ACID compliance and actual distributed database safety in production AI data backends.",
-      articleSlug: "jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb"
+      summary: "Replacing Konsole's legacy QWidget internals with libghostty-vt and Qt Quick delivers up to 35x faster rendering and modern Kitty graphics.",
+      whyItMatters: "Brings next-generation terminal performance and modular embedding to the Kirigami and Wayland desktop ecosystem.",
+      articleSlug: "kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Mage-VL-Cowork",
-    text: "Microsoft open-sources 4B Mage-VL-Cowork leading OSWorld-Verified with 66.0% score.",
-    articleSlug: "microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent"
+    tag: "AGENT CODING",
+    text: "Memdoor's 5-agent Qwen3.8 team matches frontier reasoning on LiveCodeBench for $0.39/run.",
+    articleSlug: "memdoor-5-model-team-qwen-beats-fable-on-livecodebench"
   },
   {
     id: 'sig-2',
-    tag: "Linux TCP UAF",
-    text: "Critical CVSS 9.8 flaw CVE-2026-98432 threatens Linux IPv4 TCP handshakes on servers.",
-    articleSlug: "linux-kernel-cve-2026-98432-tcp-handshake-use-after-free"
+    tag: "AI ALIGNMENT",
+    text: "Anthropic restricts Claude Code from game cloning, triggering collateral developer refusals.",
+    articleSlug: "anthropic-blocks-claude-video-game-cloning-reverse-engineering"
   },
   {
     id: 'sig-3',
-    tag: "Project Suncatcher",
-    text: "Google downlinks first TPU AI response from prototype orbit satellite in Svalbard.",
-    articleSlug: "google-project-suncatcher-receives-first-tpu-ai-response-from-orbit"
+    tag: "AI INFRASTRUCTURE",
+    text: "Hermantown approves 500MW Google data center campus with $210M decommissioning guarantee.",
+    articleSlug: "hermantown-city-council-approves-google-data-center-over-protests"
   },
   {
     id: 'sig-4',
-    tag: "VOLTA Infostealer",
-    text: "Cisco Talos finds malware using LLM fallback chain to appraise and dox stolen assets.",
-    articleSlug: "cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal"
+    tag: "SWARM DYNAMICS",
+    text: "50-agent Minecraft simulation falls into bureaucracy, spending 11 min on one fertilizer task.",
+    articleSlug: "minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy"
   },
   {
     id: 'sig-5',
-    tag: "ParticleDB Jepsen",
-    text: "Jepsen audit uncovers 96 integrity issues and lost writes in ParticleDB AI database.",
-    articleSlug: "jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb"
+    tag: "OPEN SOURCE",
+    text: "KDE introduces Kwi, an experimental GPU terminal emulator powered by libghostty and Qt 6.",
+    articleSlug: "kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty"
   }
 ];

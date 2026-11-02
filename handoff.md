@@ -1,3 +1,43 @@
+# Handoff — 2026-11-03 (Daily Intelligence Pipeline Run: art-330 to art-335)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face.
+  - Sourced, verified, and wrote 6 original articles (`art-330` to `art-335`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-330`: `weight-space-programming-mit-csail-llms-read-write-weights` (Hero / Research-Explained, Signal 94, MIT CSAIL researchers demonstrate frontier LLMs natively reading and writing continuous neural weights without gradients; decodes RL policies with 99% accuracy; zero-shot writes MinAtar and Go policies; surgically edits 0.016% weights in Qwen3.5-0.8B to fix reasoning loops, lifting MATH-500 from 7.9% to 48.1%).
+    - `art-331`: `supermarket-freezers-across-europe-hit-by-second-wave-cyberattack` (Featured / Breaking, Signal 92, Coordinated OT cyberattacks at 2 AM breach third-party refrigeration platforms like Sabcobel to heat supermarket freezers to 50°C [122°F] across Belgium, Sweden, Finland, and Ireland; zero financial ransom demands; tens of thousands of tonnes of perishable food destroyed).
+    - `art-332`: `posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake` (Featured / Deep-Dive, Signal 91, PostHog documents migrating 2 PB warehouse [~1T rows, 15.3M snapshots] off DuckDB and DuckLake to Trino and HogLake due to container memory spilling, 3+ minute catalog commit serialization, and >99% metadata bloat from dead tables).
+    - `art-333`: `cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent` (Deep-Dive, Signal 90, Cloudflare deploys Targeted Zone Build planner handling 700 changes/sec across zones with >20M records; bypasses full recompilation for 92.95% of changes; cuts peak memory 85% [79 to 12 GiB]; halves median delay to 3.3s; compresses p99 tail latency 12-fold from 14.6 min to 1.21 min).
+    - `art-334`: `byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume` (Analysis, Signal 89, BYD ships record 305,743 pure BEVs in October [up 37.1% YoY], surpassing entire US Q3 EV sales volume across all makers combined [~262,500 units]; exports top 170k supported by Blade Battery 2.0 6C Flash Charging and Ro-Ro carrier fleet).
+    - `art-335`: `polyend-open-sources-tracker-firmware-releases-community-edition-1` (Industry-Watch, Signal 88, Polyend open-sources complete firmware for Tracker, Tracker+, and Tracker Mini on GitHub with anti-brick recovery; ships Community Edition 1.0 with direct SD card sample streaming, dedicated step parameter fields, and custom C++ audio DSP and synthesizer SDKs [CHIP and DIRT engines]).
+  - **Model Watch:**
+    - Evaluated 72h window feeds: `particle-ai/particle-1` (fine-tune of DeepSeek V4.1 Flash), `openai/gpt-6.1-terra-pro` (serving mode endpoint of tracked GPT-6.1 Terra), `z-ai/glm-5.3-flashx-legal` (domain-specific legal fine-tune).
+    - Zero new untracked foundation language models requiring curation in `scripts/model_sources/curated_models.json`. Model count maintained at 144 models.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Tuesday, November 3, 2026` (5 items linking to art-330..334).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-330..334).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 16$ bits from existing catalog, $24\text{--}37$ bits pairwise).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-03-the-morning-vector.md` (`f69f2f7`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 335 articles, 144 models, 10 showdowns; 508 static HTML files, sitemap 506 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `b87d106` (content update), `f69f2f7` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Wednesday, November 4, 2026.
+  - Monitor Hugging Face / OpenRouter for new foundation model releases.
+- **Gotchas & Key Learnings:**
+  - `add_articles.py` enforces `category` in `['ai', 'research', 'science', 'technology']` for both articles and briefing items.
+  - `add_articles.py` enforces `articleType` in lowercase (`['analysis', 'benchmark-report', 'breaking', 'deep-dive', 'discovery', 'industry-watch', 'model-report', 'research-explained']`).
+  - `add_articles.py` requires `content` to be a list of 3+ paragraph strings, and checks `SequenceMatcher(None, para.lower(), ans.lower()).ratio() <= 0.6` against `threeQuestions` (Rulebook 2.4 No-Restating Rule).
+  - On Windows PowerShell, command chaining must use `;` instead of `&&`.
+  - Prerender with 335 articles benefits from `$env:NODE_OPTIONS="--max-old-space-size=8192"`.
+
+---
+
 # Handoff — 2026-11-02 (Daily Intelligence Pipeline Run: art-324 to art-329)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 00:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:25:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Weight-Space Programming: MIT CSAIL Demonstrates LLMs Natively Reading and Writing Continuous Neural Weights</title>
+      <link>https://nextvector.rhasan.online/article/weight-space-programming-mit-csail-llms-read-write-weights</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/weight-space-programming-mit-csail-llms-read-write-weights</guid>
+      <description>Researchers demonstrate that frontier language models can parse neural architectures, decode learned game policies, and edit weights directly without backpropagation.</description>
+      <category>AI</category>
+      <pubDate>Tue, 03 Nov 2026 00:25:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>European Supermarket Freezers Sabotaged by Second Wave of Heating Cyberattacks</title>
+      <link>https://nextvector.rhasan.online/article/supermarket-freezers-across-europe-hit-by-second-wave-cyberattack</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/supermarket-freezers-across-europe-hit-by-second-wave-cyberattack</guid>
+      <description>Coordinated operational technology breach remotely switches cooling units to 50°C across Belgium, Sweden, Finland, and Ireland with zero financial extortion demands.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 00:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>PostHog Migrates 2-Petabyte Analytics Warehouse Off DuckDB to Trino and HogLake</title>
+      <link>https://nextvector.rhasan.online/article/posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake</guid>
+      <description>Why running analytical SQL over one trillion rows broke DuckLake&#x27;s metadata catalog and forced an architectural shift to an open distributed lakehouse.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Cloudflare Cuts DNS Tail Latency 12-Fold and Halves Propagation Delay via Targeted Zone Builds</title>
+      <link>https://nextvector.rhasan.online/article/cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent</guid>
+      <description>By avoiding full-zone recompilations for 92.95% of DNS changes, Cloudflare slashed peak pipeline memory from 79 GiB to 12 GiB.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 00:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>BYD Ships Record 305,000 Pure EVs in October, Exceeding Entire US Quarterly Sales Volume</title>
+      <link>https://nextvector.rhasan.online/article/byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume</guid>
+      <description>China&#x27;s leading automaker achieves 37% annual BEV growth while maritime export carrier deliveries push international volumes toward 2 million units.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 00:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Polyend Open-Sources Hardware Tracker Firmware and Launches Community Edition 1.0</title>
+      <link>https://nextvector.rhasan.online/article/polyend-open-sources-tracker-firmware-releases-community-edition-1</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/polyend-open-sources-tracker-firmware-releases-community-edition-1</guid>
+      <description>The boutique music hardware maker releases source code for Tracker, Tracker+, and Mini alongside custom C++ synth and audio DSP plugin SDKs.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Memdoor Deploys 5-Model Team of Qwen3.8-27B to Outscore Single-Call Frontier Models on LiveCodeBench Hard</title>
       <link>https://nextvector.rhasan.online/article/memdoor-5-model-team-qwen-beats-fable-on-livecodebench</link>
@@ -496,60 +550,6 @@
       <description>By directly maximizing the probability of a correct terminal solution across partial reasoning prefixes, the new framework resolves the quality-versus-diversity trade-off across eight open models.</description>
       <category>SCIENCE</category>
       <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>PHP2Shell: AI Uncovers Decade-Old Critical RCE Vulnerability in Core PHP Engine</title>
-      <link>https://nextvector.rhasan.online/article/php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/php2shell-ai-discovers-decade-old-rce-vulnerability-in-core-php</guid>
-      <description>Wiz Research and OpenAI&#x27;s Patch the Planet coalition discover flaws dating back to PHP 5.4, prompting emergency updates across 70% of the web.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 22 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Unveils Claude Duet: Proactive Autonomous Agent Powered by Opus 5.5</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-unveils-claude-duet-proactive-autonomous-agent</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-unveils-claude-duet-proactive-autonomous-agent</guid>
-      <description>San Francisco lab debuts ambient assistant that works continuously in the background, drafts morning briefs, and manages 6,000+ connectors.</description>
-      <category>AI</category>
-      <pubDate>Thu, 22 Oct 2026 03:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Partners with Google Cloud: Frontier Models and Codex Enter Model Garden</title>
-      <link>https://nextvector.rhasan.online/article/openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-partners-with-google-cloud-bringing-frontier-models-to-model-garden</guid>
-      <description>Enterprise deal lets Google Cloud customers draw down commit spend for GPT-6 Astra and Codex agent workflows via GCP Marketplace.</description>
-      <category>AI</category>
-      <pubDate>Thu, 22 Oct 2026 03:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>DuckDB Releases Version 2.0.0 LTS &#x27;Cinnamon Teal&#x27; with Network Server Mode and Async I/O</title>
-      <link>https://nextvector.rhasan.online/article/duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/duckdb-releases-version-2-0-lts-cinnamon-teal-with-network-server-mode</guid>
-      <description>Major analytical database milestone brings the Quack client-server protocol, native VARIANT types, and Long-Term Support through October 2027.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 22 Oct 2026 03:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Compromised LiteLLM Release on PyPI Deploys Stealth Credential Stealer and Backdoor</title>
-      <link>https://nextvector.rhasan.online/article/compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/compromised-litellm-release-on-pypi-deploys-stealth-credential-backdoor</guid>
-      <description>Supply chain attack embeds malicious code inside compiled wheels of version 1.107.0, harvesting API secrets on every Python startup.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 22 Oct 2026 03:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Meta Penalized $25 Billion in Historic New Mexico Cambridge Analytica Ruling</title>
-      <link>https://nextvector.rhasan.online/article/meta-penalized-25-billion-in-new-mexico-cambridge-analytica-suit</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-penalized-25-billion-in-new-mexico-cambridge-analytica-suit</guid>
-      <description>State court judge reduces potential $219B statutory assessment to record-setting penalty following jury verdict on deceptive user data practices.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 22 Oct 2026 02:45:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

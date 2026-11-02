@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Monday, November 2, 2026",
-  summary: "Multi-agent coordination takes center stage as Memdoor's five-model team of open-weight 27B models outscores single-call frontier models on LiveCodeBench Hard, while Y Combinator's 50-agent Minecraft society stalls in administrative gridlock. Concurrently, municipal authorities in Minnesota approve Google's 500MW data center, Anthropic restricts video game reverse engineering in Claude, and KDE introduces a GPU-accelerated terminal powered by libghostty.",
+  date: "Tuesday, November 3, 2026",
+  summary: "MIT CSAIL researchers unveil weight-space programming allowing frontier LLMs to read and surgically edit continuous neural weights without gradient descent; a second wave of industrial cyberattacks strikes European supermarket refrigeration networks; PostHog moves a 2 PB analytics warehouse from DuckDB to Trino and HogLake; Cloudflare slashes DNS propagation delays by half; and BYD sells 305k pure electric vehicles in a single month.",
   items: [
     {
       id: 'brief-1',
-      headline: "Memdoor Proves 5-Model Open Architecture Rivals Frontier Coding on LiveCodeBench",
+      headline: "MIT CSAIL Demonstrates LLMs Natively Reading and Writing Continuous Neural Network Weights",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Coordinating five fresh-context Qwen3.8-27B agents through disk-based ledgers yields a 9.8 / 10 mean on LiveCodeBench Hard for $0.39 per run.",
-      whyItMatters: "Modular workflow decomposition demonstrates that specialized open-weight models can outscore monolithic proprietary models at a fraction of the inference cost.",
-      articleSlug: "memdoor-5-model-team-qwen-beats-fable-on-livecodebench"
+      summary: "Frontier LLMs directly decode learned game policies from raw MLP weights with 99% accuracy and surgically edit 0.016% of weights to cure reasoning loops, raising MATH-500 from 7.9% to 48.1% without backpropagation.",
+      whyItMatters: "Treating neural weights as a readable and writable programming language bypasses gradient descent, opening new frontiers for mechanistic interpretability and instant weight-level model alignment.",
+      articleSlug: "weight-space-programming-mit-csail-llms-read-write-weights"
     },
     {
       id: 'brief-2',
-      headline: "Anthropic Clamps Down on Claude Video Game Cloning and Reverse Engineering",
-      category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "Automated guardrails targeting Steam demo duplication trigger widespread refusals across benign developer debugging and security workflows.",
-      whyItMatters: "Broad commercial safeguards are accelerating developer migration toward self-hosted open-weight models for systems and security engineering.",
-      articleSlug: "anthropic-blocks-claude-video-game-cloning-reverse-engineering"
+      headline: "Coordinated Cyberattacks Remotely Heat European Supermarket Freezers to 50°C",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "A second wave of operational technology intrusions overrides commercial cooling controls at 2 AM across Belgium, Sweden, Finland, and Ireland, forcing massive food disposal with no financial ransom demands.",
+      whyItMatters: "The breach demonstrates unmitigated cyber-physical risk across critical food supply chains, where sabotage of shared building management systems causes widespread physical damage without data encryption.",
+      articleSlug: "supermarket-freezers-across-europe-hit-by-second-wave-cyberattack"
     },
     {
       id: 'brief-3',
-      headline: "Hermantown Approves 500MW Google Data Center Despite Vocal Citizen Pushback",
+      headline: "PostHog Migrates 2-Petabyte Data Warehouse Off DuckDB to Trino and HogLake",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "City Council votes unanimously at midnight to greenlight a 1.7M sq ft campus backed by a $210M decommissioning bond amid heavy power grid concerns.",
-      whyItMatters: "Hyperscale AI infrastructure continues to collide with municipal electrical capacity, drawing legal challenges across Minnesota.",
-      articleSlug: "hermantown-city-council-approves-google-data-center-over-protests"
+      summary: "Managing one trillion rows and 15 million snapshots overwhelmed DuckLake's metadata catalog, driving a migration to a distributed query engine and open cloud table format.",
+      whyItMatters: "Single-node analytical engines encounter severe wall-clock bottlenecks when handling high-concurrency cloud writes and massive catalog churn, clarifying the operational boundaries of embedded OLAP.",
+      articleSlug: "posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake"
     },
     {
       id: 'brief-4',
-      headline: "50-Agent Minecraft Swarm Stalls in Bureaucracy in Y Combinator Simulation",
-      category: "ai" as const,
+      headline: "Cloudflare Cuts DNS Tail Latency 12-Fold via Targeted Zone Rebuilds",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Large autonomous agent populations fail to build civilization after early setbacks, devolving into circular negotiations over minor chores.",
-      whyItMatters: "Highlights that naive agent population scaling introduces severe organizational overhead and procedural gridlock.",
-      articleSlug: "minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy"
+      summary: "Targeting record changes avoids full-zone recompilations for 92.95% of events, reducing peak pipeline memory by 85% and cutting median global DNS propagation delay to 3.3 seconds.",
+      whyItMatters: "Eliminating batch recomputation in high-frequency authoritative DNS infrastructure prevents cascading latency spikes across zones with tens of millions of records.",
+      articleSlug: "cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent"
     },
     {
       id: 'brief-5',
-      headline: "KDE Unveils Kwi: A GPU-Accelerated Terminal Emulator Built on libghostty",
+      headline: "BYD Sells Record 305k Pure Electric Vehicles in October, Surpassing US Quarterly Volume",
       category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Replacing Konsole's legacy QWidget internals with libghostty-vt and Qt Quick delivers up to 35x faster rendering and modern Kitty graphics.",
-      whyItMatters: "Brings next-generation terminal performance and modular embedding to the Kirigami and Wayland desktop ecosystem.",
-      articleSlug: "kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty"
+      summary: "China's automotive giant posted 37% year-over-year BEV growth and exported over 170k vehicles in October, accelerating global maritime vehicle delivery toward 2 million units in 2026.",
+      whyItMatters: "Single-manufacturer volume exceeding the total quarterly output of the world's second-largest automotive market highlights the accelerating scale advantages of vertically integrated battery manufacturing.",
+      articleSlug: "byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "AGENT CODING",
-    text: "Memdoor's 5-agent Qwen3.8 team matches frontier reasoning on LiveCodeBench for $0.39/run.",
-    articleSlug: "memdoor-5-model-team-qwen-beats-fable-on-livecodebench"
+    tag: "WEIGHT SPACE",
+    text: "MIT CSAIL proves frontier LLMs can read and edit raw neural network weights zero-shot.",
+    articleSlug: "weight-space-programming-mit-csail-llms-read-write-weights"
   },
   {
     id: 'sig-2',
-    tag: "AI ALIGNMENT",
-    text: "Anthropic restricts Claude Code from game cloning, triggering collateral developer refusals.",
-    articleSlug: "anthropic-blocks-claude-video-game-cloning-reverse-engineering"
+    tag: "CYBER SABOTAGE",
+    text: "Supermarket freezers across 7 EU nations remotely heated to 50°C in coordinated OT sabotage.",
+    articleSlug: "supermarket-freezers-across-europe-hit-by-second-wave-cyberattack"
   },
   {
     id: 'sig-3',
-    tag: "AI INFRASTRUCTURE",
-    text: "Hermantown approves 500MW Google data center campus with $210M decommissioning guarantee.",
-    articleSlug: "hermantown-city-council-approves-google-data-center-over-protests"
+    tag: "LAKEHOUSE SCALING",
+    text: "PostHog moves 2 PB warehouse off DuckDB to Trino and HogLake after hitting catalog limits.",
+    articleSlug: "posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake"
   },
   {
     id: 'sig-4',
-    tag: "SWARM DYNAMICS",
-    text: "50-agent Minecraft simulation falls into bureaucracy, spending 11 min on one fertilizer task.",
-    articleSlug: "minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy"
+    tag: "DNS ARCHITECTURE",
+    text: "Cloudflare slashes DNS propagation delay 57% and cuts peak pipeline memory from 79 to 12 GiB.",
+    articleSlug: "cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent"
   },
   {
     id: 'sig-5',
-    tag: "OPEN SOURCE",
-    text: "KDE introduces Kwi, an experimental GPU terminal emulator powered by libghostty and Qt 6.",
-    articleSlug: "kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty"
+    tag: "EV EXPANSION",
+    text: "BYD sells record 305,743 pure EVs in October, outperforming total Q3 US electric auto sales.",
+    articleSlug: "byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume"
   }
 ];

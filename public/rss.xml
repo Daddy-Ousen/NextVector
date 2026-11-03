@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Scaling Git at OpenAI: Inside Pando, the Custom Backend Built for Agentic Coding Surges</title>
+      <link>https://nextvector.rhasan.online/article/openai-unveils-pando-git-backend-scaling-agentic-commits</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-unveils-pando-git-backend-scaling-agentic-commits</guid>
+      <description>How autonomous agents drove main branch commits up 1,300%, forcing OpenAI to replace traditional Git servers with an independent-ref distributed architecture.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Postman Faces Developer Backlash After Desktop Update Silently Injects Local AI Agent Hooks</title>
+      <link>https://nextvector.rhasan.online/article/postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash</guid>
+      <description>Version 12.33.4 modified local configuration files for Codex and Claude Code to register background MCP servers without user consent.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 23:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>First Cross-Framework MCP Study Finds 22.9% Attack Success Rate with Zero Framework Defenses</title>
+      <link>https://nextvector.rhasan.online/article/first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate</guid>
+      <description>Evaluating 9,720 cells across 12 frameworks and 18 models reveals that tool poisoning vulnerability is determined by the underlying LLM rather than agent software.</description>
+      <category>RESEARCH</category>
+      <pubDate>Tue, 03 Nov 2026 23:50:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Could a 1995 Pentium Pro Beat Kasparov? Carlini Proves Algorithmic Advances Drive Chess Mastery</title>
+      <link>https://nextvector.rhasan.online/article/carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo</guid>
+      <description>Running a modern 32-bit Stockfish build on a physical 200 MHz Intel Pentium Pro achieves 3300 Elo, eclipsing Deep Blue&#x27;s custom ASIC supercomputer.</description>
+      <category>RESEARCH</category>
+      <pubDate>Tue, 03 Nov 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Ties Student Search to Gemini in Schools, Forcing an All-or-Nothing AI Choice</title>
+      <link>https://nextvector.rhasan.online/article/google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice</guid>
+      <description>New 2027 policy will disable Google Search for K-12 districts that opt out of AI, drawing antitrust scrutiny and educator protests.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 23:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Stringman Unveils $800 Open-Source Ceiling Cable Robot for Room-Scale Manipulation</title>
+      <link>https://nextvector.rhasan.online/article/stringman-open-source-800-dollar-cable-driven-room-robot-lerobot</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/stringman-open-source-800-dollar-cable-driven-room-robot-lerobot</guid>
+      <description>Neufangled Robotics bypasses wheeled chassis and humanoid joints with a four-anchor ceiling cable crane running Hugging Face LeRobot.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 03 Nov 2026 23:35:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Weight-Space Programming: MIT CSAIL Demonstrates LLMs Natively Reading and Writing Continuous Neural Weights</title>
       <link>https://nextvector.rhasan.online/article/weight-space-programming-mit-csail-llms-read-write-weights</link>
@@ -496,60 +550,6 @@
       <description>Controlled research introducing the Human Deference Index finds that confident AI misinformation plummets subject quiz accuracy from 7.4 to 2.9 out of 10 while preserving high subjective trust.</description>
       <category>SCIENCE</category>
       <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Moonshot AI Unveils Kimi K3.1 Pro: 3T-Class Open-Weight Model Scores 65.7% on Terminal-Bench</title>
-      <link>https://nextvector.rhasan.online/article/moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/moonshot-ai-unveils-kimi-k3-1-pro-multimodal-reasoning-model</guid>
-      <description>Featuring a 1-million-token context window, Moonshot AI&#x27;s post-trained reasoning model edges past GPT-6 Astra on real-world coding benchmarks while preparing weights for a November 4 open release.</description>
-      <category>AI</category>
-      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Block Debuts Dessa: Full-Duplex Speech Model Trained Solely on Human Audio</title>
-      <link>https://nextvector.rhasan.online/article/block-debuts-dessa-full-duplex-speech-model-trained-on-audio</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/block-debuts-dessa-full-duplex-speech-model-trained-on-audio</guid>
-      <description>Trained on a single NVIDIA GB200 NVL72 rack without text or pre-trained LLMs, the voice-native model masters live interruptions, mid-sentence laughter, and real-time empathy.</description>
-      <category>AI</category>
-      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Coalition of 71 Rights Groups Mounts Global Resistance to Google&#x27;s 2027 Android Lockdown</title>
-      <link>https://nextvector.rhasan.online/article/coalition-of-71-rights-groups-protests-google-android-lockdown</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/coalition-of-71-rights-groups-protests-google-android-lockdown</guid>
-      <description>EFF, FSF, Tor Project, and Proton unite against Google Play Services mandates that force developer ID verification and silence unapproved sideloaded apps.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenSSL 4.1.0 Ships with DTLS 1.3 Support and Hardware-Optimized Post-Quantum Crypto</title>
-      <link>https://nextvector.rhasan.online/article/openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openssl-4-1-0-ships-with-dtls-1-3-and-post-quantum-cryptography</guid>
-      <description>The major feature release brings RFC 9147 DTLS 1.3, RFC 8701 GREASE, AVX-512 acceleration for ML-DSA and ML-KEM, while dropping legacy Windows CE architectures.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Updates Privacy Policy to Link Gmail, Drive, and Photos AI to Targeted Advertising</title>
-      <link>https://nextvector.rhasan.online/article/google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-updates-privacy-policy-linking-gmail-photos-ai-to-targeted-ads</guid>
-      <description>A quiet revision adds an exception to Google&#x27;s decade-old pledge, permitting Search and Gemini Personal Intelligence features to route private user content into ad targeting.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>USC Researchers Introduce Direct Pass@k Optimization for Thought Pruning in Test-Time Reasoning</title>
-      <link>https://nextvector.rhasan.online/article/direct-pass-k-optimization-thought-pruning-test-time-reasoning</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/direct-pass-k-optimization-thought-pruning-test-time-reasoning</guid>
-      <description>By directly maximizing the probability of a correct terminal solution across partial reasoning prefixes, the new framework resolves the quality-versus-diversity trade-off across eight open models.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sat, 24 Oct 2026 04:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

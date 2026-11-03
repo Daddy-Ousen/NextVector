@@ -1,3 +1,40 @@
+# Handoff — 2026-11-04 (Daily Intelligence Pipeline Run: art-336 to art-341)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face.
+  - Sourced, verified, and published 6 original articles (`art-336` to `art-341`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-336`: `openai-unveils-pando-git-backend-scaling-agentic-commits` (Hero / Deep-Dive, Signal 93, OpenAI details Pando, a custom Git-compatible distributed repository backend built to manage a 1,300% surge in main-branch commits triggered by automated Codex workflows; decouples reference updates via independent coordination; cuts median push latency 5x and processes ~1 PB of Git throughput daily).
+    - `art-337`: `postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash` (Featured / Breaking, Signal 92, Postman desktop v12.33.4 sparks developer backlash [GitHub #14370, 899 HN pts] after silently injecting trusted startup hooks into `~/.codex/config.toml` to force local coding agents to auto-load Postman MCP servers).
+    - `art-338`: `first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate` (Featured / Research-Explained, Signal 91, First empirical cross-framework evaluation of Model Context Protocol tool poisoning across 9,720 cells [12 frameworks, 18 models] finds 22.9% attack success rate, with zero frameworks implementing intentional defense and resistance determined entirely by model-level refusal).
+    - `art-339`: `carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo` (Discovery, Signal 90, Google DeepMind researcher Nicholas Carlini runs a custom 32-bit Stockfish build on a physical 1995 200 MHz Intel Pentium Pro with 64MB RAM at ~3300 Elo, eclipsing Deep Blue and proving 30 years of chess progress were driven by algorithmic search rather than compute scaling).
+    - `art-340`: `google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice` (Analysis, Signal 89, Google announces early-2027 K-12 policy disabling Search by default and creating an all-or-nothing bundle where school districts that ban or restrict Gemini AI lose student access to Google Search entirely).
+    - `art-341`: `stringman-open-source-800-dollar-cable-driven-room-robot-lerobot` (Industry-Watch, Signal 88, Nathaniel Nifong open-sources Stringman, an $800 ceiling cable-driven parallel robot using ST3215 servos and Hugging Face LeRobot to manipulate household clutter across entire room volumes without wheeled chassis).
+  - **Model Watch:**
+    - Evaluated 72h window feeds: `stealth/crouton-alpha` (anonymous preview model on OpenRouter with 1M context, free tier, no public author or benchmarks), `particle-ai/particle-1` (fine-tune of DeepSeek V4.1 Flash), `openai/gpt-6.1-terra-pro` (serving mode endpoint of tracked GPT-6.1 Terra), `z-ai/glm-5.3-flashx-legal` (domain legal fine-tune).
+    - Zero new untracked foundation language models requiring curation in `scripts/model_sources/curated_models.json`. Model count maintained at 144 models.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Wednesday, November 4, 2026` (5 items linking to art-336..340).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-336..340).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 16$ bits from existing catalog, $26\text{--}42$ bits pairwise).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-04-the-morning-vector.md` (`cdadaa9`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 341 articles, 144 models, 10 showdowns; 514 static HTML files, sitemap 512 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `8570139` (content update), `cdadaa9` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Thursday, November 5, 2026.
+  - Monitor Hugging Face / OpenRouter for identity and benchmark reveals regarding `stealth/crouton-alpha`.
+- **Gotchas & Key Learnings:**
+  - Avoid re-using common Unsplash tokens across editions; verify both token absence and binary dhash $\ge 14$ bits before writing the batch.
+  - When UTC crosses between days, coordinate article `publishedAt` timestamps so the newest article aligns with the target edition weekday/date for Gate 2.
+
+---
+
 # Handoff — 2026-11-03 (Daily Intelligence Pipeline Run: art-330 to art-335)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

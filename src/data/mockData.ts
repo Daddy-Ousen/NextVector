@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Wednesday, November 4, 2026",
-  summary: "OpenAI details Pando, its custom distributed Git backend built to survive a 1,300% surge in agentic coding commits; Postman triggers intense developer backlash by auto-installing local AI CLI hooks; the first cross-framework measurement of MCP tool poisoning exposes a 22.9% exploit rate across 12 frameworks; Nicholas Carlini demonstrates that 30 years of algorithmic search allows a 1995 Pentium Pro to defeat Garry Kasparov at 3300 Elo; and Google ties student web search directly to Gemini in K-12 schools.",
+  date: "Thursday, November 5, 2026",
+  summary: "Frontier AI engineering advances into dense efficiency with Ripple-65B and cryptographic provability with Anthropic FlashProve. Meanwhile, European cooling cyberattacks expand into healthcare while US voters deliver unprecedented midterm pushback against hyperscale data center construction.",
   items: [
     {
       id: 'brief-1',
-      headline: "OpenAI Unveils Pando Distributed Git Backend to Scale Agentic Coding Surges",
-      category: "technology" as const,
+      headline: "Ripple-65B Preview sets U.S. open-weight agentic coding SOTA at one-tenth training cost",
+      category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Surging Codex commits prompted OpenAI to build Pando, an independent-ref distributed Git backend processing petabyte-scale throughput daily while cutting push latency 5x.",
-      whyItMatters: "Scaling version control for continuous autonomous coding agents proves that foundational developer tooling must be re-architected as machine-generated code surpasses human commit volume.",
-      articleSlug: "openai-unveils-pando-git-backend-scaling-agentic-commits"
+      summary: "Ricursive Intelligence open-sources a 65B dense model trained on 12T tokens for $32M that tops TerminalBench 2.1.",
+      whyItMatters: "Proves dense architectural refinement and synthetic RL can beat massive MoE clusters with dramatically less capital.",
+      articleSlug: "ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota"
     },
     {
       id: 'brief-2',
-      headline: "Postman Desktop App Silently Modifies Local AI Coding Agent Configurations",
-      category: "technology" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Postman version 12.33.4 triggered severe developer backlash after silently injecting startup hooks and trusted hashes into ~/.codex/config.toml to force MCP server adoption.",
-      whyItMatters: "Desktop applications tampering with local CLI environments and AI agent configuration files breaches security trust boundaries in developer tooling.",
-      articleSlug: "postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash"
+      headline: "Anthropic FlashProve brings zkSNARK cryptographic verification to 400B frontier models",
+      category: "research" as const,
+      urgency: "High Impact" as const,
+      summary: "New zero-knowledge proof system validates model outputs at 110 tokens/sec on a single H100 GPU.",
+      whyItMatters: "Eliminates model substitution vulnerabilities and establishes mathematical verification for AI routing pipelines.",
+      articleSlug: "anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models"
     },
     {
       id: 'brief-3',
-      headline: "First Cross-Framework MCP Study Finds 22.9% Tool Poisoning Exploit Rate",
-      category: "research" as const,
-      urgency: "High Impact" as const,
-      summary: "An empirical audit of 12 agent frameworks and 18 models reveals zero framework-level defenses against MCP tool poisoning, with resistance governed entirely by the underlying model.",
-      whyItMatters: "Widespread industry adoption of Model Context Protocol without cryptographic manifest signing or privilege isolation leaves autonomous agents highly vulnerable to untrusted metadata.",
-      articleSlug: "first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate"
+      headline: "French national blood bank cold storage hit by expanding European cooling cyberattacks",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "Hackers alter temperatures across EFS blood preservation facilities following supermarket refrigeration breaches.",
+      whyItMatters: "Signals alarming operational technology escalation from retail grocery disruption to life-critical health infrastructure.",
+      articleSlug: "french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks"
     },
     {
       id: 'brief-4',
-      headline: "Stockfish on 1995 Pentium Pro Beats Kasparov at 3300 Elo, Proving Algorithmic Dominance",
-      category: "research" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Google DeepMind researcher Nicholas Carlini ran modern chess algorithms on a physical 200 MHz Pentium Pro from 1995, proving that software heuristics matter far more than supercomputing hardware.",
-      whyItMatters: "Empirically isolating algorithmic progress from hardware scaling shows that decades of computer chess dominance were driven primarily by mathematical search innovation rather than raw transistors.",
-      articleSlug: "carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo"
+      headline: "Commercial residential proxies detected exiting through White House network addresses",
+      category: "technology" as const,
+      urgency: "High Impact" as const,
+      summary: "Layer3 Intel uncovers 236 paid proxy exit events across six federal IP addresses registered to AS2650.",
+      whyItMatters: "Allows public subscribers to route internet traffic through Executive Office infrastructure via compromised devices.",
+      articleSlug: "residential-proxies-detected-on-executive-office-network-white-house-ip-routing"
     },
     {
       id: 'brief-5',
-      headline: "Google Mandates All-or-Nothing AI Bundling for K-12 School Search Access",
+      headline: "Encrypted platform firmware locks Nvidia RTX Spark laptops to 35% inference speed on Linux",
       category: "technology" as const,
-      urgency: "High Impact" as const,
-      summary: "A new 2027 Google Workspace policy will shut off Google Search for student accounts in school districts that opt out of Gemini AI, sparking widespread educator protests and antitrust scrutiny.",
-      whyItMatters: "Leveraging a dominant web search monopoly to force public school systems into accepting generative AI highlights the growing regulatory conflict between big tech platforms and public education.",
-      articleSlug: "google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice"
+      urgency: "Notable Shift" as const,
+      summary: "Proprietary power management controllers restrict GPU clock frequencies to 780 MHz outside Windows.",
+      whyItMatters: "Forces machine learning developers dual-booting Linux to rely on WSL2 or suffer severe local LLM compute penalties.",
+      articleSlug: "encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "GIT SCALING",
-    text: "OpenAI unveils Pando to handle 1,300% commit surge from autonomous Codex coding agents.",
-    articleSlug: "openai-unveils-pando-git-backend-scaling-agentic-commits"
+    tag: "Open Weights",
+    text: "Ripple-65B achieves 80.52 on TerminalBench 2.1, setting US open-weight SOTA on agentic coding",
+    articleSlug: "ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota"
   },
   {
     id: 'sig-2',
-    tag: "TOOL INTEGRITY",
-    text: "Postman desktop update triggers developer backlash by auto-installing local AI CLI hooks.",
-    articleSlug: "postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash"
+    tag: "zkSNARKs",
+    text: "Anthropic FlashProve verifies 400B model inference at 110 tokens/sec on single H100 GPUs",
+    articleSlug: "anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models"
   },
   {
     id: 'sig-3',
-    tag: "MCP SECURITY",
-    text: "Study shows MCP tool poisoning achieves 22.9% success rate across 12 agent frameworks.",
-    articleSlug: "first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate"
+    tag: "OT Cyberattack",
+    text: "French national blood bank refrigerators targeted by cyberattackers in cooling sabotage",
+    articleSlug: "french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks"
   },
   {
     id: 'sig-4',
-    tag: "CHESS ALGORITHMS",
-    text: "Carlini runs Stockfish on 1995 Pentium Pro at 3300 Elo, proving algorithms beat compute.",
-    articleSlug: "carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo"
+    tag: "Network Security",
+    text: "Commercial residential proxy exit nodes detected routing through White House network AS2650",
+    articleSlug: "residential-proxies-detected-on-executive-office-network-white-house-ip-routing"
   },
   {
     id: 'sig-5',
-    tag: "EDTECH MANDATE",
-    text: "Google will turn off Search for K-12 schools that ban Gemini, prompting antitrust pushback.",
-    articleSlug: "google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice"
+    tag: "Hardware",
+    text: "Encrypted power firmware throttles Nvidia RTX Spark laptops to 35% inference speed on Linux",
+    articleSlug: "encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed"
   }
 ];

@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:55:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Ricursive Intelligence Unveils Ripple-65B Preview Setting U.S. Open-Weight Agentic Coding Record</title>
+      <link>https://nextvector.rhasan.online/article/ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota</guid>
+      <description>A 65-billion parameter dense model trained from scratch on 12 trillion tokens for $32M achieves 80.52 on TerminalBench 2.1, surpassing frontier models tenfold its size.</description>
+      <category>AI</category>
+      <pubDate>Thu, 05 Nov 2026 00:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Unveils FlashProve Enabling zkSNARK Cryptographic Verification of Frontier Model Outputs</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models</guid>
+      <description>A collaboration with EPFL, StarkWare, and MIT produces zero-knowledge cryptographic proofs for 400B-parameter LLM inference running at 110 tokens per second on single H100 GPUs.</description>
+      <category>RESEARCH</category>
+      <pubDate>Thu, 05 Nov 2026 00:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>French National Blood Bank Refrigerators Compromised as European Cooling Cyberattacks Expand</title>
+      <link>https://nextvector.rhasan.online/article/french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks</guid>
+      <description>Hackers alter temperatures across critical blood supply cold rooms at Établissement Français du Sang, escalating industrial OT sabotage beyond retail supermarkets into healthcare.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 05 Nov 2026 00:25:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Residential Proxies Detected on Executive Office Network Expose White House IP Routing</title>
+      <link>https://nextvector.rhasan.online/article/residential-proxies-detected-on-executive-office-network-white-house-ip-routing</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/residential-proxies-detected-on-executive-office-network-white-house-ip-routing</guid>
+      <description>Layer3 Intel observes 236 exit operations across 6 White House IP addresses in AS2650, allowing public commercial proxy subscribers to route paid traffic through government network space.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 05 Nov 2026 00:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Encrypted Power Firmware Throttles Nvidia RTX Spark Laptops to 35% Speed on Linux</title>
+      <link>https://nextvector.rhasan.online/article/encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed</guid>
+      <description>Closed-source platform power tables lock GPU core clocks to 780 MHz under native Linux, forcing local machine learning workflows into WSL or battery-saving degradation.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 04 Nov 2026 23:55:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>US Voters Roundly Reject AI Data Center Ballot Measures in Midterm Election Pushback</title>
+      <link>https://nextvector.rhasan.online/article/us-voters-roundly-reject-ai-data-center-ballot-measures-in-midterm-pushback</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/us-voters-roundly-reject-ai-data-center-ballot-measures-in-midterm-pushback</guid>
+      <description>Local referendums across nine states enact construction bans and tax restrictions, prompting Wall Street analysts to classify community resistance as a material credit risk.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 04 Nov 2026 23:40:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Scaling Git at OpenAI: Inside Pando, the Custom Backend Built for Agentic Coding Surges</title>
       <link>https://nextvector.rhasan.online/article/openai-unveils-pando-git-backend-scaling-agentic-commits</link>
@@ -496,60 +550,6 @@
       <description>Landmark INTerpath-001 results demonstrate individualized mRNA neoantigen therapy intismeran autogene paired with Keytruda significantly improves recurrence-free survival.</description>
       <category>SCIENCE</category>
       <pubDate>Sun, 25 Oct 2026 23:35:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>HTTP2Shell: Critical Brotli Flaw Enables Bidirectional RCE Across Node, Python, and Envoy</title>
-      <link>https://nextvector.rhasan.online/article/http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/http2shell-brotli-vulnerability-enables-bidirectional-rce-in-http-stacks</guid>
-      <description>Tracked as CVE-2026-111497 with a 9.2 CVSS rating, the out-of-bounds write in Google&#x27;s compression decoder allows unauthenticated takeovers of both web servers and client applications.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>UK Government Commits £100M to Launch &#x27;World First&#x27; AI Biosecurity Lab</title>
-      <link>https://nextvector.rhasan.online/article/uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/uk-commits-100m-to-establish-ai-biosecurity-lab-amid-350m-defence-package</guid>
-      <description>Backed by £200M in compute credits from OpenAI and Anthropic, the new national institute anchors a £350M defence tech package targeting biological and automated cyber threats.</description>
-      <category>AI</category>
-      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Apollo Chief Economist Sløk Finds Zero AI Productivity Payoff in the S&amp;P 493</title>
-      <link>https://nextvector.rhasan.online/article/apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apollo-chief-economist-torsten-slok-finds-zero-ai-payoff-in-sp-493</guid>
-      <description>While the Magnificent 7 log soaring revenue and profit margins, mainstream enterprise America experiences flat worker productivity and begins viewing token spend as a margin drag.</description>
-      <category>AI</category>
-      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>GrapheneOS Surpasses Major Compatibility Hurdle as Banking Apps Add Native Attestation Support</title>
-      <link>https://nextvector.rhasan.online/article/grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/grapheneos-surpasses-compatibility-hurdle-as-banking-apps-whitelist-os</guid>
-      <description>Roughly a dozen commercial banking applications now explicitly permit the hardened mobile OS, establishing an alternative to Google Play Integrity monopolies.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OBS Studio 33.0 Launches with Major Chromium 150 Upgrade and Overhauled Plugin Engine</title>
-      <link>https://nextvector.rhasan.online/article/obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/obs-studio-33-releases-with-chromium-150-overhaul-and-arm64-nvenc</guid>
-      <description>The milestone streaming release upgrades browser dock frameworks to modern web standards, introduces a multi-tier plugin hierarchy, and activates NVENC hardware encoding on Arm64.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Study Reveals Human Deference Collapse: Users Adopt Confident LLM Falsehoods 65% of the Time</title>
-      <link>https://nextvector.rhasan.online/article/human-deference-collapse-study-reveals-users-adopt-llm-falsehoods</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/human-deference-collapse-study-reveals-users-adopt-llm-falsehoods</guid>
-      <description>Controlled research introducing the Human Deference Index finds that confident AI misinformation plummets subject quiz accuracy from 7.4 to 2.9 out of 10 while preserving high subjective trust.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sun, 25 Oct 2026 04:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

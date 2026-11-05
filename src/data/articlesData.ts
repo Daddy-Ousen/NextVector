@@ -18928,6 +18928,252 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-342",
+    slug: "ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota",
+    title: "Ricursive Intelligence Unveils Ripple-65B Preview Setting U.S. Open-Weight Agentic Coding Record",
+    subtitle: "A 65-billion parameter dense model trained from scratch on 12 trillion tokens for $32M achieves 80.52 on TerminalBench 2.1, surpassing frontier models tenfold its size.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 93,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-05T00:55:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-342-ricursive-intelligence-unveils-ripple-65b-preview.jpg",
+    coverImageAlt: "Silicon semiconductor die and integrated circuit board photographed in a cleanroom laboratory.",
+    tags: ["Ricursive Intelligence", "Ripple-65B", "Agentic Coding", "TerminalBench", "Open Weights", "Pretraining Efficiency"],
+    threeQuestions: {
+      whatHappened: "Ricursive Intelligence announced Ripple-65B Preview, a dense open-weight language model trained on 12 trillion tokens with native 1M context support designed for hardware co-design and terminal coding.",
+      whyItMatters: "The model demonstrates that architectural refinement, dense execution, and targeted synthetic RL laddering can beat massive mixture-of-experts systems at a fraction of pretraining capital.",
+      whatsNext: "Weights are available immediately on Hugging Face, Together AI, GMI Cloud, and OpenRouter, with server deployments targeting DGX Spark and developer coding environments."
+    },
+    keyTakeaways: [
+      "Ripple-65B Preview scores 80.52 on TerminalBench 2.1, setting the U.S. open-weight state-of-the-art and surpassing Reflection Beam 501B and Meta Muse Spark Open 816B.",
+      "Total R&D cost from scratch was $32 million, representing roughly one-tenth the compute expenditure of previous open-weight coding leaders.",
+      "The dense 65B architecture features 80 layers, a narrow d_model of 5120, gated attention, global NoPE, and reached SOTA with only 1.4 million RL rollouts."
+    ],
+    content: [
+      "Ricursive Intelligence announced the release of Ripple-65B Preview on its official technical portal, presenting an open-weight 65-billion parameter dense foundation model trained from scratch on 12 trillion tokens.",
+      "The model achieved a benchmark score of 80.52 on TerminalBench 2.1, establishing a new U.S. open-weight state-of-the-art in autonomous terminal-based coding. In empirical evaluations, Ripple-65B Preview outperformed significantly larger mixture-of-experts architectures, including Reflection Beam 501B at 80.1, Meta Muse Spark Open 816B at 76.4, Thinking Machines Inkling 975B at 63.8, and NVIDIA Nemotron 3 Ultra 550B at 56.4.",
+      "A central achievement highlighted by Ricursive is capital efficiency: the lab developed and trained the model for a total research and development budget of $32 million. That sum encompassed pretraining ladder exploratory runs, synthetic generation, evaluation harnesses, post-training recipes, and final cluster executions. By comparison, frontier pretraining efforts across the industry frequently exceed several hundred million dollars.",
+      "Architecturally, Ricursive eschewed mixture-of-experts routing in favor of an 80-layer modernized dense Transformer featuring a narrow d_model of 5120. The design incorporates overprovisioned attention heads, an increased sliding window attention to global layer ratio, sigmoid gated attention, global NoPE positional representations, and value residuals. The engineering team sustained a 40 percent Model Flops Utilization across pretraining without custom assembly kernels.",
+      "In post-training, the team applied mixed reinforcement learning combining truncated importance sampling, score centering, and linear length penalties over high-quality synthetic environments. The model ascended to top-tier benchmark performance within 1.4 million rollouts—approximately 70 times fewer than the training budget demanded by Reflection Beam. Serving is supported across major providers at $0.20 input and $0.60 output per million tokens, though performance on non-coding reasoning domains remains uncharacterized in independent audits."
+    ],
+    citations: [
+      {
+        title: "Introducing Ripple-65B Preview, a Frontier Open-Weight Model Achieving U.S. Open-Weight SOTA on Agentic Coding",
+        url: "https://www.ricursive.com/ripple",
+        source: "Ricursive Intelligence"
+      }
+    ],
+    isHero: true,
+    isFeatured: false
+  },
+  {
+    id: "art-343",
+    slug: "anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models",
+    title: "Anthropic Unveils FlashProve Enabling zkSNARK Cryptographic Verification of Frontier Model Outputs",
+    subtitle: "A collaboration with EPFL, StarkWare, and MIT produces zero-knowledge cryptographic proofs for 400B-parameter LLM inference running at 110 tokens per second on single H100 GPUs.",
+    category: "research",
+    articleType: "research-explained",
+    signalRating: 92,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-05T00:40:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-343-anthropic-unveils-flashprove-zksnark-provable-infe.jpg",
+    coverImageAlt: "Mathematical formulations, logic symbols, and geometric relations captured in high contrast.",
+    tags: ["Anthropic", "FlashProve", "zkSNARK", "Cryptographic Proofs", "Provable Inference", "Model Integrity"],
+    threeQuestions: {
+      whatHappened: "Anthropic researchers published FlashProve, a zero-knowledge cryptographic proof-of-inference architecture that allows end users to verify neural network outputs mathematically.",
+      whyItMatters: "As third-party routers and intermediaries multiply, provable inference guarantees that users receive authentic responses from specific audited models rather than secret, cheaper downgrades.",
+      whatsNext: "Researchers plan to integrate verification primitives into client SDKs, explore hardware acceleration in next-generation silicon, and extend proofs to multimodal context."
+    },
+    keyTakeaways: [
+      "FlashProve generates zero-knowledge cryptographic proofs of transformer execution at 110 tokens per second for a 400B MoE model on a single H100 GPU.",
+      "Proof payload size compresses to approximately 19 MB per 1,024-token generation using 4-bit integer quantization arithmetic.",
+      "The architecture eliminates model substitution attacks and provides mathematical guarantees that responses originate from verified weights without leaking proprietary model parameters."
+    ],
+    content: [
+      "Anthropic published research detailing FlashProve, a zero-knowledge cryptographic proof system built in collaboration with researchers from EPFL, StarkWare, and MIT to verify that model responses originate from specified neural weights.",
+      "The technical milestone addresses the vulnerability of model substitution, where API routing intermediaries, hosting providers, or malicious actors secretly alter model checkpoints or replace frontier engines with cheaper models. Because behavioral outputs alone cannot reliably prove which weights produced a token stream, FlashProve relies on zkSNARKs to generate succinct, non-interactive zero-knowledge proofs for every forward pass.",
+      "In benchmark runs evaluated on Llama 4 Maverick, a 400-billion parameter mixture-of-experts model, FlashProve produced inference proofs at roughly 110 tokens per second on a single Nvidia H100 GPU. The implementation utilized 4-bit integer quantization arithmetic, compressing the resulting cryptographic proof payload to approximately 19 megabytes for a 1,024-token completion request.",
+      "The cryptographic protocol allows a model provider to publish a cryptographic commitment to its model architecture and weights. During query generation, the prover outputs the text response accompanied by a mathematical proof certificate; any client can verify this certificate in milliseconds without requiring access to proprietary weight tensors.",
+      "The research team noted that while FlashProve slashes proving overhead by orders of magnitude compared to prior academic systems, generating proofs for multi-turn conversations exceeding 32,000 tokens still imposes noticeable compute costs that require further hardware-level ASIC integration before universal consumer deployment."
+    ],
+    citations: [
+      {
+        title: "Progress on provable inference for large language models",
+        url: "https://www.anthropic.com/research/provable-inference",
+        source: "Anthropic Research"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-344",
+    slug: "french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks",
+    title: "French National Blood Bank Refrigerators Compromised as European Cooling Cyberattacks Expand",
+    subtitle: "Hackers alter temperatures across critical blood supply cold rooms at Établissement Français du Sang, escalating industrial OT sabotage beyond retail supermarkets into healthcare.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 91,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-05T00:25:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-344-french-national-blood-bank-refrigerators-compromis.jpg",
+    coverImageAlt: "Medical laboratory refrigeration chamber and diagnostic testing storage trays in a sterile clinical facility.",
+    tags: ["Cybersecurity", "Critical Infrastructure", "Healthcare", "EFS France", "OT Security", "Industrial Control Systems"],
+    threeQuestions: {
+      whatHappened: "The French Blood Establishment reported that digital heating cyberattacks struck cold storage facilities managing blood supplies across French medical centers.",
+      whyItMatters: "The breach demonstrates that threat actors targeting industrial refrigeration platforms have expanded from commercial retail disruption to life-critical national health infrastructure.",
+      whatsNext: "Cybersecurity firms have deployed specialized refrigeration honeypots across European networks to trap attacker exploits and identify responsible nation-state or hacktivist entities."
+    },
+    keyTakeaways: [
+      "The French Blood Establishment (EFS) confirmed hackers targeted medical cold rooms storing donation blood products with remote temperature spikes.",
+      "Prompt facility alarms and emergency staff interventions prevented blood spoilage, resulting in zero reported inventory loss or clinical harm.",
+      "The attack marks a dangerous escalation of operational technology hacks that disrupted supermarket freezers across Europe earlier in the week."
+    ],
+    content: [
+      "The French Blood Establishment (Établissement Français du Sang, or EFS) confirmed in an official disclosure reported by the BBC that cyberattackers successfully breached industrial cooling systems managing stored blood donations.",
+      "Attackers manipulated networked environmental controls to force temperatures inside cold rooms upward, attempting to compromise temperature-sensitive blood and plasma inventories. Emergency acoustic alerts and rapid manual intervention by on-duty medical technicians restored climate parameters, with the agency confirming that no blood supplies were lost and no patient treatments were impacted.",
+      "The incident follows a coordinated wave of cyber sabotage on Monday that hit supermarket freezers across Belgium, Sweden, Finland, Ireland, and the UK, destroying tens of thousands of tonnes of refrigerated groceries via compromised HVAC platforms like Sabcobel and Danfoss controllers.",
+      "Online claims from Russian-aligned hacktivist collectives Noname057(16) and Z-Pentest Alliance boasted of breaching Danfoss infrastructure, but intelligence analysts at leading cybersecurity firms cautioned that such statements may be opportunistic claims masking nation-state reconnaissance or sophisticated Iranian proxy groups.",
+      "In response, three independent European security firms have established simulated refrigeration honeypots across utility grids to capture inbound exploits, while European health ministries evaluate whether to mandate air-gapping for all hospital blood and tissue preservation vaults."
+    ],
+    citations: [
+      {
+        title: "French blood storage impacted by freezer hacks as theories swirl about culprits",
+        url: "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro",
+        source: "BBC News"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-345",
+    slug: "residential-proxies-detected-on-executive-office-network-white-house-ip-routing",
+    title: "Residential Proxies Detected on Executive Office Network Expose White House IP Routing",
+    subtitle: "Layer3 Intel observes 236 exit operations across 6 White House IP addresses in AS2650, allowing public commercial proxy subscribers to route paid traffic through government network space.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 90,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-05T00:10:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-345-residential-proxies-detected-on-executive-office-n.jpg",
+    coverImageAlt: "Exterior view of the White House and federal executive office complex in Washington D.C.",
+    tags: ["White House", "AS2650", "Residential Proxies", "Cybersecurity", "Layer3 Intel", "Network Telemetry"],
+    threeQuestions: {
+      whatHappened: "Cybersecurity firm Layer3 Intel disclosed telemetry showing commercial residential proxy networks actively exiting internet traffic through White House IP addresses registered to AS2650.",
+      whyItMatters: "Anyone paying standard subscription fees to consumer proxy networks could inadvertently or deliberately route arbitrary web traffic to make it appear as originating from the Executive Office of the President.",
+      whatsNext: "Federal cybersecurity teams are investigating whether endpoints were infected via third-party proxyware bundles, sideloaded applications, or unapproved employee mobile hardware."
+    },
+    keyTakeaways: [
+      "Layer3 Intel detected 236 commercial proxy exit connections routing directly through White House network autonomous system AS2650 between October 5 and November 3, 2026.",
+      "Exits occurred across 6 distinct federal IP addresses on 26 out of 30 days, spanning 28 separate commercial residential proxy services.",
+      "Over half of observed activity concentrated between 5:00 PM and midnight Eastern Time, pointing to compromised personal devices or unauthorized VPN software on agency endpoints."
+    ],
+    content: [
+      "Security researchers at Layer3 Intel published telemetry from their newly deployed Residential Proxy Observatory revealing consistent unauthorized commercial proxy exits operating within autonomous system AS2650, assigned to the Executive Office of the President.",
+      "Monitoring conducted between October 5 and November 3, 2026 recorded 236 confirmed residential proxy exits originating from six distinct IP addresses within the federal allocation. These connections were captured across 26 of the 30 monitored days, with 28 separate commercial residential proxy vendors facilitating egress.",
+      "The researchers confirmed the findings against independent network intelligence databases, including Spur and Synthient, which corroborated that the affected IP addresses functioned as active exit points. Commercial proxy services typically recruit exits by bundling proxyware SDKs into consumer software, freeware utilities, or VPN extensions that monetize host bandwidth without full user awareness.",
+      "Temporal analysis of the traffic revealed a distinctive operational profile: more than 50 percent of the proxy activity occurred between 5:00 PM and midnight Eastern Time, with traffic dropping near zero in early morning hours. This pattern strongly indicates an infected endpoint operated by staff during evening hours rather than an open public guest Wi-Fi gateway.",
+      "Because commercial proxy networks sell rotating access to anyone with a credit card, malicious third parties could execute scraping, credential testing, or illicit reconnaissance that appears to target destinations from legitimate Executive Office of the President IP addresses. Federal authorities have not yet issued a public comment regarding endpoint remediation."
+    ],
+    citations: [
+      {
+        title: "Residential Proxies Detected on White House Network",
+        url: "https://layer3intel.com/blog/residential-proxies-white-house-network",
+        source: "Layer3 Intel"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-346",
+    slug: "encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed",
+    title: "Encrypted Power Firmware Throttles Nvidia RTX Spark Laptops to 35% Speed on Linux",
+    subtitle: "Closed-source platform power tables lock GPU core clocks to 780 MHz under native Linux, forcing local machine learning workflows into WSL or battery-saving degradation.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-04T23:55:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-346-encrypted-firmware-throttles-nvidia-rtx-spark-lapt.jpg",
+    coverImageAlt: "High-performance laptop workstation open on an engineering desk running code benchmarks.",
+    tags: ["Nvidia", "RTX Spark", "Linux Kernel", "Hardware Benchmarks", "GPU Throttling", "Local LLMs"],
+    threeQuestions: {
+      whatHappened: "Hardware testing by MindStudio revealed that Nvidia RTX Spark mobile workstations running native Linux suffer severe performance throttling, falling to 35 percent of their Windows inference speed.",
+      whyItMatters: "Machine learning engineers who dual-boot Linux to run local LLMs and agent harnesses cannot access full hardware compute due to encrypted, Windows-dependent power management firmware.",
+      whatsNext: "Open-source driver developers are petitioning Nvidia to expose unencrypted dynamic power tables or release an official Linux daemon for mobile platform controllers."
+    },
+    keyTakeaways: [
+      "Linux dual-boot installations on Nvidia RTX Spark mobile workstations throttle GPU clocks to 780 MHz on wall power, reducing 120B model inference from 65 to 13.9 tokens per second.",
+      "The slowdown stems from proprietary Nvidia Platform Controllers and Framework power tables that require closed Windows driver decryption to unlock full 2.2 GHz boost states.",
+      "Workstation unified memory partitioning defaults to 96GB for GPU use, which cannot be reallocated on native Linux without prior configuration in Windows utilities."
+    ],
+    content: [
+      "Hardware benchmarks published by MindStudio evaluating MSI Prestige N16 Flip AI Plus laptops powered by the Nvidia RTX Spark mobile architecture revealed severe performance degradation when running native Linux distributions.",
+      "While Linux installs successfully and leverages Nvidia's open-source kernel modules for desktop acceleration, plugging the workstation into AC wall power locks the GPU core frequency to approximately 780 MHz. In benchmark tests evaluating inference speed on GPT-OSS-120B, native Linux achieved only 13.9 tokens per second, compared to 65.4 tokens per second on Windows 11, 65.1 tokens per second on Windows Subsystem for Linux (WSL), and 61 tokens per second on the dedicated desktop DGX Spark.",
+      "The investigation traced the bottleneck to the Nvidia Platform Controllers and Framework (NPCF), a Windows-exclusive subsystem responsible for negotiating dynamic thermal design power (TDP) sharing between CPU and GPU. Under Windows, NPCF dynamically boosts the GPU to 2.2 GHz, but its internal power curve tables are encrypted and lack a functional Linux implementation.",
+      "Memory allocation presents an additional structural challenge for Linux users: the hardware automatically partitions 96 gigabytes of unified memory to the GPU by default, leaving insufficient RAM for system processes unless adjusted using a proprietary Windows control utility before booting Linux.",
+      "Consequently, researchers and developers seeking to run heavy local models on RTX Spark laptops are currently forced to utilize WSL2 inside Windows or accept dramatic compute penalties until Nvidia provides an open Linux power management implementation."
+    ],
+    citations: [
+      {
+        title: "Linux on the Nvidia RTX Spark Laptop: What Actually Works",
+        url: "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+        source: "MindStudio"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-347",
+    slug: "us-voters-roundly-reject-ai-data-center-ballot-measures-in-midterm-pushback",
+    title: "US Voters Roundly Reject AI Data Center Ballot Measures in Midterm Election Pushback",
+    subtitle: "Local referendums across nine states enact construction bans and tax restrictions, prompting Wall Street analysts to classify community resistance as a material credit risk.",
+    category: "technology",
+    articleType: "industry-watch",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-04T23:40:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-347-us-voters-roundly-reject-ai-data-center-ballot-mea.jpg",
+    coverImageAlt: "Industrial cooling towers and high-voltage transmission equipment outside a modern electrical utility facility.",
+    tags: ["AI Infrastructure", "Data Centers", "Midterm Elections", "Semafor", "Energy Grid", "Local Governance"],
+    threeQuestions: {
+      whatHappened: "In the 2026 midterm elections, voters across multiple US states decisively backed ballot referendums rejecting or heavily restricting the construction of AI data centers.",
+      whyItMatters: "Hyperscalers face an escalating grassroots backlash driven by concerns over surging local electricity bills, grid strain, and water consumption, complicating infrastructure expansion plans.",
+      whatsNext: "Tech conglomerates are scrambling to rebrand developments as educational or compute campuses while hiring community liaisons to head off local ballot initiatives."
+    },
+    keyTakeaways: [
+      "Voters in more than 30 municipalities across nine states approved ballot measures imposing moratoriums, zoning bans, and tax relief limits on hyperscale data centers.",
+      "Edgewater, Florida passed a municipal charter amendment banning data centers, while Perry, Ohio enacted operational constraints on tax-incentivized facilities.",
+      "Major investment banks and debt rating agencies are now factoring municipal electoral pushback into project financing and credit risk models for AI buildouts."
+    ],
+    content: [
+      "An electoral analysis published by Semafor revealed that American voters decisively rejected hyperscale data center developments in dozens of local and regional ballot referendums held during Tuesday's midterm elections.",
+      "Residents across more than 30 municipalities in nine states passed binding measures that established outright construction bans, multi-year zoning moratoriums, or strict environmental conditions on incoming infrastructure. In Edgewater, Florida, voters overwhelmingly approved an amendment embedding a total ban on commercial data centers directly into the municipal charter, while Perry, Ohio voters approved binding operational limits that curb tax breaks and demand water-use transparency.",
+      "Campaign monitoring data indicated that candidates in over 130 federal and gubernatorial contests aired advertisements criticizing AI infrastructure subsidies and utility impacts. Growing voter discontent forced established state boosters, including Texas Governor Greg Abbott, to endorse tighter grid regulation before facing electoral defeat.",
+      "The string of referendum defeats has prompted major institutional lenders and rating agencies to formally treat grassroots opposition as a material credit risk when underwriting long-term utility debt for AI clusters.",
+      "In response to the public relations shift, technology giants have begun rebranding prospective facilities as compute campuses and expanding civic investment programs, though whether these measures will appease local utility ratepayer concerns remains uncertain."
+    ],
+    citations: [
+      {
+        title: "US voters roundly reject data centers in ballot measures",
+        url: "https://www.semafor.com/article/11/04/2026/us-voters-roundly-reject-data-centers-in-ballot-measures",
+        source: "Semafor"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

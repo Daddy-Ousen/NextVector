@@ -1,3 +1,39 @@
+# Handoff — 2026-11-05 (Daily Intelligence Pipeline Run: art-342 to art-347)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face.
+  - Sourced, verified, and published 6 original articles (`art-342` to `art-347`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-342`: `ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota` (Hero / Model-Report, Signal 93, Ricursive Intelligence releases Ripple-65B Preview, a dense 65B foundation model trained on 12T tokens from scratch for $32M that scores 80.52 on TerminalBench 2.1 to take the U.S. open-weight agentic coding crown over Reflection Beam 501B and Meta Muse Spark Open 816B; sustained 40% MFU with 80 layers, narrow d_model 5120, gated attention, global NoPE, and 1.4M RL rollouts).
+    - `art-343`: `anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models` (Featured / Research-Explained, Signal 92, Anthropic, EPFL, StarkWare, and MIT introduce FlashProve, generating zero-knowledge zkSNARK proofs of neural inference at 110 tokens/sec for 400B MoE models on a single H100 GPU with 19 MB proof payloads to mathematically defeat model substitution attacks).
+    - `art-344`: `french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks` (Featured / Breaking, Signal 91, French Blood Establishment [EFS] cold storage units targeted in expanding European cooling sabotage; emergency staff intervention prevents blood spoilage, marking OT cyber threat escalation from grocery supermarkets into clinical healthcare).
+    - `art-345`: `residential-proxies-detected-on-executive-office-network-white-house-ip-routing` (Deep-Dive, Signal 90, Layer3 Intel observes 236 paid residential proxy exits across 6 White House IP addresses in AS2650 across 26 of 30 days, spanning 28 commercial proxy services with heavy evening clustering).
+    - `art-346`: `encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed` (Analysis, Signal 89, MindStudio hardware benchmarks show native Linux on Nvidia RTX Spark mobile workstations collapses to 13.9 tokens/sec [35% of Windows speed] on GPT-OSS-120B because closed-source NPCF power tables are encrypted with Windows-only driver keys).
+    - `art-347`: `us-voters-roundly-reject-ai-data-center-ballot-measures-in-midterm-pushback` (Industry-Watch, Signal 88, Voters in more than 30 municipalities across nine states pass binding ballot referendums banning or restricting data centers; Edgewater, FL enshrines charter ban; Wall Street banks classify grassroots resistance as material project credit risk).
+  - **Model Watch:**
+    - Evaluated 72h window feeds: `ricursiveai/ripple-65b-preview` (covered in lead article `art-342`, 65B dense agentic coding leader on TerminalBench 2.1; pending formal Arena text / AA benchmark listings), `tencent/hy4` (official release on OpenRouter, pending lab page access verification), `stealth/crouton-alpha` (anonymous preview with no public benchmarks), `moonshotai/Kimi-K3.1-Pro` (open weights on HF, already tracked in catalog), and domain fine-tunes (`z-ai/glm-5.3-flashx-legal`, `particle-ai/particle-1`).
+    - Curated model registry maintained at 144 models.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Thursday, November 5, 2026` (5 items linking to art-342..346).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-342..346).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 17$ bits from catalog, $22\text{--}37$ bits pairwise, 100% fresh photo tokens).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-05-the-morning-vector.md` (`628f537`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 347 articles, 144 models, 10 showdowns; 520 static HTML files, sitemap 518 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `f23e0b7` (content update), `628f537` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Friday, November 6, 2026.
+  - Monitor Arena and Artificial Analysis for benchmark listings for `Ripple-65B Preview` and `Tencent Hy4`.
+- **Gotchas & Key Learnings:**
+  - `scripts/add_articles.py` enforces both binary dhash $\ge 14$ bits AND photo token non-reuse against `existing_covers` in `articlesData.ts`. Always verify both with a pre-check script before generating the batch JSON.
+
+---
+
 # Handoff — 2026-11-04 (Daily Intelligence Pipeline Run: art-336 to art-341)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Stable, Verification 8/8 Passed, Newsletter Published

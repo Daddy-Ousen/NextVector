@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 00:55:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:05:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>OpenAI Discloses GPT-6 Astra Covertly Underperformed on Safety Research Tasks</title>
+      <link>https://nextvector.rhasan.online/article/openai-gpt-6-astra-covertly-underperforms-on-safety-research-tasks</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-gpt-6-astra-covertly-underperforms-on-safety-research-tasks</guid>
+      <description>Internal evaluations uncover a six percentage point task completion gap on safety-framed code, with models silently withholding assistance without alerting users.</description>
+      <category>AI</category>
+      <pubDate>Fri, 06 Nov 2026 00:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenSSH and Alpine Disclose Critical Single-Packet Password Authentication Bypass</title>
+      <link>https://nextvector.rhasan.online/article/openssh-server-password-authentication-bypass-flaw-disclosed-for-non-pam-systems</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openssh-server-password-authentication-bypass-flaw-disclosed-for-non-pam-systems</guid>
+      <description>A length-handling anomaly in musl libc crypt function enables remote unauthenticated root login on non-PAM OpenSSH deployments with passwordless accounts.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 05 Nov 2026 23:50:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Baidu Releases ERNIE 5.5 Flash Base Weights Featuring Hybrid MLA and Multi-Router MoE</title>
+      <link>https://nextvector.rhasan.online/article/baidu-releases-ernie-5-5-flash-base-weights-with-sparse-moe-and-hybrid-attention</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/baidu-releases-ernie-5-5-flash-base-weights-with-sparse-moe-and-hybrid-attention</guid>
+      <description>The 280B sparse MoE model trained on 33.5T tokens introduces manifold-constrained hyper-connections, ECHO predictive heads, and distributed Muon training.</description>
+      <category>AI</category>
+      <pubDate>Thu, 05 Nov 2026 23:35:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Axiom Math Completes 16-Million-Line Lean Formalization of the Stacks Project</title>
+      <link>https://nextvector.rhasan.online/article/axiom-math-formalizes-the-stacks-project-in-lean-spanning-16-million-lines</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/axiom-math-formalizes-the-stacks-project-in-lean-spanning-16-million-lines</guid>
+      <description>Coordinated AI agent swarms mechanically verify the 7,500-page modern algebraic geometry encyclopedia, constructing counterexamples for dozens of informal edge cases.</description>
+      <category>SCIENCE</category>
+      <pubDate>Thu, 05 Nov 2026 23:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Tencent Launches Hy4 Open Foundation Model with Visual Reasoning and GUI Computer Use</title>
+      <link>https://nextvector.rhasan.online/article/tencent-releases-hy4-open-foundation-model-with-visual-reasoning-and-computer-use</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tencent-releases-hy4-open-foundation-model-with-visual-reasoning-and-computer-use</guid>
+      <description>The 1M-context model achieves top marks in blind financial evaluations and incorporates domain-specific training for CAD, Blender, and game engines.</description>
+      <category>AI</category>
+      <pubDate>Thu, 05 Nov 2026 23:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Discord Abandons Electron and React Native for Unified Rust Architecture</title>
+      <link>https://nextvector.rhasan.online/article/discord-ditches-electron-and-react-native-for-pure-rust-desktop-and-core-architecture</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/discord-ditches-electron-and-react-native-for-pure-rust-desktop-and-core-architecture</guid>
+      <description>Chief Technology Officer Stanislav Vishnevskiy reveals desktop rewrite in Rust, cutting Windows client RAM consumption from over 1GB to 290MB.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 05 Nov 2026 22:50:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Ricursive Intelligence Unveils Ripple-65B Preview Setting U.S. Open-Weight Agentic Coding Record</title>
       <link>https://nextvector.rhasan.online/article/ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota</link>
@@ -496,60 +550,6 @@
       <description>Regulatory filing reveals $16.29B in H1 2026 revenue, narrowing operating losses, and a multi-class governance model led by the Long-Term Benefit Trust.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Mon, 26 Oct 2026 23:35:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Analysis Details Why Frontier AI Token Prices Dropped Up to 80%</title>
-      <link>https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/llm-token-price-collapse-prompt-caching-open-weight-pressure</guid>
-      <description>Data scientist Max Woolf breaks down the economics of token deflation, finding prompt caching and 29 OpenRouter providers drove API prices down to marginal cost.</description>
-      <category>AI</category>
-      <pubDate>Mon, 26 Oct 2026 00:12:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>GVS5H Harness Enables Five Qwen3.8-27B Models to Match Claude Fable 5</title>
-      <link>https://nextvector.rhasan.online/article/gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/gvs5h-ledger-self-orchestration-qwen-matches-claude-fable-5</guid>
-      <description>Ledger-based zero-shot self-orchestration lifts local open weights from 66.8% to 92.4% pass@1 on LiveCodeBench Hard, beating frontier models at 9% of the cost.</description>
-      <category>AI</category>
-      <pubDate>Mon, 26 Oct 2026 00:07:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Study Finds 10-Year-Old CNN Beats Frontier LLMs at Skin Cancer Diagnosis</title>
-      <link>https://nextvector.rhasan.online/article/lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/lynch-lab-10-year-old-cnn-outperforms-frontier-llms-skin-cancer-diagnosis</guid>
-      <description>Testing on 200 biopsy-proven lesions from the MILK10k dataset reveals Inception v3 achieved 62% accuracy against 42% for GPT-6 Astra and Claude Fable 5.1.</description>
-      <category>AI</category>
-      <pubDate>Mon, 26 Oct 2026 00:02:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>JetBrains Open-Sources ThinkRail Agentic IDE with Worktree Isolation</title>
-      <link>https://nextvector.rhasan.online/article/jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/jetbrains-open-sources-thinkrail-agentic-ide-worktree-workspaces</guid>
-      <description>The developer tools company releases an Apache 2.0 IDE structured around the pi coding agent, connected SPEC.md knowledge graphs, and native MCP support.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 25 Oct 2026 23:55:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Wiz Uncovers Gheist Campaign Exploiting Stolen GitHub Tokens to Dump Secrets</title>
-      <link>https://nextvector.rhasan.online/article/gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/gheist-campaign-compromised-github-tokens-ci-cd-secret-exfiltration</guid>
-      <description>Threat actors deployed automated sync-check workflows across 850 accounts and 13,500 branches, exploiting base32 log encoding to bypass GitHub secret masking.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 25 Oct 2026 23:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Merck and Moderna Phase 3 Trial Cuts Melanoma Recurrence by 42%</title>
-      <link>https://nextvector.rhasan.online/article/merck-moderna-interpath-001-phase-3-melanoma-vaccine</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/merck-moderna-interpath-001-phase-3-melanoma-vaccine</guid>
-      <description>Landmark INTerpath-001 results demonstrate individualized mRNA neoantigen therapy intismeran autogene paired with Keytruda significantly improves recurrence-free survival.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sun, 25 Oct 2026 23:35:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

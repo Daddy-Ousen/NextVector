@@ -1,3 +1,45 @@
+# Handoff — 2026-11-08 (Daily Intelligence Pipeline Run: art-354 to art-359)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face.
+  - Sourced, verified, and published 6 original articles (`art-354` to `art-359`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-354`: `anthropic-formulates-agent-memory-architecture-sleep-time-dreaming-context` (Hero / Research-Explained, Signal 93, Anthropic Engineering details its foundational agent memory architecture based on hippocampal replay; models use sleep-time compute ["dreaming"] to distill raw execution transcripts into structured, persistent notes across long-horizon workflows; cuts memory clutter by 95% [from 413 files to 9] on Pokémon benchmark; closes learning loop on CL-Bench 1.0).
+    - `art-355`: `firecracker-microvm-guest-to-host-root-escape-pwnescape-kvm` (Featured / Breaking, Signal 92, PWN.AI security researcher Paulos Yibelo demonstrates full guest-to-host root execution breakout on AWS Firecracker v1.16.1 running on Linux kernel 6.8.0; poisons saved KVM `pt_regs` register frames to hijack host threads and execute code as root via a single serial port write without crashing the microVM).
+    - `art-356`: `mitchell-hashimoto-releases-libghostty-1-0-stable-c-abi-terminal-emulation` (Featured / Discovery, Signal 91, Mitchell Hashimoto launches libghostty-vt 1.0, extracting Ghostty's high-performance virtual terminal state machine into a standalone C library with an enforced stable C ABI; powers JetBrains IDE terminals for 12.5M developers and unblocks Neovim's 10-year scrollback reflow pull request).
+    - `art-357`: `sodium-ion-batteries-approach-cell-cost-parity-lfp-70-gwh-supply-agreements` (Analysis, Signal 90, Wood Mackenzie global energy storage report reveals sodium-ion battery cells will reach cost parity with lithium iron phosphate [LFP] by late 2026, backed by over 70 GWh in commercial supply agreements and delivering 21% lower 20-year total cost of ownership).
+    - `art-358`: `google-acquires-crusoe-wyoming-data-center-campus-hyperscale-ai` (Industry-Watch, Signal 89, Google acquires Crusoe's de-risked AI data center campus site in southeast Wyoming, securing pre-entitled gigawatt-scale footprint with hybrid fuel cell, turbine, and Tallgrass regional carbon sequestration architecture).
+    - `art-359`: `asahi-linux-7-3-progress-report-m3-general-availability-avd-macaudio` (Deep-Dive, Signal 88, Asahi Linux team publishes Linux 7.3 progress report, promoting M3 Apple Silicon to General Availability without EXPERT flags, enabling DCP display sleep/wake, upstreaming 13,000-line AVD driver and 3,100-line macaudio ALSA patchset, and detailing M5 Exclaves).
+  - **Stories dropped & why:**
+    - `apple-intelligence-personal-knowledge-graph`: published Oct 28 (outside 48h news window).
+    - `maxxbench-unlap`: published Oct 20 (outside 48h news window).
+    - `github-new-git-storage-architecture`: published Nov 5 20:23 UTC (>56 hours old, outside 48h window, and duplicate of Git backend topic covered in art-336).
+    - `realpage-rent-pricing-case`: non-tech real estate legal settlement.
+    - `scamwich-restaurant-skimming`: routine payment fraud campaign.
+  - **Model Watch:**
+    - Evaluated 72h window feeds: `liquid/lfm-3-1.7b` (OpenRouter listing on Nov 6, edge reasoning model with 256K context; pending text benchmark listings in snapshot datasets; re-fetching live OpenRouter API drops legacy models like o4-mini/minimax-m2.1, so maintained in registry notes), `google/gemini-omni-1.2-flash` and `1.1-flash` (multimodal video generative models, non-LLM text benchmarks), `ricursiveai/ripple-65b-preview` (covered in art-342, pending Arena/AA text listings), `tencent/hy4` (covered in art-352, pending Arena text listing), `stealth/crouton-alpha` (anonymous preview with no public evals), and domain fine-tunes (`z-ai/glm-5.3-flashx-legal`, `particle-ai/particle-1`).
+    - Curated model registry maintained at 144 models.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Sunday, November 8, 2026` (5 items linking to art-354..358).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-354..358).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 15$ bits from catalog, $28\text{--}42$ bits pairwise, zero reused tokens).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-08-the-morning-vector.md` (`71eb1e6`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 359 articles, 144 models, 10 showdowns; 532 static HTML files, sitemap 530 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `a43ea06` (content update), `71eb1e6` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Monday, November 9, 2026.
+  - Monitor Arena and Artificial Analysis for benchmark listings for `Tencent Hy4`, `Ripple-65B Preview`, and `LiquidAI LFM3-1.7B`.
+- **Gotchas & Key Learnings:**
+  - `scripts/add_articles.py` strictly checks if any substring of an existing cover URL in `articlesData.ts` matches the photo token of a newly proposed cover. Some legacy articles from early September still had raw Unsplash URLs in `coverImage`, so photo tokens must be audited against `articlesData.ts` before batch generation.
+
+---
+
 # Handoff — 2026-11-06 (Daily Intelligence Pipeline Run: art-348 to art-353)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published

@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 01:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:20:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Payments Canada Launches Real-Time Rail: 24/7 National Settlement Infrastructure</title>
+      <link>https://nextvector.rhasan.online/article/payments-canada-launches-real-time-rail-247-settlement-infrastructure</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/payments-canada-launches-real-time-rail-247-settlement-infrastructure</guid>
+      <description>The new national payment system brings instant clearing and settlement across participating financial institutions.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 10 Nov 2026 00:20:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Data Receipts Audit Exposes 4.5x Price Spread Across Identical H100 Cloud Rentals</title>
+      <link>https://nextvector.rhasan.online/article/data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals</guid>
+      <description>Hourly rates for single H100 SXM 80GB accelerators range from $2.69 on neoclouds to $12.29 on hyperscalers.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 10 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Meta FAIR Open-Sources e-means: 10x Faster k-means Algorithm in Faiss</title>
+      <link>https://nextvector.rhasan.online/article/meta-fair-open-sources-e-means-10x-faster-k-means-faiss</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-fair-open-sources-e-means-10x-faster-k-means-faiss</guid>
+      <description>A modernized replacement for Lloyd&#x27;s algorithm converges in an order of magnitude fewer epochs with lower reconstruction loss.</description>
+      <category>RESEARCH</category>
+      <pubDate>Tue, 10 Nov 2026 00:10:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Assetnote Researchers Chain Telematics API and Identity Flaws to Unlock Vehicles</title>
+      <link>https://nextvector.rhasan.online/article/assetnote-security-researchers-chain-telematics-api-universal-car-unlock</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/assetnote-security-researchers-chain-telematics-api-universal-car-unlock</guid>
+      <description>Security researchers bypass WAF rules and MFA using leaked admin keys and path traversal to remotely hijack connected cars.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 10 Nov 2026 00:05:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Meta AI Releases Muse Ember: 1.05M-Context Efficient Reasoning Model for Agents</title>
+      <link>https://nextvector.rhasan.online/article/meta-releases-muse-ember-small-efficient-reasoning-model-agents</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/meta-releases-muse-ember-small-efficient-reasoning-model-agents</guid>
+      <description>The compact model targets repetitive inner-loop agent tasks, matching Claude Haiku 5.5 scores at a third of the inference cost.</description>
+      <category>AI</category>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Unveils Claude Fable 5.2 and Mythos 5.2 for Frontier Scientific Reasoning</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning</guid>
+      <description>The upgraded models formalize Fermat&#x27;s Last Theorem in 30 hours, deliver 30% faster generation, and score 65 on Artificial Analysis.</description>
+      <category>AI</category>
+      <pubDate>Mon, 09 Nov 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>OpenStick: Running Debian and Self-Hosted Homelab Services on a $10 USB Stick</title>
       <link>https://nextvector.rhasan.online/article/openstick-10-dollar-linux-usb-stick-homelab</link>
@@ -496,60 +550,6 @@
       <description>In Q3 2026, Search generated 49.7% of Alphabet&#x27;s $128B revenue while Google Cloud doubled to $30.7B.</description>
       <category>AI</category>
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google DeepMind Unveils Gemini 4 Carbon with Record Cybersecurity and Reasoning Benchmarks</title>
-      <link>https://nextvector.rhasan.online/article/google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-deepmind-unveils-gemini-4-carbon-frontier-cybersecurity-model</guid>
-      <description>The frontier release ranks #1 on the Artificial Analysis Intelligence Index at 59 and sweeps exploit discovery and code patching.</description>
-      <category>AI</category>
-      <pubDate>Thu, 29 Oct 2026 00:20:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Critical 16-Year-Old EDK2 UEFI Flaw Allows Pre-Boot Remote Code Execution Across Enterprise Servers</title>
-      <link>https://nextvector.rhasan.online/article/tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tianocore-discloses-critical-cve-2026-97631-buffer-overflow-in-edk2-uefi</guid>
-      <description>Tracked as CVE-2026-97631 with a 9.5 CVSS score, the network boot driver vulnerability circumvents Secure Boot and TPM chain-of-trust.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 29 Oct 2026 00:16:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Artificial Analysis Overhauls Frontier AI Benchmarking with Intelligence Index v5.0 and Progress Index v1</title>
-      <link>https://nextvector.rhasan.online/article/artificial-analysis-launches-intelligence-index-v5-and-progress-index</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/artificial-analysis-launches-intelligence-index-v5-and-progress-index</guid>
-      <description>The private-data benchmark rebuild widens the open-weights frontier gap to 12 points and tracks multi-year capability velocity.</description>
-      <category>AI</category>
-      <pubDate>Thu, 29 Oct 2026 00:12:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Tailscale Remediates Four Tailworm SSH Security Flaws in v1.104.4 Firmware Release</title>
-      <link>https://nextvector.rhasan.online/article/tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tailscale-discloses-tailworm-vulnerabilities-and-patches-ssh-forwarding</guid>
-      <description>The network vendor addresses lateral privilege escalation and SSH forwarding boundary failures across tailnets.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 29 Oct 2026 00:08:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Mistral AI Introduces Timestral Open-Weight Time Series Foundation Models via Decoupled Horizon Forecasting</title>
-      <link>https://nextvector.rhasan.online/article/mistral-ai-introduces-timestral-open-time-series-foundation-models</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mistral-ai-introduces-timestral-open-time-series-foundation-models</guid>
-      <description>The four-model family spanning 5M to 209M parameters sweeps state-of-the-art probabilistic forecasting on GIFT-Eval and TIME.</description>
-      <category>RESEARCH</category>
-      <pubDate>Thu, 29 Oct 2026 00:04:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>NVIDIA Unveils Nemotron 3.5 Transcribe and Granary v2 Open Multilingual Speech Recognition Stack</title>
-      <link>https://nextvector.rhasan.online/article/nvidia-unveils-nemotron-3-5-transcribe-and-granary-v2-speech-stack</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-unveils-nemotron-3-5-transcribe-and-granary-v2-speech-stack</guid>
-      <description>The promptable 40-language model achieves 5.33% English WER and processes 100 hours of audio in three minutes on one GPU.</description>
-      <category>AI</category>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

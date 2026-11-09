@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Monday, November 9, 2026",
-  summary: "Goldman Sachs restricts generative coding agents Claude Code and GitHub Copilot to core engineering divisions following risk and workflow reviews. Concurrently, Microsoft Research shutters its celebrated AI Frontiers group as industry competition pivots aggressively toward brute-force compute scaling.",
+  date: "Tuesday, November 10, 2026",
+  summary: "Anthropic debuts Claude Fable 5.2 and Mythos 5.2, taking the #1 spot on Artificial Analysis with an index score of 65 and formalizing Fermat's Last Theorem in 30 hours. Meanwhile, Meta AI launches Muse Ember to deliver cost-efficient reasoning for autonomous agent swarms, and security researchers expose universal car telematics API exploits.",
   items: [
     {
       id: 'brief-1',
-      headline: "Goldman Sachs Restricts Claude Code and GitHub to Core Engineers",
+      headline: "Anthropic Unveils Claude Fable 5.2 and Mythos 5.2 for Frontier Scientific Reasoning",
       category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "The Wall Street investment bank halts front-office vibe coding across banking and trading desks, confining agentic tools to 12,000 developers.",
-      whyItMatters: "Marks an enterprise turning point for unregulated AI agent usage in highly compliant financial trading environments.",
-      articleSlug: "goldman-sachs-restricts-claude-code-github-bankers-traders"
+      urgency: "Critical Signal" as const,
+      summary: "Anthropic releases upgraded reasoning models featuring 30% faster generation and top Artificial Analysis index scores.",
+      whyItMatters: "Formalizes proofs and designs functional circuits autonomously, accelerating AI integration into deep science and engineering.",
+      articleSlug: "anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning"
     },
     {
       id: 'brief-2',
-      headline: "John Langford Discloses Shuttering of MSR AI Frontiers Group",
+      headline: "Meta AI Releases Muse Ember: 1.05M-Context Efficient Reasoning Model for Agents",
       category: "ai" as const,
-      urgency: "Critical Signal" as const,
-      summary: "The 50-person research team behind AutoGen and novel model architectures is disbanded following absorption into Microsoft AI.",
-      whyItMatters: "Exposes deep structural tension between fundamental mathematical exploration and commercial brute-force scaling mandates.",
-      articleSlug: "john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group"
+      urgency: "High Impact" as const,
+      summary: "Meta debuts a compact reasoning model matching Claude Haiku 5.5 scores at a third of the inference cost.",
+      whyItMatters: "Reshapes agent swarming economics by drastically slashing costs on repetitive routing and tool-calling execution.",
+      articleSlug: "meta-releases-muse-ember-small-efficient-reasoning-model-agents"
     },
     {
       id: 'brief-3',
-      headline: "Outlook.com Begins Silently Rejecting Email Lacking DMARC Records",
+      headline: "Assetnote Researchers Chain Telematics API and Identity Flaws to Unlock Vehicles",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Microsoft starts bouncing consumer mailbox deliveries from low-volume domains with 550 5.7.1 auth failure codes without advance warning.",
-      whyItMatters: "Normal business and personal correspondence is silently dropped unless administrators publish an immediate DMARC TXT policy.",
-      articleSlug: "outlook-quietly-rejects-email-domains-lacking-dmarc-records"
+      summary: "Vulnerabilities spanning exposed admin tools, path traversal, and MFA bypass allowed arbitrary remote car actuation from license plates.",
+      whyItMatters: "Demonstrates severe supply-chain vulnerabilities where web portal flaws compromise physical vehicle security globally.",
+      articleSlug: "assetnote-security-researchers-chain-telematics-api-universal-car-unlock"
     },
     {
       id: 'brief-4',
-      headline: "Linebender Introduces JIT Bitmap Text Rendering for Microcontrollers",
-      category: "technology" as const,
+      headline: "Meta FAIR Open-Sources e-means: 10x Faster k-means Algorithm in Faiss",
+      category: "research" as const,
       urgency: "Notable Shift" as const,
-      summary: "Raph Levien authors dynamic ARM assembly generation to render proportional vintage Macintosh fonts within a 6 cycles/pixel scanline budget.",
-      whyItMatters: "Proves microcontrollers like the RP2350 can deliver high-quality kerning without sacrificing precious SRAM to framebuffers.",
-      articleSlug: "raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350"
+      summary: "Researchers modernize Lloyd's 1982 clustering algorithm, achieving 10x faster epoch convergence and lower loss in Faiss.",
+      whyItMatters: "Accelerates vector quantization and embedding codebook generation for large-scale retrieval and AI search indexes.",
+      articleSlug: "meta-fair-open-sources-e-means-10x-faster-k-means-faiss"
     },
     {
       id: 'brief-5',
-      headline: "Llama-Modchip Runs 284B DeepSeek MoE on 64GB RAM Without GPUs",
-      category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "A CPU-first runtime applies AVX-512 register tiling and non-temporal caching to prefill 284B models at 44 tokens per second.",
-      whyItMatters: "Demonstrates that frontier sparse MoE checkpoints can execute on desktop workstation memory without enterprise accelerators.",
-      articleSlug: "llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu"
+      headline: "Data Receipts Audit Exposes 4.5x Price Spread Across Identical H100 Cloud Rentals",
+      category: "technology" as const,
+      urgency: "Notable Shift" as const,
+      summary: "Normalized audit reveals H100 SXM 80GB GPUs range from $2.69 on community clouds to $12.29 on hyperscalers.",
+      whyItMatters: "Exposes the premium paid for InfiniBand interconnects and enterprise SLAs versus pure compute cost.",
+      articleSlug: "data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Enterprise AI",
-    text: "Goldman Sachs restricts Claude Code and GitHub access to core software engineers.",
-    articleSlug: "goldman-sachs-restricts-claude-code-github-bankers-traders"
+    tag: "Frontier AI",
+    text: "Anthropic releases Claude Fable 5.2 and Mythos 5.2 with #1 ranking on Artificial Analysis.",
+    articleSlug: "anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning"
   },
   {
     id: 'sig-2',
-    tag: "AI Research",
-    text: "Microsoft Research dissolves 50-person AI Frontiers team behind AutoGen.",
-    articleSlug: "john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group"
+    tag: "Efficient AI",
+    text: "Meta AI launches Muse Ember, matching Claude Haiku 5.5 reasoning at a third of the cost.",
+    articleSlug: "meta-releases-muse-ember-small-efficient-reasoning-model-agents"
   },
   {
     id: 'sig-3',
-    tag: "Email Security",
-    text: "Outlook.com starts bouncing emails lacking DMARC with 550 5.7.1 errors.",
-    articleSlug: "outlook-quietly-rejects-email-domains-lacking-dmarc-records"
+    tag: "Auto Security",
+    text: "Assetnote researchers chain telematics API and OpenIDM flaws to remotely unlock cars.",
+    articleSlug: "assetnote-security-researchers-chain-telematics-api-universal-car-unlock"
   },
   {
     id: 'sig-4',
-    tag: "Embedded Systems",
-    text: "Linebender unveils JIT proportional text rendering on RP2350 silicon.",
-    articleSlug: "raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350"
+    tag: "Algorithms",
+    text: "Meta FAIR open-sources e-means in Faiss, delivering 10x faster clustering than Lloyd's.",
+    articleSlug: "meta-fair-open-sources-e-means-10x-faster-k-means-faiss"
   },
   {
     id: 'sig-5',
-    tag: "CPU Inference",
-    text: "llama-modchip runs 284B DeepSeek MoE on 64GB RAM at 44 tok/s prefill.",
-    articleSlug: "llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu"
+    tag: "Cloud Compute",
+    text: "Data Receipts audit documents 4.57x price spread on identical H100 cloud GPU rentals.",
+    articleSlug: "data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals"
   }
 ];

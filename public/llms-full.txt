@@ -1616,6 +1616,218 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Sources: https://openrouter.ai/elorian/glimpse
 
 ## Published Intelligence Reports (Full Text Corpus)
+### OpenStick: Running Debian and Self-Hosted Homelab Services on a $10 USB Stick
+- Canonical URL: https://nextvector.rhasan.online/article/openstick-10-dollar-linux-usb-stick-homelab
+- Published: 2026-11-09 | Category: TECHNOLOGY | Signal Rating: 82/100
+- Executive Summary: A hardware hacker turns a four-core ARM 4G modem stick into a silent, containerized home server drawing minimal wattage.
+
+**What Happened?**
+Software developer and self-hosting enthusiast Bosscher published a comprehensive architecture log detailing how to repurpose a 10-dollar USB 4G modem dongle into a fully functional, passively cooled Debian Linux homelab server.
+
+**Why It Matters:**
+The project demonstrates that low-end discarded consumer telecom hardware containing quad-core 64-bit ARM processors can run modern container stacks like Podman, ad-blocking DNS, and autonomous AI harnesses at virtually zero electricity cost.
+
+**What Could Happen Next:**
+OpenStick communities are expanding packaging for lightweight containerized microservices and optimizing kernel modules to repurpose onboard 4G modems for emergency SMS and network failovers.
+
+**Key Takeaways:**
+- For $10 USD shipped, OpenStick hardware delivers a quad-core ARM Cortex-A53 CPU at 1 GHz, 512MB RAM, and 4GB eMMC storage.
+- The device runs Debian Linux with systemd and Podman, operating silently with passive thermal cooling and minimal power draw.
+- Workloads include CastSponsorSkip, a custom 40MB AdGuard Home DNS sinkhole blocking 60% of IoT telemetry, and the Zeroclaw AI agent.
+
+**Full Article Content:**
+In a hardware build log published on November 7, 2026, systems developer Bosscher demonstrated the viability of running a 24/7 personal homelab on an OpenStick—an ultra-budget USB dongle originally manufactured as a portable 4G LTE Wi-Fi modem and widely available for approximately ten dollars including shipping.
+
+Despite costing less than a single month of basic cloud virtual private server hosting, the dongle houses a surprisingly capable 64-bit compute platform featuring four ARM Cortex-A53 CPU cores clocked at 1 GHz, 512 megabytes of RAM (~450 MB usable by Linux), 4 gigabytes of onboard eMMC flash storage, 150 Mbit/s Wi-Fi, an integrated 4G modem, and a GPS receiver. Because the board dissipates negligible heat, it operates completely passively with zero fan noise.
+
+Following a flashing procedure, the USB stick boots a standard installation of Debian GNU/Linux, providing full support for systemd process supervision and Podman for rootless containerization. The author structured a lean microservices architecture specifically optimized to operate within the strict 450-megabyte usable memory envelope.
+
+Key deployed services include `CastSponsorSkip`, a 5-to-10 MB utility that monitors local Google Cast video streams to automatically bypass YouTube promotional sponsorships, alongside a custom fork of `AdGuard Home`. Running in roughly 40 MB of RAM, the DNS resolver currently intercepts and drops 60 percent of outbound DNS requests across the home network, filtering telemetry and tracking pings emitted by smart televisions, appliances, and IoT peripherals.
+
+To enable remote management, Bosscher deployed `Zeroclaw`, an emerging lightweight AI agent harness that consumes only 64 MB of RAM (idling at ~3 MB RSS). Zeroclaw provides authenticated root shell access through Telegram across 30 integrated communication channels, allowing the owner to query server health and disk utilization over cellular networks while traveling. Ingress connectivity is handled via an 8-to-20 MB Cloudflare Tunnel daemon, exposing local services without opening inbound firewall ports.
+
+**Primary Sources & Citations:**
+- [What I run on my $10 USD OpenStick homelab](https://blog.bosscher.ch/posts/openstick/) (Bosscher)
+
+---
+
+### Llama-Modchip Enables 284B DeepSeek Execution on 64GB RAM Without GPUs
+- Canonical URL: https://nextvector.rhasan.online/article/llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu
+- Published: 2026-11-09 | Category: AI | Signal Rating: 89/100
+- Executive Summary: A CPU-first runtime merges multi-column SIMD tiling and non-temporal caching to unlock 44 tok/s prompt prefill in system memory.
+
+**What Happened?**
+Open-source runtime project llama-modchip released version 2.4.0, introducing ggml and llama.cpp kernel patches that run the massive 284B DeepSeek-V4-Flash MoE model completely in 64GB of system RAM without requiring any discrete GPUs.
+
+**Why It Matters:**
+Standard quantized builds of 280B+ MoE models exceed 76GB and trigger catastrophic NVMe swap thrashing on desktop machines; llama-modchip compacts the checkpoint to 56.56 GiB and delivers 44 tok/s prefill via AVX-512 cache tiling.
+
+**What Could Happen Next:**
+The developers are expanding register tiling routines to ARM Neoverse and Apple Silicon chips while submitting automated benchmarks to community CPU inference leaderboards.
+
+**Key Takeaways:**
+- llama-modchip v2.4.0 reduces DeepSeek-V4-Flash from 76.87 GiB to 56.56 GiB at 1.71 bpw, fitting into 57.61 GiB VmRSS on a 64GB host.
+- Evaluates all 6 routed experts per layer (Top-6) without pruning, achieving 44.36 tok/s prompt prefill on a 16-core AMD Zen 5 CPU.
+- Applies _MM_HINT_NTA non-temporal streaming to prevent cold MoE weights from evicting hot KV cache lines from CPU L3 caches.
+
+**Full Article Content:**
+On November 7, 2026, the open-source systems project `llama-modchip` unveiled its v2.4.0 release, presenting an engineered suite of `ggml` and `llama.cpp` kernel patches, quantization transcoders, and cache-aware runtimes designed to execute sparse Mixture-of-Experts (MoE) models spanning up to 284 billion parameters entirely within commodity system RAM.
+
+Running massive frontier MoE checkpoints has traditionally demanded multiple enterprise GPUs. Conventional `UD-IQ1_S` quantized builds of DeepSeek-V4-Flash—a model featuring 284.33 billion total parameters and 13.17 billion active parameters distributed across 43 Multi-Head Latent Attention (MLA) layers and 256 routed experts—occupy 76.87 GiB on disk. On a standard 64-gigabyte physical RAM workstation with ~62.5 GiB of usable Linux memory, launching the model immediately causes crippling NVMe swap thrashing or Linux OOM killer termination.
+
+llama-modchip overcomes this boundary through aggressive quantization transcoding that compacts the checkpoint to 56.56 GiB (1.71 bits per weight). This enables the full model alongside a 256K token KV cache to settle into 57.61 GiB of resident set size (`VmRSS`), comfortably locking inside physical memory with zero swap overhead while evaluating all 6 routed experts per layer without pruning.
+
+To counteract the memory-bandwidth bottlenecks inherent to CPU inference, the project replaced single-column matrix-vector multiplication loops with a 4-level register tiling schedule across AVX-512BW `ZMM` registers, L1D (32 KB), L2 (1 MB), and L3 (64 MB) caches. On a 16-core AMD Zen 5 processor, prompt prefill speeds jumped from 25.0 to 44.36 tokens per second—a 77 percent acceleration—while decoding holds between 9.1 and 14.7 tokens per second.
+
+Crucially, the kernel incorporates `_MM_HINT_NTA` non-temporal streaming hints when reading expert weights, preventing sparsely activated parameters from evicting active KV cache lines from the CPU's 64 MB L3 cache. For agentic coding workflows, llama-modchip integrates a 1.64 MB `Stockfish-PVS v2` speculative drafter and `/dev/shm` shared memory slot restoration, reloading 40-tool context windows in 13.1 milliseconds.
+
+**Primary Sources & Citations:**
+- [llama-modchip: CPU-First Inference for 284B & 30B MoE Models on 16-64 GB RAM](https://github.com/synchopate/llama-modchip) (GitHub)
+
+---
+
+### Raph Levien Introduces JIT Bitmap Text Rendering for Microcontrollers on RP2350
+- Canonical URL: https://nextvector.rhasan.online/article/raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350
+- Published: 2026-11-09 | Category: TECHNOLOGY | Signal Rating: 85/100
+- Executive Summary: Linebender project lead develops runtime assembly generation to render proportional kerning directly on scanline video budgets.
+
+**What Happened?**
+Graphics engineer Raph Levien unveiled a dynamic JIT compiler technique for microcontrollers that synthesizes specialized ARM assembly loops on the fly to render proportional bitmap text with kerning on the Raspberry Pi RP2350.
+
+**Why It Matters:**
+Microcontrollers have strictly constrained SRAM (520 kB on RP2350), making framebuffers expensive and fixed character ROMs visually crude; racing the beam with JIT code allows rich vintage Macintosh typography at 6 cycles per pixel.
+
+**What Could Happen Next:**
+Levien is expanding vic-2350 and symbolasm to support full retro computing window environments directly driven from low-cost silicon over DVI displays.
+
+**Key Takeaways:**
+- Linebender lead Raph Levien designed a race-the-beam text renderer for the vic-2350 home computer project on the RP2350 chip.
+- Operating within a strict budget of ~6 cycles per pixel for DVI video out via HSTX, Rust proved too slow, prompting custom ARM assembly.
+- Levien authored symbolasm and a runtime JIT to generate string-specialized machine code loops on the fly with zero framebuffers.
+
+**Full Article Content:**
+In a technical dissertation published on Linebender's engineering portal on November 7, 2026, noted graphics and text systems architect Raph Levien introduced a novel method for executing high-performance proportional bitmap text rendering on microcontrollers using on-the-fly JIT code generation.
+
+The breakthrough emerged from Levien's `vic-2350` project, which seeks to re-envision an 1980s personal computer experience on Raspberry Pi's RP2350 microcontroller board. While modern UI engines favor anti-aliased font rendering, low-resolution displays benefit substantially from crisp, hand-crafted bitmap typography reminiscent of the early Macintosh and Xerox Alto systems.
+
+Rendering proportional typography with true kerning on microcontrollers is notoriously constrained. The RP2350 contains 520 kilobytes of SRAM; allocating dedicated high-resolution framebuffers severely depletes memory required by user applications. To preserve RAM, Levien adopted a 'race-the-beam' architecture where software renders graphics line by line into a small scanline buffer synchronized with digital DVI video output via the chip's High-Speed Serial Transmit (HSTX) peripheral.
+
+Racing the beam enforces a stringent computational ceiling of approximately 6 clock cycles per output pixel. Initial tests demonstrated that high-level compilers like Rust could not satisfy the tight timing loop without dropping scanline frames. In response, Levien created `symbolasm`, a tailored programming language specifically engineered for handwritten, cycle-accurate Cortex-M33 assembly.
+
+To push throughput further, Levien's engine incorporates a JIT compiler that inspects each text string and dynamically generates customized machine code routines to blit glyphs into the scanline buffer. By baking glyph widths, bit shifts, and kerning offsets directly into immediate machine instructions, the renderer minimizes branches and cache misses, proving that sophisticated typography can thrive on silicon costing under five dollars.
+
+**Primary Sources & Citations:**
+- [JIT bitmap text rendering for microcontrollers](https://linebender.org/blog/jit-bitmap-text/) (Linebender)
+
+---
+
+### Outlook.com Quietly Rejects Inbound Email from Domains Lacking DMARC Records
+- Canonical URL: https://nextvector.rhasan.online/article/outlook-quietly-rejects-email-domains-lacking-dmarc-records
+- Published: 2026-11-09 | Category: TECHNOLOGY | Signal Rating: 86/100
+- Executive Summary: Microsoft starts bouncing consumer mailbox deliveries from low-volume senders with 550 5.7.1 errors without formal notice.
+
+**What Happened?**
+Microsoft began silently rejecting legitimate inbound messages delivered to Outlook.com, Hotmail, Live, and MSN accounts from sending domains that have not published a DNS DMARC record.
+
+**Why It Matters:**
+Unlike previous bulk-sender enforcement rules targeting high-volume marketers, this unannounced policy bounce immediately drops correspondence from small businesses, professionals, and individual senders.
+
+**What Could Happen Next:**
+Domain administrators must immediately publish at least a monitoring TXT record (`v=DMARC1; p=none`) to restore message deliverability across Microsoft's consumer email network.
+
+**Key Takeaways:**
+- Beginning November 5, 2026, Outlook.com began bouncing messages with error 550 5.7.1 Message rejected: Message lacks SPF/DKIM/DMARC Auth Records.
+- The unannounced enforcement impacts ordinary low-volume senders even when their domains possess fully valid, passing SPF and DKIM configurations.
+- Adding a single DNS TXT record with policy p=none instantly resolves the rejection without affecting message handling on other mail platforms.
+
+**Full Article Content:**
+In an analysis published November 6, 2026, MailRoute founder and chief executive Thomas A. Johnson revealed that Microsoft has begun unannounced delivery rejections across consumer Outlook.com, Hotmail, Live, and MSN mailboxes for any domain that lacks a published DMARC authentication record.
+
+Outbound mail logs first detected the rejections on November 5, 2026. Affected mail servers receive a permanent SMTP rejection stating: '550 5.7.1 Message rejected: Message lacks SPF/DKIM/DMARC Auth Records (AS9031519)', with early delivery attempts returning the same error message without the trailing server identifier.
+
+The immediate enforcement represents a major departure from Microsoft's established deliverability guidelines. Since May 2025, Microsoft has enforced strict SPF, DKIM, and DMARC compliance on high-volume commercial senders transmitting more than 5,000 messages daily, returning a descriptive '550 5.7.515 Access denied' bounce that enumerates exactly which authentication check failed.
+
+By contrast, this new enforcement wave provides no advance notice, no postmaster service bulletin, and no status dashboard advisories. Furthermore, MailRoute's investigation revealed that the majority of rejected messages originated from normal business domains whose SPF and DKIM configurations were completely functional; messages were rejected solely because no DMARC record existed to bind the cryptographic signatures to the sender's visible From address.
+
+Because Microsoft only drops a subset of non-authenticated traffic based on dynamic reputation heuristics, many domain owners remain unaware that their correspondence is bouncing. MailRoute advises all system administrators to immediately configure a standard DNS TXT record at the `_dmarc` subdomain containing `v=DMARC1; p=none`, which satisfies Microsoft's validation check without altering filtering behavior on other receiving networks.
+
+**Primary Sources & Citations:**
+- [Outlook.com Is Quietly Rejecting Email From Domains Without DMARC](https://mailroute.net/blog/outlook-rejecting-email-without-dmarc) (MailRoute)
+
+---
+
+### John Langford Discloses Shuttering of Microsoft Research AI Frontiers Group
+- Canonical URL: https://nextvector.rhasan.online/article/john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group
+- Published: 2026-11-09 | Category: AI | Signal Rating: 91/100
+- Executive Summary: The research veteran resigns as Microsoft folds the AutoGen team into Microsoft AI under an aggressive scaling mandate.
+
+**What Happened?**
+Machine learning pioneer John Langford revealed that Microsoft has dissolved the 50-person AI Frontiers research team within MSR, prompting founding leadership resignations following an absorption into Microsoft AI.
+
+**Why It Matters:**
+The dissolution underscores an escalating corporate conflict between open scientific algorithmic research and industrial brute-force model scaling, threatening foundational agent and architectural breakthroughs.
+
+**What Could Happen Next:**
+Leadership from AI Frontiers has departed Microsoft, while remaining researchers face reassignment to data curation and scaling pipelines under ex-Inflection executives.
+
+**Key Takeaways:**
+- Formed post-ChatGPT in 2023, the ~50-person AI Frontiers group birthed AutoGen, the Fara computer-use agent, and the Dion3 optimizer.
+- An early September 2026 reorganization merged AI Frontiers into Mustafa Suleyman's Microsoft AI division, sparking philosophical conflict.
+- John Langford resigned alongside other founding leaders after MAI mandated a scaling-only roadmap that eliminated exploratory research paths.
+
+**Full Article Content:**
+Writing on his Machine Learning (Theory) research blog on November 7, 2026, prominent learning theorist John Langford announced the formal end of Microsoft Research's AI Frontiers (AIF) organization, confirming his own resignation alongside key founding researchers following an incompatible restructuring into Microsoft AI.
+
+Established in 2023 in the wake of ChatGPT's release, AI Frontiers operated as an agile ~50-person sub-organization designed to organize coherent, structured research initiatives capable of competing with well-funded commercial labs. Despite chronic compute bottlenecks, the group produced influential open-source systems including the AutoGen multi-agent orchestration framework and the Fara computer-use agent.
+
+In New York City, Langford's immediate cohort focused on novel learning foundations rather than raw scale. Their inventions included the Next Latent objective to enable mathematical extrapolation beyond training distributions, Dion3 (an enhanced version of the Muon momentum optimizer), and the Full Bandwidth Transformer (FBT), an architecture that leverages recursive execution to dramatically enhance token reasoning efficiency.
+
+External experiments conducted by ByteDance suggested that variants of the Full Bandwidth Transformer could achieve performance parity with standard transformer models twice their parameter volume. Langford highlighted that in an industry committing hundreds of billions of dollars toward compute clusters, algorithmic innovations that halve training and inference footprints yield immense financial and scientific dividends.
+
+The breaking point arrived following an early September 2026 reorganization that transferred AI Frontiers into Microsoft AI, the centralized consumer and model-building arm led by ex-Inflection executives. Langford described MAI's internal philosophy as 'scaling, and aggressively not research,' where engineering resources are concentrated almost entirely on dataset acquisition, synthetic filtering, and token volume rather than algorithmic derivation.
+
+Confronted with an operational environment that lacked any deployment pathway for exploratory research and violated MSR's historical meritocratic covenant, Langford and fellow founding directors elected to exit the company. Microsoft has cancelled upcoming university research internships with the group, formally concluding one of the firm's most productive agentic research laboratories.
+
+**Primary Sources & Citations:**
+- [The End of AI Frontiers](https://hunch.net/?p=13764006) (Machine Learning (Theory))
+
+---
+
+### Goldman Sachs Restricts Claude Code and GitHub to Core Engineers
+- Canonical URL: https://nextvector.rhasan.online/article/goldman-sachs-restricts-claude-code-github-bankers-traders
+- Published: 2026-11-09 | Category: AI | Signal Rating: 88/100
+- Executive Summary: The Wall Street bank reins in non-technical vibe coding across trading desks and investment banking amid risk reviews.
+
+**What Happened?**
+Goldman Sachs issued updated internal compliance guidance cutting off bankers and trading desks from AI coding agents Claude Code and GitHub, restricting deployment strictly to core engineering divisions.
+
+**Why It Matters:**
+The reversal marks a retreat from aggressive enterprise vibe coding in regulated finance, highlighting severe audit, hallucination, and data leak risks when non-programmers run agentic software over live financial systems.
+
+**What Could Happen Next:**
+Wall Street peers are auditing agent permissions and shell tool access, while Goldman prepares for its role as a lead underwriter on Anthropic's upcoming initial public offering.
+
+**Key Takeaways:**
+- Internal guidance updated in October 2026 confines Anthropic's Claude Code and Microsoft's GitHub to bank software engineers and Strats.
+- Front-office traders and bankers who used agent tools to parse client order flows and generate market models are cut off.
+- CIO Marco Argenti previously praised non-technical vibe coding in July 2026 across Goldman's 12,000 developers and 47,000 global staff.
+
+**Full Article Content:**
+According to reporting by Bloomberg News published via State of AI on November 2, 2026, Goldman Sachs has revised internal technology governance to bar front-office bankers and market traders from utilizing generative coding tools, restricting platforms like Anthropic's Claude Code and Microsoft's GitHub strictly to designated software engineers.
+
+The policy shift curtails widespread experimentation across Goldman's trading divisions, where staff without formal computer science backgrounds had begun leaning on automated coding assistants to inspect client trading flows, build quantitative scenario projections, and generate visual market collateral. A person familiar with internal trading operations noted that desks expressed frustration after relying on these tools to streamline repetitive modeling workflows.
+
+Only quantitative strategists—known internally as Strats, who operate at the technical intersection of quantitative algorithmic modeling, trading desks, and software engineering—have retained access alongside the bank's central engineering division. Bank spokesperson Nick Carcaterra stated that Goldman Sachs routinely evaluates and restricts AI tool deployments across business units to establish best use cases under controlled parameters.
+
+The move marks a stark operational pivot for chief information officer Marco Argenti. As recently as July 2026, Argenti publicly championed 'vibe coding' by non-technical employees, explaining how traders quickly sketched initial software prototypes with AI agents and passed them to engineering staff for formal refinement. However, enterprise risk teams raised concerns over untracked code execution and sensitive customer data handling on production workstations.
+
+The bank previously demonstrated regulatory sensitivity in April 2026 when it quietly severed Claude access from its internal portal for bankers in Hong Kong. The current tightening arrives at a delicate moment for institutional relationships, as Goldman Sachs serves as a prominent lead underwriter on Anthropic's anticipated multi-billion-dollar initial public offering.
+
+**Primary Sources & Citations:**
+- [Goldman Sachs Is Pulling Claude Code From Its Bankers and Traders](https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers) (State of AI)
+
+---
+
 ### Anthropic Formulates Agent Memory Architecture: Sleep-Time Dreaming Consolidates Autonomous Context
 - Canonical URL: https://nextvector.rhasan.online/article/anthropic-formulates-agent-memory-architecture-sleep-time-dreaming-context
 - Published: 2026-11-08 | Category: AI | Signal Rating: 93/100

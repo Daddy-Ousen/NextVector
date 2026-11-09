@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 01:30:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>OpenStick: Running Debian and Self-Hosted Homelab Services on a $10 USB Stick</title>
+      <link>https://nextvector.rhasan.online/article/openstick-10-dollar-linux-usb-stick-homelab</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openstick-10-dollar-linux-usb-stick-homelab</guid>
+      <description>A hardware hacker turns a four-core ARM 4G modem stick into a silent, containerized home server drawing minimal wattage.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 09 Nov 2026 01:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Llama-Modchip Enables 284B DeepSeek Execution on 64GB RAM Without GPUs</title>
+      <link>https://nextvector.rhasan.online/article/llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu</guid>
+      <description>A CPU-first runtime merges multi-column SIMD tiling and non-temporal caching to unlock 44 tok/s prompt prefill in system memory.</description>
+      <category>AI</category>
+      <pubDate>Mon, 09 Nov 2026 01:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Raph Levien Introduces JIT Bitmap Text Rendering for Microcontrollers on RP2350</title>
+      <link>https://nextvector.rhasan.online/article/raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350</guid>
+      <description>Linebender project lead develops runtime assembly generation to render proportional kerning directly on scanline video budgets.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 09 Nov 2026 01:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Outlook.com Quietly Rejects Inbound Email from Domains Lacking DMARC Records</title>
+      <link>https://nextvector.rhasan.online/article/outlook-quietly-rejects-email-domains-lacking-dmarc-records</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/outlook-quietly-rejects-email-domains-lacking-dmarc-records</guid>
+      <description>Microsoft starts bouncing consumer mailbox deliveries from low-volume senders with 550 5.7.1 errors without formal notice.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 09 Nov 2026 00:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>John Langford Discloses Shuttering of Microsoft Research AI Frontiers Group</title>
+      <link>https://nextvector.rhasan.online/article/john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group</guid>
+      <description>The research veteran resigns as Microsoft folds the AutoGen team into Microsoft AI under an aggressive scaling mandate.</description>
+      <category>AI</category>
+      <pubDate>Mon, 09 Nov 2026 00:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Goldman Sachs Restricts Claude Code and GitHub to Core Engineers</title>
+      <link>https://nextvector.rhasan.online/article/goldman-sachs-restricts-claude-code-github-bankers-traders</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/goldman-sachs-restricts-claude-code-github-bankers-traders</guid>
+      <description>The Wall Street bank reins in non-technical vibe coding across trading desks and investment banking amid risk reviews.</description>
+      <category>AI</category>
+      <pubDate>Mon, 09 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Anthropic Formulates Agent Memory Architecture: Sleep-Time Dreaming Consolidates Autonomous Context</title>
       <link>https://nextvector.rhasan.online/article/anthropic-formulates-agent-memory-architecture-sleep-time-dreaming-context</link>
@@ -496,60 +550,6 @@
       <description>The promptable 40-language model achieves 5.33% English WER and processes 100 hours of audio in three minutes on one GPU.</description>
       <category>AI</category>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Mitchell Hashimoto Releases Ghostty 1.4 with Full Kitty Graphics and Security Overhaul</title>
-      <link>https://nextvector.rhasan.online/article/ghostty-1-4-releases-kitty-graphics-performance-audit</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ghostty-1-4-releases-kitty-graphics-performance-audit</guid>
-      <description>The Zig-based terminal emulator closes seven months of development with 100% protocol compliance and patches for eight security advisories.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 28 Oct 2026 00:35:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Python Steering Council Retires Experimental Copy-and-Patch JIT</title>
-      <link>https://nextvector.rhasan.online/article/python-steering-council-retires-experimental-copy-patch-jit</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/python-steering-council-retires-experimental-copy-patch-jit</guid>
-      <description>CPython core developers abandon PEP 836 in Python 3.15, redirecting compiler resources toward Tier 2 specialization and trace optimization.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 28 Oct 2026 00:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Cloudflare Discloses Cross-Request KV Cache Memory Leak in Workers AI</title>
-      <link>https://nextvector.rhasan.online/article/cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-discloses-glm-5-3-workers-ai-kv-cache-exposure</guid>
-      <description>An SGLang disaggregated prefill bug coupled with pool undersizing caused 155 responses to expose fragments of other users&#x27; prompt history.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 28 Oct 2026 00:24:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Apple Debuts M6 Generation Silicon in 14-Inch MacBook Pro and iMac</title>
-      <link>https://nextvector.rhasan.online/article/apple-introduces-14-inch-macbook-pro-and-imac-with-m6</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apple-introduces-14-inch-macbook-pro-and-imac-with-m6</guid>
-      <description>The 2nm processor architecture boosts on-device LLM time-to-first-token by up to 13x over M1 while extending battery endurance to 24 hours.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 28 Oct 2026 00:18:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Partners with Academia to Verify Frontier AI Discoveries in Math and Physics</title>
-      <link>https://nextvector.rhasan.online/article/openai-academic-partnerships-verify-ai-scientific-breakthroughs</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-academic-partnerships-verify-ai-scientific-breakthroughs</guid>
-      <description>The lab treats model outputs as raw data, enlisting academic shepherds to verify proofs in harmonic analysis, quantum field theory, and computational complexity.</description>
-      <category>RESEARCH</category>
-      <pubDate>Wed, 28 Oct 2026 00:12:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google DeepMind Unveils Genie 4 Real-Time Interactive World Simulation Model</title>
-      <link>https://nextvector.rhasan.online/article/google-deepmind-unveils-genie-4-world-simulation-model</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-deepmind-unveils-genie-4-world-simulation-model</guid>
-      <description>The frontier foundation model generates controllable 3D environments with live physics, dynamic natural-language steering, and native spatial audio.</description>
-      <category>AI</category>
-      <pubDate>Wed, 28 Oct 2026 00:05:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

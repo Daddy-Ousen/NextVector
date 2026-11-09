@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Sunday, November 8, 2026",
-  summary: "Anthropic introduces a formal cognitive architecture for AI agent memory using offline dreaming to compress multi-session context. Meanwhile, PWN.AI demonstrates a root guest-to-host VM escape on AWS Firecracker, Mitchell Hashimoto releases Libghostty 1.0, and sodium-ion batteries approach cost parity with LFP.",
+  date: "Monday, November 9, 2026",
+  summary: "Goldman Sachs restricts generative coding agents Claude Code and GitHub Copilot to core engineering divisions following risk and workflow reviews. Concurrently, Microsoft Research shutters its celebrated AI Frontiers group as industry competition pivots aggressively toward brute-force compute scaling.",
   items: [
     {
       id: 'brief-1',
-      headline: "Anthropic Formulates Agent Memory Architecture: Sleep-Time Dreaming Consolidates Autonomous Context",
+      headline: "Goldman Sachs Restricts Claude Code and GitHub to Core Engineers",
       category: "ai" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Anthropic details how offline dreaming allows AI agents to distill execution logs into compact procedural guidelines across long-horizon tasks. Evaluations on CL-Bench and gaming environments demonstrate 95% reductions in memory file bloat.",
-      whyItMatters: "Selective offline consolidation resolves compounding context degradation and hallucination without requiring continuous manual prompt engineering.",
-      articleSlug: "anthropic-formulates-agent-memory-architecture-sleep-time-dreaming-context"
+      urgency: "High Impact" as const,
+      summary: "The Wall Street investment bank halts front-office vibe coding across banking and trading desks, confining agentic tools to 12,000 developers.",
+      whyItMatters: "Marks an enterprise turning point for unregulated AI agent usage in highly compliant financial trading environments.",
+      articleSlug: "goldman-sachs-restricts-claude-code-github-bankers-traders"
     },
     {
       id: 'brief-2',
-      headline: "PWN.AI Demonstrates Full Root Guest-to-Host VM Escape on AWS Firecracker MicroVMs",
-      category: "technology" as const,
-      urgency: "High Impact" as const,
-      summary: "Security researchers exploit KVM return handling to poison saved host register frames and execute root code on the virtualization host from inside an unprivileged guest. The exploit succeeds while keeping the guest microVM running normally.",
-      whyItMatters: "Firecracker isolates serverless containers and multi-tenant AI sandboxes globally, making hypervisor breakouts a foundational cloud security concern.",
-      articleSlug: "firecracker-microvm-guest-to-host-root-escape-pwnescape-kvm"
+      headline: "John Langford Discloses Shuttering of MSR AI Frontiers Group",
+      category: "ai" as const,
+      urgency: "Critical Signal" as const,
+      summary: "The 50-person research team behind AutoGen and novel model architectures is disbanded following absorption into Microsoft AI.",
+      whyItMatters: "Exposes deep structural tension between fundamental mathematical exploration and commercial brute-force scaling mandates.",
+      articleSlug: "john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group"
     },
     {
       id: 'brief-3',
-      headline: "Mitchell Hashimoto Releases Libghostty 1.0 Delivering Stable C ABI for Terminal Emulation",
+      headline: "Outlook.com Begins Silently Rejecting Email Lacking DMARC Records",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Extracted from Ghostty's core Zig implementation, libghostty-vt 1.0 delivers a standalone terminal emulation library with an enforced stable C ABI. The library already powers JetBrains IDE terminals for 12.5 million users and unblocks Neovim scrollback reflow.",
-      whyItMatters: "Guaranteed ABI stability allows operating systems and IDEs to embed a modern, high-performance terminal emulator without maintaining fragmented forks.",
-      articleSlug: "mitchell-hashimoto-releases-libghostty-1-0-stable-c-abi-terminal-emulation"
+      summary: "Microsoft starts bouncing consumer mailbox deliveries from low-volume domains with 550 5.7.1 auth failure codes without advance warning.",
+      whyItMatters: "Normal business and personal correspondence is silently dropped unless administrators publish an immediate DMARC TXT policy.",
+      articleSlug: "outlook-quietly-rejects-email-domains-lacking-dmarc-records"
     },
     {
       id: 'brief-4',
-      headline: "Sodium-Ion Batteries Approach Cell-Level Cost Parity with LFP as Global Supply Deals Exceed 70 GWh",
-      category: "science" as const,
+      headline: "Linebender Introduces JIT Bitmap Text Rendering for Microcontrollers",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "A Wood Mackenzie benchmark reveals sodium-ion cells are on track to match lithium iron phosphate costs by late 2026, delivering a 21% lower 20-year total cost of ownership. Industrial manufacturing contracts have now surpassed 70 GWh worldwide.",
-      whyItMatters: "Abundant sodium chemistry removes mineral supply constraints for stationary energy storage while offering superior thermal performance in cold climates.",
-      articleSlug: "sodium-ion-batteries-approach-cell-cost-parity-lfp-70-gwh-supply-agreements"
+      summary: "Raph Levien authors dynamic ARM assembly generation to render proportional vintage Macintosh fonts within a 6 cycles/pixel scanline budget.",
+      whyItMatters: "Proves microcontrollers like the RP2350 can deliver high-quality kerning without sacrificing precious SRAM to framebuffers.",
+      articleSlug: "raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350"
     },
     {
       id: 'brief-5',
-      headline: "Google Acquires Crusoe's 1.8 GW Wyoming Data Center Campus in Hyperscale AI Expansion",
+      headline: "Llama-Modchip Runs 284B DeepSeek MoE on 64GB RAM Without GPUs",
       category: "ai" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Google has acquired Crusoe's de-risked AI data center campus site in southeast Wyoming, completing site entitlements and power strategy. The campus couples high-efficiency fuel cells, natural gas turbines, and regional carbon sequestration.",
-      whyItMatters: "Acquiring pre-entitled gigawatt-scale power infrastructure allows hyperscalers to bypass multi-year transmission interconnect delays.",
-      articleSlug: "google-acquires-crusoe-wyoming-data-center-campus-hyperscale-ai"
+      urgency: "High Impact" as const,
+      summary: "A CPU-first runtime applies AVX-512 register tiling and non-temporal caching to prefill 284B models at 44 tokens per second.",
+      whyItMatters: "Demonstrates that frontier sparse MoE checkpoints can execute on desktop workstation memory without enterprise accelerators.",
+      articleSlug: "llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Agent Memory",
-    text: "Anthropic details offline dreaming architecture to condense long-horizon agent execution logs.",
-    articleSlug: "anthropic-formulates-agent-memory-architecture-sleep-time-dreaming-context"
+    tag: "Enterprise AI",
+    text: "Goldman Sachs restricts Claude Code and GitHub access to core software engineers.",
+    articleSlug: "goldman-sachs-restricts-claude-code-github-bankers-traders"
   },
   {
     id: 'sig-2',
-    tag: "Virtualization Flaw",
-    text: "PWN.AI demonstrates full root guest-to-host breakout on AWS Firecracker microVM hypervisors.",
-    articleSlug: "firecracker-microvm-guest-to-host-root-escape-pwnescape-kvm"
+    tag: "AI Research",
+    text: "Microsoft Research dissolves 50-person AI Frontiers team behind AutoGen.",
+    articleSlug: "john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group"
   },
   {
     id: 'sig-3',
-    tag: "Terminal Core",
-    text: "Mitchell Hashimoto ships Libghostty 1.0 with stable C ABI, powering 12.5M JetBrains users.",
-    articleSlug: "mitchell-hashimoto-releases-libghostty-1-0-stable-c-abi-terminal-emulation"
+    tag: "Email Security",
+    text: "Outlook.com starts bouncing emails lacking DMARC with 550 5.7.1 errors.",
+    articleSlug: "outlook-quietly-rejects-email-domains-lacking-dmarc-records"
   },
   {
     id: 'sig-4',
-    tag: "Clean Energy",
-    text: "Wood Mackenzie reports sodium-ion battery cells near LFP cost parity with 70 GWh in deals.",
-    articleSlug: "sodium-ion-batteries-approach-cell-cost-parity-lfp-70-gwh-supply-agreements"
+    tag: "Embedded Systems",
+    text: "Linebender unveils JIT proportional text rendering on RP2350 silicon.",
+    articleSlug: "raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350"
   },
   {
     id: 'sig-5',
-    tag: "Cloud Scale",
-    text: "Google acquires Crusoe's 1.8 GW Wyoming data center campus featuring hybrid power design.",
-    articleSlug: "google-acquires-crusoe-wyoming-data-center-campus-hyperscale-ai"
+    tag: "CPU Inference",
+    text: "llama-modchip runs 284B DeepSeek MoE on 64GB RAM at 44 tok/s prefill.",
+    articleSlug: "llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu"
   }
 ];

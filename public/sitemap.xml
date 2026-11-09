@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nextvector.rhasan.online</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/briefing</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
@@ -38,25 +38,25 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/timeline</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/research</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/ai</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/technology</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
@@ -68,19 +68,19 @@
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/analysis</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/deep-dives</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nextvector.rhasan.online/archive</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
@@ -159,6 +159,42 @@
   <url>
     <loc>https://nextvector.rhasan.online/compare/mistral-vs-qwen</loc>
     <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/openstick-10-dollar-linux-usb-stick-homelab</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/outlook-quietly-rejects-email-domains-lacking-dmarc-records</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://nextvector.rhasan.online/article/goldman-sachs-restricts-claude-code-github-bankers-traders</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>

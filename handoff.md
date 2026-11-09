@@ -1,3 +1,43 @@
+# Handoff — 2026-11-10 (Daily Intelligence Pipeline Run: art-366 to art-371)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face (`pipeline_runs/harvest-2026-11-09.json`).
+  - Sourced, verified, and published 6 original articles (`art-366` to `art-371`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-366`: `anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning` (Hero / Model-Report, Signal 94, Anthropic announces Claude Fable 5.2 and Mythos 5.2 for frontier mathematical formalization and scientific reasoning; Fable 5.2 formalizes Fermat's Last Theorem in Lean in under 30 hours and scores 65 on Artificial Analysis, ranking #1 out of 74 evaluated frontier systems; operates 30% faster at $8/$40 per M tokens on OpenRouter and Claude API).
+    - `art-367`: `meta-releases-muse-ember-small-efficient-reasoning-model-agents` (Featured / Model-Report, Signal 90, Meta AI releases Muse Ember, a lightweight 1.05M-context reasoning model designed for tool-calling agents; matches Claude Haiku 5.5 on agent benchmarks at 1/3 the inference cost at $0.10 input / $0.50 output per million tokens).
+    - `art-368`: `assetnote-security-researchers-chain-telematics-api-universal-car-unlock` (Featured / Deep-Dive, Signal 91, Assetnote researchers Shubham Shah and Sam Curry demonstrate remote unlock, ignition, and tracking on passenger vehicle fleets by chaining exposed staging test harnesses, hardcoded OpenIDM credentials, path traversal, and ROPC authentication flows).
+    - `art-369`: `meta-fair-open-sources-e-means-10x-faster-k-means-faiss` (Discovery, Signal 88, Meta FAIR open-sources e-means in Faiss v1.11.0, a vector quantization clustering algorithm achieving 10–45x GPU acceleration over Flash-KMeans with convergence in 1.2–3 epochs via exact triangle inequality pruning).
+    - `art-370`: `data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals` (Analysis, Signal 86, Data Receipts audits 35,000 spot and on-demand cloud GPU invoices, exposing an unhedged 4.57x price spread on identical NVIDIA H100 SXM5 80GB instances ranging from $2.69/hr on RunPod Community to $12.29/hr on Azure ND H100 v5 with Quantum-2 InfiniBand).
+    - `art-371`: `payments-canada-launches-real-time-rail-247-settlement-infrastructure` (Breaking, Signal 84, Payments Canada officially goes live with the Real-Time Rail national payments system, enabling 24/7/365 irrevocably settled ISO 20022 account-to-account credit transfers under 5 seconds across 40 participating direct-clearer institutions).
+  - **Stories dropped & why:**
+    - `vllm-ascend-npu-driver-bug`: forum bug report without verified upstream PR or patch benchmark.
+    - `cryptography-paper-pq-lattice`: purely theoretical draft without reference implementation or practical timing attack.
+    - `ai-coding-productivity-survey`: marketing survey lacking audited sample methodology.
+  - **Model Watch:**
+    - Evaluated 72h window candidates: `anthropic/claude-fable-5.2` and `anthropic/claude-mythos-5.2` (covered in art-366), `meta/muse-ember` (covered in art-367), `liquid/lfm-3-1.7b` (OpenRouter listing Nov 6, edge reasoning; pending benchmark dataset integration), `google/gemini-omni-1.2-flash` (video-only endpoint), `stealth/crouton-alpha` (anonymous preview), and domain fine-tunes (`z-ai/glm-5.3-flashx-legal`, `particle-ai/particle-1`).
+    - Curated model registry maintained at 144 models pending next snapshot dataset updates.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Tuesday, November 10, 2026` (5 items linking to art-366..370).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-366..370).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 16$ bits from catalog, 21–36 bits pairwise, zero reused tokens).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-10-the-morning-vector.md` (`fa8929d`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 371 articles, 144 models, 10 showdowns; 544 static HTML files, sitemap 542 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `39679be` (content update), `fa8929d` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Wednesday, November 11, 2026.
+  - Monitor Arena and Artificial Analysis for benchmark listings for `Claude Fable 5.2`, `Claude Mythos 5.2`, `Meta Muse Ember`, and `LiquidAI LFM3-1.7B`.
+- **Gotchas & Key Learnings:**
+  - `scripts/add_articles.py` rejects photo tokens if any substring in `articlesData.ts` contains the token. Checking against `articlesData.ts` strings before picking Unsplash IDs guarantees clean passage on the first attempt.
+
+---
+
 # Handoff — 2026-11-09 (Daily Intelligence Pipeline Run: art-360 to art-365)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published

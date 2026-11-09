@@ -1,3 +1,44 @@
+# Handoff — 2026-11-09 (Daily Intelligence Pipeline Run: art-360 to art-365)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face (`pipeline_runs/harvest-2026-11-09.json`).
+  - Sourced, verified, and published 6 original articles (`art-360` to `art-365`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-360`: `goldman-sachs-restricts-claude-code-github-bankers-traders` (Hero / Analysis, Signal 88, Goldman Sachs cuts off bankers and traders from Claude Code and GitHub Copilot, restricting generative coding tools strictly to core engineering divisions [~12,000 developers of ~47,000 staff] and quantitative Strats following productivity and risk reviews; reverses CIO Marco Argenti's July praise of non-technical "vibe coding"; Goldman is lead underwriter on Anthropic's IPO).
+    - `art-361`: `john-langford-discloses-shuttering-microsoft-research-ai-frontiers-group` (Featured / Industry-Watch, Signal 91, Learning theorist John Langford reveals Microsoft has dissolved MSR's 50-person AI Frontiers research group behind AutoGen, Fara, Next Latent objective, Dion3, and Full Bandwidth Transformer; Langford and founding leaders resign following September reorg into Microsoft AI under an aggressive scaling-only mandate; upcoming internships cancelled).
+    - `art-362`: `outlook-quietly-rejects-email-domains-lacking-dmarc-records` (Breaking, Signal 86, MailRoute analysis by Thomas A. Johnson reveals Microsoft consumer mailboxes [Outlook.com, Hotmail, Live, MSN] quietly began dropping inbound mail from domains lacking DMARC records with `550 5.7.1` error codes; unannounced enforcement impacts ordinary low-volume senders with valid SPF/DKIM; resolved by publishing `v=DMARC1; p=none`).
+    - `art-363`: `raph-levien-jit-bitmap-text-rendering-microcontrollers-rp2350` (Discovery, Signal 85, Linebender project lead Raph Levien develops race-the-beam text renderer for the vic-2350 personal computer project on Raspberry Pi RP2350 [520 kB SRAM]; uses custom Cortex-M33 DSL `symbolasm` and runtime JIT assembly generation to render proportional vintage Macintosh fonts with true kerning within an uncompromising ~6 cycles per pixel scanline budget).
+    - `art-364`: `llama-modchip-runs-284b-deepseek-64gb-ram-without-gpu` (Featured / Deep-Dive, Signal 89, llama-modchip v2.4.0 introduces CPU-first ggml/llama.cpp kernel patches running the 284.33B DeepSeek-V4-Flash MoE model completely in 64GB system RAM without GPUs; compacts checkpoint to 56.56 GiB [1.71 bpw] to fit 57.61 GiB VmRSS at 256K context with zero swap; 4-level AVX-512BW register and cache tiling hits 44.36 tok/s prefill on 16-core Zen 5; non-temporal streaming prevents KV eviction).
+    - `art-365`: `openstick-10-dollar-linux-usb-stick-homelab` (Discovery, Signal 82, Systems developer Bosscher demonstrates running Debian GNU/Linux and containerized homelab microservices on a $10 USD shipped OpenStick USB 4G modem [quad-core Cortex-A53 @ 1 GHz, 512 MB RAM, 4 GB eMMC]; runs CastSponsorSkip [10MB], custom AdGuard Home DNS sinkhole [40MB, 60% queries blocked], Zeroclaw AI agent [64MB, ~3MB idle RSS] with Telegram root control, and Cloudflare Tunnel).
+  - **Stories dropped & why:**
+    - `apple-intelligence-personal-knowledge-graph`: published Oct 28 (outside 48h news window).
+    - `apiiro-coding-agents-leaking-secrets-github`: returned 39-byte stub on direct fetch; dropped for lack of accessible primary text.
+    - `github-new-git-storage-architecture`: duplicate of Git backend topic covered in art-336.
+    - `dux-wayland-desktop-suite`: UI documentation portal without dated technical breakthrough or metric.
+  - **Model Watch:**
+    - Evaluated 72h window feeds: `liquid/lfm-3-1.7b` (OpenRouter listing Nov 6, 256K context edge reasoning; pending benchmark dataset integration), `google/gemini-omni-1.2-flash` and `1.1-flash` (multimodal video generative endpoints, non-LLM text benchmarks), `tencent/hy4` (covered in art-352, pending Arena text listing), `stealth/crouton-alpha` (anonymous preview with no public evals), and domain fine-tunes (`z-ai/glm-5.3-flashx-legal`, `particle-ai/particle-1`).
+    - Curated model registry maintained at 144 models.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Monday, November 9, 2026` (5 items linking to art-360..364).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-360..364).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 14$ bits from catalog, $20\text{--}39$ bits pairwise, zero reused tokens).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-09-the-morning-vector.md` (`5acdd0e`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 365 articles, 144 models, 10 showdowns; 538 static HTML files, sitemap 536 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `f9b1366` (content update), `5acdd0e` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Tuesday, November 10, 2026.
+  - Monitor Arena and Artificial Analysis for benchmark listings for `Tencent Hy4`, `Ripple-65B Preview`, and `LiquidAI LFM3-1.7B`.
+- **Gotchas & Key Learnings:**
+  - `scripts/add_articles.py` rejects photo tokens if any substring in `articlesData.ts` contains the token. Checking against `articlesData.ts` strings before picking Unsplash IDs guarantees clean passage on the first attempt.
+
+---
+
 # Handoff — 2026-11-08 (Daily Intelligence Pipeline Run: art-354 to art-359)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published

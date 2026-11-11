@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Tuesday, November 10, 2026",
-  summary: "Anthropic debuts Claude Fable 5.2 and Mythos 5.2, taking the #1 spot on Artificial Analysis with an index score of 65 and formalizing Fermat's Last Theorem in 30 hours. Meanwhile, Meta AI launches Muse Ember to deliver cost-efficient reasoning for autonomous agent swarms, and security researchers expose universal car telematics API exploits.",
+  date: "Wednesday, November 11, 2026",
+  summary: "Google expanded Gemini 4 Carbon to general availability alongside DeepMind's AlphaProof Code formal verification breakthrough on Signal's cryptographic core. Meanwhile, Notion disclosed an inference breach at Fireworks AI, Synaptics halted an open-source DisplayLink driver, and Australia proposed criminal penalties for rogue AI.",
   items: [
     {
       id: 'brief-1',
-      headline: "Anthropic Unveils Claude Fable 5.2 and Mythos 5.2 for Frontier Scientific Reasoning",
+      headline: "Google Launches Gemini 4 Carbon with 1M Context at $2/$10 Pricing",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Anthropic releases upgraded reasoning models featuring 30% faster generation and top Artificial Analysis index scores.",
-      whyItMatters: "Formalizes proofs and designs functional circuits autonomously, accelerating AI integration into deep science and engineering.",
-      articleSlug: "anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning"
+      summary: "Google opened Gemini 4 Carbon to general availability across API, Antigravity, and Search, pairing frontier cyber reasoning with top workflow scores at more than 2x lower cost.",
+      whyItMatters: "Matches Argon pricing while delivering frontier cyber defenses, 100% scanning recall in Project Fortify, and top ranks on CursorBench 4.0 and Perplexity WANDR.",
+      articleSlug: "google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks"
     },
     {
       id: 'brief-2',
-      headline: "Meta AI Releases Muse Ember: 1.05M-Context Efficient Reasoning Model for Agents",
-      category: "ai" as const,
+      headline: "DeepMind's AlphaProof Code Mathematically Verifies Signal Protocol",
+      category: "research" as const,
       urgency: "High Impact" as const,
-      summary: "Meta debuts a compact reasoning model matching Claude Haiku 5.5 scores at a third of the inference cost.",
-      whyItMatters: "Reshapes agent swarming economics by drastically slashing costs on repetitive routing and tool-calling execution.",
-      articleSlug: "meta-releases-muse-ember-small-efficient-reasoning-model-agents"
+      summary: "DeepMind used Gemini Carbon agents to generate six million lines of Lean code, formally verifying Signal's compiled cryptographic protocol in four weeks.",
+      whyItMatters: "Marks the first time a globally deployed messaging protocol's live implementation has been proven mathematically secure down to physical consumer devices.",
+      articleSlug: "google-deepmind-alphaproof-code-formally-verifies-signal-protocol"
     },
     {
       id: 'brief-3',
-      headline: "Assetnote Researchers Chain Telematics API and Identity Flaws to Unlock Vehicles",
+      headline: "Notion Discloses Fireworks AI Breach Leaking Workspace Chat Transcripts",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "Vulnerabilities spanning exposed admin tools, path traversal, and MFA bypass allowed arbitrary remote car actuation from license plates.",
-      whyItMatters: "Demonstrates severe supply-chain vulnerabilities where web portal flaws compromise physical vehicle security globally.",
-      articleSlug: "assetnote-security-researchers-chain-telematics-api-universal-car-unlock"
+      summary: "An inference vendor security incident compromised chat transcripts for under 1% of Notion workspaces after contractual zero data retention commitments failed.",
+      whyItMatters: "Notion severed all integration with Fireworks AI on November 3 and released desktop export utilities to help administrators rotate exposed credentials.",
+      articleSlug: "notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs"
     },
     {
       id: 'brief-4',
-      headline: "Meta FAIR Open-Sources e-means: 10x Faster k-means Algorithm in Faiss",
-      category: "research" as const,
+      headline: "Synaptics Patent Threats Freeze Clean-Room Rust DisplayLink Driver",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Researchers modernize Lloyd's 1982 clustering algorithm, achieving 10x faster epoch convergence and lower loss in Faiss.",
-      whyItMatters: "Accelerates vector quantization and embedding codebook generation for large-scale retrieval and AI search indexes.",
-      articleSlug: "meta-fair-open-sources-e-means-10x-faster-k-means-faiss"
+      summary: "Synaptics legal counsel issued cease-and-desist notices citing 125 patents against developer Mike Lothian's Vino driver for Linux USB docking stations.",
+      whyItMatters: "Forces the withdrawal of functional open-source drivers and exposes limits in Open Invention Network protections for acquired hardware lines.",
+      articleSlug: "synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino"
     },
     {
       id: 'brief-5',
-      headline: "Data Receipts Audit Exposes 4.5x Price Spread Across Identical H100 Cloud Rentals",
-      category: "technology" as const,
+      headline: "Australia Considers Criminal Penalties for Rogue AI After Health Breach",
+      category: "ai" as const,
       urgency: "Notable Shift" as const,
-      summary: "Normalized audit reveals H100 SXM 80GB GPUs range from $2.69 on community clouds to $12.29 on hyperscalers.",
-      whyItMatters: "Exposes the premium paid for InfiniBand interconnects and enterprise SLAs versus pure compute cost.",
-      articleSlug: "data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals"
+      summary: "Prime Minister Anthony Albanese released 18 recommendations creating an AI regulator and standalone corporate failure-to-prevent offences following an OpenAI breach.",
+      whyItMatters: "Establishes direct corporate criminal liability for damaging autonomous agent actions and enforces strict time-bound breach reporting windows.",
+      articleSlug: "australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach"
     }
   ]
 };
@@ -1191,31 +1191,31 @@ export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
     tag: "Frontier AI",
-    text: "Anthropic releases Claude Fable 5.2 and Mythos 5.2 with #1 ranking on Artificial Analysis.",
-    articleSlug: "anthropic-unveils-claude-fable-5-2-and-mythos-5-2-frontier-reasoning"
+    text: "Google makes Gemini 4 Carbon generally available with 1M context at $2/$10 pricing.",
+    articleSlug: "google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks"
   },
   {
     id: 'sig-2',
-    tag: "Efficient AI",
-    text: "Meta AI launches Muse Ember, matching Claude Haiku 5.5 reasoning at a third of the cost.",
-    articleSlug: "meta-releases-muse-ember-small-efficient-reasoning-model-agents"
+    tag: "Formal Proofs",
+    text: "DeepMind AlphaProof Code generates 6M lines of Lean verifying Signal protocol in 4 weeks.",
+    articleSlug: "google-deepmind-alphaproof-code-formally-verifies-signal-protocol"
   },
   {
     id: 'sig-3',
-    tag: "Auto Security",
-    text: "Assetnote researchers chain telematics API and OpenIDM flaws to remotely unlock cars.",
-    articleSlug: "assetnote-security-researchers-chain-telematics-api-universal-car-unlock"
+    tag: "Inference Breach",
+    text: "Fireworks AI security incident exposes chat transcripts across under 1% of Notion workspaces.",
+    articleSlug: "notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs"
   },
   {
     id: 'sig-4',
-    tag: "Algorithms",
-    text: "Meta FAIR open-sources e-means in Faiss, delivering 10x faster clustering than Lloyd's.",
-    articleSlug: "meta-fair-open-sources-e-means-10x-faster-k-means-faiss"
+    tag: "Kernel IP",
+    text: "Synaptics cites 125 patents to halt Mike Lothian's clean-room Rust DisplayLink Linux driver.",
+    articleSlug: "synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino"
   },
   {
     id: 'sig-5',
-    tag: "Cloud Compute",
-    text: "Data Receipts audit documents 4.57x price spread on identical H100 cloud GPU rentals.",
-    articleSlug: "data-receipts-audit-exposes-4-5x-price-spread-h100-gpu-rentals"
+    tag: "AI Liability",
+    text: "Australia proposes criminal failure-to-prevent offences for rogue AI after Medicare breach.",
+    articleSlug: "australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach"
   }
 ];

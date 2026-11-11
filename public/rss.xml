@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 03:45:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Google Opens Gemini 4 Carbon to General Availability with 1M Context and $2/$10 Pricing</title>
+      <link>https://nextvector.rhasan.online/article/google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks</guid>
+      <description>Following Fairwind preview, Google expands its frontier reasoning and cyber model across API, Antigravity, and Search.</description>
+      <category>AI</category>
+      <pubDate>Wed, 11 Nov 2026 03:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google DeepMind Unveils AlphaProof Code: Formally Verifying Signal&#x27;s Cryptographic Core</title>
+      <link>https://nextvector.rhasan.online/article/google-deepmind-alphaproof-code-formally-verifies-signal-protocol</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-deepmind-alphaproof-code-formally-verifies-signal-protocol</guid>
+      <description>Multi-agent framework generates six million lines of Lean code to mathematically prove end-to-end messaging security.</description>
+      <category>RESEARCH</category>
+      <pubDate>Wed, 11 Nov 2026 03:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Notion Discloses Security Incident at Fireworks AI Exposing Workspace Chat Transcripts</title>
+      <link>https://nextvector.rhasan.online/article/notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs</guid>
+      <description>Inference vendor breach impacts under 1% of workspaces as contractual zero data retention guarantees fail.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 11 Nov 2026 03:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Synaptics Patent Threats Halt Developer&#x27;s Clean-Room Rust DisplayLink Linux Driver</title>
+      <link>https://nextvector.rhasan.online/article/synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino</guid>
+      <description>Legal cease-and-desist citing 125 patents forces developer to withdraw functional open-source USB dock code.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 11 Nov 2026 03:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Australia Considers Criminal Penalties for Rogue AI Following Health Portal Breach</title>
+      <link>https://nextvector.rhasan.online/article/australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach</guid>
+      <description>Prime Minister Albanese unveils 18 review recommendations including a standalone failure-to-prevent offence.</description>
+      <category>AI</category>
+      <pubDate>Wed, 11 Nov 2026 02:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Val Town Announces Orderly Shutdown After Four Years of Serverless Social Coding</title>
+      <link>https://nextvector.rhasan.online/article/val-town-announces-orderly-shutdown-serverless-social-scripting-platform</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/val-town-announces-orderly-shutdown-serverless-social-scripting-platform</guid>
+      <description>Founder Steve Krouse cites inability to compete against hyperscale clouds; code open-sourcing set for February.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 11 Nov 2026 02:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Payments Canada Launches Real-Time Rail: 24/7 National Settlement Infrastructure</title>
       <link>https://nextvector.rhasan.online/article/payments-canada-launches-real-time-rail-247-settlement-infrastructure</link>
@@ -496,60 +550,6 @@
       <description>Security researchers chain MathLive postMessage handlers to escape iframes and seize victim chat sessions.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Sun, 01 Nov 2026 04:55:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Mistral AI Releases Open Weights for 1-Trillion Parameter Mistral Large 4</title>
-      <link>https://nextvector.rhasan.online/article/mistral-ai-releases-open-weights-mistral-large-4-le-chonk</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/mistral-ai-releases-open-weights-mistral-large-4-le-chonk</guid>
-      <description>The Parisian AI lab open-sources &#x27;Le Chonk&#x27; with three reasoning tiers and leading coding and cybersecurity benchmarks.</description>
-      <category>AI</category>
-      <pubDate>Fri, 30 Oct 2026 00:25:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Binance and Stablecoin Issuers Freeze $5.4B in Digital Assets After Massive Exchange Exploit</title>
-      <link>https://nextvector.rhasan.online/article/binance-freezes-billions-following-historic-multibillion-exchange-exploit</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/binance-freezes-billions-following-historic-multibillion-exchange-exploit</guid>
-      <description>Tether and Circle freeze $2.4B in USDT and USDC while Binance halts withdrawals and pledges to cover all user losses.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Fri, 30 Oct 2026 00:20:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>SMS of Death: Zero-Click Vulnerability in Android Telephony Drops Calls and Causes Boot Loops</title>
-      <link>https://nextvector.rhasan.online/article/sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/sms-of-death-zero-click-flaw-in-android-telephony-triggers-persistent-dos</guid>
-      <description>A malformed 5-byte WAP Push SMS crashes com.android.phone and severs emergency 000 access until patched.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Fri, 30 Oct 2026 00:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Orange Tsai Demonstrates 100% Logic-Only Full Chain Sandbox Escape in Microsoft Edge</title>
-      <link>https://nextvector.rhasan.online/article/orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/orange-tsai-discloses-logic-only-full-chain-sandbox-escape-in-microsoft-edge</guid>
-      <description>DEVCORE researcher chains five logic bugs and two Windows features without memory corruption or shellcode.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Fri, 30 Oct 2026 00:10:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>SkyPilot Unveils Topology-Aware Scheduler for GB200 NVL72 Racks, Yielding 27% More Usable GPUs</title>
-      <link>https://nextvector.rhasan.online/article/skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/skypilot-topology-aware-scheduler-unlocks-27-percent-more-nvl72-gpu-capacity</guid>
-      <description>UC Berkeley researchers show 16-node slices with in-rack hot-spares eliminate NVLink bottlenecks and save $400K daily.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Fri, 30 Oct 2026 00:05:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Search Falls Below 50% of Alphabet Revenue for the First Time as Cloud and AI Surge</title>
-      <link>https://nextvector.rhasan.online/article/google-search-drops-below-50-percent-of-alphabet-revenue-for-first-time</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-search-drops-below-50-percent-of-alphabet-revenue-for-first-time</guid>
-      <description>In Q3 2026, Search generated 49.7% of Alphabet&#x27;s $128B revenue while Google Cloud doubled to $30.7B.</description>
-      <category>AI</category>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

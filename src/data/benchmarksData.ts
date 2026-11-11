@@ -1155,12 +1155,12 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 5,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
     "score": 1475,
     "date": "Oct 2026",
-    "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.24 / 1M blended"
+    "modelId": "model-deepseek-v4-1-flash",
+    "costPerRun": "$0.21 / 1M blended"
   },
   {
     "rank": 6,
@@ -1182,15 +1182,6 @@ export const PRICE_PERFORMANCE_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 8,
-    "modelName": "DeepSeek-V4-Flash",
-    "developer": "DeepSeek",
-    "score": 1436,
-    "date": "Oct 2026",
-    "modelId": "model-deepseek-v4-flash",
-    "costPerRun": "$0.11 / 1M blended"
-  },
-  {
-    "rank": 9,
     "modelName": "gpt-oss-20b",
     "developer": "OpenAI",
     "score": 1317,
@@ -1309,7 +1300,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1488,
     "date": "Oct 2026",
     "modelId": "model-kimi-k3",
-    "costPerRun": "$5.14 / 1M blended"
+    "costPerRun": "$5.11 / 1M blended"
   },
   {
     "rank": 13,
@@ -1441,22 +1432,22 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 27,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
-    "score": 1475,
-    "date": "Oct 2026",
-    "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.24 / 1M blended",
-    "note": "on frontier"
-  },
-  {
-    "rank": 28,
     "modelName": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",
     "score": 1475,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-1-flash",
-    "costPerRun": "$0.52 / 1M blended"
+    "costPerRun": "$0.21 / 1M blended",
+    "note": "on frontier"
+  },
+  {
+    "rank": 28,
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "score": 1475,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-3-flash",
+    "costPerRun": "$0.24 / 1M blended"
   },
   {
     "rank": 29,
@@ -1546,7 +1537,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1468,
     "date": "Oct 2026",
     "modelId": "model-mimo-v2-5-pro",
-    "costPerRun": "$0.38 / 1M blended"
+    "costPerRun": "$0.81 / 1M blended"
   },
   {
     "rank": 39,
@@ -1591,7 +1582,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1464,
     "date": "Oct 2026",
     "modelId": "model-glm-5-1",
-    "costPerRun": "$2.15 / 1M blended"
+    "costPerRun": "$1.48 / 1M blended"
   },
   {
     "rank": 44,
@@ -1618,7 +1609,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1458,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-pro",
-    "costPerRun": "$0.89 / 1M blended"
+    "costPerRun": "$1.09 / 1M blended"
   },
   {
     "rank": 47,
@@ -1881,8 +1872,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1436,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-flash",
-    "costPerRun": "$0.11 / 1M blended",
-    "note": "on frontier"
+    "costPerRun": "$0.18 / 1M blended"
   },
   {
     "rank": 76,
@@ -1900,7 +1890,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1434,
     "date": "Oct 2026",
     "modelId": "model-mimo-v2-5",
-    "costPerRun": "$0.15 / 1M blended"
+    "costPerRun": "$0.80 / 1M blended"
   },
   {
     "rank": 78,
@@ -2080,7 +2070,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1409,
     "date": "Oct 2026",
     "modelId": "model-qwen3-5-27b",
-    "costPerRun": "$0.74 / 1M blended"
+    "costPerRun": "$0.84 / 1M blended"
   },
   {
     "rank": 98,
@@ -2230,14 +2220,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": true
   },
   {
-    "modelId": "model-deepseek-v4-flash",
-    "modelName": "DeepSeek-V4-Flash",
-    "developer": "DeepSeek",
-    "price": 0.1138,
-    "score": 1436,
-    "frontier": true
-  },
-  {
     "modelId": "model-gemma-4-26b-a4b",
     "modelName": "Gemma 4 26B-A4B",
     "developer": "Google DeepMind",
@@ -2252,14 +2234,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "price": 0.1444,
     "score": 1454,
     "frontier": true
-  },
-  {
-    "modelId": "model-mimo-v2-5",
-    "modelName": "MiMo-V2.5",
-    "developer": "Xiaomi AI",
-    "price": 0.1487,
-    "score": 1434,
-    "frontier": false
   },
   {
     "modelId": "model-step-3-5-flash",
@@ -2278,6 +2252,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-deepseek-v4-flash",
+    "modelName": "DeepSeek-V4-Flash",
+    "developer": "DeepSeek",
+    "price": 0.175,
+    "score": 1436,
+    "frontier": false
+  },
+  {
     "modelId": "model-gpt-6-luna",
     "modelName": "GPT-6 Luna",
     "developer": "OpenAI",
@@ -2286,12 +2268,20 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-deepseek-v4-1-flash",
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
+    "price": 0.21,
+    "score": 1475,
+    "frontier": true
+  },
+  {
     "modelId": "model-glm-5-3-flash",
     "modelName": "GLM-5.3-Flash",
     "developer": "Zhipu AI",
     "price": 0.2375,
     "score": 1475,
-    "frontier": true
+    "frontier": false
   },
   {
     "modelId": "model-gemma-4-31b",
@@ -2350,14 +2340,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-mimo-v2-5-pro",
-    "modelName": "MiMo-V2.5-Pro",
-    "developer": "Xiaomi AI",
-    "price": 0.3806,
-    "score": 1468,
-    "frontier": false
-  },
-  {
     "modelId": "model-glm-5-3",
     "modelName": "GLM-5.3",
     "developer": "Zhipu AI",
@@ -2387,14 +2369,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "xAI",
     "price": 0.505,
     "score": 1364,
-    "frontier": false
-  },
-  {
-    "modelId": "model-deepseek-v4-1-flash",
-    "modelName": "DeepSeek-V4.1-Flash",
-    "developer": "DeepSeek",
-    "price": 0.525,
-    "score": 1475,
     "frontier": false
   },
   {
@@ -2494,14 +2468,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-qwen3-5-27b",
-    "modelName": "Qwen3.5-27B",
-    "developer": "Alibaba Cloud",
-    "price": 0.7425,
-    "score": 1409,
-    "frontier": false
-  },
-  {
     "modelId": "model-mistral-large-3",
     "modelName": "Mistral Large 3",
     "developer": "Mistral AI",
@@ -2518,6 +2484,30 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-mimo-v2-5",
+    "modelName": "MiMo-V2.5",
+    "developer": "Xiaomi AI",
+    "price": 0.8,
+    "score": 1434,
+    "frontier": false
+  },
+  {
+    "modelId": "model-mimo-v2-5-pro",
+    "modelName": "MiMo-V2.5-Pro",
+    "developer": "Xiaomi AI",
+    "price": 0.81,
+    "score": 1468,
+    "frontier": false
+  },
+  {
+    "modelId": "model-qwen3-5-27b",
+    "modelName": "Qwen3.5-27B",
+    "developer": "Alibaba Cloud",
+    "price": 0.845,
+    "score": 1409,
+    "frontier": false
+  },
+  {
     "modelId": "model-gemini-3-5-flash-lite",
     "modelName": "Gemini 3.5 Flash-Lite",
     "developer": "Google DeepMind",
@@ -2531,14 +2521,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Xiaomi AI",
     "price": 0.88,
     "score": 1431,
-    "frontier": false
-  },
-  {
-    "modelId": "model-deepseek-v4-pro",
-    "modelName": "DeepSeek-V4-Pro",
-    "developer": "DeepSeek",
-    "price": 0.8872,
-    "score": 1458,
     "frontier": false
   },
   {
@@ -2606,6 +2588,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-deepseek-v4-pro",
+    "modelName": "DeepSeek-V4-Pro",
+    "developer": "DeepSeek",
+    "price": 1.0942,
+    "score": 1458,
+    "frontier": false
+  },
+  {
     "modelId": "model-gemini-3-flash",
     "modelName": "Gemini 3 Flash",
     "developer": "Google DeepMind",
@@ -2643,6 +2633,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "StepFun",
     "price": 1.425,
     "score": 1447,
+    "frontier": false
+  },
+  {
+    "modelId": "model-glm-5-1",
+    "modelName": "GLM-5.1",
+    "developer": "Zhipu AI",
+    "price": 1.4835,
+    "score": 1464,
     "frontier": false
   },
   {
@@ -2787,14 +2785,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Mistral AI",
     "price": 2.065,
     "score": 1429,
-    "frontier": false
-  },
-  {
-    "modelId": "model-glm-5-1",
-    "modelName": "GLM-5.1",
-    "developer": "Zhipu AI",
-    "price": 2.15,
-    "score": 1464,
     "frontier": false
   },
   {
@@ -2969,7 +2959,7 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "modelId": "model-kimi-k3",
     "modelName": "Kimi K3",
     "developer": "Moonshot AI",
-    "price": 5.1418,
+    "price": 5.1125,
     "score": 1488,
     "frontier": false
   },

@@ -5924,9 +5924,9 @@
    "contextTokens": 1048576,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.189,
+    "inputPer1M": 0.15,
     "outputPer1M": 20.0,
-    "cachedInputPer1M": 0.179,
+    "cachedInputPer1M": 0.14,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -5972,7 +5972,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
-   "summary": "Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.19 input / $20.00 output per 1M tokens. 1M tokens context.",
+   "summary": "Open Weights model from Moonshot AI, listed July 2026. Arena text score 1488 (#16 of 414 entries). $0.15 input / $20.00 output per 1M tokens. 1M tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -6617,9 +6617,9 @@
    "contextTokens": 204800,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 1.4,
-    "outputPer1M": 4.4,
-    "cachedInputPer1M": 0.26,
+    "inputPer1M": 0.966,
+    "outputPer1M": 3.036,
+    "cachedInputPer1M": 0.1794,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -6665,7 +6665,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://huggingface.co/zai-org/GLM-5.1",
-   "summary": "Open Weights model from Zhipu AI, listed April 2026. Arena text score 1464 (#56 of 414 entries). $1.40 input / $4.40 output per 1M tokens. 205K tokens context.",
+   "summary": "Open Weights model from Zhipu AI, listed April 2026. Arena text score 1464 (#56 of 414 entries). $0.97 input / $3.04 output per 1M tokens. 205K tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -7142,9 +7142,9 @@
    "contextTokens": 1048576,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.3,
-    "outputPer1M": 1.2,
-    "cachedInputPer1M": 0.006,
+    "inputPer1M": 0.14,
+    "outputPer1M": 0.42,
+    "cachedInputPer1M": 0.0042,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -7176,7 +7176,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
-   "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 1M tokens context.",
+   "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#39 of 414 entries). $0.14 input / $0.42 output per 1M tokens. 1M tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -7302,9 +7302,9 @@
    "contextTokens": 1048576,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.7097,
-    "outputPer1M": 1.4195,
-    "cachedInputPer1M": 0.0591,
+    "inputPer1M": 0.8754,
+    "outputPer1M": 1.7508,
+    "cachedInputPer1M": 0.073,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -7350,7 +7350,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://api-docs.deepseek.com/news/news260424",
-   "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.71 input / $1.42 output per 1M tokens. 1M tokens context.",
+   "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1458 (#62 of 414 entries). $0.88 input / $1.75 output per 1M tokens. 1M tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -7458,9 +7458,9 @@
    "contextTokens": 1048576,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.0444,
-    "outputPer1M": 0.1333,
-    "cachedInputPer1M": 0.0014,
+    "inputPer1M": 0.119,
+    "outputPer1M": 0.238,
+    "cachedInputPer1M": 0.0238,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -7495,7 +7495,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
-   "summary": "Open Weights model from DeepSeek, listed July 2026. $0.04 input / $0.13 output per 1M tokens. 1M tokens context.",
+   "summary": "Open Weights model from DeepSeek, listed July 2026. $0.12 input / $0.24 output per 1M tokens. 1M tokens context.",
    "sources": [
     {
      "label": "OpenRouter listing",
@@ -7526,9 +7526,9 @@
    "contextTokens": 1048576,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.091,
-    "outputPer1M": 0.182,
-    "cachedInputPer1M": 0.0182,
+    "inputPer1M": 0.14,
+    "outputPer1M": 0.28,
+    "cachedInputPer1M": 0.028,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -7574,7 +7574,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://api-docs.deepseek.com/news/news260424",
-   "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1436 (#103 of 414 entries). $0.09 input / $0.18 output per 1M tokens. 1M tokens context.",
+   "summary": "Open Weights model from DeepSeek, listed April 2026. Arena text score 1436 (#103 of 414 entries). $0.14 input / $0.28 output per 1M tokens. 1M tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -8314,8 +8314,8 @@
    "parameters": "35B total, 3B active (MoE)",
    "pricing": {
     "inputPer1M": 0.1,
-    "outputPer1M": 0.9,
-    "cachedInputPer1M": 0.03,
+    "outputPer1M": 0.95,
+    "cachedInputPer1M": 0.05,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -8350,7 +8350,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://openrouter.ai/qwen/qwen3.6-35b-a3b",
-   "summary": "Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.90 output per 1M tokens. 256K tokens context.",
+   "summary": "Open Weights model from Alibaba Cloud, listed April 2026. $0.10 input / $0.95 output per 1M tokens. 256K tokens context.",
    "sources": [
     {
      "label": "OpenRouter listing",
@@ -8630,9 +8630,8 @@
    "contextTokens": 262144,
    "parameters": "27B (dense)",
    "pricing": {
-    "inputPer1M": 0.27,
-    "outputPer1M": 2.16,
-    "cachedInputPer1M": 0.27,
+    "inputPer1M": 0.26,
+    "outputPer1M": 2.6,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -8664,7 +8663,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://huggingface.co/Qwen/Qwen3.5-27B",
-   "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#151 of 414 entries). $0.27 input / $2.16 output per 1M tokens. 256K tokens context.",
+   "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#151 of 414 entries). $0.26 input / $2.60 output per 1M tokens. 256K tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -8857,9 +8856,9 @@
    "contextTokens": 1050000,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.3045,
-    "outputPer1M": 0.609,
-    "cachedInputPer1M": 0.0028,
+    "inputPer1M": 0.48,
+    "outputPer1M": 1.8,
+    "cachedInputPer1M": 0.096,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -8905,7 +8904,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://mimo.xiaomi.com/mimo-v2-5-pro/",
-   "summary": "Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1468 (#48 of 414 entries). $0.30 input / $0.61 output per 1M tokens. 1.05M tokens context.",
+   "summary": "Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1468 (#48 of 414 entries). $0.48 input / $1.80 output per 1M tokens. 1.05M tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -8947,9 +8946,9 @@
    "contextTokens": 1050000,
    "parameters": "Not listed in our sources",
    "pricing": {
-    "inputPer1M": 0.119,
-    "outputPer1M": 0.238,
-    "cachedInputPer1M": 0.0026,
+    "inputPer1M": 0.4,
+    "outputPer1M": 2.0,
+    "cachedInputPer1M": 0.08,
     "source": "OpenRouter list price"
    },
    "openSourceStatus": "Open Weights",
@@ -8995,7 +8994,7 @@
    "realWorldApplications": [],
    "architectureNotes": "",
    "link": "https://mimo.xiaomi.com/mimo-v2-5/",
-   "summary": "Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1434 (#107 of 414 entries). $0.12 input / $0.24 output per 1M tokens. 1.05M tokens context.",
+   "summary": "Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1434 (#107 of 414 entries). $0.40 input / $2.00 output per 1M tokens. 1.05M tokens context.",
    "sources": [
     {
      "label": "Official page",
@@ -12501,12 +12500,12 @@
    },
    {
     "rank": 5,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
+    "modelName": "DeepSeek-V4.1-Flash",
+    "developer": "DeepSeek",
     "score": 1475,
     "date": "Oct 2026",
-    "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.24 / 1M blended"
+    "modelId": "model-deepseek-v4-1-flash",
+    "costPerRun": "$0.21 / 1M blended"
    },
    {
     "rank": 6,
@@ -12528,15 +12527,6 @@
    },
    {
     "rank": 8,
-    "modelName": "DeepSeek-V4-Flash",
-    "developer": "DeepSeek",
-    "score": 1436,
-    "date": "Oct 2026",
-    "modelId": "model-deepseek-v4-flash",
-    "costPerRun": "$0.11 / 1M blended"
-   },
-   {
-    "rank": 9,
     "modelName": "gpt-oss-20b",
     "developer": "OpenAI",
     "score": 1317,
@@ -14242,7 +14232,7 @@
     "score": 1488,
     "date": "Oct 2026",
     "modelId": "model-kimi-k3",
-    "costPerRun": "$5.14 / 1M blended"
+    "costPerRun": "$5.11 / 1M blended"
    },
    {
     "rank": 13,
@@ -14374,22 +14364,22 @@
    },
    {
     "rank": 27,
-    "modelName": "GLM-5.3-Flash",
-    "developer": "Zhipu AI",
-    "score": 1475,
-    "date": "Oct 2026",
-    "modelId": "model-glm-5-3-flash",
-    "costPerRun": "$0.24 / 1M blended",
-    "note": "on frontier"
-   },
-   {
-    "rank": 28,
     "modelName": "DeepSeek-V4.1-Flash",
     "developer": "DeepSeek",
     "score": 1475,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-1-flash",
-    "costPerRun": "$0.52 / 1M blended"
+    "costPerRun": "$0.21 / 1M blended",
+    "note": "on frontier"
+   },
+   {
+    "rank": 28,
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "score": 1475,
+    "date": "Oct 2026",
+    "modelId": "model-glm-5-3-flash",
+    "costPerRun": "$0.24 / 1M blended"
    },
    {
     "rank": 29,
@@ -14479,7 +14469,7 @@
     "score": 1468,
     "date": "Oct 2026",
     "modelId": "model-mimo-v2-5-pro",
-    "costPerRun": "$0.38 / 1M blended"
+    "costPerRun": "$0.81 / 1M blended"
    },
    {
     "rank": 39,
@@ -14524,7 +14514,7 @@
     "score": 1464,
     "date": "Oct 2026",
     "modelId": "model-glm-5-1",
-    "costPerRun": "$2.15 / 1M blended"
+    "costPerRun": "$1.48 / 1M blended"
    },
    {
     "rank": 44,
@@ -14551,7 +14541,7 @@
     "score": 1458,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-pro",
-    "costPerRun": "$0.89 / 1M blended"
+    "costPerRun": "$1.09 / 1M blended"
    },
    {
     "rank": 47,
@@ -14814,8 +14804,7 @@
     "score": 1436,
     "date": "Oct 2026",
     "modelId": "model-deepseek-v4-flash",
-    "costPerRun": "$0.11 / 1M blended",
-    "note": "on frontier"
+    "costPerRun": "$0.18 / 1M blended"
    },
    {
     "rank": 76,
@@ -14833,7 +14822,7 @@
     "score": 1434,
     "date": "Oct 2026",
     "modelId": "model-mimo-v2-5",
-    "costPerRun": "$0.15 / 1M blended"
+    "costPerRun": "$0.80 / 1M blended"
    },
    {
     "rank": 78,
@@ -15013,7 +15002,7 @@
     "score": 1409,
     "date": "Oct 2026",
     "modelId": "model-qwen3-5-27b",
-    "costPerRun": "$0.74 / 1M blended"
+    "costPerRun": "$0.84 / 1M blended"
    },
    {
     "rank": 98,
@@ -15163,14 +15152,6 @@
    "frontier": true
   },
   {
-   "modelId": "model-deepseek-v4-flash",
-   "modelName": "DeepSeek-V4-Flash",
-   "developer": "DeepSeek",
-   "price": 0.1138,
-   "score": 1436,
-   "frontier": true
-  },
-  {
    "modelId": "model-gemma-4-26b-a4b",
    "modelName": "Gemma 4 26B-A4B",
    "developer": "Google DeepMind",
@@ -15185,14 +15166,6 @@
    "price": 0.1444,
    "score": 1454,
    "frontier": true
-  },
-  {
-   "modelId": "model-mimo-v2-5",
-   "modelName": "MiMo-V2.5",
-   "developer": "Xiaomi AI",
-   "price": 0.1487,
-   "score": 1434,
-   "frontier": false
   },
   {
    "modelId": "model-step-3-5-flash",
@@ -15211,6 +15184,14 @@
    "frontier": false
   },
   {
+   "modelId": "model-deepseek-v4-flash",
+   "modelName": "DeepSeek-V4-Flash",
+   "developer": "DeepSeek",
+   "price": 0.175,
+   "score": 1436,
+   "frontier": false
+  },
+  {
    "modelId": "model-gpt-6-luna",
    "modelName": "GPT-6 Luna",
    "developer": "OpenAI",
@@ -15219,12 +15200,20 @@
    "frontier": false
   },
   {
+   "modelId": "model-deepseek-v4-1-flash",
+   "modelName": "DeepSeek-V4.1-Flash",
+   "developer": "DeepSeek",
+   "price": 0.21,
+   "score": 1475,
+   "frontier": true
+  },
+  {
    "modelId": "model-glm-5-3-flash",
    "modelName": "GLM-5.3-Flash",
    "developer": "Zhipu AI",
    "price": 0.2375,
    "score": 1475,
-   "frontier": true
+   "frontier": false
   },
   {
    "modelId": "model-gemma-4-31b",
@@ -15283,14 +15272,6 @@
    "frontier": false
   },
   {
-   "modelId": "model-mimo-v2-5-pro",
-   "modelName": "MiMo-V2.5-Pro",
-   "developer": "Xiaomi AI",
-   "price": 0.3806,
-   "score": 1468,
-   "frontier": false
-  },
-  {
    "modelId": "model-glm-5-3",
    "modelName": "GLM-5.3",
    "developer": "Zhipu AI",
@@ -15320,14 +15301,6 @@
    "developer": "xAI",
    "price": 0.505,
    "score": 1364,
-   "frontier": false
-  },
-  {
-   "modelId": "model-deepseek-v4-1-flash",
-   "modelName": "DeepSeek-V4.1-Flash",
-   "developer": "DeepSeek",
-   "price": 0.525,
-   "score": 1475,
    "frontier": false
   },
   {
@@ -15427,14 +15400,6 @@
    "frontier": false
   },
   {
-   "modelId": "model-qwen3-5-27b",
-   "modelName": "Qwen3.5-27B",
-   "developer": "Alibaba Cloud",
-   "price": 0.7425,
-   "score": 1409,
-   "frontier": false
-  },
-  {
    "modelId": "model-mistral-large-3",
    "modelName": "Mistral Large 3",
    "developer": "Mistral AI",
@@ -15451,6 +15416,30 @@
    "frontier": false
   },
   {
+   "modelId": "model-mimo-v2-5",
+   "modelName": "MiMo-V2.5",
+   "developer": "Xiaomi AI",
+   "price": 0.8,
+   "score": 1434,
+   "frontier": false
+  },
+  {
+   "modelId": "model-mimo-v2-5-pro",
+   "modelName": "MiMo-V2.5-Pro",
+   "developer": "Xiaomi AI",
+   "price": 0.81,
+   "score": 1468,
+   "frontier": false
+  },
+  {
+   "modelId": "model-qwen3-5-27b",
+   "modelName": "Qwen3.5-27B",
+   "developer": "Alibaba Cloud",
+   "price": 0.845,
+   "score": 1409,
+   "frontier": false
+  },
+  {
    "modelId": "model-gemini-3-5-flash-lite",
    "modelName": "Gemini 3.5 Flash-Lite",
    "developer": "Google DeepMind",
@@ -15464,14 +15453,6 @@
    "developer": "Xiaomi AI",
    "price": 0.88,
    "score": 1431,
-   "frontier": false
-  },
-  {
-   "modelId": "model-deepseek-v4-pro",
-   "modelName": "DeepSeek-V4-Pro",
-   "developer": "DeepSeek",
-   "price": 0.8872,
-   "score": 1458,
    "frontier": false
   },
   {
@@ -15539,6 +15520,14 @@
    "frontier": false
   },
   {
+   "modelId": "model-deepseek-v4-pro",
+   "modelName": "DeepSeek-V4-Pro",
+   "developer": "DeepSeek",
+   "price": 1.0942,
+   "score": 1458,
+   "frontier": false
+  },
+  {
    "modelId": "model-gemini-3-flash",
    "modelName": "Gemini 3 Flash",
    "developer": "Google DeepMind",
@@ -15576,6 +15565,14 @@
    "developer": "StepFun",
    "price": 1.425,
    "score": 1447,
+   "frontier": false
+  },
+  {
+   "modelId": "model-glm-5-1",
+   "modelName": "GLM-5.1",
+   "developer": "Zhipu AI",
+   "price": 1.4835,
+   "score": 1464,
    "frontier": false
   },
   {
@@ -15720,14 +15717,6 @@
    "developer": "Mistral AI",
    "price": 2.065,
    "score": 1429,
-   "frontier": false
-  },
-  {
-   "modelId": "model-glm-5-1",
-   "modelName": "GLM-5.1",
-   "developer": "Zhipu AI",
-   "price": 2.15,
-   "score": 1464,
    "frontier": false
   },
   {
@@ -15902,7 +15891,7 @@
    "modelId": "model-kimi-k3",
    "modelName": "Kimi K3",
    "developer": "Moonshot AI",
-   "price": 5.1418,
+   "price": 5.1125,
    "score": 1488,
    "frontier": false
   },
@@ -16316,12 +16305,12 @@
    "modelIdB": "model-gpt-6-sol",
    "seoTitle": "DeepSeek-V4.1-Flash vs GPT-6 Sol: Arena Score, Price & Context | NextVector",
    "seoDescription": "DeepSeek-V4.1-Flash vs GPT-6 Sol side by side: arena.ai text score, list price per 1M tokens, context window and licence, with sources. Data checked 2026-10-11.",
-   "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67). DeepSeek-V4.1-Flash leads by 19 points, outside the margin of error. DeepSeek-V4.1-Flash: $0.30 input / $1.20 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 87% less ($0.52 vs $4.00 per 1M tokens). Context windows are about the same: DeepSeek-V4.1-Flash 1M tokens, GPT-6 Sol 1.05M tokens. DeepSeek-V4.1-Flash has open weights (MIT) and can be self-hosted; GPT-6 Sol is available only as a hosted API.",
+   "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4.1-Flash scores 1475 (±7, #39) and GPT-6 Sol scores 1456 (±7, #67). DeepSeek-V4.1-Flash leads by 19 points, outside the margin of error. DeepSeek-V4.1-Flash: $0.14 input / $0.42 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 95% less ($0.21 vs $4.00 per 1M tokens). Context windows are about the same: DeepSeek-V4.1-Flash 1M tokens, GPT-6 Sol 1.05M tokens. DeepSeek-V4.1-Flash has open weights (MIT) and can be self-hosted; GPT-6 Sol is available only as a hosted API.",
    "verdictA": {
     "title": "Where DeepSeek-V4.1-Flash leads (by the data):",
     "points": [
      "Higher arena.ai text score (1475 vs 1456).",
-     "87% lower blended list price ($0.52 vs $4.00 per 1M tokens).",
+     "95% lower blended list price ($0.21 vs $4.00 per 1M tokens).",
      "Open weights (MIT): can be self-hosted."
     ]
    },
@@ -16338,7 +16327,7 @@
     },
     {
      "question": "Which is cheaper: DeepSeek-V4.1-Flash or GPT-6 Sol?",
-     "answer": "DeepSeek-V4.1-Flash: $0.30 input / $1.20 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 87% less ($0.52 vs $4.00 per 1M tokens)."
+     "answer": "DeepSeek-V4.1-Flash: $0.14 input / $0.42 output per 1M tokens. GPT-6 Sol: $2.00 / $10.00. Blended at 3 input : 1 output, DeepSeek-V4.1-Flash costs 95% less ($0.21 vs $4.00 per 1M tokens)."
     },
     {
      "question": "Which has the larger context window?",
@@ -16514,7 +16503,7 @@
    "modelName": "Kimi K3",
    "developer": "Moonshot AI",
    "metric": "Arena 1488 · Kimi K3 license",
-   "price": "$0.189 / $20.00 per 1M tokens"
+   "price": "$0.15 / $20.00 per 1M tokens"
   },
   {
    "id": "computer-use",

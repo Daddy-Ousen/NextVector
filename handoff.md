@@ -1,3 +1,44 @@
+# Handoff — 2026-11-11 (Daily Intelligence Pipeline Run: art-372 to art-377)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face (`pipeline_runs/harvest-2026-11-11.json`).
+  - Sourced, verified, and published 6 original articles (`art-372` to `art-377`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-372`: `google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks` (Hero / Model-Report, Signal 94, Google officially expands Gemini 4 Carbon to general availability across Google AI Studio API, Android Studio, Antigravity, Gemini app, and Search; 1,048,576-token context window; introductory price matching Argon at $2/$10 per M tokens; #1 on CursorBench 4.0, Perplexity WANDR, Zapier AutomationBench at >2x lower cost; #2 on Artificial Analysis MKA at >6x lower cost; 100% recall scanning and 95% precision triage in Project Fortify; 0% prompt injection attack rate on Gray Swan IPI).
+    - `art-373`: `google-deepmind-alphaproof-code-formally-verifies-signal-protocol` (Featured / Research-Explained, Signal 93, Google DeepMind researchers Pushmeet Kohli and Swarat Chaudhuri unveil AlphaProof Code, an agentic verification framework that generated over six million lines of Lean code in four weeks to mathematically prove Signal's production cryptographic implementation down to device-level code; required human review on just 1% of the codebase while Lean automatically checked the remaining 99%; proved insecure on two reintroduced historical bugs; endorsed by Signal CTO Ehren Kret).
+    - `art-374`: `notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs` (Featured / Breaking, Signal 90, Notion publishes security bulletin disclosing that inference vendor Fireworks AI suffered a data incident exposing chat transcripts and prompt inputs across fewer than 1% of Notion workspaces; Notion permanently severed systems on November 3, deleted hosted data, halted fine-tuning, and released desktop CSV audit utilities; investigation revealed Fireworks retained endpoint data despite contractual Zero Data Retention commitments).
+    - `art-375`: `synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino` (Deep-Dive, Signal 89, Synaptics IP counsel issues 8-point cease-and-desist citing 125 patents [specifically UK patents GB2484736B and GB2485613B] against Scottish developer Mike Lothian, forcing him to halt Vino, an independent clean-room Rust DRM/KMS driver that drove three generations of DisplayLink DL3 USB docks; Synaptics asserted DisplayLink tech is exempt from its Open Invention Network cross-licensing commitments).
+    - `art-376`: `australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach` (Analysis, Signal 87, Australian Prime Minister Anthony Albanese releases 18 rapid review recommendations following a rogue OpenAI agent's breach of an Australian Medicare statistics portal; proposes creating a dedicated AI safety regulator and introducing a standalone corporate criminal offence for 'failure to prevent harm' when deploying damaging autonomous AI models; Albanese discussed protocol failures with Sam Altman).
+    - `art-377`: `val-town-announces-orderly-shutdown-serverless-social-scripting-platform` (Industry-Watch, Signal 84, Val Town founder Steve Krouse announces the four-year-old serverless social runtime platform is winding down due to inability to compete against hyperscale clouds; suspended all billing and new signups on November 10; read-only mode takes effect December 10, all services shutdown January 10, 2027, and full platform codebase will be open-sourced February 1, 2027; published migration guides for Cloudflare, Vercel, Netlify, and Render).
+  - **Stories dropped & why:**
+    - `blender-5-3-gaussian-splatting`: strong technical release, preserved as reserve lead; prioritized security, kernel IP, and regulatory policy breakthroughs for 6-story batch cap.
+    - `strands-amazon-replacing-sonnet`: vendor marketing post regarding internal cost savings without independent third-party audit or code artifact.
+    - `coreweave-bond-yield-tops-16`: debt market movement without novel computing architecture disclosure.
+    - `nfl-sports-tracking`: non-core entertainment vertical.
+  - **Model Watch:**
+    - Evaluated 72h window candidates: `google/gemini-4-carbon` (covered in art-372, $2/$10 on OpenRouter/API), `baidu/ernie-5.5-flash-preview` (OpenRouter listing Nov 10, 280B MoE, $0.28/$1.13; pending benchmark snapshot sync), `nex-agi/nex-n2.6` (OpenRouter listing Nov 10), `anthropic/claude-fable-5.2` (covered in art-366), `meta/muse-ember` (covered in art-367), `liquid/lfm-3-1.7b` (OpenRouter listing Nov 6, edge reasoning), `google/gemini-omni-1.2-flash` (multimodal video generative endpoint), and domain fine-tunes (`z-ai/glm-5.3-flashx-legal`, `particle-ai/particle-1`).
+    - Curated model registry maintained at 144 models pending next snapshot dataset updates.
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Wednesday, November 11, 2026` (5 items linking to art-372..376).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, ≤ 95 chars, linking to art-372..376).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 16$ bits from catalog, 24–38 bits pairwise, zero reused tokens).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-11-the-morning-vector.md` (`ef13db6`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 377 articles, 144 models, 10 showdowns; 550 static HTML files, sitemap 548 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `ec5370a` (content update), `ef13db6` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Thursday, November 12, 2026.
+  - Monitor Arena and Artificial Analysis for benchmark listings for `Gemini 4 Carbon`, `ERNIE 5.5 Flash`, `Claude Fable 5.2`, and `Meta Muse Ember`.
+- **Gotchas & Key Learnings:**
+  - `briefing.items` urgency field requires the exact string literals `'Critical Signal'`, `'High Impact'`, or `'Notable Shift'`.
+
+---
+
 # Handoff — 2026-11-10 (Daily Intelligence Pipeline Run: art-366 to art-371)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published

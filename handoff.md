@@ -1,4 +1,46 @@
-# Handoff — 2026-11-11 (Daily Intelligence Pipeline Run: art-372 to art-377)
+# Handoff — 2026-11-12 (Daily Intelligence Pipeline Run: art-378 to art-383)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Synchronized, Verification 8/8 Passed, Newsletter Published
+- **What was done:**
+  - Harvested live intelligence via `npm run harvest` across Hacker News, BBC, arXiv, OpenRouter, and Hugging Face (`pipeline_runs/harvest-2026-11-12.json`).
+  - Sourced, verified, and published 6 original articles (`art-378` to `art-383`) into `src/data/articlesData.ts` via `scripts/add_articles.py`:
+    - `art-378`: `amazon-launches-open-source-aws-emulator-built-by-agents` (Hero / Deep-Dive, Signal 93, Werner Vogels and Swami Sivasubramanian unveil AWS Emulator under CC0 public domain license; provides local offline runtime across 200+ AWS services derived from 400+ Smithy API models; 100% authored, tested, and maintained by autonomous AI coding agents; initial SQS prototype built by Kiro in 15 minutes; merge gate enforced by adversarial security agents; full git history and things-that-do-not-work folder published on GitHub).
+    - `art-379`: `google-unveils-gemini-decisions-api-multimodal-routing` (Featured / Model-Report, Signal 92, Min Choi and Felix Yu announce Gemini Decisions API powered by Gemini Decision 1 in Google AI Studio; evaluates up to 1,000 multimodal classification questions in a single forward pass over up to 256K tokens; primitives noul, choice 2-255, and continuous score rubrics; 150-250ms end-to-end latency; priced at $0.10/M input tokens with $0.00 output token billing; deployed in Gemini Notebook for 40% lower routing latency, Stitch Rapid, and Search tool safety).
+    - `art-380`: `in-memoriam-tim-peters-author-zen-of-python-timsort` (Featured / Industry-Watch, Signal 90, Guido van Rossum announces the passing of Python pioneer and language co-designer Tim Peters [1952-2026] at age 73; author of PEP 20 ["The Zen of Python", "import this"]; creator of Timsort in 2002 adopted in Python, Java 7+, Android, and Rust; designed mixed int/float arithmetic, cyclic GC, pymalloc; PSF Director 2001-2014; remembered as "Timbot" on early mailing lists).
+    - `art-381`: `united-airlines-bans-autonomous-ai-agents-booking-flights` (Breaking, Signal 88, United Airlines deploys bot countermeasures and updates carriage policies banning autonomous AI purchasing assistants from searching, booking, or managing passenger flights; cites user credential theft risks, server scraping costs, and FAA baggage check compliance rules requiring personal passenger certification; contrasts with Southwest's ChatGPT integration; standard aggregators like Google Flights remain unaffected).
+    - `art-382`: `jane-street-datacenter-post-mortem-false-smoke-alarm-fragility` (Analysis, Signal 87, Systems retrospective by Michael Bacarella on false smoke alarm triggered by contractor dust in 1 New York Plaza adjacent to Jane Street's 33rd floor datacenter; pre-action dry-pipe sprinklers charged and building automation cut CRAC unit power; heat rose toward 150°F sprinkler trigger threshold until Bacarella manually pulled power cables across 100 cabinets, stopping rise at 143.6°F [6.4°F safety margin]; led to fleet-wide OCaml telemetry daemon).
+    - `art-383`: `hardware-voltage-glitching-unlocks-nvidia-a100-mining-cards` (Discovery, Signal 86, Hardware security researcher Kate Temkin demonstrates voltage fault injection [VFI] on Nvidia GA100 silicon die; bypasses boot verification and exploits inverted eFuse bits to permanently relax segmentation on budget CMP 170HX mining cards, converting them into 80GB A100-class accelerators; unlocks up to 126 SMs delivering 85.858 TFLOP/s FP16 throughput [1.18x retail A100]; disclosed to Nvidia Product Security).
+  - **Stories dropped & why:**
+    - `apple_retrieval`: efficient retrieval research paper, saved as technical reserve.
+    - `mozilla_fingerprint`: browser anti-fingerprinting blog, dropped to respect 6-story batch focus.
+    - `science.org`: returned 403 Forbidden on fetch, dropped immediately per Rule 1.
+  - **Model Watch & Leaderboard Synchronization:**
+    - Evaluated 72h window feeds (`google/gemini-4-carbon`, `gemini-decision-1`, `baidu/ernie-5.5-flash-preview`, `nex-agi/nex-n2.6`, `nvidia/Kimi-K3.1-Pro-NVFP4`).
+    - Handled 30-day snapshot expiration gate: updated OSWorld-Verified (144 rows) and SWE-bench Verified (180 rows); updated LMSYS Chatbot Arena text leaderboard snapshot using the official LMSYS Hugging Face dataset fallback (`lmarena-ai/leaderboard-dataset`) when direct arena.ai scrape was Cloudflare-blocked.
+    - Model registry updated to 2026-11-12 across 144 models, 6 leaderboards, and 10 showdown comparisons (Gemini 4 Carbon holding #1 on Arena at 1538 Elo).
+  - **Briefing & Signals:**
+    - Updated `MOCK_DAILY_BRIEFING` dated `Thursday, November 12, 2026` (5 items linking to art-378..382).
+    - Updated `MOCK_LIVE_SIGNALS` (5 items, 79-84 chars, linking to art-378..381, 383).
+  - **Images:**
+    - Downloaded and verified 6 unique local cover images in `public/images/articles/` ($d_{\text{hash}} \ge 17$ bits from catalog, 24–40 bits pairwise, zero reused tokens).
+  - **Newsletter:**
+    - Drafted, verified, committed, and pushed `newsletters/2026-11-12-the-morning-vector.md` (`2a8dbac`).
+- **What passed:**
+  - `npm run images`: optimized and verified.
+  - `npm run build`: static site generation prerendered 383 articles, 144 models, 10 showdowns; 556 static HTML files, sitemap 554 URLs, RSS 60 items.
+  - `npm run verify`: ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant).
+  - `npm run lint`: 0 errors (112 warnings).
+  - Git commits: `bdfc536` (content and model synchronization), `2a8dbac` (newsletter).
+- **What is open:**
+  - Next daily intelligence pipeline run scheduled for Friday, November 13, 2026.
+  - Continue tracking OpenRouter/AA listings for new foundation models (`ERNIE 5.5 Flash`, `Kimi K3.1 Pro NVFP4`, `Gemini Decisions API`).
+- **Gotchas & Key Learnings:**
+  - `arena.ai` has Cloudflare Turnstile/Bot Challenge; `scripts/fetch_model_sources.py` now includes an automated fallback to the official LMSYS Hugging Face dataset (`lmarena-ai/leaderboard-dataset`), ensuring continuous 30-day snapshot freshness without CAPTCHA friction.
+  - `briefing.items[n].category` must be lowercase (`'technology'`, `'ai'`, etc.).
+
+---
+
+# Handoff — 2026-11-11 (Daily Intelligence Pipeline Run: art-378 to art-377)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Evaluated, Verification 8/8 Passed, Newsletter Published
 - **What was done:**

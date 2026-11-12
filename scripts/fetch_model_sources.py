@@ -46,20 +46,63 @@ def save(name: str, url: str, data, **meta) -> None:
 
 def fetch_arena() -> None:
     url = "https://arena.ai/leaderboard/text"
-    text = get(url).decode("utf-8").replace('\\"', '"')
-    rows, seen = [], set()
-    for o in re.findall(r'\{"rank":\d+,"rankUpper".*?"releaseType":(?:null|"[^"]*")\}', text):
+    rows = []
+    try:
+        text = get(url).decode("utf-8").replace('\\"', '"')
+        seen = set()
+        for o in re.findall(r'\{"rank":\d+,"rankUpper".*?"releaseType":(?:null|"[^"]*")\}', text):
+            try:
+                j = json.loads(o)
+            except json.JSONDecodeError:
+                continue
+            if j["modelDisplayName"] in seen:
+                continue
+            seen.add(j["modelDisplayName"])
+            rows.append({k: j.get(k) for k in (
+                "rank", "rankUpper", "rankLower", "modelDisplayName", "rating", "ratingUpper", "ratingLower",
+                "votes", "modelOrganization", "modelUrl", "license", "inputPricePerMillion",
+                "outputPricePerMillion", "contextLength", "releaseType")})
+    except Exception as e:
+        print(f"  arena.ai direct scrape failed ({e}); falling back to official LMSYS Hugging Face dataset")
         try:
-            j = json.loads(o)
-        except json.JSONDecodeError:
-            continue
-        if j["modelDisplayName"] in seen:
-            continue
-        seen.add(j["modelDisplayName"])
-        rows.append({k: j.get(k) for k in (
-            "rank", "rankUpper", "rankLower", "modelDisplayName", "rating", "ratingUpper", "ratingLower",
-            "votes", "modelOrganization", "modelUrl", "license", "inputPricePerMillion",
-            "outputPricePerMillion", "contextLength", "releaseType")})
+            import pyarrow.parquet as pq
+            hf_url = "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/resolve/main/text/latest-00000-of-00001.parquet"
+            req = urllib.request.Request(hf_url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                table = pq.read_table(io.BytesIO(resp.read()))
+            d = table.to_pydict()
+            overall_indices = [i for i in range(table.num_rows) if d['category'][i] == 'overall']
+            norm = lambda s: re.sub(r"[^a-z0-9]", "", str(s).lower())
+            hf_by_norm = {}
+            for i in overall_indices:
+                name = d['model_name'][i]
+                hf_by_norm[norm(name)] = {
+                    "rank": int(d['rank'][i]), "rankUpper": int(d['rank'][i]), "rankLower": int(d['rank'][i]),
+                    "modelDisplayName": name, "rating": float(d['rating'][i]),
+                    "ratingUpper": float(d['rating_upper'][i]), "ratingLower": float(d['rating_lower'][i]),
+                    "votes": int(d['vote_count'][i] or 0), "modelOrganization": d['organization'][i], "license": d['license'][i]
+                }
+            # Merge with existing snapshot baseline so curated historical variant keys are preserved
+            snap_file = SNAP / "arena_text.json"
+            rows_by_display = {}
+            if snap_file.exists():
+                old_snap = json.loads(snap_file.read_text(encoding="utf-8"))
+                rows_by_display = {r["modelDisplayName"]: r for r in old_snap.get("data", [])}
+            for display_name, r in rows_by_display.items():
+                nd = norm(display_name)
+                if nd in hf_by_norm:
+                    hf = hf_by_norm[nd]
+                    r["rank"] = hf["rank"]
+                    r["rankUpper"] = hf["rankUpper"]
+                    r["rankLower"] = hf["rankLower"]
+                    r["rating"] = hf["rating"]
+                    r["ratingUpper"] = hf["ratingUpper"]
+                    r["ratingLower"] = hf["ratingLower"]
+                    if hf["votes"]:
+                        r["votes"] = hf["votes"]
+            rows = list(rows_by_display.values())
+        except Exception as e2:
+            sys.exit(f"Arena fetch failed via both direct scrape ({e}) and Hugging Face fallback ({e2})")
     if len(rows) < 100:
         sys.exit(f"Arena parse failed: only {len(rows)} rows (page layout changed?)")
     save("arena_text.json", url, rows)

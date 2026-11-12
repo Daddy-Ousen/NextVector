@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 03:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Amazon Launches Open-Source AWS Emulator: Local Cloud Runtime Built by Autonomous AI Agents</title>
+      <link>https://nextvector.rhasan.online/article/amazon-launches-open-source-aws-emulator-built-by-agents</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/amazon-launches-open-source-aws-emulator-built-by-agents</guid>
+      <description>Built from 400+ Smithy models across 200+ AWS services, the CC0-licensed tool gives agents and developers offline testing.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 12 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Unveils Gemini Decisions API: Fast Multimodal Bounded Choices with Zero Output Token Pricing</title>
+      <link>https://nextvector.rhasan.online/article/google-unveils-gemini-decisions-api-multimodal-routing</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-unveils-gemini-decisions-api-multimodal-routing</guid>
+      <description>Powered by Gemini Decision 1, the new endpoint evaluates up to 1,000 queries in a single pass at $0.10 per million input tokens.</description>
+      <category>AI</category>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>In Memoriam: Python Pioneer Tim Peters (1952–2026), Author of the Zen of Python and Timsort</title>
+      <link>https://nextvector.rhasan.online/article/in-memoriam-tim-peters-author-zen-of-python-timsort</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/in-memoriam-tim-peters-author-zen-of-python-timsort</guid>
+      <description>Guido van Rossum and Python core developers pay tribute to the legendary mathematician, compiler engineer, and early architect.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 11 Nov 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>United Airlines Bans Autonomous AI Travel Agents from Booking Flights on Behalf of Travelers</title>
+      <link>https://nextvector.rhasan.online/article/united-airlines-bans-autonomous-ai-agents-booking-flights</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/united-airlines-bans-autonomous-ai-agents-booking-flights</guid>
+      <description>The carrier cites security risks, credential sharing, and FAA baggage check compliance rules while blocking bot booking traffic.</description>
+      <category>AI</category>
+      <pubDate>Wed, 11 Nov 2026 23:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Jane Street Datacenter Post-Mortem: False Smoke Alarm Exposes Dry-Pipe Fire Suppression Fragility</title>
+      <link>https://nextvector.rhasan.online/article/jane-street-datacenter-post-mortem-false-smoke-alarm-fragility</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/jane-street-datacenter-post-mortem-false-smoke-alarm-fragility</guid>
+      <description>Construction dust at 1 New York Plaza triggered pre-action sprinkler valves, shutting CRAC units and risking server dousing.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 11 Nov 2026 23:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Hardware Voltage Glitching Bypasses Firmware Restrictions on Nvidia CMP Mining Cards to Unleash A100 Compute</title>
+      <link>https://nextvector.rhasan.online/article/hardware-voltage-glitching-unlocks-nvidia-a100-mining-cards</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/hardware-voltage-glitching-unlocks-nvidia-a100-mining-cards</guid>
+      <description>Voltage fault injection on GA100 silicon flips anti-rollback fuses to convert CMP 170HX cards into 80GB accelerators.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Wed, 11 Nov 2026 23:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Google Opens Gemini 4 Carbon to General Availability with 1M Context and $2/$10 Pricing</title>
       <link>https://nextvector.rhasan.online/article/google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks</link>
@@ -496,60 +550,6 @@
       <description>KDE developer Eike Hein introduces an experimental terminal built on Mitchell Hashimoto&#x27;s libghostty-vt and Qt 6, delivering up to 35x rendering speedups over Konsole alongside modern Kitty graphics protocols.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Microsoft Releases Mage-VL-Cowork: 4B Hybrid Computer-Use Model Bridging GUI Clicks and Terminal Code</title>
-      <link>https://nextvector.rhasan.online/article/microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-releases-mage-vl-cowork-hybrid-computer-use-agent</guid>
-      <description>The Apache 2.0 vision-language policy scores 66.0% on OSWorld-Verified without relying on an external orchestrator.</description>
-      <category>AI</category>
-      <pubDate>Sun, 01 Nov 2026 06:10:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Critical Linux TCP Handshake Use-After-Free Flaw Disclosed: CVE-2026-98432 Exposes Enterprise Kernels</title>
-      <link>https://nextvector.rhasan.online/article/linux-kernel-cve-2026-98432-tcp-handshake-use-after-free</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/linux-kernel-cve-2026-98432-tcp-handshake-use-after-free</guid>
-      <description>The CVSS 9.8 memory bug in IPv4 options allows unauthenticated remote execution on servers with multipath TCP listeners.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 01 Nov 2026 05:55:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Achieves Orbit Milestone: Project Suncatcher Receives First TPU AI Response from Space</title>
-      <link>https://nextvector.rhasan.online/article/google-project-suncatcher-receives-first-tpu-ai-response-from-orbit</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-project-suncatcher-receives-first-tpu-ai-response-from-orbit</guid>
-      <description>A satellite-hosted Tensor Processing Unit executes Gemma 4 inference, transmitting orbital poetry to ground receivers.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sun, 01 Nov 2026 05:40:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Cisco Talos Uncovers VOLTA Malware Using LLMs to Value and Prioritize Victims</title>
-      <link>https://nextvector.rhasan.online/article/cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cisco-talos-uncovers-volta-infostealer-using-llms-for-victim-appraisal</guid>
-      <description>The Windows infostealer routes exfiltrated credentials through a multi-model fallback chain to generate target dossiers.</description>
-      <category>AI</category>
-      <pubDate>Sun, 01 Nov 2026 05:25:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Jepsen Analysis Exposes 96 Integrity and ACID Failures in ParticleDB AI Database</title>
-      <link>https://nextvector.rhasan.online/article/jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/jepsen-analysis-exposes-96-integrity-and-acid-failures-in-particledb</guid>
-      <description>Kyle Kingsbury documents lost committed writes, ghost rows, and serializability breakdowns in Orkes&#x27; database engine.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 01 Nov 2026 05:10:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Parameter Discloses Full-Chain ChatGPT Account Takeover via HTML Previews in Shared Chats</title>
-      <link>https://nextvector.rhasan.online/article/parameter-details-full-chain-chatgpt-account-takeover-via-shared-chats</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/parameter-details-full-chain-chatgpt-account-takeover-via-shared-chats</guid>
-      <description>Security researchers chain MathLive postMessage handlers to escape iframes and seize victim chat sessions.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 01 Nov 2026 04:55:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

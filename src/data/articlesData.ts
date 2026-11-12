@@ -20665,6 +20665,309 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-378",
+    slug: "amazon-launches-open-source-aws-emulator-built-by-agents",
+    title: "Amazon Launches Open-Source AWS Emulator: Local Cloud Runtime Built by Autonomous AI Agents",
+    subtitle: "Built from 400+ Smithy models across 200+ AWS services, the CC0-licensed tool gives agents and developers offline testing.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 93,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-12T00:15:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-378-amazon-launches-open-source-aws-emulator-built-by.jpg",
+    coverImageAlt: "Modern software developer workstation displaying terminal sessions and distributed cloud infrastructure code on multiple monitors.",
+    tags: ["AWS", "Cloud Computing", "Autonomous Agents", "Open Source", "Software Engineering", "Werner Vogels"],
+    threeQuestions: {
+      whatHappened: "Amazon launched AWS Emulator, a free offline runtime covering more than 200 AWS services that was 100% written, tested, and maintained by autonomous AI coding agents under a CC0 public domain license.",
+      whyItMatters: "Coding agents need fast, zero-cost feedback loops to verify cloud infrastructure logic locally, closing the latency and billing bottleneck of deploying changes directly to live cloud accounts during iterative generation.",
+      whatsNext: "Amazon plans to showcase real-world development workflows at AWS re:Invent, expanding the emulator's fidelity tests while inviting open-source contributions to its public GitHub issue tracker and things-that-do-not-work ledger."
+    },
+    keyTakeaways: [
+      "AWS Emulator provides local offline parity for over 200 AWS cloud services, derived automatically from more than 400 public Smithy API models.",
+      "All implementation code and test suites were generated and verified by autonomous AI agents using high-fidelity validation loops against production AWS infrastructure.",
+      "Released under the CC0 Creative Commons Zero dedication, allowing developers to embed the emulator in local agentic loops without commercial restrictions or cloud costs.",
+      "Enforces a rigorous merge gate where adversarial security agents independently probe code modifications for attack vectors before inclusion in the upstream codebase."
+    ],
+    content: [
+      "In an announcement published on All Things Distributed, Amazon Chief Technology Officer Werner Vogels and Swaminathan 'Swami' Sivasubramanian, Vice President of Data and AI, unveiled AWS Emulator—a local, open-source mock runtime covering more than 200 AWS cloud services. What distinguishes the release is not merely its breadth across 400 public API models, but its genesis: the entire software package, along with its extensive test suites, was conceived, authored, and verified by autonomous AI coding agents.",
+      "The project originated from Matt Goldberg, a Senior Principal Engineer on the AWS Developer Tools team. Goldberg hypothesized that if an autonomous agent were supplied with machine-readable API specifications and access to production AWS infrastructure as an absolute oracle, it could iteratively build a conforming local emulation without manual human programming. Using Smithy—Amazon's open interface definition language describing operations, inputs, outputs, and type constraints—Goldberg directed the Kiro coding agent to construct an emulator for Amazon Simple Queue Service (SQS). In approximately 15 minutes, the agent returned a functioning, passing implementation.",
+      "To scale that prototype across hundreds of services, the AWS engineering team constructed a verification harness centered on fidelity tests. These end-to-end customer scenarios are compiled directly from Smithy definitions. The agents run each test against live AWS infrastructure to verify exact runtime behavior, including edge-case ordering and error serialization. Once validated against the cloud, the same test suite is executed against the local emulator; any deviation points directly to a missing feature or subtle behavioral mismatch that the agent must autonomously rectify.",
+      "Sivasubramanian drew a direct parallel to the early architecture of Amazon's foundational distributed services. Twenty years ago, building the replication engine for 'Alf'—the Paxos-based consensus locking service underlying Amazon S3 and DynamoDB—demanded four months of intensive manual systems engineering and custom JVM simulation. By contrast, when Sivasubramanian tasked Kiro with rebuilding that same replication layer given formal specifications and an automated test harness, the agent completed the task in two hours.",
+      "The emulator is published under the CC0 Creative Commons Zero dedication, placing the codebase squarely in the public domain. Amazon has made the entire commit history and agent-submitted pull requests accessible on GitHub. Crucially, the repository includes a dedicated 'things-that-do-not-work' directory, documenting exact operational discrepancies where current emulated behaviors diverge from live cloud infrastructure.",
+      "Every contribution to the codebase is screened by an automated merge gate consisting of deterministic static boundaries and specialized adversarial security agents. These AI reviewers systematically test prospective patches for injection vulnerabilities and unintended side effects before merging. Amazon confirmed that further architectural insights and developer tooling integrations will be showcased at the upcoming AWS re:Invent conference."
+    ],
+    technicalSpecs: {
+      "License": "CC0 1.0 Universal (Public Domain)",
+      "Service Coverage": "200+ AWS Services",
+      "API Models": "400+ Smithy Models",
+      "Authoring System": "Autonomous AI Agents (Kiro Scaffolding)",
+      "Repository": "github.com/aws/aws-emulator",
+      "Runtime Mode": "Local Offline / In-Memory"
+    },
+    citations: [
+      {
+        title: "AWS Emulator and the engineer's job when agents write the code",
+        url: "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+        source: "All Things Distributed (Werner Vogels & Swami Sivasubramanian)"
+      }
+    ],
+    isHero: true,
+    isFeatured: false
+  },
+  {
+    id: "art-379",
+    slug: "google-unveils-gemini-decisions-api-multimodal-routing",
+    title: "Google Unveils Gemini Decisions API: Fast Multimodal Bounded Choices with Zero Output Token Pricing",
+    subtitle: "Powered by Gemini Decision 1, the new endpoint evaluates up to 1,000 queries in a single pass at $0.10 per million input tokens.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 92,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-12T00:00:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-379-google-unveils-gemini-decisions-api-multimodal-rou.jpg",
+    coverImageAlt: "Abstract visualization of multimodal data streams and neural routing pathways on a high-resolution dark digital interface.",
+    tags: ["Google DeepMind", "Gemini Decision 1", "Gemini API", "Model Routing", "Multimodal AI", "Google AI Studio"],
+    threeQuestions: {
+      whatHappened: "Google launched the Gemini Decisions API powered by Gemini Decision 1, allowing developers to score up to 1,000 multimodal classification questions in a single 150-250ms forward pass billed at $0.10 per million input tokens with zero output fees.",
+      whyItMatters: "Replacing autoregressive text generation with single-pass logit scoring eliminates output token billing and variable thinking latency, giving developers a sub-second control plane for agent tool selection and model routing.",
+      whatsNext: "The Decisions API is available in Google AI Studio across Python, JavaScript, and REST SDKs, with ecosystem integrations rolling out to OpenRouter, LiteLLM, LangChain, and impending deployment on Google Cloud Vertex AI."
+    },
+    keyTakeaways: [
+      "Evaluates bounded decisions across three native question types: Boolean checks (noul), categorical selection (choice, 2-255 items), and continuous rubric grades (score).",
+      "Priced at $0.10 per million input tokens with zero output token fees, making it nearly five times cheaper than Gemini 3.5 Flash-Lite across shared classification benchmarks.",
+      "Delivers 150-250ms end-to-end latency with 50-100ms model compute, maintaining near-constant execution times when evaluating from 1 to 100 questions simultaneously.",
+      "Already deployed inside Google to drive intent routing in Gemini Notebook, rapid interactive UI generation in Stitch, and safety filtering for Search MCP tools."
+    ],
+    content: [
+      "Google DeepMind announced the public availability of the Gemini Decisions API, an inference endpoint engineered specifically for high-speed, bounded classification and decision-making. Unveiled by Product Manager Min Choi and Principal Scientist Felix Yu, the system is driven by a specialized model designated Gemini Decision 1 (gemini-decision-1) and accessible immediately through Google AI Studio.",
+      "Unlike conventional large language models that generate responses token by token via autoregressive decoding, Gemini Decision 1 computes normalized logit distributions across pre-defined candidate options in a single forward pass. This architecture allows client applications to submit complex multimodal context—encompassing text, audio recordings, high-resolution imagery, video clips, and PDF documents up to 256,000 tokens—paired with up to 1,000 discrete questions in one API call.",
+      "The API exposes three core decision primitives: 'noul' for calibrated Boolean verifications with optional true/false criteria; 'choice' for selecting among 2 to 255 discrete options with exhaustive normalized probability distributions; and 'score' for grading against an ordered rubric, returning continuous weighted scores. Every decision returns a calibrated confidence score between 0 and 1, enabling agentic orchestrators to establish deterministic threshold gates and route low-confidence edge cases to secondary reasoning tiers or human oversight.",
+      "Performance evaluations published by Google demonstrate median model compute latencies between 50 and 100 milliseconds, translating to 150 to 250 milliseconds end-to-end execution. Because candidate scoring is calculated concurrently, response latency remains virtually flat whether processing a single question or scaling to 100 concurrent queries over a shared multimodal payload.",
+      "The economic model represents a substantial shift for agent architectures. Google is billing Gemini Decision 1 at $0.10 per million input tokens with zero output token charges, zero transcription surcharges, and no variable thinking-token fees. Across standardized benchmark suites evaluating agent routing, safety filtering, and retrieval ranking, Google calculates that the endpoint delivers approximately fivefold cost reductions compared to invoking Gemini 3.5 Flash-Lite through standard generative APIs.",
+      "Internal product teams have already integrated the endpoint as an operational control plane. Gemini Notebook leverages Decisions API to route queries dynamically to optimal model tiers, reducing routine prompt latency by up to 40%. The Stitch UI design platform uses it to synthesize playable wireframes in real time, while Google Search employs the engine to evaluate Model Context Protocol (MCP) tool execution safety against prompt injection datasets."
+    ],
+    technicalSpecs: {
+      "Model Identifier": "gemini-decision-1",
+      "Input Pricing": "$0.10 per 1M tokens",
+      "Output Pricing": "$0.00 (Zero output tokens billed)",
+      "Context Window": "256,000 tokens",
+      "End-to-End Latency": "150–250 ms",
+      "Decision Primitives": "noul (Boolean), choice (2-255), score (rubric)"
+    },
+    citations: [
+      {
+        title: "Gemini Decisions API: Fast, calibrated multimodal decisions",
+        url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        source: "Google DeepMind (Min Choi & Felix Yu)"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-380",
+    slug: "in-memoriam-tim-peters-author-zen-of-python-timsort",
+    title: "In Memoriam: Python Pioneer Tim Peters (1952–2026), Author of the Zen of Python and Timsort",
+    subtitle: "Guido van Rossum and Python core developers pay tribute to the legendary mathematician, compiler engineer, and early architect.",
+    category: "technology",
+    articleType: "industry-watch",
+    signalRating: 90,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-11T23:45:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-380-in-memoriam-tim-peters-author-zen-of-python-timsor.jpg",
+    coverImageAlt: "Clean mechanical keyboard and developer workstation screen displaying Python source code and terminal prompts.",
+    tags: ["Python", "Tim Peters", "Timsort", "PEP 20", "Open Source History", "Guido van Rossum"],
+    threeQuestions: {
+      whatHappened: "Guido van Rossum announced that foundational Python co-designer and mathematician Tim Peters passed away on July 15, 2026, prompting widespread tributes across the open-source software community.",
+      whyItMatters: "Peters authored PEP 20 ('The Zen of Python') and invented Timsort, an adaptive stable sorting algorithm whose mathematical design was subsequently standardized across Python, Java, Android, and modern operating systems.",
+      whatsNext: "The Python Software Foundation and core development teams are compiling archival records of Peters' technical papers, Usenet essays, and sorting proofs to preserve his foundational contributions for future computer scientists."
+    },
+    keyTakeaways: [
+      "Invented Timsort in 2002, creating an adaptive hybrid merge/insertion sorting algorithm that became standard in Python lists, Java 7, Android, and Rust.",
+      "Authored PEP 20, 'The Zen of Python', establishing the philosophical principles of readability and explicitness that guided Python's global ascent.",
+      "Served as an early co-designer alongside Guido van Rossum, championing mixed-type arithmetic, cyclic garbage collection, and custom memory management.",
+      "Served as Director of the Python Software Foundation from 2001 to 2014, nurturing Python from an experimental scripting tool into universal infrastructure."
+    ],
+    content: [
+      "On November 11, 2026, Python creator Guido van Rossum published a solemn tribute on the official Python core development forum announcing that Tim Peters, one of the programming language's earliest and most influential architects, passed away on July 15, 2026, at the age of 73. The announcement brought forth immediate tributes from across the global software development community, honoring a practitioner whose mathematical rigor and gentle mentorship profoundly shaped modern computing.",
+      "Peters joined the Python project shortly after its inception in the early 1990s, rapidly becoming van Rossum's foremost intellectual sounding board. Among his earliest contributions was persuading van Rossum that Python must support intuitive mixed arithmetic between integers and floating-point values—a convenience that helped ease adoption for scientific users. Over decades of core stewardship, Peters was instrumental in crafting Python's cyclic garbage collection architecture, refining its floating-point representations, and implementing the pymalloc memory allocator.",
+      "To millions of developers worldwide, Peters is immortalized as the author of PEP 20, 'The Zen of Python.' Written in 1999 as an affectionate codification of the community's design ethos—beginning with 'Beautiful is better than ugly' and 'Explicit is better than implicit'—the aphorisms remain embedded directly in every Python interpreter via the command 'import this'.",
+      "In 2002, Peters made an enduring algorithmic breakthrough by designing Timsort, a hybrid sorting algorithm combining insertion sort and merge sort engineered specifically to exploit natural ordering in real-world data. Documented in the celebrated text file 'Objects/listsort.txt', Timsort minimized expensive comparison operations while guaranteeing worst-case O(n log n) stability. Its performance characteristics were so compelling that Sun Microsystems adopted Timsort for Java SE 7, Google embedded it into the Android operating system, and the Rust standard library adopted its core mechanics.",
+      "Beyond algorithmic feats, Peters was legendary for his presence on early Python mailing lists and Usenet newsgroups. Posting under the self-deprecating handle 'Timbot', he addressed novice queries and architectural debates alike with exhaustive technical precision, disarming wit, and his signature '<wink>' markers. Former PythonLabs colleague Chris McDonough recalled that despite possessing the pedigree of a Cray supercomputer compiler engineer and Dragon Systems speech researcher, Peters maintained complete humility, showing that technical brilliance did not require arrogance.",
+      "Peters served on the Board of Directors of the Python Software Foundation from 2001 to 2014, helping shepherd the language across what McDonough termed 'the uncanny valley from an interesting but ignorable hobby to the planet's default language.' His enduring legacy lives inside every Python runtime executed across the globe."
+    ],
+    technicalSpecs: {
+      "Algorithmic Inventions": "Timsort (Adaptive Merge/Insertion Sort)",
+      "Foundational Documents": "PEP 20 (The Zen of Python), Objects/listsort.txt",
+      "Governance Roles": "PSF Director (2001–2014), Python Core Developer",
+      "Lifespan": "1952 – July 15, 2026 (73 years)",
+      "Standard Inclusions": "Python, Java SE 7+, Android OS, Rust standard library"
+    },
+    citations: [
+      {
+        title: "In Memoriam: Tim Peters 1952–2026",
+        url: "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
+        source: "Python Core Development Forum (Guido van Rossum)"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-381",
+    slug: "united-airlines-bans-autonomous-ai-agents-booking-flights",
+    title: "United Airlines Bans Autonomous AI Travel Agents from Booking Flights on Behalf of Travelers",
+    subtitle: "The carrier cites security risks, credential sharing, and FAA baggage check compliance rules while blocking bot booking traffic.",
+    category: "ai",
+    articleType: "breaking",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-11T23:30:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-381-united-airlines-bans-autonomous-ai-agents-booking.jpg",
+    coverImageAlt: "Commercial passenger jet aircraft parked on the airport tarmac near passenger boarding jet bridges.",
+    tags: ["United Airlines", "Aviation", "Autonomous Agents", "AI Policy", "Cybersecurity", "Consumer AI"],
+    threeQuestions: {
+      whatHappened: "United Airlines formally updated its terms of service and deployed digital countermeasures prohibiting autonomous third-party AI agents from executing flight searches, holding seats, or purchasing tickets on behalf of travelers.",
+      whyItMatters: "The decision highlights mounting operational friction between consumer agentic assistants and commercial infrastructure providers struggling with server scraping costs, unauthorized account access, and federal regulatory liability.",
+      whatsNext: "While United is aggressively blocking AI assistants, competing carriers like Southwest are partnering with LLM providers to expose direct conversational booking channels, signaling a sharp divide in airline distribution models."
+    },
+    keyTakeaways: [
+      "United Airlines is barring autonomous consumer AI agents, such as Meta Muse and OpenAI-based booking assistants, from accessing its digital booking and check-in portals.",
+      "The airline cited security risks associated with users sharing payment credentials and MileagePlus loyalty account access with third-party automated tools.",
+      "United raised regulatory compliance concerns, noting that automated agent check-in may bypass federal rules requiring passengers to verify in person that their baggage lacks hazardous materials.",
+      "Aviation analysts note the ban protects direct customer relationships while mitigating substantial server overhead caused by relentless automated fare-scraping bots."
+    ],
+    content: [
+      "United Airlines announced on Wednesday that it has implemented comprehensive technical restrictions and updated its terms of carriage to ban autonomous artificial intelligence agents from making reservations or managing passenger accounts on behalf of consumers. The move represents the most explicit enterprise pushback yet against the emerging class of personal purchasing agents.",
+      "As consumer AI tools expand beyond conversational information retrieval into multi-step financial execution—such as Meta's Muse platform and automated agents executing within developer environments—travelers have increasingly delegated flight searches, fare monitoring, and ticket booking to autonomous bots. However, United stated that delegating credentialed operations introduces severe cybersecurity and operational vulnerabilities.",
+      "'Sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended purchases, account changes, or use of MileagePlus miles,' United said in an official statement detailing the policy shift. The carrier warned that unauthorized bots executing automated transactions risk having reservations cancelled.",
+      "Beyond account security, United raised critical legal and safety concerns regarding federal aviation regulations. Federal regulations require passengers to personally certify during check-in that their baggage does not contain hazardous materials, undeclared lithium batteries, or forbidden chemical items. United indicated that automated check-in procedures executed by autonomous background agents without explicit human interaction could run afoul of Federal Aviation Administration (FAA) and Transportation Security Administration (TSA) requirements.",
+      "Henry Harteveldt, an aviation industry analyst at Atmosphere Research Group, explained that financial and strategic motives also underpin the enforcement. 'Flight searches cost airlines money, and undoubtedly United wants to avoid the expense associated with the surge of AI bot flight searches,' Harteveldt told CBS News. He noted that airlines are wary of ceding customer interface control to a powerful new layer of AI intermediaries that could disintermediate brand loyalty and direct booking margins.",
+      "United clarified that conventional travel aggregators and metasearch engines, such as Google Flights, Kayak, and Hopper, will continue to access flight availability through authorized Global Distribution System (GDS) APIs. The carrier's hardline stance stands in sharp contrast to competitors such as Southwest Airlines, which recently opened its inventory directly to conversational ChatGPT users."
+    ],
+    technicalSpecs: {
+      "Policy Enforcement": "Ban on unauthorized third-party automated AI booking agents",
+      "Affected Systems": "United.com, Mobile App, MileagePlus Rewards, Direct Web APIs",
+      "Regulatory Citations": "Federal hazardous baggage declaration rules, TSA passenger verification",
+      "Permitted Channels": "Direct consumer browsers, Authorized GDS partners (Google Flights, Kayak, Hopper)"
+    },
+    citations: [
+      {
+        title: "United Airlines bans AI agents from booking flights on behalf of travelers",
+        url: "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        source: "CBS News (Alain Sherter & Kris Van Cleave)"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-382",
+    slug: "jane-street-datacenter-post-mortem-false-smoke-alarm-fragility",
+    title: "Jane Street Datacenter Post-Mortem: False Smoke Alarm Exposes Dry-Pipe Fire Suppression Fragility",
+    subtitle: "Construction dust at 1 New York Plaza triggered pre-action sprinkler valves, shutting CRAC units and risking server dousing.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 87,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-11T23:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-382-jane-street-datacenter-post-mortem-false-smoke-ala.jpg",
+    coverImageAlt: "Industrial data center corridor lined with server racks, cable trays, and overhead infrastructure piping.",
+    tags: ["Jane Street", "Datacenter Infrastructure", "OCaml", "Quantitative Trading", "Site Reliability", "Disaster Recovery"],
+    threeQuestions: {
+      whatHappened: "A retrospective post-mortem revealed how construction dust triggered a false smoke alarm at Jane Street's primary Manhattan trading datacenter, automatically cutting cooling and nearly discharging pre-action sprinklers over live trading servers.",
+      whyItMatters: "The incident demonstrates a classic systems failure cascade where automated fire suppression mechanisms designed to starve flames automatically create acute thermal crises that can trigger wet-pipe discharge over multimillion-dollar hardware.",
+      whatsNext: "In response to telemetry gaps exposed by the crisis, the firm developed high-reliability OCaml daemon monitors directly polling CPU and motherboard sensors across every production server to detect localized cooling failures."
+    },
+    keyTakeaways: [
+      "Contractors cutting materials in an adjacent room at 1 New York Plaza triggered optical smoke detectors above Jane Street's 33rd-floor datacenter.",
+      "The pre-action dry-pipe fire system immediately pressurized overhead pipes with water while automatically severing power to Computer Room Air Conditioner (CRAC) units.",
+      "With cooling disabled, densely packed high-frequency server cabinets rapidly heated towards the 150°F thermal trigger threshold of the sprinkler heads.",
+      "A systems engineer sprinted to the facility and manually severed server power cables, halting ambient temperature rise at 143.6°F minutes before catastrophic water discharge."
+    ],
+    content: [
+      "In an illuminating engineering retrospective published on November 10, former Jane Street systems engineer Michael Bacarella detailed a near-catastrophic operational incident that threatened the quantitative trading firm's primary New York City computing facility. The crisis revealed how intersecting safety automations in commercial skyscrapers can induce cascading failure modes capable of destroying entire server installations.",
+      "During its expansion, Jane Street maintained its core machine room on the 33rd floor of 1 New York Plaza, situated adjacent to its Manhattan trading desks. Driven by strict intellectual property controls and a risk culture inspired by submarine operational safety—insisting on physical disconnects for automated trading engines—the facility housed roughly 100 high-density server cabinets, an online uninterruptible power supply (UPS), industrial Computer Room Air Conditioner (CRAC) units, and diesel backup generation.",
+      "The crisis began after market close when contractors working in an adjoining staging room generated airborne particulate dust, triggering ceiling-mounted optical smoke detectors. In modern enterprise datacenters, fire protection relies on pre-action dry-pipe systems: detecting smoke does not immediately release water, but rather charges dry overhead pipes with pressurized water. Discharge occurs only if localized air heat melts a thermal element inside individual sprinkler heads, typically calibrated around 150°F.",
+      "Crucially, the building's building management automation was programmed to immediately de-energize the datacenter's CRAC units upon smoke detection to prevent forced air from feeding potential flames. With 100 cabinets generating immense thermal output in an unventilated sealed space, ambient temperatures began skyrocketing. If temperatures reached 150°F, the pressurized pipes would douse running trading servers in water.",
+      "Alerted by Jane Street's Hong Kong operations team who noticed climbing server temperature telemetry, Bacarella ran from his nearby apartment to the trading floor. Entering what he described as an oppressive sauna, he executed an emergency manual shutdown, running aisle by aisle to rip power cords out of server power supplies. Datacenter temperature telemetry climbed past 141°F, 142°F, and 143°F before stabilizing at 143.6°F—barely six degrees below the sprinkler activation threshold.",
+      "Because equity markets had concluded regular trading, operational downtime was negligible. However, post-incident evaluations exposed significant vulnerabilities in facility monitoring. Jane Street responded by preserving the physical server presence while developing dedicated OCaml telemetry services that continuously sample motherboard thermal diodes across all Linux nodes every minute, ensuring systemic cooling anomalies trigger alerts long before environmental sensors trip."
+    ],
+    technicalSpecs: {
+      "Facility Location": "1 New York Plaza (33rd Floor, Manhattan)",
+      "Datacenter Capacity": "100 Server Cabinets (10x10 Array)",
+      "Suppression System": "Pre-action Dry-Pipe Sprinkler System",
+      "Critical Threshold": "150°F (Sprinkler thermal plug rupture)",
+      "Peak Temperature Logged": "143.6°F (6.4°F safety margin)",
+      "Remediation Software": "Autonomous OCaml Fleet Telemetry Monitor"
+    },
+    citations: [
+      {
+        title: "How a false smoke alarm almost drowned Jane Street's only NYC datacenter",
+        url: "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+        source: "Michael Bacarella Technical Retrospective"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-383",
+    slug: "hardware-voltage-glitching-unlocks-nvidia-a100-mining-cards",
+    title: "Hardware Voltage Glitching Bypasses Firmware Restrictions on Nvidia CMP Mining Cards to Unleash A100 Compute",
+    subtitle: "Voltage fault injection on GA100 silicon flips anti-rollback fuses to convert CMP 170HX cards into 80GB accelerators.",
+    category: "technology",
+    articleType: "discovery",
+    signalRating: 86,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-11T23:00:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-383-hardware-voltage-glitching-unlocks-nvidia-a100-min.jpg",
+    coverImageAlt: "Close-up of an electronic circuit board with microcontrollers and integrated circuits under lab testing lighting.",
+    tags: ["Hardware Security", "Nvidia A100", "Voltage Fault Injection", "Reverse Engineering", "Silicon Security", "Compute Hardware"],
+    threeQuestions: {
+      whatHappened: "Hardware security researcher Kate Temkin disclosed a voltage fault injection technique targeting Nvidia GA100 silicon that permanently bypasses anti-rollback fuse restrictions, converting budget CMP 170HX crypto-mining cards into fully operational 80GB accelerators.",
+      whyItMatters: "The architectural vulnerability proves that Nvidia's silicon fuse security model allows blowing additional fuses to grant broader system privileges, enabling second-hand mining silicon to outperform retail enterprise GPUs.",
+      whatsNext: "Security researchers are publishing reproduction tooling and examining whether similar voltage glitching vectors apply to newer Hopper and Blackwell architectural dies with locked hardware features."
+    },
+    keyTakeaways: [
+      "Researcher Kate Temkin demonstrated voltage fault injection (VFI) against Nvidia's GA100 die, allowing arbitrary manipulation of on-die eFuses.",
+      "Converts restricted CMP 170HX 8GB mining hardware into fully functional A100-class accelerators equipped with 81,920 MiB (80GB) of active VRAM.",
+      "Unlocks up to 126 active Streaming Multiprocessors (SMs), delivering 85.858 TFLOP/s FP16 throughput—nearly 1.2x faster than production A100s capped at 108 SMs.",
+      "Re-enables deactivated enterprise silicon primitives including NVLink interconnects, PCIe Gen4 bandwidth, and Multi-Instance GPU (MIG) partitioning."
+    ],
+    content: [
+      "Hardware security researcher Kate Temkin disclosed a hardware vulnerability affecting Nvidia's flagship GA100 silicon die. By applying voltage fault injection (VFI)—commonly known as voltage glitching—to the GPU power rail during critical boot sequences, researchers can reliably bypass on-die access controls and permanently blow configuration fuses to convert stripped-down CMP 170HX mining cards into 80GB A100 compute accelerators.",
+      "During the cryptocurrency mining boom, Nvidia released the Crypto Mining Processor (CMP) series. Cards such as the CMP 170HX utilized the same monolithic GA100 silicon die found in high-end A100 datacenter accelerators. However, Nvidia artificially segmented the hardware by blowing silicon eFuses at the factory, hobbling memory to 8GB, deactivating display pipelines, locking PCIe bus speeds to Gen3 x4, and disabling NVLink clustering.",
+      "Temkin discovered an architectural design flaw in how the GA100 fuse controller evaluates access permissions. In secure hardware architectures, blowing a physical fuse should strictly enforce monotonically decreasing privileges because blown fuses cannot be restored. On the GA100 die, however, several configuration bits are inverted: blowing specific additional fuses instructs the internal security processor to relax segmentation restrictions and unlock broader subsystem access.",
+      "By inducing precise millivolt-scale power rail dips during fuse verification routines, Temkin's exploit bypasses firmware validation gates, allowing targeted fuses to be programmed. Once executed, the modified CMP 170HX card enumerates under standard Linux drivers as an enterprise-grade accelerator with 81,920 MiB (80GB) of high-bandwidth memory and active NVLink interconnects.",
+      "Remarkably, the unlocked hardware outperforms production A100 accelerators. In manufacturing the standard A100, Nvidia conservatively harvested dies by deactivating 20 of the GA100's 128 physical Streaming Multiprocessors (SMs), standardizing commercial production at 108 SMs to maximize silicon wafer yields. By blowing the fuse locks, Temkin unlocked all physically functional SMs on the die—typically between 120 and 126 SMs. Benchmarks executed on Linux driver 610.43.03 recorded 85.858 TFLOP/s in FP16 FMA throughput, representing an 18% performance advantage over standard A100 hardware.",
+      "The findings were disclosed to Nvidia's product security team prior to publication. Because eFuses represent immutable physical hardware connections on physical silicon dies, the vulnerability cannot be patched via software or microcode updates on existing GA100 hardware in the field. The research provides a remarkable second life for tens of thousands of decommissioned mining cards amid ongoing global AI compute shortages."
+    ],
+    technicalSpecs: {
+      "Target Silicon": "Nvidia GA100 Die (NVIDIA Graphics Device 0x20C210DE)",
+      "Vulnerability Class": "Hardware Voltage Fault Injection (VFI / Glitching)",
+      "Unlocked Memory": "81,920 MiB (80GB HBM2e VRAM)",
+      "Active Compute Units": "124 SMs (7,936 cores @ 1410 MHz)",
+      "FP16 FMA Throughput": "85.858 TFLOP/s (1.18x retail A100 @ 72.488 TFLOP/s)",
+      "Software Stack": "Linux Driver 610.43.03 / OpenCL C 3.0"
+    },
+    citations: [
+      {
+        title: "Using voltage glitching to unleash the A100 in my mining card",
+        url: "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+        source: "Kate Temkin Technical Security Research"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

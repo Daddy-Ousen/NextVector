@@ -1136,53 +1136,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Wednesday, November 11, 2026",
-  summary: "Google expanded Gemini 4 Carbon to general availability alongside DeepMind's AlphaProof Code formal verification breakthrough on Signal's cryptographic core. Meanwhile, Notion disclosed an inference breach at Fireworks AI, Synaptics halted an open-source DisplayLink driver, and Australia proposed criminal penalties for rogue AI.",
+  date: "Thursday, November 12, 2026",
+  summary: "Amazon launched an open-source AWS Emulator under CC0 built entirely by autonomous agents from over 400 Smithy models, while Google unveiled the Gemini Decisions API offering bounded multimodal choices with zero output token fees. Concurrently, the Python community mourns language pioneer Tim Peters, United Airlines banned autonomous travel booking bots, and hardware researchers unlocked Nvidia A100 silicon from discarded mining cards.",
   items: [
     {
       id: 'brief-1',
-      headline: "Google Launches Gemini 4 Carbon with 1M Context at $2/$10 Pricing",
-      category: "ai" as const,
+      headline: "Amazon Releases Open-Source AWS Emulator Built by Autonomous Agents",
+      category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "Google opened Gemini 4 Carbon to general availability across API, Antigravity, and Search, pairing frontier cyber reasoning with top workflow scores at more than 2x lower cost.",
-      whyItMatters: "Matches Argon pricing while delivering frontier cyber defenses, 100% scanning recall in Project Fortify, and top ranks on CursorBench 4.0 and Perplexity WANDR.",
-      articleSlug: "google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks"
+      summary: "Amazon released a CC0-licensed local emulator covering 200+ cloud services that was completely authored and tested by AI coding agents from Smithy models.",
+      whyItMatters: "Provides developers and autonomous agents with a zero-cost, offline cloud runtime for rapid iterative test loops without incurring cloud billing.",
+      articleSlug: "amazon-launches-open-source-aws-emulator-built-by-agents"
     },
     {
       id: 'brief-2',
-      headline: "DeepMind's AlphaProof Code Mathematically Verifies Signal Protocol",
-      category: "research" as const,
+      headline: "Google Launches Gemini Decisions API with Zero-Output Token Pricing",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "DeepMind used Gemini Carbon agents to generate six million lines of Lean code, formally verifying Signal's compiled cryptographic protocol in four weeks.",
-      whyItMatters: "Marks the first time a globally deployed messaging protocol's live implementation has been proven mathematically secure down to physical consumer devices.",
-      articleSlug: "google-deepmind-alphaproof-code-formally-verifies-signal-protocol"
+      summary: "Powered by Gemini Decision 1, the new API scores up to 1,000 multimodal questions in a single 150-250ms forward pass at $0.10 per million input tokens.",
+      whyItMatters: "Eliminates token-by-token generation latency and output billing, giving agents a fast probabilistic control plane for tool selection and model routing.",
+      articleSlug: "google-unveils-gemini-decisions-api-multimodal-routing"
     },
     {
       id: 'brief-3',
-      headline: "Notion Discloses Fireworks AI Breach Leaking Workspace Chat Transcripts",
+      headline: "Python Community Mourns Tim Peters, Author of PEP 20 and Timsort",
       category: "technology" as const,
-      urgency: "High Impact" as const,
-      summary: "An inference vendor security incident compromised chat transcripts for under 1% of Notion workspaces after contractual zero data retention commitments failed.",
-      whyItMatters: "Notion severed all integration with Fireworks AI on November 3 and released desktop export utilities to help administrators rotate exposed credentials.",
-      articleSlug: "notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs"
+      urgency: "Notable Shift" as const,
+      summary: "Guido van Rossum announced the passing of Python co-designer Tim Peters at age 73, honoring his foundational work on Timsort and The Zen of Python.",
+      whyItMatters: "Peters shaped Python's core philosophy and authored the adaptive sorting algorithm adopted across Python, Java, Android, and modern operating systems.",
+      articleSlug: "in-memoriam-tim-peters-author-zen-of-python-timsort"
     },
     {
       id: 'brief-4',
-      headline: "Synaptics Patent Threats Freeze Clean-Room Rust DisplayLink Driver",
-      category: "technology" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Synaptics legal counsel issued cease-and-desist notices citing 125 patents against developer Mike Lothian's Vino driver for Linux USB docking stations.",
-      whyItMatters: "Forces the withdrawal of functional open-source drivers and exposes limits in Open Invention Network protections for acquired hardware lines.",
-      articleSlug: "synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino"
+      headline: "United Airlines Prohibits Autonomous AI Agents from Booking Flights",
+      category: "ai" as const,
+      urgency: "High Impact" as const,
+      summary: "United Airlines updated digital booking policies to block third-party AI assistants from searching fares, holding tickets, or managing passenger flights.",
+      whyItMatters: "Marks major enterprise resistance against autonomous consumer agents, citing credential theft, server scraping costs, and FAA baggage compliance.",
+      articleSlug: "united-airlines-bans-autonomous-ai-agents-booking-flights"
     },
     {
       id: 'brief-5',
-      headline: "Australia Considers Criminal Penalties for Rogue AI After Health Breach",
-      category: "ai" as const,
+      headline: "Jane Street Post-Mortem Details Close Datacenter Call on False Smoke Alarm",
+      category: "technology" as const,
       urgency: "Notable Shift" as const,
-      summary: "Prime Minister Anthony Albanese released 18 recommendations creating an AI regulator and standalone corporate failure-to-prevent offences following an OpenAI breach.",
-      whyItMatters: "Establishes direct corporate criminal liability for damaging autonomous agent actions and enforces strict time-bound breach reporting windows.",
-      articleSlug: "australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach"
+      summary: "A false smoke detector alert in Manhattan triggered pre-action sprinkler charging and halted cooling, bringing trading servers within 6.4°F of dousing.",
+      whyItMatters: "Highlights dangerous failure modes in automated building suppression systems and led to the deployment of fleet-wide OCaml temperature monitoring.",
+      articleSlug: "jane-street-datacenter-post-mortem-false-smoke-alarm-fragility"
     }
   ]
 };
@@ -1190,32 +1190,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Frontier AI",
-    text: "Google makes Gemini 4 Carbon generally available with 1M context at $2/$10 pricing.",
-    articleSlug: "google-opens-gemini-4-carbon-to-general-availability-pricing-benchmarks"
+    tag: "Cloud Runtimes",
+    text: "Amazon open-sources CC0 AWS Emulator built by agents across 200+ cloud services.",
+    articleSlug: "amazon-launches-open-source-aws-emulator-built-by-agents"
   },
   {
     id: 'sig-2',
-    tag: "Formal Proofs",
-    text: "DeepMind AlphaProof Code generates 6M lines of Lean verifying Signal protocol in 4 weeks.",
-    articleSlug: "google-deepmind-alphaproof-code-formally-verifies-signal-protocol"
+    tag: "Model Routing",
+    text: "Google launches Gemini Decisions API at $0.10/M tokens with zero output billing.",
+    articleSlug: "google-unveils-gemini-decisions-api-multimodal-routing"
   },
   {
     id: 'sig-3',
-    tag: "Inference Breach",
-    text: "Fireworks AI security incident exposes chat transcripts across under 1% of Notion workspaces.",
-    articleSlug: "notion-discloses-fireworks-ai-security-breach-exposing-workspace-chat-logs"
+    tag: "Open Source",
+    text: "Python core pioneer Tim Peters passes away at 73; Guido van Rossum leads tributes.",
+    articleSlug: "in-memoriam-tim-peters-author-zen-of-python-timsort"
   },
   {
     id: 'sig-4',
-    tag: "Kernel IP",
-    text: "Synaptics cites 125 patents to halt Mike Lothian's clean-room Rust DisplayLink Linux driver.",
-    articleSlug: "synaptics-patent-claims-halt-clean-room-rust-displaylink-driver-vino"
+    tag: "Aviation Policy",
+    text: "United Airlines updates digital policies to block autonomous AI flight booking bots.",
+    articleSlug: "united-airlines-bans-autonomous-ai-agents-booking-flights"
   },
   {
     id: 'sig-5',
-    tag: "AI Liability",
-    text: "Australia proposes criminal failure-to-prevent offences for rogue AI after Medicare breach.",
-    articleSlug: "australia-proposes-criminal-penalties-for-rogue-ai-following-medicare-breach"
+    tag: "Hardware Security",
+    text: "Voltage fault injection on GA100 fuses converts CMP mining cards into 80GB A100s.",
+    articleSlug: "hardware-voltage-glitching-unlocks-nvidia-a100-mining-cards"
   }
 ];

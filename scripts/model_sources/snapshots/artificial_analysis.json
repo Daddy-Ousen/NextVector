@@ -1,9 +1,9 @@
 {
  "source": "https://artificialanalysis.ai/api/v2/language/models/free",
- "fetchedAt": "2026-10-24T04:25:23Z",
- "indexVersion": 4.3,
+ "fetchedAt": "2026-11-13T03:41:28Z",
+ "indexVersion": 5,
  "note": "Only rows used by curated_models.json. Data: Artificial Analysis, https://artificialanalysis.ai",
- "count": 257,
+ "count": 264,
  "data": [
   {
    "id": "0097ebf5-124f-42f6-9463-33b00e711f03",
@@ -12,9 +12,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-05-19",
-   "intelligence": 32.6,
-   "coding": 70.1,
-   "agentic": 26
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "00f1248e-78e3-4230-8dc8-5e13ba8645e2",
@@ -23,9 +23,9 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2026-04-22",
-   "intelligence": 26,
-   "coding": 60.2,
-   "agentic": 21.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "01459872-433a-4ab2-8e99-7083162172eb",
@@ -34,7 +34,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 34.2,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -45,7 +45,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-12-11",
-   "intelligence": 28.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -56,8 +56,8 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-24",
-   "intelligence": 17.7,
-   "coding": 43.3,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -67,7 +67,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-05-19",
-   "intelligence": 23.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -78,7 +78,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-28",
-   "intelligence": 40.8,
+   "intelligence": 30.8,
    "coding": null,
    "agentic": null
   },
@@ -89,7 +89,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-11-13",
-   "intelligence": 23.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -100,9 +100,9 @@
    "creator": "Meta",
    "creatorSlug": null,
    "releaseDate": "2026-08-05",
-   "intelligence": 39.6,
-   "coding": 72.2,
-   "agentic": 43.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "050c61cd-cddc-463a-a30a-a82aaa37be59",
@@ -111,9 +111,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 21,
-   "coding": 44.2,
-   "agentic": 16.1
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "05776db7-f5c0-40f7-b824-079160f8cfa8",
@@ -122,9 +122,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-01",
-   "intelligence": 46.8,
-   "coding": 75.2,
-   "agentic": 47.1
+   "intelligence": 38.7,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "07c35e00-2b12-44c8-91cc-408629cd569e",
@@ -133,7 +133,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2025-09-29",
-   "intelligence": 13.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -144,9 +144,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 33.5,
-   "coding": 69.7,
-   "agentic": 31.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "092a3b0e-c5c8-45dc-bf1b-53673c8ff352",
@@ -155,7 +155,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-29",
-   "intelligence": 51,
+   "intelligence": 52.5,
    "coding": null,
    "agentic": null
   },
@@ -166,9 +166,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-07-21",
-   "intelligence": 22.2,
-   "coding": 49.3,
-   "agentic": 14.3
+   "intelligence": 11.7,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "094ea3e3-ce41-419e-8bd1-723389663158",
@@ -177,7 +177,18 @@
    "creator": "StepFun",
    "creatorSlug": null,
    "releaseDate": "2026-09-18",
-   "intelligence": 43.7,
+   "intelligence": 28.5,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "0d3eaafd-54ed-4f78-bdd7-05a2db883986",
+   "slug": "gemini-4-carbon-medium",
+   "name": "Gemini 4 Carbon (Medium)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-10-28",
+   "intelligence": 58.3,
    "coding": null,
    "agentic": null
   },
@@ -188,9 +199,9 @@
    "creator": "Thinking Machines",
    "creatorSlug": null,
    "releaseDate": "2026-07-15",
-   "intelligence": 25,
-   "coding": 52.1,
-   "agentic": 22.5
+   "intelligence": 12.5,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
@@ -199,9 +210,9 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-04-20",
-   "intelligence": 27,
-   "coding": 61.8,
-   "agentic": 20.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "0e66bae9-41f1-42fc-9276-ce8cb6f72919",
@@ -210,9 +221,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-16",
-   "intelligence": 18.4,
-   "coding": 48.2,
-   "agentic": 8.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "0fc6308e-fbd2-42d3-a216-06da3c43e34e",
@@ -221,7 +232,7 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-04-20",
-   "intelligence": 23.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -232,7 +243,7 @@
    "creator": "MiniMax",
    "creatorSlug": null,
    "releaseDate": "2026-02-12",
-   "intelligence": 22.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -243,9 +254,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-07-24",
-   "intelligence": 49.7,
-   "coding": 77,
-   "agentic": 55.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "142b93bf-09c4-42dc-9c3a-50b1a222cbd4",
@@ -254,7 +265,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-30",
-   "intelligence": 24.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -265,9 +276,9 @@
    "creator": "Upstage",
    "creatorSlug": null,
    "releaseDate": "2026-08-06",
-   "intelligence": 26.6,
+   "intelligence": 14.2,
    "coding": null,
-   "agentic": 28.8
+   "agentic": null
   },
   {
    "id": "16149b9c-a1e9-4669-a5cb-ff3c00d78f89",
@@ -276,7 +287,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-05",
-   "intelligence": 10,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -287,7 +298,7 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-24",
-   "intelligence": 22.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -298,7 +309,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-04-16",
-   "intelligence": 20.2,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -309,9 +320,9 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-08-26",
-   "intelligence": 41.8,
-   "coding": 71.5,
-   "agentic": 50.9
+   "intelligence": 27.8,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "19813eb2-460a-475c-af65-810bb8660fec",
@@ -320,7 +331,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 34.6,
+   "intelligence": 23.5,
    "coding": null,
    "agentic": null
   },
@@ -331,7 +342,7 @@
    "creator": "StepFun",
    "creatorSlug": null,
    "releaseDate": "2026-04-02",
-   "intelligence": 17,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -342,7 +353,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2025-07-28",
-   "intelligence": 12.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -353,9 +364,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-23",
-   "intelligence": 38.4,
-   "coding": 74.9,
-   "agentic": 36.4
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "1f541ef3-913f-4eb2-9d07-0e93c7a9a5e3",
@@ -364,9 +375,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-03",
-   "intelligence": 52.4,
-   "coding": 75.9,
-   "agentic": 50.2
+   "intelligence": 55.3,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "20829974-af06-497e-9f42-77fb958d43b9",
@@ -375,7 +386,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-10-07",
-   "intelligence": 37.8,
+   "intelligence": 29.9,
    "coding": null,
    "agentic": null
   },
@@ -386,7 +397,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-21",
-   "intelligence": 42.2,
+   "intelligence": 31.1,
    "coding": null,
    "agentic": null
   },
@@ -397,9 +408,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-07-24",
-   "intelligence": 39.4,
-   "coding": 66.9,
-   "agentic": 36
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "2236df45-0699-40d1-b5cc-69ee345d2257",
@@ -408,9 +419,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-24",
-   "intelligence": 15.6,
-   "coding": 45.7,
-   "agentic": 7.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "22d09131-343b-4adf-8760-533e20a2155f",
@@ -419,9 +430,9 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2026-04-22",
-   "intelligence": 21.8,
-   "coding": 56.8,
-   "agentic": 15.8
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "23c86e4a-c769-43c0-a056-79e3cd15834f",
@@ -430,9 +441,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-30",
-   "intelligence": 38.2,
-   "coding": 71.5,
-   "agentic": 43.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "2443ac9e-a3db-423d-accb-8963f6fb0a53",
@@ -441,7 +452,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2025-02-19",
-   "intelligence": 12.1,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -452,7 +463,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-04-01",
-   "intelligence": 23.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -463,7 +474,7 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2026-09-21",
-   "intelligence": 46.3,
+   "intelligence": 29.9,
    "coding": null,
    "agentic": null
   },
@@ -474,7 +485,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-11-24",
-   "intelligence": 29.1,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -485,9 +496,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-08-12",
-   "intelligence": 42.8,
-   "coding": 74.4,
-   "agentic": 50.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "268525e2-f873-4178-bc07-e6a0ee1f002d",
@@ -496,7 +507,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-28",
-   "intelligence": 46.8,
+   "intelligence": 41.5,
    "coding": null,
    "agentic": null
   },
@@ -507,9 +518,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 30.1,
-   "coding": 64.7,
-   "agentic": 30.4
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "27202e5f-c82d-4710-92e9-4317877d4883",
@@ -518,9 +529,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2025-06-05",
-   "intelligence": 16.1,
-   "coding": 33.3,
-   "agentic": 1.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "272f5f03-aea9-4675-a244-2b753b618cdf",
@@ -529,7 +540,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-21",
-   "intelligence": 46.3,
+   "intelligence": 35.2,
    "coding": null,
    "agentic": null
   },
@@ -540,7 +551,7 @@
    "creator": "MiniMax",
    "creatorSlug": null,
    "releaseDate": "2025-12-23",
-   "intelligence": 20.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -551,9 +562,9 @@
    "creator": "MiniMax",
    "creatorSlug": null,
    "releaseDate": "2026-06-01",
-   "intelligence": 29.2,
-   "coding": 58.6,
-   "agentic": 29.5
+   "intelligence": 18.9,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "29855680-7469-43eb-8b88-cd3fb1d99da3",
@@ -562,9 +573,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 16.8,
-   "coding": 15.6,
-   "agentic": 6.8
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "2dbb6dc7-8c40-4b6d-af9c-cf805f83b79a",
@@ -573,7 +584,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2025-09-19",
-   "intelligence": 11.1,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -584,7 +595,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-02-17",
-   "intelligence": 24.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -595,9 +606,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-03",
-   "intelligence": 52.7,
-   "coding": 76.9,
-   "agentic": 51
+   "intelligence": 56.9,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "2f3c4dc9-a450-4303-8697-0237257cf08f",
@@ -606,7 +617,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 57.6,
+   "intelligence": 59.1,
    "coding": null,
    "agentic": null
   },
@@ -617,7 +628,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-04-16",
-   "intelligence": 30.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -628,18 +639,7 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-16",
-   "intelligence": 21.4,
-   "coding": null,
-   "agentic": null
-  },
-  {
-   "id": "34fc646a-0174-470e-9e62-d8df452210b3",
-   "slug": "mistral-large-4",
-   "name": "Mistral Large 4 Preview",
-   "creator": "Mistral",
-   "creatorSlug": null,
-   "releaseDate": "2026-10-06",
-   "intelligence": 38.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -650,9 +650,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-08-14",
-   "intelligence": 20.2,
-   "coding": 44.6,
-   "agentic": 22.4
+   "intelligence": 10,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "36667da0-9222-4967-adbb-f7efa15ad213",
@@ -661,7 +661,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 29.9,
+   "intelligence": 18.5,
    "coding": null,
    "agentic": null
   },
@@ -672,9 +672,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-05",
-   "intelligence": 9,
-   "coding": 20.7,
-   "agentic": 1.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "392063ba-c3b5-47e8-ba67-a7b0b34f6824",
@@ -683,7 +683,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-03-17",
-   "intelligence": 19.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -694,8 +694,8 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-04-22",
-   "intelligence": 19.8,
-   "coding": 46.6,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -705,9 +705,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-01",
-   "intelligence": 48.9,
-   "coding": 77.1,
-   "agentic": 50.2
+   "intelligence": 43.2,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "3b84fee3-b70a-41bc-819e-5fbdef9a0042",
@@ -716,7 +716,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-29",
-   "intelligence": 50.2,
+   "intelligence": 50.3,
    "coding": null,
    "agentic": null
   },
@@ -727,9 +727,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-01",
-   "intelligence": 53.4,
-   "coding": 81.6,
-   "agentic": 57.9
+   "intelligence": 49.2,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "40663ad2-b218-471e-bdd4-a1e0c2360e2b",
@@ -738,7 +738,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-02-11",
-   "intelligence": 27.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -749,7 +749,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-11-24",
-   "intelligence": 23.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -760,7 +760,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-10-07",
-   "intelligence": 41.2,
+   "intelligence": 34.6,
    "coding": null,
    "agentic": null
   },
@@ -771,9 +771,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 37.3,
-   "coding": 71.4,
-   "agentic": 42.1
+   "intelligence": 23.8,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "42908ae3-d3bd-4934-be19-fbff93d3fde8",
@@ -782,7 +782,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-10-07",
-   "intelligence": 29.5,
+   "intelligence": 18.6,
    "coding": null,
    "agentic": null
   },
@@ -793,7 +793,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-02-05",
-   "intelligence": 26.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -804,7 +804,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 42.3,
+   "intelligence": 34.8,
    "coding": null,
    "agentic": null
   },
@@ -815,7 +815,7 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-24",
-   "intelligence": 19.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -826,7 +826,7 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2026-04-22",
-   "intelligence": 18.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -837,8 +837,8 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 23,
-   "coding": 37.8,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -848,9 +848,9 @@
    "creator": "Mistral",
    "creatorSlug": null,
    "releaseDate": "2025-12-02",
-   "intelligence": 9.3,
-   "coding": 20.1,
-   "agentic": 1
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "493f6a1e-7717-4e98-9d6f-548b92c4702d",
@@ -859,7 +859,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-03-05",
-   "intelligence": 18.2,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -870,7 +870,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-12-11",
-   "intelligence": 30.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -881,9 +881,9 @@
    "creator": "MiniMax",
    "creatorSlug": null,
    "releaseDate": "2026-03-18",
-   "intelligence": 22.8,
-   "coding": 52.6,
-   "agentic": 15.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "4dc12a38-b18f-4c43-8e1b-678f8434b5b1",
@@ -892,8 +892,8 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-11-13",
-   "intelligence": 24.7,
-   "coding": 49.4,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -903,7 +903,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-05-19",
-   "intelligence": 33.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -914,7 +914,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-05-22",
-   "intelligence": 16.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -925,7 +925,7 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-24",
-   "intelligence": 19.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -936,9 +936,9 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-07-16",
-   "intelligence": 30.1,
-   "coding": 72,
-   "agentic": 29.3
+   "intelligence": 17.4,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "52eebe3e-6ede-4e46-92db-c5dea49fc410",
@@ -947,7 +947,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 42.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -958,7 +958,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-03-05",
-   "intelligence": 27.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -969,7 +969,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-02-05",
-   "intelligence": 31.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -980,7 +980,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2025-09-19",
-   "intelligence": 17.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -991,9 +991,9 @@
    "creator": "Meta",
    "creatorSlug": null,
    "releaseDate": "2026-08-10",
-   "intelligence": 17.5,
-   "coding": 49,
-   "agentic": 8.5
+   "intelligence": 6.3,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "58b812bf-8498-46db-b834-f43ccc614b61",
@@ -1002,9 +1002,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 25,
-   "coding": 50.7,
-   "agentic": 23.9
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "59627802-1546-422c-9a65-65b61c022d36",
@@ -1013,7 +1013,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-21",
-   "intelligence": 46.4,
+   "intelligence": 35.5,
    "coding": null,
    "agentic": null
   },
@@ -1024,9 +1024,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-03-03",
-   "intelligence": 15.6,
-   "coding": 34.7,
-   "agentic": 1.6
+   "intelligence": 6.2,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "59b5b14b-5365-4ee7-824a-18a8e6309644",
@@ -1035,7 +1035,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-02-05",
-   "intelligence": 32.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1046,9 +1046,9 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-04-07",
-   "intelligence": 26.1,
-   "coding": 55.8,
-   "agentic": 23.9
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "5b52def2-ac9b-4465-ad80-91ea8079e253",
@@ -1057,9 +1057,9 @@
    "creator": "NVIDIA",
    "creatorSlug": null,
    "releaseDate": "2026-06-04",
-   "intelligence": 22.9,
-   "coding": 49.3,
-   "agentic": 20.1
+   "intelligence": 11.8,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "5d8183dc-24f4-46c5-a1d0-d937de149364",
@@ -1068,7 +1068,7 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2026-03-18",
-   "intelligence": 28.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1079,8 +1079,8 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-04-24",
-   "intelligence": 30.1,
-   "coding": 58.7,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1090,7 +1090,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-30",
-   "intelligence": 24.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1101,7 +1101,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 22.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1112,7 +1112,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2025-07-10",
-   "intelligence": 22.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1123,7 +1123,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 18.5,
+   "intelligence": 9.4,
    "coding": null,
    "agentic": null
   },
@@ -1134,7 +1134,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-07",
-   "intelligence": 14.2,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1145,9 +1145,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-08-14",
-   "intelligence": 27.6,
-   "coding": 56.1,
-   "agentic": 44.4
+   "intelligence": 17.5,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "665c67ca-09eb-48f0-a7a3-0096e1d5de51",
@@ -1156,7 +1156,7 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-10-23",
-   "intelligence": 55.1,
+   "intelligence": 46.5,
    "coding": null,
    "agentic": null
   },
@@ -1167,8 +1167,8 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-04-16",
-   "intelligence": 15.2,
-   "coding": 28.1,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1178,9 +1178,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-05-19",
-   "intelligence": 29.5,
-   "coding": 66,
-   "agentic": 22.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "6a5d56e1-bb68-4205-8d9b-26b97888bc84",
@@ -1189,8 +1189,8 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2025-09-30",
-   "intelligence": 18.5,
-   "coding": 45.8,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1200,9 +1200,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-23",
-   "intelligence": 33.8,
-   "coding": 71.5,
-   "agentic": 29.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "6d9a176d-feb8-4dac-8872-afe32b31897f",
@@ -1211,7 +1211,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2025-12-01",
-   "intelligence": 16,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1222,7 +1222,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-12-11",
-   "intelligence": 17,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1233,9 +1233,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-04-02",
-   "intelligence": 16.7,
-   "coding": 39.3,
-   "agentic": 2.9
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "6e2a2572-ed8d-4616-8d7d-68d125fc8ee7",
@@ -1244,7 +1244,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-04-24",
-   "intelligence": 20.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1255,9 +1255,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 39.2,
-   "coding": 76.3,
-   "agentic": 39.7
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "6f1a7562-6e96-46ac-af4f-6ba5a7a3da96",
@@ -1266,8 +1266,8 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-23",
-   "intelligence": 23.2,
-   "coding": 56.5,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1277,7 +1277,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 38.1,
+   "intelligence": 27.9,
    "coding": null,
    "agentic": null
   },
@@ -1288,8 +1288,8 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2025-12-22",
-   "intelligence": 22.2,
-   "coding": 45.3,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1299,7 +1299,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-04-02",
-   "intelligence": 13.1,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1310,9 +1310,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-07-24",
-   "intelligence": 48.1,
-   "coding": 76.5,
-   "agentic": 52.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "7261504e-503c-4a66-a9d3-a3272cdf9ad6",
@@ -1321,9 +1321,9 @@
    "creator": "Thinking Machines",
    "creatorSlug": null,
    "releaseDate": "2026-07-30",
-   "intelligence": 25.7,
-   "coding": 52.9,
-   "agentic": 23.5
+   "intelligence": 12.9,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "73c96f99-0de3-4668-a4bd-b106a0fe18f2",
@@ -1332,7 +1332,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-09-10",
-   "intelligence": 24.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1343,9 +1343,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-09-02",
-   "intelligence": 39.8,
-   "coding": 74.1,
-   "agentic": 39.7
+   "intelligence": 30.1,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "7707a46f-895f-4247-b7a8-ddab87c9a11d",
@@ -1354,9 +1354,9 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-08-21",
-   "intelligence": 34.8,
-   "coding": 65,
-   "agentic": 47.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "780a4a85-17ff-4175-a8dd-ebca4823e61b",
@@ -1365,7 +1365,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 39.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1376,9 +1376,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-07-21",
-   "intelligence": 34,
-   "coding": 69.2,
-   "agentic": 29
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "783a0ea2-1eef-422a-8c3d-f6d40d943f54",
@@ -1387,7 +1387,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2025-12-17",
-   "intelligence": 17.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1398,9 +1398,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-08",
-   "intelligence": 38.8,
-   "coding": 72.4,
-   "agentic": 41.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "7c4d1e30-6ecb-46cf-880c-41446d7b51f1",
@@ -1409,9 +1409,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 28.3,
-   "coding": 65.1,
-   "agentic": 28.1
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "7c73c3be-7f51-4d14-bec8-d5789488df25",
@@ -1420,7 +1420,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2025-12-17",
-   "intelligence": 26.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1431,7 +1431,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-10-07",
-   "intelligence": 43.4,
+   "intelligence": 36.5,
    "coding": null,
    "agentic": null
   },
@@ -1442,7 +1442,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 32.9,
+   "intelligence": 21.4,
    "coding": null,
    "agentic": null
   },
@@ -1453,9 +1453,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-08-14",
-   "intelligence": 26.2,
-   "coding": 58.2,
-   "agentic": 38.9
+   "intelligence": 15.7,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "7f3c9423-3ee3-4369-a6d9-3f2a40aff00e",
@@ -1464,7 +1464,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 20.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1475,9 +1475,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 34.2,
-   "coding": 67.1,
-   "agentic": 36.7
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "81b6ddfc-111e-4422-bd44-42ee6165b699",
@@ -1486,7 +1486,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2025-12-22",
-   "intelligence": 17.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1497,8 +1497,8 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2025-12-16",
-   "intelligence": 16,
-   "coding": 49.8,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1508,9 +1508,9 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-08-13",
-   "intelligence": 36,
-   "coding": 68.8,
-   "agentic": 41.3
+   "intelligence": 23.1,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "84b49308-6b93-47aa-a4f6-776ee1a1e8cd",
@@ -1519,7 +1519,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-04-16",
-   "intelligence": 16.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1530,7 +1530,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-12-11",
-   "intelligence": 26.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1541,9 +1541,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-04-16",
-   "intelligence": 18.2,
-   "coding": 41.9,
-   "agentic": 13.1
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "87110ff0-1f79-41b4-9976-eda250597317",
@@ -1552,9 +1552,20 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 34.6,
-   "coding": 68.6,
-   "agentic": 38.7
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "88c68c50-03c1-458a-9292-bd398c27adc5",
+   "slug": "gemini-4-hydrogen-low",
+   "name": "Gemini 4 Hydrogen (Low)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-12",
+   "intelligence": 26.9,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "89a2c945-1fab-4ee4-9f45-83a9f46cb221",
@@ -1563,9 +1574,9 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-04-24",
-   "intelligence": 24.4,
-   "coding": 52,
-   "agentic": 26.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "8a4a5ead-7789-4389-8400-30e9d20370b7",
@@ -1574,7 +1585,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-05-22",
-   "intelligence": 20.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1585,9 +1596,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-09-02",
-   "intelligence": 40.9,
-   "coding": 76.3,
-   "agentic": 40.2
+   "intelligence": 30.8,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "8afc250d-b538-45a2-812a-4605f4ffd87e",
@@ -1596,9 +1607,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 42.3,
-   "coding": 77.2,
-   "agentic": 44.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "8c29d66d-bf98-4ea3-8572-5409353ecc66",
@@ -1607,9 +1618,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-04-22",
-   "intelligence": 21.4,
-   "coding": 53.7,
-   "agentic": 18.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "8d0cb231-7303-452c-9923-a9620b948475",
@@ -1618,9 +1629,20 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-06-12",
-   "intelligence": 25.8,
-   "coding": 60.8,
-   "agentic": 21
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "909ed0ba-bcc5-4f38-8162-08a4e187a772",
+   "slug": "gemini-4-carbon",
+   "name": "Gemini 4 Carbon (High)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-10-28",
+   "intelligence": 60,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "90c2a9cf-ad7e-4332-9be2-2fd1309833e2",
@@ -1629,9 +1651,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-30",
-   "intelligence": 14,
-   "coding": 35.2,
-   "agentic": 14
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "90e078f2-051b-4c63-8919-76618971cb3f",
@@ -1640,9 +1662,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-09-29",
-   "intelligence": 20.7,
-   "coding": 52.1,
-   "agentic": 15.8
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "91cb6144-4937-4e4e-aeda-b4341d355c10",
@@ -1651,7 +1673,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-09-29",
-   "intelligence": 19.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1662,7 +1684,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-04-07",
-   "intelligence": 24.2,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1673,7 +1695,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2025-09-30",
-   "intelligence": 14.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1684,9 +1706,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-30",
-   "intelligence": 24.9,
-   "coding": 42.2,
-   "agentic": 15.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "94d09368-9035-47cf-963a-b4310b433a16",
@@ -1695,7 +1717,7 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2026-03-19",
-   "intelligence": 23.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1706,7 +1728,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-28",
-   "intelligence": 51.9,
+   "intelligence": 49.9,
    "coding": null,
    "agentic": null
   },
@@ -1717,9 +1739,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-05-28",
-   "intelligence": 41.8,
-   "coding": 74.3,
-   "agentic": 41.9
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "9999672c-b687-4026-9c15-5cef02ff53bb",
@@ -1728,9 +1750,9 @@
    "creator": "Meta",
    "creatorSlug": null,
    "releaseDate": "2026-09-02",
-   "intelligence": 48.1,
-   "coding": 75.8,
-   "agentic": 55.5
+   "intelligence": 36.6,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "99f376bf-cbcb-4124-bf3e-6b0a4e6e9bea",
@@ -1739,7 +1761,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-30",
-   "intelligence": 34.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1750,9 +1772,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-01",
-   "intelligence": 53.2,
-   "coding": 80.7,
-   "agentic": 57.2
+   "intelligence": 50,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "9b97a35e-6ac7-44d9-91c6-422fa678963e",
@@ -1761,9 +1783,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 20.8,
-   "coding": 52.3,
-   "agentic": 23.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "9d7d72cd-d95d-45a0-b109-4ad292c9aabd",
@@ -1772,9 +1794,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-01",
-   "intelligence": 51.2,
-   "coding": 79.1,
-   "agentic": 53.1
+   "intelligence": 47.2,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "9e30696f-16fa-4b4f-ba53-161895a85fed",
@@ -1783,9 +1805,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 38,
-   "coding": 70.6,
-   "agentic": 41.4
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "a2e51d62-ea4e-4f15-8be0-be9dc1fb489d",
@@ -1794,7 +1816,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-29",
-   "intelligence": 47.8,
+   "intelligence": 46.3,
    "coding": null,
    "agentic": null
   },
@@ -1805,9 +1827,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-03",
-   "intelligence": 45.8,
-   "coding": 75.7,
-   "agentic": 38.8
+   "intelligence": 43.3,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "a518a64b-e337-48f3-85a1-ba7dc0e8f961",
@@ -1816,7 +1838,7 @@
    "creator": "Baidu",
    "creatorSlug": null,
    "releaseDate": "2025-11-13",
-   "intelligence": 14.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1827,8 +1849,8 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-01-27",
-   "intelligence": 23.5,
-   "coding": 46.8,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1838,9 +1860,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-10-15",
-   "intelligence": 16.9,
-   "coding": 43.9,
-   "agentic": 8
+   "intelligence": 7.4,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "a87fce42-eea3-4e45-a96d-fe057814f371",
@@ -1849,9 +1871,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-06-01",
-   "intelligence": 25.2,
-   "coding": 55.9,
-   "agentic": 17.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "a89c4b28-2d8c-456e-88ea-255fb51fd2b6",
@@ -1860,8 +1882,8 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-03-05",
-   "intelligence": 39,
-   "coding": 71.1,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -1871,9 +1893,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 32.1,
-   "coding": 63.3,
-   "agentic": 34.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ad173c8d-f14f-4230-90e9-60979b7720e7",
@@ -1882,7 +1904,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-04-24",
-   "intelligence": 18.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1893,7 +1915,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-03-17",
-   "intelligence": 11.1,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1904,7 +1926,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2025-09-29",
-   "intelligence": 16.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -1915,7 +1937,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-10-07",
-   "intelligence": 34.5,
+   "intelligence": 24.6,
    "coding": null,
    "agentic": null
   },
@@ -1926,9 +1948,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-08-14",
-   "intelligence": 33.7,
-   "coding": 68.1,
-   "agentic": 45.8
+   "intelligence": 20.1,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "b112af07-3bd5-4647-b09f-b23204361bb2",
@@ -1937,9 +1959,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-09-02",
-   "intelligence": 45.4,
-   "coding": 76.2,
-   "agentic": 56
+   "intelligence": 33.7,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "b13c1257-d746-4027-8fc8-4892dc14701c",
@@ -1948,9 +1970,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-23",
-   "intelligence": 37,
-   "coding": 71.6,
-   "agentic": 34.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "b171d979-5ec1-45de-b8b9-db1ee65e77ec",
@@ -1959,7 +1981,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-28",
-   "intelligence": 56,
+   "intelligence": 54.5,
    "coding": null,
    "agentic": null
   },
@@ -1970,9 +1992,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-08-13",
-   "intelligence": 39.1,
-   "coding": 76.1,
-   "agentic": 35.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "b23e6c69-96e5-44c9-8f58-4b42e0c399d5",
@@ -1981,9 +2003,9 @@
    "creator": "Tencent",
    "creatorSlug": null,
    "releaseDate": "2026-07-06",
-   "intelligence": 25.3,
-   "coding": 58.8,
-   "agentic": 24.1
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "b25ac058-1e33-4c31-bbc9-a20c3ad0717a",
@@ -1992,7 +2014,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-29",
-   "intelligence": 51.8,
+   "intelligence": 54.6,
    "coding": null,
    "agentic": null
   },
@@ -2003,7 +2025,18 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2025-11-18",
-   "intelligence": 22.3,
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "b3866703-a9f7-4ea2-8f3f-b361c90aaf0e",
+   "slug": "gemini-4-carbon-low",
+   "name": "Gemini 4 Carbon (Low)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-10-28",
+   "intelligence": 54.2,
    "coding": null,
    "agentic": null
   },
@@ -2014,7 +2047,7 @@
    "creator": "Tencent",
    "creatorSlug": null,
    "releaseDate": "2026-04-23",
-   "intelligence": 17,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2025,9 +2058,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-07-24",
-   "intelligence": 50.8,
-   "coding": 78,
-   "agentic": 56.5
+   "intelligence": 44.2,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ba0224cf-0351-4f56-8508-b3f1a740ae4a",
@@ -2036,7 +2069,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-30",
-   "intelligence": 31.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2047,7 +2080,7 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-01-27",
-   "intelligence": 19.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2058,9 +2091,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-03-17",
-   "intelligence": 24.1,
-   "coding": 56.1,
-   "agentic": 17.9
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "bbc2ffea-cf6b-43be-8c41-1769347e234d",
@@ -2069,7 +2102,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-28",
-   "intelligence": 35.9,
+   "intelligence": 25.6,
    "coding": null,
    "agentic": null
   },
@@ -2080,9 +2113,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-02-19",
-   "intelligence": 29.7,
-   "coding": 68.8,
-   "agentic": 8.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "bc26bfdb-4923-4442-a6ca-e77392923581",
@@ -2091,7 +2124,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 9.9,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2102,9 +2135,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 42.1,
-   "coding": 76.7,
-   "agentic": 43.2
+   "intelligence": 32.3,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "bddebfd3-0a8d-47f5-b722-bc4c2ca5a5dc",
@@ -2113,7 +2146,7 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2025-11-06",
-   "intelligence": 22,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2124,7 +2157,7 @@
    "creator": "Xiaomi",
    "creatorSlug": null,
    "releaseDate": "2025-12-16",
-   "intelligence": 20.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2135,9 +2168,9 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-04-24",
-   "intelligence": 30.4,
-   "coding": 59.4,
-   "agentic": 26.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "bf9708d8-933d-44f6-affa-b696a7a650c9",
@@ -2146,7 +2179,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 21.5,
+   "intelligence": 9.7,
    "coding": null,
    "agentic": null
   },
@@ -2157,9 +2190,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-08-12",
-   "intelligence": 35.1,
-   "coding": 66.3,
-   "agentic": 41.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "c2b1e769-7aee-4669-8076-73918bdebf6c",
@@ -2168,7 +2201,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-10-15",
-   "intelligence": 15.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2179,7 +2212,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 20.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2190,7 +2223,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
-   "intelligence": 11.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2201,9 +2234,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-06-25",
-   "intelligence": 26,
-   "coding": 39.4,
-   "agentic": 16.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
@@ -2212,7 +2245,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 47.6,
+   "intelligence": 44.2,
    "coding": null,
    "agentic": null
   },
@@ -2223,7 +2256,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-07",
-   "intelligence": 25.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2234,8 +2267,8 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-23",
-   "intelligence": 30.7,
-   "coding": 60.9,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2245,9 +2278,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-08-12",
-   "intelligence": 44.3,
-   "coding": 76.8,
-   "agentic": 53
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
@@ -2256,8 +2289,8 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-05",
-   "intelligence": 10.2,
-   "coding": 21.2,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2267,7 +2300,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-08-18",
-   "intelligence": 34.3,
+   "intelligence": 23.1,
    "coding": null,
    "agentic": null
   },
@@ -2278,9 +2311,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 27.5,
-   "coding": 58.1,
-   "agentic": 25.9
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ccbfa8c3-a762-480b-aade-34fb9697f98c",
@@ -2289,7 +2322,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-08-05",
-   "intelligence": 22.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2300,9 +2333,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-04-02",
-   "intelligence": 14.7,
-   "coding": 43.4,
-   "agentic": 4.2
+   "intelligence": 4.4,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "cd55210d-358e-4df1-ba9c-9acb5f186cc9",
@@ -2311,9 +2344,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-09",
-   "intelligence": 49.6,
-   "coding": 76.5,
-   "agentic": 50.7
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "cd684ea4-b475-4269-b001-d469d06d8a7a",
@@ -2322,9 +2355,9 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-08-18",
-   "intelligence": 44.8,
-   "coding": 74.8,
-   "agentic": 53.1
+   "intelligence": 31.7,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "d0aa27aa-4705-4184-9a1d-483b78c9331c",
@@ -2333,8 +2366,8 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-04-02",
-   "intelligence": 13.9,
-   "coding": 33.2,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2344,7 +2377,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-11-13",
-   "intelligence": 13.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2355,7 +2388,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2025-11-18",
-   "intelligence": 28,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2366,7 +2399,7 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-09-30",
-   "intelligence": 52.6,
+   "intelligence": 50.4,
    "coding": null,
    "agentic": null
   },
@@ -2377,7 +2410,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 28.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2388,7 +2421,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-08-13",
-   "intelligence": 20.4,
+   "intelligence": 12.6,
    "coding": null,
    "agentic": null
   },
@@ -2399,9 +2432,9 @@
    "creator": "Meta",
    "creatorSlug": null,
    "releaseDate": "2026-09-02",
-   "intelligence": 45.1,
-   "coding": 76.5,
-   "agentic": 51.5
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "d58b9ada-fd9d-4fff-a086-242034657963",
@@ -2410,8 +2443,8 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-30",
-   "intelligence": 23.2,
-   "coding": 66.4,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2421,9 +2454,9 @@
    "creator": "Meta",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 33.7,
-   "coding": 71.3,
-   "agentic": 25.8
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "d621247c-d47e-458c-82cb-a166bc3b37e5",
@@ -2432,8 +2465,8 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2025-12-01",
-   "intelligence": 21.5,
-   "coding": 44.2,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2443,9 +2476,9 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-08-12",
-   "intelligence": 44.2,
-   "coding": 75.9,
-   "agentic": 52.5
+   "intelligence": 31,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "d8ddb241-b3e4-4c25-a6a3-72eb1b30c541",
@@ -2454,9 +2487,9 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-04-24",
-   "intelligence": 24.2,
-   "coding": 56.2,
-   "agentic": 22.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "d93edfe8-bf35-49ad-b56e-b18116142a1c",
@@ -2465,9 +2498,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 47,
-   "coding": 77.4,
-   "agentic": 50.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "d998db47-9b67-4727-a2bb-2e1261020ac0",
@@ -2476,9 +2509,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 44,
-   "coding": 78.3,
-   "agentic": 47.4
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "da2642fe-9f73-4788-b5af-24edcd55b37e",
@@ -2487,7 +2520,29 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 44.2,
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "dad0e3b1-e3e7-477a-99f9-c14457a91114",
+   "slug": "gemini-4-hydrogen",
+   "name": "Gemini 4 Hydrogen (Xhigh)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-12",
+   "intelligence": 53.9,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "dae0262d-26a4-44d1-925a-6f2731cbda6a",
+   "slug": "gemini-4-hydrogen-high",
+   "name": "Gemini 4 Hydrogen (High)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-12",
+   "intelligence": 50.8,
    "coding": null,
    "agentic": null
   },
@@ -2498,7 +2553,7 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-09-10",
-   "intelligence": 39.5,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2509,9 +2564,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
-   "intelligence": 15.5,
-   "coding": 39.3,
-   "agentic": 13.4
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ddfdaf64-3f8e-40a6-a492-608ee83a1351",
@@ -2520,8 +2575,8 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-08-13",
-   "intelligence": 36.9,
-   "coding": 71,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2531,7 +2586,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 56,
+   "intelligence": 57.4,
    "coding": null,
    "agentic": null
   },
@@ -2542,9 +2597,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-02-17",
-   "intelligence": 30.1,
-   "coding": 63,
-   "agentic": 31.8
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "e05a4828-0536-4876-870d-a235023f992b",
@@ -2553,9 +2608,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-03",
-   "intelligence": 50.9,
-   "coding": 77.1,
-   "agentic": 48.2
+   "intelligence": 54.8,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "e34ffffb-d8e1-4f5c-a2c7-3ca19c235eeb",
@@ -2564,7 +2619,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-05-05",
-   "intelligence": 22.7,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2575,7 +2630,7 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-29",
-   "intelligence": 42.1,
+   "intelligence": 34.8,
    "coding": null,
    "agentic": null
   },
@@ -2586,8 +2641,8 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-06-16",
-   "intelligence": 22.4,
-   "coding": 46.5,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2597,9 +2652,9 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2026-09-03",
-   "intelligence": 49.6,
-   "coding": 76.7,
-   "agentic": 46
+   "intelligence": 51.6,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "e9a09db3-8fd6-41dd-ba2f-20e0a2bff7f2",
@@ -2608,9 +2663,20 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-04-16",
-   "intelligence": 40.7,
-   "coding": 73.6,
-   "agentic": 38.6
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "ea5019ae-b0b7-49a5-80b3-0e584807af0f",
+   "slug": "mistral-large-4",
+   "name": "Mistral Large 4 (High)",
+   "creator": "Mistral",
+   "creatorSlug": null,
+   "releaseDate": "2026-10-29",
+   "intelligence": 26.1,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ea9e0da6-169f-43c6-92f5-730a10d6ff8d",
@@ -2619,7 +2685,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 51.2,
+   "intelligence": 48.2,
    "coding": null,
    "agentic": null
   },
@@ -2630,8 +2696,8 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-08-13",
-   "intelligence": 39.6,
-   "coding": 71.5,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2641,8 +2707,8 @@
    "creator": "Meta",
    "creatorSlug": null,
    "releaseDate": "2026-04-08",
-   "intelligence": 31.3,
-   "coding": 58.6,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2652,7 +2718,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2025-02-19",
-   "intelligence": 10.4,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2663,8 +2729,8 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-02-24",
-   "intelligence": 15.1,
-   "coding": 37,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2674,7 +2740,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-06-30",
-   "intelligence": 28.1,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2685,9 +2751,20 @@
    "creator": "OpenAI",
    "creatorSlug": null,
    "releaseDate": "2025-08-05",
-   "intelligence": 11.6,
-   "coding": 30.4,
-   "agentic": 3.7
+   "intelligence": 3.8,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "f0537484-af30-4a8a-bf34-368c552e5cfd",
+   "slug": "gemini-4-hydrogen-medium",
+   "name": "Gemini 4 Hydrogen (Medium)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-12",
+   "intelligence": 41.2,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "f164b41f-44c5-4675-bca3-fea1db4bd9ae",
@@ -2696,7 +2773,7 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-02-11",
-   "intelligence": 21.8,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2707,7 +2784,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2025-08-05",
-   "intelligence": 18.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2718,7 +2795,7 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-09-22",
-   "intelligence": 53.6,
+   "intelligence": 51.8,
    "coding": null,
    "agentic": null
   },
@@ -2729,8 +2806,8 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2026-04-02",
-   "intelligence": 27,
-   "coding": 54.5,
+   "intelligence": null,
+   "coding": null,
    "agentic": null
   },
   {
@@ -2740,9 +2817,9 @@
    "creator": "Alibaba",
    "creatorSlug": null,
    "releaseDate": "2025-07-25",
-   "intelligence": 12.7,
-   "coding": 22.1,
-   "agentic": 1.3
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "f6db039b-0f3b-485c-9d7f-982988e44f26",
@@ -2751,9 +2828,9 @@
    "creator": "Google",
    "creatorSlug": null,
    "releaseDate": "2026-09-02",
-   "intelligence": 33.5,
-   "coding": 73.5,
-   "agentic": 32.6
+   "intelligence": 22.5,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "f74ea286-cd29-4eb4-af14-1389b19c21e5",
@@ -2762,7 +2839,7 @@
    "creator": "MiniMax",
    "creatorSlug": null,
    "releaseDate": "2025-10-26",
-   "intelligence": 18.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2773,9 +2850,9 @@
    "creator": "Z AI",
    "creatorSlug": null,
    "releaseDate": "2026-06-16",
-   "intelligence": 33.7,
-   "coding": 68.8,
-   "agentic": 38.4
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "f7d2fc3e-1f7b-405f-818c-07952a4af78f",
@@ -2784,9 +2861,9 @@
    "creator": "Kimi",
    "creatorSlug": null,
    "releaseDate": "2026-07-16",
-   "intelligence": 43.6,
-   "coding": 76.2,
-   "agentic": 50
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "fe2c2289-d261-4433-8681-46448372c1f6",
@@ -2795,7 +2872,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2026-04-30",
-   "intelligence": 24.3,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   },
@@ -2806,9 +2883,9 @@
    "creator": "DeepSeek",
    "creatorSlug": null,
    "releaseDate": "2026-07-31",
-   "intelligence": 34.3,
-   "coding": 69.1,
-   "agentic": 41
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ff51be8f-e362-4a7e-9043-687ba15de207",
@@ -2817,9 +2894,9 @@
    "creator": "Anthropic",
    "creatorSlug": null,
    "releaseDate": "2026-07-24",
-   "intelligence": 44.8,
-   "coding": 74.3,
-   "agentic": 46.2
+   "intelligence": null,
+   "coding": null,
+   "agentic": null
   },
   {
    "id": "ff9bc5e5-a02f-4270-983e-4b3f834f3363",
@@ -2828,7 +2905,7 @@
    "creator": "SpaceXAI",
    "creatorSlug": null,
    "releaseDate": "2025-02-19",
-   "intelligence": 14.6,
+   "intelligence": null,
    "coding": null,
    "agentic": null
   }

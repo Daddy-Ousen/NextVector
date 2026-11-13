@@ -487,31 +487,11 @@ export const GUIDE_PICKS: GuidePick[] = [
     "id": "aa-intelligence",
     "title": "Highest Artificial Analysis Intelligence Index",
     "rule": "Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).",
-    "modelId": "model-claude-opus-5-5",
-    "modelName": "Claude Opus 5.5",
-    "developer": "Anthropic",
-    "metric": "AA Intelligence Index 57.6",
-    "price": "$4.00 / $20.00 per 1M tokens"
-  },
-  {
-    "id": "aa-coding",
-    "title": "Coding (Artificial Analysis Coding Index)",
-    "rule": "Highest Artificial Analysis Coding Index among generally released models we track (best setting per model).",
-    "modelId": "model-claude-fable-5-1",
-    "modelName": "Claude Fable 5.1",
-    "developer": "Anthropic",
-    "metric": "AA Coding Index 81.6",
-    "price": "$10.00 / $50.00 per 1M tokens"
-  },
-  {
-    "id": "aa-agentic",
-    "title": "Agent work (Artificial Analysis Agentic Index)",
-    "rule": "Highest Artificial Analysis Agentic Index among generally released models we track (best setting per model).",
-    "modelId": "model-claude-fable-5-1",
-    "modelName": "Claude Fable 5.1",
-    "developer": "Anthropic",
-    "metric": "AA Agentic Index 57.9",
-    "price": "$10.00 / $50.00 per 1M tokens"
+    "modelId": "model-gemini-4-carbon",
+    "modelName": "Gemini 4 Carbon",
+    "developer": "Google DeepMind",
+    "metric": "AA Intelligence Index 60",
+    "price": "$2.00 / $10.00 per 1M tokens"
   },
   {
     "id": "long-context",

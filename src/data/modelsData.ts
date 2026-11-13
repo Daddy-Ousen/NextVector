@@ -35,10 +35,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 20087,
     "arenaCI": 6,
     "arenaVariant": "claude-fable-5.1-max",
-    "aaIntelligence": 53.4,
-    "aaVariant": "Claude Fable 5.1 (Max, Default Fallback)",
-    "aaCoding": 81.6,
-    "aaAgentic": 57.9,
+    "aaIntelligence": 50,
+    "aaVariant": "Claude Fable 5.1 (Xhigh, Default Fallback)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -48,21 +46,9 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 53.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Fable 5.1 (Max, Default Fallback) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 81.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Fable 5.1 (Max, Default Fallback) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 57.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Fable 5.1 (Max, Default Fallback) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1"
+        "score": 50,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Fable 5.1 (Xhigh, Default Fallback) · checked 2026-11-13",
+        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh"
       }
     ],
     "keyImprovements": [],
@@ -90,7 +76,7 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-1"
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -124,10 +110,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 45524,
     "arenaCI": 4,
     "arenaVariant": "claude-fable-5-high",
-    "aaIntelligence": 49.6,
-    "aaVariant": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
-    "aaCoding": 76.5,
-    "aaAgentic": 50.7,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -140,24 +122,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "86.0%",
         "vsPreviousGen": "Success rate · 100 steps · tested 2026-08-01",
         "sourceUrl": "https://os-world.github.io/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 49.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Fable 5 (Max, Opus 4.8 Fallback) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Fable 5 (Max, Opus 4.8 Fallback) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 50.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Fable 5 (Max, Opus 4.8 Fallback) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5"
       }
     ],
     "keyImprovements": [],
@@ -186,10 +150,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OSWorld-Verified leaderboard",
         "url": "https://os-world.github.io/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -265,7 +225,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 15249,
     "arenaCI": 6,
     "arenaVariant": "claude-opus-5.5-high",
-    "aaIntelligence": 57.6,
+    "aaIntelligence": 59.1,
     "aaVariant": "Claude Opus 5.5 (Max, Default Fallback)",
     "benchmarks": [
       {
@@ -276,8 +236,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 57.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 5.5 (Max, Default Fallback) · checked 2026-10-24",
+        "score": 59.1,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Opus 5.5 (Max, Default Fallback) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-5"
       }
     ],
@@ -340,10 +300,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 73697,
     "arenaCI": 4,
     "arenaVariant": "claude-opus-5-high",
-    "aaIntelligence": 50.8,
+    "aaIntelligence": 44.2,
     "aaVariant": "Claude Opus 5 (Max)",
-    "aaCoding": 78,
-    "aaAgentic": 56.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -359,20 +317,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 50.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 5 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 78,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 5 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 56.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 5 (Max) · checked 2026-10-24",
+        "score": 44.2,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Opus 5 (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5"
       }
     ],
@@ -439,34 +385,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 63128,
     "arenaCI": 4,
     "arenaVariant": "claude-opus-4-8-high",
-    "aaIntelligence": 41.8,
-    "aaVariant": "Claude Opus 4.8 (Max)",
-    "aaCoding": 74.3,
-    "aaAgentic": 41.9,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1461,
         "vsPreviousGen": "#42 of 414 on arena.ai · ±4 · 63,128 votes · variant: claude-opus-4-8-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 41.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.8 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-8"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 74.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.8 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-8"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 41.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.8 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-8"
       }
     ],
     "keyImprovements": [],
@@ -491,10 +415,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-opus-4-8"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -528,34 +448,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 64308,
     "arenaCI": 4,
     "arenaVariant": "claude-opus-4-7-high",
-    "aaIntelligence": 40.7,
-    "aaVariant": "Claude Opus 4.7 (Max)",
-    "aaCoding": 73.6,
-    "aaAgentic": 38.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1490,
         "vsPreviousGen": "#12 of 414 on arena.ai · ±4 · 64,308 votes · variant: claude-opus-4-7-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 40.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.7 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-7"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 73.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.7 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-7"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 38.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.7 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-7"
       }
     ],
     "keyImprovements": [],
@@ -580,10 +478,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-opus-4-7"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -617,8 +511,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 84424,
     "arenaCI": 3,
     "arenaVariant": "claude-opus-4-6-high",
-    "aaIntelligence": 31.9,
-    "aaVariant": "Claude Opus 4.6 (Max)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -631,12 +523,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "75.6%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Claude 4.6 Opus' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 31.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.6 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-6-adaptive"
       }
     ],
     "keyImprovements": [],
@@ -665,10 +551,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-opus-4-6-adaptive"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -702,8 +584,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 37527,
     "arenaCI": 4,
     "arenaVariant": "claude-opus-4-5-20251101-high-32k",
-    "aaIntelligence": 29.1,
-    "aaVariant": "Claude Opus 4.5 (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -716,12 +596,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "76.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Claude 4.5 Opus (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 29.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Opus 4.5 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-4-5-thinking"
       }
     ],
     "keyImprovements": [],
@@ -746,10 +620,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-opus-4-5-thinking"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -783,20 +653,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 49555,
     "arenaCI": 3,
     "arenaVariant": "claude-opus-4-1-20250805-thinking-16k",
-    "aaIntelligence": 22.8,
-    "aaVariant": "Claude 4.1 Opus (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1450,
         "vsPreviousGen": "#58 of 414 on arena.ai · ±3 · 49,555 votes · variant: claude-opus-4-1-20250805-thinking-16k",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.1 Opus (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-1-opus-thinking"
       }
     ],
     "keyImprovements": [],
@@ -817,10 +679,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-4-1-opus-thinking"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -852,8 +710,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 35913,
     "arenaCI": 4,
     "arenaVariant": "claude-opus-4-20250514-thinking-16k",
-    "aaIntelligence": 20.6,
-    "aaVariant": "Claude 4 Opus (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -866,12 +722,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "67.6%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Claude 4 Opus (20250514)' · 2025-08-02",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 20.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4 Opus (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-opus-thinking"
       }
     ],
     "keyImprovements": [],
@@ -896,10 +746,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-4-opus-thinking"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -933,7 +779,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 13821,
     "arenaCI": 6,
     "arenaVariant": "claude-sonnet-5.5-xhigh",
-    "aaIntelligence": 56,
+    "aaIntelligence": 54.5,
     "aaVariant": "Claude Sonnet 5.5 (Max, Default Fallback)",
     "benchmarks": [
       {
@@ -944,8 +790,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 56,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 5.5 (Max, Default Fallback) · checked 2026-10-24",
+        "score": 54.5,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Sonnet 5.5 (Max, Default Fallback) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-5"
       }
     ],
@@ -1008,34 +854,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 53013,
     "arenaCI": 4,
     "arenaVariant": "claude-sonnet-5-high",
-    "aaIntelligence": 38.2,
-    "aaVariant": "Claude Sonnet 5 (Max)",
-    "aaCoding": 71.5,
-    "aaAgentic": 43.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1442,
         "vsPreviousGen": "#76 of 414 on arena.ai · ±4 · 53,013 votes · variant: claude-sonnet-5-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 38.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 5 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 71.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 5 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 43.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 5 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5"
       }
     ],
     "keyImprovements": [],
@@ -1060,10 +884,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-sonnet-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -1097,10 +917,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 70017,
     "arenaCI": 4,
     "arenaVariant": "claude-sonnet-4-6",
-    "aaIntelligence": 30.1,
-    "aaVariant": "Claude Sonnet 4.6 (Max)",
-    "aaCoding": 63,
-    "aaAgentic": 31.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -1113,24 +929,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "72.1%",
         "vsPreviousGen": "Success rate · 100 steps · tested 2026-03-08",
         "sourceUrl": "https://os-world.github.io/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 30.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 4.6 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-4-6-adaptive"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 63,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 4.6 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-4-6-adaptive"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 31.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Sonnet 4.6 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-4-6-adaptive"
       }
     ],
     "keyImprovements": [],
@@ -1159,10 +957,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OSWorld-Verified leaderboard",
         "url": "https://os-world.github.io/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-sonnet-4-6-adaptive"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -1196,10 +990,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 83973,
     "arenaCI": 3,
     "arenaVariant": "claude-sonnet-4-5-20250929-high-32k",
-    "aaIntelligence": 20.7,
-    "aaVariant": "Claude 4.5 Sonnet (Reasoning)",
-    "aaCoding": 52.1,
-    "aaAgentic": 15.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -1218,24 +1008,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "71.4%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Claude 4.5 Sonnet (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 20.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.5 Sonnet (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-sonnet-thinking"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 52.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.5 Sonnet (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-sonnet-thinking"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 15.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.5 Sonnet (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-sonnet-thinking"
       }
     ],
     "keyImprovements": [],
@@ -1264,10 +1036,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/claude-4-5-sonnet-thinking"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -1297,13 +1065,13 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary",
     "hardwareRequirements": "Hosted API",
-    "aaIntelligence": 43.4,
+    "aaIntelligence": 36.5,
     "aaVariant": "Claude Haiku 5.5 (Max)",
     "benchmarks": [
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 43.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude Haiku 5.5 (Max) · checked 2026-10-24",
+        "score": 36.5,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Haiku 5.5 (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-haiku-5-5"
       }
     ],
@@ -1358,10 +1126,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 154057,
     "arenaCI": 2,
     "arenaVariant": "claude-haiku-4-5-20251001",
-    "aaIntelligence": 16.9,
+    "aaIntelligence": 7.4,
     "aaVariant": "Claude 4.5 Haiku (Reasoning)",
-    "aaCoding": 43.9,
-    "aaAgentic": 8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -1377,20 +1143,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 16.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 43.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-10-24",
+        "score": 7.4,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning"
       }
     ],
@@ -1457,7 +1211,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 12952,
     "arenaCI": 6,
     "arenaVariant": "gpt-6.1-sol-max",
-    "aaIntelligence": 51.8,
+    "aaIntelligence": 54.6,
     "aaVariant": "GPT-6.1 Sol (Max)",
     "benchmarks": [
       {
@@ -1468,8 +1222,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 51.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-6.1 Sol (Max) · checked 2026-10-24",
+        "score": 54.6,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6.1 Sol (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-1-sol"
       }
     ],
@@ -1567,10 +1321,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 18315,
     "arenaCI": 6,
     "arenaVariant": "gpt-6-astra-max",
-    "aaIntelligence": 52.7,
+    "aaIntelligence": 56.9,
     "aaVariant": "GPT-6 Astra (Max)",
-    "aaCoding": 77.1,
-    "aaAgentic": 51,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -1580,20 +1332,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 52.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-6 Astra (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 77.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-6 Astra (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-high"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 51,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-6 Astra (Max) · checked 2026-10-24",
+        "score": 56.9,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Astra (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra"
       }
     ],
@@ -1652,7 +1392,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 19890,
     "arenaCI": 5,
     "arenaVariant": "gpt-6-sol-max",
-    "aaIntelligence": 47.6,
+    "aaIntelligence": 44.2,
     "aaVariant": "GPT-6 Sol (Max)",
     "benchmarks": [
       {
@@ -1663,8 +1403,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 47.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-6 Sol (Max) · checked 2026-10-24",
+        "score": 44.2,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Sol (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-sol"
       }
     ],
@@ -1723,7 +1463,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 107021,
     "arenaCI": 4,
     "arenaVariant": "gpt-6-luna-max",
-    "aaIntelligence": 38.1,
+    "aaIntelligence": 27.9,
     "aaVariant": "GPT-6 Luna (Max)",
     "benchmarks": [
       {
@@ -1734,8 +1474,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 38.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-6 Luna (Max) · checked 2026-10-24",
+        "score": 27.9,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Luna (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-luna"
       }
     ],
@@ -1794,34 +1534,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 43994,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.6-sol-xhigh",
-    "aaIntelligence": 47,
-    "aaVariant": "GPT-5.6 Sol (Max)",
-    "aaCoding": 78.3,
-    "aaAgentic": 50.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1457,
         "vsPreviousGen": "#46 of 414 on arena.ai · ±4 · 43,994 votes · variant: gpt-5.6-sol-xhigh",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 47,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Sol (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 78.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Sol (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-xhigh"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 50.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Sol (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol"
       }
     ],
     "keyImprovements": [],
@@ -1842,10 +1560,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-6-sol"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -1879,10 +1593,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 48825,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.6-terra-xhigh",
-    "aaIntelligence": 42.1,
+    "aaIntelligence": 32.3,
     "aaVariant": "GPT-5.6 Terra (Max)",
-    "aaCoding": 76.7,
-    "aaAgentic": 43.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -1892,20 +1604,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 42.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Terra (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Terra (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 43.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Terra (Max) · checked 2026-10-24",
+        "score": 32.3,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-5.6 Terra (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra"
       }
     ],
@@ -1964,10 +1664,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 40641,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.6-luna-xhigh",
-    "aaIntelligence": 37.3,
+    "aaIntelligence": 23.8,
     "aaVariant": "GPT-5.6 Luna (Max)",
-    "aaCoding": 71.4,
-    "aaAgentic": 42.1,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -1977,20 +1675,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 37.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Luna (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 71.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Luna (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 42.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.6 Luna (Max) · checked 2026-10-24",
+        "score": 23.8,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-5.6 Luna (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna"
       }
     ],
@@ -2049,34 +1735,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 68359,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.5-high",
-    "aaIntelligence": 38.4,
-    "aaVariant": "GPT-5.5 (Xhigh)",
-    "aaCoding": 74.9,
-    "aaAgentic": 36.4,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1471,
         "vsPreviousGen": "#31 of 414 on arena.ai · ±4 · 68,359 votes · variant: gpt-5.5-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 38.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.5 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 74.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.5 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 36.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.5 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5"
       }
     ],
     "keyImprovements": [],
@@ -2097,10 +1761,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2169,34 +1829,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 26865,
     "arenaCI": 5,
     "arenaVariant": "gpt-5.5-instant",
-    "aaIntelligence": 26,
-    "aaVariant": "GPT-5.5 Instant (June 2026)",
-    "aaCoding": 39.4,
-    "aaAgentic": 16.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1419,
         "vsPreviousGen": "#117 of 414 on arena.ai · ±5 · 26,865 votes · variant: gpt-5.5-instant",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 26,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.5 Instant (June 2026) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 39.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.5 Instant (June 2026) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 16.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.5 Instant (June 2026) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26"
       }
     ],
     "keyImprovements": [],
@@ -2213,10 +1851,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2250,27 +1884,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 64103,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.4-high",
-    "aaIntelligence": 39,
-    "aaVariant": "GPT-5.4 (Xhigh)",
-    "aaCoding": 71.1,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1469,
         "vsPreviousGen": "#35 of 414 on arena.ai · ±4 · 64,103 votes · variant: gpt-5.4-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 39,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.4 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 71.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.4 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4"
       }
     ],
     "keyImprovements": [],
@@ -2291,10 +1910,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-4"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2328,34 +1943,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 62795,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.4-mini-high",
-    "aaIntelligence": 24.1,
-    "aaVariant": "GPT-5.4 mini (Xhigh)",
-    "aaCoding": 56.1,
-    "aaAgentic": 17.9,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1412,
         "vsPreviousGen": "#140 of 414 on arena.ai · ±4 · 62,795 votes · variant: gpt-5.4-mini-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 24.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.4 mini (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4-mini"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 56.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.4 mini (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4-mini"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 17.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.4 mini (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-4-mini"
       }
     ],
     "keyImprovements": [],
@@ -2376,10 +1969,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-4-mini"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2408,16 +1997,7 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary",
     "hardwareRequirements": "Hosted API",
-    "aaIntelligence": 32.5,
-    "aaVariant": "GPT-5.3 Codex (Xhigh)",
-    "benchmarks": [
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 32.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.3 Codex (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-3-codex"
-      }
-    ],
+    "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
@@ -2428,10 +2008,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OpenRouter listing",
         "url": "https://openrouter.ai/openai/gpt-5.3-codex"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-3-codex"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2576,8 +2152,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 49309,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.2-high",
-    "aaIntelligence": 30.4,
-    "aaVariant": "GPT-5.2 (Xhigh)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -2590,12 +2164,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "72.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GPT 5.2 (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 30.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.2 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-2"
       }
     ],
     "keyImprovements": [],
@@ -2620,10 +2188,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-2"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2689,20 +2253,12 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary",
     "hardwareRequirements": "Hosted API",
-    "aaIntelligence": 28.5,
-    "aaVariant": "GPT-5.2 Codex (Xhigh)",
     "benchmarks": [
       {
         "benchmarkName": "SWE-bench Verified",
         "score": "72.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GPT 5.2 Codex' · 2026-02-19",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 28.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.2 Codex (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-2-codex"
       }
     ],
     "keyImprovements": [],
@@ -2719,10 +2275,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-2-codex"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2756,9 +2308,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 41405,
     "arenaCI": 4,
     "arenaVariant": "gpt-5.1-high",
-    "aaIntelligence": 24.7,
-    "aaVariant": "GPT-5.1 (High)",
-    "aaCoding": 49.4,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -2771,18 +2320,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "66.0%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GPT 5.1 (2025-11-13) (medium)' · 2025-11-20",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 24.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.1 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-1"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 49.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.1 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-1"
       }
     ],
     "keyImprovements": [],
@@ -2807,10 +2344,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-1"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2838,20 +2371,12 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary",
     "hardwareRequirements": "Hosted API",
-    "aaIntelligence": 23.7,
-    "aaVariant": "GPT-5.1 Codex (High)",
     "benchmarks": [
       {
         "benchmarkName": "SWE-bench Verified",
         "score": "66.0%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GPT 5.1 Codex (medium)' · 2025-11-24",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 23.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5.1 Codex (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-1-codex"
       }
     ],
     "keyImprovements": [],
@@ -2868,10 +2393,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-1-codex"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2905,9 +2426,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 31638,
     "arenaCI": 4,
     "arenaVariant": "gpt-5-high",
-    "aaIntelligence": 23,
-    "aaVariant": "GPT-5 (High)",
-    "aaCoding": 37.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -2920,18 +2438,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "65.0%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GPT 5 (2025-08-07) (medium)' · 2025-08-07",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 23,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 37.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5"
       }
     ],
     "keyImprovements": [],
@@ -2956,10 +2462,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2993,10 +2495,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 26718,
     "arenaCI": 5,
     "arenaVariant": "gpt-5-mini-high",
-    "aaIntelligence": 20.6,
-    "aaVariant": "GPT-5 mini (Medium)",
-    "aaCoding": 15.6,
-    "aaAgentic": 6.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -3009,24 +2507,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "59.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GPT 5 mini (2025-08-07) (medium)' · 2025-08-07",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 20.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5 mini (Medium) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-mini-medium"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 15.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5 mini (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-mini"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 6.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GPT-5 mini (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-mini"
       }
     ],
     "keyImprovements": [],
@@ -3051,10 +2531,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-5-mini-medium"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3088,8 +2564,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 58811,
     "arenaCI": 4,
     "arenaVariant": "o3-2025-04-16",
-    "aaIntelligence": 20.2,
-    "aaVariant": "o3",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -3108,12 +2582,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "58.4%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'o3 (2025-04-16)' · 2025-07-26",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 20.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: o3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/o3"
       }
     ],
     "keyImprovements": [],
@@ -3142,10 +2610,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/o3"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3179,8 +2643,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 44801,
     "arenaCI": 4,
     "arenaVariant": "o4-mini-2025-04-16",
-    "aaIntelligence": 16.7,
-    "aaVariant": "o4-mini (High)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -3193,12 +2655,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "45.0%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'o4-mini (2025-04-16)' · 2025-07-26",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 16.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: o4-mini (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/o4-mini"
       }
     ],
     "keyImprovements": [],
@@ -3223,10 +2679,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/o4-mini"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3258,10 +2710,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 30133,
     "arenaCI": 4,
     "arenaVariant": "gpt-oss-120b",
-    "aaIntelligence": 11.6,
+    "aaIntelligence": 3.8,
     "aaVariant": "gpt-oss-120b (High)",
-    "aaCoding": 30.4,
-    "aaAgentic": 3.7,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -3277,20 +2727,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 11.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: gpt-oss-120b (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 30.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: gpt-oss-120b (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 3.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: gpt-oss-120b (High) · checked 2026-10-24",
+        "score": 3.8,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: gpt-oss-120b (High) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b"
       }
     ],
@@ -3355,34 +2793,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 10400,
     "arenaCI": 6,
     "arenaVariant": "gpt-oss-20b",
-    "aaIntelligence": 10,
-    "aaVariant": "gpt-oss-20b (Low)",
-    "aaCoding": 20.7,
-    "aaAgentic": 1.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1288,
         "vsPreviousGen": "#261 of 414 on arena.ai · ±6 · 10,400 votes · variant: gpt-oss-20b",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 10,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: gpt-oss-20b (Low) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-20b-low"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 20.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: gpt-oss-20b (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-20b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 1.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: gpt-oss-20b (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-20b"
       }
     ],
     "keyImprovements": [],
@@ -3407,10 +2823,118 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
+      }
+    ],
+    "dataAsOf": "2026-11-12"
+  },
+  {
+    "id": "model-gemini-4-carbon",
+    "name": "Gemini 4 Carbon",
+    "developer": "Google DeepMind",
+    "releaseDate": "November 2026",
+    "releaseDateSource": "Lab announcement",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Audio",
+      "Files",
+      "Video",
+      "Vision"
+    ],
+    "contextWindow": "1M tokens",
+    "contextTokens": 1048576,
+    "parameters": "Not disclosed",
+    "pricing": {
+      "inputPer1M": 2,
+      "outputPer1M": 10,
+      "cachedInputPer1M": 0.1,
+      "source": "Gemini API pricing",
+      "note": "Introductory price through Nov 30, 2026; $4.00 / $20.00 starting Dec 1, 2026"
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary",
+    "hardwareRequirements": "Hosted API",
+    "aaIntelligence": 60,
+    "aaVariant": "Gemini 4 Carbon (High)",
+    "benchmarks": [
+      {
+        "benchmarkName": "AA Intelligence Index",
+        "score": 60,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Carbon (High) · checked 2026-11-13",
+        "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-carbon"
+      }
+    ],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "summary": "Proprietary model from Google DeepMind, listed November 2026. $2.00 input / $10.00 output per 1M tokens. 1M tokens context.",
+    "sources": [
+      {
+        "label": "Gemini API pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       {
         "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gpt-oss-20b-low"
+        "url": "https://artificialanalysis.ai/models/gemini-4-carbon"
+      }
+    ],
+    "dataAsOf": "2026-11-12"
+  },
+  {
+    "id": "model-gemini-4-hydrogen",
+    "name": "Gemini 4 Hydrogen",
+    "developer": "Google DeepMind",
+    "releaseDate": "November 2026",
+    "releaseDateSource": "Lab announcement",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Audio",
+      "Files",
+      "Video",
+      "Vision"
+    ],
+    "contextWindow": "1M tokens",
+    "contextTokens": 1048576,
+    "parameters": "Not disclosed",
+    "pricing": {
+      "inputPer1M": 1.5,
+      "outputPer1M": 7.5,
+      "cachedInputPer1M": 0.075,
+      "source": "Gemini API pricing"
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary",
+    "hardwareRequirements": "Hosted API",
+    "aaIntelligence": 53.9,
+    "aaVariant": "Gemini 4 Hydrogen (Xhigh)",
+    "benchmarks": [
+      {
+        "benchmarkName": "AA Intelligence Index",
+        "score": 53.9,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Hydrogen (Xhigh) · checked 2026-11-13",
+        "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-hydrogen"
+      }
+    ],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "summary": "Proprietary model from Google DeepMind, listed November 2026. $1.50 input / $7.50 output per 1M tokens. 1M tokens context.",
+    "sources": [
+      {
+        "label": "Official page",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+      },
+      {
+        "label": "Gemini API pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing"
+      },
+      {
+        "label": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/models/gemini-4-hydrogen"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3446,7 +2970,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 19787,
     "arenaCI": 5,
     "arenaVariant": "gemini-4-argon-high",
-    "aaIntelligence": 52.6,
+    "aaIntelligence": 50.4,
     "aaVariant": "Gemini 4 Argon (High)",
     "benchmarks": [
       {
@@ -3457,8 +2981,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 52.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 4 Argon (High) · checked 2026-10-24",
+        "score": 50.4,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Argon (High) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-argon"
       }
     ],
@@ -3520,10 +3044,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 61143,
     "arenaCI": 4,
     "arenaVariant": "gemini-3.8-flash-high",
-    "aaIntelligence": 40.9,
+    "aaIntelligence": 30.8,
     "aaVariant": "Gemini 3.8 Flash (High)",
-    "aaCoding": 76.3,
-    "aaAgentic": 40.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -3533,20 +3055,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 40.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.8 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.8 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 40.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.8 Flash (High) · checked 2026-10-24",
+        "score": 30.8,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.8 Flash (High) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash"
       }
     ],
@@ -3689,34 +3199,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 33300,
     "arenaCI": 5,
     "arenaVariant": "gemini-3.7-flash-high",
-    "aaIntelligence": 39.6,
-    "aaVariant": "Gemini 3.7 Flash (Medium)",
-    "aaCoding": 76.1,
-    "aaAgentic": 35.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1489,
         "vsPreviousGen": "#13 of 414 on arena.ai · ±5 · 33,300 votes · variant: gemini-3.7-flash-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 39.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.7 Flash (Medium) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-7-flash-medium"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.7 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-7-flash"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 35.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.7 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-7-flash"
       }
     ],
     "keyImprovements": [],
@@ -3737,10 +3225,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-3-7-flash-medium"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3777,34 +3261,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 35405,
     "arenaCI": 4,
     "arenaVariant": "gemini-3.6-flash-high",
-    "aaIntelligence": 34,
-    "aaVariant": "Gemini 3.6 Flash (High)",
-    "aaCoding": 69.2,
-    "aaAgentic": 29,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1479,
         "vsPreviousGen": "#20 of 414 on arena.ai · ±4 · 35,405 votes · variant: gemini-3.6-flash-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 34,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.6 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-6-flash"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 69.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.6 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-6-flash"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 29,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.6 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-6-flash"
       }
     ],
     "keyImprovements": [],
@@ -3829,10 +3291,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-3-6-flash"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3868,34 +3326,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 47642,
     "arenaCI": 4,
     "arenaVariant": "gemini-3.5-flash-high",
-    "aaIntelligence": 33.6,
-    "aaVariant": "Gemini 3.5 Flash (Medium)",
-    "aaCoding": 70.1,
-    "aaAgentic": 26,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1483,
         "vsPreviousGen": "#17 of 414 on arena.ai · ±4 · 47,642 votes · variant: gemini-3.5-flash-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 33.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.5 Flash (Medium) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-medium"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 70.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.5 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 26,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.5 Flash (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash"
       }
     ],
     "keyImprovements": [],
@@ -3916,10 +3352,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-3-5-flash-medium"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -3955,10 +3387,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 35114,
     "arenaCI": 4,
     "arenaVariant": "gemini-3.5-flash-lite",
-    "aaIntelligence": 22.2,
+    "aaIntelligence": 11.7,
     "aaVariant": "Gemini 3.5 Flash-Lite",
-    "aaCoding": 49.3,
-    "aaAgentic": 14.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -3968,20 +3398,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 22.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.5 Flash-Lite · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 49.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.5 Flash-Lite · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 14.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.5 Flash-Lite · checked 2026-10-24",
+        "score": 11.7,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.5 Flash-Lite · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite"
       }
     ],
@@ -4047,34 +3465,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 132296,
     "arenaCI": 3,
     "arenaVariant": "gemini-3.1-pro-preview",
-    "aaIntelligence": 29.7,
-    "aaVariant": "Gemini 3.1 Pro Preview",
-    "aaCoding": 68.8,
-    "aaAgentic": 8.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1480,
         "vsPreviousGen": "#18 of 414 on arena.ai · ±3 · 132,296 votes · variant: gemini-3.1-pro-preview",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 29.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.1 Pro Preview · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 68.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.1 Pro Preview · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 8.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.1 Pro Preview · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview"
       }
     ],
     "keyImprovements": [],
@@ -4099,10 +3495,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4138,10 +3530,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 63629,
     "arenaCI": 4,
     "arenaVariant": "gemini-3.1-flash-lite-preview",
-    "aaIntelligence": 15.6,
+    "aaIntelligence": 6.2,
     "aaVariant": "Gemini 3.1 Flash-Lite",
-    "aaCoding": 34.7,
-    "aaAgentic": 1.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -4151,20 +3541,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 15.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.1 Flash-Lite · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 34.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.1 Flash-Lite · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 1.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3.1 Flash-Lite · checked 2026-10-24",
+        "score": 6.2,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.1 Flash-Lite · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview"
       }
     ],
@@ -4224,8 +3602,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 41829,
     "arenaCI": 4,
     "arenaVariant": "gemini-3-pro",
-    "aaIntelligence": 28,
-    "aaVariant": "Gemini 3 Pro Preview (High)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -4238,12 +3614,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "74.2%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Gemini 3 Pro Preview (2025-11-18)' · 2025-11-18",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 28,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3 Pro Preview (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-pro"
       }
     ],
     "keyImprovements": [],
@@ -4264,10 +3634,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-3-pro"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4303,8 +3669,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 31133,
     "arenaCI": 4,
     "arenaVariant": "gemini-3-flash",
-    "aaIntelligence": 26.3,
-    "aaVariant": "Gemini 3 Flash Preview (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -4317,12 +3681,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "75.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Gemini 3 Flash (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 26.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 3 Flash Preview (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-flash-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -4351,10 +3709,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-3-flash-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4391,10 +3745,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 124789,
     "arenaCI": 2,
     "arenaVariant": "gemini-2.5-pro",
-    "aaIntelligence": 16.1,
-    "aaVariant": "Gemini 2.5 Pro",
-    "aaCoding": 33.3,
-    "aaAgentic": 1.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -4407,24 +3757,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "53.6%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Gemini 2.5 Pro (2025-05-06)' · 2025-07-26",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 16.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 2.5 Pro · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-5-pro"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 33.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 2.5 Pro · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-5-pro"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 1.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemini 2.5 Pro · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemini-2-5-pro"
       }
     ],
     "keyImprovements": [],
@@ -4453,10 +3785,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemini-2-5-pro"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4489,10 +3817,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 6130,
     "arenaCI": 7,
     "arenaVariant": "gemma-4-31b",
-    "aaIntelligence": 14.7,
+    "aaIntelligence": 4.4,
     "aaVariant": "Gemma 4 31B (Reasoning)",
-    "aaCoding": 43.4,
-    "aaAgentic": 4.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -4502,20 +3828,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 14.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemma 4 31B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-31b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 43.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemma 4 31B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-31b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 4.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemma 4 31B (Reasoning) · checked 2026-10-24",
+        "score": 4.4,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemma 4 31B (Reasoning) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-31b"
       }
     ],
@@ -4578,34 +3892,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 6075,
     "arenaCI": 7,
     "arenaVariant": "gemma-4-26b-a4b",
-    "aaIntelligence": 16.7,
-    "aaVariant": "Gemma 4 26B A4B (Reasoning)",
-    "aaCoding": 39.3,
-    "aaAgentic": 2.9,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1434,
         "vsPreviousGen": "#93 of 414 on arena.ai · ±7 · 6,075 votes · variant: gemma-4-26b-a4b",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 16.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemma 4 26B A4B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-26b-a4b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 39.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemma 4 26B A4B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-26b-a4b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 2.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Gemma 4 26B A4B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-26b-a4b"
       }
     ],
     "keyImprovements": [],
@@ -4630,10 +3922,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/gemma-4-26b-a4b"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4667,7 +3955,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 21586,
     "arenaCI": 5,
     "arenaVariant": "grok-4.7-xhigh",
-    "aaIntelligence": 46.4,
+    "aaIntelligence": 35.5,
     "aaVariant": "Grok 4.7 (Xhigh)",
     "benchmarks": [
       {
@@ -4678,8 +3966,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 46.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.7 (Xhigh) · checked 2026-10-24",
+        "score": 35.5,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Grok 4.7 (Xhigh) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/grok-4-7"
       }
     ],
@@ -4738,10 +4026,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 34616,
     "arenaCI": 5,
     "arenaVariant": "grok-4.6-high",
-    "aaIntelligence": 44.3,
-    "aaVariant": "Grok 4.6 (High)",
-    "aaCoding": 76.8,
-    "aaAgentic": 53,
+    "aaIntelligence": 31,
+    "aaVariant": "Grok 4.6 (Xhigh)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -4751,21 +4037,9 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 44.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.6 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.6 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 53,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.6 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6"
+        "score": 31,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Grok 4.6 (Xhigh) · checked 2026-11-13",
+        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-xhigh"
       }
     ],
     "keyImprovements": [],
@@ -4789,7 +4063,7 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-4-6"
+        "url": "https://artificialanalysis.ai/models/grok-4-6-xhigh"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4823,34 +4097,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 39155,
     "arenaCI": 4,
     "arenaVariant": "grok-4.5",
-    "aaIntelligence": 38.8,
-    "aaVariant": "Grok 4.5 (High)",
-    "aaCoding": 72.4,
-    "aaAgentic": 41.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1448,
         "vsPreviousGen": "#62 of 414 on arena.ai · ±4 · 39,155 votes · variant: grok-4.5",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 38.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.5 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 72.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.5 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-5"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 41.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.5 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-5"
       }
     ],
     "keyImprovements": [],
@@ -4871,10 +4123,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-4-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4908,34 +4156,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 70242,
     "arenaCI": 4,
     "arenaVariant": "grok-4.3",
-    "aaIntelligence": 24.9,
-    "aaVariant": "Grok 4.3 (High)",
-    "aaCoding": 42.2,
-    "aaAgentic": 15.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1397,
         "vsPreviousGen": "#161 of 414 on arena.ai · ±4 · 70,242 votes · variant: grok-4.3",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 24.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.3 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 42.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.3 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-3"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 15.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.3 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-3"
       }
     ],
     "keyImprovements": [],
@@ -4956,10 +4182,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-4-3"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -4993,20 +4215,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 27690,
     "arenaCI": 5,
     "arenaVariant": "grok-4.20-beta1",
-    "aaIntelligence": 25.7,
-    "aaVariant": "Grok 4.20 0309 v2 (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1445,
         "vsPreviousGen": "#69 of 414 on arena.ai · ±5 · 27,690 votes · variant: grok-4.20-beta1",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 25.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4.20 0309 v2 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-20"
       }
     ],
     "keyImprovements": [],
@@ -5027,10 +4241,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-4-20"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5113,20 +4323,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 39584,
     "arenaCI": 4,
     "arenaVariant": "grok-4-0709",
-    "aaIntelligence": 22.5,
-    "aaVariant": "Grok 4",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1411,
         "vsPreviousGen": "#141 of 414 on arena.ai · ±4 · 39,584 votes · variant: grok-4-0709",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4"
       }
     ],
     "keyImprovements": [],
@@ -5143,10 +4345,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-4"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5177,20 +4375,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 18206,
     "arenaCI": 5,
     "arenaVariant": "grok-4-fast-reasoning",
-    "aaIntelligence": 17.9,
-    "aaVariant": "Grok 4 Fast (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1400,
         "vsPreviousGen": "#158 of 414 on arena.ai · ±5 · 18,206 votes · variant: grok-4-fast-reasoning",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 17.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 4 Fast (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-4-fast-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -5207,10 +4397,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-4-fast-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5241,20 +4427,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 32487,
     "arenaCI": 4,
     "arenaVariant": "grok-3-preview-02-24",
-    "aaIntelligence": 12.1,
-    "aaVariant": "Grok 3",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1426,
         "vsPreviousGen": "#105 of 414 on arena.ai · ±4 · 32,487 votes · variant: grok-3-preview-02-24",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 12.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-3"
       }
     ],
     "keyImprovements": [],
@@ -5271,10 +4449,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-3"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5305,20 +4479,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 15574,
     "arenaCI": 5,
     "arenaVariant": "grok-3-mini-high",
-    "aaIntelligence": 14.6,
-    "aaVariant": "Grok 3 mini Reasoning (High)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1370,
         "vsPreviousGen": "#186 of 414 on arena.ai · ±5 · 15,574 votes · variant: grok-3-mini-high",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 14.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Grok 3 mini Reasoning (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/grok-3-mini-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -5335,10 +4501,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/grok-3-mini-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5463,10 +4625,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 26111,
     "arenaCI": 5,
     "arenaVariant": "muse-spark-1.3-max",
-    "aaIntelligence": 48.1,
+    "aaIntelligence": 36.6,
     "aaVariant": "Muse Spark 1.3 (Max)",
-    "aaCoding": 76.5,
-    "aaAgentic": 55.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -5476,20 +4636,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 48.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.3 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.3 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3-xhigh"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 55.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.3 (Max) · checked 2026-10-24",
+        "score": 36.6,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Muse Spark 1.3 (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3"
       }
     ],
@@ -5549,34 +4697,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 15004,
     "arenaCI": 6,
     "arenaVariant": "muse-spark-1.2 (xHigh)",
-    "aaIntelligence": 39.6,
-    "aaVariant": "Muse Spark 1.2 (Xhigh)",
-    "aaCoding": 72.2,
-    "aaAgentic": 43.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1484,
         "vsPreviousGen": "#15 of 414 on arena.ai · ±6 · 15,004 votes · variant: muse-spark-1.2 (xHigh)",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 39.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.2 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-2"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 72.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.2 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-2"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 43.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.2 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-2"
       }
     ],
     "keyImprovements": [],
@@ -5597,10 +4723,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/muse-spark-1-2"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5635,10 +4757,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 45562,
     "arenaCI": 4,
     "arenaVariant": "muse-spark-1.1",
-    "aaIntelligence": 33.7,
-    "aaVariant": "Muse Spark 1.1 (Xhigh)",
-    "aaCoding": 71.3,
-    "aaAgentic": 25.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -5651,24 +4769,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "80.7%",
         "vsPreviousGen": "Success rate · 100 steps · tested 2026-07-09",
         "sourceUrl": "https://os-world.github.io/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 33.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.1 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-1"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 71.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.1 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-1"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 25.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark 1.1 (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-1"
       }
     ],
     "keyImprovements": [],
@@ -5693,10 +4793,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OSWorld-Verified leaderboard",
         "url": "https://os-world.github.io/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/muse-spark-1-1"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5727,27 +4823,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 14009,
     "arenaCI": 6,
     "arenaVariant": "muse-spark",
-    "aaIntelligence": 31.3,
-    "aaVariant": "Muse Spark",
-    "aaCoding": 58.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1474,
         "vsPreviousGen": "#28 of 414 on arena.ai · ±6 · 14,009 votes · variant: muse-spark",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 31.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 58.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Spark · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-spark"
       }
     ],
     "keyImprovements": [],
@@ -5764,10 +4845,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/muse-spark"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -5800,10 +4877,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 3793,
     "arenaCI": 10,
     "arenaVariant": "muse-glimmer",
-    "aaIntelligence": 17.5,
+    "aaIntelligence": 6.3,
     "aaVariant": "Muse Glimmer (High)",
-    "aaCoding": 49,
-    "aaAgentic": 8.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -5813,20 +4888,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 17.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Glimmer (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-glimmer"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 49,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Glimmer (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/muse-glimmer"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 8.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Muse Glimmer (High) · checked 2026-10-24",
+        "score": 6.3,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Muse Glimmer (High) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/muse-glimmer"
       }
     ],
@@ -5884,13 +4947,13 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Proprietary API",
     "license": "Proprietary",
     "hardwareRequirements": "Hosted API",
-    "aaIntelligence": 55.1,
+    "aaIntelligence": 46.5,
     "aaVariant": "Kimi K3.1 Pro",
     "benchmarks": [
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 55.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K3.1 Pro · checked 2026-10-24",
+        "score": 46.5,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Kimi K3.1 Pro · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3-1-pro"
       }
     ],
@@ -5941,10 +5004,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 40867,
     "arenaCI": 4,
     "arenaVariant": "kimi-k3-max",
-    "aaIntelligence": 43.6,
-    "aaVariant": "Kimi K3 (Max)",
-    "aaCoding": 76.2,
-    "aaAgentic": 50,
+    "aaIntelligence": 17.4,
+    "aaVariant": "Kimi K3 (Low)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -5954,21 +5015,9 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 43.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 50,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K3 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3"
+        "score": 17.4,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Kimi K3 (Low) · checked 2026-11-13",
+        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3-low"
       }
     ],
     "keyImprovements": [],
@@ -5996,7 +5045,7 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/kimi-k3"
+        "url": "https://artificialanalysis.ai/models/kimi-k3-low"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6024,30 +5073,7 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Open Weights",
     "license": "Open weights (see Hugging Face)",
     "hardwareRequirements": "Open weights on Hugging Face (moonshotai/Kimi-K2.7-Code)",
-    "aaIntelligence": 25.8,
-    "aaVariant": "Kimi K2.7 Code",
-    "aaCoding": 60.8,
-    "aaAgentic": 21,
-    "benchmarks": [
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 25.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.7 Code · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 60.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.7 Code · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 21,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.7 Code · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code"
-      }
-    ],
+    "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
@@ -6062,10 +5088,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "Hugging Face weights",
         "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/kimi-k2-7-code"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6098,10 +5120,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 39573,
     "arenaCI": 4,
     "arenaVariant": "kimi-k2.6",
-    "aaIntelligence": 27,
-    "aaVariant": "Kimi K2.6 (Reasoning)",
-    "aaCoding": 61.8,
-    "aaAgentic": 20.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6114,24 +5132,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "73.1%",
         "vsPreviousGen": "Success rate · 100 steps · tested 2026-04-20",
         "sourceUrl": "https://os-world.github.io/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 27,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.6 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-6"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 61.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.6 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-6"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 20.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.6 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-6"
       }
     ],
     "keyImprovements": [],
@@ -6160,10 +5160,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OSWorld-Verified leaderboard",
         "url": "https://os-world.github.io/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/kimi-k2-6"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6196,9 +5192,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 73872,
     "arenaCI": 3,
     "arenaVariant": "kimi-k2.5-thinking",
-    "aaIntelligence": 23.5,
-    "aaVariant": "Kimi K2.5 (Reasoning)",
-    "aaCoding": 46.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6217,18 +5210,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "70.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Kimi K2.5 (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 23.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.5 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-5"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 46.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2.5 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-5"
       }
     ],
     "keyImprovements": [],
@@ -6261,10 +5242,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/kimi-k2-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6296,8 +5273,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 62955,
     "arenaCI": 3,
     "arenaVariant": "kimi-k2-thinking-turbo",
-    "aaIntelligence": 22,
-    "aaVariant": "Kimi K2 Thinking",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6310,12 +5285,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "63.4%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'Kimi K2 Thinking' · 2025-12-10",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Kimi K2 Thinking · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-thinking"
       }
     ],
     "keyImprovements": [],
@@ -6340,10 +5309,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/kimi-k2-thinking"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6375,10 +5340,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 31017,
     "arenaCI": 5,
     "arenaVariant": "glm-5.3-max",
-    "aaIntelligence": 44.8,
+    "aaIntelligence": 31.7,
     "aaVariant": "GLM-5.3 (Max)",
-    "aaCoding": 74.8,
-    "aaAgentic": 53.1,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6388,20 +5351,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 44.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 74.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 53.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.3 (Max) · checked 2026-10-24",
+        "score": 31.7,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GLM-5.3 (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3"
       }
     ],
@@ -6464,10 +5415,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 50189,
     "arenaCI": 4,
     "arenaVariant": "glm-5.3-flash",
-    "aaIntelligence": 41.8,
+    "aaIntelligence": 27.8,
     "aaVariant": "GLM-5.3-Flash",
-    "aaCoding": 71.5,
-    "aaAgentic": 50.9,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6477,20 +5426,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 41.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3-flash"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 71.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3-flash"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 50.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.3-Flash · checked 2026-10-24",
+        "score": 27.8,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GLM-5.3-Flash · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3-flash"
       }
     ],
@@ -6551,34 +5488,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 54173,
     "arenaCI": 4,
     "arenaVariant": "glm-5.2-max",
-    "aaIntelligence": 33.7,
-    "aaVariant": "GLM-5.2 (Max)",
-    "aaCoding": 68.8,
-    "aaAgentic": 38.4,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1469,
         "vsPreviousGen": "#34 of 414 on arena.ai · ±4 · 54,173 votes · variant: glm-5.2-max",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 33.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.2 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-2"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 68.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.2 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-2"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 38.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.2 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-2"
       }
     ],
     "keyImprovements": [],
@@ -6599,10 +5514,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-5-2"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6634,34 +5545,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 67074,
     "arenaCI": 4,
     "arenaVariant": "glm-5.1",
-    "aaIntelligence": 26.1,
-    "aaVariant": "GLM-5.1 (Reasoning)",
-    "aaCoding": 55.8,
-    "aaAgentic": 23.9,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1463,
         "vsPreviousGen": "#41 of 414 on arena.ai · ±4 · 67,074 votes · variant: glm-5.1",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 26.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.1 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-1"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 55.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.1 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-1"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 23.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5.1 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5-1"
       }
     ],
     "keyImprovements": [],
@@ -6682,10 +5571,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-5-1"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6717,8 +5602,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 29020,
     "arenaCI": 4,
     "arenaVariant": "glm-5",
-    "aaIntelligence": 27.9,
-    "aaVariant": "GLM-5 (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6731,12 +5614,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "72.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GLM 5 (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 27.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-5 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5"
       }
     ],
     "keyImprovements": [],
@@ -6761,10 +5638,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6798,20 +5671,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 10291,
     "arenaCI": 6,
     "arenaVariant": "glm-5v-turbo",
-    "aaIntelligence": 23.5,
-    "aaVariant": "GLM 5V Turbo (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1438,
         "vsPreviousGen": "#83 of 414 on arena.ai · ±6 · 10,291 votes · variant: glm-5v-turbo",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 23.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM 5V Turbo (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-5v-turbo"
       }
     ],
     "keyImprovements": [],
@@ -6832,10 +5697,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-5v-turbo"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6867,27 +5728,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 12167,
     "arenaCI": 6,
     "arenaVariant": "glm-4.7",
-    "aaIntelligence": 22.2,
-    "aaVariant": "GLM-4.7 (Reasoning)",
-    "aaCoding": 45.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1435,
         "vsPreviousGen": "#91 of 414 on arena.ai · ±6 · 12,167 votes · variant: glm-4.7",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-4.7 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-4-7"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 45.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-4.7 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-4-7"
       }
     ],
     "keyImprovements": [],
@@ -6908,10 +5754,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-4-7"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -6943,9 +5785,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 35652,
     "arenaCI": 4,
     "arenaVariant": "glm-4.6",
-    "aaIntelligence": 18.5,
-    "aaVariant": "GLM-4.6 (Reasoning)",
-    "aaCoding": 45.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -6958,18 +5797,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "55.4%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GLM 4.6 (T=1)' · 2025-12-01",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 18.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-4.6 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-4-6-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 45.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-4.6 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-4-6-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -6998,10 +5825,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-4-6-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7033,8 +5856,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 23759,
     "arenaCI": 5,
     "arenaVariant": "glm-4.5",
-    "aaIntelligence": 12.8,
-    "aaVariant": "GLM-4.5 (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -7047,12 +5868,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "54.2%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'GLM 4.5 (2025-08-22)' · 2025-08-22",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 12.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: GLM-4.5 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/glm-4.5"
       }
     ],
     "keyImprovements": [],
@@ -7081,10 +5896,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/glm-4.5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7159,20 +5970,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 10872,
     "arenaCI": 7,
     "arenaVariant": "deepseek-v4.1-flash-max",
-    "aaIntelligence": 39.5,
-    "aaVariant": "DeepSeek V4.1 Flash (Max)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1475,
         "vsPreviousGen": "#26 of 414 on arena.ai · ±7 · 10,872 votes · variant: deepseek-v4.1-flash-max",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 39.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4.1 Flash (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-1-flash"
       }
     ],
     "keyImprovements": [],
@@ -7197,10 +6000,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7232,10 +6031,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 9584,
     "arenaCI": 7,
     "arenaVariant": "deepseek-v4-pro-high-20260813",
-    "aaIntelligence": 36,
+    "aaIntelligence": 23.1,
     "aaVariant": "DeepSeek V4 Pro 0813 (Max)",
-    "aaCoding": 68.8,
-    "aaAgentic": 41.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -7245,20 +6042,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 36,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 68.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 41.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-10-24",
+        "score": 23.1,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro"
       }
     ],
@@ -7319,34 +6104,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 56906,
     "arenaCI": 4,
     "arenaVariant": "deepseek-v4-pro",
-    "aaIntelligence": 30.4,
-    "aaVariant": "DeepSeek V4 Pro 0424 (Max)",
-    "aaCoding": 59.4,
-    "aaAgentic": 26.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1451,
         "vsPreviousGen": "#53 of 414 on arena.ai · ±4 · 56,906 votes · variant: deepseek-v4-pro",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 30.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro-0424"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 59.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro-0424"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 26.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Pro 0424 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro-0424"
       }
     ],
     "keyImprovements": [],
@@ -7371,10 +6134,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v4-pro-0424"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7402,30 +6161,7 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Open Weights",
     "license": "Open weights (see Hugging Face)",
     "hardwareRequirements": "Open weights on Hugging Face (deepseek-ai/DeepSeek-V4-Flash-Vision-Exp)",
-    "aaIntelligence": 34.8,
-    "aaVariant": "DeepSeek V4 Flash Vision (Max)",
-    "aaCoding": 65,
-    "aaAgentic": 47.5,
-    "benchmarks": [
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 34.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash Vision (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 65,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash Vision (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 47.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash Vision (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision"
-      }
-    ],
+    "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
@@ -7440,10 +6176,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "Hugging Face weights",
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7470,30 +6202,7 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Open Weights",
     "license": "Open weights (see Hugging Face)",
     "hardwareRequirements": "Open weights on Hugging Face (deepseek-ai/DeepSeek-V4-Flash-0731)",
-    "aaIntelligence": 34.3,
-    "aaVariant": "DeepSeek V4 Flash 0731 (Max)",
-    "aaCoding": 69.1,
-    "aaAgentic": 41,
-    "benchmarks": [
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 34.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 69.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 41,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0731 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash"
-      }
-    ],
+    "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
@@ -7508,10 +6217,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "Hugging Face weights",
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v4-flash"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7543,34 +6248,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 51368,
     "arenaCI": 4,
     "arenaVariant": "deepseek-v4-flash",
-    "aaIntelligence": 24.4,
-    "aaVariant": "DeepSeek V4 Flash 0420 (High)",
-    "aaCoding": 56.2,
-    "aaAgentic": 26.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1432,
         "vsPreviousGen": "#94 of 414 on arena.ai · ±4 · 51,368 votes · variant: deepseek-v4-flash",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 24.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0420 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-0420-high"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 56.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0420 (Max) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-0420"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 26.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V4 Flash 0420 (High) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-0420-high"
       }
     ],
     "keyImprovements": [],
@@ -7595,10 +6278,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-0420-high"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7630,9 +6309,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 47790,
     "arenaCI": 3,
     "arenaVariant": "deepseek-v3.2",
-    "aaIntelligence": 21.5,
-    "aaVariant": "DeepSeek V3.2 (Reasoning)",
-    "aaCoding": 44.2,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -7645,18 +6321,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "70.0%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'DeepSeek V3.2 (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 21.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V3.2 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-2-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 44.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V3.2 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-2-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -7685,10 +6349,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v3-2-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7719,20 +6379,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 8966,
     "arenaCI": 7,
     "arenaVariant": "deepseek-v3.2-exp-thinking",
-    "aaIntelligence": 16.6,
-    "aaVariant": "DeepSeek V3.2 Exp (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1425,
         "vsPreviousGen": "#106 of 414 on arena.ai · ±7 · 8,966 votes · variant: deepseek-v3.2-exp-thinking",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 16.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: DeepSeek V3.2 Exp (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v3-2-reasoning-0925"
       }
     ],
     "keyImprovements": [],
@@ -7757,10 +6409,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/deepseek-v3-2-reasoning-0925"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -7794,10 +6442,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 36324,
     "arenaCI": 5,
     "arenaVariant": "qwen3.8-max",
-    "aaIntelligence": 45.4,
+    "aaIntelligence": 33.7,
     "aaVariant": "Qwen3.8 Max (0902)",
-    "aaCoding": 76.2,
-    "aaAgentic": 56,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -7807,20 +6453,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 45.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.8 Max (0902) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-max"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 76.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.8 Max (0902) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-max"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 56,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.8 Max (0902) · checked 2026-10-24",
+        "score": 33.7,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen3.8 Max (0902) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-max"
       }
     ],
@@ -7922,10 +6556,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 32659,
     "arenaCI": 5,
     "arenaVariant": "qwen3.8-27b",
-    "aaIntelligence": 33.7,
+    "aaIntelligence": 20.1,
     "aaVariant": "Qwen3.8 27B (Xhigh)",
-    "aaCoding": 68.1,
-    "aaAgentic": 45.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -7935,20 +6567,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 33.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 68.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 45.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-10-24",
+        "score": 20.1,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b"
       }
     ],
@@ -8005,34 +6625,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 3904,
     "arenaCI": 10,
     "arenaVariant": "qwen3.7-max-preview",
-    "aaIntelligence": 29.5,
-    "aaVariant": "Qwen3.7 Max",
-    "aaCoding": 66,
-    "aaAgentic": 22.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1475,
         "vsPreviousGen": "#25 of 414 on arena.ai · ±10 · 3,904 votes · variant: qwen3.7-max-preview",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 29.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.7 Max · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 66,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.7 Max · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 22.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.7 Max · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-max"
       }
     ],
     "keyImprovements": [],
@@ -8053,10 +6651,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-7-max"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8089,10 +6683,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 41318,
     "arenaCI": 4,
     "arenaVariant": "qwen3.7-plus",
-    "aaIntelligence": 25.2,
-    "aaVariant": "Qwen3.7 Plus",
-    "aaCoding": 55.9,
-    "aaAgentic": 17.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -8105,24 +6695,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "73.3%",
         "vsPreviousGen": "Success rate · 100 steps · tested 2026-05-25",
         "sourceUrl": "https://os-world.github.io/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 25.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.7 Plus · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 55.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.7 Plus · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 17.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.7 Plus · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus"
       }
     ],
     "keyImprovements": [],
@@ -8147,10 +6719,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OSWorld-Verified leaderboard",
         "url": "https://os-world.github.io/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-7-plus"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8183,27 +6751,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 47601,
     "arenaCI": 4,
     "arenaVariant": "qwen3.6-plus",
-    "aaIntelligence": 27,
-    "aaVariant": "Qwen3.6 Plus",
-    "aaCoding": 54.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1436,
         "vsPreviousGen": "#88 of 414 on arena.ai · ±4 · 47,601 votes · variant: qwen3.6-plus",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 27,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 Plus · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-plus"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 54.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 Plus · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-plus"
       }
     ],
     "keyImprovements": [],
@@ -8224,10 +6777,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-6-plus"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8255,30 +6804,7 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Open Weights",
     "license": "Open weights (see Hugging Face)",
     "hardwareRequirements": "Open weights on Hugging Face (Qwen/Qwen3.6-27B)",
-    "aaIntelligence": 21.4,
-    "aaVariant": "Qwen3.6 27B (Reasoning)",
-    "aaCoding": 53.7,
-    "aaAgentic": 18.5,
-    "benchmarks": [
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 21.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 27B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-27b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 53.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 27B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-27b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 18.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 27B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-27b"
-      }
-    ],
+    "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
@@ -8293,10 +6819,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "Hugging Face weights",
         "url": "https://huggingface.co/Qwen/Qwen3.6-27B"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-6-27b"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8325,30 +6847,7 @@ export const ALL_MODELS: AIModel[] = [
     "openSourceStatus": "Open Weights",
     "license": "Open weights (see Hugging Face)",
     "hardwareRequirements": "Open weights on Hugging Face (Qwen/Qwen3.6-35B-A3B)",
-    "aaIntelligence": 18.2,
-    "aaVariant": "Qwen3.6 35B A3B (Reasoning)",
-    "aaCoding": 41.9,
-    "aaAgentic": 13.1,
-    "benchmarks": [
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 18.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 41.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 13.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.6 35B A3B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b"
-      }
-    ],
+    "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
@@ -8363,10 +6862,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "Hugging Face weights",
         "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8400,34 +6895,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 97678,
     "arenaCI": 3,
     "arenaVariant": "qwen3.5-397b-a17b",
-    "aaIntelligence": 21.4,
-    "aaVariant": "Qwen3.5 397B A17B (Non-reasoning)",
-    "aaCoding": 48.2,
-    "aaAgentic": 8.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1438,
         "vsPreviousGen": "#84 of 414 on arena.ai · ±3 · 97,678 votes · variant: qwen3.5-397b-a17b",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 21.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Non-reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b-non-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 48.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 8.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 397B A17B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b"
       }
     ],
     "keyImprovements": [],
@@ -8448,10 +6921,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b-non-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8484,34 +6953,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 29496,
     "arenaCI": 4,
     "arenaVariant": "qwen3.5-122b-a10b",
-    "aaIntelligence": 17.7,
-    "aaVariant": "Qwen3.5 122B A10B (Non-reasoning)",
-    "aaCoding": 45.7,
-    "aaAgentic": 7.6,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1417,
         "vsPreviousGen": "#126 of 414 on arena.ai · ±4 · 29,496 votes · variant: qwen3.5-122b-a10b",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 17.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 122B A10B (Non-reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b-non-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 45.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 122B A10B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 7.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 122B A10B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b"
       }
     ],
     "keyImprovements": [],
@@ -8532,10 +6979,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b-non-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8569,27 +7012,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 30206,
     "arenaCI": 4,
     "arenaVariant": "qwen3.5-35b-a3b",
-    "aaIntelligence": 19.3,
-    "aaVariant": "Qwen3.5 35B A3B (Reasoning)",
-    "aaCoding": 37,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1395,
         "vsPreviousGen": "#165 of 414 on arena.ai · ±4 · 30,206 votes · variant: qwen3.5-35b-a3b",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 19.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 35B A3B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-35b-a3b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 37,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 35B A3B (Non-reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-35b-a3b-non-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -8610,10 +7038,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-5-35b-a3b"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8646,20 +7070,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 28424,
     "arenaCI": 4,
     "arenaVariant": "qwen3.5-27b",
-    "aaIntelligence": 22.9,
-    "aaVariant": "Qwen3.5 27B (Reasoning)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1409,
         "vsPreviousGen": "#145 of 414 on arena.ai · ±4 · 28,424 votes · variant: qwen3.5-27b",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3.5 27B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-27b"
       }
     ],
     "keyImprovements": [],
@@ -8680,10 +7096,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-5-27b"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8714,34 +7126,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 8812,
     "arenaCI": 7,
     "arenaVariant": "qwen3-235b-a22b-thinking-2507",
-    "aaIntelligence": 12.7,
-    "aaVariant": "Qwen3 235B A22B 2507 (Reasoning)",
-    "aaCoding": 22.1,
-    "aaAgentic": 1.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1416,
         "vsPreviousGen": "#133 of 414 on arena.ai · ±7 · 8,812 votes · variant: qwen3-235b-a22b-thinking-2507",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 12.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3 235B A22B 2507 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-235b-a22b-instruct-2507-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 22.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3 235B A22B 2507 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-235b-a22b-instruct-2507-reasoning"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 1.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Qwen3 235B A22B 2507 (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/qwen3-235b-a22b-instruct-2507-reasoning"
       }
     ],
     "keyImprovements": [],
@@ -8762,10 +7152,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/qwen3-235b-a22b-instruct-2507-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8800,7 +7186,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 4066,
     "arenaCI": 9,
     "arenaVariant": "mimo-v2.6-pro",
-    "aaIntelligence": 46.3,
+    "aaIntelligence": 29.9,
     "aaVariant": "MiMo-V2.6-Pro",
     "benchmarks": [
       {
@@ -8811,8 +7197,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 46.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.6-Pro · checked 2026-10-24",
+        "score": 29.9,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: MiMo-V2.6-Pro · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-6-pro"
       }
     ],
@@ -8873,34 +7259,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 76793,
     "arenaCI": 4,
     "arenaVariant": "mimo-v2.5-pro",
-    "aaIntelligence": 26,
-    "aaVariant": "MiMo-V2.5-Pro (Reasoning)",
-    "aaCoding": 60.2,
-    "aaAgentic": 21.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1464,
         "vsPreviousGen": "#40 of 414 on arena.ai · ±4 · 76,793 votes · variant: mimo-v2.5-pro",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 26,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.5-Pro (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-pro"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 60.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.5-Pro (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-pro"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 21.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.5-Pro (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-pro"
       }
     ],
     "keyImprovements": [],
@@ -8925,10 +7289,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/mimo-v2-5-pro"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8963,34 +7323,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 46820,
     "arenaCI": 4,
     "arenaVariant": "mimo-v2.5",
-    "aaIntelligence": 21.8,
-    "aaVariant": "MiMo-V2.5",
-    "aaCoding": 56.8,
-    "aaAgentic": 15.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1428,
         "vsPreviousGen": "#103 of 414 on arena.ai · ±4 · 46,820 votes · variant: mimo-v2.5",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 21.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.5 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-0424"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 56.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.5 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-0424"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 15.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2.5 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-0424"
       }
     ],
     "keyImprovements": [],
@@ -9015,10 +7353,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/mimo-v2-5-0424"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9049,20 +7383,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 25245,
     "arenaCI": 5,
     "arenaVariant": "mimo-v2-pro",
-    "aaIntelligence": 28.6,
-    "aaVariant": "MiMo-V2-Pro",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1437,
         "vsPreviousGen": "#86 of 414 on arena.ai · ±5 · 25,245 votes · variant: mimo-v2-pro",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 28.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2-Pro · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-pro"
       }
     ],
     "keyImprovements": [],
@@ -9079,10 +7405,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/mimo-v2-pro"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9113,20 +7435,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 20411,
     "arenaCI": 6,
     "arenaVariant": "mimo-v2-omni",
-    "aaIntelligence": 23.9,
-    "aaVariant": "MiMo-V2-Omni",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1423,
         "vsPreviousGen": "#108 of 414 on arena.ai · ±6 · 20,411 votes · variant: mimo-v2-omni",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 23.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2-Omni · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-omni"
       }
     ],
     "keyImprovements": [],
@@ -9143,10 +7457,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/mimo-v2-omni"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9177,27 +7487,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 11061,
     "arenaCI": 6,
     "arenaVariant": "mimo-v2-flash (thinking)",
-    "aaIntelligence": 20.8,
-    "aaVariant": "MiMo-V2-Flash (Reasoning)",
-    "aaCoding": 49.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1395,
         "vsPreviousGen": "#166 of 414 on arena.ai · ±6 · 11,061 votes · variant: mimo-v2-flash (thinking)",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 20.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2-Flash (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-flash-reasoning"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 49.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiMo-V2-Flash (Non-reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-flash"
       }
     ],
     "keyImprovements": [],
@@ -9214,10 +7509,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/mimo-v2-flash-reasoning"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9251,10 +7542,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 72963,
     "arenaCI": 4,
     "arenaVariant": "minimax-m3",
-    "aaIntelligence": 29.2,
+    "aaIntelligence": 18.9,
     "aaVariant": "MiniMax-M3",
-    "aaCoding": 58.6,
-    "aaAgentic": 29.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -9270,20 +7559,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 29.2,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 58.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m3"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 29.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M3 · checked 2026-10-24",
+        "score": 18.9,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: MiniMax-M3 · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/minimax-m3"
       }
     ],
@@ -9348,34 +7625,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 89504,
     "arenaCI": 3,
     "arenaVariant": "minimax-m2.7",
-    "aaIntelligence": 22.8,
-    "aaVariant": "MiniMax-M2.7",
-    "aaCoding": 52.6,
-    "aaAgentic": 15.3,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1405,
         "vsPreviousGen": "#151 of 414 on arena.ai · ±3 · 89,504 votes · variant: minimax-m2.7",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M2.7 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2-7"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 52.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M2.7 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2-7"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 15.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M2.7 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2-7"
       }
     ],
     "keyImprovements": [],
@@ -9400,10 +7655,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/minimax-m2-7"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9435,8 +7686,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 42459,
     "arenaCI": 4,
     "arenaVariant": "minimax-m2.5",
-    "aaIntelligence": 22.8,
-    "aaVariant": "MiniMax-M2.5",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -9449,12 +7698,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "75.8%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'MiniMax M2.5 (high)' · 2026-02-17",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 22.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M2.5 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2-5"
       }
     ],
     "keyImprovements": [],
@@ -9483,10 +7726,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/minimax-m2-5"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9518,20 +7757,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 17122,
     "arenaCI": 5,
     "arenaVariant": "minimax-m2.1-preview",
-    "aaIntelligence": 20.9,
-    "aaVariant": "MiniMax-M2.1",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1392,
         "vsPreviousGen": "#168 of 414 on arena.ai · ±5 · 17,122 votes · variant: minimax-m2.1-preview",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 20.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M2.1 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2-1"
       }
     ],
     "keyImprovements": [],
@@ -9556,10 +7787,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/minimax-m2-1"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9590,8 +7817,6 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 6832,
     "arenaCI": 8,
     "arenaVariant": "minimax-m2",
-    "aaIntelligence": 18.6,
-    "aaVariant": "MiniMax-M2",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -9604,12 +7829,6 @@ export const ALL_MODELS: AIModel[] = [
         "score": "61.0%",
         "vsPreviousGen": "mini-SWE-agent (bash only) · run 'MiniMax M2' · 2025-11-24",
         "sourceUrl": "https://www.swebench.com/"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 18.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: MiniMax-M2 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/minimax-m2"
       }
     ],
     "keyImprovements": [],
@@ -9638,10 +7857,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "SWE-bench Verified leaderboard",
         "url": "https://www.swebench.com/"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/minimax-m2"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9714,34 +7929,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 15068,
     "arenaCI": 6,
     "arenaVariant": "hy3",
-    "aaIntelligence": 25.3,
-    "aaVariant": "Hy3",
-    "aaCoding": 58.8,
-    "aaAgentic": 24.1,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1439,
         "vsPreviousGen": "#80 of 414 on arena.ai · ±6 · 15,068 votes · variant: hy3",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 25.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Hy3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/hy3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 58.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Hy3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/hy3"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 24.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Hy3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/hy3"
       }
     ],
     "keyImprovements": [],
@@ -9762,10 +7955,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/hy3"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -9926,8 +8115,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 5742,
     "arenaCI": 9,
     "arenaVariant": "mistral-large-4",
-    "aaIntelligence": 38.4,
-    "aaVariant": "Mistral Large 4 Preview",
+    "aaIntelligence": 26.1,
+    "aaVariant": "Mistral Large 4 (High)",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -9937,8 +8126,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 38.4,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Mistral Large 4 Preview · checked 2026-10-24",
+        "score": 26.1,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Mistral Large 4 (High) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-4"
       }
     ],
@@ -9997,34 +8186,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 88641,
     "arenaCI": 3,
     "arenaVariant": "mistral-large-3",
-    "aaIntelligence": 9.3,
-    "aaVariant": "Mistral Large 3",
-    "aaCoding": 20.1,
-    "aaAgentic": 1,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1429,
         "vsPreviousGen": "#99 of 414 on arena.ai · ±3 · 88,641 votes · variant: mistral-large-3",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 9.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Mistral Large 3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 20.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Mistral Large 3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Mistral Large 3 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3"
       }
     ],
     "keyImprovements": [],
@@ -10045,10 +8212,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/mistral-large-3"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -10131,20 +8294,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 36175,
     "arenaCI": 4,
     "arenaVariant": "ernie-5.0-0110",
-    "aaIntelligence": 14.3,
-    "aaVariant": "ERNIE 5.0 Thinking Preview",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1444,
         "vsPreviousGen": "#70 of 414 on arena.ai · ±4 · 36,175 votes · variant: ernie-5.0-0110",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 14.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: ERNIE 5.0 Thinking Preview · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/ernie-5-0-thinking-preview"
       }
     ],
     "keyImprovements": [],
@@ -10161,10 +8316,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/ernie-5-0-thinking-preview"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -10278,10 +8429,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 50137,
     "arenaCI": 4,
     "arenaVariant": "inkling",
-    "aaIntelligence": 25,
+    "aaIntelligence": 12.5,
     "aaVariant": "Inkling (Xhigh)",
-    "aaCoding": 52.1,
-    "aaAgentic": 22.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -10291,20 +8440,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 25,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Inkling (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/inkling"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 52.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Inkling (Xhigh) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/inkling"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 22.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Inkling (Xhigh) · checked 2026-10-24",
+        "score": 12.5,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Inkling (Xhigh) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/inkling"
       }
     ],
@@ -10367,10 +8504,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 37665,
     "arenaCI": 5,
     "arenaVariant": "Inkling Small",
-    "aaIntelligence": 25.7,
+    "aaIntelligence": 12.9,
     "aaVariant": "Inkling Small",
-    "aaCoding": 52.9,
-    "aaAgentic": 23.5,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -10380,20 +8515,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 25.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Inkling Small · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/inkling-small"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 52.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Inkling Small · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/inkling-small"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 23.5,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Inkling Small · checked 2026-10-24",
+        "score": 12.9,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Inkling Small · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/inkling-small"
       }
     ],
@@ -10456,7 +8579,7 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 12362,
     "arenaCI": 6,
     "arenaVariant": "Step 5 Preview",
-    "aaIntelligence": 43.7,
+    "aaIntelligence": 28.5,
     "aaVariant": "Step 5 Preview",
     "benchmarks": [
       {
@@ -10467,8 +8590,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 43.7,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Step 5 Preview · checked 2026-10-24",
+        "score": 28.5,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Step 5 Preview · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/step-5"
       }
     ],
@@ -10528,20 +8651,12 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 59777,
     "arenaCI": 4,
     "arenaVariant": "step-3.5-flash",
-    "aaIntelligence": 17,
-    "aaVariant": "Step 3.5 Flash 2603",
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
         "score": 1403,
         "vsPreviousGen": "#153 of 414 on arena.ai · ±4 · 59,777 votes · variant: step-3.5-flash",
         "sourceUrl": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "benchmarkName": "AA Intelligence Index",
-        "score": 17,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Step 3.5 Flash 2603 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/step-3-5-flash"
       }
     ],
     "keyImprovements": [],
@@ -10562,10 +8677,6 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
-      },
-      {
-        "label": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/models/step-3-5-flash"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -10597,10 +8708,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 11399,
     "arenaCI": 7,
     "arenaVariant": "nvidia-nemotron-3-ultra-550b-a55b-nvfp4",
-    "aaIntelligence": 22.9,
+    "aaIntelligence": 11.8,
     "aaVariant": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-    "aaCoding": 49.3,
-    "aaAgentic": 20.1,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -10610,20 +8719,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 22.9,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b"
-      },
-      {
-        "benchmarkName": "AA Coding Index",
-        "score": 49.3,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 20.1,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-10-24",
+        "score": 11.8,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b"
       }
     ],
@@ -10680,9 +8777,8 @@ export const ALL_MODELS: AIModel[] = [
     "arenaVotes": 27104,
     "arenaCI": 5,
     "arenaVariant": "solar-pro4",
-    "aaIntelligence": 26.6,
+    "aaIntelligence": 14.2,
     "aaVariant": "Solar Pro 4",
-    "aaAgentic": 28.8,
     "benchmarks": [
       {
         "benchmarkName": "Arena Text Elo",
@@ -10692,14 +8788,8 @@ export const ALL_MODELS: AIModel[] = [
       },
       {
         "benchmarkName": "AA Intelligence Index",
-        "score": 26.6,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Solar Pro 4 · checked 2026-10-24",
-        "sourceUrl": "https://artificialanalysis.ai/models/solar-pro4"
-      },
-      {
-        "benchmarkName": "AA Agentic Index",
-        "score": 28.8,
-        "vsPreviousGen": "Artificial Analysis v4.3 · best setting: Solar Pro 4 · checked 2026-10-24",
+        "score": 14.2,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Solar Pro 4 · checked 2026-11-13",
         "sourceUrl": "https://artificialanalysis.ai/models/solar-pro4"
       }
     ],

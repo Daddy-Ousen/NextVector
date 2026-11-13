@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 03:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Nvidia Co-Founder Jensen Huang Resigns Immediately as CEO; CFO Colette Kress Named Interim Chief</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-ceo-jensen-huang-resigns-colette-kress-interim</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-ceo-jensen-huang-resigns-colette-kress-interim</guid>
+      <description>Board appoints Harvey C. Jones as first-ever Chair and retains former acting U.S. Attorney Joon H. Kim amid federal inquiries and a $550 billion five-day market drop.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 13 Nov 2026 03:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google Releases Gemini 4 Hydrogen and Dynamic Antigravity Orchestrator</title>
+      <link>https://nextvector.rhasan.online/article/google-releases-gemini-4-hydrogen-and-antigravity-orchestrator</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-releases-gemini-4-hydrogen-and-antigravity-orchestrator</guid>
+      <description>Priced flat at $1.50 input and $7.50 output per million tokens across a 1M context window, Hydrogen scores 51 on the Artificial Analysis Index (54 at xhigh) while tripling 3.8 Flash on Terminal-Bench 4.1.</description>
+      <category>AI</category>
+      <pubDate>Fri, 13 Nov 2026 03:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Weight Initialization Forensics Links Six Chinese AI Models to Nvidia Blackwell GPUs</title>
+      <link>https://nextvector.rhasan.online/article/checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus</guid>
+      <description>Unemployment Labs analyzed cuRAND thread grids across 6 trillion combinations to match preserved weights in DeepSeek-V4, Kimi K3, MiniMax-M3, and Ling-3.1-flash to 148- and 152-SM Blackwell silicon.</description>
+      <category>RESEARCH</category>
+      <pubDate>Fri, 13 Nov 2026 02:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Critical Unauthenticated RCE Flaw CVE-2026-119618 Hits Apache HTTP Server HTTP/2 Module</title>
+      <link>https://nextvector.rhasan.online/article/apache-http-server-cve-2026-119618-critical-rce-mod-http2</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/apache-http-server-cve-2026-119618-critical-rce-mod-http2</guid>
+      <description>Independently uncovered by Anthropic and Google Cloud researchers, a heap-corrupting race condition in mod_http2&#x27;s assign_headers() leaves an estimated 64% of cloud environments exposed until patched to 2.4.71.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 13 Nov 2026 02:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Astronomers Trace Eight-Minute Radio Pulses to First White Dwarf Orbiting a Sun-Like Star</title>
+      <link>https://nextvector.rhasan.online/article/rare-star-system-gpm-j071507-white-dwarf-sun-like-radio-pulses</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/rare-star-system-gpm-j071507-white-dwarf-sun-like-radio-pulses</guid>
+      <description>Located over 5,000 light-years away, long-period transient GPM J071507−114153 pairs a spinning white dwarf with a G-type stellar twin whose plasma storms modulate the radio signal.</description>
+      <category>SCIENCE</category>
+      <pubDate>Fri, 13 Nov 2026 02:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Rust 1.100.0 Stabilizes the Never Type (!), Core Allocator API, and Cargo Dependency Cooldowns</title>
+      <link>https://nextvector.rhasan.online/article/rust-1-100-stabilizes-never-type-allocator-api-cargo-cooldowns</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/rust-1-100-stabilizes-never-type-allocator-api-cargo-cooldowns</guid>
+      <description>Completing a decade-long stabilization effort, Rust 1.100 makes Infallible an alias to !, opens custom allocators for Vec and Box, and lets Cargo hold back newly published crates to blunt supply-chain attacks.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 13 Nov 2026 02:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Amazon Launches Open-Source AWS Emulator: Local Cloud Runtime Built by Autonomous AI Agents</title>
       <link>https://nextvector.rhasan.online/article/amazon-launches-open-source-aws-emulator-built-by-agents</link>
@@ -496,60 +550,6 @@
       <description>The boutique music hardware maker releases source code for Tracker, Tracker+, and Mini alongside custom C++ synth and audio DSP plugin SDKs.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Memdoor Deploys 5-Model Team of Qwen3.8-27B to Outscore Single-Call Frontier Models on LiveCodeBench Hard</title>
-      <link>https://nextvector.rhasan.online/article/memdoor-5-model-team-qwen-beats-fable-on-livecodebench</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/memdoor-5-model-team-qwen-beats-fable-on-livecodebench</guid>
-      <description>By decomposing programming challenges across five fresh-context agents communicating exclusively through disk ledgers, open-weight models achieve a 9.8 out of 10 mean score for $0.39 per run.</description>
-      <category>RESEARCH</category>
-      <pubDate>Mon, 02 Nov 2026 00:25:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Restricts Claude from Video Game Reverse Engineering and Automated Cloning</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-blocks-claude-video-game-cloning-reverse-engineering</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-blocks-claude-video-game-cloning-reverse-engineering</guid>
-      <description>New automated alignment rules targeting demo duplication on Steam Next Fest trigger widespread refusals for developers working on reverse engineering, decompilation, and system troubleshooting.</description>
-      <category>AI</category>
-      <pubDate>Mon, 02 Nov 2026 00:20:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Hermantown City Council Approves 500MW Google Data Center Development Despite Heated Community Protests</title>
-      <link>https://nextvector.rhasan.online/article/hermantown-city-council-approves-google-data-center-over-protests</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/hermantown-city-council-approves-google-data-center-over-protests</guid>
-      <description>In a midnight session following hours of public opposition, municipal leaders in northeast Minnesota authorized a 1.7 million-square-foot campus backed by a $210 million decommissioning bond.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 02 Nov 2026 00:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>50-Agent AI Swarms in Minecraft Collapse into Paralyzing Bureaucracy in Y Combinator and Olam Labs Study</title>
-      <link>https://nextvector.rhasan.online/article/minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/minecraft-50-agent-civilization-simulation-collapses-in-bureaucracy</guid>
-      <description>Tasked with building a thriving society within a three-hour window, autonomous LLM agents devolved into procedural stalemates, while competitive PvP trials revealed striking architectural divergence.</description>
-      <category>RESEARCH</category>
-      <pubDate>Mon, 02 Nov 2026 00:10:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Andrej Karpathy Releases HackerTube: An Enshittification-Free Video Engine Built with Claude Code Workflows</title>
-      <link>https://nextvector.rhasan.online/article/karpathy-launches-hackertube-hn-curated-video-discovery-engine</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/karpathy-launches-hackertube-hn-curated-video-discovery-engine</guid>
-      <description>Constructed in two hours using Claude Opus 5.5 and Sonnet automation, the platform indexes 6,454 high-signal YouTube videos recommended across 40,000 historical Hacker News comments.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 02 Nov 2026 00:05:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>KDE Unveils Kwi: A Next-Generation GPU-Accelerated Terminal Emulator Powered by libghostty</title>
-      <link>https://nextvector.rhasan.online/article/kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/kde-unveils-kwi-gpu-accelerated-terminal-emulator-using-libghostty</guid>
-      <description>KDE developer Eike Hein introduces an experimental terminal built on Mitchell Hashimoto&#x27;s libghostty-vt and Qt 6, delivering up to 35x rendering speedups over Konsole alongside modern Kitty graphics protocols.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

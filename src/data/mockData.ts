@@ -175,6 +175,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-11-12-nvidia-jensen-huang-resigns',
+    year: 2026,
+    month: 'Nov 12',
+    title: 'Nvidia Co-Founder Jensen Huang Resigns Immediately as CEO',
+    category: 'Computing Architecture',
+    summary: 'After 33 years leading Nvidia, co-founder Jensen Huang resigns immediately following an independent board inquiry and FBI investigation, with CFO Colette Kress named Interim CEO.',
+    impactScore: 95,
+    keyShift: 'First CEO transition in Nvidia history triggers governance restructuring under Board Chair Harvey C. Jones amid congressional scrutiny of AI chipmaker leadership.',
+    articleSlug: 'nvidia-ceo-jensen-huang-resigns-colette-kress-interim'
+  },
+  {
     id: 'time-2026-10-10-nvidia-reflection',
     year: 2026,
     month: 'Oct 10',
@@ -1136,53 +1147,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Thursday, November 12, 2026",
-  summary: "Amazon launched an open-source AWS Emulator under CC0 built entirely by autonomous agents from over 400 Smithy models, while Google unveiled the Gemini Decisions API offering bounded multimodal choices with zero output token fees. Concurrently, the Python community mourns language pioneer Tim Peters, United Airlines banned autonomous travel booking bots, and hardware researchers unlocked Nvidia A100 silicon from discarded mining cards.",
+  date: "Friday, November 13, 2026",
+  summary: "Nvidia co-founder Jensen Huang resigned immediately after 33 years amid federal inquiries and a $550 billion market slide, while Google launched Gemini 4 Hydrogen alongside its dynamic Antigravity Orchestrator. Meanwhile, checkpoint forensics traced Nvidia Blackwell GPU fingerprints in six Chinese frontier models, a critical mod_http2 flaw hit Apache servers, and radio astronomers mapped eight-minute pulses from a rare white dwarf binary.",
   items: [
     {
       id: 'brief-1',
-      headline: "Amazon Releases Open-Source AWS Emulator Built by Autonomous Agents",
+      headline: "Jensen Huang steps down immediately as Nvidia CEO; Colette Kress named interim chief",
       category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "Amazon released a CC0-licensed local emulator covering 200+ cloud services that was completely authored and tested by AI coding agents from Smithy models.",
-      whyItMatters: "Provides developers and autonomous agents with a zero-cost, offline cloud runtime for rapid iterative test loops without incurring cloud billing.",
-      articleSlug: "amazon-launches-open-source-aws-emulator-built-by-agents"
+      summary: "Nvidia appointed CFO Colette Kress as Interim CEO and Harvey C. Jones as Board Chair while former SDNY acting U.S. Attorney Joon H. Kim leads an independent inquiry. The shake-up follows a five-day $550B market capitalization drop and bipartisan congressional briefing demands.",
+      whyItMatters: "A sudden leadership vacuum at the supplier underpinning roughly 7% of the S&P 500 injects governance and national security uncertainty across the AI hardware stack.",
+      articleSlug: "nvidia-ceo-jensen-huang-resigns-colette-kress-interim"
     },
     {
       id: 'brief-2',
-      headline: "Google Launches Gemini Decisions API with Zero-Output Token Pricing",
+      headline: "Google ships Gemini 4 Hydrogen at $1.50/$7.50 per 1M tokens with Antigravity Orchestrator",
       category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "Powered by Gemini Decision 1, the new API scores up to 1,000 multimodal questions in a single 150-250ms forward pass at $0.10 per million input tokens.",
-      whyItMatters: "Eliminates token-by-token generation latency and output billing, giving agents a fast probabilistic control plane for tool selection and model routing.",
-      articleSlug: "google-unveils-gemini-decisions-api-multimodal-routing"
+      urgency: "Critical Signal" as const,
+      summary: "Hydrogen delivers 53.9 (xhigh) and 50.8 (high) on the Artificial Analysis Intelligence Index alongside 57% on Terminal-Bench 4.1 across a 1M context window. Google Antigravity's Orchestrator dynamically alternates between Carbon and Hydrogen mid-task, cutting quota usage 24%.",
+      whyItMatters: "Pairing flagship reasoning planning with sub-flagship execution slashes multi-step coding latency and token spend without manual routing heuristics.",
+      articleSlug: "google-releases-gemini-4-hydrogen-and-antigravity-orchestrator"
     },
     {
       id: 'brief-3',
-      headline: "Python Community Mourns Tim Peters, Author of PEP 20 and Timsort",
-      category: "technology" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Guido van Rossum announced the passing of Python co-designer Tim Peters at age 73, honoring his foundational work on Timsort and The Zen of Python.",
-      whyItMatters: "Peters shaped Python's core philosophy and authored the adaptive sorting algorithm adopted across Python, Java, Android, and modern operating systems.",
-      articleSlug: "in-memoriam-tim-peters-author-zen-of-python-timsort"
+      headline: "PRNG checkpoint forensics links six Chinese frontier models to Nvidia Blackwell chips",
+      category: "research" as const,
+      urgency: "High Impact" as const,
+      summary: "Unemployment Labs recovered cuRAND thread grid signatures across 148-SM B200/B300 and 152-SM GB200/GB300 GPUs in models from DeepSeek, Moonshot AI, MiniMax, and Ant Group. Rented Blackwell machines reproduced preserved rows in DeepSeek-V4-Flash and Kimi K3 bit for bit.",
+      whyItMatters: "Model weights themselves act as verifiable hardware audit artifacts for step-zero training clusters, even without leaked internal documents.",
+      articleSlug: "checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus"
     },
     {
       id: 'brief-4',
-      headline: "United Airlines Prohibits Autonomous AI Agents from Booking Flights",
-      category: "ai" as const,
+      headline: "Critical HTTP/2 race condition CVE-2026-119618 hits Apache HTTP Server deployments",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "United Airlines updated digital booking policies to block third-party AI assistants from searching fares, holding tickets, or managing passenger flights.",
-      whyItMatters: "Marks major enterprise resistance against autonomous consumer agents, citing credential theft, server scraping costs, and FAA baggage compliance.",
-      articleSlug: "united-airlines-bans-autonomous-ai-agents-booking-flights"
+      summary: "Discovered independently by Anthropic and Google Cloud, improper locking in mod_http2's assign_headers() triggers heap corruption and unauthenticated RCE on Apache 2.4.55 through 2.4.70. Wiz estimates 64% of cloud environments harbor vulnerable packages, urging immediate upgrades to 2.4.71.",
+      whyItMatters: "Half of scanned cloud estates expose affected Apache instances publicly, making unpatched HTTP/2 listeners high-value lateral movement targets.",
+      articleSlug: "apache-http-server-cve-2026-119618-critical-rce-mod-http2"
     },
     {
       id: 'brief-5',
-      headline: "Jane Street Post-Mortem Details Close Datacenter Call on False Smoke Alarm",
-      category: "technology" as const,
+      headline: "Eight-minute radio pulses traced to first white dwarf orbiting a Sun-like star",
+      category: "science" as const,
       urgency: "Notable Shift" as const,
-      summary: "A false smoke detector alert in Manhattan triggered pre-action sprinkler charging and halted cooling, bringing trading servers within 6.4°F of dousing.",
-      whyItMatters: "Highlights dangerous failure modes in automated building suppression systems and led to the deployment of fleet-wide OCaml temperature monitoring.",
-      articleSlug: "jane-street-datacenter-post-mortem-false-smoke-alarm-fragility"
+      summary: "Curtin University astronomers linked long-period transient GPM J071507−114153 over 5,000 light-years away to a spinning white dwarf circling a G-type stellar twin. Orbital radio timing isolated the compact emitter and captured magnetic plasma prominences on the Sun-like star.",
+      whyItMatters: "Resolving a white dwarf beside a G-type star rather than a red dwarf expands both the origins of mysterious long-period transients and remote stellar-flare probes.",
+      articleSlug: "rare-star-system-gpm-j071507-white-dwarf-sun-like-radio-pulses"
     }
   ]
 };
@@ -1190,32 +1201,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Cloud Runtimes",
-    text: "Amazon open-sources CC0 AWS Emulator built by agents across 200+ cloud services.",
-    articleSlug: "amazon-launches-open-source-aws-emulator-built-by-agents"
+    tag: "Leadership Shock",
+    text: "Jensen Huang resigns immediately as Nvidia CEO; CFO Colette Kress takes over as interim.",
+    articleSlug: "nvidia-ceo-jensen-huang-resigns-colette-kress-interim"
   },
   {
     id: 'sig-2',
-    tag: "Model Routing",
-    text: "Google launches Gemini Decisions API at $0.10/M tokens with zero output billing.",
-    articleSlug: "google-unveils-gemini-decisions-api-multimodal-routing"
+    tag: "Frontier Models",
+    text: "Google launches Gemini 4 Hydrogen (AA 54 xhigh) and dynamic Antigravity Orchestrator.",
+    articleSlug: "google-releases-gemini-4-hydrogen-and-antigravity-orchestrator"
   },
   {
     id: 'sig-3',
-    tag: "Open Source",
-    text: "Python core pioneer Tim Peters passes away at 73; Guido van Rossum leads tributes.",
-    articleSlug: "in-memoriam-tim-peters-author-zen-of-python-timsort"
+    tag: "Compute Forensics",
+    text: "cuRAND initialization traces link six Chinese AI models to Nvidia Blackwell B200/GB200s.",
+    articleSlug: "checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus"
   },
   {
     id: 'sig-4',
-    tag: "Aviation Policy",
-    text: "United Airlines updates digital policies to block autonomous AI flight booking bots.",
-    articleSlug: "united-airlines-bans-autonomous-ai-agents-booking-flights"
+    tag: "Cloud Security",
+    text: "Apache mod_http2 RCE CVE-2026-119618 exposes 64% of cloud environments until 2.4.71 patch.",
+    articleSlug: "apache-http-server-cve-2026-119618-critical-rce-mod-http2"
   },
   {
     id: 'sig-5',
-    tag: "Hardware Security",
-    text: "Voltage fault injection on GA100 fuses converts CMP mining cards into 80GB A100s.",
-    articleSlug: "hardware-voltage-glitching-unlocks-nvidia-a100-mining-cards"
+    tag: "Compiler & Cargo",
+    text: "Rust 1.100 stabilizes the ! never type, Allocator API, and Cargo crate cooldown filters.",
+    articleSlug: "rust-1-100-stabilizes-never-type-allocator-api-cargo-cooldowns"
   }
 ];

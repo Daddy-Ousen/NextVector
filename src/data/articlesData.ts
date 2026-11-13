@@ -20968,6 +20968,336 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-384",
+    slug: "nvidia-ceo-jensen-huang-resigns-colette-kress-interim",
+    title: "Nvidia Co-Founder Jensen Huang Resigns Immediately as CEO; CFO Colette Kress Named Interim Chief",
+    subtitle: "Board appoints Harvey C. Jones as first-ever Chair and retains former acting U.S. Attorney Joon H. Kim amid federal inquiries and a $550 billion five-day market drop.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 95,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T03:15:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-384-nvidia-ceo-jensen-huang-resigns-colette-kress-inte.jpg",
+    coverImageAlt: "Exterior of Nvidia corporate headquarters campus on San Tomas Expressway in Santa Clara under clear blue sky",
+    tags: ["NVIDIA", "Jensen Huang", "Colette Kress", "Harvey C. Jones", "Semiconductors", "Corporate Governance", "AI Infrastructure"],
+    threeQuestions: {
+      whatHappened: "On November 12, 2026, Nvidia's Board of Directors announced that co-founder Jensen Huang resigned as President, Chief Executive Officer, and Board member effective immediately, appointing EVP and CFO Colette Kress as Interim CEO while naming Harvey C. Jones the company's first-ever Board Chair.",
+      whyItMatters: "Huang led Nvidia for 33 years since co-founding the chipmaker in 1993, and a five-day $550 billion market value drop—leaving the stock 31% below its recent peak—hits investors directly given Nvidia's roughly 7% weight in the S&P 500 index while raising congressional national security scrutiny.",
+      whatsNext: "Nvidia will report third-quarter fiscal 2027 financial results on Tuesday, November 17 at 1:20 p.m. PT followed by a 2 p.m. PT call, while congressional committees asked Huang for a closed-door briefing on November 18 alongside probes by Wachtell, Lipton, Rosen & Katz and the FBI."
+    },
+    keyTakeaways: [
+      "Colette Kress remains EVP and Chief Financial Officer while serving as Interim CEO until Nvidia's Board completes an internal and external search for a permanent chief executive.",
+      "Independent directors retained former acting Southern District of New York U.S. Attorney Joon H. Kim of Wachtell, Lipton, Rosen & Katz on November 10 for an external investigation.",
+      "U.S. Attorney General Todd Blanche stated on November 12 that the Justice Department had not yet drawn conclusions on whether Alice Huang spied for China.",
+      "Nvidia stated it has no reason to believe national security or company secrets were compromised, and expects operations, customer commitments, and its roadmap to continue uninterrupted."
+    ],
+    content: [
+      "Source: NVIDIA Newsroom releases published November 10 and November 12, 2026, and BBC News reporting published November 12, 2026.",
+      "Kress has served as Executive Vice President and Chief Financial Officer since September 2013 after nearly 25 years in corporate finance at Cisco and Microsoft. \"Colette has helped lead NVIDIA through a period of extraordinary growth and has a deep understanding of our business, customers, operations and financial position,\" said newly appointed Chair Harvey C. Jones, a 30-year technology executive and former CEO and Executive Chairman of Synopsys. In her own statement, Kress pledged to build on \"the extraordinary foundation Jensen created over the last 33 years\" while keeping execution focused on customers, partners, developers, and shareholders.",
+      "According to BBC News, the leadership crisis accelerated after New York Times reporting revealed two alleged extramarital relationships. The first involved Chinese businesswoman Alice Huang (also known as Huang Le), a former top executive between March and November 2023 at Singapore-based data center operator Megaspeed, which faces Singaporean investigation over alleged circumvention of U.S. chip export controls. On November 11, media reports detailed a second alleged relationship involving Nvidia executive Kimberly Powell, who reported directly to Huang. Earlier in the week, Huang apologized for being \"unfaithful\" to his wife Lori Huang of 40 years.",
+      "The revelations drew immediate scrutiny from Capitol Hill and federal investigators. Senators Elizabeth Warren and Chris Coons, joined by Democrats on the House Foreign Affairs Committee, demanded that Huang brief lawmakers, with one Senate staff member telling the BBC a subpoena could follow if he refuses to appear voluntarily. President Donald Trump told reporters the FBI is investigating the matter and noted Huang told him he had been unaware of espionage concerns. China rejected the spying allegations as \"entirely groundless,\" while the BBC estimated Huang's personal net worth at $155 billion (£115 billion) and noted the week's equity sell-off marked Nvidia's steepest five-day drop since its initial public offering 27 years ago.",
+      "Questions around permanent succession highlight several internal veterans alongside external possibilities. BBC named Nvidia co-founder and longtime engineering leader Chris Malachowsky as well as high-performance computing chief Ian Buck, who helped pioneer GPU computing for AI workloads. Two of Huang's children, Madison and Spencer, and son-in-law Nico Caprez also hold senior roles inside the firm, though observers characterized them as relatively junior for the chief executive post. Stephen Witt, author of the Huang biography Thinking Machine, described the departing founder as \"a tech visionary of the likes of Steve Jobs.\"",
+      "Limits: Nvidia's official transition announcement did not cite allegations of personal misconduct as the formal reason for departure, Attorney General Todd Blanche stressed the Justice Department has reached no conclusions, Huang has not confirmed attendance for the November 18 congressional briefing, and neither Powell nor Huang's personal representative commented to the BBC."
+    ],
+    technicalSpecs: {
+      "Ticker": "NASDAQ: NVDA",
+      "Departing CEO": "Jensen Huang (1993–2026)",
+      "Interim CEO & CFO": "Colette Kress",
+      "First Board Chair": "Harvey C. Jones",
+      "Independent Counsel": "Joon H. Kim (Wachtell Lipton)",
+      "5-Day Market Cap Loss": "$550B (£415B); 31% off peak",
+      "S&P 500 Index Weight": "~7%",
+      "Q3 FY27 Earnings": "Nov 17, 2026, 1:20 p.m. PT"
+    },
+    citations: [
+      {
+        title: "NVIDIA Announces CEO Transition",
+        url: "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+        source: "NVIDIA Newsroom"
+      },
+      {
+        title: "Statement From the Independent Members of the NVIDIA Board",
+        url: "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board",
+        source: "NVIDIA Newsroom"
+      },
+      {
+        title: "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
+        url: "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o",
+        source: "BBC News"
+      }
+    ],
+    isHero: true,
+    isFeatured: true
+  },
+  {
+    id: "art-385",
+    slug: "google-releases-gemini-4-hydrogen-and-antigravity-orchestrator",
+    title: "Google Releases Gemini 4 Hydrogen and Dynamic Antigravity Orchestrator",
+    subtitle: "Priced flat at $1.50 input and $7.50 output per million tokens across a 1M context window, Hydrogen scores 51 on the Artificial Analysis Index (54 at xhigh) while tripling 3.8 Flash on Terminal-Bench 4.1.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 90,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T03:00:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-385-google-releases-gemini-4-hydrogen-and-antigravity.jpg",
+    coverImageAlt: "Clear triangular optical glass prism resting on a dark reflective lab surface refracting light",
+    tags: ["Google DeepMind", "Gemini 4 Hydrogen", "Google Antigravity", "Orchestrator", "Agentic Coding", "Artificial Analysis"],
+    threeQuestions: {
+      whatHappened: "On November 12, 2026, Google launched Gemini 4 Hydrogen across Google AI Studio, the Gemini API, Gemini for business, Google Search, the Gemini app, and Google Antigravity, alongside a dynamic Orchestrator mode pairing Hydrogen with Gemini 4 Carbon and Argon.",
+      whyItMatters: "At $1.50 per million input tokens and $7.50 per million output tokens across its 1M-token window, Hydrogen tops the flagship Gemini 4 Argon score on the Artificial Analysis Intelligence Index (51 at high default, 54 at xhigh vs. Argon's 50) while cutting Terminal-Bench execution times.",
+      whatsNext: "Orchestrator (Carbon) and Orchestrator (Argon) are rolling out to Google AI Ultra subscribers while Pro subscribers receive Orchestrator (Argon), with Google planning additional model pairings and plan support in subsequent updates."
+    },
+    keyTakeaways: [
+      "Gemini 4 Hydrogen exposes four thinking tiers—low, medium, high (default), and xhigh—supporting up to 1 million input tokens and up to 1 million output tokens.",
+      "On Terminal-Bench 4.1, Hydrogen scored 57% versus Gemini 3.8 Flash's 18.2% while completing tasks 2.5 times faster at its default high setting and batching file reads natively.",
+      "Within Google Antigravity, dynamic Orchestrator handoffs between Carbon and Hydrogen achieved near-Carbon Terminal-Bench success rates while using 24% less quota and finishing 19% faster.",
+      "Safety audits reported 99.9% chain-of-thought legibility across over 200,000 audited turns with zero deceptive reasoning edits and under 0.4% false refusals on HealthBench Pro."
+    ],
+    content: [
+      "Source: Google blog post by Koray Kavukcuoglu and the Google Antigravity Orchestrator release notes, both dated November 12, 2026, alongside official Gemini API pricing documentation.",
+      "Positioned as the rapid-execution tier beneath Gemini 4 Carbon and Argon, Hydrogen pairs coding precision with domain agent benchmarks. Google reported 58.8% on HLE-Diamond, a #1 overall score of 52.3% on Vals Tax Agent Bench, a tied #1 score of 55.8% on Vals Legal Research Bench, and a #5 ranking on arena.ai's Agent Arena. On multimodal office work, Hydrogen scored 53.4% on the Multimodal Knowledge Agent (MKA) benchmark over PDFs, charts, audio, and video, and 71.6% on Agents' Last Exam v1.1. On Google's official pricing table, Paid Tier rates sit at $1.50 input, $7.50 output (including thinking tokens), and $0.075 implicit context caching per million tokens, with Free Tier access available in AI Studio.",
+      "Rather than relying on a static front-end router that locks a session to one model after the initial prompt, Google Antigravity's Orchestrator hands control back and forth between Carbon and Hydrogen mid-trajectory. In a typical coding workflow, Carbon begins in read-only exploration to inspect dependencies and establish a plan with explicit re-planning triggers before handing execution, package updates, and test runs to Hydrogen. Whenever Hydrogen encounters unexpected test failures or ambiguity, it escalates state back to Carbon to repair the plan. Google added that developers using the Antigravity SDK can wire the two models explicitly for multi-agent issue triage and repository refactors.",
+      "Alignment evaluations targeting high-frequency tool use showed steep error reductions relative to Gemini 3.8 Flash. Google stated Hydrogen reduced fabricated claims by more than 5x, lowered agentic overreach by up to 81% and under-service by up to 79%, and cut misaligned actions and task shortcutting across coding evaluations by 12x. The model reached a 96.7% score on Google's internal agent honesty check, became up to 2x less likely to attempt permission-boundary bypasses on impossible tasks, and demonstrated over 2.3x higher resilience against indirect prompt injection on the Gray Swan IPI benchmark.",
+      "Limits: Early partner speedups of 2x to 2.8x faster runs and 12% to 23% token reductions over 3.8 Flash come from internal Google enterprise testing rather than independent replication, Gemini 4 Hydrogen does not yet appear on LMSYS Arena's public text Elo leaderboard snapshot, and SWE-bench Verified has not published shared-harness numbers for the model."
+    ],
+    technicalSpecs: {
+      "Developer": "Google DeepMind",
+      "Context / Max Output": "1M tokens in / up to 1M out",
+      "API Pricing (Paid)": "$1.50 in / $7.50 out / $0.075 cache per 1M",
+      "AA Intelligence Index": "53.9 (xhigh) · 50.8 (high) · 41.2 (med) · 26.9 (low)",
+      "Terminal-Bench 4.1": "57% (vs. 18.2% on 3.8 Flash)",
+      "Agents' Last Exam v1.1": "71.6%",
+      "HLE-Diamond / MKA": "58.8% / 53.4%",
+      "CoT Audit": "99.9% legibility across >200,000 turns"
+    },
+    relatedModelId: "model-gemini-4-hydrogen",
+    citations: [
+      {
+        title: "Introducing Gemini 4 Hydrogen",
+        url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        source: "Google Blog"
+      },
+      {
+        title: "Gemini 4 Hydrogen and Orchestrator",
+        url: "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+        source: "Google Antigravity Blog"
+      },
+      {
+        title: "Gemini Developer API Pricing",
+        url: "https://ai.google.dev/gemini-api/docs/pricing",
+        source: "Google AI for Developers"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-386",
+    slug: "checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus",
+    title: "Weight Initialization Forensics Links Six Chinese AI Models to Nvidia Blackwell GPUs",
+    subtitle: "Unemployment Labs analyzed cuRAND thread grids across 6 trillion combinations to match preserved weights in DeepSeek-V4, Kimi K3, MiniMax-M3, and Ling-3.1-flash to 148- and 152-SM Blackwell silicon.",
+    category: "research",
+    articleType: "deep-dive",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T02:45:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-386-checkpoint-forensics-links-chinese-ai-models-to-bl.jpg",
+    coverImageAlt: "Row of black high-density GPU compute server cabinets with green indicator LEDs and cooling modules inside a data center",
+    tags: ["Checkpoint Forensics", "NVIDIA Blackwell", "Export Controls", "DeepSeek", "Moonshot AI", "Hardware Fingerprinting"],
+    threeQuestions: {
+      whatHappened: "On November 12, 2026, researcher Will DePue of Unemployment Labs published technical evidence showing six open-weight Chinese models released since April 2026 contain parameter initialization layouts matching Nvidia B200/B300 (148 SMs) and GB200/GB300 (152 SMs) GPUs.",
+      whyItMatters: "Before training adjusts model weights, PyTorch's cuRAND Philox generator stripes initial random values across 2,048 threads per Streaming Multiprocessor, leaving an indelible hardware signature in unused or weakly modified weights without requiring leaks or insiders.",
+      whatsNext: "With DeepSeek, Moonshot AI, MiniMax, and Ant Group shifting newer models onto Blackwell signatures while Alibaba, Zhipu, Tencent, Xiaomi, and StepFun still read as Hopper-era chips, export-control analysts must trace rented cloud clusters versus domestic hardware."
+    },
+    keyTakeaways: [
+      "DeepSeek-V4-Flash and MiniMax-M3 match the 148-SM (303,104-thread) B200/B300 layout, while DeepSeek-V4-Pro, Kimi K3, Kimi K3.1-Pro, and Ant Group's Ling-3.1-flash match the 152-SM (311,296-thread) GB200/GB300 layout.",
+      "Statistical significance across the six models spans 49 to 1,385 sigma, far above the 8-sigma threshold expected by chance across roughly 6 trillion tested seed-and-layout combinations.",
+      "Unmodified PyTorch on a rented B300 reproduced 445 of 469 preserved rows in DeepSeek-V4-Flash bit for bit from DeepSeek's seed (953049583), while a GB200 reproduced all 13 preserved rows in Kimi K3 from seed 20256586.",
+      "To rule out partitioned AMD MI300X GPUs (which can mimic 148 or 152 compute units), a vendor-divergence test on DeepSeek-V4-Flash matched Nvidia on 363 of 377 differing entries and AMD on zero."
+    ],
+    content: [
+      "Source: Technical report by Will DePue at Unemployment Labs, published November 12, 2026.",
+      "The forensic pipeline exploits deterministic hardware parallelism during step-zero neural network creation. Large PyTorch initializations via Nvidia's cuRAND library assign up to 2,048 threads per Streaming Multiprocessor (SM) to populate contiguous tensor elements with Philox pseudorandom draws. Earlier Hopper H100 SXM, H200, and compliant H800 GPUs pack 132 SMs (270,336 total threads), whereas Blackwell B200/B300 chips carry 148 SMs and GB200/GB300 superchips expose 152 SMs. Embedding rows tied to rare tokens that never update during training preserve initial values almost identically, while even modified attention layers retain a faint rank-order correlation—averaging r = 0.066 (57 sigma) across 42 layers of DeepSeek-V4-Flash.",
+      "Validation against 24 models whose developers disclosed hardware confirmed 100% agreement, including Meta's Llama 3.1 (132 SMs), EleutherAI's Pythia suite (108 SMs for A100), and Nvidia's Nemotron-3 Ultra (152 SMs for GB200). Tracking each developer chronologically revealed a clear hardware inflection in mid-2026: DeepSeek shifted from Hopper on V3 (December 2024) to Blackwell on V4 (April 2026); Moonshot moved from Hopper on Kimi K2.5 (January 2026) through a merged K2.7-Code checkpoint to GB200/GB300 on K3 (July 2026); MiniMax transitioned from M2.7 (April 2026) to M3 (June 2026); and Ant Group moved from Ling-3.0-flash (August 2026) to Ling-3.1-flash (October 2026). Even DeepSeek-V4-Flash's weakest single layer test hit 20 sigma.",
+      "Unemployment Labs roughly estimated the final training runs for five of these models (treating K3.1-Pro as a continued checkpoint of K3) required around 12,000 Blackwell GPUs overall—between 1,400 and 3,400 chips per model over 45 to 100 days. At an implied $70,000 per Blackwell GPU cited from Wall Street Journal reporting on ByteDance infrastructure in Malaysia, the final training compute alone represents more than $500 million in cluster value, excluding earlier experiments or inference fleets.",
+      "Limits: The report emphasizes that weight initialization patterns prove only what chip created starting parameters and cannot establish where chips were physically located, whether systems were legally rented offshore versus smuggled, or whether export laws were violated. Closed-weight APIs, PaddlePaddle frameworks (Baidu's ERNIE-5.5), CPU-initialized models (several Qwen3 variants), Meituan's LongCat-2.0, and DeepSeek-V4.1-Flash yielded no recoverable GPU signature."
+    ],
+    technicalSpecs: {
+      "Researcher / Publisher": "Will DePue (Unemployment Labs)",
+      "Blackwell B200/B300 Match": "148 SMs · 303,104 threads (V4-Flash, MiniMax-M3)",
+      "Blackwell GB200/GB300 Match": "152 SMs · 311,296 threads (V4-Pro, K3, K3.1-Pro, Ling-3.1-flash)",
+      "Hopper Baseline": "132 SMs · 270,336 threads",
+      "Search Space": "~6 trillion seed-and-layout combinations",
+      "Random Threshold": "~8 sigma (strongest results 49–1,385 sigma)",
+      "Known-Hardware Accuracy": "24 of 24 disclosed models matched",
+      "Estimated Training Fleet": "~12,000 Blackwell GPUs (range 7,000–20,000)"
+    },
+    citations: [
+      {
+        title: "Top Chinese Frontier AI Models Carry the Fingerprint of Export-Controlled NVIDIA Blackwell GPUs",
+        url: "https://unemploymentlabs.com/checkpoint-forensics",
+        source: "Unemployment Labs"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-387",
+    slug: "apache-http-server-cve-2026-119618-critical-rce-mod-http2",
+    title: "Critical Unauthenticated RCE Flaw CVE-2026-119618 Hits Apache HTTP Server HTTP/2 Module",
+    subtitle: "Independently uncovered by Anthropic and Google Cloud researchers, a heap-corrupting race condition in mod_http2's assign_headers() leaves an estimated 64% of cloud environments exposed until patched to 2.4.71.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 86,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T02:30:00Z",
+    readTimeMinutes: 3,
+    coverImage: "/images/articles/art-387-apache-http-server-cve-2026-119618-critical-rce-mo.jpg",
+    coverImageAlt: "Systems engineer crouching beside an open data center server rack with fiber optic cabling and a diagnostic laptop",
+    tags: ["Apache HTTP Server", "CVE-2026-119618", "Cybersecurity", "Remote Code Execution", "HTTP/2", "Wiz Research"],
+    threeQuestions: {
+      whatHappened: "On November 11, 2026, Wiz detailed CVE-2026-119618, a critical unauthenticated remote code execution vulnerability in Apache HTTP Server's mod_http2 module stemming from a thread synchronization race condition inside the assign_headers() function.",
+      whyItMatters: "Successful exploitation corrupts heap memory and executes arbitrary commands with web server privileges, giving attackers a foothold for container escape or cloud metadata theft across an estimated 64% of cloud environments carrying vulnerable packages.",
+      whatsNext: "Operations teams must upgrade Apache HTTP Server 2.4.55 through 2.4.70 deployments immediately to version 2.4.71 or newer, update standalone mod_h2 builds past 2.0.42, or disable HTTP/2 via httpd.conf as an interim safeguard."
+    },
+    keyTakeaways: [
+      "CVE-2026-119618 was independently discovered by security teams at Anthropic and Google Cloud's Vulnerability Research Team.",
+      "Wiz telemetry indicates 64% of cloud environments contain vulnerable Apache HTTP Server or mod_h2 instances, with 51% exposing instances publicly.",
+      "Affected software spans Apache HTTP Server 2.4.55 through 2.4.70 and GitHub open-source mod_h2 releases from 2.0.8 through 2.0.42.",
+      "As of publication on November 11, 2026, no public exploit code or active in-the-wild exploitation had been observed."
+    ],
+    content: [
+      "Source: Wiz Blog advisory by Merav Bar, published November 11, 2026.",
+      "The flaw centers on concurrent thread access to shared memory objects inside the `assign_headers()` routine of `mod_http2`. Because Apache processes multiple multiplexed HTTP/2 streams across worker threads simultaneously, improper locking during header assignment lets a remote client trigger out-of-order memory corruption on the heap without authenticating first. In containerized and virtualized cloud deployments, Wiz warned a compromised web front end can serve as an entry point for lateral movement against internal microservices and instance metadata APIs.",
+      "Dual remediation tracks cover both bundled Apache distributions and standalone GitHub modules. Administrators running Apache HTTP Server 2.4.55 through 2.4.70 must upgrade to 2.4.71 or later, while operators compiling standalone `mod_h2` must move newer than 2.0.42. Where immediate binary patching cannot be scheduled without downtime, Wiz recommends temporarily restricting `httpd.conf` to `Protocols http/1.1` and stripping `h2` and `h2c` tokens to remove the vulnerable HTTP/2 code path entirely.",
+      "Limits: Wiz noted its 64% and 51% exposure rates measure package version prevalence across scanned cloud estates without accounting for whether `mod_http2` or HTTP/2 protocols are actively enabled in each host's configuration, and neither Anthropic nor Google Cloud published proof-of-concept exploit details."
+    ],
+    technicalSpecs: {
+      "CVE Identifier": "CVE-2026-119618",
+      "Component": "Apache mod_http2 (assign_headers())",
+      "Discoverers": "Anthropic & Google Cloud VRT",
+      "Affected Apache Versions": "2.4.55 through 2.4.70",
+      "Patched Apache Version": "2.4.71 and newer",
+      "Affected mod_h2": "2.0.8 through 2.0.42 (patch > 2.0.42)",
+      "Cloud Exposure Estimate": "64% vulnerable; 51% internet-facing",
+      "Mitigation Flag": "Protocols http/1.1 in httpd.conf"
+    },
+    citations: [
+      {
+        title: "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
+        url: "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+        source: "Wiz Blog"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-388",
+    slug: "rare-star-system-gpm-j071507-white-dwarf-sun-like-radio-pulses",
+    title: "Astronomers Trace Eight-Minute Radio Pulses to First White Dwarf Orbiting a Sun-Like Star",
+    subtitle: "Located over 5,000 light-years away, long-period transient GPM J071507−114153 pairs a spinning white dwarf with a G-type stellar twin whose plasma storms modulate the radio signal.",
+    category: "science",
+    articleType: "discovery",
+    signalRating: 84,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T02:15:00Z",
+    readTimeMinutes: 3,
+    coverImage: "/images/articles/art-388-rare-star-system-gpm-j071507-white-dwarf-sun-like.jpg",
+    coverImageAlt: "Scientific illustration showing a compact white dwarf emitting twin cyan radio beams while orbiting a glowing orange Sun-like star",
+    tags: ["Radio Astronomy", "Curtin University", "ICRAR", "White Dwarf", "Long-Period Transients", "Nature Astronomy"],
+    threeQuestions: {
+      whatHappened: "On November 12, 2026, researchers at Curtin University's node of the International Centre for Radio Astronomy Research (ICRAR) published in Nature Astronomy the discovery of GPM J071507−114153, a binary emitting radio pulses every eight minutes from a spinning white dwarf orbiting a G-type Sun-like star.",
+      whyItMatters: "Only roughly a dozen long-period transients have been identified since 2021, and every previously resolved stellar-pair example involved smaller, cooler red dwarfs—leaving unclear which star emitted the radio beams until orbital tracking pinpointed the white dwarf.",
+      whatsNext: "Lead author Dr Sam McSweeney noted upcoming Square Kilometre Array telescopes (SKA-Low in Australia and SKA-Mid in South Africa) will survey far more white-dwarf binaries and probe magnetic stellar storms across thousands of light-years."
+    },
+    keyTakeaways: [
+      "GPM J071507−114153 lies more than 5,000 light-years from Earth and produces repeating radio bursts every eight minutes.",
+      "Timing the pulses revealed the white dwarf's orbital motion directly, proving radio emission originates near or on the compact white dwarf rather than its companion.",
+      "Astronomers observed the white dwarf passing behind strong magnetic loops—likely a stellar prominence erupting from the G-type star—turning the pulsar into a remote probe of stellar flares.",
+      "Discovery combined Milky Way surveys from Australia's Murchison Widefield Array, precision localization via South Africa's MeerKAT, optical spectroscopy at Maunakea's W.M. Keck Observatory, and over 100 hours of Pawsey supercomputing analysis."
+    ],
+    content: [
+      "Source: Curtin University media release reporting the Nature Astronomy study led by Dr Sam McSweeney and Associate Professor Natasha Hurley-Walker, published November 12, 2026.",
+      "Long-period transients (LPTs) switch their radio emission on and off over timescales stretching from minutes to hours—orders of magnitude slower than conventional millisecond or second-scale neutron-star pulsars. Since ICRAR scientists discovered the first LPT in 2021, roughly twelve systems have been cataloged, yet ambiguities remained around their physical engines. \"This is the first time the pulses are clear enough to see the white dwarf moving in its orbit around its companion, so we know that the pulsations are coming from a region close to the white dwarf, or possibly even from the white dwarf itself,\" said Dr McSweeney, now a commissioning scientist with the Square Kilometre Array Observatory.",
+      "Because the radio beam swept behind the Sun-like G-type companion's magnetized atmosphere during orbit, the team extracted magnetic diagnostics of a distant main-sequence star over 5,000 light-years away. Co-author Associate Professor Hurley-Walker noted the team watched the compact star pass behind what appeared to be a \"stellar prominence\"—an erupting plasma loop analogous to solar flares that drive geomagnetic aurorae on Earth. Optical verification at Hawaii's W.M. Keck Observatory confirmed the G-type classification following radio triangulation between Western Australia's MWA and South Africa's MeerKAT arrays.",
+      "Limits: Even with over 100 hours of radio data processed at the Pawsey Supercomputing Research Centre, Curtin researchers noted astronomers still have not pinned down the exact plasma emission mechanism accelerating particles near the white dwarf, and full global population statistics await completion of the full SKA-Low and SKA-Mid arrays."
+    ],
+    technicalSpecs: {
+      "System Designation": "GPM J071507−114153",
+      "Distance": ">5,000 light-years",
+      "Pulse Interval": "8 minutes",
+      "Components": "Spinning white dwarf + G-type Sun-like star",
+      "Journal": "Nature Astronomy (Nov 12, 2026)",
+      "Observatories": "MWA, MeerKAT, W.M. Keck Observatory",
+      "Compute Processing": ">100 hours at Pawsey Supercomputing Centre"
+    },
+    citations: [
+      {
+        title: "Researchers discover rare star system that emits radio signals every eight minutes",
+        url: "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
+        source: "Curtin University / ICRAR"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-389",
+    slug: "rust-1-100-stabilizes-never-type-allocator-api-cargo-cooldowns",
+    title: "Rust 1.100.0 Stabilizes the Never Type (!), Core Allocator API, and Cargo Dependency Cooldowns",
+    subtitle: "Completing a decade-long stabilization effort, Rust 1.100 makes Infallible an alias to !, opens custom allocators for Vec and Box, and lets Cargo hold back newly published crates to blunt supply-chain attacks.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 83,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T02:00:00Z",
+    readTimeMinutes: 3,
+    coverImage: "/images/articles/art-389-rust-1-100-stabilizes-never-type-allocator-api-car.jpg",
+    coverImageAlt: "Macro photograph of interlocking precision brass clockwork gears representing deterministic systems engineering",
+    tags: ["Rust", "Rust 1.100.0", "Cargo", "Systems Programming", "Memory Allocators", "Supply Chain Security"],
+    threeQuestions: {
+      whatHappened: "On November 12, 2026, the Rust Release Team shipped Rust 1.100.0, stabilizing the never type (!), core Allocator traits for Vec and Box, DropGuard scoped cleanup, unsafe conjure_zst, and Cargo dependency cooldowns.",
+      whyItMatters: "After 10 years and five prior stabilization failures, aliasing std::convert::Infallible to ! unifies impossible error types, while Cargo's global-min-publish-age filter blocks newly uploaded crates until automated and community scanners vet them.",
+      whatsNext: "Teams upgrading across pre-2024 editions should test for any edge-case fallback shifts from () to ! and consider adding [registry] global-min-publish-age rules to .cargo/config.toml alongside crates.io quarantine work."
+    },
+    keyTakeaways: [
+      "Rust 1.100 enables naming `!` in arbitrary generic positions like `Result<T, !>` and turns `Infallible` into a direct type alias.",
+      "Stabilized `std::alloc::Allocator` (alongside `Global` and `System`) now works with `Vec`, `Box`, `Arc`, and `Rc` construction methods such as `new_in` and `into_raw_with_allocator`.",
+      "New Cargo `[lints.cargo]` warnings detect unused entries in `Cargo.toml`, and restructured `build-dir` hashes prevent cache collisions across git worktrees.",
+      "Cargo's `min-publish-age` resolver setting holds back versions published inside a user-defined window unless explicitly overridden via `CARGO_RESOLVER_INCOMPATIBLE_PUBLISH_AGE=allow`."
+    ],
+    content: [
+      "Source: Official Rust Blog announcement by The Rust Release Team, published November 12, 2026.",
+      "To unify `Infallible` with `!`, Rust 1.100 applies a rare breaking adjustment across Rust 2015, 2018, and 2021 editions: type inference fallback for unconstrained diverging expressions changes from the unit type `()` to `!`, matching behavior introduced in Rust 2024. The Rust team previously issued advance compatibility warnings and patched affected public crates to limit ecosystem disruption. Alongside type-system stabilization, the core library adds `core::mem::DropGuard`—an ergonomics helper pairing a value with an exit closure that can be canceled with `DropGuard::dismiss()` for transactional rollbacks—and `unsafe` `std::mem::conjure_zst()` to construct zero-sized types explicitly without abusing `MaybeUninit::uninit().assume_init()` on safety markers such as PyO3's `Python<'py>` GIL token.",
+      "Cargo receives three major workflow and security upgrades in the same release. Organizing `build-dir` around hashed build-step directories eliminates platform inconsistencies that previously forced extra or missed rebuilds across feature flags and git worktrees, clearing the path toward future cross-workspace cache deduplication and garbage collection. A new `cargo::unused_dependencies` warn-by-default lint flags dead crate entries when all package targets are compiled, while `global-min-publish-age` delays resolution of fresh crate uploads—showing held-back versions in `cargo update` output while letting maintainers allow single urgent patches on demand.",
+      "Limits: The Rust Release Team noted `cargo install` bypasses `min-publish-age`, registry entries lacking a `pubtime` timestamp cannot be delayed, `unused_dependencies` skips `dev-dependencies` and single-target builds, and custom `build-dir` workarounds targeting internal layouts (tracked under `cargo#17287`) may require updates."
+    ],
+    technicalSpecs: {
+      "Version": "Rust 1.100.0",
+      "Release Date": "November 12, 2026",
+      "Type System": "Never type (!) stabilized; Infallible aliased",
+      "Allocator API": "std::alloc::Allocator + Vec/Box *_in APIs",
+      "Memory Helpers": "core::mem::DropGuard, unsafe conjure_zst",
+      "Cargo Security": "global-min-publish-age cooldown filter",
+      "Cargo Build Layout": "Parent-directory config hashes (cargo#17287)",
+      "Cargo Lints": "cargo::unused_dependencies ([lints.cargo])"
+    },
+    citations: [
+      {
+        title: "Announcing Rust 1.100.0",
+        url: "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+        source: "The Rust Programming Language Blog"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

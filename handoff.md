@@ -1,3 +1,38 @@
+# Handoff — 2026-11-13 (Daily Intelligence Pipeline Run: art-384 to art-389)
+
+## Latest: Daily Pipeline Complete — 6 Articles, Timeline + Model Watch Updated (146 Models), Verification 8/8 Passed, Newsletter Published
+**By:** Antigravity (Gemini 4 Hydrogen) · **Date:** Friday, November 13, 2026 (03:49 UTC)  
+**Catalog State:** 389 articles (`art-1` to `art-389`), 146 models (`model-gemini-4-hydrogen` and `model-gemini-4-carbon` added; 39 AA-indexed, 116 Arena-ranked), 6 leaderboards, 88 timeline events (`time-2026-11-12-nvidia-jensen-huang-resigns` added for 95-rated lead story), Daily Briefing & Ticker synced to `Friday, November 13, 2026`.
+
+### 1. What We Did Today
+- **Harvest & Official Lab Audit:** Executed `npm run harvest` (`pipeline_runs/harvest-2026-11-13.json`) plus direct checks of Anthropic, Google AI, DeepMind, Meta, Mistral, xAI, NVIDIA, and OpenAI newsrooms, plus BBC News via the browser subagent for full reporting context around Jensen Huang's resignation.
+- **Model Watch Sync:** Evaluated `google/gemini-4-hydrogen`, `google/gemini-4-carbon`, `baidu/ernie-light-dt-1.0-intl`, `nex-agi/nex-n2.6`, and `nvidia/Kimi-K3.1-Pro-NVFP4`. Added **`model-gemini-4-hydrogen`** and **`model-gemini-4-carbon`** to `scripts/model_sources/curated_models.json` using verified official pricing from `ai.google.dev/gemini-api/docs/pricing` and refreshed Artificial Analysis Intelligence Index scores (`artificial_analysis` snapshot synced via `fetch_model_sources.py`; rebuilt via `build_model_data.py` to 146 models).
+- **Published 6 Primary-Sourced Articles (`art-384` to `art-389`):**
+  1. `art-384`: **Nvidia Co-Founder Jensen Huang Resigns Immediately as CEO; CFO Colette Kress Named Interim Chief** (`technology` / `breaking`, Signal 95, Hero + Featured, Timeline event `time-2026-11-12-nvidia-jensen-huang-resigns`) — NVIDIA Newsroom Nov 10 & 12 releases + BBC News (`cmq5vd1wdgz6o`, `ckgel338xql3o`).
+  2. `art-385`: **Google Releases Gemini 4 Hydrogen and Dynamic Antigravity Orchestrator** (`ai` / `model-report`, Signal 90, Featured, linked `model-gemini-4-hydrogen`) — Google Blog, Google Antigravity Blog, & Gemini API Pricing.
+  3. `art-386`: **Weight Initialization Forensics Links Six Chinese AI Models to Nvidia Blackwell GPUs** (`research` / `deep-dive`, Signal 88) — Will DePue / Unemployment Labs Nov 12 technical report (`unemploymentlabs.com/checkpoint-forensics`).
+  4. `art-387`: **Critical Unauthenticated RCE Flaw CVE-2026-119618 Hits Apache HTTP Server HTTP/2 Module** (`technology` / `breaking`, Signal 86) — Wiz Blog Nov 11 advisory covering Anthropic & Google Cloud VRT discovery.
+  5. `art-388`: **Astronomers Trace Eight-Minute Radio Pulses to First White Dwarf Orbiting a Sun-Like Star** (`science` / `discovery`, Signal 84) — Curtin University / ICRAR *Nature Astronomy* release (`GPM J071507−114153`).
+  6. `art-389`: **Rust 1.100.0 Stabilizes the Never Type (!), Core Allocator API, and Cargo Dependency Cooldowns** (`technology` / `analysis`, Signal 83) — Official Rust Blog Nov 12 release announcement.
+- **Newsletter Published:** Drafted `newsletters/2026-11-13-the-morning-vector.md` and committed/pushed alongside updated state files.
+
+### 2. What Passed
+- `python scripts/add_articles.py pipeline_runs/2026-11-13.json --check`: Exit 0 (`CHECK PASSED`), followed by single write (`WRITTEN: 6 article(s), 6 cover image(s)`).
+- `npm run images`: Clean no-op (all 6 downloaded covers under `public/images/articles/` passed within size budgets).
+- `npm run build`: `tsc -b`, `vite build` (2,285 modules transformed), and `scripts/run_prerender.js` succeeded — generated 564 static HTML files across `dist/`, 60-item `rss.xml`, 562-URL `sitemap.xml`, `llms.txt`, `llms-full.txt`, and `ai-summary.json`.
+- `npm run verify`: **`[SUCCESS] ALL 8 RELEASE GATES PASSED (100% Rulebook Compliant)`** (only pre-existing legacy image warnings on `art-91..209` and `openrouter.json is 16 days old` age warning).
+- `npm run lint`: Exited 0 (0 errors, 112 pre-existing warnings).
+
+### 3. Open / Gotchas for Next Session
+- **Dropped / Deferred Leads:**
+  - *Anthropic IPO Roadshow (`anthropic.com/news/roadshow-launch`)*: Announced Nov 10 (outside 48h window); investor portal `ipo.anthropic.com/us/` trended Nov 12 without fresh Nov 12 press release numbers beyond the Nov 10 roadshow terms — track Nov 18 pricing / Nov 19 Nasdaq (`ANT`) debut.
+  - *Microsoft 365 / Azure Outage*, *Smithsonian Dwarf Planet `2026 ED138`*, *Apple Foundation Models Framework*, and *Nintendo Switch Emulator DMCA Sweep*: Available context leads skipped in favor of higher-signal primary stories.
+- **Unsplash Search Challenge:** `unsplash.com` returned HTTP 307 challenges to scripted curls today; Wikimedia Commons API (`commons.wikimedia.org/w/api.php`, respecting request pacing to avoid 429) and primary university media assets (`curtin.edu.au`) worked reliably and passed Gate 1 `dhash` distance checks (>= 19 vs catalog, >= 24 pairwise).
+- **`fetch_model_sources.py arena` Fallback Caveat:** Running `fetch_arena` with the Hugging Face parquet fallback overwrites a subset of rows with tied ranks from LMSYS parquet while keeping older non-matched `arena.ai` ranks/ratings, which broke Gate 6's strictly increasing rank check. Kept the monotonic `2026-11-12` `arena_text.json` snapshot while committing updated `artificial_analysis.json`, `google_pricing.json`, `osworld_verified.json`, and `swebench_verified.json`. Future fix should sort and re-index sequential ranks or skip stale partial merges when direct scrape is blocked.
+- **`openrouter.json` Snapshot Age:** Now 16 days old (`2026-10-27`); fails Gate 6 at 30 days. Before refreshing `openrouter.json` globally, clean up legacy `"or"` keys in `curated_models.json` (`openai/o4-mini`, `minimax/minimax-m2.1`, `minimax/minimax-m2`, `poolside/laguna-s-2.1`) that OpenRouter delisted.
+
+---
+
 # Handoff — 2026-11-12 (Daily Intelligence Pipeline Run: art-378 to art-383)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Model Watch Synchronized, Verification 8/8 Passed, Newsletter Published

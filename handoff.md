@@ -1,3 +1,29 @@
+# Handoff — 2026-11-14 (Daily Intelligence Pipeline Run: art-390 to art-395)
+
+## Latest: Daily Pipeline Complete — 6 Articles Verified (8/8 Gates Passed), Content Pushed, Newsletter Published
+**By:** Antigravity (Gemini 4 Hydrogen) · **Date:** Saturday, November 14, 2026 (00:58 UTC)  
+**Repo:** `d:\AntigravityProjects\News` (Branch: `main`, Content Commit: `54b577c`)
+
+### What Was Done
+1. **Live Intelligence Harvest & Lab Newsroom Audit:** Ran `npm run harvest` (`pipeline_runs/harvest-2026-11-14.json`: HN 60, BBC 13, arXiv 30, OpenRouter 17, HF 1) and checked OpenRouter live API plus official newsrooms (`anthropic.com/news`, `blog.google/technology/ai/`, `deepmind.google/discover/blog/`, `ai.meta.com/blog/`, `mistral.ai/news/`, `nvidianews.nvidia.com/`, plus `openai.com/news/` and `x.ai/news` via browser subagent).
+2. **Primary-Source Reading & Verification:** Opened every primary source (`nbcnews.com`, `theregister.com`, `theguardian.com`, `fortune.com`, `openai.com/index/introducing-chatgpt-wallet/`, `blog.google/.../google-wallet-gemini-app/`, `bbc.co.uk`, and `arxiv.org/html/2611.17309v1`) and verified all facts, quotes, timestamps, and benchmarks strictly from opened text (zero facts from memory). Dropped stale/out-of-window leads (`Nvidia $11.4M freight` Nov 9, `IEEE Spectrum CERN` Nov 10, `Oklo Groves-1` Nov 11).
+3. **Six New Articles Published (`art-390`..`art-395`) + Briefing & Ticker Refreshed:**
+   - `art-390` *(Hero, Featured, technology/breaking, 92)* — `FAA Halts All U.S. Departing Flights After L3Harris Telecom Update Crash` (`faa-nationwide-ground-stop-l3harris-telecom-outage`)
+   - `art-391` *(Featured, science/discovery, 91)* — `Claude Helps Logicians Unlock 663 Theorems Inside Kurt Gödel’s Shorthand Notebooks` (`ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems`)
+   - `art-392` *(Featured, ai/analysis, 89)* — `OpenAI Disbands Stand-Alone Robotics Team as General Model GPT-6 Astra Controls Robots Directly` (`openai-disbands-robotics-team-gpt-6-astra-embodied-ai`)
+   - `art-393` *(ai/breaking, 88)* — `OpenAI and Google Launch Wallet Connections for AI Agents on the Same Day` (`openai-chatgpt-wallet-google-wallet-gemini-launch`)
+   - `art-394` *(technology/deep-dive, 87)* — `Microsoft 365 Global Outage Past 24 Hours Halts Courts, Hospitals, and Rail Networks` (`microsoft-365-24-hour-global-outage-multi-cloud-debate`)
+   - `art-395` *(research/research-explained, 86)* — `Hopfield-Era Energy Model CRAM Solves Reasoning Puzzles 1,000x Faster Than Looped Transformers` (`cram-hopfield-energy-model-outpaces-looped-reasoners`)
+4. **Model Watch Audit:** Audited 72h Model Watch leads; `google/gemini-4-hydrogen` and `google/gemini-4-carbon` were already tracked cleanly in `curated_models.json` (`146` models), and OpenRouter's `inclusionai/ling-3.2-flash:free` (Nov 13) did not meet flagship pricing/AA benchmark criteria. Preserved existing `curated_models.json` (146 models) and `MOCK_TIMELINE_EVENTS` (88 events; no article >= 95).
+5. **Cover Image Uniqueness Verification:** Sourced 6 distinct, text-free Wikimedia Commons JPEGs (`>= 1280px` wide) matching each story and verified `dhash` bit distance `>= 15` against all 348 existing catalog covers and `>= 28` pairwise, avoiding all 429 burst failures.
+6. **Checks Passed (Zero Errors):** `python scripts/add_articles.py pipeline_runs/2026-11-14.json --check` and write run; `npm run images`; `npm run build` (`570` static HTML files, `sitemap.xml` `568` URLs, `rss.xml` `60` items); `npm run verify` (`[SUCCESS] ALL 8 RELEASE GATES PASSED`); `npm run lint` (`0` errors, `112` pre-existing warnings).
+7. **GitHub Push & Newsletter:** Committed & pushed content (`54b577c`), authored `newsletters/2026-11-14-the-morning-vector.md`, and updated state files.
+
+### Open / Watch Items
+- `snapshots/openrouter.json` is 17 days old (non-blocking warning at Gate 6; fails at >30 days). Next operator refreshing `openrouter.json` should clean legacy delisted `or` keys noted below.
+- Live AA endpoint v2 URL check returned HTTP 410 on direct curl, whereas `scripts/fetch_model_sources.py` used yesterday's Nov 13 AA snapshot (`fetchedAt: 2026-11-13`? Actually `MODEL_DATA_AS_OF` 2026-11-12).
+- Ongoing leads to watch next run: FAA / L3Harris official postmortem on the FTI reboot crash; Microsoft M365 post-incident report; Brazil's Caixa Vida e Previdência 7.6M LGPD breach follow-ups; FBI/FaceStealer $400M DPRK video-call crypto heist developments; Anthropic IPO roadshow (Nov 18 pricing / Nov 19 `ANT` listing); Nvidia Q3 FY27 earnings & Nov 18 congressional briefing.
+
 # Handoff — 2026-11-13 (Daily Intelligence Pipeline Run: art-384 to art-389)
 
 ## Latest: Daily Pipeline Complete — 6 Articles, Timeline + Model Watch Updated (146 Models), Verification 8/8 Passed, Newsletter Published

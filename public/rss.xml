@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 03:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 00:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>FAA Halts All U.S. Departing Flights After L3Harris Telecom Update Crash</title>
+      <link>https://nextvector.rhasan.online/article/faa-nationwide-ground-stop-l3harris-telecom-outage</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/faa-nationwide-ground-stop-l3harris-telecom-outage</guid>
+      <description>An emergency ground stop at 20:54 UTC stranded an estimated 300,000 to 400,000 passengers after a software update triggered a crash across the network linking more than 4,400 aviation facilities.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Sat, 14 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Claude Helps Logicians Unlock 663 Theorems Inside Kurt Gödel’s Shorthand Notebooks</title>
+      <link>https://nextvector.rhasan.online/article/ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems</guid>
+      <description>Helsinki University’s Jan von Plato fed 1,009 pages of obsolete Gabelsberger shorthand transcriptions to Anthropic’s AI, verifying roughly 400 results in the Coq proof assistant.</description>
+      <category>SCIENCE</category>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI Disbands Stand-Alone Robotics Team as General Model GPT-6 Astra Controls Robots Directly</title>
+      <link>https://nextvector.rhasan.online/article/openai-disbands-robotics-team-gpt-6-astra-embodied-ai</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-disbands-robotics-team-gpt-6-astra-embodied-ai</guid>
+      <description>Researchers moved under CRO Mark Chen and President Greg Brockman after an Nvidia simulation study showed Astra hitting 74.8% manipulation success versus 51.0% for specialist robot models.</description>
+      <category>AI</category>
+      <pubDate>Fri, 13 Nov 2026 23:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI and Google Launch Wallet Connections for AI Agents on the Same Day</title>
+      <link>https://nextvector.rhasan.online/article/openai-chatgpt-wallet-google-wallet-gemini-launch</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-chatgpt-wallet-google-wallet-gemini-launch</guid>
+      <description>ChatGPT Wallet enables tokenized checkout via Amex, Mastercard, and Visa for U.S. Pro subscribers, while Google Wallet adds read-only Plaid financial analysis inside Gemini.</description>
+      <category>AI</category>
+      <pubDate>Fri, 13 Nov 2026 23:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Microsoft 365 Global Outage Past 24 Hours Halts Courts, Hospitals, and Rail Networks</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-365-24-hour-global-outage-multi-cloud-debate</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-365-24-hour-global-outage-multi-cloud-debate</guid>
+      <description>A network capacity upgrade triggered cascading Exchange Online and health-check failures affecting more than 70 countries across Microsoft&#x27;s 430 million-user base.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Fri, 13 Nov 2026 22:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Hopfield-Era Energy Model CRAM Solves Reasoning Puzzles 1,000x Faster Than Looped Transformers</title>
+      <link>https://nextvector.rhasan.online/article/cram-hopfield-energy-model-outpaces-looped-reasoners</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cram-hopfield-energy-model-outpaces-looped-reasoners</guid>
+      <description>Prefrontal’s 7.7K-parameter Compact Reasoning Associative Memory trains on Sudoku-Extreme in 42 milliseconds and cuts inference FLOPs by at least 282x.</description>
+      <category>RESEARCH</category>
+      <pubDate>Fri, 13 Nov 2026 22:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>Nvidia Co-Founder Jensen Huang Resigns Immediately as CEO; CFO Colette Kress Named Interim Chief</title>
       <link>https://nextvector.rhasan.online/article/nvidia-ceo-jensen-huang-resigns-colette-kress-interim</link>
@@ -496,60 +550,6 @@
       <description>Neufangled Robotics bypasses wheeled chassis and humanoid joints with a four-anchor ceiling cable crane running Hugging Face LeRobot.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Tue, 03 Nov 2026 23:35:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Weight-Space Programming: MIT CSAIL Demonstrates LLMs Natively Reading and Writing Continuous Neural Weights</title>
-      <link>https://nextvector.rhasan.online/article/weight-space-programming-mit-csail-llms-read-write-weights</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/weight-space-programming-mit-csail-llms-read-write-weights</guid>
-      <description>Researchers demonstrate that frontier language models can parse neural architectures, decode learned game policies, and edit weights directly without backpropagation.</description>
-      <category>AI</category>
-      <pubDate>Tue, 03 Nov 2026 00:25:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>European Supermarket Freezers Sabotaged by Second Wave of Heating Cyberattacks</title>
-      <link>https://nextvector.rhasan.online/article/supermarket-freezers-across-europe-hit-by-second-wave-cyberattack</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/supermarket-freezers-across-europe-hit-by-second-wave-cyberattack</guid>
-      <description>Coordinated operational technology breach remotely switches cooling units to 50°C across Belgium, Sweden, Finland, and Ireland with zero financial extortion demands.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 00:20:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>PostHog Migrates 2-Petabyte Analytics Warehouse Off DuckDB to Trino and HogLake</title>
-      <link>https://nextvector.rhasan.online/article/posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/posthog-moves-2pb-warehouse-off-duckdb-to-trino-hoglake</guid>
-      <description>Why running analytical SQL over one trillion rows broke DuckLake&#x27;s metadata catalog and forced an architectural shift to an open distributed lakehouse.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 00:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Cloudflare Cuts DNS Tail Latency 12-Fold and Halves Propagation Delay via Targeted Zone Builds</title>
-      <link>https://nextvector.rhasan.online/article/cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/cloudflare-dns-targeted-zone-builds-halve-delay-cut-memory-85-percent</guid>
-      <description>By avoiding full-zone recompilations for 92.95% of DNS changes, Cloudflare slashed peak pipeline memory from 79 GiB to 12 GiB.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 00:10:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>BYD Ships Record 305,000 Pure EVs in October, Exceeding Entire US Quarterly Sales Volume</title>
-      <link>https://nextvector.rhasan.online/article/byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/byd-october-ev-sales-top-300k-surpassing-entire-us-quarterly-volume</guid>
-      <description>China&#x27;s leading automaker achieves 37% annual BEV growth while maritime export carrier deliveries push international volumes toward 2 million units.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 00:05:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Polyend Open-Sources Hardware Tracker Firmware and Launches Community Edition 1.0</title>
-      <link>https://nextvector.rhasan.online/article/polyend-open-sources-tracker-firmware-releases-community-edition-1</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/polyend-open-sources-tracker-firmware-releases-community-edition-1</guid>
-      <description>The boutique music hardware maker releases source code for Tracker, Tracker+, and Mini alongside custom C++ synth and audio DSP plugin SDKs.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

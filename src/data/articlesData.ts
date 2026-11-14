@@ -21298,6 +21298,311 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-390",
+    slug: "faa-nationwide-ground-stop-l3harris-telecom-outage",
+    title: "FAA Halts All U.S. Departing Flights After L3Harris Telecom Update Crash",
+    subtitle: "An emergency ground stop at 20:54 UTC stranded an estimated 300,000 to 400,000 passengers after a software update triggered a crash across the network linking more than 4,400 aviation facilities.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 92,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-14T00:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-390-faa-nationwide-ground-stop-l3harris-telecom-outage.jpg",
+    coverImageAlt: "Controllers monitoring runways and parked aircraft from inside the Seattle-Tacoma International Airport air traffic control tower.",
+    tags: ["FAA", "L3Harris", "Aviation Infrastructure", "Air Traffic Control", "Telecom Outage", "US Flights"],
+    threeQuestions: {
+      whatHappened: "At 3:54 p.m. ET (20:54 UTC) on November 13, 2026, the U.S. Federal Aviation Administration halted all departing flights nationwide citing a communications failure across Air Route Traffic Control Centers while 4,042 inbound and domestic flights were airborne.",
+      whyItMatters: "Rare nationwide ground stops have occurred only twice before since 2001, revealing how a single contractor-managed backbone—L3Harris's FAA Telecommunications Infrastructure linking over 4,400 sites—can freeze U.S. civil aviation and strand up to 400,000 travelers.",
+      whatsNext: "Investigators from multiple U.S. agencies are examining why the FTI communications update crashed on reboot while FAA technicians stagger flight resumptions into November 14 to clear hub gate and taxiway bottlenecks."
+    },
+    keyTakeaways: [
+      "CBS News and The Register reported an update to L3Harris's FAA Telecommunications Infrastructure caused the network connecting more than 4,400 facilities to reboot and crash.",
+      "Flightradar24 counted 4,042 airborne U.S.-bound flights when the order landed, while Dartmouth professor Vikrant Vaze estimated 3,000 to 4,000 flights were delayed during the initial hours.",
+      "Homeland Security Secretary Markwayne Mullin and senior U.S. officials said early checks found no sign of cyberattack and no link to Microsoft's concurrent cloud outage.",
+      "FAA contractor Air Space Intelligence issued a public statement confirming its $875 million SMART traffic management software did not trigger the suspension."
+    ],
+    content: [
+      "Sources: NBC News live coverage of November 13, 2026, and The Register's reporting updated at 23:53 UTC.",
+      "The FAA Air Traffic Control System Command Center issued its advisory ordering every departing aircraft to remain parked until further notice, noting that inbound international traffic would be cleared on a case-by-case basis. According to NBC Chicago, both O'Hare and Midway airports had entered localized ground stops minutes earlier under an equipment outage notice before the restriction expanded across all high-altitude Air Route Traffic Control Centers.",
+      "Federal officials moved quickly to separate the failure from malicious activity or overlapping enterprise cloud troubles. Department of Homeland Security Secretary Markwayne Mullin attributed the disruption to a telecommunications outage and stated there was no indication of nefarious involvement, while U.S. Transportation Secretary Sean Duffy confirmed FAA technicians were troubleshooting communications across the regional control centers. Three senior federal officials told NBC News that early diagnostics showed neither cyberattack signatures nor any overlap with Microsoft's global M365 outage.",
+      "Inside crowded terminals and cockpits, the safety freeze rapidly cascaded into physical gridlock as landing jets filled gates vacated by no outgoing departures. LiveATC feeds captured controllers at Newark Liberty International Airport warning of severe gate congestion, while a source familiar with operations told NBC News that Reagan Washington National reached full parking capacity by 6:00 p.m. ET and Chicago O'Hare approached its limit. Aviation safety expert Jeff Guzzetti noted that backup radio relays kept airborne aircraft safely separated even as airport taxiways backed up.",
+      "Beyond L3Harris's legacy FTI backbone—where the contractor has not yet issued a public comment—FAA vendor Air Space Intelligence distanced its new $875 million, 12-year Strategic Management of Airspace, Routes and Trajectories (SMART) software from the incident on X. Exact root-cause forensics on the faulty network update remain incomplete pending formal FAA and L3Harris engineering disclosures."
+    ],
+    technicalSpecs: {
+      "Alert Time": "November 13, 2026 at 20:54 UTC (3:54 p.m. ET)",
+      "Affected Network": "L3Harris FAA Telecommunications Infrastructure (4,400+ facilities)",
+      "Airborne Flights at Halt": "4,042 (Flightradar24)",
+      "Estimated Stranded Passengers": "300,000 to 400,000",
+      "Daily U.S. Domestic Volume": "~25,000 flights (Dartmouth estimate)"
+    },
+    citations: [
+      {
+        title: "FAA orders nationwide ground stop for all departing flights for 'reasons of safety'",
+        url: "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+        source: "NBC News"
+      },
+      {
+        title: "All US flights grounded by FAA",
+        url: "https://www.theregister.com/offbeat/2026/11/13/all-us-flights-grounded-by-faa/5309912",
+        source: "The Register"
+      }
+    ],
+    isHero: true,
+    isFeatured: true
+  },
+  {
+    id: "art-391",
+    slug: "ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems",
+    title: "Claude Helps Logicians Unlock 663 Theorems Inside Kurt Gödel’s Shorthand Notebooks",
+    subtitle: "Helsinki University’s Jan von Plato fed 1,009 pages of obsolete Gabelsberger shorthand transcriptions to Anthropic’s AI, verifying roughly 400 results in the Coq proof assistant.",
+    category: "science",
+    articleType: "discovery",
+    signalRating: 91,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-14T00:00:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-391-ai-deciphers-kurt-godel-shorthand-notebooks-coq-th.jpg",
+    coverImageAlt: "Fuld Hall at the Institute for Advanced Study in Princeton, New Jersey, where Kurt Gödel compiled his 1940s mathematical notebooks.",
+    tags: ["Kurt Gödel", "Claude", "Coq Proof Assistant", "University of Helsinki", "Mathematics", "Formal Verification"],
+    threeQuestions: {
+      whatHappened: "Finnish logician Jan von Plato reported on November 13, 2026, that feeding transcriptions of Kurt Gödel's 1,009-page 1940s workbooks into Anthropic's Claude yielded 663 candidate theorems—roughly 400 verified as stated and 200 repaired in the Coq proof assistant.",
+      whyItMatters: "Human scholars transcribing Gödel's obsolete German Gabelsberger shorthand had averaged only one page per week since 2017; whole-corpus AI synthesis paired with formal Coq checks compresses decades of cross-referencing into days without sacrificing mathematical rigor.",
+      whatsNext: "Von Plato plans to turn the same AI-assisted pipeline onto Gödel's unexplored physics and cosmology notebooks while historians audit how much of the reconstructed proofs belongs to Gödel versus Claude."
+    },
+    keyTakeaways: [
+      "Jan von Plato's €2.5 million ERC project covers 16 early-1940s notebooks written in obsolete Gabelsberger shorthand, legible to only about six living scholars worldwide.",
+      "Within days of receiving transcriptions and six background monographs in September 2026, Claude generated a 650-page digest spanning 14 unpursued themes in logic.",
+      "Formal verification in Coq confirmed ~400 extracted theorems as stated, repaired ~200 with sharper hypotheses, and rejected ~50 false claims—echoing Gödel's marginal 'falsch!' and 'schlecht!' notes.",
+      "Claude also traced a near-complete proof of the independence of the axiom of choice that passed Coq checks, lending concrete evidence to Gödel's disputed 1966 recollection regarding Paul Cohen's Fields Medal."
+    ],
+    content: [
+      "Source: The Guardian science report by Alex Bellos published November 13, 2026.",
+      "Since launching the transcription effort upon reaching mandatory retirement age at the University of Helsinki in 2017, Jan von Plato estimated his team took roughly a year to decode and analyze 50 workbook pages because human readers lose track of cross-references across a thousand dense pages. After computer scientists at an August conference in France suggested using Anthropic's Claude, von Plato supplied the AI with his transcribed shorthand pages alongside his own six books and secondary literature on Gödel.",
+      "The most dramatic historical test targeted Gödel's 1966 insistence that he had already proved the independence of the axiom of choice during the 1940s—before American mathematician Paul Cohen won a Fields Medal for proving both it and the continuum hypothesis independent of standard set theory. Claude found Gödel was 'just one step away,' stumbling over one flawed definition even though the correct formulation already sat in notes written two years earlier; once repaired, the architecture of Gödel's proof passed Coq.",
+      "Besides uncovering dozens of set-theory and proof-theory anticipations not published by other mathematicians until the 1970s and 1980s, Claude flagged more than a dozen logic themes that remain untouched 80 years later. Von Plato praised Gödel's structured progression from clear conceptual aims rather than blind formula manipulation.",
+      "Outside logicians urged historical caution about attribution boundaries. University of Notre Dame logic professor Joel David Hamkins, who had not yet reviewed the reconstructed proof directly, said that if Coq verification holds up it will be historically fascinating, while stressing that teasing apart Gödel's original insight from Claude's deductive scaffolding will require sustained scrutiny by mathematical historians."
+    ],
+    technicalSpecs: {
+      "Research Lead": "Jan von Plato (University of Helsinki, €2.5M ERC grant)",
+      "Source Corpus": "16 workbooks, 1,009 pages in Gabelsberger shorthand (1940s)",
+      "AI Model & Verifier": "Anthropic Claude + Coq Proof Assistant",
+      "Extracted Candidates": "663 (~400 verified, ~200 repaired, ~50 false)",
+      "Novel Themes Identified": "14 unexplored themes in mathematical logic"
+    },
+    citations: [
+      {
+        title: "‘Ahead of his time’: AI helps unlock discoveries hidden in notebooks of man who transformed maths",
+        url: "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+        source: "The Guardian"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-392",
+    slug: "openai-disbands-robotics-team-gpt-6-astra-embodied-ai",
+    title: "OpenAI Disbands Stand-Alone Robotics Team as General Model GPT-6 Astra Controls Robots Directly",
+    subtitle: "Researchers moved under CRO Mark Chen and President Greg Brockman after an Nvidia simulation study showed Astra hitting 74.8% manipulation success versus 51.0% for specialist robot models.",
+    category: "ai",
+    articleType: "analysis",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T23:30:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-392-openai-disbands-robotics-team-gpt-6-astra-embodied.jpg",
+    coverImageAlt: "Industrial six-axis yellow robotic manipulator arms executing precision paths inside a manufacturing bay.",
+    tags: ["OpenAI", "GPT-6 Astra", "Robotics", "Embodied AI", "CoRL", "Nvidia Benchmark"],
+    threeQuestions: {
+      whatHappened: "Fortune reported on November 13, 2026, that OpenAI dissolved its stand-alone robotics division, folding researchers under Chief Research Officer Mark Chen and moving applied and hardware engineers under President Greg Brockman.",
+      whyItMatters: "The reorganization challenges robotics startups raising billions on specialized spatial-intelligence brains, signaling OpenAI's bet that general frontier models like GPT-6 Astra can command physical actuators while cutting siloed burn.",
+      whatsNext: "OpenAI still targets a public humanoid robot demonstration in 2027 while trimming quarterly operating losses reported at $10.9 billion ahead of a planned funding round and potential early-2027 IPO."
+    },
+    keyTakeaways: [
+      "OpenAI's registered booth #208 at this week's CoRL robotics conference in Austin sat empty with no branding or live demo as former robotics staff attended in new roles.",
+      "An Nvidia simulated manipulation study recorded a 74.8% task success rate when wiring camera feeds and robot state straight into GPT-6 Astra, beating the 51.0% ceiling of dedicated robot policies.",
+      "OpenAI shifted away from earlier plans centered on its now-retired Sora video model toward direct control via multimodal reasoning models.",
+      "Roboticists at CMU and MIT warned cloud-hosted LLMs face latency and connectivity limits and still depend on real factory floor deployment data."
+    ],
+    content: [
+      "Source: Fortune exclusive by Wen Shao published November 13, 2026.",
+      "The dissolution ends OpenAI's second attempt at an autonomous robotics group: the company previously wound down its original robotics unit in 2020 before rebuilding one in 2024 around a short-lived partnership with Figure that terminated in February 2025. OpenAI told Fortune the latest shuffle represents deeper integration rather than retreat, pulling embodied experiments onto the same core training pipeline powering coding and reasoning products.",
+      "Economically, consolidating hardware and embodied researchers under Chen and Brockman arrives amid heightened scrutiny over compute allocation following recent operating losses reported at $10.9 billion in a single quarter. Over the past year CEO Sam Altman urged staff to cut side quests—culminating in shutting down Sora—so frontier compute stays concentrated on core revenue-generating intelligence.",
+      "Carnegie Mellon University Robotics Institute assistant professor Guanya Shi called the move a clear signal that OpenAI views physical manipulation as 'no longer a special problem' but a downstream application of general spatial reasoning. However, Shi emphasized that large models remain slow and tethered to cloud inference, arguing smaller specialized models will still be required onboard edge controllers without reliable network links.",
+      "Boston-based MIT professor and Walden Robotics CEO Russ Tedrake noted a complementary moat for industrial robotics firms: physical fleets gather deployment experience and tactile feedback inside live factories that foundation labs cannot scrape online, making better general models amplify rather than erase field data value. Generalist cofounder Pete Florence cautioned it remains unclear which starting paradigm will ultimately govern physical intelligence."
+    ],
+    technicalSpecs: {
+      "Reassigned Leadership": "CRO Mark Chen (Research) & President Greg Brockman (Applied)",
+      "Nvidia Sim Study": "74.8% (GPT-6 Astra) vs. 51.0% (specialized robot baselines)",
+      "Target Milestone": "First public humanoid demo targeted for 2027",
+      "Financial Context": "$10.9B recent quarterly operating loss"
+    },
+    citations: [
+      {
+        title: "Exclusive: OpenAI disbands stand-alone robotics team as general AI models start running robots",
+        url: "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+        source: "Fortune"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-393",
+    slug: "openai-chatgpt-wallet-google-wallet-gemini-launch",
+    title: "OpenAI and Google Launch Wallet Connections for AI Agents on the Same Day",
+    subtitle: "ChatGPT Wallet enables tokenized checkout via Amex, Mastercard, and Visa for U.S. Pro subscribers, while Google Wallet adds read-only Plaid financial analysis inside Gemini.",
+    category: "ai",
+    articleType: "breaking",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T23:00:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-393-openai-chatgpt-wallet-google-wallet-gemini-launch.jpg",
+    coverImageAlt: "Dissected contactless payment card showing its embedded metallic RF antenna coil and chip circuitry.",
+    tags: ["OpenAI", "ChatGPT Wallet", "Google Wallet", "Gemini", "Agentic Commerce", "Plaid"],
+    threeQuestions: {
+      whatHappened: "On November 13, 2026, OpenAI launched ChatGPT Wallet with Amex, Mastercard, and Visa for biometrically authorized agent purchases, hours alongside Google integrating Google Wallet and optional Plaid account linking into Gemini.",
+      whyItMatters: "The twin launches formalize two competing trust models for personal financial AI: OpenAI deploys single-use payment network tokens for active agent checkout, whereas Google restricts Gemini to strict read-only transaction auditing.",
+      whatsNext: "OpenAI will expand ChatGPT Wallet beyond its initial U.S. ChatGPT Pro rollout across partners including Stripe, Adyen, and Checkout.com, while Google extends Memory Summary controls alongside Connected Apps."
+    },
+    keyTakeaways: [
+      "ChatGPT Wallet rolls out initially to U.S. ChatGPT Pro users aged 18+ across ChatGPT's 1.2 billion weekly users, keeping raw card numbers hidden from both agents and merchants.",
+      "Each OpenAI purchase triggers a user review screen plus biometric verification (Face ID or fingerprint) and preserves standard card rewards and dispute rights.",
+      "Google Wallet inside Gemini connects via '@Google Wallet' on web, Android, and iOS in the U.S., generating live cash-flow charts and detecting sneaky subscription price hikes.",
+      "Google explicitly bars Gemini from moving, managing, or investing funds and added an editable Memory Summary panel under Personal Intelligence settings."
+    ],
+    content: [
+      "Sources: OpenAI announcement ('Introducing ChatGPT Wallet', November 13, 2026) and Google Blog ('Connect Google Wallet to Gemini for personal finance insights', November 13, 2026).",
+      "OpenAI built ChatGPT Wallet directly atop card-network tokenization alongside American Express, Mastercard, and Visa so agents only handle cryptographic payment tokens covering an isolated transaction rather than permanent card credentials. Launch infrastructure spans payment processors Adyen, Checkout.com, and Stripe as well as fraud-screening partners Forter, Riskified, Sardine, and Signifyd, detailed inside a newly published Commerce Partner Playbook at developers.openai.com/commerce.",
+      "Card-network executives framed biometric approval gates as mandatory guardrails for consumer adoption. American Express EVP Luke Gebb called the rollout Amex's first Agentic Commerce Experiences integration, Mastercard EVP Sherri Haymond argued an agent purchase 'should strengthen, not bypass, the trust built into payments,' and Visa Head of Global Growth Rubail Birwadker emphasized linking user-approved purchases into incumbent banking rails.",
+      "Google took a deliberately narrower, analytics-first route inside Gemini's Personal Intelligence suite, allowing U.S. users on mobile and desktop to pair Wallet passes—or link bank and credit accounts through Plaid—solely for read-only analysis. Tagging @Google Wallet lets users request dynamic spending charts, audit recurring subscriptions whose prices rose over the past year, and model holiday budgets against the prior year's ledger.",
+      "Neither rollout opens autonomous unattended spending without human approval, and both remain restricted to eligible U.S. cardholders or users during initial deployment with no international release dates disclosed."
+    ],
+    technicalSpecs: {
+      "OpenAI Cohort": "U.S. ChatGPT Pro subscribers (18+), eligible U.S. cards",
+      "Card & PSP Partners": "Amex, Mastercard, Visa; Adyen, Checkout.com, Stripe",
+      "Google Scope": "U.S. Gemini app (web/Android/iOS), read-only via Plaid option",
+      "Weekly ChatGPT Audience": "1.2 billion users cited by OpenAI"
+    },
+    citations: [
+      {
+        title: "Introducing ChatGPT Wallet",
+        url: "https://openai.com/index/introducing-chatgpt-wallet/",
+        source: "OpenAI"
+      },
+      {
+        title: "Connect Google Wallet to Gemini for personal finance insights",
+        url: "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+        source: "Google Blog"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-394",
+    slug: "microsoft-365-24-hour-global-outage-multi-cloud-debate",
+    title: "Microsoft 365 Global Outage Past 24 Hours Halts Courts, Hospitals, and Rail Networks",
+    subtitle: "A network capacity upgrade triggered cascading Exchange Online and health-check failures affecting more than 70 countries across Microsoft's 430 million-user base.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 87,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T22:30:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-394-microsoft-365-24-hour-global-outage-multi-cloud-de.jpg",
+    coverImageAlt: "Close-up of enterprise network switches and color-coded patch cables inside an infrastructure server rack.",
+    tags: ["Microsoft 365", "Exchange Online", "Cloud Outage", "Digital Resilience", "Enterprise IT"],
+    threeQuestions: {
+      whatHappened: "A faulty 'network capacity upgrade' beginning at 17:54 GMT on November 12 triggered nearly 24 to 27+ hours of global outages across Exchange Online, Outlook, Teams, and over 15 Microsoft 365 services in 70+ countries.",
+      whyItMatters: "With over 430 million users worldwide, Exchange Online's failure locked out the U.S. House of Representatives, Philippines Supreme Court, NHS hospitals, and COP31 officials, igniting parliamentary warnings over single-vendor concentration.",
+      whatsNext: "Microsoft reported gradual regional stabilization across North America, Europe, and APAC on November 13 while draining queued mail and preparing a promised full post-incident root-cause report."
+    },
+    keyTakeaways: [
+      "Servers failed automated health checks during the Thursday upgrade, and remediation VMs repeatedly stalled in corrupted sync states as fixes struggled past the 24-hour mark.",
+      "Microsoft and BBC reporting confirmed the breakdown was neither a cyberattack nor caused by autonomous AI agents, though Copilot and Intune both degraded alongside Exchange.",
+      "Impacted institutions spanned Japan's government, an Australian intelligence agency, Canadian rail updates, UK courts and GPs, and U.S. homebuyers facing delayed property closings.",
+      "UK Commons Science and Technology chair Dame Chi Onwurah warned the incident exposes severe resilience gaps across national digital infrastructure."
+    ],
+    content: [
+      "Sources: BBC News report by Rachel Clun (November 13, 20:49 UTC) and The Register reporting on Microsoft RSS status logs.",
+      "Operational logs preserved via Microsoft's status feed revealed a stubborn cascading failure rather than a clean rollback. Early remediation attempts stalled after scaled-up virtual machines entered unresponsive states that prevented configuration updates from syncing, leaving administrators in Australia dubbing the collapse the 'Microsoft long weekend' and German workers joking about dusting off office fax machines.",
+      "Because Exchange Online underpins authentication and calendar routing for adjacent tools, disruptions spread across more than 15 Microsoft services—from Copilot to Teams and Intune. UK cyber minister Liz Lloyd noted emergency 999 systems avoided severe breakdown, yet NHS primary-care clinics, schools, police departments, and COP31 climate negotiators in Antalya, Turkey lost mail access, while South African winemaker Peter Pentz saw export operations grind to a standstill.",
+      "A Microsoft spokesperson said the company was 'deeply sorry for the disruption,' stressing that staged recovery was required to avoid overloading backend databases while queued messages drained. Nevertheless, rivals and security chiefs seized on the prolonged blackout to challenge monoculture enterprise procurement.",
+      "Civo CEO Mark Boost argued public infrastructure had concentrated into too few hands, Nextcloud co-founder Jos Poortvliet warned companies locked into one vendor cannot fail over air-gapped backups, and Adaptavist Field CTO Matt Saunders urged enterprises to rehearse offline continuity plans—noting a full second email stack is rarely practical to maintain."
+    ],
+    technicalSpecs: {
+      "Onset Timestamp": "November 12, 2026 around 17:54–18:26 GMT",
+      "Duration": "Nearly 24 to 27+ hours before broad regional recovery",
+      "Geographic & User Reach": "More than 70 countries; 430M+ Microsoft 365 users",
+      "Primary Trigger": "Network capacity upgrade causing VM sync and health-check failures"
+    },
+    citations: [
+      {
+        title: "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+        url: "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o",
+        source: "BBC News"
+      },
+      {
+        title: "Microsoft's massive M365 outage stretches past 27 hours as its fixes keep failing",
+        url: "https://www.theregister.com/saas/2026/11/13/microsofts-massive-m365-outage-stretches-past-27-hours-as-its-fixes-keep-failing/5309609",
+        source: "The Register"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-395",
+    slug: "cram-hopfield-energy-model-outpaces-looped-reasoners",
+    title: "Hopfield-Era Energy Model CRAM Solves Reasoning Puzzles 1,000x Faster Than Looped Transformers",
+    subtitle: "Prefrontal’s 7.7K-parameter Compact Reasoning Associative Memory trains on Sudoku-Extreme in 42 milliseconds and cuts inference FLOPs by at least 282x.",
+    category: "research",
+    articleType: "research-explained",
+    signalRating: 86,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-13T22:00:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-395-cram-hopfield-energy-model-outpaces-looped-reasone.jpg",
+    coverImageAlt: "Superparamagnetic ferrofluid forming crisp equilibrium spikes over a magnetic field, illustrating physical energy minimization.",
+    tags: ["Energy-Based Models", "Hopfield Networks", "Looped Transformers", "CRAM", "Reasoning Benchmarks", "arXiv"],
+    threeQuestions: {
+      whatHappened: "In arXiv preprint 2611.17309 posted November 12, 2026, Prefrontal researchers introduced CRAM—a learned 1980s Hopfield-Tank pairwise energy model that hits 99.996% to 100% accuracy on Sudoku-Extreme after 42 ms of H200 training.",
+      whyItMatters: "Training small explicit energy weights via local objectives eliminates slow backpropagation through time (BPTT), running at least 1,000x faster to train and using 282x fewer inference FLOPs while exposing puzzle benchmarks as saturated.",
+      whatsNext: "The authors caution against relying on Sudoku or simple mazes to judge looped reasoning scale-up, noting latent extensions like those tested on Maze-Hard are needed before tackling complex benchmarks such as ARC-AGI."
+    },
+    keyTakeaways: [
+      "On one Nvidia H200 GPU across three seeds, CRAM solved 100.00% of Sudoku-Extreme with 7.7K nonzero parameters versus 5M to 27M parameters and 1.2 to 9.0 hours of training in looped baselines.",
+      "On Maze-Unique, CRAM compressed down to 18 nonzero parameters, trained in 132 milliseconds, and used 8.37e5 FLOPs per puzzle against baselines spending 2.0 to 23.2 hours.",
+      "CRAM replaces separate learned halting heads with native energy-threshold stopping and parallel noisy Gibbs chains (`NChains=4` on Sudoku) that adapt compute to difficulty.",
+      "Because learned pairwise weights match human-interpretable rule constraints—with a hand-set energy version also hitting 100%—the authors argue puzzle benchmarks flatter looped architectures."
+    ],
+    content: [
+      "Source: arXiv:2611.17309v1 ('Classical Energies Learn to Reason 1,000x Faster than Looped Models', submitted November 12, 2026 by Benjamin Hoover, Hugh Blayney, and James C. R. Whittington at Prefrontal in London).",
+      "Looped neural networks repeatedly pass states through shared transformer blocks to simulate thinking time, adding external halting modules and differentiating through entire rollout trajectories via unstable truncated BPTT. Prefrontal's team flipped that paradigm by resurrecting Hopfield and Tank's 1980s constraint-energy formulation: CRAM defines a mean-field free energy pairing local cell entropy with learned pairwise compatibility matrices and clamps known puzzle clues before running focused Gibbs updates.",
+      "Benchmark comparisons underscored extreme efficiency gaps on a single H200 GPU. Where prior looped reasoners spanned 54.62% on HRM (27.0M parameters, 2.20e11 FLOPs, 1.2 hours), 85.73% on TRM (5.0M parameters, 2.5 hours), and 99.85% on EBR (1.8M parameters, 3.37e11 FLOPs, 2.8 hours), CRAM converged via pseudolikelihood without differentiating through any solver in 0.04 seconds at 2.02e9 FLOPs per puzzle.",
+      "Equally revealing was CRAM's inspectability: its trained interaction matrices visibly encode exact row, column, and box exclusion rules and learn clean Sudoku weights from an order of magnitude fewer examples than looped models. Using hand-set weights directly translated from puzzle rules also scored 100.00% on both Sudoku-Extreme and Maze-Unique.",
+      "The researchers stressed an important boundary on what these numbers imply for general AI reasoning: CRAM's pure pairwise graph cannot represent higher-order abstractions needed for open-ended benchmarks like ARC-AGI on its own, though a small hidden-layer latent variant handled harder mazes in Appendix F."
+    ],
+    technicalSpecs: {
+      "Preprint & Lab": "arXiv:2611.17309v1 (Prefrontal, London)",
+      "Sudoku-Extreme CRAM": "100.00 ± 0.00% (99.996% 42 ms seed-0), 7.7K params, 2.02e9 FLOPs",
+      "Maze-Unique CRAM": "100.00 ± 0.00%, 18 nonzero params, 132 ms fit, 8.37e5 FLOPs",
+      "Hardware Baseline": "Single Nvidia H200 GPU (3 training seeds)"
+    },
+    citations: [
+      {
+        title: "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+        url: "https://arxiv.org/abs/2611.17309v1",
+        source: "arXiv"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

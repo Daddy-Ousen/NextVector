@@ -1147,53 +1147,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Friday, November 13, 2026",
-  summary: "Nvidia co-founder Jensen Huang resigned immediately after 33 years amid federal inquiries and a $550 billion market slide, while Google launched Gemini 4 Hydrogen alongside its dynamic Antigravity Orchestrator. Meanwhile, checkpoint forensics traced Nvidia Blackwell GPU fingerprints in six Chinese frontier models, a critical mod_http2 flaw hit Apache servers, and radio astronomers mapped eight-minute pulses from a rare white dwarf binary.",
+  date: "Saturday, November 14, 2026",
+  summary: "A faulty update to L3Harris's aviation telecom backbone triggered a rare nationwide U.S. ground stop stranding hundreds of thousands of passengers just as Microsoft began recovering from a 24-hour global outage. Meanwhile, Anthropic's Claude helped verify 400 unpublished Kurt Gödel theorems in Coq, OpenAI folded its robotics unit into core GPT-6 Astra teams, both OpenAI and Google rolled out AI Wallet tools, and Prefrontal demonstrated 1,000x faster puzzle reasoning with Hopfield-era energy models.",
   items: [
     {
       id: 'brief-1',
-      headline: "Jensen Huang steps down immediately as Nvidia CEO; Colette Kress named interim chief",
+      headline: "FAA Halts All U.S. Departing Flights After L3Harris Telecom Update Crash",
       category: "technology" as const,
       urgency: "Critical Signal" as const,
-      summary: "Nvidia appointed CFO Colette Kress as Interim CEO and Harvey C. Jones as Board Chair while former SDNY acting U.S. Attorney Joon H. Kim leads an independent inquiry. The shake-up follows a five-day $550B market capitalization drop and bipartisan congressional briefing demands.",
-      whyItMatters: "A sudden leadership vacuum at the supplier underpinning roughly 7% of the S&P 500 injects governance and national security uncertainty across the AI hardware stack.",
-      articleSlug: "nvidia-ceo-jensen-huang-resigns-colette-kress-interim"
+      summary: "A nationwide ground stop issued at 20:54 UTC froze departures across U.S. airports while 4,042 flights remained airborne and up to 400,000 passengers waited in terminals. Reports linked the outage to an update crash on L3Harris's FAA Telecommunications Infrastructure.",
+      whyItMatters: "This is only the third U.S. nationwide flight halt since 2001, exposing single-vendor infrastructure fragility across more than 4,400 aviation sites.",
+      articleSlug: "faa-nationwide-ground-stop-l3harris-telecom-outage"
     },
     {
       id: 'brief-2',
-      headline: "Google ships Gemini 4 Hydrogen at $1.50/$7.50 per 1M tokens with Antigravity Orchestrator",
-      category: "ai" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Hydrogen delivers 53.9 (xhigh) and 50.8 (high) on the Artificial Analysis Intelligence Index alongside 57% on Terminal-Bench 4.1 across a 1M context window. Google Antigravity's Orchestrator dynamically alternates between Carbon and Hydrogen mid-task, cutting quota usage 24%.",
-      whyItMatters: "Pairing flagship reasoning planning with sub-flagship execution slashes multi-step coding latency and token spend without manual routing heuristics.",
-      articleSlug: "google-releases-gemini-4-hydrogen-and-antigravity-orchestrator"
+      headline: "Claude Helps Logicians Unlock 663 Theorems Inside Kurt Gödel’s Shorthand Notebooks",
+      category: "science" as const,
+      urgency: "High Impact" as const,
+      summary: "Helsinki University's Jan von Plato used Claude to digest 1,009 pages of Kurt Gödel's obsolete Gabelsberger shorthand notes in days, surfacing 663 candidate theorems. About 400 verified cleanly inside the Coq proof assistant alongside a near-proof of the axiom of choice.",
+      whyItMatters: "Pairing frontier language models with formal verifiers turns decades-slow archival deciphering into rapid, mathematically audited historical discovery.",
+      articleSlug: "ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems"
     },
     {
       id: 'brief-3',
-      headline: "PRNG checkpoint forensics links six Chinese frontier models to Nvidia Blackwell chips",
-      category: "research" as const,
+      headline: "OpenAI Disbands Stand-Alone Robotics Team as General Model GPT-6 Astra Controls Robots Directly",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Unemployment Labs recovered cuRAND thread grid signatures across 148-SM B200/B300 and 152-SM GB200/GB300 GPUs in models from DeepSeek, Moonshot AI, MiniMax, and Ant Group. Rented Blackwell machines reproduced preserved rows in DeepSeek-V4-Flash and Kimi K3 bit for bit.",
-      whyItMatters: "Model weights themselves act as verifiable hardware audit artifacts for step-zero training clusters, even without leaked internal documents.",
-      articleSlug: "checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus"
+      summary: "OpenAI dissolved its dedicated robotics unit and moved staff under Mark Chen and Greg Brockman after GPT-6 Astra scored 74.8% in an Nvidia manipulation test against 51.0% for specialist bots. The shift trims siloed burn alongside recent $10.9B quarterly losses.",
+      whyItMatters: "Betting on multimodal frontier models for embodied control challenges pure-play robotics startups funded to build dedicated spatial brains.",
+      articleSlug: "openai-disbands-robotics-team-gpt-6-astra-embodied-ai"
     },
     {
       id: 'brief-4',
-      headline: "Critical HTTP/2 race condition CVE-2026-119618 hits Apache HTTP Server deployments",
-      category: "technology" as const,
+      headline: "OpenAI and Google Launch Wallet Connections for AI Agents on the Same Day",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Discovered independently by Anthropic and Google Cloud, improper locking in mod_http2's assign_headers() triggers heap corruption and unauthenticated RCE on Apache 2.4.55 through 2.4.70. Wiz estimates 64% of cloud environments harbor vulnerable packages, urging immediate upgrades to 2.4.71.",
-      whyItMatters: "Half of scanned cloud estates expose affected Apache instances publicly, making unpatched HTTP/2 listeners high-value lateral movement targets.",
-      articleSlug: "apache-http-server-cve-2026-119618-critical-rce-mod-http2"
+      summary: "OpenAI debuted ChatGPT Wallet with Amex, Mastercard, and Visa for tokenized, biometrically verified checkouts by U.S. Pro subscribers. Hours away, Google linked Google Wallet and Plaid into Gemini solely for read-only budgeting and subscription audits.",
+      whyItMatters: "The dual rollout draws a sharp line between network-tokenized agent checkout and read-only financial copilot guardrails.",
+      articleSlug: "openai-chatgpt-wallet-google-wallet-gemini-launch"
     },
     {
       id: 'brief-5',
-      headline: "Eight-minute radio pulses traced to first white dwarf orbiting a Sun-like star",
-      category: "science" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Curtin University astronomers linked long-period transient GPM J071507−114153 over 5,000 light-years away to a spinning white dwarf circling a G-type stellar twin. Orbital radio timing isolated the compact emitter and captured magnetic plasma prominences on the Sun-like star.",
-      whyItMatters: "Resolving a white dwarf beside a G-type star rather than a red dwarf expands both the origins of mysterious long-period transients and remote stellar-flare probes.",
-      articleSlug: "rare-star-system-gpm-j071507-white-dwarf-sun-like-radio-pulses"
+      headline: "Microsoft 365 Global Outage Past 24 Hours Halts Courts, Hospitals, and Rail Networks",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "A faulty network capacity upgrade left Exchange Online, Teams, Outlook, and Copilot degraded across 70+ countries for more than a day as VMs stalled in bad states. UK hospitals, U.S. lawmakers, courts, and COP31 delegates lost access.",
+      whyItMatters: "Prolonged single-cloud outages force governments and enterprises to confront monoculture dependencies across daily mail and authentication.",
+      articleSlug: "microsoft-365-24-hour-global-outage-multi-cloud-debate"
     }
   ]
 };
@@ -1201,32 +1201,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Leadership Shock",
-    text: "Jensen Huang resigns immediately as Nvidia CEO; CFO Colette Kress takes over as interim.",
-    articleSlug: "nvidia-ceo-jensen-huang-resigns-colette-kress-interim"
+    tag: "Aviation Halt",
+    text: "FAA grounds all U.S. departures at 20:54 UTC after L3Harris telecom update crashes ATC lines.",
+    articleSlug: "faa-nationwide-ground-stop-l3harris-telecom-outage"
   },
   {
     id: 'sig-2',
-    tag: "Frontier Models",
-    text: "Google launches Gemini 4 Hydrogen (AA 54 xhigh) and dynamic Antigravity Orchestrator.",
-    articleSlug: "google-releases-gemini-4-hydrogen-and-antigravity-orchestrator"
+    tag: "Math History",
+    text: "Claude digests 1,009 Gödel shorthand pages; Coq verifies ~400 newly uncovered theorems.",
+    articleSlug: "ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems"
   },
   {
     id: 'sig-3',
-    tag: "Compute Forensics",
-    text: "cuRAND initialization traces link six Chinese AI models to Nvidia Blackwell B200/GB200s.",
-    articleSlug: "checkpoint-forensics-links-chinese-ai-models-to-blackwell-gpus"
+    tag: "Embodied Shift",
+    text: "OpenAI disbands stand-alone robotics team as GPT-6 Astra hits 74.8% in robot manipulation.",
+    articleSlug: "openai-disbands-robotics-team-gpt-6-astra-embodied-ai"
   },
   {
     id: 'sig-4',
-    tag: "Cloud Security",
-    text: "Apache mod_http2 RCE CVE-2026-119618 exposes 64% of cloud environments until 2.4.71 patch.",
-    articleSlug: "apache-http-server-cve-2026-119618-critical-rce-mod-http2"
+    tag: "Agent Commerce",
+    text: "ChatGPT Wallet launches tokenized Amex/Visa/MC checkout; Gemini adds read-only Wallet sync.",
+    articleSlug: "openai-chatgpt-wallet-google-wallet-gemini-launch"
   },
   {
     id: 'sig-5',
-    tag: "Compiler & Cargo",
-    text: "Rust 1.100 stabilizes the ! never type, Allocator API, and Cargo crate cooldown filters.",
-    articleSlug: "rust-1-100-stabilizes-never-type-allocator-api-cargo-cooldowns"
+    tag: "Cloud Outage",
+    text: "Microsoft 365 disruption passes 24 hours across 70+ countries after capacity upgrade fails.",
+    articleSlug: "microsoft-365-24-hour-global-outage-multi-cloud-debate"
   }
 ];

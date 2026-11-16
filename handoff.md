@@ -1,3 +1,34 @@
+# Handoff — 2026-11-16 (Daily Intelligence Pipeline Run: art-396 to art-401)
+
+## Latest: Daily Pipeline Complete — 6 Articles Verified (8/8 Gates Passed), Qwen4-Max Added, Timeline + Snapshots Updated, Content & Newsletter Pushed
+**By:** Antigravity (Gemini 4 Hydrogen) · **Date:** Monday, November 16, 2026 (03:46 UTC)  
+**Repo:** `d:\AntigravityProjects\News` (Branch: `main`, Content Commit: `adc3d56`)  
+**Catalog State:** 401 articles (`art-1` to `art-401`), 146 curated models (`model-qwen4-max` added; `model-laguna-s-2-1` retired to `dropped_ids` with 32 redirects; 40 AA-indexed, 116 Arena-ranked), 6 leaderboards, 89 timeline events (`time-2026-11-14-starship-ship-catch`), Daily Briefing & Live Signals synced to `Monday, November 16, 2026`.
+
+### What Was Done
+1. **Live Intelligence Harvest & Lab Newsroom Audit:** Ran `npm run harvest` (`pipeline_runs/harvest-2026-11-16.json`: HN 60, BBC 5, arXiv 30, OpenRouter 18, HF 0) and audited official newsrooms (`anthropic.com/news`, `blog.google/technology/ai/`, `deepmind.google/discover/blog/`, `ai.meta.com/blog/`, `mistral.ai/news/`, `nvidianews.nvidia.com/`, plus `openai.com/news/` and `x.ai/news` via browser). Discovered OpenAI's Nov 15 physics blog post (`step-toward-defining-the-standard-model/`) and `qwen/qwen4-max` (`2026-11-16T02:18:46Z`) via harvest/OpenRouter.
+2. **Primary-Source Extraction (No Facts From Memory):** Read all primary pages directly (`spacex.com/launches/starship-flight-15`, `space.com` Flight 15 reports, `qwen.ai/blog?id=qwen4-max`, `litnews.ai` N.D. Cal. `Garciaguirre` order, `bbc.co.uk/news/articles/cwn83gxemk35o`, `openai.com/index/step-toward-defining-the-standard-model/`, `arxiv.org/abs/2610.09093`, and `iter.ca/post/ubo-uxss/`). Dropped out-of-window items (`eff.org` ALPR Nov 9, `arXiv:2611.17846v1` Nov 13 07:29 UTC, `forum.torproject.org` Nov 13 19:35 UTC) and skipped secondary techspot SSL error in favor of primary court/lab sources.
+3. **Model Watch (`model-qwen4-max`) & Snapshot Sync:**
+   - Added `model-qwen4-max` (`Qwen4 Max`, Alibaba Cloud, `or`: `qwen/qwen4-max`, `aa`: `qwen4-max` -> AA Index `42.9`, `2.4T backbone (+328B N-gram), 71B active (MoE)`, `$1.50/$4.50/$0.075`, `1M` context, `text+image+video->text`).
+   - Cleaned 5 delisted OpenRouter `"or"` keys noted in previous handoff (`model-o4-mini`, `model-minimax-m2-1`, `model-minimax-m2`, `model-step-3-5-flash` kept via Arena/AA/SWE; unreferenced `model-laguna-s-2-1` moved to `dropped_ids` adding clean `vercel.json` redirect).
+   - Refreshed `openrouter.json` (`468` rows), `artificial_analysis.json` (`265` rows, `40` tracked), `osworld_verified.json` (`144`), `swebench_verified.json` (`180`), and `google_pricing.json` (`28`), preserving monotonic `arena_text.json`. Zero Gate 6 warnings.
+4. **Six New Articles (`art-396`..`art-401`) + Timeline Event + Briefing + Ticker:**
+   - `art-396` *(Hero, Featured, science/breaking, 95, Timeline `time-2026-11-14-starship-ship-catch`)* — `SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms for the First Time` (`spacex-starship-flight-15-first-upper-stage-catch`)
+   - `art-397` *(Featured, ai/model-report, 91, `relatedModelId: "model-qwen4-max"`)* — `Alibaba Launches Qwen4-Max With 2.4T MoE Backbone, 1M Context, and Native Video Input` (`alibaba-qwen4-max-2-4t-moe-1m-context-launch`)
+   - `art-398` *(Featured, technology/analysis, 89)* — `Judge Refuses to Dismiss DRAM Supply Conspiracy Suit Against Samsung, SK Hynix, and Micron` (`judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit`)
+   - `art-399` *(ai/breaking, 88)* — `Italy Fines Meta €805M Over Unconsented Facebook Access to 20 Million Users’ Photos` (`italy-fines-meta-805m-facebook-photo-gallery-access`)
+   - `art-400` *(research/research-explained, 88)* — `OpenAI and UCSB Physicist Detail GPT-6 Astra’s Role in Lattice Standard Model Candidate Proof` (`openai-ucsb-gpt-6-astra-lattice-standard-model-proof`)
+   - `art-401` *(technology/deep-dive, 86)* — `One-Click Universal XSS in uBlock Origin Exposed Extension Filter Engine via GPT-5.6 Sol` (`ublock-origin-one-click-uxss-element-picker-gpt-5-6-sol`)
+5. **Checks Passed (Zero Errors):** `python scripts/add_articles.py pipeline_runs/2026-11-16.json --check` and write pass; `npm run images`; `npm run build` (`576` static HTML files, `sitemap.xml` `574` URLs, `rss.xml` `60` items); `npm run verify` (`[SUCCESS] ALL 8 RELEASE GATES PASSED`, 0 snapshot age warnings); `npm run lint` (`0` errors, `112` pre-existing warnings).
+
+### Open / Watch Items
+- **Deferred / Follow-up Leads:**
+  - *ULA Vulcan Centaur Failure & 40 Amazon Leo Satellites Lost* (`Space.com` / `Reuters` Nov 15): watch official ULA anomaly investigation findings.
+  - *Phantasialand Chlorine Gas Injury From M365 Outlook Failure* (`WDR` Nov 14, 15 guests injured): dramatic downstream incident; track Microsoft post-incident report & German regulatory investigation.
+  - *FAA Nov 13 Ground Stop Fallout* (`L3Harris` Nov 14 release + controller/GAO scrutiny) and *Jensen Huang Nvidia CEO Comeback Talks* (`FT` / `Reuters` Nov 15) ahead of Nvidia's Nov 17 Q3 FY27 results & Nov 18 congressional briefing.
+  - *Anthropic IPO Roadshow* (expected Nov 18 pricing / Nov 19 Nasdaq `ANT` debut).
+- **Gotcha Reminder:** Keep browser subagent tasks to 2 URLs max per call so the webview script never times out mid-batch; `forum.torproject.org` exposes clean `.json` topic endpoints; `fetch_model_sources.py` direct AA endpoint is `/api/v2/language/models/free`, and refreshing `openrouter.json` works cleanly now that dead `"or"` keys are cleared.
+
 # Handoff — 2026-11-14 (Daily Intelligence Pipeline Run: art-390 to art-395)
 
 ## Latest: Daily Pipeline Complete — 6 Articles Verified (8/8 Gates Passed), Content Pushed, Newsletter Published

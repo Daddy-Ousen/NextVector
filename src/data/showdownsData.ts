@@ -305,11 +305,11 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
     "modelIdB": "model-claude-opus-5-5",
     "seoTitle": "DeepSeek-V4-Pro-0813 vs Claude Opus 5.5: Arena Score, Price & Context | NextVector",
     "seoDescription": "DeepSeek-V4-Pro-0813 vs Claude Opus 5.5 side by side: arena.ai text score, list price per 1M tokens, context window and licence, with sources. Data checked 2026-11-12.",
-    "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4-Pro-0813 scores 1445 (±7, #67) and Claude Opus 5.5 scores 1513 (±6, #2). Claude Opus 5.5 leads by 68 points, outside the margin of error. DeepSeek-V4-Pro-0813: $0.66 input / $1.98 output per 1M tokens. Claude Opus 5.5: $4.00 / $20.00. Blended at 3 input : 1 output, DeepSeek-V4-Pro-0813 costs 88% less ($0.99 vs $8.00 per 1M tokens). Context windows are about the same: DeepSeek-V4-Pro-0813 1M tokens, Claude Opus 5.5 1M tokens. DeepSeek-V4-Pro-0813 has open weights (MIT) and can be self-hosted; Claude Opus 5.5 is available only as a hosted API.",
+    "executiveVerdict": "On the arena.ai text leaderboard, DeepSeek-V4-Pro-0813 scores 1445 (±7, #67) and Claude Opus 5.5 scores 1513 (±6, #2). Claude Opus 5.5 leads by 68 points, outside the margin of error. DeepSeek-V4-Pro-0813: $0.111 input / $4.44 output per 1M tokens. Claude Opus 5.5: $4.00 / $20.00. Blended at 3 input : 1 output, DeepSeek-V4-Pro-0813 costs 85% less ($1.19 vs $8.00 per 1M tokens). Context windows are about the same: DeepSeek-V4-Pro-0813 1M tokens, Claude Opus 5.5 1M tokens. DeepSeek-V4-Pro-0813 has open weights (MIT) and can be self-hosted; Claude Opus 5.5 is available only as a hosted API.",
     "verdictA": {
       "title": "Where DeepSeek-V4-Pro-0813 leads (by the data):",
       "points": [
-        "88% lower blended list price ($0.99 vs $8.00 per 1M tokens).",
+        "85% lower blended list price ($1.19 vs $8.00 per 1M tokens).",
         "Open weights (MIT): can be self-hosted."
       ]
     },
@@ -326,7 +326,7 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
       },
       {
         "question": "Which is cheaper: DeepSeek-V4-Pro-0813 or Claude Opus 5.5?",
-        "answer": "DeepSeek-V4-Pro-0813: $0.66 input / $1.98 output per 1M tokens. Claude Opus 5.5: $4.00 / $20.00. Blended at 3 input : 1 output, DeepSeek-V4-Pro-0813 costs 88% less ($0.99 vs $8.00 per 1M tokens)."
+        "answer": "DeepSeek-V4-Pro-0813: $0.111 input / $4.44 output per 1M tokens. Claude Opus 5.5: $4.00 / $20.00. Blended at 3 input : 1 output, DeepSeek-V4-Pro-0813 costs 85% less ($1.19 vs $8.00 per 1M tokens)."
       },
       {
         "question": "Which has the larger context window?",
@@ -388,11 +388,11 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
     "modelIdB": "model-qwen3-5-397b-a17b",
     "seoTitle": "Mistral Large 3 vs Qwen3.5-397B-A17B: Arena Score, Price & Context | NextVector",
     "seoDescription": "Mistral Large 3 vs Qwen3.5-397B-A17B side by side: arena.ai text score, list price per 1M tokens, context window and licence, with sources. Data checked 2026-11-12.",
-    "executiveVerdict": "On the arena.ai text leaderboard, Mistral Large 3 scores 1429 (±3, #99) and Qwen3.5-397B-A17B scores 1438 (±3, #84). Qwen3.5-397B-A17B leads by 9 points, outside the margin of error. Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.50 / $3.60. Blended at 3 input : 1 output, Mistral Large 3 costs 41% less ($0.75 vs $1.27 per 1M tokens). Both accept 256K tokens. Both publish open weights (Apache 2.0; Apache 2.0), so both can be self-hosted.",
+    "executiveVerdict": "On the arena.ai text leaderboard, Mistral Large 3 scores 1429 (±3, #99) and Qwen3.5-397B-A17B scores 1438 (±3, #84). Qwen3.5-397B-A17B leads by 9 points, outside the margin of error. Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.45 / $3.00. Blended at 3 input : 1 output, Mistral Large 3 costs 31% less ($0.75 vs $1.09 per 1M tokens). Both accept 256K tokens. Both publish open weights (Apache 2.0; Apache 2.0), so both can be self-hosted.",
     "verdictA": {
       "title": "Where Mistral Large 3 leads (by the data):",
       "points": [
-        "41% lower blended list price ($0.75 vs $1.27 per 1M tokens)."
+        "31% lower blended list price ($0.75 vs $1.09 per 1M tokens)."
       ]
     },
     "verdictB": {
@@ -408,7 +408,7 @@ export const PRESET_SHOWDOWNS: PresetShowdown[] = [
       },
       {
         "question": "Which is cheaper: Mistral Large 3 or Qwen3.5-397B-A17B?",
-        "answer": "Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.50 / $3.60. Blended at 3 input : 1 output, Mistral Large 3 costs 41% less ($0.75 vs $1.27 per 1M tokens)."
+        "answer": "Mistral Large 3: $0.50 input / $1.50 output per 1M tokens. Qwen3.5-397B-A17B: $0.45 / $3.00. Blended at 3 input : 1 output, Mistral Large 3 costs 31% less ($0.75 vs $1.09 per 1M tokens)."
       },
       {
         "question": "Which has the larger context window?",
@@ -447,11 +447,11 @@ export const GUIDE_PICKS: GuidePick[] = [
     "id": "budget",
     "title": "Best Arena score under $0.20 blended",
     "rule": "Highest Arena score with a blended list price under $0.20 per 1M tokens.",
-    "modelId": "model-hy3",
-    "modelName": "Hy3",
-    "developer": "Tencent Hunyuan",
-    "metric": "Arena 1439 at $0.14 blended",
-    "price": "$0.083 / $0.33 per 1M tokens"
+    "modelId": "model-glm-5-3-flash",
+    "modelName": "GLM-5.3-Flash",
+    "developer": "Zhipu AI",
+    "metric": "Arena 1471 at $0.05 blended",
+    "price": "$0.040 / $0.078 per 1M tokens"
   },
   {
     "id": "open",

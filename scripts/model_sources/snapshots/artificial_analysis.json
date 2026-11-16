@@ -1,9 +1,9 @@
 {
  "source": "https://artificialanalysis.ai/api/v2/language/models/free",
- "fetchedAt": "2026-11-13T03:41:28Z",
+ "fetchedAt": "2026-11-16T03:38:48Z",
  "indexVersion": 5,
  "note": "Only rows used by curated_models.json. Data: Artificial Analysis, https://artificialanalysis.ai",
- "count": 264,
+ "count": 265,
  "data": [
   {
    "id": "0097ebf5-124f-42f6-9463-33b00e711f03",
@@ -2884,6 +2884,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-07-31",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "fef6625d-9097-45f6-95c0-bcaa06e3d8e1",
+   "slug": "qwen4-max",
+   "name": "Qwen4 Max",
+   "creator": "Alibaba",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-16",
+   "intelligence": 42.9,
    "coding": null,
    "agentic": null
   },

@@ -1,8 +1,474 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-10-27T23:40:27Z",
- "count": 464,
+ "fetchedAt": "2026-11-16T03:38:48Z",
+ "count": 468,
  "data": [
+  {
+   "id": "qwen/qwen4-max",
+   "name": "Qwen: Qwen4 Max",
+   "created": 1794795526,
+   "createdDate": "2026-11-16",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 1.5,
+   "output": 4.5,
+   "cache_read": 0.075,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "inclusionai/ling-3.2-flash:free",
+   "name": "inclusionAI: Ling 3.2 Flash (free)",
+   "created": 1794591958,
+   "createdDate": "2026-11-13",
+   "context_length": 1048576,
+   "hugging_face_id": "inclusionAI/Ling-3.2-flash",
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-hydrogen",
+   "name": "Google: Gemini 4 Hydrogen",
+   "created": 1794506460,
+   "createdDate": "2026-11-12",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 1.5,
+   "output": 7.5,
+   "cache_read": 0.075,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-hydrogen:batch",
+   "name": "Google: Gemini 4 Hydrogen (batch)",
+   "created": 1794506460,
+   "createdDate": "2026-11-12",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.75,
+   "output": 3.75,
+   "cache_read": 0.0375,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "baidu/ernie-5.5-flash-preview:free",
+   "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+   "created": 1794333533,
+   "createdDate": "2026-11-10",
+   "context_length": 1024000,
+   "hugging_face_id": "baidu/ERNIE-5.5-Flash-Preview",
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "baidu/ernie-light-dt-1.0-intl",
+   "name": "Baidu: ERNIE-Light-DT-1.0",
+   "created": 1794331260,
+   "createdDate": "2026-11-10",
+   "context_length": 1024000,
+   "hugging_face_id": null,
+   "input": 1.13,
+   "output": 3.94,
+   "cache_read": 0.113,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-carbon",
+   "name": "Google: Gemini 4 Carbon",
+   "created": 1794326871,
+   "createdDate": "2026-11-10",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.1,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-carbon:batch",
+   "name": "Google: Gemini 4 Carbon (batch)",
+   "created": 1794326871,
+   "createdDate": "2026-11-10",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "nex-agi/nex-n2.6",
+   "name": "Nex AGI: Nex-N2.6",
+   "created": 1794282379,
+   "createdDate": "2026-11-10",
+   "context_length": 262144,
+   "hugging_face_id": "nex-agi/Nex-N2.6",
+   "input": 0.12,
+   "output": 0.4,
+   "cache_read": 0.024,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "thinkingmachines/inkling-2-small",
+   "name": "Thinking Machines: Inkling 2 Small",
+   "created": 1794261847,
+   "createdDate": "2026-11-09",
+   "context_length": 1048576,
+   "hugging_face_id": "thinkingmachines/Inkling-2-Small",
+   "input": 0.3,
+   "output": 1.0,
+   "cache_read": 0.03,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "thinkingmachines/inkling-2-small:free",
+   "name": "Thinking Machines: Inkling 2 Small (free)",
+   "created": 1794261847,
+   "createdDate": "2026-11-09",
+   "context_length": 1048576,
+   "hugging_face_id": "thinkingmachines/Inkling-2-Small",
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "anthropic/claude-fable-5.2",
+   "name": "Anthropic: Claude Fable 5.2",
+   "created": 1794253781,
+   "createdDate": "2026-11-09",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 8.0,
+   "output": 40.0,
+   "cache_read": 0.2,
+   "input_modalities": [
+    "text",
+    "image",
+    "file"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "anthropic/claude-fable-5.2:batch",
+   "name": "Anthropic: Claude Fable 5.2 (batch)",
+   "created": 1794253781,
+   "createdDate": "2026-11-09",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": 4.0,
+   "output": 20.0,
+   "cache_read": 0.1,
+   "input_modalities": [
+    "text",
+    "image",
+    "file"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "meta/muse-ember",
+   "name": "Meta: Muse Ember",
+   "created": 1794247648,
+   "createdDate": "2026-11-09",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.1,
+   "output": 0.5,
+   "cache_read": 0.004,
+   "input_modalities": [
+    "text",
+    "image",
+    "video",
+    "file",
+    "audio"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "liquid/lfm-3-1.7b",
+   "name": "LiquidAI: LFM3-1.7B",
+   "created": 1794009477,
+   "createdDate": "2026-11-06",
+   "context_length": 262144,
+   "hugging_face_id": "LiquidAI/LFM3-1.7B",
+   "input": 0.08,
+   "output": 0.2,
+   "cache_read": 0.02,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "liquid/lfm-3-1.7b:free",
+   "name": "LiquidAI: LFM3-1.7B (free)",
+   "created": 1794009477,
+   "createdDate": "2026-11-06",
+   "context_length": 262144,
+   "hugging_face_id": "LiquidAI/LFM3-1.7B",
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-omni-1.2-flash",
+   "name": "Google: Gemini Omni 1.2 Flash",
+   "created": 1793898961,
+   "createdDate": "2026-11-05",
+   "context_length": 131072,
+   "hugging_face_id": null,
+   "input": 1.5,
+   "output": 9.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text",
+    "video"
+   ]
+  },
+  {
+   "id": "kt/midm-k-3.0-pro",
+   "name": "KT: Mi:dm K 3.0 Pro",
+   "created": 1793897701,
+   "createdDate": "2026-11-05",
+   "context_length": 261795,
+   "hugging_face_id": null,
+   "input": 0.2,
+   "output": 0.8,
+   "cache_read": 0.04,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-omni-1.1-flash",
+   "name": "Google: Gemini Omni 1.1 Flash",
+   "created": 1793825668,
+   "createdDate": "2026-11-04",
+   "context_length": 131072,
+   "hugging_face_id": null,
+   "input": 1.5,
+   "output": 9.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text",
+    "video"
+   ]
+  },
+  {
+   "id": "ricursiveai/ripple-65b-preview",
+   "name": "Ricursive: Ripple 65B Preview",
+   "created": 1793818990,
+   "createdDate": "2026-11-04",
+   "context_length": 1048576,
+   "hugging_face_id": "ricursiveAI/Ripple-65B-Preview",
+   "input": 0.1,
+   "output": 0.3,
+   "cache_read": 0.025,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "tencent/hy4",
+   "name": "Tencent: Hy4",
+   "created": 1793766031,
+   "createdDate": "2026-11-04",
+   "context_length": 1048576,
+   "hugging_face_id": "tencent/Hy4",
+   "input": 0.417,
+   "output": 1.2505,
+   "cache_read": 0.021,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "motif-technologies/motif-3",
+   "name": "Motif Technologies: Motif 3",
+   "created": 1793655334,
+   "createdDate": "2026-11-02",
+   "context_length": 262144,
+   "hugging_face_id": "Motif-Technologies/Motif-3",
+   "input": 0.3,
+   "output": 1.2,
+   "cache_read": 0.06,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "z-ai/glm-5.3-flashx-legal",
+   "name": "Z.ai: GLM 5.3 FlashX Legal",
+   "created": 1793626154,
+   "createdDate": "2026-11-02",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.37,
+   "output": 1.25,
+   "cache_read": 0.075,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "particle-ai/particle-1",
+   "name": "Particle AI: Particle-1",
+   "created": 1793207893,
+   "createdDate": "2026-10-28",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.06,
+   "output": 0.5,
+   "cache_read": 0.003,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "particle-ai/particle-1:free",
+   "name": "Particle AI: Particle-1 (free)",
+   "created": 1793207893,
+   "createdDate": "2026-10-28",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "openai/gpt-6.1-terra-pro",
    "name": "OpenAI: GPT-6.1 Terra Pro",
@@ -85,10 +551,29 @@
    "created": 1792778188,
    "createdDate": "2026-10-23",
    "context_length": 1048576,
-   "hugging_face_id": null,
-   "input": 2.0,
-   "output": 10.0,
+   "hugging_face_id": "moonshotai/Kimi-K3.1-Pro",
+   "input": 0.2403,
+   "output": 8.4023,
    "cache_read": 0.2,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "created": 1792778188,
+   "createdDate": "2026-10-23",
+   "context_length": 1048576,
+   "hugging_face_id": "moonshotai/Kimi-K3.1-Pro",
+   "input": 0.7,
+   "output": 6.0,
+   "cache_read": 0.1,
    "input_modalities": [
     "text",
     "image",
@@ -141,8 +626,26 @@
    "createdDate": "2026-10-17",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "input": 0.15,
-   "output": 0.6,
+   "input": 0.3,
+   "output": 1.2,
+   "cache_read": 0.006,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "created": 1792225624,
+   "createdDate": "2026-10-17",
+   "context_length": 1048576,
+   "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "input": 0.033,
+   "output": 0.293,
    "cache_read": 0.003,
    "input_modalities": [
     "text",
@@ -172,49 +675,15 @@
    ]
   },
   {
-   "id": "xingchen-agi/xing4.0-29b-a4b:free",
-   "name": "XingChen: Xing4.0 29B A4B (free)",
-   "created": 1792177496,
-   "createdDate": "2026-10-16",
-   "context_length": 262144,
-   "hugging_face_id": "XingChen-AGI/Xing4.0-29B-A4B",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "reflection/beam-1.0-501b-a23b",
    "name": "Reflection: Beam 1.0 501B A23B",
    "created": 1792160499,
    "createdDate": "2026-10-16",
    "context_length": 1048576,
    "hugging_face_id": "reflection/Beam-1.0-501B-A23B",
-   "input": 0.25,
+   "input": 0.3,
    "output": 1.0,
-   "cache_read": 0.05,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "inception/mercury-3",
-   "name": "Inception: Mercury 3",
-   "created": 1792158337,
-   "createdDate": "2026-10-16",
-   "context_length": 1000000,
-   "hugging_face_id": null,
-   "input": 0.1,
-   "output": 0.35,
-   "cache_read": 0.01,
+   "cache_read": 0.04,
    "input_modalities": [
     "text"
    ],
@@ -303,7 +772,7 @@
    "created": 1792076662,
    "createdDate": "2026-10-15",
    "context_length": 1048576,
-   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
    "input": 0.15,
    "output": 0.5,
    "cache_read": 0.02,
@@ -322,7 +791,7 @@
    "created": 1792076662,
    "createdDate": "2026-10-15",
    "context_length": 1000000,
-   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
    "input": 0.0,
    "output": 0.0,
    "cache_read": null,
@@ -512,7 +981,7 @@
    "name": "StepFun: Step 5 Preview",
    "created": 1791462849,
    "createdDate": "2026-10-08",
-   "context_length": 1048576,
+   "context_length": 1000000,
    "hugging_face_id": "stepfun-ai/Step-5-Preview",
    "input": 1.0,
    "output": 2.7,
@@ -589,10 +1058,10 @@
    "created": 1791294122,
    "createdDate": "2026-10-06",
    "context_length": 1048576,
-   "hugging_face_id": null,
-   "input": 1.36,
-   "output": 4.18,
-   "cache_read": 0.14,
+   "hugging_face_id": "mistralai/Mistral-Large-4-1T-A52B",
+   "input": 0.7,
+   "output": 2.1,
+   "cache_read": 0.07,
    "input_modalities": [
     "text",
     "image"
@@ -606,13 +1075,31 @@
    "name": "inclusionAI: Ling 3.1 Flash",
    "created": 1790950024,
    "createdDate": "2026-10-02",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.075,
-   "output": 0.225,
-   "cache_read": 0.015,
+   "context_length": 1000000,
+   "hugging_face_id": "inclusionAI/Ling-3.1-flash",
+   "input": 0.045,
+   "output": 0.135,
+   "cache_read": 0.009,
    "input_modalities": [
     "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "unbiased/pareto-26.10-preview",
+   "name": "Pareto 26.10 Preview",
+   "created": 1790863623,
+   "createdDate": "2026-10-01",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 0.8,
+   "output": 3.2,
+   "cache_read": 0.03,
+   "input_modalities": [
+    "text",
+    "image"
    ],
    "output_modalities": [
     "text"
@@ -727,27 +1214,6 @@
     "text",
     "image",
     "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "typesafe/jev-router",
-   "name": "TypeSafe: Jev Router",
-   "created": 1790363560,
-   "createdDate": "2026-09-25",
-   "context_length": 1000000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
-   "input_modalities": [
-    "audio",
-    "file",
-    "image",
-    "text",
-    "video"
    ],
    "output_modalities": [
     "text"
@@ -884,7 +1350,7 @@
    "created": 1790102896,
    "createdDate": "2026-09-22",
    "context_length": 192000,
-   "hugging_face_id": null,
+   "hugging_face_id": "CohereLabs/command-a-plus-05-2026-bf16",
    "input": 0.3,
    "output": 1.5,
    "cache_read": 0.15,
@@ -1087,23 +1553,6 @@
    ]
   },
   {
-   "id": "nvidia/switchyard",
-   "name": "NVIDIA: Switchyard",
-   "created": 1790025947,
-   "createdDate": "2026-09-21",
-   "context_length": 1000000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
    "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
    "created": 1790021267,
@@ -1183,6 +1632,25 @@
    ]
   },
   {
+   "id": "x-ai/grok-4.7:batch",
+   "name": "SpaceXAI: Grok 4.7 (batch)",
+   "created": 1790007541,
+   "createdDate": "2026-09-21",
+   "context_length": 500000,
+   "hugging_face_id": null,
+   "input": 1.6,
+   "output": 4.8,
+   "cache_read": 0.4,
+   "input_modalities": [
+    "text",
+    "image",
+    "file"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
    "id": "qwen/qwen3.8-omni-flash",
    "name": "Qwen: Qwen3.8 Omni Flash",
    "created": 1789959954,
@@ -1229,7 +1697,7 @@
    "hugging_face_id": null,
    "input": 0.37,
    "output": 1.25,
-   "cache_read": 0.09,
+   "cache_read": 0.075,
    "input_modalities": [
     "text",
     "image",
@@ -1246,9 +1714,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.1259,
+   "input": 0.0999,
    "output": 8.0,
-   "cache_read": 0.13,
+   "cache_read": 0.0999,
    "input_modalities": [
     "text"
    ],
@@ -1263,9 +1731,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0182,
-   "output": 1.8,
-   "cache_read": 0.0165,
+   "input": 0.036,
+   "output": 0.5,
+   "cache_read": 0.01,
    "input_modalities": [
     "text",
     "image"
@@ -1466,29 +1934,12 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.05,
-   "output": 0.15,
-   "cache_read": 0.004,
+   "input": 0.112,
+   "output": 0.336,
+   "cache_read": 0.00336,
    "input_modalities": [
     "text",
     "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "inception/mercury-2.5",
-   "name": "Inception: Mercury 2.5",
-   "created": 1788892137,
-   "createdDate": "2026-09-08",
-   "context_length": 260000,
-   "hugging_face_id": null,
-   "input": 0.04,
-   "output": 0.15,
-   "cache_read": 0.004,
-   "input_modalities": [
-    "text"
    ],
    "output_modalities": [
     "text"
@@ -1616,6 +2067,25 @@
    "input": 2.0,
    "output": 6.0,
    "cache_read": 0.25,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "qwen/qwen3.8-max-0902:batch",
+   "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+   "created": 1788469704,
+   "createdDate": "2026-09-03",
+   "context_length": 262144,
+   "hugging_face_id": null,
+   "input": 1.15,
+   "output": 3.45,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image",
@@ -1769,9 +2239,9 @@
    "createdDate": "2026-08-28",
    "context_length": 1048576,
    "hugging_face_id": "tencent/Hy4-preview",
-   "input": 0.7506,
-   "output": 2.2509,
-   "cache_read": 0.0378,
+   "input": 0.834,
+   "output": 2.501,
+   "cache_read": 0.042,
    "input_modalities": [
     "text"
    ],
@@ -1786,8 +2256,8 @@
    "createdDate": "2026-08-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0379,
-   "output": 0.0771,
+   "input": 0.0399,
+   "output": 0.0784,
    "cache_read": 0.03,
    "input_modalities": [
     "text",
@@ -1824,8 +2294,8 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.15,
-   "output": 0.5,
+   "input": 0.0399,
+   "output": 0.0784,
    "cache_read": 0.03,
    "input_modalities": [
     "text",
@@ -1882,9 +2352,9 @@
    "createdDate": "2026-08-21",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-   "input": 0.2156,
-   "output": 0.6468,
-   "cache_read": 0.00686,
+   "input": 0.44,
+   "output": 1.32,
+   "cache_read": 0.014,
    "input_modalities": [
     "text",
     "image"
@@ -2000,11 +2470,30 @@
    "name": "Qwen: Qwen3.8 27B",
    "created": 1786722910,
    "createdDate": "2026-08-14",
-   "context_length": 1000000,
+   "context_length": 1024000,
    "hugging_face_id": "Qwen/Qwen3.8-27B",
-   "input": 0.2,
-   "output": 2.5,
-   "cache_read": 0.09,
+   "input": 0.15,
+   "output": 1.875,
+   "cache_read": 0.0375,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "qwen/qwen3.8-27b:batch",
+   "name": "Qwen: Qwen3.8 27B (batch)",
+   "created": 1786722910,
+   "createdDate": "2026-08-14",
+   "context_length": 262144,
+   "hugging_face_id": "Qwen/Qwen3.8-27B",
+   "input": 0.16,
+   "output": 2.0,
+   "cache_read": 0.04,
    "input_modalities": [
     "text",
     "image",
@@ -2020,7 +2509,7 @@
    "created": 1786680361,
    "createdDate": "2026-08-14",
    "context_length": 512000,
-   "hugging_face_id": null,
+   "hugging_face_id": "dots-studio/dots3-note-prev",
    "input": 0.0,
    "output": 0.0,
    "cache_read": null,
@@ -2111,34 +2600,15 @@
    ]
   },
   {
-   "id": "bytedance-seed/seed-2.0-code",
-   "name": "ByteDance Seed: Seed-2.0-Code",
-   "created": 1786550701,
-   "createdDate": "2026-08-12",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.5,
-   "output": 3.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image",
-    "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "deepseek/deepseek-v4-pro-0813",
    "name": "DeepSeek: DeepSeek V4 Pro 0813",
    "created": 1786549364,
    "createdDate": "2026-08-12",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-   "input": 0.66,
-   "output": 1.98,
-   "cache_read": 0.022,
+   "input": 0.111,
+   "output": 4.44,
+   "cache_read": 0.097,
    "input_modalities": [
     "text"
    ],
@@ -2166,34 +2636,19 @@
    ]
   },
   {
-   "id": "liquid/lfm-2.5-2.6b",
-   "name": "LiquidAI: LFM2.5-2.6B",
-   "created": 1786470519,
-   "createdDate": "2026-08-11",
-   "context_length": 128000,
-   "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
-   "input": 0.35,
-   "output": 0.5,
-   "cache_read": 0.04,
+   "id": "x-ai/grok-4.6:batch",
+   "name": "SpaceXAI: Grok 4.6 (batch)",
+   "created": 1786548957,
+   "createdDate": "2026-08-12",
+   "context_length": 500000,
+   "hugging_face_id": null,
+   "input": 1.6,
+   "output": 4.8,
+   "cache_read": 0.4,
    "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "liquid/lfm-2.5-2.6b:free",
-   "name": "LiquidAI: LFM2.5-2.6B (free)",
-   "created": 1786470519,
-   "createdDate": "2026-08-11",
-   "context_length": 65536,
-   "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
+    "text",
+    "image",
+    "file"
    ],
    "output_modalities": [
     "text"
@@ -2288,6 +2743,41 @@
    ]
   },
   {
+   "id": "meta/muse-glimmer-30b:batch",
+   "name": "Meta: Muse Glimmer 30B (batch)",
+   "created": 1786302394,
+   "createdDate": "2026-08-09",
+   "context_length": 131072,
+   "hugging_face_id": "meta-models/Muse-Glimmer-30B",
+   "input": 0.24,
+   "output": 0.96,
+   "cache_read": 0.032,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "inclusionai/ling-3.0-tiny",
+   "name": "inclusionAI: Ling 3.0 Tiny",
+   "created": 1786034890,
+   "createdDate": "2026-08-06",
+   "context_length": 262144,
+   "hugging_face_id": "inclusionAI/Ling-3.0-tiny",
+   "input": 0.015,
+   "output": 0.045,
+   "cache_read": 0.003,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
    "id": "meta/muse-spark-1.2",
    "name": "Meta: Muse Spark 1.2",
    "created": 1785959287,
@@ -2314,9 +2804,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0422,
-   "output": 0.1694,
-   "cache_read": 0.028,
+   "input": 0.0434,
+   "output": 0.3,
+   "cache_read": 0.035,
    "input_modalities": [
     "text"
    ],
@@ -2331,9 +2821,26 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.119,
-   "output": 0.238,
-   "cache_read": 0.0238,
+   "input": 0.06,
+   "output": 0.18,
+   "cache_read": 0.015,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731:batch",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+   "created": 1785478908,
+   "createdDate": "2026-07-31",
+   "context_length": 1048576,
+   "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "input": 0.048,
+   "output": 0.144,
+   "cache_read": 0.012,
    "input_modalities": [
     "text"
    ],
@@ -2361,15 +2868,15 @@
    ]
   },
   {
-   "id": "thinkingmachines/inkling-small:free",
-   "name": "Thinking Machines: Inkling Small (free)",
+   "id": "thinkingmachines/inkling-small:batch",
+   "name": "Thinking Machines: Inkling Small (batch)",
    "created": 1785443117,
    "createdDate": "2026-07-30",
-   "context_length": 1048576,
+   "context_length": 524288,
    "hugging_face_id": "thinkingmachines/Inkling-Small",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
+   "input": 0.36,
+   "output": 0.96,
+   "cache_read": 0.08,
    "input_modalities": [
     "text",
     "image",
@@ -2446,40 +2953,6 @@
    "input": 0.021,
    "output": 0.063,
    "cache_read": 0.0042,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "poolside/laguna-s-2.1",
-   "name": "Poolside: Laguna S 2.1",
-   "created": 1784652683,
-   "createdDate": "2026-07-21",
-   "context_length": 1048576,
-   "hugging_face_id": "poolside/Laguna-S-2.1",
-   "input": 0.09,
-   "output": 0.18,
-   "cache_read": 0.009,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "poolside/laguna-s-2.1:free",
-   "name": "Poolside: Laguna S 2.1 (free)",
-   "created": 1784652683,
-   "createdDate": "2026-07-21",
-   "context_length": 262144,
-   "hugging_face_id": "poolside/Laguna-S-2.1",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
    "input_modalities": [
     "text"
    ],
@@ -2608,56 +3081,15 @@
    ]
   },
   {
-   "id": "thinkingmachines/inkling:free",
-   "name": "Thinking Machines: Inkling (free)",
-   "created": 1784325956,
-   "createdDate": "2026-07-17",
-   "context_length": 1048576,
-   "hugging_face_id": "thinkingmachines/Inkling",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image",
-    "audio"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openrouter/auto-beta",
-   "name": "Auto Router (Beta)",
-   "created": 1784311165,
-   "createdDate": "2026-07-17",
-   "context_length": 2000000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image",
-    "audio",
-    "file",
-    "video"
-   ],
-   "output_modalities": [
-    "text",
-    "image"
-   ]
-  },
-  {
    "id": "moonshotai/kimi-k3",
    "name": "MoonshotAI: Kimi K3",
    "created": 1784215858,
    "createdDate": "2026-07-16",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3",
-   "input": 0.15,
-   "output": 20.0,
-   "cache_read": 0.14,
+   "input": 0.192,
+   "output": 16.0,
+   "cache_read": 0.182,
    "input_modalities": [
     "text",
     "image",
@@ -3013,43 +3445,9 @@
    "createdDate": "2026-07-06",
    "context_length": 262144,
    "hugging_face_id": "tencent/Hy3",
-   "input": 0.0825,
-   "output": 0.33,
-   "cache_read": 0.020625,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "poolside/laguna-xs-2.1",
-   "name": "Poolside: Laguna XS 2.1",
-   "created": 1783002429,
-   "createdDate": "2026-07-02",
-   "context_length": 262144,
-   "hugging_face_id": "poolside/Laguna-XS-2.1",
-   "input": 0.06,
-   "output": 0.12,
-   "cache_read": 0.03,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "poolside/laguna-xs-2.1:free",
-   "name": "Poolside: Laguna XS 2.1 (free)",
-   "created": 1783002429,
-   "createdDate": "2026-07-02",
-   "context_length": 262144,
-   "hugging_face_id": "poolside/Laguna-XS-2.1",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
+   "input": 0.132,
+   "output": 0.528,
+   "cache_read": 0.033,
    "input_modalities": [
     "text"
    ],
@@ -3194,26 +3592,9 @@
    "createdDate": "2026-06-16",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.2",
-   "input": 0.0341,
-   "output": 7.0,
-   "cache_read": 0.033,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openrouter/fusion",
-   "name": "OpenRouter: Fusion",
-   "created": 1781371647,
-   "createdDate": "2026-06-13",
-   "context_length": 1000000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
+   "input": 0.007,
+   "output": 6.8,
+   "cache_read": 0.006,
    "input_modalities": [
     "text"
    ],
@@ -3228,9 +3609,9 @@
    "createdDate": "2026-06-12",
    "context_length": 262144,
    "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
-   "input": 0.56,
-   "output": 3.1,
-   "cache_read": 0.15,
+   "input": 0.6,
+   "output": 3.5,
+   "cache_read": 0.16,
    "input_modalities": [
     "text",
     "image"
@@ -3246,9 +3627,9 @@
    "createdDate": "2026-06-09",
    "context_length": 1000000,
    "hugging_face_id": null,
-   "input": 10.0,
-   "output": 50.0,
-   "cache_read": 0.25,
+   "input": 8.0,
+   "output": 40.0,
+   "cache_read": 0.2,
    "input_modalities": [
     "text",
     "image",
@@ -3305,24 +3686,6 @@
    "hugging_face_id": "nvidia/Nemotron-3.5-Content-Safety",
    "input": 0.2,
    "output": 0.2,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "nvidia/nemotron-3.5-content-safety:free",
-   "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-   "created": 1780581864,
-   "createdDate": "2026-06-04",
-   "context_length": 128000,
-   "hugging_face_id": "nvidia/Nemotron-3.5-Content-Safety",
-   "input": 0.0,
-   "output": 0.0,
    "cache_read": null,
    "input_modalities": [
     "text",
@@ -3412,6 +3775,25 @@
    "input": 0.3,
    "output": 1.2,
    "cache_read": 0.06,
+   "input_modalities": [
+    "text",
+    "image",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "minimax/minimax-m3:batch",
+   "name": "MiniMax: MiniMax M3 (batch)",
+   "created": 1780245374,
+   "createdDate": "2026-05-31",
+   "context_length": 524288,
+   "hugging_face_id": "MiniMaxAI/Minimax-M3",
+   "input": 0.224,
+   "output": 0.88,
+   "cache_read": 0.0448,
    "input_modalities": [
     "text",
     "image",
@@ -3680,7 +4062,7 @@
    "created": 1777570439,
    "createdDate": "2026-04-30",
    "context_length": 262144,
-   "hugging_face_id": null,
+   "hugging_face_id": "mistralai/Mistral-Medium-3.5-128B",
    "input": 1.5,
    "output": 7.5,
    "cache_read": null,
@@ -3699,7 +4081,7 @@
    "created": 1777570439,
    "createdDate": "2026-04-30",
    "context_length": 262144,
-   "hugging_face_id": null,
+   "hugging_face_id": "mistralai/Mistral-Medium-3.5-128B",
    "input": 0.75,
    "output": 3.75,
    "cache_read": null,
@@ -3798,9 +4180,9 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.15,
-   "output": 20.0,
-   "cache_read": 0.14,
+   "input": 0.1824,
+   "output": 11.0055,
+   "cache_read": 0.18,
    "input_modalities": [
     "text",
     "image",
@@ -3817,15 +4199,15 @@
    "createdDate": "2026-04-27",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.75,
-   "output": 3.75,
+   "input": 1.5,
+   "output": 7.5,
    "cache_read": 0.075,
    "input_modalities": [
-    "text",
-    "image",
-    "video",
+    "audio",
     "file",
-    "audio"
+    "image",
+    "text",
+    "video"
    ],
    "output_modalities": [
     "text"
@@ -3896,8 +4278,8 @@
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
    "input": 0.1,
-   "output": 0.95,
-   "cache_read": 0.05,
+   "output": 0.9,
+   "cache_read": 0.025,
    "input_modalities": [
     "text",
     "image",
@@ -4009,9 +4391,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
-   "input": 0.875394,
-   "output": 1.750788,
-   "cache_read": 0.07295,
+   "input": 0.9,
+   "output": 1.5,
+   "cache_read": 0.25,
    "input_modalities": [
     "text"
    ],
@@ -4026,9 +4408,9 @@
    "createdDate": "2026-04-24",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
-   "input": 0.14,
-   "output": 0.28,
-   "cache_read": 0.028,
+   "input": 0.09,
+   "output": 0.18,
+   "cache_read": 0.018,
    "input_modalities": [
     "text"
    ],
@@ -4058,11 +4440,11 @@
    "name": "Xiaomi: MiMo-V2.5-Pro",
    "created": 1776874273,
    "createdDate": "2026-04-22",
-   "context_length": 1050000,
+   "context_length": 1024000,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
-   "input": 0.48,
-   "output": 1.8,
-   "cache_read": 0.096,
+   "input": 0.435,
+   "output": 0.87,
+   "cache_read": 0.0036,
    "input_modalities": [
     "text"
    ],
@@ -4075,7 +4457,7 @@
    "name": "Xiaomi: MiMo-V2.5",
    "created": 1776874269,
    "createdDate": "2026-04-22",
-   "context_length": 1050000,
+   "context_length": 1000000,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
    "input": 0.4,
    "output": 2.0,
@@ -4124,23 +4506,6 @@
     "text",
     "image",
     "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openrouter/pareto-code",
-   "name": "Pareto Code Router",
-   "created": 1776747900,
-   "createdDate": "2026-04-21",
-   "context_length": 2000000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
    ],
    "output_modalities": [
     "text"
@@ -4209,9 +4574,9 @@
    "createdDate": "2026-04-07",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5.1",
-   "input": 0.966,
-   "output": 3.036,
-   "cache_read": 0.1794,
+   "input": 1.4,
+   "output": 4.4,
+   "cache_read": 0.26,
    "input_modalities": [
     "text"
    ],
@@ -4226,9 +4591,9 @@
    "createdDate": "2026-04-03",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-26B-A4B-it",
-   "input": 0.0765,
-   "output": 0.255,
-   "cache_read": 0.0425,
+   "input": 0.0675,
+   "output": 0.225,
+   "cache_read": 0.0375,
    "input_modalities": [
     "image",
     "text",
@@ -4433,11 +4798,11 @@
    "name": "MiniMax: MiniMax M2.7",
    "created": 1773836697,
    "createdDate": "2026-03-18",
-   "context_length": 204800,
+   "context_length": 196608,
    "hugging_face_id": "MiniMaxAI/MiniMax-M2.7",
-   "input": 0.3,
-   "output": 1.2,
-   "cache_read": 0.06,
+   "input": 0.21,
+   "output": 0.84,
+   "cache_read": 0.042,
    "input_modalities": [
     "text"
    ],
@@ -4563,9 +4928,9 @@
    "createdDate": "2026-03-11",
    "context_length": 262144,
    "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "input": 0.3,
-   "output": 2.4,
-   "cache_read": 0.15,
+   "input": 0.075,
+   "output": 0.4,
+   "cache_read": null,
    "input_modalities": [
     "text"
    ],
@@ -4599,9 +4964,9 @@
    "createdDate": "2026-03-10",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-9B",
-   "input": 0.17,
-   "output": 0.25,
-   "cache_read": null,
+   "input": 0.105,
+   "output": 0.154,
+   "cache_read": 0.094,
    "input_modalities": [
     "text",
     "image",
@@ -4682,23 +5047,6 @@
     "text",
     "image",
     "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "inception/mercury-2",
-   "name": "Inception: Mercury 2",
-   "created": 1772636275,
-   "createdDate": "2026-03-04",
-   "context_length": 128000,
-   "hugging_face_id": null,
-   "input": 0.25,
-   "output": 0.75,
-   "cache_read": 0.025,
-   "input_modalities": [
-    "text"
    ],
    "output_modalities": [
     "text"
@@ -5002,9 +5350,9 @@
    "createdDate": "2026-02-16",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-397B-A17B",
-   "input": 0.5,
-   "output": 3.6,
-   "cache_read": 0.3,
+   "input": 0.45,
+   "output": 3.0,
+   "cache_read": 0.22,
    "input_modalities": [
     "text",
     "image",
@@ -5019,11 +5367,11 @@
    "name": "MiniMax: MiniMax M2.5",
    "created": 1770908502,
    "createdDate": "2026-02-12",
-   "context_length": 204800,
+   "context_length": 198000,
    "hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
-   "input": 0.3,
+   "input": 0.295,
    "output": 1.2,
-   "cache_read": 0.03,
+   "cache_read": 0.06,
    "input_modalities": [
     "text"
    ],
@@ -5104,41 +5452,6 @@
    ]
   },
   {
-   "id": "openrouter/free",
-   "name": "Free Models Router",
-   "created": 1769917427,
-   "createdDate": "2026-02-01",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "stepfun/step-3.5-flash",
-   "name": "StepFun: Step 3.5 Flash",
-   "created": 1769728337,
-   "createdDate": "2026-01-29",
-   "context_length": 262144,
-   "hugging_face_id": "stepfun-ai/Step-3.5-Flash",
-   "input": 0.1,
-   "output": 0.3,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "moonshotai/kimi-k2.5",
    "name": "MoonshotAI: Kimi K2.5",
    "created": 1769487076,
@@ -5151,40 +5464,6 @@
    "input_modalities": [
     "text",
     "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "upstage/solar-pro-3",
-   "name": "Upstage: Solar Pro 3",
-   "created": 1769481200,
-   "createdDate": "2026-01-27",
-   "context_length": 131072,
-   "hugging_face_id": null,
-   "input": 0.15,
-   "output": 0.6,
-   "cache_read": 0.015,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "minimax/minimax-m2-her",
-   "name": "MiniMax: MiniMax M2-her",
-   "created": 1769177239,
-   "createdDate": "2026-01-23",
-   "context_length": 65536,
-   "hugging_face_id": null,
-   "input": 0.3,
-   "output": 1.2,
-   "cache_read": 0.03,
-   "input_modalities": [
-    "text"
    ],
    "output_modalities": [
     "text"
@@ -5281,70 +5560,15 @@
    ]
   },
   {
-   "id": "bytedance-seed/seed-1.6-flash",
-   "name": "ByteDance Seed: Seed 1.6 Flash",
-   "created": 1766505011,
-   "createdDate": "2025-12-23",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.075,
-   "output": 0.3,
-   "cache_read": null,
-   "input_modalities": [
-    "image",
-    "text",
-    "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "bytedance-seed/seed-1.6",
-   "name": "ByteDance Seed: Seed 1.6",
-   "created": 1766504997,
-   "createdDate": "2025-12-23",
-   "context_length": 262144,
-   "hugging_face_id": null,
-   "input": 0.25,
-   "output": 2.0,
-   "cache_read": null,
-   "input_modalities": [
-    "image",
-    "text",
-    "video"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "minimax/minimax-m2.1",
-   "name": "MiniMax: MiniMax M2.1",
-   "created": 1766454997,
-   "createdDate": "2025-12-23",
-   "context_length": 204800,
-   "hugging_face_id": "MiniMaxAI/MiniMax-M2.1",
-   "input": 0.3,
-   "output": 1.2,
-   "cache_read": 0.03,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "z-ai/glm-4.7",
    "name": "Z.ai: GLM 4.7",
    "created": 1766378014,
    "createdDate": "2025-12-22",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-4.7",
-   "input": 0.54,
-   "output": 1.98,
-   "cache_read": 0.099,
+   "input": 0.4,
+   "output": 1.75,
+   "cache_read": 0.08,
    "input_modalities": [
     "text"
    ],
@@ -5561,23 +5785,6 @@
    ]
   },
   {
-   "id": "openrouter/bodybuilder",
-   "name": "Body Builder (beta)",
-   "created": 1764903653,
-   "createdDate": "2025-12-05",
-   "context_length": 128000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "openai/gpt-5.1-codex-max",
    "name": "OpenAI: GPT-5.1-Codex-Max",
    "created": 1764878934,
@@ -5675,7 +5882,7 @@
    "created": 1764624472,
    "createdDate": "2025-12-01",
    "context_length": 262144,
-   "hugging_face_id": null,
+   "hugging_face_id": "mistralai/Mistral-Large-3-675B-Instruct-2512",
    "input": 0.5,
    "output": 1.5,
    "cache_read": 0.05,
@@ -5695,9 +5902,9 @@
    "createdDate": "2025-12-01",
    "context_length": 163840,
    "hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
-   "input": 0.28,
-   "output": 0.42,
-   "cache_read": 0.028,
+   "input": 0.26,
+   "output": 0.38,
+   "cache_read": 0.13,
    "input_modalities": [
     "text"
    ],
@@ -5926,23 +6133,6 @@
    ]
   },
   {
-   "id": "minimax/minimax-m2",
-   "name": "MiniMax: MiniMax M2",
-   "created": 1761252093,
-   "createdDate": "2025-10-23",
-   "context_length": 204800,
-   "hugging_face_id": "MiniMaxAI/MiniMax-M2",
-   "input": 0.255,
-   "output": 1.02,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "openai/gpt-5-image-mini",
    "name": "OpenAI: GPT-5 Image Mini",
    "created": 1760624583,
@@ -6058,24 +6248,6 @@
    ]
   },
   {
-   "id": "qwen/qwen3-vl-30b-a3b-thinking",
-   "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-   "created": 1759794479,
-   "createdDate": "2025-10-06",
-   "context_length": 262144,
-   "hugging_face_id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
-   "input": 0.29,
-   "output": 1.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "qwen/qwen3-vl-30b-a3b-instruct",
    "name": "Qwen: Qwen3 VL 30B A3B Instruct",
    "created": 1759794476,
@@ -6138,9 +6310,9 @@
    "createdDate": "2025-09-30",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-4.6",
-   "input": 0.55,
-   "output": 2.2,
-   "cache_read": 0.11,
+   "input": 0.5,
+   "output": 2.0,
+   "cache_read": 0.1,
    "input_modalities": [
     "text"
    ],
@@ -6282,23 +6454,6 @@
    "input": 0.195,
    "output": 0.975,
    "cache_read": 0.039,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "qwen/qwen3-next-80b-a3b-thinking",
-   "name": "Qwen: Qwen3 Next 80B A3B Thinking",
-   "created": 1757612284,
-   "createdDate": "2025-09-11",
-   "context_length": 262144,
-   "hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-   "input": 0.15,
-   "output": 1.2,
-   "cache_read": null,
    "input_modalities": [
     "text"
    ],
@@ -6566,9 +6721,9 @@
    "createdDate": "2025-08-05",
    "context_length": 131072,
    "hugging_face_id": "openai/gpt-oss-20b",
-   "input": 0.018,
-   "output": 0.09,
-   "cache_read": 0.009,
+   "input": 0.075,
+   "output": 0.3,
+   "cache_read": 0.0375,
    "input_modalities": [
     "text"
    ],
@@ -6656,8 +6811,8 @@
    "createdDate": "2025-07-31",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-   "input": 0.07,
-   "output": 0.28,
+   "input": 0.15,
+   "output": 0.6,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -6797,9 +6952,9 @@
    "createdDate": "2025-07-21",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-   "input": 0.09,
-   "output": 0.55,
-   "cache_read": null,
+   "input": 0.14,
+   "output": 0.8,
+   "cache_read": 0.05,
    "input_modalities": [
     "text"
    ],
@@ -6842,14 +6997,14 @@
    ]
   },
   {
-   "id": "tencent/hunyuan-a13b-instruct",
-   "name": "Tencent: Hunyuan A13B Instruct",
-   "created": 1751987664,
-   "createdDate": "2025-07-08",
-   "context_length": 131072,
-   "hugging_face_id": "tencent/Hunyuan-A13B-Instruct",
-   "input": 0.14,
-   "output": 0.57,
+   "id": "morph/morph-v3-large",
+   "name": "Morph: Morph V3 Large",
+   "created": 1751910858,
+   "createdDate": "2025-07-07",
+   "context_length": 262144,
+   "hugging_face_id": null,
+   "input": 0.9,
+   "output": 1.9,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -6859,14 +7014,14 @@
    ]
   },
   {
-   "id": "morph/morph-v3-large",
-   "name": "Morph: Morph V3 Large",
+   "id": "morph/morph-v3-large:batch",
+   "name": "Morph: Morph V3 Large (batch)",
    "created": 1751910858,
    "createdDate": "2025-07-07",
    "context_length": 262144,
    "hugging_face_id": null,
-   "input": 0.9,
-   "output": 1.9,
+   "input": 0.45,
+   "output": 0.95,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -6893,17 +7048,16 @@
    ]
   },
   {
-   "id": "mistralai/mistral-small-3.2-24b-instruct",
-   "name": "Mistral: Mistral Small 3.2 24B",
-   "created": 1750443016,
-   "createdDate": "2025-06-20",
-   "context_length": 256000,
-   "hugging_face_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-   "input": 0.075,
-   "output": 0.2,
+   "id": "morph/morph-v3-fast:batch",
+   "name": "Morph: Morph V3 Fast (batch)",
+   "created": 1751910002,
+   "createdDate": "2025-07-07",
+   "context_length": 81920,
+   "hugging_face_id": null,
+   "input": 0.4,
+   "output": 0.6,
    "cache_read": null,
    "input_modalities": [
-    "image",
     "text"
    ],
    "output_modalities": [
@@ -6911,16 +7065,17 @@
    ]
   },
   {
-   "id": "minimax/minimax-m1",
-   "name": "MiniMax: MiniMax M1",
-   "created": 1750200414,
-   "createdDate": "2025-06-17",
-   "context_length": 1000000,
-   "hugging_face_id": null,
-   "input": 0.55,
-   "output": 2.2,
-   "cache_read": null,
+   "id": "mistralai/mistral-small-3.2-24b-instruct",
+   "name": "Mistral: Mistral Small 3.2 24B",
+   "created": 1750443016,
+   "createdDate": "2025-06-20",
+   "context_length": 256000,
+   "hugging_face_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+   "input": 0.1,
+   "output": 0.3,
+   "cache_read": 0.01,
    "input_modalities": [
+    "image",
     "text"
    ],
    "output_modalities": [
@@ -7114,25 +7269,6 @@
    ]
   },
   {
-   "id": "openai/o4-mini-high",
-   "name": "OpenAI: o4 Mini High",
-   "created": 1744824212,
-   "createdDate": "2025-04-16",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 1.1,
-   "output": 4.4,
-   "cache_read": 0.275,
-   "input_modalities": [
-    "image",
-    "text",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "openai/o3",
    "name": "OpenAI: o3",
    "created": 1744823457,
@@ -7161,25 +7297,6 @@
    "input": 1.0,
    "output": 4.0,
    "cache_read": 0.25,
-   "input_modalities": [
-    "image",
-    "text",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openai/o4-mini",
-   "name": "OpenAI: o4 Mini",
-   "created": 1744820942,
-   "createdDate": "2025-04-16",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 1.1,
-   "output": 4.4,
-   "cache_read": 0.275,
    "input_modalities": [
     "image",
     "text",
@@ -7329,9 +7446,9 @@
    "createdDate": "2025-04-05",
    "context_length": 524288,
    "hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
-   "input": 0.1875,
-   "output": 0.6525,
-   "cache_read": 0.05,
+   "input": 0.35,
+   "output": 1.0,
+   "cache_read": 0.17,
    "input_modalities": [
     "text",
     "image"
@@ -7370,25 +7487,6 @@
    "cache_read": 0.11,
    "input_modalities": [
     "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openai/o1-pro",
-   "name": "OpenAI: o1-pro",
-   "created": 1742423211,
-   "createdDate": "2025-03-19",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 150.0,
-   "output": 600.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image",
-    "file"
    ],
    "output_modalities": [
     "text"
@@ -7589,30 +7687,12 @@
    ]
   },
   {
-   "id": "openai/o3-mini-high",
-   "name": "OpenAI: o3 Mini High",
-   "created": 1739372611,
-   "createdDate": "2025-02-12",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 1.1,
-   "output": 4.4,
-   "cache_read": 0.55,
-   "input_modalities": [
-    "text",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "aion-labs/aion-rp-llama-3.1-8b",
    "name": "AionLabs: Aion-RP 1.0 (8B)",
    "created": 1738696718,
    "createdDate": "2025-02-04",
    "context_length": 32768,
-   "hugging_face_id": null,
+   "hugging_face_id": "aion-labs/Aion-RP-Llama-3.1-8B",
    "input": 0.8,
    "output": 1.6,
    "cache_read": null,
@@ -7653,24 +7733,6 @@
    "cache_read": 0.052,
    "input_modalities": [
     "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "openai/o3-mini",
-   "name": "OpenAI: o3 Mini",
-   "created": 1738351721,
-   "createdDate": "2025-01-31",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 1.1,
-   "output": 4.4,
-   "cache_read": 0.55,
-   "input_modalities": [
-    "text",
-    "file"
    ],
    "output_modalities": [
     "text"
@@ -7730,24 +7792,6 @@
    ]
   },
   {
-   "id": "minimax/minimax-01",
-   "name": "MiniMax: MiniMax-01",
-   "created": 1736915462,
-   "createdDate": "2025-01-15",
-   "context_length": 1000192,
-   "hugging_face_id": "MiniMaxAI/MiniMax-Text-01",
-   "input": 0.2,
-   "output": 1.1,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "microsoft/phi-4",
    "name": "Microsoft: Phi 4",
    "created": 1736489872,
@@ -7782,31 +7826,12 @@
    ]
   },
   {
-   "id": "openai/o1",
-   "name": "OpenAI: o1",
-   "created": 1734459999,
-   "createdDate": "2024-12-17",
-   "context_length": 200000,
-   "hugging_face_id": null,
-   "input": 15.0,
-   "output": 60.0,
-   "cache_read": 7.5,
-   "input_modalities": [
-    "text",
-    "image",
-    "file"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "cohere/command-r7b-12-2024",
    "name": "Cohere: Command R7B (12-2024)",
    "created": 1734158152,
    "createdDate": "2024-12-14",
    "context_length": 128000,
-   "hugging_face_id": null,
+   "hugging_face_id": "CohereLabs/c4ai-command-r7b-12-2024",
    "input": 0.0375,
    "output": 0.15,
    "cache_read": null,
@@ -7824,9 +7849,9 @@
    "createdDate": "2024-12-06",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
-   "input": 0.1,
-   "output": 0.32,
-   "cache_read": null,
+   "input": 0.71,
+   "output": 0.71,
+   "cache_read": 0.71,
    "input_modalities": [
     "text"
    ],
@@ -7912,7 +7937,7 @@
    "created": 1731978415,
    "createdDate": "2024-11-19",
    "context_length": 131072,
-   "hugging_face_id": null,
+   "hugging_face_id": "mistralai/Mistral-Large-Instruct-2407",
    "input": 2.0,
    "output": 6.0,
    "cache_read": 0.2,
@@ -7967,24 +7992,7 @@
    "hugging_face_id": "anthracite-org/magnum-v4-72b",
    "input": 2.5,
    "output": 5.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "qwen/qwen-2.5-7b-instruct",
-   "name": "Qwen: Qwen2.5 7B Instruct",
-   "created": 1729036800,
-   "createdDate": "2024-10-16",
-   "context_length": 32768,
-   "hugging_face_id": "Qwen/Qwen2.5-7B-Instruct",
-   "input": 0.1,
-   "output": 0.2,
-   "cache_read": null,
+   "cache_read": 2.5,
    "input_modalities": [
     "text"
    ],
@@ -8016,8 +8024,8 @@
    "createdDate": "2024-09-25",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
-   "input": 0.05,
-   "output": 0.33,
+   "input": 0.0509,
+   "output": 0.335,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -8049,7 +8057,7 @@
    "created": 1724976000,
    "createdDate": "2024-08-30",
    "context_length": 128000,
-   "hugging_face_id": null,
+   "hugging_face_id": "CohereLabs/c4ai-command-r-08-2024",
    "input": 0.15,
    "output": 0.6,
    "cache_read": null,
@@ -8066,7 +8074,7 @@
    "created": 1724976000,
    "createdDate": "2024-08-30",
    "context_length": 128000,
-   "hugging_face_id": null,
+   "hugging_face_id": "CohereLabs/c4ai-command-r-plus-08-2024",
    "input": 2.5,
    "output": 10.0,
    "cache_read": null,
@@ -8086,40 +8094,6 @@
    "hugging_face_id": "Sao10K/L3.1-70B-Euryale-v2.2",
    "input": 0.85,
    "output": 0.85,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "nousresearch/hermes-3-llama-3.1-70b",
-   "name": "Nous: Hermes 3 70B Instruct",
-   "created": 1723939200,
-   "createdDate": "2024-08-18",
-   "context_length": 131072,
-   "hugging_face_id": "NousResearch/Hermes-3-Llama-3.1-70B",
-   "input": 0.7,
-   "output": 0.7,
-   "cache_read": null,
-   "input_modalities": [
-    "text"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "nousresearch/hermes-3-llama-3.1-405b",
-   "name": "Nous: Hermes 3 405B Instruct",
-   "created": 1723766400,
-   "createdDate": "2024-08-16",
-   "context_length": 131072,
-   "hugging_face_id": "NousResearch/Hermes-3-Llama-3.1-405B",
-   "input": 1.0,
-   "output": 1.0,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -8171,8 +8145,8 @@
    "createdDate": "2024-07-23",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
-   "input": 0.4,
-   "output": 0.4,
+   "input": 0.72,
+   "output": 0.72,
    "cache_read": null,
    "input_modalities": [
     "text"
@@ -8188,9 +8162,9 @@
    "createdDate": "2024-07-23",
    "context_length": 131072,
    "hugging_face_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-   "input": 0.05,
-   "output": 0.08,
-   "cache_read": 0.025,
+   "input": 0.02,
+   "output": 0.04,
+   "cache_read": null,
    "input_modalities": [
     "text"
    ],
@@ -8365,24 +8339,6 @@
    ]
   },
   {
-   "id": "openai/gpt-4-turbo",
-   "name": "OpenAI: GPT-4 Turbo",
-   "created": 1712620800,
-   "createdDate": "2024-04-09",
-   "context_length": 128000,
-   "hugging_face_id": null,
-   "input": 10.0,
-   "output": 30.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
    "id": "openai/gpt-4-turbo:batch",
    "name": "OpenAI: GPT-4 Turbo (batch)",
    "created": 1712620800,
@@ -8436,28 +8392,6 @@
    ]
   },
   {
-   "id": "openrouter/auto",
-   "name": "Auto Router",
-   "created": 1699401600,
-   "createdDate": "2023-11-08",
-   "context_length": 2000000,
-   "hugging_face_id": null,
-   "input": -1000000.0,
-   "output": -1000000.0,
-   "cache_read": null,
-   "input_modalities": [
-    "text",
-    "image",
-    "audio",
-    "file",
-    "video"
-   ],
-   "output_modalities": [
-    "text",
-    "image"
-   ]
-  },
-  {
    "id": "openai/gpt-3.5-turbo-16k",
    "name": "OpenAI: GPT-3.5 Turbo 16k",
    "created": 1693180800,
@@ -8481,9 +8415,9 @@
    "createdDate": "2023-08-02",
    "context_length": 8000,
    "hugging_face_id": null,
-   "input": 0.4,
-   "output": 0.75,
-   "cache_read": null,
+   "input": 0.3,
+   "output": 0.5,
+   "cache_read": 0.3,
    "input_modalities": [
     "text"
    ],
@@ -8498,9 +8432,9 @@
    "createdDate": "2023-07-22",
    "context_length": 6144,
    "hugging_face_id": "Undi95/ReMM-SLERP-L2-13B",
-   "input": 0.35,
-   "output": 0.65,
-   "cache_read": null,
+   "input": 0.3,
+   "output": 0.5,
+   "cache_read": 0.2,
    "input_modalities": [
     "text"
    ],
@@ -8534,6 +8468,179 @@
    "hugging_face_id": null,
    "input": 30.0,
    "output": 60.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openrouter/auto",
+   "name": "Auto Router",
+   "created": 1793885889,
+   "createdDate": "2026-11-05",
+   "context_length": 2000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "file",
+    "video"
+   ],
+   "output_modalities": [
+    "text",
+    "image"
+   ]
+  },
+  {
+   "id": "openrouter/auto-code",
+   "name": "Auto Code",
+   "created": 1793884321,
+   "createdDate": "2026-11-05",
+   "context_length": 2000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "file",
+    "video"
+   ],
+   "output_modalities": [
+    "text",
+    "image"
+   ]
+  },
+  {
+   "id": "typesafe/jev-router",
+   "name": "TypeSafe: Jev Router",
+   "created": 1790363560,
+   "createdDate": "2026-09-25",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "nvidia/switchyard",
+   "name": "NVIDIA: Switchyard",
+   "created": 1790025947,
+   "createdDate": "2026-09-21",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openrouter/auto-beta",
+   "name": "Auto Router (Beta)",
+   "created": 1784311165,
+   "createdDate": "2026-07-17",
+   "context_length": 2000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "file",
+    "video"
+   ],
+   "output_modalities": [
+    "text",
+    "image"
+   ]
+  },
+  {
+   "id": "openrouter/fusion",
+   "name": "OpenRouter: Fusion",
+   "created": 1781371647,
+   "createdDate": "2026-06-13",
+   "context_length": 1000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openrouter/pareto-code",
+   "name": "Pareto Code Router",
+   "created": 1776747900,
+   "createdDate": "2026-04-21",
+   "context_length": 2000000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openrouter/free",
+   "name": "Free Models Router",
+   "created": 1769917427,
+   "createdDate": "2026-02-01",
+   "context_length": 200000,
+   "hugging_face_id": null,
+   "input": 0.0,
+   "output": 0.0,
+   "cache_read": null,
+   "input_modalities": [
+    "text",
+    "image"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openrouter/bodybuilder",
+   "name": "Body Builder (beta)",
+   "created": 1764903653,
+   "createdDate": "2025-12-05",
+   "context_length": 128000,
+   "hugging_face_id": null,
+   "input": -1000000.0,
+   "output": -1000000.0,
    "cache_read": null,
    "input_modalities": [
     "text"

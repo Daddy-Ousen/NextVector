@@ -175,6 +175,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-11-14-starship-ship-catch',
+    year: 2026,
+    month: 'Nov 14',
+    title: 'SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms on Flight 15',
+    category: 'Space & Quantum',
+    summary: 'After launching November 13, deploying 26 Starlink V3 satellites, and completing 14 Earth orbits over 22.5 hours, Starship Ship executed a landing flip and was caught intact by Starbase tower arms for the first time.',
+    impactScore: 95,
+    keyShift: 'First-ever mechanical tower recovery of an orbital rocket upper stage, clearing a central hardware hurdle toward full-stack rapid spacecraft reuse.',
+    articleSlug: 'spacex-starship-flight-15-first-upper-stage-catch'
+  },
+  {
     id: 'time-2026-11-12-nvidia-jensen-huang-resigns',
     year: 2026,
     month: 'Nov 12',
@@ -1147,53 +1158,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Saturday, November 14, 2026",
-  summary: "A faulty update to L3Harris's aviation telecom backbone triggered a rare nationwide U.S. ground stop stranding hundreds of thousands of passengers just as Microsoft began recovering from a 24-hour global outage. Meanwhile, Anthropic's Claude helped verify 400 unpublished Kurt Gödel theorems in Coq, OpenAI folded its robotics unit into core GPT-6 Astra teams, both OpenAI and Google rolled out AI Wallet tools, and Prefrontal demonstrated 1,000x faster puzzle reasoning with Hopfield-era energy models.",
+  date: "Monday, November 16, 2026",
+  summary: "SpaceX caught Starship’s orbital upper stage with Starbase’s tower arms for the first time after Flight 15 deployed 26 Starlink V3 satellites, even as U.S. antitrust and EU privacy rulings hit chipmakers Samsung, SK Hynix, and Micron alongside a €805 million Italian fine against Meta. In AI research and models, Alibaba launched its 2.4T MoE Qwen4-Max flagship, OpenAI detailed GPT-6 Astra’s proof work on a lattice Standard Model candidate, and GPT-5.6 Sol uncovered a patched one-click uBlock Origin universal XSS flaw.",
   items: [
     {
       id: 'brief-1',
-      headline: "FAA Halts All U.S. Departing Flights After L3Harris Telecom Update Crash",
-      category: "technology" as const,
+      headline: "SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms for the First Time",
+      category: "science" as const,
       urgency: "Critical Signal" as const,
-      summary: "A nationwide ground stop issued at 20:54 UTC froze departures across U.S. airports while 4,042 flights remained airborne and up to 400,000 passengers waited in terminals. Reports linked the outage to an update crash on L3Harris's FAA Telecommunications Infrastructure.",
-      whyItMatters: "This is only the third U.S. nationwide flight halt since 2001, exposing single-vendor infrastructure fragility across more than 4,400 aviation sites.",
-      articleSlug: "faa-nationwide-ground-stop-l3harris-telecom-outage"
+      summary: "After 14 orbits and 26 Starlink V3 deployments over 22.5 hours, Ship returned safely into Starbase tower arms on Flight 15. An early boostback fuel shutdown forced Super Heavy to abort to an offshore Gulf hover and termination.",
+      whyItMatters: "Snagging the high-energy upper stage removes a central obstacle toward full-stack Starship reuse across broadband and Artemis schedules.",
+      articleSlug: "spacex-starship-flight-15-first-upper-stage-catch"
     },
     {
       id: 'brief-2',
-      headline: "Claude Helps Logicians Unlock 663 Theorems Inside Kurt Gödel’s Shorthand Notebooks",
-      category: "science" as const,
+      headline: "Alibaba Launches Qwen4-Max With 2.4T MoE Backbone, 1M Context, and Native Video Input",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "Helsinki University's Jan von Plato used Claude to digest 1,009 pages of Kurt Gödel's obsolete Gabelsberger shorthand notes in days, surfacing 663 candidate theorems. About 400 verified cleanly inside the Coq proof assistant alongside a near-proof of the axiom of choice.",
-      whyItMatters: "Pairing frontier language models with formal verifiers turns decades-slow archival deciphering into rapid, mathematically audited historical discovery.",
-      articleSlug: "ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems"
+      summary: "Qwen4-Max pairs a 2.4T MoE backbone (71B active) and 328B N-gram table with Gated DeltaNet compression across 1M context tokens at $1.50/$4.50 OpenRouter pricing. Artificial Analysis assigns an Intelligence Index of 42.9 alongside 62% lower Work360 task costs.",
+      whyItMatters: "Structural long-context optimizations let frontier reasoning models process video and agentic sessions at dramatically lower token volume.",
+      articleSlug: "alibaba-qwen4-max-2-4t-moe-1m-context-launch"
     },
     {
       id: 'brief-3',
-      headline: "OpenAI Disbands Stand-Alone Robotics Team as General Model GPT-6 Astra Controls Robots Directly",
-      category: "ai" as const,
+      headline: "Judge Refuses to Dismiss DRAM Supply Conspiracy Suit Against Samsung, SK Hynix, and Micron",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "OpenAI dissolved its dedicated robotics unit and moved staff under Mark Chen and Greg Brockman after GPT-6 Astra scored 74.8% in an Nvidia manipulation test against 51.0% for specialist bots. The shift trims siloed burn alongside recent $10.9B quarterly losses.",
-      whyItMatters: "Betting on multimodal frontier models for embodied control challenges pure-play robotics startups funded to build dedicated spatial brains.",
-      articleSlug: "openai-disbands-robotics-team-gpt-6-astra-embodied-ai"
+      summary: "A California federal judge rejected the memory trio's bid to toss a Sherman Act antitrust suit claiming they choked conventional DDR5 output in favor of HBM. Plaintiffs point to a 697% 18-month price spike, Micron's Crucial closure, and coordinated customer vetting.",
+      whyItMatters: "Advancing to formal discovery scrutinizes whether AI memory bottlenecks amplified commodity DRAM scarcity through concerted fab restraint.",
+      articleSlug: "judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit"
     },
     {
       id: 'brief-4',
-      headline: "OpenAI and Google Launch Wallet Connections for AI Agents on the Same Day",
+      headline: "Italy Fines Meta €805M Over Unconsented Facebook Access to 20 Million Users’ Photos",
       category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "OpenAI debuted ChatGPT Wallet with Amex, Mastercard, and Visa for tokenized, biometrically verified checkouts by U.S. Pro subscribers. Hours away, Google linked Google Wallet and Plaid into Gemini solely for read-only budgeting and subscription audits.",
-      whyItMatters: "The dual rollout draws a sharp line between network-tokenized agent checkout and read-only financial copilot guardrails.",
-      articleSlug: "openai-chatgpt-wallet-google-wallet-gemini-launch"
+      summary: "Italy's Garante penalized Meta €805 million for using broad Android media permissions to scan phone galleries for Facebook post suggestions. Meta must disable the feature by default within 60 days and intends to appeal.",
+      whyItMatters: "European data enforcers are establishing multi-hundred-million-euro deterrents against silent feature expansion atop broad OS permissions.",
+      articleSlug: "italy-fines-meta-805m-facebook-photo-gallery-access"
     },
     {
       id: 'brief-5',
-      headline: "Microsoft 365 Global Outage Past 24 Hours Halts Courts, Hospitals, and Rail Networks",
-      category: "technology" as const,
-      urgency: "Critical Signal" as const,
-      summary: "A faulty network capacity upgrade left Exchange Online, Teams, Outlook, and Copilot degraded across 70+ countries for more than a day as VMs stalled in bad states. UK hospitals, U.S. lawmakers, courts, and COP31 delegates lost access.",
-      whyItMatters: "Prolonged single-cloud outages force governments and enterprises to confront monoculture dependencies across daily mail and authentication.",
-      articleSlug: "microsoft-365-24-hour-global-outage-multi-cloud-debate"
+      headline: "OpenAI and UCSB Physicist Detail GPT-6 Astra’s Role in Lattice Standard Model Candidate Proof",
+      category: "research" as const,
+      urgency: "Notable Shift" as const,
+      summary: "Physicist Nathaniel Craig credited GPT-6 Astra with leading the multi-grid refinement proof in arXiv:2610.09093 tackling the 50-year chiral fermion lattice problem. Peer review and practical simulation algorithms remain ahead.",
+      whyItMatters: "Demonstrates frontier AI models advancing formal mathematical physics conjectures alongside Lean verification tooling.",
+      articleSlug: "openai-ucsb-gpt-6-astra-lattice-standard-model-proof"
     }
   ]
 };
@@ -1201,32 +1212,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Aviation Halt",
-    text: "FAA grounds all U.S. departures at 20:54 UTC after L3Harris telecom update crashes ATC lines.",
-    articleSlug: "faa-nationwide-ground-stop-l3harris-telecom-outage"
+    tag: "Starship Catch",
+    text: "SpaceX catches orbital Starship upper stage in Flight 15 tower arms after 22.5h mission.",
+    articleSlug: "spacex-starship-flight-15-first-upper-stage-catch"
   },
   {
     id: 'sig-2',
-    tag: "Math History",
-    text: "Claude digests 1,009 Gödel shorthand pages; Coq verifies ~400 newly uncovered theorems.",
-    articleSlug: "ai-deciphers-kurt-godel-shorthand-notebooks-coq-theorems"
+    tag: "Qwen4 Max",
+    text: "Alibaba ships 2.4T MoE (71B active) Qwen4-Max at $1.50/$4.50 with 1M multimodal context.",
+    articleSlug: "alibaba-qwen4-max-2-4t-moe-1m-context-launch"
   },
   {
     id: 'sig-3',
-    tag: "Embodied Shift",
-    text: "OpenAI disbands stand-alone robotics team as GPT-6 Astra hits 74.8% in robot manipulation.",
-    articleSlug: "openai-disbands-robotics-team-gpt-6-astra-embodied-ai"
+    tag: "Memory Suit",
+    text: "Federal judge allows DDR5/HBM supply conspiracy suit vs Samsung, Hynix, and Micron.",
+    articleSlug: "judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit"
   },
   {
     id: 'sig-4',
-    tag: "Agent Commerce",
-    text: "ChatGPT Wallet launches tokenized Amex/Visa/MC checkout; Gemini adds read-only Wallet sync.",
-    articleSlug: "openai-chatgpt-wallet-google-wallet-gemini-launch"
+    tag: "Privacy Fine",
+    text: "Italy fines Meta €805M over Facebook photo-gallery scanning on 20M Android devices.",
+    articleSlug: "italy-fines-meta-805m-facebook-photo-gallery-access"
   },
   {
     id: 'sig-5',
-    tag: "Cloud Outage",
-    text: "Microsoft 365 disruption passes 24 hours across 70+ countries after capacity upgrade fails.",
-    articleSlug: "microsoft-365-24-hour-global-outage-multi-cloud-debate"
+    tag: "Lattice Physics",
+    text: "UCSB physicist & OpenAI detail GPT-6 Astra proof on Standard Model lattice measure.",
+    articleSlug: "openai-ucsb-gpt-6-astra-lattice-standard-model-proof"
   }
 ];

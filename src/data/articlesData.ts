@@ -21603,6 +21603,310 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-396",
+    slug: "spacex-starship-flight-15-first-upper-stage-catch",
+    title: "SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms for the First Time",
+    subtitle: "After 14 orbits and deploying 26 Starlink V3 satellites over a 22.5-hour test flight, Ship descended into Starbase’s mechanical catch arms on November 14 while the booster aborted to a Gulf hover.",
+    category: "science",
+    articleType: "breaking",
+    signalRating: 95,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-16T03:30:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-396-spacex-starship-flight-15-first-upper-stage-catch.jpg",
+    coverImageAlt: "SpaceX Starship launch tower and integration bay at Starbase, Texas, site of Flight 15's orbital upper-stage catch.",
+    tags: ["SpaceX", "Starship Flight 15", "Starbase", "Reusable Rockets", "Starlink V3", "Artemis"],
+    threeQuestions: {
+      whatHappened: "SpaceX launched Starship Flight 15 from Starbase, Texas, on November 13, 2026, deployed 26 Starlink V3 satellites across 14 Earth orbits, and caught the returning Ship upper stage with launch tower arms on November 14 at 22:32:34 elapsed mission time.",
+      whyItMatters: "While SpaceX had previously caught three Super Heavy boosters, recovering the faster, higher-energy orbital Ship upper stage without landing legs removes a core barrier toward rapid full-stack rocket reuse.",
+      whatsNext: "Engineers are investigating a low-fuel-mass shutdown on Flight 15's Super Heavy boostback burn while preparing orbital propellant-transfer tests and Ship Crew Cabin 1 ahead of Artemis IV targeted for 2028."
+    },
+    keyTakeaways: [
+      "Liftoff at 5:47 p.m. ET (22:47 GMT) on November 13 delivered 26 Starlink V3 spacecraft adding roughly 1 terabit of network capacity, including three camera-equipped units that inspected Ship's heatshield.",
+      "A low-fuel-mass cutoff during Super Heavy's boostback burn triggered an automated guidance abort after relighting 32 of 33 planned Raptor engines, diverting the booster to a Gulf of Mexico hover and flight termination at T+00:06:35.",
+      "Following three orbital go/no-go checkpoints near Hawaii and Chile, Ship fired its deorbit burn at T+21:35:57 and stepped down from three Raptor engines to one before tower capture.",
+      "Rapid refurbishment, cryogenic orbital refueling depots, and life-support cabins remain unfinished prerequisites for both 10,000-launch annual ambitions and NASA's Artemis lunar lander schedule."
+    ],
+    content: [
+      "Sources: SpaceX's official Flight 15 mission timeline (November 13–14, 2026) and Space.com launch and catch coverage by Josh Dinner and Mike Wall.",
+      "Powering off Pad 2 with more than 18 million pounds of thrust from 33 Raptor 3 engines, Flight 15 cleared main engine cutoff at 00:02:19 and hot-staging at 00:02:21 before splitting paths between its two Version 3 stages. SpaceX had aimed for its first dual catch of both stages in a single mission, and the aborted booster recovery delays any maiden reuse of a Version 3 Super Heavy until engineers isolate why boostback ended early at 00:03:02.",
+      "Upper stage execution proceeded across a full orbital checkout: six Raptor ascent engines cut off at 00:08:09 and a 20-second single-Raptor circularization burn placed Ship in roughly a 170-mile (275-kilometer) low Earth orbit. Payload deployments ran from T+00:35:01 through T+01:17:40, with SpaceX confirming post-deployment radio contact across all 26 upgraded V3 satellites—matching the data throughput of roughly ten Falcon 9 V2 Starlink missions.",
+      "Cleared past orbital return checkpoints at 01:27:46 (Hawaii), 07:15:35 (Chile), and 20:41:55 (Hawaii), Ship reentered the atmosphere at T+22:10:46, swept past South Texas clouds, and performed its landing flip using three Raptors down to one at 22:32:33. 'That was the holy grail of spaceflight, plummeting through fire to be snatched out of the air by steel,' SpaceX spokesperson Dan Huot said during the landing webcast. 'We caught a Starship, and now everything changes.'",
+      "Crucially, catching an orbital stage only satisfies the hardware-recovery half of SpaceX's roadmap toward 10,000 launches by 2030—supporting a planned 100,000-satellite V3 broadband fleet and Elon Musk's proposed one-million-satellite Starmind data-center constellation. SpaceX has yet to fly the same Ship twice or demonstrate cryogenic propellant transfer to an orbital tanker depot (where Musk estimates six to eight tanker flights per deep-space mission versus outside estimates up to 22), while NASA expects full-scale Cabin 1 ground assembly late this year ahead of Artemis IV."
+    ],
+    technicalSpecs: {
+      "Launch & Catch Window": "November 13–14, 2026 (22:32:34 total duration)",
+      "Payload Deployed": "26 Starlink V3 satellites (1 Tbps added capacity)",
+      "Booster Outcome": "Aborted catch on boostback low-fuel cutoff; Gulf hover + FTS",
+      "Upper Stage Orbit": "~170 miles (275 km), 14 orbits, 3 Raptors-to-1 landing burn"
+    },
+    citations: [
+      {
+        title: "Starship Flight 15",
+        url: "https://www.spacex.com/launches/starship-flight-15",
+        source: "SpaceX"
+      },
+      {
+        title: "What's next for SpaceX's Starship after epic Flight 15 chopsticks catch?",
+        url: "https://www.space.com/space-exploration/launches-spacecraft/whats-next-for-spacexs-starship-after-epic-flight-15-chopsticks-catch",
+        source: "Space.com"
+      },
+      {
+        title: "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch",
+        url: "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship",
+        source: "Space.com"
+      }
+    ],
+    isHero: true,
+    isFeatured: true
+  },
+  {
+    id: "art-397",
+    slug: "alibaba-qwen4-max-2-4t-moe-1m-context-launch",
+    title: "Alibaba Launches Qwen4-Max With 2.4T MoE Backbone, 1M Context, and Native Video Input",
+    subtitle: "Listed on OpenRouter at $1.50/$4.50 per million tokens with an Artificial Analysis Intelligence Index of 42.9, Alibaba’s flagship adds Gated DeltaNet compression and Gated Residual routing.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 91,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-16T03:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-397-alibaba-qwen4-max-2-4t-moe-1m-context-launch.jpg",
+    coverImageAlt: "Glass office buildings and landscaped courtyard at Alibaba's Xixi Campus headquarters in Hangzhou, home to the Qwen research group.",
+    tags: ["Alibaba Cloud", "Qwen4-Max", "Mixture of Experts", "Multimodal AI", "1M Context", "Model Watch"],
+    threeQuestions: {
+      whatHappened: "On November 16, 2026 (02:00 UTC), Alibaba's Qwen Team introduced Qwen4-Max, a sparse MoE model coupling a 2.4-trillion-parameter backbone (71B active parameters) and 328B N-gram embedding table across a 1-million-token multimodal window.",
+      whyItMatters: "Architectural redesigns across attention, residual paths, and context lookups raise Work360 agent scores to 52.69 while slashing average task cost by 62% from $4.43 to $1.67 and dropping API list rates to $1.50/$4.50 per 1M tokens.",
+      whatsNext: "Developers can run Qwen4-Max immediately via QwenCloud, QwenWork, Qoder, QwenStudio, and OpenRouter, while Alibaba says smaller open-weight Qwen4 family models are scheduled to release soon."
+    },
+    keyTakeaways: [
+      "Qwen4-Max pairs three Gated DeltaNet compression layers per Qwen Sparse Attention (QSA) layer alongside four-branch Gated Residual connections and second-layer N-gram contextual embeddings.",
+      "Compared with Qwen3.8-Max, reasoning token volume falls 24% at Xhigh effort (35% at High) on Work360 and drops 48% to 49% on Terminal-Bench 4.0.",
+      "Independent Artificial Analysis evaluation records an Intelligence Index score of 42.9 for Qwen4 Max (Coding and Agentic sub-indexes unpopulated at launch).",
+      "Alibaba's launch post did not publish an external MMLU, GPQA Diamond, or SWE-bench scorecard alongside its Work360 and internal Bits-Per-Byte numbers."
+    ],
+    content: [
+      "Sources: Qwen Team's announcement ('Qwen4-Max: Your New Teammate Has Arrived', November 16, 2026), OpenRouter's live model specification, and Artificial Analysis index data.",
+      "Structurally, Qwen4-Max targets quadratic long-context inference bottlenecks without abandoning dense local pattern memory. Every Qwen Sparse Attention block sits behind three Gated DeltaNet recurrent layers that compress prior tokens into fixed states, letting QSA's lightweight micro-block indexer fetch relevant spans cleanly across 1,000,000 input tokens and up to 393,216 reasoning plus response tokens.",
+      "Rather than reporting standard public Q&A suites in its announcement, the Qwen Team highlighted multi-step knowledge-work evaluations spanning 26 domains, 182 subdomains, and 721 specialized roles under Work360 (up from 47.74 on Qwen3.8-Max to 52.69). Across internal pretraining Bits-Per-Byte tests in knowledge, coding, QA, and STEM, Qwen4-Max-Base achieved 5% to 13% lower BPB than Qwen3.8-Max-Base despite activating 25% fewer parameters; in an industrial manufacturing showcase, manual programming time for a workpiece dropped roughly 95% from 475 minutes to 24 minutes.",
+      "Live OpenRouter endpoints list Qwen4-Max with native text, image, and video inputs (text output), $0.075 per million cache-hit input tokens, and configurable reasoning efforts spanning xhigh, high (default), low, and none. While API deployment is open globally, exact regional availability of open-weight sub-variants and third-party coding/agentic sub-scores remain pending post-launch releases."
+    ],
+    technicalSpecs: {
+      "Total & Active Parameters": "2.4T MoE backbone (+328B N-gram embedding), 71B active",
+      "Context / Max Output": "1,000,000 input / 393,216 output tokens (text+image+video->text)",
+      "API Pricing (OpenRouter)": "$1.50 input / $4.50 output / $0.075 cache read per 1M tokens",
+      "AA Intelligence Index": "42.9 (Artificial Analysis, Nov 16, 2026 snapshot)"
+    },
+    relatedModelId: "model-qwen4-max",
+    citations: [
+      {
+        title: "Qwen4-Max: Your New Teammate Has Arrived",
+        url: "https://qwen.ai/blog?id=qwen4-max",
+        source: "Qwen Blog"
+      },
+      {
+        title: "Qwen4 Max API Model Specification",
+        url: "https://openrouter.ai/qwen/qwen4-max",
+        source: "OpenRouter"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-398",
+    slug: "judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit",
+    title: "Judge Refuses to Dismiss DRAM Supply Conspiracy Suit Against Samsung, SK Hynix, and Micron",
+    subtitle: "Judge Noël Wise ruled consumer and business plaintiffs plausibly alleged cartel coordination behind cutting DDR5 wafer capacity in favor of AI HBM despite a 697% 18-month price surge.",
+    category: "technology",
+    articleType: "analysis",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-16T03:00:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-398-judge-denies-dismissal-samsung-sk-hynix-micron-dra.jpg",
+    coverImageAlt: "Dual white DDR5 consumer DRAM memory modules arranged on a clean surface, representing commodity PC memory hit by HBM capacity shifts.",
+    tags: ["DRAM", "HBM", "Samsung", "SK Hynix", "Micron", "Antitrust"],
+    threeQuestions: {
+      whatHappened: "On November 14, 2026, U.S. District Judge Noël Wise denied in full Samsung, SK Hynix, and Micron's motion to dismiss a proposed Sherman Act Section 1 class action alleging coordinated cuts to conventional DRAM supply.",
+      whyItMatters: "Together controlling over 91% of global DRAM revenue in Q3 2025, the three chipmakers face full antitrust discovery over whether consumer Crucial exits, canceled fabs, and customer vetting were coordinated rather than independent AI demand shifts.",
+      whatsNext: "Samsung, SK Hynix, and Micron must file answers by December 7, 2026, ahead of an initial case management conference reset for January 12, 2027, at 9:00 a.m."
+    },
+    keyTakeaways: [
+      "Filed June 25, 2026 by 17 buyers across five states, the suit alleges High Bandwidth Memory uses 3x to 4x more silicon wafer area per gigabyte than DDR5, contributing to a 171.8% one-year jump (697% over 18 months).",
+      "Judge Wise distinguished the Ninth Circuit's 2022 DRAM II dismissal, highlighting 'difficult if not impossible to unwind' steps including Micron shutting down its 30-year-old Crucial brand on December 3, 2025.",
+      "Near-identical customer-vetting rules adopted in January 2026—after the AI boom began—weighed alongside 1998–2002 criminal price-fixing guilty pleas as plausible 'plus factors.'",
+      "The court rejected plaintiffs' reliance on 'supply discipline' earnings remarks, conference attendance, and three-firm concentration, stressing allegations remain unproven at the pleading stage."
+    ],
+    content: [
+      "Source: LitNews federal court report on Marc Garciaguirre, et al. v. Samsung Electronics Co., Ltd., et al. (U.S. District Court, N.D. Cal., Docket 5:26-cv-06345-NW, ECF No. 68 filed November 14, 2026).",
+      "Memory buyers represented by Bathaee Dunne LLP argued that parallel production cuts began within three weeks between SK Hynix and Micron in late 2022, followed roughly four and a half months later by Samsung on April 7, 2023. None of the three suppliers subsequently announced meaningful expansion of conventional DDR5 lines even as older DDR4 modules climbed past newer DDR5 in price per gigabyte during 2025 wind-downs.",
+      "Rejecting defense arguments framed around late Judge Posner's maxim that oligopolists 'watch each other like hawks,' Judge Wise wrote that plaintiffs' allegations read 'more akin to hawks flying in formation – an activity that hawks ordinarily do not do.' Under Ninth Circuit refinery-capacity precedent, halting fabs and refusing long-term conventional DRAM contracts while locking in multi-year HBM agreements supported an inference of concerted action against unilateral self-interest.",
+      "At the same time, the order trimmed weak claims early: trade-conference chatter without concrete exchanges carried no weight under DRAM II, investor phrases like 'supply discipline' echoed already-rejected theories, and prior criminal fines ($300 million against Samsung and $185 million against Hynix with Micron immunity) merely formed historical context while litigation advances into discovery."
+    ],
+    technicalSpecs: {
+      "Court & Docket": "U.S. District Court N.D. Cal., 5:26-cv-06345-NW (Nov 14, 2026)",
+      "Market Share Cited": ">91% of global DRAM revenue (Q3 2025)",
+      "Price Surge Alleged": "171.8% YoY in Q3 2025; 697% over 18 months",
+      "Key Next Deadlines": "Answers due Dec 7, 2026; Case Management Conf Jan 12, 2027"
+    },
+    citations: [
+      {
+        title: "Judge Refuses to Dismiss DRAM Supply Conspiracy Suit Against Samsung, SK Hynix, Micron",
+        url: "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+        source: "LitNews"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-399",
+    slug: "italy-fines-meta-805m-facebook-photo-gallery-access",
+    title: "Italy Fines Meta €805M Over Unconsented Facebook Access to 20 Million Users’ Photos",
+    subtitle: "Italy’s privacy regulator ordered Meta to disable its Android gallery post-suggestion feature by default within 60 days after finding broad app permissions hid automated photo inspection.",
+    category: "ai",
+    articleType: "breaking",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-16T02:45:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-399-italy-fines-meta-805m-facebook-photo-gallery-acces.jpg",
+    coverImageAlt: "Piazza Colonna in central Rome, Italy, seat of Italian executive oversight where regulators issued the record privacy fine.",
+    tags: ["Meta", "GDPR", "Italy Garante", "Android Privacy", "Facebook", "Data Protection"],
+    threeQuestions: {
+      whatHappened: "Italy's Data Protection Authority (Garante) fined Meta €805 million (£670 million / $887 million) on November 14, 2026, for accessing camera-roll photos and videos of roughly 20 million Android Facebook users without explicit consent.",
+      whyItMatters: "The penalty ranks among the largest European tech fines issued by an Italian agency, drawing a strict compliance line against bundling automated background gallery scanning into generic OS media permissions.",
+      whatsNext: "Meta must turn the suggestion tool off by default and collect separate user consent within 60 days, while a company spokesperson confirmed plans to appeal the decision."
+    },
+    keyTakeaways: [
+      "Investigators found Facebook relied on one broad app-wide permission dialog without warning users it would scan device galleries to generate post suggestions.",
+      "Italian regulators cited the scale of affected Android users, continued operation on un-updated clients, and Meta's 'lack of co-operation' when sizing the €805 million penalty.",
+      "Meta argued the feature helps users compose posts, relies on revocable OS permissions, and reflects a 'disproportionate' interpretation of law.",
+      "The ruling lands one month after a New Mexico court ordered Meta to pay $25 billion over years of misrepresented Facebook data practices."
+    ],
+    content: [
+      "Source: BBC News report by George Wright published November 14, 2026 (16:29 UTC).",
+      "At issue was how Meta's Facebook Android client transformed system-level gallery permissions granted for manual uploads into proactive, automated browsing of users' personal photo libraries. According to Italy's Garante per la protezione dei dati personali, the preceding disclosure prompt left smartphone owners unaware that granting app-wide media access enabled background inspection to surface draft post ideas.",
+      "Calling the infringement still active for users who had not installed newer updates or had previously accepted bundled prompts, the authority ordered Meta—which also operates Instagram and WhatsApp—to disable default operation within a strict 60-day window. Regulators explicitly factored Meta's uncooperative posture during inquiries into what stands among the steepest penalties leveled inside Italy.",
+      "'We strongly disagree with the [regulator's] assessment of the facts, its application of the law and the disproportionate level of the fine,' a Meta spokesperson told the BBC, adding: 'This is a straightforward feature which helps people post photos and videos to Facebook. People must give permission on their device before it can operate and they can change this permission at any time via their settings.' Timeline milestones for Meta's appeal and whether parallel European data watchdogs will pursue matching orders remain undisclosed."
+    ],
+    technicalSpecs: {
+      "Regulator": "Garante per la protezione dei dati personali (Italy)",
+      "Penalty Issued": "€805 million (£670M / $887M)",
+      "Affected User Base": "~20 million Android smartphone users",
+      "Compliance Deadline": "60 days to disable by default and obtain separate consent"
+    },
+    citations: [
+      {
+        title: "Italy fines Meta €805m over accessing users' photos",
+        url: "https://www.bbc.co.uk/news/articles/cwn83gxemk35o",
+        source: "BBC News"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-400",
+    slug: "openai-ucsb-gpt-6-astra-lattice-standard-model-proof",
+    title: "OpenAI and UCSB Physicist Detail GPT-6 Astra’s Role in Lattice Standard Model Candidate Proof",
+    subtitle: "Writing on November 15, Nathaniel Craig describes how GPT-6 Astra turned a multi-grid fermion refinement idea into a candidate nonperturbative lattice measure backed by Lean verification reports.",
+    category: "research",
+    articleType: "research-explained",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-16T02:30:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-400-openai-ucsb-gpt-6-astra-lattice-standard-model-pro.jpg",
+    coverImageAlt: "Compact Muon Solenoid (CMS) particle physics detector chamber at CERN, visualizing experimental verification of Standard Model interactions.",
+    tags: ["OpenAI", "GPT-6 Astra", "Standard Model", "Lattice Field Theory", "Theoretical Physics", "Lean"],
+    threeQuestions: {
+      whatHappened: "In a November 15, 2026 post, UC Santa Barbara physicist and OpenAI visiting scientist Nathaniel Craig detailed how GPT-6 Astra led the proof construction behind arXiv:2610.09093 proposing a gauge-invariant lattice measure for chiral fermions.",
+      whyItMatters: "For over 25 years since Martin Lüscher's 1999 formulation—and over 50 years broadly—nonabelian chiral weak-force couplings resisted nonperturbative 4D lattice definition due to fermion doubling and grid-loop phase ambiguity.",
+      whatsNext: "Craig notes the construction remains 'far more an answer in principle than an answer in practice,' with peer review, independent mathematical vetting, and practical Monte Carlo simulation adaptation still ahead."
+    },
+    keyTakeaways: [
+      "Craig supplied the refinement strategy across successively finer four-dimensional Euclidean grids, while GPT-6 Astra proposed how to transport gauge fields cleanly, proved convergence, and drafted the core proof.",
+      "Comparing overlap fermion projectors across finer lattice spacings produced phase corrections forming an exponentially local current under bounded, admissible gauge field strengths.",
+      "Outside lattice theorists Maarten Golterman, Andreas Kronfeld, and Yigal Shamir reviewed the proof with probing technical questions prior to publication.",
+      "Ancillary files on arXiv:2610.09093 (60+63 pages) ship alongside a mathematical companion and Lean formal verification report."
+    ],
+    content: [
+      "Sources: OpenAI science blog post by Nathaniel Craig (November 15, 2026) and arXiv preprint 2610.09093 ('A gauge-invariant measure for lattice chiral fermions').",
+      "Although lattice quantum chromodynamics routinely computes strong-force interactions on spacetime grids, chiral gauge theories—including the Standard Model's weak interaction acting differently on left- and right-handed fermions—historically trigger unphysical mirror copies or break gauge invariance. Building from Ginsparg-Wilson (1982), Narayanan-Neuberger overlap fermions (1994), Lüscher (1999), and Kikukawa-Kadoh (2008), theorists needed a smooth global phase rule fixing the fermion determinant phase across all gauge field loops.",
+      "'In an October preprint prepared with the aid of GPT-6 Astra, I proposed a candidate definition on a lattice—a grid representing spacetime,' Craig wrote. 'I had a strategy for tackling this problem, but had not been able to prove that it worked in all the cases it needed to cover. Astra helped turn that strategy into a construction and took the lead in developing the detailed proof.' Craig added that OpenAI's separate continuum-limit existence proof for simplified chiral Yang-Mills coupled fermions helped link the broader mathematical program.",
+      "Veteran lattice specialists including Maarten Golterman, Andreas Kronfeld, and Yigal Shamir interrogated the draft, though formal community refereeing of the 123 combined manuscript pages and Lean ancillary verification artifacts remains ongoing. Crucially, the bounded-admissibility rules guaranteeing locality at finite lattice spacing have not yet been translated into efficient algorithms usable in practical supercomputer lattice simulations."
+    ],
+    technicalSpecs: {
+      "Lead Researcher": "Nathaniel Craig (UCSB / KITP & Visiting Scientist at OpenAI)",
+      "AI System Used": "OpenAI GPT-6 Astra",
+      "Preprint Reference": "arXiv:2610.09093 (60+63 pp., 12 figs + Lean verification report)",
+      "Peer Status": "Candidate proof reviewed by Golterman, Kronfeld, Shamir; simulation methods open"
+    },
+    citations: [
+      {
+        title: "A step toward defining the Standard Model on a lattice",
+        url: "https://openai.com/index/step-toward-defining-the-standard-model/",
+        source: "OpenAI"
+      },
+      {
+        title: "A gauge-invariant measure for lattice chiral fermions",
+        url: "https://arxiv.org/abs/2610.09093",
+        source: "arXiv"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-401",
+    slug: "ublock-origin-one-click-uxss-element-picker-gpt-5-6-sol",
+    title: "One-Click Universal XSS in uBlock Origin Exposed Extension Filter Engine via GPT-5.6 Sol",
+    subtitle: "Malicious pages could leak Firefox’s random extension UUID, hijack the embedded element-picker UI inside a zero-opacity frame, and inject arbitrary cross-site JavaScript filters.",
+    category: "technology",
+    articleType: "deep-dive",
+    signalRating: 86,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-16T02:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-401-ublock-origin-one-click-uxss-element-picker-gpt-5.jpg",
+    coverImageAlt: "Compact ergonomic mechanical keyboard on a dark desk representing web security auditing and vulnerability disclosure.",
+    tags: ["uBlock Origin", "Browser Security", "Universal XSS", "GPT-5.6 Sol", "Firefox", "AI Vulnerability Research"],
+    threeQuestions: {
+      whatHappened: "Security researcher Smitty van Bodegom disclosed on November 15, 2026, a now-patched one-click universal cross-site scripting flaw in Firefox uBlock Origin MV2 discovered primarily using OpenAI's GPT-5.6 Sol with Claude PoC code.",
+      whyItMatters: "Abusing uBlock's privileged element picker allowed any untrusted site to add a 'trusted' scriptlet filter targeting sensitive origins like Google with a single invisible clickjacked tap.",
+      whatsNext: "Upgrading uBlock Origin (and Manifest V3 uBO Lite, which had a milder variant) applies a content-script secret token fix blocking cross-origin iframe messages from forging filter rules."
+    },
+    keyTakeaways: [
+      "Attacker pages first recovered Firefox's per-install moz-extension UUID by hooking XMLHttpRequest.prototype.open against uAssets' default adsbygoogle no-fetch-if redirect rule.",
+      "With the picker iframe URL known, an attacker embedded epicker-ui.html at opacity 0 and exchanged MessageChannel events (epickerStart, showDialog, resultsetDetails) directly.",
+      "Injecting a newline inside the picker's '$opt' modifier field broke syntax boundaries to append privileged '+js(trusted-rpnt, ...)' JavaScript injection rules.",
+      "The patch introduces a secret password generated by the extension content script and checked inside initial postMessage handshakes."
+    ],
+    content: [
+      "Source: Technical vulnerability write-up by Smitty van Bodegom ('Universal XSS in uBlock Origin from website-driven element picker', published November 15, 2026).",
+      "Van Bodegom noted the exploit chain began with a hypothesis around untrusted filter injection: 'GPT-5.6 Sol did most of the hard work of finding the issue. I figured there might be some kind of UXSS from filter injection, so I asked it to take a look, and it found the issue.' The researcher then manually audited and verified the proposed bug while Claude authored most of the proof-of-concept exploit code.",
+      "Unlike Chromium, Firefox assigns each installation a random internal UUID intended to shield extension pages from malicious web scripts. However, triggering a harmless fetch('/adsbygoogle.js') invoked a stock uAssets redirect rule whose internal XHR destination exposed the raw `moz-extension://<UUID>/web_accessible_resources/...` origin straight into a monkey-patched `XMLHttpRequest.prototype.open` wrapper.",
+      "Once framed invisibly under a decoy page button, the unauthenticated `epicker-ui.html` iframe trusted incoming control messages—letting an attacker inject arbitrary newline-delimited scriptlet rules treated by uBlock Origin as user-approved trusted filters until custom filters were later recompiled. Details of the GitHub security advisory CVSS severity and exact affected uBO Lite build numbers are covered upstream rather than quantified inline in the blog note."
+    ],
+    technicalSpecs: {
+      "Target Software": "uBlock Origin MV2 (Firefox) & milder uBO Lite MV3 variant",
+      "AI Models Used in Research": "OpenAI GPT-5.6 Sol (discovery) + Anthropic Claude (PoC)",
+      "Exploit Primitives": "XHR hook UUID leak + clickjacked iframe + opt newline injection",
+      "Mitigation": "Upgraded extension validates shared content-script secret token"
+    },
+    citations: [
+      {
+        title: "Universal XSS in uBlock Origin from website-driven element picker",
+        url: "https://iter.ca/post/ubo-uxss/",
+        source: "iter.ca (Smitty van Bodegom)"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

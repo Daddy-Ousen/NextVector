@@ -5,13 +5,67 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 00:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 03:30:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms for the First Time</title>
+      <link>https://nextvector.rhasan.online/article/spacex-starship-flight-15-first-upper-stage-catch</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/spacex-starship-flight-15-first-upper-stage-catch</guid>
+      <description>After 14 orbits and deploying 26 Starlink V3 satellites over a 22.5-hour test flight, Ship descended into Starbase’s mechanical catch arms on November 14 while the booster aborted to a Gulf hover.</description>
+      <category>SCIENCE</category>
+      <pubDate>Mon, 16 Nov 2026 03:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Alibaba Launches Qwen4-Max With 2.4T MoE Backbone, 1M Context, and Native Video Input</title>
+      <link>https://nextvector.rhasan.online/article/alibaba-qwen4-max-2-4t-moe-1m-context-launch</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/alibaba-qwen4-max-2-4t-moe-1m-context-launch</guid>
+      <description>Listed on OpenRouter at $1.50/$4.50 per million tokens with an Artificial Analysis Intelligence Index of 42.9, Alibaba’s flagship adds Gated DeltaNet compression and Gated Residual routing.</description>
+      <category>AI</category>
+      <pubDate>Mon, 16 Nov 2026 03:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Judge Refuses to Dismiss DRAM Supply Conspiracy Suit Against Samsung, SK Hynix, and Micron</title>
+      <link>https://nextvector.rhasan.online/article/judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit</guid>
+      <description>Judge Noël Wise ruled consumer and business plaintiffs plausibly alleged cartel coordination behind cutting DDR5 wafer capacity in favor of AI HBM despite a 697% 18-month price surge.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 16 Nov 2026 03:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Italy Fines Meta €805M Over Unconsented Facebook Access to 20 Million Users’ Photos</title>
+      <link>https://nextvector.rhasan.online/article/italy-fines-meta-805m-facebook-photo-gallery-access</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/italy-fines-meta-805m-facebook-photo-gallery-access</guid>
+      <description>Italy’s privacy regulator ordered Meta to disable its Android gallery post-suggestion feature by default within 60 days after finding broad app permissions hid automated photo inspection.</description>
+      <category>AI</category>
+      <pubDate>Mon, 16 Nov 2026 02:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI and UCSB Physicist Detail GPT-6 Astra’s Role in Lattice Standard Model Candidate Proof</title>
+      <link>https://nextvector.rhasan.online/article/openai-ucsb-gpt-6-astra-lattice-standard-model-proof</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-ucsb-gpt-6-astra-lattice-standard-model-proof</guid>
+      <description>Writing on November 15, Nathaniel Craig describes how GPT-6 Astra turned a multi-grid fermion refinement idea into a candidate nonperturbative lattice measure backed by Lean verification reports.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 16 Nov 2026 02:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>One-Click Universal XSS in uBlock Origin Exposed Extension Filter Engine via GPT-5.6 Sol</title>
+      <link>https://nextvector.rhasan.online/article/ublock-origin-one-click-uxss-element-picker-gpt-5-6-sol</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ublock-origin-one-click-uxss-element-picker-gpt-5-6-sol</guid>
+      <description>Malicious pages could leak Firefox’s random extension UUID, hijack the embedded element-picker UI inside a zero-opacity frame, and inject arbitrary cross-site JavaScript filters.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Mon, 16 Nov 2026 02:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>FAA Halts All U.S. Departing Flights After L3Harris Telecom Update Crash</title>
       <link>https://nextvector.rhasan.online/article/faa-nationwide-ground-stop-l3harris-telecom-outage</link>
@@ -496,60 +550,6 @@
       <description>Local referendums across nine states enact construction bans and tax restrictions, prompting Wall Street analysts to classify community resistance as a material credit risk.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Wed, 04 Nov 2026 23:40:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Scaling Git at OpenAI: Inside Pando, the Custom Backend Built for Agentic Coding Surges</title>
-      <link>https://nextvector.rhasan.online/article/openai-unveils-pando-git-backend-scaling-agentic-commits</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-unveils-pando-git-backend-scaling-agentic-commits</guid>
-      <description>How autonomous agents drove main branch commits up 1,300%, forcing OpenAI to replace traditional Git servers with an independent-ref distributed architecture.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Postman Faces Developer Backlash After Desktop Update Silently Injects Local AI Agent Hooks</title>
-      <link>https://nextvector.rhasan.online/article/postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/postman-desktop-app-silently-installs-ai-agent-plugins-prompting-backlash</guid>
-      <description>Version 12.33.4 modified local configuration files for Codex and Claude Code to register background MCP servers without user consent.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 23:55:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>First Cross-Framework MCP Study Finds 22.9% Attack Success Rate with Zero Framework Defenses</title>
-      <link>https://nextvector.rhasan.online/article/first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/first-cross-framework-mcp-tool-poisoning-study-finds-23-percent-exploit-rate</guid>
-      <description>Evaluating 9,720 cells across 12 frameworks and 18 models reveals that tool poisoning vulnerability is determined by the underlying LLM rather than agent software.</description>
-      <category>RESEARCH</category>
-      <pubDate>Tue, 03 Nov 2026 23:50:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Could a 1995 Pentium Pro Beat Kasparov? Carlini Proves Algorithmic Advances Drive Chess Mastery</title>
-      <link>https://nextvector.rhasan.online/article/carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/carlini-demonstrates-stockfish-on-1995-pentium-pro-beats-kasparov-at-3300-elo</guid>
-      <description>Running a modern 32-bit Stockfish build on a physical 200 MHz Intel Pentium Pro achieves 3300 Elo, eclipsing Deep Blue&#x27;s custom ASIC supercomputer.</description>
-      <category>RESEARCH</category>
-      <pubDate>Tue, 03 Nov 2026 23:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Ties Student Search to Gemini in Schools, Forcing an All-or-Nothing AI Choice</title>
-      <link>https://nextvector.rhasan.online/article/google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-workspace-education-ties-search-to-ai-forcing-all-or-nothing-district-choice</guid>
-      <description>New 2027 policy will disable Google Search for K-12 districts that opt out of AI, drawing antitrust scrutiny and educator protests.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 23:40:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Stringman Unveils $800 Open-Source Ceiling Cable Robot for Room-Scale Manipulation</title>
-      <link>https://nextvector.rhasan.online/article/stringman-open-source-800-dollar-cable-driven-room-robot-lerobot</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/stringman-open-source-800-dollar-cable-driven-room-robot-lerobot</guid>
-      <description>Neufangled Robotics bypasses wheeled chassis and humanoid joints with a four-anchor ceiling cable crane running Hugging Face LeRobot.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Tue, 03 Nov 2026 23:35:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

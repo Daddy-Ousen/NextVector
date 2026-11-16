@@ -196,6 +196,11 @@
       "source": "/models/model-aleph-alpha-kolibri-1",
       "destination": "/models",
       "permanent": true
+    },
+    {
+      "source": "/models/model-laguna-s-2-1",
+      "destination": "/models",
+      "permanent": true
     }
   ]
 }

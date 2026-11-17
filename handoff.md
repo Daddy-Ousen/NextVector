@@ -1,3 +1,43 @@
+# Handoff — 2026-11-17 (Daily Intelligence Pipeline Run: art-402 to art-408)
+
+## Latest: Daily Pipeline Complete — 7 Articles Verified (8/8 Gates Passed), Tencent Hy4 Flash Added (147 Models), Content & Newsletter Pushed
+**By:** Antigravity (Gemini 4 Hydrogen) · **Date:** Tuesday, November 17, 2026 (01:29 UTC)  
+**Repo:** `d:\AntigravityProjects\News` (Branch: `main`, Content Commit: `dbfa5c8`, Newsletter Commit: `cd082a7`)  
+**Catalog State:** 408 articles (`art-1` to `art-408`), 147 curated models (`model-hy4-flash` added; 40 AA-indexed, 116 Arena-ranked), 6 leaderboards, 89 timeline events, Daily Briefing & Live Signals synced to `Tuesday, November 17, 2026`.
+
+### What Was Done
+1. **Live Intelligence Harvest & Lab Newsroom Audit:** Ran `npm run harvest` (`pipeline_runs/harvest-2026-11-17.json`: HN 60, BBC 7, arXiv 30, OpenRouter 17 [16 untracked], HF 0) and audited official newsrooms (`anthropic.com/news`, `blog.google/technology/ai/`, `deepmind.google/discover/blog/`, `ai.meta.com/blog/`, `mistral.ai/news/`, `nvidianews.nvidia.com/`, plus `openai.com/news/` and `x.ai/news` via browser subagent).
+2. **Primary-Source Extraction (No Facts From Memory):** Read all primary pages directly (`oag.ca.gov/news/press-releases/...`, BBC `c6wy4xv2mxglo` and `cry49plv8v3go` via browser, `blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/`, `blogs.nvidia.com/blog/rubin-hpc/`, `blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/`, `nvidianews.nvidia.com/news/nvidia-expands-vera-cpu-platform...`, `nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi...`, `tencent.ai/blog/hy4-flash` & `cloud.tencent.com/tokenhub/hy4-flash-en` & `openrouter.ai/tencent/hy4-flash` via browser + OpenRouter API, `anthropic.com/research/coordinated-vulnerability-disclosure-timelines`, `harmonic.fun/news/aristotle-rust-verification/`).
+3. **Model Watch (`model-hy4-flash`):**
+   - Evaluated OpenRouter's 72h new listing `tencent/hy4-flash` (`2026-11-16T14:18:26.781Z`). Added `model-hy4-flash` (`Hy4 Flash`, `Tencent Hunyuan`, `or`: `tencent/hy4-flash`, `released`: `2026-11-16`, `link`: `https://tencent.ai/blog/hy4-flash`).
+   - Refreshed `openrouter.json` (`470` rows) and `artificial_analysis.json` (`265` rows; `742` in `artificial_analysis_full.json`) while keeping monotonic `arena_text.json`. Rebuilt registry via `python scripts/build_model_data.py` to `147` models cleanly.
+4. **Seven New Articles (`art-402`..`art-408`) + Briefing + Ticker:**
+   - `art-402` *(Hero, Featured, ai/breaking, 94)* — `California Sues OpenAI Over Hugging Face Agent Cyberattack and 80+ Containment Failures` (`california-attorney-general-sues-openai-hugging-face-agent-attack`)
+   - `art-403` *(Featured, technology/breaking, 92)* — `Optimizely Web Supply-Chain Attack Serves Crypto Clipper and iOS Exploits Across 178 Organizations` (`optimizely-web-supply-chain-malware-178-organizations-report-uri`)
+   - `art-404` *(Featured, technology/breaking, 91)* — `Nvidia Unveils 50,000-Core Rubin HPC GPU and 192-CPU Vera Racks as Vera Rubin Sweeps MLPerf` (`nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep`)
+   - `art-405` *(science/discovery, 89)* — `Nvidia, IBM, and Fermilab Launch Quantum-Classical Codesign Platform With 13,000x Faster Decoder` (`nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder`)
+   - `art-406` *(ai/model-report, 88, `relatedModelId: "model-hy4-flash"`)* — `Tencent Launches Hy4 Flash 1M-Context Multimodal Model at $0.035/M Input Pricing` (`tencent-releases-hy4-flash-1m-context-moe-model`)
+   - `art-407` *(ai/analysis, 87)* — `Anthropic Cuts Vulnerability Disclosure Window From 90 Days to 30 Days Citing AI Bug Rediscovery` (`anthropic-cuts-vulnerability-disclosure-window-30-days`)
+   - `art-408` *(research/analysis, 86)* — `Harmonic Expands Aristotle Formal Verification Into Rust for Smart Contracts and Unsafe Code` (`harmonic-expands-aristotle-formal-verification-rust`)
+5. **Stories Dropped & Why:**
+   - *JPMorgan Chase / US Bank Delays* & *United Airlines System Outage* (`apnews.com` / `cnn.com`): AP News returned HTTP 403 and lacked deep root-cause technical disclosures compared with Report URI and SC26 primary sources.
+   - *Windows 11 `MissionControlAggregator.dll` Coding-Agent Telemetry* (`xusheng.dev`): strong technical reverse-engineering post kept in reserve; prioritized the 178-organization Optimizely active exploitation incident, California v. OpenAI, Nvidia SC26, Anthropic CVD, and Harmonic Rust verification.
+   - *Nvidia 'Bring Jensen Back' Campaign & 5-Country Chip Export Rules* (`bbc.co.uk/news/articles/cry49plv8v3go`): deferred pending Nvidia's Q3 FY27 earnings call later today (Nov 17) and Jensen Huang's congressional briefing.
+   - *Microsoft M365 Email Outage Postmortem* (`theregister.com`): covered the outage in `art-394`; July-fix defect summary was secondary without Microsoft's primary post-incident report opened.
+6. **Checks Passed (Zero Errors):** `python scripts/add_articles.py pipeline_runs/2026-11-17.json --check` and write pass; `npm run images`; `npm run build` (`584` static HTML files, `sitemap.xml` `582` URLs, `rss.xml` `60` items); `npm run verify` (`[SUCCESS] ALL 8 RELEASE GATES PASSED`, 0 age warnings); `npm run lint` (`0` errors, `112` pre-existing warnings).
+
+### Open / Watch Items
+- **Model Watch Watchlist:** `tencent/hy4-flash` currently has OpenRouter specs only (no AA Intelligence Index or Arena Text Elo yet); check AA/Arena snapshots on subsequent runs. Also note `tencent/hy4` (Nov 4, covered in `art-352`) now appears in AA (`tencent-hy4`, `34.6`) and OpenRouter (`tencent/hy4`) if future runs want to promote it into `curated_models.json`.
+- **Ongoing News Watch:**
+  - *Nvidia Q3 FY27 Earnings (Nov 17) & House Select Committee on China / Export Licensing Rules* (Singapore, Thailand, Malaysia, Indonesia, Brazil).
+  - *Optimizely Official Postmortem* (how attackers obtained cross-tenant `projectJS` write access).
+  - *Anthropic IPO Roadshow* (expected Nov 18 pricing / Nov 19 Nasdaq `ANT` debut).
+- **Gotchas:**
+  - `tencent.ai` returns HTTP 567 to plain Python `urllib` and uses client-side rendering with WAF cookies; inspect via the `browser` subagent (and `openrouter.ai/api/frontend/v1/author-models?authorSlug=tencent` works directly for OpenRouter metadata).
+  - Wikimedia Commons thumbnail fetches rate-limit bursts with HTTP 503 if queried rapidly; pace search-script checks (`time.sleep(1.5)`). `add_articles.py` sequential download worked cleanly for all 7 URLs.
+
+---
+
 # Handoff — 2026-11-16 (Daily Intelligence Pipeline Run: art-396 to art-401)
 
 ## Latest: Daily Pipeline Complete — 6 Articles Verified (8/8 Gates Passed), Qwen4-Max Added, Timeline + Snapshots Updated, Content & Newsletter Pushed

@@ -162,6 +162,7 @@
     {"id": "model-minimax-m2-1", "name": "MiniMax M2.1", "dev": "MiniMax", "arena": "minimax-m2.1-preview", "aa": ["minimax-m2-1"]},
     {"id": "model-minimax-m2", "name": "MiniMax M2", "dev": "MiniMax", "arena": "minimax-m2", "swe": "MiniMax M2", "params": "230B total, 10B active (MoE)", "paramsSrc": "https://huggingface.co/MiniMaxAI/MiniMax-M2", "aa": ["minimax-m2"]},
 
+    {"id": "model-hy4-flash", "released": "2026-11-16", "name": "Hy4 Flash", "dev": "Tencent Hunyuan", "or": "tencent/hy4-flash", "link": "https://tencent.ai/blog/hy4-flash"},
     {"id": "model-hy4-preview", "name": "Hy4 preview", "dev": "Tencent Hunyuan", "or": "tencent/hy4-preview"},
     {"id": "model-hy3", "name": "Hy3", "dev": "Tencent Hunyuan", "arena": "hy3", "or": "tencent/hy3", "aa": ["hy3", "hy3-non-reasoning"]},
     {"id": "model-seed-2-0-pro", "name": "Seed 2.0 Pro", "dev": "ByteDance", "arena": "dola-seed-2.0-pro"},

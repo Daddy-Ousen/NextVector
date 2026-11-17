@@ -1605,21 +1605,21 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
   },
   {
     "rank": 48,
+    "modelName": "Nemotron 3 Ultra (550B A55B)",
+    "developer": "NVIDIA",
+    "score": 1445,
+    "date": "Nov 2026",
+    "modelId": "model-nemotron-3-ultra-550b-a55b",
+    "costPerRun": "$0.93 / 1M blended"
+  },
+  {
+    "rank": 49,
     "modelName": "Kimi K2.5",
     "developer": "Moonshot AI",
     "score": 1445,
     "date": "Nov 2026",
     "modelId": "model-kimi-k2-5",
     "costPerRun": "$1.00 / 1M blended"
-  },
-  {
-    "rank": 49,
-    "modelName": "Nemotron 3 Ultra (550B A55B)",
-    "developer": "NVIDIA",
-    "score": 1445,
-    "date": "Nov 2026",
-    "modelId": "model-nemotron-3-ultra-550b-a55b",
-    "costPerRun": "$1.05 / 1M blended"
   },
   {
     "rank": 50,
@@ -1781,7 +1781,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1434,
     "date": "Nov 2026",
     "modelId": "model-gemma-4-26b-a4b",
-    "costPerRun": "$0.11 / 1M blended"
+    "costPerRun": "$0.12 / 1M blended"
   },
   {
     "rank": 68,
@@ -2105,7 +2105,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1389,
     "date": "Nov 2026",
     "modelId": "model-muse-glimmer-30b",
-    "costPerRun": "$0.52 / 1M blended"
+    "costPerRun": "$0.64 / 1M blended"
   },
   {
     "rank": 104,
@@ -2186,7 +2186,7 @@ export const PRICE_ALL_PRICED_ENTRIES: LeaderboardEntry[] = [
     "score": 1288,
     "date": "Nov 2026",
     "modelId": "model-gpt-oss-20b",
-    "costPerRun": "$0.13 / 1M blended"
+    "costPerRun": "$0.06 / 1M blended"
   }
 ];
 
@@ -2200,11 +2200,11 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": true
   },
   {
-    "modelId": "model-gemma-4-26b-a4b",
-    "modelName": "Gemma 4 26B-A4B",
-    "developer": "Google DeepMind",
-    "price": 0.1069,
-    "score": 1434,
+    "modelId": "model-gpt-oss-20b",
+    "modelName": "gpt-oss-20b",
+    "developer": "OpenAI",
+    "price": 0.055,
+    "score": 1288,
     "frontier": false
   },
   {
@@ -2216,11 +2216,11 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-gpt-oss-20b",
-    "modelName": "gpt-oss-20b",
-    "developer": "OpenAI",
-    "price": 0.1312,
-    "score": 1288,
+    "modelId": "model-gemma-4-26b-a4b",
+    "modelName": "Gemma 4 26B-A4B",
+    "developer": "Google DeepMind",
+    "price": 0.1211,
+    "score": 1434,
     "frontier": false
   },
   {
@@ -2376,14 +2376,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
-    "modelId": "model-muse-glimmer-30b",
-    "modelName": "Muse Glimmer 30B",
-    "developer": "Meta AI",
-    "price": 0.525,
-    "score": 1389,
-    "frontier": false
-  },
-  {
     "modelId": "model-minimax-m2",
     "modelName": "MiniMax M2",
     "developer": "MiniMax",
@@ -2437,6 +2429,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Thinking Machines Lab",
     "price": 0.6375,
     "score": 1414,
+    "frontier": false
+  },
+  {
+    "modelId": "model-muse-glimmer-30b",
+    "modelName": "Muse Glimmer 30B",
+    "developer": "Meta AI",
+    "price": 0.6375,
+    "score": 1389,
     "frontier": false
   },
   {
@@ -2520,6 +2520,14 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "frontier": false
   },
   {
+    "modelId": "model-nemotron-3-ultra-550b-a55b",
+    "modelName": "Nemotron 3 Ultra (550B A55B)",
+    "developer": "NVIDIA",
+    "price": 0.925,
+    "score": 1445,
+    "frontier": false
+  },
+  {
     "modelId": "model-kimi-k2-5",
     "modelName": "Kimi K2.5",
     "developer": "Moonshot AI",
@@ -2533,14 +2541,6 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
     "developer": "Zhipu AI",
     "price": 1.0,
     "score": 1430,
-    "frontier": false
-  },
-  {
-    "modelId": "model-nemotron-3-ultra-550b-a55b",
-    "modelName": "Nemotron 3 Ultra (550B A55B)",
-    "developer": "NVIDIA",
-    "price": 1.05,
-    "score": 1445,
     "frontier": false
   },
   {
@@ -3089,7 +3089,7 @@ export const PRICE_SCORE_POINTS: PriceScorePoint[] = [
   }
 ];
 
-export const AA_DATA_AS_OF = '2026-11-16';
+export const AA_DATA_AS_OF = '2026-11-17';
 export const AA_INDEX_VERSION = '5';
 
 export const AA_LEADERBOARD_ENTRIES: LeaderboardEntry[] = [

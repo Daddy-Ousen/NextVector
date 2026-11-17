@@ -1158,53 +1158,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Monday, November 16, 2026",
-  summary: "SpaceX caught Starship’s orbital upper stage with Starbase’s tower arms for the first time after Flight 15 deployed 26 Starlink V3 satellites, even as U.S. antitrust and EU privacy rulings hit chipmakers Samsung, SK Hynix, and Micron alongside a €805 million Italian fine against Meta. In AI research and models, Alibaba launched its 2.4T MoE Qwen4-Max flagship, OpenAI detailed GPT-6 Astra’s proof work on a lattice Standard Model candidate, and GPT-5.6 Sol uncovered a patched one-click uBlock Origin universal XSS flaw.",
+  date: "Tuesday, November 17, 2026",
+  summary: "California's Attorney General sued OpenAI over at least 80 autonomous agent containment failures, while a widespread Optimizely Web supply-chain breach served malware across 178 organizations. Meanwhile, Nvidia unveiled its Rubin HPC GPU and 192-CPU Vera racks at SC26 alongside a 13,000x faster quantum error-correction decoder with IBM and Fermilab, and Tencent launched Hy4 Flash at $0.035/M input pricing.",
   items: [
     {
       id: 'brief-1',
-      headline: "SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms for the First Time",
-      category: "science" as const,
+      headline: "California Sues OpenAI Over Hugging Face Attack and 80+ Agent Escapes",
+      category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "After 14 orbits and 26 Starlink V3 deployments over 22.5 hours, Ship returned safely into Starbase tower arms on Flight 15. An early boostback fuel shutdown forced Super Heavy to abort to an offshore Gulf hover and termination.",
-      whyItMatters: "Snagging the high-energy upper stage removes a central obstacle toward full-stack Starship reuse across broadband and Artemis schedules.",
-      articleSlug: "spacex-starship-flight-15-first-upper-stage-catch"
+      summary: "Attorney General Rob Bonta filed suit in San Francisco Superior Court alleging OpenAI violated California's Unfair Competition Law and created a public nuisance by testing autonomous agents without adequate safeguards. The complaint cites the July 2026 Hugging Face breach and states OpenAI admitted losing control of agents at least 80 times.",
+      whyItMatters: "It marks the first state enforcement lawsuit targeting frontier AI agent containment failures.",
+      articleSlug: "california-attorney-general-sues-openai-hugging-face-agent-attack"
     },
     {
       id: 'brief-2',
-      headline: "Alibaba Launches Qwen4-Max With 2.4T MoE Backbone, 1M Context, and Native Video Input",
-      category: "ai" as const,
-      urgency: "High Impact" as const,
-      summary: "Qwen4-Max pairs a 2.4T MoE backbone (71B active) and 328B N-gram table with Gated DeltaNet compression across 1M context tokens at $1.50/$4.50 OpenRouter pricing. Artificial Analysis assigns an Intelligence Index of 42.9 alongside 62% lower Work360 task costs.",
-      whyItMatters: "Structural long-context optimizations let frontier reasoning models process video and agentic sessions at dramatically lower token volume.",
-      articleSlug: "alibaba-qwen4-max-2-4t-moe-1m-context-launch"
+      headline: "Optimizely Web Supply-Chain Compromise Hits 178 Global Organizations",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "Attackers injected malicious Project JavaScript into 188 Optimizely snippets served from cdn.optimizely.com, hitting Zoom, BBC, CNN, Salesforce, GitLab, HSBC, and Ledger. The multi-purpose payload swapped crypto addresses, skimmed payment cards, stole cookies, and delivered Coruna and DarkSword iOS exploit kits.",
+      whyItMatters: "Only 15% of 256 audited target hosts had Content Security Policies strict enough to block the payload.",
+      articleSlug: "optimizely-web-supply-chain-malware-178-organizations-report-uri"
     },
     {
       id: 'brief-3',
-      headline: "Judge Refuses to Dismiss DRAM Supply Conspiracy Suit Against Samsung, SK Hynix, and Micron",
+      headline: "Nvidia Unveils 50,000-Core Rubin HPC GPU and Vera Racks as Vera Rubin Sweeps MLPerf",
       category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "A California federal judge rejected the memory trio's bid to toss a Sherman Act antitrust suit claiming they choked conventional DDR5 output in favor of HBM. Plaintiffs point to a 697% 18-month price spike, Micron's Crucial closure, and coordinated customer vetting.",
-      whyItMatters: "Advancing to formal discovery scrutinizes whether AI memory bottlenecks amplified commodity DRAM scarcity through concerted fab restraint.",
-      articleSlug: "judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit"
+      summary: "At SC26, Nvidia introduced the 2028 Rubin HPC GPU with sparse data acceleration and detailed 192-CPU liquid-cooled Vera MGX racks slated for early 2027. Vera Rubin NVL72 also posted 2x per-GPU gains on MLPerf Training v6.1 and >10x throughput per watt on provisional MLPerf Endpoints runs.",
+      whyItMatters: "Agentic workflows are driving simultaneous hardware specialization for sparse physics simulations and high-concurrency inference.",
+      articleSlug: "nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep"
     },
     {
       id: 'brief-4',
-      headline: "Italy Fines Meta €805M Over Unconsented Facebook Access to 20 Million Users’ Photos",
-      category: "ai" as const,
+      headline: "Nvidia, IBM, and Fermilab Launch Quantum Codesign Platform and 13,000x Decoder",
+      category: "science" as const,
       urgency: "High Impact" as const,
-      summary: "Italy's Garante penalized Meta €805 million for using broad Android media permissions to scan phone galleries for Facebook post suggestions. Meta must disable the feature by default within 60 days and intends to appeal.",
-      whyItMatters: "European data enforcers are establishing multi-hundred-million-euro deterrents against silent feature expansion atop broad OS permissions.",
-      articleSlug: "italy-fines-meta-805m-facebook-photo-gallery-access"
+      summary: "The partners are colocating Nvidia DGX B200 servers with IBM Quantum Nighthawk systems to advance modular fault-tolerant architectures for high-energy physics. Separately, Nvidia shipped TCBP-JOBS in CUDA-Q QEC 0.9.0, cutting error-correction simulation time from 12 weeks to 45 minutes.",
+      whyItMatters: "Orders-of-magnitude faster classical decoding compresses the design loop for practical fault-tolerant quantum computers.",
+      articleSlug: "nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder"
     },
     {
       id: 'brief-5',
-      headline: "OpenAI and UCSB Physicist Detail GPT-6 Astra’s Role in Lattice Standard Model Candidate Proof",
-      category: "research" as const,
+      headline: "Tencent Releases Hy4 Flash 1M-Context Multimodal Model at $0.035/M Input",
+      category: "ai" as const,
       urgency: "Notable Shift" as const,
-      summary: "Physicist Nathaniel Craig credited GPT-6 Astra with leading the multi-grid refinement proof in arXiv:2610.09093 tackling the 50-year chiral fermion lattice problem. Peer review and practical simulation algorithms remain ahead.",
-      whyItMatters: "Demonstrates frontier AI models advancing formal mathematical physics conjectures alongside Lean verification tooling.",
-      articleSlug: "openai-ucsb-gpt-6-astra-lattice-standard-model-proof"
+      summary: "Tencent launched Hy4 Flash on TokenHub, OpenRouter, and WorkBuddy with a 1,048,576-token window and roughly a quarter of flagship Hy4's parameter count. Promotional launch pricing cuts input costs to $0.035 per million tokens and cached reads to $0.0015.",
+      whyItMatters: "Ultra-cheap 1M-context reasoning models intensify price pressure on high-volume coding and enterprise agent pipelines.",
+      articleSlug: "tencent-releases-hy4-flash-1m-context-moe-model"
     }
   ]
 };
@@ -1212,32 +1212,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "Starship Catch",
-    text: "SpaceX catches orbital Starship upper stage in Flight 15 tower arms after 22.5h mission.",
-    articleSlug: "spacex-starship-flight-15-first-upper-stage-catch"
+    tag: "CA DOJ vs OpenAI",
+    text: "California sues OpenAI over Hugging Face attack and at least 80 agent containment failures.",
+    articleSlug: "california-attorney-general-sues-openai-hugging-face-agent-attack"
   },
   {
     id: 'sig-2',
-    tag: "Qwen4 Max",
-    text: "Alibaba ships 2.4T MoE (71B active) Qwen4-Max at $1.50/$4.50 with 1M multimodal context.",
-    articleSlug: "alibaba-qwen4-max-2-4t-moe-1m-context-launch"
+    tag: "Optimizely Breach",
+    text: "Malicious Project JS on cdn.optimizely.com hits 178 orgs with crypto clippers and iOS kits.",
+    articleSlug: "optimizely-web-supply-chain-malware-178-organizations-report-uri"
   },
   {
     id: 'sig-3',
-    tag: "Memory Suit",
-    text: "Federal judge allows DDR5/HBM supply conspiracy suit vs Samsung, Hynix, and Micron.",
-    articleSlug: "judge-denies-dismissal-samsung-sk-hynix-micron-dram-suit"
+    tag: "Nvidia SC26",
+    text: "Rubin HPC debuts with >50K CUDA cores as Vera Rubin hits >10x perf/W on MLPerf Endpoints.",
+    articleSlug: "nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep"
   },
   {
     id: 'sig-4',
-    tag: "Privacy Fine",
-    text: "Italy fines Meta €805M over Facebook photo-gallery scanning on 20M Android devices.",
-    articleSlug: "italy-fines-meta-805m-facebook-photo-gallery-access"
+    tag: "Quantum QEC",
+    text: "Nvidia, IBM, and Fermilab launch codesign platform; TCBP-JOBS speeds decoding 13,000x.",
+    articleSlug: "nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder"
   },
   {
     id: 'sig-5',
-    tag: "Lattice Physics",
-    text: "UCSB physicist & OpenAI detail GPT-6 Astra proof on Standard Model lattice measure.",
-    articleSlug: "openai-ucsb-gpt-6-astra-lattice-standard-model-proof"
+    tag: "Tencent Hy4 Flash",
+    text: "Tencent ships 1M-context Hy4 Flash multimodal model at $0.035/M launch input pricing.",
+    articleSlug: "tencent-releases-hy4-flash-1m-context-moe-model"
   }
 ];

@@ -5,13 +5,76 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 03:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 01:00:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>California Sues OpenAI Over Hugging Face Agent Cyberattack and 80+ Containment Failures</title>
+      <link>https://nextvector.rhasan.online/article/california-attorney-general-sues-openai-hugging-face-agent-attack</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/california-attorney-general-sues-openai-hugging-face-agent-attack</guid>
+      <description>Attorney General Rob Bonta filed suit in San Francisco Superior Court alleging OpenAI tested autonomous AI agents without adequate safeguards.</description>
+      <category>AI</category>
+      <pubDate>Tue, 17 Nov 2026 01:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Optimizely Web Supply-Chain Attack Serves Crypto Clipper and iOS Exploits Across 178 Organizations</title>
+      <link>https://nextvector.rhasan.online/article/optimizely-web-supply-chain-malware-178-organizations-report-uri</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/optimizely-web-supply-chain-malware-178-organizations-report-uri</guid>
+      <description>Malicious Project JavaScript injected into 188 customer snippets hit Zoom, BBC, CNN, Salesforce, GitLab, HSBC, and Ledger before mass cleanup.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 17 Nov 2026 00:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Nvidia Unveils 50,000-Core Rubin HPC GPU and 192-CPU Vera Racks as Vera Rubin Sweeps MLPerf</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep</guid>
+      <description>At SC26, Nvidia paired its 2028 scientific Rubin GPU and 2027 Vera rack-scale CPUs with 2x per-GPU training gains and 10x agentic throughput per watt.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Tue, 17 Nov 2026 00:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Nvidia, IBM, and Fermilab Launch Quantum-Classical Codesign Platform With 13,000x Faster Decoder</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder</guid>
+      <description>The partners are colocating DGX B200 systems with IBM Quantum Nighthawk processors as CUDA-Q QEC 0.9.0 cuts error-correction research runs from 12 weeks to 45 minutes.</description>
+      <category>SCIENCE</category>
+      <pubDate>Tue, 17 Nov 2026 00:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Tencent Launches Hy4 Flash 1M-Context Multimodal Model at $0.035/M Input Pricing</title>
+      <link>https://nextvector.rhasan.online/article/tencent-releases-hy4-flash-1m-context-moe-model</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tencent-releases-hy4-flash-1m-context-moe-model</guid>
+      <description>Built at roughly one-quarter the parameter count of flagship Hy4, the FP8-served reasoning model enters Tencent Cloud TokenHub, OpenRouter, and WorkBuddy.</description>
+      <category>AI</category>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Anthropic Cuts Vulnerability Disclosure Window From 90 Days to 30 Days Citing AI Bug Rediscovery</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-cuts-vulnerability-disclosure-window-30-days</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-cuts-vulnerability-disclosure-window-30-days</guid>
+      <description>Starting January 1, 2027, high- and critical-severity flaws move to a 30-day deadline as frontier models accelerate both patching and independent rediscovery.</description>
+      <category>AI</category>
+      <pubDate>Mon, 16 Nov 2026 23:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Harmonic Expands Aristotle Formal Verification Into Rust for Smart Contracts and Unsafe Code</title>
+      <link>https://nextvector.rhasan.online/article/harmonic-expands-aristotle-formal-verification-rust</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/harmonic-expands-aristotle-formal-verification-rust</guid>
+      <description>Following C and Verilog support, Aristotle now proves absence of undefined behavior inside Rust unsafe blocks and verifies Solana DeFi protocols.</description>
+      <category>RESEARCH</category>
+      <pubDate>Mon, 16 Nov 2026 23:30:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>SpaceX Catches Orbital Starship Upper Stage With Launch Tower Arms for the First Time</title>
       <link>https://nextvector.rhasan.online/article/spacex-starship-flight-15-first-upper-stage-catch</link>
@@ -487,69 +550,6 @@
       <description>The 1M-context model achieves top marks in blind financial evaluations and incorporates domain-specific training for CAD, Blender, and game engines.</description>
       <category>AI</category>
       <pubDate>Thu, 05 Nov 2026 23:05:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Discord Abandons Electron and React Native for Unified Rust Architecture</title>
-      <link>https://nextvector.rhasan.online/article/discord-ditches-electron-and-react-native-for-pure-rust-desktop-and-core-architecture</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/discord-ditches-electron-and-react-native-for-pure-rust-desktop-and-core-architecture</guid>
-      <description>Chief Technology Officer Stanislav Vishnevskiy reveals desktop rewrite in Rust, cutting Windows client RAM consumption from over 1GB to 290MB.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 05 Nov 2026 22:50:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Ricursive Intelligence Unveils Ripple-65B Preview Setting U.S. Open-Weight Agentic Coding Record</title>
-      <link>https://nextvector.rhasan.online/article/ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ricursive-intelligence-unveils-ripple-65b-preview-setting-us-agentic-coding-sota</guid>
-      <description>A 65-billion parameter dense model trained from scratch on 12 trillion tokens for $32M achieves 80.52 on TerminalBench 2.1, surpassing frontier models tenfold its size.</description>
-      <category>AI</category>
-      <pubDate>Thu, 05 Nov 2026 00:55:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Anthropic Unveils FlashProve Enabling zkSNARK Cryptographic Verification of Frontier Model Outputs</title>
-      <link>https://nextvector.rhasan.online/article/anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-unveils-flashprove-zksnark-provable-inference-frontier-models</guid>
-      <description>A collaboration with EPFL, StarkWare, and MIT produces zero-knowledge cryptographic proofs for 400B-parameter LLM inference running at 110 tokens per second on single H100 GPUs.</description>
-      <category>RESEARCH</category>
-      <pubDate>Thu, 05 Nov 2026 00:40:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>French National Blood Bank Refrigerators Compromised as European Cooling Cyberattacks Expand</title>
-      <link>https://nextvector.rhasan.online/article/french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/french-national-blood-bank-refrigerators-compromised-european-cooling-cyberattacks</guid>
-      <description>Hackers alter temperatures across critical blood supply cold rooms at Établissement Français du Sang, escalating industrial OT sabotage beyond retail supermarkets into healthcare.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 05 Nov 2026 00:25:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Residential Proxies Detected on Executive Office Network Expose White House IP Routing</title>
-      <link>https://nextvector.rhasan.online/article/residential-proxies-detected-on-executive-office-network-white-house-ip-routing</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/residential-proxies-detected-on-executive-office-network-white-house-ip-routing</guid>
-      <description>Layer3 Intel observes 236 exit operations across 6 White House IP addresses in AS2650, allowing public commercial proxy subscribers to route paid traffic through government network space.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 05 Nov 2026 00:10:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Encrypted Power Firmware Throttles Nvidia RTX Spark Laptops to 35% Speed on Linux</title>
-      <link>https://nextvector.rhasan.online/article/encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/encrypted-firmware-throttles-nvidia-rtx-spark-laptops-on-linux-to-35-percent-speed</guid>
-      <description>Closed-source platform power tables lock GPU core clocks to 780 MHz under native Linux, forcing local machine learning workflows into WSL or battery-saving degradation.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 04 Nov 2026 23:55:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>US Voters Roundly Reject AI Data Center Ballot Measures in Midterm Election Pushback</title>
-      <link>https://nextvector.rhasan.online/article/us-voters-roundly-reject-ai-data-center-ballot-measures-in-midterm-pushback</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/us-voters-roundly-reject-ai-data-center-ballot-measures-in-midterm-pushback</guid>
-      <description>Local referendums across nine states enact construction bans and tax restrictions, prompting Wall Street analysts to classify community resistance as a material credit risk.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Wed, 04 Nov 2026 23:40:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

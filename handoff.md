@@ -1,3 +1,37 @@
+# Handoff — 2026-11-19 (Daily Intelligence Pipeline Run: art-409 to art-416)
+
+## Latest: Daily Pipeline Complete — 8 Articles Verified (8/8 Gates Passed), Gemini 4 Neon & GPT-6.2 Astra/Sol Added (150 Models), Timeline Updated, Content & Newsletter Pushed
+**By:** Antigravity · **Date:** Thursday, November 19, 2026 (16:01 UTC)  
+**Repo:** `d:\AntigravityProjects\News` (Branch: `main`, Content Commit: `feeb869`, Newsletter Commit: `7e95964`)  
+**Catalog State:** 416 articles (`art-1` to `art-416`), 150 curated models (`model-gemini-4-neon`, `model-gpt-6-2-astra`, `model-gpt-6-2-sol` added; 43 AA-indexed, 116 Arena-ranked), 6 leaderboards, 90 timeline events (`time-2026-11-19-anthropic-ipo` added at top), Daily Briefing & Live Signals synced to `Thursday, November 19, 2026`.
+
+### What Was Done
+1. **Live Intelligence Harvest & Lab Newsroom Audit:** Ran `npm run harvest` (`pipeline_runs/harvest-2026-11-19.json`) and audited official newsrooms (`anthropic.com/news`, `blog.google/technology/ai/`, `deepmind.google/discover/blog/`, `ai.meta.com/blog/`, `mistral.ai/news/`, `nvidianews.nvidia.com/`, plus `openai.com/news/` and `x.ai/news` via browser subagent).
+2. **Primary-Source Extraction (No Facts From Memory):** Opened and read primary pages directly (`anthropic.com/news/anthropic-prices-initial-public-offering`, BBC `bbc.co.uk/news/articles/c6742m39xgzxo` & `openai.com/index/advancing-chip-design-with-our-models/` via browser subagent including SVG Vega chart labels, `blog.google/.../introducing-gemini-4-neon/`, `developers.openai.com/api/docs/models/gpt-6.2-{astra,sol}.md` & `changelog.md`, `nvidianews.nvidia.com/...third-quarter-fiscal-2027`, `verialabs.com/ruby2shell/`, `blog.google/.../genie-4-now-available-project-genie/`, `microsoft.ai/news/microsoft-ignite-2026/` & `huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/raw/main/README.md`, `blog.google/.../blue-origin-project-suncatcher-partnership/`).
+3. **Model Watch (`model-gemini-4-neon`, `model-gpt-6-2-astra`, `model-gpt-6-2-sol` + `model-hy4-flash` params):**
+   - Added `model-gemini-4-neon` (AA Intelligence `61.4` Xhigh / `59.6` High / `54.9` Medium / `44.1` Low; `$3/$15/$0.15`; 1,048,576 ctx), `model-gpt-6-2-astra` (AA `62.1` Max / `61.6` Xhigh; `$8/$40/$0.40`; 1,050,000 ctx), and `model-gpt-6-2-sol` (AA `57.3` Max / `55.7` Xhigh; `$2/$10/$0.10`; 1,050,000 ctx) to `scripts/model_sources/curated_models.json`.
+   - Added Hugging Face `params` disclosure (`220B total, 12B active (MoE)`) to `model-hy4-flash`.
+   - Refreshed `openrouter.json`, `google_pricing.json`, and `artificial_analysis.json` (`279` tracked AA rows; `763` full), keeping monotonic `arena_text.json`. Rebuilt registry via `python scripts/build_model_data.py` to `150` models (`43` AA-indexed).
+4. **Eight New Articles (`art-409`..`art-416`) + Timeline + Briefing + Ticker:**
+   - `art-409` *(Hero, Featured, ai/breaking, 97 + Timeline `time-2026-11-19-anthropic-ipo`)* — `Anthropic Prices Record $81.3B Nasdaq IPO Ahead of ANT Trading Debut at ~$1.5T Valuation` (`anthropic-prices-record-81b-nasdaq-ipo-ant`)
+   - `art-410` *(Featured, ai/model-report, 94, `relatedModelId: "model-gemini-4-neon"`)* — `Google DeepMind Launches Gemini 4 Neon at $3/M Input, Taking #1 on AA Coding Agent Index` (`google-deepmind-gemini-4-neon-coding-agent-release`)
+   - `art-411` *(Featured, ai/model-report, 94, `relatedModelId: "model-gpt-6-2-astra"`)* — `OpenAI Ships GPT-6.2 Astra and Sol Alongside Silicon-Proven Chip Gains With AMD` (`openai-gpt-6-2-astra-sol-chip-design-amd`)
+   - `art-412` *(technology/breaking, 93)* — `Nvidia Hits $115.8B Quarterly Revenue on Vera Rubin Ramp and Agrees to Acquire Hugging Face` (`nvidia-q3-fy27-115b-revenue-hugging-face-acquisition`)
+   - `art-413` *(technology/breaking, 92)* — `Ruby2ßhell Flaw Exposes Default Rails, GitLab, and GitHub Enterprise Server to Unauthenticated RCE` (`ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce`)
+   - `art-414` *(ai/breaking, 90)* — `Google DeepMind Rolls Out Genie 4 Interactive World Model With Live Prompting and Native Audio` (`google-deepmind-genie-4-world-model-live-audio`)
+   - `art-415` *(ai/breaking, 89)* — `Microsoft Unveils Seven MAI Models, Maia 200 Silicon in Production, and Open Aion-1.0-2.3B` (`microsoft-ignite-seven-mai-models-maia-200-aion`)
+   - `art-416` *(science/breaking, 88)* — `Google and Blue Origin Set Q1 2029 New Glenn Launch for Project Suncatcher Orbital AI Racks` (`google-blue-origin-project-suncatcher-new-glenn-2029`)
+5. **Stories Audited & Dropped:**
+   - *Anthropic `claude-black-hole-physics`* (`anthropic.com/research/claude-black-hole-physics`): CMS `datePublished` was `2026-11-17T00:00:00.000Z`, outside the strict 48-hour cutoff (`>= 2026-11-17 15:39 UTC`).
+   - *OpenAI `gpt-6.2-astra-pro` / `gpt-6.2-sol-pro`* OpenRouter listings: 404 on official OpenAI docs with identical `$8/$40` and `$2/$10` pricing (OpenRouter serving tiers, not distinct models).
+   - *Palo Alto Networks / Applied Compute* (`investors.paloaltonetworks.com`): returned HTTP 403; deprioritized behind 8 primary-verified frontier releases.
+6. **Checks Passed:** `python scripts/add_articles.py pipeline_runs/2026-11-19.json --check` & write -> `npm run images` (saved 0.5 MB) -> `npm run build` (`595` static HTML files, `sitemap.xml` `593` URLs, `rss.xml` `60` items) -> `npm run verify` (`ALL 8 RELEASE GATES PASSED`, `0` age warnings) -> `npm run lint` (`0` errors, 112 pre-existing warnings).
+7. **Known Open / Gotchas:**
+   - Downloading >5 uncached Wikimedia thumbnails back-to-back in under a second triggers HTTP 429; staging locally into `public/images/articles/` with a polite 3.5s sleep avoided rate limits while keeping `add_articles.py` & `verify_daily_pipeline.py` dhash checks (`>= 15` bits vs catalog, `>= 21` bits pairwise) completely green.
+   - Do not commit untracked `pipeline_runs/harvest-2026-11-19.json` or `pipeline_runs/2026-11-19.json`.
+
+---
+
 # Handoff — 2026-11-17 (Daily Intelligence Pipeline Run: art-402 to art-408)
 
 ## Latest: Daily Pipeline Complete — 7 Articles Verified (8/8 Gates Passed), Tencent Hy4 Flash Added (147 Models), Content & Newsletter Pushed

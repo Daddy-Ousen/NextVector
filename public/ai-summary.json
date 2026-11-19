@@ -60,11 +60,11 @@
       {
         "category": "Best Arena score under $0.20 blended",
         "rule": "Highest Arena score with a blended list price under $0.20 per 1M tokens.",
-        "model": "GLM-5.3-Flash",
-        "developer": "Zhipu AI",
-        "metric": "Arena 1471 at $0.05 blended",
-        "listPrice": "$0.040 / $0.078 per 1M tokens",
-        "url": "https://nextvector.rhasan.online/models/model-glm-5-3-flash"
+        "model": "DeepSeek-V4.1-Flash",
+        "developer": "DeepSeek",
+        "metric": "Arena 1475 at $0.09 blended",
+        "listPrice": "$0.051 / $0.203 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-deepseek-v4-1-flash"
       },
       {
         "category": "Best open-weights model",
@@ -96,11 +96,11 @@
       {
         "category": "Highest Artificial Analysis Intelligence Index",
         "rule": "Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).",
-        "model": "Gemini 4 Carbon",
-        "developer": "Google DeepMind",
-        "metric": "AA Intelligence Index 60",
-        "listPrice": "$2.00 / $10.00 per 1M tokens",
-        "url": "https://nextvector.rhasan.online/models/model-gemini-4-carbon"
+        "model": "GPT-6.2 Astra",
+        "developer": "OpenAI",
+        "metric": "AA Intelligence Index 62.1",
+        "listPrice": "$8.00 / $40.00 per 1M tokens",
+        "url": "https://nextvector.rhasan.online/models/model-gpt-6-2-astra"
       },
       {
         "category": "Largest context window",

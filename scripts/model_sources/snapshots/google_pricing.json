@@ -1,7 +1,7 @@
 {
  "source": "https://ai.google.dev/gemini-api/docs/pricing",
- "fetchedAt": "2026-11-16T03:32:37Z",
- "count": 28,
+ "fetchedAt": "2026-11-19T15:40:42Z",
+ "count": 29,
  "data": [
   {
    "title": "{% right-column class=\"center-vertically right-align\" %}",
@@ -13,6 +13,13 @@
   {
    "title": "{% right-column class=\"center-vertically right-align\" %}",
    "ids": "{% button href=\"https://aistudio.google.com/prompts/new_chat?model=gemini-4-argon\" variant=\"ais\" %}",
+   "input": null,
+   "output": null,
+   "cache": null
+  },
+  {
+   "title": "{% right-column class=\"center-vertically right-align\" %}",
+   "ids": "{% button href=\"https://aistudio.google.com/prompts/new_chat?model=gemini-4-neon\" variant=\"ais\" %}",
    "input": null,
    "output": null,
    "cache": null

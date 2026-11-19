@@ -47,7 +47,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 50,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Fable 5.1 (Xhigh, Default Fallback) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Fable 5.1 (Xhigh, Default Fallback) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh"
       }
     ],
@@ -237,7 +237,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 59.1,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Opus 5.5 (Max, Default Fallback) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Opus 5.5 (Max, Default Fallback) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-5"
       }
     ],
@@ -318,7 +318,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 44.2,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Opus 5 (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Opus 5 (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5"
       }
     ],
@@ -791,7 +791,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 54.5,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Sonnet 5.5 (Max, Default Fallback) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Sonnet 5.5 (Max, Default Fallback) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-5"
       }
     ],
@@ -1071,7 +1071,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 36.5,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Haiku 5.5 (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude Haiku 5.5 (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-haiku-5-5"
       }
     ],
@@ -1144,7 +1144,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 7.4,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning"
       }
     ],
@@ -1178,6 +1178,118 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "Artificial Analysis",
         "url": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning"
+      }
+    ],
+    "dataAsOf": "2026-11-12"
+  },
+  {
+    "id": "model-gpt-6-2-astra",
+    "name": "GPT-6.2 Astra",
+    "developer": "OpenAI",
+    "releaseDate": "November 2026",
+    "releaseDateSource": "Lab announcement",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Files",
+      "Vision"
+    ],
+    "contextWindow": "1.05M tokens",
+    "contextTokens": 1050000,
+    "parameters": "Not disclosed",
+    "pricing": {
+      "inputPer1M": 8.0,
+      "outputPer1M": 40.0,
+      "cachedInputPer1M": 0.4,
+      "source": "OpenRouter list price"
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary",
+    "hardwareRequirements": "Hosted API",
+    "aaIntelligence": 62.1,
+    "aaVariant": "GPT-6.2 Astra (Max)",
+    "benchmarks": [
+      {
+        "benchmarkName": "AA Intelligence Index",
+        "score": 62.1,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6.2 Astra (Max) · checked 2026-11-19",
+        "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-2-astra"
+      }
+    ],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+    "summary": "Proprietary model from OpenAI, listed November 2026. $8.00 input / $40.00 output per 1M tokens. 1.05M tokens context.",
+    "sources": [
+      {
+        "label": "Official page",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
+      },
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/openai/gpt-6.2-astra"
+      },
+      {
+        "label": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/models/gpt-6-2-astra"
+      }
+    ],
+    "dataAsOf": "2026-11-12"
+  },
+  {
+    "id": "model-gpt-6-2-sol",
+    "name": "GPT-6.2 Sol",
+    "developer": "OpenAI",
+    "releaseDate": "November 2026",
+    "releaseDateSource": "Lab announcement",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Files",
+      "Vision"
+    ],
+    "contextWindow": "1.05M tokens",
+    "contextTokens": 1050000,
+    "parameters": "Not disclosed",
+    "pricing": {
+      "inputPer1M": 2.0,
+      "outputPer1M": 10.0,
+      "cachedInputPer1M": 0.1,
+      "source": "OpenRouter list price"
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary",
+    "hardwareRequirements": "Hosted API",
+    "aaIntelligence": 57.3,
+    "aaVariant": "GPT-6.2 Sol (Max)",
+    "benchmarks": [
+      {
+        "benchmarkName": "AA Intelligence Index",
+        "score": 57.3,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6.2 Sol (Max) · checked 2026-11-19",
+        "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-2-sol"
+      }
+    ],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+    "summary": "Proprietary model from OpenAI, listed November 2026. $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.",
+    "sources": [
+      {
+        "label": "Official page",
+        "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol"
+      },
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/openai/gpt-6.2-sol"
+      },
+      {
+        "label": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/models/gpt-6-2-sol"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -1223,7 +1335,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 54.6,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6.1 Sol (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6.1 Sol (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-1-sol"
       }
     ],
@@ -1333,7 +1445,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 56.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Astra (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Astra (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra"
       }
     ],
@@ -1404,7 +1516,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 44.2,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Sol (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Sol (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-sol"
       }
     ],
@@ -1475,7 +1587,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 27.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Luna (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-6 Luna (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-luna"
       }
     ],
@@ -1605,7 +1717,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 32.3,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-5.6 Terra (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-5.6 Terra (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra"
       }
     ],
@@ -1676,7 +1788,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 23.8,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-5.6 Luna (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GPT-5.6 Luna (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna"
       }
     ],
@@ -2721,7 +2833,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 3.8,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: gpt-oss-120b (High) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: gpt-oss-120b (High) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b"
       }
     ],
@@ -2773,9 +2885,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 131072,
     "parameters": "21B total, 3.6B active (MoE)",
     "pricing": {
-      "inputPer1M": 0.03,
-      "outputPer1M": 0.13,
-      "cachedInputPer1M": 0.03,
+      "inputPer1M": 0.018,
+      "outputPer1M": 0.09,
+      "cachedInputPer1M": 0.009,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -2799,7 +2911,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openai.com/index/introducing-gpt-oss/",
-    "summary": "Open Weights model from OpenAI, listed August 2025. Arena text score 1288 (#261 of 414 entries). $0.03 input / $0.13 output per 1M tokens. 128K tokens context.",
+    "summary": "Open Weights model from OpenAI, listed August 2025. Arena text score 1288 (#261 of 414 entries). $0.02 input / $0.09 output per 1M tokens. 128K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -2816,6 +2928,68 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "arena.ai text leaderboard",
         "url": "https://arena.ai/leaderboard/text"
+      }
+    ],
+    "dataAsOf": "2026-11-12"
+  },
+  {
+    "id": "model-gemini-4-neon",
+    "name": "Gemini 4 Neon",
+    "developer": "Google DeepMind",
+    "releaseDate": "November 2026",
+    "releaseDateSource": "Lab announcement",
+    "modelType": "Multimodal Foundation",
+    "modalities": [
+      "Text",
+      "Audio",
+      "Files",
+      "Video",
+      "Vision"
+    ],
+    "contextWindow": "1M tokens",
+    "contextTokens": 1048576,
+    "parameters": "Not disclosed",
+    "pricing": {
+      "inputPer1M": 3,
+      "outputPer1M": 15,
+      "cachedInputPer1M": 0.15,
+      "source": "Gemini API pricing"
+    },
+    "openSourceStatus": "Proprietary API",
+    "license": "Proprietary",
+    "hardwareRequirements": "Hosted API",
+    "aaIntelligence": 61.4,
+    "aaVariant": "Gemini 4 Neon (Xhigh)",
+    "benchmarks": [
+      {
+        "benchmarkName": "AA Intelligence Index",
+        "score": 61.4,
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Neon (Xhigh) · checked 2026-11-19",
+        "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-neon"
+      }
+    ],
+    "keyImprovements": [],
+    "knownLimitations": [],
+    "realWorldApplications": [],
+    "architectureNotes": "",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "summary": "Proprietary model from Google DeepMind, listed November 2026. $3.00 input / $15.00 output per 1M tokens. 1M tokens context.",
+    "sources": [
+      {
+        "label": "Official page",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+      },
+      {
+        "label": "Gemini API pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing"
+      },
+      {
+        "label": "OpenRouter listing",
+        "url": "https://openrouter.ai/google/gemini-4-neon"
+      },
+      {
+        "label": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/models/gemini-4-neon"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -2853,7 +3027,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 60,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Carbon (High) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Carbon (High) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-carbon"
       }
     ],
@@ -2906,7 +3080,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 53.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Hydrogen (Xhigh) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Hydrogen (Xhigh) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-hydrogen"
       }
     ],
@@ -2975,7 +3149,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 50.4,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Argon (High) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 4 Argon (High) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-4-argon"
       }
     ],
@@ -3049,7 +3223,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 30.8,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.8 Flash (High) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.8 Flash (High) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash"
       }
     ],
@@ -3392,7 +3566,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 11.7,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.5 Flash-Lite · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.5 Flash-Lite · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite"
       }
     ],
@@ -3535,7 +3709,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 6.2,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.1 Flash-Lite · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemini 3.1 Flash-Lite · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview"
       }
     ],
@@ -3822,7 +3996,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 4.4,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemma 4 31B (Reasoning) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Gemma 4 31B (Reasoning) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-31b"
       }
     ],
@@ -3872,9 +4046,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "26B total, 4B active (MoE)",
     "pricing": {
-      "inputPer1M": 0.0765,
-      "outputPer1M": 0.255,
-      "cachedInputPer1M": 0.0425,
+      "inputPer1M": 0.09,
+      "outputPer1M": 0.3,
+      "cachedInputPer1M": 0.05,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -3898,7 +4072,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-26b-a4b-it",
-    "summary": "Open Weights model from Google DeepMind, listed April 2026. Arena text score 1434 (#93 of 414 entries). $0.08 input / $0.26 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Google DeepMind, listed April 2026. Arena text score 1434 (#93 of 414 entries). $0.09 input / $0.30 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -3960,7 +4134,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 35.5,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Grok 4.7 (Xhigh) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Grok 4.7 (Xhigh) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/grok-4-7"
       }
     ],
@@ -4031,7 +4205,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 31,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Grok 4.6 (Xhigh) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Grok 4.6 (Xhigh) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-xhigh"
       }
     ],
@@ -4630,7 +4804,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 36.6,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Muse Spark 1.3 (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Muse Spark 1.3 (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3"
       }
     ],
@@ -4882,7 +5056,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 6.3,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Muse Glimmer (High) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Muse Glimmer (High) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/muse-glimmer"
       }
     ],
@@ -4932,9 +5106,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.2403,
-      "outputPer1M": 8.4023,
-      "cachedInputPer1M": 0.2,
+      "inputPer1M": 0.253,
+      "outputPer1M": 8.8,
+      "cachedInputPer1M": 0.18,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -4946,7 +5120,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 46.5,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Kimi K3.1 Pro · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Kimi K3.1 Pro · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3-1-pro"
       }
     ],
@@ -4955,7 +5129,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
-    "summary": "Open Weights model from Moonshot AI, listed October 2026. $0.24 input / $8.40 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Moonshot AI, listed October 2026. $0.25 input / $8.80 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -5013,7 +5187,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 17.4,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Kimi K3 (Low) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Kimi K3 (Low) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3-low"
       }
     ],
@@ -5062,7 +5236,7 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.6,
+      "inputPer1M": 0.65,
       "outputPer1M": 3.5,
       "cachedInputPer1M": 0.16,
       "source": "OpenRouter list price"
@@ -5076,7 +5250,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
-    "summary": "Open Weights model from Moonshot AI, listed June 2026. $0.60 input / $3.50 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Moonshot AI, listed June 2026. $0.65 input / $3.50 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -5349,7 +5523,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 31.7,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GLM-5.3 (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GLM-5.3 (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3"
       }
     ],
@@ -5399,8 +5573,8 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.0399,
-      "outputPer1M": 0.0784,
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.5,
       "cachedInputPer1M": 0.03,
       "source": "OpenRouter list price"
     },
@@ -5424,7 +5598,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 27.8,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: GLM-5.3-Flash · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: GLM-5.3-Flash · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3-flash"
       }
     ],
@@ -5433,7 +5607,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://z.ai/blog/glm-5.3",
-    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1471 (#33 of 414 entries). $0.04 input / $0.08 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed August 2026. Arena text score 1471 (#33 of 414 entries). $0.15 input / $0.50 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -5472,9 +5646,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.007,
-      "outputPer1M": 6.8,
-      "cachedInputPer1M": 0.006,
+      "inputPer1M": 0.62,
+      "outputPer1M": 2.42,
+      "cachedInputPer1M": 0.14,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -5498,7 +5672,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/zai-org/GLM-5.2",
-    "summary": "Open Weights model from Zhipu AI, listed June 2026. Arena text score 1469 (#34 of 414 entries). $0.01 input / $6.80 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed June 2026. Arena text score 1469 (#34 of 414 entries). $0.62 input / $2.42 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -5529,9 +5703,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 204800,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 1.4,
-      "outputPer1M": 4.4,
-      "cachedInputPer1M": 0.26,
+      "inputPer1M": 1.19,
+      "outputPer1M": 3.74,
+      "cachedInputPer1M": 0.6,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -5555,7 +5729,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/zai-org/GLM-5.1",
-    "summary": "Open Weights model from Zhipu AI, listed April 2026. Arena text score 1463 (#41 of 414 entries). $1.40 input / $4.40 output per 1M tokens. 205K tokens context.",
+    "summary": "Open Weights model from Zhipu AI, listed April 2026. Arena text score 1463 (#41 of 414 entries). $1.19 input / $3.74 output per 1M tokens. 205K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -5912,9 +6086,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.036,
-      "outputPer1M": 0.5,
-      "cachedInputPer1M": 0.01,
+      "inputPer1M": 0.15,
+      "outputPer1M": 0.6,
+      "cachedInputPer1M": 0.003,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -5926,7 +6100,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-    "summary": "Open Weights model from DeepSeek, listed October 2026. $0.04 input / $0.50 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed October 2026. $0.15 input / $0.60 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -5954,9 +6128,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.14,
-      "outputPer1M": 0.42,
-      "cachedInputPer1M": 0.0042,
+      "inputPer1M": 0.0507,
+      "outputPer1M": 0.2028,
+      "cachedInputPer1M": 0.001,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -5980,7 +6154,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
-    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#26 of 414 entries). $0.14 input / $0.42 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#26 of 414 entries). $0.05 input / $0.20 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -6040,7 +6214,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 23.1,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro"
       }
     ],
@@ -6191,9 +6365,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1048576,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.06,
-      "outputPer1M": 0.18,
-      "cachedInputPer1M": 0.015,
+      "inputPer1M": 0.062,
+      "outputPer1M": 0.3,
+      "cachedInputPer1M": 0.035,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6205,7 +6379,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
-    "summary": "Open Weights model from DeepSeek, listed July 2026. $0.06 input / $0.18 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from DeepSeek, listed July 2026. $0.06 input / $0.30 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "OpenRouter listing",
@@ -6440,7 +6614,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 42.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen4 Max · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen4 Max · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/qwen4-max"
       }
     ],
@@ -6507,7 +6681,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 33.7,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen3.8 Max (0902) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen3.8 Max (0902) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-max"
       }
     ],
@@ -6596,9 +6770,9 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 1024000,
     "parameters": "27B (dense)",
     "pricing": {
-      "inputPer1M": 0.15,
-      "outputPer1M": 1.875,
-      "cachedInputPer1M": 0.0375,
+      "inputPer1M": 0.06,
+      "outputPer1M": 2.2,
+      "cachedInputPer1M": 0.059,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -6621,7 +6795,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 20.1,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b"
       }
     ],
@@ -6630,7 +6804,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/Qwen/Qwen3.8-27B",
-    "summary": "Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1436 (#90 of 414 entries). $0.15 input / $1.88 output per 1M tokens. 1.02M tokens context.",
+    "summary": "Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1436 (#90 of 414 entries). $0.06 input / $2.20 output per 1M tokens. 1.02M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7111,8 +7285,8 @@ export const ALL_MODELS: AIModel[] = [
     "contextTokens": 262144,
     "parameters": "27B (dense)",
     "pricing": {
-      "inputPer1M": 0.26,
-      "outputPer1M": 2.6,
+      "inputPer1M": 0.195,
+      "outputPer1M": 1.56,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7136,7 +7310,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://huggingface.co/Qwen/Qwen3.5-27B",
-    "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#145 of 414 entries). $0.26 input / $2.60 output per 1M tokens. 256K tokens context.",
+    "summary": "Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#145 of 414 entries). $0.20 input / $1.56 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7251,7 +7425,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 29.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: MiMo-V2.6-Pro · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: MiMo-V2.6-Pro · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-6-pro"
       }
     ],
@@ -7295,13 +7469,13 @@ export const ALL_MODELS: AIModel[] = [
     "modalities": [
       "Text"
     ],
-    "contextWindow": "1.02M tokens",
-    "contextTokens": 1024000,
+    "contextWindow": "256K tokens",
+    "contextTokens": 262144,
     "parameters": "Not listed in our sources",
     "pricing": {
-      "inputPer1M": 0.435,
-      "outputPer1M": 0.87,
-      "cachedInputPer1M": 0.0036,
+      "inputPer1M": 0.48,
+      "outputPer1M": 1.8,
+      "cachedInputPer1M": 0.096,
       "source": "OpenRouter list price"
     },
     "openSourceStatus": "Open Weights",
@@ -7325,7 +7499,7 @@ export const ALL_MODELS: AIModel[] = [
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://mimo.xiaomi.com/mimo-v2-5-pro/",
-    "summary": "Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1464 (#40 of 414 entries). $0.43 input / $0.87 output per 1M tokens. 1.02M tokens context.",
+    "summary": "Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1464 (#40 of 414 entries). $0.48 input / $1.80 output per 1M tokens. 256K tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7613,7 +7787,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 18.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: MiniMax-M3 · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: MiniMax-M3 · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/minimax-m3"
       }
     ],
@@ -7907,30 +8081,30 @@ export const ALL_MODELS: AIModel[] = [
     "developer": "Tencent Hunyuan",
     "releaseDate": "November 2026",
     "releaseDateSource": "Lab announcement",
-    "modelType": "Compact / Edge",
+    "modelType": "Open Weights",
     "modalities": [
       "Text",
       "Vision"
     ],
     "contextWindow": "1M tokens",
     "contextTokens": 1048576,
-    "parameters": "Not disclosed",
+    "parameters": "220B total, 12B active (MoE)",
     "pricing": {
       "inputPer1M": 0.035,
       "outputPer1M": 0.1405,
       "cachedInputPer1M": 0.0015,
       "source": "OpenRouter list price"
     },
-    "openSourceStatus": "Proprietary API",
-    "license": "Proprietary",
-    "hardwareRequirements": "Hosted API",
+    "openSourceStatus": "Open Weights",
+    "license": "Open weights (see Hugging Face)",
+    "hardwareRequirements": "Open weights on Hugging Face (tencent/Hy4-flash)",
     "benchmarks": [],
     "keyImprovements": [],
     "knownLimitations": [],
     "realWorldApplications": [],
     "architectureNotes": "",
     "link": "https://tencent.ai/blog/hy4-flash",
-    "summary": "Proprietary model from Tencent Hunyuan, listed November 2026. $0.04 input / $0.14 output per 1M tokens. 1M tokens context.",
+    "summary": "Open Weights model from Tencent Hunyuan, listed November 2026. $0.04 input / $0.14 output per 1M tokens. 1M tokens context.",
     "sources": [
       {
         "label": "Official page",
@@ -7939,6 +8113,10 @@ export const ALL_MODELS: AIModel[] = [
       {
         "label": "OpenRouter listing",
         "url": "https://openrouter.ai/tencent/hy4-flash"
+      },
+      {
+        "label": "Hugging Face weights",
+        "url": "https://huggingface.co/tencent/Hy4-flash"
       }
     ],
     "dataAsOf": "2026-11-12"
@@ -8209,7 +8387,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 26.1,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Mistral Large 4 (High) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Mistral Large 4 (High) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-4"
       }
     ],
@@ -8490,7 +8668,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 12.5,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Inkling (Xhigh) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Inkling (Xhigh) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/inkling"
       }
     ],
@@ -8565,7 +8743,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 12.9,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Inkling Small · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Inkling Small · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/inkling-small"
       }
     ],
@@ -8640,7 +8818,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 28.5,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Step 5 Preview · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Step 5 Preview · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/step-5"
       }
     ],
@@ -8765,7 +8943,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 11.8,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b"
       }
     ],
@@ -8834,7 +9012,7 @@ export const ALL_MODELS: AIModel[] = [
       {
         "benchmarkName": "AA Intelligence Index",
         "score": 14.2,
-        "vsPreviousGen": "Artificial Analysis v5 · best setting: Solar Pro 4 · checked 2026-11-17",
+        "vsPreviousGen": "Artificial Analysis v5 · best setting: Solar Pro 4 · checked 2026-11-19",
         "sourceUrl": "https://artificialanalysis.ai/models/solar-pro4"
       }
     ],

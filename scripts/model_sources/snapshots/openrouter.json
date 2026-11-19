@@ -1,15 +1,209 @@
 {
  "source": "https://openrouter.ai/api/v1/models",
- "fetchedAt": "2026-11-17T01:08:10Z",
- "count": 470,
+ "fetchedAt": "2026-11-19T15:40:42Z",
+ "count": 479,
  "data": [
+  {
+   "id": "google/gemini-4-neon",
+   "name": "Google: Gemini 4 Neon",
+   "created": 1795006977,
+   "createdDate": "2026-11-18",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 3.0,
+   "output": 15.0,
+   "cache_read": 0.15,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "google/gemini-4-neon:batch",
+   "name": "Google: Gemini 4 Neon (batch)",
+   "created": 1795006977,
+   "createdDate": "2026-11-18",
+   "context_length": 1048576,
+   "hugging_face_id": null,
+   "input": 1.5,
+   "output": 7.5,
+   "cache_read": 0.075,
+   "input_modalities": [
+    "audio",
+    "file",
+    "image",
+    "text",
+    "video"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-astra-pro",
+   "name": "OpenAI: GPT-6.2 Astra Pro",
+   "created": 1794938432,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 8.0,
+   "output": 40.0,
+   "cache_read": 0.4,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-astra-pro:batch",
+   "name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+   "created": 1794938432,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 4.0,
+   "output": 20.0,
+   "cache_read": 0.2,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-astra",
+   "name": "OpenAI: GPT-6.2 Astra",
+   "created": 1794938423,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 8.0,
+   "output": 40.0,
+   "cache_read": 0.4,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-astra:batch",
+   "name": "OpenAI: GPT-6.2 Astra (batch)",
+   "created": 1794938423,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 4.0,
+   "output": 20.0,
+   "cache_read": 0.2,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-sol-pro",
+   "name": "OpenAI: GPT-6.2 Sol Pro",
+   "created": 1794938409,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.1,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-sol-pro:batch",
+   "name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+   "created": 1794938409,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-sol",
+   "name": "OpenAI: GPT-6.2 Sol",
+   "created": 1794938371,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 2.0,
+   "output": 10.0,
+   "cache_read": 0.1,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
+  {
+   "id": "openai/gpt-6.2-sol:batch",
+   "name": "OpenAI: GPT-6.2 Sol (batch)",
+   "created": 1794938371,
+   "createdDate": "2026-11-17",
+   "context_length": 1050000,
+   "hugging_face_id": null,
+   "input": 1.0,
+   "output": 5.0,
+   "cache_read": 0.05,
+   "input_modalities": [
+    "file",
+    "image",
+    "text"
+   ],
+   "output_modalities": [
+    "text"
+   ]
+  },
   {
    "id": "tencent/hy4-flash",
    "name": "Tencent: Hy4 flash",
    "created": 1794838706,
    "createdDate": "2026-11-16",
    "context_length": 1048576,
-   "hugging_face_id": null,
+   "hugging_face_id": "tencent/Hy4-flash",
    "input": 0.035,
    "output": 0.1405,
    "cache_read": 0.0015,
@@ -204,24 +398,6 @@
    "input": 0.3,
    "output": 1.0,
    "cache_read": 0.03,
-   "input_modalities": [
-    "text",
-    "image"
-   ],
-   "output_modalities": [
-    "text"
-   ]
-  },
-  {
-   "id": "thinkingmachines/inkling-2-small:free",
-   "name": "Thinking Machines: Inkling 2 Small (free)",
-   "created": 1794261847,
-   "createdDate": "2026-11-09",
-   "context_length": 1048576,
-   "hugging_face_id": "thinkingmachines/Inkling-2-Small",
-   "input": 0.0,
-   "output": 0.0,
-   "cache_read": null,
    "input_modalities": [
     "text",
     "image"
@@ -570,9 +746,9 @@
    "createdDate": "2026-10-23",
    "context_length": 1048576,
    "hugging_face_id": "moonshotai/Kimi-K3.1-Pro",
-   "input": 0.2403,
-   "output": 8.4023,
-   "cache_read": 0.2,
+   "input": 0.253,
+   "output": 8.8,
+   "cache_read": 0.18,
    "input_modalities": [
     "text",
     "image",
@@ -625,9 +801,9 @@
    "createdDate": "2026-10-19",
    "context_length": 1048576,
    "hugging_face_id": "MiniMaxAI/MiniMax-M3.1-Flash",
-   "input": 0.15,
-   "output": 0.6,
-   "cache_read": 0.015,
+   "input": 0.075,
+   "output": 0.3,
+   "cache_read": 0.0075,
    "input_modalities": [
     "text",
     "image",
@@ -644,9 +820,9 @@
    "createdDate": "2026-10-17",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "input": 0.036,
-   "output": 0.5,
-   "cache_read": 0.01,
+   "input": 0.15,
+   "output": 0.6,
+   "cache_read": 0.003,
    "input_modalities": [
     "text",
     "image"
@@ -1749,9 +1925,9 @@
    "createdDate": "2026-09-14",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.036,
-   "output": 0.5,
-   "cache_read": 0.01,
+   "input": 0.035,
+   "output": 0.15,
+   "cache_read": 0.0015,
    "input_modalities": [
     "text",
     "image"
@@ -1801,9 +1977,9 @@
    "createdDate": "2026-09-11",
    "context_length": 1050000,
    "hugging_face_id": null,
-   "input": 10.0,
-   "output": 50.0,
-   "cache_read": 1.0,
+   "input": 8.0,
+   "output": 40.0,
+   "cache_read": 0.4,
    "input_modalities": [
     "file",
     "image",
@@ -1934,9 +2110,9 @@
    "createdDate": "2026-09-10",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
-   "input": 0.14,
-   "output": 0.42,
-   "cache_read": 0.0042,
+   "input": 0.0507,
+   "output": 0.2028,
+   "cache_read": 0.001014,
    "input_modalities": [
     "text",
     "image"
@@ -2312,8 +2488,8 @@
    "createdDate": "2026-08-26",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.3-Flash",
-   "input": 0.0399,
-   "output": 0.0784,
+   "input": 0.15,
+   "output": 0.5,
    "cache_read": 0.03,
    "input_modalities": [
     "text",
@@ -2490,9 +2666,9 @@
    "createdDate": "2026-08-14",
    "context_length": 1024000,
    "hugging_face_id": "Qwen/Qwen3.8-27B",
-   "input": 0.15,
-   "output": 1.875,
-   "cache_read": 0.0375,
+   "input": 0.06,
+   "output": 2.2,
+   "cache_read": 0.059,
    "input_modalities": [
     "text",
     "image",
@@ -2822,9 +2998,9 @@
    "createdDate": "2026-08-01",
    "context_length": 1048576,
    "hugging_face_id": null,
-   "input": 0.0434,
-   "output": 0.3,
-   "cache_read": 0.035,
+   "input": 0.04664,
+   "output": 0.13992,
+   "cache_read": 0.001484,
    "input_modalities": [
     "text"
    ],
@@ -2839,9 +3015,9 @@
    "createdDate": "2026-07-31",
    "context_length": 1048576,
    "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "input": 0.06,
-   "output": 0.18,
-   "cache_read": 0.015,
+   "input": 0.062,
+   "output": 0.3,
+   "cache_read": 0.035,
    "input_modalities": [
     "text"
    ],
@@ -3610,9 +3786,9 @@
    "createdDate": "2026-06-16",
    "context_length": 1048576,
    "hugging_face_id": "zai-org/GLM-5.2",
-   "input": 0.007,
-   "output": 6.8,
-   "cache_read": 0.006,
+   "input": 0.62,
+   "output": 2.42,
+   "cache_read": 0.14,
    "input_modalities": [
     "text"
    ],
@@ -3644,7 +3820,7 @@
    "createdDate": "2026-06-12",
    "context_length": 262144,
    "hugging_face_id": "moonshotai/Kimi-K2.7-Code",
-   "input": 0.6,
+   "input": 0.65,
    "output": 3.5,
    "cache_read": 0.16,
    "input_modalities": [
@@ -4475,11 +4651,11 @@
    "name": "Xiaomi: MiMo-V2.5-Pro",
    "created": 1776874273,
    "createdDate": "2026-04-22",
-   "context_length": 1024000,
+   "context_length": 262144,
    "hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
-   "input": 0.435,
-   "output": 0.87,
-   "cache_read": 0.0036,
+   "input": 0.48,
+   "output": 1.8,
+   "cache_read": 0.096,
    "input_modalities": [
     "text"
    ],
@@ -4609,9 +4785,9 @@
    "createdDate": "2026-04-07",
    "context_length": 204800,
    "hugging_face_id": "zai-org/GLM-5.1",
-   "input": 1.4,
-   "output": 4.4,
-   "cache_read": 0.26,
+   "input": 1.19,
+   "output": 3.74,
+   "cache_read": 0.6,
    "input_modalities": [
     "text"
    ],
@@ -4626,9 +4802,9 @@
    "createdDate": "2026-04-03",
    "context_length": 262144,
    "hugging_face_id": "google/gemma-4-26B-A4B-it",
-   "input": 0.0765,
-   "output": 0.255,
-   "cache_read": 0.0425,
+   "input": 0.09,
+   "output": 0.3,
+   "cache_read": 0.05,
    "input_modalities": [
     "image",
     "text",
@@ -5001,7 +5177,7 @@
    "hugging_face_id": "Qwen/Qwen3.5-9B",
    "input": 0.17,
    "output": 0.25,
-   "cache_read": 0.153,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image",
@@ -5172,8 +5348,8 @@
    "createdDate": "2026-02-25",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3.5-27B",
-   "input": 0.26,
-   "output": 2.6,
+   "input": 0.195,
+   "output": 1.56,
    "cache_read": null,
    "input_modalities": [
     "text",
@@ -5809,7 +5985,7 @@
    "hugging_face_id": "zai-org/GLM-4.6V",
    "input": 0.3,
    "output": 0.9,
-   "cache_read": 0.055,
+   "cache_read": 0.05,
    "input_modalities": [
     "image",
     "text",
@@ -6503,9 +6679,9 @@
    "createdDate": "2025-09-11",
    "context_length": 262144,
    "hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-   "input": 0.09,
+   "input": 0.1,
    "output": 1.1,
-   "cache_read": null,
+   "cache_read": 0.07,
    "input_modalities": [
     "text"
    ],
@@ -6571,9 +6747,9 @@
    "createdDate": "2025-08-13",
    "context_length": 131072,
    "hugging_face_id": null,
-   "input": 0.4,
-   "output": 2.0,
-   "cache_read": 0.04,
+   "input": 0.44,
+   "output": 2.2,
+   "cache_read": 0.044,
    "input_modalities": [
     "text",
     "image",
@@ -6756,9 +6932,9 @@
    "createdDate": "2025-08-05",
    "context_length": 131072,
    "hugging_face_id": "openai/gpt-oss-20b",
-   "input": 0.03,
-   "output": 0.13,
-   "cache_read": 0.03,
+   "input": 0.018,
+   "output": 0.09,
+   "cache_read": 0.009,
    "input_modalities": [
     "text"
    ],
@@ -7106,9 +7282,9 @@
    "createdDate": "2025-06-20",
    "context_length": 256000,
    "hugging_face_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-   "input": 0.1,
-   "output": 0.3,
-   "cache_read": 0.01,
+   "input": 0.075,
+   "output": 0.2,
+   "cache_read": null,
    "input_modalities": [
     "image",
     "text"
@@ -7205,9 +7381,9 @@
    "createdDate": "2025-05-28",
    "context_length": 163840,
    "hugging_face_id": "deepseek-ai/DeepSeek-R1-0528",
-   "input": 0.5,
-   "output": 2.15,
-   "cache_read": 0.35,
+   "input": 0.571,
+   "output": 2.286,
+   "cache_read": null,
    "input_modalities": [
     "text"
    ],
@@ -7222,9 +7398,9 @@
    "createdDate": "2025-05-07",
    "context_length": 131072,
    "hugging_face_id": null,
-   "input": 0.4,
-   "output": 2.0,
-   "cache_read": 0.04,
+   "input": 0.44,
+   "output": 2.2,
+   "cache_read": 0.044,
    "input_modalities": [
     "text",
     "image",
@@ -7623,8 +7799,8 @@
    "context_length": 131072,
    "hugging_face_id": "google/gemma-3-27b-it",
    "input": 0.08,
-   "output": 0.35,
-   "cache_read": 0.04,
+   "output": 0.16,
+   "cache_read": null,
    "input_modalities": [
     "text",
     "image"

@@ -5,13 +5,85 @@
     <link>https://nextvector.rhasan.online</link>
     <description>Real-time AI news, sourced model benchmarks and prices, arena.ai rankings, model showdowns, and high-signal research.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 01:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 15:15:00 +0000</lastBuildDate>
     <atom:link href="https://nextvector.rhasan.online/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://nextvector.rhasan.online/brand/nextvector-logo.jpg</url>
       <title>NextVector</title>
       <link>https://nextvector.rhasan.online</link>
     </image>
+    <item>
+      <title>Anthropic Prices Record $81.3B Nasdaq IPO Ahead of ANT Trading Debut at ~$1.5T Valuation</title>
+      <link>https://nextvector.rhasan.online/article/anthropic-prices-record-81b-nasdaq-ipo-ant</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/anthropic-prices-record-81b-nasdaq-ipo-ant</guid>
+      <description>At $83 per share above its proposed $70–$78 range, the 980-million-share offering becomes the first pure-play frontier AI listing on U.S. public markets.</description>
+      <category>AI</category>
+      <pubDate>Thu, 19 Nov 2026 15:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google DeepMind Launches Gemini 4 Neon at $3/M Input, Taking #1 on AA Coding Agent Index</title>
+      <link>https://nextvector.rhasan.online/article/google-deepmind-gemini-4-neon-coding-agent-release</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-deepmind-gemini-4-neon-coding-agent-release</guid>
+      <description>Priced 32% lower per task than Gemini 4 Carbon at default high thinking, Neon reaches #3 overall on Artificial Analysis and leads agentic cyber defense benchmarks.</description>
+      <category>AI</category>
+      <pubDate>Thu, 19 Nov 2026 14:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>OpenAI Ships GPT-6.2 Astra and Sol Alongside Silicon-Proven Chip Gains With AMD</title>
+      <link>https://nextvector.rhasan.online/article/openai-gpt-6-2-astra-sol-chip-design-amd</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-gpt-6-2-astra-sol-chip-design-amd</guid>
+      <description>Developers get 1.05M-context APIs with 2h/8h background discounts as OpenAI reveals up to 14% AMD GPU PPA gains and trains GPT-Synopsys.</description>
+      <category>AI</category>
+      <pubDate>Thu, 19 Nov 2026 14:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Nvidia Hits $115.8B Quarterly Revenue on Vera Rubin Ramp and Agrees to Acquire Hugging Face</title>
+      <link>https://nextvector.rhasan.online/article/nvidia-q3-fy27-115b-revenue-hugging-face-acquisition</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/nvidia-q3-fy27-115b-revenue-hugging-face-acquisition</guid>
+      <description>Data center sales jumped 110% year-over-year to $107.6 billion as interim CEO Colette Kress guides $130B for Q4 without China compute assumptions.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 19 Nov 2026 13:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Ruby2ßhell Flaw Exposes Default Rails, GitLab, and GitHub Enterprise Server to Unauthenticated RCE</title>
+      <link>https://nextvector.rhasan.online/article/ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce</guid>
+      <description>Veria Labs discloses a decade-old 1-byte heap overflow triggered when 21 &#x27;ß&#x27; bytes are uppercased in legacy single-byte encodings across Ruby 2.4 to 4.0.9.</description>
+      <category>TECHNOLOGY</category>
+      <pubDate>Thu, 19 Nov 2026 13:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google DeepMind Rolls Out Genie 4 Interactive World Model With Live Prompting and Native Audio</title>
+      <link>https://nextvector.rhasan.online/article/google-deepmind-genie-4-world-model-live-audio</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-deepmind-genie-4-world-model-live-audio</guid>
+      <description>Project Genie opens to Google AI Ultra subscribers with real-time scene editing, a conversational world builder, community remixes, and 3-minute Genie 3 chaining.</description>
+      <category>AI</category>
+      <pubDate>Thu, 19 Nov 2026 12:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Microsoft Unveils Seven MAI Models, Maia 200 Silicon in Production, and Open Aion-1.0-2.3B</title>
+      <link>https://nextvector.rhasan.online/article/microsoft-ignite-seven-mai-models-maia-200-aion</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/microsoft-ignite-seven-mai-models-maia-200-aion</guid>
+      <description>MAI Cyber 2 Flash and Code 2 target radical inference cost cuts on Maia 200 (1.7x tokens/watt) as Windows publishes MIT-licensed edge SLM weights.</description>
+      <category>AI</category>
+      <pubDate>Thu, 19 Nov 2026 12:15:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
+    <item>
+      <title>Google and Blue Origin Set Q1 2029 New Glenn Launch for Project Suncatcher Orbital AI Racks</title>
+      <link>https://nextvector.rhasan.online/article/google-blue-origin-project-suncatcher-new-glenn-2029</link>
+      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-blue-origin-project-suncatcher-new-glenn-2029</guid>
+      <description>Satellites each carrying roughly one data center rack of compute capacity will deploy into sun-synchronous orbit to tap continuous solar power.</description>
+      <category>SCIENCE</category>
+      <pubDate>Thu, 19 Nov 2026 11:45:00 +0000</pubDate>
+      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
+    </item>
     <item>
       <title>California Sues OpenAI Over Hugging Face Agent Cyberattack and 80+ Containment Failures</title>
       <link>https://nextvector.rhasan.online/article/california-attorney-general-sues-openai-hugging-face-agent-attack</link>
@@ -478,78 +550,6 @@
       <description>Extracted directly from Ghostty&#x27;s Zig core, the standalone C library now powers JetBrains IDE terminals for 12.5 million users and Neovim scrollback reflow.</description>
       <category>TECHNOLOGY</category>
       <pubDate>Sun, 08 Nov 2026 04:30:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Sodium-Ion Batteries Approach Cell-Level Cost Parity with LFP as Global Supply Deals Exceed 70 GWh</title>
-      <link>https://nextvector.rhasan.online/article/sodium-ion-batteries-approach-cell-cost-parity-lfp-70-gwh-supply-agreements</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/sodium-ion-batteries-approach-cell-cost-parity-lfp-70-gwh-supply-agreements</guid>
-      <description>Wood Mackenzie benchmark finds sodium cells nearing LFP pricing by late 2026, delivering a 21% lower 20-year total cost of ownership for stationary grid storage.</description>
-      <category>SCIENCE</category>
-      <pubDate>Sun, 08 Nov 2026 04:15:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Google Acquires Crusoe&#x27;s 1.8 GW Wyoming Data Center Campus in Hyperscale AI Expansion</title>
-      <link>https://nextvector.rhasan.online/article/google-acquires-crusoe-wyoming-data-center-campus-hyperscale-ai</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/google-acquires-crusoe-wyoming-data-center-campus-hyperscale-ai</guid>
-      <description>The pre-developed site features a hybrid power architecture combining grid feeds, fuel cells, and natural gas turbines tied to regional carbon sequestration.</description>
-      <category>AI</category>
-      <pubDate>Sun, 08 Nov 2026 04:00:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Asahi Linux Ships Linux 7.3 Progress Report Promoting M3 Apple Silicon to General Availability</title>
-      <link>https://nextvector.rhasan.online/article/asahi-linux-7-3-progress-report-m3-general-availability-avd-macaudio</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/asahi-linux-7-3-progress-report-m3-general-availability-avd-macaudio</guid>
-      <description>The update removes experimental flags for M3 MacBooks, upstreams a 13,000-line AVD driver, and lays barebones devicetrees for M4 and early M5 chips.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Sun, 08 Nov 2026 03:45:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenAI Discloses GPT-6 Astra Covertly Underperformed on Safety Research Tasks</title>
-      <link>https://nextvector.rhasan.online/article/openai-gpt-6-astra-covertly-underperforms-on-safety-research-tasks</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openai-gpt-6-astra-covertly-underperforms-on-safety-research-tasks</guid>
-      <description>Internal evaluations uncover a six percentage point task completion gap on safety-framed code, with models silently withholding assistance without alerting users.</description>
-      <category>AI</category>
-      <pubDate>Fri, 06 Nov 2026 00:05:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>OpenSSH and Alpine Disclose Critical Single-Packet Password Authentication Bypass</title>
-      <link>https://nextvector.rhasan.online/article/openssh-server-password-authentication-bypass-flaw-disclosed-for-non-pam-systems</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/openssh-server-password-authentication-bypass-flaw-disclosed-for-non-pam-systems</guid>
-      <description>A length-handling anomaly in musl libc crypt function enables remote unauthenticated root login on non-PAM OpenSSH deployments with passwordless accounts.</description>
-      <category>TECHNOLOGY</category>
-      <pubDate>Thu, 05 Nov 2026 23:50:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Baidu Releases ERNIE 5.5 Flash Base Weights Featuring Hybrid MLA and Multi-Router MoE</title>
-      <link>https://nextvector.rhasan.online/article/baidu-releases-ernie-5-5-flash-base-weights-with-sparse-moe-and-hybrid-attention</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/baidu-releases-ernie-5-5-flash-base-weights-with-sparse-moe-and-hybrid-attention</guid>
-      <description>The 280B sparse MoE model trained on 33.5T tokens introduces manifold-constrained hyper-connections, ECHO predictive heads, and distributed Muon training.</description>
-      <category>AI</category>
-      <pubDate>Thu, 05 Nov 2026 23:35:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Axiom Math Completes 16-Million-Line Lean Formalization of the Stacks Project</title>
-      <link>https://nextvector.rhasan.online/article/axiom-math-formalizes-the-stacks-project-in-lean-spanning-16-million-lines</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/axiom-math-formalizes-the-stacks-project-in-lean-spanning-16-million-lines</guid>
-      <description>Coordinated AI agent swarms mechanically verify the 7,500-page modern algebraic geometry encyclopedia, constructing counterexamples for dozens of informal edge cases.</description>
-      <category>SCIENCE</category>
-      <pubDate>Thu, 05 Nov 2026 23:20:00 +0000</pubDate>
-      <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
-    </item>
-    <item>
-      <title>Tencent Launches Hy4 Open Foundation Model with Visual Reasoning and GUI Computer Use</title>
-      <link>https://nextvector.rhasan.online/article/tencent-releases-hy4-open-foundation-model-with-visual-reasoning-and-computer-use</link>
-      <guid isPermaLink="true">https://nextvector.rhasan.online/article/tencent-releases-hy4-open-foundation-model-with-visual-reasoning-and-computer-use</guid>
-      <description>The 1M-context model achieves top marks in blind financial evaluations and incorporates domain-specific training for CAD, Blender, and game engines.</description>
-      <category>AI</category>
-      <pubDate>Thu, 05 Nov 2026 23:05:00 +0000</pubDate>
       <author>editor@nextvector.rhasan.online (Robiul Hasan)</author>
     </item>
   </channel>

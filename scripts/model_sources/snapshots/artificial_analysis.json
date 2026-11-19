@@ -1,9 +1,9 @@
 {
  "source": "https://artificialanalysis.ai/api/v2/language/models/free",
- "fetchedAt": "2026-11-17T01:08:10Z",
+ "fetchedAt": "2026-11-19T15:48:30Z",
  "indexVersion": 5,
  "note": "Only rows used by curated_models.json. Data: Artificial Analysis, https://artificialanalysis.ai",
- "count": 265,
+ "count": 279,
  "data": [
   {
    "id": "0097ebf5-124f-42f6-9463-33b00e711f03",
@@ -178,6 +178,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-09-18",
    "intelligence": 28.5,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "09fea5f5-7217-452d-b693-fcca01e07bdf",
+   "slug": "gemini-4-neon-low",
+   "name": "Gemini 4 Neon (Low)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-18",
+   "intelligence": 44.1,
    "coding": null,
    "agentic": null
   },
@@ -567,6 +578,17 @@
    "agentic": null
   },
   {
+   "id": "27c326a6-ec9b-415f-a29e-b1f4927484dc",
+   "slug": "gpt-6-2-sol-xhigh",
+   "name": "GPT-6.2 Sol (Xhigh)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 55.7,
+   "coding": null,
+   "agentic": null
+  },
+  {
    "id": "29855680-7469-43eb-8b88-cd3fb1d99da3",
    "slug": "gpt-5-mini",
    "name": "GPT-5 mini (High)",
@@ -574,6 +596,17 @@
    "creatorSlug": null,
    "releaseDate": "2025-08-07",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "2ba1a8f6-e052-4a33-b178-4db1e86157e4",
+   "slug": "gemini-4-neon-medium",
+   "name": "Gemini 4 Neon (Medium)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-18",
+   "intelligence": 54.9,
    "coding": null,
    "agentic": null
   },
@@ -1007,6 +1040,17 @@
    "agentic": null
   },
   {
+   "id": "592572d5-f789-4106-abbc-fadf2206d10b",
+   "slug": "gpt-6-2-astra-xhigh",
+   "name": "GPT-6.2 Astra (Xhigh)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 61.6,
+   "coding": null,
+   "agentic": null
+  },
+  {
    "id": "59627802-1546-422c-9a65-65b61c022d36",
    "slug": "grok-4-7",
    "name": "Grok 4.7 (Xhigh)",
@@ -1348,6 +1392,17 @@
    "agentic": null
   },
   {
+   "id": "75c1b0b8-9db3-4c7e-95be-d74e59defee4",
+   "slug": "gpt-6-2-astra",
+   "name": "GPT-6.2 Astra (Max)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 62.1,
+   "coding": null,
+   "agentic": null
+  },
+  {
    "id": "7707a46f-895f-4247-b7a8-ddab87c9a11d",
    "slug": "deepseek-v4-flash-vision",
    "name": "DeepSeek V4 Flash Vision (Max)",
@@ -1410,6 +1465,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "7c667f2d-0149-4eb1-864c-7e66c166ad88",
+   "slug": "gemini-4-neon",
+   "name": "Gemini 4 Neon (Xhigh)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-18",
+   "intelligence": 61.4,
    "coding": null,
    "agentic": null
   },
@@ -1498,6 +1564,17 @@
    "creatorSlug": null,
    "releaseDate": "2025-12-16",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "82b37079-56d9-4451-8a1a-22b0a921f4f8",
+   "slug": "gpt-6-2-sol-medium",
+   "name": "GPT-6.2 Sol (Medium)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 52.7,
    "coding": null,
    "agentic": null
   },
@@ -1619,6 +1696,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-04-22",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "8cec011f-c959-4726-8668-2ee2409a6bca",
+   "slug": "gpt-6-2-astra-medium",
+   "name": "GPT-6.2 Astra (Medium)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 57,
    "coding": null,
    "agentic": null
   },
@@ -1777,6 +1865,17 @@
    "agentic": null
   },
   {
+   "id": "9b696f5b-b5d2-4b1f-9ed5-7c1446ec8421",
+   "slug": "gemini-4-neon-high",
+   "name": "Gemini 4 Neon (High)",
+   "creator": "Google",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-18",
+   "intelligence": 59.6,
+   "coding": null,
+   "agentic": null
+  },
+  {
    "id": "9b97a35e-6ac7-44d9-91c6-422fa678963e",
    "slug": "gpt-5-6-terra-non-reasoning",
    "name": "GPT-5.6 Terra (Non-reasoning)",
@@ -1806,6 +1905,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-07-09",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "a1a84b18-e8c9-48fb-8e04-6003bd9f6ff4",
+   "slug": "gpt-6-2-sol",
+   "name": "GPT-6.2 Sol (Max)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 57.3,
    "coding": null,
    "agentic": null
   },
@@ -1861,6 +1971,17 @@
    "creatorSlug": null,
    "releaseDate": "2025-10-15",
    "intelligence": 7.4,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "a77965fb-2117-4e2c-bd8b-80b5579a7e7e",
+   "slug": "gpt-6-2-sol-low",
+   "name": "GPT-6.2 Sol (Low)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 40.6,
    "coding": null,
    "agentic": null
   },
@@ -2316,6 +2437,17 @@
    "agentic": null
   },
   {
+   "id": "cc93ecfd-845e-455d-9642-6799d7133b7e",
+   "slug": "gpt-6-2-astra-low",
+   "name": "GPT-6.2 Astra (Low)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 45.7,
+   "coding": null,
+   "agentic": null
+  },
+  {
    "id": "ccbfa8c3-a762-480b-aade-34fb9697f98c",
    "slug": "claude-4-1-opus-thinking",
    "name": "Claude 4.1 Opus (Reasoning)",
@@ -2356,6 +2488,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-08-18",
    "intelligence": 31.7,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "cd85e412-c43f-4535-bf8e-5ba113d97ca3",
+   "slug": "gpt-6-2-sol-high",
+   "name": "GPT-6.2 Sol (High)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 54.9,
    "coding": null,
    "agentic": null
   },
@@ -2884,6 +3027,17 @@
    "creatorSlug": null,
    "releaseDate": "2026-07-31",
    "intelligence": null,
+   "coding": null,
+   "agentic": null
+  },
+  {
+   "id": "fe959a7a-944c-4ba8-8e41-349712599b39",
+   "slug": "gpt-6-2-astra-high",
+   "name": "GPT-6.2 Astra (High)",
+   "creator": "OpenAI",
+   "creatorSlug": null,
+   "releaseDate": "2026-11-17",
+   "intelligence": 60.1,
    "coding": null,
    "agentic": null
   },

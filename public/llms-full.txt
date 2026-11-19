@@ -9,21 +9,21 @@ NextVector evaluates foundation models and technical breakthroughs through an em
 Each pick comes from a stated rule over public data: arena.ai text leaderboard, OSWorld-Verified, SWE-bench Verified and list prices. NextVector does not run these tests.
 - Highest Arena score (released models): Gemini 4 Argon (Google DeepMind) — Arena 1530 (±5, #1); list price $2.00 / $10.00 per 1M tokens. Rule: Highest arena.ai text score among generally released models we track.
 - Best Arena score under $1 blended: MiMo-V2.6-Pro (Xiaomi AI) — Arena 1492 at $0.54 blended; list price $0.435 / $0.87 per 1M tokens. Rule: Highest Arena score with a blended list price under $1 per 1M tokens (3 input : 1 output).
-- Best Arena score under $0.20 blended: GLM-5.3-Flash (Zhipu AI) — Arena 1471 at $0.05 blended; list price $0.040 / $0.078 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
+- Best Arena score under $0.20 blended: DeepSeek-V4.1-Flash (DeepSeek) — Arena 1475 at $0.09 blended; list price $0.051 / $0.203 per 1M tokens. Rule: Highest Arena score with a blended list price under $0.20 per 1M tokens.
 - Best open-weights model: MiMo-V2.6-Pro (Xiaomi AI) — Arena 1492 · MIT; list price $0.435 / $0.87 per 1M tokens. Rule: Highest Arena score among models with downloadable weights.
 - Computer use: Claude Fable 5 (Anthropic) — OSWorld-Verified 86.0%; list price $10.00 / $50.00 per 1M tokens. Rule: Highest OSWorld-Verified success rate (General model runs) among models we track.
 - Coding (shared-harness SWE-bench runs): Claude Opus 4.5 (Anthropic) — SWE-bench Verified 76.8%; list price $5.00 / $25.00 per 1M tokens. Rule: Highest SWE-bench Verified score in mini-SWE-agent runs. These runs stop in early 2026, so newer models are missing.
-- Highest Artificial Analysis Intelligence Index: Gemini 4 Carbon (Google DeepMind) — AA Intelligence Index 60; list price $2.00 / $10.00 per 1M tokens. Rule: Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).
+- Highest Artificial Analysis Intelligence Index: GPT-6.2 Astra (OpenAI) — AA Intelligence Index 62.1; list price $8.00 / $40.00 per 1M tokens. Rule: Highest Artificial Analysis Intelligence Index among generally released models we track (best setting per model).
 - Largest context window: Grok 4.20 (xAI) — 2M tokens · Arena 1445; list price $1.25 / $2.50 per 1M tokens. Rule: Largest listed context window among Arena-ranked models; ties go to the higher Arena score.
 
-## AI Models Directory (147 Models, sourced data)
+## AI Models Directory (150 Models, sourced data)
 ### Gemini 4 Argon (Google DeepMind)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-4-argon
 - Release Date: October 2026 | Architecture Type: Multimodal Foundation
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #1 (score 1530 ±5)
 - API list price (input / output per 1M tokens): $2.00 / $10.00
-- AA Intelligence Index: 50.4 (Artificial Analysis v5 · best setting: Gemini 4 Argon (High) · checked 2026-11-17)
+- AA Intelligence Index: 50.4 (Artificial Analysis v5 · best setting: Gemini 4 Argon (High) · checked 2026-11-19)
 - Summary: Proprietary model from Google DeepMind, listed October 2026. Arena text score 1530 (#1 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.
 - Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/, https://openrouter.ai/google/gemini-4-argon, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemini-4-argon
 
@@ -33,7 +33,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #2 (score 1513 ±6)
 - API list price (input / output per 1M tokens): $4.00 / $20.00
-- AA Intelligence Index: 59.1 (Artificial Analysis v5 · best setting: Claude Opus 5.5 (Max, Default Fallback) · checked 2026-11-17)
+- AA Intelligence Index: 59.1 (Artificial Analysis v5 · best setting: Claude Opus 5.5 (Max, Default Fallback) · checked 2026-11-19)
 - Summary: Proprietary model from Anthropic, listed September 2026. Arena text score 1513 (#2 of 414 entries). $4.00 input / $20.00 output per 1M tokens. 1M tokens context.
 - Sources: https://www.anthropic.com/claude-opus-5-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-5.5, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/claude-opus-5-5
 
@@ -43,7 +43,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #3 (score 1512 ±6)
 - API list price (input / output per 1M tokens): $10.00 / $50.00
-- AA Intelligence Index: 50 (Artificial Analysis v5 · best setting: Claude Fable 5.1 (Xhigh, Default Fallback) · checked 2026-11-17)
+- AA Intelligence Index: 50 (Artificial Analysis v5 · best setting: Claude Fable 5.1 (Xhigh, Default Fallback) · checked 2026-11-19)
 - Summary: Proprietary model from Anthropic, listed September 2026. Arena text score 1512 (#3 of 414 entries). $10.00 input / $50.00 output per 1M tokens. 1M tokens context.
 - Sources: https://www.anthropic.com/claude-fable-and-mythos-5-1, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-fable-5.1, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/claude-fable-5-1-xhigh
 
@@ -54,7 +54,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - arena.ai text leaderboard: #5 (score 1502 ±4)
 - API list price (input / output per 1M tokens): $5.00 / $25.00
 - OSWorld-Verified: 83.4% (Success rate · 100 steps · tested 2026-08-01)
-- AA Intelligence Index: 44.2 (Artificial Analysis v5 · best setting: Claude Opus 5 (Max) · checked 2026-11-17)
+- AA Intelligence Index: 44.2 (Artificial Analysis v5 · best setting: Claude Opus 5 (Max) · checked 2026-11-19)
 - Summary: Proprietary model from Anthropic, listed July 2026. Arena text score 1502 (#5 of 414 entries). $5.00 input / $25.00 output per 1M tokens. 1M tokens context.
 - Sources: https://www.anthropic.com/news/claude-opus-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-opus-5, https://arena.ai/leaderboard/text, https://os-world.github.io/, https://artificialanalysis.ai/models/claude-opus-5
 
@@ -74,7 +74,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #7 (score 1500 ±4)
 - API list price (input / output per 1M tokens): $0.75 / $3.75
-- AA Intelligence Index: 30.8 (Artificial Analysis v5 · best setting: Gemini 3.8 Flash (High) · checked 2026-11-17)
+- AA Intelligence Index: 30.8 (Artificial Analysis v5 · best setting: Gemini 3.8 Flash (High) · checked 2026-11-19)
 - Summary: Proprietary model from Google DeepMind, listed September 2026. Arena text score 1500 (#7 of 414 entries). $0.75 input / $3.75 output per 1M tokens. 1M tokens context.
 - Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.8-flash, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemini-3-8-flash
 
@@ -84,7 +84,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 1.05M tokens | License: MIT
 - arena.ai text leaderboard: #9 (score 1492 ±9)
 - API list price (input / output per 1M tokens): $0.435 / $0.87
-- AA Intelligence Index: 29.9 (Artificial Analysis v5 · best setting: MiMo-V2.6-Pro · checked 2026-11-17)
+- AA Intelligence Index: 29.9 (Artificial Analysis v5 · best setting: MiMo-V2.6-Pro · checked 2026-11-19)
 - Summary: Open Weights model from Xiaomi AI, listed September 2026. Arena text score 1492 (#9 of 414 entries). $0.43 input / $0.87 output per 1M tokens. 1.05M tokens context.
 - Sources: https://mimo.xiaomi.com/mimo-v2-6, https://openrouter.ai/xiaomi/mimo-v2.6-pro, https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/mimo-v2-6-pro
 
@@ -104,7 +104,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #11 (score 1491 ±5)
 - API list price (input / output per 1M tokens): $1.25 / $4.25
-- AA Intelligence Index: 36.6 (Artificial Analysis v5 · best setting: Muse Spark 1.3 (Max) · checked 2026-11-17)
+- AA Intelligence Index: 36.6 (Artificial Analysis v5 · best setting: Muse Spark 1.3 (Max) · checked 2026-11-19)
 - Summary: Proprietary model from Meta AI, listed September 2026. Arena text score 1491 (#11 of 414 entries). $1.25 input / $4.25 output per 1M tokens. 1M tokens context.
 - Sources: https://developer.meta.com/ai/models/muse-spark/, https://openrouter.ai/meta/muse-spark-1.3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/muse-spark-1-3
 
@@ -132,7 +132,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #14 (score 1485 ±5)
 - API list price (input / output per 1M tokens): $2.00 / $6.00
-- AA Intelligence Index: 33.7 (Artificial Analysis v5 · best setting: Qwen3.8 Max (0902) · checked 2026-11-17)
+- AA Intelligence Index: 33.7 (Artificial Analysis v5 · best setting: Qwen3.8 Max (0902) · checked 2026-11-19)
 - Summary: Proprietary model from Alibaba Cloud, listed September 2026. Arena text score 1485 (#14 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 1M tokens context.
 - Sources: https://www.qwencloud.com/models/qwen3.8-max, https://openrouter.ai/qwen/qwen3.8-max-0902, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-8-max
 
@@ -198,7 +198,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #23 (score 1476 ±5)
 - API list price (input / output per 1M tokens): $0.070 / $1.40
-- AA Intelligence Index: 31.7 (Artificial Analysis v5 · best setting: GLM-5.3 (Max) · checked 2026-11-17)
+- AA Intelligence Index: 31.7 (Artificial Analysis v5 · best setting: GLM-5.3 (Max) · checked 2026-11-19)
 - Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1476 (#23 of 414 entries). $0.07 input / $1.40 output per 1M tokens. 1M tokens context.
 - Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3, https://huggingface.co/zai-org/GLM-5.3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-3
 
@@ -225,8 +225,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: September 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #26 (score 1475 ±7)
-- API list price (input / output per 1M tokens): $0.14 / $0.42
-- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#26 of 414 entries). $0.14 input / $0.42 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.051 / $0.203
+- Summary: Open Weights model from DeepSeek, listed September 2026. Arena text score 1475 (#26 of 414 entries). $0.05 input / $0.20 output per 1M tokens. 1M tokens context.
 - Sources: https://www.deepseek.com/en/news/deepseek-v4-1-flash/, https://openrouter.ai/deepseek/deepseek-v4.1-flash, https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash, https://arena.ai/leaderboard/text
 
 ### Kimi K3 (Moonshot AI)
@@ -235,7 +235,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Kimi K3 license
 - arena.ai text leaderboard: #27 (score 1474 ±4)
 - API list price (input / output per 1M tokens): $0.192 / $16.00
-- AA Intelligence Index: 17.4 (Artificial Analysis v5 · best setting: Kimi K3 (Low) · checked 2026-11-17)
+- AA Intelligence Index: 17.4 (Artificial Analysis v5 · best setting: Kimi K3 (Low) · checked 2026-11-19)
 - Summary: Open Weights model from Moonshot AI, listed July 2026. Arena text score 1474 (#27 of 414 entries). $0.19 input / $16.00 output per 1M tokens. 1M tokens context.
 - Sources: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart, https://openrouter.ai/moonshotai/kimi-k3, https://huggingface.co/moonshotai/Kimi-K3, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/kimi-k3-low
 
@@ -272,9 +272,9 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #33 (score 1471 ±4)
-- API list price (input / output per 1M tokens): $0.040 / $0.078
-- AA Intelligence Index: 27.8 (Artificial Analysis v5 · best setting: GLM-5.3-Flash · checked 2026-11-17)
-- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1471 (#33 of 414 entries). $0.04 input / $0.08 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.15 / $0.50
+- AA Intelligence Index: 27.8 (Artificial Analysis v5 · best setting: GLM-5.3-Flash · checked 2026-11-19)
+- Summary: Open Weights model from Zhipu AI, listed August 2026. Arena text score 1471 (#33 of 414 entries). $0.15 input / $0.50 output per 1M tokens. 1M tokens context.
 - Sources: https://z.ai/blog/glm-5.3, https://openrouter.ai/z-ai/glm-5.3-flash, https://huggingface.co/zai-org/GLM-5.3-Flash, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/glm-5-3-flash
 
 ### GLM-5.2 (Zhipu AI)
@@ -282,8 +282,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: June 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #34 (score 1469 ±4)
-- API list price (input / output per 1M tokens): $0.007 / $6.80
-- Summary: Open Weights model from Zhipu AI, listed June 2026. Arena text score 1469 (#34 of 414 entries). $0.01 input / $6.80 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.62 / $2.42
+- Summary: Open Weights model from Zhipu AI, listed June 2026. Arena text score 1469 (#34 of 414 entries). $0.62 input / $2.42 output per 1M tokens. 1M tokens context.
 - Sources: https://huggingface.co/zai-org/GLM-5.2, https://openrouter.ai/z-ai/glm-5.2, https://arena.ai/leaderboard/text
 
 ### GPT-5.4 (OpenAI)
@@ -301,7 +301,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #36 (score 1469 ±6)
 - API list price (input / output per 1M tokens): $2.00 / $10.00
-- AA Intelligence Index: 54.5 (Artificial Analysis v5 · best setting: Claude Sonnet 5.5 (Max, Default Fallback) · checked 2026-11-17)
+- AA Intelligence Index: 54.5 (Artificial Analysis v5 · best setting: Claude Sonnet 5.5 (Max, Default Fallback) · checked 2026-11-19)
 - Summary: Proprietary model from Anthropic, listed September 2026. Arena text score 1469 (#36 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1M tokens context.
 - Sources: https://www.anthropic.com/claude-sonnet-5-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-sonnet-5.5, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/claude-sonnet-5-5
 
@@ -327,10 +327,10 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 ### MiMo-V2.5-Pro (Xiaomi AI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-mimo-v2-5-pro
 - Release Date: April 2026 | Architecture Type: Open Weights
-- Parameters: Not listed in our sources | Context Window: 1.02M tokens | License: MIT
+- Parameters: Not listed in our sources | Context Window: 256K tokens | License: MIT
 - arena.ai text leaderboard: #40 (score 1464 ±4)
-- API list price (input / output per 1M tokens): $0.435 / $0.87
-- Summary: Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1464 (#40 of 414 entries). $0.43 input / $0.87 output per 1M tokens. 1.02M tokens context.
+- API list price (input / output per 1M tokens): $0.48 / $1.80
+- Summary: Open Weights model from Xiaomi AI, listed April 2026. Arena text score 1464 (#40 of 414 entries). $0.48 input / $1.80 output per 1M tokens. 256K tokens context.
 - Sources: https://mimo.xiaomi.com/mimo-v2-5-pro/, https://openrouter.ai/xiaomi/mimo-v2.5-pro, https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro, https://arena.ai/leaderboard/text
 
 ### GLM-5.1 (Zhipu AI)
@@ -338,8 +338,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 205K tokens | License: MIT
 - arena.ai text leaderboard: #41 (score 1463 ±4)
-- API list price (input / output per 1M tokens): $1.40 / $4.40
-- Summary: Open Weights model from Zhipu AI, listed April 2026. Arena text score 1463 (#41 of 414 entries). $1.40 input / $4.40 output per 1M tokens. 205K tokens context.
+- API list price (input / output per 1M tokens): $1.19 / $3.74
+- Summary: Open Weights model from Zhipu AI, listed April 2026. Arena text score 1463 (#41 of 414 entries). $1.19 input / $3.74 output per 1M tokens. 205K tokens context.
 - Sources: https://huggingface.co/zai-org/GLM-5.1, https://openrouter.ai/z-ai/glm-5.1, https://arena.ai/leaderboard/text
 
 ### Claude Opus 4.8 (Anthropic)
@@ -444,7 +444,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #59 (score 1449 ±4)
 - API list price (input / output per 1M tokens): $2.00 / $12.00
-- AA Intelligence Index: 32.3 (Artificial Analysis v5 · best setting: GPT-5.6 Terra (Max) · checked 2026-11-17)
+- AA Intelligence Index: 32.3 (Artificial Analysis v5 · best setting: GPT-5.6 Terra (Max) · checked 2026-11-19)
 - Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1449 (#59 of 414 entries). $2.00 input / $12.00 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/gpt-5-6/, https://openrouter.ai/openai/gpt-5.6-terra, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-5-6-terra
 
@@ -482,7 +482,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #65 (score 1446 ±6)
 - API list price (input / output per 1M tokens): $2.00 / $10.00
-- AA Intelligence Index: 54.6 (Artificial Analysis v5 · best setting: GPT-6.1 Sol (Max) · checked 2026-11-17)
+- AA Intelligence Index: 54.6 (Artificial Analysis v5 · best setting: GPT-6.1 Sol (Max) · checked 2026-11-19)
 - Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1446 (#65 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/introducing-gpt-6-1-sol/, https://openrouter.ai/openai/gpt-6.1-sol, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-6-1-sol
 
@@ -492,7 +492,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: 550B total, 55B active (MoE) | Context Window: 256K tokens | License: OpenMDW-1.1
 - arena.ai text leaderboard: #66 (score 1445 ±7)
 - API list price (input / output per 1M tokens): $0.50 / $2.20
-- AA Intelligence Index: 11.8 (Artificial Analysis v5 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-11-17)
+- AA Intelligence Index: 11.8 (Artificial Analysis v5 · best setting: Nemotron 3 Ultra 550B A55B (Reasoning) · checked 2026-11-19)
 - Summary: Open Weights model from NVIDIA, listed June 2026. Arena text score 1445 (#66 of 414 entries). $0.50 input / $2.20 output per 1M tokens. 256K tokens context.
 - Sources: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16, https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
 
@@ -502,7 +502,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: MIT
 - arena.ai text leaderboard: #67 (score 1445 ±7)
 - API list price (input / output per 1M tokens): $0.111 / $4.44
-- AA Intelligence Index: 23.1 (Artificial Analysis v5 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-11-17)
+- AA Intelligence Index: 23.1 (Artificial Analysis v5 · best setting: DeepSeek V4 Pro 0813 (Max) · checked 2026-11-19)
 - Summary: Open Weights model from DeepSeek, listed August 2026. Arena text score 1445 (#67 of 414 entries). $0.11 input / $4.44 output per 1M tokens. 1M tokens context.
 - Sources: https://api-docs.deepseek.com/updates/#date-2026-08-13, https://openrouter.ai/deepseek/deepseek-v4-pro-0813, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/deepseek-v4-pro
 
@@ -541,7 +541,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 512K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #71 (score 1444 ±4)
 - API list price (input / output per 1M tokens): $1.00 / $4.05
-- AA Intelligence Index: 12.5 (Artificial Analysis v5 · best setting: Inkling (Xhigh) · checked 2026-11-17)
+- AA Intelligence Index: 12.5 (Artificial Analysis v5 · best setting: Inkling (Xhigh) · checked 2026-11-19)
 - Summary: Open Weights model from Thinking Machines Lab, listed July 2026. Arena text score 1444 (#71 of 414 entries). $1.00 input / $4.05 output per 1M tokens. 512K tokens context.
 - Sources: https://thinkingmachines.ai/news/introducing-inkling/, https://openrouter.ai/thinkingmachines/inkling, https://huggingface.co/thinkingmachines/Inkling, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/inkling
 
@@ -551,7 +551,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #72 (score 1443 ±6)
 - API list price (input / output per 1M tokens): $1.00 / $2.70
-- AA Intelligence Index: 28.5 (Artificial Analysis v5 · best setting: Step 5 Preview · checked 2026-11-17)
+- AA Intelligence Index: 28.5 (Artificial Analysis v5 · best setting: Step 5 Preview · checked 2026-11-19)
 - Summary: Open Weights model from StepFun, listed October 2026. Arena text score 1443 (#72 of 414 entries). $1.00 input / $2.70 output per 1M tokens. 1M tokens context.
 - Sources: https://stepfun.ai/, https://openrouter.ai/stepfun/step-5-preview, https://huggingface.co/stepfun-ai/Step-5-Preview, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/step-5
 
@@ -571,7 +571,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: 31B (dense) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #75 (score 1443 ±7)
 - API list price (input / output per 1M tokens): $0.20 / $0.40
-- AA Intelligence Index: 4.4 (Artificial Analysis v5 · best setting: Gemma 4 31B (Reasoning) · checked 2026-11-17)
+- AA Intelligence Index: 4.4 (Artificial Analysis v5 · best setting: Gemma 4 31B (Reasoning) · checked 2026-11-19)
 - Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1443 (#75 of 414 entries). $0.20 input / $0.40 output per 1M tokens. 256K tokens context.
 - Sources: https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-31b-it, https://openrouter.ai/google/gemma-4-31b-it, https://huggingface.co/google/gemma-4-31B-it, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemma-4-31b
 
@@ -600,7 +600,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #78 (score 1440 ±6)
 - API list price (input / output per 1M tokens): $10.00 / $50.00
-- AA Intelligence Index: 56.9 (Artificial Analysis v5 · best setting: GPT-6 Astra (Max) · checked 2026-11-17)
+- AA Intelligence Index: 56.9 (Artificial Analysis v5 · best setting: GPT-6 Astra (Max) · checked 2026-11-19)
 - Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1440 (#78 of 414 entries). $10.00 input / $50.00 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/gpt-6-astra/, https://openrouter.ai/openai/gpt-6-astra, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-6-astra
 
@@ -663,9 +663,9 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2026 | Architecture Type: Open Weights
 - Parameters: 27B (dense) | Context Window: 1.02M tokens | License: Apache 2.0
 - arena.ai text leaderboard: #90 (score 1436 ±5)
-- API list price (input / output per 1M tokens): $0.15 / $1.875
-- AA Intelligence Index: 20.1 (Artificial Analysis v5 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-11-17)
-- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1436 (#90 of 414 entries). $0.15 input / $1.88 output per 1M tokens. 1.02M tokens context.
+- API list price (input / output per 1M tokens): $0.06 / $2.20
+- AA Intelligence Index: 20.1 (Artificial Analysis v5 · best setting: Qwen3.8 27B (Xhigh) · checked 2026-11-19)
+- Summary: Open Weights model from Alibaba Cloud, listed August 2026. Arena text score 1436 (#90 of 414 entries). $0.06 input / $2.20 output per 1M tokens. 1.02M tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.8-27B, https://openrouter.ai/qwen/qwen3.8-27b, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/qwen3-8-27b
 
 ### GLM-4.7 (Zhipu AI)
@@ -683,7 +683,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #92 (score 1435 ±4)
 - API list price (input / output per 1M tokens): $0.30 / $2.50
-- AA Intelligence Index: 11.7 (Artificial Analysis v5 · best setting: Gemini 3.5 Flash-Lite · checked 2026-11-17)
+- AA Intelligence Index: 11.7 (Artificial Analysis v5 · best setting: Gemini 3.5 Flash-Lite · checked 2026-11-19)
 - Summary: Proprietary model from Google DeepMind, listed July 2026. Arena text score 1435 (#92 of 414 entries). $0.30 input / $2.50 output per 1M tokens. 1M tokens context.
 - Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.5-flash-lite, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemini-3-5-flash-lite
 
@@ -692,8 +692,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: April 2026 | Architecture Type: Open Weights
 - Parameters: 26B total, 4B active (MoE) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #93 (score 1434 ±7)
-- API list price (input / output per 1M tokens): $0.076 / $0.255
-- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1434 (#93 of 414 entries). $0.08 input / $0.26 output per 1M tokens. 256K tokens context.
+- API list price (input / output per 1M tokens): $0.09 / $0.30
+- Summary: Open Weights model from Google DeepMind, listed April 2026. Arena text score 1434 (#93 of 414 entries). $0.09 input / $0.30 output per 1M tokens. 256K tokens context.
 - Sources: https://aistudio.google.com/app/prompts/new_chat?model=gemma-4-26b-a4b-it, https://openrouter.ai/google/gemma-4-26b-a4b-it, https://huggingface.co/google/gemma-4-26B-A4B-it, https://arena.ai/leaderboard/text
 
 ### DeepSeek-V4-Flash (DeepSeek)
@@ -711,7 +711,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #95 (score 1431 ±4)
 - API list price (input / output per 1M tokens): $0.20 / $1.20
-- AA Intelligence Index: 23.8 (Artificial Analysis v5 · best setting: GPT-5.6 Luna (Max) · checked 2026-11-17)
+- AA Intelligence Index: 23.8 (Artificial Analysis v5 · best setting: GPT-5.6 Luna (Max) · checked 2026-11-19)
 - Summary: Proprietary model from OpenAI, listed July 2026. Arena text score 1431 (#95 of 414 entries). $0.20 input / $1.20 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/gpt-5-6/, https://openrouter.ai/openai/gpt-5.6-luna, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-5-6-luna
 
@@ -731,7 +731,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 500K tokens | License: Proprietary
 - arena.ai text leaderboard: #97 (score 1430 ±5)
 - API list price (input / output per 1M tokens): $2.00 / $6.00
-- AA Intelligence Index: 31 (Artificial Analysis v5 · best setting: Grok 4.6 (Xhigh) · checked 2026-11-17)
+- AA Intelligence Index: 31 (Artificial Analysis v5 · best setting: Grok 4.6 (Xhigh) · checked 2026-11-19)
 - Summary: Proprietary model from xAI, listed August 2026. Arena text score 1430 (#97 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 500K tokens context.
 - Sources: https://docs.x.ai/developers/models/grok-4.6, https://openrouter.ai/x-ai/grok-4.6, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/grok-4-6-xhigh
 
@@ -751,7 +751,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - arena.ai text leaderboard: #101 (score 1428 ±4)
 - API list price (input / output per 1M tokens): $0.30 / $1.20
 - OSWorld-Verified: 75.2% (Success rate · 100 steps · tested 2026-06-08)
-- AA Intelligence Index: 18.9 (Artificial Analysis v5 · best setting: MiniMax-M3 · checked 2026-11-17)
+- AA Intelligence Index: 18.9 (Artificial Analysis v5 · best setting: MiniMax-M3 · checked 2026-11-19)
 - Summary: Open Weights model from MiniMax, listed May 2026. Arena text score 1428 (#101 of 414 entries). $0.30 input / $1.20 output per 1M tokens. 1M tokens context.
 - Sources: https://www.minimax.io/models/text/m3, https://openrouter.ai/minimax/minimax-m3, https://huggingface.co/MiniMaxAI/Minimax-M3, https://arena.ai/leaderboard/text, https://os-world.github.io/, https://artificialanalysis.ai/models/minimax-m3
 
@@ -845,7 +845,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #132 (score 1416 ±4)
 - API list price (input / output per 1M tokens): $0.25 / $1.50
-- AA Intelligence Index: 6.2 (Artificial Analysis v5 · best setting: Gemini 3.1 Flash-Lite · checked 2026-11-17)
+- AA Intelligence Index: 6.2 (Artificial Analysis v5 · best setting: Gemini 3.1 Flash-Lite · checked 2026-11-19)
 - Summary: Proprietary model from Google DeepMind, listed May 2026. Arena text score 1416 (#132 of 414 entries). $0.25 input / $1.50 output per 1M tokens. 1M tokens context.
 - Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-3.1-flash-lite, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview
 
@@ -874,7 +874,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: #136 (score 1414 ±9)
 - API list price (input / output per 1M tokens): $0.70 / $2.10
-- AA Intelligence Index: 26.1 (Artificial Analysis v5 · best setting: Mistral Large 4 (High) · checked 2026-11-17)
+- AA Intelligence Index: 26.1 (Artificial Analysis v5 · best setting: Mistral Large 4 (High) · checked 2026-11-19)
 - Summary: Open Weights model from Mistral AI, listed October 2026. Arena text score 1414 (#136 of 414 entries). $0.70 input / $2.10 output per 1M tokens. 1M tokens context.
 - Sources: https://mistral.ai/news/mistral-large-4/, https://openrouter.ai/mistralai/mistral-large-4-0, https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/mistral-large-4
 
@@ -884,7 +884,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 512K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #137 (score 1414 ±5)
 - API list price (input / output per 1M tokens): $0.45 / $1.20
-- AA Intelligence Index: 12.9 (Artificial Analysis v5 · best setting: Inkling Small · checked 2026-11-17)
+- AA Intelligence Index: 12.9 (Artificial Analysis v5 · best setting: Inkling Small · checked 2026-11-19)
 - Summary: Open Weights model from Thinking Machines Lab, listed July 2026. Arena text score 1414 (#137 of 414 entries). $0.45 input / $1.20 output per 1M tokens. 512K tokens context.
 - Sources: https://thinkingmachines.ai/news/inkling-small/, https://openrouter.ai/thinkingmachines/inkling-small, https://huggingface.co/thinkingmachines/Inkling-Small, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/inkling-small
 
@@ -922,8 +922,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: February 2026 | Architecture Type: Open Weights
 - Parameters: 27B (dense) | Context Window: 256K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #145 (score 1409 ±4)
-- API list price (input / output per 1M tokens): $0.26 / $2.60
-- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#145 of 414 entries). $0.26 input / $2.60 output per 1M tokens. 256K tokens context.
+- API list price (input / output per 1M tokens): $0.195 / $1.56
+- Summary: Open Weights model from Alibaba Cloud, listed February 2026. Arena text score 1409 (#145 of 414 entries). $0.20 input / $1.56 output per 1M tokens. 256K tokens context.
 - Sources: https://huggingface.co/Qwen/Qwen3.5-27B, https://openrouter.ai/qwen/qwen3.5-27b, https://arena.ai/leaderboard/text
 
 ### GPT-5 (OpenAI)
@@ -969,7 +969,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 500K tokens | License: Proprietary
 - arena.ai text leaderboard: #159 (score 1398 ±5)
 - API list price (input / output per 1M tokens): $2.00 / $6.00
-- AA Intelligence Index: 35.5 (Artificial Analysis v5 · best setting: Grok 4.7 (Xhigh) · checked 2026-11-17)
+- AA Intelligence Index: 35.5 (Artificial Analysis v5 · best setting: Grok 4.7 (Xhigh) · checked 2026-11-19)
 - Summary: Proprietary model from xAI, listed September 2026. Arena text score 1398 (#159 of 414 entries). $2.00 input / $6.00 output per 1M tokens. 500K tokens context.
 - Sources: https://docs.x.ai/developers/models/grok-4.7, https://openrouter.ai/x-ai/grok-4.7, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/grok-4-7
 
@@ -988,7 +988,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #162 (score 1397 ±5)
 - API list price (input / output per 1M tokens): $2.00 / $10.00
-- AA Intelligence Index: 44.2 (Artificial Analysis v5 · best setting: GPT-6 Sol (Max) · checked 2026-11-17)
+- AA Intelligence Index: 44.2 (Artificial Analysis v5 · best setting: GPT-6 Sol (Max) · checked 2026-11-19)
 - Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1397 (#162 of 414 entries). $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/introducing-gpt-6-sol-and-luna/, https://openrouter.ai/openai/gpt-6-sol, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-6-sol
 
@@ -999,7 +999,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - arena.ai text leaderboard: #163 (score 1397 ±2)
 - API list price (input / output per 1M tokens): $1.00 / $5.00
 - SWE-bench Verified: 66.6% (mini-SWE-agent (bash only) · run 'Claude 4.5 Haiku (high)' · 2026-02-17)
-- AA Intelligence Index: 7.4 (Artificial Analysis v5 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-11-17)
+- AA Intelligence Index: 7.4 (Artificial Analysis v5 · best setting: Claude 4.5 Haiku (Reasoning) · checked 2026-11-19)
 - Summary: Proprietary model from Anthropic, listed October 2025. Arena text score 1397 (#163 of 414 entries). $1.00 input / $5.00 output per 1M tokens. 200K tokens context.
 - Sources: https://www.anthropic.com/news/claude-haiku-4-5, https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-haiku-4.5, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning
 
@@ -1036,7 +1036,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not listed in our sources | Context Window: 128K tokens | License: Apache-2.0
 - arena.ai text leaderboard: #169 (score 1389 ±10)
 - API list price (input / output per 1M tokens): $0.35 / $1.50
-- AA Intelligence Index: 6.3 (Artificial Analysis v5 · best setting: Muse Glimmer (High) · checked 2026-11-17)
+- AA Intelligence Index: 6.3 (Artificial Analysis v5 · best setting: Muse Glimmer (High) · checked 2026-11-19)
 - Summary: Open Weights model from Meta AI, listed August 2026. Arena text score 1389 (#169 of 414 entries). $0.35 input / $1.50 output per 1M tokens. 128K tokens context.
 - Sources: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model, https://openrouter.ai/meta/muse-glimmer-30b, https://huggingface.co/meta-models/Muse-Glimmer-30B, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/muse-glimmer
 
@@ -1046,7 +1046,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
 - arena.ai text leaderboard: #170 (score 1388 ±4)
 - API list price (input / output per 1M tokens): $0.10 / $0.50
-- AA Intelligence Index: 27.9 (Artificial Analysis v5 · best setting: GPT-6 Luna (Max) · checked 2026-11-17)
+- AA Intelligence Index: 27.9 (Artificial Analysis v5 · best setting: GPT-6 Luna (Max) · checked 2026-11-19)
 - Summary: Proprietary model from OpenAI, listed September 2026. Arena text score 1388 (#170 of 414 entries). $0.10 input / $0.50 output per 1M tokens. 1.05M tokens context.
 - Sources: https://openai.com/index/introducing-gpt-6-sol-and-luna/, https://openrouter.ai/openai/gpt-6-luna, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/gpt-6-luna
 
@@ -1056,7 +1056,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 512K tokens | License: Proprietary
 - arena.ai text leaderboard: #172 (score 1388 ±5)
 - API list price (input / output per 1M tokens): $0.15 / $0.60
-- AA Intelligence Index: 14.2 (Artificial Analysis v5 · best setting: Solar Pro 4 · checked 2026-11-17)
+- AA Intelligence Index: 14.2 (Artificial Analysis v5 · best setting: Solar Pro 4 · checked 2026-11-19)
 - Summary: Proprietary model from Upstage, listed August 2026. Arena text score 1388 (#172 of 414 entries). $0.15 input / $0.60 output per 1M tokens. 512K tokens context.
 - Sources: https://www.upstage.ai/blog/en/solar-pro-4, https://openrouter.ai/upstage/solar-pro4, https://arena.ai/leaderboard/text, https://artificialanalysis.ai/models/solar-pro4
 
@@ -1086,7 +1086,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - arena.ai text leaderboard: #192 (score 1365 ±4)
 - API list price (input / output per 1M tokens): $0.15 / $0.60
 - SWE-bench Verified: 26.0% (mini-SWE-agent (bash only) · run 'gpt-oss-120b' · 2025-08-07)
-- AA Intelligence Index: 3.8 (Artificial Analysis v5 · best setting: gpt-oss-120b (High) · checked 2026-11-17)
+- AA Intelligence Index: 3.8 (Artificial Analysis v5 · best setting: gpt-oss-120b (High) · checked 2026-11-19)
 - Summary: Open Weights model from OpenAI, listed August 2025. Arena text score 1365 (#192 of 414 entries). $0.15 input / $0.60 output per 1M tokens. 128K tokens context.
 - Sources: https://openai.com/index/introducing-gpt-oss/, https://openrouter.ai/openai/gpt-oss-120b, https://huggingface.co/openai/gpt-oss-120b, https://arena.ai/leaderboard/text, https://www.swebench.com/, https://artificialanalysis.ai/models/gpt-oss-120b
 
@@ -1125,8 +1125,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: August 2025 | Architecture Type: Open Weights
 - Parameters: 21B total, 3.6B active (MoE) | Context Window: 128K tokens | License: Apache 2.0
 - arena.ai text leaderboard: #261 (score 1288 ±6)
-- API list price (input / output per 1M tokens): $0.03 / $0.13
-- Summary: Open Weights model from OpenAI, listed August 2025. Arena text score 1288 (#261 of 414 entries). $0.03 input / $0.13 output per 1M tokens. 128K tokens context.
+- API list price (input / output per 1M tokens): $0.018 / $0.09
+- Summary: Open Weights model from OpenAI, listed August 2025. Arena text score 1288 (#261 of 414 entries). $0.02 input / $0.09 output per 1M tokens. 128K tokens context.
 - Sources: https://openai.com/index/introducing-gpt-oss/, https://openrouter.ai/openai/gpt-oss-20b, https://huggingface.co/openai/gpt-oss-20b, https://arena.ai/leaderboard/text
 
 ### Claude Mythos 5.1 (Anthropic)
@@ -1144,9 +1144,29 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: Unranked (not on Arena)
 - API list price (input / output per 1M tokens): $0.10 / $0.50
-- AA Intelligence Index: 36.5 (Artificial Analysis v5 · best setting: Claude Haiku 5.5 (Max) · checked 2026-11-17)
+- AA Intelligence Index: 36.5 (Artificial Analysis v5 · best setting: Claude Haiku 5.5 (Max) · checked 2026-11-19)
 - Summary: Proprietary model from Anthropic, listed October 2026. $0.10 input / $0.50 output per 1M tokens. 1M tokens context.
 - Sources: https://platform.claude.com/docs/en/about-claude/pricing, https://openrouter.ai/anthropic/claude-haiku-5.5, https://artificialanalysis.ai/models/claude-haiku-5-5
+
+### GPT-6.2 Astra (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-2-astra
+- Release Date: November 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $8.00 / $40.00
+- AA Intelligence Index: 62.1 (Artificial Analysis v5 · best setting: GPT-6.2 Astra (Max) · checked 2026-11-19)
+- Summary: Proprietary model from OpenAI, listed November 2026. $8.00 input / $40.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://developers.openai.com/api/docs/models/gpt-6.2-astra, https://openrouter.ai/openai/gpt-6.2-astra, https://artificialanalysis.ai/models/gpt-6-2-astra
+
+### GPT-6.2 Sol (OpenAI)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-2-sol
+- Release Date: November 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1.05M tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $2.00 / $10.00
+- AA Intelligence Index: 57.3 (Artificial Analysis v5 · best setting: GPT-6.2 Sol (Max) · checked 2026-11-19)
+- Summary: Proprietary model from OpenAI, listed November 2026. $2.00 input / $10.00 output per 1M tokens. 1.05M tokens context.
+- Sources: https://developers.openai.com/api/docs/models/gpt-6.2-sol, https://openrouter.ai/openai/gpt-6.2-sol, https://artificialanalysis.ai/models/gpt-6-2-sol
 
 ### GPT-6.1 Terra (OpenAI)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gpt-6-1-terra
@@ -1204,13 +1224,23 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Summary: Proprietary model from OpenAI, listed November 2025. $1.25 input / $10.00 output per 1M tokens. 400K tokens context.
 - Sources: https://openrouter.ai/openai/gpt-5.1-codex, https://www.swebench.com/
 
+### Gemini 4 Neon (Google DeepMind)
+- Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-4-neon
+- Release Date: November 2026 | Architecture Type: Multimodal Foundation
+- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- arena.ai text leaderboard: Unranked (not on Arena)
+- API list price (input / output per 1M tokens): $3.00 / $15.00
+- AA Intelligence Index: 61.4 (Artificial Analysis v5 · best setting: Gemini 4 Neon (Xhigh) · checked 2026-11-19)
+- Summary: Proprietary model from Google DeepMind, listed November 2026. $3.00 input / $15.00 output per 1M tokens. 1M tokens context.
+- Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/, https://ai.google.dev/gemini-api/docs/pricing, https://openrouter.ai/google/gemini-4-neon, https://artificialanalysis.ai/models/gemini-4-neon
+
 ### Gemini 4 Carbon (Google DeepMind)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-gemini-4-carbon
 - Release Date: November 2026 | Architecture Type: Multimodal Foundation
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: Unranked (not on Arena)
 - API list price (input / output per 1M tokens): $2.00 / $10.00
-- AA Intelligence Index: 60 (Artificial Analysis v5 · best setting: Gemini 4 Carbon (High) · checked 2026-11-17)
+- AA Intelligence Index: 60 (Artificial Analysis v5 · best setting: Gemini 4 Carbon (High) · checked 2026-11-19)
 - Summary: Proprietary model from Google DeepMind, listed November 2026. $2.00 input / $10.00 output per 1M tokens. 1M tokens context.
 - Sources: https://ai.google.dev/gemini-api/docs/pricing, https://artificialanalysis.ai/models/gemini-4-carbon
 
@@ -1220,7 +1250,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: Unranked (not on Arena)
 - API list price (input / output per 1M tokens): $1.50 / $7.50
-- AA Intelligence Index: 53.9 (Artificial Analysis v5 · best setting: Gemini 4 Hydrogen (Xhigh) · checked 2026-11-17)
+- AA Intelligence Index: 53.9 (Artificial Analysis v5 · best setting: Gemini 4 Hydrogen (Xhigh) · checked 2026-11-19)
 - Summary: Proprietary model from Google DeepMind, listed November 2026. $1.50 input / $7.50 output per 1M tokens. 1M tokens context.
 - Sources: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/, https://ai.google.dev/gemini-api/docs/pricing, https://artificialanalysis.ai/models/gemini-4-hydrogen
 
@@ -1265,9 +1295,9 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: October 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.240 / $8.402
-- AA Intelligence Index: 46.5 (Artificial Analysis v5 · best setting: Kimi K3.1 Pro · checked 2026-11-17)
-- Summary: Open Weights model from Moonshot AI, listed October 2026. $0.24 input / $8.40 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.253 / $8.80
+- AA Intelligence Index: 46.5 (Artificial Analysis v5 · best setting: Kimi K3.1 Pro · checked 2026-11-19)
+- Summary: Open Weights model from Moonshot AI, listed October 2026. $0.25 input / $8.80 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/moonshotai/kimi-k3.1-pro, https://huggingface.co/moonshotai/Kimi-K3.1-Pro, https://artificialanalysis.ai/models/kimi-k3-1-pro
 
 ### Kimi K2.7 Code (Moonshot AI)
@@ -1275,8 +1305,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: June 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 256K tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.60 / $3.50
-- Summary: Open Weights model from Moonshot AI, listed June 2026. $0.60 input / $3.50 output per 1M tokens. 256K tokens context.
+- API list price (input / output per 1M tokens): $0.65 / $3.50
+- Summary: Open Weights model from Moonshot AI, listed June 2026. $0.65 input / $3.50 output per 1M tokens. 256K tokens context.
 - Sources: https://openrouter.ai/moonshotai/kimi-k2.7-code, https://huggingface.co/moonshotai/Kimi-K2.7-Code
 
 ### DeepSeek-V4.1-Flash-1017 (DeepSeek)
@@ -1284,8 +1314,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: October 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.036 / $0.50
-- Summary: Open Weights model from DeepSeek, listed October 2026. $0.04 input / $0.50 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.15 / $0.60
+- Summary: Open Weights model from DeepSeek, listed October 2026. $0.15 input / $0.60 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017, https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 
 ### DeepSeek-V4-Flash-Vision-Exp (DeepSeek)
@@ -1302,8 +1332,8 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Release Date: July 2026 | Architecture Type: Open Weights
 - Parameters: Not listed in our sources | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
-- API list price (input / output per 1M tokens): $0.06 / $0.18
-- Summary: Open Weights model from DeepSeek, listed July 2026. $0.06 input / $0.18 output per 1M tokens. 1M tokens context.
+- API list price (input / output per 1M tokens): $0.062 / $0.30
+- Summary: Open Weights model from DeepSeek, listed July 2026. $0.06 input / $0.30 output per 1M tokens. 1M tokens context.
 - Sources: https://openrouter.ai/deepseek/deepseek-v4-flash-0731, https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 
 ### Qwen4 Max (Alibaba Cloud)
@@ -1312,7 +1342,7 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Parameters: 2.4T backbone (+328B N-gram), 71B active (MoE) | Context Window: 1M tokens | License: Proprietary
 - arena.ai text leaderboard: Unranked (not on Arena)
 - API list price (input / output per 1M tokens): $1.425 / $4.275
-- AA Intelligence Index: 42.9 (Artificial Analysis v5 · best setting: Qwen4 Max · checked 2026-11-17)
+- AA Intelligence Index: 42.9 (Artificial Analysis v5 · best setting: Qwen4 Max · checked 2026-11-19)
 - Summary: Proprietary model from Alibaba Cloud, listed November 2026. $1.43 input / $4.28 output per 1M tokens. 1M tokens context.
 - Sources: https://qwen.ai/blog?id=qwen4-max, https://openrouter.ai/qwen/qwen4-max, https://artificialanalysis.ai/models/qwen4-max
 
@@ -1345,12 +1375,12 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 
 ### Hy4 Flash (Tencent Hunyuan)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-hy4-flash
-- Release Date: November 2026 | Architecture Type: Compact / Edge
-- Parameters: Not disclosed | Context Window: 1M tokens | License: Proprietary
+- Release Date: November 2026 | Architecture Type: Open Weights
+- Parameters: 220B total, 12B active (MoE) | Context Window: 1M tokens | License: Open weights (see Hugging Face)
 - arena.ai text leaderboard: Unranked (not on Arena)
 - API list price (input / output per 1M tokens): $0.035 / $0.141
-- Summary: Proprietary model from Tencent Hunyuan, listed November 2026. $0.04 input / $0.14 output per 1M tokens. 1M tokens context.
-- Sources: https://tencent.ai/blog/hy4-flash, https://openrouter.ai/tencent/hy4-flash
+- Summary: Open Weights model from Tencent Hunyuan, listed November 2026. $0.04 input / $0.14 output per 1M tokens. 1M tokens context.
+- Sources: https://tencent.ai/blog/hy4-flash, https://openrouter.ai/tencent/hy4-flash, https://huggingface.co/tencent/Hy4-flash
 
 ### Hy4 preview (Tencent Hunyuan)
 - Model Detail Page: https://nextvector.rhasan.online/models/model-hy4-preview
@@ -1416,6 +1446,291 @@ Each pick comes from a stated rule over public data: arena.ai text leaderboard, 
 - Sources: https://openrouter.ai/elorian/glimpse
 
 ## Published Intelligence Reports (Full Text Corpus)
+### Anthropic Prices Record $81.3B Nasdaq IPO Ahead of ANT Trading Debut at ~$1.5T Valuation
+- Canonical URL: https://nextvector.rhasan.online/article/anthropic-prices-record-81b-nasdaq-ipo-ant
+- Published: 2026-11-19 | Category: AI | Signal Rating: 97/100
+- Executive Summary: At $83 per share above its proposed $70–$78 range, the 980-million-share offering becomes the first pure-play frontier AI listing on U.S. public markets.
+
+**What Happened?**
+Anthropic, PBC priced its initial public offering on November 18, 2026 at $83.00 per Class A share across 980,000,000 shares ahead of Thursday's Nasdaq Global Select Market debut under ticker ANT at roughly a $1.5 trillion valuation.
+
+**Why It Matters:**
+Surpassing SpaceX's $75 billion June 2026 listing, the flotation creates the first standalone publicly traded frontier AI company in the United States and opens equity market financing to sustain steep compute losses.
+
+**What Could Happen Next:**
+Secondary trading begins on Nasdaq on November 19, 2026, with underwriting settlement expected November 20 alongside a 30-day option for underwriters to buy up to 147,000,000 additional shares.
+
+**Key Takeaways:**
+- Initial sale prices 980,000,000 Class A shares at $83.00 ($956,351,354 sold by Anthropic and 23,648,646 by selling stockholders), raising roughly $81.3 billion gross before underwriter overallotment.
+- Up to $107 billion in combined capital is in play when adding $26 billion in separate investments from Google, Microsoft, and Nvidia, plus roughly $12 billion via the 147-million-share 30-day option.
+- IPO filings cited by BBC News show $33 billion in revenue and $104 billion in net losses during the nine months ended September 2026, with demand reportedly ten times available shares.
+- Dario and Daniela Amodei's five-year-old firm overtakes Walmart and Samsung in implied market capitalization while approaching Tesla and Meta.
+
+**Full Article Content:**
+Source: Anthropic's official IPO pricing announcement (November 18, 2026) and BBC News financial reporting from New York (November 18–19, 2026).
+
+After filing its SEC S-1 and kicking off its investor roadshow earlier this month, the Claude developer lifted its offer price to $83.00 above the marketed $70–$78 band after its registration statement was declared effective on November 18. Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are coordinating the prospectus for the 980-million-share sale, which excludes proceeds from 23,648,646 existing-stockholder shares from Anthropic's balance sheet.
+
+Institutional and individual appetite pushed order books far past supply. An early backer speaking anonymously to the BBC said the offering drew ten times more bids than shares allocated, while Canaccord Wealth's Leah Bramwell noted broad participation across both fund managers and retail buyers rather than a single-cohort speculative surge.
+
+Financial disclosures in the prospectus underscore why management tapped public equities after Democrats captured both chambers of Congress in recent U.S. midterms and Federal Reserve October minutes warned of "complex and opaque" AI debt structures. Across the nine months through September 2026, Anthropic posted $33 billion in revenue against $104 billion in net losses as training runs and data-center commitments swelled.
+
+Total capital commitments could reach $107 billion when combining the >$81 billion (£62 billion) flotation, $26 billion in separate strategic investments from Google, Microsoft, and Nvidia, and the greenshoe provision for up to 147 million extra shares. Empower head of strategy Marta Norton summarized the timing plainly: "AI is financially demanding. The public markets open up the financial spigot a little bit more and so the time has come."
+
+Counterpoint Research principal financial analyst Yang Wang cautioned that investors will scrutinize whether revenue growth can service hundreds of billions in upcoming infrastructure obligations while rivals delay listings—OpenAI is not expected to go public until 2027. Secondary-market opening prices under ANT on Thursday and final closing proceeds expected Friday, November 20 remain to be seen.
+
+**Primary Sources & Citations:**
+- [Anthropic prices initial public offering](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) (Anthropic)
+- [Anthropic raises $81bn in record-breaking stock market debut](https://www.bbc.co.uk/news/articles/c6742m39xgzxo) (BBC News)
+
+---
+
+### Google DeepMind Launches Gemini 4 Neon at $3/M Input, Taking #1 on AA Coding Agent Index
+- Canonical URL: https://nextvector.rhasan.online/article/google-deepmind-gemini-4-neon-coding-agent-release
+- Published: 2026-11-19 | Category: AI | Signal Rating: 94/100
+- Executive Summary: Priced 32% lower per task than Gemini 4 Carbon at default high thinking, Neon reaches #3 overall on Artificial Analysis and leads agentic cyber defense benchmarks.
+
+**What Happened?**
+Google DeepMind introduced Gemini 4 Neon on November 18, 2026 via Gemini API, Google AI Studio, Android Studio, Google Antigravity, and the Gemini app at $3 input, $0.15 cached input, and $15 output per million tokens.
+
+**Why It Matters:**
+Positioning between heavyweight Carbon and high-speed Hydrogen, Neon cuts per-task cost by 32% over Carbon while winning top spots on Artificial Analysis Coding Agent Index (58.6), Zapier AutomationBench, and cyber patching suites.
+
+**What Could Happen Next:**
+Defensive security teams in Google Cloud's Fairwind Program begin receiving specialized Gemini 4 Neon for cyber access over the coming days alongside general Pro and Ultra production rollouts.
+
+**Key Takeaways:**
+- Scores 61.4 at xhigh thinking (#3 overall on Artificial Analysis Intelligence Index), plus 59.6 high, 54.9 medium, and 44.1 low inside a 1,048,576-token multimodal context.
+- Captures #1 on Artificial Analysis Coding Agent Index (58.6), #2 on Vals Index (70.9%), #2 on Agent Arena Index (1336 across 4,200+ sessions), and #1 on Vending-Bench 2 ($16,843).
+- On SWE-sweep, performance jumps from 12.8% on the mini-SWE harness to 39.0% inside Google Antigravity, while FrontierCode 2.0 reaches 46.2% and Terminal-Bench 4.1 hits 65.2%.
+- Leads cyber-defense evaluations on SEC-bench Pro (90.5%), AutoBaxBench hard (76%), WebExploitBench v1.2 (51.26%), and CWE-bench v2 (70.7%) with 0.0% indirect prompt injection success on Gray Swan.
+
+**Full Article Content:**
+Source: Google DeepMind's announcement by SVP Koray Kavukcuoglu (November 18, 2026) paired with Artificial Analysis and OpenRouter live snapshot telemetry.
+
+Across its four adjustable reasoning budgets, Gemini 4 Neon pairs high accuracy with sharp unit economics on multimodal inputs spanning text, audio, video, images, and PDFs. At its default high setting, it lands on the Pareto frontier for Vals Index (including #1 rankings on Legal Research Bench and Tax Agent Bench) and Agent Arena while trimming task cost by roughly 50% to 80% relative to larger frontier models.
+
+Software engineering evaluations underscore how agent scaffolding amplifies raw model gains: Neon tops Surge AI finance and spreadsheet categories, hits 73.5% on Chartography, 75.8% on Agents' Last Exam v1.1, 84.0% on RiemannBench, 70.5% on Terminal-Bench Science, and 71.3% on HLE-Diamond. As an orchestrator coordinating Hydrogen subagents inside Google Antigravity, DeepMind showcased a 10,200-line WebGL2 Chamonix ski simulator, a 100,000-cell formula-only spreadsheet depth renderer, and a 3D reconstruction of Alan Turing's 1936 Cambridge room.
+
+Safety and cyber metrics form a centerpiece of the release. Using real-time protections at highest thinking, Neon recorded a 0.0% attack success rate on Gray Swan's indirect prompt injection suite, zero cheating on Terminal-Bench 4.0 alongside 1.98% task refusals (and 0% refusals on Terminal-Bench Science), a 0.09% misaligned action rate, and 99.2% agent honesty.
+
+Not all edges are eliminated, however. Google did not publish parameter counts or training-compute budgets, Neon still took shortcuts in 2.45% of cases on Google's coding cheating evaluation, and the cyber-hardened variant remains gated behind Fairwind Program eligibility.
+
+**Primary Sources & Citations:**
+- [Introducing Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) (Google Blog)
+
+---
+
+### OpenAI Ships GPT-6.2 Astra and Sol Alongside Silicon-Proven Chip Gains With AMD
+- Canonical URL: https://nextvector.rhasan.online/article/openai-gpt-6-2-astra-sol-chip-design-amd
+- Published: 2026-11-19 | Category: AI | Signal Rating: 94/100
+- Executive Summary: Developers get 1.05M-context APIs with 2h/8h background discounts as OpenAI reveals up to 14% AMD GPU PPA gains and trains GPT-Synopsys.
+
+**What Happened?**
+OpenAI released gpt-6.2-astra ($8/$40 per 1M tokens) and gpt-6.2-sol ($2/$10) in the API on November 17, followed November 18 by hardware disclosures detailing AMD GPU/CPU microarchitecture improvements and RISC-V design benchmarks.
+
+**Why It Matters:**
+Pairing higher reasoning reliability with EDA tool verification lets frontier models cut physical silicon area by double digits on custom chips and deliver roughly a year of AMD GPU PPA progress in under five months.
+
+**What Could Happen Next:**
+OpenAI is partnering with Synopsys to train a specialized GPT-Synopsys model directly on industrial EDA tools while enterprises migrate away from legacy flex processing to discounted background completion windows.
+
+**Key Takeaways:**
+- GPT-6.2 Astra scores 62.1 (Max) and Sol scores 57.3 (Max) on Artificial Analysis Intelligence Index, both supporting 1,050,000-token windows and rejecting none reasoning effort.
+- Responses API updates drop Flex pricing on GPT-6.2 in favor of 2-hour (-30%) and 8-hour (-40%) background windows while dropping cached reasoning after prefix edits.
+- Model rewrites cut Jalapeno's standard-cell area ~13% in vector blocks and 10% in matrix blocks, and delivered up to 14% PPA improvement on flagship AMD GPU IP in under five months.
+- Across 9,881 RISC-V runs near 112,000 tokens, GPT-6.2 Astra scored 0.64 vs GPT-6 Astra's 0.32 on PicoRV32 RTL optimization and climbed to 0.85 at 242.484k tokens on spec-to-RTL.
+
+**Full Article Content:**
+Source: OpenAI's official API documentation and changelog for gpt-6.2-astra and gpt-6.2-sol (November 17, 2026), OpenAI's chip design publication (November 18, 2026), and Artificial Analysis snapshots.
+
+Both GPT-6.2 variants expand long-context coding and computer-use pipelines across 922,000 max input tokens and 128,000 max output tokens, with May 18, 2026 (Astra) and June 1, 2026 (Sol) knowledge cutoffs. API behavior changes materially from GPT-6.1: top-level instructions now append after input rather than anchoring prefix caches, prompts exceeding 272K input tokens double input/cache rates (1.5x output), and editing earlier turns strips stored reasoning state.
+
+On hardware synthesis, OpenAI detailed silicon-proven savings on its first custom inference chip, Jalapeno, where iterative rewrites that began with GPT-o3 mini in early 2025 shrank one multiplier by 15% area while halving latency from two cycles to one. Extending the workflow externally, AMD verified SystemVerilog RTL rewrites yielding single-digit percentage PPA uplifts on upcoming flagship CPU blocks and up to 14% GPU IP PPA gains—parts of which are already taped out for manufacturing.
+
+Controlled open-source evaluations across 32-bit PicoRV32 and OpenTitan Ibex cores quantified generation-over-generation progress using geometric-mean workload throughput estimated via Yosys under a 16x area limit. Near 112,000 tokens (108.195k bin), GPT-6.2 Astra doubled GPT-6 Astra on PicoRV32 RTL optimization (0.64 vs 0.32), led Ibex RTL (0.47 vs 0.28), and hit 0.73 and 0.76 on spec-to-RTL synthesis.
+
+OpenAI cautioned that specification-from-scratch tasks reward models in part because they are permitted to strip unused legacy hardware features such as performance counters and extra instructions. Tighter area caps, mandatory feature parity, and post-physical-synthesis timing checks were not yet enforced in the public benchmark, and pricing or availability timelines for the upcoming GPT-Synopsys model were not disclosed.
+
+**Primary Sources & Citations:**
+- [GPT-6.2 Astra Model Documentation](https://developers.openai.com/api/docs/models/gpt-6.2-astra) (OpenAI Developer Docs)
+- [Advancing chip design with OpenAI models](https://openai.com/index/advancing-chip-design-with-our-models/) (OpenAI)
+
+---
+
+### Nvidia Hits $115.8B Quarterly Revenue on Vera Rubin Ramp and Agrees to Acquire Hugging Face
+- Canonical URL: https://nextvector.rhasan.online/article/nvidia-q3-fy27-115b-revenue-hugging-face-acquisition
+- Published: 2026-11-19 | Category: TECHNOLOGY | Signal Rating: 93/100
+- Executive Summary: Data center sales jumped 110% year-over-year to $107.6 billion as interim CEO Colette Kress guides $130B for Q4 without China compute assumptions.
+
+**What Happened?**
+On November 17, 2026, Nvidia reported $115.8 billion in Q3 FY27 revenue—up 103% year-over-year—alongside Vera Rubin NVL72 shipments and a definitive agreement to acquire open-source AI platform Hugging Face.
+
+**Why It Matters:**
+Bringing the industry's primary open-weight model hub under Nvidia pairs dominant rack-scale silicon with developer ecosystem distribution while Vera Rubin expands across Google Cloud, Azure, Oracle, CoreWeave, and Meta.
+
+**What Could Happen Next:**
+Nvidia projects $130.0 billion (±3%) in 14-week Q4 FY27 revenue, will pay a $0.25 quarterly dividend on December 23, and works toward closing the Hugging Face transaction.
+
+**Key Takeaways:**
+- Total Q3 revenue reached $115.8B (+20% QoQ, +103% YoY), driven by $107.6B in Data Center (+110% YoY) and $8.2B in Edge Computing (+42% YoY).
+- GAAP net income hit $65.3 billion ($2.70 diluted EPS; 74.8% GAAP gross margin), while shareholders received $28.1 billion in buybacks and dividends.
+- Vera Rubin NVL72 racks are now running at CoreWeave, Google Cloud (A5X instances), Azure, OCI, and Nebius, with SpaceXSI deployments upcoming.
+- Alongside OpenShell / BlueField-4 Sentry hardware agent enforcement, Nvidia disclosed an agreement to acquire Hugging Face.
+
+**Full Article Content:**
+Source: Nvidia's official Third Quarter Fiscal 2027 financial results release issued November 17, 2026 at 21:20 UTC.
+
+For the fiscal quarter ended October 25, 2026, operating income surged 115% year-over-year to $77.5 billion as research and development spending reached $7.454 billion across Vera CPUs, custom NVLink Fusion XPU interconnects with MediaTek, and USFP optical modules co-developed with Cisco. Following a $150 billion buyback expansion approved in September, $227.3 billion remained under Nvidia's repurchase authorization at quarter-end.
+
+Infrastructure expansion featured the fastest ramp in company history: Vera Rubin NVL72 liquid-cooled racks are active across major hyperscalers and neoclouds, Meta expanded Vera Rubin and BlueField-4 commitments around its Muse agents, and modular DSX POD factories plus a planned 2 GW Australian buildout by 2027 were formalized. Nvidia also debuted the OpenShell Reference Architecture running NVIDIA Sentry policy enforcement on BlueField-4 DPUs.
+
+On the software front, the agreement to acquire Hugging Face aims to scale open intelligence ecosystems alongside Nvidia Nemotron for Science and CUDA-Q Logical quantum simulations run on Europe's JUPITER system. Edge sales reflected commercial shipments of RTX Spark Windows laptops, 64GB DGX Spark desktops, and DLSS 5 game rollouts. "Vera Rubin is off to an explosive start, our roadmap is on track and our ambition has never been greater," said interim CEO and CFO Colette Kress.
+
+Nvidia's Q4 outlook of $130.0 billion (with GAAP gross margins moderating to 71.0%–72.0% and OpEx rising near $11.0 billion) assumes zero Data Center compute revenue from China. Crucially, the release disclosed neither financial consideration, regulatory timeline, nor governance commitments for Hugging Face, nor did it address a permanent CEO succession schedule.
+
+**Primary Sources & Citations:**
+- [NVIDIA Announces Financial Results for Third Quarter Fiscal 2027](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027) (NVIDIA Newsroom)
+
+---
+
+### Ruby2ßhell Flaw Exposes Default Rails, GitLab, and GitHub Enterprise Server to Unauthenticated RCE
+- Canonical URL: https://nextvector.rhasan.online/article/ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce
+- Published: 2026-11-19 | Category: TECHNOLOGY | Signal Rating: 92/100
+- Executive Summary: Veria Labs discloses a decade-old 1-byte heap overflow triggered when 21 'ß' bytes are uppercased in legacy single-byte encodings across Ruby 2.4 to 4.0.9.
+
+**What Happened?**
+Veria Labs disclosed Ruby2ßhell (GHSA-34m4-m9fh-gqp5, updated November 19, 2026), an unauthenticated network remote code execution bug in Ruby's single-byte encoding case-conversion code fixed in Ruby 3.3.14, 3.4.13, and 4.0.10.
+
+**Why It Matters:**
+Reachable out-of-the-box in default Ruby on Rails and classic Sinatra apps, the decade-old flaw affects current bundled releases of GitLab 19.6.0, GitHub Enterprise Server 3.22.5, and Chatwoot 4.20.0.
+
+**What Could Happen Next:**
+Operators must upgrade runtimes to 3.3.14, 3.4.13, or 4.0.10 immediately before Veria Labs publishes its proof-of-concept exploit in one week.
+
+**Key Takeaways:**
+- Present since Ruby 2.4.0 across ISO-8859 and Windows-125x encodings when calling upcase, swapcase, downcase(:fold), or casecmp?; UTF-8 code paths are unaffected.
+- Single-byte encodings lack uppercase 'ß', writing 'SS' (2 bytes) while checking room for only 1 byte—so 21 'ß' inputs overflow Ruby's input+20-byte heap buffer by 1 byte ('S' / 0x53 or 's' / 0x73).
+- Default Rails and classic Sinatra apps allow attackers to choose buffer allocation size via input length and smash adjacent heap metadata without authentication.
+- Fixed upstream in commit ruby/ruby@d582f8f; Mastodon 4.7.6, OpenProject 17.9.8, and Discourse already bundle 4.0.10, while GitLab, GHES, and Chatwoot wait on updates.
+
+**Full Article Content:**
+Source: Veria Labs' Ruby2ßhell technical advisory (GHSA-34m4-m9fh-gqp5, updated November 19, 2026 at 15:29 UTC).
+
+At the root of the bug sits an overlooked asymmetry in Ruby's Onigenc single-byte case-conversion loop (`while (*pp < end && to < to_end)`). When encountering the German sharp-s (`SHARP_s`), `ONIGENC_CASE_UPCASE` emits `'S'` immediately before writing the second `'S'` with no second bounds guard; because the allocator pads the destination buffer by 20 bytes over input length, feeding 21 `'ß'` bytes guarantees an exact one-byte write immediately past the buffer end.
+
+Copying the converted string then performs an out-of-bounds read, giving a remote attacker an arbitrary-size heap primitive writing controlled `0x53` (`'S'`) or case-folded `0x73` (`'s'`) bytes without needing user credentials. While plain Rack apps are not exposed by default, both Ruby on Rails and classic Sinatra configurations accept legacy-encoded string paths into case operations on unauthenticated endpoints.
+
+Enterprise exposure varies sharply by release cadence: Mastodon 4.7.6, OpenProject 17.9.8, and Discourse base image `2.0.20261119-0203` already ship patched Ruby 4.0.10, whereas GitLab 19.6.0 (Ruby 3.3.13), GitHub Enterprise Server 3.22.5 (Ruby 4.0.9), and Chatwoot 4.20.0 (Ruby 3.4.4) remain vulnerable on their latest builds. All Ruby 3.2 and older lines back to 2.4.0 are end-of-life and will not receive official backports.
+
+A formal CVE identifier remains pending as of disclosure, and Veria Labs is withholding functional proof-of-concept exploit code for seven days to give self-hosted administrators and appliance vendors time to ship `ruby/ruby@d582f8f` patches.
+
+**Primary Sources & Citations:**
+- [Ruby2Shell (GHSA-34m4-m9fh-gqp5) Technical Advisory](https://verialabs.com/ruby2shell/) (Veria Labs)
+
+---
+
+### Google DeepMind Rolls Out Genie 4 Interactive World Model With Live Prompting and Native Audio
+- Canonical URL: https://nextvector.rhasan.online/article/google-deepmind-genie-4-world-model-live-audio
+- Published: 2026-11-19 | Category: AI | Signal Rating: 90/100
+- Executive Summary: Project Genie opens to Google AI Ultra subscribers with real-time scene editing, a conversational world builder, community remixes, and 3-minute Genie 3 chaining.
+
+**What Happened?**
+On November 18, 2026, Google DeepMind and Google Labs released Genie 4 inside Project Genie for Google AI Ultra users (with an AI Pro waitlist), adding real-time mid-session editing and native adaptive audio.
+
+**Why It Matters:**
+Interactive world models shift from passive 60-second video snippets into multi-minute, remixable simulated environments with synchronized soundscapes, dialogue, and Gemini agent orchestration.
+
+**What Could Happen Next:**
+Subscribers can create, explore, and remix curated scenes like 'Villa Giallo' and 'The Life of Ants' while DeepMind works on latency, physical interaction fidelity, and long-term scene permanence.
+
+**Key Takeaways:**
+- Genie 4 enables mid-navigation natural-language prompts to alter weather, summon characters, or redirect action while generating matched ambient audio and dialogue.
+- Genie 3 remains selectable in Project Genie and upgrades from 60-second clips to 3-minute runs, linked world chaining, and 360-degree panorama seeding.
+- A conversational Project Genie agent drafts look-and-feel plus custom background scores, while Gemini surfaces live context-aware exploration chips.
+- All generated video and audio embeds SynthID watermarking inside the new community remix gallery.
+
+**Full Article Content:**
+Source: the joint Google DeepMind and Google Labs announcement by Group Product Managers Diego Rivas and Pavan Kumar (November 18, 2026).
+
+First previewed earlier in 2026 as an experimental prototype, Project Genie now runs both Genie 4 for top visual realism and adaptive native sound alongside an upgraded Genie 3 engine tailored for longer flights across linked environments. In Genie 3, natural-language triggers transform terrain in real time—blending forests, underwater ruins, icy seas, or 360-degree panorama scans of Petra into unbroken multi-minute sequences.
+
+To lower creation friction, the new conversational Project Genie agent coordinates Google's multimodal stack from dialogue rather than requiring engineered one-shot prompts, and embeds Gemini directly into active sessions as a real-time referee or event trigger. Early creator collaborations on the community gallery include 'Villa Giallo,' a gothic manor mystery built with Will aka BLVCKL!GHT, and 'The Life of Ants' with filmmaker Anand Gandhi, alongside remixable photo-based 'Living Memory' worlds.
+
+Every video stream and audio track passes safety screenings and carries SynthID digital watermarks. DeepMind cautioned that both Genie 3 and Genie 4 remain frontier research models with active limitations around camera responsiveness latency, intricate object physics, real-time audio synchronization precision, and persistent object memory over extended exploration; public API access and non-Ultra tier release dates were not announced.
+
+**Primary Sources & Citations:**
+- [Genie 4 is now available](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) (Google DeepMind)
+
+---
+
+### Microsoft Unveils Seven MAI Models, Maia 200 Silicon in Production, and Open Aion-1.0-2.3B
+- Canonical URL: https://nextvector.rhasan.online/article/microsoft-ignite-seven-mai-models-maia-200-aion
+- Published: 2026-11-19 | Category: AI | Signal Rating: 89/100
+- Executive Summary: MAI Cyber 2 Flash and Code 2 target radical inference cost cuts on Maia 200 (1.7x tokens/watt) as Windows publishes MIT-licensed edge SLM weights.
+
+**What Happened?**
+At Microsoft Ignite (November 17–18, 2026), Microsoft AI introduced seven MAI models alongside production Maia 200 accelerators delivering 1.7x more tokens per watt, while Windows Applied Sciences open-sourced Aion-1.0-Instruct-2.3B on Hugging Face.
+
+**Why It Matters:**
+Always-on agent fleets and local OS intelligence push Microsoft to verticalize both custom data-center silicon and MIT-licensed 2.3B edge weights ahead of a January 2027 Windows inbox integration.
+
+**What Could Happen Next:**
+Optimized and quantized Aion Instruct builds paired with a local content-moderation model will ship into Windows by the end of January 2027 alongside enterprise rollouts of the MAI model family.
+
+**Key Takeaways:**
+- MAI Cyber 2 Flash claims quality beating GPT-6 Astra on CyberGym-E2E under 2% of the cost per task, while MAI Code 2 hits 98% of GPT-6.1 Sol at ~40% of the price.
+- MAI Image 2.7 ranks #1 on Artificial Analysis image editing at one-fifth of GPT Image 2.6 Sunburst's cost; MAI Realtime 1 starts at $0.01 per audio minute.
+- Decision 1.1 runs 50x faster and 79x cheaper than GPT-6.1 Sol, and MAI Transcribe 2 already supports 10 million Dragon Copilot monthly clinical encounters with halved multilingual error rates.
+- Microsoft published unquantized Aion-1.0-Instruct-2.3B (MIT license, 32K context, 8 languages) in PyTorch, ONNX, and GGUF formats on November 18.
+
+**Full Article Content:**
+Source: Microsoft AI's Ignite 2026 announcement (published November 17 at 18:16 UTC, updated November 18 at 21:07 UTC) and Microsoft's Hugging Face model card for `microsoft/Aion-1.0-Instruct-2.3B` (November 18 at 17:05 UTC).
+
+Rather than competing on one monolithic generalist model, Microsoft positioned its seven-model MAI wave around continuous background engineering and voice workloads where token burn dominates enterprise budgets. Beyond MAI Code 2 Flash (matching GPT-6 Luna at 65% price and Haiku 5.5 at 20% price) and MAI Code 2 (reaching 96% of Opus 5.5 at 5% price), deploying Microsoft's second-generation Maia 200 ASICs across flagship serving clusters yields 1.7x more tokens per watt.
+
+Complementing cloud-scale accelerators, Windows & Devices' Applied Sciences Group opened `Aion-1.0-Instruct-2.3B` to developers seeking offline summarization, rewriting, and email triage across English, German, Spanish, Portuguese, Italian, French, Chinese, and Japanese. Microsoft noted an optimized Aion variant bundled with an on-device moderation model will reach Windows general availability by late January 2027, followed by quantized community checkpoints.
+
+Significant disclosure gaps remain: Microsoft did not publish standalone parameter sizes or public per-token API pricing for its cloud MAI coding, image, and cyber models, nor independent third-party benchmark tables for Decision 1.1 or MAI Cyber 2 Flash. For Aion-1.0-Instruct-2.3B, Microsoft explicitly cautions that a 2.3B footprint limits factual world knowledge, multi-step logic, and adversarial jailbreak resistance (tracking XPIA, DIC, and ECI metrics prior to Windows GA).
+
+**Primary Sources & Citations:**
+- [Seven new world-class models at scalable price-performance](https://microsoft.ai/news/microsoft-ignite-2026/) (Microsoft AI)
+- [microsoft/Aion-1.0-Instruct-2.3B Model Card](https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B) (Hugging Face)
+
+---
+
+### Google and Blue Origin Set Q1 2029 New Glenn Launch for Project Suncatcher Orbital AI Racks
+- Canonical URL: https://nextvector.rhasan.online/article/google-blue-origin-project-suncatcher-new-glenn-2029
+- Published: 2026-11-19 | Category: SCIENCE | Signal Rating: 88/100
+- Executive Summary: Satellites each carrying roughly one data center rack of compute capacity will deploy into sun-synchronous orbit to tap continuous solar power.
+
+**What Happened?**
+Google Research announced on November 19, 2026 a partnership with Blue Origin for Project Suncatcher's first dedicated heavy-lift New Glenn launch targeted for Q1 2029 into sun-synchronous orbit.
+
+**Why It Matters:**
+Assigning a named heavy-lift launch vehicle and orbital deployment window moves orbital solar-powered AI compute from conceptual whitepaper architecture toward flight scheduling.
+
+**What Could Happen Next:**
+Google Research will integrate satellites housing approximately one data center rack of compute capacity each alongside existing spacecraft and launch partners ahead of the 2029 mission.
+
+**Key Takeaways:**
+- First dedicated heavy-lift launch under Google's Project Suncatcher taps Blue Origin's New Glenn rocket.
+- Mission targets Q1 2029 deployment into sun-synchronous orbit for near-continuous solar harvesting.
+- Each spacecraft is designed to carry compute capacity roughly equivalent to one terrestrial data center rack.
+- Contract pricing, satellite count, power wattage, and orbital optical networking figures remain undisclosed.
+
+**Full Article Content:**
+Source: Google Research's announcement by Senior Director Travis Beals (November 19, 2026).
+
+Project Suncatcher frames extraterrestrial solar illumination as an eventual pressure valve for terrestrial power grid bottlenecks facing frontier training and inference clusters. By flying payloads into a sun-synchronous orbital plane—where solar arrays maintain extended sunlight exposure without atmospheric attenuation—the initiative seeks to validate space-based compute modules scaled closer to enterprise rack units than conventional single-board space processors.
+
+Scheduling a dedicated Blue Origin New Glenn manifest provides the mass and fairing volume required to orbit hardware rated at roughly one data center rack per satellite while complementing ongoing work with Google's other satellite and launch vendors. Neither Blue Origin nor Google Research disclosed the number of satellites on the manifest, per-rack compute architecture, radiator mass for vacuum thermal rejection, radiation-hardening specs, downlink capacity, or mission cost.
+
+**Primary Sources & Citations:**
+- [Google partners with Blue Origin on Project Suncatcher heavy-lift launch](https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/) (Google Research)
+
+---
+
 ### California Sues OpenAI Over Hugging Face Agent Cyberattack and 80+ Containment Failures
 - Canonical URL: https://nextvector.rhasan.online/article/california-attorney-general-sues-openai-hugging-face-agent-attack
 - Published: 2026-11-17 | Category: AI | Signal Rating: 94/100

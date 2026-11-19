@@ -22281,6 +22281,412 @@ export const ALL_ARTICLES: Article[] = [
     ],
     isHero: false,
     isFeatured: false
+  },
+  {
+    id: "art-409",
+    slug: "anthropic-prices-record-81b-nasdaq-ipo-ant",
+    title: "Anthropic Prices Record $81.3B Nasdaq IPO Ahead of ANT Trading Debut at ~$1.5T Valuation",
+    subtitle: "At $83 per share above its proposed $70–$78 range, the 980-million-share offering becomes the first pure-play frontier AI listing on U.S. public markets.",
+    category: "ai",
+    articleType: "breaking",
+    signalRating: 97,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T15:15:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-409-anthropic-prices-record-81b-nasdaq-ipo-ant.jpg",
+    coverImageAlt: "Exterior facade of the Nasdaq MarketSite tower in Times Square, New York, where Anthropic Class A shares list under ticker ANT.",
+    tags: ["Anthropic", "IPO", "Nasdaq", "AI Capital Markets", "Claude", "Dario Amodei"],
+    threeQuestions: {
+      whatHappened: "Anthropic, PBC priced its initial public offering on November 18, 2026 at $83.00 per Class A share across 980,000,000 shares ahead of Thursday's Nasdaq Global Select Market debut under ticker ANT at roughly a $1.5 trillion valuation.",
+      whyItMatters: "Surpassing SpaceX's $75 billion June 2026 listing, the flotation creates the first standalone publicly traded frontier AI company in the United States and opens equity market financing to sustain steep compute losses.",
+      whatsNext: "Secondary trading begins on Nasdaq on November 19, 2026, with underwriting settlement expected November 20 alongside a 30-day option for underwriters to buy up to 147,000,000 additional shares."
+    },
+    keyTakeaways: [
+      "Initial sale prices 980,000,000 Class A shares at $83.00 ($956,351,354 sold by Anthropic and 23,648,646 by selling stockholders), raising roughly $81.3 billion gross before underwriter overallotment.",
+      "Up to $107 billion in combined capital is in play when adding $26 billion in separate investments from Google, Microsoft, and Nvidia, plus roughly $12 billion via the 147-million-share 30-day option.",
+      "IPO filings cited by BBC News show $33 billion in revenue and $104 billion in net losses during the nine months ended September 2026, with demand reportedly ten times available shares.",
+      "Dario and Daniela Amodei's five-year-old firm overtakes Walmart and Samsung in implied market capitalization while approaching Tesla and Meta."
+    ],
+    content: [
+      "Source: Anthropic's official IPO pricing announcement (November 18, 2026) and BBC News financial reporting from New York (November 18–19, 2026).",
+      "After filing its SEC S-1 and kicking off its investor roadshow earlier this month, the Claude developer lifted its offer price to $83.00 above the marketed $70–$78 band after its registration statement was declared effective on November 18. Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are coordinating the prospectus for the 980-million-share sale, which excludes proceeds from 23,648,646 existing-stockholder shares from Anthropic's balance sheet.",
+      "Institutional and individual appetite pushed order books far past supply. An early backer speaking anonymously to the BBC said the offering drew ten times more bids than shares allocated, while Canaccord Wealth's Leah Bramwell noted broad participation across both fund managers and retail buyers rather than a single-cohort speculative surge.",
+      "Financial disclosures in the prospectus underscore why management tapped public equities after Democrats captured both chambers of Congress in recent U.S. midterms and Federal Reserve October minutes warned of \"complex and opaque\" AI debt structures. Across the nine months through September 2026, Anthropic posted $33 billion in revenue against $104 billion in net losses as training runs and data-center commitments swelled.",
+      "Total capital commitments could reach $107 billion when combining the >$81 billion (£62 billion) flotation, $26 billion in separate strategic investments from Google, Microsoft, and Nvidia, and the greenshoe provision for up to 147 million extra shares. Empower head of strategy Marta Norton summarized the timing plainly: \"AI is financially demanding. The public markets open up the financial spigot a little bit more and so the time has come.\"",
+      "Counterpoint Research principal financial analyst Yang Wang cautioned that investors will scrutinize whether revenue growth can service hundreds of billions in upcoming infrastructure obligations while rivals delay listings—OpenAI is not expected to go public until 2027. Secondary-market opening prices under ANT on Thursday and final closing proceeds expected Friday, November 20 remain to be seen."
+    ],
+    technicalSpecs: {
+      "Exchange & Ticker": "Nasdaq Global Select Market (ANT)",
+      "IPO Share Price": "$83.00 (up from $70–$78 marketed range)",
+      "Base Offering Size": "980,000,000 Class A shares (~$81.3B gross)",
+      "Underwriter Option": "Up to 147,000,000 additional shares (30 days)",
+      "Implied Valuation": "~$1.5 trillion",
+      "9M 2026 Financials": "$33B revenue / $104B net loss (through Sept 2026)"
+    },
+    citations: [
+      {
+        title: "Anthropic prices initial public offering",
+        url: "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        source: "Anthropic"
+      },
+      {
+        title: "Anthropic raises $81bn in record-breaking stock market debut",
+        url: "https://www.bbc.co.uk/news/articles/c6742m39xgzxo",
+        source: "BBC News"
+      }
+    ],
+    isHero: true,
+    isFeatured: true
+  },
+  {
+    id: "art-410",
+    slug: "google-deepmind-gemini-4-neon-coding-agent-release",
+    title: "Google DeepMind Launches Gemini 4 Neon at $3/M Input, Taking #1 on AA Coding Agent Index",
+    subtitle: "Priced 32% lower per task than Gemini 4 Carbon at default high thinking, Neon reaches #3 overall on Artificial Analysis and leads agentic cyber defense benchmarks.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 94,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T14:45:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-410-google-deepmind-gemini-4-neon-coding-agent-release.jpg",
+    coverImageAlt: "Glowing noble gas discharge tubes including orange-red neon illumination inside laboratory glass vessels.",
+    tags: ["Google DeepMind", "Gemini 4 Neon", "Coding Agents", "Artificial Analysis", "Cyber Defense", "LLM Benchmarks"],
+    threeQuestions: {
+      whatHappened: "Google DeepMind introduced Gemini 4 Neon on November 18, 2026 via Gemini API, Google AI Studio, Android Studio, Google Antigravity, and the Gemini app at $3 input, $0.15 cached input, and $15 output per million tokens.",
+      whyItMatters: "Positioning between heavyweight Carbon and high-speed Hydrogen, Neon cuts per-task cost by 32% over Carbon while winning top spots on Artificial Analysis Coding Agent Index (58.6), Zapier AutomationBench, and cyber patching suites.",
+      whatsNext: "Defensive security teams in Google Cloud's Fairwind Program begin receiving specialized Gemini 4 Neon for cyber access over the coming days alongside general Pro and Ultra production rollouts."
+    },
+    keyTakeaways: [
+      "Scores 61.4 at xhigh thinking (#3 overall on Artificial Analysis Intelligence Index), plus 59.6 high, 54.9 medium, and 44.1 low inside a 1,048,576-token multimodal context.",
+      "Captures #1 on Artificial Analysis Coding Agent Index (58.6), #2 on Vals Index (70.9%), #2 on Agent Arena Index (1336 across 4,200+ sessions), and #1 on Vending-Bench 2 ($16,843).",
+      "On SWE-sweep, performance jumps from 12.8% on the mini-SWE harness to 39.0% inside Google Antigravity, while FrontierCode 2.0 reaches 46.2% and Terminal-Bench 4.1 hits 65.2%.",
+      "Leads cyber-defense evaluations on SEC-bench Pro (90.5%), AutoBaxBench hard (76%), WebExploitBench v1.2 (51.26%), and CWE-bench v2 (70.7%) with 0.0% indirect prompt injection success on Gray Swan."
+    ],
+    content: [
+      "Source: Google DeepMind's announcement by SVP Koray Kavukcuoglu (November 18, 2026) paired with Artificial Analysis and OpenRouter live snapshot telemetry.",
+      "Across its four adjustable reasoning budgets, Gemini 4 Neon pairs high accuracy with sharp unit economics on multimodal inputs spanning text, audio, video, images, and PDFs. At its default high setting, it lands on the Pareto frontier for Vals Index (including #1 rankings on Legal Research Bench and Tax Agent Bench) and Agent Arena while trimming task cost by roughly 50% to 80% relative to larger frontier models.",
+      "Software engineering evaluations underscore how agent scaffolding amplifies raw model gains: Neon tops Surge AI finance and spreadsheet categories, hits 73.5% on Chartography, 75.8% on Agents' Last Exam v1.1, 84.0% on RiemannBench, 70.5% on Terminal-Bench Science, and 71.3% on HLE-Diamond. As an orchestrator coordinating Hydrogen subagents inside Google Antigravity, DeepMind showcased a 10,200-line WebGL2 Chamonix ski simulator, a 100,000-cell formula-only spreadsheet depth renderer, and a 3D reconstruction of Alan Turing's 1936 Cambridge room.",
+      "Safety and cyber metrics form a centerpiece of the release. Using real-time protections at highest thinking, Neon recorded a 0.0% attack success rate on Gray Swan's indirect prompt injection suite, zero cheating on Terminal-Bench 4.0 alongside 1.98% task refusals (and 0% refusals on Terminal-Bench Science), a 0.09% misaligned action rate, and 99.2% agent honesty.",
+      "Not all edges are eliminated, however. Google did not publish parameter counts or training-compute budgets, Neon still took shortcuts in 2.45% of cases on Google's coding cheating evaluation, and the cyber-hardened variant remains gated behind Fairwind Program eligibility."
+    ],
+    technicalSpecs: {
+      "API Pricing (1M tokens)": "$3.00 input / $0.15 cached (95% off) / $15.00 output",
+      "Context & Modalities": "1,048,576 tokens (Text, Audio, Image, Video, File -> Text)",
+      "AA Intelligence Index": "61.4 (Xhigh), 59.6 (High), 54.9 (Medium), 44.1 (Low)",
+      "Coding & Agent Scores": "58.6 AA Coding (#1), 65.2% Terminal-Bench 4.1, 39.0% SWE-sweep",
+      "Cyber Benchmarks": "90.5% SEC-bench Pro, 76% AutoBaxBench hard, 70.7% CWE-bench v2"
+    },
+    relatedModelId: "model-gemini-4-neon",
+    citations: [
+      {
+        title: "Introducing Gemini 4 Neon",
+        url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        source: "Google Blog"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-411",
+    slug: "openai-gpt-6-2-astra-sol-chip-design-amd",
+    title: "OpenAI Ships GPT-6.2 Astra and Sol Alongside Silicon-Proven Chip Gains With AMD",
+    subtitle: "Developers get 1.05M-context APIs with 2h/8h background discounts as OpenAI reveals up to 14% AMD GPU PPA gains and trains GPT-Synopsys.",
+    category: "ai",
+    articleType: "model-report",
+    signalRating: 94,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T14:15:00Z",
+    readTimeMinutes: 6,
+    coverImage: "/images/articles/art-411-openai-gpt-6-2-astra-sol-chip-design-amd.jpg",
+    coverImageAlt: "Macro silicon die photograph illustrating processor circuit layout and microarchitecture optimization.",
+    tags: ["OpenAI", "GPT-6.2 Astra", "GPT-6.2 Sol", "Chip Design", "AMD", "RISC-V"],
+    threeQuestions: {
+      whatHappened: "OpenAI released gpt-6.2-astra ($8/$40 per 1M tokens) and gpt-6.2-sol ($2/$10) in the API on November 17, followed November 18 by hardware disclosures detailing AMD GPU/CPU microarchitecture improvements and RISC-V design benchmarks.",
+      whyItMatters: "Pairing higher reasoning reliability with EDA tool verification lets frontier models cut physical silicon area by double digits on custom chips and deliver roughly a year of AMD GPU PPA progress in under five months.",
+      whatsNext: "OpenAI is partnering with Synopsys to train a specialized GPT-Synopsys model directly on industrial EDA tools while enterprises migrate away from legacy flex processing to discounted background completion windows."
+    },
+    keyTakeaways: [
+      "GPT-6.2 Astra scores 62.1 (Max) and Sol scores 57.3 (Max) on Artificial Analysis Intelligence Index, both supporting 1,050,000-token windows and rejecting none reasoning effort.",
+      "Responses API updates drop Flex pricing on GPT-6.2 in favor of 2-hour (-30%) and 8-hour (-40%) background windows while dropping cached reasoning after prefix edits.",
+      "Model rewrites cut Jalapeno's standard-cell area ~13% in vector blocks and 10% in matrix blocks, and delivered up to 14% PPA improvement on flagship AMD GPU IP in under five months.",
+      "Across 9,881 RISC-V runs near 112,000 tokens, GPT-6.2 Astra scored 0.64 vs GPT-6 Astra's 0.32 on PicoRV32 RTL optimization and climbed to 0.85 at 242.484k tokens on spec-to-RTL."
+    ],
+    content: [
+      "Source: OpenAI's official API documentation and changelog for gpt-6.2-astra and gpt-6.2-sol (November 17, 2026), OpenAI's chip design publication (November 18, 2026), and Artificial Analysis snapshots.",
+      "Both GPT-6.2 variants expand long-context coding and computer-use pipelines across 922,000 max input tokens and 128,000 max output tokens, with May 18, 2026 (Astra) and June 1, 2026 (Sol) knowledge cutoffs. API behavior changes materially from GPT-6.1: top-level instructions now append after input rather than anchoring prefix caches, prompts exceeding 272K input tokens double input/cache rates (1.5x output), and editing earlier turns strips stored reasoning state.",
+      "On hardware synthesis, OpenAI detailed silicon-proven savings on its first custom inference chip, Jalapeno, where iterative rewrites that began with GPT-o3 mini in early 2025 shrank one multiplier by 15% area while halving latency from two cycles to one. Extending the workflow externally, AMD verified SystemVerilog RTL rewrites yielding single-digit percentage PPA uplifts on upcoming flagship CPU blocks and up to 14% GPU IP PPA gains—parts of which are already taped out for manufacturing.",
+      "Controlled open-source evaluations across 32-bit PicoRV32 and OpenTitan Ibex cores quantified generation-over-generation progress using geometric-mean workload throughput estimated via Yosys under a 16x area limit. Near 112,000 tokens (108.195k bin), GPT-6.2 Astra doubled GPT-6 Astra on PicoRV32 RTL optimization (0.64 vs 0.32), led Ibex RTL (0.47 vs 0.28), and hit 0.73 and 0.76 on spec-to-RTL synthesis.",
+      "OpenAI cautioned that specification-from-scratch tasks reward models in part because they are permitted to strip unused legacy hardware features such as performance counters and extra instructions. Tighter area caps, mandatory feature parity, and post-physical-synthesis timing checks were not yet enforced in the public benchmark, and pricing or availability timelines for the upcoming GPT-Synopsys model were not disclosed."
+    ],
+    technicalSpecs: {
+      "GPT-6.2 Astra API": "$8.00 in / $0.40 cache read / $10 write (30m) / $40.00 out per 1M",
+      "GPT-6.2 Sol API": "$2.00 in / $0.10 cache read / $2.50 write (30m) / $10.00 out per 1M",
+      "AA Index (Max / Xhigh)": "Astra 62.1 / 61.6; Sol 57.3 / 55.7",
+      "Jalapeno Silicon Gains": "~13% vector unit cell area cut; 10% matrix unit area cut",
+      "AMD & RISC-V Evals": "Up to 14% AMD GPU IP PPA gain; 9,881 RISC-V runs (max 0.85)"
+    },
+    relatedModelId: "model-gpt-6-2-astra",
+    citations: [
+      {
+        title: "GPT-6.2 Astra Model Documentation",
+        url: "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+        source: "OpenAI Developer Docs"
+      },
+      {
+        title: "Advancing chip design with OpenAI models",
+        url: "https://openai.com/index/advancing-chip-design-with-our-models/",
+        source: "OpenAI"
+      }
+    ],
+    isHero: false,
+    isFeatured: true
+  },
+  {
+    id: "art-412",
+    slug: "nvidia-q3-fy27-115b-revenue-hugging-face-acquisition",
+    title: "Nvidia Hits $115.8B Quarterly Revenue on Vera Rubin Ramp and Agrees to Acquire Hugging Face",
+    subtitle: "Data center sales jumped 110% year-over-year to $107.6 billion as interim CEO Colette Kress guides $130B for Q4 without China compute assumptions.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 93,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T13:45:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-412-nvidia-q3-fy27-115b-revenue-hugging-face-acquisiti.jpg",
+    coverImageAlt: "Rows of liquid-cooled high-density GPU supercomputer cabinets inside a data center aisle.",
+    tags: ["Nvidia", "Hugging Face", "Vera Rubin", "Q3 FY27", "Data Center", "Semiconductors"],
+    threeQuestions: {
+      whatHappened: "On November 17, 2026, Nvidia reported $115.8 billion in Q3 FY27 revenue—up 103% year-over-year—alongside Vera Rubin NVL72 shipments and a definitive agreement to acquire open-source AI platform Hugging Face.",
+      whyItMatters: "Bringing the industry's primary open-weight model hub under Nvidia pairs dominant rack-scale silicon with developer ecosystem distribution while Vera Rubin expands across Google Cloud, Azure, Oracle, CoreWeave, and Meta.",
+      whatsNext: "Nvidia projects $130.0 billion (±3%) in 14-week Q4 FY27 revenue, will pay a $0.25 quarterly dividend on December 23, and works toward closing the Hugging Face transaction."
+    },
+    keyTakeaways: [
+      "Total Q3 revenue reached $115.8B (+20% QoQ, +103% YoY), driven by $107.6B in Data Center (+110% YoY) and $8.2B in Edge Computing (+42% YoY).",
+      "GAAP net income hit $65.3 billion ($2.70 diluted EPS; 74.8% GAAP gross margin), while shareholders received $28.1 billion in buybacks and dividends.",
+      "Vera Rubin NVL72 racks are now running at CoreWeave, Google Cloud (A5X instances), Azure, OCI, and Nebius, with SpaceXSI deployments upcoming.",
+      "Alongside OpenShell / BlueField-4 Sentry hardware agent enforcement, Nvidia disclosed an agreement to acquire Hugging Face."
+    ],
+    content: [
+      "Source: Nvidia's official Third Quarter Fiscal 2027 financial results release issued November 17, 2026 at 21:20 UTC.",
+      "For the fiscal quarter ended October 25, 2026, operating income surged 115% year-over-year to $77.5 billion as research and development spending reached $7.454 billion across Vera CPUs, custom NVLink Fusion XPU interconnects with MediaTek, and USFP optical modules co-developed with Cisco. Following a $150 billion buyback expansion approved in September, $227.3 billion remained under Nvidia's repurchase authorization at quarter-end.",
+      "Infrastructure expansion featured the fastest ramp in company history: Vera Rubin NVL72 liquid-cooled racks are active across major hyperscalers and neoclouds, Meta expanded Vera Rubin and BlueField-4 commitments around its Muse agents, and modular DSX POD factories plus a planned 2 GW Australian buildout by 2027 were formalized. Nvidia also debuted the OpenShell Reference Architecture running NVIDIA Sentry policy enforcement on BlueField-4 DPUs.",
+      "On the software front, the agreement to acquire Hugging Face aims to scale open intelligence ecosystems alongside Nvidia Nemotron for Science and CUDA-Q Logical quantum simulations run on Europe's JUPITER system. Edge sales reflected commercial shipments of RTX Spark Windows laptops, 64GB DGX Spark desktops, and DLSS 5 game rollouts. \"Vera Rubin is off to an explosive start, our roadmap is on track and our ambition has never been greater,\" said interim CEO and CFO Colette Kress.",
+      "Nvidia's Q4 outlook of $130.0 billion (with GAAP gross margins moderating to 71.0%–72.0% and OpEx rising near $11.0 billion) assumes zero Data Center compute revenue from China. Crucially, the release disclosed neither financial consideration, regulatory timeline, nor governance commitments for Hugging Face, nor did it address a permanent CEO succession schedule."
+    ],
+    technicalSpecs: {
+      "Q3 FY27 Revenue": "$115.844B (+103% YoY, +20% QoQ)",
+      "Segments": "$107.6B Data Center (+110% YoY) / $8.2B Edge (+42% YoY)",
+      "Profitability": "$65.3B GAAP Net Income / 74.8% GAAP Gross Margin / $2.70 EPS",
+      "Q4 FY27 Guidance": "$130.0B ± 3% (ex-China Data Center compute; 14-week Q4)",
+      "Key M&A & Hardware": "Hugging Face acquisition agreement; Vera Rubin NVL72 shipping"
+    },
+    citations: [
+      {
+        title: "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027",
+        url: "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+        source: "NVIDIA Newsroom"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-413",
+    slug: "ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce",
+    title: "Ruby2ßhell Flaw Exposes Default Rails, GitLab, and GitHub Enterprise Server to Unauthenticated RCE",
+    subtitle: "Veria Labs discloses a decade-old 1-byte heap overflow triggered when 21 'ß' bytes are uppercased in legacy single-byte encodings across Ruby 2.4 to 4.0.9.",
+    category: "technology",
+    articleType: "breaking",
+    signalRating: 92,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T13:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-413-ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce.jpg",
+    coverImageAlt: "Dense enterprise network switch rack and optical patch cabling representing web infrastructure vulnerable to Ruby2ßhell.",
+    tags: ["Ruby2ßhell", "Cybersecurity", "Remote Code Execution", "Ruby on Rails", "GitLab", "Veria Labs"],
+    threeQuestions: {
+      whatHappened: "Veria Labs disclosed Ruby2ßhell (GHSA-34m4-m9fh-gqp5, updated November 19, 2026), an unauthenticated network remote code execution bug in Ruby's single-byte encoding case-conversion code fixed in Ruby 3.3.14, 3.4.13, and 4.0.10.",
+      whyItMatters: "Reachable out-of-the-box in default Ruby on Rails and classic Sinatra apps, the decade-old flaw affects current bundled releases of GitLab 19.6.0, GitHub Enterprise Server 3.22.5, and Chatwoot 4.20.0.",
+      whatsNext: "Operators must upgrade runtimes to 3.3.14, 3.4.13, or 4.0.10 immediately before Veria Labs publishes its proof-of-concept exploit in one week."
+    },
+    keyTakeaways: [
+      "Present since Ruby 2.4.0 across ISO-8859 and Windows-125x encodings when calling upcase, swapcase, downcase(:fold), or casecmp?; UTF-8 code paths are unaffected.",
+      "Single-byte encodings lack uppercase 'ß', writing 'SS' (2 bytes) while checking room for only 1 byte—so 21 'ß' inputs overflow Ruby's input+20-byte heap buffer by 1 byte ('S' / 0x53 or 's' / 0x73).",
+      "Default Rails and classic Sinatra apps allow attackers to choose buffer allocation size via input length and smash adjacent heap metadata without authentication.",
+      "Fixed upstream in commit ruby/ruby@d582f8f; Mastodon 4.7.6, OpenProject 17.9.8, and Discourse already bundle 4.0.10, while GitLab, GHES, and Chatwoot wait on updates."
+    ],
+    content: [
+      "Source: Veria Labs' Ruby2ßhell technical advisory (GHSA-34m4-m9fh-gqp5, updated November 19, 2026 at 15:29 UTC).",
+      "At the root of the bug sits an overlooked asymmetry in Ruby's Onigenc single-byte case-conversion loop (`while (*pp < end && to < to_end)`). When encountering the German sharp-s (`SHARP_s`), `ONIGENC_CASE_UPCASE` emits `'S'` immediately before writing the second `'S'` with no second bounds guard; because the allocator pads the destination buffer by 20 bytes over input length, feeding 21 `'ß'` bytes guarantees an exact one-byte write immediately past the buffer end.",
+      "Copying the converted string then performs an out-of-bounds read, giving a remote attacker an arbitrary-size heap primitive writing controlled `0x53` (`'S'`) or case-folded `0x73` (`'s'`) bytes without needing user credentials. While plain Rack apps are not exposed by default, both Ruby on Rails and classic Sinatra configurations accept legacy-encoded string paths into case operations on unauthenticated endpoints.",
+      "Enterprise exposure varies sharply by release cadence: Mastodon 4.7.6, OpenProject 17.9.8, and Discourse base image `2.0.20261119-0203` already ship patched Ruby 4.0.10, whereas GitLab 19.6.0 (Ruby 3.3.13), GitHub Enterprise Server 3.22.5 (Ruby 4.0.9), and Chatwoot 4.20.0 (Ruby 3.4.4) remain vulnerable on their latest builds. All Ruby 3.2 and older lines back to 2.4.0 are end-of-life and will not receive official backports.",
+      "A formal CVE identifier remains pending as of disclosure, and Veria Labs is withholding functional proof-of-concept exploit code for seven days to give self-hosted administrators and appliance vendors time to ship `ruby/ruby@d582f8f` patches."
+    ],
+    technicalSpecs: {
+      "Advisory & Upstream Fix": "GHSA-34m4-m9fh-gqp5 (CVE pending) / ruby/ruby@d582f8f",
+      "Affected Ruby Versions": "2.4.0–3.2 (EOL), 3.3.0–3.3.13, 3.4.0–3.4.12, 4.0.0–4.0.9",
+      "Patched Releases": "Ruby 3.3.14, 3.4.13, 4.0.10",
+      "Trigger Primitive": "1-byte heap overflow (0x53 / 0x73) at 21 'ß' bytes in single-byte encodings",
+      "Vulnerable Products Listed": "Rails, Sinatra, GitLab 19.6.0, GHES 3.22.5, Chatwoot 4.20.0"
+    },
+    citations: [
+      {
+        title: "Ruby2Shell (GHSA-34m4-m9fh-gqp5) Technical Advisory",
+        url: "https://verialabs.com/ruby2shell/",
+        source: "Veria Labs"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-414",
+    slug: "google-deepmind-genie-4-world-model-live-audio",
+    title: "Google DeepMind Rolls Out Genie 4 Interactive World Model With Live Prompting and Native Audio",
+    subtitle: "Project Genie opens to Google AI Ultra subscribers with real-time scene editing, a conversational world builder, community remixes, and 3-minute Genie 3 chaining.",
+    category: "ai",
+    articleType: "breaking",
+    signalRating: 90,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T12:45:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-414-google-deepmind-genie-4-world-model-live-audio.jpg",
+    coverImageAlt: "High-resolution 3D rendered planetary mountain range landscape illustrating real-time generative world synthesis.",
+    tags: ["Google DeepMind", "Genie 4", "Project Genie", "World Models", "Interactive Simulation", "Multimodal Audio"],
+    threeQuestions: {
+      whatHappened: "On November 18, 2026, Google DeepMind and Google Labs released Genie 4 inside Project Genie for Google AI Ultra users (with an AI Pro waitlist), adding real-time mid-session editing and native adaptive audio.",
+      whyItMatters: "Interactive world models shift from passive 60-second video snippets into multi-minute, remixable simulated environments with synchronized soundscapes, dialogue, and Gemini agent orchestration.",
+      whatsNext: "Subscribers can create, explore, and remix curated scenes like 'Villa Giallo' and 'The Life of Ants' while DeepMind works on latency, physical interaction fidelity, and long-term scene permanence."
+    },
+    keyTakeaways: [
+      "Genie 4 enables mid-navigation natural-language prompts to alter weather, summon characters, or redirect action while generating matched ambient audio and dialogue.",
+      "Genie 3 remains selectable in Project Genie and upgrades from 60-second clips to 3-minute runs, linked world chaining, and 360-degree panorama seeding.",
+      "A conversational Project Genie agent drafts look-and-feel plus custom background scores, while Gemini surfaces live context-aware exploration chips.",
+      "All generated video and audio embeds SynthID watermarking inside the new community remix gallery."
+    ],
+    content: [
+      "Source: the joint Google DeepMind and Google Labs announcement by Group Product Managers Diego Rivas and Pavan Kumar (November 18, 2026).",
+      "First previewed earlier in 2026 as an experimental prototype, Project Genie now runs both Genie 4 for top visual realism and adaptive native sound alongside an upgraded Genie 3 engine tailored for longer flights across linked environments. In Genie 3, natural-language triggers transform terrain in real time—blending forests, underwater ruins, icy seas, or 360-degree panorama scans of Petra into unbroken multi-minute sequences.",
+      "To lower creation friction, the new conversational Project Genie agent coordinates Google's multimodal stack from dialogue rather than requiring engineered one-shot prompts, and embeds Gemini directly into active sessions as a real-time referee or event trigger. Early creator collaborations on the community gallery include 'Villa Giallo,' a gothic manor mystery built with Will aka BLVCKL!GHT, and 'The Life of Ants' with filmmaker Anand Gandhi, alongside remixable photo-based 'Living Memory' worlds.",
+      "Every video stream and audio track passes safety screenings and carries SynthID digital watermarks. DeepMind cautioned that both Genie 3 and Genie 4 remain frontier research models with active limitations around camera responsiveness latency, intricate object physics, real-time audio synchronization precision, and persistent object memory over extended exploration; public API access and non-Ultra tier release dates were not announced."
+    ],
+    technicalSpecs: {
+      "Genie 4 Features": "Real-time mid-session prompt editing; adaptive native audio & dialogue",
+      "Genie 3 Upgrades": "Up to 3-minute sessions (from 60s); world chaining; 360-deg panorama grounding",
+      "Orchestration": "Project Genie conversational agent + live in-session Gemini triggers",
+      "Provenance & Safety": "SynthID watermarking on all generated video and audio",
+      "Availability": "Google AI Ultra live now; Google AI Pro waitlist open"
+    },
+    citations: [
+      {
+        title: "Genie 4 is now available",
+        url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+        source: "Google DeepMind"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-415",
+    slug: "microsoft-ignite-seven-mai-models-maia-200-aion",
+    title: "Microsoft Unveils Seven MAI Models, Maia 200 Silicon in Production, and Open Aion-1.0-2.3B",
+    subtitle: "MAI Cyber 2 Flash and Code 2 target radical inference cost cuts on Maia 200 (1.7x tokens/watt) as Windows publishes MIT-licensed edge SLM weights.",
+    category: "ai",
+    articleType: "breaking",
+    signalRating: 89,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T12:15:00Z",
+    readTimeMinutes: 5,
+    coverImage: "/images/articles/art-415-microsoft-ignite-seven-mai-models-maia-200-aion.jpg",
+    coverImageAlt: "Glass exterior of Building 92 on the Microsoft Redmond Campus, Washington.",
+    tags: ["Microsoft AI", "Maia 200", "MAI Code 2", "Aion-1.0", "Small Language Models", "Ignite 2026"],
+    threeQuestions: {
+      whatHappened: "At Microsoft Ignite (November 17–18, 2026), Microsoft AI introduced seven MAI models alongside production Maia 200 accelerators delivering 1.7x more tokens per watt, while Windows Applied Sciences open-sourced Aion-1.0-Instruct-2.3B on Hugging Face.",
+      whyItMatters: "Always-on agent fleets and local OS intelligence push Microsoft to verticalize both custom data-center silicon and MIT-licensed 2.3B edge weights ahead of a January 2027 Windows inbox integration.",
+      whatsNext: "Optimized and quantized Aion Instruct builds paired with a local content-moderation model will ship into Windows by the end of January 2027 alongside enterprise rollouts of the MAI model family."
+    },
+    keyTakeaways: [
+      "MAI Cyber 2 Flash claims quality beating GPT-6 Astra on CyberGym-E2E under 2% of the cost per task, while MAI Code 2 hits 98% of GPT-6.1 Sol at ~40% of the price.",
+      "MAI Image 2.7 ranks #1 on Artificial Analysis image editing at one-fifth of GPT Image 2.6 Sunburst's cost; MAI Realtime 1 starts at $0.01 per audio minute.",
+      "Decision 1.1 runs 50x faster and 79x cheaper than GPT-6.1 Sol, and MAI Transcribe 2 already supports 10 million Dragon Copilot monthly clinical encounters with halved multilingual error rates.",
+      "Microsoft published unquantized Aion-1.0-Instruct-2.3B (MIT license, 32K context, 8 languages) in PyTorch, ONNX, and GGUF formats on November 18."
+    ],
+    content: [
+      "Source: Microsoft AI's Ignite 2026 announcement (published November 17 at 18:16 UTC, updated November 18 at 21:07 UTC) and Microsoft's Hugging Face model card for `microsoft/Aion-1.0-Instruct-2.3B` (November 18 at 17:05 UTC).",
+      "Rather than competing on one monolithic generalist model, Microsoft positioned its seven-model MAI wave around continuous background engineering and voice workloads where token burn dominates enterprise budgets. Beyond MAI Code 2 Flash (matching GPT-6 Luna at 65% price and Haiku 5.5 at 20% price) and MAI Code 2 (reaching 96% of Opus 5.5 at 5% price), deploying Microsoft's second-generation Maia 200 ASICs across flagship serving clusters yields 1.7x more tokens per watt.",
+      "Complementing cloud-scale accelerators, Windows & Devices' Applied Sciences Group opened `Aion-1.0-Instruct-2.3B` to developers seeking offline summarization, rewriting, and email triage across English, German, Spanish, Portuguese, Italian, French, Chinese, and Japanese. Microsoft noted an optimized Aion variant bundled with an on-device moderation model will reach Windows general availability by late January 2027, followed by quantized community checkpoints.",
+      "Significant disclosure gaps remain: Microsoft did not publish standalone parameter sizes or public per-token API pricing for its cloud MAI coding, image, and cyber models, nor independent third-party benchmark tables for Decision 1.1 or MAI Cyber 2 Flash. For Aion-1.0-Instruct-2.3B, Microsoft explicitly cautions that a 2.3B footprint limits factual world knowledge, multi-step logic, and adversarial jailbreak resistance (tracking XPIA, DIC, and ECI metrics prior to Windows GA)."
+    ],
+    technicalSpecs: {
+      "Cloud Model Lineup": "MAI Cyber 2 Flash, Code 2, Code 2 Flash, Image 2.7, Realtime 1, Transcribe 2, Decision 1.1",
+      "Custom Silicon": "Maia 200 (in production; 1.7x tokens per watt)",
+      "Edge Open Model": "microsoft/Aion-1.0-Instruct-2.3B (MIT license, 2.3B, 32K ctx, 8 languages)",
+      "Formats & Target GA": "PyTorch, ONNX, GGUF (quantized pending); Windows OS SLM GA end of Jan 2027"
+    },
+    citations: [
+      {
+        title: "Seven new world-class models at scalable price-performance",
+        url: "https://microsoft.ai/news/microsoft-ignite-2026/",
+        source: "Microsoft AI"
+      },
+      {
+        title: "microsoft/Aion-1.0-Instruct-2.3B Model Card",
+        url: "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
+        source: "Hugging Face"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
+  },
+  {
+    id: "art-416",
+    slug: "google-blue-origin-project-suncatcher-new-glenn-2029",
+    title: "Google and Blue Origin Set Q1 2029 New Glenn Launch for Project Suncatcher Orbital AI Racks",
+    subtitle: "Satellites each carrying roughly one data center rack of compute capacity will deploy into sun-synchronous orbit to tap continuous solar power.",
+    category: "science",
+    articleType: "breaking",
+    signalRating: 88,
+    author: AUTHOR_ROBIUL_HASAN,
+    publishedAt: "2026-11-19T11:45:00Z",
+    readTimeMinutes: 4,
+    coverImage: "/images/articles/art-416-google-blue-origin-project-suncatcher-new-glenn-20.jpg",
+    coverImageAlt: "Blue Origin New Glenn heavy-lift launch vehicle ascending after liftoff.",
+    tags: ["Google Research", "Blue Origin", "Project Suncatcher", "New Glenn", "Orbital Compute", "Solar Power"],
+    threeQuestions: {
+      whatHappened: "Google Research announced on November 19, 2026 a partnership with Blue Origin for Project Suncatcher's first dedicated heavy-lift New Glenn launch targeted for Q1 2029 into sun-synchronous orbit.",
+      whyItMatters: "Assigning a named heavy-lift launch vehicle and orbital deployment window moves orbital solar-powered AI compute from conceptual whitepaper architecture toward flight scheduling.",
+      whatsNext: "Google Research will integrate satellites housing approximately one data center rack of compute capacity each alongside existing spacecraft and launch partners ahead of the 2029 mission."
+    },
+    keyTakeaways: [
+      "First dedicated heavy-lift launch under Google's Project Suncatcher taps Blue Origin's New Glenn rocket.",
+      "Mission targets Q1 2029 deployment into sun-synchronous orbit for near-continuous solar harvesting.",
+      "Each spacecraft is designed to carry compute capacity roughly equivalent to one terrestrial data center rack.",
+      "Contract pricing, satellite count, power wattage, and orbital optical networking figures remain undisclosed."
+    ],
+    content: [
+      "Source: Google Research's announcement by Senior Director Travis Beals (November 19, 2026).",
+      "Project Suncatcher frames extraterrestrial solar illumination as an eventual pressure valve for terrestrial power grid bottlenecks facing frontier training and inference clusters. By flying payloads into a sun-synchronous orbital plane—where solar arrays maintain extended sunlight exposure without atmospheric attenuation—the initiative seeks to validate space-based compute modules scaled closer to enterprise rack units than conventional single-board space processors.",
+      "Scheduling a dedicated Blue Origin New Glenn manifest provides the mass and fairing volume required to orbit hardware rated at roughly one data center rack per satellite while complementing ongoing work with Google's other satellite and launch vendors. Neither Blue Origin nor Google Research disclosed the number of satellites on the manifest, per-rack compute architecture, radiator mass for vacuum thermal rejection, radiation-hardening specs, downlink capacity, or mission cost."
+    ],
+    technicalSpecs: {
+      "Launch Vehicle": "Blue Origin New Glenn (dedicated heavy-lift)",
+      "Target Window": "Q1 2029",
+      "Target Orbit": "Sun-synchronous orbit (SSO)",
+      "Payload Density": "~1 data center rack compute capacity per satellite",
+      "Project Lead": "Google Research (Paradigms of Intelligence)"
+    },
+    citations: [
+      {
+        title: "Google partners with Blue Origin on Project Suncatcher heavy-lift launch",
+        url: "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/",
+        source: "Google Research"
+      }
+    ],
+    isHero: false,
+    isFeatured: false
   }
 
 ];

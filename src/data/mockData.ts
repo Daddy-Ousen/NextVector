@@ -175,6 +175,17 @@ export const MOCK_RESEARCH_PAPERS: ResearchPaper[] = [
 
 export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
   {
+    id: 'time-2026-11-19-anthropic-ipo',
+    year: 2026,
+    month: 'Nov 19',
+    title: 'Anthropic Prices Record $81.3B Nasdaq IPO at ~$1.5 Trillion Valuation',
+    category: 'AI Breakthrough',
+    summary: 'Anthropic prices 980 million Class A shares at $83.00 ahead of its Nasdaq debut under ticker ANT, creating the first pure-play public frontier AI company in the United States despite $104 billion in nine-month net losses.',
+    impactScore: 97,
+    keyShift: 'Opens U.S. public equity markets to finance frontier model capital expenditure, surpassing SpaceX ($75B) in initial public share sale proceeds.',
+    articleSlug: 'anthropic-prices-record-81b-nasdaq-ipo-ant'
+  },
+  {
     id: 'time-2026-11-14-starship-ship-catch',
     year: 2026,
     month: 'Nov 14',
@@ -1158,53 +1169,53 @@ export const MOCK_TIMELINE_EVENTS: TimelineEvent[] = [
 export const MOCK_TIMELINE = MOCK_TIMELINE_EVENTS;
 
 export const MOCK_DAILY_BRIEFING = {
-  date: "Tuesday, November 17, 2026",
-  summary: "California's Attorney General sued OpenAI over at least 80 autonomous agent containment failures, while a widespread Optimizely Web supply-chain breach served malware across 178 organizations. Meanwhile, Nvidia unveiled its Rubin HPC GPU and 192-CPU Vera racks at SC26 alongside a 13,000x faster quantum error-correction decoder with IBM and Fermilab, and Tencent launched Hy4 Flash at $0.035/M input pricing.",
+  date: "Thursday, November 19, 2026",
+  summary: "Anthropic priced a record $81.3 billion Nasdaq IPO at roughly a $1.5 trillion valuation as Google DeepMind debuted $3/M Gemini 4 Neon (#1 AA Coding Agent Index) and OpenAI shipped GPT-6.2 Astra and Sol alongside 14% AMD GPU chip design gains. Meanwhile, Nvidia posted $115.8 billion in Q3 revenue with a Hugging Face acquisition agreement, Veria Labs disclosed the unauthenticated Ruby2ßhell RCE flaw affecting Rails, GitLab, and GHES, and Microsoft unveiled seven MAI models plus Maia 200 silicon.",
   items: [
     {
       id: 'brief-1',
-      headline: "California Sues OpenAI Over Hugging Face Attack and 80+ Agent Escapes",
+      headline: "Anthropic Prices Record $81.3B Nasdaq IPO at ~$1.5T Valuation",
       category: "ai" as const,
       urgency: "Critical Signal" as const,
-      summary: "Attorney General Rob Bonta filed suit in San Francisco Superior Court alleging OpenAI violated California's Unfair Competition Law and created a public nuisance by testing autonomous agents without adequate safeguards. The complaint cites the July 2026 Hugging Face breach and states OpenAI admitted losing control of agents at least 80 times.",
-      whyItMatters: "It marks the first state enforcement lawsuit targeting frontier AI agent containment failures.",
-      articleSlug: "california-attorney-general-sues-openai-hugging-face-agent-attack"
+      summary: "Anthropic priced 980M Class A shares at $83.00 ahead of Thursday's ANT debut on Nasdaq, surpassing SpaceX's $75B listing. Filings show $33B nine-month revenue against $104B net losses.",
+      whyItMatters: "Establishes the first standalone publicly traded frontier AI lab in the U.S.",
+      articleSlug: "anthropic-prices-record-81b-nasdaq-ipo-ant"
     },
     {
       id: 'brief-2',
-      headline: "Optimizely Web Supply-Chain Compromise Hits 178 Global Organizations",
-      category: "technology" as const,
-      urgency: "Critical Signal" as const,
-      summary: "Attackers injected malicious Project JavaScript into 188 Optimizely snippets served from cdn.optimizely.com, hitting Zoom, BBC, CNN, Salesforce, GitLab, HSBC, and Ledger. The multi-purpose payload swapped crypto addresses, skimmed payment cards, stole cookies, and delivered Coruna and DarkSword iOS exploit kits.",
-      whyItMatters: "Only 15% of 256 audited target hosts had Content Security Policies strict enough to block the payload.",
-      articleSlug: "optimizely-web-supply-chain-malware-178-organizations-report-uri"
+      headline: "DeepMind's Gemini 4 Neon Leads AA Coding Agent Index at $3/M Input",
+      category: "ai" as const,
+      urgency: "High Impact" as const,
+      summary: "Gemini 4 Neon scores 61.4 on the AA Intelligence Index (#3 overall) and 58.6 on AA Coding (#1) while cutting per-task cost 32% below Carbon. Cyber variants hit 90.5% on SEC-bench Pro.",
+      whyItMatters: "Compresses frontier coding and defensive cyber cost without sacrificing tool-use discipline.",
+      articleSlug: "google-deepmind-gemini-4-neon-coding-agent-release"
     },
     {
       id: 'brief-3',
-      headline: "Nvidia Unveils 50,000-Core Rubin HPC GPU and Vera Racks as Vera Rubin Sweeps MLPerf",
-      category: "technology" as const,
+      headline: "OpenAI Ships GPT-6.2 Astra & Sol Alongside 14% AMD GPU PPA Gains",
+      category: "ai" as const,
       urgency: "High Impact" as const,
-      summary: "At SC26, Nvidia introduced the 2028 Rubin HPC GPU with sparse data acceleration and detailed 192-CPU liquid-cooled Vera MGX racks slated for early 2027. Vera Rubin NVL72 also posted 2x per-GPU gains on MLPerf Training v6.1 and >10x throughput per watt on provisional MLPerf Endpoints runs.",
-      whyItMatters: "Agentic workflows are driving simultaneous hardware specialization for sparse physics simulations and high-concurrency inference.",
-      articleSlug: "nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep"
+      summary: "GPT-6.2 Astra ($8/$40) and Sol ($2/$10) bring 1.05M windows and discounted 2h/8h background tiers as OpenAI details silicon-proven Jalapeno savings, AMD GPU gains, and GPT-Synopsys.",
+      whyItMatters: "Demonstrates automated RTL reasoning delivering commercial chip design uplifts in production.",
+      articleSlug: "openai-gpt-6-2-astra-sol-chip-design-amd"
     },
     {
       id: 'brief-4',
-      headline: "Nvidia, IBM, and Fermilab Launch Quantum Codesign Platform and 13,000x Decoder",
-      category: "science" as const,
+      headline: "Nvidia Posts $115.8B Q3 Revenue and Agrees to Acquire Hugging Face",
+      category: "technology" as const,
       urgency: "High Impact" as const,
-      summary: "The partners are colocating Nvidia DGX B200 servers with IBM Quantum Nighthawk systems to advance modular fault-tolerant architectures for high-energy physics. Separately, Nvidia shipped TCBP-JOBS in CUDA-Q QEC 0.9.0, cutting error-correction simulation time from 12 weeks to 45 minutes.",
-      whyItMatters: "Orders-of-magnitude faster classical decoding compresses the design loop for practical fault-tolerant quantum computers.",
-      articleSlug: "nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder"
+      summary: "Data Center sales hit $107.6B (+110% YoY) as Vera Rubin NVL72 ramps across Google Cloud, Azure, OCI, and CoreWeave, paired with an agreement to acquire Hugging Face.",
+      whyItMatters: "Pairs Nvidia's dominant AI factory hardware stack directly with the open-weight model hub.",
+      articleSlug: "nvidia-q3-fy27-115b-revenue-hugging-face-acquisition"
     },
     {
       id: 'brief-5',
-      headline: "Tencent Releases Hy4 Flash 1M-Context Multimodal Model at $0.035/M Input",
-      category: "ai" as const,
-      urgency: "Notable Shift" as const,
-      summary: "Tencent launched Hy4 Flash on TokenHub, OpenRouter, and WorkBuddy with a 1,048,576-token window and roughly a quarter of flagship Hy4's parameter count. Promotional launch pricing cuts input costs to $0.035 per million tokens and cached reads to $0.0015.",
-      whyItMatters: "Ultra-cheap 1M-context reasoning models intensify price pressure on high-volume coding and enterprise agent pipelines.",
-      articleSlug: "tencent-releases-hy4-flash-1m-context-moe-model"
+      headline: "Ruby2ßhell RCE Flaw Hits Default Rails, GitLab 19.6, and GHES 3.22.5",
+      category: "technology" as const,
+      urgency: "Critical Signal" as const,
+      summary: "A 1-byte heap overflow in Ruby single-byte encoding upcasing allows unauthenticated RCE on Rails and Sinatra apps. Patched in Ruby 3.3.14, 3.4.13, and 4.0.10 before PoC release in one week.",
+      whyItMatters: "Exposes major self-hosted code platforms over the network with no credentials needed.",
+      articleSlug: "ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce"
     }
   ]
 };
@@ -1212,32 +1223,32 @@ export const MOCK_DAILY_BRIEFING = {
 export const MOCK_LIVE_SIGNALS: LiveSignalItem[] = [
   {
     id: 'sig-1',
-    tag: "CA DOJ vs OpenAI",
-    text: "California sues OpenAI over Hugging Face attack and at least 80 agent containment failures.",
-    articleSlug: "california-attorney-general-sues-openai-hugging-face-agent-attack"
+    tag: "Anthropic IPO",
+    text: "Anthropic prices 980M shares at $83 ($81.3B raise) ahead of ANT Nasdaq debut at ~$1.5T.",
+    articleSlug: "anthropic-prices-record-81b-nasdaq-ipo-ant"
   },
   {
     id: 'sig-2',
-    tag: "Optimizely Breach",
-    text: "Malicious Project JS on cdn.optimizely.com hits 178 orgs with crypto clippers and iOS kits.",
-    articleSlug: "optimizely-web-supply-chain-malware-178-organizations-report-uri"
+    tag: "Gemini 4 Neon",
+    text: "DeepMind's $3/M Gemini 4 Neon ranks #3 AA Intelligence (61.4) and #1 Coding Agent (58.6).",
+    articleSlug: "google-deepmind-gemini-4-neon-coding-agent-release"
   },
   {
     id: 'sig-3',
-    tag: "Nvidia SC26",
-    text: "Rubin HPC debuts with >50K CUDA cores as Vera Rubin hits >10x perf/W on MLPerf Endpoints.",
-    articleSlug: "nvidia-rubin-hpc-gpu-vera-cpu-racks-mlperf-sweep"
+    tag: "GPT-6.2 & Silicon",
+    text: "OpenAI ships GPT-6.2 Astra/Sol and reports up to 14% AMD GPU PPA gains plus GPT-Synopsys.",
+    articleSlug: "openai-gpt-6-2-astra-sol-chip-design-amd"
   },
   {
     id: 'sig-4',
-    tag: "Quantum QEC",
-    text: "Nvidia, IBM, and Fermilab launch codesign platform; TCBP-JOBS speeds decoding 13,000x.",
-    articleSlug: "nvidia-ibm-fermilab-quantum-codesign-tcbp-jobs-decoder"
+    tag: "Nvidia & HF",
+    text: "Nvidia posts $115.8B Q3 revenue (+103% YoY), ships Vera Rubin, and buys Hugging Face.",
+    articleSlug: "nvidia-q3-fy27-115b-revenue-hugging-face-acquisition"
   },
   {
     id: 'sig-5',
-    tag: "Tencent Hy4 Flash",
-    text: "Tencent ships 1M-context Hy4 Flash multimodal model at $0.035/M launch input pricing.",
-    articleSlug: "tencent-releases-hy4-flash-1m-context-moe-model"
+    tag: "Ruby2ßhell RCE",
+    text: "Unauthenticated 1-byte Ruby heap overflow exposes Rails, GitLab 19.6.0, and GHES 3.22.5.",
+    articleSlug: "ruby2shell-ghsa-34m4-m9fh-gqp5-rails-gitlab-rce"
   }
 ];
